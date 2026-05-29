@@ -2,69 +2,38 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Bookmark, Share2, Volume2, ChevronRight, BookOpen } from "lucide-react";
-
-const hadiths = [
-  {
-    id: 1,
-    book: "Sahih Bukhari",
-    bookUr: "صحیح بخاری",
-    number: "Hadith #1",
-    arabic: "عَنْ أَمِيرِ الْمُؤْمِنِينَ قَالَ سَمِعْت رَسُولَ اللَّهِ يَقُولُ: إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ",
-    transliteration: "Innamal a'maalu binniyyaat",
-    translation: "Actions are but by intentions and every person will be rewarded according to their intention.",
-    category: "Foundations",
-    benefit: "This hadith is the foundation of Islam. All deeds are judged by their intentions.",
-  },
-  {
-    id: 2,
-    book: "Sahih Muslim",
-    bookUr: "صحیح مسلم",
-    number: "Hadith #2",
-    arabic: "مَنْ حَسُنَ إِسْلَامُهُ لَمْ يُلَمْ عَلَى زَلَّةٍ",
-    transliteration: "Man hasunal islaamahu lam yulam 'alaa zallatin",
-    translation: "Whoever sincerely embraces Islam, their past mistakes are forgiven.",
-    category: "Mercy",
-    benefit: "Islam offers a fresh start. A sincere conversion washes away all previous sins.",
-  },
-  {
-    id: 3,
-    book: "Riyad as-Salihin",
-    bookUr: "ریاض الصالحین",
-    number: "Hadith #3",
-    arabic: "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
-    transliteration: "La yu'minu ahadukum hatta yuhibba li akheehi ma yuhibbu li nafsehi",
-    translation: "None of you truly believes until he loves for his brother what he loves for himself.",
-    category: "Love",
-    benefit: "True faith requires us to want for others what we want for ourselves.",
-  },
-  {
-    id: 4,
-    book: "Al-Adab Al-Mufrad",
-    bookUr: "ادب المفرد",
-    number: "Hadith #4",
-    arabic: "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
-    transliteration: "Al-muslim man salima al-muslimuna min lisaanihi wa yadehi",
-    translation: "A Muslim is one from whose tongue and hand other Muslims are safe.",
-    category: "Behavior",
-    benefit: "True Muslims protect others from their speech and actions.",
-  },
-];
-
-const categories = ["All", "Foundations", "Mercy", "Love", "Behavior", "Patience", "Knowledge"];
+import { ArrowLeft, Search, Bookmark, Share2, Volume2, ChevronRight, ChevronLeft, BookOpen } from "lucide-react";
+import { authenticHadiths, hadithBooks } from "@/data/hadith-data";
 
 export default function HadithPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentHadith, setCurrentHadith] = useState(0);
+  const [showArabic, setShowArabic] = useState(true);
+  const [savedHadiths, setSavedHadiths] = useState<number[]>([1]);
 
-  const filteredHadiths = hadiths.filter(
-    (h) => selectedCategory === "All" || h.category === selectedCategory
-  );
+  const filteredHadiths = authenticHadiths.filter((h) => {
+    const matchesSearch =
+      searchQuery === "" ||
+      h.translation.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      h.arabic.includes(searchQuery) ||
+      h.category.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesBook = !selectedBook || h.book === selectedBook;
+    return matchesSearch && matchesBook;
+  });
 
-  const hadith = filteredHadiths[currentHadith] || filteredHadiths[0];
+  const hadith = filteredHadiths[currentHadith];
+
+  const toggleSave = (id: number) => {
+    setSavedHadiths((prev) =>
+      prev.includes(id) ? prev.filter((n) => n !== id) : [...prev, id]
+    );
+  };
+
+  const uniqueBooks = [...new Set(authenticHadiths.map((h) => h.book))];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="max-w-3xl mx-auto px-4 py-4">
@@ -73,143 +42,216 @@ export default function HadithPage() {
               <ArrowLeft className="h-5 w-5" />
             </Link>
             <div>
-              <h1 className="font-semibold">Hadith of the Day</h1>
-              <p className="text-xs text-muted-foreground">احادیث — Sayings of Prophet ﷺ</p>
+              <h1 className="font-semibold">Hadith Collection</h1>
+              <p className="text-xs text-muted-foreground">احادیث — Sayings of the Prophet ﷺ</p>
             </div>
           </div>
 
-          {/* Categories */}
-          <div className="flex gap-2 overflow-x-auto pb-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => {
-                  setSelectedCategory(cat);
-                  setCurrentHadith(0);
-                }}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap ${
-                  selectedCategory === cat
-                    ? "bg-amber-600 text-white"
-                    : "bg-secondary/50 text-muted-foreground hover:bg-secondary"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          {/* Search */}
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search hadiths..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-secondary/50 border-0"
+            />
           </div>
         </div>
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-6">
-        {/* Featured Hadith */}
-        <div className="bg-gradient-to-br from-amber-100 to-amber-50 rounded-2xl p-6 mb-6">
-          <div className="flex items-center justify-between mb-4">
-            <span className="px-3 py-1 rounded-full bg-amber-600 text-white text-sm">
-              Hadith of the Day
-            </span>
-            <span className="text-amber-700 text-sm">
-              {hadith.book} #{hadith.id}
-            </span>
-          </div>
-
-          <p className="arabic-text text-2xl text-right leading-relaxed mb-4" dir="rtl">
-            {hadith.arabic}
-          </p>
-
-          <p className="italic text-amber-800 mb-2">
-            {hadith.transliteration}
-          </p>
-
-          <p className="text-amber-900">
-            "{hadith.translation}"
-          </p>
-        </div>
-
-        {/* Navigation */}
-        <div className="flex items-center justify-between mb-6">
+        {/* Books Filter */}
+        <div className="flex gap-2 overflow-x-auto pb-4 mb-6">
           <button
-            onClick={() => setCurrentHadith(Math.max(0, currentHadith - 1))}
-            disabled={currentHadith === 0}
-            className="px-4 py-2 rounded-xl border disabled:opacity-50"
+            onClick={() => setSelectedBook(null)}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap ${
+              !selectedBook ? "bg-indigo-600 text-white" : "bg-secondary text-muted-foreground"
+            }`}
           >
-            ← Previous
+            All Books
           </button>
-          <span className="text-muted-foreground">
-            {currentHadith + 1} / {filteredHadiths.length}
-          </span>
-          <button
-            onClick={() => setCurrentHadith(Math.min(filteredHadiths.length - 1, currentHadith + 1))}
-            disabled={currentHadith === filteredHadiths.length - 1}
-            className="px-4 py-2 rounded-xl border disabled:opacity-50"
-          >
-            Next →
-          </button>
+          {uniqueBooks.map((book) => (
+            <button
+              key={book}
+              onClick={() => setSelectedBook(book)}
+              className={`px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap ${
+                selectedBook === book ? "bg-indigo-600 text-white" : "bg-secondary text-muted-foreground"
+              }`}
+            >
+              {book.split(" ")[0]}
+            </button>
+          ))}
         </div>
 
-        {/* Book Info */}
-        <div className="bg-card rounded-2xl border p-4 mb-4">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center">
-              <BookOpen className="h-6 w-6 text-amber-600" />
-            </div>
-            <div>
-              <h3 className="font-semibold">{hadith.book}</h3>
-              <p className="urdu-text text-sm text-muted-foreground" dir="rtl">
-                {hadith.bookUr}
-              </p>
-            </div>
+        {filteredHadiths.length === 0 ? (
+          <div className="text-center py-12">
+            <Search className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground">No hadiths found</p>
           </div>
-        </div>
+        ) : (
+          <>
+            {/* Navigation */}
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm text-muted-foreground">
+                Hadith {currentHadith + 1} of {filteredHadiths.length}
+              </span>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setCurrentHadith(Math.max(0, currentHadith - 1))}
+                  disabled={currentHadith === 0}
+                  className="p-2 rounded-lg border disabled:opacity-50"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  onClick={() => setCurrentHadith(Math.min(filteredHadiths.length - 1, currentHadith + 1))}
+                  disabled={currentHadith === filteredHadiths.length - 1}
+                  className="p-2 rounded-lg border disabled:opacity-50"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
 
-        {/* Benefit */}
-        <div className="bg-emerald-50 rounded-2xl p-4 mb-6">
-          <h3 className="font-semibold mb-2 flex items-center gap-2">
-            <span className="text-emerald-600">✨</span>
-            Key Benefit
-          </h3>
-          <p className="text-emerald-800">{hadith.benefit}</p>
-        </div>
-
-        {/* Actions */}
-        <div className="flex gap-3">
-          <button className="flex-1 py-3 rounded-xl border font-medium flex items-center justify-center gap-2">
-            <Volume2 className="h-5 w-5" />
-            Listen
-          </button>
-          <button className="flex-1 py-3 rounded-xl border font-medium flex items-center justify-center gap-2">
-            <Bookmark className="h-5 w-5" />
-            Save
-          </button>
-          <button className="flex-1 py-3 rounded-xl border font-medium flex items-center justify-center gap-2">
-            <Share2 className="h-5 w-5" />
-            Share
-          </button>
-        </div>
-
-        {/* More from Book */}
-        <div className="mt-8">
-          <h3 className="font-semibold mb-4">More from {hadith.book}</h3>
-          <div className="space-y-3">
-            {[1, 2, 3].map((num) => (
-              <Link
-                key={num}
-                href="#"
-                className="flex items-center gap-4 bg-card rounded-xl border p-4"
-              >
-                <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 font-bold">
-                  {num}
+            {/* Hadith Card */}
+            {hadith && (
+              <div className="bg-card rounded-2xl border overflow-hidden">
+                {/* Header */}
+                <div className="p-4 border-b bg-indigo-50">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="font-semibold">{hadith.book}</h3>
+                      <p className="arabic-text text-sm text-indigo-600" dir="rtl">
+                        {hadith.bookArabic}
+                      </p>
+                    </div>
+                    <span className="px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-sm">
+                      #{hadith.hadithNumber}
+                    </span>
+                  </div>
+                  {hadith.narrator && (
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Narrated by: {hadith.narrator}
+                    </p>
+                  )}
                 </div>
-                <div className="flex-1">
-                  <p className="font-medium">Hadith #{num + hadith.id}</p>
-                  <p className="text-sm text-muted-foreground line-clamp-1">
-                    Another beautiful hadith from {hadith.book}...
+
+                {/* Arabic Text */}
+                <div className="p-6 border-b">
+                  <button
+                    onClick={() => setShowArabic(!showArabic)}
+                    className="flex items-center gap-2 text-sm text-muted-foreground mb-3"
+                  >
+                    <BookOpen className="h-4 w-4" />
+                    {showArabic ? "Hide Arabic" : "Show Arabic"}
+                  </button>
+                  
+                  {showArabic && (
+                    <p className="arabic-text text-xl leading-loose text-right" dir="rtl">
+                      {hadith.arabic}
+                    </p>
+                  )}
+                </div>
+
+                {/* Transliteration */}
+                <div className="p-4 bg-gray-50">
+                  <p className="text-sm italic text-gray-600">
+                    {hadith.transliteration}
                   </p>
                 </div>
-                <ChevronRight className="h-5 w-5 text-muted-foreground" />
-              </Link>
-            ))}
-          </div>
-        </div>
+
+                {/* Translation */}
+                <div className="p-6 space-y-4">
+                  <div>
+                    <h4 className="font-medium mb-2">English Translation</h4>
+                    <p className="text-gray-700">"{hadith.translation}"</p>
+                  </div>
+                  
+                  <div className="bg-teal-50 rounded-xl p-4">
+                    <h4 className="font-medium mb-2">اردو ترجمہ</h4>
+                    <p className="urdu-text text-gray-700" dir="rtl">
+                      {hadith.urduTranslation}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Category */}
+                <div className="px-6 pb-4">
+                  <span className="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">
+                    {hadith.category}
+                  </span>
+                </div>
+
+                {/* Benefits */}
+                {hadith.benefits.length > 0 && (
+                  <div className="p-4 border-t">
+                    <h4 className="font-medium mb-3 flex items-center gap-2">
+                      <span className="text-amber-500">✨</span>
+                      Key Benefits
+                    </h4>
+                    <ul className="space-y-2">
+                      {hadith.benefits.map((benefit, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-sm">
+                          <span className="text-emerald-500">•</span>
+                          <span className="text-gray-700">{benefit}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Actions */}
+                <div className="p-4 border-t flex gap-3">
+                  <button
+                    onClick={() => toggleSave(hadith.id)}
+                    className={`flex-1 py-3 rounded-xl font-medium flex items-center justify-center gap-2 ${
+                      savedHadiths.includes(hadith.id)
+                        ? "bg-red-100 text-red-600"
+                        : "bg-secondary"
+                    }`}
+                  >
+                    <Bookmark className={`h-5 w-5 ${savedHadiths.includes(hadith.id) ? "fill-red-500" : ""}`} />
+                    {savedHadiths.includes(hadith.id) ? "Saved" : "Save"}
+                  </button>
+                  <button className="py-3 px-4 rounded-xl border flex items-center justify-center gap-2">
+                    <Volume2 className="h-5 w-5" />
+                  </button>
+                  <button className="py-3 px-4 rounded-xl border flex items-center justify-center gap-2">
+                    <Share2 className="h-5 w-5" />
+                  </button>
+                </div>
+
+                {/* Source */}
+                <div className="px-4 pb-4">
+                  <p className="text-xs text-muted-foreground text-center">
+                    Source: {hadith.source}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Hadith Books */}
+            <div className="mt-8">
+              <h3 className="font-semibold mb-4">Popular Hadith Books</h3>
+              <div className="grid grid-cols-2 gap-4">
+                {hadithBooks.slice(0, 6).map((book) => (
+                  <div key={book.id} className="bg-card rounded-xl border p-4">
+                    <p className="arabic-text text-lg text-indigo-600 mb-1" dir="rtl">
+                      {book.arabic}
+                    </p>
+                    <h4 className="font-medium">{book.name}</h4>
+                    <p className="text-sm text-muted-foreground">{book.author}</p>
+                    <p className="text-xs text-muted-foreground mt-1">
+                      {book.hadiths.toLocaleString()} Hadiths
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
       </main>
     </div>
   );
