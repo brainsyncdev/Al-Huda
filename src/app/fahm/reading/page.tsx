@@ -2,190 +2,204 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronRight, Check, Volume2, RotateCcw, Eye, EyeOff } from "lucide-react";
+import { ArrowLeft, Volume2, RotateCcw, Play, Check, ChevronRight, BookOpen } from "lucide-react";
 
-const practiceLessons = [
-  {
-    id: 1,
-    title: "Harakat (Diacritics)",
-    titleUr: "حرکات",
-    description: "Learn the short vowel marks",
-    progress: 80,
-    total: 10,
-    icon: "🎯",
-    color: "teal",
-  },
-  {
-    id: 2,
-    title: "Tanween",
-    titleUr: "تنوین",
-    description: "The doubled diacritical marks",
-    progress: 60,
-    total: 8,
-    icon: "✨",
-    color: "blue",
-  },
-  {
-    id: 3,
-    title: "Sukoon (Jazzm)",
-    titleUr: "سکون",
-    description: "The silent marker",
-    progress: 40,
-    total: 6,
-    icon: "🤫",
-    color: "purple",
-  },
-  {
-    id: 4,
-    title: "Shaddah",
-    titleUr: "شدد",
-    description: "The doubled letter mark",
-    progress: 20,
-    total: 5,
-    icon: "💫",
-    color: "amber",
-  },
-  {
-    id: 5,
-    title: "Tashkeel Review",
-    titleUr: "تجویز",
-    description: "Complete reading practice",
-    progress: 0,
-    total: 12,
-    icon: "📖",
-    color: "emerald",
-  },
+interface Letter {
+  arabic: string;
+  name: string;
+  transliteration: string;
+  audio: string;
+}
+
+const letters: Letter[] = [
+  { arabic: "بَ", name: "Ba", transliteration: "ba", audio: "ba" },
+  { arabic: "تَ", name: "Ta", transliteration: "ta", audio: "ta" },
+  { arabic: "ثَ", name: "Tha", transliteration: "tha", audio: "tha" },
+  { arabic: "جَ", name: "Jim", transliteration: "jim", audio: "jim" },
+  { arabic: "حَ", name: "Ha", transliteration: "ha", audio: "ha" },
+  { arabic: "خَ", name: "Kha", transliteration: "kha", audio: "kha" },
+  { arabic: "دَ", name: "Dal", transliteration: "dal", audio: "dal" },
+  { arabic: "ذَ", name: "Dhal", transliteration: "dhal", audio: "dhal" },
+  { arabic: "رَ", name: "Ra", transliteration: "ra", audio: "ra" },
+  { arabic: "زَ", name: "Zay", transliteration: "zay", audio: "zay" },
+  { arabic: "سَ", name: "Sin", transliteration: "sin", audio: "sin" },
+  { arabic: "شَ", name: "Shi", transliteration: "shi", audio: "shi" },
 ];
 
 export default function ReadingPage() {
-  const [showArabic, setShowArabic] = useState(true);
   const [currentLetter, setCurrentLetter] = useState(0);
+  const [showHint, setShowHint] = useState(false);
+  const [completed, setCompleted] = useState<number[]>([]);
 
-  const letters = [
-    { arabic: "بَ", transliteration: "ba", urdu: "بے" },
-    { arabic: "تَ", transliteration: "ta", urdu: "تے" },
-    { arabic: "ثَ", transliteration: "tha", urdu: "ثے" },
-    { arabic: "جَ", transliteration: "jeem", urdu: "جیم" },
-    { arabic: "حَ", transliteration: "ha", urdu: "حے" },
-  ];
+  const letter = letters[currentLetter];
+
+  const handleComplete = () => {
+    if (!completed.includes(currentLetter)) {
+      setCompleted([...completed, currentLetter]);
+    }
+    if (currentLetter < letters.length - 1) {
+      setCurrentLetter(currentLetter + 1);
+      setShowHint(false);
+    }
+  };
+
+  const progress = Math.round((completed.length / letters.length) * 100);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-teal-50 to-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
-        <div className="max-w-3xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Link href="/fahm" className="p-2 -ml-2 rounded-lg hover:bg-secondary">
-                ←
-              </Link>
-              <div>
-                <h1 className="font-semibold">Reading Practice</h1>
-                <p className="text-xs text-muted-foreground">تلاوت — Recitation</p>
-              </div>
+      <header className="bg-white/95 backdrop-blur border-b">
+        <div className="max-w-md mx-auto px-4 py-4">
+          <div className="flex items-center gap-4 mb-4">
+            <Link href="/fahm" className="p-2 -ml-2 rounded-lg hover:bg-teal-100">
+              <ArrowLeft className="h-5 w-5" />
+            </Link>
+            <div className="flex-1">
+              <h1 className="font-semibold">Arabic Reading</h1>
+              <p className="text-xs text-muted-foreground">تلاوت — Practice</p>
             </div>
-            <button
-              onClick={() => setShowArabic(!showArabic)}
-              className="p-2 rounded-lg bg-secondary"
-            >
-              {showArabic ? <Eye className="h-5 w-5" /> : <EyeOff className="h-5 w-5" />}
-            </button>
+          </div>
+
+          {/* Progress */}
+          <div className="flex items-center gap-3">
+            <div className="flex-1 h-2 bg-teal-100 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-teal-500 transition-all duration-300"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+            <span className="text-sm text-muted-foreground">{progress}%</span>
           </div>
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 py-6">
-        {/* Reading Card */}
-        <div className="bg-card rounded-2xl border p-6 mb-6">
-          <div className="text-center mb-6">
-            <p className="text-sm text-muted-foreground mb-2">
-              Tap to see pronunciation
-            </p>
-            <div className="w-32 h-32 mx-auto rounded-2xl bg-teal-100 flex items-center justify-center mb-4">
-              <span className="arabic-text text-5xl text-teal-700">
-                {letters[currentLetter].arabic}
-              </span>
-            </div>
-            <p className="text-2xl font-semibold text-teal-600">
-              {letters[currentLetter].transliteration}
-            </p>
-            <p className="urdu-text text-lg text-muted-foreground" dir="rtl">
-              {letters[currentLetter].urdu}
-            </p>
+      <main className="max-w-md mx-auto px-4 py-8">
+        {/* Letter Card */}
+        <div className="bg-card rounded-2xl border p-8 mb-6 text-center">
+          <p className="text-sm text-muted-foreground mb-4">
+            Tap the letter to hear pronunciation
+          </p>
+
+          <div className="w-40 h-40 mx-auto rounded-2xl bg-teal-100 flex items-center justify-center mb-6 cursor-pointer hover:bg-teal-200 transition-colors">
+            <span className="arabic-text text-7xl text-teal-700" dir="rtl">
+              {letter.arabic}
+            </span>
           </div>
 
-          <div className="flex gap-3">
-            <button className="flex-1 py-3 rounded-xl border font-medium flex items-center justify-center gap-2">
+          <div className="space-y-2 mb-6">
+            <p className="text-2xl font-bold text-teal-700">{letter.name}</p>
+            <p className="text-lg text-teal-600">{letter.transliteration}</p>
+          </div>
+
+          <div className="flex justify-center gap-4">
+            <button className="px-6 py-3 rounded-xl bg-teal-600 text-white font-medium flex items-center gap-2 hover:bg-teal-700 transition-colors">
               <Volume2 className="h-5 w-5" />
               Listen
             </button>
             <button
-              onClick={() => setCurrentLetter((c) => (c + 1) % letters.length)}
-              className="flex-1 py-3 rounded-xl border font-medium flex items-center justify-center gap-2"
+              onClick={() => setShowHint(!showHint)}
+              className="px-6 py-3 rounded-xl border font-medium"
             >
-              <RotateCcw className="h-5 w-5" />
-              Next
+              {showHint ? "Hide" : "Hint"}
             </button>
+          </div>
+
+          {showHint && (
+            <div className="mt-6 bg-amber-50 rounded-xl p-4 text-left">
+              <p className="text-sm text-amber-800">
+                💡 <strong>Tip:</strong> This letter is pronounced by pressing the tip of your tongue behind your upper front teeth.
+              </p>
+            </div>
+          )}
+        </div>
+
+        {/* Practice Button */}
+        <button
+          onClick={handleComplete}
+          className={`w-full py-4 rounded-xl font-semibold flex items-center justify-center gap-2 ${
+            completed.includes(currentLetter)
+              ? "bg-emerald-100 text-emerald-700"
+              : "bg-teal-600 text-white"
+          }`}
+        >
+          {completed.includes(currentLetter) ? (
+            <>
+              <Check className="h-5 w-5" />
+              Completed ✓
+            </>
+          ) : (
+            <>
+              <Play className="h-5 w-5" />
+              Mark as Practiced
+            </>
+          )}
+        </button>
+
+        {/* Navigation */}
+        <div className="flex justify-between mt-6">
+          <button
+            onClick={() => {
+              if (currentLetter > 0) {
+                setCurrentLetter(currentLetter - 1);
+                setShowHint(false);
+              }
+            }}
+            disabled={currentLetter === 0}
+            className="px-4 py-2 rounded-xl border disabled:opacity-50"
+          >
+            Previous
+          </button>
+          <button
+            onClick={() => {
+              if (currentLetter < letters.length - 1) {
+                setCurrentLetter(currentLetter + 1);
+                setShowHint(false);
+              }
+            }}
+            disabled={currentLetter === letters.length - 1}
+            className="px-4 py-2 rounded-xl border disabled:opacity-50"
+          >
+            Next
+          </button>
+        </div>
+
+        {/* All Letters */}
+        <div className="mt-8">
+          <h3 className="font-semibold mb-4">All Letters</h3>
+          <div className="grid grid-cols-6 gap-2">
+            {letters.map((l, idx) => (
+              <button
+                key={idx}
+                onClick={() => {
+                  setCurrentLetter(idx);
+                  setShowHint(false);
+                }}
+                className={`aspect-square rounded-xl flex flex-col items-center justify-center transition-colors ${
+                  currentLetter === idx
+                    ? "bg-teal-600 text-white"
+                    : completed.includes(idx)
+                    ? "bg-emerald-100 text-emerald-700"
+                    : "bg-teal-50 text-teal-700 hover:bg-teal-100"
+                }`}
+              >
+                <span className="arabic-text text-lg" dir="rtl">{l.arabic}</span>
+                {completed.includes(idx) && (
+                  <Check className="h-3 w-3 mt-1" />
+                )}
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Progress Indicator */}
-        <div className="flex justify-center gap-2 mb-8">
-          {letters.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentLetter(idx)}
-              className={`w-3 h-3 rounded-full transition-colors ${
-                idx === currentLetter ? "bg-teal-600" : "bg-teal-200"
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Lessons */}
-        <h3 className="font-semibold mb-4">Lessons</h3>
-        <div className="space-y-4">
-          {practiceLessons.map((lesson) => (
-            <Link
-              key={lesson.id}
-              href={`/fahm/reading/${lesson.id}`}
-              className="block bg-card rounded-xl border overflow-hidden"
-            >
-              <div className="p-4">
-                <div className="flex items-center gap-4">
-                  <div className={`w-14 h-14 rounded-xl bg-${lesson.color}-100 flex items-center justify-center text-2xl`}>
-                    {lesson.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="font-semibold">{lesson.title}</h4>
-                    <p className="urdu-text text-sm text-muted-foreground" dir="rtl">
-                      {lesson.titleUr}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {lesson.description}
-                    </p>
-                  </div>
-                  <ChevronRight className="h-5 w-5 text-muted-foreground" />
-                </div>
-                
-                <div className="mt-4">
-                  <div className="flex items-center justify-between text-sm mb-2">
-                    <span>Progress</span>
-                    <span className="font-medium">
-                      {lesson.progress}% ({lesson.total} exercises)
-                    </span>
-                  </div>
-                  <div className="w-full bg-secondary rounded-full h-2">
-                    <div
-                      className={`bg-${lesson.color}-500 h-2 rounded-full transition-all`}
-                      style={{ width: `${lesson.progress}%` }}
-                    />
-                  </div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        {/* Continue Link */}
+        {progress === 100 && (
+          <Link
+            href="/fahm"
+            className="block w-full mt-6 py-4 rounded-xl bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-semibold text-center"
+          >
+            Continue to Next Lesson →
+          </Link>
+        )}
       </main>
     </div>
   );
