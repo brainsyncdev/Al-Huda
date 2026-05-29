@@ -15,7 +15,7 @@ export const islamicEvents: IslamicEvent[] = [
     id: 1,
     name: "Islamic New Year",
     nameArabic: "أول محرم",
-    nameUrdu: "یکم محرم",
+    nameUrdu: "یک محرم",
     hijriDate: "1 Muharram",
     description: "The Islamic New Year marks the migration of Prophet Muhammad ﷺ from Makkah to Madinah.",
     type: "historical"
@@ -88,7 +88,7 @@ export const islamicEvents: IslamicEvent[] = [
     name: "Hajj",
     nameArabic: "حج",
     nameUrdu: "حج",
-    hijriDate: "8-12 Dhul Hijjah",
+    hijriDate: "8 Dhul Hijjah",
     description: "Pilgrimage to Makkah - fifth pillar of Islam.",
     type: "worship"
   },
@@ -109,10 +109,12 @@ export const hijriMonths = [
   "Ramadan", "Shawwal", "Dhu al-Qi'dah", "Dhu al-Hijjah"
 ];
 
-export function getEventForDate(month: number, day: number) {
+export function getEventForDate(month: number, day: number): IslamicEvent | undefined {
+  const monthName = hijriMonths[month - 1];
   return islamicEvents.find(e => {
-    const [eventMonth, eventDay] = e.hijriDate.split(" ")[0] === String(day) 
-      ? [hijriMonths.findIndex(m => e.hijriDate.includes(m)) + 1 : -1;
-    return eventMonth === month && eventDay === day;
+    const parts = e.hijriDate.split(" ");
+    const eventDay = parseInt(parts[0]);
+    const eventMonth = parts.slice(1).join(" ");
+    return eventDay === day && eventMonth === monthName;
   });
 }

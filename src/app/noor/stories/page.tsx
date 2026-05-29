@@ -1,22 +1,56 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
-import { Star, BookOpen, Play } from "lucide-react";
+import { ArrowLeft, Play, Star, ChevronRight, Clock, BookOpen } from "lucide-react";
 import { stories } from "@/data/quran-data";
 
 export default function StoriesPage() {
+  const [selectedProphet, setSelectedProphet] = useState<number | null>(null);
+
+  const filteredStories = selectedProphet
+    ? stories.filter(s => s.id === selectedProphet)
+    : stories;
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4 mb-4">
             <Link href="/noor" className="p-2 -ml-2 rounded-lg hover:bg-secondary">
-              ←
+              <ArrowLeft className="h-5 w-5" />
             </Link>
             <div>
-              <h1 className="font-semibold">Prophet Stories</h1>
-              <p className="text-xs text-muted-foreground">قصص انبیاء — Stories of Prophets</p>
+              <h1 className="font-semibold">Stories</h1>
+              <p className="text-xs text-muted-foreground">قصص — Quran Stories</p>
             </div>
+          </div>
+
+          {/* Prophet Filter */}
+          <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4">
+            <button
+              onClick={() => setSelectedProphet(null)}
+              className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                !selectedProphet
+                  ? "bg-purple-600 text-white"
+                  : "bg-purple-100 text-purple-700"
+              }`}
+            >
+              All Stories
+            </button>
+            {stories.map((story) => (
+              <button
+                key={story.id}
+                onClick={() => setSelectedProphet(story.id)}
+                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                  selectedProphet === story.id
+                    ? "bg-purple-600 text-white"
+                    : "bg-purple-100 text-purple-700"
+                }`}
+              >
+                {story.prophetNameUr}
+              </button>
+            ))}
           </div>
         </div>
       </header>
@@ -25,88 +59,80 @@ export default function StoriesPage() {
         {/* Featured Story */}
         <Link
           href={`/noor/story/${stories[0].id}`}
-          className="block mb-6 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-700 p-6 text-white relative overflow-hidden"
+          className="block bg-gradient-to-br from-purple-600 to-pink-600 rounded-2xl p-6 text-white mb-6"
         >
-          <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2" />
-          
-          <div className="relative">
-            <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-white/20 text-sm mb-3">
-              <Star className="h-4 w-4 fill-white" />
-              Featured
-            </span>
-            <h2 className="text-2xl font-bold mb-1">{stories[0].prophetNameUr}</h2>
-            <p className="text-purple-200 mb-2">{stories[0].prophetNameUr} علیہ السلام</p>
-            <p className="text-sm text-purple-200 mb-4">{stories[0].titleUr}</p>
+          <span className="px-3 py-1 rounded-full bg-white/20 text-sm mb-3 inline-block">
+            ⭐ Featured Story
+          </span>
+          <div className="flex items-center gap-4 mb-4">
+            <span className="text-5xl">⭐</span>
+            <div>
+              <h2 className="text-xl font-bold">{stories[0].titleUr}</h2>
+              <p className="opacity-90">{stories[0].prophetNameUr}</p>
+            </div>
+          </div>
+          <p className="text-sm opacity-90 mb-4">{stories[0].mainLessonUr}</p>
+          <div className="flex items-center justify-between">
             <div className="flex items-center gap-4 text-sm">
               <span className="flex items-center gap-1">
                 <BookOpen className="h-4 w-4" />
                 {stories[0].totalEpisodes} Episodes
               </span>
-              <span className="flex items-center gap-1">
-                <Play className="h-4 w-4" />
-                25 min total
+              <span className="px-2 py-0.5 rounded bg-white/20 text-xs">
+                Age: {stories[0].ageRange}
               </span>
             </div>
+            <button className="flex items-center gap-2 bg-white text-purple-600 px-4 py-2 rounded-xl font-medium">
+              <Play className="h-4 w-4" />
+              Start
+            </button>
           </div>
         </Link>
 
-        {/* All Stories */}
-        <h3 className="font-semibold mb-4">All Stories ({stories.length})</h3>
+        {/* Stories List */}
         <div className="space-y-4">
-          {stories.map((story) => (
+          {filteredStories.map((story) => (
             <Link
               key={story.id}
               href={`/noor/story/${story.id}`}
-              className="block bg-card rounded-xl border overflow-hidden hover:shadow-md transition-shadow"
+              className="block bg-card rounded-2xl border overflow-hidden"
             >
               <div className="p-4 flex items-center gap-4">
-                <div className="w-16 h-16 rounded-xl bg-purple-100 flex items-center justify-center text-3xl">
-                  {storyIdEmoji(story.id)}
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-100 to-pink-100 flex items-center justify-center">
+                  <span className="text-3xl">📖</span>
                 </div>
                 <div className="flex-1">
-                  <h4 className="font-semibold">{story.prophetNameUr}</h4>
-                  <p className="urdu-text text-sm text-purple-600" dir="rtl">
+                  <h3 className="font-semibold">{story.titleUr}</h3>
+                  <p className="text-sm text-muted-foreground urdu-text" dir="rtl">
                     {story.prophetNameUr} علیہ السلام
                   </p>
-                  <p className="text-sm text-muted-foreground">{story.titleUr}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-sm font-medium text-purple-600">
-                    {story.totalEpisodes} Episodes
-                  </p>
-                  <div className="flex items-center gap-1 mt-1">
-                    {Array.from({ length: 3 }).map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`h-3 w-3 ${
-                          i < story.difficulty
-                            ? "text-amber-500 fill-amber-500"
-                            : "text-gray-300"
-                        }`}
-                      />
-                    ))}
+                  <div className="flex items-center gap-3 mt-2 text-xs text-muted-foreground">
+                    <span className="flex items-center gap-1">
+                      <BookOpen className="h-3 w-3" />
+                      {story.totalEpisodes} Episodes
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      ~{story.totalEpisodes * 5} min
+                    </span>
+                    <span className="px-2 py-0.5 rounded bg-purple-100 text-purple-700">
+                      Difficulty: {story.difficulty}
+                    </span>
                   </div>
                 </div>
+                <ChevronRight className="h-5 w-5 text-muted-foreground" />
               </div>
             </Link>
           ))}
         </div>
+
+        {filteredStories.length === 0 && (
+          <div className="text-center py-12">
+            <BookOpen className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+            <p className="text-muted-foreground">No stories found</p>
+          </div>
+        )}
       </main>
     </div>
   );
-}
-
-function storyIdEmoji(id: number): string {
-  const emojis: Record<number, string> = {
-    1: "⭐",
-    2: "⛵",
-    3: "🔥",
-    4: "🌊",
-    5: "🌙",
-    6: "👑",
-    7: "🐑",
-    8: "🕊️",
-  };
-  return emojis[id] || "📖";
 }
