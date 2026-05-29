@@ -2,38 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap');
-
 @layer base {
   :root {
     --background: 40 30% 97%;
     --foreground: 220 25% 15%;
-    
     --card: 0 0% 100%;
     --card-foreground: 220 25% 15%;
-    
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 15%;
-    
     --primary: 204 62% 35%;
     --primary-foreground: 0 0% 98%;
-    
     --secondary: 40 60% 94%;
     --secondary-foreground: 220 25% 15%;
-    
     --muted: 40 30% 94%;
     --muted-foreground: 220 10% 45%;
-    
     --accent: 42 80% 55%;
     --accent-foreground: 220 25% 15%;
-    
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    
     --border: 40 20% 88%;
     --input: 40 20% 88%;
     --ring: 204 62% 35%;
-    
     --radius: 0.75rem;
     
     /* Al-Huda Mode Colors */
@@ -48,15 +37,6 @@
     --sahih: 152 55% 42%;
     --hasan: 38 92% 50%;
     --daif: 25 85% 55%;
-    
-    --sidebar-background: 40 30% 97%;
-    --sidebar-foreground: 220 25% 15%;
-    --sidebar-primary: 204 62% 35%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 40 40% 92%;
-    --sidebar-accent-foreground: 220 25% 15%;
-    --sidebar-border: 40 20% 88%;
-    --sidebar-ring: 204 62% 35%;
   }
   
   .dark {
@@ -79,15 +59,6 @@
     --border: 220 15% 20%;
     --input: 220 15% 20%;
     --ring: 204 55% 50%;
-    
-    --sidebar-background: 220 20% 10%;
-    --sidebar-foreground: 40 20% 95%;
-    --sidebar-primary: 204 55% 50%;
-    --sidebar-primary-foreground: 220 25% 8%;
-    --sidebar-accent: 220 15% 18%;
-    --sidebar-accent-foreground: 40 20% 95%;
-    --sidebar-border: 220 15% 20%;
-    --sidebar-ring: 204 55% 50%;
   }
 }
 
@@ -98,12 +69,12 @@
   
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
   }
   
   /* Arabic Text Styling */
   .arabic-text {
-    font-family: 'Amiri', serif;
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
     direction: rtl;
     line-height: 2.4;
     text-align: justify;
@@ -111,117 +82,34 @@
   }
   
   .urdu-text {
-    font-family: 'Noto Nastaliq Urdu', serif;
+    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif;
     direction: rtl;
     line-height: 2.2;
   }
-  
-  /* Custom Scrollbar */
-  ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: hsl(var(--muted));
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: hsl(var(--muted-foreground) / 0.3);
-    border-radius: 4px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground) / 0.5);
-  }
 }
 
-/* Mode Gradient Backgrounds */
-.mode-noor {
-  background: linear-gradient(135deg, hsl(var(--noor-start)), hsl(var(--noor-end)));
+/* Animation */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.mode-fahm {
-  background: linear-gradient(135deg, hsl(var(--fahm-start)), hsl(var(--fahm-end)));
+.animate-in {
+  animation: fade-in 0.2s ease-out;
 }
 
-.mode-explore {
-  background: linear-gradient(135deg, hsl(var(--explore-start)), hsl(var(--explore-end)));
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-/* Card Glow Effects */
-.card-glow {
-  position: relative;
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
 }
 
-.card-glow::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  background: linear-gradient(135deg, hsl(var(--accent)), transparent, hsl(var(--primary)));
-  border-radius: inherit;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
 }
-
-.card-glow:hover::before {
-  opacity: 1;
-}
-
-/* Grade Badges */
-.grade-sahih {
-  @apply bg-emerald-500/10 text-emerald-600 border-emerald-500/20;
-}
-
-.grade-hasan {
-  @apply bg-amber-500/10 text-amber-600 border-amber-500/20;
-}
-
-.grade-daif {
-  @apply bg-orange-500/10 text-orange-600 border-orange-500/20;
-}
-
-/* Animation Classes */
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.5s ease-out forwards;
-}
-
-.animate-shimmer {
-  background: linear-gradient(
-    90deg,
-    hsl(var(--muted)) 0%,
-    hsl(var(--muted-foreground) / 0.1) 50%,
-    hsl(var(--muted)) 100%
-  );
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-}
-
-/* Staggered Animation Delays */
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
-.stagger-5 { animation-delay: 0.5s; }

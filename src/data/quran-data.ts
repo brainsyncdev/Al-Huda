@@ -1,4 +1,4 @@
-import { Surah, Ayah, Translation, TafsirEntry } from '@/types/quran';
+import { Surah, Ayah, Translation, TafsirEntry, Theme, Story, Hadith, RootWord } from '@/types/quran';
 
 export const surahs: Surah[] = [
   { id: 1, nameArabic: 'الفاتحة', nameUrdu: 'الفاتحہ', transliteration: 'Al-Fatiha', meaningUrdu: 'افتتاح', meaningEnglish: 'The Opening', revelationType: 'meccan', totalVerses: 7, juzStart: 1, orderRevealed: 5 },
@@ -57,6 +57,63 @@ export const tafsirData: Record<number, TafsirEntry[]> = {
   ],
 };
 
+export const themes: Theme[] = [
+  { id: 1, nameUrdu: 'صبر', nameEnglish: 'Patience', nameArabic: 'الصبر', descriptionUrdu: 'مشکلات میں ثابت قدم رہنا', icon: '🫠', totalAyaat: 90 },
+  { id: 2, nameUrdu: 'رحمت', nameEnglish: 'Mercy', nameArabic: 'الرحمة', descriptionUrdu: 'اللہ کی بے انتہا رحمت', icon: '💚', totalAyaat: 338 },
+  { id: 3, nameUrdu: 'ایمان', nameEnglish: 'Faith', nameArabic: 'الإيمان', descriptionUrdu: 'اللہ پر یقین و اعتقاد', icon: '✨', totalAyaat: 150 },
+  { id: 4, nameUrdu: 'شکر', nameEnglish: 'Gratitude', nameArabic: 'الشكر', descriptionUrdu: 'اللہ کے انعامات کا شکر', icon: '🤲', totalAyaat: 65 },
+  { id: 5, nameUrdu: 'توکل', nameEnglish: 'Trust in Allah', nameArabic: 'التوكل', descriptionUrdu: 'اللہ پر بھروسہ', icon: '🌟', totalAyaat: 45 },
+  { id: 6, nameUrdu: 'عدل', nameEnglish: 'Justice', nameArabic: 'العدل', descriptionUrdu: 'انصاف اور دیانت داری', icon: '⚖️', totalAyaat: 78 },
+  { id: 7, nameUrdu: 'علم', nameEnglish: 'Knowledge', nameArabic: 'العلم', descriptionUrdu: 'اللہ کی نشانیوں کا علم', icon: '📚', totalAyaat: 854 },
+  { id: 8, nameUrdu: 'تقویٰ', nameEnglish: 'Piety', nameArabic: 'التقوى', descriptionUrdu: 'اللہ کا خوف', icon: '🌿', totalAyaat: 56 },
+];
+
+export const stories: Story[] = [
+  { id: 1, prophetNameUr: 'یوسف', prophetNameAr: 'يوسف', titleUr: 'حضرت یوسف علیہ السلام کی کہانی', totalEpisodes: 10, ageRange: '3-12', difficulty: 1, mainLessonUr: 'صبر اور اعتماد' },
+  { id: 2, prophetNameUr: 'نوح', prophetNameAr: 'نوح', titleUr: 'حضرت نوح علیہ السلام کی کہانی', totalEpisodes: 8, ageRange: '3-12', difficulty: 1, mainLessonUr: 'استقامت' },
+  { id: 3, prophetNameUr: 'ابراہیم', prophetNameAr: 'إبراهيم', titleUr: 'حضرت ابراہیم علیہ السلام کی کہانی', totalEpisodes: 9, ageRange: '3-12', difficulty: 1, mainLessonUr: 'ایمان کی مضبوطی' },
+  { id: 4, prophetNameUr: 'موسیٰ', prophetNameAr: 'موسى', titleUr: 'حضرت موسیٰ علیہ السلام کی کہانی', totalEpisodes: 12, ageRange: '3-12', difficulty: 2, mainLessonUr: 'قیادت اور ایمان' },
+  { id: 5, prophetNameUr: 'یونس', prophetNameAr: 'يونس', titleUr: 'حضرت یونس علیہ السلام کی کہانی', totalEpisodes: 5, ageRange: '3-12', difficulty: 1, mainLessonUr: 'توبہ اور نئی شروعات' },
+];
+
+export const hadiths: Hadith[] = [
+  {
+    id: 1,
+    collection: 'Sahih al-Bukhari',
+    collectionSlug: 'bukhari',
+    bookNumber: 1,
+    hadithNumber: 1,
+    arabicText: 'إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ',
+    urduText: 'اعمال کا دارومدار نیتوں پر ہے',
+    englishText: 'Actions are but by intentions',
+    grade: 'sahih',
+    narrator: 'Umar ibn al-Khattab (RA)',
+    refUrl: 'https://sunnah.com/bukhari:1',
+  },
+  {
+    id: 2,
+    collection: 'Sahih al-Bukhari',
+    collectionSlug: 'bukhari',
+    bookNumber: 8,
+    hadithNumber: 47,
+    arabicText: 'مَنْ حَفِظَ عَلَى أَصْحَابِهِ حَفِظَهُ اللَّهُ',
+    urduText: 'جو اپنے ساتھیوں کی عزت کرے گا اللہ اس کی عزت کرے گا',
+    englishText: 'Whoever safeguards his companions, Allah will safeguard him',
+    grade: 'sahih',
+    narrator: 'Abu Hurairah (RA)',
+    refUrl: 'https://sunnah.com/bukhari:47',
+  },
+];
+
+export const rootWords: RootWord[] = [
+  { id: 1, rootArabic: 'ص-ب-ر', rootMeaningUrdu: 'صبر', rootMeaningEnglish: 'Patience', quranFrequency: 90, difficultyLevel: 1 },
+  { id: 2, rootArabic: 'ر-ح-م', rootMeaningUrdu: 'رحمت', rootMeaningEnglish: 'Mercy', quranFrequency: 338, difficultyLevel: 1 },
+  { id: 3, rootArabic: 'ع-ل-م', rootMeaningUrdu: 'علم', rootMeaningEnglish: 'Knowledge', quranFrequency: 854, difficultyLevel: 2 },
+  { id: 4, rootArabic: 'ش-ک-ر', rootMeaningUrdu: 'شکر', rootMeaningEnglish: 'Gratitude', quranFrequency: 65, difficultyLevel: 1 },
+  { id: 5, rootArabic: 'ا-ی-م-ن', rootMeaningUrdu: 'ایمان', rootMeaningEnglish: 'Faith', quranFrequency: 150, difficultyLevel: 2 },
+];
+
+// Helper functions
 export function getSurah(id: number): Surah | undefined {
   return surahs.find(s => s.id === id);
 }
