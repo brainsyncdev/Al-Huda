@@ -33,7 +33,6 @@ export default function TafsirPage({ params }: PageProps) {
     );
   };
 
-  // Sample tafsir verses for display
   const tafsirVerses = surahId === 1 
     ? [
         { ayah: 1, title: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ", hasTafsir: true },
@@ -54,7 +53,6 @@ export default function TafsirPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50 to-white">
-      {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="max-w-3xl mx-auto px-4 py-4">
           <div className="flex items-center gap-4">
@@ -78,14 +76,12 @@ export default function TafsirPage({ params }: PageProps) {
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-6">
-        {/* Surah Header */}
         <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-2xl p-6 text-white mb-6 text-center">
           <p className="arabic-text text-3xl mb-2" dir="rtl">{surah.nameArabic}</p>
           <h2 className="text-xl font-bold">{surah.nameEnglish}</h2>
           <p className="text-teal-200">{surah.transliteration}</p>
         </div>
 
-        {/* Source Info */}
         <div className="bg-card rounded-xl border p-4 mb-6">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
@@ -98,7 +94,6 @@ export default function TafsirPage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Verses with Tafsir */}
         <div className="space-y-4">
           {tafsirVerses.map((verse) => {
             const tafsir = getTafsirForVerse(surahId, verse.ayah);
@@ -107,7 +102,6 @@ export default function TafsirPage({ params }: PageProps) {
 
             return (
               <div key={verse.ayah} className="bg-card rounded-2xl border overflow-hidden">
-                {/* Verse Header */}
                 <button
                   onClick={() => setSelectedVerse(isSelected ? null : verse.ayah)}
                   className="w-full p-4 text-left"
@@ -135,10 +129,8 @@ export default function TafsirPage({ params }: PageProps) {
                   </p>
                 </button>
 
-                {/* Tafsir Content */}
                 {isSelected && verse.hasTafsir && tafsir && (
                   <div className="p-4 border-t space-y-4">
-                    {/* Translation */}
                     <div>
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span className="text-teal-600">📖</span> Translation
@@ -151,15 +143,13 @@ export default function TafsirPage({ params }: PageProps) {
                       </p>
                     </div>
 
-                    {/* Ibn Kathir Tafsir */}
                     <div className="bg-amber-50 rounded-xl p-4">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span>📚</span> Ibn Kathir
                       </h4>
-                      <p className="text-sm text-amber-800">{tafsir.tafsirEnglish}</p>
+                      <p className="text-sm text-amber-800">{tafsir.tafsirIbnKathir}</p>
                     </div>
 
-                    {/* Urdu Tafsir */}
                     <div className="bg-teal-50 rounded-xl p-4">
                       <h4 className="font-medium mb-2 flex items-center gap-2">
                         <span>اردو</span> تفسیر
@@ -169,12 +159,11 @@ export default function TafsirPage({ params }: PageProps) {
                       </p>
                     </div>
 
-                    {/* Benefits */}
                     {tafsir.benefits.length > 0 && (
                       <div>
                         <h4 className="font-medium mb-2">✨ Benefits</h4>
                         <ul className="space-y-1">
-                          {tafsir.benefits.map((benefit, idx) => (
+                          {tafsir.benefits.map((benefit: string, idx: number) => (
                             <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
                               <span className="text-emerald-500">•</span>
                               {benefit}
@@ -184,7 +173,6 @@ export default function TafsirPage({ params }: PageProps) {
                       </div>
                     )}
 
-                    {/* Actions */}
                     <div className="flex gap-2 pt-2">
                       <button
                         onClick={() => toggleSave(verse.ayah)}
@@ -210,7 +198,6 @@ export default function TafsirPage({ params }: PageProps) {
                   </div>
                 )}
 
-                {/* No Tafsir Available */}
                 {isSelected && !verse.hasTafsir && (
                   <div className="p-4 border-t text-center">
                     <p className="text-muted-foreground">
@@ -226,7 +213,6 @@ export default function TafsirPage({ params }: PageProps) {
           })}
         </div>
 
-        {/* Related Resources */}
         <div className="mt-8">
           <h3 className="font-semibold mb-4">📚 Related Resources</h3>
           <div className="grid grid-cols-2 gap-4">
