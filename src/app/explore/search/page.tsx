@@ -28,13 +28,15 @@ export default function SearchPage() {
     "Prayer times",
   ];
 
-  const searchResults: SearchResult[] = [
+  const allResults: SearchResult[] = [
     { type: "surah", title: "Al-Fatiha", subtitle: "7 Verses • The Opening", link: "/quran/1" },
     { type: "surah", title: "Al-Baqarah", subtitle: "286 Verses • The Cow", link: "/quran/2" },
     { type: "hadith", title: "Intention", subtitle: "Sahih Bukhari #1", link: "/hadith/1" },
     { type: "dua", title: "Before Sleeping", subtitle: "Daily duas", link: "/fahm/duas" },
     { type: "story", title: "Prophet Ibrahim (AS)", subtitle: "Stories • 12 Episodes", link: "/noor/story/2" },
-  ].filter(r => r.title.toLowerCase().includes(query.toLowerCase()));
+  ];
+
+  const searchResults = query ? allResults.filter(r => r.title.toLowerCase().includes(query.toLowerCase())) : [];
 
   return (
     <div className="min-h-screen bg-white">

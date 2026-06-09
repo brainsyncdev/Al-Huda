@@ -1,209 +1,277 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "tw-animate-css";
 
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+@custom-variant dark (&:is(.dark *));
 
-@layer base {
-  :root {
-    --background: 40 30% 97%;
-    --foreground: 220 25% 15%;
-    --card: 0 0% 100%;
-    --card-foreground: 220 25% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 15%;
-    --primary: 195 58% 32%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 40 60% 94%;
-    --secondary-foreground: 220 25% 15%;
-    --muted: 40 30% 94%;
-    --muted-foreground: 220 10% 45%;
-    --accent: 42 80% 55%;
-    --accent-foreground: 220 25% 15%;
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 40 20% 88%;
-    --input: 40 20% 88%;
-    --ring: 195 58% 32%;
-    --radius: 0.75rem;
-    
-    /* Al-Huda Mode Colors */
-    --noor-start: 270 50% 40%;
-    --noor-end: 280 45% 55%;
-    --fahm-start: 195 58% 32%;
-    --fahm-end: 200 52% 42%;
-    --explore-start: 200 55% 35%;
-    --explore-end: 210 50% 45%;
-    
-    /* Semantic Colors */
-    --sahih: 152 55% 42%;
-    --hasan: 38 92% 50%;
-    --daif: 25 85% 55%;
-    --cream: 40 30% 97%;
-    --gold: 42 70% 55%;
-  }
-  
-  .dark {
-    --background: 220 25% 8%;
-    --foreground: 40 20% 95%;
-    --card: 220 20% 12%;
-    --card-foreground: 40 20% 95%;
-    --popover: 220 20% 12%;
-    --popover-foreground: 40 20% 95%;
-    --primary: 195 55% 50%;
-    --primary-foreground: 220 25% 8%;
-    --secondary: 220 15% 18%;
-    --secondary-foreground: 40 20% 95%;
-    --muted: 220 15% 18%;
-    --muted-foreground: 220 10% 60%;
-    --accent: 42 75% 55%;
-    --accent-foreground: 220 25% 8%;
-    --destructive: 0 65% 55%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 195 55% 50%;
-  }
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --color-sidebar-background: #faf9f7;
+  --color-sidebar-foreground: #1c1917;
+  --color-sidebar-primary: #16a34a;
+  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-accent: #f5f5f4;
+  --color-sidebar-accent-foreground: #1c1917;
+  --color-sidebar-border: #e7e5e4;
+  --color-sidebar-ring: #16a34a;
+  --color-sidebar-text: #44403c;
+  --color-sidebar-text-muted: #78716c;
+  --color-navbar: #ffffff;
+  --color-navbar-border: #e7e5e4;
+  --color-card-bg: #faf9f7;
+  --color-card-border: #e7e5e4;
+  --color-card-hover: #f5f5f4;
+  --color-primary-green: #16a34a;
+  --color-primary-green-hover: #15803d;
+  --color-primary-green-light: #dcfce7;
+  --color-secondary-green: #f0fdf4;
+  --color-gold: #b45309;
+  --color-gold-light: #fef3c7;
+  --radius-card: 0.75rem;
+}
+
+:root {
+  --background: oklch(0.995 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(0.99 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(0.99 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --color-sidebar-background: oklch(0.205 0 0);
+  --color-sidebar-foreground: oklch(0.985 0 0);
+  --color-sidebar-primary: oklch(0.488 0.243 145.2);
+  --color-sidebar-primary-foreground: oklch(0.985 0 0);
+  --color-sidebar-accent: oklch(0.269 0 0);
+  --color-sidebar-accent-foreground: oklch(0.985 0 0);
+  --color-sidebar-border: oklch(1 0 0 / 10%);
+  --color-sidebar-ring: oklch(0.488 0.243 145.2);
+  --color-sidebar-text: oklch(0.708 0 0);
+  --color-sidebar-text-muted: oklch(0.556 0 0);
+  --color-navbar: oklch(0.205 0 0);
+  --color-navbar-border: oklch(1 0 0 / 10%);
+  --color-card-bg: oklch(0.205 0 0);
+  --color-card-border: oklch(1 0 0 / 10%);
+  --color-card-hover: oklch(0.269 0 0);
+  --color-primary-green: oklch(0.627 0.194 149.214);
+  --color-primary-green-hover: oklch(0.552 0.181 150.948);
+  --color-primary-green-light: oklch(0.954 0.038 145.525);
+  --color-secondary-green: oklch(0.973 0.026 145.388);
+  --color-gold: oklch(0.705 0.191 83.716);
+  --color-gold-light: oklch(0.942 0.094 86.047);
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border outline-ring/10;
   }
-  
   body {
-    @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
-  }
-  
-  /* Arabic Text Styling */
-  .arabic-text {
-    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
-    direction: rtl;
-    line-height: 2.4;
-    text-align: justify;
-    text-align-last: center;
-  }
-  
-  .urdu-text {
-    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif;
-    direction: rtl;
-    line-height: 2.2;
-  }
-  
-  /* Word-by-word Arabic */
-  .arabic-word {
-    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
-    direction: rtl;
-    display: inline-block;
-    padding: 0.25rem 0.5rem;
-    margin: 0.125rem;
-    border-radius: 0.5rem;
-    background: hsl(var(--muted));
-    transition: all 0.2s ease;
-  }
-  
-  .arabic-word:hover {
-    background: hsl(var(--primary) / 0.1);
-    transform: scale(1.05);
-  }
-  
-  .arabic-word.highlighted {
-    background: hsl(var(--gold) / 0.3);
-    box-shadow: 0 0 0 2px hsl(var(--gold));
+    @apply bg-background text-foreground;
+    font-family: "Noto Sans Arabic", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 }
 
-/* Animation */
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.4); }
-  50% { box-shadow: 0 0 20px 10px hsl(var(--gold) / 0.2); }
-}
-
-.animate-in {
-  animation: fade-in 0.3s ease-out;
-}
-
-.animate-slide-up {
-  animation: slide-up 0.4s ease-out;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-/* Custom scrollbar */
+/* Scrollbar Styles */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--muted));
-  border-radius: 4px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--muted-foreground) / 0.3);
+  background: oklch(0.708 0 0 / 0.3);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--muted-foreground) / 0.5;
+  background: oklch(0.708 0 0 / 0.5);
 }
 
-/* Mode Gradients */
-.mode-noor {
-  background: linear-gradient(135deg, hsl(var(--noor-start)), hsl(var(--noor-end)));
+.arabic-text {
+  font-family: "Amiri Quran", "Scheherazade New", "Traditional Arabic", "Uthmanic_Hafs_v18", serif;
+  font-size: 1.75rem;
+  line-height: 2.2;
+  direction: rtl;
 }
 
-.mode-fahm {
-  background: linear-gradient(135deg, hsl(var(--fahm-start)), hsl(var(--fahm-end)));
+.surah-header {
+  background: linear-gradient(135deg, var(--color-primary-green) 0%, var(--color-primary-green-hover) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.mode-explore {
-  background: linear-gradient(135deg, hsl(var(--explore-start)), hsl(var(--explore-end)));
+.bismillah {
+  font-family: "Amiri Quran", serif;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 1.5rem 0;
+  color: var(--color-gold);
 }
 
-/* Hadith Grades */
-.grade-sahih {
-  background: hsl(var(--sahih) / 0.1;
-  color: hsl(var(--sahih));
-  border-color: hsl(var(--sahih) / 0.3;
+.verse-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--color-primary-green-light);
+  color: var(--color-primary-green);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0 0.25rem;
 }
 
-.grade-hasan {
-  background: hsl(var(--hasan) / 0.1;
-  color: hsl(var(--hasan));
-  border-color: hsl(var(--hasan) / 0.3;
+.dark .verse-number {
+  background: oklch(0.488 0.243 145.2 / 0.2);
+  color: var(--color-primary-green);
 }
 
-.grade-daif {
-  background: hsl(var(--daif) / 0.1;
-  color: hsl(var(--daif));
-  border-color: hsl(var(--daif) / 0.3;
+.tafsir-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-sidebar-text-muted);
 }
 
-/* Safe area for mobile */
-.safe-area-top {
-  padding-top: env(safe-area-inset-top);
+.surah-card {
+  transition: all 0.2s ease-in-out;
 }
 
-.safe-area-bottom {
-  padding-bottom: env(safe-area-inset-bottom);
+.surah-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px oklch(0 0 0 / 0.1);
 }
 
-/* RTL Support */
-[dir="rtl"] .rtl-flip {
-  transform: scaleX(-1);
+.dark .surah-card:hover {
+  box-shadow: 0 4px 12px oklch(0 0 0 / 0.3);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+.page-transition {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+.juz-header {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bookmark-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
