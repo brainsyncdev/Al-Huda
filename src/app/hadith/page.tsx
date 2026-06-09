@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Search, Bookmark, Volume2, Share2, Filter } from "lucide-react";
-import { authenticHadiths, hadithBooks } from "@/data/hadith-data";
+import { ArrowLeft, Search, Bookmark, Filter } from "lucide-react";
+import { authenticHadiths, hadithBooks, type Hadith } from "@/data/hadith-data";
 
 export default function HadithPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [savedHadiths, setSavedHadiths] = useState<number[]>([1]);
 
-  const filteredHadiths = authenticHadiths.filter((hadith) => {
+  const filteredHadiths: Hadith[] = authenticHadiths.filter((hadith) => {
     const matchesSearch =
       searchQuery === "" ||
       hadith.translation.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -28,9 +28,10 @@ export default function HadithPage() {
     );
   };
 
+  const formatGrade = (grade: string) => grade.charAt(0).toUpperCase() + grade.slice(1);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
-      {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="max-w-3xl mx-auto px-4 py-4">
           <div className="flex items-center gap-4 mb-4">
@@ -43,7 +44,6 @@ export default function HadithPage() {
             </div>
           </div>
 
-          {/* Search */}
           <div className="relative mb-4">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <input
@@ -55,7 +55,6 @@ export default function HadithPage() {
             />
           </div>
 
-          {/* Book Filter */}
           <div className="flex gap-2 overflow-x-auto pb-2">
             <button
               onClick={() => setSelectedBook(null)}
@@ -81,7 +80,6 @@ export default function HadithPage() {
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-6">
-        {/* Stats Banner */}
         <div className="bg-gradient-to-r from-indigo-500 to-purple-500 rounded-2xl p-4 mb-6 text-white">
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
@@ -99,7 +97,6 @@ export default function HadithPage() {
           </div>
         </div>
 
-        {/* Hadith Cards */}
         {filteredHadiths.length === 0 ? (
           <div className="text-center py-12">
             <Search className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
@@ -121,7 +118,7 @@ export default function HadithPage() {
                       </span>
                     </div>
                     <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-700 text-xs">
-                      ✅ {hadith.grade.charAt(0).toUpperCase() + hadith.grade.slice(1)}
+                      ✅ {formatGrade(hadith.grade)}
                     </span>
                   </div>
 
@@ -161,7 +158,6 @@ export default function HadithPage() {
           </div>
         )}
 
-        {/* Hadith Books Section */}
         <div className="mt-8">
           <h3 className="font-semibold mb-4">📚 Popular Hadith Books</h3>
           <div className="grid grid-cols-2 gap-3">

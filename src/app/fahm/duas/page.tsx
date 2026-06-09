@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowLeft, Search, Heart, Share2, Volume2, Copy, Clock, Bookmark } from "lucide-react";
+import { ArrowLeft, Search, Heart, Share2, Volume2, Copy, Bookmark } from "lucide-react";
 
 interface Dua {
   id: number;
@@ -98,84 +98,90 @@ const duas: Dua[] = [
   },
 ];
 
-export default class DuasPage extends Component {
-  render() {
-    return (
-      <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
-        <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
-          <div className="max-w-2xl mx-auto px-4 py-4">
-            <div className="flex items-center gap-4 mb-4">
-              <Link href="/fahm" className="p-2 -ml-2 rounded-lg hover:bg-secondary">
-                <ArrowLeft className="h-5 w-5" />
-              </Link>
-              <div className="flex-1">
-                <h1 className="font-semibold">Duas Collection</h1>
-                <p className="text-xs text-muted-foreground">دعائیں — Supplications</p>
-              </div>
-            </div>
+export default function DuasPage() {
+  const [savedDuas, setSavedDuas] = useState<number[]>([1]);
 
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <input
-                type="text"
-                placeholder="Search duas..."
-                className="w-full pl-10 pr-4 py-2 rounded-xl bg-secondary/50 border-0"
-              />
+  const toggleSave = (id: number) => {
+    setSavedDuas((prev) =>
+      prev.includes(id) ? prev.filter((n) => n !== id) : [...prev, id]
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-white">
+      <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
+        <div className="max-w-2xl mx-auto px-4 py-4">
+          <div className="flex items-center gap-4 mb-4">
+            <Link href="/fahm" className="p-2 -ml-2 rounded-lg hover:bg-secondary">
+              <ArrowLeft className="h-5 w-5" />
+            </Link>
+            <div className="flex-1">
+              <h1 className="font-semibold">Duas Collection</h1>
+              <p className="text-xs text-muted-foreground">دعائیں — Supplications</p>
             </div>
           </div>
-        </header>
 
-        <main className="max-w-2xl mx-auto px-4 py-6">
-          <div className="space-y-4">
-            {duas.map((dua) => (
-              <div key={dua.id} className="bg-card rounded-2xl border overflow-hidden">
-                <div className="p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm">
-                      {dua.occasion}
-                    </span>
-                    <div className="flex gap-2">
-                      {dua.audio && (
-                        <button className="p-2 rounded-lg hover:bg-emerald-100 text-emerald-600">
-                          <Volume2 className="h-4 w-4" />
-                        </button>
-                      )}
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <input
+              type="text"
+              placeholder="Search duas..."
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-secondary/50 border-0"
+            />
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-2xl mx-auto px-4 py-6">
+        <div className="space-y-4">
+          {duas.map((dua) => (
+            <div key={dua.id} className="bg-card rounded-2xl border overflow-hidden">
+              <div className="p-4">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm">
+                    {dua.occasion}
+                  </span>
+                  <div className="flex gap-2">
+                    {dua.audio && (
                       <button className="p-2 rounded-lg hover:bg-emerald-100 text-emerald-600">
-                        <Heart className="h-4 w-4" />
+                        <Volume2 className="h-4 w-4" />
                       </button>
-                    </div>
-                  </div>
-
-                  <h3 className="font-semibold mb-1">{dua.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-3 urdu-text" dir="rtl">
-                    {dua.titleUrdu}
-                  </p>
-
-                  <p className="arabic-text text-2xl text-right mb-4" dir="rtl">
-                    {dua.arabic}
-                  </p>
-
-                  <div className="bg-emerald-50 rounded-xl p-4 mb-4">
-                    <p className="text-emerald-800 italic mb-2">{dua.transliteration}</p>
-                    <p className="text-sm text-emerald-700">{dua.translation}</p>
-                  </div>
-
-                  <div className="flex gap-3">
-                    <button className="flex-1 py-2 rounded-lg bg-emerald-100 text-emerald-700 font-medium flex items-center justify-center gap-2 hover:bg-emerald-200 transition-colors">
-                      <Bookmark className="h-4 w-4" />
-                      Save
-                    </button>
-                    <button className="flex-1 py-2 rounded-lg bg-emerald-600 text-white font-medium flex items-center justify-center gap-2 hover:bg-emerald-700 transition-colors">
-                      <Copy className="h-4 w-4" />
-                      Copy
+                    )}
+                    <button className="p-2 rounded-lg hover:bg-emerald-100 text-emerald-600">
+                      <Heart className="h-4 w-4" />
                     </button>
                   </div>
                 </div>
+
+                <h3 className="font-semibold mb-1">{dua.title}</h3>
+                <p className="text-sm text-muted-foreground mb-3 urdu-text" dir="rtl">
+                  {dua.titleUrdu}
+                </p>
+
+                <p className="arabic-text text-2xl text-right mb-4" dir="rtl">
+                  {dua.arabic}
+                </p>
+
+                <div className="bg-emerald-50 rounded-xl p-4 mb-4">
+                  <p className="text-emerald-800 italic mb-2">{dua.transliteration}</p>
+                  <p className="text-sm text-emerald-700">{dua.translation}</p>
+                </div>
+
+                <div className="flex gap-3">
+                  <button className="flex-1 py-2 rounded-lg bg-emerald-100 text-emerald-700 font-medium flex items-center justify-center gap-2 hover:bg-emerald-200 transition-colors">
+                    <Bookmark className="h-4 w-4" />
+                    Save
+                  </button>
+                  <button className="flex-1 py-2 rounded-lg bg-emerald-600 text-white font-medium flex items-center justify-center gap-2 hover:bg-emerald-700 transition-colors">
+                    <Copy className="h-4 w-4" />
+                    Copy
+                  </button>
+                </div>
               </div>
-            ))}
-          </div>
-        </main>
-      </div>
-    );
-  }
+            </div>
+          ))}
+        </div>
+      </main>
+    </div>
+  );
 }

@@ -3,7 +3,7 @@
 import { use, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Heart, Share2, Volume2, ChevronRight, ChevronLeft, Bookmark, ExternalLink, Copy } from "lucide-react";
-import { authenticHadiths } from "@/data/hadith-data";
+import { authenticHadiths, type Hadith } from "@/data/hadith-data";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -16,10 +16,10 @@ export default function HadithDetailPage({ params }: PageProps) {
   const [saved, setSaved] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const hadith = authenticHadiths.find(h => h.id === hadithId);
+  const hadith: Hadith | undefined = authenticHadiths.find(h => h.id === hadithId);
   const currentIndex = authenticHadiths.findIndex(h => h.id === hadithId);
-  const prevHadith = currentIndex > 0 ? authenticHadiths[currentIndex - 1] : null;
-  const nextHadith = currentIndex < authenticHadiths.length - 1 ? authenticHadiths[currentIndex + 1] : null;
+  const prevHadith: Hadith | undefined = currentIndex > 0 ? authenticHadiths[currentIndex - 1] : undefined;
+  const nextHadith: Hadith | undefined = currentIndex < authenticHadiths.length - 1 ? authenticHadiths[currentIndex + 1] : undefined;
 
   if (!hadith) {
     return (
@@ -36,9 +36,10 @@ export default function HadithDetailPage({ params }: PageProps) {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const formatGrade = (grade: string) => grade.charAt(0).toUpperCase() + grade.slice(1);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
-      {/* Header */}
       <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b">
         <div className="max-w-2xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
@@ -67,9 +68,7 @@ export default function HadithDetailPage({ params }: PageProps) {
       </header>
 
       <main className="max-w-2xl mx-auto px-4 py-6">
-        {/* Hadith Card */}
         <div className="bg-card rounded-2xl border overflow-hidden mb-6">
-          {/* Header */}
           <div className="bg-indigo-50 p-4 border-b">
             <div className="flex items-center justify-between">
               <div>
@@ -87,7 +86,6 @@ export default function HadithDetailPage({ params }: PageProps) {
             )}
           </div>
 
-          {/* Arabic Text */}
           {showArabic && (
             <div className="p-6 border-b">
               <p className="arabic-text text-2xl leading-loose text-right" dir="rtl">
@@ -96,12 +94,10 @@ export default function HadithDetailPage({ params }: PageProps) {
             </div>
           )}
 
-          {/* Transliteration */}
           <div className="bg-gray-50 p-4 border-b">
             <p className="text-sm italic text-gray-600">{hadith.transliteration}</p>
           </div>
 
-          {/* Translation */}
           <div className="p-6 space-y-4">
             <div>
               <h3 className="font-medium mb-2">English Translation</h3>
@@ -114,17 +110,15 @@ export default function HadithDetailPage({ params }: PageProps) {
             </div>
           </div>
 
-          {/* Category & Grade */}
           <div className="px-6 pb-4 flex gap-2 flex-wrap">
             <span className="px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm">
               {hadith.category}
             </span>
             <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm">
-              ✅ {hadith.grade.charAt(0).toUpperCase() + hadith.grade.slice(1)}
+              ✅ {formatGrade(hadith.grade)}
             </span>
           </div>
 
-          {/* Benefits */}
           {hadith.benefits && hadith.benefits.length > 0 && (
             <div className="px-6 pb-4">
               <h3 className="font-medium mb-3">✨ Key Benefits</h3>
@@ -139,7 +133,6 @@ export default function HadithDetailPage({ params }: PageProps) {
             </div>
           )}
 
-          {/* Actions */}
           <div className="p-4 border-t flex gap-3">
             <button className="flex-1 py-3 rounded-xl bg-indigo-100 text-indigo-700 font-medium flex items-center justify-center gap-2 hover:bg-indigo-200 transition-colors">
               <Volume2 className="h-5 w-5" />
@@ -154,13 +147,11 @@ export default function HadithDetailPage({ params }: PageProps) {
             </button>
           </div>
 
-          {/* Source */}
           <div className="px-6 pb-4 text-center">
             <p className="text-xs text-muted-foreground">Source: {hadith.source}</p>
           </div>
         </div>
 
-        {/* Navigation */}
         <div className="flex justify-between">
           {prevHadith ? (
             <Link
@@ -189,7 +180,6 @@ export default function HadithDetailPage({ params }: PageProps) {
           )}
         </div>
 
-        {/* External Links */}
         <div className="mt-6 bg-card rounded-xl border p-4">
           <h3 className="font-medium mb-3">📚 Related Resources</h3>
           <a
