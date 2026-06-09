@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Noto+Naskh+Arabic:wght@400;700&display=swap');
+
 @layer base {
   :root {
     --background: 40 30% 97%;
@@ -10,7 +12,7 @@
     --card-foreground: 220 25% 15%;
     --popover: 0 0% 100%;
     --popover-foreground: 220 25% 15%;
-    --primary: 204 62% 35%;
+    --primary: 195 58% 32%;
     --primary-foreground: 0 0% 98%;
     --secondary: 40 60% 94%;
     --secondary-foreground: 220 25% 15%;
@@ -22,21 +24,23 @@
     --destructive-foreground: 0 0% 98%;
     --border: 40 20% 88%;
     --input: 40 20% 88%;
-    --ring: 204 62% 35%;
+    --ring: 195 58% 32%;
     --radius: 0.75rem;
     
     /* Al-Huda Mode Colors */
     --noor-start: 270 50% 40%;
     --noor-end: 280 45% 55%;
-    --fahm-start: 204 62% 35%;
-    --fahm-end: 206 58% 45%;
-    --explore-start: 204 55% 35%;
+    --fahm-start: 195 58% 32%;
+    --fahm-end: 200 52% 42%;
+    --explore-start: 200 55% 35%;
     --explore-end: 210 50% 45%;
     
     /* Semantic Colors */
     --sahih: 152 55% 42%;
     --hasan: 38 92% 50%;
     --daif: 25 85% 55%;
+    --cream: 40 30% 97%;
+    --gold: 42 70% 55%;
   }
   
   .dark {
@@ -46,7 +50,7 @@
     --card-foreground: 40 20% 95%;
     --popover: 220 20% 12%;
     --popover-foreground: 40 20% 95%;
-    --primary: 204 55% 50%;
+    --primary: 195 55% 50%;
     --primary-foreground: 220 25% 8%;
     --secondary: 220 15% 18%;
     --secondary-foreground: 40 20% 95%;
@@ -58,7 +62,7 @@
     --destructive-foreground: 0 0% 98%;
     --border: 220 15% 20%;
     --input: 220 15% 20%;
-    --ring: 204 55% 50%;
+    --ring: 195 55% 50%;
   }
 }
 
@@ -69,7 +73,7 @@
   
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: var(--font-geist-sans), system-ui, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
   }
   
   /* Arabic Text Styling */
@@ -86,6 +90,28 @@
     direction: rtl;
     line-height: 2.2;
   }
+  
+  /* Word-by-word Arabic */
+  .arabic-word {
+    font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+    direction: rtl;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    margin: 0.125rem;
+    border-radius: 0.5rem;
+    background: hsl(var(--muted));
+    transition: all 0.2s ease;
+  }
+  
+  .arabic-word:hover {
+    background: hsl(var(--primary) / 0.1);
+    transform: scale(1.05);
+  }
+  
+  .arabic-word.highlighted {
+    background: hsl(var(--gold) / 0.3);
+    box-shadow: 0 0 0 2px hsl(var(--gold));
+  }
 }
 
 /* Animation */
@@ -94,8 +120,26 @@
   to { opacity: 1; }
 }
 
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 hsl(var(--gold) / 0.4); }
+  50% { box-shadow: 0 0 20px 10px hsl(var(--gold) / 0.2); }
+}
+
 .animate-in {
-  animation: fade-in 0.2s ease-out;
+  animation: fade-in 0.3s ease-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
 /* Custom scrollbar */
@@ -112,4 +156,54 @@
 ::-webkit-scrollbar-thumb {
   background: hsl(var(--muted-foreground) / 0.3);
   border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5;
+}
+
+/* Mode Gradients */
+.mode-noor {
+  background: linear-gradient(135deg, hsl(var(--noor-start)), hsl(var(--noor-end)));
+}
+
+.mode-fahm {
+  background: linear-gradient(135deg, hsl(var(--fahm-start)), hsl(var(--fahm-end)));
+}
+
+.mode-explore {
+  background: linear-gradient(135deg, hsl(var(--explore-start)), hsl(var(--explore-end)));
+}
+
+/* Hadith Grades */
+.grade-sahih {
+  background: hsl(var(--sahih) / 0.1;
+  color: hsl(var(--sahih));
+  border-color: hsl(var(--sahih) / 0.3;
+}
+
+.grade-hasan {
+  background: hsl(var(--hasan) / 0.1;
+  color: hsl(var(--hasan));
+  border-color: hsl(var(--hasan) / 0.3;
+}
+
+.grade-daif {
+  background: hsl(var(--daif) / 0.1;
+  color: hsl(var(--daif));
+  border-color: hsl(var(--daif) / 0.3;
+}
+
+/* Safe area for mobile */
+.safe-area-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* RTL Support */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
 }
