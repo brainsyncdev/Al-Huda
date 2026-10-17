@@ -2,151 +2,167 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Al-Huda design tokens.
+ * Light-first, warm parchment palette with deep emerald and gold accents.
+ * HSL components only — mapped via hsl(var(--x)) in tailwind.config.ts.
+ */
 @layer base {
   :root {
-    --background: oklch(0.995 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(0.99 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(0.99 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
-    --destructive: oklch(0.55 0.2 25);
-    --destructive-foreground: oklch(0.985 0 0);
-    --border: oklch(0.922 0 0);
-    --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
-    --chart-1: oklch(0.646 0.222 41.116);
-    --chart-2: oklch(0.6 0.118 184.704);
-    --chart-3: oklch(0.398 0.07 227.392);
-    --chart-4: oklch(0.828 0.189 84.429);
-    --chart-5: oklch(0.769 0.188 70.08);
-    --radius: 0.5rem;
-    --sidebar-background: #faf9f7;
-    --sidebar-foreground: #1c1917;
-    --sidebar-primary: #16a34a;
-    --sidebar-primary-foreground: #ffffff;
-    --sidebar-accent: #f5f5f4;
-    --sidebar-accent-foreground: #1c1917;
-    --sidebar-border: #e7e5e4;
-    --sidebar-ring: #16a34a;
-    --sidebar-text: #44403c;
-    --sidebar-text-muted: #78716c;
-    --navbar: #ffffff;
-    --navbar-border: #e7e5e4;
-    --card-bg: #fafaf9;
-    --card-border: #e7e5e4;
-    --card-hover: #f5f5f4;
-    --primary-green: #16a34a;
-    --primary-green-hover: #15803d;
-    --primary-green-light: #dcfce7;
-    --secondary-green: #f0fdf4;
-    --gold: #b45309;
-    --gold-light: #fef3c7;
-    --radius-card: 0.75rem;
+    /* Warm ivory parchment */
+    --background: 42 46% 97%;
+    /* Deep ink — green-black, never pure black */
+    --foreground: 168 30% 12%;
+    --card: 40 55% 98.5%;
+    --card-foreground: 168 30% 12%;
+    --popover: 40 55% 98.5%;
+    --popover-foreground: 168 30% 12%;
+    /* Deep emerald */
+    --primary: 162 68% 20%;
+    --primary-foreground: 42 40% 96%;
+    /* Soft sage */
+    --secondary: 145 22% 91%;
+    --secondary-foreground: 162 45% 16%;
+    --muted: 40 30% 92%;
+    --muted-foreground: 158 10% 36%;
+    /* Gold tint wash */
+    --accent: 40 52% 91%;
+    --accent-foreground: 38 62% 26%;
+    --destructive: 0 62% 42%;
+    --destructive-foreground: 40 40% 96%;
+    --border: 40 28% 85%;
+    --input: 40 25% 80%;
+    --ring: 162 68% 20%;
+    /* Brand extras */
+    --gold: 38 64% 34%;
+    --gold-soft: 42 52% 90%;
+    --emerald-soft: 155 32% 89%;
+    --radius: 1rem;
   }
 
   .dark {
-    --background: oklch(0.145 0 0);
-    --foreground: oklch(0.985 0 0);
-    --card: oklch(0.205 0 0);
-    --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
-    --popover-foreground: oklch(0.985 0 0);
-    --primary: oklch(0.922 0 0);
-    --primary-foreground: oklch(0.205 0 0);
-    --secondary: oklch(0.269 0 0);
-    --secondary-foreground: oklch(0.985 0 0);
-    --muted: oklch(0.269 0 0);
-    --muted-foreground: oklch(0.708 0 0);
-    --accent: oklch(0.269 0 0);
-    --accent-foreground: oklch(0.985 0 0);
-    --destructive: oklch(0.704 0.191 22.216);
-    --destructive-foreground: oklch(0.985 0 0);
-    --border: oklch(1 0 0 / 10%);
-    --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
-    --chart-1: oklch(0.488 0.243 264.376);
-    --chart-2: oklch(0.696 0.17 162.48);
-    --chart-3: oklch(0.769 0.188 70.08);
-    --chart-4: oklch(0.627 0.265 303.9);
-    --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar-background: oklch(0.205 0 0);
-    --sidebar-foreground: oklch(0.985 0 0);
-    --sidebar-primary: oklch(0.488 0.243 145.2);
-    --sidebar-primary-foreground: oklch(0.985 0 0);
-    --sidebar-accent: oklch(0.269 0 0);
-    --sidebar-accent-foreground: oklch(0.985 0 0);
-    --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.488 0.243 145.2);
-    --sidebar-text: oklch(0.708 0 0);
-    --sidebar-text-muted: oklch(0.556 0 0);
-    --navbar: oklch(0.205 0 0);
-    --navbar-border: oklch(1 0 0 / 10%);
-    --card-bg: oklch(0.205 0 0);
-    --card-border: oklch(1 0 0 / 10%);
-    --card-hover: oklch(0.269 0 0);
-    --primary-green: oklch(0.627 0.194 149.214);
-    --primary-green-hover: oklch(0.552 0.181 150.948);
-    --primary-green-light: oklch(0.954 0.038 145.525);
-    --secondary-green: oklch(0.973 0.026 145.388);
-    --gold: oklch(0.705 0.191 83.716);
-    --gold-light: oklch(0.942 0.094 86.047);
+    --background: 170 28% 8%;
+    --foreground: 145 18% 93%;
+    --card: 170 26% 11%;
+    --card-foreground: 145 18% 93%;
+    --popover: 170 26% 11%;
+    --popover-foreground: 145 18% 93%;
+    --primary: 160 45% 42%;
+    --primary-foreground: 170 28% 8%;
+    --secondary: 170 22% 16%;
+    --secondary-foreground: 150 20% 86%;
+    --muted: 170 20% 15%;
+    --muted-foreground: 155 10% 68%;
+    --accent: 38 40% 18%;
+    --accent-foreground: 40 55% 80%;
+    --destructive: 0 55% 50%;
+    --destructive-foreground: 40 40% 96%;
+    --border: 170 18% 20%;
+    --input: 170 16% 24%;
+    --ring: 160 45% 42%;
+    --gold: 38 55% 62%;
+    --gold-soft: 38 30% 16%;
+    --emerald-soft: 160 25% 14%;
   }
 }
 
 @layer base {
   * {
-    border-color: var(--border);
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    background-color: var(--background);
-    color: var(--foreground);
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: hsl(var(--emerald-soft));
+    color: hsl(var(--foreground));
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
   }
 }
 
-/* Scrollbar styles */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
+/* Arabic / Quran text ------------------------------------------------------ */
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: oklch(0.708 0 0 / 0.3);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.708 0 0 / 0.5);
-}
-
-/* Arabic text styling */
 .arabic-text {
-  font-family: "Amiri Quran", "Scheherazade New", "Traditional Arabic", "Uthmanic_Hafs_v18", serif;
-  font-size: 1.75rem;
-  line-height: 2.2;
+  font-family: var(--font-quran), "Amiri Quran", "Scheherazade New",
+    "Traditional Arabic", serif;
   direction: rtl;
+  unicode-bidi: embed;
+  text-align: right;
+  line-height: 2.2;
 }
 
-/* Urdu text styling */
-.urdu-text {
-  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", serif;
-  line-height: 1.8;
+.arabic-display {
+  font-family: var(--font-quran), "Amiri Quran", "Scheherazade New", serif;
+  direction: rtl;
+  unicode-bidi: embed;
 }
 
-/* Custom utilities */
+/* Ornamental ayah number marker */
+.ayah-number {
+  font-family: var(--font-display), Georgia, serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.35rem;
+  border: 1.5px solid hsl(var(--gold) / 0.45);
+  border-radius: 9999px;
+  color: hsl(var(--gold));
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* Staggered entrance for the home hero (single coordinated sequence) */
+.rise-in {
+  animation: fade-up 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Respect reduced motion everywhere */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise-in,
+  .animate-fade-up {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Subtle parchment grain for hero panels (no gradients) */
+.parchment-panel {
+  background-color: hsl(var(--card));
+  box-shadow:
+    0 1px 2px hsl(var(--foreground) / 0.04),
+    0 12px 32px -16px hsl(var(--foreground) / 0.12);
+}
+
+/* Thin gold rule used as an ornamental divider */
+.gold-rule {
+  border: 0;
+  height: 1px;
+  background: hsl(var(--gold) / 0.35);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
