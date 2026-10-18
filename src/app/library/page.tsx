@@ -7,8 +7,8 @@ import { toast } from "sonner";
 import { useLibrary } from "@/lib/library/context";
 import { absoluteUrl } from "@/lib/site";
 
-// Library content is personal and local-only; keep this page out of search indexes.
-export const metadata = { robots: { index: false } };
+// Note: noindex for this route is handled in ./layout.tsx (a `metadata` export
+// in a "use client" page is ignored by the App Router).
 
 function refPath(surah: number, ayah: number) {
   return `/ayah/${surah}/${ayah}`;

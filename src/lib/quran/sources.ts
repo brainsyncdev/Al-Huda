@@ -66,6 +66,29 @@ export const SOURCES: SourceRecord[] = [
     version: "As pinned by quran-json@3.1.2",
     method: "package",
   },
+  {
+    id: "tafsir-ibn-kathir",
+    provides: "Tafsir excerpts — Tafsir Ibn Kathir (English abridged)",
+    attribution: "Isma'il ibn Umar ibn Kathir; English translation by Darussalam",
+    publisher: "Available via external references (link-out only, not bundled)",
+    license: "Check external source; not redistributed by this app (FR-032)",
+    homepage: "https://www.qtafsir.com/",
+    version: "Link target, not version-pinned in this app",
+    method: "link",
+    notes:
+      "The app provides outbound links only for tafsir (FR-031 distinguishes link-to-external). No tafsir text is displayed or stored locally. Licensing, permitted display, and edition details are the responsibility of the linked publisher.",
+  },
+  {
+    id: "tafsir-ma(arif)",
+    provides: "Tafsir excerpts — Ma'ariful Quran (English)",
+    attribution: "Mufti Muhammad Shafi Usmani",
+    publisher: "Available via external references (link-out only)",
+    license: "Check external source; not redistributed by this app (FR-032)",
+    homepage: "https://www.maarifulquran.org/",
+    version: "Link target, not version-pinned in this app",
+    method: "link",
+    notes: "Link-out only for tafsir; no text bundled.",
+  },
 ];
 
 export function getSource(id: string): SourceRecord | undefined {

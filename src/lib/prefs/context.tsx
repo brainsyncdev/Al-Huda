@@ -13,17 +13,21 @@ import {
 } from "react";
 
 export type ArabicSize = "sm" | "md" | "lg" | "xl";
+export type LineHeight = "compact" | "normal" | "loose";
 
 export const ARABIC_SIZES: ArabicSize[] = ["sm", "md", "lg", "xl"];
+export const LINE_HEIGHTS: LineHeight[] = ["compact", "normal", "loose"];
 
 export interface Prefs {
   arabicSize: ArabicSize;
+  lineHeight: LineHeight;
   showTranslation: boolean;
   showTransliteration: boolean;
 }
 
 const DEFAULTS: Prefs = {
   arabicSize: "md",
+  lineHeight: "normal",
   showTranslation: true,
   showTransliteration: false,
 };
@@ -32,6 +36,7 @@ const STORAGE_KEY = "alhuda.prefs.v1";
 
 interface PrefsContextValue extends Prefs {
   setArabicSize: (size: ArabicSize) => void;
+  setLineHeight: (lh: LineHeight) => void;
   setShowTranslation: (show: boolean) => void;
   setShowTransliteration: (show: boolean) => void;
   hydrated: boolean;
@@ -50,6 +55,7 @@ export function PrefsProvider({ children }: { children: ReactNode }) {
         const parsed = JSON.parse(raw) as Partial<Prefs>;
         setPrefs({
           arabicSize: parsed.arabicSize ?? DEFAULTS.arabicSize,
+          lineHeight: parsed.lineHeight ?? DEFAULTS.lineHeight,
           showTranslation: parsed.showTranslation ?? DEFAULTS.showTranslation,
           showTransliteration:
             parsed.showTransliteration ?? DEFAULTS.showTransliteration,
@@ -74,6 +80,7 @@ export function PrefsProvider({ children }: { children: ReactNode }) {
       ...prefs,
       hydrated,
       setArabicSize: (arabicSize) => persist({ ...prefs, arabicSize }),
+      setLineHeight: (lineHeight) => persist({ ...prefs, lineHeight }),
       setShowTranslation: (showTranslation) => persist({ ...prefs, showTranslation }),
       setShowTransliteration: (showTransliteration) =>
         persist({ ...prefs, showTransliteration }),
@@ -100,5 +107,17 @@ export function arabicSizeClass(size: ArabicSize): string {
       return "text-[2.75rem] leading-[2.1]";
     default:
       return "text-[1.875rem] leading-[2.3]";
+  }
+}
+
+/** Class for Arabic line height (FR-006). */
+export function arabicLineHeightClass(lh: LineHeight): string {
+  switch (lh) {
+    case "compact":
+      return "leading-[1.8]";
+    case "loose":
+      return "leading-[2.6]";
+    default:
+      return "leading-[2.3]";
   }
 }

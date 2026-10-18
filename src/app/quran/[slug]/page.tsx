@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AyahCard } from "@/components/quran/ayah-card";
 import { ReaderControls } from "@/components/quran/reader-controls";
 import { SourcePanel } from "@/components/quran/source-panel";
+import { TafsirLinks } from "@/components/quran/tafsir-links";
 import { getSurah, getSurahIdBySlug, getSurahIndex } from "@/lib/quran/data";
 import { absoluteUrl } from "@/lib/site";
 
@@ -111,6 +112,7 @@ export default async function SurahPage({ params }: Props) {
         ))}
       </section>
 
+      <TafsirLinks surah={surah.id} ayah={1} />
       <SourcePanel />
 
       <nav className="flex flex-wrap items-center justify-between gap-3">

@@ -1,8 +1,12 @@
 "use client";
 
-import { CaseSensitive } from "lucide-react";
+import { CaseSensitive, AlignJustify } from "lucide-react";
 import { toast } from "sonner";
-import { arabicSizeClass, usePrefs, type ArabicSize } from "@/lib/prefs/context";
+import {
+  usePrefs,
+  type ArabicSize,
+  type LineHeight,
+} from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
 
 const SIZES: { value: ArabicSize; label: string }[] = [
@@ -12,14 +16,23 @@ const SIZES: { value: ArabicSize; label: string }[] = [
   { value: "xl", label: "XL" },
 ];
 
+const LINE_HEIGHT_LABELS: { value: LineHeight; label: string }[] = [
+  { value: "compact", label: "Compact" },
+  { value: "normal", label: "Normal" },
+  { value: "loose", label: "Loose" },
+];
+
 /**
- * Reader display controls (FR-006): Arabic text size and content visibility.
- * All state is local-only and applied immediately across the reader.
+ * Reader display controls (FR-006): Arabic text size, line spacing, reading
+ * layout, and content visibility. All state is local-only and applied
+ * immediately across the reader.
  */
 export function ReaderControls() {
   const {
     arabicSize,
     setArabicSize,
+    lineHeight,
+    setLineHeight,
     showTranslation,
     setShowTranslation,
     showTransliteration,
@@ -46,6 +59,34 @@ export function ReaderControls() {
               className={cn(
                 "min-w-9 rounded-full px-2.5 py-1 text-xs font-semibold transition-colors",
                 arabicSize === value
+                  ? "bg-primary text-primary-foreground"
+                  : "text-secondary-foreground hover:bg-background/70"
+              )}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </fieldset>
+
+      <fieldset className="flex items-center gap-3">
+        <legend className="sr-only">Line spacing</legend>
+        <AlignJustify className="h-4 w-4 text-muted-foreground" aria-hidden />
+        <span className="text-xs font-medium text-muted-foreground">Spacing</span>
+        <div
+          className="flex items-center gap-1 rounded-full bg-secondary p-1"
+          role="group"
+          aria-label="Line spacing"
+        >
+          {LINE_HEIGHT_LABELS.map(({ value, label }) => (
+            <button
+              key={value}
+              type="button"
+              onClick={() => setLineHeight(value)}
+              aria-pressed={lineHeight === value}
+              className={cn(
+                "rounded-full px-2.5 py-1 text-xs font-semibold transition-colors",
+                lineHeight === value
                   ? "bg-primary text-primary-foreground"
                   : "text-secondary-foreground hover:bg-background/70"
               )}
@@ -111,6 +152,3 @@ function TogglePill({
     </button>
   );
 }
-
-/** Static preview class helper for server components that render sample text. */
-export const sizePreviewClass = arabicSizeClass;

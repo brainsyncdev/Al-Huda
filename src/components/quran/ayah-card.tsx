@@ -5,7 +5,7 @@ import { Bookmark, Check, Copy, Link2, NotebookPen, Trash2 } from "lucide-react"
 import { toast } from "sonner";
 import type { Ayah } from "@/lib/quran/types";
 import { useLibrary } from "@/lib/library/context";
-import { arabicSizeClass, usePrefs } from "@/lib/prefs/context";
+import { arabicSizeClass, arabicLineHeightClass, usePrefs } from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
 import { absoluteUrl } from "@/lib/site";
 
@@ -37,7 +37,7 @@ export function AyahCard({
     deleteNote,
     recordVisit,
   } = useLibrary();
-  const { arabicSize, showTranslation, showTransliteration, hydrated } = usePrefs();
+  const { arabicSize, lineHeight, showTranslation, showTransliteration, hydrated } = usePrefs();
 
   const [copied, setCopied] = useState<"link" | "text" | null>(null);
   const [noteOpen, setNoteOpen] = useState(false);
@@ -101,7 +101,7 @@ export function AyahCard({
           "arabic-text text-foreground",
           variant === "full"
             ? hydrated
-              ? arabicSizeClass(arabicSize)
+              ? cn(arabicSizeClass(arabicSize), arabicLineHeightClass(lineHeight))
               : "text-[1.875rem] leading-[2.3]"
             : "text-[1.5rem] leading-[2.2]"
         )}
