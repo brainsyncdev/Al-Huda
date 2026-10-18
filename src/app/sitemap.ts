@@ -1,0 +1,35 @@
+import type { MetadataRoute } from "next";
+import { getSurahIndex } from "@/lib/quran/data";
+import { TOPICS } from "@/lib/topics/data";
+import { absoluteUrl } from "@/lib/site";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const index = getSurahIndex();
+  const today = new Date();
+
+  const staticRoutes = ["", "/quran", "/topics", "/search", "/about", "/sources", "/privacy", "/terms", "/accessibility"].map(
+    (path) => ({
+      url: absoluteUrl(path),
+      lastModified: today,
+      changeFrequency: "weekly" as const,
+      priority: path === "" ? 1 : 0.7,
+    })
+  );
+
+  const surahRoutes = index.map((s) => ({
+    url: absoluteUrl(`/quran/${s.slug}`),
+    lastModified: today,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  const topicRoutes = TOPICS.map((t) => ({
+    url: absoluteUrl(`/topics/${t.slug}`),
+    lastModified: today,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
+  }));
+
+  // Ayah pages are not indexed exhaustively (6,236 URLs) — only surfaced via surah/topic links.
+  return [...staticRoutes, ...surahRoutes, ...topicRoutes];
+}

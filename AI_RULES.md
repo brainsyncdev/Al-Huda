@@ -1,5 +1,12 @@
 # AI Development Rules
 
+This project follows the Product Requirements Document (PRD) in `docs/PRD.md` as the single source of truth for scope, constraints, and acceptance criteria.
+
+Key references:
+- PRD: `docs/PRD.md`
+- Data provenance: `docs/DATA-PROVENANCE.md`
+- AI safety: `docs/AI-SAFETY.md`
+
 This document outlines the technology stack and specific library usage guidelines for this Next.js application. Adhering to these rules will help maintain consistency, improve collaboration, and ensure the AI assistant can effectively understand and modify the codebase.
 
 ## Tech Stack Overview
@@ -69,5 +76,11 @@ To ensure consistency and leverage the chosen stack effectively, please follow t
 13. **TypeScript**:
     *   Write all new code in TypeScript.
     *   Strive for strong typing and leverage TypeScript's features to improve code quality and maintainability. Avoid using `any` where possible.
+
+14. **Content integrity (must follow PRD):**
+    *   Do not present AI-generated religious interpretation (tafsir, fatwa, rulings) as authoritative. Topic pages label their review status and explicitly state they are not tafsir.
+    *   Display Quran text, translations, and transliterations verbatim as distributed from pinned sources; never fabricate citations, ayahs, or hadiths.
+    *   Preserve provenance: cite sources via `docs/DATA-PROVENANCE.md`/Sources page; do not modify the bundled quran-json content.
+    *   Library notes and user data remain local-only (localStorage). No account system, no analytics.
 
 By following these guidelines, we can build a more robust, maintainable, and consistent application.

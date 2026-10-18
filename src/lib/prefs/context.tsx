@@ -14,6 +14,8 @@ import {
 
 export type ArabicSize = "sm" | "md" | "lg" | "xl";
 
+export const ARABIC_SIZES: ArabicSize[] = ["sm", "md", "lg", "xl"];
+
 export interface Prefs {
   arabicSize: ArabicSize;
   showTranslation: boolean;
