@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AlertTriangle } from "lucide-react";
 import { TopicAyahCard } from "@/components/topics/topic-ayah-card";
 import { getAyah, getSurah } from "@/lib/quran/data";
+import type { AyahRef } from "@/lib/quran/types";
 import { TOPICS, getTopic } from "@/lib/topics/data";
 import { absoluteUrl } from "@/lib/site";
 
@@ -35,6 +36,27 @@ export default async function TopicDetailPage({ params }: Props) {
     .map((s) => getTopic(s))
     .filter((t): t is NonNullable<typeof t> => Boolean(t));
 
+  // Resolve every curated reference against the pinned dataset up front. A
+  // relation whose ayah does not exist is reported on the page rather than
+  // silently skipped, so the visible count can never overstate what the
+  // editorial selection actually contains.
+  const resolved: {
+    relation: (typeof topic.relations)[number];
+    verse: NonNullable<ReturnType<typeof getAyah>>;
+    surah: NonNullable<ReturnType<typeof getSurah>>;
+  }[] = [];
+  const unresolved: { ref: AyahRef; type: string }[] = [];
+
+  for (const relation of topic.relations) {
+    const verse = getAyah(relation.ref.surah, relation.ref.ayah);
+    const surah = getSurah(relation.ref.surah);
+    if (!verse || !surah) {
+      unresolved.push({ ref: relation.ref, type: relation.type });
+      continue;
+    }
+    resolved.push({ relation, verse, surah });
+  }
+
   return (
     <div className="space-y-8 pb-8">
       <header className="space-y-3">
@@ -59,20 +81,41 @@ export default async function TopicDetailPage({ params }: Props) {
       </header>
 
       <section aria-label="Verses on this topic" className="space-y-4">
-        {topic.relations.map((relation) => {
-          const verse = getAyah(relation.ref.surah, relation.ref.ayah);
-          const surah = getSurah(relation.ref.surah);
-          if (!verse || !surah) return null;
-          return (
-            <TopicAyahCard
-              key={`${relation.ref.surah}:${relation.ref.ayah}`}
-              ayah={verse}
-              surahTransliteration={surah.transliteration}
-              type={relation.type}
-              rationale={relation.rationale}
-            />
-          );
-        })}
+        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          {resolved.length} of {topic.relations.length} curated verses shown
+        </p>
+
+        {unresolved.length > 0 && (
+          <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive">
+            <p>
+              {unresolved.length} curated reference{unresolved.length === 1 ? "" : "s"} on
+              this topic could not be resolved against the pinned Quran dataset
+              and {unresolved.length === 1 ? "is" : "are"} therefore not shown:
+            </p>
+            <ul className="mt-2 list-inside list-disc space-y-0.5 text-xs">
+              {unresolved.map((r) => (
+                <li key={`${r.ref.surah}:${r.ref.ayah}`}>
+                  {r.ref.surah}:{r.ref.ayah} — {r.type}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-2 text-xs">
+              This is a data-integrity problem in the editorial selection, not a
+              missing verse. It is surfaced rather than silently dropped so the
+              count above is never overstated.
+            </p>
+          </div>
+        )}
+
+        {resolved.map(({ relation, verse, surah }) => (
+          <TopicAyahCard
+            key={`${relation.ref.surah}:${relation.ref.ayah}`}
+            ayah={verse}
+            surahTransliteration={surah.transliteration}
+            type={relation.type}
+            rationale={relation.rationale}
+          />
+        ))}
       </section>
 
       {related.length > 0 && (

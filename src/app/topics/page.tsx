@@ -41,7 +41,7 @@ export default function TopicsIndexPage() {
                 {topic.summary}
               </p>
               <p className="mt-4 text-xs font-medium text-primary group-hover:underline">
-                View {topic.relations.length} verse
+                {topic.relations.length} curated verse
                 {topic.relations.length === 1 ? "" : "s"}
               </p>
             </Link>

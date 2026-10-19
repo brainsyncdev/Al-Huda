@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CurrentYear } from "@/components/layout/current-year";
 import { SITE_NAME } from "@/lib/site";
 
 const FOOTER_LINKS = [
@@ -83,7 +84,9 @@ export function SiteFooter() {
             Topic selections are editorial reading aids — not tafsir, not rulings.
             See the review status on every topic page.
           </p>
-          <p className="pt-2">© {new Date().getFullYear()} {SITE_NAME}. Content licenses respected; see /sources.</p>
+          <p className="pt-2">
+            © <CurrentYear buildYear={new Date().getFullYear()} /> {SITE_NAME}. Content licenses respected; see /sources.
+          </p>
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BookOpen, ChevronRight, ShieldCheck, Sparkles } from "lucide-react";
 import { SearchBox } from "@/components/search/search-box";
 import { ContinueReading } from "@/components/home/continue-reading";
-import { getVerseOfDay } from "@/lib/quran/verse-of-day";
+import { VerseOfDayDisplay } from "@/components/home/verse-of-day";
 import { getSurahIndex } from "@/lib/quran/data";
 import { TOPICS } from "@/lib/topics/data";
 import { SITE_NAME } from "@/lib/site";
@@ -11,7 +11,6 @@ import { SITE_NAME } from "@/lib/site";
 const FEATURED_SURAH_IDS = [1, 2, 36, 55, 67, 18] as const;
 
 export default function HomePage() {
-  const votd = getVerseOfDay();
   const index = getSurahIndex();
   const featured = FEATURED_SURAH_IDS.map((id) =>
     index.find((s) => s.id === id)
@@ -71,41 +70,7 @@ export default function HomePage() {
       <section className="grid gap-5 md:grid-cols-3" aria-label="Verse of the day">
         <div className="md:col-span-2">
           <article className="parchment-panel rounded-2xl border border-border/80 p-6 sm:p-8">
-            <div className="mb-4 flex items-center justify-between gap-3">
-              <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Verse of the day
-              </h2>
-              {votd && (
-                <Link
-                  href={`/ayah/${votd.surah}/${votd.ayah}`}
-                  className="text-xs font-medium text-primary hover:underline"
-                >
-                  Open full page
-                </Link>
-              )}
-            </div>
-
-            {votd ? (
-              <>
-                <p
-                  lang="ar"
-                  dir="rtl"
-                  className="arabic-text text-[1.75rem] leading-[2.2] text-foreground sm:text-[2rem]"
-                >
-                  {votd.verse.arabic}
-                </p>
-                <p className="mt-4 text-[1.05rem] leading-relaxed text-foreground/85">
-                  {votd.verse.translation}
-                </p>
-                <p className="mt-4 text-sm font-medium text-gold">
-                  {votd.surahTransliteration} · {votd.surah}:{votd.ayah}
-                </p>
-              </>
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                Verse of the day is unavailable right now.
-              </p>
-            )}
+            <VerseOfDayDisplay />
           </article>
         </div>
 
