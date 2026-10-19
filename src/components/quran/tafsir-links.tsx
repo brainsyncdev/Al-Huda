@@ -11,10 +11,10 @@ import { getSource } from "@/lib/quran/sources";
  * This panel only surfaces outbound links to reputable tafsir publishers.
  * No tafsir content is rendered, cached, or stored by the app itself.
  */
-export function TafsirLinks({ surah, ayah }: { surah: number; ayah: number }) {
+export function TafsirLinks({ surah, ayah }: { surah: number; ayah?: number }) {
   const ibnKathir = getSource("tafsir-ibn-kathir");
   const maarif = getSource("tafsir-ma(arif)");
-  const ref = `${surah}:${ayah}`;
+  const ref = ayah === undefined ? `Surah ${surah}` : `${surah}:${ayah}`;
 
   return (
     <section

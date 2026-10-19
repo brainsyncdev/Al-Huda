@@ -26,13 +26,27 @@ export default async function SearchPage({ searchParams }: Props) {
   const query = q?.trim() ?? "";
   const index = getSurahIndex();
 
-  const surahId = surahFilter ? Number(surahFilter) : null;
-  const juzNum = juzFilter ? Number(juzFilter) : null;
+  // Validate filter values defensively — reject anything outside the known
+  // ranges rather than silently filtering every result away.
+  const parsedSurah = surahFilter ? Number(surahFilter) : NaN;
+  const surahId =
+    Number.isInteger(parsedSurah) && parsedSurah >= 1 && parsedSurah <= 114
+      ? parsedSurah
+      : null;
+  const parsedJuz = juzFilter ? Number(juzFilter) : NaN;
+  const juzNum =
+    Number.isInteger(parsedJuz) && parsedJuz >= 1 && parsedJuz <= 30
+      ? parsedJuz
+      : null;
   const revelationType =
     typeFilter === "meccan" || typeFilter === "medinan" ? typeFilter : null;
   const hasFilters = Boolean(surahId || revelationType || juzNum);
+  const invalidFilters =
+    (Boolean(surahFilter) && surahId === null) ||
+    (Boolean(juzFilter) && juzNum === null) ||
+    (Boolean(typeFilter) && revelationType === null);
 
-  if (query.length === 0 && !hasFilters) {
+  if (query.length === 0) {
     return (
       <div className="space-y-8 pb-8">
         <header className="mx-auto max-w-2xl space-y-3 text-center">
@@ -64,6 +78,19 @@ export default async function SearchPage({ searchParams }: Props) {
           />
         </Suspense>
 
+        {invalidFilters && (
+          <p className="mx-auto max-w-xl text-xs font-medium text-gold">
+            One or more filter values were invalid and have been ignored.
+          </p>
+        )}
+
+        {hasFilters && (
+          <p className="mx-auto max-w-xl text-sm text-muted-foreground">
+            Filters narrow a search rather than browse the text on their own.
+            Type a word or a reference above to see the verses that match them.
+          </p>
+        )}
+
         <div className="mx-auto max-w-2xl rounded-2xl border border-border/80 bg-card p-5 text-sm text-muted-foreground">
           <p>
             Matching is rule-based and transparent. Results favor
@@ -76,13 +103,32 @@ export default async function SearchPage({ searchParams }: Props) {
     );
   }
 
-  if (query.length > 0 && query.length < 2 && !hasFilters) {
+  if (query.length > 0 && query.length < 2) {
     return (
       <div className="space-y-6 pb-8">
         <SearchBox initialQuery={query} />
+        <Suspense
+          fallback={
+            <div className="rounded-2xl border border-border/80 bg-card p-4 text-sm text-muted-foreground">
+              Loading filters…
+            </div>
+          }
+        >
+          <SearchFilters
+            surahOptions={index.map((s) => ({
+              id: s.id,
+              transliteration: s.transliteration,
+            }))}
+          />
+        </Suspense>
         <p className="text-sm text-muted-foreground">
           Type at least two characters to search.
         </p>
+        {invalidFilters && (
+          <p className="text-xs font-medium text-gold">
+            One or more filter values were invalid and have been ignored.
+          </p>
+        )}
       </div>
     );
   }
@@ -108,7 +154,10 @@ export default async function SearchPage({ searchParams }: Props) {
     );
   }
 
+  // Redirect only when no filters are active: a filtered single hit must not
+  // hijack the user's filter state.
   if (
+    !hasFilters &&
     results.reference &&
     filteredHits.length === 1 &&
     results.reference.ayah !== undefined &&
@@ -137,6 +186,11 @@ export default async function SearchPage({ searchParams }: Props) {
           />
         </Suspense>
         <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
+          {invalidFilters && (
+            <p className="w-full text-xs font-medium text-gold">
+              One or more filter values were invalid and have been ignored.
+            </p>
+          )}
           <p>
             {filteredHits.length}{" "}
             {filteredHits.length === 1 ? "result" : "results"}

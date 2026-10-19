@@ -27,6 +27,8 @@ export interface Note {
   surah: number;
   ayah: number;
   text: string;
+  /** User-defined labels for organizing private notes. Local-only, never uploaded. */
+  tags: string[];
   createdAt: string;
   updatedAt: string;
 }
@@ -55,7 +57,13 @@ function load(): LibraryState {
     const parsed = JSON.parse(raw) as Partial<LibraryState>;
     return {
       bookmarks: Array.isArray(parsed.bookmarks) ? parsed.bookmarks : [],
-      notes: Array.isArray(parsed.notes) ? parsed.notes : [],
+      // Normalize legacy notes saved before the `tags` field existed.
+      notes: Array.isArray(parsed.notes)
+        ? parsed.notes.map((n) => ({
+            ...n,
+            tags: Array.isArray(n.tags) ? n.tags : [],
+          }))
+        : [],
       progress: Array.isArray(parsed.progress) ? parsed.progress : [],
     };
   } catch {
@@ -76,7 +84,12 @@ interface LibraryContextValue extends LibraryState {
   isBookmarked: (surah: number, ayah: number) => boolean;
   toggleBookmark: (surah: number, ayah: number) => void;
   noteFor: (surah: number, ayah: number) => Note | undefined;
-  saveNote: (surah: number, ayah: number, text: string) => void;
+  saveNote: (
+    surah: number,
+    ayah: number,
+    text: string,
+    tags?: string[]
+  ) => void;
   deleteNote: (id: string) => void;
   recordVisit: (surah: number, ayah: number) => void;
   /** JSON-serializable snapshot for the export action. */
@@ -120,12 +133,17 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
       },
       noteFor: (surah, ayah) =>
         state.notes.find((n) => n.surah === surah && n.ayah === ayah),
-      saveNote: (surah, ayah, text) => {
+      saveNote: (surah, ayah, text, tags) => {
         const trimmed = text.trim();
         const existing = state.notes.find(
           (n) => n.surah === surah && n.ayah === ayah
         );
         const now = new Date().toISOString();
+        // Single source of truth for tag normalization: trim, lowercase,
+        // drop empties, dedupe, cap at 10. Callers may pass raw fragments.
+        const normalizedTags = Array.from(
+          new Set((tags ?? []).map((t) => t.trim().toLowerCase()).filter(Boolean))
+        ).slice(0, 10);
         let notes: Note[];
         if (!trimmed) {
           notes = existing
@@ -134,7 +152,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
         } else if (existing) {
           notes = state.notes.map((n) =>
             n.id === existing.id
-              ? { ...n, text: trimmed, updatedAt: now }
+              ? { ...n, text: trimmed, tags: normalizedTags, updatedAt: now }
               : n
           );
         } else {
@@ -145,6 +163,7 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
               surah,
               ayah,
               text: trimmed,
+              tags: normalizedTags,
               createdAt: now,
               updatedAt: now,
             },

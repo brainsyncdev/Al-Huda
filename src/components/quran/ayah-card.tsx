@@ -42,6 +42,7 @@ export function AyahCard({
   const [copied, setCopied] = useState<"link" | "text" | null>(null);
   const [noteOpen, setNoteOpen] = useState(false);
   const [noteDraft, setNoteDraft] = useState("");
+  const [tagDraft, setTagDraft] = useState("");
 
   const existingNote = noteFor(ayah.surah, ayah.ayah);
   const bookmarked = isBookmarked(ayah.surah, ayah.ayah);
@@ -49,7 +50,10 @@ export function AyahCard({
   const href = `/ayah/${ayah.surah}/${ayah.ayah}`;
 
   useEffect(() => {
-    if (noteOpen) setNoteDraft(existingNote?.text ?? "");
+    if (noteOpen) {
+      setNoteDraft(existingNote?.text ?? "");
+      setTagDraft((existingNote?.tags ?? []).join(", "));
+    }
     // Intentionally keyed to open-state and the ayah reference only.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [noteOpen, ayah.surah, ayah.ayah]);
@@ -208,9 +212,24 @@ export function AyahCard({
             placeholder="Your reflection, a question to look up, a reminder…"
             className="w-full resize-y rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-2 focus-visible:outline-ring"
           />
+
+          <label
+            htmlFor={`tags-${ayah.surah}-${ayah.ayah}`}
+            className="mt-3 mb-1.5 block text-xs font-medium text-muted-foreground"
+          >
+            Tags (comma-separated)
+          </label>
+          <input
+            id={`tags-${ayah.surah}-${ayah.ayah}`}
+            value={tagDraft}
+            onChange={(e) => setTagDraft(e.target.value)}
+            placeholder="e.g. patience, reflection, to-look-up"
+            className="w-full rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-2 focus-visible:outline-ring"
+          />
+
           <div className="mt-2 flex items-center justify-between gap-2">
             <p className="text-[0.6875rem] text-muted-foreground">
-              Notes are never uploaded and can be exported or deleted in your Library.
+              Notes and tags are never uploaded and can be exported or deleted in your Library.
             </p>
             <div className="flex shrink-0 items-center gap-1.5">
               {existingNote && (
@@ -230,7 +249,13 @@ export function AyahCard({
               <button
                 type="button"
                 onClick={() => {
-                  saveNote(ayah.surah, ayah.ayah, noteDraft);
+                  // Raw fragments only — the library context owns normalization.
+                  saveNote(
+                    ayah.surah,
+                    ayah.ayah,
+                    noteDraft,
+                    tagDraft.split(",")
+                  );
                   setNoteOpen(false);
                   toast.success(noteDraft.trim() ? "Note saved" : "Note removed");
                 }}

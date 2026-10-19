@@ -39,9 +39,10 @@ const NUMERIC_REF = /^(\d{1,3})\s*[:.\-\s]\s*(\d{1,3})$/;
 const SURAH_ONLY = /^\d{1,3}$/;
 
 /** Parse a user-supplied reference string. Returns null when invalid.
- *  Never guesses or fabricates: out-of-range surah/ayah numbers fail parse
- *  at the ayah level only when the surah itself is valid (the caller should
- *  validate ayah bounds via getAyah). */
+ *  Never guesses or fabricates. NOTE: only the surah number is range-checked
+ *  here (1-114); the ayah number is returned as-parsed WITHOUT validating it
+ *  against the surah's actual verse count. Callers must confirm the ayah
+ *  exists via getAyah() before using it. */
 export function parseReference(input: string): ParsedReference | null {
   const q = input.trim();
   if (!q) return null;

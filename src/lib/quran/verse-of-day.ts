@@ -21,7 +21,7 @@ const VERSE_OF_DAY_REFS: ReadonlyArray<readonly [number, number]> = [
   [103, 3], // patience and truthfulness
   [112, 2], // Allah, the Eternal Refuge
   [2, 2], // guidance for the conscious of Allah
-  [14, 31], // speak to people kindly
+  [14, 31], // curated reference
   [7, 57], // spend from what We have provided
   [51, 22], // provision in heaven and earth
   [55, 13], // which favor would you deny
@@ -31,7 +31,7 @@ const VERSE_OF_DAY_REFS: ReadonlyArray<readonly [number, number]> = [
   [29, 45], // greater indeed is the remembrance of Allah
   [33, 41], // remember Allah much
   [40, 60], // call upon Me, I will respond
-  [42, 22], // those who believe
+  [42, 22], // curated reference
 ];
 
 export interface VerseOfDay {

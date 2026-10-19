@@ -123,7 +123,7 @@ export default async function SurahPage({ params }: Props) {
         ))}
       </section>
 
-      <TafsirLinks surah={surah.id} ayah={1} />
+      <TafsirLinks surah={surah.id} />
       <SourcePanel />
 
       <nav className="flex flex-wrap items-center justify-between gap-3">

@@ -7,6 +7,8 @@
 // page breaks vary by printed edition. Do not present these as authoritative
 // page references until verified against a specific printed Mushaf.
 
+import { getSurah } from "./data";
+
 export interface JuzInfo {
   juz: number;
   startSurah: number;
@@ -48,7 +50,15 @@ export const JUZ_DATA: JuzInfo[] = [
   { juz: 30, startSurah: 78, startAyah: 1, approximatePages: [581, 604] },
 ];
 
+/** Resolve the Juz containing a surah:ayah reference. Returns null for
+ *  out-of-range surah/ayah values (never classifies an invalid reference). */
 export function getJuzForAyah(surah: number, ayah: number): number | null {
+  if (!Number.isInteger(surah) || !Number.isInteger(ayah)) return null;
+  if (surah < 1 || surah > 114 || ayah < 1) return null;
+  // Reject ayah numbers beyond the surah's real verse count so an invalid
+  // reference is never classified into a Juz.
+  const meta = getSurah(surah);
+  if (!meta || ayah > meta.ayahCount) return null;
   for (let i = JUZ_DATA.length - 1; i >= 0; i--) {
     const j = JUZ_DATA[i];
     if (surah > j.startSurah || (surah === j.startSurah && ayah >= j.startAyah)) {

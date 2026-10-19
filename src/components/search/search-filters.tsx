@@ -11,16 +11,34 @@ export function SearchFilters({ surahOptions }: SearchFiltersProps) {
   const router = useRouter();
   const params = useSearchParams();
 
-  const surah = params.get("surah") ?? "";
-  const type = params.get("type") ?? "";
-  const juz = params.get("juz") ?? "";
+  // Validate URL params before using them as controlled values so an invalid
+  // manual param cannot leave a select blank or be carried forward.
+  const rawSurah = params.get("surah") ?? "";
+  const surah = surahOptions.some((s) => String(s.id) === rawSurah) ? rawSurah : "";
+  const rawType = params.get("type") ?? "";
+  const type = rawType === "meccan" || rawType === "medinan" ? rawType : "";
+  const rawJuz = params.get("juz") ?? "";
+  const parsedJuz = rawJuz ? Number(rawJuz) : NaN;
+  const juz =
+    Number.isInteger(parsedJuz) && parsedJuz >= 1 && parsedJuz <= 30
+      ? String(parsedJuz)
+      : "";
   const hasFilters = Boolean(surah || type || juz);
+  // Show "Clear all" even when the only active params are invalid, so the
+  // user has a one-click way out of a bad hand-edited URL.
+  const hasAnyFilterParam = Boolean(rawSurah || rawType || rawJuz);
 
   function updateFilter(key: string, value: string) {
-    const next = new URLSearchParams(params.toString());
+    // Rebuild from validated values only; invalid params are dropped.
+    const next = new URLSearchParams();
+    const q = params.get("q");
+    if (q) next.set("q", q);
+    if (key !== "surah" && surah) next.set("surah", surah);
+    if (key !== "type" && type) next.set("type", type);
+    if (key !== "juz" && juz) next.set("juz", juz);
     if (value) next.set(key, value);
-    else next.delete(key);
-    router.push(`/search?${next.toString()}`);
+    const qs = next.toString();
+    router.push(qs ? `/search?${qs}` : "/search");
   }
 
   function clearAll() {
@@ -36,7 +54,7 @@ export function SearchFilters({ surahOptions }: SearchFiltersProps) {
           <Filter className="h-4 w-4 text-muted-foreground" aria-hidden />
           <h2 className="text-sm font-semibold">Filters</h2>
         </div>
-        {hasFilters && (
+        {hasAnyFilterParam && (
           <button
             type="button"
             onClick={clearAll}

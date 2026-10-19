@@ -172,6 +172,18 @@ export default function LibraryPage() {
                   <p className="mt-3 whitespace-pre-wrap text-sm leading-relaxed text-foreground/85">
                     {n.text}
                   </p>
+                  {(n.tags ?? []).length > 0 && (
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                      {(n.tags ?? []).map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full bg-secondary px-2 py-0.5 text-[0.6875rem] font-medium text-secondary-foreground"
+                        >
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </article>
               </li>
             ))}

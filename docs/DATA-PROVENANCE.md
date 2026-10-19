@@ -54,6 +54,14 @@ We use the [`quran-json`](https://github.com/risan/quran-json) package (v3.1.2) 
 
 ---
 
-**Last Updated:** 2026-10-17  
-**Data Maintainer:** TBD (see PRD 20 roles)  
+## Known limitations (Release 1.1)
+
+- **Side-by-side translations (FR-033):** Not implemented. The vendored `quran-json@3.1.2` package bundles one translation per language, and per-edition Tanzil redistribution terms cannot be verified offline. No second translation dataset or placeholder is bundled.
+- **Juz page ranges:** `src/lib/quran/juz.ts` stores approximate page ranges for a standard 604-page Mushaf. These values are estimates only and are not rendered as exact Mushaf page numbers; UI displays Juz numbers only.
+- **Content-issue reporting:** No verified feedback destination is configured, so no report link is presented. This is intentionally omitted rather than shown as a misleading affordance.
+
+---
+
+**Last Updated:** 2026-10-19
+**Data Maintainer:** TBD (see PRD 20 roles)
 **Source Version:** quran-json@3.1.2
