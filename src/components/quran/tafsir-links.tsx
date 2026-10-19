@@ -1,5 +1,5 @@
 import { BookText, ExternalLink } from "lucide-react";
-import { getSource } from "@/lib/quran/sources";
+import { getSource, sourceLanguageLabel } from "@/lib/quran/sources";
 
 /**
  * Tafsir links panel for ayah and surah pages (FR-030/031/032).
@@ -39,8 +39,8 @@ export function TafsirLinks({ surah, ayah }: { surah: number; ayah?: number }) {
           <li className="rounded-xl border border-border/70 bg-background/60 px-3.5 py-2.5">
             <p className="font-medium">{ibnKathir.attribution}</p>
             <p className="mt-0.5 text-xs text-muted-foreground">
-              {ibnKathir.provides} · {ibnKathir.publisher} · License: {ibnKathir.license} · Link-out only (FR-031)
-            </p>
+                          {ibnKathir.provides} · {ibnKathir.publisher} · Language: {sourceLanguageLabel(ibnKathir.language)} · License: {ibnKathir.license} · Link-out only (FR-031)
+                        </p>
             <a
               href={ibnKathir.homepage}
               target="_blank"
@@ -56,8 +56,8 @@ export function TafsirLinks({ surah, ayah }: { surah: number; ayah?: number }) {
           <li className="rounded-xl border border-border/70 bg-background/60 px-3.5 py-2.5">
             <p className="font-medium">{maarif.attribution}</p>
             <p className="mt-0.5 text-xs text-muted-foreground">
-              {maarif.provides} · {maarif.publisher} · License: {maarif.license} · Link-out only (FR-031)
-            </p>
+                          {maarif.provides} · {maarif.publisher} · Language: {sourceLanguageLabel(maarif.language)} · License: {maarif.license} · Link-out only (FR-031)
+                        </p>
             <a
               href={maarif.homepage}
               target="_blank"

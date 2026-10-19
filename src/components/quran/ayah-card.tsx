@@ -16,6 +16,17 @@ interface AyahCardProps {
   variant?: "full" | "compact";
   /** Suppress the note editor (used on dense pages). */
   allowNotes?: boolean;
+  /**
+   * FR-013: a padded slice of the verbatim translation with the matched term
+   * located by offset. Offsets index into `snippet.text`. Only the English
+   * paragraph is affected — the Arabic always renders verbatim from the
+   * dataset, and when this is null/undefined the full translation is shown.
+   */
+  snippet?: { text: string; matchStart: number; matchEnd: number } | null;
+  /** FR-015: why this result matched. Plain text, never colour alone. */
+  matchReasonLabel?: string;
+  /** FR-015: what the label actually means, exposed to assistive tech. */
+  matchReasonDescription?: string;
 }
 
 /**
@@ -28,6 +39,9 @@ export function AyahCard({
   surahTransliteration,
   variant = "full",
   allowNotes = true,
+  snippet = null,
+  matchReasonLabel,
+  matchReasonDescription,
 }: AyahCardProps) {
   const {
     isBookmarked,
@@ -48,6 +62,9 @@ export function AyahCard({
   const bookmarked = isBookmarked(ayah.surah, ayah.ayah);
   const ref = `${ayah.surah}:${ayah.ayah}`;
   const href = `/ayah/${ayah.surah}/${ayah.ayah}`;
+  // Stable id linking the visible match-reason label to its description, so the
+  // explanation is announced by assistive tech instead of being mouse-only.
+  const reasonId = `reason-${ayah.surah}-${ayah.ayah}`;
 
   useEffect(() => {
     if (noteOpen) {
@@ -90,13 +107,28 @@ export function AyahCard({
       )}
     >
       <div className="mb-3 flex items-center justify-between gap-3">
-        <span className="ayah-number" aria-label={`Ayah ${ayah.ayah}`}>
-          {ayah.ayah}
-        </span>
-        <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-          {surahTransliteration} · {ref}
-        </span>
-      </div>
+              <span className="ayah-number" aria-label={`Ayah ${ayah.ayah}`}>
+                {ayah.ayah}
+              </span>
+              <div className="flex min-w-0 items-center justify-end gap-2">
+                {matchReasonLabel && (
+                  <span className="shrink-0 rounded-full bg-secondary px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wider text-secondary-foreground">
+                    {/* Description is announced rather than mouse-only: `title` alone
+                        is unreachable by keyboard, so it is paired with sr-only text
+                        referenced by aria-describedby (PRD §11). */}
+                    <span id={reasonId} className="sr-only">
+                      {matchReasonDescription}
+                    </span>
+                    <span title={matchReasonDescription} aria-describedby={reasonId}>
+                      {matchReasonLabel}
+                    </span>
+                  </span>
+                )}
+                <span className="truncate text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                  {surahTransliteration} · {ref}
+                </span>
+              </div>
+            </div>
 
       <p
         lang="ar"
@@ -114,15 +146,27 @@ export function AyahCard({
       </p>
 
       {showTranslation && (
-        <p
-          className={cn(
-            "mt-4 text-foreground/85",
-            variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
-          )}
-        >
-          {ayah.translation}
-        </p>
-      )}
+              <p
+                className={cn(
+                  "mt-4 text-foreground/85",
+                  variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
+                )}
+              >
+                {snippet ? (
+                  <>
+                    {snippet.text.slice(0, snippet.matchStart)}
+                    {/* Highlight carries colour AND weight AND underline, so the match
+                        is never signalled by colour alone (PRD §11). */}
+                    <mark className="rounded bg-gold-soft px-0.5 font-semibold text-accent-foreground underline decoration-1 underline-offset-2">
+                      {snippet.text.slice(snippet.matchStart, snippet.matchEnd)}
+                    </mark>
+                    {snippet.text.slice(snippet.matchEnd)}
+                  </>
+                ) : (
+                  ayah.translation
+                )}
+              </p>
+            )}
 
       {showTransliteration && (
         <p className="mt-3 text-sm italic leading-relaxed text-muted-foreground">

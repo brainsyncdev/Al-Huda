@@ -11,6 +11,10 @@ import { ayahPath, surahPath } from "@/lib/quran/reference";
 import { absoluteUrl } from "@/lib/site";
 import { topicsForAyah } from "@/lib/topics/data";
 import { getJuzForAyah } from "@/lib/quran/juz";
+import { crossReferencesForAyah } from "@/lib/quran/cross-references";
+import {
+  CrossReferencePanel,
+} from "@/components/quran/cross-reference-panel";
 
 interface Props {
   params: Promise<{ surah: string; ayah: string }>;
@@ -55,6 +59,9 @@ export default async function AyahPage({ params }: Props) {
 
   const topics = topicsForAyah({ surah: s, ayah: a });
   const juz = getJuzForAyah(s, a);
+  // Derived from the pinned dataset, so it costs one already-loaded surah and
+  // cannot assert anything an editor or a model invented.
+  const crossRefs = crossReferencesForAyah({ surah: s, ayah: a });
 
   return (
     <div className="space-y-8 pb-8">
@@ -120,6 +127,8 @@ export default async function AyahPage({ params }: Props) {
           </p>
         </section>
       )}
+
+      <CrossReferencePanel items={crossRefs} />
 
       <TafsirLinks surah={s} ayah={a} />
       <SourcePanel />

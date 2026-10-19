@@ -6,8 +6,15 @@
 // displayed Arabic remains exactly as provided by the dataset.
 
 import type { Ayah, ParsedReference } from "./types";
+import type { MatchReason } from "./match-reasons";
 import { getSurah, getSurahIndex } from "./data";
 import { parseReference } from "./reference";
+
+// The union is declared once, in ./match-reasons — a module with no filesystem
+// dependency, so client components can import the FR-015 labels without
+// dragging the server-only Quran loader into the bundle. Re-exported here so
+// existing importers of search.ts keep working.
+export type { MatchReason };
 
 /** Strip Quranic diacritics/marks and unify common letter variants for lookup. */
 export function normalizeArabic(input: string): string {
@@ -33,13 +40,6 @@ export function normalizeLatin(input: string): string {
     .replace(/\s+/g, " ")
     .trim();
 }
-
-export type MatchReason =
-  | "reference"
-  | "arabic"
-  | "translation"
-  | "transliteration"
-  | "surah-name";
 
 export interface SearchHit {
   surah: number;

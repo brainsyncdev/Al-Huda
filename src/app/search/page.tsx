@@ -4,25 +4,41 @@ import { Suspense } from "react";
 import { SearchBox } from "@/components/search/search-box";
 import { SearchFilters } from "@/components/search/search-filters";
 import { AyahCard } from "@/components/quran/ayah-card";
-import { searchQuran } from "@/lib/quran/search";
+import { findSnippetRange, searchQuran } from "@/lib/quran/search";
+import { REASON_DESCRIPTIONS, REASON_LABELS } from "@/lib/quran/match-reasons";
 import { getSurah, getSurahIndex } from "@/lib/quran/data";
+import { TOPICS, getTopic } from "@/lib/topics/data";
 import { absoluteUrl } from "@/lib/site";
 import { getJuzForAyah } from "@/lib/quran/juz";
 
 interface Props {
-  searchParams: Promise<{ q?: string; surah?: string; type?: string; juz?: string }>;
+  searchParams: Promise<{
+    q?: string;
+    surah?: string;
+    type?: string;
+    juz?: string;
+    topic?: string;
+  }>;
 }
 
 export const metadata: Metadata = {
   title: "Search the Quran",
   description:
-    "Search by reference (2:255), surah name, Arabic text, translation, or transliteration. Filter by Surah, revelation type, or Juz.",
+    "Search by reference (2:255), surah name, Arabic text, translation, or transliteration. Filter by Surah, revelation type, Juz, or curated topic.",
   alternates: { canonical: absoluteUrl("/search") },
 };
 
+/** Snippet padding (characters of context either side of the match). */
+const SNIPPET_PAD = 60;
+
 export default async function SearchPage({ searchParams }: Props) {
-  const { q, surah: surahFilter, type: typeFilter, juz: juzFilter } =
-    await searchParams;
+  const {
+    q,
+    surah: surahFilter,
+    type: typeFilter,
+    juz: juzFilter,
+    topic: topicFilter,
+  } = await searchParams;
   const query = q?.trim() ?? "";
   const index = getSurahIndex();
 
@@ -40,11 +56,32 @@ export default async function SearchPage({ searchParams }: Props) {
       : null;
   const revelationType =
     typeFilter === "meccan" || typeFilter === "medinan" ? typeFilter : null;
-  const hasFilters = Boolean(surahId || revelationType || juzNum);
+  const topicSlug = topicFilter && getTopic(topicFilter) ? topicFilter : null;
+
+  const hasFilters = Boolean(surahId || revelationType || juzNum || topicSlug);
   const invalidFilters =
     (Boolean(surahFilter) && surahId === null) ||
     (Boolean(juzFilter) && juzNum === null) ||
-    (Boolean(typeFilter) && revelationType === null);
+    (Boolean(typeFilter) && revelationType === null) ||
+    (Boolean(topicFilter) && topicSlug === null);
+
+  const surahOptions = index.map((s) => ({
+    id: s.id,
+    transliteration: s.transliteration,
+  }));
+  const topicOptions = TOPICS.map((t) => ({ slug: t.slug, title: t.title }));
+
+  const filterShell = (
+    <Suspense
+      fallback={
+        <div className="rounded-2xl border border-border/80 bg-card p-4 text-sm text-muted-foreground">
+          Loading filters…
+        </div>
+      }
+    >
+      <SearchFilters surahOptions={surahOptions} topicOptions={topicOptions} />
+    </Suspense>
+  );
 
   if (query.length === 0) {
     return (
@@ -63,20 +100,7 @@ export default async function SearchPage({ searchParams }: Props) {
           <SearchBox initialQuery="" autoFocus />
         </div>
 
-        <Suspense
-          fallback={
-            <div className="rounded-2xl border border-border/80 bg-card p-4 text-sm text-muted-foreground">
-              Loading filters…
-            </div>
-          }
-        >
-          <SearchFilters
-            surahOptions={index.map((s) => ({
-              id: s.id,
-              transliteration: s.transliteration,
-            }))}
-          />
-        </Suspense>
+        {filterShell}
 
         {invalidFilters && (
           <p className="mx-auto max-w-xl text-xs font-medium text-gold">
@@ -107,20 +131,7 @@ export default async function SearchPage({ searchParams }: Props) {
     return (
       <div className="space-y-6 pb-8">
         <SearchBox initialQuery={query} />
-        <Suspense
-          fallback={
-            <div className="rounded-2xl border border-border/80 bg-card p-4 text-sm text-muted-foreground">
-              Loading filters…
-            </div>
-          }
-        >
-          <SearchFilters
-            surahOptions={index.map((s) => ({
-              id: s.id,
-              transliteration: s.transliteration,
-            }))}
-          />
-        </Suspense>
+        {filterShell}
         <p className="text-sm text-muted-foreground">
           Type at least two characters to search.
         </p>
@@ -154,6 +165,21 @@ export default async function SearchPage({ searchParams }: Props) {
     );
   }
 
+  // FR-012 topic filter. Resolved as a lookup set from the reviewed topic
+  // relations rather than by re-running text matching, so a topic hit means
+  // "this ayah is in that curated selection", which is exactly what the
+  // editorial record claims.
+  if (topicSlug) {
+    const topicRefs = new Set(
+      (getTopic(topicSlug)?.relations ?? []).map(
+        (r) => `${r.ref.surah}:${r.ref.ayah}`
+      )
+    );
+    filteredHits = filteredHits.filter((h) =>
+      topicRefs.has(`${h.surah}:${h.ayah}`)
+    );
+  }
+
   // Redirect only when no filters are active: a filtered single hit must not
   // hijack the user's filter state.
   if (
@@ -171,20 +197,7 @@ export default async function SearchPage({ searchParams }: Props) {
     <div className="space-y-6 pb-8">
       <header className="space-y-4">
         <SearchBox initialQuery={query} />
-        <Suspense
-          fallback={
-            <div className="rounded-2xl border border-border/80 bg-card p-4 text-sm text-muted-foreground">
-              Loading filters…
-            </div>
-          }
-        >
-          <SearchFilters
-            surahOptions={index.map((s) => ({
-              id: s.id,
-              transliteration: s.transliteration,
-            }))}
-          />
-        </Suspense>
+        {filterShell}
         <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
           {invalidFilters && (
             <p className="w-full text-xs font-medium text-gold">
@@ -213,12 +226,30 @@ export default async function SearchPage({ searchParams }: Props) {
       {filteredHits.length === 0 ? (
         <div className="rounded-2xl border border-border/80 bg-card p-6 text-sm text-muted-foreground">
           <p>No matches found. Try a different query or adjust your filters.</p>
+          {hasFilters && (
+            <p className="mt-2 text-xs">
+              Active filters are narrowing the result set. Clearing them will
+              show the unfiltered matches for this query.
+            </p>
+          )}
         </div>
       ) : (
         <ul className="space-y-3">
           {filteredHits.map((hit) => {
             const surah = getSurah(hit.surah);
             if (!surah) return null;
+
+            // FR-013: highlight the matched term inside a padded slice of the
+            // verbatim translation. findSnippetRange returns null when the
+            // literal does not appear in the raw text (e.g. it only matched
+            // after normalization, or the hit is an Arabic/reference/surah-name
+            // match), in which case the full translation is shown unhighlighted
+            // rather than a fabricated snippet.
+            const snippet =
+              hit.reason === "translation"
+                ? findSnippetRange(hit.translation, query, SNIPPET_PAD)
+                : null;
+
             return (
               <li key={`${hit.surah}:${hit.ayah}:${hit.reason}`}>
                 <AyahCard
@@ -232,6 +263,9 @@ export default async function SearchPage({ searchParams }: Props) {
                   surahTransliteration={hit.surahTransliteration}
                   variant="compact"
                   allowNotes={false}
+                  snippet={snippet}
+                  matchReasonLabel={REASON_LABELS[hit.reason]}
+                  matchReasonDescription={REASON_DESCRIPTIONS[hit.reason]}
                 />
               </li>
             );

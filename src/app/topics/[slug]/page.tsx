@@ -5,7 +5,7 @@ import { AlertTriangle } from "lucide-react";
 import { TopicAyahCard } from "@/components/topics/topic-ayah-card";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import type { AyahRef } from "@/lib/quran/types";
-import { TOPICS, getTopic } from "@/lib/topics/data";
+import { LANGUAGE_LABELS, TOPICS, getTopic } from "@/lib/topics/data";
 import { absoluteUrl } from "@/lib/site";
 
 interface Props {
@@ -74,7 +74,7 @@ export default async function TopicDetailPage({ params }: Props) {
           <p className="flex items-start gap-2">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
             <span>
-              Review status: {topic.provenance.status.replace(/-/g, " ")} — curated by {topic.provenance.curator} via {topic.provenance.method} (last pass {topic.provenance.reviewedAt}). Editorial selections are not tafsir and are not intended as rulings.
+              Review status: {topic.provenance.status.replace(/-/g, " ")} — curated by {topic.provenance.curator} via {topic.provenance.method} (last pass {topic.provenance.reviewedAt}). Editorial content language: {LANGUAGE_LABELS[topic.language] ?? topic.language} ({topic.language}); the Quran text itself is always Arabic and is rendered verbatim from the pinned dataset. Editorial selections are not tafsir and are not intended as rulings.
             </span>
           </p>
         </div>

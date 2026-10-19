@@ -26,6 +26,12 @@ export interface TopicRelation {
 
 export interface Topic {
   slug: string;
+  /**
+   * FR-020: BCP 47 tag for the editorial content of this topic (title,
+   * summary, relation rationales). Quran text itself is always Arabic and is
+   * not covered by this field.
+   */
+  language: string;
   /** English title used in navigation. */
   title: string;
   /** Arabic label for display next to the title. */
@@ -57,7 +63,7 @@ function rel(ayah: number, surah: number) {
   return { surah, ayah };
 }
 
-export const TOPICS: Topic[] = [
+const RAW_TOPICS: Omit<Topic, "language">[] = [
   {
     slug: "patience",
     title: "Patience",
@@ -502,6 +508,18 @@ export const TOPICS: Topic[] = [
   },
 ];
 
+/**
+ * FR-020. Language is stamped centrally rather than repeated in every literal,
+ * so the declared content language cannot drift out of sync with the editorial
+ * record. Every curated selection in this release is written in English.
+ */
+const TOPIC_LANGUAGE = "en";
+
+export const TOPICS: Topic[] = RAW_TOPICS.map((t) => ({
+  ...t,
+  language: TOPIC_LANGUAGE,
+}));
+
 export function getTopic(slug: string): Topic | undefined {
   return TOPICS.find((t) => t.slug === slug);
 }
@@ -522,4 +540,14 @@ export const RELATION_TYPE_LABELS: Record<RelationType, string> = {
   LEXICAL_MATCH: "Lexical match",
   CROSS_REFERENCE: "Cross-reference",
   SEQUENTIAL_CONTEXT: "Sequential context",
+};
+
+/**
+ * FR-020 display gloss for a declared content language. Keys are BCP 47 tags as
+ * stored on `Topic.language`. Unknown tags fall back to the raw tag rather than
+ * to a guessed name, so a future non-English topic can never be mislabelled.
+ */
+export const LANGUAGE_LABELS: Record<string, string> = {
+  en: "English",
+  ar: "Arabic",
 };

@@ -218,6 +218,22 @@ export default function LibraryPage() {
         <p className="text-xs text-muted-foreground">
           Export produces a portable JSON backup. Delete erases this browser’s copy permanently.
         </p>
+        {/* FR-044 / Journey D acceptance: the persistence limits are stated
+            plainly, including the loss conditions. "Local-only" is only an
+            honest privacy claim if the reader also knows it means "no server
+            copy to restore from". */}
+        <div className="rounded-xl border border-border/80 bg-background/70 p-3">
+          <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            Where this data lives — and how it can be lost
+          </p>
+          <p className="mt-1.5 max-w-prose text-xs leading-relaxed text-muted-foreground">
+            Your library is stored only in this browser’s local storage. There is
+            no account and no server copy, which also means there is no recovery
+            path. Clearing site data or cookies, using a private or incognito
+            window, switching browser or device, or uninstalling the browser can
+            delete it permanently. Export a JSON backup if you intend to keep it.
+          </p>
+        </div>
       </section>
     </div>
   );

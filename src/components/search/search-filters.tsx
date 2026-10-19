@@ -5,37 +5,56 @@ import { Filter, X } from "lucide-react";
 
 interface SearchFiltersProps {
   surahOptions: { id: number; transliteration: string }[];
+  topicOptions: { slug: string; title: string }[];
 }
 
-export function SearchFilters({ surahOptions }: SearchFiltersProps) {
+/**
+ * Search result filters (FR-012).
+ *
+ * Four dimensions: Surah, revelation type, Juz, and curated topic. Translation
+ * edition is deliberately absent — the app ships one verified translation, so
+ * an edition filter would be a control with one option (FR-033 is blocked on
+ * redistribution rights, see docs/DATA-PROVENANCE.md).
+ *
+ * Every URL value is validated before use, and the next query string is
+ * rebuilt from validated values only, so a hand-edited `?surah=999` cannot be
+ * carried forward or leave a select blank.
+ */
+export function SearchFilters({ surahOptions, topicOptions }: SearchFiltersProps) {
   const router = useRouter();
   const params = useSearchParams();
 
-  // Validate URL params before using them as controlled values so an invalid
-  // manual param cannot leave a select blank or be carried forward.
   const rawSurah = params.get("surah") ?? "";
   const surah = surahOptions.some((s) => String(s.id) === rawSurah) ? rawSurah : "";
+
   const rawType = params.get("type") ?? "";
   const type = rawType === "meccan" || rawType === "medinan" ? rawType : "";
+
   const rawJuz = params.get("juz") ?? "";
   const parsedJuz = rawJuz ? Number(rawJuz) : NaN;
   const juz =
     Number.isInteger(parsedJuz) && parsedJuz >= 1 && parsedJuz <= 30
       ? String(parsedJuz)
       : "";
-  const hasFilters = Boolean(surah || type || juz);
+
+  const rawTopic = params.get("topic") ?? "";
+  const topic = topicOptions.some((t) => t.slug === rawTopic) ? rawTopic : "";
+
+  const hasFilters = Boolean(surah || type || juz || topic);
   // Show "Clear all" even when the only active params are invalid, so the
   // user has a one-click way out of a bad hand-edited URL.
-  const hasAnyFilterParam = Boolean(rawSurah || rawType || rawJuz);
+  const hasAnyFilterParam = Boolean(rawSurah || rawType || rawJuz || rawTopic);
 
-  function updateFilter(key: string, value: string) {
-    // Rebuild from validated values only; invalid params are dropped.
+  const FILTER_KEYS = ["surah", "type", "juz", "topic"] as const;
+
+  function updateFilter(key: (typeof FILTER_KEYS)[number], value: string) {
     const next = new URLSearchParams();
     const q = params.get("q");
     if (q) next.set("q", q);
     if (key !== "surah" && surah) next.set("surah", surah);
     if (key !== "type" && type) next.set("type", type);
     if (key !== "juz" && juz) next.set("juz", juz);
+    if (key !== "topic" && topic) next.set("topic", topic);
     if (value) next.set(key, value);
     const qs = next.toString();
     router.push(qs ? `/search?${qs}` : "/search");
@@ -66,7 +85,7 @@ export function SearchFilters({ surahOptions }: SearchFiltersProps) {
         )}
       </div>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
         <label className="space-y-1.5">
           <span className="block text-xs font-medium text-muted-foreground">Surah</span>
           <select
@@ -107,6 +126,20 @@ export function SearchFilters({ surahOptions }: SearchFiltersProps) {
             ))}
           </select>
         </label>
+
+        <label className="space-y-1.5">
+          <span className="block text-xs font-medium text-muted-foreground">Curated topic</span>
+          <select
+            value={topic}
+            onChange={(e) => updateFilter("topic", e.target.value)}
+            className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
+          >
+            <option value="">All topics</option>
+            {topicOptions.map((t) => (
+              <option key={t.slug} value={t.slug}>{t.title}</option>
+            ))}
+          </select>
+        </label>
       </div>
 
       {hasFilters && (
@@ -126,7 +159,21 @@ export function SearchFilters({ surahOptions }: SearchFiltersProps) {
           {juz && (
             <FilterChip label={`Juz ${juz}`} onRemove={() => updateFilter("juz", "")} />
           )}
+          {topic && (
+            <FilterChip
+              label={`Topic: ${topicOptions.find((t) => t.slug === topic)?.title ?? topic}`}
+              onRemove={() => updateFilter("topic", "")}
+            />
+          )}
         </div>
+      )}
+
+      {topic && (
+        <p className="mt-3 text-xs text-muted-foreground">
+          The topic filter matches curated selections only — it shows verses a
+          reviewer placed in that topic, not every verse on the theme. Topic
+          pages state their review status.
+        </p>
       )}
     </div>
   );

@@ -54,6 +54,29 @@ We use the [`quran-json`](https://github.com/risan/quran-json) package (v3.1.2) 
 
 ---
 
+## Rejected source paths (rights or provenance not verified)
+
+Recorded per FR-032 (track licensing/permitted use per source) and FR-071
+(immutable source/version metadata). A path listed here is **not** a candidate
+for silent re-introduction: it was evaluated and rejected, and the reason is on
+the record.
+
+| Path | Content it would have supplied | Why rejected |
+|---|---|---|
+| `src/services/quran-api.ts` (removed) | Chapters, verses, multiple translations by hardcoded resource IDs, juz metadata, and `verses.quran.com` audio URLs, all fetched at runtime from `api.quran.com` | **No source record, no license, no version pin, no checksum.** Runtime fetching defeats the immutability requirement (FR-071): the text a visitor reads would depend on a third party's current database state, so a verse could change under the app without any release, review, or rollback. The bundled audio URL builder contradicts the PRD's explicit audio deferral (§5, §23 recommendation 8) and no rights were verified. Two translation resource IDs were passed with no attribution or edition labelling, which would have breached FR-030/FR-033. It also returned `any[]`, bypassing the typed provenance model in §9. |
+
+The removal was verified as safe: no module imported it (a repo-wide search for
+the string `quran-api` returned zero hits outside the file itself, and any
+`@/services/quran-api` import would have matched).
+
+**Replacement rule.** Any future translation, tafsir excerpt, word-by-word
+dataset, or audio asset must arrive as a **versioned, checksummed, vendored
+artifact** with a `SourceRecord` entry in `src/lib/quran/sources.ts` before it
+is reachable from any page. Runtime fetching of Quran content is not an
+accepted ingestion path.
+
+---
+
 ## Known limitations (Release 1.1)
 
 - **Side-by-side translations (FR-033):** Not implemented. The vendored `quran-json@3.1.2` package bundles one translation per language, and per-edition Tanzil redistribution terms cannot be verified offline. No second translation dataset or placeholder is bundled.

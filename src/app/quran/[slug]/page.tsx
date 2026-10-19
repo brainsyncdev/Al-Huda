@@ -9,6 +9,8 @@ import { TafsirLinks } from "@/components/quran/tafsir-links";
 import { getSurah, getSurahIdBySlug, getSurahIndex } from "@/lib/quran/data";
 import { absoluteUrl } from "@/lib/site";
 import { getJuzForAyah } from "@/lib/quran/juz";
+import { lexicalMatchGroups } from "@/lib/quran/cross-references";
+import { LexicalMatchGroupsPanel } from "@/components/quran/cross-reference-panel";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -51,6 +53,10 @@ export default async function SurahPage({ params }: Props) {
         ? `Juz ${firstJuz}`
         : `Juz ${firstJuz}–${lastJuz}`
       : null;
+
+  // FR-024 accessible list view: repeated wording within this surah, derived
+  // from the dataset rather than curated. Bounded by this surah only.
+  const lexicalGroups = lexicalMatchGroups(surah.id);
 
   return (
     <div className="space-y-8 pb-8">
@@ -111,6 +117,8 @@ export default async function SurahPage({ params }: Props) {
       </header>
 
       <ReaderControls />
+
+      <LexicalMatchGroupsPanel groups={lexicalGroups} />
 
       <section aria-label="Surah verses" className="space-y-4">
         {surah.ayat.map((ayah) => (

@@ -128,6 +128,18 @@ export default function SettingsPage() {
           <p className="text-sm leading-relaxed text-muted-foreground">
             Bookmarks, private notes, reading history, and preferences stay in your browser’s localStorage. We do not collect them.
           </p>
+          {/* FR-044 / Journey D acceptance: state the flip side of local-only
+              storage, so the privacy guarantee is not mistaken for durability. */}
+          <p className="max-w-prose text-xs leading-relaxed text-muted-foreground">
+            <span className="font-semibold text-foreground">
+              Local storage is not a backup.
+            </span>{" "}
+            Because nothing is uploaded, there is no server copy to restore from.
+            Clearing site data or cookies, browsing in a private or incognito
+            window, switching browser or device, or uninstalling the browser will
+            erase these preferences and your library. Use Export JSON first if
+            you want to keep them.
+          </p>
           <div className="flex flex-wrap gap-2.5">
             <button
               type="button"
