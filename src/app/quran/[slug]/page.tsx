@@ -8,6 +8,7 @@ import { SourcePanel } from "@/components/quran/source-panel";
 import { TafsirLinks } from "@/components/quran/tafsir-links";
 import { getSurah, getSurahIdBySlug, getSurahIndex } from "@/lib/quran/data";
 import { absoluteUrl } from "@/lib/site";
+import { getJuzForAyah } from "@/lib/quran/juz";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -41,6 +42,16 @@ export default async function SurahPage({ params }: Props) {
   const prev = surah.id > 1 ? index[surah.id - 2] : null;
   const next = surah.id < 114 ? index[surah.id] : null;
 
+  // Compute Juz range for this surah
+  const firstJuz = getJuzForAyah(surah.id, 1);
+  const lastJuz = getJuzForAyah(surah.id, surah.ayahCount);
+  const juzLabel =
+    firstJuz && lastJuz
+      ? firstJuz === lastJuz
+        ? `Juz ${firstJuz}`
+        : `Juz ${firstJuz}–${lastJuz}`
+      : null;
+
   return (
     <div className="space-y-8 pb-8">
       <header className="parchment-panel rounded-2xl border border-border/80 p-5 sm:p-8">
@@ -54,7 +65,7 @@ export default async function SurahPage({ params }: Props) {
             </h1>
             <p className="text-base text-muted-foreground">
               {surah.meaning} · {surah.arabicName} · {surah.revelation} ·{" "}
-              {surah.ayahCount} ayat
+              {surah.ayahCount} ayat{ juzLabel && <> · {juzLabel}</>}
             </p>
             <p className="max-w-prose text-sm text-muted-foreground">
               Read continuously below. Use the controls to adjust Arabic size

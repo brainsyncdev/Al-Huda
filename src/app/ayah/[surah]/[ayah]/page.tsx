@@ -10,6 +10,7 @@ import { getAyah, getSurah } from "@/lib/quran/data";
 import { ayahPath, surahPath } from "@/lib/quran/reference";
 import { absoluteUrl } from "@/lib/site";
 import { topicsForAyah } from "@/lib/topics/data";
+import { getJuzForAyah } from "@/lib/quran/juz";
 
 interface Props {
   params: Promise<{ surah: string; ayah: string }>;
@@ -53,6 +54,7 @@ export default async function AyahPage({ params }: Props) {
         : null;
 
   const topics = topicsForAyah({ surah: s, ayah: a });
+  const juz = getJuzForAyah(s, a);
 
   return (
     <div className="space-y-8 pb-8">
@@ -67,6 +69,7 @@ export default async function AyahPage({ params }: Props) {
             </h1>
             <p className="text-sm text-muted-foreground">
               Surah {s} of 114 · {surahMeta.meaning} · {surahMeta.revelation}
+              {juz && <> · Juz {juz}</>}
             </p>
           </div>
           <Link
