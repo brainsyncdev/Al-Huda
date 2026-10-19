@@ -11,6 +11,13 @@ import { absoluteUrl } from "@/lib/site";
 import { getJuzForAyah } from "@/lib/quran/juz";
 import { lexicalMatchGroups } from "@/lib/quran/cross-references";
 import { LexicalMatchGroupsPanel } from "@/components/quran/cross-reference-panel";
+import { JsonLd } from "@/components/seo/json-ld";
+import {
+  HOME_CRUMB,
+  breadcrumbs,
+  chapterJsonLd,
+  quranJsonLd,
+} from "@/lib/seo/json-ld";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -58,8 +65,24 @@ export default async function SurahPage({ params }: Props) {
   // from the dataset rather than curated. Bounded by this surah only.
   const lexicalGroups = lexicalMatchGroups(surah.id);
 
+  // Same path shape generateMetadata already uses for its canonical tag, so
+  // the markup and the canonical cannot disagree.
+  const surahPagePath = `/quran/${surah.slug}`;
+
   return (
     <div className="space-y-8 pb-8">
+      <JsonLd
+        nodes={[
+          breadcrumbs([
+            HOME_CRUMB,
+            { name: "Quran", path: "/quran" },
+            { name: surah.transliteration, path: surahPagePath },
+          ]),
+          quranJsonLd(),
+                    chapterJsonLd(surah),
+        ]}
+      />
+
       <header className="parchment-panel rounded-2xl border border-border/80 p-5 sm:p-8">
         <div className="flex flex-wrap items-start justify-between gap-6">
           <div className="min-w-0 space-y-2">

@@ -7,6 +7,8 @@ import { getAyah, getSurah } from "@/lib/quran/data";
 import type { AyahRef } from "@/lib/quran/types";
 import { LANGUAGE_LABELS, TOPICS, getTopic } from "@/lib/topics/data";
 import { absoluteUrl } from "@/lib/site";
+import { JsonLd } from "@/components/seo/json-ld";
+import { HOME_CRUMB, breadcrumbs, topicJsonLd } from "@/lib/seo/json-ld";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -57,8 +59,21 @@ export default async function TopicDetailPage({ params }: Props) {
     resolved.push({ relation, verse, surah });
   }
 
+  const topicPagePath = `/topics/${topic.slug}`;
+
   return (
     <div className="space-y-8 pb-8">
+      <JsonLd
+        nodes={[
+          breadcrumbs([
+            HOME_CRUMB,
+            { name: "Topics", path: "/topics" },
+            { name: topic.title, path: topicPagePath },
+          ]),
+          topicJsonLd(topic),
+        ]}
+      />
+
       <header className="space-y-3">
         <div className="flex items-center gap-3">
           <span className="arabic-display text-4xl text-gold" lang="ar" dir="rtl">

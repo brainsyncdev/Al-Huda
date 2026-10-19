@@ -24,7 +24,7 @@ import { DueQueue } from "./due-queue";
 import { PlanOverview } from "./plan-overview";
 
 export function RevisionWorkspace({ surahOptions }: { surahOptions: SurahOption[] }) {
-  const { hydrated } = useRevision();
+  const { hydrated, state } = useRevision();
   const [nowMs, setNowMs] = useState<number | null>(null);
 
   useEffect(() => {
@@ -44,7 +44,11 @@ export function RevisionWorkspace({ surahOptions }: { surahOptions: SurahOption[
   }, []);
 
   const ready = hydrated && nowMs !== null;
-  const due = ready ? dueItems(useRevision().state, nowMs!) : [];
+  // The hook call above is unconditional; the earlier conditional form here
+  // changed hook order after hydration and crashed at runtime while still
+  // typechecking. Null narrowing is explicit rather than leaning on `ready`,
+  // which TypeScript does not reliably carry into JSX.
+  const due = ready && nowMs !== null ? dueItems(state, nowMs) : [];
 
   return (
     <div className="space-y-6 pb-4">
@@ -87,7 +91,9 @@ export function RevisionWorkspace({ surahOptions }: { surahOptions: SurahOption[
         <>
           <DueQueue due={due} surahOptions={surahOptions} />
           <AddVerses surahOptions={surahOptions} />
-          <PlanOverview nowMs={nowMs!} surahOptions={surahOptions} />
+          {nowMs !== null && (
+            <PlanOverview nowMs={nowMs} surahOptions={surahOptions} />
+          )}
         </>
       )}
     </div>

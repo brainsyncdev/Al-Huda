@@ -2,15 +2,28 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, ShieldCheck } from "lucide-react";
 import { SOURCES } from "@/lib/quran/sources";
+import { JsonLd } from "@/components/seo/json-ld";
+import { HOME_CRUMB, breadcrumbs, sourcesJsonLd } from "@/lib/seo/json-ld";
 
 export const metadata: Metadata = {
   title: "Sources & provenance",
   description: "Complete source catalog for the Quran text, translation, transliteration, and packaged dataset.",
+  alternates: { canonical: "/sources" },
 };
 
 export default function SourcesPage() {
   return (
     <div className="space-y-8 pb-8">
+      <JsonLd
+        nodes={[
+          breadcrumbs([
+            HOME_CRUMB,
+            { name: "Sources & provenance", path: "/sources" },
+          ]),
+          sourcesJsonLd(),
+        ]}
+      />
+
       <header className="space-y-2">
         <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
           Sources &amp; provenance

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Home, Library, Search, Sparkles } from "lucide-react";
+import { BookOpen, GraduationCap, Home, Library, Search, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -10,6 +10,7 @@ const TABS = [
   { href: "/quran", label: "Read", icon: BookOpen },
   { href: "/topics", label: "Topics", icon: Sparkles },
   { href: "/search", label: "Search", icon: Search },
+  { href: "/learn/revision", label: "Revise", icon: GraduationCap },
   { href: "/library", label: "Library", icon: Library },
 ] as const;
 

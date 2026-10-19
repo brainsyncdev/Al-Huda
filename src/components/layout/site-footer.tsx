@@ -5,6 +5,7 @@ import { SITE_NAME } from "@/lib/site";
 const FOOTER_LINKS = [
   { href: "/about", label: "About" },
   { href: "/sources", label: "Sources" },
+  { href: "/report", label: "Report an issue" },
   { href: "/accessibility", label: "Accessibility" },
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },

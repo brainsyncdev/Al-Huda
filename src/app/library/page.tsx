@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { Download, ListChecks, NotebookPen, Trash2 } from "lucide-react";
+import { ListChecks, NotebookPen } from "lucide-react";
 import { toast } from "sonner";
+import { BackupControls } from "@/components/library/backup-controls";
 import { useLibrary } from "@/lib/library/context";
 import { absoluteUrl } from "@/lib/site";
 
@@ -15,7 +16,7 @@ function refPath(surah: number, ayah: number) {
 }
 
 export default function LibraryPage() {
-  const { bookmarks, notes, progress, exportData, clearAll, hydrated } = useLibrary();
+  const { bookmarks, notes, progress, hydrated } = useLibrary();
   const [copiedId, setCopiedId] = useState<string | null>(null);
 
   const bookmarkList = useMemo(
@@ -29,30 +30,6 @@ export default function LibraryPage() {
   );
 
   const recent = useMemo(() => progress.slice(0, 20), [progress]);
-
-  function handleExport() {
-    if (!hydrated) return;
-    const data = exportData();
-    const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `al-huda-library-${new Date().toISOString().slice(0, 10)}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    toast.success("Library exported");
-  }
-
-  function handleClear() {
-    if (confirm("Erase all bookmarks, notes, and reading history on this device? This cannot be undone.")) {
-      clearAll();
-      toast.success("Library cleared");
-    }
-  }
 
   async function copyLink(surah: number, ayah: number) {
     try {
@@ -195,28 +172,11 @@ export default function LibraryPage() {
         <h2 id="manage-library" className="font-display text-xl font-semibold tracking-tight">
           Manage this copy
         </h2>
-        <div className="flex flex-wrap gap-2.5">
-          <button
-            type="button"
-            onClick={handleExport}
-            disabled={!hydrated}
-            className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground disabled:opacity-50"
-          >
-            <Download className="h-4 w-4" aria-hidden />
-            Export JSON
-          </button>
-          <button
-            type="button"
-            onClick={handleClear}
-            disabled={!hydrated}
-            className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-destructive transition-colors hover:bg-destructive/10 disabled:opacity-50"
-          >
-            <Trash2 className="h-4 w-4" aria-hidden />
-            Delete all data
-          </button>
-        </div>
+        <BackupControls />
         <p className="text-xs text-muted-foreground">
-          Export produces a portable JSON backup. Delete erases this browser’s copy permanently.
+          Export writes one JSON file holding your bookmarks, notes, reading history,
+          revision plan, and reader preferences. Import replaces what is on this
+          device with a chosen backup file. Delete erases this browser’s copy permanently.
         </p>
         {/* FR-044 / Journey D acceptance: the persistence limits are stated
             plainly, including the loss conditions. "Local-only" is only an

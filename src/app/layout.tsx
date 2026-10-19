@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { LibraryProvider } from "@/lib/library/context";
 import { PrefsProvider } from "@/lib/prefs/context";
+import { RevisionProvider } from "@/lib/revision/context";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
@@ -65,13 +66,15 @@ export default function RootLayout({
       >
         <LibraryProvider>
           <PrefsProvider>
-            <SiteHeader />
-            <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6">
-              {children}
-            </main>
-            <SiteFooter />
-            <MobileBottomNav />
-            <Toaster position="bottom-center" />
+            <RevisionProvider>
+              <SiteHeader />
+              <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6">
+                {children}
+              </main>
+              <SiteFooter />
+              <MobileBottomNav />
+              <Toaster position="bottom-center" />
+            </RevisionProvider>
           </PrefsProvider>
         </LibraryProvider>
       </body>

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of use",
   description: "Terms for using this Quran reading application.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

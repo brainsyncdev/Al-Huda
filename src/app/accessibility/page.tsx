@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Accessibility statement",
   description: "Accessibility commitments for this application.",
+  alternates: { canonical: "/accessibility" },
 };
 
 export default function AccessibilityPage() {
@@ -44,7 +45,13 @@ export default function AccessibilityPage() {
         <article className="rounded-2xl border border-border/80 bg-card p-5 space-y-3 text-sm leading-relaxed">
           <h2 className="text-base font-semibold">Feedback</h2>
           <p>
-            If you encounter an accessibility barrier, please open an issue in the project repository or contact the maintainers. We aim to respond within a reasonable timeframe.
+            If you encounter an accessibility barrier, use the{" "}
+            <a href="/report" className="font-medium text-primary hover:underline">
+              Report an issue
+            </a>{" "}
+            form — describe what blocked you and where. We aim to respond within a
+            reasonable timeframe. If the page has no working contact channel, say
+            so in the report so it can be fixed first.
           </p>
         </article>
       </section>

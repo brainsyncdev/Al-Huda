@@ -15,6 +15,8 @@ import { crossReferencesForAyah } from "@/lib/quran/cross-references";
 import {
   CrossReferencePanel,
 } from "@/components/quran/cross-reference-panel";
+import { JsonLd } from "@/components/seo/json-ld";
+import { HOME_CRUMB, ayahJsonLd, breadcrumbs } from "@/lib/seo/json-ld";
 
 interface Props {
   params: Promise<{ surah: string; ayah: string }>;
@@ -63,8 +65,27 @@ export default async function AyahPage({ params }: Props) {
   // cannot assert anything an editor or a model invented.
   const crossRefs = crossReferencesForAyah({ surah: s, ayah: a });
 
+  const ayahPagePath = ayahPath({ surah: s, ayah: a });
+
   return (
     <div className="space-y-8 pb-8">
+      <JsonLd
+        nodes={[
+          breadcrumbs([
+            HOME_CRUMB,
+            { name: "Quran", path: "/quran" },
+            {
+              name: surahMeta.transliteration,
+              path: surahPath(surahMeta.id, surahMeta.slug),
+            },
+            { name: `${s}:${a}`, path: ayahPagePath },
+          ]),
+          // Derives its own absolute URL from the reference, so the markup and
+          // the canonical tag in generateMetadata cannot disagree.
+          ayahJsonLd(verse, surahMeta),
+        ]}
+      />
+
       <header className="parchment-panel rounded-2xl border border-border/80 p-5 sm:p-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="min-w-0 space-y-1.5">

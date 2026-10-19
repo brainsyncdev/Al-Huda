@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Bookmark, Check, Copy, Link2, NotebookPen, Trash2 } from "lucide-react";
+import { Bookmark, Check, Copy, Link2, ListPlus, NotebookPen, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import type { Ayah } from "@/lib/quran/types";
 import { useLibrary } from "@/lib/library/context";
+import { useRevision } from "@/lib/revision/context";
 import { arabicSizeClass, arabicLineHeightClass, usePrefs } from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
 import { absoluteUrl } from "@/lib/site";
@@ -51,6 +52,9 @@ export function AyahCard({
     deleteNote,
     recordVisit,
   } = useLibrary();
+  // FR-050: a single ayah is a range of one, added through the same plan
+  // action the revision page uses for spans.
+  const { isInPlan, addRange, removeItem, hydrated: planHydrated } = useRevision();
   const { arabicSize, lineHeight, showTranslation, showTransliteration, hydrated } = usePrefs();
 
   const [copied, setCopied] = useState<"link" | "text" | null>(null);
@@ -61,6 +65,7 @@ export function AyahCard({
   const existingNote = noteFor(ayah.surah, ayah.ayah);
   const bookmarked = isBookmarked(ayah.surah, ayah.ayah);
   const ref = `${ayah.surah}:${ayah.ayah}`;
+  const planned = isInPlan(ref);
   const href = `/ayah/${ayah.surah}/${ayah.ayah}`;
   // Stable id linking the visible match-reason label to its description, so the
   // explanation is announced by assistive tech instead of being mouse-only.
@@ -80,6 +85,27 @@ export function AyahCard({
     if (variant === "full") recordVisit(ayah.surah, ayah.ayah);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ayah.surah, ayah.ayah, variant]);
+
+  /**
+   * Add this verse to the revision plan (FR-050), or take it out again.
+   *
+   * Ignored before hydration: the plan state is still the empty one, so an
+   * early click would offer "Add" for a verse that is already scheduled.
+   * Toggling off never touches recorded reviews — they are a record of study
+   * that happened (same rule as removing an item on the revision page).
+   */
+  function togglePlan() {
+    if (!planHydrated) return;
+    if (planned) {
+      removeItem(ref);
+      toast.success(`${ref} removed from your plan. Its recorded reviews are kept.`);
+    } else {
+      addRange([{ surah: ayah.surah, ayah: ayah.ayah }]);
+      toast.success(
+        `${ref} added to your plan. The first review is scheduled for tomorrow.`
+      );
+    }
+  }
 
   async function copyToClipboard(value: string, kind: "link" | "text") {
     try {
@@ -194,6 +220,25 @@ export function AyahCard({
             aria-hidden
           />
           {bookmarked ? "Saved" : "Save"}
+        </button>
+
+        <button
+          type="button"
+          onClick={togglePlan}
+          aria-pressed={planned}
+          className={cn(
+            "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors",
+            planned
+              ? "bg-gold-soft text-accent-foreground"
+              : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
+          )}
+        >
+          {planned ? (
+            <Check className="h-3.5 w-3.5" aria-hidden />
+          ) : (
+            <ListPlus className="h-3.5 w-3.5" aria-hidden />
+          )}
+          {planned ? "In plan" : "Add to plan"}
         </button>
 
         <button

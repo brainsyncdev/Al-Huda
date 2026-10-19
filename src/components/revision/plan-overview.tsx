@@ -25,6 +25,7 @@ import {
   eventsFor,
   getLadder,
   statsFor,
+  todayFrom,
   type RevisionItem,
 } from "@/lib/revision/scheduling";
 import type { SurahOption } from "@/lib/revision/surah-options";
@@ -187,7 +188,10 @@ export function PlanOverview({
   const revision = useRevision();
   const { state, items, events } = revision;
 
-  const today = new Date(nowMs).toISOString().slice(0, 10);
+  // Same derivation the scheduler uses (`todayFrom`): two independent ways of
+  // computing "today" would eventually disagree and could place one verse in
+  // both the due list and the upcoming list.
+  const today = todayFrom(nowMs);
   const stats = statsFor(state, nowMs);
   const allItems = Object.values(items).sort(
     (a, b) => a.dueDate.localeCompare(b.dueDate) || a.reference.localeCompare(b.reference)

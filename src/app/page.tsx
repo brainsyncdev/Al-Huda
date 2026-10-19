@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { BookOpen, ChevronRight, ShieldCheck, Sparkles } from "lucide-react";
 import { SearchBox } from "@/components/search/search-box";
+import { JsonLd } from "@/components/seo/json-ld";
+import { quranJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 import { ContinueReading } from "@/components/home/continue-reading";
 import { VerseOfDayDisplay } from "@/components/home/verse-of-day";
 import { getSurahIndex } from "@/lib/quran/data";
@@ -19,6 +21,8 @@ export default function HomePage() {
 
   return (
     <div className="space-y-14 pb-8">
+      <JsonLd nodes={[websiteJsonLd(), quranJsonLd()]} />
+
       {/* Hero ------------------------------------------------------------- */}
       <section
         className="relative overflow-hidden pt-6 md:pt-12"

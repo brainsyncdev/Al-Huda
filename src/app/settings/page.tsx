@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { Check, ExternalLink, RotateCcw, ShieldCheck } from "lucide-react";
-import { toast } from "sonner";
+import { Check, ExternalLink, ShieldCheck } from "lucide-react";
+import { BackupControls } from "@/components/library/backup-controls";
 import { ARABIC_SIZES, arabicSizeClass, usePrefs } from "@/lib/prefs/context";
-import { useLibrary } from "@/lib/library/context";
 
 export default function SettingsPage() {
   const {
@@ -17,29 +15,6 @@ export default function SettingsPage() {
     setShowTransliteration,
     hydrated: prefsHydrated,
   } = usePrefs();
-  const { exportData, clearAll, hydrated: libHydrated } = useLibrary();
-
-  function handleExport() {
-    if (!libHydrated) return;
-    const data = exportData();
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `al-huda-library-${new Date().toISOString().slice(0, 10)}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    toast.success("Library exported");
-  }
-
-  function handleClear() {
-    if (confirm("Erase all local bookmarks, notes, and reading history?")) {
-      clearAll();
-      toast.success("Library cleared");
-    }
-  }
 
   return (
     <div className="space-y-8 pb-8">
@@ -126,7 +101,8 @@ export default function SettingsPage() {
         </h2>
         <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Bookmarks, private notes, reading history, and preferences stay in your browser’s localStorage. We do not collect them.
+            Bookmarks, private notes, reading history, your revision plan, and
+            preferences stay in your browser’s localStorage. We do not collect them.
           </p>
           {/* FR-044 / Journey D acceptance: state the flip side of local-only
               storage, so the privacy guarantee is not mistaken for durability. */}
@@ -137,28 +113,10 @@ export default function SettingsPage() {
             Because nothing is uploaded, there is no server copy to restore from.
             Clearing site data or cookies, browsing in a private or incognito
             window, switching browser or device, or uninstalling the browser will
-            erase these preferences and your library. Use Export JSON first if
-            you want to keep them.
+            erase these preferences, your library, and your revision plan. Use
+            Export backup first if you want to keep them.
           </p>
-          <div className="flex flex-wrap gap-2.5">
-            <button
-              type="button"
-              onClick={handleExport}
-              disabled={!libHydrated}
-              className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground disabled:opacity-50"
-            >
-              Export JSON
-            </button>
-            <button
-              type="button"
-              onClick={handleClear}
-              disabled={!libHydrated}
-              className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-destructive transition-colors hover:bg-destructive/10 disabled:opacity-50"
-            >
-              <RotateCcw className="h-4 w-4" aria-hidden />
-              Delete all local data
-            </button>
-          </div>
+          <BackupControls />
         </div>
       </section>
 

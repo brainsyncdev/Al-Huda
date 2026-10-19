@@ -7,6 +7,7 @@ import { SOURCES, ARABIC_CREDIT, TRANSLATION_CREDIT, PACKAGE_CREDIT } from "@/li
 export const metadata: Metadata = {
   title: `About — ${SITE_NAME}`,
   description: "About the calm, source-first Quran reading hub.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

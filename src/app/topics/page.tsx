@@ -5,6 +5,7 @@ export const metadata = {
   title: "Topics",
   description:
     "Curated themes in the Quran — editorial reading aids with review status. Not tafsir.",
+  alternates: { canonical: "/topics" },
 };
 
 export default function TopicsIndexPage() {
