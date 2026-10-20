@@ -9,7 +9,10 @@
 // package really ships content, which is the licence-provenance rule in
 // docs/DATA-PROVENANCE.md applied mechanically.
 
-import { SOURCES, type SourceRecord } from "@/lib/quran/sources";
+// Relative imports: see the note at the top of grounding.ts. This module is also
+// imported by /editorial, where either specifier works — relative keeps the
+// whole AI graph resolvable under vitest.
+import { SOURCES, type SourceRecord } from "../quran/sources";
 
 export interface ApprovedSource {
   id: string;

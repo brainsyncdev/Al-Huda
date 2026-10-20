@@ -122,6 +122,22 @@ export function sourceLanguageLabel(language?: string): string {
   return SOURCE_LANGUAGE_LABELS[language] ?? language;
 }
 
+/**
+ * Version label for display. FR-075: the version field is required, but only
+ * one record in the catalog carries a numeric release number. The others
+ * record HOW content is pinned ("As pinned by quran-json@3.1.2", "Link target,
+ * not version-pinned in this app"), and rendering those with a bare "v" prefix
+ * produced nonsense like "vAs pinned by quran-json@3.1.2" on /sources and
+ * /editorial — two pages whose entire purpose is stating provenance.
+ *
+ * Prefixed only when the string names a numbered release, so the label can
+ * never misstate the pin state it is describing. Takes the record rather than
+ * the string because both call sites hold one.
+ */
+export function sourceVersionLabel(record: SourceRecord): string {
+  return /^\d/.test(record.version) ? `v${record.version}` : record.version;
+}
+
 /** Default translation credit line shown in the reader. */
 export const TRANSLATION_CREDIT =
   "English translation: Saheeh International (Umm Muhammad), via Tanzil.net";

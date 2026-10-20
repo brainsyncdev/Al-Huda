@@ -42,12 +42,35 @@ action is framed so nobody expects a server copy to exist.
 
 ### SEO and structured data (§15)
 
-`src/lib/seo/jsonld.ts` is the single source of truth for JSON-LD
-(WebSite, QuranWork, breadcrumbs, package dataset), emitted through a
-`JsonLd` component that escapes `<` and Unicode line terminators against
-script breakout. Sitemap and robots are present; canonical `alternates` are
-set on every indexable route; private/utility pages (library, settings,
-revision, editorial, report) are explicitly noindexed.
+One self-contained module, `src/lib/seo/json-ld.ts`, emits `WebSite` (with a
+`SearchAction` whose URL template matches the real `GET /search?q=` route),
+`Book` for the Quran, `Chapter` per surah, `WebPage` + `mainEntity` for ayah
+and topic pages, `CollectionPage` for the surah index, `DataCatalog` of
+`Dataset` for the source registry, and `BreadcrumbList` trails. It is rendered
+by `src/components/seo/json-ld.tsx`, which escapes `<` to `\u003c` plus
+U+2028/U+2029 so no editorial string can close the script element. Sitemap and
+robots are present; canonical `alternates` are set on every indexable route;
+private/utility pages (library, settings, revision, editorial, report) are
+explicitly noindexed.
+
+§15 permits structured data only "when semantically appropriate and accurate",
+so the module is defined partly by refusals: no `datePublished`/`dateModified`
+(the vendored package carries no revelation or edition dates), no page numbers
+or Juz ranges (`DATA-PROVENANCE.md` records the Juz mapping as an
+approximation), and no `review`/`lastReviewed` on topics — every curated topic
+ships `pending-scholarly-review`, so the real state travels in
+`creativeWorkStatus` instead. Provenance claims are derived from `sources.ts`,
+so the markup cannot drift from what `/sources` shows a human reader.
+
+Two known thinnesses, recorded rather than silently expanded:
+`surahIndexJsonLd` asserts only `numberOfItems` on its `ItemList` rather than
+enumerating 114 links, and `ayahJsonLd` names and locates a verse without
+inlining its text. Neither is inaccurate; both under-assert.
+
+This path previously held a thin facade re-exporting part of a sibling
+`./jsonld` builder module, which let a page import a name the facade never
+re-exported and fail only at build time. Both are now one module whose export
+list is exactly what its consumers name.
 
 ### Grounded AI harness (FR-060–066) — feature **off**
 
@@ -98,8 +121,10 @@ a single boolean.
 | --- | --- | --- |
 | FR-066 has no report destination | Corrections cannot actually reach anyone | Configure an address/tracker — release blocker |
 | No qualified reviewer assigned | Every topic stays `pending-scholarly-review`; AI gate `editorial-reviewer` unmet | Assign a reviewer |
-| AI evaluation set never executed | Gates `evaluation-dataset`, `citation-coverage`, `abstention-rate`, `hallucination-zero` cannot be marked met | Run the suite in the verification phase |
-| Two validation scripts never run | FR-070/075 not demonstrated end-to-end | Run `node scripts/validate-quran-data.mjs` and `…-licenses.mjs` |
+| AI evaluation set never executed | Gates `evaluation-dataset`, `citation-coverage`, `abstention-rate`, `hallucination-zero` cannot be marked met | Run the suite in the verification phase. It previously could not resolve at all: `grounding.ts`, `audit.ts`, `approved-sources.ts` and `evaluation-set.ts` imported via `@/lib/...` while `vitest.config.ts` deliberately configures no alias and Vite does not read tsconfig `paths`. All four now use relative imports, matching `evaluation-set.test.ts` and the existing `src/lib/quran/` suites, with a comment at the top of `grounding.ts` explaining why they must not be "tidied" back |
+| Two validation scripts never run | FR-070/075 not demonstrated end-to-end | Run `npm run validate:quran` and `npm run validate:licenses` |
+| `quran-json` declared as `^3.1.2`, not pinned | `package.json:56` permits any 3.x, so the effective pin is the lockfile while `sources.ts`, `DATA-PROVENANCE.md` and `EDITORIAL.md` all assert `quran-json@3.1.2` | Tighten to `3.1.2` and re-verify the lockfile in the same commit |
+| No byte-level checksum baseline | FR-071's immutability claim rests on the version string plus `validate-quran-data.mjs`'s structural scan; a tampered file with correct counts and non-empty text passes both | Deliberately not shipped: a checksum recorder can only be populated by executing it, and verification is deferred, so a committed script would sit permanently at "no baseline" — a false gate dressed as a real one |
 | Open Graph / Twitter tags not verified per route | Social previews unconfirmed | Inspect rendered output after a production build |
 | Rate limiting is per-process | Not sufficient alone in production | Edge/CDN rate limit (documented in `src/lib/api/v1.ts`) |
 | `juz.ts` metadata unverified against a printed Mushaf | Juz shown is canonical Hafs scheme but unverified | Verify against the chosen Mushaf edition |
@@ -113,8 +138,8 @@ run**. In order:
 ```bash
 npm run typecheck                 # tsc --noEmit: structural gate
 npm run test                      # vitest: scheduling, search, sources, cross-refs, storage, evaluation-set
-node scripts/validate-quran-data.mjs        # expect 114 surahs, 6236 ayat, 0 issues
-node scripts/validate-source-licenses.mjs   # expect all source records complete
+npm run validate:quran               # expect 114 surahs, 6236 ayat, 0 issues
+npm run validate:licenses            # expect all source records complete
 npm run lint
 npm run build                     # then: npm start + manual smoke of the flows below
 ```

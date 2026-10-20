@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ExternalLink, ShieldCheck } from "lucide-react";
-import { SOURCES } from "@/lib/quran/sources";
+import { SOURCES, sourceLanguageLabel, sourceVersionLabel } from "@/lib/quran/sources";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs, sourcesJsonLd } from "@/lib/seo/json-ld";
 
@@ -52,11 +52,15 @@ export default function SourcesPage() {
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-wider text-muted-foreground">Version/pin</dt>
-                <dd className="mt-0.5">v{s.version}</dd>
+                <dd className="mt-0.5">{sourceVersionLabel(s)}</dd>
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-wider text-muted-foreground">Delivery</dt>
                 <dd className="mt-0.5 capitalize">{s.method}</dd>
+              </div>
+              <div>
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Content language</dt>
+                <dd className="mt-0.5">{sourceLanguageLabel(s.language)}</dd>
               </div>
             </dl>
             {s.notes && <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.notes}</p>}

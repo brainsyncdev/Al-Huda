@@ -26,13 +26,18 @@
 // Everything abstains with a reason string. There is no partial answer path —
 // one unsupported claim voids the whole draft (FR-063).
 
-import { getAyah, getSurah } from "@/lib/quran/data";
-import { getSource } from "@/lib/quran/sources";
-import { parseReference } from "@/lib/quran/reference";
-import { getTopic } from "@/lib/topics/data";
-import { isApprovedSource, getApprovedSource } from "@/lib/ai/approved-sources";
-import { isAiAnswerEnabled } from "@/lib/ai/feature-flag";
-import { buildAuditRecord, type AiAuditRecord } from "@/lib/ai/audit";
+// RELATIVE IMPORTS, NOT `@/lib/...` — deliberately, and do not "tidy" these.
+// vitest.config.ts configures no path alias on purpose, and evaluation-set.test.ts
+// imports this module relatively. Vite does not read tsconfig `paths` without a
+// plugin, so an alias here does not fail the app build — it fails the AI suite at
+// import resolution, which silently voids the gate evidence in feature-flag.ts.
+import { getAyah, getSurah } from "../quran/data";
+import { getSource } from "../quran/sources";
+import { parseReference } from "../quran/reference";
+import { getTopic } from "../topics/data";
+import { isApprovedSource, getApprovedSource } from "./approved-sources";
+import { isAiAnswerEnabled } from "./feature-flag";
+import { buildAuditRecord, type AiAuditRecord } from "./audit";
 
 // ---------------------------------------------------------------------------
 // Claim model

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { AlertTriangle, FileWarning, ShieldCheck } from "lucide-react";
 import { getAyah, validateDataset } from "@/lib/quran/data";
-import { SOURCES } from "@/lib/quran/sources";
+import {
+  SOURCES,
+  sourceLanguageLabel,
+  sourceVersionLabel,
+} from "@/lib/quran/sources";
 import { APPROVED_SOURCES } from "@/lib/ai/approved-sources";
 import { AI_GATES } from "@/lib/ai/feature-flag";
 import { TOPICS } from "@/lib/topics/data";
@@ -190,7 +194,9 @@ export default function EditorialPage() {
                   </span>
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  v{source.version} · {source.method === "package" ? "bundled in this build" : "link-out only, not redistributed"}
+                  {sourceVersionLabel(source)} · {source.method === "package" ? "bundled in this build" : "link-out only, not redistributed"}
+                  {" · "}
+                  {sourceLanguageLabel(source.language)}
                   {" · "}
                   {approved ? "retrieval-approved (AI allowlist)" : "not on the AI allowlist"}
                 </p>

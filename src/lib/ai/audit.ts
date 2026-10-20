@@ -12,12 +12,14 @@
 // left to the privacy review gate (`privacy-review` in feature-flag.ts), which
 // is not yet met.
 
+// Relative imports: see the note at the top of grounding.ts. Aliasing here breaks
+// the AI suite's resolution, not the app build.
 import {
   AI_MODEL_NAME,
   AI_MODEL_VERSION,
   AI_ANSWER_FEATURE_ENABLED,
-} from "@/lib/ai/feature-flag";
-import type { RequestClass } from "@/lib/ai/grounding";
+} from "./feature-flag";
+import type { RequestClass } from "./grounding";
 
 export type AuditOutcome =
   | "answered"

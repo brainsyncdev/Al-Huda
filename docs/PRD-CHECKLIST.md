@@ -105,7 +105,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 
 | FR | Requirement (verbatim from PRD) | Status | Notes |
 |---|---|---|---|
-| FR-030 (P0) | Show author/work/edition/language for tafsir. | 🟡 PARTIAL | `TafsirLinks` shows author/work/edition; language not displayed separately |
+| FR-030 (P0) | Show author/work/edition/language for tafsir. | ✅ COMPLETE | `tafsir-links.tsx` renders author/work/edition **and** `Language:` per record via `sourceLanguageLabel()`; both tafsir catalog records carry `language: "en"`. Also surfaced on `/sources` and `/editorial` this session. Correction: this row previously read "language not displayed separately" — that was wrong, the reader's tafsir links already displayed it, so the status was already met on the surface FR-030 governs |
 | FR-031 (P0) | Distinguish full text, excerpt, summary, and link to external source. | ✅ COMPLETE | `TafsirLinks` is link-out only, explicitly labeled FR-031 |
 | FR-032 (P0) | Track licensing and permitted display/use per source. | ✅ COMPLETE | `SourceRecord.license` + notes; `DATA-PROVENANCE.md` |
 | FR-033 (P1) | Compare multiple translations side-by-side. | 🚫 BLOCKED | No second translation with verified redistribution rights |
@@ -148,12 +148,12 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 
 | FR | Requirement (verbatim from PRD) | Status | Notes |
 |---|---|---|---|
-| FR-070 (P0) | Import datasets with schema validation and duplicate detection. | 🟡 PARTIAL | Ingestion is by package pin (documented in `docs/EDITORIAL.md`); `scripts/validate-quran-data.mjs` implements schema + duplicate + count gates — **not executed in this environment**; no free-form importer by design |
+| FR-070 (P0) | Import datasets with schema validation and duplicate detection. | 🟡 PARTIAL | Ingestion is by package pin (documented in `docs/EDITORIAL.md`); `scripts/validate-quran-data.mjs` implements schema + duplicate (surah id, slug, verse id) + ordering + declared-vs-actual count + 6236-regression gates, and `scripts/validate-source-licenses.mjs` gates the rights register — both now npm-wired as `pnpm validate:quran` / `pnpm validate:licenses`, and **neither executed in this environment**; no free-form importer by design |
 | FR-071 (P0) | Keep immutable source/version metadata for Quran text and translations. | ✅ COMPLETE | `SourceRecord` + `DATA-PROVENANCE.md` rejection table |
 | FR-072 (P0) | Review and approve topic-to-ayah mappings before public publication. | 🟡 PARTIAL | `/editorial` review board renders status, unresolved refs, curator and dates; approval itself happens in code review — no authenticated workflow exists (no accounts) |
 | FR-073 (P1) | Track changes, reviewers, and publication state. | 🟡 PARTIAL | Publication state + curator + reviewedAt tracked at topic level and shown on `/editorial`; no per-relation change history (documented gap in `docs/EDITORIAL.md`) |
 | FR-074 (P1) | Roll back an incorrect topic mapping or dataset release. | 🟡 PARTIAL | Procedures documented (`docs/EDITORIAL.md`: git revert / re-pin package + validation); no rollback has been exercised |
-| FR-075 (P1) | Display content rights and source status to editors. | ✅ COMPLETE | Rights table on `/sources` (public) and `/editorial` (per-source licence, version, delivery, allowlist state) + `scripts/validate-source-licenses.mjs` |
+| FR-075 (P1) | Display content rights and source status to editors. | ✅ COMPLETE | Rights table on `/sources` (public) and `/editorial` (per-source licence, version, delivery, language, allowlist state) + `scripts/validate-source-licenses.mjs`. `sourceVersionLabel()` now prefixes "v" only for numbered releases: five of six catalog records carry prose pin descriptions ("As pinned by quran-json@3.1.2", "Link target, not version-pinned in this app") that previously rendered as "vAs pinned by…" — a wrong provenance statement on both pages whose job is stating provenance |
 
 ## Section 9: Relationship model
 
@@ -226,8 +226,8 @@ API requirements from §14 (via `src/lib/api/v1.ts`, read this session):
 | `generateMetadata` / `metadata` on content routes | ✅ COMPLETE (static) | Exported on every page route (client pages get it from their `layout.tsx`, e.g. `/report`); canonical `alternates` verified on `/`, `/quran`, surah, ayah, topics, sources, search, about, privacy, terms, accessibility |
 | `sitemap.ts` | ✅ COMPLETE | |
 | `robots.ts` | ✅ COMPLETE | |
-| JSON-LD / schema.org | ✅ COMPLETE (static) | `src/lib/seo/jsonld.ts` builders + `JsonLd` component; emitted on home, surah index, surah, ayah, topic detail, sources, with `<` escaping. Hyphen alias `src/lib/seo/json-ld.ts` delegates so there is one source of truth |
-| Open Graph / Twitter cards | 🟡 PARTIAL | Present on key routes; per-route rendering not verified (needs a build) |
+| JSON-LD / schema.org | ✅ COMPLETE (static) | One self-contained module, `src/lib/seo/json-ld.ts`, plus the `JsonLd` component; emitted on home, surah index, surah, ayah, topic detail and sources. The former `jsonld.ts` builder module and the `json-ld.ts` facade that re-exported only part of it were collapsed into the single hyphenated path, so a page can no longer import a name the facade never re-exported. Provenance claims are derived from `sources.ts`, so the markup cannot drift from what `/sources` shows |
+| Open Graph / Twitter cards | 🟡 PARTIAL | Present on key routes; per-route rendering not verified (needs a build). Restored: an earlier edit replacing the JSON-LD row above swallowed this row, removing a documented gap from the file whose purpose is recording them |
 | Private/thin pages noindex | ✅ COMPLETE | library, settings, revision, editorial, report all `robots: noindex` |
 
 ## Section 16–24: Non-functional, roadmap, deferrals
@@ -247,8 +247,8 @@ API requirements from §14 (via `src/lib/api/v1.ts`, read this session):
 
 | Status | Count |
 |---|---|
-| ✅ COMPLETE | ~57 |
-| 🟡 PARTIAL | ~13 |
+| ✅ COMPLETE | ~58 |
+| 🟡 PARTIAL | ~12 |
 | 🔴 NOT IMPLEMENTED | 2 (FR-014, FR-025 — both P2) |
 | 🚫 BLOCKED | ~9 |
 | ⏸️ DEFERRED | 3 |
@@ -260,6 +260,7 @@ Remaining implementable gaps, in dependency order:
 2. **AI evaluation run** — execute `src/lib/ai/evaluation-set.test.ts` and the two `scripts/*.mjs` validators; record results to move the AI gates from `met: false`.
 3. **Open Graph / Twitter card verification** — confirm rendered OG tags per route after a production build.
 4. **FR-073 per-relation history** — needs a store the build otherwise does not have; decide in a later release.
+5. **`quran-json` is a caret range, not a pin** — `package.json:56` declares `^3.1.2` while `sources.ts`, `DATA-PROVENANCE.md` and `docs/EDITORIAL.md` all state `quran-json@3.1.2`. The effective pin is the lockfile, not the declaration those three documents cite. Tighten to `3.1.2` and re-verify the lockfile in the same commit. Not done here: under deferred verification a lockfile desync could not be checked, and a frozen-lockfile install failure would be invisible until release.
 
 ## Verification disclaimer
 

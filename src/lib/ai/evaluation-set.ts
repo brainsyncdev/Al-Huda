@@ -14,7 +14,10 @@
 // have explicit cases, because those are the gate conditions (zero fabricated
 // citations, abstention on high-risk, non-authority refusal).
 
-import { getAyah, getSurah } from "@/lib/quran/data";
+// Relative imports: see the note at the top of grounding.ts. This file is reached
+// from evaluation-set.test.ts, so an alias here is the one that actually breaks
+// resolution for the whole suite.
+import { getAyah, getSurah } from "../quran/data";
 import {
   classifyRequest,
   evaluateClaim,
@@ -22,7 +25,7 @@ import {
   referenceResolves,
   type Claim,
   type RequestClass,
-} from "@/lib/ai/grounding";
+} from "./grounding";
 
 interface ClassifyCase {
   type: "classify";
