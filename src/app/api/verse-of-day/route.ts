@@ -16,18 +16,24 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   const result = getVerseOfDay();
 
-  if (!result) {
-    return NextResponse.json({ verse: null });
+  // This route sits outside the versioned v1 surface but serves the same
+    // pinned text, so it must not be the one public Quran response that omits
+    // edition and license attribution (PRD §2 principle 2, FR-004, §24).
+    const provenance = contentProvenance();
+  
+    if (!result) {
+      return NextResponse.json({ verse: null, provenance });
+    }
+  
+    return NextResponse.json({
+      verse: {
+        surah: result.surah,
+        ayah: result.ayah,
+        surahTransliteration: result.surahTransliteration,
+        surahArabicName: result.surahArabicName,
+        arabic: result.verse.arabic,
+        translation: result.verse.translation,
+      },
+      provenance,
+    });
   }
-
-  return NextResponse.json({
-    verse: {
-      surah: result.surah,
-      ayah: result.ayah,
-      surahTransliteration: result.surahTransliteration,
-      surahArabicName: result.surahArabicName,
-      arabic: result.verse.arabic,
-      translation: result.verse.translation,
-    },
-  });
-}

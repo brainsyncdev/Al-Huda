@@ -44,7 +44,7 @@ We use the [`quran-json`](https://github.com/risan/quran-json) package (v3.1.2) 
 | Tafsir excerpts | Release 1.1+ | Must track work/author/edition/language/licensing/permitted use per FR-030–FR-032 |
 | Word-by-word | Release 1.1+ | Only from verified licensed dataset (FR-009) |
 | Audio recitation | Release 1.1+ (if licensed) | Provider/rights/integrity metadata required; must be optional |
-| Topics/cross-refs | Phase 2+ | Must record provenance, reviewer, status, relation type (typed relations, not generic) |
+| Topics/cross-refs | Phase 2+ | Typed relations, not generic. Each relation records type, rationale, and an effective provenance record (method, curator, reviewedAt, status). `TopicRelation.provenance` is an optional per-relation override; no relation in the shipped release carries one, so all 56 inherit their topic-level record. Ayah-to-ayah cross-references are derived from the pinned dataset rather than hand-asserted. No per-event change history exists (no store, no accounts) — see `docs/EDITORIAL.md` |
 
 ## Editorial/AI Safety Notes
 
@@ -81,10 +81,10 @@ accepted ingestion path.
 
 - **Side-by-side translations (FR-033):** Not implemented. The vendored `quran-json@3.1.2` package bundles one translation per language, and per-edition Tanzil redistribution terms cannot be verified offline. No second translation dataset or placeholder is bundled.
 - **Juz page ranges:** `src/lib/quran/juz.ts` stores approximate page ranges for a standard 604-page Mushaf. These values are estimates only and are not rendered as exact Mushaf page numbers; UI displays Juz numbers only.
-- **Content-issue reporting:** No verified feedback destination is configured, so no report link is presented. This is intentionally omitted rather than shown as a misleading affordance.
+- **Content-issue reporting:** `/report` collects a category, an optional ayah reference, and a description, validates the reference against the canonical dataset, and prepares the report on the visitor's device through clipboard copy and file download. Email delivery opens the visitor's own mail client only when the deployment sets `NEXT_PUBLIC_REPORT_EMAIL` (`src/lib/report-destination.ts`); with no address configured the page states that plainly rather than implying a delivery that did not happen. Nothing is transmitted or stored server-side, because this build has no server-side store for it.
 
 ---
 
-**Last Updated:** 2026-10-19
+**Last Updated:** 2026-10-21
 **Data Maintainer:** TBD (see PRD 20 roles)
 **Source Version:** quran-json@3.1.2

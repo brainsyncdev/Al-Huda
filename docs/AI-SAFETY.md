@@ -73,6 +73,11 @@ Per PRD 10/23/24, the following must pass before enabling any public AI religiou
 - Hallucination tests: 0 fabricated ayah/hadith/tafsir citations.
 - Source registry complete with versioning and licenses.
 - Privacy review: audit logging policy reviewed and minimal retention defined.
+  Retention is now stated in one exported place — `AUDIT_RETENTION` in
+  `src/lib/ai/audit.ts`: process memory only, bounded to 200 records, never
+  persisted, discarded when the process exits. The gate itself stays unmet:
+  a privacy review has to be performed by a person, not inferred from the
+  existence of a constant.
 - Editorial governance: qualified reviewer/advisor assigned to review AI outputs/abstention cases.
 
 ## Implementation Notes

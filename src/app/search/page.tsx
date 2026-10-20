@@ -25,6 +25,11 @@ export const metadata: Metadata = {
   title: "Search the Quran",
   description:
     "Search by reference (2:255), surah name, Arabic text, translation, or transliteration. Filter by Surah, revelation type, Juz, or curated topic.",
+  // PRD §15 keeps "internal search states" out of the index. Every `?q=`
+  // variant is a user-specific query state, and the query-less page is only
+  // the empty state plus the methodology panel — thin by itself. `follow`
+  // stays on so the ayah links rendered in results are still discovered.
+  robots: { index: false, follow: true },
   alternates: { canonical: absoluteUrl("/search") },
 };
 
@@ -117,13 +122,17 @@ export default async function SearchPage({ searchParams }: Props) {
 
         <div className="mx-auto max-w-2xl rounded-2xl border border-border/80 bg-card p-5 text-sm text-muted-foreground space-y-2">
           <p>
-            Matching is rule-based and transparent. Results favor
-            reference/surah-name matches first, then exact word/normalized
-            matches. Arabic diacritics are stripped only for matching; displayed
-            Arabic is shown verbatim from the source dataset. When your query
-            matches a curated topic title, related verses from that topic’s
-            editorial selection are included as “Curated theme match” — lexical
-            expansion, not embedding-based semantic similarity.
+            Matching is rule-based and transparent. Reference matches come
+            first, then surah-name matches, then verse-text matches ranked by
+            lexical relevance: whole-word occurrences of your query outrank
+            substring echoes, and a match in the translation outranks one in
+            the transliteration. Canonical mushaf order breaks every tie, so
+            the same query always returns the same ordering. Arabic diacritics
+            are stripped only for matching; displayed Arabic is shown verbatim
+            from the source dataset. When your query matches a curated topic
+            title, related verses from that topic’s editorial selection are
+            included last as “Curated theme match” — lexical expansion, not
+            embedding-based semantic similarity.
           </p>
           <p>
             One verified English translation (Saheeh International) is shipped.

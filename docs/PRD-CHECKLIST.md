@@ -73,7 +73,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | FR-001 (P0) | Display Surah index with Arabic name, transliteration/English label where available, verse count, and revelation metadata only when verified. | ✅ COMPLETE | `/quran` index page; metadata from pinned dataset |
 | FR-002 (P0) | Display all available ayat in canonical order. | ✅ COMPLETE | Surah page renders all ayat in order |
 | FR-003 (P0) | Support navigation by Surah and ayah number. | ✅ COMPLETE | `/quran`, `/ayah/:s/:a`, prev/next links |
-| FR-004 (P0) | Display selected translation and edition/source label. | ✅ COMPLETE | Saheeh International credited on every ayah card and source panel |
+| FR-004 (P0) | Display selected translation and edition/source label. | ✅ COMPLETE | Saheeh International credited on every ayah card, the source panel, and (this pass) the home-page verse-of-day card, which previously rendered a translation with no edition label. The label is read from the payload's `contentProvenance()` block rather than hardcoded, so it cannot drift from `sources.ts`; `/api/verse-of-day` now attaches that block |
 | FR-005 (P0) | Provide copy/share link to stable ayah reference. | ✅ COMPLETE | Copy link button on ayah card, `absoluteUrl` helper |
 | FR-006 (P1) | Allow font size, line spacing, and reading layout preferences. | ✅ COMPLETE | Settings page: arabicSize, lineHeight, showTranslation, showTransliteration |
 | FR-007 (P1) | Support continuous reading and next/previous Surah navigation. | ✅ COMPLETE | Surah page renders all ayat; prev/next surah links |
@@ -87,7 +87,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | FR-011 (P0) | Search Arabic and translation text using normalized indexing. | ✅ COMPLETE | `normalizeArabic`, `normalizeLatin`, `searchQuran` |
 | FR-012 (P1) | Filter results by Surah, translation edition, topic, or content type. | 🟡 PARTIAL | Surah, revelation type, Juz, curated topic implemented; edition filter blocked on FR-033 |
 | FR-013 (P1) | Show snippets with highlighted terms while preserving readable Arabic. | ✅ COMPLETE | `findSnippetRange` + `<mark>` in `ayah-card.tsx` |
-| FR-014 (P2) | Natural-language semantic retrieval across approved content. | 🚫 BLOCKED | No embedding model/index or vector store in the local-only architecture; existing keyword search satisfies FR-011. Semantic retrieval is deferred (needs infrastructure + verified datasets). |
+| FR-014 (P2) | Natural-language semantic retrieval across approved content. | 🟡 PARTIAL | Every part achievable without new infrastructure is implemented and wired into `/search` and `GET /api/v1/search`: query normalization (Arabic diacritic folding, Latin punctuation folding), lexical relevance scoring (whole-word occurrences outrank substring echoes; translation outranks transliteration; canonical mushaf order breaks ties), a full-corpus scan before truncation so ranking sees every candidate, bounded curated topic-term expansion, and per-hit explanations through FR-015. The expansion is labeled "Curated theme match" and the page copy states it is lexical, not semantic. Embedding-based semantic retrieval stays blocked: no embedding model, vector index, or authorized external AI service exists in this local-only architecture, and introducing one needs both new infrastructure and explicit authorization |
 | FR-015 (P2) | Show why a result matched (exact phrase, translation term, curated theme, or semantic similarity). | ✅ COMPLETE | `MatchReason` + `REASON_LABELS` + chip with `aria-describedby` |
 
 ### 8.3 Topic system and knowledge graph
@@ -96,7 +96,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 |---|---|---|---|
 | FR-020 (P0) | Support curated topics with stable slug, title, description, language, and editorial status. | ✅ COMPLETE | `Topic` interface + `LANGUAGE_LABELS` display |
 | FR-021 (P0) | Link topics to ayat through typed relationships. | ✅ COMPLETE | `TopicRelation` with type, rationale, provenance |
-| FR-022 (P0) | Record who/what created the relationship, source, review status, and last-reviewed date. | ✅ COMPLETE | `Topic.provenance`: method, curator, reviewedAt, status |
+| FR-022 (P0) | Record who/what created the relationship, source, review status, and last-reviewed date. | ✅ COMPLETE | `ProvenanceRecord` (method, curator, reviewedAt, status) is stamped on the topic and optionally overridden per relation via `TopicRelation.provenance`; `relationProvenance(relation, topic)` resolves the effective record and every verse card displays it with its scope stated ("this relation" vs "inherited from topic"), so topic-level status is never mistaken for an individual review. No shipped relation carries an override yet, so all 56 inherit — said on the topic page and counted on `/editorial` |
 | FR-023 (P1) | Support related topics and ayah-to-ayah cross-references. | ✅ COMPLETE | `topic.related` + `cross-references.ts` (dataset-derived) |
 | FR-024 (P1) | Provide an accessible list view even if a graph visualization exists. | ✅ COMPLETE | `LexicalMatchGroupsPanel` (ordered links, no canvas) |
 | FR-025 (P2) | Interactive graph visualization with keyboard-accessible alternatives. | ✅ COMPLETE | `TopicGraph` component (`src/components/topics/topic-graph.tsx`) renders an SVG with focusable `<a>` nodes per topic and keyboard-navigable links; list view below remains the accessible alternative for FR-024 |
@@ -141,7 +141,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | FR-062 (P2) | Separate retrieved quotations from generated summaries. | 🟡 PARTIAL | Quote vs summary segment types enforced structurally in `respond()`; no live answers to separate |
 | FR-063 (P2) | Abstain when retrieval is insufficient. | 🟡 PARTIAL | Abstention paths implemented (empty retrieval, failed validation, non-authority, high-risk) behind an off flag |
 | FR-064 (P2) | Avoid presenting personal opinions or generated content as Quran, hadith, tafsir, fatwa, or scholarly consensus. | ✅ COMPLETE | Non-authority kinds refuse before retrieval; no AI answer feature renders content |
-| FR-065 (P2) | Log source IDs and model/version metadata for quality audits, subject to privacy policy. | 🟡 PARTIAL | `src/lib/ai/audit.ts`: no user/prompt fields by construction, bounded process-local ring, `featureEnabled: false`; privacy policy review gate unmet |
+| FR-065 (P2) | Log source IDs and model/version metadata for quality audits, subject to privacy policy. | 🟡 PARTIAL | `src/lib/ai/audit.ts`: no user/prompt/question fields by construction, bounded process-local ring, `featureEnabled: false`. Retention policy is now stated in one exported constant (`AUDIT_RETENTION`: process memory only, 200-record bound, never persisted, cleared on process exit) so the privacy gate has something concrete to review. The gate itself stays unmet — a privacy review must be performed by a person, not inferred from the existence of a constant |
 | FR-066 (P2) | Provide user feedback/reporting for inaccurate or inappropriate answers. | 🟡 PARTIAL | `/report` form built (category, reference, validation, clipboard/download) and linked from the footer; delivery destination configurable via `NEXT_PUBLIC_REPORT_EMAIL` (mailto) with file download; **no destination configured by default** — remains a release-blocker until an operator sets one (mechanics implemented) |
 
 ### 8.8 Editorial/admin tooling
@@ -175,6 +175,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | Colour never alone for meaning | ✅ COMPLETE | Match-reason chip uses text + weight + underline |
 | `lang` / `dir` on Arabic | ✅ COMPLETE | `lang="ar" dir="rtl"` on Arabic paragraphs |
 | `aria-label`, `aria-pressed`, `aria-describedby` | ✅ COMPLETE | AyahCard, bookmark button, match-reason chip |
+| Skip-to-content link | ✅ COMPLETE | First focusable element in `src/app/layout.tsx`, visually hidden until focused, targeting the `#main-content` landmark on `<main>` |
 | `/accessibility` page | ✅ COMPLETE | Feedback section now points at `/report` |
 
 ## Section 12–13: UX, responsive, error handling
@@ -207,6 +208,8 @@ static inspection of the shared plumbing rather than a per-route review.
 | `GET /api/v1/topics/:slug/ayahs` | ✅ COMPLETE (static) | File present |
 | `GET /api/v1/ayahs/:surahNumber/:ayahNumber/tafsir` | ✅ COMPLETE (static) | File present; must return honest "link-out only" response |
 | `GET /api/v1/sources` | ✅ COMPLETE (static) | File present |
+| `GET /api/verse-of-day` (unversioned) | ✅ COMPLETE (static) | Feeds the home-page verse card; deliberately outside the v1 surface, so it keeps its own envelope but now attaches `contentProvenance()` — it must not be the one public Quran payload without edition attribution |
+| `GET /api/validate-dataset` (unversioned) | ✅ COMPLETE (static) | Structural health check documented in `docs/EDITORIAL.md`; divergent `{ success, ... }` envelope and HTTP 500-on-issues by design, because it is a diagnostic rather than a content API. No in-app consumer — `/editorial` calls `validateDataset()` directly — so it exists for operators/monitoring |
 | Authenticated endpoints (`/api/library/*`, `/api/ai/ask`) | 🚫 BLOCKED | No-accounts architecture; excluded by AI_RULES |
 | Cross-reference / graph data endpoint | ⏸️ DEFERRED | Deliberate (availability risk noted in PRD §14); FR-024 satisfied by the HTML list view |
 
@@ -224,11 +227,11 @@ API requirements from §14 (via `src/lib/api/v1.ts`, read this session):
 | Requirement | Status | Notes |
 |---|---|---|
 | `generateMetadata` / `metadata` on content routes | ✅ COMPLETE (static) | Exported on every page route (client pages get it from their `layout.tsx`, e.g. `/report`); canonical `alternates` verified on `/`, `/quran`, surah, ayah, topics, sources, search, about, privacy, terms, accessibility |
-| `sitemap.ts` | ✅ COMPLETE | |
+| `sitemap.ts` | ✅ COMPLETE | Home, surah index, 114 surah pages, topics index, 11 topic pages, about, sources, privacy, terms, accessibility. `/search` is deliberately absent (noindexed internal state), and the 6,236 ayah pages are not enumerated exhaustively — surfaced via surah/topic links instead, as the file's comment records |
 | `robots.ts` | ✅ COMPLETE | |
 | JSON-LD / schema.org | ✅ COMPLETE (static) | One self-contained module, `src/lib/seo/json-ld.ts`, plus the `JsonLd` component; emitted on home, surah index, surah, ayah, topic detail and sources. The former `jsonld.ts` builder module and the `json-ld.ts` facade that re-exported only part of it were collapsed into the single hyphenated path, so a page can no longer import a name the facade never re-exported. Provenance claims are derived from `sources.ts`, so the markup cannot drift from what `/sources` shows |
-| Open Graph / Twitter cards | 🟡 PARTIAL | Present on key routes; per-route rendering not verified (needs a build). Restored: an earlier edit replacing the JSON-LD row above swallowed this row, removing a documented gap from the file whose purpose is recording them |
-| Private/thin pages noindex | ✅ COMPLETE | library, settings, revision, editorial, report all `robots: noindex` |
+| Open Graph / Twitter cards | 🟡 PARTIAL | Root layout supplies both `openGraph` and `twitter` metadata alongside `metadataBase`, so every route inherits a social preview; content pages override title/description per route. Rendered output is **not** verified — confirming the emitted tags per route needs a production build |
+| Private/thin pages noindex | ✅ COMPLETE | library, settings, revision, editorial, report all `robots: noindex`. `/search` now joins them (`{ index: false, follow: true }`) per PRD §15's rule that internal search states stay out of the index, while `follow` keeps the ayah links in results discoverable; `robots.ts` disallows the same private set so the two mechanisms agree rather than one silently overriding the other |
 
 ## Section 16–24: Non-functional, roadmap, deferrals
 
@@ -247,20 +250,32 @@ API requirements from §14 (via `src/lib/api/v1.ts`, read this session):
 
 | Status | Count |
 |---|---|
-| ✅ COMPLETE | ~58 |
+| ✅ COMPLETE | ~60 |
 | 🟡 PARTIAL | ~12 |
-| 🔴 NOT IMPLEMENTED | 2 (FR-014, FR-025 — both P2) |
-| 🚫 BLOCKED | ~9 |
+| 🔴 NOT IMPLEMENTED | 0 |
+| 🚫 BLOCKED | ~8 |
 | ⏸️ DEFERRED | 3 |
 | ❓ UNVERIFIED | 2 |
 
+No requirement is unimplemented. FR-025 (topic graph) and FR-014 (lexical
+retrieval) both left the unimplemented column in this pass; FR-014 lands in
+PARTIAL rather than COMPLETE because embedding-based semantic retrieval needs
+infrastructure this local-only build does not have, which is also why BLOCKED
+dropped by one. Counts are approximate — the table tracks ~75 rows and the
+honest signal is the per-row status, not the arithmetic.
+
 Remaining implementable gaps, in dependency order:
 
-1. **FR-066 destination** — configure where correction reports go (release blocker for closing FR-066).
+None of the following is implementable from this environment; each needs a
+person, a licence, or a running build.
+
+1. **FR-066 destination** — set `NEXT_PUBLIC_REPORT_EMAIL` at deployment to enable email delivery. Clipboard and download work without it, so the intake is usable today; only delivery is operator-dependent.
 2. **AI evaluation run** — execute `src/lib/ai/evaluation-set.test.ts` and the two `scripts/*.mjs` validators; record results to move the AI gates from `met: false`.
-3. **Open Graph / Twitter card verification** — confirm rendered OG tags per route after a production build.
-4. **FR-073 per-relation history** — needs a store the build otherwise does not have; decide in a later release.
-5. **`quran-json` pin** — `package.json` now pins `quran-json: 3.1.2` exactly. Lockfile re-verification deferred to the testing phase per the no-verification directive.
+3. **Open Graph / Twitter card verification** — confirm rendered tags per route after a production build.
+4. **FR-073 change history** — per-relation provenance and inheritance are shipped; per-event history (who changed what, when, reviewer identity) needs a store this build deliberately lacks. Git history is the only real audit trail.
+5. **`quran-json` pin** — `package.json` pins `quran-json: 3.1.2` exactly. Lockfile re-verification deferred to the testing phase per the no-verification directive.
+6. **Qualified reviewer** — until one is assigned, every topic stays `pending-scholarly-review` and the AI `editorial-reviewer` gate cannot be met.
+7. **FR-008 Mushaf verification** — the Juz mapping is the canonical Hafs scheme but is unverified against a printed edition, so page ranges stay approximate and unrendered.
 
 ## Verification disclaimer
 

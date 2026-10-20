@@ -157,8 +157,13 @@ const MAX_TOPIC_HITS_PER_TERM = 6;
 const MAX_TOPIC_TERM_HITS = 12;
 
 /** Full search entry point. Deterministic ordering: reference first (when the
- *  query is a valid reference), then exact word-boundary matches ordered by
- *  canonical mushaf order, then curated topic-term expansions (labeled). */
+ *  query is a valid reference), then surah-name matches, then verse-text
+ *  matches ranked by lexical relevance tier (whole-word occurrences outrank
+ *  substring echoes; translation outranks transliteration), with canonical
+ *  mushaf order breaking every tie, then curated topic-term expansions
+ *  (labeled). The tiers are rule-based scoring over the same normalized text
+ *  the keyword search already used — not semantic similarity. See the FR-014
+ *  note above for what full semantic retrieval would additionally require. */
 export function searchQuran(query: string, options: SearchOptions = {}): SearchResults {
   const limit = options.limit ?? 50;
   const trimmed = query.trim();

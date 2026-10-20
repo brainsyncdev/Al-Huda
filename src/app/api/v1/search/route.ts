@@ -12,10 +12,16 @@ import { apiError, apiOk, boundedInt, contentProvenance, guarded } from "@/lib/a
 
 // GET /api/v1/search?q=...&limit=...&offset=...&language=... (PRD §14).
 //
-// Pagination note: searchQuran stops scanning once it has filled its limit, so
-// the true result count is unknowable without a full scan. Rather than
-// publishing a fabricated `total`, this endpoint reports `returned` and
-// `truncated` and lets the caller page until truncated is false.
+// Pagination note: searchQuran always scans the whole corpus and ranks every
+// match before truncating, so a count is technically obtainable — but not one
+// that is stable across pages. The curated topic-term expansion only runs when
+// the direct-match list leaves room under the requested bound, so any single
+// `total` would mix two different match populations and shift between a
+// limit=25 page and a limit=100 page. Rather than publish a number that looks
+// exact but is not, this endpoint reports `returned` and `truncated` and lets
+// the caller page until truncated is false. `SCAN_CAP` bounds how deep a caller
+// may page into the ranked list: the reachable prefix is the top 500 by
+// relevance, not the first 500 in mushaf order.
 export const dynamic = "force-dynamic";
 
 const MAX_QUERY_LENGTH = 200;
@@ -160,7 +166,7 @@ export async function GET(request: NextRequest) {
         totalScanned: results.totalScanned,
         provenance: contentProvenance(),
         notes: [
-          "No total count is published: the searcher stops at its limit, so an exact total would require a full corpus scan per request.",
+          "No total count is published: the searcher ranks every match from a full corpus scan and then truncates to the requested bound, and the curated topic-term expansion is itself bound-dependent, so a single total would not be stable across page sizes.",
           "Arabic matching strips diacritics and unifies letter variants for lookup only; the Arabic returned is verbatim from the pinned dataset.",
           "language=ar restricts to Arabic-text matches; language=en restricts to translation, transliteration and surah-metadata matches. Reference matches are always included.",
           "A surah-name match indicates the query hit surah metadata, not the verse text; those ayat are entry points into the surah.",

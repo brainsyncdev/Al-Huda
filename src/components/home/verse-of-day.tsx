@@ -14,6 +14,13 @@ interface VerseOfDayPayload {
 
 interface VerseOfDayResponse {
   verse: VerseOfDayPayload | null;
+  /** Edition/license block from `contentProvenance()` in the route. Optional
+   *  so a payload without it still renders the verse rather than failing. */
+  provenance?: {
+    datasetPackage?: string;
+    translation?: string | null;
+    sourceCatalog?: string;
+  } | null;
 }
 
 type Status = "loading" | "ready" | "empty" | "error";
@@ -36,7 +43,10 @@ type Status = "loading" | "ready" | "empty" | "error";
  */
 export function VerseOfDayDisplay() {
   const [status, setStatus] = useState<Status>("loading");
-  const [verse, setVerse] = useState<VerseOfDayPayload | null>(null);
+    const [verse, setVerse] = useState<VerseOfDayPayload | null>(null);
+    const [translationEdition, setTranslationEdition] = useState<string | null>(
+      null
+    );
 
   useEffect(() => {
     const controller = new AbortController();
@@ -44,9 +54,10 @@ export function VerseOfDayDisplay() {
     fetch("/api/verse-of-day", { signal: controller.signal })
       .then((res) => (res.ok ? res.json() : Promise.reject(new Error("bad status"))))
       .then((data: VerseOfDayResponse) => {
-        setVerse(data.verse ?? null);
-        setStatus(data.verse ? "ready" : "empty");
-      })
+              setVerse(data.verse ?? null);
+              setTranslationEdition(data.provenance?.translation ?? null);
+              setStatus(data.verse ? "ready" : "empty");
+            })
       .catch((error: unknown) => {
         if (error instanceof DOMException && error.name === "AbortError") return;
         setStatus("error");
@@ -89,11 +100,24 @@ export function VerseOfDayDisplay() {
             {verse.arabic}
           </p>
           <p className="mt-4 text-[1.05rem] leading-relaxed text-foreground/85">
-            {verse.translation}
-          </p>
-          <p className="mt-4 text-sm font-medium text-gold">
-            {verse.surahTransliteration} · {verse.surah}:{verse.ayah}
-          </p>
+                      {verse.translation}
+                    </p>
+                    {/* FR-004: the translation edition label travels with the text on
+                        every public Quran surface, including this one. */}
+                    {translationEdition && (
+                      <p className="mt-2 text-xs text-muted-foreground">
+                        Translation: {translationEdition} ·{" "}
+                        <Link
+                          href="/sources"
+                          className="underline underline-offset-2 hover:text-foreground"
+                        >
+                          source details
+                        </Link>
+                      </p>
+                    )}
+                    <p className="mt-4 text-sm font-medium text-gold">
+                      {verse.surahTransliteration} · {verse.surah}:{verse.ayah}
+                    </p>
         </>
       )}
 

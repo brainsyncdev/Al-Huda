@@ -16,9 +16,24 @@ Surah index and reader pages render every ayah of the pinned dataset
 translation, transliteration, with credit lines on each card and in the site
 footer. Search covers references, Arabic (normalized), translation,
 transliteration, and surah names, with highlighted snippets and a stated match
-reason (FR-015). Eleven curated topics carry typed, provenance-stamped
-relations (`method`, `curator`, `reviewedAt`, `status`) and dataset-derived
-ayat-to-ayah cross-references. Tafsir and second translations remain
+reason (FR-015).
+
+Direct verse matches are ranked by lexical relevance before anything is
+truncated: whole-word occurrences of the query outrank substring echoes, a
+translation match outranks a transliteration match, and canonical mushaf order
+breaks every tie so the same query always returns the same ordering. The
+ranking is rule-based scoring over the same normalized text the keyword search
+already used — it is not semantic similarity. A bounded curated topic-term
+expansion is appended last and labeled "Curated theme match" (FR-014). Full
+embedding-based retrieval remains blocked on infrastructure this local-only
+build does not have.
+
+Eleven curated topics carry typed, provenance-stamped relations (`method`,
+`curator`, `reviewedAt`, `status`) and dataset-derived ayat-to-ayah
+cross-references. The same provenance shape is available per relation as an
+optional override; no relation in this release carries one, so all 56 inherit
+their topic-level record, and each verse card states that scope rather than
+implying an individual review took place. Tafsir and second translations remain
 link-out/blocked on rights — see the checklist.
 
 ### Revision workflow (FR-050–053)
@@ -79,7 +94,7 @@ list is exactly what its consumers name.
 | `src/lib/ai/feature-flag.ts` | `AI_ANSWER_FEATURE_ENABLED = false`, model name/version, 7 named gates (only "source registry" currently met) |
 | `src/lib/ai/approved-sources.ts` | Allowlist derived from `method === "package"` — link-out sources cannot become retrieval sources by editing an array |
 | `src/lib/ai/grounding.ts` | Request classification; non-authority claims (hadith, tafsir, ruling, consensus) refuse *before* retrieval; high-risk classes always redirect; Arabic/translation claims must match the dataset verbatim; one failed claim voids the whole draft |
-| `src/lib/ai/audit.ts` | Records with no user, prompt, or question field by construction; `isGateEvidence()` excludes abstentions and flag rejections from certifying coverage gates; bounded process-local ring |
+| `src/lib/ai/audit.ts` | Records with no user, prompt, or question field by construction; `isGateEvidence()` excludes abstentions and flag rejections from certifying coverage gates; exported `AUDIT_RETENTION` states the policy in one reviewable place (process memory only, 200-record bound, never persisted, cleared on process exit) |
 | `src/lib/ai/evaluation-set.ts` | 22 cases with ground truth derived from the dataset at run time (never hand-typed Arabic) |
 | `src/lib/ai/evaluation-set.test.ts` | Vitest artifact covering gate conditions, flag-off rejection, audit privacy |
 
@@ -111,6 +126,19 @@ edges derived from `topic.related`. The `/topics` index keeps the existing
 list view below the graph, which remains the accessible alternative required
 by FR-024.
 
+### Shell, metadata, and access
+
+`src/app/layout.tsx` places a skip-to-content link as the first focusable
+element in the tab order (visually hidden until focused, targeting the
+`#main-content` landmark on `<main>`), and supplies root-level `openGraph` and
+`twitter` metadata alongside `metadataBase`, so every route inherits a social
+preview while content pages override title and description per route. The
+rendered output of neither is verified — that needs a production build.
+
+`src/app/robots.ts` disallows `/library`, `/settings`, `/learn`, `/editorial`,
+and `/report`, matching the per-route `noindex` metadata on the same pages
+rather than relying on one mechanism alone.
+
 ## 2. Architecture decisions that constrain future work
 
 1. **No accounts, no analytics, no admin write paths** — from AI_RULES. Sync,
@@ -134,9 +162,10 @@ by FR-024.
 | Two validation scripts never run | FR-070/075 not demonstrated end-to-end | Run `npm run validate:quran` and `npm run validate:licenses` |
 | `quran-json` pin status | `package.json` now pins `quran-json: 3.1.2` exactly | Verify lockfile consistency in testing phase |
 | No byte-level checksum baseline | FR-071's immutability claim rests on the version string plus `validate-quran-data.mjs`'s structural scan; a tampered file with correct counts and non-empty text passes both | Deliberately not shipped: a checksum recorder can only be populated by executing it, and verification is deferred, so a committed script would sit permanently at "no baseline" — a false gate dressed as a real one |
-| Open Graph / Twitter tags not verified per route | Social previews unconfirmed | Inspect rendered output after a production build |
+| Open Graph / Twitter tags not verified per route | Root-level metadata exists for both, so every route inherits a preview, but the emitted markup is unconfirmed | Inspect rendered output after a production build |
 | Rate limiting is per-process | Not sufficient alone in production | Edge/CDN rate limit (documented in `src/lib/api/v1.ts`) |
 | `juz.ts` metadata unverified against a printed Mushaf | Juz shown is canonical Hafs scheme but unverified | Verify against the chosen Mushaf edition |
+| No per-event editorial history (FR-073) | Publication state, curator, review date, and optional per-relation provenance overrides are tracked and displayed; who-changed-what history is not | A store this build deliberately lacks; git history is the only real audit trail |
 | Audio / second translation / word-by-word | Blocked on rights and datasets | Licence verification |
 
 ## 4. Verification plan (deferred — run before any release claim)

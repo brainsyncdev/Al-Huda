@@ -88,7 +88,15 @@ this environment** (verification deferred); that is recorded in
 
 - No editor accounts or admin UI with write paths — the build has no accounts
   (AI_RULES), so publication state lives in code review, not in a CMS.
-- No per-relation reviewer history: `TopicRelation` carries type and rationale;
-  reviewer and status live at topic level (`provenance`). Per-relation history
-  would require a store the build does not otherwise have, and is tracked as
-  partial in the checklist rather than faked.
+- Per-relation review records exist in the schema but not in the data:
+  `TopicRelation.provenance` is an optional override that, when present,
+  replaces the topic-level record for that one relation (read via
+  `relationProvenance`). Every relation shipped in this release has no
+  override, so all of them inherit the topic-level record. `/editorial`
+  reports that honestly as 0 of 56 individually reviewed, and each verse on a
+  topic page labels its review state "inherited from topic" rather than
+  implying a per-relation pass took place.
+- No change history: who changed what, when, and the identity of the reviewer
+  are not recorded per event. That would need a store the build does not
+  otherwise have (no accounts, no database), so it stays partial in the
+  checklist rather than faked. Git history is the only real audit trail.
