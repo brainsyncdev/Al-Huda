@@ -220,10 +220,37 @@ export function searchQuran(query: string, options: SearchOptions = {}): SearchR
   }
 
   // 3) Arabic text search (normalized), then 4) translation/transliteration.
+  //
+  // The whole corpus is scanned and every match is scored before anything is
+  // truncated, so ranking decisions see every candidate (a prefix-truncated
+  // scan would rank only whichever surahs happen to come first canonically).
   const arabicQuery = normalizeArabic(trimmed);
   const isArabicQuery = /[\u0600-\u06FF]/.test(trimmed);
   const corpus = ensureCorpus();
   let scanned = 0;
+
+  // Lexical relevance tiers for FR-014/FR-015 — rule-based, not semantic:
+  // higher scores mean a closer textual match to the query as typed.
+  const SCORE_ARABIC = 100; // direct match against the verse's own Arabic
+  const SCORE_TRANSLATION_BASE = 60; // query appears in the English translation
+  const SCORE_TRANSLITERATION = 40; // query appears in the Latin transliteration
+
+  // Compiled once: word-boundary occurrences of the query in the translation
+  // (normalized text contains only [a-z0-9 -], so \b behaves predictably).
+  let wordRe: RegExp | null = null;
+  if (latinQuery.length >= 2) {
+    try {
+      wordRe = new RegExp(
+        `\\b${latinQuery.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`,
+        "g"
+      );
+    } catch {
+      wordRe = null;
+    }
+  }
+
+  type Scored = { hit: SearchHit; score: number };
+  const scored: Scored[] = [];
 
   for (const meta of index) {
     const surah = getSurah(meta.id);
@@ -234,7 +261,10 @@ export function searchQuran(query: string, options: SearchOptions = {}): SearchR
 
       if (isArabicQuery && arabicQuery.length >= 2) {
         if (corpus.arabic.get(k)?.includes(arabicQuery)) {
-          hits.push(toHit(meta.transliteration, meta.slug, ayah, "arabic"));
+          scored.push({
+            hit: toHit(meta.transliteration, meta.slug, ayah, "arabic"),
+            score: SCORE_ARABIC,
+          });
           continue;
         }
       }
@@ -242,19 +272,38 @@ export function searchQuran(query: string, options: SearchOptions = {}): SearchR
       if (latinQuery.length >= 2) {
         const hay = corpus.latin.get(k) ?? "";
         if (hay.includes(latinQuery)) {
-          const reason: MatchReason = normalizeLatin(ayah.translation).includes(
-            latinQuery
-          )
-            ? "translation"
-            : "transliteration";
-          hits.push(toHit(meta.transliteration, meta.slug, ayah, reason));
+          const tnorm = normalizeLatin(ayah.translation);
+          const isTrans = tnorm.includes(latinQuery);
+          const reason: MatchReason = isTrans ? "translation" : "transliteration";
+          let score = isTrans ? SCORE_TRANSLATION_BASE : SCORE_TRANSLITERATION;
+          if (isTrans && wordRe) {
+            // Whole-word occurrences outrank substring echoes: for the query
+            // "patience", a verse containing "patience" three times ranks
+            // above one containing "patient" once. Deterministic and bounded.
+            wordRe.lastIndex = 0;
+            const matches = tnorm.match(wordRe);
+            if (matches) {
+              score += Math.min(20, matches.length * 5);
+            }
+          }
+          scored.push({
+            hit: toHit(meta.transliteration, meta.slug, ayah, reason),
+            score,
+          });
         }
       }
-
-      if (hits.length >= limit) break;
     }
-    if (hits.length >= limit) break;
   }
+
+  // Relevance first; canonical mushaf order breaks ties so the ordering is
+  // fully deterministic (the stable prefix property the search tests pin).
+  scored.sort((a, b) => {
+    if (b.score !== a.score) return b.score - a.score;
+    if (a.hit.surah !== b.hit.surah) return a.hit.surah - b.hit.surah;
+    if (a.hit.ayah !== b.hit.ayah) return a.hit.ayah - b.hit.ayah;
+    return a.hit.reason.localeCompare(b.hit.reason);
+  });
+  for (const s of scored) hits.push(s.hit);
 
   // 5) FR-014: curated topic-term expansion (Latin queries only, bounded).
   //    Skipped for reference queries (they returned early) and for pure
