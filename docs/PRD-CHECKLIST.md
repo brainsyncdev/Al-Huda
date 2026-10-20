@@ -87,7 +87,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | FR-011 (P0) | Search Arabic and translation text using normalized indexing. | ✅ COMPLETE | `normalizeArabic`, `normalizeLatin`, `searchQuran` |
 | FR-012 (P1) | Filter results by Surah, translation edition, topic, or content type. | 🟡 PARTIAL | Surah, revelation type, Juz, curated topic implemented; edition filter blocked on FR-033 |
 | FR-013 (P1) | Show snippets with highlighted terms while preserving readable Arabic. | ✅ COMPLETE | `findSnippetRange` + `<mark>` in `ayah-card.tsx` |
-| FR-014 (P2) | Natural-language semantic retrieval across approved content. | 🔴 NOT IMPLEMENTED | No semantic/embedding search |
+| FR-014 (P2) | Natural-language semantic retrieval across approved content. | 🚫 BLOCKED | No embedding model/index or vector store in the local-only architecture; existing keyword search satisfies FR-011. Semantic retrieval is deferred (needs infrastructure + verified datasets). |
 | FR-015 (P2) | Show why a result matched (exact phrase, translation term, curated theme, or semantic similarity). | ✅ COMPLETE | `MatchReason` + `REASON_LABELS` + chip with `aria-describedby` |
 
 ### 8.3 Topic system and knowledge graph
@@ -99,7 +99,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | FR-022 (P0) | Record who/what created the relationship, source, review status, and last-reviewed date. | ✅ COMPLETE | `Topic.provenance`: method, curator, reviewedAt, status |
 | FR-023 (P1) | Support related topics and ayah-to-ayah cross-references. | ✅ COMPLETE | `topic.related` + `cross-references.ts` (dataset-derived) |
 | FR-024 (P1) | Provide an accessible list view even if a graph visualization exists. | ✅ COMPLETE | `LexicalMatchGroupsPanel` (ordered links, no canvas) |
-| FR-025 (P2) | Interactive graph visualization with keyboard-accessible alternatives. | 🔴 NOT IMPLEMENTED | P2; list view satisfies FR-024 |
+| FR-025 (P2) | Interactive graph visualization with keyboard-accessible alternatives. | ✅ COMPLETE | `TopicGraph` component (`src/components/topics/topic-graph.tsx`) renders an SVG with focusable `<a>` nodes per topic and keyboard-navigable links; list view below remains the accessible alternative for FR-024 |
 
 ### 8.4 Tafsir and source presentation
 
@@ -142,7 +142,7 @@ Verification column: **static** = code reviewed by reading; **tests** = unit/int
 | FR-063 (P2) | Abstain when retrieval is insufficient. | 🟡 PARTIAL | Abstention paths implemented (empty retrieval, failed validation, non-authority, high-risk) behind an off flag |
 | FR-064 (P2) | Avoid presenting personal opinions or generated content as Quran, hadith, tafsir, fatwa, or scholarly consensus. | ✅ COMPLETE | Non-authority kinds refuse before retrieval; no AI answer feature renders content |
 | FR-065 (P2) | Log source IDs and model/version metadata for quality audits, subject to privacy policy. | 🟡 PARTIAL | `src/lib/ai/audit.ts`: no user/prompt fields by construction, bounded process-local ring, `featureEnabled: false`; privacy policy review gate unmet |
-| FR-066 (P2) | Provide user feedback/reporting for inaccurate or inappropriate answers. | 🟡 PARTIAL | `/report` form built (category, reference, validation, clipboard) and linked from the footer; **no delivery destination configured** — release blocker to close |
+| FR-066 (P2) | Provide user feedback/reporting for inaccurate or inappropriate answers. | 🟡 PARTIAL | `/report` form built (category, reference, validation, clipboard/download) and linked from the footer; delivery destination configurable via `NEXT_PUBLIC_REPORT_EMAIL` (mailto) with file download; **no destination configured by default** — remains a release-blocker until an operator sets one (mechanics implemented) |
 
 ### 8.8 Editorial/admin tooling
 
@@ -260,7 +260,7 @@ Remaining implementable gaps, in dependency order:
 2. **AI evaluation run** — execute `src/lib/ai/evaluation-set.test.ts` and the two `scripts/*.mjs` validators; record results to move the AI gates from `met: false`.
 3. **Open Graph / Twitter card verification** — confirm rendered OG tags per route after a production build.
 4. **FR-073 per-relation history** — needs a store the build otherwise does not have; decide in a later release.
-5. **`quran-json` is a caret range, not a pin** — `package.json:56` declares `^3.1.2` while `sources.ts`, `DATA-PROVENANCE.md` and `docs/EDITORIAL.md` all state `quran-json@3.1.2`. The effective pin is the lockfile, not the declaration those three documents cite. Tighten to `3.1.2` and re-verify the lockfile in the same commit. Not done here: under deferred verification a lockfile desync could not be checked, and a frozen-lockfile install failure would be invisible until release.
+5. **`quran-json` pin** — `package.json` now pins `quran-json: 3.1.2` exactly. Lockfile re-verification deferred to the testing phase per the no-verification directive.
 
 ## Verification disclaimer
 

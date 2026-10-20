@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TOPICS } from "@/lib/topics/data";
+import { TopicGraph } from "@/components/topics/topic-graph";
 
 export const metadata = {
   title: "Topics",
@@ -23,32 +24,39 @@ export default function TopicsIndexPage() {
         </p>
       </header>
 
-      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {TOPICS.map((topic) => (
-          <li key={topic.slug}>
-            <Link
-              href={`/topics/${topic.slug}`}
-              className="group flex h-full flex-col rounded-2xl border border-border/80 bg-card p-5 transition-colors hover:border-primary/30 hover:bg-secondary/40"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <h2 className="font-display text-lg font-semibold tracking-tight">
-                  {topic.title}
-                </h2>
-                <span className="arabic-display text-2xl text-gold" lang="ar">
-                  {topic.arabicTitle}
-                </span>
-              </div>
-              <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-                {topic.summary}
-              </p>
-              <p className="mt-4 text-xs font-medium text-primary group-hover:underline">
-                {topic.relations.length} curated verse
-                {topic.relations.length === 1 ? "" : "s"}
-              </p>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <TopicGraph topics={TOPICS} />
+
+      <section aria-labelledby="topic-list-heading" className="space-y-3">
+        <h2 id="topic-list-heading" className="font-display text-xl font-semibold tracking-tight">
+          All topics
+        </h2>
+        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {TOPICS.map((topic) => (
+            <li key={topic.slug}>
+              <Link
+                href={`/topics/${topic.slug}`}
+                className="group flex h-full flex-col rounded-2xl border border-border/80 bg-card p-5 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <h2 className="font-display text-lg font-semibold tracking-tight">
+                    {topic.title}
+                  </h2>
+                  <span className="arabic-display text-2xl text-gold" lang="ar">
+                    {topic.arabicTitle}
+                  </span>
+                </div>
+                <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+                  {topic.summary}
+                </p>
+                <p className="mt-4 text-xs font-medium text-primary group-hover:underline">
+                  {topic.relations.length} curated verse
+                  {topic.relations.length === 1 ? "" : "s"}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
       <aside className="rounded-2xl border border-gold/30 bg-gold-soft/60 p-4 text-sm text-accent-foreground">
         <p>

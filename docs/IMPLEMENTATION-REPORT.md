@@ -93,14 +93,23 @@ a single boolean.
 - `/editorial` (noindex, read-only): dataset validation scan, per-topic
   publication state with unresolved-reference flags, rights register with
   allowlist state, and the AI gate table.
-- `/report`: correction intake (react-hook-form + zod), critical categories
-  first, copy-to-clipboard delivery, and an explicit statement that **no
-  delivery destination is configured yet**. Linked from the site footer and
-  the accessibility statement's feedback section.
+- `/report`: correction intake (category, reference, validation),
+  copy-to-clipboard **and download**, plus an optional mailto delivery when
+  `NEXT_PUBLIC_REPORT_EMAIL` is set at build time
+  (`src/lib/report-destination.ts`). Linked from the site footer and the
+  accessibility statement's feedback section.
 - `docs/EDITORIAL.md`: roles, the seven-step workflow, correction handling,
   rollback procedures, and the deliberate scope gaps.
 - `scripts/validate-quran-data.mjs` (schema, duplicates, ordering, counts) and
   `scripts/validate-source-licenses.mjs` (rights register fields).
+
+### Topic relationship graph (FR-025)
+
+`src/components/topics/topic-graph.tsx` renders an SVG layout of curated
+topics with `<a>`-wrapped nodes (keyboard-focusable, `aria-label`ed) and
+edges derived from `topic.related`. The `/topics` index keeps the existing
+list view below the graph, which remains the accessible alternative required
+by FR-024.
 
 ## 2. Architecture decisions that constrain future work
 
@@ -119,11 +128,11 @@ a single boolean.
 
 | Gap | Impact | Needs |
 | --- | --- | --- |
-| FR-066 has no report destination | Corrections cannot actually reach anyone | Configure an address/tracker — release blocker |
+| FR-066 destination (mechanics) | Delivery actions implemented (mailto via `NEXT_PUBLIC_REPORT_EMAIL`, file download, clipboard) with honest fallback copy; no address baked in | Set `NEXT_PUBLIC_REPORT_EMAIL` at deployment if email delivery is required |
 | No qualified reviewer assigned | Every topic stays `pending-scholarly-review`; AI gate `editorial-reviewer` unmet | Assign a reviewer |
 | AI evaluation set never executed | Gates `evaluation-dataset`, `citation-coverage`, `abstention-rate`, `hallucination-zero` cannot be marked met | Run the suite in the verification phase. It previously could not resolve at all: `grounding.ts`, `audit.ts`, `approved-sources.ts` and `evaluation-set.ts` imported via `@/lib/...` while `vitest.config.ts` deliberately configures no alias and Vite does not read tsconfig `paths`. All four now use relative imports, matching `evaluation-set.test.ts` and the existing `src/lib/quran/` suites, with a comment at the top of `grounding.ts` explaining why they must not be "tidied" back |
 | Two validation scripts never run | FR-070/075 not demonstrated end-to-end | Run `npm run validate:quran` and `npm run validate:licenses` |
-| `quran-json` declared as `^3.1.2`, not pinned | `package.json:56` permits any 3.x, so the effective pin is the lockfile while `sources.ts`, `DATA-PROVENANCE.md` and `EDITORIAL.md` all assert `quran-json@3.1.2` | Tighten to `3.1.2` and re-verify the lockfile in the same commit |
+| `quran-json` pin status | `package.json` now pins `quran-json: 3.1.2` exactly | Verify lockfile consistency in testing phase |
 | No byte-level checksum baseline | FR-071's immutability claim rests on the version string plus `validate-quran-data.mjs`'s structural scan; a tampered file with correct counts and non-empty text passes both | Deliberately not shipped: a checksum recorder can only be populated by executing it, and verification is deferred, so a committed script would sit permanently at "no baseline" — a false gate dressed as a real one |
 | Open Graph / Twitter tags not verified per route | Social previews unconfirmed | Inspect rendered output after a production build |
 | Rate limiting is per-process | Not sufficient alone in production | Edge/CDN rate limit (documented in `src/lib/api/v1.ts`) |
