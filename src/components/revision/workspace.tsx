@@ -15,7 +15,7 @@
 
 import { useEffect, useState } from "react";
 import { GraduationCap } from "lucide-react";
-import { Link } from "next/link";
+import Link from "next/link";
 import { useRevision } from "@/lib/revision/context";
 import { dueItems } from "@/lib/revision/scheduling";
 import type { SurahOption } from "@/lib/revision/surah-options";
