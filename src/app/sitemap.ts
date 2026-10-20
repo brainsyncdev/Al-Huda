@@ -8,9 +8,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const today = new Date();
 
   // `/search` is deliberately absent: it is an internal search state and is
-    // noindexed (PRD §15), so listing it here would advertise a URL the robots
-    // policy tells crawlers to ignore.
-    const staticRoutes = ["", "/quran", "/topics", "/about", "/sources", "/privacy", "/terms", "/accessibility"].map(
+  // noindexed (PRD §15), so listing it here would advertise a URL the robots
+  // policy tells crawlers to ignore.
+  const staticRoutes = [
+    "",
+    "/quran",
+    "/topics",
+    "/about",
+    "/sources",
+    "/privacy",
+    "/terms",
+    "/accessibility",
+  ].map(
     (path) => ({
       url: absoluteUrl(path),
       lastModified: today,

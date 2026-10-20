@@ -43,10 +43,10 @@ type Status = "loading" | "ready" | "empty" | "error";
  */
 export function VerseOfDayDisplay() {
   const [status, setStatus] = useState<Status>("loading");
-    const [verse, setVerse] = useState<VerseOfDayPayload | null>(null);
-    const [translationEdition, setTranslationEdition] = useState<string | null>(
-      null
-    );
+  const [verse, setVerse] = useState<VerseOfDayPayload | null>(null);
+  const [translationEdition, setTranslationEdition] = useState<string | null>(
+    null
+  );
 
   useEffect(() => {
     const controller = new AbortController();
@@ -100,24 +100,24 @@ export function VerseOfDayDisplay() {
             {verse.arabic}
           </p>
           <p className="mt-4 text-[1.05rem] leading-relaxed text-foreground/85">
-                      {verse.translation}
-                    </p>
-                    {/* FR-004: the translation edition label travels with the text on
-                        every public Quran surface, including this one. */}
-                    {translationEdition && (
-                      <p className="mt-2 text-xs text-muted-foreground">
-                        Translation: {translationEdition} ·{" "}
-                        <Link
-                          href="/sources"
-                          className="underline underline-offset-2 hover:text-foreground"
-                        >
-                          source details
-                        </Link>
-                      </p>
-                    )}
-                    <p className="mt-4 text-sm font-medium text-gold">
-                      {verse.surahTransliteration} · {verse.surah}:{verse.ayah}
-                    </p>
+            {verse.translation}
+          </p>
+          {/* FR-004: the translation edition label travels with the text on
+              every public Quran surface, including this one. */}
+          {translationEdition && (
+            <p className="mt-2 text-xs text-muted-foreground">
+              Translation: {translationEdition} ·{" "}
+              <Link
+                href="/sources"
+                className="underline underline-offset-2 hover:text-foreground"
+              >
+                source details
+              </Link>
+            </p>
+          )}
+          <p className="mt-4 text-sm font-medium text-gold">
+            {verse.surahTransliteration} · {verse.surah}:{verse.ayah}
+          </p>
         </>
       )}
 
