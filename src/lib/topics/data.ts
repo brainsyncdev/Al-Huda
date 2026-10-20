@@ -17,11 +17,34 @@ export type RelationType =
 
 export type ReviewStatus = "pending-scholarly-review" | "editorial-approved";
 
+/**
+ * FR-073: publication-state record shared by topics and, optionally, by
+ * individual relations. The shape is identical at both levels so a
+ * per-relation override is a drop-in replacement for the inherited value.
+ */
+export interface ProvenanceRecord {
+  /** How the selection or review was produced. */
+  method: string;
+  /** Who produced it. */
+  curator: string;
+  /** ISO date of the last editorial pass. */
+  reviewedAt: string;
+  status: ReviewStatus;
+}
+
 export interface TopicRelation {
   ref: AyahRef;
   type: RelationType;
   /** One-line, neutral description of why this ayah is included. */
   rationale: string;
+  /**
+   * FR-073: optional per-relation review record. When present it overrides the
+   * topic-level provenance for this relation only (read via
+   * `relationProvenance`). Absent by default: no relation in this release has
+   * been individually reviewed, and inventing one would fabricate review
+   * history that does not exist.
+   */
+  provenance?: ProvenanceRecord;
 }
 
 export interface Topic {
@@ -41,22 +64,14 @@ export interface Topic {
   /** Related topic slugs for lateral navigation. */
   related: string[];
   relations: TopicRelation[];
-  provenance: {
-    /** How the selection was produced. */
-    method: string;
-    /** Who produced it. */
-    curator: string;
-    /** ISO date of the last editorial pass. */
-    reviewedAt: string;
-    status: ReviewStatus;
-  };
+  provenance: ProvenanceRecord;
 }
 
-const REVIEW = {
+const REVIEW: ProvenanceRecord = {
   method: "editorial-selection-v1 (well-known ayat, non-exhaustive)",
   curator: "Al-Huda editorial seed",
   reviewedAt: "2026-10-17",
-  status: "pending-scholarly-review" as ReviewStatus,
+  status: "pending-scholarly-review",
 };
 
 function rel(ayah: number, surah: number) {
@@ -526,6 +541,24 @@ export function getTopic(slug: string): Topic | undefined {
 
 export function topicTitle(slug: string): string {
   return TOPICS.find((t) => t.slug === slug)?.title ?? slug;
+}
+
+/**
+ * FR-073: effective provenance for one relation. A relation carrying its own
+ * review record overrides the topic-level value; otherwise the relation
+ * inherits the topic's provenance (the default for every relation shipped in
+ * this release).
+ */
+export function relationProvenance(
+  relation: TopicRelation,
+  topic: Topic
+): ProvenanceRecord {
+  return relation.provenance ?? topic.provenance;
+}
+
+/** Count of relations carrying an individual review record (FR-073). */
+export function individuallyReviewedCount(topic: Topic): number {
+  return topic.relations.filter((r) => r.provenance !== undefined).length;
 }
 
 /** Reverse index: which topics include a given ayah. */

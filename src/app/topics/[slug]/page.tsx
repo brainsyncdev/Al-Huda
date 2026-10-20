@@ -5,7 +5,12 @@ import { AlertTriangle } from "lucide-react";
 import { TopicAyahCard } from "@/components/topics/topic-ayah-card";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import type { AyahRef } from "@/lib/quran/types";
-import { LANGUAGE_LABELS, TOPICS, getTopic } from "@/lib/topics/data";
+import {
+  LANGUAGE_LABELS,
+  TOPICS,
+  getTopic,
+  relationProvenance,
+} from "@/lib/topics/data";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs, topicJsonLd } from "@/lib/seo/json-ld";
@@ -129,6 +134,8 @@ export default async function TopicDetailPage({ params }: Props) {
             surahTransliteration={surah.transliteration}
             type={relation.type}
             rationale={relation.rationale}
+            provenance={relationProvenance(relation, topic)}
+            provenanceScope={relation.provenance ? "relation" : "topic"}
           />
         ))}
       </section>
@@ -158,8 +165,18 @@ export default async function TopicDetailPage({ params }: Props) {
         </section>
       )}
 
-      <div className="text-xs text-muted-foreground">
-        <p>Provenance: see each relation type label and the rationale above. All displayed text originates from the source catalog listed on this site. No AI-generated exegesis is presented as scripture.</p>
+      {/* FR-073: state the provenance model readers are looking at — including
+          that every relation currently inherits the topic-level record because
+          no relation has been individually reviewed yet. */}
+      <div className="text-xs text-muted-foreground space-y-1">
+        <p>
+          Provenance: each verse above shows its effective review record — a
+          relation with no individual review inherits the topic-level record
+          (status, curator, method, last pass) displayed at the top. No
+          relation on this topic has an individual review record yet. All
+          displayed text originates from the source catalog listed on this
+          site. No AI-generated exegesis is presented as scripture.
+        </p>
       </div>
     </div>
   );

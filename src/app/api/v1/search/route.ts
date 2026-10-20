@@ -164,6 +164,7 @@ export async function GET(request: NextRequest) {
           "Arabic matching strips diacritics and unifies letter variants for lookup only; the Arabic returned is verbatim from the pinned dataset.",
           "language=ar restricts to Arabic-text matches; language=en restricts to translation, transliteration and surah-metadata matches. Reference matches are always included.",
           "A surah-name match indicates the query hit surah metadata, not the verse text; those ayat are entry points into the surah.",
+          "topic-term matches come from curated topic selections (editorial, not embedding-based semantic similarity). They are labeled 'Curated theme match' and never replace direct verse-text matches.",
         ],
       }
     );

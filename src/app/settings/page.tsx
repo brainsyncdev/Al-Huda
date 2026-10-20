@@ -126,6 +126,15 @@ export default function SettingsPage() {
         </h2>
         <ul className="space-y-2">
           <li>
+            <Link href="/settings/privacy" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
+              <span className="flex items-center gap-2">
+                <ShieldCheck className="h-4 w-4 text-gold" aria-hidden />
+                Privacy &amp; local storage
+              </span>
+              <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
+            </Link>
+          </li>
+          <li>
             <Link href="/sources" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
               <span className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-gold" aria-hidden />

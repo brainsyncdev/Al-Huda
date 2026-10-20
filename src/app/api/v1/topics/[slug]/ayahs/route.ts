@@ -1,7 +1,12 @@
 import type { NextRequest } from "next/server";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import { getJuzForAyah } from "@/lib/quran/juz";
-import { RELATION_TYPE_LABELS, getTopic, TOPICS } from "@/lib/topics/data";
+import {
+  RELATION_TYPE_LABELS,
+  getTopic,
+  relationProvenance,
+  TOPICS,
+} from "@/lib/topics/data";
 import {
   apiError,
   apiOk,
@@ -49,6 +54,7 @@ export async function GET(
         });
         continue;
       }
+      const effective = relationProvenance(relation, topic);
       verses.push({
         ...toApiAyah(verse, getJuzForAyah(verse.surah, verse.ayah)),
         surahTransliteration: meta.transliteration,
@@ -58,6 +64,13 @@ export async function GET(
           type: relation.type,
           typeLabel: RELATION_TYPE_LABELS[relation.type],
           rationale: relation.rationale,
+          provenance: {
+            method: effective.method,
+            curator: effective.curator,
+            reviewedAt: effective.reviewedAt,
+            status: effective.status,
+            inherited: relation.provenance === undefined,
+          },
         },
       });
     }
@@ -71,6 +84,7 @@ export async function GET(
         provenance: contentProvenance(),
         notes: [
           "Verses are rendered verbatim from the pinned dataset; the relation rationale is editorial copy and is not tafsir.",
+          "Relation provenance is the effective review record; `inherited: true` means the relation has no individual review record.",
           "Any entry in `unresolved` is a data-integrity defect in the editorial selection, not a missing verse.",
         ],
       }

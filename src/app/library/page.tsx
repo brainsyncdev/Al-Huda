@@ -124,10 +124,18 @@ export default function LibraryPage() {
 
       {hydrated && noteList.length > 0 && (
         <section aria-labelledby="notes" className="space-y-3">
-          <h2 id="notes" className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight">
-            <NotebookPen className="h-5 w-5 text-gold" aria-hidden />
-            Private notes
-          </h2>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h2 id="notes" className="flex items-center gap-2 font-display text-xl font-semibold tracking-tight">
+              <NotebookPen className="h-5 w-5 text-gold" aria-hidden />
+              Private notes
+            </h2>
+            <Link
+              href="/library/notes"
+              className="text-xs font-medium text-primary underline underline-offset-2 hover:decoration-gold"
+            >
+              View all notes &amp; filter by tag
+            </Link>
+          </div>
           <ul className="space-y-2">
             {noteList.map((n) => (
               <li key={n.id}>

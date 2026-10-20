@@ -9,7 +9,7 @@ import {
 } from "@/lib/quran/sources";
 import { APPROVED_SOURCES } from "@/lib/ai/approved-sources";
 import { AI_GATES } from "@/lib/ai/feature-flag";
-import { TOPICS } from "@/lib/topics/data";
+import { TOPICS, individuallyReviewedCount } from "@/lib/topics/data";
 
 // Editorial review board (FR-072, FR-073, FR-075, PRD §20).
 //
@@ -42,12 +42,22 @@ export default function EditorialPage() {
       const verse = getAyah(relation.ref.surah, relation.ref.ayah);
       return verse === null;
     });
-    return { topic, unresolved };
+    const individuallyReviewed = individuallyReviewedCount(topic);
+    return { topic, unresolved, individuallyReviewed };
   });
 
   const pendingCount = TOPICS.filter(
     (topic) => topic.provenance.status === "pending-scholarly-review"
   ).length;
+
+  const totalRelations = topicRows.reduce(
+    (sum, row) => sum + row.topic.relations.length,
+    0
+  );
+  const totalIndividuallyReviewed = topicRows.reduce(
+    (sum, row) => sum + row.individuallyReviewed,
+    0
+  );
 
   return (
     <div className="space-y-8 pb-8">
@@ -118,6 +128,15 @@ export default function EditorialPage() {
           Approval requires a qualified reviewer, who is not yet assigned —
           until then nothing flips to editorial-approved.
         </p>
+        {/* FR-073: per-relation review records are surfaced, including the
+            honest zero — the schema supports individual review, the history
+            does not contain any yet. */}
+        <p className="mt-1 max-w-prose text-xs leading-relaxed text-muted-foreground">
+          Per-relation provenance: {totalIndividuallyReviewed} of{" "}
+          {totalRelations} relations carry an individual review record; the
+          remaining {totalRelations - totalIndividuallyReviewed} inherit the
+          topic-level record.
+        </p>
 
         <div className="mt-4 overflow-x-auto">
           <table className="w-full min-w-[46rem] text-left text-sm">
@@ -131,7 +150,7 @@ export default function EditorialPage() {
               </tr>
             </thead>
             <tbody>
-              {topicRows.map(({ topic, unresolved }) => (
+              {topicRows.map(({ topic, unresolved, individuallyReviewed }) => (
                 <tr key={topic.slug} className="border-b border-border/60 align-top">
                   <td className="py-2.5 pr-3">
                     <Link
@@ -153,8 +172,11 @@ export default function EditorialPage() {
                   </td>
                   <td className="py-2.5 pr-3 tabular-nums text-foreground/85">
                     {topic.relations.length}
+                    <span className="block text-xs font-normal text-muted-foreground">
+                      {individuallyReviewed} individually reviewed
+                    </span>
                     {unresolved.length > 0 && (
-                      <span className="ml-2 inline-flex items-center gap-1 text-xs font-medium text-destructive">
+                      <span className="mt-0.5 inline-flex items-center gap-1 text-xs font-medium text-destructive">
                         <AlertTriangle className="h-3.5 w-3.5" aria-hidden />
                         {unresolved.length} unresolved
                       </span>

@@ -8,13 +8,25 @@ import { useLibrary } from "@/lib/library/context";
 import { arabicSizeClass, usePrefs } from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
 import { absoluteUrl } from "@/lib/site";
-import { RELATION_TYPE_LABELS, type RelationType } from "@/lib/topics/data";
+import {
+  RELATION_TYPE_LABELS,
+  type ProvenanceRecord,
+  type RelationType,
+} from "@/lib/topics/data";
 
 interface TopicAyahCardProps {
   ayah: Ayah;
   surahTransliteration: string;
   type: RelationType;
   rationale: string;
+  /**
+   * FR-073: effective review record for this relation (relation-level
+   * override if present, otherwise the topic's record via
+   * `relationProvenance`). `provenanceScope` says which of the two it is, so
+   * the card never implies a per-relation review that did not happen.
+   */
+  provenance: ProvenanceRecord;
+  provenanceScope: "topic" | "relation";
 }
 
 /**
@@ -27,6 +39,8 @@ export function TopicAyahCard({
   surahTransliteration,
   type,
   rationale,
+  provenance,
+  provenanceScope,
 }: TopicAyahCardProps) {
   const { isBookmarked, toggleBookmark, hydrated } = useLibrary();
   const { arabicSize, showTranslation } = usePrefs();
@@ -95,7 +109,17 @@ export function TopicAyahCard({
         <p className="mt-1 text-sm leading-relaxed text-foreground/85">
           {rationale}
         </p>
+        {/* FR-073: the review record readers see is the effective one, with
+            its scope stated so topic-level status is never mistaken for an
+            individual review of this relation. */}
         <p className="mt-2 text-[0.6875rem] text-muted-foreground">
+          Review: {provenance.status} (
+          {provenanceScope === "relation"
+            ? "this relation"
+            : "inherited from topic"}
+          ) · {provenance.curator} · {provenance.reviewedAt}.
+        </p>
+        <p className="mt-1 text-[0.6875rem] text-muted-foreground">
           Editorial selection — not tafsir.
         </p>
       </div>

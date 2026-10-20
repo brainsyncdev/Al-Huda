@@ -45,6 +45,13 @@ export const metadata: Metadata = {
       "A calm, source-first Quran reading hub: full Uthmani text, English translation, search, stable references, and curated topics.",
     url: SITE_URL,
   },
+  twitter: {
+    card: "summary",
+    site: SITE_URL,
+    title: `${SITE_NAME} — ${SITE_TAGLINE}`,
+    description:
+      "Read the Quran in Uthmani script with a trusted English translation, stable ayah references, search, and curated topic entry points.",
+  },
   robots: { index: true, follow: true },
 };
 
@@ -64,11 +71,20 @@ export default function RootLayout({
       <body
         className={`${geist.variable} ${lora.variable} ${amiriQuran.variable} font-sans antialiased min-h-dvh flex flex-col`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-primary-foreground"
+        >
+          Skip to main content
+        </a>
         <LibraryProvider>
           <PrefsProvider>
             <RevisionProvider>
               <SiteHeader />
-              <main className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6">
+              <main
+                id="main-content"
+                className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
+              >
                 {children}
               </main>
               <SiteFooter />

@@ -9,6 +9,7 @@ import type { Ayah, ParsedReference } from "./types";
 import type { MatchReason } from "./match-reasons";
 import { getSurah, getSurahIndex } from "./data";
 import { parseReference } from "./reference";
+import { TOPICS, type Topic } from "../topics/data";
 
 // The union is declared once, in ./match-reasons — a module with no filesystem
 // dependency, so client components can import the FR-015 labels without
@@ -92,9 +93,72 @@ export interface SearchOptions {
   limit?: number;
 }
 
+// --- FR-014: curated topic-term expansion ---------------------------------
+//
+// This is NOT semantic / embedding-based retrieval. It is a bounded lexical
+// expansion: query words are matched against curated topic titles and slugs
+// using the same normalizeLatin already used for translation search. When a
+// word matches a topic, that topic's editorially-selected ayat are appended
+// as hits with reason "topic-term" so the UI can label them honestly.
+//
+// Full semantic retrieval (vector index, embeddings model) remains out of
+// scope for the local-only architecture; the capability needed is recorded
+// in docs/PRD-CHECKLIST.md.
+
+/** Common English stopwords excluded from topic-term expansion. */
+const TOPIC_STOPWORDS = new Set([
+  "about", "above", "after", "again", "against", "also", "because", "before",
+  "being", "below", "between", "both", "cannot", "could", "does", "doing",
+  "down", "during", "each", "from", "further", "have", "having", "here",
+  "hers", "herself", "him", "himself", "into", "itself", "just", "more",
+  "most", "only", "other", "ours", "our", "over", "same", "should", "some",
+  "such", "than", "that", "the", "their", "theirs", "them", "themselves",
+  "then", "there", "these", "they", "this", "those", "through", "under",
+  "until", "very", "were", "what", "when", "where", "which", "while",
+  "with", "would", "your", "you",
+]);
+
+/** Extract meaningful query words for topic expansion (length >= 4, not stopword). */
+function topicQueryTerms(normalizedQuery: string): string[] {
+  return normalizedQuery
+    .split(/\s+/)
+    .filter((w) => w.length >= 4 && !TOPIC_STOPWORDS.has(w));
+}
+
+interface TopicTermMatch {
+  topic: Topic;
+  term: string;
+}
+
+/**
+ * Match query terms against curated topic titles, slugs, and Arabic titles
+ * (normalized). Deterministic: topics in file order, first matching term wins
+ * per topic.
+ */
+function matchTopicTerms(query: string): TopicTermMatch[] {
+  const terms = topicQueryTerms(normalizeLatin(query));
+  if (terms.length === 0) return [];
+  const matches: TopicTermMatch[] = [];
+  for (const topic of TOPICS) {
+    const titleHay = normalizeLatin(`${topic.title} ${topic.slug.replace(/-/g, " ")}`);
+    for (const term of terms) {
+      if (titleHay.includes(term)) {
+        matches.push({ topic, term });
+        break;
+      }
+    }
+  }
+  return matches;
+}
+
+/** Cap on how many curated ayat a single topic-term match may contribute. */
+const MAX_TOPIC_HITS_PER_TERM = 6;
+/** Cap on total topic-term hits appended to any one search result set. */
+const MAX_TOPIC_TERM_HITS = 12;
+
 /** Full search entry point. Deterministic ordering: reference first (when the
  *  query is a valid reference), then exact word-boundary matches ordered by
- *  canonical mushaf order. */
+ *  canonical mushaf order, then curated topic-term expansions (labeled). */
 export function searchQuran(query: string, options: SearchOptions = {}): SearchResults {
   const limit = options.limit ?? 50;
   const trimmed = query.trim();
@@ -190,6 +254,36 @@ export function searchQuran(query: string, options: SearchOptions = {}): SearchR
       if (hits.length >= limit) break;
     }
     if (hits.length >= limit) break;
+  }
+
+  // 5) FR-014: curated topic-term expansion (Latin queries only, bounded).
+  //    Skipped for reference queries (they returned early) and for pure
+  //    Arabic queries, where topic titles (English/Arabic label) would not
+  //    meaningfully expand the result set.
+  if (!isArabicQuery && hits.length < limit) {
+    const topicMatches = matchTopicTerms(trimmed);
+    if (topicMatches.length > 0) {
+      const existing = new Set(hits.map((h) => key(h.surah, h.ayah)));
+      let topicHits = 0;
+      for (const { topic } of topicMatches) {
+        if (topicHits >= MAX_TOPIC_TERM_HITS || hits.length >= limit) break;
+        let perTopic = 0;
+        for (const relation of topic.relations) {
+          if (perTopic >= MAX_TOPIC_HITS_PER_TERM || topicHits >= MAX_TOPIC_TERM_HITS || hits.length >= limit) {
+            break;
+          }
+          const k = key(relation.ref.surah, relation.ref.ayah);
+          if (existing.has(k)) continue;
+          const surah = getSurah(relation.ref.surah);
+          const ayah = surah?.ayat[relation.ref.ayah - 1];
+          if (!surah || !ayah) continue;
+          hits.push(toHit(surah.transliteration, surah.slug, ayah, "topic-term"));
+          existing.add(k);
+          topicHits++;
+          perTopic++;
+        }
+      }
+    }
   }
 
   return {

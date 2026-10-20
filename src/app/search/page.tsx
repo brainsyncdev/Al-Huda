@@ -115,12 +115,20 @@ export default async function SearchPage({ searchParams }: Props) {
           </p>
         )}
 
-        <div className="mx-auto max-w-2xl rounded-2xl border border-border/80 bg-card p-5 text-sm text-muted-foreground">
+        <div className="mx-auto max-w-2xl rounded-2xl border border-border/80 bg-card p-5 text-sm text-muted-foreground space-y-2">
           <p>
             Matching is rule-based and transparent. Results favor
             reference/surah-name matches first, then exact word/normalized
             matches. Arabic diacritics are stripped only for matching; displayed
-            Arabic is shown verbatim from the source dataset.
+            Arabic is shown verbatim from the source dataset. When your query
+            matches a curated topic title, related verses from that topic’s
+            editorial selection are included as “Curated theme match” — lexical
+            expansion, not embedding-based semantic similarity.
+          </p>
+          <p>
+            One verified English translation (Saheeh International) is shipped.
+            A translation-edition filter is not available because no second
+            licensed translation has been verified for redistribution (FR-033).
           </p>
         </div>
       </div>

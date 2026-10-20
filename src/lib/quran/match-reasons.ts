@@ -11,7 +11,8 @@ export type MatchReason =
   | "arabic"
   | "translation"
   | "transliteration"
-  | "surah-name";
+  | "surah-name"
+  | "topic-term";
 
 /** Short label rendered on a search result. Text, never colour alone (PRD §11). */
 export const REASON_LABELS: Record<MatchReason, string> = {
@@ -20,6 +21,7 @@ export const REASON_LABELS: Record<MatchReason, string> = {
   translation: "Translation match",
   transliteration: "Transliteration match",
   "surah-name": "Surah name or meaning",
+  "topic-term": "Curated theme match",
 };
 
 /**
@@ -38,4 +40,6 @@ export const REASON_DESCRIPTIONS: Record<MatchReason, string> = {
     "The normalized Latin transliteration contains the query.",
   "surah-name":
     "The query matched this surah's transliteration, English meaning, or URL slug — not the verse text itself. These ayat are entry points into the surah.",
+  "topic-term":
+    "The query matched a curated topic's title or theme keywords. These verses come from that topic's editorial selection (each with a stated review status), not from embedding-based semantic similarity or a claim that the verse 'says' the theme.",
 };

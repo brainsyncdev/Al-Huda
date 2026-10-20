@@ -21,6 +21,29 @@ import {
 } from "./feature-flag";
 import type { RequestClass } from "./grounding";
 
+/**
+ * Retention policy for AI audit records (PRD §10; docs/AI-SAFETY.md).
+ *
+ * Stated in one exported place so the privacy gate has something concrete to
+ * review instead of inferring behaviour from implementation details:
+ *
+ *   * Storage: process memory only — never localStorage, cookies, disk, or
+ *     network. The records contain no personal data (see AiAuditRecord), but
+ *     even that empty payload is not persisted.
+ *   * Bound: at most `maxRecords` entries per process; the oldest are dropped
+ *     when the ring overflows.
+ *   * Lifetime: discarded when the process exits (server restart, deploy,
+ *     crash). No time-based window applies because nothing outlives the
+ *     process to age.
+ *   * User-triggered clearing: not applicable — there is nothing stored
+ *     client-side to clear, and no API exposes audit contents to readers.
+ */
+export const AUDIT_RETENTION = {
+  maxRecords: 200,
+  persisted: false,
+  lifetime: "process" as const,
+};
+
 export type AuditOutcome =
   | "answered"
   | "abstained"
@@ -117,7 +140,7 @@ export function isGateEvidence(record: AiAuditRecord): boolean {
 // Process-local ring (bounded, no persistence)
 // ---------------------------------------------------------------------------
 
-const MAX_RETAINED = 200;
+const MAX_RETAINED = AUDIT_RETENTION.maxRecords;
 
 type AuditStore = { entries: AiAuditRecord[] };
 
