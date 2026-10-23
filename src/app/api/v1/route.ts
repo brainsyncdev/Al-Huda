@@ -84,6 +84,12 @@ const ENDPOINTS = [
     description:
       "One dimension with resolved topic metadata. Returns the dimension's title, Arabic label, coverage description, search terms, and the curated topics mapped to it. Unresolved topic slugs are reported rather than silently dropped.",
   },
+  {
+    method: "GET",
+    path: "/api/v1/graph",
+    description:
+      "Knowledge-graph foundation (PRD §12.3): typed dimension and topic nodes plus DIMENSION_TOPIC and TOPIC_RELATION edges, each carrying relationship scope, provenance and review status. No ayah-level dimension tags are emitted; unresolved slugs are reported.",
+  },
 ] as const;
 
 export async function GET(request: NextRequest) {
