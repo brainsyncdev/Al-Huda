@@ -5,6 +5,7 @@ import { Check, ExternalLink, ShieldCheck, X } from "lucide-react";
 import { BackupControls } from "@/components/library/backup-controls";
 import {
   ARABIC_SIZES,
+  LINE_HEIGHTS,
   MAX_PARALLEL_TRANSLATIONS,
   arabicSizeClass,
   usePrefs,
@@ -16,6 +17,7 @@ import { TRANSLATIONS, getTranslation } from "@/lib/quran/translations";
 export default function SettingsPage() {
   const {
     arabicSize,
+    lineHeight,
     showTranslation,
     showTransliteration,
     translationId,
@@ -24,6 +26,7 @@ export default function SettingsPage() {
     parallelMode,
     parallelTranslationIds,
     setArabicSize,
+    setLineHeight,
     setShowTranslation,
     setShowTransliteration,
     setShowAudio,
@@ -74,6 +77,31 @@ export default function SettingsPage() {
                 >
                   {s === arabicSize && <Check className="h-3.5 w-3.5" aria-hidden />}
                   {s}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <h3 className="text-base font-semibold">Line spacing</h3>
+              <p className="text-sm text-muted-foreground">Adjust vertical spacing between Arabic lines.</p>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {LINE_HEIGHTS.map((lh) => (
+                <button
+                  key={lh}
+                  type="button"
+                  onClick={() => setLineHeight(lh)}
+                  aria-pressed={lineHeight === lh}
+                  className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                    lineHeight === lh
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
+                  }`}
+                >
+                  {lineHeight === lh && <Check className="h-3.5 w-3.5" aria-hidden />}
+                  {lh.charAt(0).toUpperCase() + lh.slice(1)}
                 </button>
               ))}
             </div>

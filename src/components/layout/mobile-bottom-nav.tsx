@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, GraduationCap, Home, Library, Search, Sparkles } from "lucide-react";
+import { BookOpen, GraduationCap, Home, Library, Search, Settings, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const TABS = [
@@ -12,6 +12,7 @@ const TABS = [
   { href: "/search", label: "Search", icon: Search },
   { href: "/learn", label: "Learn", icon: GraduationCap },
   { href: "/library", label: "Library", icon: Library },
+  { href: "/settings", label: "Settings", icon: Settings },
 ] as const;
 
 function isActive(pathname: string, href: string): boolean {
