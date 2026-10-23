@@ -96,6 +96,7 @@ Filtering is computed from `activeNodeIds` — a Set of node ids that includes t
 
 **Keyboard:**
 - Every node is a `<g>` with `role="button"`, `tabIndex={0}`, `aria-label` (including "(selected)" when active), and `aria-pressed`.
+- A focused node renders a dashed ring independently of selection, so keyboard focus is always visible even before a node is chosen.
 - Tab navigates through nodes in catalog order (dimensions first, then topics).
 - Enter or Space toggles selection.
 - Filter buttons are standard `<button>` elements with `aria-pressed`.

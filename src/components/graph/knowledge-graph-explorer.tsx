@@ -272,6 +272,7 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
             {nodes.map((node) => {
               const dimmed = isNodeDimmed(node.id);
               const isSelected = selectedId === node.id;
+              const isFocused = focusedId === node.id;
               const isDimension = node.kind === "dimension";
               const r = isDimension ? 14 : 10;
 
@@ -284,10 +285,12 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
                   aria-pressed={isSelected}
                   onClick={() => handleNodeSelect(node.id)}
                   onKeyDown={(e) => handleNodeKeyDown(e, node.id)}
-                  style={{ cursor: "pointer", outline: "none" }}
+                  onFocus={() => setFocusedId(node.id)}
+                  onBlur={() => setFocusedId(null)}
+                  style={{ cursor: "pointer" }}
                   opacity={dimmed ? 0.2 : 1}
                 >
-                  {/* Focus ring */}
+                  {/* Selected ring */}
                   {isSelected && (
                     <circle
                       cx={node.x}
@@ -297,6 +300,20 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
                       className="stroke-primary"
                       strokeWidth="2"
                       opacity={0.5}
+                    />
+                  )}
+                  {/* Keyboard focus ring — independent of selection, so a
+                      focused-but-unselected node is still locatable. */}
+                  {isFocused && !isSelected && (
+                    <circle
+                      cx={node.x}
+                      cy={node.y}
+                      r={r + 5}
+                      fill="none"
+                      className="stroke-foreground"
+                      strokeWidth="1.5"
+                      strokeDasharray="3 2"
+                      opacity={0.75}
                     />
                   )}
                   {/* Node circle */}
