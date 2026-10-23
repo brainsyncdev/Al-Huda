@@ -8,7 +8,7 @@ import { AyahCard } from "@/components/quran/ayah-card";
 import { findSnippetRange, searchQuran } from "@/lib/quran/search";
 import { REASON_DESCRIPTIONS, REASON_LABELS } from "@/lib/quran/match-reasons";
 import { getSurah, getSurahIndex } from "@/lib/quran/data";
-import { TOPICS, getTopic } from "@/lib/topics/data";
+import { TOPICS, getTopic, topicsForAyah } from "@/lib/topics/data";
 import { PATHS } from "@/lib/paths/data";
 import { absoluteUrl } from "@/lib/site";
 import { getJuzForAyah } from "@/lib/quran/juz";
@@ -498,6 +498,12 @@ export default async function SearchPage({ searchParams }: Props) {
               )
             );
 
+            // Find topics that include this ayah.
+            const relatedTopics = topicsForAyah({
+              surah: hit.surah,
+              ayah: hit.ayah,
+            });
+
             return (
               <li key={`${hit.surah}:${hit.ayah}:${hit.reason}`}>
                 <AyahCard
@@ -515,6 +521,26 @@ export default async function SearchPage({ searchParams }: Props) {
                   matchReasonLabel={REASON_LABELS[hit.reason]}
                   matchReasonDescription={REASON_DESCRIPTIONS[hit.reason]}
                 />
+                {relatedTopics.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {relatedTopics.map((topic) => (
+                      <Link
+                        key={topic.slug}
+                        href={`/topics/${topic.slug}`}
+                        className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                      >
+                        <span
+                          className="arabic-display text-sm text-gold"
+                          lang="ar"
+                          aria-hidden
+                        >
+                          {topic.arabicTitle}
+                        </span>
+                        {topic.title}
+                      </Link>
+                    ))}
+                  </div>
+                )}
                 {relatedPaths.length > 0 && (
                   <div className="mt-2 flex flex-wrap gap-2">
                     {relatedPaths.map((path) => (
@@ -587,44 +613,70 @@ function EditionSearchResultsView({
         </div>
       ) : (
         <ol className="space-y-3">
-          {hits.map((hit) => (
-            <li
-              key={`${hit.surah}:${hit.ayah}`}
-              className="rounded-2xl border border-border/80 bg-card p-4"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <Link
-                  href={`/ayah/${hit.surah}/${hit.ayah}`}
-                  className="text-sm font-medium text-primary hover:underline"
-                >
-                  {hit.surahTransliteration} {hit.surah}:{hit.ayah}
-                </Link>
-              </div>
-              <p
-                dir={isRtl ? "rtl" : "ltr"}
-                lang={edition.language}
-                className={
-                  "mt-2 leading-relaxed " +
-                  (isRtl ? "text-lg" : "text-sm")
-                }
+          {hits.map((hit) => {
+            const relatedTopics = topicsForAyah({
+              surah: hit.surah,
+              ayah: hit.ayah,
+            });
+            return (
+              <li
+                key={`${hit.surah}:${hit.ayah}`}
+                className="rounded-2xl border border-border/80 bg-card p-4"
               >
-                {hit.snippet ? (
-                  <>
-                    {hit.snippet.text.slice(0, hit.snippet.matchStart)}
-                    <mark className="rounded bg-primary/20 px-0.5 text-foreground">
-                      {hit.snippet.text.slice(
-                        hit.snippet.matchStart,
-                        hit.snippet.matchEnd
-                      )}
-                    </mark>
-                    {hit.snippet.text.slice(hit.snippet.matchEnd)}
-                  </>
-                ) : (
-                  hit.text
+                <div className="flex items-center justify-between gap-2">
+                  <Link
+                    href={`/ayah/${hit.surah}/${hit.ayah}`}
+                    className="text-sm font-medium text-primary hover:underline"
+                  >
+                    {hit.surahTransliteration} {hit.surah}:{hit.ayah}
+                  </Link>
+                </div>
+                <p
+                  dir={isRtl ? "rtl" : "ltr"}
+                  lang={edition.language}
+                  className={
+                    "mt-2 leading-relaxed " +
+                    (isRtl ? "text-lg" : "text-sm")
+                  }
+                >
+                  {hit.snippet ? (
+                    <>
+                      {hit.snippet.text.slice(0, hit.snippet.matchStart)}
+                      <mark className="rounded bg-primary/20 px-0.5 text-foreground">
+                        {hit.snippet.text.slice(
+                          hit.snippet.matchStart,
+                          hit.snippet.matchEnd
+                        )}
+                      </mark>
+                      {hit.snippet.text.slice(hit.snippet.matchEnd)}
+                    </>
+                  ) : (
+                    hit.text
+                  )}
+                </p>
+                {relatedTopics.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {relatedTopics.map((topic) => (
+                      <Link
+                        key={topic.slug}
+                        href={`/topics/${topic.slug}`}
+                        className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                      >
+                        <span
+                          className="arabic-display text-sm text-gold"
+                          lang="ar"
+                          aria-hidden
+                        >
+                          {topic.arabicTitle}
+                        </span>
+                        {topic.title}
+                      </Link>
+                    ))}
+                  </div>
                 )}
-              </p>
-            </li>
-          ))}
+              </li>
+            );
+          })}
         </ol>
       )}
 
@@ -691,44 +743,70 @@ function TafsirSearchResultsView({
         </div>
       ) : (
         <ol className="space-y-3">
-          {hits.map((hit, i) => (
-            <li
-              key={`${hit.editionId}:${hit.surah}:${hit.ayah}:${i}`}
-              className="rounded-2xl border border-border/80 bg-card p-4"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <Link
-                  href={`/ayah/${hit.surah}/${hit.ayah}`}
-                  className="text-sm font-medium text-primary hover:underline"
-                >
-                  {hit.surahTransliteration} {hit.surah}:{hit.ayah}
-                </Link>
-                <span className="rounded-full bg-secondary px-2 py-0.5 text-[0.6875rem] font-medium text-secondary-foreground">
-                  {hit.editionName}
-                </span>
-              </div>
-              <p
-                dir="rtl"
-                lang="ar"
-                className="mt-2 text-lg leading-loose"
+          {hits.map((hit, i) => {
+            const relatedTopics = topicsForAyah({
+              surah: hit.surah,
+              ayah: hit.ayah,
+            });
+            return (
+              <li
+                key={`${hit.editionId}:${hit.surah}:${hit.ayah}:${i}`}
+                className="rounded-2xl border border-border/80 bg-card p-4"
               >
-                {hit.snippet ? (
-                  <>
-                    {hit.snippet.text.slice(0, hit.snippet.matchStart)}
-                    <mark className="rounded bg-primary/20 px-0.5 text-foreground">
-                      {hit.snippet.text.slice(
-                        hit.snippet.matchStart,
-                        hit.snippet.matchEnd
-                      )}
-                    </mark>
-                    {hit.snippet.text.slice(hit.snippet.matchEnd)}
-                  </>
-                ) : (
-                  hit.text
+                <div className="flex items-center justify-between gap-2">
+                  <Link
+                    href={`/ayah/${hit.surah}/${hit.ayah}`}
+                    className="text-sm font-medium text-primary hover:underline"
+                  >
+                    {hit.surahTransliteration} {hit.surah}:{hit.ayah}
+                  </Link>
+                  <span className="rounded-full bg-secondary px-2 py-0.5 text-[0.6875rem] font-medium text-secondary-foreground">
+                    {hit.editionName}
+                  </span>
+                </div>
+                <p
+                  dir="rtl"
+                  lang="ar"
+                  className="mt-2 text-lg leading-loose"
+                >
+                  {hit.snippet ? (
+                    <>
+                      {hit.snippet.text.slice(0, hit.snippet.matchStart)}
+                      <mark className="rounded bg-primary/20 px-0.5 text-foreground">
+                        {hit.snippet.text.slice(
+                          hit.snippet.matchStart,
+                          hit.snippet.matchEnd
+                        )}
+                      </mark>
+                      {hit.snippet.text.slice(hit.snippet.matchEnd)}
+                    </>
+                  ) : (
+                    hit.text
+                  )}
+                </p>
+                {relatedTopics.length > 0 && (
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {relatedTopics.map((topic) => (
+                      <Link
+                        key={topic.slug}
+                        href={`/topics/${topic.slug}`}
+                        className="inline-flex items-center gap-1 rounded-full bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                      >
+                        <span
+                          className="arabic-display text-sm text-gold"
+                          lang="ar"
+                          aria-hidden
+                        >
+                          {topic.arabicTitle}
+                        </span>
+                        {topic.title}
+                      </Link>
+                    ))}
+                  </div>
                 )}
-              </p>
-            </li>
-          ))}
+              </li>
+            );
+          })}
         </ol>
       )}
 

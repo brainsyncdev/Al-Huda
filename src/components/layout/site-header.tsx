@@ -4,6 +4,7 @@ import { SITE_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const NAV = [
+  { href: "/discover", label: "Discover", icon: Sparkles },
   { href: "/quran", label: "Read", icon: BookOpen },
   { href: "/explore", label: "Explore", icon: Compass },
   { href: "/topics", label: "Topics", icon: Sparkles },

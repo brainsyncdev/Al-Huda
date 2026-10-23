@@ -15,6 +15,7 @@ import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs, topicJsonLd } from "@/lib/seo/json-ld";
 import { PATHS } from "@/lib/paths/data";
+import { getDimensionsForTopic } from "@/lib/explore/dimensions";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -72,6 +73,12 @@ export default async function TopicDetailPage({ params }: Props) {
   const relatedPaths = PATHS.filter((path) =>
     path.steps.some((step) => step.topicSlug === topic.slug)
   );
+
+  // Dimensions whose editorial navigation mapping lists this topic. Derived
+  // from the same canonical `Dimension.topicSlugs` the Explore pages use, so
+  // this is the exact reverse of the mapping a reader may have arrived from —
+  // nothing new is asserted about the Quran's content.
+  const dimensions = getDimensionsForTopic(topic.slug);
 
   const topicPagePath = `/topics/${topic.slug}`;
 
@@ -171,6 +178,63 @@ export default async function TopicDetailPage({ params }: Props) {
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {dimensions.length > 0 && (
+        <section aria-labelledby="topic-dimensions" className="space-y-4">
+          <h2
+            id="topic-dimensions"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Explore this theme by dimension
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            This topic appears in the editorial navigation mapping for{" "}
+            {dimensions.length === 1
+              ? "the following dimension"
+              : `these ${dimensions.length} dimensions`}
+            . Each dimension page shows how this theme connects to other topics
+            and offers search terms for further exploration.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {dimensions.map((dim) => (
+              <Link
+                key={dim.id}
+                href={`/explore/dimension/${dim.id}`}
+                className="group rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-semibold">
+                    {dim.number}
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors">
+                      {dim.title}
+                    </h3>
+                    <p
+                      className="arabic-display text-lg text-gold mt-0.5"
+                      lang="ar"
+                      dir="rtl"
+                    >
+                      {dim.arabicTitle}
+                    </p>
+                    <p className="mt-1.5 text-xs text-muted-foreground line-clamp-2">
+                      {dim.covers}
+                    </p>
+                  </div>
+                </div>
+                <p className="mt-2 text-xs font-medium text-primary group-hover:underline">
+                  Open {dim.title} dimension →
+                </p>
+              </Link>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Dimension-to-topic mappings are editorial navigation aids, not
+            ayah-level classifications. Each dimension page carries its review
+            status.
+          </p>
         </section>
       )}
 

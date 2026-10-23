@@ -242,3 +242,13 @@ export function getDimensionsWithTopics(): Dimension[] {
 export function getDimensionsWithoutTopics(): Dimension[] {
   return DIMENSIONS.filter((d) => d.topicSlugs.length === 0);
 }
+
+/**
+ * Reverse lookup over the same canonical mapping: which dimensions list this
+ * topic slug in `topicSlugs`. Used on topic pages so a reader who arrives at a
+ * topic can move back up into the dimension view. Returns dimensions in PRD
+ * order. An unknown or unmapped slug yields an empty array — never a guess.
+ */
+export function getDimensionsForTopic(topicSlug: string): Dimension[] {
+  return DIMENSIONS.filter((d) => d.topicSlugs.includes(topicSlug));
+}

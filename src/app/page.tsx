@@ -68,6 +68,15 @@ export default function HomePage() {
             <p className="mt-3 text-xs text-muted-foreground">
               Try “2:255”, “baqarah 153”, “patience”, or Arabic text.
             </p>
+            <p className="mt-3 text-sm">
+              <Link
+                href="/discover"
+                className="inline-flex items-center gap-1 font-medium text-primary hover:underline"
+              >
+                Or discover a guided starting point
+                <ChevronRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </p>
           </div>
         </div>
       </section>
