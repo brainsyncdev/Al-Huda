@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, GraduationCap, Library, Search, Sparkles } from "lucide-react";
+import { BookOpen, GraduationCap, Library, Search, Settings, Sparkles } from "lucide-react";
 import { SITE_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -11,6 +11,7 @@ const NAV = [
   { href: "/learn/plans", label: "Plans", icon: GraduationCap },
   { href: "/learn/quiz", label: "Quiz", icon: GraduationCap },
   { href: "/library", label: "Library", icon: Library },
+  { href: "/settings", label: "Settings", icon: Settings },
 ] as const;
 
 /**
