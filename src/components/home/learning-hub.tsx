@@ -14,8 +14,6 @@ import {
   getPath,
   RECOMMENDED_PATHS,
 } from "@/lib/paths/data";
-import { cn } from "@/lib/utils";
-
 export function LearningHub() {
   const { hydrated, state } = usePaths();
 

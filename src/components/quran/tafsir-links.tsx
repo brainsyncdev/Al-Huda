@@ -30,7 +30,7 @@ export function TafsirLinks({ surah, ayah }: { surah: number; ayah?: number }) {
 
       <p className="mb-4 text-sm leading-relaxed text-foreground/85">
         External tafsir references for {ref}. The app does not bundle or display
-        tafsir text itself; follow the links to the publishers' editions. Always
+        tafsir text itself; follow the links to the publishers&apos; editions. Always
         consult qualified scholarship for interpretation.
       </p>
 

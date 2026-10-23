@@ -111,7 +111,7 @@ export default async function DimensionPage({ params }: Props) {
             <span>
               This is a topic-level navigation aid. Individual ayat have not
               been tagged to this dimension. The topics below are curated
-              starting points whose themes overlap the dimension's description.
+              starting points whose themes overlap the dimension&apos;s description.
               Each topic carries its own review status ({DIMENSION_PROVENANCE.status.replace(/-/g, " ")}).
               This is not tafsir and not a scholarly classification.
             </span>
@@ -168,7 +168,7 @@ export default async function DimensionPage({ params }: Props) {
         <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive">
           <p>
             {unresolvedSlugs.length} topic slug{unresolvedSlugs.length === 1 ? "" : "s"} in
-            this dimension's mapping could not be resolved:
+            this dimension&apos;s mapping could not be resolved:
           </p>
           <ul className="mt-2 list-inside list-disc space-y-0.5 text-xs">
             {unresolvedSlugs.map((slug) => (
@@ -233,7 +233,7 @@ export default async function DimensionPage({ params }: Props) {
           className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
         >
           <Search className="h-4 w-4" aria-hidden />
-          Search for "{searchQuery}"
+          Search for &quot;{searchQuery}&quot;
         </Link>
       </section>
 

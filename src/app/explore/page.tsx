@@ -56,9 +56,9 @@ export default function ExplorePage() {
             <span>
               The dimensions below are a topic-level navigation aid. Individual
               ayat have not been tagged to dimensions; the mapping connects each
-              dimension's theme to existing editorial topic selections, each of
+              dimension&apos;s theme to existing editorial topic selections, each of
               which carries its own review status. This is not tafsir and not a
-              scholarly classification of the Quran's content.
+              scholarly classification of the Quran&apos;s content.
             </span>
           </p>
         </div>

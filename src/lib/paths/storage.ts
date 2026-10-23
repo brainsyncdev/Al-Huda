@@ -107,7 +107,7 @@ export function normalizePathsState(raw: unknown): PathsState {
   const progressRaw = obj.progress;
   if (typeof progressRaw === "object" && progressRaw !== null && !Array.isArray(progressRaw)) {
     const entries = Object.entries(progressRaw as Record<string, unknown>);
-    for (const [key, value] of entries) {
+    for (const [, value] of entries) {
       if (Object.keys(progress).length >= MAX_PROGRESS_ENTRIES) break;
       const normalized = normalizeProgress(value);
       if (normalized !== null) {

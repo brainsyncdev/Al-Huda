@@ -11,8 +11,8 @@ function isValidAyahRef(value: unknown): value is AyahRef {
     value !== null &&
     "surah" in value &&
     "ayah" in value &&
-    typeof (value as any).surah === "number" &&
-    typeof (value as any).ayah === "number"
+    typeof (value as { surah: unknown }).surah === "number" &&
+    typeof (value as { ayah: unknown }).ayah === "number"
   );
 }
 

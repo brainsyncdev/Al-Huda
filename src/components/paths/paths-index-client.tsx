@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { usePaths } from "@/lib/paths/context";
 import type { LearningPath, TargetAudience } from "@/lib/paths/types";
-import { cn } from "@/lib/utils";
-import { BookOpen, CheckCircle2 } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 interface PathsByAudience {
   audience: TargetAudience;

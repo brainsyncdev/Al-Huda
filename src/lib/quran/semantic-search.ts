@@ -39,10 +39,16 @@ const MODEL_ID = "Xenova/all-MiniLM-L6-v2";
 const CDN_TRANSFORMERS_URL =
   "https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2";
 
+/** Minimal surface of the Transformers.js feature-extraction pipeline. */
+type FeatureExtractor = (
+  text: string,
+  options?: { pooling?: string; normalize?: boolean }
+) => Promise<{ data: Float32Array }>;
+
 /** Shared state across all callers (one index per tab). */
 let metaPromise: Promise<IndexMeta> | null = null;
 let vectorsPromise: Promise<Float32Array> | null = null;
-let pipelinePromise: Promise<any> | null = null;
+let pipelinePromise: Promise<FeatureExtractor> | null = null;
 
 /** float16 (Uint16Array) -> float32, standard IEEE 754 half decode. */
 function decodeFloat16(src: Uint16Array): Float32Array {
@@ -50,8 +56,8 @@ function decodeFloat16(src: Uint16Array): Float32Array {
   for (let i = 0; i < src.length; i++) {
     const half = src[i];
     const sign = (half >>> 15) & 1;
-    let exp = (half >>> 10) & 0x1f;
-    let mant = half & 0x3ff;
+    const exp = (half >>> 10) & 0x1f;
+    const mant = half & 0x3ff;
     let val: number;
     if (exp === 0) {
       val = mant === 0 ? 0 : Math.pow(2, -14) * (mant / 1024);
@@ -106,7 +112,7 @@ function loadVectors(): Promise<Float32Array> {
  * the Next app — it is loaded as an ES module from jsdelivr at runtime, so the
  * build stays lean and the model downloads only when semantic search is used.
  */
-function loadPipeline(): Promise<any> {
+function loadPipeline(): Promise<FeatureExtractor> {
   if (!pipelinePromise) {
     pipelinePromise = (async () => {
       // A non-literal specifier keeps TypeScript from trying to resolve the
@@ -114,7 +120,7 @@ function loadPipeline(): Promise<any> {
       // attempting to bundle it either.
       const cdnUrl = CDN_TRANSFORMERS_URL;
       const mod = (await import(/* webpackIgnore: true */ cdnUrl)) as {
-        pipeline: (task: string, model: string, opts?: unknown) => Promise<any>;
+        pipeline: (task: string, model: string, opts?: unknown) => Promise<FeatureExtractor>;
         env: Record<string, unknown>;
       };
       mod.env.allowRemoteModels = true;

@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils";
 import {
   ArrowLeft,
   ArrowRight,
-  BookOpen,
   CheckCircle2,
   Circle,
   Sparkles,

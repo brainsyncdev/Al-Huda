@@ -11,7 +11,7 @@ import {
 } from "@/lib/paths/data";
 import type { TargetAudience } from "@/lib/paths/types";
 import { cn } from "@/lib/utils";
-import { ArrowRight, BookOpen, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen } from "lucide-react";
 
 const AUDIENCES: TargetAudience[] = [
   "new-muslim",

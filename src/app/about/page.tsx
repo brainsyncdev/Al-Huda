@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BookOpen, CheckCircle2, ShieldCheck } from "lucide-react";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
-import { SOURCES, ARABIC_CREDIT, TRANSLATION_CREDIT, PACKAGE_CREDIT } from "@/lib/quran/sources";
+import { ARABIC_CREDIT, TRANSLATION_CREDIT, PACKAGE_CREDIT } from "@/lib/quran/sources";
 
 export const metadata: Metadata = {
   title: `About — ${SITE_NAME}`,

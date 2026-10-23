@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import { usePrefs } from "@/lib/prefs/context";
 import {
-  TRANSLATIONS,
   getTranslationsByLanguage,
   LANGUAGE_LABELS,
   getTranslation,

@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   Check,
-  Circle,
   Pause,
   Play,
   Plus,

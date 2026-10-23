@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllPaths, AUDIENCE_LABELS, type TargetAudience } from "@/lib/paths/data";
 import { PathsIndexClient } from "@/components/paths/paths-index-client";

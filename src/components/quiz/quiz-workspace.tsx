@@ -47,7 +47,7 @@ export function QuizWorkspace() {
 
   const [phase, setPhase] = useState<Phase>("idle");
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
-  const [config, setConfig] = useState<QuizSessionConfig | null>(null);
+  const [, setConfig] = useState<QuizSessionConfig | null>(null);
   const [answers, setAnswers] = useState<Record<string, QuizResponse>>({});
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState<{ correct: number; total: number } | null>(
@@ -163,7 +163,7 @@ export function QuizWorkspace() {
         .then((data) => {
           if (data && Array.isArray(data.surahs)) {
             setSurahs(
-              data.surahs.map((s: any) => ({
+              data.surahs.map((s: { id: string; transliteration: string }) => ({
                 id: s.id,
                 transliteration: s.transliteration,
               }))

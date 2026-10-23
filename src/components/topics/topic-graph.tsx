@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useId } from "react";
 import type { Topic } from "@/lib/topics/data";
 

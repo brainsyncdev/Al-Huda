@@ -69,8 +69,8 @@ export async function POST(request: NextRequest) {
           r !== null &&
           "surah" in r &&
           "ayah" in r &&
-          typeof (r as any).surah === "number" &&
-          typeof (r as any).ayah === "number"
+          typeof (r as { surah: unknown }).surah === "number" &&
+          typeof (r as { ayah: unknown }).ayah === "number"
       )
       .map((r) => ({ surah: r.surah, ayah: r.ayah }));
     if (safeRefs.length === 0) {

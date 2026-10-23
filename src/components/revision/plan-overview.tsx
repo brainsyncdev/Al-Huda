@@ -226,7 +226,7 @@ export function PlanOverview({
           Ratings in this log: {stats.ratingCounts.easy} easy,{" "}
           {stats.ratingCounts.difficult} difficult, {stats.ratingCounts.missed} missed.
           The log keeps the most recent entries only, so this is a count of
-          recorded reviews rather than a lifetime total — each verse's own review
+          recorded reviews rather than a lifetime total — each verse&apos;s own review
           count above is exact.
         </p>
 

@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   BookOpen,
-  CheckCircle2,
   GraduationCap,
   Sparkles,
   Target,
@@ -173,7 +172,7 @@ export function LearningDashboard() {
         </h1>
         <p className="max-w-2xl text-muted-foreground">
           Your personalized entry point for guided Quran study. Continue where
-          you left off, revise what you've learned, or explore new topics.
+          you left off, revise what you&apos;ve learned, or explore new topics.
         </p>
       </header>
 
@@ -185,7 +184,7 @@ export function LearningDashboard() {
           </div>
           <h2 className="font-display text-xl font-semibold">Start your learning journey</h2>
           <p className="max-w-md mx-auto text-sm text-muted-foreground">
-            You haven't started any paths, quizzes, or revision plans yet.
+            You haven&apos;t started any paths, quizzes, or revision plans yet.
             Begin with a guided learning path to build a foundation.
           </p>
           <Link
