@@ -74,7 +74,10 @@ export const PATHS: LearningPath[] = [
       {
         order: 4,
         ref: { surah: 112, ayah: 1 },
-        topicSlug: "tawhid",
+        // No canonical topic covers tawhid (divine oneness) yet. The slug
+        // reference was removed rather than pointed at an unrelated topic.
+        // Owner decision: create a tawhid topic, or accept this step has no
+        // topic anchor. See SPRINT-2-REPORT.md.
         objective:
           "Grasp that Al-Ikhlas declares absolute divine oneness — no partners, no components, no equals.",
         reflectionPrompt:
@@ -116,14 +119,14 @@ export const PATHS: LearningPath[] = [
       {
         order: 1,
         ref: { surah: 2, ayah: 153 },
-        topicSlug: "sabr",
+        topicSlug: "patience",
         objective:
           "See that patience is paired with prayer as a source of divine support, not passive endurance.",
       },
       {
         order: 2,
         ref: { surah: 2, ayah: 155 },
-        topicSlug: "sabr",
+        topicSlug: "patience",
         objective:
           "Understand that trials are described as inevitable — loss, fear, scarcity — and patience is the response, not the avoidance.",
         reflectionPrompt:
@@ -132,21 +135,21 @@ export const PATHS: LearningPath[] = [
       {
         order: 3,
         ref: { surah: 2, ayah: 156 },
-        topicSlug: "sabr",
+        topicSlug: "patience",
         objective:
           "Recognize the phrase 'We belong to God and to Him we return' as an anchor in loss — not denial, but acceptance of transience.",
       },
       {
         order: 4,
         ref: { surah: 2, ayah: 152 },
-        topicSlug: "shukr",
+        topicSlug: "gratitude",
         objective:
           "See that remembrance of God is linked to gratitude — acknowledgment precedes thankfulness.",
       },
       {
         order: 5,
         ref: { surah: 14, ayah: 7 },
-        topicSlug: "shukr",
+        topicSlug: "gratitude",
         objective:
           "Understand the principle: gratitude increases blessings, ingratitude invites their loss — a cause-and-effect framework, not a promise of material reward.",
         reflectionPrompt:
@@ -155,21 +158,21 @@ export const PATHS: LearningPath[] = [
       {
         order: 6,
         ref: { surah: 31, ayah: 12 },
-        topicSlug: "shukr",
+        topicSlug: "gratitude",
         objective:
           "See that gratitude is described as benefiting the one who gives thanks — God needs no thanks, the act serves the human.",
       },
       {
         order: 7,
         ref: { surah: 39, ayah: 7 },
-        topicSlug: "shukr",
+        topicSlug: "gratitude",
         objective:
           "Recognize that gratitude is paired with knowledge — thankfulness follows understanding, not precedes it.",
       },
       {
         order: 8,
         ref: { surah: 55, ayah: 13 },
-        topicSlug: "shukr",
+        topicSlug: "gratitude",
         objective:
           "See the recurring refrain 'Which, then, of your Lord's powers can you disavow?' as a challenge to acknowledge blessings, large and small.",
         reflectionPrompt:
@@ -264,21 +267,21 @@ export const PATHS: LearningPath[] = [
       {
         order: 1,
         ref: { surah: 6, ayah: 12 },
-        topicSlug: "mercy",
+        topicSlug: "mercy-and-forgiveness",
         objective:
           "See that God has 'prescribed mercy upon Himself' — mercy is self-imposed, not optional or conditional.",
       },
       {
         order: 2,
         ref: { surah: 6, ayah: 54 },
-        topicSlug: "mercy",
+        topicSlug: "mercy-and-forgiveness",
         objective:
           "Understand that mercy 'covers' — the metaphor suggests protection and concealment of faults, not exposure.",
       },
       {
         order: 3,
         ref: { surah: 7, ayah: 156 },
-        topicSlug: "mercy",
+        topicSlug: "mercy-and-forgiveness",
         objective:
           "Recognize that mercy is 'written' — a permanent decree, not a temporary reprieve.",
         reflectionPrompt:
@@ -287,21 +290,21 @@ export const PATHS: LearningPath[] = [
       {
         order: 4,
         ref: { surah: 21, ayah: 107 },
-        topicSlug: "mercy",
+        topicSlug: "mercy-and-forgiveness",
         objective:
           "See that the Prophet is sent 'as a mercy to the worlds' — mercy is the mission, not a side effect.",
       },
       {
         order: 5,
         ref: { surah: 27, ayah: 30 },
-        topicSlug: "mercy",
+        topicSlug: "mercy-and-forgiveness",
         objective:
           "Understand that mercy is linked to guidance — the letter begins 'In the name of God, the Merciful, the Compassionate' before any message is delivered.",
       },
       {
         order: 6,
         ref: { surah: 39, ayah: 53 },
-        topicSlug: "mercy",
+        topicSlug: "mercy-and-forgiveness",
         objective:
           "Recognize the invitation: 'Do not despair of God's mercy' — despair is framed as the problem, not the sin.",
         reflectionPrompt:

@@ -4,6 +4,8 @@
 **Scope:** PRD v2.0 §04.3 (10 dimensions), §05.3 (Explore features), §12.1 (Explore routes), §12.3 (Knowledge Graph Explorer — partial)
 **Status:** Implemented, verification commands NOT run per user instruction
 
+**Final cleanup:** Removed the unused `TOPICS` named import from `src/app/explore/dimension/[id]/page.tsx`. The page only resolves topics through `getTopic()`, so no behavior, content, metadata, routes, or styling changed. Grep confirms no remaining `TOPICS` reference in that file.
+
 ---
 
 ## What was built
