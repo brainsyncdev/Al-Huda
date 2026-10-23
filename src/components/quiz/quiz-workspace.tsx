@@ -1,10 +1,12 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
+  Check,
   CheckCircle2,
+  Circle,
   RotateCcw,
   XCircle,
 } from "lucide-react";
@@ -17,10 +19,15 @@ import type {
   QuizResponse,
   QuizSessionConfig,
 } from "@/lib/quiz/types";
+import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { PATHS } from "@/lib/paths/data";
-import { TOPICS } from "@/lib/topics/data";
-import { getSurahIndex } from "@/lib/quran/data";
+import { TOPICS, topicsForAyah } from "@/lib/topics/data";
+
+interface SurahMeta {
+  id: number;
+  transliteration: string;
+}
 
 type Phase = "idle" | "active" | "review";
 
@@ -48,6 +55,7 @@ export function QuizWorkspace() {
   );
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [surahs, setSurahs] = useState<SurahMeta[]>([]);
 
   // Setup form state.
   const [setupSource, setSetupSource] = useState<
@@ -146,6 +154,26 @@ export function QuizWorkspace() {
     [state.attempts]
   );
 
+  // Fetch surah index on mount (server-only data, must come via API).
+  // Declared before any early return so the hook order stays stable.
+  useEffect(() => {
+    if (surahs.length === 0) {
+      fetch("/api/v1/surahs")
+        .then((res) => (res.ok ? res.json() : null))
+        .then((data) => {
+          if (data && Array.isArray(data.surahs)) {
+            setSurahs(
+              data.surahs.map((s: any) => ({
+                id: s.id,
+                transliteration: s.transliteration,
+              }))
+            );
+          }
+        })
+        .catch(() => {});
+    }
+  }, [surahs.length]);
+
   if (!hydrated) {
     return (
       <div role="status" className="space-y-4">
@@ -158,7 +186,6 @@ export function QuizWorkspace() {
 
   // Setup form.
   if (phase === "idle") {
-    const surahs = getSurahIndex();
     return (
       <div className="space-y-8 pb-8">
         <header className="space-y-2">
@@ -260,6 +287,12 @@ export function QuizWorkspace() {
                 </label>
               ))}
             </div>
+            <p className="text-xs text-muted-foreground">
+              Some question types need multiple ayat from the same surah or topic
+              (ordering needs 3+ from one surah; topic match needs 2+ in a topic).
+              If your pool is too small, those kinds will be skipped automatically
+              and the rest will fill in.
+            </p>
           </div>
 
           {/* Count */}
@@ -347,15 +380,50 @@ export function QuizWorkspace() {
 
   // Review phase.
   if (phase === "review" && result) {
+    const attempted = Object.keys(answers).length;
+    const correct = result.correct;
+    const incorrect = attempted - correct;
+    const skipped = questions.length - attempted;
+
     return (
       <section className="space-y-5" aria-labelledby="result-heading">
         <div className="rounded-2xl border border-border/80 bg-card p-6">
           <h2 id="result-heading" className="font-display text-2xl font-semibold">
-            {result.correct} of {result.total} correct
+            {correct} of {questions.length} correct
           </h2>
           <p className="mt-2 text-sm text-muted-foreground">
             This number is for you alone. Reading the explanations below is the part that helps.
           </p>
+          <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <div className="rounded-xl bg-secondary/40 p-3">
+              <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                Attempted
+              </dt>
+              <dd className="mt-1 font-display text-xl font-semibold">{attempted}</dd>
+            </div>
+            <div className="rounded-xl bg-primary/10 p-3">
+              <dt className="text-xs font-medium uppercase tracking-wider text-primary">
+                Correct
+              </dt>
+              <dd className="mt-1 font-display text-xl font-semibold text-primary">
+                {correct}
+              </dd>
+            </div>
+            <div className="rounded-xl bg-destructive/10 p-3">
+              <dt className="text-xs font-medium uppercase tracking-wider text-destructive">
+                Incorrect
+              </dt>
+              <dd className="mt-1 font-display text-xl font-semibold text-destructive">
+                {incorrect}
+              </dd>
+            </div>
+            <div className="rounded-xl bg-muted p-3">
+              <dt className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                Skipped
+              </dt>
+              <dd className="mt-1 font-display text-xl font-semibold">{skipped}</dd>
+            </div>
+          </dl>
           <div className="mt-4 flex flex-wrap gap-2.5">
             <button
               type="button"
@@ -416,6 +484,91 @@ export function QuizWorkspace() {
                   </Link>
                 ))}
               </div>
+            </div>
+          );
+        })()}
+
+        {/* Related topics */}
+        {(() => {
+          const bySlug = new Map<string, (typeof TOPICS)[number]>();
+          for (const q of questions) {
+            for (const ref of q.refs) {
+              for (const t of topicsForAyah(ref)) {
+                bySlug.set(t.slug, t);
+              }
+            }
+          }
+          const relatedTopics = Array.from(bySlug.values()).slice(0, 6);
+          if (relatedTopics.length === 0) return null;
+          return (
+            <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Related topics
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                These topics include ayat from this quiz.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {relatedTopics.map((t) => (
+                  <Link
+                    key={t.slug}
+                    href={`/topics/${t.slug}`}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    <span className="arabic-display text-base text-gold">
+                      {t.arabicTitle}
+                    </span>
+                    {t.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* Add to revision plan */}
+        {(() => {
+          const eligibleRefs = new Map<string, { surah: number; ayah: number }>();
+          for (const q of questions) {
+            const resp = answers[q.id];
+            const wasCorrect = resp ? isCorrect(q, resp) : false;
+            if (wasCorrect) continue;
+            for (const ref of q.refs) {
+              eligibleRefs.set(`${ref.surah}:${ref.ayah}`, {
+                surah: ref.surah,
+                ayah: ref.ayah,
+              });
+            }
+          }
+          if (eligibleRefs.size === 0) return null;
+          const refs = Array.from(eligibleRefs.values());
+          return (
+            <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Add to your revision plan
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                {refs.length} {refs.length === 1 ? "ayah" : "ayat"} from this session
+                would benefit from spaced review. Adding them does not overwrite
+                anything already in your plan.
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  const res = revision.addRange(refs);
+                  if (res.added === 0) {
+                    toast.info("All of these ayat are already in your revision plan.");
+                  } else {
+                    toast.success(
+                      `Added ${res.added} ${res.added === 1 ? "ayah" : "ayat"} to your revision plan${res.skipped > 0 ? ` (${res.skipped} already present)` : ""}.`
+                    );
+                  }
+                }}
+                className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                Add to revision plan
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </button>
             </div>
           );
         })()}
