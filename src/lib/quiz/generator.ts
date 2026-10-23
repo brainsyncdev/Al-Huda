@@ -16,7 +16,7 @@ import { getAyah, getSurah, getSurahIndex } from "@/lib/quran/data";
 import type { AyahRef } from "@/lib/quran/types";
 import { TOPICS } from "@/lib/topics/data";
 import { getPath } from "@/lib/paths/data";
-import type { QuizQuestion } from "./types";
+import type { QuizKind, QuizQuestion } from "./types";
 
 /** Simple seeded PRNG (mulberry32). Deterministic, no external deps. */
 function mulberry32(seed: number): () => number {
@@ -43,6 +43,44 @@ function shuffle<T>(rand: () => number, arr: T[]): T[] {
 
 function refKey(r: AyahRef): string {
   return `${r.surah}:${r.ayah}`;
+}
+
+/**
+ * Real, canonical ayah references usable as distractors. Prefers the supplied
+ * pool, then the target's own surah, then first ayat of other surahs. Never
+ * invents a reference or text, and never includes the target itself.
+ */
+function candidateRefs(target: AyahRef, pool: AyahRef[]): AyahRef[] {
+  const seen = new Set<string>([refKey(target)]);
+  const out: AyahRef[] = [];
+  const add = (ref: AyahRef) => {
+    const k = refKey(ref);
+    if (seen.has(k)) return;
+    seen.add(k);
+    out.push(ref);
+  };
+
+  for (const r of pool) add(r);
+
+  const surah = getSurah(target.surah);
+  if (surah) {
+    for (const a of surah.ayat) add({ surah: surah.id, ayah: a.ayah });
+  }
+
+  if (out.length < 3) {
+    for (const s of getSurahIndex()) {
+      if (s.id === target.surah) continue;
+      add({ surah: s.id, ayah: 1 });
+      if (out.length >= 6) break;
+    }
+  }
+
+  return out;
+}
+
+/** Split canonical Arabic into word tokens. No normalisation, no invention. */
+function usableWords(text: string): string[] {
+  return text.split(/\s+/).filter((w) => w.length > 0);
 }
 
 /** Pool of well-known ayat used as the basis for quiz questions. */
@@ -131,7 +169,9 @@ export function generateQuestions(opts: GenerateOptions): QuizQuestion[] {
 
   // Determine the pool of ayat to draw from.
   let pool: AyahRef[];
-  if (opts.pathSlug) {
+  if (opts.refs && opts.refs.length > 0) {
+    pool = opts.refs;
+  } else if (opts.pathSlug) {
     const path = getPath(opts.pathSlug);
     if (!path) return [];
     pool = path.steps.map((s) => s.ref);
@@ -139,11 +179,15 @@ export function generateQuestions(opts: GenerateOptions): QuizQuestion[] {
     const topic = TOPICS.find((t) => t.slug === opts.topicSlug);
     if (!topic) return [];
     pool = topic.relations.map((r) => r.ref);
+  } else if (opts.surahId) {
+    const surah = getSurah(opts.surahId);
+    if (!surah) return [];
+    pool = surah.ayat.map((a) => ({ surah: surah.id, ayah: a.ayah }));
   } else {
     pool = QUESTION_POOL;
   }
 
-  if (pool.length < 2) return [];
+  if (pool.length < 1) return [];
 
   // Deduplicate pool by ref key.
   const seen = new Set<string>();
@@ -155,18 +199,17 @@ export function generateQuestions(opts: GenerateOptions): QuizQuestion[] {
       uniquePool.push(ref);
     }
   }
-  if (uniquePool.length < 2) return [];
+  if (uniquePool.length < 1) return [];
 
-  const kinds: Array<QuizQuestion["kind"]> = [
-    "surah-identification",
-    "translation-match",
-    "ayah-ordering",
-    "topic-match",
-  ];
+  const enabledKinds =
+    opts.kinds && opts.kinds.length > 0 ? opts.kinds : ALL_KINDS;
 
-  for (let i = 0; i < opts.count; i++) {
-    const kind = pick(rand, kinds);
-    const q = makeQuestion(rand, kind, uniquePool, `${opts.seed}-${i}`);
+  let attempts = 0;
+  const maxAttempts = opts.count * 4;
+  while (questions.length < opts.count && attempts < maxAttempts) {
+    attempts++;
+    const kind = pick(rand, enabledKinds);
+    const q = makeQuestion(rand, kind, uniquePool, `${opts.seed}-${attempts}`);
     if (q) questions.push(q);
   }
 
@@ -188,6 +231,12 @@ function makeQuestion(
       return makeAyahOrdering(rand, pool, idSuffix);
     case "topic-match":
       return makeTopicMatch(rand, pool, idSuffix);
+    case "ayah-recall":
+      return makeAyahRecall(rand, pool, idSuffix);
+    case "missing-word":
+      return makeMissingWord(rand, pool, idSuffix);
+    case "reference-recognition":
+      return makeReferenceRecognition(rand, pool, idSuffix);
   }
 }
 
@@ -241,14 +290,15 @@ function makeTranslationMatch(
   const targetAyah = getAyah(target.surah, target.ayah);
   if (!targetAyah) return null;
 
-  // Pick 3 distractor translations from other ayat in the pool.
-  const others = pool.filter(
-    (r) => !(r.surah === target.surah && r.ayah === target.ayah)
-  );
+  // Pick 3 distractor translations. Pool ayat come first; if the pool is
+  // sparse, real ayat from the target's own surah fill the gap. Never invent
+  // a translation.
+  const others = candidateRefs(target, pool);
   const distractorRefs = shuffle(rand, others).slice(0, 3);
   const distractorAyat = distractorRefs
     .map((r) => getAyah(r.surah, r.ayah))
     .filter((a): a is NonNullable<typeof a> => a !== null);
+  if (distractorAyat.length < 3) return null;
 
   const correctTranslation = targetAyah.translation;
   const options = shuffle(rand, [
@@ -391,6 +441,169 @@ function makeTopicMatch(
     prompt: `Which of these ayat belong to the topic "${targetTopic.title}"?`,
     data,
     refs: correctRefs,
+  };
+}
+
+/**
+ * Ayah recall: show a reference (and a theme hint when one exists), let the
+ * learner recall the passage, then reveal the canonical text and ask for a
+ * self-rating. Free-text Arabic is never auto-scored: minor diacritic or
+ * orthographic differences are not evidence of textual equivalence.
+ */
+function makeAyahRecall(
+  rand: () => number,
+  pool: AyahRef[],
+  idSuffix: string
+): QuizQuestion | null {
+  const target = pick(rand, pool);
+  const ayah = getAyah(target.surah, target.ayah);
+  if (!ayah) return null;
+  const surah = getSurah(target.surah);
+  if (!surah) return null;
+
+  const topic = TOPICS.find((t) =>
+    t.relations.some(
+      (r) => r.ref.surah === target.surah && r.ref.ayah === target.ayah
+    )
+  );
+  const context = topic
+    ? `Theme: ${topic.title}.`
+    : `From ${surah.transliteration} (${surah.meaning}).`;
+
+  return {
+    id: `ar-${idSuffix}`,
+    kind: "ayah-recall",
+    prompt: `Recall ${surah.transliteration} ${target.surah}:${target.ayah}.`,
+    hint: context,
+    data: {
+      canonicalArabic: ayah.arabic,
+      canonicalTranslation: ayah.translation,
+      recallPrompt: `Try to recall the verse before revealing it. ${context}`,
+    },
+    refs: [target],
+  };
+}
+
+/**
+ * Missing-word exercise: one word is replaced with a blank. The correct answer
+ * is the actual canonical word; distractors are other real words from the same
+ * ayah (or nearby canonical ayat). Nothing is reconstructed.
+ */
+function makeMissingWord(
+  rand: () => number,
+  pool: AyahRef[],
+  idSuffix: string
+): QuizQuestion | null {
+  const target = pick(rand, pool);
+  const ayah = getAyah(target.surah, target.ayah);
+  if (!ayah) return null;
+
+  const words = usableWords(ayah.arabic);
+  if (words.length < 3) return null;
+
+  const candidates = words.filter((w) => w.length >= 3);
+  const wordPool = candidates.length > 0 ? candidates : words;
+  const missingWord = pick(rand, wordPool);
+
+  // Replace the exact token, not a substring inside another word.
+  const tokens = ayah.arabic.split(/(\s+)/);
+  let replaced = false;
+  const displayArabic = tokens
+    .map((token) => {
+      if (!replaced && token === missingWord) {
+        replaced = true;
+        return "▭";
+      }
+      return token;
+    })
+    .join("");
+  if (!replaced) return null;
+
+  const distractorPool = new Set<string>();
+  for (const w of words) {
+    if (w !== missingWord && w.length >= 2) distractorPool.add(w);
+  }
+  if (distractorPool.size < 3) {
+    for (const ref of candidateRefs(target, pool)) {
+      const other = getAyah(ref.surah, ref.ayah);
+      if (!other) continue;
+      for (const w of usableWords(other.arabic)) {
+        if (w !== missingWord && w.length >= 2) distractorPool.add(w);
+        if (distractorPool.size >= 6) break;
+      }
+      if (distractorPool.size >= 3) break;
+    }
+  }
+
+  const distractors = shuffle(rand, Array.from(distractorPool)).slice(0, 3);
+  if (distractors.length < 3) return null;
+
+  const options = shuffle(rand, [missingWord, ...distractors]);
+  const correctIndex = options.indexOf(missingWord);
+  const surah = getSurah(target.surah);
+  const surahName = surah?.transliteration ?? `Surah ${target.surah}`;
+
+  return {
+    id: `mw-${idSuffix}`,
+    kind: "missing-word",
+    prompt: `Which word is missing from ${surahName} ${target.surah}:${target.ayah}?`,
+    data: {
+      fullArabic: ayah.arabic,
+      displayArabic,
+      missingWord,
+      options,
+      correctIndex,
+    },
+    refs: [target],
+  };
+}
+
+/**
+ * Reference recognition: show the ayah and ask which surah/ayah it is. Wrong
+ * options are real references drawn from the pool or the target's own surah.
+ */
+function makeReferenceRecognition(
+  rand: () => number,
+  pool: AyahRef[],
+  idSuffix: string
+): QuizQuestion | null {
+  const target = pick(rand, pool);
+  const ayah = getAyah(target.surah, target.ayah);
+  if (!ayah) return null;
+  const targetSurah = getSurah(target.surah);
+  if (!targetSurah) return null;
+
+  const others = shuffle(rand, candidateRefs(target, pool)).slice(0, 3);
+  if (others.length < 3) return null;
+
+  const label = (r: AyahRef) => {
+    const s = getSurah(r.surah);
+    return s
+      ? `${s.transliteration} ${r.surah}:${r.ayah}`
+      : `${r.surah}:${r.ayah}`;
+  };
+
+  const correctOption = { ref: target, label: label(target) };
+  const options = shuffle(rand, [
+    correctOption,
+    ...others.map((r) => ({ ref: r, label: label(r) })),
+  ]);
+  const correctIndex = options.findIndex(
+    (o) => o.ref.surah === target.surah && o.ref.ayah === target.ayah
+  );
+
+  return {
+    id: `rr-${idSuffix}`,
+    kind: "reference-recognition",
+    prompt: "Which surah and ayah is this?",
+    data: {
+      arabic: ayah.arabic,
+      translation: ayah.translation,
+      correctRef: target,
+      options,
+      correctIndex,
+    },
+    refs: [target],
   };
 }
 

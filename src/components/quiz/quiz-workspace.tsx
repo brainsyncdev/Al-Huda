@@ -1,72 +1,131 @@
 "use client";
 
-// Quiz workspace — self-assessment, never comparison.
-//
-// Deliberately absent: timers, streaks, percentiles, leaderboards, or a
-// "score out of 100" framing. The result screen reports how many answers were
-// right and shows each question with its correct answer, so the quiz teaches
-// rather than ranks. History is local and private, like every other store.
-
 import { useCallback, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   ArrowRight,
-  Check,
   CheckCircle2,
-  Circle,
   RotateCcw,
   XCircle,
 } from "lucide-react";
 import { useQuiz } from "@/lib/quiz/context";
+import { useRevision } from "@/lib/revision/context";
 import { isCorrect } from "@/lib/quiz/scoring";
 import type {
+  QuizKind,
   QuizQuestion,
   QuizResponse,
+  QuizSessionConfig,
 } from "@/lib/quiz/types";
 import { cn } from "@/lib/utils";
 import { PATHS } from "@/lib/paths/data";
-
-/** Questions per attempt. Short enough to finish in one sitting. */
-const QUESTIONS_PER_ATTEMPT = 8;
-
-interface QuizWorkspaceProps {
-  /** Pre-generated question bank, produced on the server from the dataset. */
-  bank: QuizQuestion[];
-}
+import { TOPICS } from "@/lib/topics/data";
+import { getSurahIndex } from "@/lib/quran/data";
 
 type Phase = "idle" | "active" | "review";
 
-function shuffle<T>(arr: readonly T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+const KIND_LABELS: Record<QuizKind, string> = {
+  "surah-identification": "Surah identification",
+  "translation-match": "Translation match",
+  "ayah-ordering": "Ayah ordering",
+  "topic-match": "Topic match",
+  "ayah-recall": "Ayah recall",
+  "missing-word": "Missing word",
+  "reference-recognition": "Reference recognition",
+};
 
-export function QuizWorkspace({ bank }: QuizWorkspaceProps) {
-  const { hydrated, state, startQuiz, recordResponse, completeQuiz, scoreAttempt } =
-    useQuiz();
+export function QuizWorkspace() {
+  const { hydrated, state, startQuiz, recordResponse, completeQuiz } = useQuiz();
+  const revision = useRevision();
 
   const [phase, setPhase] = useState<Phase>("idle");
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
+  const [config, setConfig] = useState<QuizSessionConfig | null>(null);
   const [answers, setAnswers] = useState<Record<string, QuizResponse>>({});
   const [index, setIndex] = useState(0);
   const [result, setResult] = useState<{ correct: number; total: number } | null>(
     null
   );
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const start = useCallback(() => {
-    const picked = shuffle(bank).slice(0, QUESTIONS_PER_ATTEMPT);
-    if (picked.length === 0) return;
-    startQuiz(picked);
-    setQuestions(picked);
-    setAnswers({});
-    setIndex(0);
-    setResult(null);
-    setPhase("active");
-  }, [bank, startQuiz]);
+  // Setup form state.
+  const [setupSource, setSetupSource] = useState<
+    "default" | "surah" | "path" | "topic" | "revision"
+  >("default");
+  const [setupSourceId, setSetupSourceId] = useState<string>("");
+  const [setupKinds, setSetupKinds] = useState<QuizKind[]>([
+    "surah-identification",
+    "translation-match",
+    "ayah-ordering",
+    "topic-match",
+    "ayah-recall",
+    "missing-word",
+    "reference-recognition",
+  ]);
+  const [setupCount, setSetupCount] = useState<number>(10);
+
+  const start = useCallback(async () => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const body: Record<string, unknown> = {
+        sourceKind: setupSource,
+        count: setupCount,
+        kinds: setupKinds,
+      };
+
+      if (setupSource !== "default" && setupSource !== "revision" && setupSourceId) {
+        body.sourceId = setupSourceId;
+      }
+
+      if (setupSource === "revision") {
+        // Collect revision items from the local plan.
+        const items = Object.values(revision.items);
+        if (items.length === 0) {
+          setError("Your revision plan is empty. Add verses to revise first.");
+          setLoading(false);
+          return;
+        }
+        body.refs = items.map((item) => ({
+          surah: item.surah,
+          ayah: item.ayah,
+        }));
+      }
+
+      const res = await fetch("/api/v1/quiz/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({ error: "Generation failed" }));
+        throw new Error(data.error || "Generation failed");
+      }
+
+      const data = await res.json();
+      const questions: QuizQuestion[] = data.questions;
+      const config: QuizSessionConfig = data.config;
+
+      if (questions.length === 0) {
+        throw new Error("Could not generate questions from the given source");
+      }
+
+      startQuiz(questions, config);
+      setQuestions(questions);
+      setConfig(config);
+      setAnswers({});
+      setIndex(0);
+      setResult(null);
+      setPhase("active");
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to generate quiz");
+    } finally {
+      setLoading(false);
+    }
+  }, [setupSource, setupSourceId, setupKinds, setupCount, revision.items, startQuiz]);
 
   const answer = useCallback(
     (questionId: string, response: QuizResponse) => {
@@ -97,180 +156,285 @@ export function QuizWorkspace({ bank }: QuizWorkspaceProps) {
     );
   }
 
-  return (
-    <div className="space-y-8 pb-8">
-      <header className="space-y-2">
-        <h1 className="font-display text-3xl font-semibold tracking-tight">
-          Self-assessment
-        </h1>
-        <p className="max-w-2xl text-muted-foreground">
-          Eight questions drawn from the shipped dataset. Nothing here is timed,
-          ranked, or shared — the point is to notice what you already know and
-          what is worth revisiting. Wrong answers show the correct one.
-        </p>
-      </header>
-
-      {bank.length === 0 && (
-        <p className="rounded-2xl border border-border/80 bg-card p-5 text-sm text-muted-foreground">
-          The question bank could not be generated from the current dataset.
-          Nothing else was changed.
-        </p>
-      )}
-
-      {phase === "idle" && bank.length > 0 && (
-        <section className="rounded-2xl border border-border/80 bg-card p-6">
-          <h2 className="font-display text-xl font-semibold">Ready when you are</h2>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Questions cover surah identification, translation matching, ayah
-            ordering, and curated topics. You can stop at any point; an
-            unfinished attempt is simply not recorded as complete.
+  // Setup form.
+  if (phase === "idle") {
+    const surahs = getSurahIndex();
+    return (
+      <div className="space-y-8 pb-8">
+        <header className="space-y-2">
+          <h1 className="font-display text-3xl font-semibold tracking-tight">
+            Self-assessment quiz
+          </h1>
+          <p className="max-w-2xl text-muted-foreground">
+            Choose your learning source, question types, and session length. No timers, no rankings.
           </p>
-          <button
-            type="button"
-            onClick={start}
-            className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-          >
-            Start {QUESTIONS_PER_ATTEMPT} questions
-            <ArrowRight className="h-4 w-4" aria-hidden />
-          </button>
-        </section>
-      )}
+        </header>
 
-      {phase === "active" && questions[index] && (
-        <ActiveQuestion
-          question={questions[index]}
-          value={answers[questions[index].id]}
-          onChange={(resp) => answer(questions[index].id, resp)}
-          position={index + 1}
-          total={questions.length}
-          onNext={() => {
-            if (index + 1 < questions.length) setIndex((i) => i + 1);
-            else finish();
-          }}
-        />
-      )}
+        <section className="rounded-2xl border border-border/80 bg-card p-6 space-y-6">
+          {/* Source selection */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium text-foreground">Learning source</label>
+            <select
+              value={setupSource}
+              onChange={(e) => setSetupSource(e.target.value as typeof setupSource)}
+              className="w-full rounded-xl border border-input bg-background px-3 py-2 text-sm"
+            >
+              <option value="default">Default mix</option>
+              <option value="surah">Specific surah</option>
+              <option value="path">Learning path</option>
+              <option value="topic">Topic</option>
+              <option value="revision">My revision plan</option>
+            </select>
 
-      {phase === "review" && result && (
-        <section className="space-y-5" aria-labelledby="result-heading">
-          <div className="rounded-2xl border border-border/80 bg-card p-6">
-            <h2 id="result-heading" className="font-display text-2xl font-semibold">
-              {result.correct} of {result.total} correct
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              This number is for you alone. It is not stored as a rank, and
-              nothing is uploaded. Reading the explanations below is the part
-              that helps.
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2.5">
-              <button
-                type="button"
-                onClick={start}
-                className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            {setupSource === "surah" && (
+              <select
+                value={setupSourceId}
+                onChange={(e) => setSetupSourceId(e.target.value)}
+                className="w-full rounded-xl border border-input bg-background px-3 py-2 text-sm mt-2"
               >
-                <RotateCcw className="h-4 w-4" aria-hidden />
-                Another set
-              </button>
-              <Link
-                href="/learn/paths"
-                className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-5 py-2.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                <option value="">Select a surah</option>
+                {surahs.map((s) => (
+                  <option key={s.id} value={String(s.id)}>
+                    {s.transliteration} ({s.id})
+                  </option>
+                ))}
+              </select>
+            )}
+
+            {setupSource === "path" && (
+              <select
+                value={setupSourceId}
+                onChange={(e) => setSetupSourceId(e.target.value)}
+                className="w-full rounded-xl border border-input bg-background px-3 py-2 text-sm mt-2"
               >
-                Back to learning paths
-              </Link>
+                <option value="">Select a path</option>
+                {PATHS.map((p) => (
+                  <option key={p.slug} value={p.slug}>
+                    {p.title}
+                  </option>
+                ))}
+              </select>
+            )}
+
+            {setupSource === "topic" && (
+              <select
+                value={setupSourceId}
+                onChange={(e) => setSetupSourceId(e.target.value)}
+                className="w-full rounded-xl border border-input bg-background px-3 py-2 text-sm mt-2"
+              >
+                <option value="">Select a topic</option>
+                {TOPICS.map((t) => (
+                  <option key={t.slug} value={t.slug}>
+                    {t.title}
+                  </option>
+                ))}
+              </select>
+            )}
+
+            {setupSource === "revision" && (
+              <p className="text-xs text-muted-foreground mt-2">
+                Questions will be drawn from your revision plan ({Object.keys(revision.items).length} verses).
+              </p>
+            )}
+          </div>
+
+          {/* Question types */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium text-foreground">Question types</label>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {(Object.keys(KIND_LABELS) as QuizKind[]).map((kind) => (
+                <label key={kind} className="flex items-center gap-2 text-sm">
+                  <input
+                    type="checkbox"
+                    checked={setupKinds.includes(kind)}
+                    onChange={(e) => {
+                      if (e.target.checked) {
+                        setSetupKinds([...setupKinds, kind]);
+                      } else {
+                        setSetupKinds(setupKinds.filter((k) => k !== kind));
+                      }
+                    }}
+                    className="h-4 w-4 rounded border-input"
+                  />
+                  {KIND_LABELS[kind]}
+                </label>
+              ))}
             </div>
           </div>
 
-          {/* Related learning paths — paths that include any of the ayat from
-              this quiz. Shows up to 3 paths so the learner can continue
-              studying the themes they just tested. */}
-          {(() => {
-            const ayatInQuiz = new Set(
-              questions.flatMap((q) =>
-                q.refs.map((r) => `${r.surah}:${r.ayah}`)
-              )
-            );
-            const relatedPaths = PATHS.filter((path) =>
-              path.steps.some((step) =>
-                ayatInQuiz.has(`${step.ref.surah}:${step.ref.ayah}`)
-              )
-            ).slice(0, 3);
-            if (relatedPaths.length === 0) return null;
-            return (
-              <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
-                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                  Continue studying
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  These learning paths include ayat from this quiz. Working
-                  through a path gives you context and reflection prompts for
-                  each verse.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {relatedPaths.map((path) => (
-                    <Link
-                      key={path.slug}
-                      href={`/learn/paths/${path.slug}`}
-                      className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-                    >
-                      <span className="arabic-display text-base text-gold">
-                        {path.arabicTitle}
-                      </span>
-                      {path.title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            );
-          })()}
+          {/* Count */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium text-foreground">Number of questions</label>
+            <input
+              type="range"
+              min={5}
+              max={30}
+              value={setupCount}
+              onChange={(e) => setSetupCount(Number(e.target.value))}
+              className="w-full"
+            />
+            <p className="text-xs text-muted-foreground">{setupCount} questions</p>
+          </div>
 
-          <ul className="space-y-3">
-            {questions.map((q, i) => (
-              <ReviewItem
-                key={q.id}
-                question={q}
-                response={answers[q.id]}
-                position={i + 1}
-              />
-            ))}
-          </ul>
-        </section>
-      )}
+          {/* Error */}
+          {error && (
+            <div className="rounded-xl border border-destructive/50 bg-destructive/10 p-3 text-sm text-destructive">
+              {error}
+            </div>
+          )}
 
-      {history.length > 0 && phase !== "active" && (
-        <section aria-labelledby="history-heading" className="space-y-3">
-          <h2
-            id="history-heading"
-            className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+          {/* Submit */}
+          <button
+            type="button"
+            onClick={start}
+            disabled={loading || setupKinds.length === 0}
+            className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Recent attempts on this device
-          </h2>
-          <ul className="space-y-2">
-            {history.map((attempt) => {
-              const score = scoreAttempt(attempt.id);
-              return (
-                <li
-                  key={attempt.id}
-                  className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-border/70 bg-card px-4 py-3 text-sm"
-                >
-                  <span className="text-muted-foreground">
-                    {attempt.completedAt
-                      ? new Date(attempt.completedAt).toLocaleString()
-                      : "Completed"}
-                  </span>
-                  <span className="font-medium">
-                    {score ? `${score.correct} of ${score.total}` : "—"}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
-          <p className="text-xs text-muted-foreground">
-            History is kept in this browser only. Clear it from Library or
-            Settings with the rest of your local data.
-          </p>
+            {loading ? "Generating…" : "Generate quiz"}
+            <ArrowRight className="h-4 w-4" aria-hidden />
+          </button>
         </section>
-      )}
-    </div>
-  );
+
+        {/* History */}
+        {history.length > 0 && (
+          <section className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              Recent attempts
+            </h2>
+            <ul className="space-y-2">
+              {history.map((attempt) => {
+                const scored = attempt.questions.reduce((acc, q) => {
+                  const resp = attempt.responses[q.id];
+                  return resp && isCorrect(q, resp) ? acc + 1 : acc;
+                }, 0);
+                return (
+                  <li key={attempt.id} className="text-sm">
+                    <span className="font-medium">{scored} of {attempt.questions.length}</span>
+                    <span className="text-muted-foreground ml-2">
+                      {new Date(attempt.completedAt!).toLocaleDateString()}
+                    </span>
+                    {attempt.config && (
+                      <span className="text-xs text-muted-foreground ml-2">
+                        ({attempt.config.source.kind})
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        )}
+      </div>
+    );
+  }
+
+  // Active quiz phase.
+  if (phase === "active" && questions[index]) {
+    return (
+      <ActiveQuestion
+        question={questions[index]}
+        value={answers[questions[index].id]}
+        onChange={(resp) => answer(questions[index].id, resp)}
+        position={index + 1}
+        total={questions.length}
+        onNext={() => {
+          if (index + 1 < questions.length) setIndex((i) => i + 1);
+          else finish();
+        }}
+      />
+    );
+  }
+
+  // Review phase.
+  if (phase === "review" && result) {
+    return (
+      <section className="space-y-5" aria-labelledby="result-heading">
+        <div className="rounded-2xl border border-border/80 bg-card p-6">
+          <h2 id="result-heading" className="font-display text-2xl font-semibold">
+            {result.correct} of {result.total} correct
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            This number is for you alone. Reading the explanations below is the part that helps.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-2.5">
+            <button
+              type="button"
+              onClick={() => {
+                setPhase("idle");
+                setQuestions([]);
+                setConfig(null);
+                setAnswers({});
+                setIndex(0);
+                setResult(null);
+              }}
+              className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              <RotateCcw className="h-4 w-4" aria-hidden />
+              New quiz
+            </button>
+            <Link
+              href="/learn/paths"
+              className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-5 py-2.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+            >
+              Back to learning paths
+            </Link>
+          </div>
+        </div>
+
+        {/* Related learning paths */}
+        {(() => {
+          const ayatInQuiz = new Set(
+            questions.flatMap((q) =>
+              q.refs.map((r) => `${r.surah}:${r.ayah}`)
+            )
+          );
+          const relatedPaths = PATHS.filter((path) =>
+            path.steps.some((step) =>
+              ayatInQuiz.has(`${step.ref.surah}:${step.ref.ayah}`)
+            )
+          ).slice(0, 3);
+          if (relatedPaths.length === 0) return null;
+          return (
+            <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                Continue studying
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                These learning paths include ayat from this quiz.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {relatedPaths.map((path) => (
+                  <Link
+                    key={path.slug}
+                    href={`/learn/paths/${path.slug}`}
+                    className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    <span className="arabic-display text-base text-gold">
+                      {path.arabicTitle}
+                    </span>
+                    {path.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
+        <ul className="space-y-3">
+          {questions.map((q, i) => (
+            <ReviewItem
+              key={q.id}
+              question={q}
+              response={answers[q.id]}
+              position={i + 1}
+            />
+          ))}
+        </ul>
+      </section>
+    );
+  }
+
+  return null;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -380,6 +544,30 @@ function ActiveQuestion({
 
       {question.kind === "topic-match" && (
         <TopicMatchInput
+          question={question}
+          value={value}
+          onChange={onChange}
+        />
+      )}
+
+      {question.kind === "ayah-recall" && (
+        <AyahRecallInput
+          question={question}
+          value={value}
+          onChange={onChange}
+        />
+      )}
+
+      {question.kind === "missing-word" && (
+        <MissingWordInput
+          question={question}
+          value={value}
+          onChange={onChange}
+        />
+      )}
+
+      {question.kind === "reference-recognition" && (
+        <ReferenceRecognitionInput
           question={question}
           value={value}
           onChange={onChange}
@@ -590,6 +778,146 @@ function TopicMatchInput({
   );
 }
 
+function AyahRecallInput({
+  question,
+  value,
+  onChange,
+}: {
+  question: Extract<QuizQuestion, { kind: "ayah-recall" }>;
+  value: QuizResponse | undefined;
+  onChange: (response: QuizResponse) => void;
+}) {
+  const [revealed, setRevealed] = useState(false);
+
+  return (
+    <div className="space-y-3">
+      {!revealed ? (
+        <>
+          <p className="text-sm text-muted-foreground">
+            {question.data.recallPrompt}
+          </p>
+          <button
+            type="button"
+            onClick={() => setRevealed(true)}
+            className="inline-flex items-center gap-1.5 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            Reveal the verse
+          </button>
+        </>
+      ) : (
+        <>
+          <p
+            lang="ar"
+            dir="rtl"
+            className="arabic-text rounded-xl bg-secondary/60 p-4 text-[1.5rem] leading-[2.2] text-foreground"
+          >
+            {question.data.canonicalArabic}
+          </p>
+          <p className="text-sm text-muted-foreground">
+            {question.data.canonicalTranslation}
+          </p>
+          <fieldset className="space-y-2">
+            <legend className="text-xs text-muted-foreground">
+              How accurate was your recall?
+            </legend>
+            {(["accurate", "partial", "unable"] as const).map((rating) => (
+              <label key={rating} className="flex items-center gap-2 text-sm">
+                <input
+                  type="radio"
+                  name={`recall-${question.id}`}
+                  checked={value?.kind === "ayah-recall" && value.selfRating === rating}
+                  onChange={() => onChange({ kind: "ayah-recall", selfRating: rating })}
+                  className="h-4 w-4"
+                />
+                {rating.charAt(0).toUpperCase() + rating.slice(1)}
+              </label>
+            ))}
+          </fieldset>
+        </>
+      )}
+    </div>
+  );
+}
+
+function MissingWordInput({
+  question,
+  value,
+  onChange,
+}: {
+  question: Extract<QuizQuestion, { kind: "missing-word" }>;
+  value: QuizResponse | undefined;
+  onChange: (response: QuizResponse) => void;
+}) {
+  return (
+    <fieldset className="space-y-3">
+      <legend className="sr-only">Choose the missing word</legend>
+      <p
+        lang="ar"
+        dir="rtl"
+        className="arabic-text rounded-xl bg-secondary/60 p-4 text-[1.5rem] leading-[2.2] text-foreground"
+      >
+        {question.data.displayArabic}
+      </p>
+      <ul className="space-y-2">
+        {question.data.options.map((option, i) => (
+          <li key={i}>
+            <OptionButton
+              selected={
+                value?.kind === "missing-word" &&
+                value.selectedIndex === i
+              }
+              onSelect={() =>
+                onChange({ kind: "missing-word", selectedIndex: i })
+              }
+              label={option}
+            />
+          </li>
+        ))}
+      </ul>
+    </fieldset>
+  );
+}
+
+function ReferenceRecognitionInput({
+  question,
+  value,
+  onChange,
+}: {
+  question: Extract<QuizQuestion, { kind: "reference-recognition" }>;
+  value: QuizResponse | undefined;
+  onChange: (response: QuizResponse) => void;
+}) {
+  return (
+    <fieldset className="space-y-3">
+      <legend className="sr-only">Choose the reference</legend>
+      <p
+        lang="ar"
+        dir="rtl"
+        className="arabic-text rounded-xl bg-secondary/60 p-4 text-[1.5rem] leading-[2.2] text-foreground"
+      >
+        {question.data.arabic}
+      </p>
+      <p className="text-sm text-muted-foreground">{question.data.translation}</p>
+      <ul className="space-y-2">
+        {question.data.options.map((option, i) => (
+          <li key={`${option.ref.surah}:${option.ref.ayah}`}>
+            <OptionButton
+              selected={
+                value?.kind === "reference-recognition" &&
+                value.selectedIndex === i
+              }
+              onSelect={() =>
+                onChange({ kind: "reference-recognition", selectedIndex: i })
+              }
+              label={option.label}
+            />
+          </li>
+        ))}
+      </ul>
+    </fieldset>
+  );
+}
+
 /* -------------------------------------------------------------------------- */
 /* Review                                                                     */
 /* -------------------------------------------------------------------------- */
@@ -671,6 +999,16 @@ function CorrectAnswer({ question }: { question: QuizQuestion }) {
         .map((option) => `${option.ref.surah}:${option.ref.ayah}`);
       return <span>{refs.join(", ")}</span>;
     }
+    case "ayah-recall": {
+      return <span>Self-assessed</span>;
+    }
+    case "missing-word": {
+      return <span>{question.data.missingWord}</span>;
+    }
+    case "reference-recognition": {
+      const opt = question.data.options[question.data.correctIndex];
+      return <span>{opt?.label ?? "—"}</span>;
+    }
   }
 }
 
@@ -684,5 +1022,11 @@ function kindLabel(kind: QuizQuestion["kind"]): string {
       return "Ayah ordering";
     case "topic-match":
       return "Topic match";
+    case "ayah-recall":
+      return "Ayah recall";
+    case "missing-word":
+      return "Missing word";
+    case "reference-recognition":
+      return "Reference recognition";
   }
 }

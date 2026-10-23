@@ -7,6 +7,7 @@ import { PrefsProvider } from "@/lib/prefs/context";
 import { RevisionProvider } from "@/lib/revision/context";
 import { PathsProvider } from "@/lib/paths/context";
 import { QuizProvider } from "@/lib/quiz/context";
+import { ReadingPlansProvider } from "@/lib/reading-plans/context";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
@@ -84,16 +85,18 @@ export default function RootLayout({
           <RevisionProvider>
             <PathsProvider>
               <QuizProvider>
-                <SiteHeader />
-                <main
-                  id="main-content"
-                  className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
-                >
-                  {children}
-                </main>
-                <SiteFooter />
-                <MobileBottomNav />
-                <Toaster position="bottom-center" />
+                <ReadingPlansProvider>
+                  <SiteHeader />
+                  <main
+                    id="main-content"
+                    className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
+                  >
+                    {children}
+                  </main>
+                  <SiteFooter />
+                  <MobileBottomNav />
+                  <Toaster position="bottom-center" />
+                </ReadingPlansProvider>
               </QuizProvider>
             </PathsProvider>
             </RevisionProvider>

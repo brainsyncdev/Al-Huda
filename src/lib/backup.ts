@@ -26,13 +26,18 @@ import type { PathsState } from "@/lib/paths/types";
 import { EMPTY_PATHS_STATE } from "@/lib/paths/data";
 import { normalizeQuizState } from "@/lib/quiz/storage";
 import type { QuizState } from "@/lib/quiz/types";
+import { normalizeReadingPlansState } from "@/lib/reading-plans/storage";
+import type { ReadingPlansState } from "@/lib/reading-plans/types";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 5;
+export const BACKUP_VERSION = 6;
 export const BACKUP_APP = "Al-Huda";
 
 /** Empty quiz state, used when restoring a legacy backup that had no quiz. */
 const EMPTY_QUIZ_STATE: QuizState = { attempts: [], currentAttemptId: null };
+
+/** Empty reading plans state. */
+const EMPTY_READING_PLANS_STATE: ReadingPlansState = { targets: [] };
 
 /**
  * Read cap checked before JSON.parse. A real backup is a few kilobytes;
@@ -52,6 +57,7 @@ export interface BackupFile {
   preferences: Prefs;
   paths: PathsState;
   quiz: QuizState;
+  readingPlans: ReadingPlansState;
 }
 
 export interface RestorableBackup {
@@ -60,13 +66,14 @@ export interface RestorableBackup {
   preferences: Prefs;
   paths: PathsState;
   quiz: QuizState;
+  readingPlans: ReadingPlansState;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
    * export; 2 added revision and preferences; 3 added paths; 4 added
-   * translationId in preferences; 5 added quiz. Older versions get defaults
-   * for missing sections.
+   * translationId in preferences; 5 added quiz; 6 added reading plans.
+   * Older versions get defaults for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4 | 5;
+  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -81,6 +88,7 @@ export interface BackupInput {
   preferences: Prefs;
   paths: PathsState;
   quiz: QuizState;
+  readingPlans: ReadingPlansState;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -98,6 +106,7 @@ export function buildBackup(
     preferences: input.preferences,
     paths: input.paths,
     quiz: input.quiz,
+    readingPlans: input.readingPlans,
   };
 }
 
@@ -137,24 +146,20 @@ export function parseBackup(text: string): ParseBackupResult {
   const exportedAt = typeof file.exportedAt === "string" ? file.exportedAt : "";
 
   if (file.format === BACKUP_FORMAT) {
-    // v3, v4, and v5 share the same envelope shape. v4 added translationId
-    // inside preferences (normalizePrefs falls back to default when absent);
-    // v5 added quiz (normalizeQuizState falls back to empty when absent).
-    if (version !== 3 && version !== 4 && version !== 5) {
+    // v3–v6 share the same envelope shape. v4 added translationId inside
+    // preferences; v5 added quiz; v6 added reading plans.
+    if (version !== 3 && version !== 4 && version !== 5 && version !== 6) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads versions 3–5. Nothing was imported.`,
+        }, and this build reads versions 3–6. Nothing was imported.`,
       };
     }
     return {
       ok: true,
       data: {
         library: normalizeLibraryState(file.library),
-        // A missing section normalises to the empty store rather than failing
-        // the whole file: losing a plan because one key is absent would be a
-        // worse outcome than restoring the rest.
         revision:
           file.revision === undefined
             ? EMPTY_REVISION_STATE
@@ -165,7 +170,11 @@ export function parseBackup(text: string): ParseBackupResult {
           file.quiz === undefined
             ? EMPTY_QUIZ_STATE
             : normalizeQuizState(file.quiz),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5) : 5,
+        readingPlans:
+          file.readingPlans === undefined
+            ? EMPTY_READING_PLANS_STATE
+            : normalizeReadingPlansState(file.readingPlans),
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6) : 6,
         exportedAt,
       },
     };
@@ -177,12 +186,11 @@ export function parseBackup(text: string): ParseBackupResult {
       ok: true,
       data: {
         library: normalizeLibraryState(file.library),
-        // Honest absence: this file never contained a revision plan, so the
-        // restore leaves one empty rather than fabricating schedule entries.
         revision: EMPTY_REVISION_STATE,
         preferences: DEFAULT_PREFS,
         paths: { ...EMPTY_PATHS_STATE },
         quiz: { ...EMPTY_QUIZ_STATE },
+        readingPlans: { ...EMPTY_READING_PLANS_STATE },
         sourceVersion: 1,
         exportedAt,
       },

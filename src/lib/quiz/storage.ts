@@ -8,7 +8,94 @@
 // FREE MODULE: no React, no network. Safe to import from client contexts and
 // from the shared backup helper.
 
-import type { QuizAttempt, QuizState } from "./types";
+import type {
+  QuizAttempt,
+  QuizKind,
+  QuizSessionConfig,
+  QuizState,
+} from "./types";
+
+const KNOWN_KINDS: readonly QuizKind[] = [
+  "surah-identification",
+  "translation-match",
+  "ayah-ordering",
+  "topic-match",
+  "ayah-recall",
+  "missing-word",
+  "reference-recognition",
+];
+
+function asSlug(value: unknown): string | null {
+  if (typeof value !== "string") return null;
+  const slug = value.trim();
+  if (slug.length === 0 || slug.length > 200) return null;
+  return slug;
+}
+
+function normalizeSource(
+  raw: unknown
+): QuizSessionConfig["source"] | null {
+  if (typeof raw !== "object" || raw === null) return null;
+  const obj = raw as Record<string, unknown>;
+  switch (obj.kind) {
+    case "default":
+      return { kind: "default" };
+    case "revision":
+      return { kind: "revision" };
+    case "surah": {
+      const id = obj.surahId;
+      if (typeof id !== "number" || !Number.isInteger(id) || id < 1 || id > 114) {
+        return null;
+      }
+      return { kind: "surah", surahId: id };
+    }
+    case "path": {
+      const slug = asSlug(obj.pathSlug);
+      return slug ? { kind: "path", pathSlug: slug } : null;
+    }
+    case "topic": {
+      const slug = asSlug(obj.topicSlug);
+      return slug ? { kind: "topic", topicSlug: slug } : null;
+    }
+    default:
+      return null;
+  }
+}
+
+/**
+ * Rebuild a session config from untrusted JSON. Returns undefined when the
+ * source is missing or malformed: a config that cannot describe where the
+ * questions came from is worse than no config at all.
+ */
+export function normalizeQuizSessionConfig(
+  raw: unknown
+): QuizSessionConfig | undefined {
+  if (typeof raw !== "object" || raw === null) return undefined;
+  const obj = raw as Record<string, unknown>;
+
+  const source = normalizeSource(obj.source);
+  if (source === null) return undefined;
+
+  const enabledKinds = Array.isArray(obj.enabledKinds)
+    ? Array.from(
+        new Set(
+          obj.enabledKinds.filter(
+            (kind): kind is QuizKind =>
+              typeof kind === "string" &&
+              (KNOWN_KINDS as readonly string[]).includes(kind)
+          )
+        )
+      )
+    : [];
+
+  const requestedCount =
+    typeof obj.requestedCount === "number" &&
+    Number.isInteger(obj.requestedCount)
+      ? Math.min(Math.max(obj.requestedCount, 1), 100)
+      : 10;
+
+  return { source, enabledKinds, requestedCount };
+}
 
 export const QUIZ_STORAGE_KEY = "alhuda.quiz.v1";
 
@@ -56,12 +143,15 @@ function normalizeAttempt(value: unknown): QuizAttempt | null {
 
   if (questions === null || responses === null) return null;
 
+  const config = normalizeQuizSessionConfig(raw.config);
+
   return {
     id,
     startedAt,
     completedAt,
     questions: questions as QuizAttempt["questions"],
     responses: responses as QuizAttempt["responses"],
+    ...(config ? { config } : {}),
   };
 }
 

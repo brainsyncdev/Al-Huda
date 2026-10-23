@@ -17,13 +17,13 @@ import {
 } from "react";
 import { scoreQuiz } from "./scoring";
 import { normalizeQuizState, readQuizState, writeQuizState } from "./storage";
-import type { QuizAttempt, QuizQuestion, QuizResponse, QuizState } from "./types";
+import type { QuizAttempt, QuizQuestion, QuizResponse, QuizSessionConfig, QuizState } from "./types";
 
 interface QuizContextValue {
   hydrated: boolean;
   state: QuizState;
   /** Start a new quiz attempt. Returns the attempt id. */
-  startQuiz: (questions: QuizQuestion[]) => string;
+  startQuiz: (questions: QuizQuestion[], config?: QuizSessionConfig) => string;
   /** Record a response to a question in the current attempt. */
   recordResponse: (questionId: string, response: QuizResponse) => void;
   /** Complete the current attempt (marks it finished, scores it). */
@@ -65,7 +65,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const startQuiz = useCallback(
-    (questions: QuizQuestion[]): string => {
+    (questions: QuizQuestion[], config?: QuizSessionConfig): string => {
       const id = `quiz-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 
       const attempt: QuizAttempt = {
@@ -74,6 +74,7 @@ export function QuizProvider({ children }: { children: ReactNode }) {
         completedAt: null,
         questions,
         responses: {},
+        ...(config ? { config } : {}),
       };
 
       commit({
