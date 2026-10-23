@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "vitest/config";
 
 // Node environment only: these suites exercise pure data/logic modules
@@ -7,9 +8,16 @@ import { defineConfig } from "vitest/config";
 // relying on injected globals, so tsconfig.json needs no `types` entry and
 // `tsc --noEmit` continues to resolve them from the installed package.
 //
-// No path alias is configured: every test uses relative imports, so module
-// resolution matches the app's own graph and `@/` misresolution is impossible.
+// The `@/` alias mirrors tsconfig.json's `paths` entry. Tests may keep using
+// relative imports; the alias exists because app modules under test (such as
+// the knowledge graph) import through `@/` themselves, and vitest has to
+// resolve those same specifiers.
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],
