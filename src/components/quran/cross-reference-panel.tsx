@@ -19,6 +19,8 @@ import {
   CROSS_REFERENCE_LABELS,
 } from "@/lib/quran/cross-references";
 import { ayahPath } from "@/lib/quran/reference";
+import { topicsForAyah } from "@/lib/topics/data";
+import { PATHS } from "@/lib/paths/data";
 
 function refLabel(ref: AyahRef): string {
   return `${ref.surah}:${ref.ayah}`;
@@ -57,14 +59,49 @@ export function CrossReferencePanel({ items }: { items: CrossReference[] }) {
       </p>
 
       <ul className="mt-3 flex flex-wrap gap-2">
-        {items.map((x) => (
-          <li key={refLabel(x.target)}>
-            <Link href={ayahPath(x.target)} className={CHIP_CLASS}>
-              <span className="sr-only">Ayah sharing this wording: </span>
-              {refLabel(x.target)}
-            </Link>
-          </li>
-        ))}
+        {items.map((x) => {
+          // Show topic and path context for each cross-reference target, so a
+          // reader can jump from a wording twin into the thematic or curricular
+          // context that ayat belongs to.
+          const targetTopics = topicsForAyah(x.target);
+          const targetPaths = PATHS.filter((path) =>
+            path.steps.some(
+              (step) =>
+                step.ref.surah === x.target.surah &&
+                step.ref.ayah === x.target.ayah
+            )
+          );
+          return (
+            <li key={refLabel(x.target)} className="space-y-1">
+              <Link href={ayahPath(x.target)} className={CHIP_CLASS}>
+                <span className="sr-only">Ayah sharing this wording: </span>
+                {refLabel(x.target)}
+              </Link>
+              {(targetTopics.length > 0 || targetPaths.length > 0) && (
+                <div className="flex flex-wrap gap-1 px-1">
+                  {targetTopics.slice(0, 2).map((t) => (
+                    <Link
+                      key={t.slug}
+                      href={`/topics/${t.slug}`}
+                      className="text-[0.625rem] text-primary underline-offset-2 hover:underline"
+                    >
+                      {t.title}
+                    </Link>
+                  ))}
+                  {targetPaths.slice(0, 1).map((p) => (
+                    <Link
+                      key={p.slug}
+                      href={`/learn/paths/${p.slug}`}
+                      className="text-[0.625rem] text-primary underline-offset-2 hover:underline"
+                    >
+                      Path: {p.title}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </li>
+          );
+        })}
       </ul>
 
       <p className="mt-3 text-[0.6875rem] leading-relaxed text-muted-foreground">

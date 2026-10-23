@@ -24,6 +24,7 @@ import type {
   QuizResponse,
 } from "@/lib/quiz/types";
 import { cn } from "@/lib/utils";
+import { PATHS } from "@/lib/paths/data";
 
 /** Questions per attempt. Short enough to finish in one sitting. */
 const QUESTIONS_PER_ATTEMPT = 8;
@@ -177,6 +178,49 @@ export function QuizWorkspace({ bank }: QuizWorkspaceProps) {
               </Link>
             </div>
           </div>
+
+          {/* Related learning paths — paths that include any of the ayat from
+              this quiz. Shows up to 3 paths so the learner can continue
+              studying the themes they just tested. */}
+          {(() => {
+            const ayatInQuiz = new Set(
+              questions.flatMap((q) =>
+                q.refs.map((r) => `${r.surah}:${r.ayah}`)
+              )
+            );
+            const relatedPaths = PATHS.filter((path) =>
+              path.steps.some((step) =>
+                ayatInQuiz.has(`${step.ref.surah}:${step.ref.ayah}`)
+              )
+            ).slice(0, 3);
+            if (relatedPaths.length === 0) return null;
+            return (
+              <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  Continue studying
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  These learning paths include ayat from this quiz. Working
+                  through a path gives you context and reflection prompts for
+                  each verse.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {relatedPaths.map((path) => (
+                    <Link
+                      key={path.slug}
+                      href={`/learn/paths/${path.slug}`}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                    >
+                      <span className="arabic-display text-base text-gold">
+                        {path.arabicTitle}
+                      </span>
+                      {path.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            );
+          })()}
 
           <ul className="space-y-3">
             {questions.map((q, i) => (

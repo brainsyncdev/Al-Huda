@@ -100,7 +100,26 @@ interface GenerateOptions {
   pathSlug?: string;
   /** Optional topic slug to scope questions to that topic's ayat. */
   topicSlug?: string;
+  /** Optional surah id to scope questions to that surah's ayat. */
+  surahId?: number;
+  /**
+   * Explicit ayah pool. Used for the revision source, where the refs live in
+   * the learner's browser and must be passed in by the client.
+   */
+  refs?: AyahRef[];
+  /** Question kinds to include. Empty/absent means every supported kind. */
+  kinds?: QuizKind[];
 }
+
+const ALL_KINDS: QuizKind[] = [
+  "surah-identification",
+  "translation-match",
+  "ayah-ordering",
+  "topic-match",
+  "ayah-recall",
+  "missing-word",
+  "reference-recognition",
+];
 
 /**
  * Generate a set of quiz questions. Returns an empty array when the scope

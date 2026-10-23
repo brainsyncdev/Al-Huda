@@ -51,5 +51,21 @@ export function isCorrect(q: QuizQuestion, resp: QuizResponse): boolean {
       }
       return true;
     }
+    case "ayah-recall": {
+      // Self-assessed: "accurate" counts as correct, "partial" and "unable"
+      // do not. This is honest — free-text Arabic recall cannot be
+      // automatically scored without risking false equivalence on diacritics
+      // or orthographic variants.
+      if (resp.kind !== "ayah-recall") return false;
+      return resp.selfRating === "accurate";
+    }
+    case "missing-word": {
+      if (resp.kind !== "missing-word") return false;
+      return resp.selectedIndex === q.data.correctIndex;
+    }
+    case "reference-recognition": {
+      if (resp.kind !== "reference-recognition") return false;
+      return resp.selectedIndex === q.data.correctIndex;
+    }
   }
 }

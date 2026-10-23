@@ -19,7 +19,10 @@ export type QuizKind =
   | "surah-identification"
   | "translation-match"
   | "ayah-ordering"
-  | "topic-match";
+  | "topic-match"
+  | "ayah-recall"
+  | "missing-word"
+  | "reference-recognition";
 
 interface BaseQuestion {
   /** Stable id for this question instance. */
@@ -48,6 +51,18 @@ export type QuizQuestion =
   | (BaseQuestion & {
       kind: "topic-match";
       data: TopicMatchData;
+    })
+  | (BaseQuestion & {
+      kind: "ayah-recall";
+      data: AyahRecallData;
+    })
+  | (BaseQuestion & {
+      kind: "missing-word";
+      data: MissingWordData;
+    })
+  | (BaseQuestion & {
+      kind: "reference-recognition";
+      data: ReferenceRecognitionData;
     });
 
 export interface SurahIdentificationData {
@@ -92,6 +107,81 @@ export interface TopicMatchData {
   correctIndices: number[];
 }
 
+/**
+ * Ayah recall: show a reference or prompt, learner tries to recall the passage,
+ * then sees the canonical text and self-rates their recall.
+ *
+ * IMPORTANT: This is NOT automatic scoring of free-text Arabic. Minor
+ * presentation differences (diacritics, spacing, orthographic variants) are
+ * not evidence of religious or textual equivalence. The learner self-assesses
+ * against the canonical text shown to them.
+ */
+export interface AyahRecallData {
+  /** The canonical Arabic text (Uthmani) revealed after the attempt. */
+  canonicalArabic: string;
+  /** The canonical translation revealed after the attempt. */
+  canonicalTranslation: string;
+  /** Optional prompt or context hint shown before recall. */
+  recallPrompt?: string;
+}
+
+/**
+ * Missing-word exercise: hide one word from verified text, learner selects
+ * the missing word from options. Uses exact canonical data — the missing word
+ * is drawn from the actual ayah text, never reconstructed or invented.
+ */
+export interface MissingWordData {
+  /** Full Arabic text of the ayah (canonical). */
+  fullArabic: string;
+  /** Arabic text with the missing word replaced by a blank indicator. */
+  displayArabic: string;
+  /** The actual missing word (canonical). */
+  missingWord: string;
+  /** Options to choose from (includes the correct word and distractors). */
+  options: string[];
+  /** Index of the correct option. */
+  correctIndex: number;
+}
+
+/**
+ * Reference recognition: show ayah text, learner identifies which surah and
+ * ayah number it is. Tests knowledge of the canonical structure.
+ */
+export interface ReferenceRecognitionData {
+  /** Arabic text of the ayah. */
+  arabic: string;
+  /** Translation of the ayah. */
+  translation: string;
+  /** The correct reference. */
+  correctRef: AyahRef;
+  /** Options to choose from (references with display names). */
+  options: Array<{
+    ref: AyahRef;
+    label: string;
+  }>;
+  /** Index of the correct option. */
+  correctIndex: number;
+}
+
+/**
+ * Session configuration: what the learner chose when starting the quiz.
+ * Stored on the attempt so the review screen can explain where questions came
+ * from and the history list can show meaningful context.
+ */
+export interface QuizSessionConfig {
+  /** Source of the questions. */
+  source:
+    | { kind: "default" }
+    | { kind: "surah"; surahId: number }
+    | { kind: "path"; pathSlug: string }
+    | { kind: "topic"; topicSlug: string }
+    | { kind: "revision" };
+  /** Which question kinds were enabled. Empty means all available. */
+  enabledKinds: QuizKind[];
+  /** How many questions were requested. */
+  requestedCount: number;
+}
+
 /** A quiz attempt: a sequence of questions with learner responses. */
 export interface QuizAttempt {
   /** Unique id for this attempt. */
@@ -104,6 +194,8 @@ export interface QuizAttempt {
   questions: QuizQuestion[];
   /** Learner's responses, keyed by question id. */
   responses: Record<string, QuizResponse>;
+  /** Session configuration (absent on legacy attempts from before this field). */
+  config?: QuizSessionConfig;
 }
 
 /** Learner's response to one question. */
@@ -111,7 +203,10 @@ export type QuizResponse =
   | { kind: "surah-identification"; selectedIndex: number }
   | { kind: "translation-match"; selectedIndex: number }
   | { kind: "ayah-ordering"; orderedIndices: number[] }
-  | { kind: "topic-match"; selectedIndices: number[] };
+  | { kind: "topic-match"; selectedIndices: number[] }
+  | { kind: "ayah-recall"; selfRating: "accurate" | "partial" | "unable" }
+  | { kind: "missing-word"; selectedIndex: number }
+  | { kind: "reference-recognition"; selectedIndex: number };
 
 /** Quiz state stored in localStorage. */
 export interface QuizState {

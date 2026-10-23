@@ -280,7 +280,6 @@ export function PathWorkspace({ path, steps }: PathWorkspaceProps) {
                 <ArrowRight className="h-3.5 w-3.5" aria-hidden />
               </Link>
             </div>
-            </div>
           </div>
         </section>
       )}
