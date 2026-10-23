@@ -243,7 +243,19 @@ export function buildKnowledgeGraph(): KnowledgeGraph {
 
       const target = `topic:${slug}`;
       const id = `dimension-topic:${dim.id}--${slug}`;
-      if (dimensionEdgeKeys.has(id)) continue;
+      if (dimensionEdgeKeys.has(id)) {
+        // A slug repeated inside one dimension's mapping would otherwise be
+        // dropped without a trace. Report it, per this module's rule that
+        // integrity gaps surface in `unresolved` rather than disappearing.
+        unresolved.push({
+          from: source,
+          field: "topicSlugs",
+          value: slug,
+          reason:
+            "Duplicate topic slug within this dimension's mapping; one edge was emitted and the repeat was not.",
+        });
+        continue;
+      }
       dimensionEdgeKeys.add(id);
 
       edges.push({

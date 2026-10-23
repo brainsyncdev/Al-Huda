@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "",
     "/quran",
     "/explore",
+    "/explore/graph",
     "/topics",
     "/about",
     "/sources",

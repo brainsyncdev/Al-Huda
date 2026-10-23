@@ -155,6 +155,33 @@ export default function ExplorePage() {
       )}
 
       <section
+        aria-labelledby="graph-heading"
+        className="rounded-2xl border border-border/80 bg-card p-6"
+      >
+        <div className="flex items-center gap-3 mb-3">
+          <Compass className="h-5 w-5 text-primary" aria-hidden />
+          <h2
+            id="graph-heading"
+            className="font-display text-lg font-semibold tracking-tight"
+          >
+            Knowledge Graph Explorer
+          </h2>
+        </div>
+        <p className="text-sm text-muted-foreground mb-4">
+          See how the ten dimensions connect to curated topics, and how topics
+          relate to each other. Every node and edge carries its editorial
+          review status.
+        </p>
+        <Link
+          href="/explore/graph"
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+        >
+          <Compass className="h-4 w-4" aria-hidden />
+          Open graph explorer
+        </Link>
+      </section>
+
+      <section
         aria-labelledby="search-heading"
         className="rounded-2xl border border-border/80 bg-card p-6"
       >
