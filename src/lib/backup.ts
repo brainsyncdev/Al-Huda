@@ -24,10 +24,15 @@ import { EMPTY_REVISION_STATE, type RevisionState } from "@/lib/revision/schedul
 import { normalizePathsState } from "@/lib/paths/storage";
 import type { PathsState } from "@/lib/paths/types";
 import { EMPTY_PATHS_STATE } from "@/lib/paths/data";
+import { normalizeQuizState } from "@/lib/quiz/storage";
+import type { QuizState } from "@/lib/quiz/types";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 4;
+export const BACKUP_VERSION = 5;
 export const BACKUP_APP = "Al-Huda";
+
+/** Empty quiz state, used when restoring a legacy backup that had no quiz. */
+const EMPTY_QUIZ_STATE: QuizState = { attempts: [], currentAttemptId: null };
 
 /**
  * Read cap checked before JSON.parse. A real backup is a few kilobytes;
@@ -46,6 +51,7 @@ export interface BackupFile {
   revision: RevisionState;
   preferences: Prefs;
   paths: PathsState;
+  quiz: QuizState;
 }
 
 export interface RestorableBackup {
@@ -53,12 +59,14 @@ export interface RestorableBackup {
   revision: RevisionState;
   preferences: Prefs;
   paths: PathsState;
+  quiz: QuizState;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
-   * export; 2 added revision and preferences; 3 added paths. Older versions
-   * get defaults for missing sections.
+   * export; 2 added revision and preferences; 3 added paths; 4 added
+   * translationId in preferences; 5 added quiz. Older versions get defaults
+   * for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4;
+  sourceVersion: 1 | 2 | 3 | 4 | 5;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -72,6 +80,7 @@ export interface BackupInput {
   revision: RevisionState;
   preferences: Prefs;
   paths: PathsState;
+  quiz: QuizState;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -88,6 +97,7 @@ export function buildBackup(
     revision: input.revision,
     preferences: input.preferences,
     paths: input.paths,
+    quiz: input.quiz,
   };
 }
 
@@ -127,15 +137,15 @@ export function parseBackup(text: string): ParseBackupResult {
   const exportedAt = typeof file.exportedAt === "string" ? file.exportedAt : "";
 
   if (file.format === BACKUP_FORMAT) {
-    // v3 and v4 share the same envelope shape; v4 added translationId inside
-    // preferences, which normalizePrefs already handles by falling back to the
-    // default when the field is absent.
-    if (version !== 3 && version !== 4) {
+    // v3, v4, and v5 share the same envelope shape. v4 added translationId
+    // inside preferences (normalizePrefs falls back to default when absent);
+    // v5 added quiz (normalizeQuizState falls back to empty when absent).
+    if (version !== 3 && version !== 4 && version !== 5) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads versions 3–4. Nothing was imported.`,
+        }, and this build reads versions 3–5. Nothing was imported.`,
       };
     }
     return {
@@ -151,7 +161,11 @@ export function parseBackup(text: string): ParseBackupResult {
             : normalizeRevisionState(file.revision),
         preferences: normalizePrefs(file.preferences),
         paths: normalizePathsState(file.paths),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4) : 4,
+        quiz:
+          file.quiz === undefined
+            ? EMPTY_QUIZ_STATE
+            : normalizeQuizState(file.quiz),
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5) : 5,
         exportedAt,
       },
     };
@@ -168,6 +182,7 @@ export function parseBackup(text: string): ParseBackupResult {
         revision: EMPTY_REVISION_STATE,
         preferences: DEFAULT_PREFS,
         paths: { ...EMPTY_PATHS_STATE },
+        quiz: { ...EMPTY_QUIZ_STATE },
         sourceVersion: 1,
         exportedAt,
       },

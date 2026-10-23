@@ -25,6 +25,7 @@ import { useLibrary } from "@/lib/library/context";
 import { usePrefs } from "@/lib/prefs/context";
 import { useRevision } from "@/lib/revision/context";
 import { usePaths } from "@/lib/paths/context";
+import { useQuiz } from "@/lib/quiz/context";
 
 const BUTTON_CLASS =
   "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50";
@@ -34,13 +35,22 @@ export function BackupControls() {
   const revision = useRevision();
   const prefs = usePrefs();
   const paths = usePaths();
+  const quiz = useQuiz();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [reading, setReading] = useState(false);
   const [note, setNote] = useState<string | null>(null);
 
-  const ready = library.hydrated && revision.hydrated && prefs.hydrated && paths.hydrated;
+  const ready =
+    library.hydrated &&
+    revision.hydrated &&
+    prefs.hydrated &&
+    paths.hydrated &&
+    quiz.hydrated;
   const planCount = Object.keys(revision.items).length;
   const pathsCount = Object.keys(paths.state.progress).length;
+  const quizCount = quiz.state.attempts.filter(
+    (a) => a.completedAt !== null
+  ).length;
 
   function handleExport() {
     if (!ready) return;
@@ -53,10 +63,11 @@ export function BackupControls() {
       revision: revision.exportState(),
       preferences: prefs.exportPrefs(),
       paths: paths.exportState(),
+      quiz: quiz.exportState(),
     });
     downloadJson(file, backupFileName());
     toast.success(
-      `Backup exported — ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${planCount} planned verse${planCount === 1 ? "" : "s"}, ${pathsCount} learning path${pathsCount === 1 ? "" : "s"}.`
+      `Backup exported — ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${planCount} planned verse${planCount === 1 ? "" : "s"}, ${pathsCount} learning path${pathsCount === 1 ? "" : "s"}, ${quizCount} quiz attempt${quizCount === 1 ? "" : "s"}.`
     );
     setNote(null);
   }
@@ -92,10 +103,12 @@ export function BackupControls() {
           `• ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${library.progress.length} reading entries\n` +
           `• ${planCount} planned verses and their schedules\n` +
           `• ${pathsCount} learning path progress entries\n` +
+          `• ${quizCount} completed quiz attempts\n` +
           `• your reader preferences\n\n` +
           `The backup contains ${data.library.bookmarks.length} bookmarks, ` +
           `${data.library.notes.length} notes, ${Object.keys(data.revision.items).length} planned verses, ` +
-          `and ${Object.keys(data.paths.progress).length} learning paths. ` +
+          `${Object.keys(data.paths.progress).length} learning paths, and ` +
+          `${data.quiz.attempts.filter((a) => a.completedAt !== null).length} completed quiz attempts. ` +
           `This cannot be undone.`
       );
       if (!confirmed) {
@@ -107,15 +120,18 @@ export function BackupControls() {
       const rev = revision.restoreState(data.revision);
       prefs.restorePrefs(data.preferences);
       paths.restoreState(data.paths);
+      quiz.restoreState(data.quiz);
 
       toast.success(
-        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths.`
+        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths, ${data.quiz.attempts.length} quiz attempts.`
       );
       setNote(
         data.sourceVersion === 1
-          ? "This was a legacy (v1) library-only backup, so it contained no revision plan, learning paths, or reader preferences: those were left empty and reset to defaults rather than guessed at."
+          ? "This was a legacy (v1) library-only backup, so it contained no revision plan, learning paths, quiz attempts, or reader preferences: those were left empty and reset to defaults rather than guessed at."
           : data.sourceVersion === 2
-          ? "This was a v2 backup without learning paths: that section was left empty."
+          ? "This was a v2 backup without learning paths or quiz attempts: those sections were left empty."
+          : data.sourceVersion === 3
+          ? "This was a v3 backup without quiz attempts: that section was left empty."
           : null
       );
     } catch {
@@ -135,6 +151,7 @@ export function BackupControls() {
         "• bookmarks, private notes and reading history\n" +
         "• your revision plan and its review log\n" +
         "• learning path progress and onboarding\n" +
+        "• quiz attempts and their answers\n" +
         "• reader preferences\n\n" +
         "There is no server copy to restore from. Export a backup first if you want to keep any of it. This cannot be undone."
     );
@@ -143,6 +160,7 @@ export function BackupControls() {
     revision.clearAll();
     prefs.restorePrefs(undefined); // back to defaults
     paths.clearAll();
+    quiz.clearAll();
     setNote("All local data erased from this device.");
     toast.success("All local data erased");
   }

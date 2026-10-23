@@ -14,6 +14,7 @@ import {
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs, topicJsonLd } from "@/lib/seo/json-ld";
+import { PATHS } from "@/lib/paths/data";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -63,6 +64,14 @@ export default async function TopicDetailPage({ params }: Props) {
     }
     resolved.push({ relation, verse, surah });
   }
+
+  // Learning paths that reference this topic on one or more steps. A path
+  // step's topicSlug is the editorial link between the path curriculum and
+  // the topic catalog; showing paths here lets a reader continue from a
+  // topic into a structured study sequence.
+  const relatedPaths = PATHS.filter((path) =>
+    path.steps.some((step) => step.topicSlug === topic.slug)
+  );
 
   const topicPagePath = `/topics/${topic.slug}`;
 
@@ -162,6 +171,35 @@ export default async function TopicDetailPage({ params }: Props) {
               </Link>
             ))}
           </div>
+        </section>
+      )}
+
+      {relatedPaths.length > 0 && (
+        <section aria-labelledby="related-paths" className="space-y-4">
+          <h2
+            id="related-paths"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Learning paths on this theme
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {relatedPaths.map((path) => (
+              <Link
+                key={path.slug}
+                href={`/learn/paths/${path.slug}`}
+                className="rounded-2xl border border-border/80 bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
+              >
+                <span className="arabic-display mr-2 text-lg text-gold" lang="ar" dir="rtl">
+                  {path.arabicTitle}
+                </span>
+                {path.title}
+              </Link>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            These paths include steps that reference this topic. Each path
+            marks its review status and is not tafsir.
+          </p>
         </section>
       )}
 

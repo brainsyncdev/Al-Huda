@@ -12,6 +12,7 @@ import { getAyah, getSurah } from "@/lib/quran/data";
 import { ayahPath, surahPath } from "@/lib/quran/reference";
 import { absoluteUrl } from "@/lib/site";
 import { topicsForAyah } from "@/lib/topics/data";
+import { PATHS } from "@/lib/paths/data";
 import {
   getJuzForAyah,
   getPageForAyah,
@@ -78,6 +79,14 @@ export default async function AyahPage({ params }: Props) {
   // Derived from the pinned dataset, so it costs one already-loaded surah and
   // cannot assert anything an editor or a model invented.
   const crossRefs = crossReferencesForAyah({ surah: s, ayah: a });
+
+  // Learning paths that include this ayah. Derived from the curated path
+  // dataset, so it only shows paths that actually step on this reference.
+  const relatedPaths = PATHS.filter((path) =>
+    path.steps.some(
+      (step) => step.ref.surah === s && step.ref.ayah === a
+    )
+  );
 
   const ayahPagePath = ayahPath({ surah: s, ayah: a });
 
@@ -190,6 +199,39 @@ export default async function AyahPage({ params }: Props) {
           </ul>
           <p className="mt-3 text-xs text-muted-foreground">
             Topic pages mark the review status and are not tafsir.
+          </p>
+        </section>
+      )}
+
+      {relatedPaths.length > 0 && (
+        <section
+          aria-labelledby="paths-for-ayah"
+          className="rounded-2xl border border-border/80 bg-card p-5"
+        >
+          <h2
+            id="paths-for-ayah"
+            className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+          >
+            Appears in learning paths
+          </h2>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {relatedPaths.map((path) => (
+              <li key={path.slug}>
+                <Link
+                  href={`/learn/paths/${path.slug}`}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                >
+                  <span className="arabic-display text-base text-gold">
+                    {path.arabicTitle}
+                  </span>
+                  {path.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Learning paths are curated study sequences. Each path marks its
+            review status and is not tafsir.
           </p>
         </section>
       )}

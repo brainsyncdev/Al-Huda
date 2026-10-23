@@ -45,6 +45,16 @@ export function SearchBox({
       return;
     }
     if (!q) return;
+    // Preserve active filters when re-submitting from /search. A new query
+    // should not wipe the user's surah/juz/topic/edition/language selection;
+    // only `q` is replaced. Off-search pages (home, surah) still navigate to
+    // a clean /search?q=… so unrelated params are not carried in.
+    if (typeof window !== "undefined" && window.location.pathname === "/search") {
+      const params = new URLSearchParams(window.location.search);
+      params.set("q", q);
+      router.push(`/search?${params.toString()}`);
+      return;
+    }
     router.push(`/search?q=${encodeURIComponent(q)}`);
   }
 

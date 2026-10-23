@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { Suspense } from "react";
+import { Suspense, type ReactNode } from "react";
 import Link from "next/link";
 import { SearchBox } from "@/components/search/search-box";
 import { SearchFilters } from "@/components/search/search-filters";
@@ -29,6 +29,7 @@ interface Props {
     topic?: string;
     edition?: string;
     mode?: string;
+    language?: string;
   }>;
 }
 
@@ -56,6 +57,7 @@ export default async function SearchPage({ searchParams }: Props) {
     topic: topicFilter,
     edition: editionFilter,
     mode: modeFilter,
+    language: languageFilter,
   } = await searchParams;
   const query = q?.trim() ?? "";
   const index = getSurahIndex();
@@ -76,12 +78,47 @@ export default async function SearchPage({ searchParams }: Props) {
     typeFilter === "meccan" || typeFilter === "medinan" ? typeFilter : null;
   const topicSlug = topicFilter && getTopic(topicFilter) ? topicFilter : null;
 
-  const hasFilters = Boolean(surahId || revelationType || juzNum || topicSlug);
+  // Language narrows the default search to Arabic-text or Latin-script
+  // matches. It has no meaning for edition/tafsir search, where the single
+  // edition already fixes the language, so those branches ignore it.
+  const language =
+    languageFilter === "ar" || languageFilter === "en" ? languageFilter : null;
+
+  const hasFilters = Boolean(
+    surahId || revelationType || juzNum || topicSlug || language
+  );
   const invalidFilters =
     (Boolean(surahFilter) && surahId === null) ||
     (Boolean(juzFilter) && juzNum === null) ||
     (Boolean(typeFilter) && revelationType === null) ||
-    (Boolean(topicFilter) && topicSlug === null);
+    (Boolean(topicFilter) && topicSlug === null) ||
+    (Boolean(languageFilter) && language === null);
+
+  // Structural filters (surah / revelation / juz / topic) are identical for
+  // default, edition, and tafsir results: they all address a verse by
+  // reference. Resolving them once here keeps the three result branches from
+  // drifting apart.
+  const revelationBySurah = new Map(index.map((s) => [s.id, s.revelation]));
+  const topicRefs = topicSlug
+    ? new Set(
+        (getTopic(topicSlug)?.relations ?? []).map(
+          (r) => `${r.ref.surah}:${r.ref.ayah}`
+        )
+      )
+    : null;
+
+  function passesStructuralFilters(surah: number, ayah: number): boolean {
+    if (surahId !== null && surah !== surahId) return false;
+    if (
+      revelationType !== null &&
+      revelationBySurah.get(surah) !== revelationType
+    ) {
+      return false;
+    }
+    if (juzNum !== null && getJuzForAyah(surah, ayah) !== juzNum) return false;
+    if (topicRefs !== null && !topicRefs.has(`${surah}:${ayah}`)) return false;
+    return true;
+  }
 
   const surahOptions = index.map((s) => ({
     id: s.id,
@@ -97,7 +134,11 @@ export default async function SearchPage({ searchParams }: Props) {
         </div>
       }
     >
-      <SearchFilters surahOptions={surahOptions} topicOptions={topicOptions} />
+      <SearchFilters
+        surahOptions={surahOptions}
+        topicOptions={topicOptions}
+        editions={TRANSLATIONS}
+      />
     </Suspense>
   );
 
@@ -263,7 +304,17 @@ export default async function SearchPage({ searchParams }: Props) {
 
   if (tafsirMode) {
     const tafsirResults = await searchTafsir(query, 100);
-    return <TafsirSearchResultsView query={query} results={tafsirResults} />;
+    const hits = tafsirResults.hits.filter((h) =>
+      passesStructuralFilters(h.surah, h.ayah)
+    );
+    return (
+      <TafsirSearchResultsView
+        query={query}
+        results={tafsirResults}
+        hits={hits}
+        filters={filterShell}
+      />
+    );
   }
 
   if (editionFilter) {
@@ -312,46 +363,31 @@ export default async function SearchPage({ searchParams }: Props) {
       <EditionSearchResultsView
         query={query}
         edition={editionMeta}
-        hits={editionResult.hits}
+        hits={editionResult.hits.filter((h) =>
+          passesStructuralFilters(h.surah, h.ayah)
+        )}
         totalScanned={editionResult.totalScanned}
+        filters={filterShell}
       />
     );
   }
 
   const results = searchQuran(query, { limit: 100 });
 
-  let filteredHits = results.hits;
+  // Structural filters are shared with the edition/tafsir branches; the
+  // language filter is specific to default search, where one result list can
+  // mix Arabic-text and translation matches. A parsed reference is
+  // language-agnostic, so it survives either value.
+  let filteredHits = results.hits.filter((h) =>
+    passesStructuralFilters(h.surah, h.ayah)
+  );
 
-  if (surahId) {
-    filteredHits = filteredHits.filter((h) => h.surah === surahId);
-  }
-
-  if (revelationType) {
-    const surahMetaMap = new Map(index.map((s) => [s.id, s.revelation]));
+  if (language === "ar") {
     filteredHits = filteredHits.filter(
-      (h) => surahMetaMap.get(h.surah) === revelationType
+      (h) => h.reason === "arabic" || h.reason === "reference"
     );
-  }
-
-  if (juzNum) {
-    filteredHits = filteredHits.filter(
-      (h) => getJuzForAyah(h.surah, h.ayah) === juzNum
-    );
-  }
-
-  // FR-012 topic filter. Resolved as a lookup set from the reviewed topic
-  // relations rather than by re-running text matching, so a topic hit means
-  // "this ayah is in that curated selection", which is exactly what the
-  // editorial record claims.
-  if (topicSlug) {
-    const topicRefs = new Set(
-      (getTopic(topicSlug)?.relations ?? []).map(
-        (r) => `${r.ref.surah}:${r.ref.ayah}`
-      )
-    );
-    filteredHits = filteredHits.filter((h) =>
-      topicRefs.has(`${h.surah}:${h.ayah}`)
-    );
+  } else if (language === "en") {
+    filteredHits = filteredHits.filter((h) => h.reason !== "arabic");
   }
 
   // Redirect only when no filters are active: a filtered single hit must not
@@ -510,17 +546,20 @@ function EditionSearchResultsView({
   edition,
   hits,
   totalScanned,
+  filters,
 }: {
   query: string;
   edition: TranslationMeta;
   hits: TranslationSearchHit[];
   totalScanned: number;
+  filters: ReactNode;
 }) {
   const isRtl = edition.direction === "rtl";
   return (
     <div className="space-y-6 pb-8">
       <header className="space-y-3">
         <SearchBox initialQuery={query} />
+        {filters}
         <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
           <p>
             {hits.length} {hits.length === 1 ? "match" : "matches"} in{" "}
@@ -606,19 +645,24 @@ function EditionSearchResultsView({
 function TafsirSearchResultsView({
   query,
   results,
+  hits,
+  filters,
 }: {
   query: string;
   results: TafsirSearchResults;
+  hits: TafsirSearchResults["hits"];
+  filters: ReactNode;
 }) {
   const anyLoadError = results.editionsSearched.some((e) => e.loadError);
   return (
     <div className="space-y-6 pb-8">
       <header className="space-y-3">
         <SearchBox initialQuery={query} />
+        {filters}
         <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
           <p>
-            {results.hits.length}{" "}
-            {results.hits.length === 1 ? "match" : "matches"} across classical
+            {hits.length}{" "}
+            {hits.length === 1 ? "match" : "matches"} across classical
             tafsirs for &quot;{query}&quot;
           </p>
           <Link
@@ -636,7 +680,7 @@ function TafsirSearchResultsView({
         )}
       </header>
 
-      {results.hits.length === 0 ? (
+      {hits.length === 0 ? (
         <div className="rounded-2xl border border-border/80 bg-card p-6 text-sm text-muted-foreground">
           <p>No matches found in the classical tafsirs for &quot;{query}&quot;.</p>
           <p className="mt-2 text-xs">
@@ -647,7 +691,7 @@ function TafsirSearchResultsView({
         </div>
       ) : (
         <ol className="space-y-3">
-          {results.hits.map((hit, i) => (
+          {hits.map((hit, i) => (
             <li
               key={`${hit.editionId}:${hit.surah}:${hit.ayah}:${i}`}
               className="rounded-2xl border border-border/80 bg-card p-4"

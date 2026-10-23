@@ -16,6 +16,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { AyahCard } from "@/components/quran/ayah-card";
+import { TOPICS } from "@/lib/topics/data";
 
 export interface PathStepDTO {
   order: number;
@@ -193,9 +194,25 @@ export function PathWorkspace({ path, steps }: PathWorkspaceProps) {
 
             {/* Ayah display */}
             <div className="space-y-3">
-              <h3 className="text-sm font-semibold text-muted-foreground">
-                Verse {step.ref.surah}:{step.ref.ayah}
-              </h3>
+              <div className="flex items-center justify-between gap-2">
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  Verse {step.ref.surah}:{step.ref.ayah}
+                </h3>
+                {step.topicSlug && (() => {
+                  const topic = TOPICS.find((t) => t.slug === step.topicSlug);
+                  return topic ? (
+                    <Link
+                      href={`/topics/${step.topicSlug}`}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                    >
+                      <span className="arabic-display text-sm text-gold">
+                        {topic.arabicTitle}
+                      </span>
+                      {topic.title}
+                    </Link>
+                  ) : null;
+                })()}
+              </div>
               <AyahCard
                 ayah={{
                   surah: step.ref.surah,
@@ -251,6 +268,18 @@ export function PathWorkspace({ path, steps }: PathWorkspaceProps) {
                   Back to paths
                 </Link>
               )}
+            </div>
+
+            {/* Test yourself link */}
+            <div className="flex items-center justify-center pt-2">
+              <Link
+                href="/learn/quiz"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-primary underline-offset-2 hover:underline"
+              >
+                Test your recall with a quiz
+                <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+              </Link>
+            </div>
             </div>
           </div>
         </section>
