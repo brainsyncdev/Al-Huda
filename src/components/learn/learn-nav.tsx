@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils";
 
 const LEARN_TABS = [
   { href: "/learn/paths", label: "Paths" },
+  { href: "/learn/plans", label: "Plans" },
   { href: "/learn/revision", label: "Revise" },
   { href: "/learn/quiz", label: "Quiz" },
 ] as const;
