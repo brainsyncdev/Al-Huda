@@ -17,7 +17,7 @@ export default function AboutPage() {
         <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
           About {SITE_NAME}
         </h1>
-        <p className="max-w-prose text-muted-foreground">{SITE_TAGLINE} — a calm, source-first way to read the Quran. No clutter, no streaks. Just Uthmani text with a trusted English translation, stable references, and editorial reading aids with clear provenance.</p>
+        <p className="max-w-prose text-muted-foreground">{SITE_TAGLINE} — a calm, source-first way to read the Quran. No clutter, no streaks. Just Uthmani text with translations in 100+ languages (default: Urdu — Jalandhry), stable references, and editorial reading aids with clear provenance.</p>
       </header>
 
       <section aria-labelledby="principles" className="space-y-4">

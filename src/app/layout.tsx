@@ -5,6 +5,8 @@ import { Toaster } from "@/components/ui/sonner";
 import { LibraryProvider } from "@/lib/library/context";
 import { PrefsProvider } from "@/lib/prefs/context";
 import { RevisionProvider } from "@/lib/revision/context";
+import { PathsProvider } from "@/lib/paths/context";
+import { QuizProvider } from "@/lib/quiz/context";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
@@ -34,7 +36,7 @@ export const metadata: Metadata = {
     template: `%s · ${SITE_NAME}`,
   },
   description:
-    "Read the Quran in Uthmani script with a trusted English translation, stable ayah references, search, and curated topic entry points. Source-transparent, ad-free, and calm.",
+    "Read the Quran in Uthmani script with translations in 100+ languages (default: Urdu — Jalandhry), stable ayah references, search, and curated topic entry points. Source-transparent, ad-free, and calm.",
   applicationName: SITE_NAME,
   alternates: { canonical: "/" },
   openGraph: {
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} — ${SITE_TAGLINE}`,
     description:
-      "A calm, source-first Quran reading hub: full Uthmani text, English translation, search, stable references, and curated topics.",
+      "A calm, source-first Quran reading hub: full Uthmani text, translations in 100+ languages, search, stable references, and curated topics.",
     url: SITE_URL,
   },
   twitter: {
@@ -50,7 +52,7 @@ export const metadata: Metadata = {
     site: SITE_URL,
     title: `${SITE_NAME} — ${SITE_TAGLINE}`,
     description:
-      "Read the Quran in Uthmani script with a trusted English translation, stable ayah references, search, and curated topic entry points.",
+      "Read the Quran in Uthmani script with translations in 100+ languages (default: Urdu — Jalandhry), stable ayah references, search, and curated topic entry points.",
   },
   robots: { index: true, follow: true },
 };
@@ -77,19 +79,23 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
-        <LibraryProvider>
-          <PrefsProvider>
-            <RevisionProvider>
-              <SiteHeader />
-              <main
-                id="main-content"
-                className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
-              >
-                {children}
-              </main>
-              <SiteFooter />
-              <MobileBottomNav />
-              <Toaster position="bottom-center" />
+      <LibraryProvider>
+        <PrefsProvider>
+          <RevisionProvider>
+            <PathsProvider>
+              <QuizProvider>
+                <SiteHeader />
+                <main
+                  id="main-content"
+                  className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
+                >
+                  {children}
+                </main>
+                <SiteFooter />
+                <MobileBottomNav />
+                <Toaster position="bottom-center" />
+              </QuizProvider>
+            </PathsProvider>
             </RevisionProvider>
           </PrefsProvider>
         </LibraryProvider>

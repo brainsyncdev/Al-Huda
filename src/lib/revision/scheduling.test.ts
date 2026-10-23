@@ -203,7 +203,14 @@ describe("item lifecycle", () => {
   });
 
   it("editItem changes the ladder and recomputes the due date", () => {
-    const item = createItem(2, 255, "gentle", NOW_ISO, NOW_MS);
+    // Advance past step 0 first: gentle and spacious both start at a 1-day
+    // interval, so editing at step 0 legitimately yields the same date.
+    const item = applyRating(
+      createItem(2, 255, "gentle", NOW_ISO, NOW_MS),
+      "easy",
+      NOW_ISO,
+      NOW_MS
+    ).item;
     const { item: edited, event } = editItem(item, "spacious", NOW_ISO, NOW_MS);
     expect(edited.ladderId).toBe("spacious");
     expect(event.kind).toBe("edited");

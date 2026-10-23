@@ -10,7 +10,7 @@ const TABS = [
   { href: "/quran", label: "Read", icon: BookOpen },
   { href: "/topics", label: "Topics", icon: Sparkles },
   { href: "/search", label: "Search", icon: Search },
-  { href: "/learn/revision", label: "Revise", icon: GraduationCap },
+  { href: "/learn/paths", label: "Learn", icon: GraduationCap },
   { href: "/library", label: "Library", icon: Library },
 ] as const;
 

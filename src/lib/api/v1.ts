@@ -48,7 +48,7 @@ export const DATASET_PACKAGE = PKG ? `${PKG.id}@${PKG.version}` : "quran-json (v
 export const EDITION = Object.freeze({
   datasetPackage: DATASET_PACKAGE,
   arabic: `Uthmani script, chapter metadata via quranenc.com, distributed by ${DATASET_PACKAGE}`,
-  translation: `Saheeh International, distributed by ${DATASET_PACKAGE}`,
+  translation: `Built-in English: Saheeh International. Active translation is user-selectable (100+ editions via Tanzil.net). Dataset distributed by ${DATASET_PACKAGE}`,
   transliteration: `Tanzil transliteration, distributed by ${DATASET_PACKAGE}`,
   license: PKG?.license ?? "unspecified",
   licenseUrl: PKG?.licenseUrl ?? null,

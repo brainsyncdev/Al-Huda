@@ -108,7 +108,7 @@ function normalizeEvent(value: unknown): ReviewEvent | null {
 
   const reference = asString(raw.reference);
   const kind = asString(raw.kind);
-  if (reference === null || !EVENT_KINDS.includes(kind)) return null;
+  if (reference === null || kind === null || !EVENT_KINDS.includes(kind)) return null;
   if (!/^\d{1,3}:\d{1,3}$/.test(reference)) return null;
 
   const rating =

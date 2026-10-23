@@ -10,6 +10,11 @@ import {
 import { APPROVED_SOURCES } from "@/lib/ai/approved-sources";
 import { AI_GATES } from "@/lib/ai/feature-flag";
 import { TOPICS, individuallyReviewedCount } from "@/lib/topics/data";
+import {
+  REVIEWS,
+  REVIEWS_LAST_UPDATED,
+  type ReviewSubjectType,
+} from "@/lib/editorial/reviews";
 
 // Editorial review board (FR-072, FR-073, FR-075, PRD §20).
 //
@@ -193,6 +198,84 @@ export default function EditorialPage() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      {/* --- Editorial review log (FR-072, FR-073) ------------------------ */}
+      <section aria-labelledby="review-log-heading" className="rounded-2xl border border-border/80 bg-card p-5">
+        <h2 id="review-log-heading" className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          Editorial review log
+        </h2>
+        <p className="mt-2 max-w-prose text-xs leading-relaxed text-muted-foreground">
+          {REVIEWS.length} entries, last updated {REVIEWS_LAST_UPDATED}. The log
+          is generated from the topic and source registries by{" "}
+          <code className="rounded bg-secondary px-1">scripts/build-editorial-log.mjs</code>{" "}
+          and maintained through git review. The same file is editable with
+          Decap CMS at{" "}
+          <code className="rounded bg-secondary px-1">/admin</code> against a
+          local backend; see{" "}
+          <code className="rounded bg-secondary px-1">docs/EDITORIAL.md</code>.
+        </p>
+
+        <div className="mt-4 space-y-5">
+          {(
+            [
+              { type: "topic", label: "Topics" },
+              { type: "source", label: "Sources" },
+              { type: "feature", label: "Features" },
+            ] as { type: ReviewSubjectType; label: string }[]
+          ).map(({ type, label }) => {
+            const rows = REVIEWS.filter((r) => r.subjectType === type);
+            if (rows.length === 0) return null;
+            return (
+              <div key={type}>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+                  {label} ({rows.length})
+                </h3>
+                <div className="mt-2 overflow-x-auto">
+                  <table className="w-full min-w-[44rem] text-left text-sm">
+                    <thead>
+                      <tr className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground">
+                        <th scope="col" className="py-2 pr-3 font-medium">Subject</th>
+                        <th scope="col" className="py-2 pr-3 font-medium">Status</th>
+                        <th scope="col" className="py-2 pr-3 font-medium">Curator / method</th>
+                        <th scope="col" className="py-2 pr-3 font-medium">Reviewed</th>
+                        <th scope="col" className="py-2 font-medium">Notes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {rows.map((row) => (
+                        <tr key={row.id} className="border-b border-border/60 align-top">
+                          <td className="py-2.5 pr-3 font-medium text-foreground/90">
+                            {row.subjectId}
+                          </td>
+                          <td className="py-2.5 pr-3">
+                            <span
+                              className={`inline-block rounded-full border px-2 py-0.5 text-[0.6875rem] font-semibold uppercase tracking-wider ${
+                                STATUS_STYLES[row.status] ?? ""
+                              }`}
+                            >
+                              {row.status}
+                            </span>
+                          </td>
+                          <td className="py-2.5 pr-3 text-xs text-muted-foreground">
+                            {row.curator}
+                            <span className="block">{row.method}</span>
+                          </td>
+                          <td className="py-2.5 pr-3 text-xs tabular-nums text-muted-foreground">
+                            {row.reviewedAt}
+                          </td>
+                          <td className="py-2.5 text-xs leading-relaxed text-muted-foreground">
+                            {row.notes}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 

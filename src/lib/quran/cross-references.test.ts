@@ -169,6 +169,8 @@ describe("crossSurahTextGroups", () => {
   });
 
   it("is memoized: the second call returns the same result", () => {
+    // The module memoizes the assembled group array itself (not only the
+    // underlying index), so repeated calls return the identical reference.
     expect(crossSurahTextGroups()).toBe(groups);
   });
 

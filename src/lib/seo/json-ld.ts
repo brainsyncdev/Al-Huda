@@ -123,7 +123,7 @@ export function websiteJsonLd(): JsonLdNode {
     "@id": WEBSITE_NODE_ID,
     name: SITE_NAME,
     description:
-      "Read the Quran with its sources in plain view: Uthmani text, a trusted English translation, stable references, and calm search.",
+      "Read the Quran with its sources in plain view: Uthmani text, translations in 100+ languages (default: Urdu — Jalandhry), stable references, and calm search.",
     url: absoluteUrl("/"),
     inLanguage: ["en", "ar"],
     potentialAction: {

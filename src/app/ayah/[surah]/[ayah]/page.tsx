@@ -6,11 +6,20 @@ import { AyahCard } from "@/components/quran/ayah-card";
 import { ReaderControls } from "@/components/quran/reader-controls";
 import { SourcePanel } from "@/components/quran/source-panel";
 import { TafsirLinks } from "@/components/quran/tafsir-links";
+import { TafsirViewer } from "@/components/quran/tafsir-viewer";
+import { WordByWord } from "@/components/quran/word-by-word";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import { ayahPath, surahPath } from "@/lib/quran/reference";
 import { absoluteUrl } from "@/lib/site";
 import { topicsForAyah } from "@/lib/topics/data";
-import { getJuzForAyah } from "@/lib/quran/juz";
+import {
+  getJuzForAyah,
+  getPageForAyah,
+  getHizbForAyah,
+  getRukuForAyah,
+  getManzilForAyah,
+  isSajdaAyah,
+} from "@/lib/quran/juz";
 import { crossReferencesForAyah } from "@/lib/quran/cross-references";
 import {
   CrossReferencePanel,
@@ -32,7 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const surahMeta = getSurah(s);
   return {
     title: `Quran ${s}:${a} — ${surahMeta?.transliteration ?? s}`,
-    description: `Ayah ${s}:${a} (${surahMeta?.transliteration ?? "Surah"}). Uthmani Arabic with Saheeh International English translation.`,
+    description: `Ayah ${s}:${a} (${surahMeta?.transliteration ?? "Surah"}). Uthmani Arabic with translation in 100+ languages (default: Urdu — Jalandhry).`,
     alternates: { canonical: absoluteUrl(ayahPath({ surah: s, ayah: a })) },
   };
 }
@@ -61,6 +70,11 @@ export default async function AyahPage({ params }: Props) {
 
   const topics = topicsForAyah({ surah: s, ayah: a });
   const juz = getJuzForAyah(s, a);
+  const page = getPageForAyah(s, a);
+  const hizb = getHizbForAyah(s, a);
+  const ruku = getRukuForAyah(s, a);
+  const manzil = getManzilForAyah(s, a);
+  const isSajda = isSajdaAyah(s, a);
   // Derived from the pinned dataset, so it costs one already-loaded surah and
   // cannot assert anything an editor or a model invented.
   const crossRefs = crossReferencesForAyah({ surah: s, ayah: a });
@@ -97,8 +111,39 @@ export default async function AyahPage({ params }: Props) {
             </h1>
             <p className="text-sm text-muted-foreground">
               Surah {s} of 114 · {surahMeta.meaning} · {surahMeta.revelation}
-              {juz && <> · Juz {juz}</>}
             </p>
+            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+              {juz && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                  Juz {juz}
+                </span>
+              )}
+              {page && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                  Page {page}
+                </span>
+              )}
+              {hizb && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                  Hizb {hizb}
+                </span>
+              )}
+              {ruku && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                  Ruku {ruku}
+                </span>
+              )}
+              {manzil && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground">
+                  Manzil {manzil}
+                </span>
+              )}
+              {isSajda && (
+                <span className="inline-flex items-center gap-1 rounded-full bg-gold-soft px-2.5 py-1 text-xs font-semibold text-accent-foreground">
+                  Sajda verse
+                </span>
+              )}
+            </div>
           </div>
           <Link
             href={surahPath(surahMeta.id, surahMeta.slug)}
@@ -151,6 +196,8 @@ export default async function AyahPage({ params }: Props) {
 
       <CrossReferencePanel items={crossRefs} />
 
+      <WordByWord surah={s} ayah={a} />
+      <TafsirViewer surah={s} ayah={a} />
       <TafsirLinks surah={s} ayah={a} />
       <SourcePanel />
 

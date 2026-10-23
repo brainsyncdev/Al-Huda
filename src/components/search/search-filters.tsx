@@ -2,10 +2,13 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { Filter, X } from "lucide-react";
+import type { TranslationMeta } from "@/lib/quran/translations";
 
 interface SearchFiltersProps {
   surahOptions: { id: number; transliteration: string }[];
   topicOptions: { slug: string; title: string }[];
+  /** Available translation editions for edition-scoped search (FR-012). */
+  editions?: TranslationMeta[];
 }
 
 /**

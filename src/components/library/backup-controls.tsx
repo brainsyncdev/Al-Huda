@@ -24,6 +24,7 @@ import {
 import { useLibrary } from "@/lib/library/context";
 import { usePrefs } from "@/lib/prefs/context";
 import { useRevision } from "@/lib/revision/context";
+import { usePaths } from "@/lib/paths/context";
 
 const BUTTON_CLASS =
   "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50";
@@ -32,12 +33,14 @@ export function BackupControls() {
   const library = useLibrary();
   const revision = useRevision();
   const prefs = usePrefs();
+  const paths = usePaths();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [reading, setReading] = useState(false);
   const [note, setNote] = useState<string | null>(null);
 
-  const ready = library.hydrated && revision.hydrated && prefs.hydrated;
+  const ready = library.hydrated && revision.hydrated && prefs.hydrated && paths.hydrated;
   const planCount = Object.keys(revision.items).length;
+  const pathsCount = Object.keys(paths.state.progress).length;
 
   function handleExport() {
     if (!ready) return;
@@ -49,10 +52,11 @@ export function BackupControls() {
       },
       revision: revision.exportState(),
       preferences: prefs.exportPrefs(),
+      paths: paths.exportState(),
     });
     downloadJson(file, backupFileName());
     toast.success(
-      `Backup exported — ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${planCount} planned verse${planCount === 1 ? "" : "s"}.`
+      `Backup exported — ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${planCount} planned verse${planCount === 1 ? "" : "s"}, ${pathsCount} learning path${pathsCount === 1 ? "" : "s"}.`
     );
     setNote(null);
   }
@@ -87,9 +91,11 @@ export function BackupControls() {
           `This overwrites:\n` +
           `• ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${library.progress.length} reading entries\n` +
           `• ${planCount} planned verses and their schedules\n` +
+          `• ${pathsCount} learning path progress entries\n` +
           `• your reader preferences\n\n` +
           `The backup contains ${data.library.bookmarks.length} bookmarks, ` +
-          `${data.library.notes.length} notes and ${Object.keys(data.revision.items).length} planned verses. ` +
+          `${data.library.notes.length} notes, ${Object.keys(data.revision.items).length} planned verses, ` +
+          `and ${Object.keys(data.paths.progress).length} learning paths. ` +
           `This cannot be undone.`
       );
       if (!confirmed) {
@@ -100,13 +106,16 @@ export function BackupControls() {
       const lib = library.restoreLibrary(data.library);
       const rev = revision.restoreState(data.revision);
       prefs.restorePrefs(data.preferences);
+      paths.restoreState(data.paths);
 
       toast.success(
-        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses.`
+        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths.`
       );
       setNote(
         data.sourceVersion === 1
-          ? "This was a legacy (v1) library-only backup, so it contained no revision plan or reader preferences: those were left empty and reset to defaults rather than guessed at."
+          ? "This was a legacy (v1) library-only backup, so it contained no revision plan, learning paths, or reader preferences: those were left empty and reset to defaults rather than guessed at."
+          : data.sourceVersion === 2
+          ? "This was a v2 backup without learning paths: that section was left empty."
           : null
       );
     } catch {
@@ -125,6 +134,7 @@ export function BackupControls() {
       "Erase all local data on this device?\n\n" +
         "• bookmarks, private notes and reading history\n" +
         "• your revision plan and its review log\n" +
+        "• learning path progress and onboarding\n" +
         "• reader preferences\n\n" +
         "There is no server copy to restore from. Export a backup first if you want to keep any of it. This cannot be undone."
     );
@@ -132,6 +142,7 @@ export function BackupControls() {
     library.clearAll();
     revision.clearAll();
     prefs.restorePrefs(undefined); // back to defaults
+    paths.clearAll();
     setNote("All local data erased from this device.");
     toast.success("All local data erased");
   }

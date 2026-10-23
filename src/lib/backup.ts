@@ -21,9 +21,12 @@ import {
 import { DEFAULT_PREFS, normalizePrefs, type Prefs } from "@/lib/prefs/context";
 import { normalizeRevisionState } from "@/lib/revision/storage";
 import { EMPTY_REVISION_STATE, type RevisionState } from "@/lib/revision/scheduling";
+import { normalizePathsState } from "@/lib/paths/storage";
+import type { PathsState } from "@/lib/paths/types";
+import { EMPTY_PATHS_STATE } from "@/lib/paths/data";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 2;
+export const BACKUP_VERSION = 4;
 export const BACKUP_APP = "Al-Huda";
 
 /**
@@ -42,18 +45,20 @@ export interface BackupFile {
   library: LibraryState;
   revision: RevisionState;
   preferences: Prefs;
+  paths: PathsState;
 }
 
 export interface RestorableBackup {
   library: LibraryState;
   revision: RevisionState;
   preferences: Prefs;
+  paths: PathsState;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
-   * export; the revision plan and preferences for such a file are left at
-   * their defaults rather than invented.
+   * export; 2 added revision and preferences; 3 added paths. Older versions
+   * get defaults for missing sections.
    */
-  sourceVersion: 1 | 2;
+  sourceVersion: 1 | 2 | 3 | 4;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -66,6 +71,7 @@ export interface BackupInput {
   library: LibraryState;
   revision: RevisionState;
   preferences: Prefs;
+  paths: PathsState;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -81,6 +87,7 @@ export function buildBackup(
     library: input.library,
     revision: input.revision,
     preferences: input.preferences,
+    paths: input.paths,
   };
 }
 
@@ -120,12 +127,15 @@ export function parseBackup(text: string): ParseBackupResult {
   const exportedAt = typeof file.exportedAt === "string" ? file.exportedAt : "";
 
   if (file.format === BACKUP_FORMAT) {
-    if (version !== BACKUP_VERSION) {
+    // v3 and v4 share the same envelope shape; v4 added translationId inside
+    // preferences, which normalizePrefs already handles by falling back to the
+    // default when the field is absent.
+    if (version !== 3 && version !== 4) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads version ${BACKUP_VERSION}. Nothing was imported.`,
+        }, and this build reads versions 3–4. Nothing was imported.`,
       };
     }
     return {
@@ -140,7 +150,8 @@ export function parseBackup(text: string): ParseBackupResult {
             ? EMPTY_REVISION_STATE
             : normalizeRevisionState(file.revision),
         preferences: normalizePrefs(file.preferences),
-        sourceVersion: 2,
+        paths: normalizePathsState(file.paths),
+        sourceVersion: typeof version === "number" ? (version as 3 | 4) : 4,
         exportedAt,
       },
     };
@@ -156,6 +167,7 @@ export function parseBackup(text: string): ParseBackupResult {
         // restore leaves one empty rather than fabricating schedule entries.
         revision: EMPTY_REVISION_STATE,
         preferences: DEFAULT_PREFS,
+        paths: { ...EMPTY_PATHS_STATE },
         sourceVersion: 1,
         exportedAt,
       },

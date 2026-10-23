@@ -1,0 +1,84 @@
+# Decap CMS configuration (FR-072, FR-073, FR-075).
+#
+# Scope is deliberately narrow: this CMS edits the editorial review log only.
+# Quran text, translations, and tafsir are never editable here — they enter by
+# pinning a package or vendoring a dataset under code review (docs/EDITORIAL.md).
+#
+# No accounts are configured. Use the local backend during development:
+#
+#   npx decap-server
+#
+# The app has no hosted identity provider, so `git-gateway` is a placeholder
+# for a future deployment; it is inert until an auth backend exists.
+
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+site_url: http://localhost:3000
+display_url: http://localhost:3000/editorial
+
+collections:
+  - name: editorial
+    label: Editorial
+    description: Review status for topics, sources, and features.
+    files:
+      - name: reviews
+        label: Review log
+        file: content/editorial/reviews.json
+        format: json
+        fields:
+          - label: Schema note
+            name: $schema
+            widget: hidden
+            default: "Editorial review log — tracks review status for topics, sources, and features (FR-072, FR-073, FR-075)."
+          - label: Version
+            name: version
+            widget: string
+          - label: Last updated
+            name: lastUpdated
+            widget: datetime
+            date_format: YYYY-MM-DD
+            time_format: false
+            format: YYYY-MM-DD
+          - label: Reviews
+            name: reviews
+            widget: list
+            summary: "{{fields.subjectType}}: {{fields.subjectId}} — {{fields.status}}"
+            fields:
+              - label: ID
+                name: id
+                widget: string
+              - label: Subject type
+                name: subjectType
+                widget: select
+                options: [topic, source, feature]
+              - label: Subject ID
+                name: subjectId
+                widget: string
+              - label: Status
+                name: status
+                widget: select
+                options:
+                  - pending-scholarly-review
+                  - editorial-approved
+              - label: Curator
+                name: curator
+                widget: string
+              - label: Method
+                name: method
+                widget: string
+              - label: Reviewed at
+                name: reviewedAt
+                widget: datetime
+                date_format: YYYY-MM-DD
+                time_format: false
+                format: YYYY-MM-DD
+              - label: Notes
+                name: notes
+                widget: text

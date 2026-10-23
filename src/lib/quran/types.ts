@@ -26,7 +26,12 @@ export interface Ayah {
   ayah: number;
   /** Uthmani Arabic text. Never alter, normalize, or reconstruct. */
   arabic: string;
-  /** Saheeh International English translation. */
+  /**
+   * Built-in English translation (Saheeh International) from the dataset.
+   * Used as the fallback when the user's selected translation edition is
+   * still loading. The active translation text comes from the translation
+   * store (translation-store.ts), not this field.
+   */
   translation: string;
   /** Transliteration. */
   transliteration: string;

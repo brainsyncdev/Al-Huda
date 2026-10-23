@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Bookmark, Check, Copy, Link2, ListPlus, NotebookPen, Trash2 } from "lucide-react";
+import { Bookmark, BookOpen, Check, Copy, Link2, ListPlus, NotebookPen, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import type { Ayah } from "@/lib/quran/types";
 import { useLibrary } from "@/lib/library/context";
@@ -9,6 +9,10 @@ import { useRevision } from "@/lib/revision/context";
 import { arabicSizeClass, arabicLineHeightClass, usePrefs } from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
 import { absoluteUrl } from "@/lib/site";
+import { getComprehensionNote } from "@/lib/comprehension/notes";
+import { useTranslationText } from "@/lib/quran/translation-store";
+import { getTranslation } from "@/lib/quran/translations";
+import { AudioPlayer } from "./audio-player";
 
 interface AyahCardProps {
   ayah: Ayah;
@@ -28,6 +32,22 @@ interface AyahCardProps {
   matchReasonLabel?: string;
   /** FR-015: what the label actually means, exposed to assistive tech. */
   matchReasonDescription?: string;
+}
+
+function ParallelTranslationBlock({ translationId, surah, ayah }: { translationId: string; surah: number; ayah: number }) {
+  const meta = getTranslation(translationId);
+  const text = useTranslationText(translationId, surah, ayah);
+  if (!meta) return null;
+  return (
+    <div className="rounded-xl border border-border/60 bg-background/50 p-3">
+      <p className="mb-1 text-[0.6875rem] font-semibold uppercase tracking-wider text-muted-foreground">
+        {meta.name} — {meta.languageLabel}
+      </p>
+      <p lang={meta.language} dir={meta.direction ?? "ltr"} className="text-sm leading-relaxed text-foreground/85">
+        {text ?? "Loading…"}
+      </p>
+    </div>
+  );
 }
 
 /**
@@ -55,18 +75,42 @@ export function AyahCard({
   // FR-050: a single ayah is a range of one, added through the same plan
   // action the revision page uses for spans.
   const { isInPlan, addRange, removeItem, hydrated: planHydrated } = useRevision();
-  const { arabicSize, lineHeight, showTranslation, showTransliteration, hydrated } = usePrefs();
+  const {
+    arabicSize,
+    lineHeight,
+    showTranslation,
+    showTransliteration,
+    translationId,
+    showAudio,
+    reciterId,
+    parallelMode,
+    parallelTranslationIds,
+    hydrated,
+  } = usePrefs();
+
+  // Resolve the active translation text. Falls back to the dataset's built-in
+  // English translation while the selected edition is still loading.
+  const translationMeta = getTranslation(translationId);
+  const selectedTranslationText = useTranslationText(translationId, ayah.surah, ayah.ayah);
+  const displayTranslation = selectedTranslationText ?? ayah.translation;
+  const translationDir = translationMeta?.direction ?? "ltr";
+  const translationLang = translationMeta?.language ?? "en";
+  // Snippet highlighting only applies to the built-in English translation;
+  // when the user picks a different edition we show the full text instead.
+  const activeSnippet = translationId === "en.sahih" ? snippet : null;
 
   const [copied, setCopied] = useState<"link" | "text" | null>(null);
   const [noteOpen, setNoteOpen] = useState(false);
   const [noteDraft, setNoteDraft] = useState("");
   const [tagDraft, setTagDraft] = useState("");
+  const [comprehensionOpen, setComprehensionOpen] = useState(false);
 
   const existingNote = noteFor(ayah.surah, ayah.ayah);
   const bookmarked = isBookmarked(ayah.surah, ayah.ayah);
   const ref = `${ayah.surah}:${ayah.ayah}`;
   const planned = isInPlan(ref);
   const href = `/ayah/${ayah.surah}/${ayah.ayah}`;
+  const comprehensionNote = getComprehensionNote(ayah.surah, ayah.ayah);
   // Stable id linking the visible match-reason label to its description, so the
   // explanation is announced by assistive tech instead of being mouse-only.
   const reasonId = `reason-${ayah.surah}-${ayah.ayah}`;
@@ -118,8 +162,14 @@ export function AyahCard({
     }
   }
 
+  const translationCredit =
+    translationId === "en.sahih"
+      ? "(Saheeh International)"
+      : translationMeta
+        ? `(${translationMeta.name})`
+        : "";
   const copyTextValue = showTranslation
-    ? `"${ayah.arabic}"\n\n${ayah.translation}\n\n— Quran ${surahTransliteration} ${ref} (Saheeh International)`
+    ? `"${ayah.arabic}"\n\n${displayTranslation}\n\n— Quran ${surahTransliteration} ${ref} ${translationCredit}`.trim()
     : `"${ayah.arabic}"\n\n— Quran ${surahTransliteration} ${ref}`;
 
   return (
@@ -172,32 +222,48 @@ export function AyahCard({
       </p>
 
       {showTranslation && (
-              <p
-                className={cn(
-                  "mt-4 text-foreground/85",
-                  variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
-                )}
-              >
-                {snippet ? (
-                  <>
-                    {snippet.text.slice(0, snippet.matchStart)}
-                    {/* Highlight carries colour AND weight AND underline, so the match
-                        is never signalled by colour alone (PRD §11). */}
-                    <mark className="rounded bg-gold-soft px-0.5 font-semibold text-accent-foreground underline decoration-1 underline-offset-2">
-                      {snippet.text.slice(snippet.matchStart, snippet.matchEnd)}
-                    </mark>
-                    {snippet.text.slice(snippet.matchEnd)}
-                  </>
-                ) : (
-                  ayah.translation
-                )}
-              </p>
-            )}
+        <p
+          lang={translationLang}
+          dir={translationDir}
+          className={cn(
+            "mt-4 text-foreground/85",
+            variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
+          )}
+        >
+          {activeSnippet ? (
+            <>
+              {activeSnippet.text.slice(0, activeSnippet.matchStart)}
+              {/* Highlight carries colour AND weight AND underline, so the match
+                  is never signalled by colour alone (PRD §11). */}
+              <mark className="rounded bg-gold-soft px-0.5 font-semibold text-accent-foreground underline decoration-1 underline-offset-2">
+                {activeSnippet.text.slice(activeSnippet.matchStart, activeSnippet.matchEnd)}
+              </mark>
+              {activeSnippet.text.slice(activeSnippet.matchEnd)}
+            </>
+          ) : (
+            displayTranslation
+          )}
+        </p>
+      )}
 
       {showTransliteration && (
         <p className="mt-3 text-sm italic leading-relaxed text-muted-foreground">
           {ayah.transliteration}
         </p>
+      )}
+
+      {showAudio && (
+        <div className="mt-3">
+          <AudioPlayer surah={ayah.surah} ayah={ayah.ayah} reciterId={reciterId} />
+        </div>
+      )}
+
+      {parallelMode && parallelTranslationIds.length > 0 && (
+        <div className="mt-4 space-y-3">
+          {parallelTranslationIds.map((pid) => (
+            <ParallelTranslationBlock key={pid} translationId={pid} surah={ayah.surah} ayah={ayah.ayah} />
+          ))}
+        </div>
       )}
 
       <div className="mt-4 flex flex-wrap items-center gap-1.5">
@@ -267,6 +333,18 @@ export function AyahCard({
           Copy verse
         </button>
 
+        {comprehensionNote && variant === "full" && (
+          <button
+            type="button"
+            onClick={() => setComprehensionOpen((o) => !o)}
+            aria-expanded={comprehensionOpen}
+            className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            <BookOpen className="h-3.5 w-3.5" aria-hidden />
+            Show context
+          </button>
+        )}
+
         {allowNotes && variant === "full" && (
           <button
             type="button"
@@ -284,6 +362,26 @@ export function AyahCard({
           </button>
         )}
       </div>
+
+      {comprehensionOpen && variant === "full" && comprehensionNote && (
+        <div className="mt-4 rounded-xl border border-border/80 bg-background/70 p-4">
+          <div className="flex items-start justify-between gap-3">
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold text-foreground">Context</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {comprehensionNote.context}
+              </p>
+            </div>
+            <span className="shrink-0 rounded-full bg-gold-soft px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wider text-accent-foreground">
+              Pending review
+            </span>
+          </div>
+          <p className="mt-3 text-[0.6875rem] text-muted-foreground">
+            This note provides historical or structural context only — not
+            interpretation. It has not yet been validated by a qualified scholar.
+          </p>
+        </div>
+      )}
 
       {noteOpen && variant === "full" && allowNotes && (
         <div className="mt-4 rounded-xl border border-border/80 bg-background/70 p-3">

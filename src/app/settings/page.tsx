@@ -1,20 +1,42 @@
 "use client";
 
 import Link from "next/link";
-import { Check, ExternalLink, ShieldCheck } from "lucide-react";
+import { Check, ExternalLink, ShieldCheck, X } from "lucide-react";
 import { BackupControls } from "@/components/library/backup-controls";
-import { ARABIC_SIZES, arabicSizeClass, usePrefs } from "@/lib/prefs/context";
+import {
+  ARABIC_SIZES,
+  MAX_PARALLEL_TRANSLATIONS,
+  arabicSizeClass,
+  usePrefs,
+} from "@/lib/prefs/context";
+import { TranslationSelector } from "@/components/quran/translation-selector";
+import { RECITERS } from "@/lib/quran/audio";
+import { TRANSLATIONS, getTranslation } from "@/lib/quran/translations";
 
 export default function SettingsPage() {
   const {
     arabicSize,
     showTranslation,
     showTransliteration,
+    translationId,
+    showAudio,
+    reciterId,
+    parallelMode,
+    parallelTranslationIds,
     setArabicSize,
     setShowTranslation,
     setShowTransliteration,
+    setShowAudio,
+    setReciterId,
+    setParallelMode,
+    toggleParallelTranslation,
     hydrated: prefsHydrated,
   } = usePrefs();
+
+  const primaryTranslation = getTranslation(translationId);
+  const availableParallel = TRANSLATIONS.filter(
+    (t) => t.id !== translationId && !parallelTranslationIds.includes(t.id)
+  );
 
   return (
     <div className="space-y-8 pb-8">
@@ -66,7 +88,14 @@ export default function SettingsPage() {
             </div>
           )}
 
-          <div className="space-y-3">
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <h3 className="text-base font-semibold">Translation edition</h3>
+              <p className="text-sm text-muted-foreground">
+                Choose from 100+ translations in 50+ languages. Default: Urdu (Jalandhry).
+              </p>
+              <TranslationSelector />
+            </div>
             <label className="flex items-start gap-3">
               <input
                 type="checkbox"
@@ -75,8 +104,8 @@ export default function SettingsPage() {
                 className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
               />
               <span>
-                <span className="font-medium">Show English translation (Saheeh International)</span>
-                <p className="text-sm text-muted-foreground">Displayed verbatim from the pinned dataset.</p>
+                <span className="font-medium">Show translation</span>
+                <p className="text-sm text-muted-foreground">Toggle translation visibility. The selected edition is shown above.</p>
               </span>
             </label>
             <label className="flex items-start gap-3">
@@ -91,6 +120,128 @@ export default function SettingsPage() {
                 <p className="text-sm text-muted-foreground">Only for reading aid; never a substitute for Arabic text.</p>
               </span>
             </label>
+
+            <div className="space-y-3 border-t border-border/70 pt-4">
+              <label className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  checked={showAudio}
+                  onChange={(e) => setShowAudio(e.target.checked)}
+                  className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
+                />
+                <span>
+                  <span className="font-medium">Audio recitation</span>
+                  <p className="text-sm text-muted-foreground">
+                    Show a Listen button under each verse. Audio streams only when you press play.
+                  </p>
+                </span>
+              </label>
+              {showAudio && (
+                <div className="space-y-1.5 pl-7">
+                  <label htmlFor="reciter-select" className="block text-xs font-medium text-muted-foreground">
+                    Reciter
+                  </label>
+                  <select
+                    id="reciter-select"
+                    value={reciterId}
+                    onChange={(e) => setReciterId(e.target.value)}
+                    className="w-full rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring sm:w-auto"
+                  >
+                    {RECITERS.map((r) => (
+                      <option key={r.id} value={r.id}>
+                        {r.name}
+                        {r.nameArabic ? ` — ${r.nameArabic}` : ""}
+                      </option>
+                    ))}
+                  </select>
+                  <p className="text-[0.6875rem] text-muted-foreground">
+                    Verse-by-verse MP3s from the Islamic Network CDN (everyayah.com recordings), streamed at 64 kbps.
+                  </p>
+                </div>
+              )}
+            </div>
+
+            <div className="space-y-3 border-t border-border/70 pt-4">
+              <label className="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  checked={parallelMode}
+                  onChange={(e) => setParallelMode(e.target.checked)}
+                  className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
+                />
+                <span>
+                  <span className="font-medium">Compare translations side by side</span>
+                  <p className="text-sm text-muted-foreground">
+                    Show up to {MAX_PARALLEL_TRANSLATIONS} extra translations beneath the primary edition.
+                  </p>
+                </span>
+              </label>
+
+              {parallelMode && (
+                <div className="space-y-3 pl-7">
+                  <p className="text-xs text-muted-foreground">
+                    Primary:{" "}
+                    <span className="font-medium text-foreground">
+                      {primaryTranslation
+                        ? `${primaryTranslation.name} (${primaryTranslation.languageLabel})`
+                        : translationId}
+                    </span>
+                  </p>
+
+                  {parallelTranslationIds.length > 0 && (
+                    <ul className="flex flex-wrap gap-1.5">
+                      {parallelTranslationIds.map((id) => {
+                        const meta = getTranslation(id);
+                        return (
+                          <li key={id}>
+                            <button
+                              type="button"
+                              onClick={() => toggleParallelTranslation(id)}
+                              aria-label={`Remove ${meta?.name ?? id}`}
+                              className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                            >
+                              {meta ? `${meta.name} — ${meta.languageLabel}` : id}
+                              <X className="h-3 w-3" aria-hidden />
+                            </button>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+
+                  {parallelTranslationIds.length < MAX_PARALLEL_TRANSLATIONS ? (
+                    <div className="space-y-1.5">
+                      <label htmlFor="parallel-add" className="block text-xs font-medium text-muted-foreground">
+                        Add a translation
+                      </label>
+                      <select
+                        id="parallel-add"
+                        value=""
+                        onChange={(e) => {
+                          if (e.target.value) toggleParallelTranslation(e.target.value);
+                        }}
+                        className="w-full rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring sm:w-auto"
+                      >
+                        <option value="">Choose a translation…</option>
+                        {availableParallel.map((t) => (
+                          <option key={t.id} value={t.id}>
+                            {t.name} — {t.languageLabel}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  ) : (
+                    <p className="text-[0.6875rem] text-muted-foreground">
+                      Maximum of {MAX_PARALLEL_TRANSLATIONS} additional translations reached. Remove one to add another.
+                    </p>
+                  )}
+
+                  <p className="text-[0.6875rem] text-muted-foreground">
+                    Each edition downloads once per session and is held in memory — roughly 1.5 MB per translation.
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </section>

@@ -13,12 +13,19 @@ import {
 
 // GET /api/v1/ayahs/{surahNumber}/{ayahNumber}/tafsir (PRD §14).
 //
-// This endpoint CANNOT return exegesis. The source catalog records that tafsir
-// is link-out only — "No tafsir text is displayed or stored locally" — so the
-// honest response is an availability record plus outbound links. Fabricating
-// tafsir text, or returning an empty `entries` array that implies a corpus was
-// searched, would both misrepresent the product (PRD §2 principle 3).
+// This endpoint returns an availability record, not the exegesis itself. Two
+// classical Arabic tafsirs (al-Jalalayn, al-Muyassar) are readable in the app
+// through the translation proxy (`/api/translations/{id}`), which is where the
+// text is served from. This route names those editions and the outbound
+// publishers, and it never fabricates text or implies a corpus was searched
+// when it was not (PRD §2 principle 3).
 export const dynamic = "force-dynamic";
+
+/** Tafsir editions readable through the translation proxy. */
+const READABLE_EDITIONS = [
+  { translationId: "ar.jalalayn", sourceId: "tafsir-jalalayn" },
+  { translationId: "ar.muyassar", sourceId: "tafsir-muyassar" },
+];
 
 /** Tafsir works the catalog knows about, i.e. link-method records. */
 const TAFSIR_WORKS = SOURCES.filter(
@@ -53,10 +60,14 @@ export async function GET(
       {
         reference: `${surah}:${ayah}`,
         surah: { number: meta.id, transliteration: meta.transliteration },
-        /** False by construction: no tafsir corpus is bundled or licensed. */
+        /** False: no tafsir corpus is vendored; text is fetched on demand. */
         bundled: false,
-        /** How the app relates to tafsir content (FR-031). */
-        displayMode: "link-to-external-source",
+        /** Text is readable in-app for the editions below, via the proxy. */
+        displayMode: "in-app-text-plus-external-links",
+        readableEditions: READABLE_EDITIONS.map((e) => ({
+          ...e,
+          textEndpoint: `/api/translations/${e.translationId}`,
+        })),
         works: TAFSIR_WORKS.map((w) => ({
           id: w.id,
           work: w.provides,
@@ -72,7 +83,8 @@ export async function GET(
       {
         provenance: contentProvenance(),
         notes: [
-          "No tafsir text is served by this API. The works listed above are link records; their licensing and permitted display remain with the publishers (FR-032).",
+          "This endpoint serves no tafsir text. The works listed above are link records; their licensing and permitted display remain with the publishers (FR-032).",
+          "The two readable editions above are fetched from Tanzil.net on demand through the translation proxy. They can be searched with /api/v1/search?edition={id}; that endpoint returns matched excerpts from the edition, not summaries or generated commentary.",
           "Interpretation is left to qualified scholarship and reviewed tafsir editions. Consult the linked publisher editions rather than treating this record as exegesis.",
         ],
       }

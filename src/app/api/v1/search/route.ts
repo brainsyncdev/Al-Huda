@@ -9,6 +9,7 @@ import {
   REASON_LABELS,
 } from "@/lib/quran/match-reasons";
 import { apiError, apiOk, boundedInt, contentProvenance, guarded } from "@/lib/api/v1";
+import { searchTranslationEdition } from "@/lib/quran/translation-search";
 
 // GET /api/v1/search?q=...&limit=...&offset=...&language=... (PRD §14).
 //
@@ -99,6 +100,77 @@ export async function GET(request: NextRequest) {
         );
       }
       language = rawLanguage;
+    }
+
+    // Edition-scoped search (FR-012): when `edition` is provided, search a
+    // specific translation or tafsir edition fetched from Tanzil.net rather
+    // than the built-in English text. The edition id must exist in the
+    // catalog; unknown ids return 400 so callers can distinguish "no matches"
+    // from "bad request".
+    const rawEdition = sp.get("edition");
+    if (rawEdition !== null && rawEdition !== "") {
+      return (async () => {
+        // The searcher stops once it has collected `limit` hits, so ask for
+        // enough to cover this page rather than for `limit` alone — otherwise
+        // every offset > 0 would slice an already-truncated list and return
+        // nothing.
+        const editionResult = await searchTranslationEdition(
+          rawEdition,
+          q,
+          Math.min(offset + limit, SCAN_CAP)
+        );
+        if (!editionResult) {
+          return apiError(
+            "unknown_edition",
+            `No translation edition with id ${JSON.stringify(rawEdition)}.`,
+            400,
+            "GET /api/v1/translations lists the available edition ids."
+          );
+        }
+        if (editionResult.loadError) {
+          return apiError(
+            "edition_unavailable",
+            "The requested edition could not be loaded from the upstream source.",
+            502,
+            "Retry later; the upstream publisher may be temporarily unreachable."
+          );
+        }
+        const page = editionResult.hits.slice(offset, offset + limit);
+        return apiOk(
+          {
+            query: q,
+            edition: {
+              id: editionResult.edition.id,
+              name: editionResult.edition.name,
+              language: editionResult.edition.language,
+              languageLabel: editionResult.edition.languageLabel,
+              direction: editionResult.edition.direction ?? "ltr",
+            },
+            results: page.map((hit) => ({
+              reference: `${hit.surah}:${hit.ayah}`,
+              surah: hit.surah,
+              ayah: hit.ayah,
+              surahTransliteration: hit.surahTransliteration,
+              url: `/ayah/${hit.surah}/${hit.ayah}`,
+              text: hit.text,
+              snippet: hit.snippet,
+            })),
+          },
+          {
+            edition: rawEdition,
+            limit,
+            offset,
+            returned: page.length,
+            truncated: editionResult.hits.length > offset + limit,
+            totalScanned: editionResult.totalScanned,
+            provenance: contentProvenance(),
+            notes: [
+              "Edition-scoped search fetches the translation text from Tanzil.net on first use and caches it in process memory for the lifetime of the server.",
+              "Arabic editions are matched with Arabic normalization; Latin-script editions use Latin normalization. Matching is substring-based after normalization, not semantic.",
+            ],
+          }
+        );
+      })();
     }
 
     // Ask for exactly as many hits as this page needs, bounded by SCAN_CAP.

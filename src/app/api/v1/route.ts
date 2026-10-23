@@ -28,13 +28,25 @@ const ENDPOINTS = [
     method: "GET",
     path: "/api/v1/ayahs/{surahNumber}/{ayahNumber}/tafsir",
     description:
-      "Tafsir availability for one ayah. No tafsir text is bundled, so this returns outbound link records only (FR-031 link-to-external-source).",
+      "Tafsir availability for one ayah. No tafsir corpus is vendored; this lists the editions readable in-app through the translation proxy plus outbound link records (FR-031, FR-032).",
   },
   {
     method: "GET",
-    path: "/api/v1/search?q={query}&limit={n}&offset={n}&language={ar|en}",
+    path: "/api/v1/search?q={query}&limit={n}&offset={n}&language={ar|en}&edition={id}",
     description:
-      "Normalized search across reference, Arabic, translation, transliteration and surah metadata. Paginated; each hit carries why it matched and a highlighted snippet where the match was in the translation.",
+      "Normalized search across reference, Arabic, translation, transliteration and surah metadata. Paginated; each hit carries why it matched and a highlighted snippet where the match was in the translation. With `edition`, searches that one translation or tafsir edition instead of the built-in text.",
+  },
+  {
+    method: "GET",
+    path: "/api/v1/search/tafsir?q={query}&limit={n}&offset={n}",
+    description:
+      "Searches both classical Arabic tafsirs readable in-app (al-Jalalayn and al-Muyassar) in one pass. Hits are literal substring matches labeled with their edition, not interpretation.",
+  },
+  {
+    method: "GET",
+    path: "/api/v1/translations",
+    description:
+      "Catalog of translation and tafsir editions readable in-app: id, translator or publisher, language, text direction. Edition ids are the values accepted by `edition` on /api/v1/search.",
   },
   {
     method: "GET",
@@ -76,7 +88,7 @@ export async function GET(request: NextRequest) {
           "Read-only. There are no mutating endpoints on this surface.",
           "All verse text is served verbatim from a pinned, version-recorded dataset; nothing is generated, translated, or edited in transit.",
           "Topics are editorial selections and are labelled with their review status. They are not tafsir and not rulings.",
-          "No tafsir text is redistributed by this service; the tafsir endpoint returns link records only.",
+          "No tafsir text is vendored. Classical tafsir editions are fetched from the publisher (Tanzil.net) at request time and cached; edition-scoped search returns matched excerpts, never summaries or generated commentary.",
           "No user data exists on this surface. Library state (bookmarks, notes, revision history) is stored in the reader's own browser and never reaches a server.",
           "Rate limiting is a best-effort per-process fairness brake keyed on a client-supplied header. Durable enforcement belongs at the CDN or edge and is a deployment requirement, not a property of this code.",
           "Juz numbers follow the canonical Hafs an Asim scheme. Page numbers are not published here because they have not been verified against a specific printed mushaf.",

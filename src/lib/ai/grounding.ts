@@ -68,28 +68,45 @@ export const NON_AUTHORITY_KINDS: readonly ClaimKind[] = [
   "worldly-guarantee",
 ];
 
-interface BaseClaim {
-  kind: ClaimKind;
+/**
+ * Claim kinds carrying no structured citation beyond their own text. Kept as a
+ * narrow literal union (not the full ClaimKind) so `claim.kind === "quran-arabic"`
+ * actually narrows the Claim union — with `kind: ClaimKind` on this member,
+ * TypeScript cannot exclude it and every property access on the specialised
+ * claims fails.
+ */
+type PlainClaimKind =
+  | "interface-help"
+  | "hadith"
+  | "tafsir"
+  | "ruling"
+  | "scholarly-consensus"
+  | "worldly-guarantee";
+
+interface PlainClaim {
+  kind: PlainClaimKind;
   /** Plain text of the claim as a model would have drafted it. */
   text: string;
 }
 
-export interface QuranClaim extends BaseClaim {
+export interface QuranClaim {
   kind: "quran-arabic";
+  text: string;
   /** Canonical reference, e.g. "2:286". */
   reference: string;
   /** The Arabic text being asserted — must match the dataset exactly. */
   arabic: string;
 }
 
-export interface TranslationClaim extends BaseClaim {
+export interface TranslationClaim {
   kind: "translation";
-  reference: string;
   text: string;
+  reference: string;
 }
 
-export interface TopicClaim extends BaseClaim {
+export interface TopicClaim {
   kind: "topic-note";
+  text: string;
   /** Curated topic slug; must exist in the topic catalog. */
   slug: string;
 }
@@ -98,7 +115,7 @@ export type Claim =
   | QuranClaim
   | TranslationClaim
   | TopicClaim
-  | BaseClaim;
+  | PlainClaim;
 
 export interface Citation {
   /** "2:286" when the claim cites a verse; absent for topic notes. */

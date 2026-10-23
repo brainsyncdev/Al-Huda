@@ -66,7 +66,7 @@ export function TopicAyahCard({
   }
 
   const copyTextValue = showTranslation
-    ? `"${ayah.arabic}"\n\n${ayah.translation}\n\n— Quran ${surahTransliteration} ${ref} (Saheeh International)`
+    ? `"${ayah.arabic}"\n\n${ayah.translation}\n\n— Quran ${surahTransliteration} ${ref}`
     : `"${ayah.arabic}"\n\n— Quran ${surahTransliteration} ${ref}`;
 
   return (

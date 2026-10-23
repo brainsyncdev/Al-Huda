@@ -1,0 +1,237 @@
+{
+  "$schema": "Editorial review log — tracks review status for topics, sources, and features (FR-072, FR-073, FR-075).",
+  "version": "1.0",
+  "lastUpdated": "2026-10-23",
+  "reviews": [
+    {
+      "id": "topic-patience",
+      "subjectType": "topic",
+      "subjectId": "patience",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-gratitude",
+      "subjectType": "topic",
+      "subjectId": "gratitude",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-trust-in-god",
+      "subjectType": "topic",
+      "subjectId": "trust-in-god",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-mercy-and-forgiveness",
+      "subjectType": "topic",
+      "subjectId": "mercy-and-forgiveness",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-remembrance",
+      "subjectType": "topic",
+      "subjectId": "remembrance",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-giving",
+      "subjectType": "topic",
+      "subjectId": "giving",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-justice",
+      "subjectType": "topic",
+      "subjectId": "justice",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-parents-and-family",
+      "subjectType": "topic",
+      "subjectId": "parents-and-family",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-hardship-and-ease",
+      "subjectType": "topic",
+      "subjectId": "hardship-and-ease",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-knowledge-and-reflection",
+      "subjectType": "topic",
+      "subjectId": "knowledge-and-reflection",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "topic-the-hereafter",
+      "subjectType": "topic",
+      "subjectId": "the-hereafter",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "editorial-selection-v1 (well-known ayat, non-exhaustive)",
+      "reviewedAt": "2026-10-17",
+      "notes": "Initial seed selection; awaiting qualified reviewer."
+    },
+    {
+      "id": "source-islamic-network-audio",
+      "subjectType": "source",
+      "subjectId": "islamic-network-audio",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "license-verification-v1 (streaming, not bundled)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Islamic Network CDN streams per-ayah MP3s; no explicit redistribution licence is published by the CDN. Streaming is defensible; bundling would require explicit rights clearance."
+    },
+    {
+      "id": "source-tanzil-mushaf-metadata",
+      "subjectType": "source",
+      "subjectId": "tanzil-mushaf-metadata",
+      "status": "editorial-approved",
+      "curator": "Al-Huda editorial seed",
+      "method": "license-verification-v1 (CC-BY, declared in source file header)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Tanzil quran-data.xml declares license=cc-by in the file header. The generator verifies 30 juz, 604 pages, 240 quarters, 556 rukus, 7 manzils, 15 sajda verses, and 6236 ayat before writing."
+    },
+    {
+      "id": "source-tafsir-jalalayn",
+      "subjectType": "source",
+      "subjectId": "tafsir-jalalayn",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "license-verification-v1 (Tanzil terms, streamed via proxy)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Classical Arabic tafsir served through the translation proxy. Tanzil terms require attribution and no modification. Displayed with full provenance (FR-030)."
+    },
+    {
+      "id": "source-tafsir-muyassar",
+      "subjectType": "source",
+      "subjectId": "tafsir-muyassar",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "license-verification-v1 (Tanzil terms, streamed via proxy)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Contemporary Arabic tafsir served through the translation proxy. Tanzil terms require attribution and no modification. Displayed with full provenance (FR-030)."
+    },
+    {
+      "id": "source-qul-word-data",
+      "subjectType": "source",
+      "subjectId": "qul-word-data",
+      "status": "editorial-approved",
+      "curator": "Al-Huda editorial seed",
+      "method": "license-verification-v1 (MIT, QUL repository verified)",
+      "reviewedAt": "2026-10-23",
+      "notes": "QUL by TarteelAI is MIT-licensed. The generator downloads word segmentation from the Quran.com API v4 and vendors per-surah JSON with a sha256 manifest."
+    },
+    {
+      "id": "source-semantic-embeddings",
+      "subjectType": "source",
+      "subjectId": "semantic-embeddings",
+      "status": "editorial-approved",
+      "curator": "Al-Huda editorial seed",
+      "method": "license-verification-v1 (Apache-2.0 model)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Xenova/all-MiniLM-L6-v2 is Apache-2.0. Embeddings are generated at build time from the built-in English translation and vendored as a float16 binary."
+    },
+    {
+      "id": "feature-audio-recitation",
+      "subjectType": "feature",
+      "subjectId": "audio-recitation",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "feature-review-v1 (streaming, off by default, provenance tracked)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Audio is streamed from the Islamic Network CDN; no files are bundled. Off by default. Reciter selector and source provenance are displayed. Awaiting a qualified reviewer to confirm the reciter selections are appropriate."
+    },
+    {
+      "id": "feature-parallel-translations",
+      "subjectType": "feature",
+      "subjectId": "parallel-translations",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "feature-review-v1 (on-demand loading, provenance tracked)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Primary translation plus up to three additional editions are shown side by side. Each edition is fetched on demand from Tanzil.net through the existing proxy. Tanzil terms require attribution and no modification. Awaiting a qualified reviewer to confirm the translation selections are appropriate."
+    },
+    {
+      "id": "feature-mushaf-metadata",
+      "subjectType": "feature",
+      "subjectId": "mushaf-metadata",
+      "status": "editorial-approved",
+      "curator": "Al-Huda editorial seed",
+      "method": "feature-review-v1 (generated from CC-BY source, counts verified)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Juz, page, hizb, ruku, manzil, and sajda boundaries are generated from Tanzil CC-BY quran-data.xml. The generator verifies expected counts before writing. Surfaced on the ayah detail page."
+    },
+    {
+      "id": "feature-tafsir-viewer",
+      "subjectType": "feature",
+      "subjectId": "tafsir-viewer",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "feature-review-v1 (classical Arabic tafsirs, collapsible, lazy-loaded)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Displays Tafsir al-Jalalayn and Tafsir al-Muyassar through the translation proxy. Collapsible and lazy-loaded to avoid loading roughly 3 MB on every ayah page. Full provenance displayed. Awaiting a qualified reviewer to confirm the tafsir selections are appropriate."
+    },
+    {
+      "id": "feature-word-by-word",
+      "subjectType": "feature",
+      "subjectId": "word-by-word",
+      "status": "editorial-approved",
+      "curator": "Al-Huda editorial seed",
+      "method": "feature-review-v1 (MIT-licensed QUL data, vendored with manifest)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Word segmentation, transliteration, and English gloss from QUL (MIT). Vendored as per-surah JSON with a sha256 manifest. The collapsible panel loads on demand."
+    },
+    {
+      "id": "feature-semantic-search",
+      "subjectType": "feature",
+      "subjectId": "semantic-search",
+      "status": "pending-scholarly-review",
+      "curator": "Al-Huda editorial seed",
+      "method": "feature-review-v1 (Apache-2.0 model, local embedding, provenance tracked)",
+      "reviewedAt": "2026-10-23",
+      "notes": "Semantic search uses MiniLM (Apache-2.0) to embed queries locally and compare them against precomputed embeddings. Nothing leaves the device. Experimental; results are not a substitute for lexical search or scholarly interpretation. Awaiting a qualified reviewer to confirm the model choice and usage guidance are appropriate."
+    }
+  ]
+}

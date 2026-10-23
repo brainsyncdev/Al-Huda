@@ -1,7 +1,7 @@
 "use client";
 
-// Reader preferences (FR-006): Arabic font size, translation visibility,
-// transliteration visibility. Persisted locally; no account needed.
+// Reader preferences (FR-006): Arabic font size, translation edition and
+// visibility, transliteration visibility. Persisted locally; no account needed.
 
 import {
   createContext,
@@ -11,6 +11,11 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import {
+  DEFAULT_TRANSLATION_ID,
+  getTranslation,
+} from "@/lib/quran/translations";
+import { DEFAULT_RECITER_ID, getReciter } from "@/lib/quran/audio";
 
 export type ArabicSize = "sm" | "md" | "lg" | "xl";
 export type LineHeight = "compact" | "normal" | "loose";
@@ -23,19 +28,38 @@ export interface Prefs {
   lineHeight: LineHeight;
   showTranslation: boolean;
   showTransliteration: boolean;
+  /** Active translation edition ID from the Tanzil catalog, e.g. "ur.jalandhry". */
+  translationId: string;
+  /** FR-054: show a per-ayah recitation player in the reader. */
+  showAudio: boolean;
+  /** Reciter edition id, e.g. "ar.alafasy". */
+  reciterId: string;
+  /** FR-033: show extra translations beneath the primary one. */
+  parallelMode: boolean;
+  /** FR-033: additional edition ids rendered alongside `translationId`. */
+  parallelTranslationIds: string[];
 }
+
+/** Maximum simultaneous translations in parallel mode (primary + 3). */
+export const MAX_PARALLEL_TRANSLATIONS = 3;
 
 export const DEFAULT_PREFS: Prefs = {
   arabicSize: "md",
   lineHeight: "normal",
   showTranslation: true,
   showTransliteration: false,
+  translationId: DEFAULT_TRANSLATION_ID,
+  showAudio: false,
+  reciterId: DEFAULT_RECITER_ID,
+  parallelMode: false,
+  parallelTranslationIds: [],
 };
 
 /**
  * Rebuild preferences from arbitrary parsed JSON (stored value or restored
  * backup). Unknown values fall back to the defaults instead of being passed
- * through — an arbitrary string must never reach a Tailwind class selector.
+ * through — an arbitrary string must never reach a Tailwind class selector, and
+ * an unknown translation ID must never reach the network loader.
  */
 export function normalizePrefs(raw: unknown): Prefs {
   if (typeof raw !== "object" || raw === null || Array.isArray(raw)) {
@@ -57,6 +81,35 @@ export function normalizePrefs(raw: unknown): Prefs {
       typeof parsed.showTransliteration === "boolean"
         ? parsed.showTransliteration
         : DEFAULT_PREFS.showTransliteration,
+    translationId:
+      typeof parsed.translationId === "string" &&
+      getTranslation(parsed.translationId) !== undefined
+        ? parsed.translationId
+        : DEFAULT_PREFS.translationId,
+    showAudio:
+      typeof parsed.showAudio === "boolean"
+        ? parsed.showAudio
+        : DEFAULT_PREFS.showAudio,
+    reciterId:
+      typeof parsed.reciterId === "string" && getReciter(parsed.reciterId)
+        ? parsed.reciterId
+        : DEFAULT_PREFS.reciterId,
+    parallelMode:
+      typeof parsed.parallelMode === "boolean"
+        ? parsed.parallelMode
+        : DEFAULT_PREFS.parallelMode,
+    // Filter to real catalog ids, drop the primary (it is already shown), and
+    // cap the count so a restored backup cannot render an unbounded column set.
+    parallelTranslationIds: Array.isArray(parsed.parallelTranslationIds)
+      ? parsed.parallelTranslationIds
+          .filter(
+            (id): id is string =>
+              typeof id === "string" &&
+              getTranslation(id) !== undefined &&
+              id !== parsed.translationId
+          )
+          .slice(0, MAX_PARALLEL_TRANSLATIONS)
+      : DEFAULT_PREFS.parallelTranslationIds,
   };
 }
 
@@ -67,6 +120,11 @@ interface PrefsContextValue extends Prefs {
   setLineHeight: (lh: LineHeight) => void;
   setShowTranslation: (show: boolean) => void;
   setShowTransliteration: (show: boolean) => void;
+  setTranslationId: (id: string) => void;
+  setShowAudio: (show: boolean) => void;
+  setReciterId: (id: string) => void;
+  setParallelMode: (on: boolean) => void;
+  toggleParallelTranslation: (id: string) => void;
   /** JSON-serializable snapshot for the shared backup export. */
   exportPrefs: () => Prefs;
   /** Replace stored preferences from a parsed backup section (FR-043). */
@@ -109,6 +167,38 @@ export function PrefsProvider({ children }: { children: ReactNode }) {
       setShowTranslation: (showTranslation) => persist({ ...prefs, showTranslation }),
       setShowTransliteration: (showTransliteration) =>
         persist({ ...prefs, showTransliteration }),
+      setTranslationId: (translationId) => {
+        // Ignore IDs that are not in the catalog: the loader and the source
+        // page would otherwise carry a value the app cannot resolve.
+        if (getTranslation(translationId)) {
+          persist({
+            ...prefs,
+            translationId,
+            // The new primary must not also appear as a parallel column.
+            parallelTranslationIds: prefs.parallelTranslationIds.filter(
+              (id) => id !== translationId
+            ),
+          });
+        }
+      },
+      setShowAudio: (showAudio) => persist({ ...prefs, showAudio }),
+      setReciterId: (reciterId) => {
+        if (getReciter(reciterId)) persist({ ...prefs, reciterId });
+      },
+      setParallelMode: (parallelMode) => persist({ ...prefs, parallelMode }),
+      toggleParallelTranslation: (id) => {
+        if (!getTranslation(id) || id === prefs.translationId) return;
+        const selected = prefs.parallelTranslationIds.includes(id);
+        if (!selected && prefs.parallelTranslationIds.length >= MAX_PARALLEL_TRANSLATIONS) {
+          return;
+        }
+        persist({
+          ...prefs,
+          parallelTranslationIds: selected
+            ? prefs.parallelTranslationIds.filter((x) => x !== id)
+            : [...prefs.parallelTranslationIds, id],
+        });
+      },
       exportPrefs: () => prefs,
       restorePrefs: (raw) => persist(normalizePrefs(raw)),
     };

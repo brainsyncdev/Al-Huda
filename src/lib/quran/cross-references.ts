@@ -78,6 +78,8 @@ function normalizeForIdentity(arabic: string): string {
 type CrossRefCache = {
   bySurah: Map<number, AyahRef[][]>;
   global: Map<string, AyahRef[]> | null;
+  /** Assembled output of crossSurahTextGroups(), memoized by reference. */
+  globalGroups: CrossSurahGroup[] | null;
 };
 
 const cache = (
@@ -85,6 +87,7 @@ const cache = (
 ).__alhudaCrossRefs ?? {
   bySurah: new Map<number, AyahRef[][]>(),
   global: null as Map<string, AyahRef[]> | null,
+  globalGroups: null as CrossSurahGroup[] | null,
 };
 (globalThis as unknown as { __alhudaCrossRefs?: CrossRefCache }).__alhudaCrossRefs =
   cache;
@@ -162,6 +165,8 @@ export interface CrossSurahGroup {
  * Do not call it from a per-ayah render path.
  */
 export function crossSurahTextGroups(): CrossSurahGroup[] {
+  if (cache.globalGroups) return cache.globalGroups;
+
   if (!cache.global) {
     const index = new Map<string, AyahRef[]>();
     for (const meta of getSurahIndex()) {
@@ -186,5 +191,6 @@ export function crossSurahTextGroups(): CrossSurahGroup[] {
     groups.push({ members, surahCount: surahIds.size });
   }
   groups.sort((a, b) => a.members[0].surah - b.members[0].surah);
+  cache.globalGroups = groups;
   return groups;
 }

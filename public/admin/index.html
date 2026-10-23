@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Al-Huda editorial</title>
+  </head>
+  <body>
+    <!--
+      Decap CMS entry point (FR-072/FR-073).
+
+      This build has no accounts, so there is no hosted identity provider to
+      authenticate editors. The supported path is the local backend:
+
+        npx decap-server
+
+      then open http://localhost:3000/admin/ and edit against the working tree.
+      Changes are ordinary file edits and go through code review like any other
+      commit. See docs/EDITORIAL.md for the full workflow.
+
+      The JSON review log (content/editorial/reviews.json) is the source of
+      truth; this UI is a convenience over it, not a second store.
+    -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>

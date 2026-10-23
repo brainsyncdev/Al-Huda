@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { quranJsonLd, websiteJsonLd } from "@/lib/seo/json-ld";
 import { ContinueReading } from "@/components/home/continue-reading";
 import { VerseOfDayDisplay } from "@/components/home/verse-of-day";
+import { LearningHub } from "@/components/home/learning-hub";
 import { getSurahIndex } from "@/lib/quran/data";
 import { TOPICS } from "@/lib/topics/data";
 import { SITE_NAME } from "@/lib/site";
@@ -53,7 +54,7 @@ export default function HomePage() {
             className="rise-in mt-4 text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg"
             style={{ animationDelay: "140ms" }}
           >
-            Uthmani text, a trusted English translation, stable references you
+            Uthmani text, translations in 100+ languages (default: Urdu — Jalandhry), stable references you
             can share, and calm search — no clutter, no streaks, nothing
             unattributed.
           </p>
@@ -80,6 +81,7 @@ export default function HomePage() {
 
         <div className="space-y-5">
           <ContinueReading />
+          <LearningHub />
 
           <section
             aria-labelledby="quick-sources-heading"

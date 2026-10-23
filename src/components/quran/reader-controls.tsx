@@ -8,6 +8,7 @@ import {
   type LineHeight,
 } from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
+import { TranslationSelector } from "./translation-selector";
 
 const SIZES: { value: ArabicSize; label: string }[] = [
   { value: "sm", label: "S" },
@@ -23,9 +24,9 @@ const LINE_HEIGHT_LABELS: { value: LineHeight; label: string }[] = [
 ];
 
 /**
- * Reader display controls (FR-006): Arabic text size, line spacing, reading
- * layout, and content visibility. All state is local-only and applied
- * immediately across the reader.
+ * Reader display controls (FR-006): translation edition selector, Arabic text
+ * size, line spacing, and content visibility. All state is local-only and
+ * applied immediately across the reader.
  */
 export function ReaderControls() {
   const {
@@ -41,6 +42,12 @@ export function ReaderControls() {
 
   return (
     <div className="flex flex-col gap-3 rounded-2xl border border-border/80 bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
+      <fieldset className="flex items-center gap-3">
+        <legend className="sr-only">Translation edition</legend>
+        <span className="text-xs font-medium text-muted-foreground">Translation</span>
+        <TranslationSelector compact />
+      </fieldset>
+
       <fieldset className="flex items-center gap-3">
         <legend className="sr-only">Arabic text size</legend>
         <CaseSensitive className="h-4 w-4 text-muted-foreground" aria-hidden />

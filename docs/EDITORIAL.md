@@ -4,6 +4,12 @@ Implements PRD §20 (Editorial Governance) and the editorial half of §8.8
 (FR-070 – FR-075). One person may hold several roles initially, but the
 responsibilities stay explicit.
 
+**Document control:** reconciled 2026-10-23 against the repository. This
+revision clarifies the Decap CMS scaffolding (local file editor, not an
+authenticated admin surface), records the latest validation script results, and
+reaffirms the outstanding gaps (no qualified reviewer, no per-event history,
+no configured report destination).
+
 ## Roles
 
 | Role | Responsibility in this build |
@@ -34,6 +40,47 @@ remains unmet (`src/lib/ai/feature-flag.ts`).
 The review board at `/editorial` (noindex, no accounts) renders steps 2, 5 and
 6 as they actually stand for every topic, together with dataset validation and
 the rights table from step 3.
+
+## Review log and Decap CMS (FR-072, FR-073)
+
+`content/editorial/reviews.json` is the typed review log for topics, sources,
+and features. Each entry records `subjectType`, `subjectId`, `status`,
+`curator`, `method`, `reviewedAt`, and free-text `notes`. The app imports it at
+build time through `src/lib/editorial/reviews.ts`, and `/editorial` renders it
+alongside the topic tables and the rights register.
+
+Generate or refresh it after changing topics or the source registry:
+
+```bash
+node scripts/build-editorial-log.mjs
+```
+
+The generator is the source of truth for topic entries; do not hand-add a
+topic review that the topic file does not contain. Source and feature entries
+live in the generator's tables so their notes stay next to the code they
+describe.
+
+### Decap CMS scaffolding
+
+Decap CMS is scaffolded at `public/admin/` (`index.html` + `config.yml`) and
+edits only `content/editorial/reviews.json`. Because the build has no accounts,
+use the local backend:
+
+```bash
+npx decap-server
+# then open http://localhost:3000/admin/
+```
+
+Edits made through the local backend are ordinary working-tree changes and go
+through code review like any commit. The `git-gateway` backend in `config.yml`
+is inert until a hosted identity provider exists; it is not a second source of
+truth.
+
+**Clarification:** Decap is a local file editor over a versioned JSON file. It
+is not an authenticated admin surface, it does not add server-side user data,
+and it does not contradict the "no accounts, no admin UI with write paths"
+architecture. It is a convenience for editing the review log without manually
+editing JSON; every change still requires a commit and code review.
 
 ## Correction process (PRD §20, FR-066)
 
@@ -80,14 +127,15 @@ afterwards:
 - `src/lib/quran/data.ts#validateDataset()` — the same structural scan served
   by `GET /api/validate-dataset` and rendered on `/editorial`.
 
-These scripts are artifacts of this release and have **not been executed in
-this environment** (verification deferred); that is recorded in
-`docs/PRD-CHECKLIST.md`.
+**Latest reported results:** `validate:quran` reported 114 surahs, 6,236 ayat,
+0 issues; `validate:licenses` reported 13 source records, 0 issues. These are
+structural and field-completeness checks, not rights determinations.
 
 ## What is deliberately absent
 
-- No editor accounts or admin UI with write paths — the build has no accounts
-  (AI_RULES), so publication state lives in code review, not in a CMS.
+- No editor accounts or authenticated admin UI — the build has no accounts
+  (AI_RULES), so publication state lives in code review, not in a CMS. The
+  Decap scaffolding is a local file editor, not an authenticated surface.
 - Per-relation review records exist in the schema but not in the data:
   `TopicRelation.provenance` is an optional override that, when present,
   replaces the topic-level record for that one relation (read via

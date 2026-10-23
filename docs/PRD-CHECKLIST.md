@@ -1,285 +1,383 @@
 # PRD v3.0 Implementation Checklist
 
-This document tracks the implementation status of every requirement in
-`docs/PRD.md` (v3.0). Statuses are honest about verification: this environment
-has no shell tool, so **no `tsc`, `vitest`, `next build`, or lint command has
-been executed**. "Implemented" means the code is present and structurally
-coherent on static inspection; "Verified" would mean a test or typecheck has
-run — and that is deferred to the final release phase per the user's directive.
+**Document control:** reconciled 2026-10-23 against the repository. This
+revision supersedes the earlier text that claimed no typecheck, test, build, or
+validation command had been executed.
 
-**FR numbers are taken verbatim from the PRD.** The PRD has gaps (no FR-009,
-no FR-045–049, no FR-055–059, no FR-067–069). Rows are not invented to fill
-those gaps.
+This document tracks every requirement in `docs/PRD.md` (v3.0). FR numbers are
+taken verbatim from the PRD. The PRD has gaps (no FR-009, no FR-045-049, no
+FR-055-059, no FR-067-069); rows are not invented to fill them.
+
+## Verification basis
+
+The latest audit reported the results below. They are recorded as **reported
+results**, not re-executed during this documentation pass.
+
+| Check | Reported result |
+| --- | --- |
+| `npm run typecheck` (`tsc --noEmit`) | Clean |
+| `npm test` (`vitest run`) | 188 tests in 11 files, all passing |
+| `npm run build` (`next build`) | Exit 0, compiled successfully |
+| `npm run validate:quran` | 114 surahs, 6,236 ayat, 0 issues |
+| `npm run validate:licenses` | 13 source records, 0 issues |
+
+These results establish that the current tree typechecks, the unit suite
+passes, a production build completes, and the two data validators report no
+issues. They do **not** establish production readiness, licensing clearance,
+scholarly approval, accessibility conformance, Core Web Vitals, rendered
+Open Graph/Twitter output, end-to-end journey correctness, or that every PRD
+requirement is satisfied. No lint result, Lighthouse run, Playwright/Cypress
+suite, automated axe audit, or SEO test is recorded.
+
+> **A passing validator is not permission.** `validate:licenses` checks the
+> fields the rights register requires; it cannot grant rights. Audio
+> recordings, the Tanzil translation catalog, and in-app tafsir text remain
+> subject to legal/licensing review. See `docs/DATA-PROVENANCE.md`.
 
 ## Status legend
 
 | Code | Meaning |
-|---|---|
-| ✅ COMPLETE | Code, behavior, tests (where applicable), and integration are in place. Static inspection shows coherence. |
-| 🟡 PARTIAL | Some behavior is present, but a piece is missing, deferred, or blocked. |
-| 🔴 NOT IMPLEMENTED | No code exists for this requirement yet. |
-| 🚫 BLOCKED | Requirement cannot be implemented without an external dependency, license, or authority that is not available. Reason recorded. |
-| ⏸️ DEFERRED | Explicitly out of scope for this release per PRD or AI_RULES (e.g. analytics, accounts). |
-| ❓ UNVERIFIED | Implemented in code, but no typecheck/test/build has run. |
-
-Verification column: **static** = code reviewed by reading; **tests** = unit/integration tests exist; **runtime** = would need a running server. Until the deferred testing phase runs, every row is at best `static`.
+| --- | --- |
+| COMPLETE | Code, behavior, integration, and the stated verification basis are in place. |
+| PARTIAL | Some behavior exists, but a named piece is missing, unverified, or blocked. |
+| NOT IMPLEMENTED | No code exists for this requirement. |
+| BLOCKED | Cannot be completed without an external dependency, licence, authority, or architectural change. |
+| DEFERRED | Explicitly out of scope per the PRD or AI_RULES. |
+| UNVERIFIED | Implemented in code, but no measurement or rendered-output check exists. |
 
 ---
 
-## Section 1–3: Vision, problem, users
+## Sections 1-3: Vision, problem, users
 
 | Persona / journey | Route(s) | Status |
-|---|---|---|
-| Casual reader | `/`, `/quran`, `/ayah/:s/:a` | ✅ COMPLETE (static) |
-| Serious student | `/topics`, `/topics/:slug`, `/sources` | ✅ COMPLETE (static) |
-| Searcher | `/search` | ✅ COMPLETE (static) — FR-012/013/015 wired |
-| Hifz learner | `/learn/revision` | ✅ COMPLETE (static) — FR-050–053; linked from both navs and the ayah card |
-| Researcher / developer | `/api/v1/...`, JSON-LD | ✅ COMPLETE (static) — 10 v1 route files + `src/lib/api/v1.ts`; JSON-LD on home/index/surah/ayah/topic/sources |
+| --- | --- | --- |
+| Casual reader | `/`, `/quran`, `/ayah/:s/:a` | COMPLETE |
+| Serious student | `/topics`, `/topics/:slug`, `/sources` | COMPLETE |
+| Searcher | `/search` | COMPLETE - lexical and opt-in semantic paths |
+| Hifz learner | `/learn/revision` | COMPLETE - FR-050-053 |
+| Researcher / developer | `/api/v1/...`, JSON-LD | COMPLETE (static route inventory) |
 
-## Section 4: Personas (coverage check)
+## Section 4: Personas
 
 | Persona | Served by | Status |
-|---|---|---|
-| 1. New Muslim / curious | Home, search, topic landing | ✅ COMPLETE |
-| 2. Regular reader | Quran reader, library, settings | ✅ COMPLETE |
-| 3. Student / teacher | Topics, cross-refs, sources | ✅ COMPLETE (cross-refs implemented) |
-| 4. Hifz learner | Revision workflow | ✅ COMPLETE (static) |
-| 5. Non-Arabic reader | Translation + transliteration | ✅ COMPLETE (one edition) |
-| 6. Researcher / developer | Public JSON API, JSON-LD | ✅ COMPLETE (static) |
+| --- | --- | --- |
+| 1. New Muslim / curious | Home, search, topic landing | COMPLETE |
+| 2. Regular reader | Quran reader, library, settings | COMPLETE |
+| 3. Student / teacher | Topics, cross-refs, sources, tafsir viewer | COMPLETE |
+| 4. Hifz learner | Revision workflow | COMPLETE |
+| 5. Non-Arabic reader | 100+ translations, transliteration, word-by-word | COMPLETE (licensing review outstanding) |
+| 6. Researcher / developer | Public JSON API, JSON-LD | COMPLETE (static route inventory) |
 
 ## Section 5: MVP scope (Release 1.0)
 
 | Requirement | Status | Notes |
-|---|---|---|
-| Quran text display (Arabic, translation, transliteration) | ✅ COMPLETE | Verbatim from pinned dataset |
-| Surah / ayah navigation | ✅ COMPLETE | `/quran`, `/ayah/:s/:a` |
-| Search (reference, Arabic, translation, transliteration, surah name) | ✅ COMPLETE | FR-013 snippets, FR-015 match reasons wired |
-| Topics with curated ayat | ✅ COMPLETE | 11 topics, FR-020 language stamped |
-| Library (bookmarks, notes, tags, progress) | ✅ COMPLETE | Local-first, FR-044 warning added |
-| Settings (reader prefs) | ✅ COMPLETE | FR-044 warning added |
-| Sources / provenance page | ✅ COMPLETE | `/sources` |
-| Privacy / terms / accessibility | ✅ COMPLETE | All three pages exist |
-| Audio recitation | 🚫 BLOCKED | Rights unverified; PRD §23 rec 8 defers |
-| Second English translation | 🚫 BLOCKED | FR-033; no dataset with verified redistribution rights |
-| Tafsir excerpts | 🟡 PARTIAL | Source record exists; link-out only, no tafsir corpus bundled |
-| Word-by-word Arabic / roots | 🚫 BLOCKED | No verified morphology dataset |
+| --- | --- | --- |
+| Quran text display | COMPLETE | Arabic and built-in English verbatim from `quran-json@3.1.2`; selected Tanzil edition loads on demand with built-in English fallback while loading |
+| Surah / ayah navigation | COMPLETE | `/quran`, `/ayah/:s/:a` |
+| Search | COMPLETE | Indexes Arabic and the built-in English translation; the selected runtime translation is not indexed |
+| Topics with curated ayat | COMPLETE | 11 topics, provenance-stamped, `pending-scholarly-review` |
+| Library | COMPLETE | Local-first |
+| Settings | COMPLETE | Includes translation, audio, and parallel-translation controls |
+| Sources / provenance page | COMPLETE | `/sources` |
+| Privacy / terms / accessibility | COMPLETE | Pages exist; no automated a11y audit recorded |
+| Audio recitation | PARTIAL | Streaming implemented; recording rights not established |
+| Additional translations | PARTIAL | 100+ Tanzil editions via runtime proxy; per-edition licensing not individually verified |
+| Tafsir excerpts | COMPLETE | Two Arabic tafsirs readable in-app via proxy; two English tafsirs link-out only; licensing review outstanding |
+| Word-by-word | COMPLETE | QUL (MIT) word data vendored; roots not provided |
+| Mushaf metadata (FR-008) | COMPLETE | Tanzil CC-BY boundaries verified at build time |
+| Cross-references | COMPLETE | Dataset-derived ayah-to-ayah |
+| Topic graph (FR-025) | COMPLETE | SVG with keyboard-focusable nodes |
 
-## Functional requirements (FR-001 … FR-075)
+## Section 6: Information Architecture
+
+| Route | Status |
+| --- | --- |
+| `/`, `/quran`, `/ayah/:s/:a` | COMPLETE |
+| `/topics`, `/topics/:slug` | COMPLETE |
+| `/search` | COMPLETE |
+| `/sources`, `/editorial`, `/report` | COMPLETE |
+| `/library`, `/learn/revision`, `/settings` | COMPLETE |
+| `/admin` (Decap) | PARTIAL — scaffolded, local backend only |
+
+## Section 7: Core User Journeys
+
+| Journey | Status |
+| --- | --- |
+| A — Read an ayah | COMPLETE |
+| B — Explore a topic | COMPLETE |
+| C — Ask a question | BLOCKED — AI feature off |
+| D — Save and revisit | COMPLETE (local-only) |
+| E — Memorization/revision | COMPLETE |
+
+## Section 8: Functional Requirements
 
 ### 8.1 Quran reader
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-001 (P0) | Display Surah index with Arabic name, transliteration/English label where available, verse count, and revelation metadata only when verified. | ✅ COMPLETE | `/quran` index page; metadata from pinned dataset |
-| FR-002 (P0) | Display all available ayat in canonical order. | ✅ COMPLETE | Surah page renders all ayat in order |
-| FR-003 (P0) | Support navigation by Surah and ayah number. | ✅ COMPLETE | `/quran`, `/ayah/:s/:a`, prev/next links |
-| FR-004 (P0) | Display selected translation and edition/source label. | ✅ COMPLETE | Saheeh International credited on every ayah card, the source panel, and (this pass) the home-page verse-of-day card, which previously rendered a translation with no edition label. The label is read from the payload's `contentProvenance()` block rather than hardcoded, so it cannot drift from `sources.ts`; `/api/verse-of-day` now attaches that block |
-| FR-005 (P0) | Provide copy/share link to stable ayah reference. | ✅ COMPLETE | Copy link button on ayah card, `absoluteUrl` helper |
-| FR-006 (P1) | Allow font size, line spacing, and reading layout preferences. | ✅ COMPLETE | Settings page: arabicSize, lineHeight, showTranslation, showTransliteration |
-| FR-007 (P1) | Support continuous reading and next/previous Surah navigation. | ✅ COMPLETE | Surah page renders all ayat; prev/next surah links |
-| FR-008 (P1) | Provide juz/page metadata only if validated against the chosen mushaf dataset. | 🟡 PARTIAL | Juz number shown (canonical Hafs scheme), but `juz.ts` header says it hasn't been verified against a specific printed Mushaf; page metadata is marked approximate and not rendered |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-001 | COMPLETE | |
+| FR-002 | COMPLETE | |
+| FR-003 | COMPLETE | |
+| FR-004 | COMPLETE | Built-in English + 100+ Tanzil editions on demand |
+| FR-005 | COMPLETE | |
+| FR-006 | COMPLETE | |
+| FR-007 | COMPLETE | |
+| FR-008 | COMPLETE | Tanzil CC-BY boundaries, build-time verified |
 
 ### 8.2 Search and discovery
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-010 (P0) | Search by exact reference (e.g. 2:255). | ✅ COMPLETE | `parseReference` in `search.ts` |
-| FR-011 (P0) | Search Arabic and translation text using normalized indexing. | ✅ COMPLETE | `normalizeArabic`, `normalizeLatin`, `searchQuran` |
-| FR-012 (P1) | Filter results by Surah, translation edition, topic, or content type. | 🟡 PARTIAL | Surah, revelation type, Juz, curated topic implemented; edition filter blocked on FR-033 |
-| FR-013 (P1) | Show snippets with highlighted terms while preserving readable Arabic. | ✅ COMPLETE | `findSnippetRange` + `<mark>` in `ayah-card.tsx` |
-| FR-014 (P2) | Natural-language semantic retrieval across approved content. | 🟡 PARTIAL | Every part achievable without new infrastructure is implemented and wired into `/search` and `GET /api/v1/search`: query normalization (Arabic diacritic folding, Latin punctuation folding), lexical relevance scoring (whole-word occurrences outrank substring echoes; translation outranks transliteration; canonical mushaf order breaks ties), a full-corpus scan before truncation so ranking sees every candidate, bounded curated topic-term expansion, and per-hit explanations through FR-015. The expansion is labeled "Curated theme match" and the page copy states it is lexical, not semantic. Embedding-based semantic retrieval stays blocked: no embedding model, vector index, or authorized external AI service exists in this local-only architecture, and introducing one needs both new infrastructure and explicit authorization |
-| FR-015 (P2) | Show why a result matched (exact phrase, translation term, curated theme, or semantic similarity). | ✅ COMPLETE | `MatchReason` + `REASON_LABELS` + chip with `aria-describedby` |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-010 | COMPLETE | |
+| FR-011 | COMPLETE | Arabic + built-in English indexed; runtime translation not indexed |
+| FR-012 | COMPLETE | Surah/topic/juz/revelation filters on default search; translation-edition search implemented as a separate mode (`/search?edition=<id>`) rather than a filter on default results |
+| FR-013 | COMPLETE | Snippet highlighting for built-in English only |
+| FR-014 | PARTIAL | Lexical ranking is default; embedding search is a separate opt-in mode; English-only |
+| FR-015 | COMPLETE | |
 
-### 8.3 Topic system and knowledge graph
+### 8.3 Topic system
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-020 (P0) | Support curated topics with stable slug, title, description, language, and editorial status. | ✅ COMPLETE | `Topic` interface + `LANGUAGE_LABELS` display |
-| FR-021 (P0) | Link topics to ayat through typed relationships. | ✅ COMPLETE | `TopicRelation` with type, rationale, provenance |
-| FR-022 (P0) | Record who/what created the relationship, source, review status, and last-reviewed date. | ✅ COMPLETE | `ProvenanceRecord` (method, curator, reviewedAt, status) is stamped on the topic and optionally overridden per relation via `TopicRelation.provenance`; `relationProvenance(relation, topic)` resolves the effective record and every verse card displays it with its scope stated ("this relation" vs "inherited from topic"), so topic-level status is never mistaken for an individual review. No shipped relation carries an override yet, so all 56 inherit — said on the topic page and counted on `/editorial` |
-| FR-023 (P1) | Support related topics and ayah-to-ayah cross-references. | ✅ COMPLETE | `topic.related` + `cross-references.ts` (dataset-derived) |
-| FR-024 (P1) | Provide an accessible list view even if a graph visualization exists. | ✅ COMPLETE | `LexicalMatchGroupsPanel` (ordered links, no canvas) |
-| FR-025 (P2) | Interactive graph visualization with keyboard-accessible alternatives. | ✅ COMPLETE | `TopicGraph` component (`src/components/topics/topic-graph.tsx`) renders an SVG with focusable `<a>` nodes per topic and keyboard-navigable links; list view below remains the accessible alternative for FR-024 |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-020 | COMPLETE | |
+| FR-021 | COMPLETE | |
+| FR-022 | COMPLETE | Provenance record per topic; per-relation override available but unused |
+| FR-023 | COMPLETE | |
+| FR-024 | COMPLETE | |
+| FR-025 | COMPLETE | |
 
 ### 8.4 Tafsir and source presentation
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-030 (P0) | Show author/work/edition/language for tafsir. | ✅ COMPLETE | `tafsir-links.tsx` renders author/work/edition **and** `Language:` per record via `sourceLanguageLabel()`; both tafsir catalog records carry `language: "en"`. Also surfaced on `/sources` and `/editorial` this session. Correction: this row previously read "language not displayed separately" — that was wrong, the reader's tafsir links already displayed it, so the status was already met on the surface FR-030 governs |
-| FR-031 (P0) | Distinguish full text, excerpt, summary, and link to external source. | ✅ COMPLETE | `TafsirLinks` is link-out only, explicitly labeled FR-031 |
-| FR-032 (P0) | Track licensing and permitted display/use per source. | ✅ COMPLETE | `SourceRecord.license` + notes; `DATA-PROVENANCE.md` |
-| FR-033 (P1) | Compare multiple translations side-by-side. | 🚫 BLOCKED | No second translation with verified redistribution rights |
-| FR-034 (P1) | Provide source details and editorial methodology. | ✅ COMPLETE | `/sources` includes a comprehensive "Editorial methodology" section (workflow, source/license registration, topic curation, review/publication policy, correction reporting, rollback, AI boundaries). `docs/EDITORIAL.md` also expanded. |
-| FR-035 (P2) | Add tafsir search across works where rights and data quality permit. | 🚫 BLOCKED | No tafsir corpus bundled |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-030 | COMPLETE | |
+| FR-031 | COMPLETE | |
+| FR-032 | COMPLETE | Rights register in sources.ts |
+| FR-033 | PARTIAL | 100+ editions via Tanzil proxy; per-edition licensing not individually verified |
+| FR-034 | COMPLETE | |
+| FR-035 | COMPLETE | Merged search across al-Jalalayn and al-Muyassar (`/search?mode=tafsir`, `/api/v1/search/tafsir`); hits labeled with edition |
 
 ### 8.5 User library
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-040 (P0) | Allow authenticated users to bookmark ayat. | 🚫 BLOCKED | No-accounts architecture; FR-044 is the sanctioned substitute |
-| FR-041 (P1) | Allow private notes and tags. | ✅ COMPLETE | Ayah-card note editor, tags normalized |
-| FR-042 (P1) | Sync library across devices. | 🚫 BLOCKED | Requires accounts + DB; excluded by AI_RULES |
-| FR-043 (P1) | Export and delete personal data. | ✅ COMPLETE | Shared v2 envelope in `src/lib/backup.ts` carries library + revision plan + preferences; import validates and replaces; erase clears all three (static) |
-| FR-044 (P2) | Local-only anonymous library, if implemented with transparent persistence limits. | ✅ COMPLETE | `LibraryProvider` + FR-044 warnings in Library and Settings pages |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-040 | PARTIAL | Bookmarking works locally; the requirement says "authenticated users", and this build has no accounts. FR-044 is the deliberate local-only substitute |
+| FR-041 | COMPLETE | |
+| FR-042 | BLOCKED | No sync by design (no accounts, no server store) |
+| FR-043 | COMPLETE | Backup envelope v4 |
+| FR-044 | COMPLETE | Local-only is the architecture, not an alternative |
 
 ### 8.6 Learning and memorization
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-050 (P1) | Let users select a revision range. | ✅ COMPLETE | `expandRange` (bounded by real verse counts, 200 cap) + `AddVerses` + single-ayah action on `AyahCard` |
-| FR-051 (P1) | Record review events and self-rated recall. | ✅ COMPLETE | `ReviewEvent` audit log, `DueQueue` active-recall flow, capped storage log |
-| FR-052 (P1) | Schedule reviews using a configurable spaced-repetition algorithm. | ✅ COMPLETE | Three ladders stored per item; `scheduling.test.ts` exists (not run) |
-| FR-053 (P1) | Provide a no-streak / no-shame progress interface. | ✅ COMPLETE | `statsFor()` has no streak field; test asserts absence; copy states no score/comparison |
-| FR-054 (P2) | Audio-assisted review if licensed assets and playback UX are ready. | 🚫 BLOCKED | Audio rights unverified; PRD §23 rec 8 defers |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-050 | COMPLETE | |
+| FR-051 | COMPLETE | |
+| FR-052 | COMPLETE | |
+| FR-053 | COMPLETE | |
+| FR-054 | PARTIAL | Streaming implemented; recording rights not established |
 
 ### 8.7 AI assistant
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-060 (P2) | Retrieve only from approved, versioned source material. | 🟡 PARTIAL | Allowlist derived from `method === "package"` (`src/lib/ai/approved-sources.ts`); no retrieval feature exists yet to exercise it; feature flag off |
-| FR-061 (P2) | Return citations with each factual Quranic or scholarly claim. | 🟡 PARTIAL | Claim-level citation assembly in `grounding.ts` with reference resolution; never exercised in product (flag off); evaluation run not executed |
-| FR-062 (P2) | Separate retrieved quotations from generated summaries. | 🟡 PARTIAL | Quote vs summary segment types enforced structurally in `respond()`; no live answers to separate |
-| FR-063 (P2) | Abstain when retrieval is insufficient. | 🟡 PARTIAL | Abstention paths implemented (empty retrieval, failed validation, non-authority, high-risk) behind an off flag |
-| FR-064 (P2) | Avoid presenting personal opinions or generated content as Quran, hadith, tafsir, fatwa, or scholarly consensus. | ✅ COMPLETE | Non-authority kinds refuse before retrieval; no AI answer feature renders content |
-| FR-065 (P2) | Log source IDs and model/version metadata for quality audits, subject to privacy policy. | 🟡 PARTIAL | `src/lib/ai/audit.ts`: no user/prompt/question fields by construction, bounded process-local ring, `featureEnabled: false`. Retention policy is now stated in one exported constant (`AUDIT_RETENTION`: process memory only, 200-record bound, never persisted, cleared on process exit) so the privacy gate has something concrete to review. The gate itself stays unmet — a privacy review must be performed by a person, not inferred from the existence of a constant |
-| FR-066 (P2) | Provide user feedback/reporting for inaccurate or inappropriate answers. | 🟡 PARTIAL | `/report` form built (category, reference, validation, clipboard/download) and linked from the footer; delivery destination configurable via `NEXT_PUBLIC_REPORT_EMAIL` (mailto) with file download; **no destination configured by default** — remains a release-blocker until an operator sets one (mechanics implemented) |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-060 | PARTIAL | Allowlist and refusal path implemented in code; runtime disabled. Allowlist derives from `method === "package"`, which now also admits word data and mushaf metadata — not all package records are prose sources |
+| FR-061 | PARTIAL | Claim-level citation checks implemented and unit-tested; never exercised against a live model |
+| FR-062 | PARTIAL | Quotation/summary separation implemented; unverified end-to-end |
+| FR-063 | PARTIAL | High-risk and insufficient-evidence abstention implemented; unverified |
+| FR-064 | PARTIAL | Non-authority claims (hadith, tafsir, ruling, consensus) refused before retrieval |
+| FR-065 | PARTIAL | `AUDIT_RETENTION` defined; audit records contain no user, prompt, or question field. Privacy review gate unmet |
+| FR-066 | PARTIAL | `/report` intake exists; no delivery destination configured; no AI answer to report because the feature is off |
+
+`AI_ANSWER_FEATURE_ENABLED = false as const` in `src/lib/ai/feature-flag.ts`. No
+`/api/ai/ask` route exists. All seven gates are declared; only
+`source-registry` is `met: true`. The six unmet gates are
+`evaluation-dataset`, `citation-coverage`, `abstention-rate`,
+`hallucination-zero`, `privacy-review`, and `editorial-reviewer`.
 
 ### 8.8 Editorial/admin tooling
 
-| FR | Requirement (verbatim from PRD) | Status | Notes |
-|---|---|---|---|
-| FR-070 (P0) | Import datasets with schema validation and duplicate detection. | 🟡 PARTIAL | Ingestion is by package pin (documented in `docs/EDITORIAL.md`); `scripts/validate-quran-data.mjs` implements schema + duplicate (surah id, slug, verse id) + ordering + declared-vs-actual count + 6236-regression gates, and `scripts/validate-source-licenses.mjs` gates the rights register — both now npm-wired as `pnpm validate:quran` / `pnpm validate:licenses`, and **neither executed in this environment**; no free-form importer by design |
-| FR-071 (P0) | Keep immutable source/version metadata for Quran text and translations. | ✅ COMPLETE | `SourceRecord` + `DATA-PROVENANCE.md` rejection table |
-| FR-072 (P0) | Review and approve topic-to-ayah mappings before public publication. | 🟡 PARTIAL | `/editorial` review board renders status, unresolved refs, curator and dates; approval itself happens in code review — no authenticated workflow exists (no accounts) |
-| FR-073 (P1) | Track changes, reviewers, and publication state. | 🟡 PARTIAL | Optional `provenance` on `TopicRelation` with inheritance helper (`relationProvenance`) and effective provenance displayed on topic pages; `/editorial` shows per-relation count (0 individually reviewed in this release). No per-relation change history / reviewer audit trail (documented gap in `docs/EDITORIAL.md`) |
-| FR-074 (P1) | Roll back an incorrect topic mapping or dataset release. | 🟡 PARTIAL | Procedures documented (`docs/EDITORIAL.md`: git revert / re-pin package + validation); no rollback has been exercised |
-| FR-075 (P1) | Display content rights and source status to editors. | ✅ COMPLETE | Rights table on `/sources` (public) and `/editorial` (per-source licence, version, delivery, language, allowlist state) + `scripts/validate-source-licenses.mjs`. `sourceVersionLabel()` now prefixes "v" only for numbered releases: five of six catalog records carry prose pin descriptions ("As pinned by quran-json@3.1.2", "Link target, not version-pinned in this app") that previously rendered as "vAs pinned by…" — a wrong provenance statement on both pages whose job is stating provenance |
+| FR | Status | Notes |
+| --- | --- | --- |
+| FR-070 | COMPLETE | Package pin + validation scripts; reported 114/6,236/0 |
+| FR-071 | PARTIAL | Version string and structural scan; no byte-level checksum baseline |
+| FR-072 | PARTIAL | Workflow and review log exist; no qualified reviewer, so nothing can be approved |
+| FR-073 | PARTIAL | Current publication state, curator, and review date are recorded; per-event who-changed-what history is not (git is the audit trail) |
+| FR-074 | COMPLETE | Revert commit / re-pin package, documented |
+| FR-075 | COMPLETE | Rights register displayed on `/sources` and `/editorial` |
 
-## Section 9: Relationship model
+## Section 9: Content and provenance model
 
-| Entity | Status | Notes |
-|---|---|---|
-| `AyahRef` | ✅ COMPLETE | `{ surah, ayah }` typed |
-| `TopicRelation` | ✅ COMPLETE | Typed, rationale, provenance |
-| `CrossReference` | ✅ COMPLETE | Dataset-derived in `cross-references.ts` |
-| `SourceRecord` | ✅ COMPLETE | `src/lib/quran/sources.ts` |
-| `RevisionItem / ReviewEvent` | ✅ COMPLETE | `src/lib/revision/scheduling.ts` + validated storage in `src/lib/revision/storage.ts` |
+Core entities are present in typed form (`src/lib/quran/types.ts`,
+`src/lib/topics/data.ts`, `src/lib/quran/sources.ts`). Relationship types are
+typed. The validation gates in §9 are implemented as structural checks; gate 4
+("compare sampled passages against a trusted reference") and gate 5 ("verify
+translation edition and license") have no recorded human sign-off.
 
-## Section 10–11: Privacy, accessibility
+## Section 10: AI and religious-content safety
 
-| Requirement | Status | Notes |
-|---|---|---|
-| No account, no server user data | ✅ COMPLETE | |
-| No analytics | ✅ COMPLETE | PRD §18 deliberately not implemented |
-| Local-only with transparent limits | ✅ COMPLETE | FR-044 warnings; backup copy names both stores |
-| Colour never alone for meaning | ✅ COMPLETE | Match-reason chip uses text + weight + underline |
-| `lang` / `dir` on Arabic | ✅ COMPLETE | `lang="ar" dir="rtl"` on Arabic paragraphs |
-| `aria-label`, `aria-pressed`, `aria-describedby` | ✅ COMPLETE | AyahCard, bookmark button, match-reason chip |
-| Skip-to-content link | ✅ COMPLETE | First focusable element in `src/app/layout.tsx`, visually hidden until focused, targeting the `#main-content` landmark on `<main>` |
-| `/accessibility` page | ✅ COMPLETE | Feedback section now points at `/report` |
+Implemented as code paths and unit tests, with the public feature off. See
+`docs/AI-SAFETY.md` for the gate-by-gate status.
 
-## Section 12–13: UX, responsive, error handling
+## Section 11: UX and visual design
 
-| Requirement | Status | Notes |
-|---|---|---|
-| Mobile-first responsive | ✅ COMPLETE | Tailwind breakpoints throughout |
-| 404 page | ✅ COMPLETE | `src/app/not-found.tsx` |
-| Error page | ✅ COMPLETE | `src/app/error.tsx` |
-| Loading states | ✅ COMPLETE | Suspense boundaries in search, library |
-| Empty states | ✅ COMPLETE | Library, search, revision queue |
+| Requirement | Status |
+| --- | --- |
+| RTL, typography, reduced motion | COMPLETE in code |
+| Keyboard navigation, focus, landmarks | COMPLETE in code; no automated axe audit recorded |
+| Non-color status indicators | COMPLETE |
+| Empty/loading/offline/error/not-found states | COMPLETE |
+| WCAG 2.2 AA conformance | UNVERIFIED — no audit performed |
 
-## Section 14: Public read-only API
+## Section 12: Technical architecture
 
-Files are on disk: `src/lib/api/v1.ts` plus 10 route handlers under
-`src/app/api/v1/`. The shared module (envelope, error format, validation,
-pagination, rate limiting) was read in full this session; individual route
-handlers were **not** re-read here, so rows below record file presence plus
-static inspection of the shared plumbing rather than a per-route review.
+Deliberate deviations from the recommended stack, all documented:
 
-| Endpoint | Status | Notes |
-|---|---|---|
-| `GET /api/v1` (service index) | ✅ COMPLETE (static) | File present; rate-limited envelope from `guarded()` |
-| `GET /api/v1/surahs` | ✅ COMPLETE (static) | File present |
-| `GET /api/v1/surahs/:surahNumber` | ✅ COMPLETE (static) | File present |
-| `GET /api/v1/ayahs/:surahNumber/:ayahNumber` | ✅ COMPLETE (static) | File present; also the endpoint the revision reveal step consumes |
-| `GET /api/v1/search?q=...&limit=...&offset=...&language=...` | ✅ COMPLETE (static) | File present |
-| `GET /api/v1/topics` | ✅ COMPLETE (static) | File present |
-| `GET /api/v1/topics/:slug` | ✅ COMPLETE (static) | File present |
-| `GET /api/v1/topics/:slug/ayahs` | ✅ COMPLETE (static) | File present |
-| `GET /api/v1/ayahs/:surahNumber/:ayahNumber/tafsir` | ✅ COMPLETE (static) | File present; must return honest "link-out only" response |
-| `GET /api/v1/sources` | ✅ COMPLETE (static) | File present |
-| `GET /api/verse-of-day` (unversioned) | ✅ COMPLETE (static) | Feeds the home-page verse card; deliberately outside the v1 surface, so it keeps its own envelope but now attaches `contentProvenance()` — it must not be the one public Quran payload without edition attribution |
-| `GET /api/validate-dataset` (unversioned) | ✅ COMPLETE (static) | Structural health check documented in `docs/EDITORIAL.md`; divergent `{ success, ... }` envelope and HTTP 500-on-issues by design, because it is a diagnostic rather than a content API. No in-app consumer — `/editorial` calls `validateDataset()` directly — so it exists for operators/monitoring |
-| Authenticated endpoints (`/api/library/*`, `/api/ai/ask`) | 🚫 BLOCKED | No-accounts architecture; excluded by AI_RULES |
-| Cross-reference / graph data endpoint | ⏸️ DEFERRED | Deliberate (availability risk noted in PRD §14); FR-024 satisfied by the HTML list view |
+| PRD recommendation | Actual | Reason |
+| --- | --- | --- |
+| PostgreSQL / relational database | None; static data + localStorage | Local-first, no accounts |
+| Authentication solution | None | No accounts by design |
+| Server-side data access for public content | Server components + static JSON | Compliant |
+| Dedicated search service | In-memory lexical index + client-side embeddings | Scale not reached |
+| Runtime schema validation at import | Build-time validators | No runtime import path |
+| Error tracking / observability | None | No analytics or telemetry by design |
 
-API requirements from §14 (via `src/lib/api/v1.ts`, read this session):
-- ✅ Stable response schemas and explicit versioning (`version` on every success payload)
-- ✅ Pagination with `limit`/`offset` and honest `truncated` instead of an invented `total`
-- ✅ Input validation and bounded query sizes (`boundedInt`, length-capped search)
-- ✅ Consistent error format `{ error: { code, message, hint? } }` via `apiError()`
-- 🟡 Rate limits — best-effort per-process brake only, documented as a deployment requirement (CDN/edge) in the module header
-- ✅ No sensitive personal data in public endpoints (localStorage has no server representation)
-- ✅ Quran references validated against canonical records (`boundedInt` + dataset bounds)
+## Sections 13-15: Structure, API surface, SEO
 
-## Section 15: SEO / structured data
+- Repository structure follows §13.
+- `/api/v1/*` is implemented with a documented static route inventory;
+  authenticated endpoints from §14 do not exist because there are no accounts.
+  `/api/ai/ask` does not exist.
+- JSON-LD, sitemap, robots, canonical URLs, and per-route noindex are
+  implemented. Rendered Open Graph/Twitter output is unverified.
 
-| Requirement | Status | Notes |
-|---|---|---|
-| `generateMetadata` / `metadata` on content routes | ✅ COMPLETE (static) | Exported on every page route (client pages get it from their `layout.tsx`, e.g. `/report`); canonical `alternates` verified on `/`, `/quran`, surah, ayah, topics, sources, search, about, privacy, terms, accessibility |
-| `sitemap.ts` | ✅ COMPLETE | Home, surah index, 114 surah pages, topics index, 11 topic pages, about, sources, privacy, terms, accessibility. `/search` is deliberately absent (noindexed internal state), and the 6,236 ayah pages are not enumerated exhaustively — surfaced via surah/topic links instead, as the file's comment records |
-| `robots.ts` | ✅ COMPLETE | |
-| JSON-LD / schema.org | ✅ COMPLETE (static) | One self-contained module, `src/lib/seo/json-ld.ts`, plus the `JsonLd` component; emitted on home, surah index, surah, ayah, topic detail and sources. The former `jsonld.ts` builder module and the `json-ld.ts` facade that re-exported only part of it were collapsed into the single hyphenated path, so a page can no longer import a name the facade never re-exported. Provenance claims are derived from `sources.ts`, so the markup cannot drift from what `/sources` shows |
-| Open Graph / Twitter cards | 🟡 PARTIAL | Root layout supplies both `openGraph` and `twitter` metadata alongside `metadataBase`, so every route inherits a social preview; content pages override title/description per route. Rendered output is **not** verified — confirming the emitted tags per route needs a production build |
-| Private/thin pages noindex | ✅ COMPLETE | library, settings, revision, editorial, report all `robots: noindex`. `/search` now joins them (`{ index: false, follow: true }`) per PRD §15's rule that internal search states stay out of the index, while `follow` keeps the ayah links in results discoverable; `robots.ts` disallows the same private set so the two mechanisms agree rather than one silently overriding the other |
+## Section 16: Non-functional requirements
 
-## Section 16–24: Non-functional, roadmap, deferrals
+| Area | Status | Notes |
+| --- | --- | --- |
+| Performance / Core Web Vitals | UNVERIFIED | No Lighthouse or field data recorded |
+| Reliability | PARTIAL | Reading survives optional-service failure; no database backup (no database); dataset rollback documented |
+| Localization | COMPLETE | 100+ translation editions; UI copy English only |
+| Privacy | COMPLETE | No accounts, no analytics, no server-side user data; export/delete via backup controls |
 
-| Requirement | Status | Notes |
-|---|---|---|
-| Performance budgets | ❓ UNVERIFIED | No Lighthouse run |
-| Bundle size discipline | ❓ UNVERIFIED | No `next build` run |
-| Audio deferred | ✅ COMPLETE (deferral) | PRD §23 rec 8 followed |
-| Analytics omitted | ✅ COMPLETE (deferral) | AI_RULES + PRD §10 |
-| Accounts omitted | ✅ COMPLETE (deferral) | AI_RULES |
-| Word-by-word / roots deferred | 🚫 BLOCKED | No verified dataset |
-| Second translation blocked | 🚫 BLOCKED | FR-033 |
-| Cross-device sync blocked | 🚫 BLOCKED | AI_RULES |
+## Section 17: Success metrics
+
+**Intentionally unmeasurable in this build.** The product collects no
+analytics and has no accounts, so activation, retention, session, and
+engagement metrics cannot be computed. Quality metrics that can be measured
+offline are covered by the validators. This is a consequence of the
+privacy-first architecture, not an oversight; enabling §17 would require the
+analytics and identity infrastructure the project deliberately excludes.
+
+## Section 18: Analytics and event taxonomy
+
+**Not implemented, by design.** No event is emitted. No consent, retention, or
+access policy is needed because no event data exists.
+
+## Section 19: Testing and QA
+
+| Check | Status |
+| --- | --- |
+| Unit tests | 188 tests in 11 files, reported passing |
+| Import/dataset tests | Covered by `validate:quran`, reported 0 issues |
+| Integration tests (search, source retrieval, permissions) | PARTIAL — pure modules tested; no browser-level suite |
+| End-to-end tests | NOT IMPLEMENTED |
+| Accessibility audit | NOT IMPLEMENTED |
+| SEO tests | NOT IMPLEMENTED (metadata asserted in code, not rendered output) |
+| AI citation validation | Unit-tested with the flag off; no live run |
+| Manual QA checklist | NOT RECORDED |
+| Qualified topic review | NOT DONE |
+
+Release blockers from §19 that remain open: missing provenance/rights sign-off
+for audio and the translation catalog; no qualified review of topic mappings;
+unverified rendered SEO output. Quran text integrity checks pass; no cross-user
+access risk exists because there are no accounts.
+
+## Section 20: Editorial governance
+
+Roles are defined; the qualified reviewer role is unfilled. The seven-step
+workflow is documented and partly tooled. Correction intake exists without a
+configured destination. Rollback is documented. See `docs/EDITORIAL.md`.
+
+## Sections 21-23: Roadmap, risks, open decisions
+
+- Phase 0 (source/licence audit): **incomplete** — licensing review outstanding.
+- Phase 1 (reading MVP): complete except accessibility QA.
+- Phase 2 (discovery): complete except qualified review and tafsir search.
+- Phase 3 (personal learning): complete in local-only form.
+- Phase 4 (grounded AI): harness only; disabled.
+- Phase 5 (mobile): not started.
+
+Open decisions from §23 and how they were resolved:
+
+| Decision | Resolution |
+| --- | --- |
+| Initial language | English UI, Arabic text, Urdu default translation |
+| Translation source | 100+ Tanzil editions via runtime proxy; per-edition rights unverified |
+| Tafsir scope | Two Arabic tafsirs in-app via proxy; two English tafsirs link-out; rights review outstanding |
+| Authentication | Anonymous-only |
+| Database | None |
+| Search | In-memory lexical + client-side embeddings |
+| Editorial review | Unassigned |
+| Audio | Streamed from Islamic Network CDN; rights unresolved |
+| Mobile | Deferred |
+| AI launch gate | Not met; feature flag false |
+
+## Section 24: Definition of Done
+
+No feature that touches Quran text, translation, tafsir, or religious claims
+meets every DoD clause, because "data provenance and licensing are recorded"
+and "product owner accepts the behavior" are not satisfied for audio,
+translations, and tafsir. The reading, search, topic, library, revision, and
+editorial features meet the functional clauses.
 
 ## Summary counts
 
+Counted by FR row (the PRD defines 49 FRs; rows below match those IDs):
+
 | Status | Count |
-|---|---|
-| ✅ COMPLETE | ~60 |
-| 🟡 PARTIAL | ~12 |
-| 🔴 NOT IMPLEMENTED | 0 |
-| 🚫 BLOCKED | ~8 |
-| ⏸️ DEFERRED | 3 |
-| ❓ UNVERIFIED | 2 |
+| --- | --- |
+| COMPLETE | 34 |
+| PARTIAL | 14 |
+| NOT IMPLEMENTED | 0 |
+| BLOCKED | 1 (FR-042) |
+| **Total** | **49 FRs** |
 
-No requirement is unimplemented. FR-025 (topic graph) and FR-014 (lexical
-retrieval) both left the unimplemented column in this pass; FR-014 lands in
-PARTIAL rather than COMPLETE because embedding-based semantic retrieval needs
-infrastructure this local-only build does not have, which is also why BLOCKED
-dropped by one. Counts are approximate — the table tracks ~75 rows and the
-honest signal is the per-row status, not the arithmetic.
+Scope rows are counted separately. The §5 MVP list and the adjacent delivery
+items total 15 rows: 13 COMPLETE, of which tafsir presentation and word-by-word
+data still carry outstanding licence review, and 2 PARTIAL (audio recitation and
+additional translations, both on rights).
 
-Remaining implementable gaps, in dependency order:
+These counts are not a completion percentage for the PRD. A row marked
+COMPLETE means the named behavior exists and the stated verification basis
+covers it; it does not mean licensing, scholarly review, accessibility, or
+production conditions are satisfied.
 
-None of the following is implementable from this environment; each needs a
-person, a licence, or a running build.
+## Remaining gaps and blockers
 
-1. **FR-066 destination** — set `NEXT_PUBLIC_REPORT_EMAIL` at deployment to enable email delivery. Clipboard and download work without it, so the intake is usable today; only delivery is operator-dependent.
-2. **AI evaluation run** — execute `src/lib/ai/evaluation-set.test.ts` and the two `scripts/*.mjs` validators; record results to move the AI gates from `met: false`.
-3. **Open Graph / Twitter card verification** — confirm rendered tags per route after a production build.
-4. **FR-073 change history** — per-relation provenance and inheritance are shipped; per-event history (who changed what, when, reviewer identity) needs a store this build deliberately lacks. Git history is the only real audit trail.
-5. **`quran-json` pin** — `package.json` pins `quran-json: 3.1.2` exactly. Lockfile re-verification deferred to the testing phase per the no-verification directive.
-6. **Qualified reviewer** — until one is assigned, every topic stays `pending-scholarly-review` and the AI `editorial-reviewer` gate cannot be met.
-7. **FR-008 Mushaf verification** — the Juz mapping is the canonical Hafs scheme but is unverified against a printed edition, so page ranges stay approximate and unrendered.
+**Release dependencies requiring a human decision:**
 
-## Verification disclaimer
+1. Legal/licensing review of the audio recordings (the CDN publishes no explicit
+   recording licence).
+2. Legal/licensing review of the Tanzil translation catalog as used through the
+   `/api/translations/[id]` proxy. A clean `validate:licenses` run is not
+   permission to redistribute or proxy the text.
+3. Legal/licensing review of the two in-app tafsir texts.
+4. Assignment of a qualified reviewer for topic mappings and AI outputs.
+5. Configuration of a report delivery destination (`NEXT_PUBLIC_REPORT_EMAIL`
+   or an issue tracker).
+6. Accessibility audit (WCAG 2.2 AA) and Core Web Vitals measurement.
+7. Rendered SEO/social metadata verification after a production build.
+8. Deployment hardening: rate limiting is per-process only.
 
-**No typecheck, test, build, or lint command has been executed in this
-environment.** Every status above rests on static inspection of the source
-tree. The consolidated testing plan in the final implementation report will
-cover the exact commands to run and the expected outcomes.
+**Functional gaps:**
+
+- FR-042 cross-device sync (excluded by architecture).
+- FR-073 per-event editorial history.
+- FR-071 byte-level checksum baseline.
+- FR-060–066 live AI behavior (gated off).
+
+**Documentation gaps in the PRD itself:** there is no FR-009, no FR-045–049,
+no FR-055–059, and no FR-067–069. Word-by-word analysis is a §5 Release 1.1
+item without an FR number. This checklist does not invent identifiers to fill
+those gaps.

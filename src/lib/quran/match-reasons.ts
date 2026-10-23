@@ -35,7 +35,7 @@ export const REASON_DESCRIPTIONS: Record<MatchReason, string> = {
   arabic:
     "The normalized Arabic of this verse contains the query. Diacritics are stripped for matching only; the displayed Arabic is verbatim from the pinned dataset.",
   translation:
-    "The normalized English translation (Saheeh International) contains the query.",
+    "The normalized built-in English translation contains the query. Search always uses the dataset's English text regardless of the active translation edition.",
   transliteration:
     "The normalized Latin transliteration contains the query.",
   "surah-name":

@@ -70,9 +70,9 @@ export function SiteFooter() {
             (CC-BY-4.0).
           </p>
           <p>
-            English translation: Saheeh International (Umm Muhammad), via{" "}
+            Translations in 100+ languages via{" "}
             <a
-              href="https://tanzil.net/trans/en.sahih"
+              href="https://tanzil.net/trans/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-2 hover:text-foreground"

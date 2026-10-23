@@ -1,0 +1,694 @@
+{
+  "source": "quran.com API v4 (QUL word data), fetched 2026-10-23",
+  "files": {
+    "1.json": {
+      "verses": 7,
+      "words": 29,
+      "bytes": 1585,
+      "sha256": "2e2887cbccf37b676d241412a2da98f433ede6fb89693ab1d3af853ecfd64566"
+    },
+    "2.json": {
+      "verses": 286,
+      "words": 6116,
+      "bytes": 279792,
+      "sha256": "7703596c914c6f6526660ef61a0340a2e0dcb60e6b281e25166b748cbf4890fb"
+    },
+    "3.json": {
+      "verses": 200,
+      "words": 3481,
+      "bytes": 159444,
+      "sha256": "3972898b0a94d3088ed0e713b4539a16efdbb8012b6dfe898b7fc535d3edfd7e"
+    },
+    "4.json": {
+      "verses": 176,
+      "words": 3747,
+      "bytes": 171244,
+      "sha256": "cff52f4752a62b68695fa0d8035a93e278fdc663db74c46b7494579cb43cffcb"
+    },
+    "5.json": {
+      "verses": 120,
+      "words": 2804,
+      "bytes": 128259,
+      "sha256": "81292d09e32f1dadf9c6f92d190533159f056a62a81228690b909e63a8c17753"
+    },
+    "6.json": {
+      "verses": 165,
+      "words": 3050,
+      "bytes": 138164,
+      "sha256": "a0479a15d6769e6fc3e8d5536da81f61ab2e5cecda415af1d42d9e58c541b675"
+    },
+    "7.json": {
+      "verses": 206,
+      "words": 3320,
+      "bytes": 153553,
+      "sha256": "0ad46f5da625816314d46ac1dcb925524b48a89e69efe735ca5c715449eb2b4b"
+    },
+    "8.json": {
+      "verses": 75,
+      "words": 1233,
+      "bytes": 57133,
+      "sha256": "9ab57f6cffa2b862afcfdc7590b4e37f3592505d603e509993b3cf8ae6562362"
+    },
+    "9.json": {
+      "verses": 129,
+      "words": 2498,
+      "bytes": 118465,
+      "sha256": "d7869327fae9876df814df484606f7ca9fb62b7d81477a0eed01e3a131cc9a72"
+    },
+    "10.json": {
+      "verses": 109,
+      "words": 1833,
+      "bytes": 82499,
+      "sha256": "ed971dcb293410598f05e62f4236ef5498b32d93e49f8a3f414646dbdb0447ea"
+    },
+    "11.json": {
+      "verses": 123,
+      "words": 1917,
+      "bytes": 86694,
+      "sha256": "d0ece1518c587afd21c4b93e309aa26a2f7c573c8dc4c39aa3dbefa8d7384767"
+    },
+    "12.json": {
+      "verses": 111,
+      "words": 1777,
+      "bytes": 79769,
+      "sha256": "3cd572777ec2094acb406efb8bbf9306667e644253f964532ddaf34ffd1d62af"
+    },
+    "13.json": {
+      "verses": 43,
+      "words": 853,
+      "bytes": 38633,
+      "sha256": "b3796e36aa6ff1832897f582ed40e60fdb3601af8b7be6433f560d0b8012a08d"
+    },
+    "14.json": {
+      "verses": 52,
+      "words": 830,
+      "bytes": 38422,
+      "sha256": "f162ff3f36588f5f86c2f43d28004e7e40f3cf3bc2629a03160b4841ce79b04e"
+    },
+    "15.json": {
+      "verses": 99,
+      "words": 655,
+      "bytes": 31167,
+      "sha256": "d5e22f33bcc49222d86f9d67578835c7da6e284f1a03b9d0bf34f7d6694f669b"
+    },
+    "16.json": {
+      "verses": 128,
+      "words": 1844,
+      "bytes": 84992,
+      "sha256": "ce2fad527c8f6e186420dc8947cbda32c61b204e6b8470d3a629e62163c0befb"
+    },
+    "17.json": {
+      "verses": 111,
+      "words": 1556,
+      "bytes": 71418,
+      "sha256": "de4dfc3164f84b27c1aab086d3720a954503ef6ff121d88fecbaf86a3be50a73"
+    },
+    "18.json": {
+      "verses": 110,
+      "words": 1579,
+      "bytes": 71864,
+      "sha256": "e63a713b709461fe586ef7d4576c958932f167d40c7887c9ca7fd8f2f0eeeedd"
+    },
+    "19.json": {
+      "verses": 98,
+      "words": 961,
+      "bytes": 44088,
+      "sha256": "db3c18ad871430c0a3f051236d5692baa0b15b3d7babe276550ec6cf146edb8c"
+    },
+    "20.json": {
+      "verses": 135,
+      "words": 1335,
+      "bytes": 60494,
+      "sha256": "fa98c38f8270527c256b5b26df33d55d73464c6efbe65dda92141dd7bf9737cb"
+    },
+    "21.json": {
+      "verses": 112,
+      "words": 1169,
+      "bytes": 54113,
+      "sha256": "554d9c16d847492bc3194eba3f3eba8d195844a66c1360a1143d61cdfdfb0f7c"
+    },
+    "22.json": {
+      "verses": 78,
+      "words": 1274,
+      "bytes": 57890,
+      "sha256": "46a9c73633ddb6f8684bb622acf2933448fa52bd120b2e895510b31fc8faf6f5"
+    },
+    "23.json": {
+      "verses": 118,
+      "words": 1050,
+      "bytes": 48817,
+      "sha256": "281328025c2df2f3fde1f6c962d5dedee73a217003f9160dae433db18076cc6e"
+    },
+    "24.json": {
+      "verses": 64,
+      "words": 1316,
+      "bytes": 61386,
+      "sha256": "75d46459297e3d863a05b6a43138536184610ecb3618b7682a5cfbc2e334b4fe"
+    },
+    "25.json": {
+      "verses": 77,
+      "words": 893,
+      "bytes": 41562,
+      "sha256": "2b57058393747530aba2386c51003c49d6136c1bee403f5e67a5f9731f457dc9"
+    },
+    "26.json": {
+      "verses": 227,
+      "words": 1318,
+      "bytes": 61450,
+      "sha256": "a2cb9bab1b81c7a823f11b9f3095bac546583b7b8de9fc1d74bb00854bbfa092"
+    },
+    "27.json": {
+      "verses": 93,
+      "words": 1151,
+      "bytes": 52101,
+      "sha256": "ef72639708642530a483a6f617357baaa513e16eb0244ad021f8bd4f224c5337"
+    },
+    "28.json": {
+      "verses": 88,
+      "words": 1430,
+      "bytes": 64376,
+      "sha256": "b568078f6decdcb2dea3469c6cb3b4723e87664b4f0a10784a5467d788792a38"
+    },
+    "29.json": {
+      "verses": 69,
+      "words": 976,
+      "bytes": 45541,
+      "sha256": "0e6126cc1ea08465f73ea8c793f4ec12df67b373b06fea971fb8951d0a16804f"
+    },
+    "30.json": {
+      "verses": 60,
+      "words": 817,
+      "bytes": 37505,
+      "sha256": "424ea1e715cd2a72d7629df6804ad56fdd6da086e635ef7fc9804fdeafaeb9e2"
+    },
+    "31.json": {
+      "verses": 34,
+      "words": 546,
+      "bytes": 24021,
+      "sha256": "3c373d12d4027a95866d7e5d658fcc5874273cb7d845bed443d4f55209c54143"
+    },
+    "32.json": {
+      "verses": 30,
+      "words": 372,
+      "bytes": 16909,
+      "sha256": "5a96e2d5c9ad50908eceeed05ac9eb5e68dd0b979a2fa701c71836da9fc13d90"
+    },
+    "33.json": {
+      "verses": 73,
+      "words": 1287,
+      "bytes": 60856,
+      "sha256": "a590ce43800989ed533a2efb748205b96cd1be8620d5bcdbd3e68935f3d3f206"
+    },
+    "34.json": {
+      "verses": 54,
+      "words": 883,
+      "bytes": 39103,
+      "sha256": "db43eb26dab46143883e2dfaa3145b3b52a9ebb5d937da7d361bb8805e36c64d"
+    },
+    "35.json": {
+      "verses": 45,
+      "words": 775,
+      "bytes": 35036,
+      "sha256": "8f1e1920297f92379f231743d44545438530454c089d71abe73c116ecf058529"
+    },
+    "36.json": {
+      "verses": 83,
+      "words": 725,
+      "bytes": 33279,
+      "sha256": "bdd2d8a6e3b1a1e85ce71dd2ab5102971fb0771f7959efc543fea60ba49e75a7"
+    },
+    "37.json": {
+      "verses": 182,
+      "words": 860,
+      "bytes": 42361,
+      "sha256": "81b928ae1683af16088d6eb92221cd6d6022cf1deda119ffa2f79cfc391758c1"
+    },
+    "38.json": {
+      "verses": 88,
+      "words": 733,
+      "bytes": 34094,
+      "sha256": "1647833f13745ab2abe1e9b432b7c9f05200528d4cb9a8a1db86f93f57cf337c"
+    },
+    "39.json": {
+      "verses": 75,
+      "words": 1172,
+      "bytes": 53323,
+      "sha256": "9da271e0f8ecc86ae46745c2170b7375d4b9e30890f3d75042146ee1e2ec493c"
+    },
+    "40.json": {
+      "verses": 85,
+      "words": 1219,
+      "bytes": 55339,
+      "sha256": "57ba3cfd2f28bdd418b7b7a67ec1a995fa7e7a52c04c86fc9e8e56b20be7bb35"
+    },
+    "41.json": {
+      "verses": 54,
+      "words": 794,
+      "bytes": 36564,
+      "sha256": "221c2acc523959e6f8accf989988bb1c38e51a7fbca5ad2467ec48c2301a2f00"
+    },
+    "42.json": {
+      "verses": 53,
+      "words": 860,
+      "bytes": 38616,
+      "sha256": "073ee211838857696084577a107f8c3be9a1b00d17a936a478a589267f374cd3"
+    },
+    "43.json": {
+      "verses": 89,
+      "words": 830,
+      "bytes": 39284,
+      "sha256": "279f5f3497403570f62c05a015acb391fd0dfbb191d73bc45fcf245a7aac0e9c"
+    },
+    "44.json": {
+      "verses": 59,
+      "words": 346,
+      "bytes": 16279,
+      "sha256": "df033840c9cb57bdb2edc4aa57f438f01e92e3b8af9e4b5d19374719ee3c2e7e"
+    },
+    "45.json": {
+      "verses": 37,
+      "words": 488,
+      "bytes": 22504,
+      "sha256": "9325d05dbf9f9169892da8174e6a3f75a99e4aeb2065e1c562b0b8d3a6f0acc8"
+    },
+    "46.json": {
+      "verses": 35,
+      "words": 643,
+      "bytes": 28937,
+      "sha256": "ad6d4029296db346ec3087b5517ff157feb002b9e4c51e92f94720a319c687b0"
+    },
+    "47.json": {
+      "verses": 38,
+      "words": 539,
+      "bytes": 25825,
+      "sha256": "043d7daf32eb967a3ed7c4b9682234bac995a583c3d02a93beb26d486fd345aa"
+    },
+    "48.json": {
+      "verses": 29,
+      "words": 560,
+      "bytes": 26687,
+      "sha256": "6e9f9b455db8014f77b9e6c358e87965513141aa3cb40228ac47795ffb9c5af5"
+    },
+    "49.json": {
+      "verses": 18,
+      "words": 347,
+      "bytes": 16237,
+      "sha256": "68201d806d872d81b75f5b3ad83f547dd754859dce8c2b6ef71d73e4c20b0cd3"
+    },
+    "50.json": {
+      "verses": 45,
+      "words": 373,
+      "bytes": 16684,
+      "sha256": "36501c46298cf424a7054ff562f0f7c8c4ec5a4c6c14b616bc50e2699359822c"
+    },
+    "51.json": {
+      "verses": 60,
+      "words": 360,
+      "bytes": 16879,
+      "sha256": "08610e0127143840b68e56114aad335693e631bd3b02ef3f0da2a2abb057ba7f"
+    },
+    "52.json": {
+      "verses": 49,
+      "words": 312,
+      "bytes": 14590,
+      "sha256": "3a4d42caef8b313d8b99409eafe1cfd7b071944ec71ceb463169e85ce89efac4"
+    },
+    "53.json": {
+      "verses": 62,
+      "words": 360,
+      "bytes": 16214,
+      "sha256": "a90a8de3e2adcff206793cb4b67489133dae3a37b73c829da17822ff31c6c40c"
+    },
+    "54.json": {
+      "verses": 55,
+      "words": 342,
+      "bytes": 16622,
+      "sha256": "9e841681317ec79bb9aaf8497ca5e6b666bbca2fc41fbb2e16ff423c630423ec"
+    },
+    "55.json": {
+      "verses": 78,
+      "words": 351,
+      "bytes": 18333,
+      "sha256": "3019706e5258789d9c184e6610d84dd872ab25cd606ef40a96b3365192953011"
+    },
+    "56.json": {
+      "verses": 96,
+      "words": 379,
+      "bytes": 19014,
+      "sha256": "ed0facc5027c92e0be024bd9c56c4db740f3e949c6fd0f2bcda184eccaa92afe"
+    },
+    "57.json": {
+      "verses": 29,
+      "words": 574,
+      "bytes": 26984,
+      "sha256": "92320dbe32d7b5c76297f979cfbd7cb5c5e59ae7642024b424a19549c1441d89"
+    },
+    "58.json": {
+      "verses": 22,
+      "words": 472,
+      "bytes": 22086,
+      "sha256": "178a84b265e308b18575685bb725c9c7e4f3485871f36405579b6ab3e1d5fa33"
+    },
+    "59.json": {
+      "verses": 24,
+      "words": 445,
+      "bytes": 20739,
+      "sha256": "bfd6a3e425eed3986fd8a48c051548bf9c551feb072c6f9028f8ead89b6b76be"
+    },
+    "60.json": {
+      "verses": 13,
+      "words": 348,
+      "bytes": 16123,
+      "sha256": "b2bea408e028111cd847252cd5bc78200bb58de8e6c54ff9ff21360437f23554"
+    },
+    "61.json": {
+      "verses": 14,
+      "words": 221,
+      "bytes": 9987,
+      "sha256": "69d01067a921ffe87e209c67f560aaa4f0d95d8223c02a6ede3117a2a06d9b76"
+    },
+    "62.json": {
+      "verses": 11,
+      "words": 175,
+      "bytes": 7945,
+      "sha256": "6406b9c85c62dbae5d61ff9b5fecc2b5fded0147046e436a4c8340df9878ac42"
+    },
+    "63.json": {
+      "verses": 11,
+      "words": 180,
+      "bytes": 8417,
+      "sha256": "c031f8c7f9c0063c8dbd3c8cea2ec051c353587444bce0c8ccacfecd0857c7ec"
+    },
+    "64.json": {
+      "verses": 18,
+      "words": 241,
+      "bytes": 11585,
+      "sha256": "38c704286419d2d6a02f4045d256c95dd6df59adab4bb3471a4a21f55fd67c03"
+    },
+    "65.json": {
+      "verses": 12,
+      "words": 287,
+      "bytes": 13079,
+      "sha256": "0a819635b05aa46a6b6470bf23ace0ce16095ca2637167ec6e8cb184a26b5d7a"
+    },
+    "66.json": {
+      "verses": 12,
+      "words": 249,
+      "bytes": 11556,
+      "sha256": "b51ee13d9e089beeeeb72184a4bb4a4095bef4fdac004906fc7670924487f160"
+    },
+    "67.json": {
+      "verses": 30,
+      "words": 333,
+      "bytes": 14675,
+      "sha256": "472373c6df118bad2094ee939955b925d6543a65475465de45aca9c5f4cf94a3"
+    },
+    "68.json": {
+      "verses": 52,
+      "words": 300,
+      "bytes": 14219,
+      "sha256": "0c5486fe92f7bbad78c630d97146b40365fe1a0bb520d6c1951f9188ddec73c2"
+    },
+    "69.json": {
+      "verses": 52,
+      "words": 258,
+      "bytes": 12575,
+      "sha256": "423a4ce2ed173779e846d02da853bced218f57a4c30d96aae4848002d154d773"
+    },
+    "70.json": {
+      "verses": 44,
+      "words": 217,
+      "bytes": 10655,
+      "sha256": "1cf374964c9e41c07f5795e7f3263708c15f7d319c668dd9b673a394b687222b"
+    },
+    "71.json": {
+      "verses": 28,
+      "words": 226,
+      "bytes": 10290,
+      "sha256": "e3434d3e2150a544c8d6383051c785e1cc51455febc1ae381493e24eb19b9c0b"
+    },
+    "72.json": {
+      "verses": 28,
+      "words": 285,
+      "bytes": 12526,
+      "sha256": "927a4ed01aee6bad4a11edc7a82e96a50219e349705d2a879424e17cfd3a36e8"
+    },
+    "73.json": {
+      "verses": 20,
+      "words": 199,
+      "bytes": 9116,
+      "sha256": "ce91f1ddd11c80ae4afbf48195b3b6e0443613fcacafbef3b68d484b2ecf49a9"
+    },
+    "74.json": {
+      "verses": 56,
+      "words": 255,
+      "bytes": 11736,
+      "sha256": "4f55e9498d4546f1bb943fa2967f74962b8313cb0c8dbb70a9bc2446aa600f5d"
+    },
+    "75.json": {
+      "verses": 40,
+      "words": 164,
+      "bytes": 7683,
+      "sha256": "f7f15e820907912dad50d9721d28130378e5440e09a60b030a3a64da1296dc9f"
+    },
+    "76.json": {
+      "verses": 31,
+      "words": 243,
+      "bytes": 11499,
+      "sha256": "4a00ccf4f2c9802812e0b5555dd14e1003d23f82bb8ccb57fc7907d8371c75fa"
+    },
+    "77.json": {
+      "verses": 50,
+      "words": 181,
+      "bytes": 9200,
+      "sha256": "7e6d65ff7529da0a4437bf0b28e81c2ba998cc15ba9b886360c9ba623076c187"
+    },
+    "78.json": {
+      "verses": 40,
+      "words": 173,
+      "bytes": 8606,
+      "sha256": "aa051e73397e37f762dc619928175c24e22f31386b3a499d1b719f2c9d085608"
+    },
+    "79.json": {
+      "verses": 46,
+      "words": 179,
+      "bytes": 8758,
+      "sha256": "76f19b47cc8459e034a07ff90f29c287b518cc00a1468994e4aa92fd5989bb1b"
+    },
+    "80.json": {
+      "verses": 42,
+      "words": 133,
+      "bytes": 6604,
+      "sha256": "b7ed0d6fc0e9dba32220ffd0f85740006b5540b274be40452aeab298adab1d44"
+    },
+    "81.json": {
+      "verses": 29,
+      "words": 104,
+      "bytes": 4946,
+      "sha256": "b3a5431620d71a660c32a01e86d230dfc40a7fafd07b2200a4cf42c3afebaa25"
+    },
+    "82.json": {
+      "verses": 19,
+      "words": 80,
+      "bytes": 3750,
+      "sha256": "a6b795ddb6d04b5d75efd110f8684ba13400308ca91fbc283b047f520f37d690"
+    },
+    "83.json": {
+      "verses": 36,
+      "words": 169,
+      "bytes": 8132,
+      "sha256": "981520ec2f0bb7be51252eefa43d575112c309ec281e3a9ee1c48dd3f3e2970b"
+    },
+    "84.json": {
+      "verses": 25,
+      "words": 107,
+      "bytes": 5035,
+      "sha256": "49c7102524c1897f22a438de69835f6143bede8fbb36578a9adde4e0e497a8b3"
+    },
+    "85.json": {
+      "verses": 22,
+      "words": 109,
+      "bytes": 5123,
+      "sha256": "abf618db7f4a8432befad75bcbfee02f1b8bc70902f72efc3b3832708a800340"
+    },
+    "86.json": {
+      "verses": 17,
+      "words": 61,
+      "bytes": 2871,
+      "sha256": "2b350f7e41d11ba57b8a3a1acca6d8b82304eff487b5d4e33b48527b9de83c99"
+    },
+    "87.json": {
+      "verses": 19,
+      "words": 72,
+      "bytes": 3445,
+      "sha256": "f3a0c72e045292b6b783014321c655d3afc654fbc6a1f4403f1c7adc6b9593a4"
+    },
+    "88.json": {
+      "verses": 26,
+      "words": 92,
+      "bytes": 4396,
+      "sha256": "2da012d22790ba13cb8cff9d0d11e4f3e67125e9ea5aca61a71b2464db45e78c"
+    },
+    "89.json": {
+      "verses": 30,
+      "words": 137,
+      "bytes": 6395,
+      "sha256": "43dce3e4ee44320028b9314f048f8213d8af8b65869d20527354831c5aa58bed"
+    },
+    "90.json": {
+      "verses": 20,
+      "words": 82,
+      "bytes": 3842,
+      "sha256": "423e784182423283e63560b49aabbd37e546ebaaea38cd35a437f64c3abc57ed"
+    },
+    "91.json": {
+      "verses": 15,
+      "words": 54,
+      "bytes": 2776,
+      "sha256": "4e6b1129a2b9ed2d214f904d8b3f427f39ea4a9019fbe0275d33b10cfc91e76c"
+    },
+    "92.json": {
+      "verses": 21,
+      "words": 71,
+      "bytes": 3628,
+      "sha256": "8dcf5e1ca3fb58a61ed439100605df5cbc83e9ab985beab2cc470bd9d0d2603c"
+    },
+    "93.json": {
+      "verses": 11,
+      "words": 40,
+      "bytes": 1980,
+      "sha256": "1040f9f9d5fc1559921f27a5dd419396aa1a9a00aac0a7b2cdfeeeff965b7d2a"
+    },
+    "94.json": {
+      "verses": 8,
+      "words": 27,
+      "bytes": 1239,
+      "sha256": "28e9ae5749c5fffa3593948832843c3b5ab92def1c8d7f6b52596f63ba57c57f"
+    },
+    "95.json": {
+      "verses": 8,
+      "words": 34,
+      "bytes": 1663,
+      "sha256": "9b719b08dafc8e55549040b64eb3d55b334dba3e362edaccf7becc9ca2ea4500"
+    },
+    "96.json": {
+      "verses": 19,
+      "words": 72,
+      "bytes": 3270,
+      "sha256": "cafe1c8a3e65e21944e4ebda1c083c7ccddf08659e0a7e03f76b157f3ba3aa31"
+    },
+    "97.json": {
+      "verses": 5,
+      "words": 30,
+      "bytes": 1315,
+      "sha256": "323cf1f595c97c9bb0aa82e151e34e45f0ff4b012a18eabae3ca93000f0543ec"
+    },
+    "98.json": {
+      "verses": 8,
+      "words": 94,
+      "bytes": 4350,
+      "sha256": "0c0c7a6d7e12a8c4f9b056dff6fdfad2c239d702f980a086f234d22c47ccab73"
+    },
+    "99.json": {
+      "verses": 8,
+      "words": 36,
+      "bytes": 1739,
+      "sha256": "d54384611d3b6f1fa4f595b57e2d1f2a3f0617c9251656a9bd44cbddb679f07b"
+    },
+    "100.json": {
+      "verses": 11,
+      "words": 40,
+      "bytes": 2005,
+      "sha256": "af73ac15f4853203b3345d2502b6ff85c60df2cb90ebf3e59fbe46a49982045c"
+    },
+    "101.json": {
+      "verses": 11,
+      "words": 36,
+      "bytes": 1782,
+      "sha256": "dd7e42e11dfb1660163d525337ed2c6f1454336c171c09bba4f2b95b233e68fd"
+    },
+    "102.json": {
+      "verses": 8,
+      "words": 28,
+      "bytes": 1390,
+      "sha256": "2abc55ea4a8254cbda74c23982d6c1b024840c41eb92f1a524b184725fb51bee"
+    },
+    "103.json": {
+      "verses": 3,
+      "words": 14,
+      "bytes": 751,
+      "sha256": "cf88f1cdf996df58a33b84642845e4563ead80b0c04317c7a30a241ca7e22d0b"
+    },
+    "104.json": {
+      "verses": 9,
+      "words": 33,
+      "bytes": 1566,
+      "sha256": "9136378e1558e9c7936bfe64b218051af729932286da6e058d9c33bf6980292f"
+    },
+    "105.json": {
+      "verses": 5,
+      "words": 23,
+      "bytes": 1079,
+      "sha256": "8d7cfff4527cfe3e6b032da37b27b5d7b23831e1b906af3384e63d160c0cca6f"
+    },
+    "106.json": {
+      "verses": 4,
+      "words": 17,
+      "bytes": 880,
+      "sha256": "032c58ea57d3433260f52d1605bcef8d1bc08013d9e15a5ad78ac8d3a030c369"
+    },
+    "107.json": {
+      "verses": 7,
+      "words": 25,
+      "bytes": 1251,
+      "sha256": "90154201d6e529c712db89c400c5ac696b2ca4537ddda56919bd217d34f45fd8"
+    },
+    "108.json": {
+      "verses": 3,
+      "words": 10,
+      "bytes": 502,
+      "sha256": "25b2c0cec0497a00b1577a741848c69121cad16bc6571be64429eb9567edf0a6"
+    },
+    "109.json": {
+      "verses": 6,
+      "words": 26,
+      "bytes": 1118,
+      "sha256": "548ac51ddd19c2d8ae3c180619ee435d8b26219800b9a110c4ed5b4792ff17cc"
+    },
+    "110.json": {
+      "verses": 3,
+      "words": 19,
+      "bytes": 899,
+      "sha256": "79d4f834771e60903451c1c485f6b53b84ef64ac6bd8b687545c09097465d72a"
+    },
+    "111.json": {
+      "verses": 5,
+      "words": 23,
+      "bytes": 991,
+      "sha256": "c8915e332fcba921601b538d99b6563b3477c0de9291c220947de438c8a91995"
+    },
+    "112.json": {
+      "verses": 4,
+      "words": 15,
+      "bytes": 594,
+      "sha256": "0d878c2250c440bec22bc4dbf579b2e692fff97fb0c161febda5ef3a5a066182"
+    },
+    "113.json": {
+      "verses": 5,
+      "words": 23,
+      "bytes": 936,
+      "sha256": "cc538c99638cbe1cc60c72abee2569f7cf75b799632f12c2d0ff9ce38a9b58e0"
+    },
+    "114.json": {
+      "verses": 6,
+      "words": 20,
+      "bytes": 912,
+      "sha256": "9072f24eb2acdd1f2133586c4c6435ee713795c6a9e024b24e46023051b447c3"
+    }
+  },
+  "totals": {
+    "verses": 6236,
+    "words": 77429,
+    "bytes": 3569204
+  }
+}

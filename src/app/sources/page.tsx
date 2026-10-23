@@ -115,7 +115,7 @@ export default function SourcesPage() {
               Content arrives only as a pinned, versioned npm package
               (<code className="text-xs">quran-json@3.1.2</code>, CC-BY-4.0) —
               never fetched from an unversioned runtime API. The Arabic text and
-              Saheeh International translation are rendered verbatim; this app
+              translations are rendered verbatim; this app
               does not edit, re-order, or re-generate either. A dataset
               validator (<code className="text-xs">pnpm validate:quran</code>)
               checks surah/ayah counts, duplicate and sequential identifiers,
