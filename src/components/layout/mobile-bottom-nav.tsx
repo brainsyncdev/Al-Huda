@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, GraduationCap, Home, Library, Search, Settings, Sparkles } from "lucide-react";
+import { BookOpen, Compass, GraduationCap, Home, Library, Search, Settings, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const TABS = [
   { href: "/", label: "Home", icon: Home },
   { href: "/quran", label: "Read", icon: BookOpen },
-  { href: "/topics", label: "Topics", icon: Sparkles },
+  { href: "/explore", label: "Explore", icon: Compass },
   { href: "/search", label: "Search", icon: Search },
   { href: "/learn", label: "Learn", icon: GraduationCap },
   { href: "/library", label: "Library", icon: Library },
@@ -20,6 +20,8 @@ function isActive(pathname: string, href: string): boolean {
   if (href === "/quran") return pathname === "/quran" || pathname.startsWith("/quran/");
   if (href === "/topics")
     return pathname === "/topics" || pathname.startsWith("/topics/");
+  if (href === "/explore")
+    return pathname === "/explore" || pathname.startsWith("/explore/");
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 

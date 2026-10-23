@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { BookOpen, GraduationCap, Library, Search, Settings, Sparkles } from "lucide-react";
+import { BookOpen, Compass, GraduationCap, Library, Search, Settings, Sparkles } from "lucide-react";
 import { SITE_NAME } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 const NAV = [
   { href: "/quran", label: "Read", icon: BookOpen },
+  { href: "/explore", label: "Explore", icon: Compass },
   { href: "/topics", label: "Topics", icon: Sparkles },
   { href: "/search", label: "Search", icon: Search },
   { href: "/learn", label: "Learn", icon: GraduationCap },

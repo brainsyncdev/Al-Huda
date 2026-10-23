@@ -72,6 +72,18 @@ const ENDPOINTS = [
     description:
       "Source catalog: name, attribution, publisher, license, pinned version, ingestion method and permitted-use notes (FR-032, FR-075).",
   },
+  {
+    method: "GET",
+    path: "/api/v1/explore/dimensions",
+    description:
+      "The 10 life dimensions from PRD §04.3 with topic-level navigation mappings. Each dimension lists curated topic slugs whose themes overlap the dimension's description. This is a navigation aid, not ayat-level tagging.",
+  },
+  {
+    method: "GET",
+    path: "/api/v1/explore/dimensions/{id}",
+    description:
+      "One dimension with resolved topic metadata. Returns the dimension's title, Arabic label, coverage description, search terms, and the curated topics mapped to it. Unresolved topic slugs are reported rather than silently dropped.",
+  },
 ] as const;
 
 export async function GET(request: NextRequest) {
