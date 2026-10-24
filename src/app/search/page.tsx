@@ -8,10 +8,14 @@ import { AyahCard } from "@/components/quran/ayah-card";
 import { findSnippetRange, searchQuran } from "@/lib/quran/search";
 import { REASON_DESCRIPTIONS, REASON_LABELS } from "@/lib/quran/match-reasons";
 import { getSurah, getSurahIndex } from "@/lib/quran/data";
-import { TOPICS, getTopic, topicsForAyah } from "@/lib/topics/data";
+import { TOPICS, topicsForAyah } from "@/lib/topics/data";
 import { PATHS } from "@/lib/paths/data";
 import { absoluteUrl } from "@/lib/site";
-import { getJuzForAyah } from "@/lib/quran/juz";
+import {
+  parseSearchFilters,
+  passesStructuralFilters as checkStructuralFilters,
+  buildRevelationMap,
+} from "@/lib/search/filters";
 import { SemanticSearchPanel } from "@/components/search/semantic-search-panel";
 import { searchTranslationEdition } from "@/lib/quran/translation-search";
 import type { TranslationSearchHit } from "@/lib/quran/translation-search";
@@ -49,82 +53,34 @@ export const metadata: Metadata = {
 const SNIPPET_PAD = 60;
 
 export default async function SearchPage({ searchParams }: Props) {
-  const {
-    q,
-    surah: surahFilter,
-    type: typeFilter,
-    juz: juzFilter,
-    topic: topicFilter,
-    edition: editionFilter,
-    mode: modeFilter,
-    language: languageFilter,
-  } = await searchParams;
-  const query = q?.trim() ?? "";
+  const rawParams = await searchParams;
   const index = getSurahIndex();
+  const filters = parseSearchFilters(rawParams);
+  const revelationMap = buildRevelationMap(index);
 
-  // Validate filter values defensively — reject anything outside the known
-  // ranges rather than silently filtering every result away.
-  const parsedSurah = surahFilter ? Number(surahFilter) : NaN;
-  const surahId =
-    Number.isInteger(parsedSurah) && parsedSurah >= 1 && parsedSurah <= 114
-      ? parsedSurah
-      : null;
-  const parsedJuz = juzFilter ? Number(juzFilter) : NaN;
-  const juzNum =
-    Number.isInteger(parsedJuz) && parsedJuz >= 1 && parsedJuz <= 30
-      ? parsedJuz
-      : null;
-  const revelationType =
-    typeFilter === "meccan" || typeFilter === "medinan" ? typeFilter : null;
-  const topicSlug = topicFilter && getTopic(topicFilter) ? topicFilter : null;
-
-  // Language narrows the default search to Arabic-text or Latin-script
-  // matches. It has no meaning for edition/tafsir search, where the single
-  // edition already fixes the language, so those branches ignore it.
-  const language =
-    languageFilter === "ar" || languageFilter === "en" ? languageFilter : null;
-
-  const hasFilters = Boolean(
-    surahId || revelationType || juzNum || topicSlug || language
-  );
-  const invalidFilters =
-    (Boolean(surahFilter) && surahId === null) ||
-    (Boolean(juzFilter) && juzNum === null) ||
-    (Boolean(typeFilter) && revelationType === null) ||
-    (Boolean(topicFilter) && topicSlug === null) ||
-    (Boolean(languageFilter) && language === null);
-
-  // Structural filters (surah / revelation / juz / topic) are identical for
-  // default, edition, and tafsir results: they all address a verse by
-  // reference. Resolving them once here keeps the three result branches from
-  // drifting apart.
-  const revelationBySurah = new Map(index.map((s) => [s.id, s.revelation]));
-  const topicRefs = topicSlug
-    ? new Set(
-        (getTopic(topicSlug)?.relations ?? []).map(
-          (r) => `${r.ref.surah}:${r.ref.ayah}`
-        )
-      )
-    : null;
-
-  function passesStructuralFilters(surah: number, ayah: number): boolean {
-    if (surahId !== null && surah !== surahId) return false;
-    if (
-      revelationType !== null &&
-      revelationBySurah.get(surah) !== revelationType
-    ) {
-      return false;
-    }
-    if (juzNum !== null && getJuzForAyah(surah, ayah) !== juzNum) return false;
-    if (topicRefs !== null && !topicRefs.has(`${surah}:${ayah}`)) return false;
-    return true;
-  }
+  // Destructure validated filters for local use.
+  // surahId/juzNum/revelationType/topicSlug are applied inside
+  // checkStructuralFilters via the `filters` object; they are not referenced
+  // directly in this function body.
+  const {
+    query,
+    language,
+    editionId: editionFilter,
+    tafsirMode,
+    invalidFilters,
+    hasFilters,
+  } = filters;
 
   const surahOptions = index.map((s) => ({
     id: s.id,
     transliteration: s.transliteration,
   }));
   const topicOptions = TOPICS.map((t) => ({ slug: t.slug, title: t.title }));
+
+  // Structural filter check bound to the validated filters.
+  function passesStructuralFilters(surah: number, ayah: number): boolean {
+    return checkStructuralFilters(surah, ayah, filters, revelationMap);
+  }
 
   const filterShell = (
     <Suspense
@@ -300,7 +256,6 @@ export default async function SearchPage({ searchParams }: Props) {
   // ?mode=tafsir is a convenience that searches both classical Arabic tafsirs
   // (al-Jalalayn and al-Muyassar) in one pass.
   const editionMeta = editionFilter ? getTranslation(editionFilter) : undefined;
-  const tafsirMode = modeFilter === "tafsir";
 
   if (tafsirMode) {
     const tafsirResults = await searchTafsir(query, 100);
