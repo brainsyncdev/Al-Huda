@@ -80,7 +80,7 @@ export function AudioPlayer({ surah, ayah, reciterId, compact = false }: AudioPl
             : `${label} (${reciter?.name ?? reciterId})`
         }
         className={cn(
-          "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition-colors",
+          "inline-flex min-h-[44px] items-center gap-1.5 rounded-full px-4 py-2 text-xs font-medium transition-colors",
           playing
             ? "bg-primary text-primary-foreground"
             : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"

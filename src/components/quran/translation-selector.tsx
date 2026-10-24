@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef } from "react";
+import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { usePrefs } from "@/lib/prefs/context";
 import {
   getTranslationsByLanguage,
@@ -18,8 +18,9 @@ import { cn } from "@/lib/utils";
  * Groups translations by language for easy browsing.
  *
  * Keyboard: Escape closes the dropdown and returns focus to the trigger.
- * The backdrop click also returns focus. The search input and listbox carry
- * explicit aria-labels so screen readers announce their purpose.
+ * Tab and Shift+Tab cycle within the dialog while it is open (focus trap).
+ * The search input is focused automatically when the dialog opens.
+ * The backdrop click also returns focus to the trigger.
  */
 export function TranslationSelector({ compact = false }: { compact?: boolean }) {
   const { translationId, setTranslationId, hydrated } = usePrefs();
@@ -27,13 +28,21 @@ export function TranslationSelector({ compact = false }: { compact?: boolean }) 
   const [loading, setLoading] = useState<string | null>(null);
   const [search, setSearch] = useState("");
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const searchInputRef = useRef<HTMLInputElement>(null);
 
   const grouped = useMemo(() => getTranslationsByLanguage(), []);
   const currentTranslation = getTranslation(translationId);
 
+  const closeAndReturnFocus = useCallback(() => {
+    setIsOpen(false);
+    setSearch("");
+    triggerRef.current?.focus();
+  }, []);
+
   const handleSelect = async (translation: TranslationMeta) => {
     if (translation.id === translationId) {
-      setIsOpen(false);
+      closeAndReturnFocus();
       return;
     }
 
@@ -52,10 +61,59 @@ export function TranslationSelector({ compact = false }: { compact?: boolean }) 
 
     setTranslationId(translation.id);
     setLoading(null);
-    setIsOpen(false);
-    setSearch("");
-    triggerRef.current?.focus();
+    closeAndReturnFocus();
   };
+
+  // Auto-focus the search input when the dialog opens.
+  useEffect(() => {
+    if (isOpen) {
+      // Delay to ensure the input is mounted in the DOM.
+      const id = requestAnimationFrame(() => searchInputRef.current?.focus());
+      return () => cancelAnimationFrame(id);
+    }
+  }, [isOpen]);
+
+  // Focus trap: cycle Tab/Shift+Tab within the dialog.
+  useEffect(() => {
+    if (!isOpen || !dialogRef.current) return;
+
+    const dialog = dialogRef.current;
+
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeAndReturnFocus();
+        return;
+      }
+
+      if (e.key !== "Tab") return;
+
+      const focusable = dialog.querySelectorAll<HTMLElement>(
+        'input:not([disabled]), button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+      );
+      if (focusable.length === 0) return;
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey) {
+        // Shift+Tab on first element → wrap to last
+        if (document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        }
+      } else {
+        // Tab on last element → wrap to first
+        if (document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
+    dialog.addEventListener("keydown", handleKeyDown);
+    return () => dialog.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, closeAndReturnFocus]);
 
   // Filter translations by search
   const filteredGrouped = useMemo(() => {
@@ -116,37 +174,27 @@ export function TranslationSelector({ compact = false }: { compact?: boolean }) 
           <div
             aria-hidden="true"
             className="fixed inset-0 z-40"
-            onClick={() => {
-              setIsOpen(false);
-              setSearch("");
-              triggerRef.current?.focus();
-            }}
+            onClick={closeAndReturnFocus}
           />
 
-          {/* Dropdown — Escape closes and returns focus to the trigger */}
+          {/* Dropdown — focus trap keeps Tab/Shift+Tab within, Escape closes */}
           <div
+            ref={dialogRef}
             role="dialog"
             aria-label="Translation selector"
-            onKeyDown={(e) => {
-              if (e.key === "Escape") {
-                e.preventDefault();
-                setIsOpen(false);
-                setSearch("");
-                triggerRef.current?.focus();
-              }
-            }}
+            aria-modal="true"
             className="absolute right-0 top-full z-50 mt-2 w-80 rounded-xl border border-border/80 bg-card shadow-lg"
           >
             {/* Search */}
             <div className="border-b border-border/60 p-3">
               <input
+                ref={searchInputRef}
                 type="text"
                 placeholder="Search translations…"
                 aria-label="Search translations"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="w-full rounded-lg border border-border/60 bg-background px-3 py-2 text-sm outline-none focus:border-primary"
-                autoFocus
               />
             </div>
 

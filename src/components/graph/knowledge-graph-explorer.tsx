@@ -117,9 +117,75 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
       if (e.key === "Enter" || e.key === " ") {
         e.preventDefault();
         handleNodeSelect(id);
+        return;
+      }
+
+      // Arrow-key navigation between graph nodes.
+      // ArrowLeft/Right cycles through nodes in ring order.
+      // ArrowUp/Down switches between the outer (dimension) and inner (topic) rings.
+      if (
+        e.key !== "ArrowLeft" &&
+        e.key !== "ArrowRight" &&
+        e.key !== "ArrowUp" &&
+        e.key !== "ArrowDown"
+      ) {
+        return;
+      }
+
+      e.preventDefault();
+
+      const currentIndex = nodes.findIndex((n) => n.id === id);
+      if (currentIndex < 0) return;
+
+      const current = nodes[currentIndex];
+      const dims = nodes.filter((n) => n.ring === "dimension");
+      const topics = nodes.filter((n) => n.ring === "topic");
+      const currentRing = current.ring;
+      const ringNodes = currentRing === "dimension" ? dims : topics;
+      const ringIndex = ringNodes.findIndex((n) => n.id === id);
+
+      let targetId: string | null = null;
+
+      if (e.key === "ArrowLeft") {
+        const prev = (ringIndex - 1 + ringNodes.length) % ringNodes.length;
+        targetId = ringNodes[prev].id;
+      } else if (e.key === "ArrowRight") {
+        const next = (ringIndex + 1) % ringNodes.length;
+        targetId = ringNodes[next].id;
+      } else if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+        // Switch rings, preserving angular position as closely as possible.
+        const targetRing = currentRing === "dimension" ? topics : dims;
+        if (targetRing.length === 0) return;
+        // Match by angular position: find the target-ring node whose angle is
+        // closest to the current node's angle.
+        const currentAngle = Math.atan2(current.y - 350, current.x - 400);
+        let bestId = targetRing[0].id;
+        let bestDiff = Infinity;
+        for (const tn of targetRing) {
+          const angle = Math.atan2(tn.y - 350, tn.x - 400);
+          const diff = Math.abs(angle - currentAngle);
+          const wrapped = Math.min(diff, 2 * Math.PI - diff);
+          if (wrapped < bestDiff) {
+            bestDiff = wrapped;
+            bestId = tn.id;
+          }
+        }
+        targetId = bestId;
+      }
+
+      if (targetId) {
+        // Move DOM focus to the target node's <g> element, looked up by
+        // deterministic data attribute rather than an aria-label substring
+        // match — labels can share prefixes and would mis-route focus.
+        const svgRoot = (e.currentTarget as SVGGElement).closest("svg");
+        if (!svgRoot) return;
+        const targetEl = svgRoot.querySelector<SVGGElement>(
+          `g[data-node-id="${targetId}"]`
+        );
+        targetEl?.focus();
       }
     },
-    [handleNodeSelect]
+    [handleNodeSelect, nodes]
   );
 
   const clearSelection = useCallback(() => setSelectedId(null), []);
@@ -234,7 +300,8 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
               Concentric layout: dimensions on the outer ring, topics on the
               inner ring. Lines connect dimensions to their mapped topics
               (solid) and topics to related topics (dashed). All nodes are
-              keyboard-focusable.
+              keyboard-focusable. Use Tab to move between nodes, Arrow keys to
+              cycle within a ring or switch rings, Enter or Space to select.
             </desc>
 
             {/* Edges */}
@@ -279,6 +346,7 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
               return (
                 <g
                   key={node.id}
+                  data-node-id={node.id}
                   role="button"
                   tabIndex={0}
                   aria-label={`${isDimension ? "Dimension" : "Topic"}: ${node.label}${isSelected ? " (selected)" : ""}`}
@@ -290,6 +358,16 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
                   style={{ cursor: "pointer" }}
                   opacity={dimmed ? 0.2 : 1}
                 >
+                  {/* Invisible hit area — enlarges the touch/click target to
+                      at least 44px diameter (r=22) without changing the
+                      visible node size. */}
+                  <circle
+                    cx={node.x}
+                    cy={node.y}
+                    r={22}
+                    fill="transparent"
+                    aria-hidden="true"
+                  />
                   {/* Selected ring */}
                   {isSelected && (
                     <circle
@@ -350,7 +428,8 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
         </div>
 
         <p className="mt-3 text-xs text-muted-foreground">
-          Keyboard accessible: tab through nodes, press Enter or Space to
+          Keyboard accessible: Tab between nodes, Arrow Left/Right to cycle
+          within a ring, Arrow Up/Down to switch rings, Enter or Space to
           select. Use the filter above to focus on one dimension and its
           connected topics.
         </p>

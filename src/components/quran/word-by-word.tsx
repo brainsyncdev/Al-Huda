@@ -87,7 +87,7 @@ function WordTable({ surah, ayah }: { surah: number; ayah: number }) {
 
   return (
     <div className="mt-4 space-y-3">
-      <ol className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      <ol className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3" dir="rtl">
         {words.map((w) => (
           <WordCell key={w.position} word={w} />
         ))}
