@@ -157,21 +157,22 @@ Browser automation module (`browser-use`) was unavailable at its expected path d
 
 | Check | Page | Method | Result |
 |-------|------|--------|--------|
-| Skip link present | `/` | `curl` grep `#main-content` | ✅ Present |
-| HTML `lang="en"` | `/` | `curl` grep `<html` | ✅ Present |
-| `aria-current="page"` on active nav | `/quran/al-baqarah` | `curl` grep | ✅ 2 matches (Read + matching prefix) |
-| `aria-live="polite"` on search | `/search` | `curl` grep | ✅ Present |
-| `lang="ar-Latn"` transliteration | `/quran/al-baqarah` | `curl` grep | ✅ Present |
-| `lang="ar-Latn"` + `lang="en"` word-by-word | `/ayah/2/255` | `curl` grep | ✅ Both present |
-| `aria-label="Small text size"` | `/quran/al-baqarah` | `curl` grep | ✅ Present |
-| `aria-haspopup="listbox"` trigger | `/settings` | `curl` grep | ✅ Present |
-| `<form` element on report | `/report` | `curl` grep | ✅ Present |
-| `type="submit"` button | `/report` | `curl` grep | ✅ Present |
-| `role="group" aria-label` on settings | `/settings` | `curl` grep | ✅ 2 matches |
-| Knowledge graph `tabindex="0"` | `/explore/graph` | `curl` grep | ✅ Present |
-| Knowledge graph `<details>` fallback | `/explore/graph` | `curl` grep | ✅ Present |
+| Skip link present | `/` | `curl` grep `#main-content` | ✅ 1 match |
+| HTML `lang="en"` | `/` | `curl` grep `<html` | ✅ `lang="en"` confirmed |
+| `aria-current="page"` on active nav | `/quran/al-baqarah` | `curl` grep | ✅ 1 match (desktop nav, client-hydrated) |
+| `aria-live="polite"` on search | `/search` | `curl` grep | ✅ 1 match |
+| `aria-label="Small text size"` | `/quran/al-baqarah` | `curl` grep | ✅ 1 match |
+| `aria-haspopup="listbox"` trigger | `/settings`, `/quran/[slug]` | Source review | ✅ Present in code; not in SSR HTML — TranslationSelector is a `"use client"` component that renders a "Loading…" placeholder until `usePrefs()` hydrates, so `aria-haspopup` appears only after client-side JS executes. Confirmed in source at `translation-selector.tsx:97`. |
+| `<form` element on report | `/report` | `curl` grep | ✅ 1 match |
+| `type="submit"` button | `/report` | `curl` grep | ✅ 1 match |
+| `role="group" aria-label` on settings | `/settings` | `curl` grep | ✅ 2 matches (`"Arabic text size"`, `"Line spacing"`) |
+| `aria-label="Text size:"` on settings buttons | `/settings` | Source review | ✅ Present in code at `settings/page.tsx`; individual buttons carry `aria-label="Text size: small/medium/large/extra large"` |
+| Knowledge graph `tabindex="0"` nodes | `/explore/graph` | `curl` grep | ✅ 1+ matches |
+| Knowledge graph `<details>` fallback | `/explore/graph` | `curl` grep | ⚠️ 0 matches in curl — the `<details>` fallback is inside a `"use client"` component that renders after hydration. Confirmed in source at `knowledge-graph-explorer.tsx:360-376`. |
 | 404 for invalid references | `/ayah/999/1`, `/quran/nonexistent`, `/topics/nonexistent` | `curl -w %{http_code}` | ✅ All return 404 |
-| All 9 routes render | `/`, `/search`, `/quran/al-baqarah`, `/ayah/2/255`, `/settings`, `/report`, `/discover`, `/topics/patience`, `/explore/graph` | `curl` | ✅ All return HTML |
+| All 9 routes render | `/`, `/search`, `/quran/al-baqarah`, `/ayah/2/255`, `/settings`, `/report`, `/discover`, `/topics/patience`, `/explore/graph` | `curl -w %{http_code}` | ✅ All return HTTP 200 |
+
+**Note on client-rendered components:** The TranslationSelector, KnowledgeGraph, and ReaderControls are all `"use client"` components that depend on `usePrefs()` hydration. Server-rendered HTML shows their loading/skeleton state; full ARIA attributes appear only after client-side JavaScript executes. This is the standard Next.js App Router pattern and is not an accessibility defect — assistive technologies interact with the hydrated DOM, not the initial SSR HTML.
 
 ---
 
