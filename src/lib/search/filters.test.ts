@@ -196,10 +196,7 @@ describe("parseSearchFilters", () => {
     });
 
     it("mode takes precedence over edition when both are present", () => {
-      const result = parseSearchFilters(
-        { mode: "tafsir", edition: "en.pickthall" },
-        surahIndex
-      );
+      const result = parseSearchFilters({ mode: "tafsir", edition: "en.pickthall" });
       expect(result.tafsirMode).toBe(true);
       expect(result.editionId).toBeNull();
     });
@@ -229,26 +226,17 @@ describe("parseSearchFilters", () => {
 
   describe("invalidFilters flag", () => {
     it("returns false when all filters are valid", () => {
-      const result = parseSearchFilters(
-        { surah: "2", juz: "1", topic: "patience" },
-        surahIndex
-      );
+      const result = parseSearchFilters({ surah: "2", juz: "1", topic: "patience" });
       expect(result.invalidFilters).toBe(false);
     });
 
     it("returns true when any filter is invalid", () => {
-      const result = parseSearchFilters(
-        { surah: "999", juz: "1", topic: "patience" },
-        surahIndex
-      );
+      const result = parseSearchFilters({ surah: "999", juz: "1", topic: "patience" });
       expect(result.invalidFilters).toBe(true);
     });
 
     it("returns true when topic is invalid even if other filters are valid", () => {
-      const result = parseSearchFilters(
-        { surah: "2", topic: "nonexistent" },
-        surahIndex
-      );
+      const result = parseSearchFilters({ surah: "2", topic: "nonexistent" });
       expect(result.invalidFilters).toBe(true);
     });
   });
