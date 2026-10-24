@@ -11,6 +11,7 @@ import { ReadingPlansProvider } from "@/lib/reading-plans/context";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
+import { GlobalSearchShortcut } from "@/components/search/global-search-shortcut";
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 
 const geist = Geist({
@@ -95,6 +96,7 @@ export default function RootLayout({
                   </main>
                   <SiteFooter />
                   <MobileBottomNav />
+                  <GlobalSearchShortcut />
                   <Toaster position="bottom-center" />
                 </ReadingPlansProvider>
               </QuizProvider>

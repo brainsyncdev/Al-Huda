@@ -7,17 +7,18 @@ import {
   breadcrumbs,
   surahIndexJsonLd,
 } from "@/lib/seo/json-ld";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Quran",
   description:
     "Browse all 114 surahs with Arabic names, transliteration, verse counts, and stable links into the reader.",
-  alternates: { canonical: "/quran" },
+  alternates: { canonical: absoluteUrl("/quran") },
   openGraph: {
     title: "Quran — surah index",
     description:
       "All 114 surahs with Arabic names, transliteration, and verse counts.",
-    url: "/quran",
+    url: absoluteUrl("/quran"),
   },
 };
 

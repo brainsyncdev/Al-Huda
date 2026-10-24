@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { TOPICS } from "@/lib/topics/data";
 import { TopicGraph } from "@/components/topics/topic-graph";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata = {
   title: "Topics",
   description:
     "Curated themes in the Quran — editorial reading aids with review status. Not tafsir.",
-  alternates: { canonical: "/topics" },
+  alternates: { canonical: absoluteUrl("/topics") },
 };
 
 export default function TopicsIndexPage() {

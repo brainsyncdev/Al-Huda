@@ -16,6 +16,10 @@
 import { getSurahIndex } from "@/lib/quran/data";
 import { parseReference } from "@/lib/quran/reference";
 import { TOPICS } from "@/lib/topics/data";
+import { normalizeArabic } from "@/lib/quran/search";
+
+/** Detects whether a string contains Arabic-script characters (U+0600–U+06FF). */
+const HAS_ARABIC = /[\u0600-\u06FF]/;
 
 export type SuggestionType = "surah" | "topic" | "reference";
 
@@ -120,12 +124,19 @@ function tryParseReference(query: string): Suggestion | null {
  */
 function matchSurahs(query: string): Suggestion[] {
   const lowerQuery = query.toLowerCase();
+  // Normalize the query for Arabic matching (strips diacritics, unifies alef
+  // forms). Safe to apply to both Arabic and Latin input — the regex
+  // replacements target Arabic code points only, so Latin text is only
+  // lowercased (a no-op on already-lower input).
+  const normalizedQuery = normalizeArabic(query);
+  const queryHasArabic = HAS_ARABIC.test(query);
 
   const prefixMatches: Suggestion[] = [];
   const substringMatches: Suggestion[] = [];
 
   for (const surah of getSurahIndex()) {
     const lowerTranslit = surah.transliteration.toLowerCase();
+    const normalizedArabicName = normalizeArabic(surah.arabicName);
     const suggestion: Suggestion = {
       type: "surah",
       label: surah.transliteration,
@@ -134,9 +145,19 @@ function matchSurahs(query: string): Suggestion[] {
       priority: 1,
     };
 
-    if (lowerTranslit.startsWith(lowerQuery)) {
+    // A surah matches when EITHER its transliteration matches the query
+    // (Latin input) OR its normalized Arabic name matches the normalized
+    // query (Arabic input). Prefix hits rank above substring hits.
+    const translitPrefix = lowerTranslit.startsWith(lowerQuery);
+    const translitSubstring = lowerTranslit.includes(lowerQuery);
+    const arabicPrefix =
+      queryHasArabic && normalizedArabicName.startsWith(normalizedQuery);
+    const arabicSubstring =
+      queryHasArabic && normalizedArabicName.includes(normalizedQuery);
+
+    if (translitPrefix || arabicPrefix) {
       prefixMatches.push(suggestion);
-    } else if (lowerTranslit.includes(lowerQuery)) {
+    } else if (translitSubstring || arabicSubstring) {
       substringMatches.push(suggestion);
     }
   }

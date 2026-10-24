@@ -177,12 +177,12 @@ export default async function SearchPage({ searchParams }: Props) {
               minLength={2}
               autoComplete="off"
               spellCheck={false}
-              className="h-10 min-w-[12rem] flex-1 rounded-lg border border-input bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-2 focus-visible:outline-ring"
+              className="h-10 min-w-0 w-full sm:min-w-[12rem] sm:w-auto sm:flex-1 rounded-lg border border-input bg-background px-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-2 focus-visible:outline-ring"
             />
             <select
               name="edition"
               defaultValue=""
-              className="h-10 rounded-lg border border-input bg-background px-3 text-sm"
+              className="h-10 min-w-0 max-w-full w-full sm:w-auto rounded-lg border border-input bg-background px-3 text-sm"
             >
               <option value="" disabled>
                 Choose an edition…
@@ -217,7 +217,7 @@ export default async function SearchPage({ searchParams }: Props) {
             </select>
             <button
               type="submit"
-              className="h-10 rounded-lg bg-primary px-4 text-sm font-medium text-primary-foreground"
+              className="h-10 w-full sm:w-auto rounded-lg bg-primary px-4 text-sm font-medium text-primary-foreground"
             >
               Search edition
             </button>

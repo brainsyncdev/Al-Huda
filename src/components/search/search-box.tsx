@@ -50,6 +50,11 @@ export function SearchBox({
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+  // Monotonic counter to discard stale responses: if the user types "al" then
+  // "al-ba" quickly, the "al" response must not overwrite the "al-ba" results
+  // even if it arrives later. Only the response whose sequence matches the
+  // current counter is applied.
+  const requestSeqRef = useRef(0);
 
   useEffect(() => {
     setValue(initialQuery);
@@ -76,6 +81,7 @@ export function SearchBox({
     }
     const controller = new AbortController();
     abortControllerRef.current = controller;
+    const seq = ++requestSeqRef.current;
 
     const fetchSuggestions = async () => {
       try {
@@ -83,12 +89,16 @@ export function SearchBox({
           `/api/v1/search/suggestions?q=${encodeURIComponent(trimmed)}`,
           { signal: controller.signal }
         );
+        // Discard stale responses: a newer keystroke incremented the counter
+        // after this request was issued, so its results are no longer valid.
+        if (seq !== requestSeqRef.current) return;
         if (!response.ok) {
           setSuggestions([]);
           setIsOpen(false);
           return;
         }
         const data = await response.json();
+        if (seq !== requestSeqRef.current) return;
         const items: Suggestion[] = Array.isArray(data.suggestions)
           ? data.suggestions
           : [];
@@ -98,6 +108,7 @@ export function SearchBox({
       } catch (err) {
         // Aborted requests are expected during fast typing; stay quiet.
         if (!(err instanceof Error) || err.name !== "AbortError") {
+          if (seq !== requestSeqRef.current) return;
           setSuggestions([]);
           setIsOpen(false);
         }
@@ -163,6 +174,16 @@ export function SearchBox({
     }
   }
 
+  // Clamp activeIndex when the suggestion list changes (e.g., a slower
+  // response arrives with fewer options than the user had navigated to).
+  // Without this, aria-activedescendant could reference a non-existent ID
+  // and keyboard navigation would behave unpredictably.
+  useEffect(() => {
+    if (activeIndex >= suggestions.length) {
+      setActiveIndex(suggestions.length > 0 ? suggestions.length - 1 : -1);
+    }
+  }, [suggestions, activeIndex]);
+
   // Keep the active suggestion visible while navigating with the keyboard.
   useEffect(() => {
     if (activeIndex >= 0 && listRef.current) {
@@ -193,6 +214,8 @@ export function SearchBox({
         onBlur={closePanel}
         placeholder="Search a reference, translation, or Arabic text…"
         aria-label="Search the Quran"
+        aria-describedby="search-shortcut-hint"
+        data-search-box=""
         role="combobox"
         aria-autocomplete="list"
         aria-controls="search-suggestions"
@@ -210,6 +233,19 @@ export function SearchBox({
       >
         Search
       </button>
+      <kbd
+        id="search-shortcut-hint"
+        aria-label="Press slash to focus search"
+        className="pointer-events-none absolute right-24 top-1/2 hidden -translate-y-1/2 select-none items-center rounded-md border border-border/70 bg-background/70 px-1.5 py-0.5 font-mono text-[10px] font-medium text-muted-foreground sm:inline-flex"
+      >
+        /
+      </kbd>
+
+      <div aria-live="polite" aria-atomic="true" className="sr-only" role="status">
+        {isOpen && suggestions.length > 0
+          ? `${suggestions.length} suggestion${suggestions.length === 1 ? "" : "s"} available`
+          : ""}
+      </div>
 
       {isOpen && suggestions.length > 0 && (
         <ul

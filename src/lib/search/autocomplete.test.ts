@@ -159,6 +159,104 @@ describe("getSuggestions", () => {
     });
   });
 
+  describe("Arabic surah name suggestions", () => {
+    it("matches surah by Arabic name prefix", () => {
+      // "البقر" — first five letters of البقرة (Al-Baqarah)
+      const results = getSuggestions("\u0627\u0644\u0628\u0642\u0631");
+      const surahs = results.filter((s) => s.type === "surah");
+      const baqarah = surahs.find((s) => s.label === "Al-Baqarah");
+      expect(baqarah).toBeDefined();
+      expect(baqarah?.href).toBe("/quran/al-baqarah");
+    });
+
+    it("matches surah by Arabic name substring", () => {
+      // "بقرة" (without the leading ال) should still match Al-Baqarah
+      const results = getSuggestions("\u0628\u0642\u0631\u0629");
+      const baqarah = results.find(
+        (s) => s.type === "surah" && s.label === "Al-Baqarah"
+      );
+      expect(baqarah).toBeDefined();
+    });
+
+    it("matches surahs with diacritics stripped from the query", () => {
+      // Adding a fatha (U+064E) to البقرة should still match after
+      // normalization strips the diacritic.
+      const withDiacritic = "\u0627\u0644\u0628\u064E\u0642\u0631\u0629";
+      const results = getSuggestions(withDiacritic);
+      const baqarah = results.find(
+        (s) => s.type === "surah" && s.label === "Al-Baqarah"
+      );
+      expect(baqarah).toBeDefined();
+    });
+
+    it("unifies alef variants in the query", () => {
+      // Al-An'am's canonical Arabic name الأنعام contains alef-with-hamza-above
+      // (أ, U+0623). Normalization converts that to plain alef, so a query
+      // with a plain alef ("انعام") must still match the surah.
+      const results = getSuggestions(
+        "\u0627\u0646\u0639\u0627\u0645"
+      );
+      const anam = results.find(
+        (s) => s.type === "surah" && s.label === "Al-An'am"
+      );
+      expect(anam).toBeDefined();
+      expect(anam?.href).toBe("/quran/al-anam");
+    });
+
+    it("does not duplicate surahs matched by both transliteration and Arabic", () => {
+      // Dedup is by href, so each surah appears at most once regardless of
+      // how many matching rules hit it.
+      const results = getSuggestions("\u0627\u0644\u0628\u0642\u0631");
+      const hrefs = results
+        .filter((s) => s.type === "surah")
+        .map((s) => s.href);
+      expect(new Set(hrefs).size).toBe(hrefs.length);
+    });
+
+    it("returns canonical surah page destinations for Arabic queries", () => {
+      // الفاتحة (Al-Fatihah)
+      const results = getSuggestions(
+        "\u0627\u0644\u0641\u0627\u062a\u062d\u0629"
+      );
+      const fatihah = results.find(
+        (s) => s.type === "surah" && s.label === "Al-Fatihah"
+      );
+      expect(fatihah?.href).toBe("/quran/al-fatihah");
+    });
+
+    it("matches multiple surahs from a short Arabic prefix", () => {
+      // ال matches many surahs (almost all Arabic names start with ال)
+      const results = getSuggestions("\u0627\u0644");
+      const surahs = results.filter((s) => s.type === "surah");
+      expect(surahs.length).toBeGreaterThan(1);
+      // Results are capped at 10.
+      expect(results.length).toBeLessThanOrEqual(10);
+    });
+
+    it("preserves existing transliteration matching for Latin queries", () => {
+      const results = getSuggestions("al-ba");
+      const surahs = results.filter((s) => s.type === "surah");
+      expect(surahs.length).toBeGreaterThan(0);
+      const baqarah = surahs.find((s) => s.label === "Al-Baqarah");
+      expect(baqarah).toBeDefined();
+    });
+
+    it("keeps reference suggestions prioritized over surah name matches", () => {
+      const results = getSuggestions("2:255");
+      expect(results[0].type).toBe("reference");
+      expect(results[0].href).toBe("/ayah/2/255");
+    });
+
+    it("returns empty for unmatched Arabic queries", () => {
+      // A string of Arabic characters that does not match any surah name
+      const results = getSuggestions(
+        "\u0632\u064A\u0646\u0628\u0642\u0639"
+      );
+      const surahs = results.filter((s) => s.type === "surah");
+      expect(surahs).toHaveLength(0);
+    });
+  });
+
   describe("topic suggestions", () => {
     it("matches topic by English title prefix", () => {
       const results = getSuggestions("pat");

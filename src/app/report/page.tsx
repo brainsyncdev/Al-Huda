@@ -124,7 +124,7 @@ export default function ReportPage() {
         </p>
       </header>
 
-      <section className="space-y-4 rounded-2xl border border-border/80 bg-card p-5">
+      <form onSubmit={(e) => { e.preventDefault(); prepare(); }} className="space-y-4 rounded-2xl border border-border/80 bg-card p-5">
         <div>
           <label htmlFor="category" className="block text-sm font-medium">
             Category
@@ -200,13 +200,12 @@ export default function ReportPage() {
         </div>
 
         <button
-          type="button"
-          onClick={prepare}
+          type="submit"
           className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90"
         >
           Prepare report
         </button>
-      </section>
+      </form>
 
       {report && (
         <section className="space-y-3 rounded-2xl border border-border/80 bg-card p-5">

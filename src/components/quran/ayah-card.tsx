@@ -247,7 +247,7 @@ export function AyahCard({
       )}
 
       {showTransliteration && (
-        <p className="mt-3 text-sm italic leading-relaxed text-muted-foreground">
+        <p lang="ar-Latn" className="mt-3 text-sm italic leading-relaxed text-muted-foreground">
           {ayah.transliteration}
         </p>
       )}

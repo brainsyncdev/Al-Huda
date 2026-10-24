@@ -10,11 +10,11 @@ import {
 import { cn } from "@/lib/utils";
 import { TranslationSelector } from "./translation-selector";
 
-const SIZES: { value: ArabicSize; label: string }[] = [
-  { value: "sm", label: "S" },
-  { value: "md", label: "M" },
-  { value: "lg", label: "L" },
-  { value: "xl", label: "XL" },
+const SIZES: { value: ArabicSize; label: string; accessibleLabel: string }[] = [
+  { value: "sm", label: "S", accessibleLabel: "Small text size" },
+  { value: "md", label: "M", accessibleLabel: "Medium text size" },
+  { value: "lg", label: "L", accessibleLabel: "Large text size" },
+  { value: "xl", label: "XL", accessibleLabel: "Extra large text size" },
 ];
 
 const LINE_HEIGHT_LABELS: { value: LineHeight; label: string }[] = [
@@ -57,12 +57,13 @@ export function ReaderControls() {
           role="group"
           aria-label="Arabic text size"
         >
-          {SIZES.map(({ value, label }) => (
+          {SIZES.map(({ value, label, accessibleLabel }) => (
             <button
               key={value}
               type="button"
               onClick={() => setArabicSize(value)}
               aria-pressed={arabicSize === value}
+              aria-label={accessibleLabel}
               className={cn(
                 "min-w-9 rounded-full px-2.5 py-1 text-xs font-semibold transition-colors",
                 arabicSize === value

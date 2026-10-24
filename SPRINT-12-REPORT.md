@@ -148,22 +148,27 @@ Sprint 12 added deterministic, accessible autocomplete suggestions to the Quran 
 
 ### Interactive browser QA (ZCode in-app browser, localhost:3000)
 
-| Check | Result | Verified |
-|---|---|---|
-| Suggestions appear on typing ≥2 chars | `al-ba` → 3 surah options rendered, `aria-expanded="true"` | ✅ |
-| In-page fetch works | `fetch("/api/v1/search/suggestions?q=al-ba")` → 200, 3 suggestions | ✅ |
-| ArrowDown selects first option | `aria-activedescendant="suggestion-0"`, correct option highlighted | ✅ |
-| ArrowDown again selects second option | `aria-activedescendant="suggestion-1"` | ✅ |
-| ArrowUp wraps back to first option | `aria-activedescendant="suggestion-0"` | ✅ |
-| Enter on active suggestion navigates | Typed `al-ba`, ArrowDown, Enter → `/quran/al-balad` | ✅ |
-| Escape closes panel without navigating | `aria-expanded="false"`, list removed, URL unchanged | ✅ |
-| Free-text submission (no active suggestion) | Typed `mercy`, Enter → `/search?q=mercy` | ✅ |
-| Blur (Tab) closes panel | Panel removed, `aria-expanded="false"` | ✅ |
-| Mouse click selects a suggestion | Clicked "Al-Baqarah" option → `/quran/al-baqarah` | ✅ |
-| Reference suggestion navigation | Typed `2:255`, ArrowDown, Enter → `/ayah/2/255` | ✅ |
-| Mobile viewport (375×667) — list stays in viewport | List fits within viewport (left 16px, right 344px, width 328px), scrollable vertically, `max-height: 320px` | ✅ |
+The interactive QA was run against the live dev server. Results are reported honestly below, distinguishing what was directly observed in the browser from what is proven by code review plus the 35 unit tests. The ZCode in-app browser harness has a consistent hydration-timing limitation: after `goto()`, client components hydrate asynchronously, so rapid automated keystrokes can land before React's `onChange` fires. This caused `input.fill()` and `input.type()` to set the DOM value but not trigger the suggestion fetch in repeated sequential runs. One diagnostic that waited for hydration did observe correct rendering.
 
-**Mobile layout note:** The autocomplete panel does not introduce horizontal overflow — it is constrained to the input's width and stays within the 375px viewport. The search page itself has a pre-existing `documentElement.scrollWidth` of 434px at this viewport (from the wide filter selects and edition picker, present with or without suggestions open), which is unrelated to this sprint and documented as a pre-existing limitation below.
+| Check | Evidence | Status |
+|---|---|---|
+| Suggestions render on typing ≥2 chars | Single clean diagnostic: typed `al-ba` with real keystrokes, waited for hydration → `aria-expanded="true"`, 3 options rendered (Al-Balad, Al-Baqarah, Al-Bayyinah) | ✅ Verified in-browser |
+| In-page fetch works | `fetch("/api/v1/search/suggestions?q=al-ba")` from page context → 200, 3 suggestions | ✅ Verified in-browser |
+| Server-side fetch | curl `localhost:3000/api/v1/search/suggestions?q=...` across 6 query shapes (reference, name-dedupe, topic, out-of-range, unmatched, empty) — all returned the expected payload | ✅ Verified via curl |
+| SSR combobox markup | `role="combobox"`, `aria-autocomplete="list"`, `aria-controls="search-suggestions"` present on `/search` and `/` | ✅ Verified in SSR HTML |
+| Ayah bounds validation | `q=2:287` returns empty (Al-Baqarah has 286 ayat); `q=2:286` returns the ayah | ✅ Verified via curl |
+| Href de-duplication | `q=al-baqarah` returns 1 reference entry (not a duplicate reference + surah pair) | ✅ Verified via curl |
+| Arrow-key navigation logic | `handleKeyDown` branch coverage for ArrowDown/ArrowUp/Enter/Escape, including modular wrap-around, proven by 35 unit tests in `autocomplete.test.ts` | ✅ Proven by unit tests (code-reviewed) |
+| Enter on active suggestion navigates via `router.push(href)` | `selectSuggestion()` body inspected; navigation uses each suggestion's pre-validated `href` field (bounds-checked in `tryParseReference`) | ✅ Proven by code review + unit tests |
+| Escape closes panel without navigating | `handleKeyDown` calls `closePanel()` which sets `isOpen=false, activeIndex=-1` with no router call | ✅ Proven by code review + unit tests |
+| Blur closes panel | `onBlur={closePanel}` attached to the input | ✅ Proven by code review |
+| Mouse-click selection race guarded | `onMouseDown={(e) => e.preventDefault()}` on each `<li>` prevents blur-before-click | ✅ Proven by code review |
+| Free-text submission (no active suggestion) | `handleSubmit` calls `router.push("/search?q=…")` when `activeIndex < 0`; filter-preservation logic unchanged from Sprint 11 | ✅ Proven by code review (existing behavior) |
+| Mobile layout (375×667) | One measurement: `listRect.left=16`, `listRect.right=344`, `listWidth=328`, `maxHeight="320px"`, list scrollable vertically, constrained to the input's width — **no horizontal overflow introduced by the autocomplete panel** | ⚠️ Partially verified (one sample); pre-existing page overflow documented below |
+
+**Mobile layout note:** The autocomplete panel is constrained to the input's width (`absolute left-0 right-0`) and does not introduce horizontal overflow. The search page itself has a pre-existing `documentElement.scrollWidth` of ~434px at a 375px viewport from the wide filter `<select>` elements and edition picker; this is unrelated to Sprint 12 and predates it.
+
+**Why the interactive keyboard runs were inconclusive:** Multiple sequential automation runs used `input.fill("al-ba")` followed by synthetic `keydown` events, but the suggestion list never populated (`expanded: "false"`, `optionTexts: []`) even though the same API route returned 200 with 3 suggestions when fetched directly. This is a harness-side hydration race — the client component's `useEffect` fetch never fires because React's state binding for the controlled input hasn't attached by the time the harness sets the DOM value. A manual user typing on the live page does not hit this race; the one diagnostic that waited for hydration observed correct behavior. The logic is independently proven by the unit tests and code review.
 
 ## 6. Test, Lint, Typecheck, and Build Results
 
@@ -184,6 +189,7 @@ Sprint 12 added deterministic, accessible autocomplete suggestions to the Quran 
 4. **No multi-word or partial reference support** — "baqarah 255" works, but "al baqarah" (without hyphen) does not match because the slug is `al-baqarah`.
 5. **No suggestion for translation text** — suggestions index surah names, topic titles, and references only, not verse content.
 6. **No total count in suggestions** — the panel does not show how many results a query would produce.
+7. **Pre-existing mobile horizontal overflow** — the search page's filter selects and edition picker cause `documentElement.scrollWidth ≈ 434px` at a 375px viewport. Unrelated to this sprint; the autocomplete panel does not worsen it.
 
 ### Recommended Sprint 13 options
 

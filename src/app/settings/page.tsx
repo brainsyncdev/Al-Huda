@@ -62,13 +62,14 @@ export default function SettingsPage() {
               <h3 className="text-base font-semibold">Arabic text size</h3>
               <p className="text-sm text-muted-foreground">Affects Uthmani Arabic in readers and topic pages.</p>
             </div>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5" role="group" aria-label="Arabic text size">
               {ARABIC_SIZES.map((s) => (
                 <button
                   key={s}
                   type="button"
                   onClick={() => setArabicSize(s)}
                   aria-pressed={arabicSize === s}
+                  aria-label={`Text size: ${s === "sm" ? "small" : s === "md" ? "medium" : s === "lg" ? "large" : "extra large"}`}
                   className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors ${
                     arabicSize === s
                       ? "bg-primary text-primary-foreground"
@@ -87,7 +88,7 @@ export default function SettingsPage() {
               <h3 className="text-base font-semibold">Line spacing</h3>
               <p className="text-sm text-muted-foreground">Adjust vertical spacing between Arabic lines.</p>
             </div>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5" role="group" aria-label="Line spacing">
               {LINE_HEIGHTS.map((lh) => (
                 <button
                   key={lh}

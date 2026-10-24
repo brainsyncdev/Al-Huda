@@ -8,7 +8,7 @@ import { SourcePanel } from "@/components/quran/source-panel";
 import { TafsirLinks } from "@/components/quran/tafsir-links";
 import { TafsirViewer } from "@/components/quran/tafsir-viewer";
 import { WordByWord } from "@/components/quran/word-by-word";
-import { getAyah, getSurah } from "@/lib/quran/data";
+import { getAyah, getSurah, getSurahIndex } from "@/lib/quran/data";
 import { ayahPath, surahPath } from "@/lib/quran/reference";
 import { absoluteUrl } from "@/lib/site";
 import { topicsForAyah } from "@/lib/topics/data";
@@ -30,6 +30,22 @@ import { HOME_CRUMB, ayahJsonLd, breadcrumbs } from "@/lib/seo/json-ld";
 
 interface Props {
   params: Promise<{ surah: string; ayah: string }>;
+}
+
+/**
+ * Pre-render every canonical ayah at build time. The 6,236 routes are derived
+ * from the pinned dataset (getSurahIndex + ayahCount) so the static params can
+ * never invent a reference the page wouldn't resolve.
+ */
+export async function generateStaticParams() {
+  const index = getSurahIndex();
+  const params: { surah: string; ayah: string }[] = [];
+  for (const surah of index) {
+    for (let ayah = 1; ayah <= surah.ayahCount; ayah++) {
+      params.push({ surah: String(surah.id), ayah: String(ayah) });
+    }
+  }
+  return params;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
