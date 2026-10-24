@@ -23,15 +23,18 @@ interface Suggestion {
 }
 
 /**
- * Search input with autocomplete suggestions.
+ * Search input with deterministic, local-first autocomplete.
  *
  * Submits by navigating to /search?q=… so results are linkable and the back
- * button works. Suggestions are fetched from /api/search/suggestions, which
- * returns local-only, deterministic results from canonical surah names, topic
- * titles, and Quran references.
+ * button works. Suggestions come from the same-origin
+ * /api/v1/search/suggestions endpoint, which draws only on canonical surah
+ * names, topic titles, and Quran references — no history, no tracking, no
+ * third-party services.
  *
- * Keyboard navigation: Arrow Up/Down to move through suggestions, Enter to
- * select, Escape to close. Mouse click also selects.
+ * Keyboard: ArrowDown / ArrowUp move through suggestions, Enter selects the
+ * active one (or submits the free-text query when nothing is active), and
+ * Escape closes the panel. The panel also closes when the input loses focus.
+ * Users can always ignore the suggestions and submit free text.
  */
 export function SearchBox({
   initialQuery = "",
@@ -43,7 +46,6 @@ export function SearchBox({
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
@@ -57,46 +59,51 @@ export function SearchBox({
     if (autoFocus) inputRef.current?.focus();
   }, [autoFocus]);
 
-  // Fetch suggestions as the user types (min 2 chars, debounced)
+  // Fetch suggestions as the user types (minimum 2 characters, debounced).
+  // The request is same-origin and serves static canonical data; the debounce
+  // and abort simply keep rapid typing from stacking stale requests.
   useEffect(() => {
     const trimmed = value.trim();
     if (trimmed.length < 2) {
       setSuggestions([]);
       setIsOpen(false);
+      setActiveIndex(-1);
       return;
     }
 
-    // Cancel any pending request
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
     }
-
     const controller = new AbortController();
     abortControllerRef.current = controller;
 
     const fetchSuggestions = async () => {
-      setIsLoading(true);
       try {
         const response = await fetch(
-          `/api/search/suggestions?q=${encodeURIComponent(trimmed)}`,
+          `/api/v1/search/suggestions?q=${encodeURIComponent(trimmed)}`,
           { signal: controller.signal }
         );
-        if (!response.ok) throw new Error("Failed to fetch suggestions");
+        if (!response.ok) {
+          setSuggestions([]);
+          setIsOpen(false);
+          return;
+        }
         const data = await response.json();
-        setSuggestions(data.suggestions);
-        setIsOpen(data.suggestions.length > 0);
+        const items: Suggestion[] = Array.isArray(data.suggestions)
+          ? data.suggestions
+          : [];
+        setSuggestions(items);
+        setIsOpen(items.length > 0);
         setActiveIndex(-1);
       } catch (err) {
-        if (err instanceof Error && err.name !== "AbortError") {
-          console.error("Failed to fetch suggestions:", err);
+        // Aborted requests are expected during fast typing; stay quiet.
+        if (!(err instanceof Error) || err.name !== "AbortError") {
           setSuggestions([]);
+          setIsOpen(false);
         }
-      } finally {
-        setIsLoading(false);
       }
     };
 
-    // Debounce: wait 150ms before fetching
     const timeoutId = setTimeout(fetchSuggestions, 150);
 
     return () => {
@@ -133,6 +140,11 @@ export function SearchBox({
     router.push(suggestion.href);
   }
 
+  function closePanel() {
+    setIsOpen(false);
+    setActiveIndex(-1);
+  }
+
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
     if (!isOpen || suggestions.length === 0) return;
 
@@ -147,12 +159,11 @@ export function SearchBox({
       selectSuggestion(suggestions[activeIndex]);
     } else if (e.key === "Escape") {
       e.preventDefault();
-      setIsOpen(false);
-      setActiveIndex(-1);
+      closePanel();
     }
   }
 
-  // Scroll active suggestion into view
+  // Keep the active suggestion visible while navigating with the keyboard.
   useEffect(() => {
     if (activeIndex >= 0 && listRef.current) {
       const items = listRef.current.querySelectorAll("li");
@@ -179,6 +190,7 @@ export function SearchBox({
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
+        onBlur={closePanel}
         placeholder="Search a reference, translation, or Arabic text…"
         aria-label="Search the Quran"
         role="combobox"
@@ -219,6 +231,9 @@ export function SearchBox({
                   ? "bg-primary/10 text-primary"
                   : "hover:bg-muted"
               )}
+              // Prevent the blur that a click would cause so onClick can
+              // register the selection before the panel closes.
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => selectSuggestion(suggestion)}
               onMouseEnter={() => setActiveIndex(index)}
             >
@@ -240,12 +255,6 @@ export function SearchBox({
             </li>
           ))}
         </ul>
-      )}
-
-      {isLoading && isOpen && suggestions.length === 0 && (
-        <div className="absolute left-0 right-0 top-full z-50 mt-2 rounded-2xl border border-border bg-card p-4 shadow-lg">
-          <div className="text-sm text-muted-foreground text-center">Loading suggestions…</div>
-        </div>
       )}
     </form>
   );

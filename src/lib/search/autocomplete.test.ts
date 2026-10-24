@@ -1,14 +1,10 @@
-/**
- * Unit tests for autocomplete suggestion engine.
- *
- * Verifies:
- * - Reference parsing and navigation
- * - Surah name matching (prefix and substring)
- * - Topic title matching (English and Arabic)
- * - Deterministic ordering (reference > surah > topic)
- * - Empty/short query handling
- * - Invalid reference handling
- */
+// Unit tests for the autocomplete suggestion engine.
+//
+// The engine must stay deterministic and canonical-only: suggestions come
+// from the surah index, the curated topic list, and the existing reference
+// parser — never from search history, trends, or generated content. Every
+// suggested destination must be a route that actually exists, so reference
+// suggestions are range-checked against each surah's canonical verse count.
 
 import { describe, expect, it } from "vitest";
 import { getSuggestions } from "./autocomplete";
@@ -34,9 +30,8 @@ describe("getSuggestions", () => {
   });
 
   describe("reference suggestions", () => {
-    it("suggests ayah for numeric reference pattern", () => {
+    it("suggests an ayah for a numeric reference pattern", () => {
       const results = getSuggestions("2:255");
-      expect(results.length).toBeGreaterThan(0);
       const ref = results.find((s) => s.type === "reference");
       expect(ref).toBeDefined();
       expect(ref?.href).toBe("/ayah/2/255");
@@ -44,7 +39,14 @@ describe("getSuggestions", () => {
       expect(ref?.label).toContain("255");
     });
 
-    it("suggests surah for surah-only numeric reference", () => {
+    it("accepts separator variants of the same reference", () => {
+      for (const q of ["2.255", "2-255", "2 255"]) {
+        const ref = getSuggestions(q).find((s) => s.type === "reference");
+        expect(ref?.href).toBe("/ayah/2/255");
+      }
+    });
+
+    it("suggests the surah page for a surah-only numeric reference", () => {
       const results = getSuggestions("36");
       const ref = results.find((s) => s.type === "reference");
       expect(ref).toBeDefined();
@@ -52,33 +54,53 @@ describe("getSuggestions", () => {
       expect(ref?.label).toBe("Ya-Sin");
     });
 
-    it("suggests ayah for name + ayah pattern", () => {
+    it("suggests an ayah for a name + ayah pattern", () => {
       const results = getSuggestions("al-baqarah 255");
       const ref = results.find((s) => s.type === "reference");
       expect(ref).toBeDefined();
       expect(ref?.href).toBe("/ayah/2/255");
     });
 
-    it("suggests surah for name-only pattern", () => {
+    it("suggests the surah page for a name-only pattern", () => {
       const results = getSuggestions("al-baqarah");
       const ref = results.find((s) => s.type === "reference");
       expect(ref).toBeDefined();
       expect(ref?.href).toBe("/quran/al-baqarah");
     });
 
-    it("returns no reference suggestion for invalid reference", () => {
-      const results = getSuggestions("999:999");
-      const ref = results.find((s) => s.type === "reference");
-      expect(ref).toBeUndefined();
+    it("accepts the last valid ayah of a surah", () => {
+      // Al-Baqarah has 286 ayat.
+      const ref = getSuggestions("2:286").find((s) => s.type === "reference");
+      expect(ref?.href).toBe("/ayah/2/286");
     });
 
-    it("returns no reference suggestion for unparseable pattern", () => {
+    it("rejects an ayah beyond the surah's canonical verse count", () => {
+      // Al-Baqarah has 286 ayat, so 2:287 must not be suggested.
+      const results = getSuggestions("2:287");
+      expect(results.find((s) => s.type === "reference")).toBeUndefined();
+    });
+
+    it("rejects an out-of-range ayah for a short surah", () => {
+      // Al-Fatihah has 7 ayat.
+      expect(
+        getSuggestions("1:8").find((s) => s.type === "reference")
+      ).toBeUndefined();
+      expect(
+        getSuggestions("1:7").find((s) => s.type === "reference")?.href
+      ).toBe("/ayah/1/7");
+    });
+
+    it("returns no suggestions for unknown surah numbers", () => {
+      expect(getSuggestions("999:999")).toEqual([]);
+      expect(getSuggestions("0:1")).toEqual([]);
+    });
+
+    it("returns no reference suggestion for an unparseable pattern", () => {
       const results = getSuggestions("not a reference");
-      const ref = results.find((s) => s.type === "reference");
-      expect(ref).toBeUndefined();
+      expect(results.find((s) => s.type === "reference")).toBeUndefined();
     });
 
-    it("prioritizes reference suggestions over surah/topic", () => {
+    it("puts reference suggestions first", () => {
       const results = getSuggestions("2:255");
       expect(results[0].type).toBe("reference");
       expect(results[0].priority).toBe(0);
@@ -97,23 +119,25 @@ describe("getSuggestions", () => {
 
     it("matches surah by transliteration substring", () => {
       const results = getSuggestions("baqarah");
-      const surahs = results.filter((s) => s.type === "surah");
-      expect(surahs.length).toBeGreaterThan(0);
-      const baqarah = surahs.find((s) => s.label === "Al-Baqarah");
+      const baqarah = results.find(
+        (s) => s.type === "surah" && s.label === "Al-Baqarah"
+      );
       expect(baqarah).toBeDefined();
     });
 
     it("matches surah case-insensitively", () => {
       const results = getSuggestions("AL-BA");
-      const surahs = results.filter((s) => s.type === "surah");
-      expect(surahs.length).toBeGreaterThan(0);
-      const baqarah = surahs.find((s) => s.label === "Al-Baqarah");
+      const baqarah = results.find(
+        (s) => s.type === "surah" && s.label === "Al-Baqarah"
+      );
       expect(baqarah).toBeDefined();
     });
 
-    it("includes meaning and ayah count in sublabel", () => {
-      const results = getSuggestions("al-baqarah");
-      const surah = results.find((s) => s.type === "surah" && s.label === "Al-Baqarah");
+    it("includes meaning and ayah count in the sublabel", () => {
+      const results = getSuggestions("baqarah");
+      const surah = results.find(
+        (s) => s.type === "surah" && s.label === "Al-Baqarah"
+      );
       expect(surah?.sublabel).toContain("The Cow");
       expect(surah?.sublabel).toContain("286");
     });
@@ -121,8 +145,11 @@ describe("getSuggestions", () => {
     it("sorts surahs alphabetically within type", () => {
       const results = getSuggestions("al-");
       const surahs = results.filter((s) => s.type === "surah");
+      expect(surahs.length).toBeGreaterThan(1);
       for (let i = 1; i < surahs.length; i++) {
-        expect(surahs[i - 1].label.localeCompare(surahs[i].label)).toBeLessThanOrEqual(0);
+        expect(
+          surahs[i - 1].label.localeCompare(surahs[i].label)
+        ).toBeLessThanOrEqual(0);
       }
     });
 
@@ -135,113 +162,109 @@ describe("getSuggestions", () => {
   describe("topic suggestions", () => {
     it("matches topic by English title prefix", () => {
       const results = getSuggestions("pat");
-      const topics = results.filter((s) => s.type === "topic");
-      expect(topics.length).toBeGreaterThan(0);
-      const patience = topics.find((s) => s.label === "Patience");
+      const patience = results.find(
+        (s) => s.type === "topic" && s.label === "Patience"
+      );
       expect(patience).toBeDefined();
       expect(patience?.href).toBe("/topics/patience");
     });
 
     it("matches topic by English title substring", () => {
       const results = getSuggestions("tience");
-      const topics = results.filter((s) => s.type === "topic");
-      expect(topics.length).toBeGreaterThan(0);
-      const patience = topics.find((s) => s.label === "Patience");
+      const patience = results.find(
+        (s) => s.type === "topic" && s.label === "Patience"
+      );
       expect(patience).toBeDefined();
     });
 
     it("matches topic by Arabic title", () => {
-      const results = getSuggestions("الصبر");
-      const topics = results.filter((s) => s.type === "topic");
-      expect(topics.length).toBeGreaterThan(0);
-      const patience = topics.find((s) => s.label === "Patience");
+      const results = getSuggestions("\u0627\u0644\u0635\u0628\u0631");
+      const patience = results.find(
+        (s) => s.type === "topic" && s.label === "Patience"
+      );
       expect(patience).toBeDefined();
     });
 
-    it("includes Arabic title in sublabel", () => {
+    it("includes the Arabic title in the sublabel", () => {
       const results = getSuggestions("patience");
-      const topic = results.find((s) => s.type === "topic" && s.label === "Patience");
-      expect(topic?.sublabel).toBe("الصبر");
+      const topic = results.find(
+        (s) => s.type === "topic" && s.label === "Patience"
+      );
+      expect(topic?.sublabel).toBe("\u0627\u0644\u0635\u0628\u0631");
     });
 
     it("sorts topics alphabetically within type", () => {
-      const results = getSuggestions("a");
+      // "an" occurs inside several topic titles ("...and...").
+      const results = getSuggestions("an");
       const topics = results.filter((s) => s.type === "topic");
       for (let i = 1; i < topics.length; i++) {
-        expect(topics[i - 1].label.localeCompare(topics[i].label)).toBeLessThanOrEqual(0);
+        expect(
+          topics[i - 1].label.localeCompare(topics[i].label)
+        ).toBeLessThanOrEqual(0);
       }
     });
   });
 
-  describe("suggestion ordering", () => {
-    it("prioritizes reference > surah > topic", () => {
-      // Query that matches all three types
+  describe("ordering and de-duplication", () => {
+    it("puts the reference suggestion first when the query parses as one", () => {
       const results = getSuggestions("al-baqarah");
-      const types = results.map((s) => s.type);
-      const refIndex = types.indexOf("reference");
-      const surahIndex = types.indexOf("surah");
-      const topicIndex = types.findIndex((t) => t === "topic");
-
-      // Reference should come first if present
-      if (refIndex !== -1) {
-        expect(refIndex).toBe(0);
-      }
-
-      // Surahs should come before topics
-      if (surahIndex !== -1 && topicIndex !== -1) {
-        expect(surahIndex).toBeLessThan(topicIndex);
-      }
+      expect(results[0].type).toBe("reference");
     });
 
-    it("returns empty array when no matches found", () => {
-      const results = getSuggestions("xyz123nonexistent");
-      expect(results).toEqual([]);
+    it("de-duplicates suggestions that share a destination", () => {
+      // "al-baqarah" parses as a surah reference AND prefix-matches the
+      // surah name; both point at /quran/al-baqarah, so only one entry —
+      // the higher-priority reference — may survive.
+      const results = getSuggestions("al-baqarah");
+      const toSurahPage = results.filter(
+        (s) => s.href === "/quran/al-baqarah"
+      );
+      expect(toSurahPage).toHaveLength(1);
+      expect(toSurahPage[0].type).toBe("reference");
+    });
+
+    it("returns empty array when no matches are found", () => {
+      expect(getSuggestions("xyz123nonexistent")).toEqual([]);
     });
   });
 
   describe("deterministic behavior", () => {
-    it("returns same results for same query", () => {
-      const results1 = getSuggestions("mercy");
-      const results2 = getSuggestions("mercy");
-      expect(results1).toEqual(results2);
+    it("returns the same results for the same query", () => {
+      expect(getSuggestions("mercy")).toEqual(getSuggestions("mercy"));
     });
 
     it("trims whitespace before matching", () => {
-      const results1 = getSuggestions("  patience  ");
-      const results2 = getSuggestions("patience");
-      expect(results1).toEqual(results2);
+      expect(getSuggestions("  patience  ")).toEqual(
+        getSuggestions("patience")
+      );
     });
   });
 });
 
 describe("suggestion structure", () => {
-  it("all suggestions have required fields", () => {
+  it("every suggestion has required fields and an internal route", () => {
     const results = getSuggestions("al-baqarah");
+    expect(results.length).toBeGreaterThan(0);
     for (const suggestion of results) {
-      expect(suggestion.type).toBeDefined();
-      expect(suggestion.label).toBeDefined();
-      expect(suggestion.href).toBeDefined();
-      expect(suggestion.priority).toBeDefined();
       expect(["surah", "topic", "reference"]).toContain(suggestion.type);
+      expect(suggestion.label.length).toBeGreaterThan(0);
       expect(suggestion.href.startsWith("/")).toBe(true);
+      expect([0, 1, 2]).toContain(suggestion.priority);
     }
   });
 
-  it("reference suggestions have correct href format", () => {
-    const results = getSuggestions("2:255");
-    const ref = results.find((s) => s.type === "reference");
+  it("reference suggestions have the canonical ayah href format", () => {
+    const ref = getSuggestions("2:255").find((s) => s.type === "reference");
     expect(ref?.href).toMatch(/^\/ayah\/\d+\/\d+$/);
   });
 
-  it("surah suggestions have correct href format", () => {
-    const results = getSuggestions("al-baqarah");
-    const surah = results.find((s) => s.type === "surah");
+  it("surah suggestions have the canonical surah href format", () => {
+    const surah = getSuggestions("baqarah").find((s) => s.type === "surah");
     expect(surah?.href).toMatch(/^\/quran\/[a-z-]+$/);
   });
 
-  it("topic suggestions have correct href format", () => {
-    const results = getSuggestions("patience");
-    const topic = results.find((s) => s.type === "topic");
+  it("topic suggestions have the canonical topic href format", () => {
+    const topic = getSuggestions("patience").find((s) => s.type === "topic");
     expect(topic?.href).toMatch(/^\/topics\/[a-z-]+$/);
   });
 });

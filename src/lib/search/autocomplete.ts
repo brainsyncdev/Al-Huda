@@ -2,11 +2,15 @@
  * Autocomplete suggestion engine for Quran search.
  *
  * Provides deterministic, local-only suggestions from canonical data:
+ * - Quran references (parsed via the existing reference parser)
  * - Surah names (transliteration matches)
  * - Topic titles (English and Arabic)
- * - Quran references (parsed via reference.ts)
  *
- * No network requests, no analytics, no AI-generated content.
+ * Every suggestion is validated against canonical data before it is returned.
+ * References are range-checked against the surah's actual verse count, so a
+ * suggestion can never point at a verse that does not exist. No network
+ * requests, no analytics, no AI-generated content, and nothing is invented:
+ * a query that matches nothing returns an empty list.
  */
 
 import { getSurahIndex } from "@/lib/quran/data";
@@ -20,7 +24,7 @@ export interface Suggestion {
   label: string;
   sublabel?: string;
   href: string;
-  /** For sorting: references first, then surahs, then topics. */
+  /** For sorting: references first (0), then surahs (1), then topics (2). */
   priority: number;
 }
 
@@ -28,12 +32,14 @@ export interface Suggestion {
  * Generate autocomplete suggestions for a query.
  *
  * Matching rules:
- * - References: parsed successfully via parseReference()
- * - Surahs: transliteration starts with or contains query (case-insensitive)
- * - Topics: title or arabicTitle starts with or contains query (case-insensitive)
+ * - References: parsed via parseReference() AND range-checked against the
+ *   canonical verse count. Out-of-range references produce no suggestion.
+ * - Surahs: transliteration starts with or contains the query.
+ * - Topics: title or arabicTitle starts with or contains the query.
  *
- * Returns max 10 suggestions, sorted by priority (reference > surah > topic),
- * then alphabetically within each type.
+ * Results are sorted by priority (reference > surah > topic), then
+ * alphabetically within each type, de-duplicated by destination href, and
+ * capped at 10 suggestions.
  */
 export function getSuggestions(query: string): Suggestion[] {
   const trimmed = query.trim();
@@ -48,47 +54,57 @@ export function getSuggestions(query: string): Suggestion[] {
   }
 
   // 2. Surah suggestions
-  const surahMatches = matchSurahs(trimmed);
-  suggestions.push(...surahMatches);
+  suggestions.push(...matchSurahs(trimmed));
 
   // 3. Topic suggestions
-  const topicMatches = matchTopics(trimmed);
-  suggestions.push(...topicMatches);
+  suggestions.push(...matchTopics(trimmed));
 
-  // Sort by priority, then alphabetically by label
+  // Sort by priority, then alphabetically by label (stable within groups).
   suggestions.sort((a, b) => {
     if (a.priority !== b.priority) return a.priority - b.priority;
     return a.label.localeCompare(b.label);
   });
 
-  // Limit to 10 suggestions
-  return suggestions.slice(0, 10);
+  // De-duplicate by destination href, keeping the highest-priority (earliest)
+  // entry. A name query such as "al-baqarah" otherwise yields both a
+  // reference and a surah suggestion pointing at the same /quran/... route.
+  const seen = new Set<string>();
+  const unique = suggestions.filter((s) => {
+    if (seen.has(s.href)) return false;
+    seen.add(s.href);
+    return true;
+  });
+
+  return unique.slice(0, 10);
 }
 
 /**
- * Try to parse the query as a Quran reference.
- * Returns a suggestion if valid, null otherwise.
+ * Try to parse the query as a Quran reference and turn it into a suggestion.
+ * Returns null when the query is not a reference, the surah is unknown, or
+ * the ayah number falls outside the surah's canonical verse range.
  */
 function tryParseReference(query: string): Suggestion | null {
   const parsed = parseReference(query);
   if (!parsed) return null;
 
-  const surahIndex = getSurahIndex();
-  const surah = surahIndex.find((s) => s.id === parsed.surah);
+  const surah = getSurahIndex().find((s) => s.id === parsed.surah);
   if (!surah) return null;
 
-  // If it's a surah-only reference (no ayah), suggest the surah page
-  if (!parsed.ayah) {
+  // Surah-only reference: navigate to the surah reading page.
+  if (parsed.ayah === undefined) {
     return {
       type: "reference",
-      label: `${surah.transliteration}`,
-      sublabel: `Surah ${parsed.surah}`,
+      label: surah.transliteration,
+      sublabel: `Surah ${surah.id} · ${surah.meaning}`,
       href: `/quran/${surah.slug}`,
       priority: 0,
     };
   }
 
-  // If it includes an ayah, suggest the ayah page
+  // Validate the ayah against the canonical verse count so we never suggest a
+  // verse that does not exist (parseReference does not range-check ayat).
+  if (parsed.ayah < 1 || parsed.ayah > surah.ayahCount) return null;
+
   return {
     type: "reference",
     label: `${surah.transliteration} ${parsed.ayah}`,
@@ -99,39 +115,32 @@ function tryParseReference(query: string): Suggestion | null {
 }
 
 /**
- * Match surahs by transliteration.
- * Prioritizes prefix matches, then substring matches.
+ * Match surahs by transliteration. Prefix matches rank before substring
+ * matches; each group is sorted alphabetically.
  */
 function matchSurahs(query: string): Suggestion[] {
   const lowerQuery = query.toLowerCase();
-  const surahIndex = getSurahIndex();
 
   const prefixMatches: Suggestion[] = [];
   const substringMatches: Suggestion[] = [];
 
-  for (const surah of surahIndex) {
+  for (const surah of getSurahIndex()) {
     const lowerTranslit = surah.transliteration.toLowerCase();
+    const suggestion: Suggestion = {
+      type: "surah",
+      label: surah.transliteration,
+      sublabel: `${surah.meaning} · ${surah.ayahCount} ayat`,
+      href: `/quran/${surah.slug}`,
+      priority: 1,
+    };
 
     if (lowerTranslit.startsWith(lowerQuery)) {
-      prefixMatches.push({
-        type: "surah",
-        label: surah.transliteration,
-        sublabel: `${surah.meaning} · ${surah.ayahCount} ayat`,
-        href: `/quran/${surah.slug}`,
-        priority: 1,
-      });
+      prefixMatches.push(suggestion);
     } else if (lowerTranslit.includes(lowerQuery)) {
-      substringMatches.push({
-        type: "surah",
-        label: surah.transliteration,
-        sublabel: `${surah.meaning} · ${surah.ayahCount} ayat`,
-        href: `/quran/${surah.slug}`,
-        priority: 1,
-      });
+      substringMatches.push(suggestion);
     }
   }
 
-  // Sort each group alphabetically, then concatenate
   prefixMatches.sort((a, b) => a.label.localeCompare(b.label));
   substringMatches.sort((a, b) => a.label.localeCompare(b.label));
 
@@ -139,8 +148,8 @@ function matchSurahs(query: string): Suggestion[] {
 }
 
 /**
- * Match topics by title or arabicTitle.
- * Prioritizes prefix matches, then substring matches.
+ * Match topics by English title or Arabic title. Prefix matches rank before
+ * substring matches; each group is sorted alphabetically.
  */
 function matchTopics(query: string): Suggestion[] {
   const lowerQuery = query.toLowerCase();
@@ -150,43 +159,29 @@ function matchTopics(query: string): Suggestion[] {
 
   for (const topic of TOPICS) {
     const lowerTitle = topic.title.toLowerCase();
-    const lowerArabic = topic.arabicTitle.toLowerCase();
+    const lowerArabic = topic.arabicTitle;
+    const suggestion: Suggestion = {
+      type: "topic",
+      label: topic.title,
+      sublabel: topic.arabicTitle,
+      href: `/topics/${topic.slug}`,
+      priority: 2,
+    };
 
-    const titleMatches =
-      lowerTitle.startsWith(lowerQuery) || lowerArabic.startsWith(lowerQuery);
-    const titleContains =
-      lowerTitle.includes(lowerQuery) || lowerArabic.includes(lowerQuery);
+    const isPrefix =
+      lowerTitle.startsWith(lowerQuery) || lowerArabic.startsWith(query);
+    const isSubstring =
+      lowerTitle.includes(lowerQuery) || lowerArabic.includes(query);
 
-    if (titleMatches) {
-      prefixMatches.push({
-        type: "topic",
-        label: topic.title,
-        sublabel: topic.arabicTitle,
-        href: `/topics/${topic.slug}`,
-        priority: 2,
-      });
-    } else if (titleContains) {
-      substringMatches.push({
-        type: "topic",
-        label: topic.title,
-        sublabel: topic.arabicTitle,
-        href: `/topics/${topic.slug}`,
-        priority: 2,
-      });
+    if (isPrefix) {
+      prefixMatches.push(suggestion);
+    } else if (isSubstring) {
+      substringMatches.push(suggestion);
     }
   }
 
-  // Sort each group alphabetically, then concatenate
   prefixMatches.sort((a, b) => a.label.localeCompare(b.label));
   substringMatches.sort((a, b) => a.label.localeCompare(b.label));
 
   return [...prefixMatches, ...substringMatches];
-}
-
-/**
- * Get the destination URL for a suggestion.
- * Used by the UI to navigate on selection.
- */
-export function getSuggestionHref(suggestion: Suggestion): string {
-  return suggestion.href;
 }
