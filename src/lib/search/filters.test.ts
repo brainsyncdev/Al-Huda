@@ -276,10 +276,7 @@ describe("passesStructuralFilters", () => {
   });
 
   it("combines multiple filters with AND logic", () => {
-    const filters = parseSearchFilters(
-      { surah: "2", topic: "patience" },
-      surahIndex
-    );
+    const filters = parseSearchFilters({ surah: "2", topic: "patience" });
     // 2:153 is in surah 2 AND in patience topic
     expect(passesStructuralFilters(2, 153, filters, revelationMap)).toBe(true);
     // 3:1 is in patience topic but not surah 2
