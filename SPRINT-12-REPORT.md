@@ -146,12 +146,24 @@ Sprint 12 added deterministic, accessible autocomplete suggestions to the Quran 
 | `aria-controls="search-suggestions"` | Present | — | ✅ |
 | `/api/v1/search/suggestions` reference | Present (client JS) | Present (client JS) | ✅ |
 
-### Interactive behavior (verified via architecture, not Playwright)
+### Interactive browser QA (ZCode in-app browser, localhost:3000)
 
-- Suggestion panel opens after 2+ characters typed and 150ms debounce.
-- Panel closes on Escape, blur, or selection.
-- Free-text submission works when no suggestion is active.
-- Filter preservation on re-submit from `/search` is unchanged from Sprint 11.
+| Check | Result | Verified |
+|---|---|---|
+| Suggestions appear on typing ≥2 chars | `al-ba` → 3 surah options rendered, `aria-expanded="true"` | ✅ |
+| In-page fetch works | `fetch("/api/v1/search/suggestions?q=al-ba")` → 200, 3 suggestions | ✅ |
+| ArrowDown selects first option | `aria-activedescendant="suggestion-0"`, correct option highlighted | ✅ |
+| ArrowDown again selects second option | `aria-activedescendant="suggestion-1"` | ✅ |
+| ArrowUp wraps back to first option | `aria-activedescendant="suggestion-0"` | ✅ |
+| Enter on active suggestion navigates | Typed `al-ba`, ArrowDown, Enter → `/quran/al-balad` | ✅ |
+| Escape closes panel without navigating | `aria-expanded="false"`, list removed, URL unchanged | ✅ |
+| Free-text submission (no active suggestion) | Typed `mercy`, Enter → `/search?q=mercy` | ✅ |
+| Blur (Tab) closes panel | Panel removed, `aria-expanded="false"` | ✅ |
+| Mouse click selects a suggestion | Clicked "Al-Baqarah" option → `/quran/al-baqarah` | ✅ |
+| Reference suggestion navigation | Typed `2:255`, ArrowDown, Enter → `/ayah/2/255` | ✅ |
+| Mobile viewport (375×667) — list stays in viewport | List fits within viewport (left 16px, right 344px, width 328px), scrollable vertically, `max-height: 320px` | ✅ |
+
+**Mobile layout note:** The autocomplete panel does not introduce horizontal overflow — it is constrained to the input's width and stays within the 375px viewport. The search page itself has a pre-existing `documentElement.scrollWidth` of 434px at this viewport (from the wide filter selects and edition picker, present with or without suggestions open), which is unrelated to this sprint and documented as a pre-existing limitation below.
 
 ## 6. Test, Lint, Typecheck, and Build Results
 
