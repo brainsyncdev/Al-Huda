@@ -6,7 +6,7 @@
 // 3. The absoluteUrl() helper produces consistent, well-formed URLs.
 // 4. The robots.txt sitemap reference matches the sitemap's origin.
 
-import { describe, expect, it, vi, afterEach } from "vitest";
+import { describe, expect, it } from "vitest";
 import { absoluteUrl, SITE_URL } from "@/lib/site";
 import sitemap from "./sitemap";
 

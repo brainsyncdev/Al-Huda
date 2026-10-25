@@ -37,6 +37,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${surah.transliteration} — ${surah.meaning}`,
     description: `Read Surah ${surah.transliteration} (${surah.arabicName}) — ${surah.ayahCount} ayat, ${surah.revelation}. Uthmani text with 100+ translations in 50+ languages.`,
     alternates: { canonical: absoluteUrl(`/quran/${surah.slug}`) },
+    openGraph: {
+      title: `Surah ${surah.transliteration} — ${surah.meaning}`,
+      description: `Read Surah ${surah.transliteration} (${surah.arabicName}) — ${surah.ayahCount} ayat, ${surah.revelation}. Uthmani text with translations.`,
+      url: absoluteUrl(`/quran/${surah.slug}`),
+      type: "article",
+      siteName: SITE_NAME,
+    },
   };
 }
 

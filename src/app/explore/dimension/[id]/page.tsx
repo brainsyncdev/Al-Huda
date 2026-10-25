@@ -24,6 +24,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${dim.title} (${dim.arabicTitle}) — Explore the Quran`,
     description: dim.description,
     alternates: { canonical: absoluteUrl(`/explore/dimension/${dim.id}`) },
+    openGraph: {
+      title: `${dim.title} — 10 Dimensions of the Quran`,
+      description: dim.description,
+      url: absoluteUrl(`/explore/dimension/${dim.id}`),
+      type: "website",
+      siteName: SITE_NAME,
+    },
   };
 }
 

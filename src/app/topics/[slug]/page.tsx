@@ -33,6 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Topic: ${topic.title}`,
     description: topic.summary,
     alternates: { canonical: absoluteUrl(`/topics/${topic.slug}`) },
+    openGraph: {
+      title: `${topic.title} — Quran Topic`,
+      description: topic.summary,
+      url: absoluteUrl(`/topics/${topic.slug}`),
+      type: "website",
+      siteName: SITE_NAME,
+    },
   };
 }
 

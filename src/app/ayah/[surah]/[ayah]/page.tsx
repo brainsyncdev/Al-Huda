@@ -56,10 +56,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const verse = getAyah(s, a);
   if (!verse) return {};
   const surahMeta = getSurah(s);
+  const ayahCanonical = absoluteUrl(ayahPath({ surah: s, ayah: a }));
   return {
     title: `Quran ${s}:${a} — ${surahMeta?.transliteration ?? s}`,
     description: `Ayah ${s}:${a} (${surahMeta?.transliteration ?? "Surah"}). Uthmani Arabic with translation in 100+ languages (default: Urdu — Jalandhry).`,
-    alternates: { canonical: absoluteUrl(ayahPath({ surah: s, ayah: a })) },
+    alternates: { canonical: ayahCanonical },
+    openGraph: {
+      title: `Quran ${s}:${a} — ${surahMeta?.transliteration ?? s}`,
+      description: `Ayah ${s}:${a} from Surah ${surahMeta?.transliteration ?? "the Quran"}. Uthmani Arabic with translation.`,
+      url: ayahCanonical,
+      type: "article",
+      siteName: SITE_NAME,
+    },
   };
 }
 
