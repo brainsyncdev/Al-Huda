@@ -41,7 +41,11 @@ export function ReaderControls() {
   } = usePrefs();
 
   return (
-    <div className="flex flex-col gap-3 rounded-2xl border border-border/80 bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
+    // The reserved min-height prevents a hydration layout shift: the
+    // size-button group carries min-h-[44px] buttons, and without a reserved
+    // container height the SSR render and the hydrated render would disagree
+    // on the row's height, producing a CLS spike on surah reader pages.
+    <div className="flex min-h-[76px] flex-col gap-3 rounded-2xl border border-border/80 bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
       <fieldset className="flex items-center gap-3">
         <legend className="sr-only">Translation edition</legend>
         <span className="text-xs font-medium text-muted-foreground">Translation</span>
@@ -65,7 +69,7 @@ export function ReaderControls() {
               aria-pressed={arabicSize === value}
               aria-label={accessibleLabel}
               className={cn(
-                "min-w-9 rounded-full px-2.5 py-1 text-xs font-semibold transition-colors",
+                "inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full px-2.5 text-xs font-semibold transition-colors",
                 arabicSize === value
                   ? "bg-primary text-primary-foreground"
                   : "text-secondary-foreground hover:bg-background/70"

@@ -70,7 +70,7 @@ export default function SettingsPage() {
                   onClick={() => setArabicSize(s)}
                   aria-pressed={arabicSize === s}
                   aria-label={`Text size: ${s === "sm" ? "small" : s === "md" ? "medium" : s === "lg" ? "large" : "extra large"}`}
-                  className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                  className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-full px-3.5 text-xs font-medium transition-colors ${
                     arabicSize === s
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
@@ -95,7 +95,8 @@ export default function SettingsPage() {
                   type="button"
                   onClick={() => setLineHeight(lh)}
                   aria-pressed={lineHeight === lh}
-                  className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                  aria-label={`Line spacing: ${lh}`}
+                  className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-full px-3.5 text-xs font-medium transition-colors ${
                     lineHeight === lh
                       ? "bg-primary text-primary-foreground"
                       : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"

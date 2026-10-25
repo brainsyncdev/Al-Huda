@@ -202,7 +202,7 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
             type="button"
             aria-pressed={filter === "all"}
             onClick={() => setFilter("all")}
-            className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
+            className={`inline-flex min-h-[44px] items-center justify-center rounded-full border px-3.5 text-sm font-medium transition-colors ${
               filter === "all"
                 ? "border-primary bg-primary text-primary-foreground"
                 : "border-border/80 bg-card text-foreground/75 hover:border-primary/30 hover:bg-secondary/40"
@@ -219,7 +219,7 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
                 type="button"
                 aria-pressed={isActive}
                 onClick={() => setFilter(dimFilterId)}
-                className={`rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors ${
+                className={`inline-flex min-h-[44px] items-center justify-center rounded-full border px-3.5 text-sm font-medium transition-colors ${
                   isActive
                     ? "border-primary bg-primary text-primary-foreground"
                     : "border-border/80 bg-card text-foreground/75 hover:border-primary/30 hover:bg-secondary/40"
@@ -482,7 +482,7 @@ export function KnowledgeGraphExplorer({ graph }: KnowledgeGraphExplorerProps) {
             <button
               type="button"
               onClick={clearSelection}
-              className="rounded-full p-1.5 text-muted-foreground hover:bg-secondary/50 hover:text-foreground transition-colors"
+              className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full text-muted-foreground hover:bg-secondary/50 hover:text-foreground transition-colors focus-visible:outline-2 focus-visible:outline-ring"
               aria-label="Close details"
             >
               <X className="h-4 w-4" aria-hidden />

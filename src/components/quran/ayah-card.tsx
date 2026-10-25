@@ -175,6 +175,7 @@ export function AyahCard({
   return (
     <article
       id={`ayah-${ayah.surah}-${ayah.ayah}`}
+      aria-label={`Ayah ${ayah.surah}:${ayah.ayah}`}
       className={cn(
         "group rounded-2xl border border-border/80 bg-card transition-shadow",
         variant === "full"
