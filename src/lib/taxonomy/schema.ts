@@ -514,6 +514,32 @@ export const MIN_EVIDENCE_FOR_TRACK = {
 export const NAVIGATION_ONLY_RELATION_KINDS: ReadonlySet<RelationshipKind> =
   new Set(["lens-overlays"]);
 
+/**
+ * Relation kinds for which `machine-verified` evidence counts toward
+ * SCHOLARLY approval. This is a narrow, closed set: only purely textual,
+ * non-interpretive relations can be approved by a machine comparison
+ * without a human scholar's judgment.
+ *
+ *   lexical-match     — text identity after normalization
+ *   cross-reference   — textual correspondence
+ *
+ * For every other relation kind (thematic-overlap, expresses-value,
+ * threads-through, references-passage, participates-in-story, broader,
+ * narrower, sequential-context, lens-overlays), machine-verified evidence
+ * is NOT sufficient for the scholarly track. A real authorized reviewer
+ * decision is required.
+ *
+ * Rationale: a reproducible text-identity fact ("ayat 2:5 and 2:6 share
+ * identical wording") is a different epistemic category from a thematic
+ * or doctrinal classification ("this ayah expresses tawakkul"). The
+ * former needs no human judgment; the latter requires qualified expertise.
+ * Collapsing these two into a single evidence tier would conflate
+ * mechanical derivation with scholarly review and fabricate approval the
+ * project is not authorized to grant.
+ */
+export const MACHINE_VERIFIED_SCHOLARLY_RELATIONS: ReadonlySet<RelationshipKind> =
+  new Set(["lexical-match", "cross-reference"]);
+
 // ---------------------------------------------------------------------------
 // Schema contract
 // ---------------------------------------------------------------------------

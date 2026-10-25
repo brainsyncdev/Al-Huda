@@ -92,9 +92,26 @@ describe("sitemap", () => {
     expect(rootUrls).toHaveLength(0);
   });
 
-  it("expected total: 11 static + 114 surahs + 11 topics + 10 dimensions + 6236 ayahs = 6382", () => {
+  it("expected total: 12 static + 114 surahs + 11 topics + 10 dimensions + 14 domains + 6236 ayahs = 6397", () => {
     const entries = sitemap();
-    expect(entries).toHaveLength(6382);
+    expect(entries).toHaveLength(6397);
+  });
+
+  it("includes all 14 domain detail URLs with priority 0.4", () => {
+    const entries = sitemap();
+    const domainEntries = entries.filter((e) =>
+      e.url.includes("/explore/domains/")
+    );
+    expect(domainEntries).toHaveLength(14);
+    for (const entry of domainEntries) {
+      expect(entry.priority).toBe(0.4);
+    }
+  });
+
+  it("includes the domain directory as a static route", () => {
+    const entries = sitemap();
+    const urls = entries.map((e) => e.url);
+    expect(urls).toContain(`${SITE_URL}/explore/domains`);
   });
 
   it("every ayah URL maps to a valid surah/ayah reference", () => {

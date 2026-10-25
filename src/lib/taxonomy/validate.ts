@@ -35,6 +35,7 @@ import {
   type ReviewTrack,
   UNDIRECTED_RELATION_KINDS,
   NAVIGATION_ONLY_RELATION_KINDS,
+  MACHINE_VERIFIED_SCHOLARLY_RELATIONS,
   MIN_EVIDENCE_FOR_TRACK,
 } from "./schema";
 
@@ -278,21 +279,65 @@ export function validateRelation(
     out.push(...validateProvenance(relation.id, relation.provenance));
     for (const d of relation.provenance.decisions) {
       if (d.state !== "approved") continue;
-      // Cast to `readonly string[]` because the tuple type varies per
-      // track (editorial has three allowed types, scholarly has two) and
-      // the union's `.includes()` parameter would otherwise narrow to the
-      // intersection, rejecting legitimate per-track evidence types.
-      const required = MIN_EVIDENCE_FOR_TRACK[d.track] as readonly string[];
+
+      // Evidence-policy enforcement: the evidence types that qualify for
+      // approval depend on BOTH the review track AND the relation kind.
+      //
+      // For the SCHOLARLY track on interpretive/thematic/doctrinal
+      // relations (thematic-overlap, expresses-value, threads-through,
+      // references-passage, participates-in-story, broader, narrower,
+      // sequential-context), machine-verified evidence is INSUFFICIENT —
+      // a machine comparison cannot establish that an ayah "expresses"
+      // a value or "overlaps" a theme. Only "scholarly" evidence (a
+      // real reviewer's decision) qualifies.
+      //
+      // For purely textual relation kinds (lexical-match, cross-reference),
+      // machine-verified evidence DOES qualify for scholarly approval
+      // because the underlying fact (text identity) is independently
+      // reproducible by any reader against the same pinned dataset.
+      //
+      // For the EDITORIAL track, the baseline MIN_EVIDENCE_FOR_TRACK
+      // (machine-verified, editorial, scholarly) applies regardless of
+      // relation kind.
+      const scholarlyRequiresScholar =
+        d.track === "scholarly" &&
+        !MACHINE_VERIFIED_SCHOLARLY_RELATIONS.has(relation.kind);
+
+      let required: readonly string[];
+      if (scholarlyRequiresScholar) {
+        required = ["scholarly"];
+      } else {
+        required = MIN_EVIDENCE_FOR_TRACK[d.track] as readonly string[];
+      }
+
       const hasQualifying = (relation.evidence ?? []).some((e) =>
         required.includes(e.type)
       );
       if (!hasQualifying) {
+        // Distinguish the two failure modes so the diagnostic points at
+        // the actual rule that was broken:
+        //
+        //   - machine-verified-relation-ineligible: the relation is
+        //     interpretive/thematic/doctrinal and carries machine-verified
+        //     evidence as if text identity could establish a scholarly
+        //     classification.
+        //   - approval-without-qualifying-evidence: any other shortfall
+        //     (editorial-only, navigation-only, no evidence at all).
+        const hasMachineVerified = (relation.evidence ?? []).some(
+          (e) => e.type === "machine-verified"
+        );
+        const code =
+          scholarlyRequiresScholar && hasMachineVerified
+            ? "machine-verified-relation-ineligible"
+            : "approval-without-qualifying-evidence";
         out.push(
           issue(
             "error",
-            "approval-without-qualifying-evidence",
+            code,
             relation.id,
-            `Relation is approved on the ${d.track} track but has no evidence of type: ${required.join(", ")}.`,
+            scholarlyRequiresScholar && hasMachineVerified
+              ? `Relation kind "${relation.kind}" cannot be approved on the scholarly track with machine-verified evidence alone. Interpretive/thematic relations require a real authorized reviewer decision. Only lexical-match and cross-reference relations can be scholarly-approved via machine-verified text identity.`
+              : `Relation is approved on the ${d.track} track but has no evidence of type: ${required.join(", ")}.`,
           )
         );
       }

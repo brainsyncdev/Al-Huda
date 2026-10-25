@@ -16,6 +16,11 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs, topicJsonLd } from "@/lib/seo/json-ld";
 import { PATHS } from "@/lib/paths/data";
 import { getDimensionsForTopic } from "@/lib/explore/dimensions";
+import {
+  getTopicDomainRelations,
+  type DomainTopicRelation,
+} from "@/lib/taxonomy/domain-topics";
+import { getDomain, type Domain } from "@/lib/taxonomy/domains";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -86,6 +91,17 @@ export default async function TopicDetailPage({ params }: Props) {
   // this is the exact reverse of the mapping a reader may have arrived from —
   // nothing new is asserted about the Quran's content.
   const dimensions = getDimensionsForTopic(topic.slug);
+
+  // Domain-topic relationships from the Sprint 34 relationship layer. Each
+  // relationship is an organizational proposal pending review, not a scholarly
+  // classification. Resolve the domain record defensively so a broken relation
+  // is dropped rather than rendered with a missing link target.
+  const domainRelations = getTopicDomainRelations(topic.slug)
+    .map((relation) => ({ relation, domain: getDomain(relation.domainId) }))
+    .filter(
+      (entry): entry is { relation: DomainTopicRelation; domain: Domain } =>
+        Boolean(entry.domain)
+    );
 
   const topicPagePath = `/topics/${topic.slug}`;
 
@@ -241,6 +257,69 @@ export default async function TopicDetailPage({ params }: Props) {
             Dimension-to-topic mappings are editorial navigation aids, not
             ayah-level classifications. Each dimension page carries its review
             status.
+          </p>
+        </section>
+      )}
+
+      {domainRelations.length > 0 && (
+        <section aria-labelledby="topic-domains" className="space-y-4">
+          <h2
+            id="topic-domains"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Proposed exploration domains
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            This topic is editorially proposed to belong to{" "}
+            {domainRelations.length === 1
+              ? "the following domain"
+              : `these ${domainRelations.length} domains`}
+            . These are organizational proposals pending review — not scholarly
+            classifications of Quranic passages.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {domainRelations.map(({ relation, domain }) => (
+              <Link
+                key={relation.id}
+                href={`/explore/domains/${domain.id}`}
+                className="group rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="min-w-0 flex-1">
+                    <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors">
+                      {domain.title}
+                    </h3>
+                    {domain.arabicTitle && (
+                      <p
+                        className="arabic-display text-lg text-gold mt-0.5"
+                        lang="ar"
+                        dir="rtl"
+                      >
+                        {domain.arabicTitle}
+                      </p>
+                    )}
+                    <div className="mt-2 flex flex-wrap gap-2">
+                      <span className="rounded-full border border-border/80 bg-muted/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                        {relation.semantics === "navigation-only"
+                          ? "navigation aid"
+                          : "organizational proposal"}
+                      </span>
+                      <span className="rounded-full border border-gold/40 bg-gold-soft/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent-foreground">
+                        {relation.provenance.state.replace(/-/g, " ")}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-2 text-xs font-medium text-primary group-hover:underline">
+                  Open {domain.title} domain →
+                </p>
+              </Link>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Domain-topic relationships are organizational proposals, not scholarly
+            conclusions. Each domain page carries its review status and explains
+            what the relationship does and does not claim.
           </p>
         </section>
       )}

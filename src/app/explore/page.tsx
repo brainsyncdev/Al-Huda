@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { AlertTriangle, Compass, Search } from "lucide-react";
+import { AlertTriangle, BookMarked, Compass, Search } from "lucide-react";
 import { getAllDimensions } from "@/lib/explore/dimensions";
 import { TOPICS } from "@/lib/topics/data";
+import { DOMAINS } from "@/lib/taxonomy/domains";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 
@@ -153,6 +154,41 @@ export default function ExplorePage() {
           </div>
         </section>
       )}
+
+      <section
+        aria-labelledby="domains-heading"
+        className="rounded-2xl border border-border/80 bg-card p-6"
+      >
+        <div className="flex items-center gap-3 mb-3">
+          <BookMarked className="h-5 w-5 text-primary" aria-hidden />
+          <h2
+            id="domains-heading"
+            className="font-display text-lg font-semibold tracking-tight"
+          >
+            Domain Explorer
+          </h2>
+          <span className="rounded-full border border-gold/40 bg-gold-soft/60 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent-foreground">
+            proposal
+          </span>
+        </div>
+        <p className="text-sm text-muted-foreground mb-4">
+          {DOMAINS.length} proposed broad areas of Quran exploration —
+          belief, worship, ethics, family, society, economics, prophets,
+          creation, revelation, human experience, interfaith, language,
+          law, and eschatology. This is an organizational catalog, not an
+          approved taxonomy; no topic or passage has been assigned yet.
+          Domains are different from dimensions: domains organize broad
+          subject areas for future work, while the 10 dimensions above
+          are the active navigation system.
+        </p>
+        <Link
+          href="/explore/domains"
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+        >
+          <BookMarked className="h-4 w-4" aria-hidden />
+          Browse domain catalog
+        </Link>
+      </section>
 
       <section
         aria-labelledby="graph-heading"

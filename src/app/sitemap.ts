@@ -2,14 +2,16 @@ import type { MetadataRoute } from "next";
 import { getSurahIndex } from "@/lib/quran/data";
 import { TOPICS } from "@/lib/topics/data";
 import { getAllDimensions } from "@/lib/explore/dimensions";
+import { DOMAINS } from "@/lib/taxonomy/domains";
 import { absoluteUrl } from "@/lib/site";
 
 /**
  * Single sitemap containing all indexable URLs.
  *
- * Total count: 11 static + 114 surahs + 11 topics + 10 dimensions +
- * 6,236 ayahs = 6,382 URLs. This is well under the sitemap.org limit of
- * 50,000 URLs per file, so partitioning is unnecessary.
+ * Total count: 12 static (home + /explore/domains) + 114 surahs +
+ * 11 topics + 10 dimensions + 14 domains + 6,236 ayahs = 6,397 URLs.
+ * Well under the sitemap.org limit of 50,000 URLs per file, so
+ * partitioning is unnecessary.
  *
  * Deliberately excluded:
  * - /search (noindexed per PRD §15)
@@ -27,6 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/quran",
     "/explore",
     "/explore/graph",
+    "/explore/domains",
     "/discover",
     "/topics",
     "/about",
@@ -39,6 +42,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: today,
     changeFrequency: "weekly" as const,
     priority: path === "" ? 1 : 0.7,
+  }));
+
+  // 14 proposed domains. Lower priority than dimensions/topics because
+  // the catalog is an organizational proposal, not yet populated with
+  // content. Each detail page carries its own review-status disclosure.
+  const domainRoutes = DOMAINS.map((d) => ({
+    url: absoluteUrl(`/explore/domains/${d.id}`),
+    lastModified: today,
+    changeFrequency: "monthly" as const,
+    priority: 0.4,
   }));
 
   const surahRoutes = index.map((s) => ({
@@ -81,6 +94,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...surahRoutes,
     ...topicRoutes,
     ...dimensionRoutes,
+    ...domainRoutes,
     ...ayahRoutes,
   ];
 }

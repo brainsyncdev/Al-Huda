@@ -255,8 +255,42 @@ describe("validateRelation", () => {
     ).toBe(true);
   });
 
-  it("accepts scholarly approval when machine-verified evidence exists", () => {
+  it("rejects scholarly approval on a thematic relation with only machine-verified evidence", () => {
+    // Sprint 33 hardened this rule: text identity cannot establish that an
+    // ayah "expresses" a value or "overlaps" a theme. The base fixture is
+    // thematic-overlap, so machine-verified evidence is insufficient here.
     const r = validRelation({
+      evidence: [
+        {
+          type: "machine-verified",
+          statement: "Text identity in pinned dataset.",
+          sources: [],
+        },
+      ],
+      provenance: validProvenance({
+        state: "approved",
+        decisions: [
+          {
+            state: "approved",
+            track: "scholarly",
+            decidedAt: "2026-10-25",
+            decidedBy: "scholar-x",
+          },
+        ],
+      }),
+    });
+    const issues = validateRelation(r);
+    expect(
+      issues.some((i) => i.code === "machine-verified-relation-ineligible")
+    ).toBe(true);
+  });
+
+  it("accepts scholarly approval on a textual relation with machine-verified evidence", () => {
+    // lexical-match is purely textual; text identity is independently
+    // reproducible, so machine evidence is legitimate scholarly evidence.
+    const r = validRelation({
+      id: "lexical-match:passage:2:255--topic:test-topic",
+      kind: "lexical-match",
       evidence: [
         {
           type: "machine-verified",
