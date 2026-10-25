@@ -10,7 +10,7 @@ import { TafsirViewer } from "@/components/quran/tafsir-viewer";
 import { WordByWord } from "@/components/quran/word-by-word";
 import { getAyah, getSurah, getSurahIndex } from "@/lib/quran/data";
 import { ayahPath, surahPath } from "@/lib/quran/reference";
-import { absoluteUrl } from "@/lib/site";
+import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import { topicsForAyah } from "@/lib/topics/data";
 import { PATHS } from "@/lib/paths/data";
 import {

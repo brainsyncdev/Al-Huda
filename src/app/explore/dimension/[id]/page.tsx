@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AlertTriangle, ArrowLeft, Search } from "lucide-react";
 import { getDimension, getAllDimensions, DIMENSION_PROVENANCE } from "@/lib/explore/dimensions";
 import { getTopic } from "@/lib/topics/data";
-import { absoluteUrl } from "@/lib/site";
+import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs } from "@/lib/seo/json-ld";
 

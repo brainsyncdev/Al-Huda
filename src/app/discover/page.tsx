@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   description:
     "Find your starting point in the Quran: curated learning paths for different audiences, topics ranked by breadth, and all 10 dimensions of exploration.",
   alternates: { canonical: absoluteUrl("/discover") },
+  openGraph: {
+    title: "Discover — Your Quran Learning Hub",
+    description:
+      "Find your starting point in the Quran: curated learning paths, topics ranked by breadth, and all 10 dimensions of exploration.",
+    url: absoluteUrl("/discover"),
+    type: "website",
+    siteName: "Al-Huda",
+  },
 };
 
 export default function DiscoverPage() {

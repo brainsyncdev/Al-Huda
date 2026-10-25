@@ -11,7 +11,7 @@ import {
   getTopic,
   relationProvenance,
 } from "@/lib/topics/data";
-import { absoluteUrl } from "@/lib/site";
+import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, breadcrumbs, topicJsonLd } from "@/lib/seo/json-ld";
 import { PATHS } from "@/lib/paths/data";

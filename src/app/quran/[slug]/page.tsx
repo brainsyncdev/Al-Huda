@@ -7,7 +7,7 @@ import { ReaderControls } from "@/components/quran/reader-controls";
 import { SourcePanel } from "@/components/quran/source-panel";
 import { TafsirLinks } from "@/components/quran/tafsir-links";
 import { getSurah, getSurahIdBySlug, getSurahIndex } from "@/lib/quran/data";
-import { absoluteUrl } from "@/lib/site";
+import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import { getJuzForAyah } from "@/lib/quran/juz";
 import { lexicalMatchGroups } from "@/lib/quran/cross-references";
 import { LexicalMatchGroupsPanel } from "@/components/quran/cross-reference-panel";

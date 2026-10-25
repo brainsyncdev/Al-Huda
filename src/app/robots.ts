@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { absoluteUrl } from "@/lib/site";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -9,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/library", "/settings", "/learn", "/editorial", "/report"],
       },
     ],
-    sitemap: new URL("/sitemap.xml", process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").toString(),
+    sitemap: absoluteUrl("/sitemap.xml"),
   };
 }
