@@ -77,8 +77,8 @@ export default function RootLayout({
       <body
         className={`${geist.variable} ${lora.variable} ${amiriQuran.variable} font-sans antialiased min-h-dvh flex flex-col`}
       >
-        <SkipLink />
       <I18nProvider>
+        <SkipLink />
       <LibraryProvider>
         <PrefsProvider>
           <RevisionProvider>

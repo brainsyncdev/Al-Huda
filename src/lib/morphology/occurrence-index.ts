@@ -55,15 +55,35 @@ export interface RootOccurrence {
 export interface RootTopicIndex {
   /** The root-topic entry this index was built from. */
   entry: RootTopicEntry;
-  /** All occurrences, grouped by ayah. */
+  /**
+   * Occurrences for the current page (after pagination). If no pagination
+   * parameters were provided, this contains all occurrences.
+   */
   occurrences: RootOccurrence[];
   /**
-   * Unique ayah references (deduplicated). An ayah may have multiple
-   * occurrences of the same root; this list has each ayah once.
+   * Unique ayah references (deduplicated) for the current page. An ayah may
+   * have multiple occurrences of the same root; this list has each ayah once.
    */
   uniqueAyahs: AyahRef[];
-  /** Total occurrence count (may be > uniqueAyahs.length). */
+  /**
+   * Total occurrence count for the current page (after pagination). May be
+   * less than totalMatches if pagination is applied.
+   */
   totalOccurrences: number;
+  /**
+   * Total matches across all pages BEFORE pagination. This is the true count
+   * of all occurrences that match the root/lemma criteria, regardless of
+   * pagination. Use this to show "Showing 50 of 237 matches" in the UI.
+   */
+  totalMatches: number;
+  /**
+   * Pagination metadata. Null if no pagination was applied (all results shown).
+   */
+  pagination: {
+    offset: number;
+    limit: number;
+    hasMore: boolean;
+  } | null;
 }
 
 /**
@@ -73,13 +93,22 @@ export interface RootTopicIndex {
  *
  * This function is pure — it doesn't read from any global state or
  * filesystem. The caller provides the morphology records.
+ *
+ * Pagination:
+ *   - If `offset` and `limit` are provided, returns a paginated subset.
+ *   - `totalMatches` always reflects the true count before pagination.
+ *   - `entry.maxResults` is deprecated — use pagination parameters instead.
+ *     If maxResults is set and no pagination params are provided, it acts
+ *     as a limit for backward compatibility, but totalMatches still shows
+ *     the true count.
  */
 export function buildRootTopicIndex(
   entry: RootTopicEntry,
-  records: MorphologyRecord[]
+  records: MorphologyRecord[],
+  pagination?: { offset?: number; limit?: number }
 ): RootTopicIndex {
-  const occurrences: RootOccurrence[] = [];
-  const ayahSet = new Map<string, AyahRef>();
+  const allOccurrences: RootOccurrence[] = [];
+  const allAyahSet = new Map<string, AyahRef>();
 
   const rootSet = new Set(entry.roots);
   const lemmaSet = new Set(entry.includedLemmas);
@@ -96,7 +125,7 @@ export function buildRootTopicIndex(
     if (lemmaSet.size === 0) continue;
     if (!record.lemma || !lemmaSet.has(record.lemma)) continue;
 
-    occurrences.push({
+    allOccurrences.push({
       ref: record.ref,
       matchedToken: record.token,
       matchedLemma: record.lemma,
@@ -105,22 +134,61 @@ export function buildRootTopicIndex(
     });
 
     const key = `${record.ref.surah}:${record.ref.ayah}`;
-    if (!ayahSet.has(key)) {
-      ayahSet.set(key, record.ref);
+    if (!allAyahSet.has(key)) {
+      allAyahSet.set(key, record.ref);
     }
   }
 
-  // Apply maxResults cap if set
-  const capped =
-    entry.maxResults !== undefined
-      ? occurrences.slice(0, entry.maxResults)
-      : occurrences;
+  const totalMatches = allOccurrences.length;
+
+  // Apply pagination if provided
+  let paginatedOccurrences = allOccurrences;
+  let paginatedAyahSet = allAyahSet;
+  let paginationMeta: { offset: number; limit: number; hasMore: boolean } | null = null;
+
+  if (pagination && (pagination.offset !== undefined || pagination.limit !== undefined)) {
+    const offset = pagination.offset ?? 0;
+    const limit = pagination.limit ?? totalMatches;
+    paginatedOccurrences = allOccurrences.slice(offset, offset + limit);
+    
+    // Rebuild ayah set for paginated results
+    paginatedAyahSet = new Map<string, AyahRef>();
+    for (const occ of paginatedOccurrences) {
+      const key = `${occ.ref.surah}:${occ.ref.ayah}`;
+      if (!paginatedAyahSet.has(key)) {
+        paginatedAyahSet.set(key, occ.ref);
+      }
+    }
+
+    paginationMeta = {
+      offset,
+      limit,
+      hasMore: offset + limit < totalMatches,
+    };
+  } else if (entry.maxResults !== undefined) {
+    // Backward compatibility: maxResults acts as a limit
+    paginatedOccurrences = allOccurrences.slice(0, entry.maxResults);
+    paginatedAyahSet = new Map<string, AyahRef>();
+    for (const occ of paginatedOccurrences) {
+      const key = `${occ.ref.surah}:${occ.ref.ayah}`;
+      if (!paginatedAyahSet.has(key)) {
+        paginatedAyahSet.set(key, occ.ref);
+      }
+    }
+    paginationMeta = {
+      offset: 0,
+      limit: entry.maxResults,
+      hasMore: entry.maxResults < totalMatches,
+    };
+  }
 
   return {
     entry,
-    occurrences: capped,
-    uniqueAyahs: Array.from(ayahSet.values()),
-    totalOccurrences: capped.length,
+    occurrences: paginatedOccurrences,
+    uniqueAyahs: Array.from(paginatedAyahSet.values()),
+    totalOccurrences: paginatedOccurrences.length,
+    totalMatches,
+    pagination: paginationMeta,
   };
 }
 

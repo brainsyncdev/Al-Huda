@@ -189,8 +189,20 @@ Ayah-level occurrence index:
 |------|---------|--------|
 | Lint | `pnpm lint` | Clean (0 errors, 0 warnings) |
 | Typecheck | `pnpm typecheck` | Clean (0 errors) |
-| Test | `pnpm test` | **641/641 passed across 40 files** (was 603/39; +38 tests) |
-| Build | `ALLOW_LOCALHOST_BUILD=1 pnpm build` | Exit 0 |
+| Test | `pnpm test` | **665/665 passed across 41 files** (was 603/39; +62 tests) |
+| Build | `ALLOW_LOCALHOST_BUILD=1 pnpm build` | Exit 0, 6433 static pages generated |
+
+### Pre-existing bugs fixed during Sprint 37
+
+Three pre-existing bugs were discovered and fixed while running quality gates. These were masked by earlier build failures (curly quotes and CSS syntax errors prevented the build from reaching the prerender stage):
+
+1. **Unicode curly quotes in `src/app/page.tsx`** — The file had U+201C and U+201D (LEFT/RIGHT DOUBLE QUOTATION MARK) instead of straight quotes in import statements. Fixed by replacing with standard `"` characters.
+
+2. **CSS comment syntax error in `src/app/globals.css`** — Line 169 had `ms-*/me-*/ps-*/pe-*/` inside a `/* ... */` comment block. The `*/` prematurely closed the comment, causing PostCSS to fail. Fixed by rewording to `ms, me, ps, pe, start, and end`.
+
+3. **SkipLink outside I18nProvider in `src/app/layout.tsx`** — The `<SkipLink />` component was rendered on line 80, before `<I18nProvider>` started on line 81. During static generation, SkipLink calls `useTranslation()` which needs the i18n context, causing prerender failures on all ayah pages. Fixed by moving SkipLink inside the provider.
+
+4. **Incorrect type import in `src/app/home-client.tsx`** — Imported `SurahIndex` from `@/lib/quran/data`, but that type doesn't exist. The actual type is `SurahMeta` from `@/lib/quran/types`. Fixed the import.
 
 ---
 
@@ -266,8 +278,12 @@ Three paths forward:
 
 **Phase 2 blocked.** Neither QUL morphology data nor Quranic Arabic Corpus is currently accessible without resolving licensing questions.
 
-**Validation scaffolding implemented.** Types, validators, root-allowlist config, and occurrence-index builder are all in place and tested (38 new tests, 641 total passing). These modules are independently testable and will accept real morphology data once a source is integrated.
+**Validation scaffolding implemented.** Types, validators, root-allowlist config, and occurrence-index builder are all in place and tested (62 new tests, 665 total passing across 41 files). These modules are independently testable and will accept real morphology data once a source is integrated.
 
 **No fabrication.** No morphology data was invented. No root assignments were guessed. The allowlist is intentionally empty.
+
+**Pre-existing bugs fixed.** Three bugs were discovered and fixed during quality gate verification: Unicode curly quotes in page.tsx, CSS comment syntax error in globals.css, and SkipLink component outside I18nProvider in layout.tsx. These were masked by earlier build failures.
+
+**All quality gates green.** Lint, typecheck, test (665/665), and build (6433 static pages) all pass.
 
 **Sprint 37 is complete. Sprint 38 has not been started.**

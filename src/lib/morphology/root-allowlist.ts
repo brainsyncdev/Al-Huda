@@ -314,3 +314,63 @@ export function getEnabledRootTopics(
       e.includedLemmas.length > 0
   );
 }
+
+/**
+ * Check if a root-topic entry can be activated (displayed publicly).
+ * 
+ * Activation criteria:
+ *   1. Review state must be "approved" (not "candidate", "pending-review", or "rejected")
+ *   2. At least one lemma must be in includedLemmas (prevents empty topics)
+ *   3. At least one root must be specified
+ *   4. All required fields must be present (slug, title, arabicTitle, assertedBy, assertedAt)
+ * 
+ * This guard prevents root pages from being enabled without validated data
+ * and explicit reviewer approval.
+ */
+export function canActivateRootTopic(entry: RootTopicEntry): {
+  canActivate: boolean;
+  reasons: string[];
+} {
+  const reasons: string[] = [];
+
+  if (entry.reviewState !== "approved") {
+    reasons.push(
+      `Review state is "${entry.reviewState}", must be "approved" to activate`
+    );
+  }
+
+  if (entry.includedLemmas.length === 0) {
+    reasons.push(
+      "No lemmas in includedLemmas — at least one lemma must be approved"
+    );
+  }
+
+  if (entry.roots.length === 0) {
+    reasons.push("No roots specified — at least one root is required");
+  }
+
+  if (!entry.slug || entry.slug.trim() === "") {
+    reasons.push("slug is empty");
+  }
+
+  if (!entry.title || entry.title.trim() === "") {
+    reasons.push("title is empty");
+  }
+
+  if (!entry.arabicTitle || entry.arabicTitle.trim() === "") {
+    reasons.push("arabicTitle is empty");
+  }
+
+  if (!entry.assertedBy || entry.assertedBy.trim() === "") {
+    reasons.push("assertedBy is empty — reviewer identity required");
+  }
+
+  if (!entry.assertedAt || entry.assertedAt.trim() === "") {
+    reasons.push("assertedAt is empty — approval date required");
+  }
+
+  return {
+    canActivate: reasons.length === 0,
+    reasons,
+  };
+}
