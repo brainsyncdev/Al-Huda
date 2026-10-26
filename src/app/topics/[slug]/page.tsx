@@ -21,6 +21,7 @@ import {
   type DomainTopicRelation,
 } from "@/lib/taxonomy/domain-topics";
 import { getDomain, type Domain } from "@/lib/taxonomy/domains";
+import { getTopicRootLinks } from "@/lib/morphology/root-links";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -102,6 +103,13 @@ export default async function TopicDetailPage({ params }: Props) {
       (entry): entry is { relation: DomainTopicRelation; domain: Domain } =>
         Boolean(entry.domain)
     );
+
+  // Topic → root cross-references (Sprint 40). Only links whose target root
+  // passes canActivateRootTopic() are rendered — while Sabr is pending review
+  // the mapping exists but shows nothing, so no reader is sent to a page that
+  // withholds its results.
+  const rootLinks = getTopicRootLinks(topic.slug);
+  const activeRootLinks = rootLinks.filter((l) => l.active);
 
   const topicPagePath = `/topics/${topic.slug}`;
 
@@ -320,6 +328,79 @@ export default async function TopicDetailPage({ params }: Props) {
             Domain-topic relationships are organizational proposals, not scholarly
             conclusions. Each domain page carries its review status and explains
             what the relationship does and does not claim.
+          </p>
+        </section>
+      )}
+
+      {rootLinks.length > 0 && (
+        <section aria-labelledby="topic-roots" className="space-y-4">
+          <h2
+            id="topic-roots"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Arabic root index
+          </h2>
+          {activeRootLinks.length === 0 ? (
+            <div className="rounded-2xl border border-border/60 bg-card/60 p-5 text-sm text-muted-foreground">
+              <p>
+                A word-occurrence index for the root{" "}
+                <span lang="ar" dir="rtl" className="arabic-display text-gold">
+                  {rootLinks[0].entry.roots[0]}
+                </span>{" "}
+                ({rootLinks[0].entry.title}) has been prepared from the QUL
+                morphology dataset, but it is awaiting lemma review before it
+                can be shown. The configuration for this link is in place; once
+                a reviewer approves the lemma selection the link will appear
+                here automatically.
+              </p>
+            </div>
+          ) : (
+            <>
+              <p className="text-sm text-muted-foreground">
+                Word-occurrence index for the related Arabic root{" "}
+                {activeRootLinks.length === 1 ? "" : "s"}. Each link opens the
+                validated word-form list for that root — not a thematic
+                classification of the ayat.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {activeRootLinks.map(({ link, entry }) => (
+                  <Link
+                    key={link.rootSlug}
+                    href={`/explore/root/${entry.slug}`}
+                    className="group rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span
+                        className="arabic-display text-2xl text-gold"
+                        lang="ar"
+                        dir="rtl"
+                      >
+                        {entry.arabicTitle}
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors">
+                          {entry.title}
+                        </h3>
+                        <p className="mt-0.5 text-xs text-muted-foreground">
+                          Root: {entry.roots[0]}
+                        </p>
+                      </div>
+                    </div>
+                    <p className="mt-2 text-xs text-muted-foreground line-clamp-2">
+                      {link.note}
+                    </p>
+                    <p className="mt-2 text-xs font-medium text-primary group-hover:underline">
+                      Open root index →
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
+          <p className="text-xs text-muted-foreground">
+            Root-topic links are navigational aids, not scholarly claims that
+            the ayat are thematically about the root. Each root page carries
+            its own review status.
           </p>
         </section>
       )}

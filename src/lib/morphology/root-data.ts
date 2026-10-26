@@ -129,10 +129,16 @@ export function buildRootIndex(): Map<string, MorphologyRecord[]> {
  */
 export function getRootOccurrences(root: string): MorphologyRecord[] {
   const index = buildRootIndex();
-  const records = index.get(root) ?? [];
+  // The index holds two record shapes under the same root: word-level records
+  // (wordPosition + token + lemma) and ayah-level root markers (no
+  // wordPosition). Counting both would double every occurrence, so root-level
+  // queries use word-level records only.
+  const records = (index.get(root) ?? []).filter(
+    (record) => record.wordPosition !== undefined
+  );
 
-  // Sort by surah, ayah, wordPosition
-  return records.sort((a, b) => {
+  // Sort a copy: the index arrays are cached across requests.
+  return [...records].sort((a, b) => {
     if (a.ref.surah !== b.ref.surah) return a.ref.surah - b.ref.surah;
     if (a.ref.ayah !== b.ref.ayah) return a.ref.ayah - b.ref.ayah;
     return (a.wordPosition ?? 0) - (b.wordPosition ?? 0);

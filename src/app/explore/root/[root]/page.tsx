@@ -29,7 +29,11 @@ import type { Ayah } from "@/lib/quran/types";
 
 interface Props {
   params: Promise<{ root: string }>;
+  searchParams: Promise<{ page?: string }>;
 }
+
+/** Occurrences per page on an approved root page. */
+const PAGE_SIZE = 25;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { root: slug } = await params;
@@ -53,8 +57,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function RootDiscoveryDetailPage({ params }: Props) {
+export default async function RootDiscoveryDetailPage({
+  params,
+  searchParams,
+}: Props) {
   const { root: slug } = await params;
+  const { page: pageParam } = await searchParams;
+  const parsedPage = Number.parseInt(pageParam ?? "1", 10);
+  const requestedPage =
+    Number.isFinite(parsedPage) && parsedPage > 0 ? parsedPage : 1;
   const entry = getRootTopicEntryBySlug(slug);
 
   if (!entry) {
@@ -116,12 +127,36 @@ export default async function RootDiscoveryDetailPage({ params }: Props) {
   }
 
   // Approved root with validated data — show ayah results
-  return <ApprovedRootView entry={entry} />;
+  return <ApprovedRootView entry={entry} page={requestedPage} slug={slug} />;
 }
 
-function ApprovedRootView({ entry }: { entry: RootTopicEntry }) {
+function ApprovedRootView({
+  entry,
+  page,
+  slug,
+}: {
+  entry: RootTopicEntry;
+  page: number;
+  slug: string;
+}) {
   const records = loadMorphologyIndex();
-  const index = buildRootTopicIndex(entry, records);
+
+  // Build the complete index once. Paginating through buildRootTopicIndex()
+  // would also paginate uniqueAyahs, so the "distinct ayat" total would report
+  // the page size instead of the real count.
+  const fullIndex = buildRootTopicIndex(entry, records);
+  const totalMatches = fullIndex.totalMatches;
+  const totalAyat = fullIndex.uniqueAyahs.length;
+  const totalPages = Math.max(1, Math.ceil(totalMatches / PAGE_SIZE));
+  // Clamp out-of-range page numbers rather than rendering an empty page.
+  const currentPage = Math.min(Math.max(page, 1), totalPages);
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageOccurrences = fullIndex.occurrences.slice(start, start + PAGE_SIZE);
+  const index = {
+    ...fullIndex,
+    occurrences: pageOccurrences,
+    totalOccurrences: pageOccurrences.length,
+  };
 
   return (
     <div className="mx-auto max-w-4xl space-y-8 pb-12">
@@ -137,12 +172,17 @@ function ApprovedRootView({ entry }: { entry: RootTopicEntry }) {
         </h1>
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400" aria-hidden />
-          <span>Approved · {index.totalMatches} occurrences across {index.uniqueAyahs.length} ayat</span>
+          <span>
+            Approved · {totalMatches} word occurrences across {totalAyat}{" "}
+            distinct ayat
+          </span>
         </div>
         <p className="max-w-prose text-muted-foreground">
-          Ayat containing forms associated with this root. This list shows verses
-          in which words derived from the root <span lang="ar" dir="rtl">{entry.roots[0]}</span>{" "}
-          appear, filtered by the reviewed lemma selections.
+          Verses containing forms associated with this root. This list shows
+          verses in which words derived from the root{" "}
+          <span lang="ar" dir="rtl">{entry.roots[0]}</span> appear, filtered by
+          the reviewed lemma selections. Each row corresponds to one word
+          occurrence; an ayah containing two forms of the root appears twice.
         </p>
       </header>
 
@@ -161,20 +201,54 @@ function ApprovedRootView({ entry }: { entry: RootTopicEntry }) {
         </section>
       ) : (
         <section aria-labelledby="ayah-results" className="space-y-4">
-          <h2 id="ayah-results" className="font-display text-xl font-semibold tracking-tight">
-            Ayat ({index.totalMatches})
-          </h2>
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 id="ayah-results" className="font-display text-xl font-semibold tracking-tight">
+              Word occurrences ({totalMatches})
+            </h2>
+            <p className="text-xs text-muted-foreground">
+              Showing {start + 1}–{start + pageOccurrences.length} of{" "}
+              {totalMatches} across {totalAyat} ayat
+            </p>
+          </div>
           <div className="space-y-3">
-            {index.occurrences.map((occ, i) => (
-              <AyahOccurrenceCard key={i} occurrence={occ} />
+            {pageOccurrences.map((occ, i) => (
+              <AyahOccurrenceCard key={`${occ.ref.surah}:${occ.ref.ayah}:${occ.wordPosition ?? i}`} occurrence={occ} />
             ))}
           </div>
 
-          {index.pagination && index.pagination.hasMore && (
-            <p className="text-sm text-muted-foreground">
-              Showing {index.totalOccurrences} of {index.totalMatches} matches.
-              Pagination not yet implemented in UI.
-            </p>
+          {totalPages > 1 && (
+            <nav
+              aria-label="Root occurrence pagination"
+              className="flex items-center justify-center gap-2 pt-2"
+            >
+              {currentPage > 1 ? (
+                <Link
+                  href={`/explore/root/${slug}?page=${currentPage - 1}`}
+                  className="rounded-lg border border-border/80 bg-card px-3 py-1.5 text-sm font-medium hover:bg-secondary/50"
+                >
+                  ← Previous
+                </Link>
+              ) : (
+                <span className="rounded-lg border border-border/40 bg-muted/40 px-3 py-1.5 text-sm text-muted-foreground/60">
+                  ← Previous
+                </span>
+              )}
+              <span className="px-3 text-sm text-muted-foreground">
+                Page {currentPage} of {totalPages}
+              </span>
+              {currentPage < totalPages ? (
+                <Link
+                  href={`/explore/root/${slug}?page=${currentPage + 1}`}
+                  className="rounded-lg border border-border/80 bg-card px-3 py-1.5 text-sm font-medium hover:bg-secondary/50"
+                >
+                  Next →
+                </Link>
+              ) : (
+                <span className="rounded-lg border border-border/40 bg-muted/40 px-3 py-1.5 text-sm text-muted-foreground/60">
+                  Next →
+                </span>
+              )}
+            </nav>
           )}
         </section>
       )}
@@ -383,7 +457,7 @@ function AyahOccurrenceCard({ occurrence }: { occurrence: RootOccurrence }) {
           <p className="mt-2 text-sm text-muted-foreground">{ayah.translation}</p>
         </div>
         <Link
-          href={`/${surah.slug}/${occurrence.ref.ayah}`}
+          href={`/ayah/${occurrence.ref.surah}/${occurrence.ref.ayah}`}
           className="shrink-0 rounded-lg bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary hover:bg-primary/20"
         >
           {surah.transliteration} {occurrence.ref.ayah}
