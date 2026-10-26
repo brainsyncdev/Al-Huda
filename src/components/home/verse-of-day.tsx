@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "@/lib/i18n/context";
 
 interface VerseOfDayPayload {
   surah: number;
@@ -42,6 +43,7 @@ type Status = "loading" | "ready" | "empty" | "error";
  * accessible name and the layout does not jump while loading.
  */
 export function VerseOfDayDisplay() {
+  const t = useTranslation();
   const [status, setStatus] = useState<Status>("loading");
   const [verse, setVerse] = useState<VerseOfDayPayload | null>(null);
   const [translationEdition, setTranslationEdition] = useState<string | null>(
@@ -70,14 +72,14 @@ export function VerseOfDayDisplay() {
     <>
       <div className="mb-4 flex items-center justify-between gap-3">
         <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Verse of the day
+          {t("home.verseOfDay")}
         </h2>
         {status === "ready" && verse && (
           <Link
             href={`/ayah/${verse.surah}/${verse.ayah}`}
             className="text-xs font-medium text-primary hover:underline"
           >
-            Open full page
+            {t("home.openFullPage")}
           </Link>
         )}
       </div>
@@ -106,12 +108,12 @@ export function VerseOfDayDisplay() {
               every public Quran surface, including this one. */}
           {translationEdition && (
             <p className="mt-2 text-xs text-muted-foreground">
-              Translation: {translationEdition} ·{" "}
+              {t("home.translationCredit", { edition: translationEdition })}{" "}
               <Link
                 href="/sources"
                 className="underline underline-offset-2 hover:text-foreground"
               >
-                source details
+                {t("home.sourceDetails")}
               </Link>
             </p>
           )}
@@ -123,14 +125,13 @@ export function VerseOfDayDisplay() {
 
       {status === "empty" && (
         <p className="text-sm text-muted-foreground">
-          Verse of the day is unavailable right now.
+          {t("home.verseOfDayUnavailable")}
         </p>
       )}
 
       {status === "error" && (
         <p className="text-sm text-muted-foreground">
-          Could not load today&apos;s verse. It will appear on your next visit
-          to this page.
+          {t("home.verseOfDayError")}
         </p>
       )}
     </>

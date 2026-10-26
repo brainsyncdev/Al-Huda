@@ -1,20 +1,24 @@
 import Link from "next/link";
 import { CurrentYear } from "@/components/layout/current-year";
-import { SITE_NAME } from "@/lib/site";
+import { ServerFooterText } from "@/components/layout/site-footer-text";
 
-const FOOTER_LINKS = [
-  { href: "/about", label: "About" },
-  { href: "/sources", label: "Sources" },
-  { href: "/settings", label: "Settings" },
-  { href: "/report", label: "Report an issue" },
-  { href: "/accessibility", label: "Accessibility" },
-  { href: "/privacy", label: "Privacy" },
-  { href: "/terms", label: "Terms" },
+const FOOTER_LINK_KEYS = [
+  { href: "/about", key: "footer.about" },
+  { href: "/sources", key: "footer.sources" },
+  { href: "/settings", key: "common.settings" },
+  { href: "/report", key: "footer.report" },
+  { href: "/accessibility", key: "footer.accessibility" },
+  { href: "/privacy", key: "footer.privacy" },
+  { href: "/terms", key: "footer.terms" },
 ] as const;
 
 /**
  * Site footer. Carries the required attribution lines for the Quran text and
  * translation (PRD: explicit provenance wherever content is presented).
+ *
+ * The footer is a server component for performance. Translated strings are
+ * rendered via a small client wrapper (ServerFooterText) that reads from
+ * the i18n context.
  */
 export function SiteFooter() {
   return (
@@ -23,22 +27,22 @@ export function SiteFooter() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <p className="font-display text-lg font-semibold text-primary">
-              {SITE_NAME}
+              <ServerFooterText k="layout.siteName" />
             </p>
             <p className="mt-1 max-w-xs text-sm text-muted-foreground">
-              A calm, source-first place to read and study the Quran.
+              <ServerFooterText k="footer.tagline" />
             </p>
           </div>
 
           <nav aria-label="Footer">
             <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-              {FOOTER_LINKS.map(({ href, label }) => (
+              {FOOTER_LINK_KEYS.map(({ href, key }) => (
                 <li key={href}>
                   <Link
                     href={href}
                     className="text-muted-foreground transition-colors hover:text-foreground"
                   >
-                    {label}
+                    <ServerFooterText k={key} />
                   </Link>
                 </li>
               ))}
@@ -50,44 +54,18 @@ export function SiteFooter() {
 
         <div className="space-y-1.5 text-xs leading-relaxed text-muted-foreground">
           <p>
-            Arabic text (Uthmani): via{" "}
-            <a
-              href="https://quranenc.com/en/home"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-foreground"
-            >
-              quranenc.com
-            </a>
-            , distributed through{" "}
-            <a
-              href="https://github.com/risan/quran-json"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-foreground"
-            >
-              quran-json v3.1.2
-            </a>{" "}
-            (CC-BY-4.0).
+            <ServerFooterText k="footer.arabicCredit" />
           </p>
           <p>
-            Translations in 100+ languages via{" "}
-            <a
-              href="https://tanzil.net/trans/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-foreground"
-            >
-              Tanzil.net
-            </a>
-            . Transliteration via Tanzil.net.
+            <ServerFooterText k="footer.translationCredit" />
           </p>
           <p className="pt-2">
-            Topic selections are editorial reading aids — not tafsir, not rulings.
-            See the review status on every topic page.
+            <ServerFooterText k="footer.editorialNote" />
           </p>
           <p className="pt-2">
-            © <CurrentYear buildYear={new Date().getFullYear()} /> {SITE_NAME}. Content licenses respected; see /sources.
+            © <CurrentYear buildYear={new Date().getFullYear()} />{" "}
+            <ServerFooterText k="layout.siteName" />.{" "}
+            <ServerFooterText k="footer.licenseNote" />
           </p>
         </div>
       </div>

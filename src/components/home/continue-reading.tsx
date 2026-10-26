@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { BookOpen, ChevronRight } from "lucide-react";
 import { useLibrary } from "@/lib/library/context";
+import { useTranslation, useI18n } from "@/lib/i18n/context";
 
 /**
  * "Continue reading" card: links to the most recent ayah visited from the
@@ -11,6 +12,8 @@ import { useLibrary } from "@/lib/library/context";
  */
 export function ContinueReading() {
   const { progress, hydrated } = useLibrary();
+  const t = useTranslation();
+  const { d } = useI18n();
 
   if (!hydrated || progress.length === 0) return null;
   const last = progress[0];
@@ -26,7 +29,7 @@ export function ContinueReading() {
           id="continue-reading-heading"
           className="text-xs font-semibold uppercase tracking-wider"
         >
-          Continue reading
+          {t("home.continueReading")}
         </h2>
       </div>
 
@@ -36,13 +39,10 @@ export function ContinueReading() {
       >
         <div>
           <p className="font-display text-lg font-semibold text-foreground">
-            Ayah {last.surah}:{last.ayah}
+            {t("home.ayahReference", { surah: last.surah, ayah: last.ayah })}
           </p>
           <p className="mt-0.5 text-sm text-muted-foreground">
-            Last visited {new Date(last.at).toLocaleDateString(undefined, {
-              month: "short",
-              day: "numeric",
-            })}
+            {t("home.lastVisited", { date: d(last.at) })}
           </p>
         </div>
         <ChevronRight

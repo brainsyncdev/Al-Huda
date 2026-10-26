@@ -13,6 +13,8 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { GlobalSearchShortcut } from "@/components/search/global-search-shortcut";
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
+import { I18nProvider } from "@/lib/i18n/context";
+import { SkipLink } from "@/components/layout/skip-link";
 
 const geist = Geist({
   variable: "--font-sans",
@@ -75,12 +77,8 @@ export default function RootLayout({
       <body
         className={`${geist.variable} ${lora.variable} ${amiriQuran.variable} font-sans antialiased min-h-dvh flex flex-col`}
       >
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-primary focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-primary-foreground"
-        >
-          Skip to main content
-        </a>
+        <SkipLink />
+      <I18nProvider>
       <LibraryProvider>
         <PrefsProvider>
           <RevisionProvider>
@@ -104,6 +102,7 @@ export default function RootLayout({
             </RevisionProvider>
           </PrefsProvider>
         </LibraryProvider>
+      </I18nProvider>
       </body>
     </html>
   );

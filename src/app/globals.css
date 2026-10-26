@@ -163,6 +163,42 @@
   background: hsl(var(--gold) / 0.35);
 }
 
+/* Bidirectional (RTL/LTR) layout support ---------------------------------- */
+
+/* Logical-property helpers for components that need direction-aware spacing.
+   Tailwind's built-in ms, me, ps, pe, start, and end utilities cover most
+   cases; these fill gaps for custom components. */
+[dir="rtl"] .flip-rtl {
+  transform: scaleX(-1);
+}
+
+/* In RTL mode, the main content flow reverses. Tailwind's logical properties
+   (ms-*, me-*, ps-*, pe-*, start-*, end-*) handle most cases automatically.
+   For components that still use physical left/right, we override here. */
+[dir="rtl"] .ltr-only {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Ensure search inputs and code blocks stay LTR even in RTL pages */
+input[type="search"],
+input[type="email"],
+input[type="url"],
+code,
+pre,
+kbd {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Arabic/Quran text is always RTL regardless of page direction */
+.arabic-text,
+.arabic-display,
+[lang="ar"] {
+  direction: rtl;
+  unicode-bidi: isolate;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

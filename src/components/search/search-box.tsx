@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { useTranslation } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 
 interface SearchBoxProps {
@@ -42,6 +43,7 @@ export function SearchBox({
   className,
   onSubmitOverride,
 }: SearchBoxProps) {
+  const t = useTranslation();
   const [value, setValue] = useState(initialQuery);
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
   const [isOpen, setIsOpen] = useState(false);
@@ -212,8 +214,8 @@ export function SearchBox({
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={handleKeyDown}
         onBlur={closePanel}
-        placeholder="Search a reference, translation, or Arabic text…"
-        aria-label="Search the Quran"
+              placeholder={t("searchBox.placeholder")}
+                    aria-label={t("searchBox.aria")}
         aria-describedby="search-shortcut-hint"
         data-search-box=""
         role="combobox"
@@ -235,7 +237,7 @@ export function SearchBox({
       </button>
       <kbd
         id="search-shortcut-hint"
-        aria-label="Press slash to focus search"
+                  aria-label={t("searchBox.shortcut")}
         className="pointer-events-none absolute right-24 top-1/2 hidden -translate-y-1/2 select-none items-center rounded-md border border-border/70 bg-background/70 px-1.5 py-0.5 font-mono text-[10px] font-medium text-muted-foreground sm:inline-flex"
       >
         /
@@ -252,7 +254,7 @@ export function SearchBox({
           ref={listRef}
           id="search-suggestions"
           role="listbox"
-          aria-label="Search suggestions"
+                  aria-label={t("searchBox.suggestions")}
           className="absolute left-0 right-0 top-full z-50 mt-2 max-h-80 overflow-y-auto rounded-2xl border border-border bg-card shadow-lg"
         >
           {suggestions.map((suggestion, index) => (

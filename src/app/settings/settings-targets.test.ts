@@ -20,20 +20,20 @@ describe("Settings text-size and spacing targets", () => {
   );
 
   it("size buttons use 44px minimum height and width", () => {
-    expect(src).toMatch(/Arabic text size[\s\S]{0,800}min-h-\[44px\][\s\S]{0,200}min-w-\[44px\]/);
+    expect(src).toMatch(/settings\.arabicSize[\s\S]{0,800}min-h-\[44px\][\s\S]{0,200}min-w-\[44px\]/);
   });
 
   it("spacing buttons use 44px minimum height and width", () => {
-    expect(src).toMatch(/Line spacing[\s\S]{0,800}min-h-\[44px\][\s\S]{0,200}min-w-\[44px\]/);
+    expect(src).toMatch(/settings\.lineSpacing[\s\S]{0,800}min-h-\[44px\][\s\S]{0,200}min-w-\[44px\]/);
   });
 
   it("every size button has a group-contextualized aria-label", () => {
-    expect(src).toMatch(/aria-label=\{`Text size: \$\{s === "sm" \? "small"/);
+    expect(src).toMatch(/aria-label=\{t\("settings\.arabicSizeLabel"/);
   });
 
   it("every spacing button has an aria-label naming what it controls (Sprint 24 gap)", () => {
     // Sprint 20/23 gap: spacing buttons had no aria-label, only visible text.
-    expect(src).toMatch(/aria-label=\{`Line spacing: \$\{lh\}`\}/);
+    expect(src).toMatch(/aria-label=\{t\("settings\.lineSpacingLabel"/);
   });
 
   it("size buttons preserve aria-pressed state", () => {

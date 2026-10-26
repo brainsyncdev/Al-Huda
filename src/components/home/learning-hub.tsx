@@ -14,8 +14,12 @@ import {
   getPath,
   RECOMMENDED_PATHS,
 } from "@/lib/paths/data";
+import { useTranslation, useI18n } from "@/lib/i18n/context";
+
 export function LearningHub() {
   const { hydrated, state } = usePaths();
+  const t = useTranslation();
+  const { n } = useI18n();
 
   if (!hydrated) {
     return (
@@ -51,14 +55,11 @@ export function LearningHub() {
               id="learning-hub-heading"
               className="text-xs font-semibold uppercase tracking-wider"
             >
-              Continue learning
+              {t("home.continueLearning")}
             </h2>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
-            Recommended for{" "}
-            <span className="font-medium text-foreground">
-              {AUDIENCE_LABELS[selectedGoal]}
-            </span>
+            {t("home.recommendedFor", { audience: AUDIENCE_LABELS[selectedGoal] })}
           </p>
           <ul className="mt-4 space-y-2.5">
             {recommended.map((path) => {
@@ -92,12 +93,12 @@ export function LearningHub() {
                             />
                           </div>
                           <span className="text-xs text-muted-foreground">
-                            {completedCount}/{path.steps.length}
+                            {n(completedCount)}/{n(path.steps.length)}
                           </span>
                         </div>
                       ) : (
                         <p className="text-xs text-muted-foreground">
-                          {path.steps.length} steps
+                          {n(path.steps.length)} {t("home.steps")}
                         </p>
                       )}
                     </div>
@@ -114,7 +115,7 @@ export function LearningHub() {
             href="/learn/paths"
             className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
           >
-            All learning paths
+            {t("home.allLearningPaths")}
             <ArrowRight className="h-4 w-4" aria-hidden />
           </Link>
         </section>
@@ -134,26 +135,25 @@ export function LearningHub() {
           id="learning-hub-heading"
           className="text-xs font-semibold uppercase tracking-wider"
         >
-          Start learning
+          {t("home.startLearning")}
         </h2>
       </div>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-        Guided learning paths for studying the Quran — structured curriculum
-        with sequenced steps, reflection prompts, and self-assessment.
+        {t("home.learningHubDescription")}
       </p>
       <div className="mt-4 flex flex-wrap gap-2.5">
         <Link
           href="/onboarding"
           className="inline-flex items-center gap-1.5 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
         >
-          Take the guided tour
+          {t("home.takeGuidedTour")}
           <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
         <Link
           href="/learn/paths"
           className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
         >
-          Browse paths
+          {t("home.browsePaths")}
         </Link>
       </div>
     </section>

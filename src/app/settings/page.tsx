@@ -13,8 +13,10 @@ import {
 import { TranslationSelector } from "@/components/quran/translation-selector";
 import { RECITERS } from "@/lib/quran/audio";
 import { TRANSLATIONS, getTranslation } from "@/lib/quran/translations";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function SettingsPage() {
+  const t = useTranslation();
   const {
     arabicSize,
     lineHeight,
@@ -38,64 +40,67 @@ export default function SettingsPage() {
 
   const primaryTranslation = getTranslation(translationId);
   const availableParallel = TRANSLATIONS.filter(
-    (t) => t.id !== translationId && !parallelTranslationIds.includes(t.id)
+    (tr) => tr.id !== translationId && !parallelTranslationIds.includes(tr.id)
   );
 
   return (
     <div className="space-y-8 pb-8">
       <header className="space-y-2">
         <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-          Settings
+          {t("settings.title")}
         </h1>
         <p className="text-muted-foreground">
-          Reader preferences stored only on this device.
+          {t("settings.subtitle")}
         </p>
       </header>
 
       <section aria-labelledby="reading-prefs" className="space-y-4">
         <h2 id="reading-prefs" className="font-display text-xl font-semibold tracking-tight">
-          Reading preferences
+          {t("settings.readingPrefs")}
         </h2>
         <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-5">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <h3 className="text-base font-semibold">Arabic text size</h3>
-              <p className="text-sm text-muted-foreground">Affects Uthmani Arabic in readers and topic pages.</p>
+              <h3 className="text-base font-semibold">{t("settings.arabicSize")}</h3>
+              <p className="text-sm text-muted-foreground">{t("settings.arabicSizeDesc")}</p>
             </div>
-            <div className="flex flex-wrap gap-1.5" role="group" aria-label="Arabic text size">
-              {ARABIC_SIZES.map((s) => (
-                <button
-                  key={s}
-                  type="button"
-                  onClick={() => setArabicSize(s)}
-                  aria-pressed={arabicSize === s}
-                  aria-label={`Text size: ${s === "sm" ? "small" : s === "md" ? "medium" : s === "lg" ? "large" : "extra large"}`}
-                  className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-full px-3.5 text-xs font-medium transition-colors ${
-                    arabicSize === s
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
-                  }`}
-                >
-                  {s === arabicSize && <Check className="h-3.5 w-3.5" aria-hidden />}
-                  {s}
-                </button>
-              ))}
+            <div className="flex flex-wrap gap-1.5" role="group" aria-label={t("settings.arabicSize")}>
+              {ARABIC_SIZES.map((s) => {
+                const sizeLabel = s === "sm" ? t("settings.sizeSmall") : s === "md" ? t("settings.sizeMedium") : s === "lg" ? t("settings.sizeLarge") : t("settings.sizeExtraLarge");
+                return (
+                  <button
+                    key={s}
+                    type="button"
+                    onClick={() => setArabicSize(s)}
+                    aria-pressed={arabicSize === s}
+                    aria-label={t("settings.arabicSizeLabel", { size: sizeLabel })}
+                    className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-full px-3.5 text-xs font-medium transition-colors ${
+                      arabicSize === s
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
+                    }`}
+                  >
+                    {s === arabicSize && <Check className="h-3.5 w-3.5" aria-hidden />}
+                    {s}
+                  </button>
+                );
+              })}
             </div>
           </div>
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <h3 className="text-base font-semibold">Line spacing</h3>
-              <p className="text-sm text-muted-foreground">Adjust vertical spacing between Arabic lines.</p>
+              <h3 className="text-base font-semibold">{t("settings.lineSpacing")}</h3>
+              <p className="text-sm text-muted-foreground">{t("settings.lineSpacingDesc")}</p>
             </div>
-            <div className="flex flex-wrap gap-1.5" role="group" aria-label="Line spacing">
+            <div className="flex flex-wrap gap-1.5" role="group" aria-label={t("settings.lineSpacing")}>
               {LINE_HEIGHTS.map((lh) => (
                 <button
                   key={lh}
                   type="button"
                   onClick={() => setLineHeight(lh)}
                   aria-pressed={lineHeight === lh}
-                  aria-label={`Line spacing: ${lh}`}
+                  aria-label={t("settings.lineSpacingLabel", { spacing: lh })}
                   className={`inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-1.5 rounded-full px-3.5 text-xs font-medium transition-colors ${
                     lineHeight === lh
                       ? "bg-primary text-primary-foreground"
@@ -114,15 +119,15 @@ export default function SettingsPage() {
               <p lang="ar" dir="rtl" className={`${arabicSizeClass(arabicSize)} arabic-text text-foreground`}>
                 بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
               </p>
-              <p className="mt-2 text-xs text-muted-foreground">Preview of Arabic size</p>
+              <p className="mt-2 text-xs text-muted-foreground">{t("settings.arabicPreview")}</p>
             </div>
           )}
 
           <div className="space-y-4">
             <div className="space-y-2">
-              <h3 className="text-base font-semibold">Translation edition</h3>
+              <h3 className="text-base font-semibold">{t("settings.translationEdition")}</h3>
               <p className="text-sm text-muted-foreground">
-                Choose from 100+ translations in 50+ languages. Default: Urdu (Jalandhry).
+                {t("settings.translationEditionDesc")}
               </p>
               <TranslationSelector />
             </div>
@@ -134,8 +139,8 @@ export default function SettingsPage() {
                 className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
               />
               <span>
-                <span className="font-medium">Show translation</span>
-                <p className="text-sm text-muted-foreground">Toggle translation visibility. The selected edition is shown above.</p>
+                <span className="font-medium">{t("settings.showTranslation")}</span>
+                <p className="text-sm text-muted-foreground">{t("settings.showTranslationDesc")}</p>
               </span>
             </label>
             <label className="flex items-start gap-3">
@@ -146,8 +151,8 @@ export default function SettingsPage() {
                 className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
               />
               <span>
-                <span className="font-medium">Show transliteration</span>
-                <p className="text-sm text-muted-foreground">Only for reading aid; never a substitute for Arabic text.</p>
+                <span className="font-medium">{t("settings.showTransliteration")}</span>
+                <p className="text-sm text-muted-foreground">{t("settings.showTransliterationDesc")}</p>
               </span>
             </label>
 
@@ -160,16 +165,16 @@ export default function SettingsPage() {
                   className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
                 />
                 <span>
-                  <span className="font-medium">Audio recitation</span>
+                  <span className="font-medium">{t("settings.audioRecitation")}</span>
                   <p className="text-sm text-muted-foreground">
-                    Show a Listen button under each verse. Audio streams only when you press play.
+                    {t("settings.audioRecitationDesc")}
                   </p>
                 </span>
               </label>
               {showAudio && (
                 <div className="space-y-1.5 pl-7">
                   <label htmlFor="reciter-select" className="block text-xs font-medium text-muted-foreground">
-                    Reciter
+                    {t("settings.reciter")}
                   </label>
                   <select
                     id="reciter-select"
@@ -185,7 +190,7 @@ export default function SettingsPage() {
                     ))}
                   </select>
                   <p className="text-[0.6875rem] text-muted-foreground">
-                    Verse-by-verse MP3s from the Islamic Network CDN (everyayah.com recordings), streamed at 64 kbps.
+                    {t("settings.audioSource")}
                   </p>
                 </div>
               )}
@@ -200,9 +205,9 @@ export default function SettingsPage() {
                   className="mt-1 h-4 w-4 rounded border-input text-primary focus:ring-primary"
                 />
                 <span>
-                  <span className="font-medium">Compare translations side by side</span>
+                  <span className="font-medium">{t("settings.parallelMode")}</span>
                   <p className="text-sm text-muted-foreground">
-                    Show up to {MAX_PARALLEL_TRANSLATIONS} extra translations beneath the primary edition.
+                    {t("settings.parallelModeDesc", { count: MAX_PARALLEL_TRANSLATIONS })}
                   </p>
                 </span>
               </label>
@@ -210,7 +215,7 @@ export default function SettingsPage() {
               {parallelMode && (
                 <div className="space-y-3 pl-7">
                   <p className="text-xs text-muted-foreground">
-                    Primary:{" "}
+                    {t("settings.primary")}{" "}
                     <span className="font-medium text-foreground">
                       {primaryTranslation
                         ? `${primaryTranslation.name} (${primaryTranslation.languageLabel})`
@@ -227,7 +232,7 @@ export default function SettingsPage() {
                             <button
                               type="button"
                               onClick={() => toggleParallelTranslation(id)}
-                              aria-label={`Remove ${meta?.name ?? id}`}
+                              aria-label={t("settings.removeTranslation", { name: meta?.name ?? id })}
                               className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                             >
                               {meta ? `${meta.name} — ${meta.languageLabel}` : id}
@@ -242,7 +247,7 @@ export default function SettingsPage() {
                   {parallelTranslationIds.length < MAX_PARALLEL_TRANSLATIONS ? (
                     <div className="space-y-1.5">
                       <label htmlFor="parallel-add" className="block text-xs font-medium text-muted-foreground">
-                        Add a translation
+                        {t("settings.addTranslation")}
                       </label>
                       <select
                         id="parallel-add"
@@ -252,22 +257,22 @@ export default function SettingsPage() {
                         }}
                         className="w-full rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring sm:w-auto"
                       >
-                        <option value="">Choose a translation…</option>
-                        {availableParallel.map((t) => (
-                          <option key={t.id} value={t.id}>
-                            {t.name} — {t.languageLabel}
+                        <option value="">{t("settings.chooseTranslation")}</option>
+                        {availableParallel.map((tr) => (
+                          <option key={tr.id} value={tr.id}>
+                            {tr.name} — {tr.languageLabel}
                           </option>
                         ))}
                       </select>
                     </div>
                   ) : (
                     <p className="text-[0.6875rem] text-muted-foreground">
-                      Maximum of {MAX_PARALLEL_TRANSLATIONS} additional translations reached. Remove one to add another.
+                      {t("settings.parallelMaxReached", { count: MAX_PARALLEL_TRANSLATIONS })}
                     </p>
                   )}
 
                   <p className="text-[0.6875rem] text-muted-foreground">
-                    Each edition downloads once per session and is held in memory — roughly 1.5 MB per translation.
+                    {t("settings.parallelMemory")}
                   </p>
                 </div>
               )}
@@ -278,24 +283,17 @@ export default function SettingsPage() {
 
       <section aria-labelledby="local-data" className="space-y-4">
         <h2 id="local-data" className="font-display text-xl font-semibold tracking-tight">
-          Your local data
+          {t("settings.localData")}
         </h2>
         <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Bookmarks, private notes, reading history, your revision plan, and
-            preferences stay in your browser’s localStorage. We do not collect them.
+            {t("settings.localDataDesc")}
           </p>
-          {/* FR-044 / Journey D acceptance: state the flip side of local-only
-              storage, so the privacy guarantee is not mistaken for durability. */}
           <p className="max-w-prose text-xs leading-relaxed text-muted-foreground">
             <span className="font-semibold text-foreground">
-              Local storage is not a backup.
+              {t("settings.localDataWarning")}
             </span>{" "}
-            Because nothing is uploaded, there is no server copy to restore from.
-            Clearing site data or cookies, browsing in a private or incognito
-            window, switching browser or device, or uninstalling the browser will
-            erase these preferences, your library, and your revision plan. Use
-            Export backup first if you want to keep them.
+            {t("settings.localDataWarningDesc")}
           </p>
           <BackupControls />
         </div>
@@ -303,14 +301,14 @@ export default function SettingsPage() {
 
       <section aria-labelledby="policies" className="space-y-4">
         <h2 id="policies" className="font-display text-xl font-semibold tracking-tight">
-          Policies &amp; compliance
+          {t("settings.policies")}
         </h2>
         <ul className="space-y-2">
           <li>
             <Link href="/settings/privacy" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
               <span className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-gold" aria-hidden />
-                Privacy &amp; local storage
+                {t("settings.privacyLocal")}
               </span>
               <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
@@ -319,26 +317,26 @@ export default function SettingsPage() {
             <Link href="/sources" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
               <span className="flex items-center gap-2">
                 <ShieldCheck className="h-4 w-4 text-gold" aria-hidden />
-                Sources &amp; provenance
+                {t("settings.sourcesProvenance")}
               </span>
               <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
             <Link href="/privacy" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
-              Privacy policy
+              {t("settings.privacyPolicy")}
               <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
             <Link href="/terms" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
-              Terms of use
+              {t("settings.termsOfUse")}
               <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
             <Link href="/accessibility" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
-              Accessibility statement
+              {t("settings.accessibilityStatement")}
               <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>

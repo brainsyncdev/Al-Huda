@@ -16,7 +16,10 @@ describe("/explore/root/[root] — data availability invariant", () => {
     expect(existsSync(join(libDir, "morphology.ts"))).toBe(false);
     expect(existsSync(join(libDir, "roots.ts"))).toBe(false);
     expect(existsSync(join(libDir, "root-data.ts"))).toBe(false);
-    expect(existsSync(join(libDir, "morphology"))).toBe(false);
+    // Sprint 37: morphology directory now exists with validation scaffolding
+    // (types, validators, root-allowlist, occurrence-index). The actual data
+    // import is blocked, but the schema is in place.
+    expect(existsSync(join(libDir, "morphology"))).toBe(true);
     expect(existsSync(join(libDir, "roots"))).toBe(false);
   });
 
