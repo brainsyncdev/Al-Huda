@@ -44,3 +44,8 @@ next-env.d.ts
 # scratch directories
 .tmp/
 .video_agent/
+
+# generated morphology reports (not needed at runtime; index is committed)
+ROOT-REVIEW-REPORT.md
+data/morphology-import-report.json
+data/root-review-reports.json

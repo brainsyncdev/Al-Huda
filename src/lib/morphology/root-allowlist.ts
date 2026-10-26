@@ -70,12 +70,129 @@ export interface RootTopicEntry {
 }
 
 /**
- * The root allowlist. Only entries with reviewState !== "candidate" and
- * non-empty includedLemmas are enabled for display.
+ * The root allowlist. Only entries with reviewState === "approved" and
+ * non-empty includedLemmas are enabled for public display (see canActivateRootTopic).
  *
- * STATUS: empty. No roots are enabled yet.
+ * STATUS: 10 entries populated as "pending-review" with empty includedLemmas.
+ * No roots are activated yet — human lemma review is required before any root
+ * can be approved for public display.
+ *
+ * The notes field contains computed evidence from the morphology import:
+ * occurrence counts, distinct ayat, and top lemmas by frequency. This data
+ * is shown in the UI as review information, not as activated content.
  */
-export const ROOT_ALLOWLIST: RootTopicEntry[] = [];
+export const ROOT_ALLOWLIST: RootTopicEntry[] = [
+  {
+    slug: "sabr",
+    title: "Patience",
+    arabicTitle: "الصبر",
+    roots: ["صبر"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "103 occurrences across 93 ayat, 8 lemmas. Top: صَبَرَ (58), صَابِر (20), صَبْر (15). Polysemy: relatively unambiguous — primary meaning is patience/perseverance.",
+  },
+  {
+    slug: "shukr",
+    title: "Gratitude",
+    arabicTitle: "الشكر",
+    roots: ["شكر"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "75 occurrences across 69 ayat, 6 lemmas. Top: شَكَرَ (46), شَاكِر (14), شَكُور (10). Polysemy: relatively unambiguous — primary meaning is gratitude/thankfulness.",
+  },
+  {
+    slug: "rahmah",
+    title: "Mercy",
+    arabicTitle: "الرحمة",
+    roots: ["رحم"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "339 occurrences across 313 ayat, 9 lemmas. Top: رَّحِيم (116), رَحْمَة (114), رَّحْمَٰن (57), رَّحِمَ (28), أَرْحَام (12). Polysemy: includes الأرحام (kinship/womb) — reviewer must decide which lemmas belong to mercy topic.",
+  },
+  {
+    slug: "ilm",
+    title: "Knowledge",
+    arabicTitle: "العلم",
+    roots: ["علم"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "854 occurrences across 728 ayat, 14 lemmas. Top: عَلِمَ (382), عَلِيم (163), عِلْم (105), عَٰلَمِين (73), أَعْلَم (49). Polysemy: includes العالمين (the worlds) — would put 'Rabb al-alamin' ayahs in knowledge topic. Very high frequency root.",
+  },
+  {
+    slug: "tawbah",
+    title: "Repentance",
+    arabicTitle: "التوبة",
+    roots: ["توب"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "87 occurrences across 69 ayat, 7 lemmas. Top: تَابَ (63), تَوَّاب (12), تَوْبَة (7). Polysemy: relatively unambiguous — primary meaning is repentance/return.",
+  },
+  {
+    slug: "maghfirah",
+    title: "Forgiveness",
+    arabicTitle: "المغفرة",
+    roots: ["غفر"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "234 occurrences across 202 ayat, 10 lemmas. Top: غَفَرَ (65), غَفُور (58), اسْتَغْفَرَ (40), مَّغْفِرَة (28). Polysemy: relatively unambiguous — primary meaning is forgiveness/covering.",
+  },
+  {
+    slug: "kibr",
+    title: "Greatness/Arrogance",
+    arabicTitle: "الكبر",
+    roots: ["كبر"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "161 occurrences across 153 ayat, 19 lemmas. Top: اسْتَكْبَرَ (40), كَبِير (40), أَكْبَر (24), كَبِيرَة (7). Polysemy: includes أكبر/كبير (big/great) AND استكبر (arrogance) — same root spans neutral size and negative arrogance, reviewer must split lemmas.",
+  },
+  {
+    slug: "khushu",
+    title: "Humility",
+    arabicTitle: "الخضوع",
+    roots: ["خشع"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "17 occurrences across 16 ayat, 3 lemmas. Top: خَاشِع (14), خَشَعَتِ (2), خُشُوع (1). Polysemy: relatively unambiguous — primary meaning is humility/submission.",
+  },
+  {
+    slug: "sidq",
+    title: "Truthfulness",
+    arabicTitle: "الصدق",
+    roots: ["صدق"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "155 occurrences across 144 ayat, 19 lemmas. Top: صَادِق (59), مُصَدِّق (19), صَدَقَ (15), صِدْق (14), صَدَّقَ (10). Polysemy: includes صدقة (charity) — would pollute truthfulness topic, reviewer must exclude charity-related lemmas.",
+  },
+  {
+    slug: "tawakkul",
+    title: "Trust/Delegation",
+    arabicTitle: "التوكل",
+    roots: ["وكل"],
+    includedLemmas: [],
+    reviewState: "pending-review",
+    assertedBy: "Sprint 39 mechanical import (no scholarly review)",
+    assertedAt: "2026-10-26",
+    notes: "70 occurrences across 61 ayat, 4 lemmas. Top: تَوَكَّلْ (40), وَكِيل (24), مُتَوَكِّلُون (4). Polysemy: includes وكيل (guardian/agent) and توكل (trust in God) — may need lemma-level split between legal agency and spiritual trust.",
+  },
+];
 
 /**
  * Candidate roots for future topic creation. These are NOT enabled — they

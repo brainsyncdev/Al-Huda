@@ -26,6 +26,7 @@ Output:
 import sqlite3
 import json
 import os
+import re
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Any
 from collections import defaultdict
@@ -53,15 +54,60 @@ def load_quran_data() -> Dict[int, Dict]:
                 surahs[i] = {"verses": data.get("verses", [])}
     return surahs
 
-def get_word_token(word_data: Dict, surah: int, ayah: int, word_pos: int) -> Optional[str]:
-    """Get the Arabic token for a specific word position"""
+_ARABIC_LETTER = re.compile(r"[\u0621-\u064A\u0671-\u06D3]")
+
+def _is_word_token(token: str) -> bool:
+    """True when a whitespace token contains at least one Arabic letter.
+
+    Standalone Quranic waqf/pause marks (ۖ ۗ ۘ ۙ ۚ ۛ ۜ ۞ etc.) carry no
+    letters and are not words, even though word-data sometimes emits them as
+    their own space-separated token.
+    """
+    return _ARABIC_LETTER.search(token) is not None
+
+_WORD_POSITION_MAP_CACHE: Dict[str, Dict[int, str]] = {}
+
+def build_word_position_map(
+    word_data: Dict, surah: int, ayah: int
+) -> Dict[int, str]:
+    """Map a QUL 1-based word position to the word-data display entry.
+
+    The two sources tokenize differently:
+
+      * QUL morphology counts every Arabic word separately.
+      * word-data sometimes merges a multi-word phrase into one entry
+        (e.g. "بَعْدَ مَا") and sometimes appends a standalone waqf mark as a
+        separate whitespace token (e.g. "عَرَبِيًّا ۚ").
+
+    Counting only whitespace tokens that contain Arabic letters makes the two
+    conventions line up without altering either source.
+    """
     key = f"{surah}:{ayah}"
-    if key not in word_data:
+    cached = _WORD_POSITION_MAP_CACHE.get(key)
+    if cached is not None:
+        return cached
+
+    mapping: Dict[int, str] = {}
+    words = word_data.get(key)
+    if words:
+        pos = 0
+        for entry in words:
+            text = entry[0]
+            n = sum(1 for t in text.split() if _is_word_token(t))
+            if n == 0:
+                continue
+            for _ in range(n):
+                pos += 1
+                mapping[pos] = text
+
+    _WORD_POSITION_MAP_CACHE[key] = mapping
+    return mapping
+
+def get_word_token(word_data: Dict, surah: int, ayah: int, word_pos: int) -> Optional[str]:
+    """Get the Arabic token for a specific QUL word position."""
+    if not word_data:
         return None
-    words = word_data[key]
-    if word_pos < 1 or word_pos > len(words):
-        return None
-    return words[word_pos - 1][0]
+    return build_word_position_map(word_data, surah, ayah).get(word_pos)
 
 def get_canonical_arabic(quran_data: Dict, surah: int, ayah: int) -> Optional[str]:
     """Get the canonical Arabic text for an ayah"""
@@ -133,14 +179,16 @@ def import_word_root(db_path: Path, quran_data: Dict, word_data_cache: Dict) -> 
             # Still create record with empty token for ayah-level tracking
             token = ""
         
-        records.append({
+        # Slim record: omit canonicalArabic (filled at load time from getSurah).
+        # This keeps the index ~15MB instead of ~68MB.
+        rec = {
             "ref": {"surah": surah, "ayah": ayah},
             "wordPosition": word_pos,
             "token": token,
-            "canonicalArabic": canonical,
+            "sourceId": "qul-morphology-v1",
             "root": root,
-            "sourceId": "qul-morphology-v1"
-        })
+        }
+        records.append(rec)
     
     conn.close()
     return records, {"issues": issues, "count": len(records), "duplicates": len([i for i in issues if i["issue"] == "duplicate-location"])}
@@ -210,9 +258,8 @@ def import_word_lemma(db_path: Path, existing_records: List[Dict], quran_data: D
                 "ref": {"surah": surah, "ayah": ayah},
                 "wordPosition": word_pos,
                 "token": token,
-                "canonicalArabic": canonical,
+                "sourceId": "qul-morphology-v1",
                 "lemma": lemma,
-                "sourceId": "qul-morphology-v1"
             })
     
     conn.close()
@@ -248,9 +295,8 @@ def import_ayah_root(db_path: Path, quran_data: Dict) -> Tuple[List[Dict], Dict]
             records.append({
                 "ref": {"surah": surah, "ayah": ayah},
                 "token": "",
-                "canonicalArabic": canonical,
+                "sourceId": "qul-morphology-v1",
                 "root": root,
-                "sourceId": "qul-morphology-v1"
             })
     
     conn.close()

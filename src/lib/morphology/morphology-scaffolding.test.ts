@@ -262,8 +262,14 @@ describe("Sprint 37 — Root allowlist validators", () => {
     expect(result.issues.some((i) => i.includes("duplicate slug"))).toBe(true);
   });
 
-  it("the current ROOT_ALLOWLIST is empty (no roots enabled yet)", () => {
-    expect(ROOT_ALLOWLIST).toHaveLength(0);
+  it("the current ROOT_ALLOWLIST has no approved roots with lemmas (all pending-review)", () => {
+    // Sprint 39: ROOT_ALLOWLIST now has 10 pending-review entries with computed
+    // evidence but empty includedLemmas. No roots are activated yet.
+    expect(ROOT_ALLOWLIST.length).toBeGreaterThan(0);
+    for (const entry of ROOT_ALLOWLIST) {
+      expect(entry.reviewState).toBe("pending-review");
+      expect(entry.includedLemmas).toHaveLength(0);
+    }
     const result = validateRootAllowlist(ROOT_ALLOWLIST);
     expect(result.valid).toBe(true);
   });
