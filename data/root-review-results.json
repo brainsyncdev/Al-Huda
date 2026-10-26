@@ -1,0 +1,2355 @@
+[
+  {
+    "slug": "sabr",
+    "root": "صبر",
+    "title": "Patience",
+    "arabicTitle": "الصبر",
+    "totalOccurrences": 103,
+    "distinctAyat": 93,
+    "lemmaCount": 8,
+    "lemmaDistribution": [
+      {
+        "lemma": "صَبَرَ",
+        "count": 58
+      },
+      {
+        "lemma": "صَابِر",
+        "count": 20
+      },
+      {
+        "lemma": "صَبْر",
+        "count": 15
+      },
+      {
+        "lemma": "صَبَّار",
+        "count": 4
+      },
+      {
+        "lemma": "اصْطَبِرْ",
+        "count": 3
+      },
+      {
+        "lemma": "صَابِرُ",
+        "count": 1
+      },
+      {
+        "lemma": "صَابِرَة",
+        "count": 1
+      },
+      {
+        "lemma": "صَّٰبِرَٰت",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 45
+      },
+      {
+        "surah": 2,
+        "ayah": 61
+      },
+      {
+        "surah": 2,
+        "ayah": 153
+      },
+      {
+        "surah": 2,
+        "ayah": 155
+      },
+      {
+        "surah": 2,
+        "ayah": 175
+      },
+      {
+        "surah": 2,
+        "ayah": 177
+      },
+      {
+        "surah": 2,
+        "ayah": 249
+      },
+      {
+        "surah": 2,
+        "ayah": 250
+      },
+      {
+        "surah": 3,
+        "ayah": 17
+      },
+      {
+        "surah": 3,
+        "ayah": 120
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "صَبَرَ",
+        "صَابِر",
+        "صَبْر",
+        "صَبَّار",
+        "اصْطَبِرْ",
+        "صَابِرُ",
+        "صَابِرَة",
+        "صَّٰبِرَٰت"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 103 records have lemmas, no duplicate positions. Recommending full lemma set (8 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Patience.\"",
+      "evidence": [
+        {
+          "lemma": "صَبَرَ",
+          "count": 58,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 61
+            },
+            {
+              "surah": 2,
+              "ayah": 175
+            },
+            {
+              "surah": 3,
+              "ayah": 120
+            }
+          ]
+        },
+        {
+          "lemma": "صَابِر",
+          "count": 20,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 153
+            },
+            {
+              "surah": 2,
+              "ayah": 155
+            },
+            {
+              "surah": 2,
+              "ayah": 177
+            }
+          ]
+        },
+        {
+          "lemma": "صَبْر",
+          "count": 15,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 45
+            },
+            {
+              "surah": 2,
+              "ayah": 153
+            },
+            {
+              "surah": 2,
+              "ayah": 250
+            }
+          ]
+        },
+        {
+          "lemma": "صَبَّار",
+          "count": 4,
+          "sampleAyat": [
+            {
+              "surah": 14,
+              "ayah": 5
+            },
+            {
+              "surah": 31,
+              "ayah": 31
+            },
+            {
+              "surah": 34,
+              "ayah": 19
+            }
+          ]
+        },
+        {
+          "lemma": "اصْطَبِرْ",
+          "count": 3,
+          "sampleAyat": [
+            {
+              "surah": 19,
+              "ayah": 65
+            },
+            {
+              "surah": 20,
+              "ayah": 132
+            },
+            {
+              "surah": 54,
+              "ayah": 27
+            }
+          ]
+        },
+        {
+          "lemma": "صَابِرُ",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 3,
+              "ayah": 200
+            }
+          ]
+        },
+        {
+          "lemma": "صَابِرَة",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 8,
+              "ayah": 66
+            }
+          ]
+        },
+        {
+          "lemma": "صَّٰبِرَٰت",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 33,
+              "ayah": 35
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "sabr",
+      "root": "صبر",
+      "ambiguityFlags": [],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 103,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "publish",
+      "reasons": [
+        "Structural validation passed for 103 word-level records (8 lemmas).",
+        "No documented ambiguity lemma observed.",
+        "No incompatible lemma mapping detected.",
+        "Review recommended the complete validated lemma set for neutral root-index framing."
+      ],
+      "includedLemmas": [
+        "اصْطَبِرْ",
+        "صَابِر",
+        "صَابِرَة",
+        "صَابِرُ",
+        "صَبَرَ",
+        "صَبَّار",
+        "صَبْر",
+        "صَّٰبِرَٰت"
+      ]
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "shukr",
+    "root": "شكر",
+    "title": "Gratitude",
+    "arabicTitle": "الشكر",
+    "totalOccurrences": 75,
+    "distinctAyat": 69,
+    "lemmaCount": 6,
+    "lemmaDistribution": [
+      {
+        "lemma": "شَكَرَ",
+        "count": 46
+      },
+      {
+        "lemma": "شَاكِر",
+        "count": 14
+      },
+      {
+        "lemma": "شَكُور",
+        "count": 10
+      },
+      {
+        "lemma": "شُكُور",
+        "count": 2
+      },
+      {
+        "lemma": "مَّشْكُور",
+        "count": 2
+      },
+      {
+        "lemma": "شُكْر",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 52
+      },
+      {
+        "surah": 2,
+        "ayah": 56
+      },
+      {
+        "surah": 2,
+        "ayah": 152
+      },
+      {
+        "surah": 2,
+        "ayah": 158
+      },
+      {
+        "surah": 2,
+        "ayah": 172
+      },
+      {
+        "surah": 2,
+        "ayah": 185
+      },
+      {
+        "surah": 2,
+        "ayah": 243
+      },
+      {
+        "surah": 3,
+        "ayah": 123
+      },
+      {
+        "surah": 3,
+        "ayah": 144
+      },
+      {
+        "surah": 3,
+        "ayah": 145
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "شَكَرَ",
+        "شَاكِر",
+        "شَكُور",
+        "شُكُور",
+        "مَّشْكُور",
+        "شُكْر"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 75 records have lemmas, no duplicate positions. Recommending full lemma set (6 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Gratitude.\"",
+      "evidence": [
+        {
+          "lemma": "شَكَرَ",
+          "count": 46,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 52
+            },
+            {
+              "surah": 2,
+              "ayah": 56
+            },
+            {
+              "surah": 2,
+              "ayah": 152
+            }
+          ]
+        },
+        {
+          "lemma": "شَاكِر",
+          "count": 14,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 158
+            },
+            {
+              "surah": 3,
+              "ayah": 144
+            },
+            {
+              "surah": 3,
+              "ayah": 145
+            }
+          ]
+        },
+        {
+          "lemma": "شَكُور",
+          "count": 10,
+          "sampleAyat": [
+            {
+              "surah": 14,
+              "ayah": 5
+            },
+            {
+              "surah": 17,
+              "ayah": 3
+            },
+            {
+              "surah": 31,
+              "ayah": 31
+            }
+          ]
+        },
+        {
+          "lemma": "شُكُور",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 25,
+              "ayah": 62
+            },
+            {
+              "surah": 76,
+              "ayah": 9
+            }
+          ]
+        },
+        {
+          "lemma": "مَّشْكُور",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 17,
+              "ayah": 19
+            },
+            {
+              "surah": 76,
+              "ayah": 22
+            }
+          ]
+        },
+        {
+          "lemma": "شُكْر",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 34,
+              "ayah": 13
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "shukr",
+      "root": "شكر",
+      "ambiguityFlags": [],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 75,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "publish",
+      "reasons": [
+        "Structural validation passed for 75 word-level records (6 lemmas).",
+        "No documented ambiguity lemma observed.",
+        "No incompatible lemma mapping detected.",
+        "Review recommended the complete validated lemma set for neutral root-index framing."
+      ],
+      "includedLemmas": [
+        "شَاكِر",
+        "شَكَرَ",
+        "شَكُور",
+        "شُكُور",
+        "شُكْر",
+        "مَّشْكُور"
+      ]
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "rahmah",
+    "root": "رحم",
+    "title": "Mercy",
+    "arabicTitle": "الرحمة",
+    "totalOccurrences": 339,
+    "distinctAyat": 313,
+    "lemmaCount": 9,
+    "lemmaDistribution": [
+      {
+        "lemma": "رَّحِيم",
+        "count": 116
+      },
+      {
+        "lemma": "رَحْمَة",
+        "count": 114
+      },
+      {
+        "lemma": "رَّحْمَٰن",
+        "count": 57
+      },
+      {
+        "lemma": "رَّحِمَ",
+        "count": 28
+      },
+      {
+        "lemma": "أَرْحَام",
+        "count": 12
+      },
+      {
+        "lemma": "رَّٰحِمِين",
+        "count": 6
+      },
+      {
+        "lemma": "أَرْحَم",
+        "count": 4
+      },
+      {
+        "lemma": "رُحْم",
+        "count": 1
+      },
+      {
+        "lemma": "مَرْحَمَة",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 1,
+        "ayah": 1
+      },
+      {
+        "surah": 1,
+        "ayah": 3
+      },
+      {
+        "surah": 2,
+        "ayah": 37
+      },
+      {
+        "surah": 2,
+        "ayah": 54
+      },
+      {
+        "surah": 2,
+        "ayah": 64
+      },
+      {
+        "surah": 2,
+        "ayah": 105
+      },
+      {
+        "surah": 2,
+        "ayah": 128
+      },
+      {
+        "surah": 2,
+        "ayah": 143
+      },
+      {
+        "surah": 2,
+        "ayah": 157
+      },
+      {
+        "surah": 2,
+        "ayah": 160
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "رَّحِيم",
+        "رَحْمَة",
+        "رَّحْمَٰن",
+        "رَّحِمَ",
+        "أَرْحَام",
+        "رَّٰحِمِين",
+        "أَرْحَم",
+        "رُحْم",
+        "مَرْحَمَة"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 339 records have lemmas, no duplicate positions. Recommending full lemma set (9 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Mercy.\"",
+      "evidence": [
+        {
+          "lemma": "رَّحِيم",
+          "count": 116,
+          "sampleAyat": [
+            {
+              "surah": 1,
+              "ayah": 1
+            },
+            {
+              "surah": 1,
+              "ayah": 3
+            },
+            {
+              "surah": 2,
+              "ayah": 37
+            }
+          ]
+        },
+        {
+          "lemma": "رَحْمَة",
+          "count": 114,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 64
+            },
+            {
+              "surah": 2,
+              "ayah": 105
+            },
+            {
+              "surah": 2,
+              "ayah": 157
+            }
+          ]
+        },
+        {
+          "lemma": "رَّحْمَٰن",
+          "count": 57,
+          "sampleAyat": [
+            {
+              "surah": 1,
+              "ayah": 1
+            },
+            {
+              "surah": 1,
+              "ayah": 3
+            },
+            {
+              "surah": 2,
+              "ayah": 163
+            }
+          ]
+        },
+        {
+          "lemma": "رَّحِمَ",
+          "count": 28,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 286
+            },
+            {
+              "surah": 3,
+              "ayah": 132
+            },
+            {
+              "surah": 6,
+              "ayah": 16
+            }
+          ]
+        },
+        {
+          "lemma": "أَرْحَام",
+          "count": 12,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 228
+            },
+            {
+              "surah": 3,
+              "ayah": 6
+            },
+            {
+              "surah": 4,
+              "ayah": 1
+            }
+          ]
+        },
+        {
+          "lemma": "رَّٰحِمِين",
+          "count": 6,
+          "sampleAyat": [
+            {
+              "surah": 7,
+              "ayah": 151
+            },
+            {
+              "surah": 12,
+              "ayah": 64
+            },
+            {
+              "surah": 12,
+              "ayah": 92
+            }
+          ]
+        },
+        {
+          "lemma": "أَرْحَم",
+          "count": 4,
+          "sampleAyat": [
+            {
+              "surah": 7,
+              "ayah": 151
+            },
+            {
+              "surah": 12,
+              "ayah": 64
+            },
+            {
+              "surah": 12,
+              "ayah": 92
+            }
+          ]
+        },
+        {
+          "lemma": "رُحْم",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 18,
+              "ayah": 81
+            }
+          ]
+        },
+        {
+          "lemma": "مَرْحَمَة",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 90,
+              "ayah": 17
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "rahmah",
+      "root": "رحم",
+      "ambiguityFlags": [
+        {
+          "lemma": "أَرْحَام",
+          "reason": "أرحام means kinship/womb, not mercy — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 12
+        }
+      ],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 339,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "needs-review",
+      "reasons": [
+        "Documented ambiguity lemma observed 12×: أَرْحَام. أرحام means kinship/womb, not mercy — documented in CANDIDATE_ROOTS polysemy notes."
+      ],
+      "includedLemmas": []
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "ilm",
+    "root": "علم",
+    "title": "Knowledge",
+    "arabicTitle": "العلم",
+    "totalOccurrences": 854,
+    "distinctAyat": 728,
+    "lemmaCount": 14,
+    "lemmaDistribution": [
+      {
+        "lemma": "عَلِمَ",
+        "count": 382
+      },
+      {
+        "lemma": "عَلِيم",
+        "count": 163
+      },
+      {
+        "lemma": "عِلْم",
+        "count": 105
+      },
+      {
+        "lemma": "عَٰلَمِين",
+        "count": 73
+      },
+      {
+        "lemma": "أَعْلَم",
+        "count": 49
+      },
+      {
+        "lemma": "عَلَّمَ",
+        "count": 41
+      },
+      {
+        "lemma": "عَٰلِم",
+        "count": 12
+      },
+      {
+        "lemma": "مَّعْلُوم",
+        "count": 11
+      },
+      {
+        "lemma": "عَلَّٰم",
+        "count": 4
+      },
+      {
+        "lemma": "أَعْلَٰم",
+        "count": 2
+      },
+      {
+        "lemma": "مَّعْلُومَٰت",
+        "count": 2
+      },
+      {
+        "lemma": "يَتَعَلَّمُ",
+        "count": 2
+      },
+      {
+        "lemma": "عَلَٰمَٰت",
+        "count": 1
+      },
+      {
+        "lemma": "مُعَلَّم",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 1,
+        "ayah": 2
+      },
+      {
+        "surah": 2,
+        "ayah": 13
+      },
+      {
+        "surah": 2,
+        "ayah": 22
+      },
+      {
+        "surah": 2,
+        "ayah": 26
+      },
+      {
+        "surah": 2,
+        "ayah": 29
+      },
+      {
+        "surah": 2,
+        "ayah": 30
+      },
+      {
+        "surah": 2,
+        "ayah": 31
+      },
+      {
+        "surah": 2,
+        "ayah": 32
+      },
+      {
+        "surah": 2,
+        "ayah": 33
+      },
+      {
+        "surah": 2,
+        "ayah": 42
+      }
+    ],
+    "validationIssues": [
+      {
+        "code": "missing-lemma",
+        "message": "6 records have empty lemmas",
+        "severity": "error",
+        "affectedRecords": [
+          {
+            "surah": 6,
+            "ayah": 73,
+            "wordPosition": 19
+          },
+          {
+            "surah": 9,
+            "ayah": 94,
+            "wordPosition": 24
+          },
+          {
+            "surah": 9,
+            "ayah": 105,
+            "wordPosition": 10
+          },
+          {
+            "surah": 34,
+            "ayah": 3,
+            "wordPosition": 11
+          },
+          {
+            "surah": 59,
+            "ayah": 22,
+            "wordPosition": 8
+          }
+        ]
+      }
+    ],
+    "aiReview": {
+      "recommendedLemmas": [],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation failed — cannot recommend lemma set until data integrity issues are resolved.",
+      "evidence": [],
+      "reviewer": "deterministic-fallback",
+      "warnings": [
+        "6 records have missing lemmas — cannot validate full set"
+      ],
+      "selectionRequired": true
+    },
+    "publication": {
+      "slug": "ilm",
+      "root": "علم",
+      "ambiguityFlags": [
+        {
+          "lemma": "عَٰلَمِين",
+          "reason": "العالمين means the worlds, not knowledge — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 73
+        }
+      ],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 6,
+      "totalWordRecords": 854,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "needs-review",
+      "reasons": [
+        "AI review did not resolve a lemma selection; manual or model review required.",
+        "6 records have missing lemmas — cannot validate full set"
+      ],
+      "includedLemmas": []
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "tawbah",
+    "root": "توب",
+    "title": "Repentance",
+    "arabicTitle": "التوبة",
+    "totalOccurrences": 87,
+    "distinctAyat": 69,
+    "lemmaCount": 7,
+    "lemmaDistribution": [
+      {
+        "lemma": "تَابَ",
+        "count": 63
+      },
+      {
+        "lemma": "تَوَّاب",
+        "count": 12
+      },
+      {
+        "lemma": "تَوْبَة",
+        "count": 7
+      },
+      {
+        "lemma": "مَتَاب",
+        "count": 2
+      },
+      {
+        "lemma": "تَٰٓئِبَٰت",
+        "count": 1
+      },
+      {
+        "lemma": "تَّٰٓئِبُون",
+        "count": 1
+      },
+      {
+        "lemma": "تَّوْب",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 37
+      },
+      {
+        "surah": 2,
+        "ayah": 54
+      },
+      {
+        "surah": 2,
+        "ayah": 128
+      },
+      {
+        "surah": 2,
+        "ayah": 160
+      },
+      {
+        "surah": 2,
+        "ayah": 187
+      },
+      {
+        "surah": 2,
+        "ayah": 222
+      },
+      {
+        "surah": 2,
+        "ayah": 279
+      },
+      {
+        "surah": 3,
+        "ayah": 89
+      },
+      {
+        "surah": 3,
+        "ayah": 90
+      },
+      {
+        "surah": 3,
+        "ayah": 128
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "تَابَ",
+        "تَوَّاب",
+        "تَوْبَة",
+        "مَتَاب",
+        "تَٰٓئِبَٰت",
+        "تَّٰٓئِبُون",
+        "تَّوْب"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 87 records have lemmas, no duplicate positions. Recommending full lemma set (7 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Repentance.\"",
+      "evidence": [
+        {
+          "lemma": "تَابَ",
+          "count": 63,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 37
+            },
+            {
+              "surah": 2,
+              "ayah": 54
+            },
+            {
+              "surah": 2,
+              "ayah": 128
+            }
+          ]
+        },
+        {
+          "lemma": "تَوَّاب",
+          "count": 12,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 37
+            },
+            {
+              "surah": 2,
+              "ayah": 54
+            },
+            {
+              "surah": 2,
+              "ayah": 128
+            }
+          ]
+        },
+        {
+          "lemma": "تَوْبَة",
+          "count": 7,
+          "sampleAyat": [
+            {
+              "surah": 3,
+              "ayah": 90
+            },
+            {
+              "surah": 4,
+              "ayah": 17
+            },
+            {
+              "surah": 4,
+              "ayah": 18
+            }
+          ]
+        },
+        {
+          "lemma": "مَتَاب",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 13,
+              "ayah": 30
+            },
+            {
+              "surah": 25,
+              "ayah": 71
+            }
+          ]
+        },
+        {
+          "lemma": "تَٰٓئِبَٰت",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 66,
+              "ayah": 5
+            }
+          ]
+        },
+        {
+          "lemma": "تَّٰٓئِبُون",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 9,
+              "ayah": 112
+            }
+          ]
+        },
+        {
+          "lemma": "تَّوْب",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 40,
+              "ayah": 3
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "tawbah",
+      "root": "توب",
+      "ambiguityFlags": [],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 87,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "publish",
+      "reasons": [
+        "Structural validation passed for 87 word-level records (7 lemmas).",
+        "No documented ambiguity lemma observed.",
+        "No incompatible lemma mapping detected.",
+        "Review recommended the complete validated lemma set for neutral root-index framing."
+      ],
+      "includedLemmas": [
+        "تَابَ",
+        "تَوَّاب",
+        "تَوْبَة",
+        "تَٰٓئِبَٰت",
+        "تَّوْب",
+        "تَّٰٓئِبُون",
+        "مَتَاب"
+      ]
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "maghfirah",
+    "root": "غفر",
+    "title": "Forgiveness",
+    "arabicTitle": "المغفرة",
+    "totalOccurrences": 234,
+    "distinctAyat": 202,
+    "lemmaCount": 10,
+    "lemmaDistribution": [
+      {
+        "lemma": "غَفَرَ",
+        "count": 65
+      },
+      {
+        "lemma": "غَفُور",
+        "count": 58
+      },
+      {
+        "lemma": "اسْتَغْفَرَ",
+        "count": 40
+      },
+      {
+        "lemma": "مَّغْفِرَة",
+        "count": 28
+      },
+      {
+        "lemma": "غَفَّار",
+        "count": 5
+      },
+      {
+        "lemma": "كَانَ",
+        "count": 4
+      },
+      {
+        "lemma": "غَافِر",
+        "count": 2
+      },
+      {
+        "lemma": "اسْتِغْفَار",
+        "count": 1
+      },
+      {
+        "lemma": "غُفْرَان",
+        "count": 1
+      },
+      {
+        "lemma": "مُسْتَغْفِرِين",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 58
+      },
+      {
+        "surah": 2,
+        "ayah": 173
+      },
+      {
+        "surah": 2,
+        "ayah": 175
+      },
+      {
+        "surah": 2,
+        "ayah": 182
+      },
+      {
+        "surah": 2,
+        "ayah": 192
+      },
+      {
+        "surah": 2,
+        "ayah": 199
+      },
+      {
+        "surah": 2,
+        "ayah": 218
+      },
+      {
+        "surah": 2,
+        "ayah": 221
+      },
+      {
+        "surah": 2,
+        "ayah": 225
+      },
+      {
+        "surah": 2,
+        "ayah": 226
+      }
+    ],
+    "validationIssues": [
+      {
+        "code": "missing-lemma",
+        "message": "29 records have empty lemmas",
+        "severity": "error",
+        "affectedRecords": [
+          {
+            "surah": 2,
+            "ayah": 182,
+            "wordPosition": 15
+          },
+          {
+            "surah": 2,
+            "ayah": 199,
+            "wordPosition": 11
+          },
+          {
+            "surah": 2,
+            "ayah": 218,
+            "wordPosition": 15
+          },
+          {
+            "surah": 2,
+            "ayah": 225,
+            "wordPosition": 13
+          },
+          {
+            "surah": 2,
+            "ayah": 226,
+            "wordPosition": 12
+          }
+        ]
+      },
+      {
+        "code": "incompatible-lemma",
+        "message": "1 lemmas cannot derive from root غفر — source mapping concern",
+        "severity": "error",
+        "affectedRecords": [
+          {
+            "surah": 4,
+            "ayah": 23,
+            "wordPosition": 53
+          },
+          {
+            "surah": 4,
+            "ayah": 106,
+            "wordPosition": 6
+          },
+          {
+            "surah": 25,
+            "ayah": 6,
+            "wordPosition": 11
+          },
+          {
+            "surah": 33,
+            "ayah": 24,
+            "wordPosition": 15
+          }
+        ]
+      }
+    ],
+    "aiReview": {
+      "recommendedLemmas": [],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation failed — cannot recommend lemma set until data integrity issues are resolved.",
+      "evidence": [],
+      "reviewer": "deterministic-fallback",
+      "warnings": [
+        "29 records have missing lemmas — cannot validate full set"
+      ],
+      "selectionRequired": true
+    },
+    "publication": {
+      "slug": "maghfirah",
+      "root": "غفر",
+      "ambiguityFlags": [],
+      "incompatibleLemmas": [
+        {
+          "lemma": "كَانَ",
+          "count": 4
+        }
+      ],
+      "missingLemmaCount": 29,
+      "totalWordRecords": 234,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "needs-review",
+      "reasons": [
+        "AI review did not resolve a lemma selection; manual or model review required.",
+        "29 records have missing lemmas — cannot validate full set"
+      ],
+      "includedLemmas": []
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "kibr",
+    "root": "كبر",
+    "title": "Greatness/Arrogance",
+    "arabicTitle": "الكبر",
+    "totalOccurrences": 161,
+    "distinctAyat": 153,
+    "lemmaCount": 19,
+    "lemmaDistribution": [
+      {
+        "lemma": "اسْتَكْبَرَ",
+        "count": 40
+      },
+      {
+        "lemma": "كَبِير",
+        "count": 40
+      },
+      {
+        "lemma": "أَكْبَر",
+        "count": 24
+      },
+      {
+        "lemma": "كُبْرَىٰ",
+        "count": 7
+      },
+      {
+        "lemma": "كَبِيرَة",
+        "count": 7
+      },
+      {
+        "lemma": "مُتَكَبِّر",
+        "count": 7
+      },
+      {
+        "lemma": "كِبَر",
+        "count": 6
+      },
+      {
+        "lemma": "مُسْتَكْبِر",
+        "count": 6
+      },
+      {
+        "lemma": "كَبِّرْ",
+        "count": 4
+      },
+      {
+        "lemma": "كَبُرَ",
+        "count": 3
+      },
+      {
+        "lemma": "اسْتِكْبَار",
+        "count": 2
+      },
+      {
+        "lemma": "كِبْر",
+        "count": 2
+      },
+      {
+        "lemma": "كِبْرِيَآء",
+        "count": 2
+      },
+      {
+        "lemma": "يَتَكَبَّرُ",
+        "count": 2
+      },
+      {
+        "lemma": "أَكْبَرْ",
+        "count": 1
+      },
+      {
+        "lemma": "تَكْبِير",
+        "count": 1
+      },
+      {
+        "lemma": "كَانَ",
+        "count": 1
+      },
+      {
+        "lemma": "كُبَّار",
+        "count": 1
+      },
+      {
+        "lemma": "كُبَرَآء",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 34
+      },
+      {
+        "surah": 2,
+        "ayah": 45
+      },
+      {
+        "surah": 2,
+        "ayah": 87
+      },
+      {
+        "surah": 2,
+        "ayah": 143
+      },
+      {
+        "surah": 2,
+        "ayah": 185
+      },
+      {
+        "surah": 2,
+        "ayah": 217
+      },
+      {
+        "surah": 2,
+        "ayah": 219
+      },
+      {
+        "surah": 2,
+        "ayah": 266
+      },
+      {
+        "surah": 2,
+        "ayah": 282
+      },
+      {
+        "surah": 3,
+        "ayah": 40
+      }
+    ],
+    "validationIssues": [
+      {
+        "code": "missing-lemma",
+        "message": "4 records have empty lemmas",
+        "severity": "error",
+        "affectedRecords": [
+          {
+            "surah": 4,
+            "ayah": 6,
+            "wordPosition": 19
+          },
+          {
+            "surah": 18,
+            "ayah": 5,
+            "wordPosition": 8
+          },
+          {
+            "surah": 40,
+            "ayah": 35,
+            "wordPosition": 9
+          },
+          {
+            "surah": 42,
+            "ayah": 13,
+            "wordPosition": 24
+          }
+        ]
+      },
+      {
+        "code": "incompatible-lemma",
+        "message": "1 lemmas cannot derive from root كبر — source mapping concern",
+        "severity": "error",
+        "affectedRecords": [
+          {
+            "surah": 10,
+            "ayah": 71,
+            "wordPosition": 11
+          }
+        ]
+      }
+    ],
+    "aiReview": {
+      "recommendedLemmas": [],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation failed — cannot recommend lemma set until data integrity issues are resolved.",
+      "evidence": [],
+      "reviewer": "deterministic-fallback",
+      "warnings": [
+        "4 records have missing lemmas — cannot validate full set"
+      ],
+      "selectionRequired": true
+    },
+    "publication": {
+      "slug": "kibr",
+      "root": "كبر",
+      "ambiguityFlags": [
+        {
+          "lemma": "أَكْبَر",
+          "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 24
+        },
+        {
+          "lemma": "كَبِير",
+          "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 40
+        },
+        {
+          "lemma": "كَبِيرَة",
+          "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 7
+        },
+        {
+          "lemma": "كُبْرَىٰ",
+          "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 7
+        }
+      ],
+      "incompatibleLemmas": [
+        {
+          "lemma": "كَانَ",
+          "count": 1
+        }
+      ],
+      "missingLemmaCount": 4,
+      "totalWordRecords": 161,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "needs-review",
+      "reasons": [
+        "AI review did not resolve a lemma selection; manual or model review required.",
+        "4 records have missing lemmas — cannot validate full set"
+      ],
+      "includedLemmas": []
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "khushu",
+    "root": "خشع",
+    "title": "Humility",
+    "arabicTitle": "الخضوع",
+    "totalOccurrences": 17,
+    "distinctAyat": 16,
+    "lemmaCount": 3,
+    "lemmaDistribution": [
+      {
+        "lemma": "خَاشِع",
+        "count": 14
+      },
+      {
+        "lemma": "خَشَعَتِ",
+        "count": 2
+      },
+      {
+        "lemma": "خُشُوع",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 45
+      },
+      {
+        "surah": 3,
+        "ayah": 199
+      },
+      {
+        "surah": 17,
+        "ayah": 109
+      },
+      {
+        "surah": 20,
+        "ayah": 108
+      },
+      {
+        "surah": 21,
+        "ayah": 90
+      },
+      {
+        "surah": 23,
+        "ayah": 2
+      },
+      {
+        "surah": 33,
+        "ayah": 35
+      },
+      {
+        "surah": 41,
+        "ayah": 39
+      },
+      {
+        "surah": 42,
+        "ayah": 45
+      },
+      {
+        "surah": 54,
+        "ayah": 7
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "خَاشِع",
+        "خَشَعَتِ",
+        "خُشُوع"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 17 records have lemmas, no duplicate positions. Recommending full lemma set (3 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Humility.\"",
+      "evidence": [
+        {
+          "lemma": "خَاشِع",
+          "count": 14,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 45
+            },
+            {
+              "surah": 3,
+              "ayah": 199
+            },
+            {
+              "surah": 21,
+              "ayah": 90
+            }
+          ]
+        },
+        {
+          "lemma": "خَشَعَتِ",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 20,
+              "ayah": 108
+            },
+            {
+              "surah": 57,
+              "ayah": 16
+            }
+          ]
+        },
+        {
+          "lemma": "خُشُوع",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 17,
+              "ayah": 109
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "khushu",
+      "root": "خشع",
+      "ambiguityFlags": [],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 17,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "publish",
+      "reasons": [
+        "Structural validation passed for 17 word-level records (3 lemmas).",
+        "No documented ambiguity lemma observed.",
+        "No incompatible lemma mapping detected.",
+        "Review recommended the complete validated lemma set for neutral root-index framing."
+      ],
+      "includedLemmas": [
+        "خَاشِع",
+        "خَشَعَتِ",
+        "خُشُوع"
+      ]
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "sidq",
+    "root": "صدق",
+    "title": "Truthfulness",
+    "arabicTitle": "الصدق",
+    "totalOccurrences": 155,
+    "distinctAyat": 144,
+    "lemmaCount": 19,
+    "lemmaDistribution": [
+      {
+        "lemma": "صَادِق",
+        "count": 59
+      },
+      {
+        "lemma": "مُصَدِّق",
+        "count": 19
+      },
+      {
+        "lemma": "صَدَقَ",
+        "count": 15
+      },
+      {
+        "lemma": "صِدْق",
+        "count": 14
+      },
+      {
+        "lemma": "صَدَّقَ",
+        "count": 10
+      },
+      {
+        "lemma": "صَدَقَٰت",
+        "count": 8
+      },
+      {
+        "lemma": "تَصَدَّقَ",
+        "count": 6
+      },
+      {
+        "lemma": "صَدَقَة",
+        "count": 5
+      },
+      {
+        "lemma": "صِدِّيق",
+        "count": 5
+      },
+      {
+        "lemma": "أَصْدَق",
+        "count": 2
+      },
+      {
+        "lemma": "تَصْدِيق",
+        "count": 2
+      },
+      {
+        "lemma": "صَدِيق",
+        "count": 2
+      },
+      {
+        "lemma": "مُتَصَدِّقِين",
+        "count": 2
+      },
+      {
+        "lemma": "صَدُقَٰت",
+        "count": 1
+      },
+      {
+        "lemma": "صَّٰدِقَٰت",
+        "count": 1
+      },
+      {
+        "lemma": "صِدِّيقَة",
+        "count": 1
+      },
+      {
+        "lemma": "مُتَصَدِّقَٰت",
+        "count": 1
+      },
+      {
+        "lemma": "مُصَّدِّقَٰت",
+        "count": 1
+      },
+      {
+        "lemma": "مُصَّدِّقِين",
+        "count": 1
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 2,
+        "ayah": 23
+      },
+      {
+        "surah": 2,
+        "ayah": 31
+      },
+      {
+        "surah": 2,
+        "ayah": 41
+      },
+      {
+        "surah": 2,
+        "ayah": 89
+      },
+      {
+        "surah": 2,
+        "ayah": 91
+      },
+      {
+        "surah": 2,
+        "ayah": 94
+      },
+      {
+        "surah": 2,
+        "ayah": 97
+      },
+      {
+        "surah": 2,
+        "ayah": 101
+      },
+      {
+        "surah": 2,
+        "ayah": 111
+      },
+      {
+        "surah": 2,
+        "ayah": 177
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "صَادِق",
+        "مُصَدِّق",
+        "صَدَقَ",
+        "صِدْق",
+        "صَدَّقَ",
+        "صَدَقَٰت",
+        "تَصَدَّقَ",
+        "صَدَقَة",
+        "صِدِّيق",
+        "أَصْدَق",
+        "تَصْدِيق",
+        "صَدِيق",
+        "مُتَصَدِّقِين",
+        "صَدُقَٰت",
+        "صَّٰدِقَٰت",
+        "صِدِّيقَة",
+        "مُتَصَدِّقَٰت",
+        "مُصَّدِّقَٰت",
+        "مُصَّدِّقِين"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 155 records have lemmas, no duplicate positions. Recommending full lemma set (19 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Truthfulness.\"",
+      "evidence": [
+        {
+          "lemma": "صَادِق",
+          "count": 59,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 23
+            },
+            {
+              "surah": 2,
+              "ayah": 31
+            },
+            {
+              "surah": 2,
+              "ayah": 94
+            }
+          ]
+        },
+        {
+          "lemma": "مُصَدِّق",
+          "count": 19,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 41
+            },
+            {
+              "surah": 2,
+              "ayah": 89
+            },
+            {
+              "surah": 2,
+              "ayah": 91
+            }
+          ]
+        },
+        {
+          "lemma": "صَدَقَ",
+          "count": 15,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 177
+            },
+            {
+              "surah": 3,
+              "ayah": 95
+            },
+            {
+              "surah": 3,
+              "ayah": 152
+            }
+          ]
+        },
+        {
+          "lemma": "صِدْق",
+          "count": 14,
+          "sampleAyat": [
+            {
+              "surah": 5,
+              "ayah": 119
+            },
+            {
+              "surah": 6,
+              "ayah": 115
+            },
+            {
+              "surah": 10,
+              "ayah": 2
+            }
+          ]
+        },
+        {
+          "lemma": "صَدَّقَ",
+          "count": 10,
+          "sampleAyat": [
+            {
+              "surah": 28,
+              "ayah": 34
+            },
+            {
+              "surah": 34,
+              "ayah": 20
+            },
+            {
+              "surah": 37,
+              "ayah": 37
+            }
+          ]
+        },
+        {
+          "lemma": "صَدَقَٰت",
+          "count": 8,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 264
+            },
+            {
+              "surah": 2,
+              "ayah": 271
+            },
+            {
+              "surah": 2,
+              "ayah": 276
+            }
+          ]
+        },
+        {
+          "lemma": "تَصَدَّقَ",
+          "count": 6,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 280
+            },
+            {
+              "surah": 4,
+              "ayah": 92
+            },
+            {
+              "surah": 5,
+              "ayah": 45
+            }
+          ]
+        },
+        {
+          "lemma": "صَدَقَة",
+          "count": 5,
+          "sampleAyat": [
+            {
+              "surah": 2,
+              "ayah": 196
+            },
+            {
+              "surah": 2,
+              "ayah": 263
+            },
+            {
+              "surah": 4,
+              "ayah": 114
+            }
+          ]
+        },
+        {
+          "lemma": "صِدِّيق",
+          "count": 5,
+          "sampleAyat": [
+            {
+              "surah": 4,
+              "ayah": 69
+            },
+            {
+              "surah": 12,
+              "ayah": 46
+            },
+            {
+              "surah": 19,
+              "ayah": 41
+            }
+          ]
+        },
+        {
+          "lemma": "أَصْدَق",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 4,
+              "ayah": 87
+            },
+            {
+              "surah": 4,
+              "ayah": 122
+            }
+          ]
+        },
+        {
+          "lemma": "تَصْدِيق",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 10,
+              "ayah": 37
+            },
+            {
+              "surah": 12,
+              "ayah": 111
+            }
+          ]
+        },
+        {
+          "lemma": "صَدِيق",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 24,
+              "ayah": 61
+            },
+            {
+              "surah": 26,
+              "ayah": 101
+            }
+          ]
+        },
+        {
+          "lemma": "مُتَصَدِّقِين",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 12,
+              "ayah": 88
+            },
+            {
+              "surah": 33,
+              "ayah": 35
+            }
+          ]
+        },
+        {
+          "lemma": "صَدُقَٰت",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 4,
+              "ayah": 4
+            }
+          ]
+        },
+        {
+          "lemma": "صَّٰدِقَٰت",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 33,
+              "ayah": 35
+            }
+          ]
+        },
+        {
+          "lemma": "صِدِّيقَة",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 5,
+              "ayah": 75
+            }
+          ]
+        },
+        {
+          "lemma": "مُتَصَدِّقَٰت",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 33,
+              "ayah": 35
+            }
+          ]
+        },
+        {
+          "lemma": "مُصَّدِّقَٰت",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 57,
+              "ayah": 18
+            }
+          ]
+        },
+        {
+          "lemma": "مُصَّدِّقِين",
+          "count": 1,
+          "sampleAyat": [
+            {
+              "surah": 57,
+              "ayah": 18
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "sidq",
+      "root": "صدق",
+      "ambiguityFlags": [
+        {
+          "lemma": "صَدَقَة",
+          "reason": "صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 5
+        },
+        {
+          "lemma": "صَدَقَٰت",
+          "reason": "صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 8
+        }
+      ],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 155,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "needs-review",
+      "reasons": [
+        "Documented ambiguity lemma observed 5×: صَدَقَة. صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes.",
+        "Documented ambiguity lemma observed 8×: صَدَقَٰت. صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes."
+      ],
+      "includedLemmas": []
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  },
+  {
+    "slug": "tawakkul",
+    "root": "وكل",
+    "title": "Trust/Delegation",
+    "arabicTitle": "التوكل",
+    "totalOccurrences": 70,
+    "distinctAyat": 61,
+    "lemmaCount": 4,
+    "lemmaDistribution": [
+      {
+        "lemma": "تَوَكَّلْ",
+        "count": 40
+      },
+      {
+        "lemma": "وَكِيل",
+        "count": 24
+      },
+      {
+        "lemma": "مُتَوَكِّلُون",
+        "count": 4
+      },
+      {
+        "lemma": "وُكِّلَ",
+        "count": 2
+      }
+    ],
+    "sampleAyat": [
+      {
+        "surah": 3,
+        "ayah": 122
+      },
+      {
+        "surah": 3,
+        "ayah": 159
+      },
+      {
+        "surah": 3,
+        "ayah": 160
+      },
+      {
+        "surah": 3,
+        "ayah": 173
+      },
+      {
+        "surah": 4,
+        "ayah": 81
+      },
+      {
+        "surah": 4,
+        "ayah": 109
+      },
+      {
+        "surah": 4,
+        "ayah": 132
+      },
+      {
+        "surah": 4,
+        "ayah": 171
+      },
+      {
+        "surah": 5,
+        "ayah": 11
+      },
+      {
+        "surah": 5,
+        "ayah": 23
+      }
+    ],
+    "validationIssues": [],
+    "aiReview": {
+      "recommendedLemmas": [
+        "تَوَكَّلْ",
+        "وَكِيل",
+        "مُتَوَكِّلُون",
+        "وُكِّلَ"
+      ],
+      "selectionMode": "full-set",
+      "rationale": "Structural validation passed: all 70 records have lemmas, no duplicate positions. Recommending full lemma set (4 lemmas) for neutral root-index framing. This is structural validation only — no semantic judgment about which lemmas belong to a topic. The root page will display \"verses containing forms associated with this root,\" not \"verses about Trust/Delegation.\"",
+      "evidence": [
+        {
+          "lemma": "تَوَكَّلْ",
+          "count": 40,
+          "sampleAyat": [
+            {
+              "surah": 3,
+              "ayah": 122
+            },
+            {
+              "surah": 3,
+              "ayah": 159
+            },
+            {
+              "surah": 3,
+              "ayah": 160
+            }
+          ]
+        },
+        {
+          "lemma": "وَكِيل",
+          "count": 24,
+          "sampleAyat": [
+            {
+              "surah": 3,
+              "ayah": 173
+            },
+            {
+              "surah": 4,
+              "ayah": 81
+            },
+            {
+              "surah": 4,
+              "ayah": 109
+            }
+          ]
+        },
+        {
+          "lemma": "مُتَوَكِّلُون",
+          "count": 4,
+          "sampleAyat": [
+            {
+              "surah": 3,
+              "ayah": 159
+            },
+            {
+              "surah": 12,
+              "ayah": 67
+            },
+            {
+              "surah": 14,
+              "ayah": 12
+            }
+          ]
+        },
+        {
+          "lemma": "وُكِّلَ",
+          "count": 2,
+          "sampleAyat": [
+            {
+              "surah": 6,
+              "ayah": 89
+            },
+            {
+              "surah": 32,
+              "ayah": 11
+            }
+          ]
+        }
+      ],
+      "reviewer": "deterministic-fallback",
+      "warnings": [],
+      "selectionRequired": false
+    },
+    "publication": {
+      "slug": "tawakkul",
+      "root": "وكل",
+      "ambiguityFlags": [
+        {
+          "lemma": "وَكِيل",
+          "reason": "وكيل means guardian/agent while توكل means trust in God — documented in CANDIDATE_ROOTS polysemy notes.",
+          "count": 24
+        }
+      ],
+      "incompatibleLemmas": [],
+      "missingLemmaCount": 0,
+      "totalWordRecords": 70,
+      "decidedBy": "automated-policy",
+      "policyVersion": "1.1.0",
+      "decision": "needs-review",
+      "reasons": [
+        "Documented ambiguity lemma observed 24×: وَكِيل. وكيل means guardian/agent while توكل means trust in God — documented in CANDIDATE_ROOTS polysemy notes."
+      ],
+      "includedLemmas": []
+    },
+    "sourceFingerprint": "d475f85ec54e24f046fb8340db5d0761489e5256039966daf248a26a649a747e",
+    "pipelineVersion": "1.0.0"
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "slug": "sabr",
+    "root": "صبر",
+    "ambiguityFlags": [],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 103,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "publish",
+    "reasons": [
+      "Structural validation passed for 103 word-level records (8 lemmas).",
+      "No documented ambiguity lemma observed.",
+      "No incompatible lemma mapping detected.",
+      "Review recommended the complete validated lemma set for neutral root-index framing."
+    ],
+    "includedLemmas": [
+      "اصْطَبِرْ",
+      "صَابِر",
+      "صَابِرَة",
+      "صَابِرُ",
+      "صَبَرَ",
+      "صَبَّار",
+      "صَبْر",
+      "صَّٰبِرَٰت"
+    ]
+  },
+  {
+    "slug": "shukr",
+    "root": "شكر",
+    "ambiguityFlags": [],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 75,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "publish",
+    "reasons": [
+      "Structural validation passed for 75 word-level records (6 lemmas).",
+      "No documented ambiguity lemma observed.",
+      "No incompatible lemma mapping detected.",
+      "Review recommended the complete validated lemma set for neutral root-index framing."
+    ],
+    "includedLemmas": [
+      "شَاكِر",
+      "شَكَرَ",
+      "شَكُور",
+      "شُكُور",
+      "شُكْر",
+      "مَّشْكُور"
+    ]
+  },
+  {
+    "slug": "rahmah",
+    "root": "رحم",
+    "ambiguityFlags": [
+      {
+        "lemma": "أَرْحَام",
+        "reason": "أرحام means kinship/womb, not mercy — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 12
+      }
+    ],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 339,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "needs-review",
+    "reasons": [
+      "Documented ambiguity lemma observed 12×: أَرْحَام. أرحام means kinship/womb, not mercy — documented in CANDIDATE_ROOTS polysemy notes."
+    ],
+    "includedLemmas": []
+  },
+  {
+    "slug": "ilm",
+    "root": "علم",
+    "ambiguityFlags": [
+      {
+        "lemma": "عَٰلَمِين",
+        "reason": "العالمين means the worlds, not knowledge — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 73
+      }
+    ],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 6,
+    "totalWordRecords": 854,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "needs-review",
+    "reasons": [
+      "AI review did not resolve a lemma selection; manual or model review required.",
+      "6 records have missing lemmas — cannot validate full set"
+    ],
+    "includedLemmas": []
+  },
+  {
+    "slug": "tawbah",
+    "root": "توب",
+    "ambiguityFlags": [],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 87,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "publish",
+    "reasons": [
+      "Structural validation passed for 87 word-level records (7 lemmas).",
+      "No documented ambiguity lemma observed.",
+      "No incompatible lemma mapping detected.",
+      "Review recommended the complete validated lemma set for neutral root-index framing."
+    ],
+    "includedLemmas": [
+      "تَابَ",
+      "تَوَّاب",
+      "تَوْبَة",
+      "تَٰٓئِبَٰت",
+      "تَّوْب",
+      "تَّٰٓئِبُون",
+      "مَتَاب"
+    ]
+  },
+  {
+    "slug": "maghfirah",
+    "root": "غفر",
+    "ambiguityFlags": [],
+    "incompatibleLemmas": [
+      {
+        "lemma": "كَانَ",
+        "count": 4
+      }
+    ],
+    "missingLemmaCount": 29,
+    "totalWordRecords": 234,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "needs-review",
+    "reasons": [
+      "AI review did not resolve a lemma selection; manual or model review required.",
+      "29 records have missing lemmas — cannot validate full set"
+    ],
+    "includedLemmas": []
+  },
+  {
+    "slug": "kibr",
+    "root": "كبر",
+    "ambiguityFlags": [
+      {
+        "lemma": "أَكْبَر",
+        "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 24
+      },
+      {
+        "lemma": "كَبِير",
+        "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 40
+      },
+      {
+        "lemma": "كَبِيرَة",
+        "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 7
+      },
+      {
+        "lemma": "كُبْرَىٰ",
+        "reason": "أكبر/كبير mean big/great while استكبر means arrogance — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 7
+      }
+    ],
+    "incompatibleLemmas": [
+      {
+        "lemma": "كَانَ",
+        "count": 1
+      }
+    ],
+    "missingLemmaCount": 4,
+    "totalWordRecords": 161,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "needs-review",
+    "reasons": [
+      "AI review did not resolve a lemma selection; manual or model review required.",
+      "4 records have missing lemmas — cannot validate full set"
+    ],
+    "includedLemmas": []
+  },
+  {
+    "slug": "khushu",
+    "root": "خشع",
+    "ambiguityFlags": [],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 17,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "publish",
+    "reasons": [
+      "Structural validation passed for 17 word-level records (3 lemmas).",
+      "No documented ambiguity lemma observed.",
+      "No incompatible lemma mapping detected.",
+      "Review recommended the complete validated lemma set for neutral root-index framing."
+    ],
+    "includedLemmas": [
+      "خَاشِع",
+      "خَشَعَتِ",
+      "خُشُوع"
+    ]
+  },
+  {
+    "slug": "sidq",
+    "root": "صدق",
+    "ambiguityFlags": [
+      {
+        "lemma": "صَدَقَة",
+        "reason": "صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 5
+      },
+      {
+        "lemma": "صَدَقَٰت",
+        "reason": "صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 8
+      }
+    ],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 155,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "needs-review",
+    "reasons": [
+      "Documented ambiguity lemma observed 5×: صَدَقَة. صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes.",
+      "Documented ambiguity lemma observed 8×: صَدَقَٰت. صدقة/تصدق mean charity, not truthfulness — documented in CANDIDATE_ROOTS polysemy notes."
+    ],
+    "includedLemmas": []
+  },
+  {
+    "slug": "tawakkul",
+    "root": "وكل",
+    "ambiguityFlags": [
+      {
+        "lemma": "وَكِيل",
+        "reason": "وكيل means guardian/agent while توكل means trust in God — documented in CANDIDATE_ROOTS polysemy notes.",
+        "count": 24
+      }
+    ],
+    "incompatibleLemmas": [],
+    "missingLemmaCount": 0,
+    "totalWordRecords": 70,
+    "decidedBy": "automated-policy",
+    "policyVersion": "1.1.0",
+    "decision": "needs-review",
+    "reasons": [
+      "Documented ambiguity lemma observed 24×: وَكِيل. وكيل means guardian/agent while توكل means trust in God — documented in CANDIDATE_ROOTS polysemy notes."
+    ],
+    "includedLemmas": []
+  }
+]

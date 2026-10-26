@@ -13,7 +13,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AlertCircle, Clock, XCircle, CheckCircle2, BookOpen } from "lucide-react";
+import {
+  AlertCircle,
+  Clock,
+  XCircle,
+  CheckCircle2,
+  BookOpen,
+  Info,
+} from "lucide-react";
 import {
   getRootTopicEntryBySlug,
   getRootOccurrences,
@@ -22,6 +29,12 @@ import {
   loadMorphologyIndex,
 } from "@/lib/morphology/root-data";
 import { canActivateRootTopic } from "@/lib/morphology/root-allowlist";
+import {
+  buildPublishedIndexEntry,
+  canPublishRootIndex,
+  getPublicationDecision,
+  type PublicationDecision,
+} from "@/lib/morphology/publication-status";
 import { buildRootTopicIndex, type RootOccurrence } from "@/lib/morphology/occurrence-index";
 import { getSurah } from "@/lib/quran/data";
 import type { RootTopicEntry } from "@/lib/morphology/root-allowlist";
@@ -46,14 +59,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const decision = getPublicationDecision(slug);
+  const automated = canPublishRootIndex(entry, decision);
+  const isPublic = entry.reviewState === "approved" || automated.canPublish;
+
   return {
     title: `${entry.title} (${entry.arabicTitle}) · Al-Huda`,
     description: `Arabic root ${entry.roots[0]} — ${entry.title}. ${
-      entry.reviewState === "approved"
-        ? "Explore ayat containing forms associated with this root."
+      isPublic
+        ? "Verses containing forms associated with this root."
         : "Pending review — lemma selection not yet approved."
     }`,
-    robots: entry.reviewState === "approved" ? undefined : { index: false },
+    robots: isPublic ? undefined : { index: false },
   };
 }
 
@@ -116,35 +133,74 @@ export default async function RootDiscoveryDetailPage({
     );
   }
 
-  const canActivate = canActivateRootTopic(entry);
-
   if (entry.reviewState === "rejected") {
     return <RejectedRootView entry={entry} />;
   }
 
-  if (entry.reviewState === "pending-review" || !canActivate.canActivate) {
-    return <PendingReviewRootView entry={entry} reasons={canActivate.reasons} />;
+  const humanGate = canActivateRootTopic(entry);
+  const decision = getPublicationDecision(slug);
+  const automatedGate = canPublishRootIndex(entry, decision);
+
+  // Human approval is the stronger claim and the existing lifecycle. The
+  // pipeline never rewrites `reviewState`, so this branch stays authoritative.
+  if (humanGate.canActivate) {
+    return (
+      <RootIndexView
+        entry={entry}
+        page={requestedPage}
+        slug={slug}
+        provenance="human-approved"
+        decision={null}
+      />
+    );
   }
 
-  // Approved root with validated data — show ayah results
-  return <ApprovedRootView entry={entry} page={requestedPage} slug={slug} />;
+  // Automated publication: structural validation passed, no documented
+  // ambiguity was observed, and the review recommended the complete attested
+  // lemma set.
+  if (automatedGate.canPublish && decision) {
+    return (
+      <RootIndexView
+        entry={entry}
+        page={requestedPage}
+        slug={slug}
+        provenance="automated-policy"
+        decision={decision}
+      />
+    );
+  }
+
+  return (
+    <PendingReviewRootView
+      entry={entry}
+      reasons={[...humanGate.reasons, ...automatedGate.reasons]}
+      decision={decision}
+    />
+  );
 }
 
-function ApprovedRootView({
+function RootIndexView({
   entry,
   page,
   slug,
+  provenance,
+  decision,
 }: {
   entry: RootTopicEntry;
   page: number;
   slug: string;
+  provenance: "human-approved" | "automated-policy";
+  decision: PublicationDecision | null;
 }) {
   const records = loadMorphologyIndex();
+  // Only the lemma selection is substituted. `reviewState` is untouched, so
+  // nothing downstream can mistake this for human approval.
+  const indexEntry = decision ? buildPublishedIndexEntry(entry, decision) : entry;
 
   // Build the complete index once. Paginating through buildRootTopicIndex()
   // would also paginate uniqueAyahs, so the "distinct ayat" total would report
   // the page size instead of the real count.
-  const fullIndex = buildRootTopicIndex(entry, records);
+  const fullIndex = buildRootTopicIndex(indexEntry, records);
   const totalMatches = fullIndex.totalMatches;
   const totalAyat = fullIndex.uniqueAyahs.length;
   const totalPages = Math.max(1, Math.ceil(totalMatches / PAGE_SIZE));
@@ -173,17 +229,27 @@ function ApprovedRootView({
         <div className="flex items-center gap-2 text-sm text-muted-foreground">
           <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400" aria-hidden />
           <span>
-            Approved · {totalMatches} word occurrences across {totalAyat}{" "}
-            distinct ayat
+            {provenance === "human-approved" ? "Approved" : "Published"} ·{" "}
+            {totalMatches} word occurrences across {totalAyat} distinct ayat
           </span>
         </div>
         <p className="max-w-prose text-muted-foreground">
           Verses containing forms associated with this root. This list shows
           verses in which words derived from the root{" "}
           <span lang="ar" dir="rtl">{entry.roots[0]}</span> appear, filtered by
-          the reviewed lemma selections. Each row corresponds to one word
+          the selected lemma forms. Each row corresponds to one word
           occurrence; an ayah containing two forms of the root appears twice.
         </p>
+        {provenance === "automated-policy" && decision && (
+          <div className="flex items-start gap-2 rounded-xl border border-border/60 bg-secondary/30 p-3 text-xs text-muted-foreground">
+            <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+            <p>
+              Lemma selection produced by automated review (policy{" "}
+              {decision.policyVersion}) from QUL morphology data. This is not a
+              scholarly approval or a thematic classification.
+            </p>
+          </div>
+        )}
       </header>
 
       {index.occurrences.length === 0 ? (
@@ -267,9 +333,11 @@ function ApprovedRootView({
 function PendingReviewRootView({
   entry,
   reasons,
+  decision,
 }: {
   entry: RootTopicEntry;
   reasons: string[];
+  decision: PublicationDecision | null;
 }) {
   const stats = getRootStats(entry.roots[0]);
   const occurrences = getRootOccurrences(entry.roots[0]);
@@ -325,6 +393,38 @@ function PendingReviewRootView({
                   <li key={i}>{reason}</li>
                 ))}
               </ul>
+            )}
+            {decision && (
+              <div className="space-y-2 text-xs text-muted-foreground">
+                <p>
+                  Automated review decision: {decision.decision} (policy{" "}
+                  {decision.policyVersion}). Not a scholarly approval.
+                </p>
+                {decision.missingLemmaCount > 0 && (
+                  <div className="rounded-lg border border-amber-300/60 bg-amber-50/50 p-3 dark:border-amber-900/50 dark:bg-amber-950/30">
+                    <p className="font-medium text-foreground">
+                      Source-data coverage gap
+                    </p>
+                    <p className="mt-1">
+                      {decision.missingLemmaCount} of{" "}
+                      {decision.totalWordRecords} word-level records for this
+                      root have no lemma in the QUL morphology source. The
+                      displayed index would therefore be incomplete. Per
+                      Sprint 42 policy, missing lemmas are not fabricated,
+                      inferred, or silently dropped. The root stays in
+                      needs-review until the source data is complete or a
+                      documented policy establishes that the displayed index
+                      remains honest with the gap disclosed.
+                    </p>
+                    <p className="mt-1 text-[11px]">
+                      Full per-record evidence:{" "}
+                      <code className="rounded bg-secondary/60 px-1 py-0.5">
+                        data/lemma-recovery-audit.json
+                      </code>
+                    </p>
+                  </div>
+                )}
+              </div>
             )}
           </div>
         </div>
