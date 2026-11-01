@@ -5,7 +5,7 @@
  * locales are typed against it, so a missing key is a compile-time error.
  */
 
-export type Locale = "en" | "ur" | "ar";
+export type Locale = "en" | "ur" | "ar" | "zh";
 
 export type Direction = "ltr" | "rtl";
 

@@ -29,7 +29,7 @@ import type { RootTopicEntry } from "./root-allowlist";
 import type { AiLemmaReviewResult } from "./ai-lemma-reviewer";
 import type { ValidationIssue } from "./review-pipeline";
 
-export const PUBLICATION_POLICY_VERSION = "1.1.0";
+export const PUBLICATION_POLICY_VERSION = "2.0.0";
 
 /**
  * Documented ambiguity: a lemma that is attested under the root but whose
@@ -166,12 +166,28 @@ export interface PublicationDecision {
   policyVersion: string;
   /**
    * Word-level records for this root that have no lemma in the source dataset.
-   * Sprint 42: publication requires zero missing lemmas. When > 0, the root
-   * cannot be published because the displayed index would be incomplete.
+   * Sprint 42 added this field; Sprint 43 Policy B uses it for disclosure,
+   * not as a hard publication block.
    */
   missingLemmaCount: number;
   /** Total word-level records examined for this root. */
   totalWordRecords: number;
+  /** Word-level records with lemma mappings (totalWordRecords - missingLemmaCount). */
+  recordsWithLemma: number;
+  /** Lemma coverage ratio: recordsWithLemma / totalWordRecords. Range [0, 1]. */
+  lemmaCoverageRatio: number;
+  /**
+   * Occurrence alignment status: whether root-mapped word occurrences are
+   * correctly aligned to valid locations. "valid" means no structural defects;
+   * "invalid" means alignment failures that block publication; "unknown" means
+   * validation has not run or is stale.
+   */
+  occurrenceAlignmentStatus: "valid" | "invalid" | "unknown";
+  /**
+   * Human-readable disclosure summary for UI. Explains coverage limitations
+   * when lemma coverage < 100%. Empty string when coverage is complete.
+   */
+  coverageDisclosure: string;
 }
 
 /**
@@ -188,11 +204,28 @@ export function decidePublication(
   const ambiguityFlags = findAmbiguityFlags(records, root);
   const incompatibleLemmas = findIncompatibleLemmas(records, root);
 
-  // Sprint 42: coverage is a first-class field, not an incidental validation
-  // message. A missing lemma means the source did not map that word, so a
-  // lemma-filtered index would silently omit it. Publication requires zero.
+  // Sprint 43 Policy B: coverage metadata for disclosure, not a hard block.
   const missingLemmaCount = records.filter((r) => !r.lemma).length;
   const totalWordRecords = records.length;
+  const recordsWithLemma = totalWordRecords - missingLemmaCount;
+  const lemmaCoverageRatio =
+    totalWordRecords > 0 ? recordsWithLemma / totalWordRecords : 0;
+
+  // Occurrence alignment status: derived from validation issues.
+  // Error-severity issues indicate alignment failures.
+  const errorIssues = validationIssues.filter((i) => i.severity === "error");
+  const occurrenceAlignmentStatus: "valid" | "invalid" | "unknown" =
+    validationIssues.length === 0
+      ? "valid"
+      : errorIssues.length > 0
+        ? "invalid"
+        : "valid"; // warnings only don't block
+
+  // Coverage disclosure: human-readable summary for UI.
+  const coverageDisclosure =
+    missingLemmaCount > 0
+      ? `${missingLemmaCount} of ${totalWordRecords} word-level records have no lemma in the source dataset. Lemma-based filtering is restricted. All source-backed root occurrences are available.`
+      : "";
 
   const base = {
     slug: entry.slug,
@@ -201,6 +234,10 @@ export function decidePublication(
     incompatibleLemmas,
     missingLemmaCount,
     totalWordRecords,
+    recordsWithLemma,
+    lemmaCoverageRatio,
+    occurrenceAlignmentStatus,
+    coverageDisclosure,
     decidedBy: "automated-policy" as const,
     policyVersion: PUBLICATION_POLICY_VERSION,
   };
@@ -215,7 +252,6 @@ export function decidePublication(
     };
   }
 
-  const errorIssues = validationIssues.filter((i) => i.severity === "error");
   const observedLemmas = [
     ...new Set(records.map((r) => r.lemma).filter((l): l is string => Boolean(l))),
   ].sort();
@@ -289,21 +325,9 @@ export function decidePublication(
     };
   }
 
-  // Sprint 42: explicit missing-lemma gate. Even if validation didn't flag it
-  // (e.g. a future pipeline change), publication requires complete lemma
-  // coverage. A missing lemma means the source did not map that word, so a
-  // lemma-filtered index would silently omit it from the displayed results.
-  if (missingLemmaCount > 0) {
-    return {
-      ...base,
-      decision: "needs-review",
-      reasons: [
-        `${missingLemmaCount} of ${totalWordRecords} word-level records have no lemma in the source dataset. ` +
-          `The displayed index would be incomplete. Do not fabricate or infer missing lemmas.`,
-      ],
-      includedLemmas: [],
-    };
-  }
+  // Sprint 43 Policy B: missing lemmas are disclosed, not blocking.
+  // The occurrence index remains valid for source-backed root mappings.
+  // Lemma-based filtering may be incomplete, which is disclosed in UI.
 
   // (c) documented ambiguity blocks publication
   if (ambiguityFlags.length > 0) {

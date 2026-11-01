@@ -403,18 +403,17 @@ function PendingReviewRootView({
                 {decision.missingLemmaCount > 0 && (
                   <div className="rounded-lg border border-amber-300/60 bg-amber-50/50 p-3 dark:border-amber-900/50 dark:bg-amber-950/30">
                     <p className="font-medium text-foreground">
-                      Source-data coverage gap
+                      Lemma coverage: {decision.recordsWithLemma} of{" "}
+                      {decision.totalWordRecords} ({Math.round(decision.lemmaCoverageRatio * 100)}%)
                     </p>
                     <p className="mt-1">
-                      {decision.missingLemmaCount} of{" "}
-                      {decision.totalWordRecords} word-level records for this
-                      root have no lemma in the QUL morphology source. The
-                      displayed index would therefore be incomplete. Per
-                      Sprint 42 policy, missing lemmas are not fabricated,
-                      inferred, or silently dropped. The root stays in
-                      needs-review until the source data is complete or a
-                      documented policy establishes that the displayed index
-                      remains honest with the gap disclosed.
+                      {decision.missingLemmaCount} word-level records for this
+                      root have no lemma in the QUL morphology source. All
+                      source-backed root occurrences are available in the
+                      occurrence index, but lemma-based filtering (e.g., &ldquo;show
+                      only specific forms&rdquo;) is restricted because some records
+                      lack lemma mappings. Missing lemmas are not fabricated,
+                      inferred, or silently dropped.
                     </p>
                     <p className="mt-1 text-[11px]">
                       Full per-record evidence:{" "}

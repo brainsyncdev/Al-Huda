@@ -6,9 +6,9 @@ import { dictionaries } from "./dictionaries";
 import type { Locale } from "./types";
 
 describe("i18n locale registry", () => {
-  it("has three initial locales", () => {
-    expect(LOCALES).toHaveLength(3);
-    expect(LOCALES.map((l) => l.code)).toEqual(["en", "ur", "ar"]);
+  it("has four initial locales", () => {
+    expect(LOCALES).toHaveLength(4);
+    expect(LOCALES.map((l) => l.code)).toEqual(["en", "ur", "ar", "zh"]);
   });
 
   it("marks English as default", () => {
@@ -21,12 +21,14 @@ describe("i18n locale registry", () => {
     expect(directionOf("en")).toBe("ltr");
     expect(directionOf("ur")).toBe("rtl");
     expect(directionOf("ar")).toBe("rtl");
+    expect(directionOf("zh")).toBe("ltr");
   });
 
   it("validates locale codes", () => {
     expect(isLocale("en")).toBe(true);
     expect(isLocale("ur")).toBe(true);
     expect(isLocale("ar")).toBe(true);
+    expect(isLocale("zh")).toBe(true);
     expect(isLocale("fr")).toBe(false);
     expect(isLocale(null)).toBe(false);
     expect(isLocale(42)).toBe(false);
@@ -44,6 +46,8 @@ describe("i18n locale registry", () => {
     expect(matchBrowserLocale("en-US")).toBe("en");
     expect(matchBrowserLocale("ur-PK")).toBe("ur");
     expect(matchBrowserLocale("ar-SA")).toBe("ar");
+    expect(matchBrowserLocale("zh-CN")).toBe("zh");
+    expect(matchBrowserLocale("zh-TW")).toBe("zh");
     expect(matchBrowserLocale("fr-FR")).toBeNull();
     expect(matchBrowserLocale(undefined)).toBeNull();
   });
@@ -54,6 +58,7 @@ describe("i18n storage", () => {
     expect(resolveLocale("en")).toBe("en");
     expect(resolveLocale("ur")).toBe("ur");
     expect(resolveLocale("ar")).toBe("ar");
+    expect(resolveLocale("zh")).toBe("zh");
   });
 
   it("falls back to default for invalid values", () => {
@@ -72,6 +77,7 @@ describe("i18n storage", () => {
   it("falls back to browser tag when no stored preference", () => {
     expect(resolveInitialLocale(null, "ur-PK")).toBe("ur");
     expect(resolveInitialLocale(undefined, "ar")).toBe("ar");
+    expect(resolveInitialLocale(null, "zh-CN")).toBe("zh");
   });
 
   it("falls back to default when nothing matches", () => {
@@ -155,7 +161,7 @@ describe("i18n dictionary completeness", () => {
     expect(enKeys.length).toBeGreaterThan(100);
   });
 
-  for (const locale of ["ur", "ar"] as Locale[]) {
+  for (const locale of ["ur", "ar", "zh"] as Locale[]) {
     it(`${locale} dictionary covers all English keys`, () => {
       const dict = dictionaries[locale];
       const missing = enKeys.filter((k) => !(k in dict));

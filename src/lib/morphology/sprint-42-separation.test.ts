@@ -161,6 +161,10 @@ describe("Sprint 42 — Root/Topic separation", () => {
         incompatibleLemmas: [],
         missingLemmaCount: 0,
         totalWordRecords: 103,
+        recordsWithLemma: 103,
+        lemmaCoverageRatio: 1.0,
+        occurrenceAlignmentStatus: "valid",
+        coverageDisclosure: "",
         decidedBy: "automated-policy",
         policyVersion: PUBLICATION_POLICY_VERSION,
       };
@@ -196,6 +200,10 @@ describe("Sprint 42 — Root/Topic separation", () => {
         incompatibleLemmas: [],
         missingLemmaCount: 0,
         totalWordRecords: 75,
+        recordsWithLemma: 75,
+        lemmaCoverageRatio: 1.0,
+        occurrenceAlignmentStatus: "valid",
+        coverageDisclosure: "",
         decidedBy: "automated-policy",
         policyVersion: PUBLICATION_POLICY_VERSION,
       };

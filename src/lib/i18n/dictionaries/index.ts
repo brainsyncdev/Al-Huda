@@ -1,6 +1,7 @@
 import { en } from "./en";
 import { ur } from "./ur";
 import { ar } from "./ar";
+import { zh } from "./zh";
 import type { Locale } from "../types";
 import type { Dictionary } from "../types";
 
@@ -13,9 +14,11 @@ export const dictionaries: Record<Locale, Dictionary> = {
   en: en as unknown as Dictionary,
   ur: ur as unknown as Dictionary,
   ar: ar as unknown as Dictionary,
+  zh: zh as unknown as Dictionary,
 };
 
 export { en } from "./en";
 export { ur } from "./ur";
 export { ar } from "./ar";
+export { zh } from "./zh";
 export type { TranslationKey } from "./en";

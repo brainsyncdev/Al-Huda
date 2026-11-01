@@ -27,6 +27,13 @@ export const LOCALES: readonly LocaleConfig[] = [
     dir: "rtl",
     isDefault: false,
   },
+  {
+    code: "zh",
+    name: "Chinese",
+    nativeName: "中文",
+    dir: "ltr",
+    isDefault: false,
+  },
 ] as const;
 
 export const DEFAULT_LOCALE: Locale = "en";
