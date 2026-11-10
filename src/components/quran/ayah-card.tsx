@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Bookmark, BookOpen, Check, Copy, Link2, ListPlus, NotebookPen, Trash2 } from "lucide-react";
+import Link from "next/link";
+import { Bookmark, BookOpen, Check, Copy, FolderHeart, Link2, ListPlus, NotebookPen, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import type { Ayah } from "@/lib/quran/types";
 import { useLibrary } from "@/lib/library/context";
@@ -71,6 +72,10 @@ export function AyahCard({
     saveNote,
     deleteNote,
     recordVisit,
+    collections,
+    isInCollection,
+    addToCollection,
+    removeFromCollection,
   } = useLibrary();
   // FR-050: a single ayah is a range of one, added through the same plan
   // action the revision page uses for spans.
@@ -104,6 +109,7 @@ export function AyahCard({
   const [noteDraft, setNoteDraft] = useState("");
   const [tagDraft, setTagDraft] = useState("");
   const [comprehensionOpen, setComprehensionOpen] = useState(false);
+  const [collectionPickerOpen, setCollectionPickerOpen] = useState(false);
 
   const existingNote = noteFor(ayah.surah, ayah.ayah);
   const bookmarked = isBookmarked(ayah.surah, ayah.ayah);
@@ -362,7 +368,67 @@ export function AyahCard({
             {existingNote ? "Edit note" : "Add note"}
           </button>
         )}
+
+        {variant === "full" && (
+          <button
+            type="button"
+            onClick={() => setCollectionPickerOpen((o) => !o)}
+            aria-expanded={collectionPickerOpen}
+            className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            <FolderHeart className="h-3.5 w-3.5" aria-hidden />
+            Collections
+          </button>
+        )}
       </div>
+
+      {collectionPickerOpen && variant === "full" && (
+        <div className="mt-4 rounded-xl border border-border/80 bg-background/70 p-3">
+          <p className="mb-2 text-xs font-medium text-muted-foreground">
+            Add to collection
+          </p>
+          {collections.length === 0 ? (
+            <p className="text-xs text-muted-foreground">
+              No collections yet. Create one in{" "}
+              <Link href="/my-study/collections" className="text-primary underline underline-offset-2">
+                My Study
+              </Link>
+              .
+            </p>
+          ) : (
+            <ul className="space-y-1.5">
+              {collections.map((col) => {
+                const inCollection = isInCollection(col.id, ayah.surah, ayah.ayah);
+                return (
+                  <li key={col.id}>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (inCollection) {
+                          removeFromCollection(col.id, ayah.surah, ayah.ayah);
+                          toast.success(`Removed from ${col.name}`);
+                        } else {
+                          addToCollection(col.id, ayah.surah, ayah.ayah);
+                          toast.success(`Added to ${col.name}`);
+                        }
+                      }}
+                      className={cn(
+                        "flex w-full items-center justify-between rounded-lg border px-3 py-2 text-left text-sm transition-colors",
+                        inCollection
+                          ? "border-primary/40 bg-primary/10 text-foreground"
+                          : "border-border/60 bg-card text-foreground/80 hover:bg-secondary/40"
+                      )}
+                    >
+                      <span className="font-medium">{col.name}</span>
+                      {inCollection && <Check className="h-4 w-4 text-primary" aria-hidden />}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </div>
+      )}
 
       {comprehensionOpen && variant === "full" && comprehensionNote && (
         <div className="mt-4 rounded-xl border border-border/80 bg-background/70 p-4">

@@ -16,125 +16,30 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import {
+  EMPTY_LIBRARY_STATE,
+  LIBRARY_STORAGE_KEY,
+  normalizeLibraryState,
+  normalizeTags,
+  type Bookmark,
+  type Collection,
+  type CollectionAyah,
+  type LibraryState,
+  type Note,
+  type ProgressEntry,
+} from "./storage";
 
-export interface Bookmark {
-  surah: number;
-  ayah: number;
-  /** ISO timestamp */
-  savedAt: string;
-}
-
-export interface Note {
-  id: string;
-  surah: number;
-  ayah: number;
-  text: string;
-  /** User-defined labels for organizing private notes. Local-only, never uploaded. */
-  tags: string[];
-  createdAt: string;
-  updatedAt: string;
-}
-
-export interface ProgressEntry {
-  surah: number;
-  ayah: number;
-  at: string;
-}
-
-export interface LibraryState {
-  bookmarks: Bookmark[];
-  notes: Note[];
-  progress: ProgressEntry[];
-}
-
-export const EMPTY_LIBRARY_STATE: LibraryState = {
-  bookmarks: [],
-  notes: [],
-  progress: [],
+export type {
+  Bookmark,
+  Collection,
+  CollectionAyah,
+  LibraryState,
+  Note,
+  ProgressEntry,
 };
+export { EMPTY_LIBRARY_STATE, normalizeLibraryState };
 
-const STORAGE_KEY = "alhuda.library.v1";
-
-/** Normalized tags follow the same rules `saveNote` applies to typed input. */
-function normalizeTags(raw: unknown): string[] {
-  if (!Array.isArray(raw)) return [];
-  return Array.from(
-    new Set(
-      raw
-        .filter((t): t is string => typeof t === "string")
-        .map((t) => t.trim().toLowerCase())
-        .filter(Boolean)
-    )
-  ).slice(0, 10);
-}
-
-/**
- * Rebuild a library state from arbitrary parsed JSON — the stored value or a
- * restored backup file, both untrusted. Every list is checked for being an
- * array, and each entry keeps only the fields this build understands, so a
- * partial or hand-edited payload can never surface as a half-formed note or
- * bookmark. Malformed entries are dropped individually, never wholesale.
- */
-export function normalizeLibraryState(raw: unknown): LibraryState {
-  if (typeof raw !== "object" || raw === null || Array.isArray(raw)) {
-    return EMPTY_LIBRARY_STATE;
-  }
-  const parsed = raw as Record<string, unknown>;
-
-  const bookmarks: Bookmark[] = [];
-  if (Array.isArray(parsed.bookmarks)) {
-    for (const item of parsed.bookmarks) {
-      if (typeof item !== "object" || item === null) continue;
-      const b = item as Record<string, unknown>;
-      if (!Number.isInteger(b.surah) || !Number.isInteger(b.ayah)) continue;
-      bookmarks.push({
-        surah: b.surah as number,
-        ayah: b.ayah as number,
-        savedAt: typeof b.savedAt === "string" ? b.savedAt : "",
-      });
-    }
-  }
-
-  const notes: Note[] = [];
-  if (Array.isArray(parsed.notes)) {
-    for (const item of parsed.notes) {
-      if (typeof item !== "object" || item === null) continue;
-      const n = item as Record<string, unknown>;
-      if (!Number.isInteger(n.surah) || !Number.isInteger(n.ayah)) continue;
-      if (typeof n.text !== "string") continue;
-      const surah = n.surah as number;
-      const ayah = n.ayah as number;
-      const updatedAt = typeof n.updatedAt === "string" ? n.updatedAt : "";
-      notes.push({
-        // An absent id is rebuilt from the verse identity rather than invented.
-        id:
-          typeof n.id === "string" && n.id ? n.id : `${surah}:${ayah}:${updatedAt}`,
-        surah,
-        ayah,
-        text: n.text,
-        tags: normalizeTags(n.tags),
-        createdAt: typeof n.createdAt === "string" ? n.createdAt : "",
-        updatedAt,
-      });
-    }
-  }
-
-  const progress: ProgressEntry[] = [];
-  if (Array.isArray(parsed.progress)) {
-    for (const item of parsed.progress) {
-      if (typeof item !== "object" || item === null) continue;
-      const p = item as Record<string, unknown>;
-      if (!Number.isInteger(p.surah) || !Number.isInteger(p.ayah)) continue;
-      progress.push({
-        surah: p.surah as number,
-        ayah: p.ayah as number,
-        at: typeof p.at === "string" ? p.at : "",
-      });
-    }
-  }
-
-  return { bookmarks, notes, progress };
-}
+const STORAGE_KEY = LIBRARY_STORAGE_KEY;
 
 function readLibraryState(): LibraryState {
   if (typeof window === "undefined") return EMPTY_LIBRARY_STATE;
@@ -174,6 +79,20 @@ interface LibraryContextValue extends LibraryState {
   ) => void;
   deleteNote: (id: string) => void;
   recordVisit: (surah: number, ayah: number) => void;
+  /** Sprint 51: Create a new collection. Returns the new collection id. */
+  createCollection: (name: string) => string;
+  /** Sprint 51: Rename a collection. */
+  renameCollection: (id: string, name: string) => void;
+  /** Sprint 51: Delete a collection and all its memberships. */
+  deleteCollection: (id: string) => void;
+  /** Sprint 51: Add an ayah to a collection (prevents duplicates). */
+  addToCollection: (collectionId: string, surah: number, ayah: number) => void;
+  /** Sprint 51: Remove an ayah from a collection. */
+  removeFromCollection: (collectionId: string, surah: number, ayah: number) => void;
+  /** Sprint 51: Check if an ayah is in a collection. */
+  isInCollection: (collectionId: string, surah: number, ayah: number) => boolean;
+  /** Sprint 51: Get all ayat in a collection. */
+  getCollectionAyat: (collectionId: string) => CollectionAyah[];
   /**
    * Replace the stored library with a parsed backup section (FR-043). The
    * payload is re-normalized here as well as in the backup parser, so no
@@ -271,6 +190,73 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
         ].slice(0, 50);
         update({ ...state, progress });
       },
+      createCollection: (name) => {
+        const trimmed = name.trim();
+        if (!trimmed) return "";
+        const now = new Date().toISOString();
+        const id = `col:${Date.now()}:${Math.random().toString(36).slice(2, 8)}`;
+        const collection: Collection = {
+          id,
+          name: trimmed,
+          createdAt: now,
+          updatedAt: now,
+        };
+        update({ ...state, collections: [...state.collections, collection] });
+        return id;
+      },
+      renameCollection: (id, name) => {
+        const trimmed = name.trim();
+        if (!trimmed) return;
+        const now = new Date().toISOString();
+        const collections = state.collections.map((c) =>
+          c.id === id ? { ...c, name: trimmed, updatedAt: now } : c
+        );
+        update({ ...state, collections });
+      },
+      deleteCollection: (id) => {
+        const collections = state.collections.filter((c) => c.id !== id);
+        const collectionAyat = state.collectionAyat.filter(
+          (ca) => ca.collectionId !== id
+        );
+        update({ ...state, collections, collectionAyat });
+      },
+      addToCollection: (collectionId, surah, ayah) => {
+        const exists = state.collectionAyat.some(
+          (ca) =>
+            ca.collectionId === collectionId &&
+            ca.surah === surah &&
+            ca.ayah === ayah
+        );
+        if (exists) return;
+        const membership: CollectionAyah = {
+          id: `ca:${collectionId}:${surah}:${ayah}:${Date.now()}`,
+          collectionId,
+          surah,
+          ayah,
+          createdAt: new Date().toISOString(),
+        };
+        update({ ...state, collectionAyat: [...state.collectionAyat, membership] });
+      },
+      removeFromCollection: (collectionId, surah, ayah) => {
+        const collectionAyat = state.collectionAyat.filter(
+          (ca) =>
+            !(
+              ca.collectionId === collectionId &&
+              ca.surah === surah &&
+              ca.ayah === ayah
+            )
+        );
+        update({ ...state, collectionAyat });
+      },
+      isInCollection: (collectionId, surah, ayah) =>
+        state.collectionAyat.some(
+          (ca) =>
+            ca.collectionId === collectionId &&
+            ca.surah === surah &&
+            ca.ayah === ayah
+        ),
+      getCollectionAyat: (collectionId) =>
+        state.collectionAyat.filter((ca) => ca.collectionId === collectionId),
       restoreLibrary: (raw) => {
         const next = normalizeLibraryState(raw);
         update(next);

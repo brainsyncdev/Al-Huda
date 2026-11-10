@@ -63,6 +63,8 @@ export function BackupControls() {
         bookmarks: library.bookmarks,
         notes: library.notes,
         progress: library.progress,
+        collections: library.collections,
+        collectionAyat: library.collectionAyat,
       },
       revision: revision.exportState(),
       preferences: prefs.exportPrefs(),

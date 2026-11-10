@@ -16,8 +16,10 @@
 
 import {
   normalizeLibraryState,
+  type Collection,
+  type CollectionAyah,
   type LibraryState,
-} from "@/lib/library/context";
+} from "@/lib/library/storage";
 import { DEFAULT_PREFS, normalizePrefs, type Prefs } from "@/lib/prefs/context";
 import { normalizeRevisionState } from "@/lib/revision/storage";
 import { EMPTY_REVISION_STATE, type RevisionState } from "@/lib/revision/scheduling";
@@ -30,7 +32,7 @@ import { normalizeReadingPlansState } from "@/lib/reading-plans/storage";
 import type { ReadingPlansState } from "@/lib/reading-plans/types";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 6;
+export const BACKUP_VERSION = 7;
 export const BACKUP_APP = "Al-Huda";
 
 /** Empty quiz state, used when restoring a legacy backup that had no quiz. */
@@ -52,7 +54,11 @@ export interface BackupFile {
   version: typeof BACKUP_VERSION;
   app: typeof BACKUP_APP;
   exportedAt: string;
-  library: LibraryState;
+  library: LibraryState & {
+    /** Sprint 51: collections added in v7. */
+    collections?: Collection[];
+    collectionAyat?: CollectionAyah[];
+  };
   revision: RevisionState;
   preferences: Prefs;
   paths: PathsState;
@@ -70,10 +76,11 @@ export interface RestorableBackup {
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
    * export; 2 added revision and preferences; 3 added paths; 4 added
-   * translationId in preferences; 5 added quiz; 6 added reading plans.
+   * translationId in preferences; 5 added quiz; 6 added reading plans;
+   * 7 added collections and collectionAyat.
    * Older versions get defaults for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6;
+  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -146,14 +153,14 @@ export function parseBackup(text: string): ParseBackupResult {
   const exportedAt = typeof file.exportedAt === "string" ? file.exportedAt : "";
 
   if (file.format === BACKUP_FORMAT) {
-    // v3–v6 share the same envelope shape. v4 added translationId inside
-    // preferences; v5 added quiz; v6 added reading plans.
-    if (version !== 3 && version !== 4 && version !== 5 && version !== 6) {
+    // v3–v7 share the same envelope shape. v4 added translationId inside
+    // preferences; v5 added quiz; v6 added reading plans; v7 added collections.
+    if (version !== 3 && version !== 4 && version !== 5 && version !== 6 && version !== 7) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads versions 3–6. Nothing was imported.`,
+        }, and this build reads versions 3–7. Nothing was imported.`,
       };
     }
     return {
@@ -174,7 +181,7 @@ export function parseBackup(text: string): ParseBackupResult {
           file.readingPlans === undefined
             ? EMPTY_READING_PLANS_STATE
             : normalizeReadingPlansState(file.readingPlans),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6) : 6,
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7) : 7,
         exportedAt,
       },
     };
