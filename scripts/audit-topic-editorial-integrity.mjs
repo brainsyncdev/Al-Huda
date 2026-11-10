@@ -1,13 +1,13 @@
-# Topic Editorial Integrity Audit — Sprint 53
-#
-# Validates that all 18 topics have required editorial metadata:
-# - editorialDescription (required)
-# - knownLimitations (required, non-empty array)
-# - reviewState (required, valid enum)
-# - urduTitle (optional, informational only)
-# - Valid ayah references (no duplicates, valid surah/ayah)
-#
-# Exit 0 on success, 1 on failure.
+// Topic Editorial Integrity Audit — Sprint 53
+//
+// Validates that all 18 topics have required editorial metadata:
+// - editorialDescription (required)
+// - knownLimitations (required, non-empty array)
+// - reviewState (required, valid enum)
+// - urduTitle (optional, informational only)
+// - Valid ayah references (no duplicates, valid surah/ayah)
+//
+// Exit 0 on success, 1 on failure.
 
 import { readFileSync } from "fs";
 import { resolve } from "path";

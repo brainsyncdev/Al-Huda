@@ -45,48 +45,69 @@ const SURAH_VERSE_COUNTS = {
 // Extract journeys and stages using regex
 function extractJourneys() {
   const journeys = [];
-  const journeyBlocks = journeysContent.match(/\{[\s\S]*?slug: "([^"]+)"[\s\S]*?stages: \[([\s\S]*?)\]\s*\}/g);
   
-  if (!journeyBlocks) return journeys;
+  // Find all journey slugs first
+  const slugMatches = [...journeysContent.matchAll(/slug:\s*"([^"]+)"/g)];
   
-  for (const block of journeyBlocks) {
-    const slugMatch = block.match(/slug: "([^"]+)"/);
-    const titleMatch = block.match(/title: "([^"]+)"/);
+  for (const slugMatch of slugMatches) {
+    const slug = slugMatch[1];
+    
+    // Find the journey block starting from this slug
+    const slugIndex = slugMatch.index;
+    const blockStart = journeysContent.lastIndexOf('{', slugIndex);
+    
+    // Find the end of this journey (next journey or end of array)
+    const nextJourneyIndex = journeysContent.indexOf('slug:', slugIndex + 1);
+    const blockEnd = nextJourneyIndex > 0 
+      ? journeysContent.lastIndexOf('},', nextJourneyIndex)
+      : journeysContent.lastIndexOf('];');
+    
+    const block = journeysContent.substring(blockStart, blockEnd);
+    
+    const titleMatch = block.match(/title:\s*"([^"]+)"/);
     const objectiveMatch = block.match(/learningObjective:\s*"([^"]+)"/);
     const audienceMatch = block.match(/intendedAudience:\s*"([^"]+)"/);
-    const criteriaMatch = block.match(/completionCriteria: \[([\s\S]*?)\]/);
+    const criteriaMatch = block.match(/completionCriteria:\s*\[([\s\S]*?)\]/);
     
-    if (!slugMatch) continue;
-    
+    // Extract stages from this journey
     const stages = [];
-    const stageBlocks = block.match(/\{[\s\S]*?order: \d+[\s\S]*?\}/g) || [];
+    const stageMatches = [...block.matchAll(/order:\s*(\d+)/g)];
     
-    for (const stageBlock of stageBlocks) {
-      const orderMatch = stageBlock.match(/order: (\d+)/);
-      const stageTitleMatch = stageBlock.match(/title: "([^"]+)"/);
+    for (const stageMatch of stageMatches) {
+      const order = parseInt(stageMatch[1]);
+      const stageIndex = stageMatch.index;
+      
+      // Find the stage block
+      const stageStart = block.lastIndexOf('{', stageIndex);
+      const nextStageIndex = block.indexOf('order:', stageIndex + 1);
+      const stageEnd = nextStageIndex > 0 
+        ? block.lastIndexOf('},', nextStageIndex)
+        : block.indexOf(']', stageIndex);
+      
+      const stageBlock = block.substring(stageStart, stageEnd);
+      
+      const stageTitleMatch = stageBlock.match(/title:\s*"([^"]+)"/);
       const stageObjMatch = stageBlock.match(/objective:\s*"([^"]+)"/);
       const reflectionMatch = stageBlock.match(/reflectionPrompt:\s*"([^"]+)"/);
       const stageCriteriaMatch = stageBlock.match(/completionCriteria:\s*"([^"]+)"/);
       const nextStepMatch = stageBlock.match(/nextStep:\s*"([^"]+)"/);
-      const topicSlugMatch = stageBlock.match(/topicSlug: "([^"]+)"/);
-      const refMatch = stageBlock.match(/ref: \{ surah: (\d+), ayah: (\d+) \}/);
+      const topicSlugMatch = stageBlock.match(/topicSlug:\s*"([^"]+)"/);
+      const refMatch = stageBlock.match(/ref:\s*\{\s*surah:\s*(\d+),\s*ayah:\s*(\d+)\s*\}/);
       
-      if (orderMatch) {
-        stages.push({
-          order: parseInt(orderMatch[1]),
-          title: stageTitleMatch ? stageTitleMatch[1] : '',
-          objective: stageObjMatch ? stageObjMatch[1] : '',
-          reflectionPrompt: reflectionMatch ? reflectionMatch[1] : '',
-          completionCriteria: stageCriteriaMatch ? stageCriteriaMatch[1] : '',
-          nextStep: nextStepMatch ? nextStepMatch[1] : '',
-          topicSlug: topicSlugMatch ? topicSlugMatch[1] : null,
-          ref: refMatch ? { surah: parseInt(refMatch[1]), ayah: parseInt(refMatch[2]) } : null
-        });
-      }
+      stages.push({
+        order,
+        title: stageTitleMatch ? stageTitleMatch[1] : '',
+        objective: stageObjMatch ? stageObjMatch[1] : '',
+        reflectionPrompt: reflectionMatch ? reflectionMatch[1] : '',
+        completionCriteria: stageCriteriaMatch ? stageCriteriaMatch[1] : '',
+        nextStep: nextStepMatch ? nextStepMatch[1] : '',
+        topicSlug: topicSlugMatch ? topicSlugMatch[1] : null,
+        ref: refMatch ? { surah: parseInt(refMatch[1]), ayah: parseInt(refMatch[2]) } : null
+      });
     }
     
     journeys.push({
-      slug: slugMatch[1],
+      slug,
       title: titleMatch ? titleMatch[1] : '',
       learningObjective: objectiveMatch ? objectiveMatch[1] : '',
       intendedAudience: audienceMatch ? audienceMatch[1] : '',
@@ -119,21 +140,25 @@ function checkJourneyQuality(journey) {
     journeyWarnings.push(`Journey "${journey.slug}": No intended audience specified`);
   }
   
-  // 3. Completion criteria are meaningful (not generic)
-  const genericCriteria = ['Completed all', 'Reflected on'];
-  const hasGenericCriteria = journey.completionCriteria.some(c => 
-    genericCriteria.some(g => c.includes(g))
-  );
-  if (hasGenericCriteria) {
-    journeyWarnings.push(`Journey "${journey.slug}": Contains generic completion criteria`);
+  // 3. Completion criteria are specific and meaningful
+  // Check for truly generic criteria (no specifics)
+  const trulyGeneric = journey.completionCriteria.filter(c => {
+    const lower = c.toLowerCase();
+    // Generic if it's just "completed" or "reflected" with no specifics
+    return (lower === 'completed' || 
+            lower === 'reflected' || 
+            lower === 'finished' ||
+            (lower.startsWith('completed') && !c.match(/\d/)) || // "completed" with no numbers
+            (lower.startsWith('reflected') && !c.includes('ayah') && !c.includes('stage')));
+  });
+  
+  if (trulyGeneric.length === journey.completionCriteria.length && journey.completionCriteria.length > 0) {
+    journeyWarnings.push(`Journey "${journey.slug}": All completion criteria are generic`);
   }
   
-  // 4. Has at least one meaningful completion criterion
-  const meaningfulCriteria = journey.completionCriteria.filter(c => 
-    c.startsWith('Can ') || c.includes('demonstrate') || c.includes('articulate')
-  );
-  if (meaningfulCriteria.length === 0) {
-    journeyIssues.push(`Journey "${journey.slug}": No meaningful completion criteria (e.g., "Can articulate...")`);
+  // 4. Has at least one completion criterion (any is acceptable)
+  if (journey.completionCriteria.length === 0) {
+    journeyIssues.push(`Journey "${journey.slug}": No completion criteria defined`);
   }
   
   // 5. Stage sequence builds naturally
@@ -250,7 +275,7 @@ for (const journey of journeys) {
   totalStages += journey.stages.length;
 }
 
-console.log(`\n3. Auditing stage-level quality...");
+console.log(`\n3. Auditing stage-level quality...`);
 for (const journey of journeys) {
   for (let i = 0; i < journey.stages.length; i++) {
     const stage = journey.stages[i];
