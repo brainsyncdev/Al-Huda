@@ -34,15 +34,15 @@ describe("sitemap", () => {
       expect(urls).toContain(`${SITE_URL}/quran/${surah.slug}`);
     }
 
-    // Topic routes (all 11)
-    expect(TOPICS).toHaveLength(11);
+    // Topic routes (all 18)
+    expect(TOPICS).toHaveLength(18);
     for (const topic of TOPICS) {
       expect(urls).toContain(`${SITE_URL}/topics/${topic.slug}`);
     }
 
-    // Dimension routes (all 10)
+    // Dimension routes (all 15)
     const dimensions = getAllDimensions();
-    expect(dimensions).toHaveLength(10);
+    expect(dimensions).toHaveLength(15);
     for (const dim of dimensions) {
       expect(urls).toContain(`${SITE_URL}/explore/dimension/${dim.id}`);
     }
@@ -92,9 +92,9 @@ describe("sitemap", () => {
     expect(rootUrls).toHaveLength(0);
   });
 
-  it("expected total: 12 static + 114 surahs + 11 topics + 10 dimensions + 14 domains + 6236 ayahs = 6397", () => {
+  it("expected total: 12 static + 114 surahs + 18 topics + 15 dimensions + 14 domains + 6236 ayahs = 6409", () => {
     const entries = sitemap();
-    expect(entries).toHaveLength(6397);
+    expect(entries).toHaveLength(6409);
   });
 
   it("includes all 14 domain detail URLs with priority 0.4", () => {

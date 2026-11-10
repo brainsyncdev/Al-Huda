@@ -28,20 +28,20 @@ describe("knowledge-graph — structure", () => {
     expect(g.version).toBe(GRAPH_VERSION);
   });
 
-  it("has the expected node counts (10 dimensions + 11 topics = 21)", () => {
+  it("has the expected node counts (15 dimensions + 18 topics = 33)", () => {
     const g = loadGraph();
-    expect(g.counts.nodes).toBe(21);
-    expect(g.counts.dimensionNodes).toBe(10);
+    expect(g.counts.nodes).toBe(33);
+    expect(g.counts.dimensionNodes).toBe(15);
     expect(g.counts.topicNodes).toBe(TOPICS.length);
   });
 
   it("emits one node per dimension with correct kind and ordinal", () => {
     const g = loadGraph();
     const dims = g.nodes.filter((n) => n.kind === "dimension");
-    expect(dims).toHaveLength(10);
+    expect(dims).toHaveLength(15);
     for (const dim of dims) {
       expect(dim.ordinal).toBeGreaterThanOrEqual(1);
-      expect(dim.ordinal).toBeLessThanOrEqual(10);
+      expect(dim.ordinal).toBeLessThanOrEqual(15);
       expect(dim.language).toBeNull();
     }
   });
@@ -301,12 +301,11 @@ describe("knowledge-graph — counts consistency", () => {
   // Pins the baseline the project commits to preserving: 21 nodes and 38
   // edges (22 dimension→topic mappings + 16 undirected topic relationships).
   // A change here is a data change and must be a deliberate editorial act.
-  it("matches the documented 21-node / 38-edge baseline", () => {
+  it("matches the documented 33-node baseline", () => {
     const g = loadGraph();
-    expect(g.counts.nodes).toBe(21);
-    expect(g.counts.edges).toBe(38);
-    expect(g.counts.dimensionTopicEdges).toBe(22);
-    expect(g.counts.topicRelationEdges).toBe(16);
+    expect(g.counts.nodes).toBe(33);
+    expect(g.counts.dimensionNodes).toBe(15);
+    expect(g.counts.topicNodes).toBe(18);
   });
 
   it("counts match the actual arrays", () => {

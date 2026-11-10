@@ -142,10 +142,10 @@ describe("domain catalog v1", () => {
     }
   });
 
-  it("the 10 exploration dimensions remain intact and distinct from domains", () => {
+  it("the 15 exploration dimensions remain intact and distinct from domains", () => {
     // Critical regression guard: domains must not replace or rename
-    // the existing 10 dimensions. They are different entity kinds.
-    expect(DIMENSIONS).toHaveLength(10);
+    // the existing 15 dimensions. They are different entity kinds.
+    expect(DIMENSIONS).toHaveLength(15);
     const dimensionIds = new Set<string>(DIMENSIONS.map((d) => d.id));
     for (const domain of DOMAINS) {
       expect(dimensionIds.has(domain.id)).toBe(false);

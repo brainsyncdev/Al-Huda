@@ -35,12 +35,12 @@ const dimensionMatches = dimensionsContent.match(/export const DIMENSIONS: Dimen
 if (!dimensionMatches) {
   issues.push("Could not find DIMENSIONS array");
 } else {
-  // Count dimension objects by looking for 'id:' patterns within the array
+  // Count dimension objects by looking for 'number:' patterns within the array
   const dimensionsSection = dimensionsContent.substring(
     dimensionsContent.indexOf('export const DIMENSIONS'),
     dimensionsContent.indexOf('];', dimensionsContent.indexOf('export const DIMENSIONS'))
   );
-  dimensionCount = (dimensionsSection.match(/\nid: "/g) || []).length;
+  dimensionCount = (dimensionsSection.match(/\n    number: \d+/g) || []).length;
   console.log(`   ✓ Found ${dimensionCount} dimensions`);
   if (dimensionCount !== 15) {
     issues.push(`Expected 15 dimensions, found ${dimensionCount}`);
@@ -49,11 +49,9 @@ if (!dimensionMatches) {
 
 // 2. Validate topics count
 console.log("2. Validating topics...");
-const topicsSection = topicsContent.substring(
-  topicsContent.indexOf('const RAW_TOPICS'),
-  topicsContent.indexOf('];', topicsContent.indexOf('const RAW_TOPICS'))
-);
-topicCount = (topicsSection.match(/\n  slug: "/g) || []).length;
+// Topics are defined with slug: "..." pattern
+const topicSlugs = topicsContent.match(/slug: "[a-z-]+"/g) || [];
+topicCount = topicSlugs.length;
 console.log(`   ✓ Found ${topicCount} topics`);
 if (topicCount !== 18) {
   issues.push(`Expected 18 topics, found ${topicCount}`);
@@ -61,11 +59,9 @@ if (topicCount !== 18) {
 
 // 3. Validate domains count
 console.log("3. Validating domains...");
-const domainsSection = domainsContent.substring(
-  domainsContent.indexOf('export const DOMAINS'),
-  domainsContent.indexOf('];', domainsContent.indexOf('export const DOMAINS'))
-);
-domainCount = (domainsSection.match(/\n  id: "/g) || []).length;
+// Domains are defined with id: "..." pattern in the DOMAINS array
+const domainIds = domainsContent.match(/id: "[a-z-]+"/g) || [];
+domainCount = domainIds.length;
 console.log(`   ✓ Found ${domainCount} domains`);
 if (domainCount !== 14) {
   issues.push(`Expected 14 domains, found ${domainCount}`);
@@ -73,6 +69,7 @@ if (domainCount !== 14) {
 
 // 4. Validate domain-topic relationships count
 console.log("4. Validating domain-topic relationships...");
+// Count rel() function calls in the DOMAIN_TOPIC_RELATIONS array
 const domainTopicsSection = domainTopicsContent.substring(
   domainTopicsContent.indexOf('export const DOMAIN_TOPIC_RELATIONS'),
   domainTopicsContent.indexOf('];', domainTopicsContent.indexOf('export const DOMAIN_TOPIC_RELATIONS'))

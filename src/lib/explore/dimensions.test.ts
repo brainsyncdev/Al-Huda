@@ -17,10 +17,10 @@ import {
 import { TOPICS, getTopic } from "../topics/data";
 
 describe("dimensions — catalog integrity", () => {
-  it("has exactly ten dimensions numbered 1..10 in order", () => {
-    expect(DIMENSIONS).toHaveLength(10);
+  it("has exactly fifteen dimensions numbered 1..15 in order", () => {
+    expect(DIMENSIONS).toHaveLength(15);
     expect(DIMENSIONS.map((d) => d.number)).toEqual([
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
     ]);
   });
 

@@ -126,8 +126,8 @@ describe("getBroadestThemes", () => {
     expect(getBroadestThemes(2.9)).toHaveLength(2);
   });
 
-  it("uses the same ten-dimension catalog the Explore pages render", () => {
+  it("uses the same fifteen-dimension catalog the Explore pages render", () => {
     expect(getAllDimensions()).toBe(DIMENSIONS);
-    expect(DIMENSIONS).toHaveLength(10);
+    expect(DIMENSIONS).toHaveLength(15);
   });
 });

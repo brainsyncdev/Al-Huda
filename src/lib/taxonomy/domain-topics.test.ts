@@ -421,8 +421,8 @@ describe("sprint 34 — no regressions in existing catalogs", () => {
     expect(DOMAIN_PROVENANCE.status).toBe("pending-scholarly-review");
   });
 
-  it("the 10 exploration dimensions remain intact", () => {
-    expect(DIMENSIONS).toHaveLength(10);
+  it("the 15 exploration dimensions remain intact", () => {
+    expect(DIMENSIONS).toHaveLength(15);
     expect(DIMENSION_PROVENANCE.status).toBe("pending-scholarly-review");
     for (const dim of DIMENSIONS) {
       for (const slug of dim.topicSlugs) {
@@ -431,12 +431,14 @@ describe("sprint 34 — no regressions in existing catalogs", () => {
     }
   });
 
-  it("the 11 canonical topics and their slugs are unchanged", () => {
-    expect(TOPICS).toHaveLength(11);
+  it("the 18 canonical topics and their slugs are unchanged", () => {
+    expect(TOPICS).toHaveLength(18);
     const slugs = TOPICS.map((t) => t.slug).sort();
     expect(slugs).toEqual(
       [
         "giving",
+        "good-character",
+        "god-consciousness",
         "gratitude",
         "hardship-and-ease",
         "justice",
@@ -444,7 +446,12 @@ describe("sprint 34 — no regressions in existing catalogs", () => {
         "mercy-and-forgiveness",
         "parents-and-family",
         "patience",
+        "prayer",
+        "prophets",
         "remembrance",
+        "repentance",
+        "supplication",
+        "tawheed",
         "the-hereafter",
         "trust-in-god",
       ].sort()

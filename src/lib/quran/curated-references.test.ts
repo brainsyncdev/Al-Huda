@@ -80,16 +80,16 @@ describe("curated topic references resolve against the pinned dataset", () => {
     }
   });
 
-  it("curated refs are non-exhaustive but substantial: 11 topics, >= 4 verses each", () => {
-      expect(TOPICS).toHaveLength(11);
+  it("curated refs are non-exhaustive but substantial: 18 topics, >= 4 verses each", () => {
+      expect(TOPICS).toHaveLength(18);
       for (const topic of TOPICS) {
         expect(topic.relations.length).toBeGreaterThanOrEqual(4);
       }
-      // Pinned so that silently deleting a relation is visible. 56 was counted
+      // Pinned so that silently deleting a relation is visible. 93 was counted
       // from the source (every `ref: rel(` line in lib/topics/data.ts), not
       // derived from memory.
       const total = TOPICS.reduce((n, t) => n + t.relations.length, 0);
-      expect(total).toBe(56);
+      expect(total).toBe(93);
     });
   
     it("no topic lists the same ayah twice", () => {
