@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "جلب",
+    "title": "جلب",
+    "arabicTitle": "جلب",
+    "roots": [
+      "جلب"
+    ],
+    "includedLemmas": [
+      "أَجْلِبْ",
+      "جَلَٰبِيب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 64
+      },
+      "matchedToken": "وَأَجْلِبْ",
+      "matchedLemma": "أَجْلِبْ",
+      "matchedRoot": "جلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 59
+      },
+      "matchedToken": "جَلَـٰبِيبِهِنَّ ۚ",
+      "matchedLemma": "جَلَٰبِيب",
+      "matchedRoot": "جلب",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 64
+    },
+    {
+      "surah": 33,
+      "ayah": 59
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

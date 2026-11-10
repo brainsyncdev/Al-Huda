@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "بعر",
+    "title": "بعر",
+    "arabicTitle": "بعر",
+    "roots": [
+      "بعر"
+    ],
+    "includedLemmas": [
+      "بَعِير"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 65
+      },
+      "matchedToken": "بَعِيرٍۢ ۖ",
+      "matchedLemma": "بَعِير",
+      "matchedRoot": "بعر",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 72
+      },
+      "matchedToken": "بَعِيرٍۢ",
+      "matchedLemma": "بَعِير",
+      "matchedRoot": "بعر",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 65
+    },
+    {
+      "surah": 12,
+      "ayah": 72
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

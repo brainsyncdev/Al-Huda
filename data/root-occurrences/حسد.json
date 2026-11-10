@@ -1,0 +1,78 @@
+{
+  "entry": {
+    "slug": "حسد",
+    "title": "حسد",
+    "arabicTitle": "حسد",
+    "roots": [
+      "حسد"
+    ],
+    "includedLemmas": [
+      "حَاسِد",
+      "حَسَد",
+      "حَسَدَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 109
+      },
+      "matchedToken": "حَسَدًۭا",
+      "matchedLemma": "حَسَد",
+      "matchedRoot": "حسد",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 54
+      },
+      "matchedToken": "يَحْسُدُونَ",
+      "matchedLemma": "حَسَدَ",
+      "matchedRoot": "حسد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 113,
+        "ayah": 5
+      },
+      "matchedToken": "حَاسِدٍ",
+      "matchedLemma": "حَاسِد",
+      "matchedRoot": "حسد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 113,
+        "ayah": 5
+      },
+      "matchedToken": "حَسَدَ",
+      "matchedLemma": "حَسَدَ",
+      "matchedRoot": "حسد",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 109
+    },
+    {
+      "surah": 4,
+      "ayah": 54
+    },
+    {
+      "surah": 113,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

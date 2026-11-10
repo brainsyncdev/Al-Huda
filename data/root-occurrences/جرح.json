@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "جرح",
+    "title": "جرح",
+    "arabicTitle": "جرح",
+    "roots": [
+      "جرح"
+    ],
+    "includedLemmas": [
+      "اجْتَرَحُ",
+      "جَرَحْ",
+      "جُرُوح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 45
+      },
+      "matchedToken": "وَٱلْجُرُوحَ",
+      "matchedLemma": "جُرُوح",
+      "matchedRoot": "جرح",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 60
+      },
+      "matchedToken": "جَرَحْتُم",
+      "matchedLemma": "جَرَحْ",
+      "matchedRoot": "جرح",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 21
+      },
+      "matchedToken": "ٱجْتَرَحُوا۟",
+      "matchedLemma": "اجْتَرَحُ",
+      "matchedRoot": "جرح",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 45
+    },
+    {
+      "surah": 6,
+      "ayah": 60
+    },
+    {
+      "surah": 45,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-11-10T11:31:41.064Z",
+  "policyVersion": "1.0.0",
+  "sourceDataset": "qul-morphology-v1",
+  "sourceRecords": {
+    "total": 50298,
+    "activated": 44550,
+    "needsReview": 4079,
+    "missingLemma": 1669,
+    "unexplained": 0,
+    "accountedFor": 50298,
+    "allAccountedFor": true
+  },
+  "activation": {
+    "rootsDiscovered": 1642,
+    "rootsActivated": 1574,
+    "rootsSkippedNoAutoAccepted": 68,
+    "rootsSkippedZeroMatches": 0,
+    "totalOccurrencesActivated": 44550,
+    "totalDistinctAyat": 39720,
+    "totalLemmasActivated": 4350
+  },
+  "verification": {
+    "failures": 0,
+    "warnings": 0,
+    "passed": true
+  },
+  "pilotDiscrepancies": {
+    "note": "Sprint 47 pilot reported 99 lemmas across 10 manual roots. The morphology source contains 99 distinct lemmas, not 100. The workbook count of 100 was a counting artifact.",
+    "explanation": "The difference between source records and activatable occurrences for roots like علم (854 vs 848), غفر (234 vs 205), and كبر (161 vs 157) is explained by: (1) records with missing lemma fields, (2) records whose lemma was classified as needs-review (e.g. كَانَ under غفر and كبر), (3) duplicate word positions filtered out."
+  },
+  "reportInconsistencies": {
+    "testCount": "Sprint 47 report evolved from 45 to 55 tests as activation tests were added. Final count: 55 new tests, 924 total.",
+    "acceptanceRate": "Sprint 47 report corrected from 97.0% to 92.4% after actual batch execution. The 92.4% figure (4350/4709) is authoritative.",
+    "pilotCount": "Pilot evaluated 99 distinct lemmas (not 100). The workbook listed 100 but source data has 99."
+  }
+}

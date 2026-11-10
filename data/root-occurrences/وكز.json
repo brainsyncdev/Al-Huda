@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وكز",
+    "title": "وكز",
+    "arabicTitle": "وكز",
+    "roots": [
+      "وكز"
+    ],
+    "includedLemmas": [
+      "وَكَزَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 15
+      },
+      "matchedToken": "فَوَكَزَهُۥ",
+      "matchedLemma": "وَكَزَ",
+      "matchedRoot": "وكز",
+      "wordPosition": 26
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 28,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

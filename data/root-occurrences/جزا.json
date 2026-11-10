@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "جزا",
+    "title": "جزا",
+    "arabicTitle": "جزا",
+    "roots": [
+      "جزا"
+    ],
+    "includedLemmas": [
+      "جُزْء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 260
+      },
+      "matchedToken": "جُزْءًۭا",
+      "matchedLemma": "جُزْء",
+      "matchedRoot": "جزا",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 44
+      },
+      "matchedToken": "جُزْءٌۭ",
+      "matchedLemma": "جُزْء",
+      "matchedRoot": "جزا",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 15
+      },
+      "matchedToken": "جُزْءًا ۚ",
+      "matchedLemma": "جُزْء",
+      "matchedRoot": "جزا",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 260
+    },
+    {
+      "surah": 15,
+      "ayah": 44
+    },
+    {
+      "surah": 43,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

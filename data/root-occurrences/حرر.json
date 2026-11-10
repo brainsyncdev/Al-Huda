@@ -1,0 +1,159 @@
+{
+  "entry": {
+    "slug": "حرر",
+    "title": "حرر",
+    "arabicTitle": "حرر",
+    "roots": [
+      "حرر"
+    ],
+    "includedLemmas": [
+      "تَحْرِير",
+      "حَرُور",
+      "حَرِير",
+      "مُحَرَّر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 35
+      },
+      "matchedToken": "مُحَرَّرًۭا",
+      "matchedLemma": "مُحَرَّر",
+      "matchedRoot": "حرر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 92
+      },
+      "matchedToken": "فَتَحْرِيرُ",
+      "matchedLemma": "تَحْرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 92
+      },
+      "matchedToken": "فَتَحْرِيرُ",
+      "matchedLemma": "تَحْرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 92
+      },
+      "matchedToken": "وَتَحْرِيرُ",
+      "matchedLemma": "تَحْرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 45
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 89
+      },
+      "matchedToken": "تَحْرِيرُ",
+      "matchedLemma": "تَحْرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 23
+      },
+      "matchedToken": "حَرِيرٌۭ",
+      "matchedLemma": "حَرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 21
+      },
+      "matchedToken": "ٱلْحَرُورُ",
+      "matchedLemma": "حَرُور",
+      "matchedRoot": "حرر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 33
+      },
+      "matchedToken": "حَرِيرٌۭ",
+      "matchedLemma": "حَرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 3
+      },
+      "matchedToken": "فَتَحْرِيرُ",
+      "matchedLemma": "تَحْرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 12
+      },
+      "matchedToken": "وَحَرِيرًۭا",
+      "matchedLemma": "حَرِير",
+      "matchedRoot": "حرر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 35
+    },
+    {
+      "surah": 4,
+      "ayah": 92
+    },
+    {
+      "surah": 5,
+      "ayah": 89
+    },
+    {
+      "surah": 22,
+      "ayah": 23
+    },
+    {
+      "surah": 35,
+      "ayah": 21
+    },
+    {
+      "surah": 35,
+      "ayah": 33
+    },
+    {
+      "surah": 58,
+      "ayah": 3
+    },
+    {
+      "surah": 76,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

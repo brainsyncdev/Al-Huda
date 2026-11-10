@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "نحل",
+    "title": "نحل",
+    "arabicTitle": "نحل",
+    "roots": [
+      "نحل"
+    ],
+    "includedLemmas": [
+      "نِحْلَة",
+      "نَّحْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 4
+      },
+      "matchedToken": "نِحْلَةًۭ ۚ",
+      "matchedLemma": "نِحْلَة",
+      "matchedRoot": "نحل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 68
+      },
+      "matchedToken": "ٱلنَّحْلِ",
+      "matchedLemma": "نَّحْل",
+      "matchedRoot": "نحل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 4
+    },
+    {
+      "surah": 16,
+      "ayah": 68
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

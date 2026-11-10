@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "عبث",
+    "title": "عبث",
+    "arabicTitle": "عبث",
+    "roots": [
+      "عبث"
+    ],
+    "includedLemmas": [
+      "تَعْبَثُ",
+      "عَبَث"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 115
+      },
+      "matchedToken": "عَبَثًۭا",
+      "matchedLemma": "عَبَث",
+      "matchedRoot": "عبث",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 128
+      },
+      "matchedToken": "تَعْبَثُونَ",
+      "matchedLemma": "تَعْبَثُ",
+      "matchedRoot": "عبث",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 115
+    },
+    {
+      "surah": 26,
+      "ayah": 128
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

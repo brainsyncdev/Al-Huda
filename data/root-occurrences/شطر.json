@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "شطر",
+    "title": "شطر",
+    "arabicTitle": "شطر",
+    "roots": [
+      "شطر"
+    ],
+    "includedLemmas": [
+      "شَطْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 149
+      },
+      "matchedToken": "شَطْرَ",
+      "matchedLemma": "شَطْر",
+      "matchedRoot": "شطر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 150
+      },
+      "matchedToken": "شَطْرَ",
+      "matchedLemma": "شَطْر",
+      "matchedRoot": "شطر",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 149
+    },
+    {
+      "surah": 2,
+      "ayah": 150
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "رسخ",
+    "title": "رسخ",
+    "arabicTitle": "رسخ",
+    "roots": [
+      "رسخ"
+    ],
+    "includedLemmas": [
+      "رَّٰسِخُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 7
+      },
+      "matchedToken": "وَٱلرَّٰسِخُونَ",
+      "matchedLemma": "رَّٰسِخُون",
+      "matchedRoot": "رسخ",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 162
+      },
+      "matchedToken": "ٱلرَّٰسِخُونَ",
+      "matchedLemma": "رَّٰسِخُون",
+      "matchedRoot": "رسخ",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 7
+    },
+    {
+      "surah": 4,
+      "ayah": 162
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,137 @@
+{
+  "entry": {
+    "slug": "عقر",
+    "title": "عقر",
+    "arabicTitle": "عقر",
+    "roots": [
+      "عقر"
+    ],
+    "includedLemmas": [
+      "عَاقِر",
+      "عَقَرَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 40
+      },
+      "matchedToken": "عَاقِرٌۭ ۖ",
+      "matchedLemma": "عَاقِر",
+      "matchedRoot": "عقر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 77
+      },
+      "matchedToken": "فَعَقَرُوا۟",
+      "matchedLemma": "عَقَرَ",
+      "matchedRoot": "عقر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 65
+      },
+      "matchedToken": "فَعَقَرُوهَا",
+      "matchedLemma": "عَقَرَ",
+      "matchedRoot": "عقر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 5
+      },
+      "matchedToken": "عَاقِرًۭا",
+      "matchedLemma": "عَاقِر",
+      "matchedRoot": "عقر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 8
+      },
+      "matchedToken": "عَاقِرًۭا",
+      "matchedLemma": "عَاقِر",
+      "matchedRoot": "عقر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 157
+      },
+      "matchedToken": "فَعَقَرُوهَا",
+      "matchedLemma": "عَقَرَ",
+      "matchedRoot": "عقر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 29
+      },
+      "matchedToken": "فَعَقَرَ",
+      "matchedLemma": "عَقَرَ",
+      "matchedRoot": "عقر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 91,
+        "ayah": 14
+      },
+      "matchedToken": "فَعَقَرُوهَا",
+      "matchedLemma": "عَقَرَ",
+      "matchedRoot": "عقر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 40
+    },
+    {
+      "surah": 7,
+      "ayah": 77
+    },
+    {
+      "surah": 11,
+      "ayah": 65
+    },
+    {
+      "surah": 19,
+      "ayah": 5
+    },
+    {
+      "surah": 19,
+      "ayah": 8
+    },
+    {
+      "surah": 26,
+      "ayah": 157
+    },
+    {
+      "surah": 54,
+      "ayah": 29
+    },
+    {
+      "surah": 91,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "حفف",
+    "title": "حفف",
+    "arabicTitle": "حفف",
+    "roots": [
+      "حفف"
+    ],
+    "includedLemmas": [
+      "حَفَفْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 32
+      },
+      "matchedToken": "وَحَفَفْنَـٰهُمَا",
+      "matchedLemma": "حَفَفْ",
+      "matchedRoot": "حفف",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

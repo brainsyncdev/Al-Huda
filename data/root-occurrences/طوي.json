@@ -1,0 +1,93 @@
+{
+  "entry": {
+    "slug": "طوي",
+    "title": "طوي",
+    "arabicTitle": "طوي",
+    "roots": [
+      "طوي"
+    ],
+    "includedLemmas": [
+      "طَىّ",
+      "طُوًى",
+      "مَطْوِيَّٰت",
+      "نَطْوِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 12
+      },
+      "matchedToken": "طُوًۭى",
+      "matchedLemma": "طُوًى",
+      "matchedRoot": "طوي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 104
+      },
+      "matchedToken": "نَطْوِى",
+      "matchedLemma": "نَطْوِى",
+      "matchedRoot": "طوي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 104
+      },
+      "matchedToken": "كَطَىِّ",
+      "matchedLemma": "طَىّ",
+      "matchedRoot": "طوي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 67
+      },
+      "matchedToken": "مَطْوِيَّـٰتٌۢ",
+      "matchedLemma": "مَطْوِيَّٰت",
+      "matchedRoot": "طوي",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 16
+      },
+      "matchedToken": "طُوًى",
+      "matchedLemma": "طُوًى",
+      "matchedRoot": "طوي",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 12
+    },
+    {
+      "surah": 21,
+      "ayah": 104
+    },
+    {
+      "surah": 39,
+      "ayah": 67
+    },
+    {
+      "surah": 79,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

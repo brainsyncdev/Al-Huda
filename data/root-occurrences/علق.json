@@ -1,0 +1,120 @@
+{
+  "entry": {
+    "slug": "علق",
+    "title": "علق",
+    "arabicTitle": "علق",
+    "roots": [
+      "علق"
+    ],
+    "includedLemmas": [
+      "عَلَق",
+      "عَلَقَة",
+      "مُعَلَّقَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 129
+      },
+      "matchedToken": "كَٱلْمُعَلَّقَةِ ۚ",
+      "matchedLemma": "مُعَلَّقَة",
+      "matchedRoot": "علق",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 5
+      },
+      "matchedToken": "عَلَقَةٍۢ",
+      "matchedLemma": "عَلَقَة",
+      "matchedRoot": "علق",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 14
+      },
+      "matchedToken": "عَلَقَةًۭ",
+      "matchedLemma": "عَلَقَة",
+      "matchedRoot": "علق",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 14
+      },
+      "matchedToken": "ٱلْعَلَقَةَ",
+      "matchedLemma": "عَلَقَة",
+      "matchedRoot": "علق",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 67
+      },
+      "matchedToken": "عَلَقَةٍۢ",
+      "matchedLemma": "عَلَقَة",
+      "matchedRoot": "علق",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 38
+      },
+      "matchedToken": "عَلَقَةًۭ",
+      "matchedLemma": "عَلَقَة",
+      "matchedRoot": "علق",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 96,
+        "ayah": 2
+      },
+      "matchedToken": "عَلَقٍ",
+      "matchedLemma": "عَلَق",
+      "matchedRoot": "علق",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 129
+    },
+    {
+      "surah": 22,
+      "ayah": 5
+    },
+    {
+      "surah": 23,
+      "ayah": 14
+    },
+    {
+      "surah": 40,
+      "ayah": 67
+    },
+    {
+      "surah": 75,
+      "ayah": 38
+    },
+    {
+      "surah": 96,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

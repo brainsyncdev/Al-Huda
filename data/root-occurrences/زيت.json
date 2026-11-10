@@ -1,0 +1,120 @@
+{
+  "entry": {
+    "slug": "زيت",
+    "title": "زيت",
+    "arabicTitle": "زيت",
+    "roots": [
+      "زيت"
+    ],
+    "includedLemmas": [
+      "زَيْت",
+      "زَيْتُونَة",
+      "زَّيْتُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 99
+      },
+      "matchedToken": "وَٱلزَّيْتُونَ",
+      "matchedLemma": "زَّيْتُون",
+      "matchedRoot": "زيت",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 141
+      },
+      "matchedToken": "وَٱلزَّيْتُونَ",
+      "matchedLemma": "زَّيْتُون",
+      "matchedRoot": "زيت",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 11
+      },
+      "matchedToken": "وَٱلزَّيْتُونَ",
+      "matchedLemma": "زَّيْتُون",
+      "matchedRoot": "زيت",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 35
+      },
+      "matchedToken": "زَيْتُونَةٍۢ",
+      "matchedLemma": "زَيْتُونَة",
+      "matchedRoot": "زيت",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 35
+      },
+      "matchedToken": "زَيْتُهَا",
+      "matchedLemma": "زَيْت",
+      "matchedRoot": "زيت",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 80,
+        "ayah": 29
+      },
+      "matchedToken": "وَزَيْتُونًۭا",
+      "matchedLemma": "زَّيْتُون",
+      "matchedRoot": "زيت",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 95,
+        "ayah": 1
+      },
+      "matchedToken": "وَٱلزَّيْتُونِ",
+      "matchedLemma": "زَّيْتُون",
+      "matchedRoot": "زيت",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 99
+    },
+    {
+      "surah": 6,
+      "ayah": 141
+    },
+    {
+      "surah": 16,
+      "ayah": 11
+    },
+    {
+      "surah": 24,
+      "ayah": 35
+    },
+    {
+      "surah": 80,
+      "ayah": 29
+    },
+    {
+      "surah": 95,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

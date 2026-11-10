@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "سهو",
+    "title": "سهو",
+    "arabicTitle": "سهو",
+    "roots": [
+      "سهو"
+    ],
+    "includedLemmas": [
+      "سَاهُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 11
+      },
+      "matchedToken": "سَاهُونَ",
+      "matchedLemma": "سَاهُون",
+      "matchedRoot": "سهو",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 107,
+        "ayah": 5
+      },
+      "matchedToken": "سَاهُونَ",
+      "matchedLemma": "سَاهُون",
+      "matchedRoot": "سهو",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 51,
+      "ayah": 11
+    },
+    {
+      "surah": 107,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

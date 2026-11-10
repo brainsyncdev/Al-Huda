@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "جود",
+    "title": "جود",
+    "arabicTitle": "جود",
+    "roots": [
+      "جود"
+    ],
+    "includedLemmas": [
+      "جُودِىّ",
+      "جِيَاد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 44
+      },
+      "matchedToken": "ٱلْجُودِىِّ ۖ",
+      "matchedLemma": "جُودِىّ",
+      "matchedRoot": "جود",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 31
+      },
+      "matchedToken": "ٱلْجِيَادُ",
+      "matchedLemma": "جِيَاد",
+      "matchedRoot": "جود",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 44
+    },
+    {
+      "surah": 38,
+      "ayah": 31
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

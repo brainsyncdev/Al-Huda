@@ -1,0 +1,165 @@
+{
+  "entry": {
+    "slug": "سود",
+    "title": "سود",
+    "arabicTitle": "سود",
+    "roots": [
+      "سود"
+    ],
+    "includedLemmas": [
+      "أَسْوَد",
+      "اسْوَدَّتْ",
+      "سَيِّد",
+      "سُود",
+      "مُسْوَدّ",
+      "مُّسْوَدَّة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 6 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "ٱلْأَسْوَدِ",
+      "matchedLemma": "أَسْوَد",
+      "matchedRoot": "سود",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 39
+      },
+      "matchedToken": "وَسَيِّدًۭا",
+      "matchedLemma": "سَيِّد",
+      "matchedRoot": "سود",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 106
+      },
+      "matchedToken": "وَتَسْوَدُّ",
+      "matchedLemma": "اسْوَدَّتْ",
+      "matchedRoot": "سود",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 106
+      },
+      "matchedToken": "ٱسْوَدَّتْ",
+      "matchedLemma": "اسْوَدَّتْ",
+      "matchedRoot": "سود",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 25
+      },
+      "matchedToken": "سَيِّدَهَا",
+      "matchedLemma": "سَيِّد",
+      "matchedRoot": "سود",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 58
+      },
+      "matchedToken": "مُسْوَدًّۭا",
+      "matchedLemma": "مُسْوَدّ",
+      "matchedRoot": "سود",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 67
+      },
+      "matchedToken": "سَادَتَنَا",
+      "matchedLemma": "سَيِّد",
+      "matchedRoot": "سود",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 27
+      },
+      "matchedToken": "سُودٌۭ",
+      "matchedLemma": "سُود",
+      "matchedRoot": "سود",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 60
+      },
+      "matchedToken": "مُّسْوَدَّةٌ ۚ",
+      "matchedLemma": "مُّسْوَدَّة",
+      "matchedRoot": "سود",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 17
+      },
+      "matchedToken": "مُسْوَدًّۭا",
+      "matchedLemma": "مُسْوَدّ",
+      "matchedRoot": "سود",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 187
+    },
+    {
+      "surah": 3,
+      "ayah": 39
+    },
+    {
+      "surah": 3,
+      "ayah": 106
+    },
+    {
+      "surah": 12,
+      "ayah": 25
+    },
+    {
+      "surah": 16,
+      "ayah": 58
+    },
+    {
+      "surah": 33,
+      "ayah": 67
+    },
+    {
+      "surah": 35,
+      "ayah": 27
+    },
+    {
+      "surah": 39,
+      "ayah": 60
+    },
+    {
+      "surah": 43,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

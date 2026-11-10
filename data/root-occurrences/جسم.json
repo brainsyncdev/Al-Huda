@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "جسم",
+    "title": "جسم",
+    "arabicTitle": "جسم",
+    "roots": [
+      "جسم"
+    ],
+    "includedLemmas": [
+      "جِسْم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 247
+      },
+      "matchedToken": "وَٱلْجِسْمِ ۖ",
+      "matchedLemma": "جِسْم",
+      "matchedRoot": "جسم",
+      "wordPosition": 35
+    },
+    {
+      "ref": {
+        "surah": 63,
+        "ayah": 4
+      },
+      "matchedToken": "أَجْسَامُهُمْ ۖ",
+      "matchedLemma": "جِسْم",
+      "matchedRoot": "جسم",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 247
+    },
+    {
+      "surah": 63,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

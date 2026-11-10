@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "ترق",
+    "title": "ترق",
+    "arabicTitle": "ترق",
+    "roots": [
+      "ترق"
+    ],
+    "includedLemmas": [
+      "تَّرَاقِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلتَّرَاقِىَ",
+      "matchedLemma": "تَّرَاقِى",
+      "matchedRoot": "ترق",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 75,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

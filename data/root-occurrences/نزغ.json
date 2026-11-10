@@ -1,0 +1,101 @@
+{
+  "entry": {
+    "slug": "نزغ",
+    "title": "نزغ",
+    "arabicTitle": "نزغ",
+    "roots": [
+      "نزغ"
+    ],
+    "includedLemmas": [
+      "نَزْغ",
+      "نَّزَغَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 200
+      },
+      "matchedToken": "يَنزَغَنَّكَ",
+      "matchedLemma": "نَّزَغَ",
+      "matchedRoot": "نزغ",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 200
+      },
+      "matchedToken": "نَزْغٌۭ",
+      "matchedLemma": "نَزْغ",
+      "matchedRoot": "نزغ",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 100
+      },
+      "matchedToken": "نَّزَغَ",
+      "matchedLemma": "نَّزَغَ",
+      "matchedRoot": "نزغ",
+      "wordPosition": 33
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 53
+      },
+      "matchedToken": "يَنزَغُ",
+      "matchedLemma": "نَّزَغَ",
+      "matchedRoot": "نزغ",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 36
+      },
+      "matchedToken": "يَنزَغَنَّكَ",
+      "matchedLemma": "نَّزَغَ",
+      "matchedRoot": "نزغ",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 36
+      },
+      "matchedToken": "نَزْغٌۭ",
+      "matchedLemma": "نَزْغ",
+      "matchedRoot": "نزغ",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 200
+    },
+    {
+      "surah": 12,
+      "ayah": 100
+    },
+    {
+      "surah": 17,
+      "ayah": 53
+    },
+    {
+      "surah": 41,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

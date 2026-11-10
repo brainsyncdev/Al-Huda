@@ -1,0 +1,139 @@
+{
+  "entry": {
+    "slug": "ضرع",
+    "title": "ضرع",
+    "arabicTitle": "ضرع",
+    "roots": [
+      "ضرع"
+    ],
+    "includedLemmas": [
+      "تَضَرَّعُ",
+      "تَضَرُّع",
+      "ضَرِيع",
+      "يَتَضَرَّعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 42
+      },
+      "matchedToken": "يَتَضَرَّعُونَ",
+      "matchedLemma": "يَتَضَرَّعُ",
+      "matchedRoot": "ضرع",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 43
+      },
+      "matchedToken": "تَضَرَّعُوا۟",
+      "matchedLemma": "تَضَرَّعُ",
+      "matchedRoot": "ضرع",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 63
+      },
+      "matchedToken": "تَضَرُّعًۭا",
+      "matchedLemma": "تَضَرُّع",
+      "matchedRoot": "ضرع",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 55
+      },
+      "matchedToken": "تَضَرُّعًۭا",
+      "matchedLemma": "تَضَرُّع",
+      "matchedRoot": "ضرع",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 94
+      },
+      "matchedToken": "يَضَّرَّعُونَ",
+      "matchedLemma": "يَتَضَرَّعُ",
+      "matchedRoot": "ضرع",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 205
+      },
+      "matchedToken": "تَضَرُّعًۭا",
+      "matchedLemma": "تَضَرُّع",
+      "matchedRoot": "ضرع",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 76
+      },
+      "matchedToken": "يَتَضَرَّعُونَ",
+      "matchedLemma": "يَتَضَرَّعُ",
+      "matchedRoot": "ضرع",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 6
+      },
+      "matchedToken": "ضَرِيعٍۢ",
+      "matchedLemma": "ضَرِيع",
+      "matchedRoot": "ضرع",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 42
+    },
+    {
+      "surah": 6,
+      "ayah": 43
+    },
+    {
+      "surah": 6,
+      "ayah": 63
+    },
+    {
+      "surah": 7,
+      "ayah": 55
+    },
+    {
+      "surah": 7,
+      "ayah": 94
+    },
+    {
+      "surah": 7,
+      "ayah": 205
+    },
+    {
+      "surah": 23,
+      "ayah": 76
+    },
+    {
+      "surah": 88,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

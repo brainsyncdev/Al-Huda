@@ -1,0 +1,107 @@
+{
+  "entry": {
+    "slug": "ذلل",
+    "title": "ذلل",
+    "arabicTitle": "ذلل",
+    "roots": [
+      "ذلل"
+    ],
+    "includedLemmas": [
+      "تَذْلِيل",
+      "ذَلُول",
+      "ذُلُل",
+      "ذُلِّلَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 71
+      },
+      "matchedToken": "ذَلُولٌۭ",
+      "matchedLemma": "ذَلُول",
+      "matchedRoot": "ذلل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 69
+      },
+      "matchedToken": "ذُلُلًۭا ۚ",
+      "matchedLemma": "ذُلُل",
+      "matchedRoot": "ذلل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 72
+      },
+      "matchedToken": "وَذَلَّلْنَـٰهَا",
+      "matchedLemma": "ذُلِّلَتْ",
+      "matchedRoot": "ذلل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 15
+      },
+      "matchedToken": "ذَلُولًۭا",
+      "matchedLemma": "ذَلُول",
+      "matchedRoot": "ذلل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 14
+      },
+      "matchedToken": "وَذُلِّلَتْ",
+      "matchedLemma": "ذُلِّلَتْ",
+      "matchedRoot": "ذلل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 14
+      },
+      "matchedToken": "تَذْلِيلًۭا",
+      "matchedLemma": "تَذْلِيل",
+      "matchedRoot": "ذلل",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 71
+    },
+    {
+      "surah": 16,
+      "ayah": 69
+    },
+    {
+      "surah": 36,
+      "ayah": 72
+    },
+    {
+      "surah": 67,
+      "ayah": 15
+    },
+    {
+      "surah": 76,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

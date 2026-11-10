@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "محن",
+    "title": "محن",
+    "arabicTitle": "محن",
+    "roots": [
+      "محن"
+    ],
+    "includedLemmas": [
+      "امْتَحَنَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 3
+      },
+      "matchedToken": "ٱمْتَحَنَ",
+      "matchedLemma": "امْتَحَنَ",
+      "matchedRoot": "محن",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 10
+      },
+      "matchedToken": "فَٱمْتَحِنُوهُنَّ ۖ",
+      "matchedLemma": "امْتَحَنَ",
+      "matchedRoot": "محن",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 49,
+      "ayah": 3
+    },
+    {
+      "surah": 60,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

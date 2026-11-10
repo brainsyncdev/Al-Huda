@@ -1,0 +1,121 @@
+{
+  "entry": {
+    "slug": "برج",
+    "title": "برج",
+    "arabicTitle": "برج",
+    "roots": [
+      "برج"
+    ],
+    "includedLemmas": [
+      "بُرُوج",
+      "تَبَرَّجْ",
+      "تَبَرُّج",
+      "مُتَبَرِّجَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 78
+      },
+      "matchedToken": "بُرُوجٍۢ",
+      "matchedLemma": "بُرُوج",
+      "matchedRoot": "برج",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 16
+      },
+      "matchedToken": "بُرُوجًۭا",
+      "matchedLemma": "بُرُوج",
+      "matchedRoot": "برج",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 60
+      },
+      "matchedToken": "مُتَبَرِّجَـٰتٍۭ",
+      "matchedLemma": "مُتَبَرِّجَٰت",
+      "matchedRoot": "برج",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 61
+      },
+      "matchedToken": "بُرُوجًۭا",
+      "matchedLemma": "بُرُوج",
+      "matchedRoot": "برج",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 33
+      },
+      "matchedToken": "تَبَرَّجْنَ",
+      "matchedLemma": "تَبَرَّجْ",
+      "matchedRoot": "برج",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 33
+      },
+      "matchedToken": "تَبَرُّجَ",
+      "matchedLemma": "تَبَرُّج",
+      "matchedRoot": "برج",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 85,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْبُرُوجِ",
+      "matchedLemma": "بُرُوج",
+      "matchedRoot": "برج",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 78
+    },
+    {
+      "surah": 15,
+      "ayah": 16
+    },
+    {
+      "surah": 24,
+      "ayah": 60
+    },
+    {
+      "surah": 25,
+      "ayah": 61
+    },
+    {
+      "surah": 33,
+      "ayah": 33
+    },
+    {
+      "surah": 85,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

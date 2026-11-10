@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "ميز",
+    "title": "ميز",
+    "arabicTitle": "ميز",
+    "roots": [
+      "ميز"
+    ],
+    "includedLemmas": [
+      "امْتَٰزُ",
+      "تَمَيَّزُ",
+      "يَمِيزَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 179
+      },
+      "matchedToken": "يَمِيزَ",
+      "matchedLemma": "يَمِيزَ",
+      "matchedRoot": "ميز",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 37
+      },
+      "matchedToken": "لِيَمِيزَ",
+      "matchedLemma": "يَمِيزَ",
+      "matchedRoot": "ميز",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 59
+      },
+      "matchedToken": "وَٱمْتَـٰزُوا۟",
+      "matchedLemma": "امْتَٰزُ",
+      "matchedRoot": "ميز",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 8
+      },
+      "matchedToken": "تَمَيَّزُ",
+      "matchedLemma": "تَمَيَّزُ",
+      "matchedRoot": "ميز",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 179
+    },
+    {
+      "surah": 8,
+      "ayah": 37
+    },
+    {
+      "surah": 36,
+      "ayah": 59
+    },
+    {
+      "surah": 67,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

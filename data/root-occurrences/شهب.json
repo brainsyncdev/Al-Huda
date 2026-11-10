@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "شهب",
+    "title": "شهب",
+    "arabicTitle": "شهب",
+    "roots": [
+      "شهب"
+    ],
+    "includedLemmas": [
+      "شُهُب",
+      "شِهَاب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 18
+      },
+      "matchedToken": "شِهَابٌۭ",
+      "matchedLemma": "شِهَاب",
+      "matchedRoot": "شهب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 7
+      },
+      "matchedToken": "بِشِهَابٍۢ",
+      "matchedLemma": "شِهَاب",
+      "matchedRoot": "شهب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 10
+      },
+      "matchedToken": "شِهَابٌۭ",
+      "matchedLemma": "شِهَاب",
+      "matchedRoot": "شهب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 8
+      },
+      "matchedToken": "وَشُهُبًۭا",
+      "matchedLemma": "شُهُب",
+      "matchedRoot": "شهب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 9
+      },
+      "matchedToken": "شِهَابًۭا",
+      "matchedLemma": "شِهَاب",
+      "matchedRoot": "شهب",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 18
+    },
+    {
+      "surah": 27,
+      "ayah": 7
+    },
+    {
+      "surah": 37,
+      "ayah": 10
+    },
+    {
+      "surah": 72,
+      "ayah": 8
+    },
+    {
+      "surah": 72,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

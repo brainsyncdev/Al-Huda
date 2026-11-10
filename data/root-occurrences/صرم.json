@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "صرم",
+    "title": "صرم",
+    "arabicTitle": "صرم",
+    "roots": [
+      "صرم"
+    ],
+    "includedLemmas": [
+      "صَٰرِمِين",
+      "صَّرِيم",
+      "يَصْرِمُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 17
+      },
+      "matchedToken": "لَيَصْرِمُنَّهَا",
+      "matchedLemma": "يَصْرِمُ",
+      "matchedRoot": "صرم",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 20
+      },
+      "matchedToken": "كَٱلصَّرِيمِ",
+      "matchedLemma": "صَّرِيم",
+      "matchedRoot": "صرم",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 22
+      },
+      "matchedToken": "صَـٰرِمِينَ",
+      "matchedLemma": "صَٰرِمِين",
+      "matchedRoot": "صرم",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 68,
+      "ayah": 17
+    },
+    {
+      "surah": 68,
+      "ayah": 20
+    },
+    {
+      "surah": 68,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

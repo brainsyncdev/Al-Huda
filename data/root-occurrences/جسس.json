@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جسس",
+    "title": "جسس",
+    "arabicTitle": "جسس",
+    "roots": [
+      "جسس"
+    ],
+    "includedLemmas": [
+      "تَجَسَّسُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 12
+      },
+      "matchedToken": "تَجَسَّسُوا۟",
+      "matchedLemma": "تَجَسَّسُ",
+      "matchedRoot": "جسس",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 49,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

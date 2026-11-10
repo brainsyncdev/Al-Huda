@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "بهم",
+    "title": "بهم",
+    "arabicTitle": "بهم",
+    "roots": [
+      "بهم"
+    ],
+    "includedLemmas": [
+      "بَهِيمَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 1
+      },
+      "matchedToken": "بَهِيمَةُ",
+      "matchedLemma": "بَهِيمَة",
+      "matchedRoot": "بهم",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 28
+      },
+      "matchedToken": "بَهِيمَةِ",
+      "matchedLemma": "بَهِيمَة",
+      "matchedRoot": "بهم",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 34
+      },
+      "matchedToken": "بَهِيمَةِ",
+      "matchedLemma": "بَهِيمَة",
+      "matchedRoot": "بهم",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 1
+    },
+    {
+      "surah": 22,
+      "ayah": 28
+    },
+    {
+      "surah": 22,
+      "ayah": 34
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

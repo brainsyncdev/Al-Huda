@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "زلل",
+    "title": "زلل",
+    "arabicTitle": "زلل",
+    "roots": [
+      "زلل"
+    ],
+    "includedLemmas": [
+      "زَلَلْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 209
+      },
+      "matchedToken": "زَلَلْتُم",
+      "matchedLemma": "زَلَلْ",
+      "matchedRoot": "زلل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 94
+      },
+      "matchedToken": "فَتَزِلَّ",
+      "matchedLemma": "زَلَلْ",
+      "matchedRoot": "زلل",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 209
+    },
+    {
+      "surah": 16,
+      "ayah": 94
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

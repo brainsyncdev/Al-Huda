@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "صرصر",
+    "title": "صرصر",
+    "arabicTitle": "صرصر",
+    "roots": [
+      "صرصر"
+    ],
+    "includedLemmas": [
+      "صَرْصَر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 16
+      },
+      "matchedToken": "صَرْصَرًۭا",
+      "matchedLemma": "صَرْصَر",
+      "matchedRoot": "صرصر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 19
+      },
+      "matchedToken": "صَرْصَرًۭا",
+      "matchedLemma": "صَرْصَر",
+      "matchedRoot": "صرصر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 6
+      },
+      "matchedToken": "صَرْصَرٍ",
+      "matchedLemma": "صَرْصَر",
+      "matchedRoot": "صرصر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 41,
+      "ayah": 16
+    },
+    {
+      "surah": 54,
+      "ayah": 19
+    },
+    {
+      "surah": 69,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

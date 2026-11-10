@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "هيل",
+    "title": "هيل",
+    "arabicTitle": "هيل",
+    "roots": [
+      "هيل"
+    ],
+    "includedLemmas": [
+      "مَّهِيل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 14
+      },
+      "matchedToken": "مَّهِيلًا",
+      "matchedLemma": "مَّهِيل",
+      "matchedRoot": "هيل",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 73,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

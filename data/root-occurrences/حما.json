@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "حما",
+    "title": "حما",
+    "arabicTitle": "حما",
+    "roots": [
+      "حما"
+    ],
+    "includedLemmas": [
+      "حَمَإ",
+      "حَمِئَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 26
+      },
+      "matchedToken": "حَمَإٍۢ",
+      "matchedLemma": "حَمَإ",
+      "matchedRoot": "حما",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 28
+      },
+      "matchedToken": "حَمَإٍۢ",
+      "matchedLemma": "حَمَإ",
+      "matchedRoot": "حما",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 33
+      },
+      "matchedToken": "حَمَإٍۢ",
+      "matchedLemma": "حَمَإ",
+      "matchedRoot": "حما",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 86
+      },
+      "matchedToken": "حَمِئَةٍۢ",
+      "matchedLemma": "حَمِئَة",
+      "matchedRoot": "حما",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 26
+    },
+    {
+      "surah": 15,
+      "ayah": 28
+    },
+    {
+      "surah": 15,
+      "ayah": 33
+    },
+    {
+      "surah": 18,
+      "ayah": 86
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "تبر",
+    "title": "تبر",
+    "arabicTitle": "تبر",
+    "roots": [
+      "تبر"
+    ],
+    "includedLemmas": [
+      "تَبَار",
+      "تَتْبِير",
+      "مُتَبَّر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 139
+      },
+      "matchedToken": "مُتَبَّرٌۭ",
+      "matchedLemma": "مُتَبَّر",
+      "matchedRoot": "تبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 7
+      },
+      "matchedToken": "تَتْبِيرًا",
+      "matchedLemma": "تَتْبِير",
+      "matchedRoot": "تبر",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 39
+      },
+      "matchedToken": "تَتْبِيرًۭا",
+      "matchedLemma": "تَتْبِير",
+      "matchedRoot": "تبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 71,
+        "ayah": 28
+      },
+      "matchedToken": "تَبَارًۢا",
+      "matchedLemma": "تَبَار",
+      "matchedRoot": "تبر",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 139
+    },
+    {
+      "surah": 17,
+      "ayah": 7
+    },
+    {
+      "surah": 25,
+      "ayah": 39
+    },
+    {
+      "surah": 71,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

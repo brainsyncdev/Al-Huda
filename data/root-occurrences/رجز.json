@@ -1,0 +1,137 @@
+{
+  "entry": {
+    "slug": "رجز",
+    "title": "رجز",
+    "arabicTitle": "رجز",
+    "roots": [
+      "رجز"
+    ],
+    "includedLemmas": [
+      "رِجْز",
+      "رُّجْز"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 59
+      },
+      "matchedToken": "رِجْزًۭا",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 134
+      },
+      "matchedToken": "ٱلرِّجْزُ",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 135
+      },
+      "matchedToken": "ٱلرِّجْزَ",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 162
+      },
+      "matchedToken": "رِجْزًۭا",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 11
+      },
+      "matchedToken": "رِجْزَ",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 34
+      },
+      "matchedToken": "رِجْزًۭا",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 5
+      },
+      "matchedToken": "رِّجْزٍ",
+      "matchedLemma": "رِجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 5
+      },
+      "matchedToken": "وَٱلرُّجْزَ",
+      "matchedLemma": "رُّجْز",
+      "matchedRoot": "رجز",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 59
+    },
+    {
+      "surah": 7,
+      "ayah": 134
+    },
+    {
+      "surah": 7,
+      "ayah": 135
+    },
+    {
+      "surah": 7,
+      "ayah": 162
+    },
+    {
+      "surah": 8,
+      "ayah": 11
+    },
+    {
+      "surah": 29,
+      "ayah": 34
+    },
+    {
+      "surah": 34,
+      "ayah": 5
+    },
+    {
+      "surah": 74,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

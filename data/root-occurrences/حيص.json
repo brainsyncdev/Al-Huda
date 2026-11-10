@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "حيص",
+    "title": "حيص",
+    "arabicTitle": "حيص",
+    "roots": [
+      "حيص"
+    ],
+    "includedLemmas": [
+      "مَّحِيص"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 121
+      },
+      "matchedToken": "مَحِيصًۭا",
+      "matchedLemma": "مَّحِيص",
+      "matchedRoot": "حيص",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 21
+      },
+      "matchedToken": "مَّحِيصٍۢ",
+      "matchedLemma": "مَّحِيص",
+      "matchedRoot": "حيص",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 48
+      },
+      "matchedToken": "مَّحِيصٍۢ",
+      "matchedLemma": "مَّحِيص",
+      "matchedRoot": "حيص",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 35
+      },
+      "matchedToken": "مَّحِيصٍۢ",
+      "matchedLemma": "مَّحِيص",
+      "matchedRoot": "حيص",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 36
+      },
+      "matchedToken": "مَّحِيصٍ",
+      "matchedLemma": "مَّحِيص",
+      "matchedRoot": "حيص",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 121
+    },
+    {
+      "surah": 14,
+      "ayah": 21
+    },
+    {
+      "surah": 41,
+      "ayah": 48
+    },
+    {
+      "surah": 42,
+      "ayah": 35
+    },
+    {
+      "surah": 50,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

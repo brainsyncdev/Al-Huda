@@ -1,0 +1,935 @@
+{
+  "entry": {
+    "slug": "سكن",
+    "title": "سكن",
+    "arabicTitle": "سكن",
+    "roots": [
+      "سكن"
+    ],
+    "includedLemmas": [
+      "أَسْكَن",
+      "سَاكِن",
+      "سَكَن",
+      "سَكَنَ",
+      "سَكِينَة",
+      "سِكِّين",
+      "مَسْكَن",
+      "مَسْكَنَة",
+      "مَسْكُونَة",
+      "مِسْكِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 10 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 35
+      },
+      "matchedToken": "ٱسْكُنْ",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 83
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 177
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 184
+      },
+      "matchedToken": "مِسْكِينٍۢ ۖ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 215
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 248
+      },
+      "matchedToken": "سَكِينَةٌۭ",
+      "matchedLemma": "سَكِينَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 112
+      },
+      "matchedToken": "ٱلْمَسْكَنَةُ ۚ",
+      "matchedLemma": "مَسْكَنَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 8
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينُ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 36
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 89
+      },
+      "matchedToken": "مَسَـٰكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 95
+      },
+      "matchedToken": "مَسَـٰكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 96
+      },
+      "matchedToken": "سَكَنًۭا",
+      "matchedLemma": "سَكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 19
+      },
+      "matchedToken": "ٱسْكُنْ",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 161
+      },
+      "matchedToken": "ٱسْكُنُوا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 41
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 24
+      },
+      "matchedToken": "وَمَسَـٰكِنُ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 26
+      },
+      "matchedToken": "سَكِينَتَهُۥ",
+      "matchedLemma": "سَكِينَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 40
+      },
+      "matchedToken": "سَكِينَتَهُۥ",
+      "matchedLemma": "سَكِينَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 60
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 72
+      },
+      "matchedToken": "وَمَسَـٰكِنَ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 103
+      },
+      "matchedToken": "سَكَنٌۭ",
+      "matchedLemma": "سَكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 67
+      },
+      "matchedToken": "لِتَسْكُنُوا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 31
+      },
+      "matchedToken": "سِكِّينًۭا",
+      "matchedLemma": "سِكِّين",
+      "matchedRoot": "سكن",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 14
+      },
+      "matchedToken": "وَلَنُسْكِنَنَّكُمُ",
+      "matchedLemma": "أَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 37
+      },
+      "matchedToken": "أَسْكَنتُ",
+      "matchedLemma": "أَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 45
+      },
+      "matchedToken": "وَسَكَنتُمْ",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 45
+      },
+      "matchedToken": "مَسَـٰكِنِ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 80
+      },
+      "matchedToken": "سَكَنًۭا",
+      "matchedLemma": "سَكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 26
+      },
+      "matchedToken": "وَٱلْمِسْكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 104
+      },
+      "matchedToken": "ٱسْكُنُوا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 79
+      },
+      "matchedToken": "لِمَسَـٰكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 128
+      },
+      "matchedToken": "مَسَـٰكِنِهِمْ ۗ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 13
+      },
+      "matchedToken": "وَمَسَـٰكِنِكُمْ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 18
+      },
+      "matchedToken": "فَأَسْكَنَّـٰهُ",
+      "matchedLemma": "أَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 22
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 29
+      },
+      "matchedToken": "مَسْكُونَةٍۢ",
+      "matchedLemma": "مَسْكُونَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 45
+      },
+      "matchedToken": "سَاكِنًۭا",
+      "matchedLemma": "سَاكِن",
+      "matchedRoot": "سكن",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 18
+      },
+      "matchedToken": "مَسَـٰكِنَكُمْ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 86
+      },
+      "matchedToken": "لِيَسْكُنُوا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 58
+      },
+      "matchedToken": "مَسَـٰكِنُهُمْ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 72
+      },
+      "matchedToken": "تَسْكُنُونَ",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 73
+      },
+      "matchedToken": "لِتَسْكُنُوا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 38
+      },
+      "matchedToken": "مَّسَـٰكِنِهِمْ ۖ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 21
+      },
+      "matchedToken": "لِّتَسْكُنُوٓا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 38
+      },
+      "matchedToken": "وَٱلْمِسْكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 26
+      },
+      "matchedToken": "مَسَـٰكِنِهِمْ ۚ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 15
+      },
+      "matchedToken": "مَسْكَنِهِمْ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 61
+      },
+      "matchedToken": "لِتَسْكُنُوا۟",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 33
+      },
+      "matchedToken": "يُسْكِنِ",
+      "matchedLemma": "أَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 25
+      },
+      "matchedToken": "مَسَـٰكِنُهُمْ ۚ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلسَّكِينَةَ",
+      "matchedLemma": "سَكِينَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلسَّكِينَةَ",
+      "matchedLemma": "سَكِينَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 26
+      },
+      "matchedToken": "سَكِينَتَهُۥ",
+      "matchedLemma": "سَكِينَة",
+      "matchedRoot": "سكن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 4
+      },
+      "matchedToken": "مِسْكِينًۭا ۚ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 7
+      },
+      "matchedToken": "وَٱلْمَسَـٰكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 12
+      },
+      "matchedToken": "وَمَسَـٰكِنَ",
+      "matchedLemma": "مَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 6
+      },
+      "matchedToken": "أَسْكِنُوهُنَّ",
+      "matchedLemma": "أَسْكَن",
+      "matchedRoot": "سكن",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 6
+      },
+      "matchedToken": "سَكَنتُم",
+      "matchedLemma": "سَكَنَ",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 24
+      },
+      "matchedToken": "مِّسْكِينٌۭ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 34
+      },
+      "matchedToken": "ٱلْمِسْكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 44
+      },
+      "matchedToken": "ٱلْمِسْكِينَ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 8
+      },
+      "matchedToken": "مِسْكِينًۭا",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 89,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلْمِسْكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 90,
+        "ayah": 16
+      },
+      "matchedToken": "مِسْكِينًۭا",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 107,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلْمِسْكِينِ",
+      "matchedLemma": "مِسْكِين",
+      "matchedRoot": "سكن",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 35
+    },
+    {
+      "surah": 2,
+      "ayah": 83
+    },
+    {
+      "surah": 2,
+      "ayah": 177
+    },
+    {
+      "surah": 2,
+      "ayah": 184
+    },
+    {
+      "surah": 2,
+      "ayah": 215
+    },
+    {
+      "surah": 2,
+      "ayah": 248
+    },
+    {
+      "surah": 3,
+      "ayah": 112
+    },
+    {
+      "surah": 4,
+      "ayah": 8
+    },
+    {
+      "surah": 4,
+      "ayah": 36
+    },
+    {
+      "surah": 5,
+      "ayah": 89
+    },
+    {
+      "surah": 5,
+      "ayah": 95
+    },
+    {
+      "surah": 6,
+      "ayah": 96
+    },
+    {
+      "surah": 7,
+      "ayah": 19
+    },
+    {
+      "surah": 7,
+      "ayah": 161
+    },
+    {
+      "surah": 8,
+      "ayah": 41
+    },
+    {
+      "surah": 9,
+      "ayah": 24
+    },
+    {
+      "surah": 9,
+      "ayah": 26
+    },
+    {
+      "surah": 9,
+      "ayah": 40
+    },
+    {
+      "surah": 9,
+      "ayah": 60
+    },
+    {
+      "surah": 9,
+      "ayah": 72
+    },
+    {
+      "surah": 9,
+      "ayah": 103
+    },
+    {
+      "surah": 10,
+      "ayah": 67
+    },
+    {
+      "surah": 12,
+      "ayah": 31
+    },
+    {
+      "surah": 14,
+      "ayah": 14
+    },
+    {
+      "surah": 14,
+      "ayah": 37
+    },
+    {
+      "surah": 14,
+      "ayah": 45
+    },
+    {
+      "surah": 16,
+      "ayah": 80
+    },
+    {
+      "surah": 17,
+      "ayah": 26
+    },
+    {
+      "surah": 17,
+      "ayah": 104
+    },
+    {
+      "surah": 18,
+      "ayah": 79
+    },
+    {
+      "surah": 20,
+      "ayah": 128
+    },
+    {
+      "surah": 21,
+      "ayah": 13
+    },
+    {
+      "surah": 23,
+      "ayah": 18
+    },
+    {
+      "surah": 24,
+      "ayah": 22
+    },
+    {
+      "surah": 24,
+      "ayah": 29
+    },
+    {
+      "surah": 25,
+      "ayah": 45
+    },
+    {
+      "surah": 27,
+      "ayah": 18
+    },
+    {
+      "surah": 27,
+      "ayah": 86
+    },
+    {
+      "surah": 28,
+      "ayah": 58
+    },
+    {
+      "surah": 28,
+      "ayah": 72
+    },
+    {
+      "surah": 28,
+      "ayah": 73
+    },
+    {
+      "surah": 29,
+      "ayah": 38
+    },
+    {
+      "surah": 30,
+      "ayah": 21
+    },
+    {
+      "surah": 30,
+      "ayah": 38
+    },
+    {
+      "surah": 32,
+      "ayah": 26
+    },
+    {
+      "surah": 34,
+      "ayah": 15
+    },
+    {
+      "surah": 40,
+      "ayah": 61
+    },
+    {
+      "surah": 42,
+      "ayah": 33
+    },
+    {
+      "surah": 46,
+      "ayah": 25
+    },
+    {
+      "surah": 48,
+      "ayah": 4
+    },
+    {
+      "surah": 48,
+      "ayah": 18
+    },
+    {
+      "surah": 48,
+      "ayah": 26
+    },
+    {
+      "surah": 58,
+      "ayah": 4
+    },
+    {
+      "surah": 59,
+      "ayah": 7
+    },
+    {
+      "surah": 61,
+      "ayah": 12
+    },
+    {
+      "surah": 65,
+      "ayah": 6
+    },
+    {
+      "surah": 68,
+      "ayah": 24
+    },
+    {
+      "surah": 69,
+      "ayah": 34
+    },
+    {
+      "surah": 74,
+      "ayah": 44
+    },
+    {
+      "surah": 76,
+      "ayah": 8
+    },
+    {
+      "surah": 89,
+      "ayah": 18
+    },
+    {
+      "surah": 90,
+      "ayah": 16
+    },
+    {
+      "surah": 107,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 65,
+  "totalMatches": 65,
+  "pagination": null
+}

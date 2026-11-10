@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "نحس",
+    "title": "نحس",
+    "arabicTitle": "نحس",
+    "roots": [
+      "نحس"
+    ],
+    "includedLemmas": [
+      "نَحْس",
+      "نُحَاس",
+      "نَّحِسَات"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 16
+      },
+      "matchedToken": "نَّحِسَاتٍۢ",
+      "matchedLemma": "نَّحِسَات",
+      "matchedRoot": "نحس",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 19
+      },
+      "matchedToken": "نَحْسٍۢ",
+      "matchedLemma": "نَحْس",
+      "matchedRoot": "نحس",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 35
+      },
+      "matchedToken": "وَنُحَاسٌۭ",
+      "matchedLemma": "نُحَاس",
+      "matchedRoot": "نحس",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 41,
+      "ayah": 16
+    },
+    {
+      "surah": 54,
+      "ayah": 19
+    },
+    {
+      "surah": 55,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

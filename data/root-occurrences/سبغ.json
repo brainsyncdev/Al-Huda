@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "سبغ",
+    "title": "سبغ",
+    "arabicTitle": "سبغ",
+    "roots": [
+      "سبغ"
+    ],
+    "includedLemmas": [
+      "أَسْبَغَ",
+      "سَٰبِغَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 20
+      },
+      "matchedToken": "وَأَسْبَغَ",
+      "matchedLemma": "أَسْبَغَ",
+      "matchedRoot": "سبغ",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 11
+      },
+      "matchedToken": "سَـٰبِغَـٰتٍۢ",
+      "matchedLemma": "سَٰبِغَٰت",
+      "matchedRoot": "سبغ",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 31,
+      "ayah": 20
+    },
+    {
+      "surah": 34,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

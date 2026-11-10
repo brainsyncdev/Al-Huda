@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "درا",
+    "title": "درا",
+    "arabicTitle": "درا",
+    "roots": [
+      "درا"
+    ],
+    "includedLemmas": [
+      "ادَّٰرَْٰٔ",
+      "يَدْرَؤُا۟"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 72
+      },
+      "matchedToken": "فَٱدَّٰرَْٰٔتُمْ",
+      "matchedLemma": "ادَّٰرَْٰٔ",
+      "matchedRoot": "درا",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 168
+      },
+      "matchedToken": "فَٱدْرَءُوا۟",
+      "matchedLemma": "يَدْرَؤُا۟",
+      "matchedRoot": "درا",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 22
+      },
+      "matchedToken": "وَيَدْرَءُونَ",
+      "matchedLemma": "يَدْرَؤُا۟",
+      "matchedRoot": "درا",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 8
+      },
+      "matchedToken": "وَيَدْرَؤُا۟",
+      "matchedLemma": "يَدْرَؤُا۟",
+      "matchedRoot": "درا",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 54
+      },
+      "matchedToken": "وَيَدْرَءُونَ",
+      "matchedLemma": "يَدْرَؤُا۟",
+      "matchedRoot": "درا",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 72
+    },
+    {
+      "surah": 3,
+      "ayah": 168
+    },
+    {
+      "surah": 13,
+      "ayah": 22
+    },
+    {
+      "surah": 24,
+      "ayah": 8
+    },
+    {
+      "surah": 28,
+      "ayah": 54
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "ثخن",
+    "title": "ثخن",
+    "arabicTitle": "ثخن",
+    "roots": [
+      "ثخن"
+    ],
+    "includedLemmas": [
+      "أَثْخَن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 67
+      },
+      "matchedToken": "يُثْخِنَ",
+      "matchedLemma": "أَثْخَن",
+      "matchedRoot": "ثخن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 4
+      },
+      "matchedToken": "أَثْخَنتُمُوهُمْ",
+      "matchedLemma": "أَثْخَن",
+      "matchedRoot": "ثخن",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 67
+    },
+    {
+      "surah": 47,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

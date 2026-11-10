@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "هضم",
+    "title": "هضم",
+    "arabicTitle": "هضم",
+    "roots": [
+      "هضم"
+    ],
+    "includedLemmas": [
+      "هَضِيم",
+      "هَضْم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 112
+      },
+      "matchedToken": "هَضْمًۭا",
+      "matchedLemma": "هَضْم",
+      "matchedRoot": "هضم",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 148
+      },
+      "matchedToken": "هَضِيمٌۭ",
+      "matchedLemma": "هَضِيم",
+      "matchedRoot": "هضم",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 112
+    },
+    {
+      "surah": 26,
+      "ayah": 148
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

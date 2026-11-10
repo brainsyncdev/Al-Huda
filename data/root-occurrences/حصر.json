@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "حصر",
+    "title": "حصر",
+    "arabicTitle": "حصر",
+    "roots": [
+      "حصر"
+    ],
+    "includedLemmas": [
+      "أُحْصِرُ",
+      "حَصُور",
+      "حَصِرَتْ",
+      "حَصِير"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 273
+      },
+      "matchedToken": "أُحْصِرُوا۟",
+      "matchedLemma": "أُحْصِرُ",
+      "matchedRoot": "حصر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 39
+      },
+      "matchedToken": "وَحَصُورًۭا",
+      "matchedLemma": "حَصُور",
+      "matchedRoot": "حصر",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 90
+      },
+      "matchedToken": "حَصِرَتْ",
+      "matchedLemma": "حَصِرَتْ",
+      "matchedRoot": "حصر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 5
+      },
+      "matchedToken": "وَٱحْصُرُوهُمْ",
+      "matchedLemma": "حَصِرَتْ",
+      "matchedRoot": "حصر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 8
+      },
+      "matchedToken": "حَصِيرًا",
+      "matchedLemma": "حَصِير",
+      "matchedRoot": "حصر",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 273
+    },
+    {
+      "surah": 3,
+      "ayah": 39
+    },
+    {
+      "surah": 4,
+      "ayah": 90
+    },
+    {
+      "surah": 9,
+      "ayah": 5
+    },
+    {
+      "surah": 17,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

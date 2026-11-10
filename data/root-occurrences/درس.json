@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "درس",
+    "title": "درس",
+    "arabicTitle": "درس",
+    "roots": [
+      "درس"
+    ],
+    "includedLemmas": [
+      "دَرَسُ",
+      "دِرَاسَت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 79
+      },
+      "matchedToken": "تَدْرُسُونَ",
+      "matchedLemma": "دَرَسُ",
+      "matchedRoot": "درس",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 105
+      },
+      "matchedToken": "دَرَسْتَ",
+      "matchedLemma": "دَرَسُ",
+      "matchedRoot": "درس",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 156
+      },
+      "matchedToken": "دِرَاسَتِهِمْ",
+      "matchedLemma": "دِرَاسَت",
+      "matchedRoot": "درس",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 44
+      },
+      "matchedToken": "يَدْرُسُونَهَا ۖ",
+      "matchedLemma": "دَرَسُ",
+      "matchedRoot": "درس",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 37
+      },
+      "matchedToken": "تَدْرُسُونَ",
+      "matchedLemma": "دَرَسُ",
+      "matchedRoot": "درس",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 79
+    },
+    {
+      "surah": 6,
+      "ayah": 105
+    },
+    {
+      "surah": 6,
+      "ayah": 156
+    },
+    {
+      "surah": 34,
+      "ayah": 44
+    },
+    {
+      "surah": 68,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

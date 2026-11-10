@@ -1,0 +1,109 @@
+{
+  "entry": {
+    "slug": "ضيف",
+    "title": "ضيف",
+    "arabicTitle": "ضيف",
+    "roots": [
+      "ضيف"
+    ],
+    "includedLemmas": [
+      "ضَيْف",
+      "يُضَيِّفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 78
+      },
+      "matchedToken": "ضَيْفِىٓ ۖ",
+      "matchedLemma": "ضَيْف",
+      "matchedRoot": "ضيف",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 51
+      },
+      "matchedToken": "ضَيْفِ",
+      "matchedLemma": "ضَيْف",
+      "matchedRoot": "ضيف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 68
+      },
+      "matchedToken": "ضَيْفِى",
+      "matchedLemma": "ضَيْف",
+      "matchedRoot": "ضيف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 77
+      },
+      "matchedToken": "يُضَيِّفُوهُمَا",
+      "matchedLemma": "يُضَيِّفُ",
+      "matchedRoot": "ضيف",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 24
+      },
+      "matchedToken": "ضَيْفِ",
+      "matchedLemma": "ضَيْف",
+      "matchedRoot": "ضيف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 37
+      },
+      "matchedToken": "ضَيْفِهِۦ",
+      "matchedLemma": "ضَيْف",
+      "matchedRoot": "ضيف",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 78
+    },
+    {
+      "surah": 15,
+      "ayah": 51
+    },
+    {
+      "surah": 15,
+      "ayah": 68
+    },
+    {
+      "surah": 18,
+      "ayah": 77
+    },
+    {
+      "surah": 51,
+      "ayah": 24
+    },
+    {
+      "surah": 54,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

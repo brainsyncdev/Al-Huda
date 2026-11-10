@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "دلك",
+    "title": "دلك",
+    "arabicTitle": "دلك",
+    "roots": [
+      "دلك"
+    ],
+    "includedLemmas": [
+      "دُلُوك"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 78
+      },
+      "matchedToken": "لِدُلُوكِ",
+      "matchedLemma": "دُلُوك",
+      "matchedRoot": "دلك",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 78
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

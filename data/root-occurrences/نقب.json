@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "نقب",
+    "title": "نقب",
+    "arabicTitle": "نقب",
+    "roots": [
+      "نقب"
+    ],
+    "includedLemmas": [
+      "نَقِيب",
+      "نَقَّبُ",
+      "نَقْب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 12
+      },
+      "matchedToken": "نَقِيبًۭا ۖ",
+      "matchedLemma": "نَقِيب",
+      "matchedRoot": "نقب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 97
+      },
+      "matchedToken": "نَقْبًۭا",
+      "matchedLemma": "نَقْب",
+      "matchedRoot": "نقب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 36
+      },
+      "matchedToken": "فَنَقَّبُوا۟",
+      "matchedLemma": "نَقَّبُ",
+      "matchedRoot": "نقب",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 12
+    },
+    {
+      "surah": 18,
+      "ayah": 97
+    },
+    {
+      "surah": 50,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

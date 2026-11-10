@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "لقط",
+    "title": "لقط",
+    "arabicTitle": "لقط",
+    "roots": [
+      "لقط"
+    ],
+    "includedLemmas": [
+      "الْتَقَطَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 10
+      },
+      "matchedToken": "يَلْتَقِطْهُ",
+      "matchedLemma": "الْتَقَطَ",
+      "matchedRoot": "لقط",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 8
+      },
+      "matchedToken": "فَٱلْتَقَطَهُۥٓ",
+      "matchedLemma": "الْتَقَطَ",
+      "matchedRoot": "لقط",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 10
+    },
+    {
+      "surah": 28,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

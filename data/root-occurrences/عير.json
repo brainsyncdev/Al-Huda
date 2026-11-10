@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "عير",
+    "title": "عير",
+    "arabicTitle": "عير",
+    "roots": [
+      "عير"
+    ],
+    "includedLemmas": [
+      "عِير"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 70
+      },
+      "matchedToken": "ٱلْعِيرُ",
+      "matchedLemma": "عِير",
+      "matchedRoot": "عير",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 82
+      },
+      "matchedToken": "وَٱلْعِيرَ",
+      "matchedLemma": "عِير",
+      "matchedRoot": "عير",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 94
+      },
+      "matchedToken": "ٱلْعِيرُ",
+      "matchedLemma": "عِير",
+      "matchedRoot": "عير",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 70
+    },
+    {
+      "surah": 12,
+      "ayah": 82
+    },
+    {
+      "surah": 12,
+      "ayah": 94
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

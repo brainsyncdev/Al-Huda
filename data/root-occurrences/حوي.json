@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "حوي",
+    "title": "حوي",
+    "arabicTitle": "حوي",
+    "roots": [
+      "حوي"
+    ],
+    "includedLemmas": [
+      "أَحْوَىٰ",
+      "حَوَايَآ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 146
+      },
+      "matchedToken": "ٱلْحَوَايَآ",
+      "matchedLemma": "حَوَايَآ",
+      "matchedRoot": "حوي",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 87,
+        "ayah": 5
+      },
+      "matchedToken": "أَحْوَىٰ",
+      "matchedLemma": "أَحْوَىٰ",
+      "matchedRoot": "حوي",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 146
+    },
+    {
+      "surah": 87,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

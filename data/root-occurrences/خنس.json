@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "خنس",
+    "title": "خنس",
+    "arabicTitle": "خنس",
+    "roots": [
+      "خنس"
+    ],
+    "includedLemmas": [
+      "خَنَّاس",
+      "خُنَّس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 15
+      },
+      "matchedToken": "بِٱلْخُنَّسِ",
+      "matchedLemma": "خُنَّس",
+      "matchedRoot": "خنس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 114,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْخَنَّاسِ",
+      "matchedLemma": "خَنَّاس",
+      "matchedRoot": "خنس",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 81,
+      "ayah": 15
+    },
+    {
+      "surah": 114,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

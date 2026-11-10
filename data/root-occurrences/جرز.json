@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "جرز",
+    "title": "جرز",
+    "arabicTitle": "جرز",
+    "roots": [
+      "جرز"
+    ],
+    "includedLemmas": [
+      "جُرُز"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 8
+      },
+      "matchedToken": "جُرُزًا",
+      "matchedLemma": "جُرُز",
+      "matchedRoot": "جرز",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 27
+      },
+      "matchedToken": "ٱلْجُرُزِ",
+      "matchedLemma": "جُرُز",
+      "matchedRoot": "جرز",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 8
+    },
+    {
+      "surah": 32,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

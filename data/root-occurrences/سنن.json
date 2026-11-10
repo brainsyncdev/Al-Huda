@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "سنن",
+    "title": "سنن",
+    "arabicTitle": "سنن",
+    "roots": [
+      "سنن"
+    ],
+    "includedLemmas": [
+      "مَّسْنُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 26
+      },
+      "matchedToken": "مَّسْنُونٍۢ",
+      "matchedLemma": "مَّسْنُون",
+      "matchedRoot": "سنن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 28
+      },
+      "matchedToken": "مَّسْنُونٍۢ",
+      "matchedLemma": "مَّسْنُون",
+      "matchedRoot": "سنن",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 33
+      },
+      "matchedToken": "مَّسْنُونٍۢ",
+      "matchedLemma": "مَّسْنُون",
+      "matchedRoot": "سنن",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 26
+    },
+    {
+      "surah": 15,
+      "ayah": 28
+    },
+    {
+      "surah": 15,
+      "ayah": 33
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

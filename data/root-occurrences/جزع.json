@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "جزع",
+    "title": "جزع",
+    "arabicTitle": "جزع",
+    "roots": [
+      "جزع"
+    ],
+    "includedLemmas": [
+      "جَزُوع",
+      "جَزِعْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 21
+      },
+      "matchedToken": "أَجَزِعْنَآ",
+      "matchedLemma": "جَزِعْ",
+      "matchedRoot": "جزع",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 20
+      },
+      "matchedToken": "جَزُوعًۭا",
+      "matchedLemma": "جَزُوع",
+      "matchedRoot": "جزع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 21
+    },
+    {
+      "surah": 70,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

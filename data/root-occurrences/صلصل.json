@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "صلصل",
+    "title": "صلصل",
+    "arabicTitle": "صلصل",
+    "roots": [
+      "صلصل"
+    ],
+    "includedLemmas": [
+      "صَلْصَٰل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 26
+      },
+      "matchedToken": "صَلْصَـٰلٍۢ",
+      "matchedLemma": "صَلْصَٰل",
+      "matchedRoot": "صلصل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 28
+      },
+      "matchedToken": "صَلْصَـٰلٍۢ",
+      "matchedLemma": "صَلْصَٰل",
+      "matchedRoot": "صلصل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 33
+      },
+      "matchedToken": "صَلْصَـٰلٍۢ",
+      "matchedLemma": "صَلْصَٰل",
+      "matchedRoot": "صلصل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 14
+      },
+      "matchedToken": "صَلْصَـٰلٍۢ",
+      "matchedLemma": "صَلْصَٰل",
+      "matchedRoot": "صلصل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 26
+    },
+    {
+      "surah": 15,
+      "ayah": 28
+    },
+    {
+      "surah": 15,
+      "ayah": 33
+    },
+    {
+      "surah": 55,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

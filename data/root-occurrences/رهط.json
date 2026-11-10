@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "رهط",
+    "title": "رهط",
+    "arabicTitle": "رهط",
+    "roots": [
+      "رهط"
+    ],
+    "includedLemmas": [
+      "رَهْط"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 91
+      },
+      "matchedToken": "رَهْطُكَ",
+      "matchedLemma": "رَهْط",
+      "matchedRoot": "رهط",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 92
+      },
+      "matchedToken": "أَرَهْطِىٓ",
+      "matchedLemma": "رَهْط",
+      "matchedRoot": "رهط",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 48
+      },
+      "matchedToken": "رَهْطٍۢ",
+      "matchedLemma": "رَهْط",
+      "matchedRoot": "رهط",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 91
+    },
+    {
+      "surah": 11,
+      "ayah": 92
+    },
+    {
+      "surah": 27,
+      "ayah": 48
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

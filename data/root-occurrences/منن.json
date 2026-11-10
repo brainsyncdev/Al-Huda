@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "منن",
+    "title": "منن",
+    "arabicTitle": "منن",
+    "roots": [
+      "منن"
+    ],
+    "includedLemmas": [
+      "مَمْنُون",
+      "مَنُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 8
+      },
+      "matchedToken": "مَمْنُونٍۢ",
+      "matchedLemma": "مَمْنُون",
+      "matchedRoot": "منن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 30
+      },
+      "matchedToken": "ٱلْمَنُونِ",
+      "matchedLemma": "مَنُون",
+      "matchedRoot": "منن",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 3
+      },
+      "matchedToken": "مَمْنُونٍۢ",
+      "matchedLemma": "مَمْنُون",
+      "matchedRoot": "منن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 25
+      },
+      "matchedToken": "مَمْنُونٍۭ",
+      "matchedLemma": "مَمْنُون",
+      "matchedRoot": "منن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 95,
+        "ayah": 6
+      },
+      "matchedToken": "مَمْنُونٍۢ",
+      "matchedLemma": "مَمْنُون",
+      "matchedRoot": "منن",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 41,
+      "ayah": 8
+    },
+    {
+      "surah": 52,
+      "ayah": 30
+    },
+    {
+      "surah": 68,
+      "ayah": 3
+    },
+    {
+      "surah": 84,
+      "ayah": 25
+    },
+    {
+      "surah": 95,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

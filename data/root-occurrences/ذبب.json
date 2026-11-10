@@ -1,0 +1,48 @@
+{
+  "entry": {
+    "slug": "ذبب",
+    "title": "ذبب",
+    "arabicTitle": "ذبب",
+    "roots": [
+      "ذبب"
+    ],
+    "includedLemmas": [
+      "ذُبَاب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 73
+      },
+      "matchedToken": "ذُبَابًۭا",
+      "matchedLemma": "ذُبَاب",
+      "matchedRoot": "ذبب",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 73
+      },
+      "matchedToken": "ٱلذُّبَابُ",
+      "matchedLemma": "ذُبَاب",
+      "matchedRoot": "ذبب",
+      "wordPosition": 21
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 73
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

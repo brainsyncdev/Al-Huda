@@ -1,0 +1,123 @@
+{
+  "entry": {
+    "slug": "بخس",
+    "title": "بخس",
+    "arabicTitle": "بخس",
+    "roots": [
+      "بخس"
+    ],
+    "includedLemmas": [
+      "بَخْس",
+      "يَبْخَسْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 282
+      },
+      "matchedToken": "يَبْخَسْ",
+      "matchedLemma": "يَبْخَسْ",
+      "matchedRoot": "بخس",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 85
+      },
+      "matchedToken": "تَبْخَسُوا۟",
+      "matchedLemma": "يَبْخَسْ",
+      "matchedRoot": "بخس",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 15
+      },
+      "matchedToken": "يُبْخَسُونَ",
+      "matchedLemma": "يَبْخَسْ",
+      "matchedRoot": "بخس",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 85
+      },
+      "matchedToken": "تَبْخَسُوا۟",
+      "matchedLemma": "يَبْخَسْ",
+      "matchedRoot": "بخس",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 20
+      },
+      "matchedToken": "بَخْسٍۢ",
+      "matchedLemma": "بَخْس",
+      "matchedRoot": "بخس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 183
+      },
+      "matchedToken": "تَبْخَسُوا۟",
+      "matchedLemma": "يَبْخَسْ",
+      "matchedRoot": "بخس",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 13
+      },
+      "matchedToken": "بَخْسًۭا",
+      "matchedLemma": "بَخْس",
+      "matchedRoot": "بخس",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 282
+    },
+    {
+      "surah": 7,
+      "ayah": 85
+    },
+    {
+      "surah": 11,
+      "ayah": 15
+    },
+    {
+      "surah": 11,
+      "ayah": 85
+    },
+    {
+      "surah": 12,
+      "ayah": 20
+    },
+    {
+      "surah": 26,
+      "ayah": 183
+    },
+    {
+      "surah": 72,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

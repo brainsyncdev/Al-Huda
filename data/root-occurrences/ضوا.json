@@ -1,0 +1,109 @@
+{
+  "entry": {
+    "slug": "ضوا",
+    "title": "ضوا",
+    "arabicTitle": "ضوا",
+    "roots": [
+      "ضوا"
+    ],
+    "includedLemmas": [
+      "أَضَآءَ",
+      "ضِيَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 17
+      },
+      "matchedToken": "أَضَآءَتْ",
+      "matchedLemma": "أَضَآءَ",
+      "matchedRoot": "ضوا",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 20
+      },
+      "matchedToken": "أَضَآءَ",
+      "matchedLemma": "أَضَآءَ",
+      "matchedRoot": "ضوا",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 5
+      },
+      "matchedToken": "ضِيَآءًۭ",
+      "matchedLemma": "ضِيَآء",
+      "matchedRoot": "ضوا",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 48
+      },
+      "matchedToken": "وَضِيَآءًۭ",
+      "matchedLemma": "ضِيَآء",
+      "matchedRoot": "ضوا",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 35
+      },
+      "matchedToken": "يُضِىٓءُ",
+      "matchedLemma": "أَضَآءَ",
+      "matchedRoot": "ضوا",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 71
+      },
+      "matchedToken": "بِضِيَآءٍ ۖ",
+      "matchedLemma": "ضِيَآء",
+      "matchedRoot": "ضوا",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 17
+    },
+    {
+      "surah": 2,
+      "ayah": 20
+    },
+    {
+      "surah": 10,
+      "ayah": 5
+    },
+    {
+      "surah": 21,
+      "ayah": 48
+    },
+    {
+      "surah": 24,
+      "ayah": 35
+    },
+    {
+      "surah": 28,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

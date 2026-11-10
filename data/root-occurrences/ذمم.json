@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ذمم",
+    "title": "ذمم",
+    "arabicTitle": "ذمم",
+    "roots": [
+      "ذمم"
+    ],
+    "includedLemmas": [
+      "مَذْمُوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 18
+      },
+      "matchedToken": "مَذْمُومًۭا",
+      "matchedLemma": "مَذْمُوم",
+      "matchedRoot": "ذمم",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 22
+      },
+      "matchedToken": "مَذْمُومًۭا",
+      "matchedLemma": "مَذْمُوم",
+      "matchedRoot": "ذمم",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 49
+      },
+      "matchedToken": "مَذْمُومٌۭ",
+      "matchedLemma": "مَذْمُوم",
+      "matchedRoot": "ذمم",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 18
+    },
+    {
+      "surah": 17,
+      "ayah": 22
+    },
+    {
+      "surah": 68,
+      "ayah": 49
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "امت",
+    "title": "امت",
+    "arabicTitle": "امت",
+    "roots": [
+      "امت"
+    ],
+    "includedLemmas": [
+      "أَمْت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 107
+      },
+      "matchedToken": "أَمْتًۭا",
+      "matchedLemma": "أَمْت",
+      "matchedRoot": "امت",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 107
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

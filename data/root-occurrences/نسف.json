@@ -1,0 +1,77 @@
+{
+  "entry": {
+    "slug": "نسف",
+    "title": "نسف",
+    "arabicTitle": "نسف",
+    "roots": [
+      "نسف"
+    ],
+    "includedLemmas": [
+      "نَسْف",
+      "نُسِفَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 97
+      },
+      "matchedToken": "نَسْفًا",
+      "matchedLemma": "نَسْف",
+      "matchedRoot": "نسف",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 105
+      },
+      "matchedToken": "يَنسِفُهَا",
+      "matchedLemma": "نُسِفَتْ",
+      "matchedRoot": "نسف",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 105
+      },
+      "matchedToken": "نَسْفًۭا",
+      "matchedLemma": "نَسْف",
+      "matchedRoot": "نسف",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 10
+      },
+      "matchedToken": "نُسِفَتْ",
+      "matchedLemma": "نُسِفَتْ",
+      "matchedRoot": "نسف",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 97
+    },
+    {
+      "surah": 20,
+      "ayah": 105
+    },
+    {
+      "surah": 77,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "ابل",
+    "title": "ابل",
+    "arabicTitle": "ابل",
+    "roots": [
+      "ابل"
+    ],
+    "includedLemmas": [
+      "أَبَابِيل",
+      "إِبِل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 144
+      },
+      "matchedToken": "ٱلْإِبِلِ",
+      "matchedLemma": "إِبِل",
+      "matchedRoot": "ابل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 17
+      },
+      "matchedToken": "ٱلْإِبِلِ",
+      "matchedLemma": "إِبِل",
+      "matchedRoot": "ابل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 105,
+        "ayah": 3
+      },
+      "matchedToken": "أَبَابِيلَ",
+      "matchedLemma": "أَبَابِيل",
+      "matchedRoot": "ابل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 144
+    },
+    {
+      "surah": 88,
+      "ayah": 17
+    },
+    {
+      "surah": 105,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

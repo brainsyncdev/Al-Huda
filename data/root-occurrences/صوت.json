@@ -1,0 +1,124 @@
+{
+  "entry": {
+    "slug": "صوت",
+    "title": "صوت",
+    "arabicTitle": "صوت",
+    "roots": [
+      "صوت"
+    ],
+    "includedLemmas": [
+      "صَوْت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 64
+      },
+      "matchedToken": "بِصَوْتِكَ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 108
+      },
+      "matchedToken": "ٱلْأَصْوَاتُ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 19
+      },
+      "matchedToken": "صَوْتِكَ ۚ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 19
+      },
+      "matchedToken": "ٱلْأَصْوَٰتِ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 19
+      },
+      "matchedToken": "لَصَوْتُ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 2
+      },
+      "matchedToken": "أَصْوَٰتَكُمْ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 2
+      },
+      "matchedToken": "صَوْتِ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 3
+      },
+      "matchedToken": "أَصْوَٰتَهُمْ",
+      "matchedLemma": "صَوْت",
+      "matchedRoot": "صوت",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 64
+    },
+    {
+      "surah": 20,
+      "ayah": 108
+    },
+    {
+      "surah": 31,
+      "ayah": 19
+    },
+    {
+      "surah": 49,
+      "ayah": 2
+    },
+    {
+      "surah": 49,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

@@ -1,0 +1,49 @@
+{
+  "entry": {
+    "slug": "كدح",
+    "title": "كدح",
+    "arabicTitle": "كدح",
+    "roots": [
+      "كدح"
+    ],
+    "includedLemmas": [
+      "كَادِح",
+      "كَدْح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 6
+      },
+      "matchedToken": "كَادِحٌ",
+      "matchedLemma": "كَادِح",
+      "matchedRoot": "كدح",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 6
+      },
+      "matchedToken": "كَدْحًۭا",
+      "matchedLemma": "كَدْح",
+      "matchedRoot": "كدح",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 84,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,109 @@
+{
+  "entry": {
+    "slug": "لحق",
+    "title": "لحق",
+    "arabicTitle": "لحق",
+    "roots": [
+      "لحق"
+    ],
+    "includedLemmas": [
+      "أَلْحَقْ",
+      "يَلْحَقُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 170
+      },
+      "matchedToken": "يَلْحَقُوا۟",
+      "matchedLemma": "يَلْحَقُ",
+      "matchedRoot": "لحق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 101
+      },
+      "matchedToken": "وَأَلْحِقْنِى",
+      "matchedLemma": "أَلْحَقْ",
+      "matchedRoot": "لحق",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 83
+      },
+      "matchedToken": "وَأَلْحِقْنِى",
+      "matchedLemma": "أَلْحَقْ",
+      "matchedRoot": "لحق",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 27
+      },
+      "matchedToken": "أَلْحَقْتُم",
+      "matchedLemma": "أَلْحَقْ",
+      "matchedRoot": "لحق",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 21
+      },
+      "matchedToken": "أَلْحَقْنَا",
+      "matchedLemma": "أَلْحَقْ",
+      "matchedRoot": "لحق",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 62,
+        "ayah": 3
+      },
+      "matchedToken": "يَلْحَقُوا۟",
+      "matchedLemma": "يَلْحَقُ",
+      "matchedRoot": "لحق",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 170
+    },
+    {
+      "surah": 12,
+      "ayah": 101
+    },
+    {
+      "surah": 26,
+      "ayah": 83
+    },
+    {
+      "surah": 34,
+      "ayah": 27
+    },
+    {
+      "surah": 52,
+      "ayah": 21
+    },
+    {
+      "surah": 62,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

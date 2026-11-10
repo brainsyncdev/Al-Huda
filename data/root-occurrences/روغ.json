@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "روغ",
+    "title": "روغ",
+    "arabicTitle": "روغ",
+    "roots": [
+      "روغ"
+    ],
+    "includedLemmas": [
+      "رَاغَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 91
+      },
+      "matchedToken": "فَرَاغَ",
+      "matchedLemma": "رَاغَ",
+      "matchedRoot": "روغ",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 93
+      },
+      "matchedToken": "فَرَاغَ",
+      "matchedLemma": "رَاغَ",
+      "matchedRoot": "روغ",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 26
+      },
+      "matchedToken": "فَرَاغَ",
+      "matchedLemma": "رَاغَ",
+      "matchedRoot": "روغ",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 91
+    },
+    {
+      "surah": 37,
+      "ayah": 93
+    },
+    {
+      "surah": 51,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

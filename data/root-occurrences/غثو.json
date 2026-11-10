@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "غثو",
+    "title": "غثو",
+    "arabicTitle": "غثو",
+    "roots": [
+      "غثو"
+    ],
+    "includedLemmas": [
+      "غُثَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 41
+      },
+      "matchedToken": "غُثَآءًۭ ۚ",
+      "matchedLemma": "غُثَآء",
+      "matchedRoot": "غثو",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 87,
+        "ayah": 5
+      },
+      "matchedToken": "غُثَآءً",
+      "matchedLemma": "غُثَآء",
+      "matchedRoot": "غثو",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 41
+    },
+    {
+      "surah": 87,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

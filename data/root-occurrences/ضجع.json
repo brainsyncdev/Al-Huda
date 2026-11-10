@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ضجع",
+    "title": "ضجع",
+    "arabicTitle": "ضجع",
+    "roots": [
+      "ضجع"
+    ],
+    "includedLemmas": [
+      "مَضَاجِع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 154
+      },
+      "matchedToken": "مَضَاجِعِهِمْ ۖ",
+      "matchedLemma": "مَضَاجِع",
+      "matchedRoot": "ضجع",
+      "wordPosition": 62
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 34
+      },
+      "matchedToken": "ٱلْمَضَاجِعِ",
+      "matchedLemma": "مَضَاجِع",
+      "matchedRoot": "ضجع",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلْمَضَاجِعِ",
+      "matchedLemma": "مَضَاجِع",
+      "matchedRoot": "ضجع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 154
+    },
+    {
+      "surah": 4,
+      "ayah": 34
+    },
+    {
+      "surah": 32,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

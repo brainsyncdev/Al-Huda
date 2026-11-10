@@ -1,0 +1,154 @@
+{
+  "entry": {
+    "slug": "كفل",
+    "title": "كفل",
+    "arabicTitle": "كفل",
+    "roots": [
+      "كفل"
+    ],
+    "includedLemmas": [
+      "أَكْفِلْ",
+      "كَفِيل",
+      "كَفَّلَ",
+      "كِفْل",
+      "يَكْفُلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 37
+      },
+      "matchedToken": "وَكَفَّلَهَا",
+      "matchedLemma": "كَفَّلَ",
+      "matchedRoot": "كفل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 44
+      },
+      "matchedToken": "يَكْفُلُ",
+      "matchedLemma": "يَكْفُلُ",
+      "matchedRoot": "كفل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 91
+      },
+      "matchedToken": "كَفِيلًا ۚ",
+      "matchedLemma": "كَفِيل",
+      "matchedRoot": "كفل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 40
+      },
+      "matchedToken": "يَكْفُلُهُۥ ۖ",
+      "matchedLemma": "يَكْفُلُ",
+      "matchedRoot": "كفل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 85
+      },
+      "matchedToken": "ٱلْكِفْلِ ۖ",
+      "matchedLemma": "كِفْل",
+      "matchedRoot": "كفل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 12
+      },
+      "matchedToken": "يَكْفُلُونَهُۥ",
+      "matchedLemma": "يَكْفُلُ",
+      "matchedRoot": "كفل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 23
+      },
+      "matchedToken": "أَكْفِلْنِيهَا",
+      "matchedLemma": "أَكْفِلْ",
+      "matchedRoot": "كفل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 48
+      },
+      "matchedToken": "ٱلْكِفْلِ ۖ",
+      "matchedLemma": "كِفْل",
+      "matchedRoot": "كفل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 28
+      },
+      "matchedToken": "كِفْلَيْنِ",
+      "matchedLemma": "كِفْل",
+      "matchedRoot": "كفل",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 37
+    },
+    {
+      "surah": 3,
+      "ayah": 44
+    },
+    {
+      "surah": 16,
+      "ayah": 91
+    },
+    {
+      "surah": 20,
+      "ayah": 40
+    },
+    {
+      "surah": 21,
+      "ayah": 85
+    },
+    {
+      "surah": 28,
+      "ayah": 12
+    },
+    {
+      "surah": 38,
+      "ayah": 23
+    },
+    {
+      "surah": 38,
+      "ayah": 48
+    },
+    {
+      "surah": 57,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "عيل",
+    "title": "عيل",
+    "arabicTitle": "عيل",
+    "roots": [
+      "عيل"
+    ],
+    "includedLemmas": [
+      "عَآئِل",
+      "عَيْلَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 28
+      },
+      "matchedToken": "عَيْلَةًۭ",
+      "matchedLemma": "عَيْلَة",
+      "matchedRoot": "عيل",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 93,
+        "ayah": 8
+      },
+      "matchedToken": "عَآئِلًۭا",
+      "matchedLemma": "عَآئِل",
+      "matchedRoot": "عيل",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 28
+    },
+    {
+      "surah": 93,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

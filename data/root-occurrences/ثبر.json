@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "ثبر",
+    "title": "ثبر",
+    "arabicTitle": "ثبر",
+    "roots": [
+      "ثبر"
+    ],
+    "includedLemmas": [
+      "ثُبُور",
+      "مَثْبُور"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 102
+      },
+      "matchedToken": "مَثْبُورًۭا",
+      "matchedLemma": "مَثْبُور",
+      "matchedRoot": "ثبر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 13
+      },
+      "matchedToken": "ثُبُورًۭا",
+      "matchedLemma": "ثُبُور",
+      "matchedRoot": "ثبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 14
+      },
+      "matchedToken": "ثُبُورًۭا",
+      "matchedLemma": "ثُبُور",
+      "matchedRoot": "ثبر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 14
+      },
+      "matchedToken": "ثُبُورًۭا",
+      "matchedLemma": "ثُبُور",
+      "matchedRoot": "ثبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 11
+      },
+      "matchedToken": "ثُبُورًۭا",
+      "matchedLemma": "ثُبُور",
+      "matchedRoot": "ثبر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 102
+    },
+    {
+      "surah": 25,
+      "ayah": 13
+    },
+    {
+      "surah": 25,
+      "ayah": 14
+    },
+    {
+      "surah": 84,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

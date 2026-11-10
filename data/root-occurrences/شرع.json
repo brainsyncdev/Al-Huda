@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "شرع",
+    "title": "شرع",
+    "arabicTitle": "شرع",
+    "roots": [
+      "شرع"
+    ],
+    "includedLemmas": [
+      "شَرَعَ",
+      "شَرِيعَة",
+      "شُرَّع",
+      "شِرْعَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 48
+      },
+      "matchedToken": "شِرْعَةًۭ",
+      "matchedLemma": "شِرْعَة",
+      "matchedRoot": "شرع",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 163
+      },
+      "matchedToken": "شُرَّعًۭا",
+      "matchedLemma": "شُرَّع",
+      "matchedRoot": "شرع",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 13
+      },
+      "matchedToken": "۞ شَرَعَ",
+      "matchedLemma": "شَرَعَ",
+      "matchedRoot": "شرع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 21
+      },
+      "matchedToken": "شَرَعُوا۟",
+      "matchedLemma": "شَرَعَ",
+      "matchedRoot": "شرع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 18
+      },
+      "matchedToken": "شَرِيعَةٍۢ",
+      "matchedLemma": "شَرِيعَة",
+      "matchedRoot": "شرع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 48
+    },
+    {
+      "surah": 7,
+      "ayah": 163
+    },
+    {
+      "surah": 42,
+      "ayah": 13
+    },
+    {
+      "surah": 42,
+      "ayah": 21
+    },
+    {
+      "surah": 45,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "طرو",
+    "title": "طرو",
+    "arabicTitle": "طرو",
+    "roots": [
+      "طرو"
+    ],
+    "includedLemmas": [
+      "طَرِيّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 14
+      },
+      "matchedToken": "طَرِيًّۭا",
+      "matchedLemma": "طَرِيّ",
+      "matchedRoot": "طرو",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "طَرِيًّۭا",
+      "matchedLemma": "طَرِيّ",
+      "matchedRoot": "طرو",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 14
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,93 @@
+{
+  "entry": {
+    "slug": "مدد",
+    "title": "مدد",
+    "arabicTitle": "مدد",
+    "roots": [
+      "مدد"
+    ],
+    "includedLemmas": [
+      "مَدَد",
+      "مِدَاد",
+      "مَّمْدُود",
+      "مُّمَدَّدَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 109
+      },
+      "matchedToken": "مِدَادًۭا",
+      "matchedLemma": "مِدَاد",
+      "matchedRoot": "مدد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 109
+      },
+      "matchedToken": "مَدَدًۭا",
+      "matchedLemma": "مَدَد",
+      "matchedRoot": "مدد",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 30
+      },
+      "matchedToken": "مَّمْدُودٍۢ",
+      "matchedLemma": "مَّمْدُود",
+      "matchedRoot": "مدد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 12
+      },
+      "matchedToken": "مَّمْدُودًۭا",
+      "matchedLemma": "مَّمْدُود",
+      "matchedRoot": "مدد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 9
+      },
+      "matchedToken": "مُّمَدَّدَةٍۭ",
+      "matchedLemma": "مُّمَدَّدَة",
+      "matchedRoot": "مدد",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 109
+    },
+    {
+      "surah": 56,
+      "ayah": 30
+    },
+    {
+      "surah": 74,
+      "ayah": 12
+    },
+    {
+      "surah": 104,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

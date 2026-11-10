@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "رفق",
+    "title": "رفق",
+    "arabicTitle": "رفق",
+    "roots": [
+      "رفق"
+    ],
+    "includedLemmas": [
+      "رَفِيق",
+      "مَرَافِق",
+      "مُرْتَفَق",
+      "مِّرْفَق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 69
+      },
+      "matchedToken": "رَفِيقًۭا",
+      "matchedLemma": "رَفِيق",
+      "matchedRoot": "رفق",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 6
+      },
+      "matchedToken": "ٱلْمَرَافِقِ",
+      "matchedLemma": "مَرَافِق",
+      "matchedRoot": "رفق",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 16
+      },
+      "matchedToken": "مِّرْفَقًۭا",
+      "matchedLemma": "مِّرْفَق",
+      "matchedRoot": "رفق",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "مُرْتَفَقًا",
+      "matchedLemma": "مُرْتَفَق",
+      "matchedRoot": "رفق",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 31
+      },
+      "matchedToken": "مُرْتَفَقًۭا",
+      "matchedLemma": "مُرْتَفَق",
+      "matchedRoot": "رفق",
+      "wordPosition": 28
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 69
+    },
+    {
+      "surah": 5,
+      "ayah": 6
+    },
+    {
+      "surah": 18,
+      "ayah": 16
+    },
+    {
+      "surah": 18,
+      "ayah": 29
+    },
+    {
+      "surah": 18,
+      "ayah": 31
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

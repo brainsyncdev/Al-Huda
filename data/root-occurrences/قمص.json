@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "slug": "قمص",
+    "title": "قمص",
+    "arabicTitle": "قمص",
+    "roots": [
+      "قمص"
+    ],
+    "includedLemmas": [
+      "قَمِيص"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 18
+      },
+      "matchedToken": "قَمِيصِهِۦ",
+      "matchedLemma": "قَمِيص",
+      "matchedRoot": "قمص",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 25
+      },
+      "matchedToken": "قَمِيصَهُۥ",
+      "matchedLemma": "قَمِيص",
+      "matchedRoot": "قمص",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 26
+      },
+      "matchedToken": "قَمِيصُهُۥ",
+      "matchedLemma": "قَمِيص",
+      "matchedRoot": "قمص",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 27
+      },
+      "matchedToken": "قَمِيصُهُۥ",
+      "matchedLemma": "قَمِيص",
+      "matchedRoot": "قمص",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 28
+      },
+      "matchedToken": "قَمِيصَهُۥ",
+      "matchedLemma": "قَمِيص",
+      "matchedRoot": "قمص",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 93
+      },
+      "matchedToken": "بِقَمِيصِى",
+      "matchedLemma": "قَمِيص",
+      "matchedRoot": "قمص",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 18
+    },
+    {
+      "surah": 12,
+      "ayah": 25
+    },
+    {
+      "surah": 12,
+      "ayah": 26
+    },
+    {
+      "surah": 12,
+      "ayah": 27
+    },
+    {
+      "surah": 12,
+      "ayah": 28
+    },
+    {
+      "surah": 12,
+      "ayah": 93
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

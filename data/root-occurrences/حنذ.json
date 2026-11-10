@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "حنذ",
+    "title": "حنذ",
+    "arabicTitle": "حنذ",
+    "roots": [
+      "حنذ"
+    ],
+    "includedLemmas": [
+      "حَنِيذ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 69
+      },
+      "matchedToken": "حَنِيذٍۢ",
+      "matchedLemma": "حَنِيذ",
+      "matchedRoot": "حنذ",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 69
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

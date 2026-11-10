@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "غوص",
+    "title": "غوص",
+    "arabicTitle": "غوص",
+    "roots": [
+      "غوص"
+    ],
+    "includedLemmas": [
+      "غَوَّاص",
+      "يَغُوصُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 82
+      },
+      "matchedToken": "يَغُوصُونَ",
+      "matchedLemma": "يَغُوصُ",
+      "matchedRoot": "غوص",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 37
+      },
+      "matchedToken": "وَغَوَّاصٍۢ",
+      "matchedLemma": "غَوَّاص",
+      "matchedRoot": "غوص",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 82
+    },
+    {
+      "surah": 38,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

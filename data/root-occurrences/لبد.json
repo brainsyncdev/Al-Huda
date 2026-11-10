@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "لبد",
+    "title": "لبد",
+    "arabicTitle": "لبد",
+    "roots": [
+      "لبد"
+    ],
+    "includedLemmas": [
+      "لِبَد",
+      "لُّبَد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 19
+      },
+      "matchedToken": "لِبَدًۭا",
+      "matchedLemma": "لِبَد",
+      "matchedRoot": "لبد",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 90,
+        "ayah": 6
+      },
+      "matchedToken": "لُّبَدًا",
+      "matchedLemma": "لُّبَد",
+      "matchedRoot": "لبد",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 72,
+      "ayah": 19
+    },
+    {
+      "surah": 90,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "حظر",
+    "title": "حظر",
+    "arabicTitle": "حظر",
+    "roots": [
+      "حظر"
+    ],
+    "includedLemmas": [
+      "مَحْظُور",
+      "مُحْتَظِر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 20
+      },
+      "matchedToken": "مَحْظُورًا",
+      "matchedLemma": "مَحْظُور",
+      "matchedRoot": "حظر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 31
+      },
+      "matchedToken": "ٱلْمُحْتَظِرِ",
+      "matchedLemma": "مُحْتَظِر",
+      "matchedRoot": "حظر",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 20
+    },
+    {
+      "surah": 54,
+      "ayah": 31
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

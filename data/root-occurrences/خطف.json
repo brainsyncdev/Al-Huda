@@ -1,0 +1,120 @@
+{
+  "entry": {
+    "slug": "خطف",
+    "title": "خطف",
+    "arabicTitle": "خطف",
+    "roots": [
+      "خطف"
+    ],
+    "includedLemmas": [
+      "خَطِفَ",
+      "خَطْفَة",
+      "يَتَخَطَّفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 20
+      },
+      "matchedToken": "يَخْطَفُ",
+      "matchedLemma": "خَطِفَ",
+      "matchedRoot": "خطف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 26
+      },
+      "matchedToken": "يَتَخَطَّفَكُمُ",
+      "matchedLemma": "يَتَخَطَّفَ",
+      "matchedRoot": "خطف",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 31
+      },
+      "matchedToken": "فَتَخْطَفُهُ",
+      "matchedLemma": "خَطِفَ",
+      "matchedRoot": "خطف",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 57
+      },
+      "matchedToken": "نُتَخَطَّفْ",
+      "matchedLemma": "يَتَخَطَّفَ",
+      "matchedRoot": "خطف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 67
+      },
+      "matchedToken": "وَيُتَخَطَّفُ",
+      "matchedLemma": "يَتَخَطَّفَ",
+      "matchedRoot": "خطف",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 10
+      },
+      "matchedToken": "خَطِفَ",
+      "matchedLemma": "خَطِفَ",
+      "matchedRoot": "خطف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْخَطْفَةَ",
+      "matchedLemma": "خَطْفَة",
+      "matchedRoot": "خطف",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 20
+    },
+    {
+      "surah": 8,
+      "ayah": 26
+    },
+    {
+      "surah": 22,
+      "ayah": 31
+    },
+    {
+      "surah": 28,
+      "ayah": 57
+    },
+    {
+      "surah": 29,
+      "ayah": 67
+    },
+    {
+      "surah": 37,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

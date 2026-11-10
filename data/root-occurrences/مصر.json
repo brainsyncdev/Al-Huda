@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "مصر",
+    "title": "مصر",
+    "arabicTitle": "مصر",
+    "roots": [
+      "مصر"
+    ],
+    "includedLemmas": [
+      "مِصْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 61
+      },
+      "matchedToken": "مِصْرًۭا",
+      "matchedLemma": "مِصْر",
+      "matchedRoot": "مصر",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 87
+      },
+      "matchedToken": "بِمِصْرَ",
+      "matchedLemma": "مِصْر",
+      "matchedRoot": "مصر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 21
+      },
+      "matchedToken": "مِّصْرَ",
+      "matchedLemma": "مِصْر",
+      "matchedRoot": "مصر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 99
+      },
+      "matchedToken": "مِصْرَ",
+      "matchedLemma": "مِصْر",
+      "matchedRoot": "مصر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 51
+      },
+      "matchedToken": "مِصْرَ",
+      "matchedLemma": "مِصْر",
+      "matchedRoot": "مصر",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 61
+    },
+    {
+      "surah": 10,
+      "ayah": 87
+    },
+    {
+      "surah": 12,
+      "ayah": 21
+    },
+    {
+      "surah": 12,
+      "ayah": 99
+    },
+    {
+      "surah": 43,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

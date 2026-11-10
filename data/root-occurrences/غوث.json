@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "غوث",
+    "title": "غوث",
+    "arabicTitle": "غوث",
+    "roots": [
+      "غوث"
+    ],
+    "includedLemmas": [
+      "اسْتَغَٰثَ",
+      "يُغَاثُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 9
+      },
+      "matchedToken": "تَسْتَغِيثُونَ",
+      "matchedLemma": "اسْتَغَٰثَ",
+      "matchedRoot": "غوث",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "يَسْتَغِيثُوا۟",
+      "matchedLemma": "اسْتَغَٰثَ",
+      "matchedRoot": "غوث",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "يُغَاثُوا۟",
+      "matchedLemma": "يُغَاثُ",
+      "matchedRoot": "غوث",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 15
+      },
+      "matchedToken": "فَٱسْتَغَـٰثَهُ",
+      "matchedLemma": "اسْتَغَٰثَ",
+      "matchedRoot": "غوث",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 17
+      },
+      "matchedToken": "يَسْتَغِيثَانِ",
+      "matchedLemma": "اسْتَغَٰثَ",
+      "matchedRoot": "غوث",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 9
+    },
+    {
+      "surah": 18,
+      "ayah": 29
+    },
+    {
+      "surah": 28,
+      "ayah": 15
+    },
+    {
+      "surah": 46,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

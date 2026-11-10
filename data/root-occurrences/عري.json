@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "عري",
+    "title": "عري",
+    "arabicTitle": "عري",
+    "roots": [
+      "عري"
+    ],
+    "includedLemmas": [
+      "تَعْرَىٰ",
+      "عَرَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 118
+      },
+      "matchedToken": "تَعْرَىٰ",
+      "matchedLemma": "تَعْرَىٰ",
+      "matchedRoot": "عري",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 145
+      },
+      "matchedToken": "بِٱلْعَرَآءِ",
+      "matchedLemma": "عَرَآء",
+      "matchedRoot": "عري",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 49
+      },
+      "matchedToken": "بِٱلْعَرَآءِ",
+      "matchedLemma": "عَرَآء",
+      "matchedRoot": "عري",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 118
+    },
+    {
+      "surah": 37,
+      "ayah": 145
+    },
+    {
+      "surah": 68,
+      "ayah": 49
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

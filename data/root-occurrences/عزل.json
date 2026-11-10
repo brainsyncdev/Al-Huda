@@ -1,0 +1,167 @@
+{
+  "entry": {
+    "slug": "عزل",
+    "title": "عزل",
+    "arabicTitle": "عزل",
+    "roots": [
+      "عزل"
+    ],
+    "includedLemmas": [
+      "اعْتَزَلَ",
+      "عَزَلْ",
+      "مَعْزُولُون",
+      "مَعْزِل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 222
+      },
+      "matchedToken": "فَٱعْتَزِلُوا۟",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 90
+      },
+      "matchedToken": "ٱعْتَزَلُوكُمْ",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 91
+      },
+      "matchedToken": "يَعْتَزِلُوكُمْ",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 42
+      },
+      "matchedToken": "مَعْزِلٍۢ",
+      "matchedLemma": "مَعْزِل",
+      "matchedRoot": "عزل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 16
+      },
+      "matchedToken": "ٱعْتَزَلْتُمُوهُمْ",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 48
+      },
+      "matchedToken": "وَأَعْتَزِلُكُمْ",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 49
+      },
+      "matchedToken": "ٱعْتَزَلَهُمْ",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 212
+      },
+      "matchedToken": "لَمَعْزُولُونَ",
+      "matchedLemma": "مَعْزُولُون",
+      "matchedRoot": "عزل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 51
+      },
+      "matchedToken": "عَزَلْتَ",
+      "matchedLemma": "عَزَلْ",
+      "matchedRoot": "عزل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 21
+      },
+      "matchedToken": "فَٱعْتَزِلُونِ",
+      "matchedLemma": "اعْتَزَلَ",
+      "matchedRoot": "عزل",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 222
+    },
+    {
+      "surah": 4,
+      "ayah": 90
+    },
+    {
+      "surah": 4,
+      "ayah": 91
+    },
+    {
+      "surah": 11,
+      "ayah": 42
+    },
+    {
+      "surah": 18,
+      "ayah": 16
+    },
+    {
+      "surah": 19,
+      "ayah": 48
+    },
+    {
+      "surah": 19,
+      "ayah": 49
+    },
+    {
+      "surah": 26,
+      "ayah": 212
+    },
+    {
+      "surah": 33,
+      "ayah": 51
+    },
+    {
+      "surah": 44,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

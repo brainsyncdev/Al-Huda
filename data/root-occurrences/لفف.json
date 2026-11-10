@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "لفف",
+    "title": "لفف",
+    "arabicTitle": "لفف",
+    "roots": [
+      "لفف"
+    ],
+    "includedLemmas": [
+      "أَلْفَاف",
+      "لَفِيف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 104
+      },
+      "matchedToken": "لَفِيفًۭا",
+      "matchedLemma": "لَفِيف",
+      "matchedRoot": "لفف",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 16
+      },
+      "matchedToken": "أَلْفَافًا",
+      "matchedLemma": "أَلْفَاف",
+      "matchedRoot": "لفف",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 104
+    },
+    {
+      "surah": 78,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

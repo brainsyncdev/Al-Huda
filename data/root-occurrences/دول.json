@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "دول",
+    "title": "دول",
+    "arabicTitle": "دول",
+    "roots": [
+      "دول"
+    ],
+    "includedLemmas": [
+      "دُولَة",
+      "نُدَاوِلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 140
+      },
+      "matchedToken": "نُدَاوِلُهَا",
+      "matchedLemma": "نُدَاوِلُ",
+      "matchedRoot": "دول",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 7
+      },
+      "matchedToken": "دُولَةًۢ",
+      "matchedLemma": "دُولَة",
+      "matchedRoot": "دول",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 140
+    },
+    {
+      "surah": 59,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

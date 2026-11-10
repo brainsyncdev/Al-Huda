@@ -1,0 +1,76 @@
+{
+  "entry": {
+    "slug": "طبق",
+    "title": "طبق",
+    "arabicTitle": "طبق",
+    "roots": [
+      "طبق"
+    ],
+    "includedLemmas": [
+      "طَبَق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 3
+      },
+      "matchedToken": "طِبَاقًۭا ۖ",
+      "matchedLemma": "طَبَق",
+      "matchedRoot": "طبق",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 71,
+        "ayah": 15
+      },
+      "matchedToken": "طِبَاقًۭا",
+      "matchedLemma": "طَبَق",
+      "matchedRoot": "طبق",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 19
+      },
+      "matchedToken": "طَبَقًا",
+      "matchedLemma": "طَبَق",
+      "matchedRoot": "طبق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 19
+      },
+      "matchedToken": "طَبَقٍۢ",
+      "matchedLemma": "طَبَق",
+      "matchedRoot": "طبق",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 67,
+      "ayah": 3
+    },
+    {
+      "surah": 71,
+      "ayah": 15
+    },
+    {
+      "surah": 84,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

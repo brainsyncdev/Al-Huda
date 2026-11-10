@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "بول",
+    "title": "بول",
+    "arabicTitle": "بول",
+    "roots": [
+      "بول"
+    ],
+    "includedLemmas": [
+      "بَال"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 50
+      },
+      "matchedToken": "بَالُ",
+      "matchedLemma": "بَال",
+      "matchedRoot": "بول",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 51
+      },
+      "matchedToken": "بَالُ",
+      "matchedLemma": "بَال",
+      "matchedRoot": "بول",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 2
+      },
+      "matchedToken": "بَالَهُمْ",
+      "matchedLemma": "بَال",
+      "matchedRoot": "بول",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 5
+      },
+      "matchedToken": "بَالَهُمْ",
+      "matchedLemma": "بَال",
+      "matchedRoot": "بول",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 50
+    },
+    {
+      "surah": 20,
+      "ayah": 51
+    },
+    {
+      "surah": 47,
+      "ayah": 2
+    },
+    {
+      "surah": 47,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

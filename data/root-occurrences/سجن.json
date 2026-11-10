@@ -1,0 +1,167 @@
+{
+  "entry": {
+    "slug": "سجن",
+    "title": "سجن",
+    "arabicTitle": "سجن",
+    "roots": [
+      "سجن"
+    ],
+    "includedLemmas": [
+      "سِجِّين",
+      "سِّجْن",
+      "مَسْجُونِين",
+      "يُسْجَنَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 33
+      },
+      "matchedToken": "ٱلسِّجْنُ",
+      "matchedLemma": "سِّجْن",
+      "matchedRoot": "سجن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 35
+      },
+      "matchedToken": "لَيَسْجُنُنَّهُۥ",
+      "matchedLemma": "يُسْجَنَ",
+      "matchedRoot": "سجن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 36
+      },
+      "matchedToken": "ٱلسِّجْنَ",
+      "matchedLemma": "سِّجْن",
+      "matchedRoot": "سجن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 39
+      },
+      "matchedToken": "ٱلسِّجْنِ",
+      "matchedLemma": "سِّجْن",
+      "matchedRoot": "سجن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 41
+      },
+      "matchedToken": "ٱلسِّجْنِ",
+      "matchedLemma": "سِّجْن",
+      "matchedRoot": "سجن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 42
+      },
+      "matchedToken": "ٱلسِّجْنِ",
+      "matchedLemma": "سِّجْن",
+      "matchedRoot": "سجن",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 100
+      },
+      "matchedToken": "ٱلسِّجْنِ",
+      "matchedLemma": "سِّجْن",
+      "matchedRoot": "سجن",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 29
+      },
+      "matchedToken": "ٱلْمَسْجُونِينَ",
+      "matchedLemma": "مَسْجُونِين",
+      "matchedRoot": "سجن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 7
+      },
+      "matchedToken": "سِجِّينٍۢ",
+      "matchedLemma": "سِجِّين",
+      "matchedRoot": "سجن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 8
+      },
+      "matchedToken": "سِجِّينٌۭ",
+      "matchedLemma": "سِجِّين",
+      "matchedRoot": "سجن",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 33
+    },
+    {
+      "surah": 12,
+      "ayah": 35
+    },
+    {
+      "surah": 12,
+      "ayah": 36
+    },
+    {
+      "surah": 12,
+      "ayah": 39
+    },
+    {
+      "surah": 12,
+      "ayah": 41
+    },
+    {
+      "surah": 12,
+      "ayah": 42
+    },
+    {
+      "surah": 12,
+      "ayah": 100
+    },
+    {
+      "surah": 26,
+      "ayah": 29
+    },
+    {
+      "surah": 83,
+      "ayah": 7
+    },
+    {
+      "surah": 83,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

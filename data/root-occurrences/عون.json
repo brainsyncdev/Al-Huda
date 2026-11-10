@@ -1,0 +1,163 @@
+{
+  "entry": {
+    "slug": "عون",
+    "title": "عون",
+    "arabicTitle": "عون",
+    "roots": [
+      "عون"
+    ],
+    "includedLemmas": [
+      "أَعَانَ",
+      "اسْتَعِينُ",
+      "تَعَاوَنُ",
+      "مُسْتَعَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 1,
+        "ayah": 5
+      },
+      "matchedToken": "نَسْتَعِينُ",
+      "matchedLemma": "اسْتَعِينُ",
+      "matchedRoot": "عون",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 45
+      },
+      "matchedToken": "وَٱسْتَعِينُوا۟",
+      "matchedLemma": "اسْتَعِينُ",
+      "matchedRoot": "عون",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 153
+      },
+      "matchedToken": "ٱسْتَعِينُوا۟",
+      "matchedLemma": "اسْتَعِينُ",
+      "matchedRoot": "عون",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 2
+      },
+      "matchedToken": "وَتَعَاوَنُوا۟",
+      "matchedLemma": "تَعَاوَنُ",
+      "matchedRoot": "عون",
+      "wordPosition": 38
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 2
+      },
+      "matchedToken": "تَعَاوَنُوا۟",
+      "matchedLemma": "تَعَاوَنُ",
+      "matchedRoot": "عون",
+      "wordPosition": 43
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 128
+      },
+      "matchedToken": "ٱسْتَعِينُوا۟",
+      "matchedLemma": "اسْتَعِينُ",
+      "matchedRoot": "عون",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلْمُسْتَعَانُ",
+      "matchedLemma": "مُسْتَعَان",
+      "matchedRoot": "عون",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 95
+      },
+      "matchedToken": "فَأَعِينُونِى",
+      "matchedLemma": "أَعَانَ",
+      "matchedRoot": "عون",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 112
+      },
+      "matchedToken": "ٱلْمُسْتَعَانُ",
+      "matchedLemma": "مُسْتَعَان",
+      "matchedRoot": "عون",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 4
+      },
+      "matchedToken": "وَأَعَانَهُۥ",
+      "matchedLemma": "أَعَانَ",
+      "matchedRoot": "عون",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 1,
+      "ayah": 5
+    },
+    {
+      "surah": 2,
+      "ayah": 45
+    },
+    {
+      "surah": 2,
+      "ayah": 153
+    },
+    {
+      "surah": 5,
+      "ayah": 2
+    },
+    {
+      "surah": 7,
+      "ayah": 128
+    },
+    {
+      "surah": 12,
+      "ayah": 18
+    },
+    {
+      "surah": 18,
+      "ayah": 95
+    },
+    {
+      "surah": 21,
+      "ayah": 112
+    },
+    {
+      "surah": 25,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

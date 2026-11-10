@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "غلو",
+    "title": "غلو",
+    "arabicTitle": "غلو",
+    "roots": [
+      "غلو"
+    ],
+    "includedLemmas": [
+      "تَغْلُو"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 171
+      },
+      "matchedToken": "تَغْلُوا۟",
+      "matchedLemma": "تَغْلُو",
+      "matchedRoot": "غلو",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 77
+      },
+      "matchedToken": "تَغْلُوا۟",
+      "matchedLemma": "تَغْلُو",
+      "matchedRoot": "غلو",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 171
+    },
+    {
+      "surah": 5,
+      "ayah": 77
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

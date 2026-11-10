@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "عمد",
+    "title": "عمد",
+    "arabicTitle": "عمد",
+    "roots": [
+      "عمد"
+    ],
+    "includedLemmas": [
+      "عَمَد",
+      "عِمَاد",
+      "مُّتَعَمِّد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 93
+      },
+      "matchedToken": "مُّتَعَمِّدًۭا",
+      "matchedLemma": "مُّتَعَمِّد",
+      "matchedRoot": "عمد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 95
+      },
+      "matchedToken": "مُّتَعَمِّدًۭا",
+      "matchedLemma": "مُّتَعَمِّد",
+      "matchedRoot": "عمد",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 2
+      },
+      "matchedToken": "عَمَدٍۢ",
+      "matchedLemma": "عَمَد",
+      "matchedRoot": "عمد",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 10
+      },
+      "matchedToken": "عَمَدٍۢ",
+      "matchedLemma": "عَمَد",
+      "matchedRoot": "عمد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 89,
+        "ayah": 7
+      },
+      "matchedToken": "ٱلْعِمَادِ",
+      "matchedLemma": "عِمَاد",
+      "matchedRoot": "عمد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 9
+      },
+      "matchedToken": "عَمَدٍۢ",
+      "matchedLemma": "عَمَد",
+      "matchedRoot": "عمد",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 93
+    },
+    {
+      "surah": 5,
+      "ayah": 95
+    },
+    {
+      "surah": 13,
+      "ayah": 2
+    },
+    {
+      "surah": 31,
+      "ayah": 10
+    },
+    {
+      "surah": 89,
+      "ayah": 7
+    },
+    {
+      "surah": 104,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

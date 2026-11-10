@@ -1,0 +1,125 @@
+{
+  "entry": {
+    "slug": "عقد",
+    "title": "عقد",
+    "arabicTitle": "عقد",
+    "roots": [
+      "عقد"
+    ],
+    "includedLemmas": [
+      "عَقَدَتْ",
+      "عَقَّد",
+      "عُقُود",
+      "عُقْدَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 235
+      },
+      "matchedToken": "عُقْدَةَ",
+      "matchedLemma": "عُقْدَة",
+      "matchedRoot": "عقد",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 237
+      },
+      "matchedToken": "عُقْدَةُ",
+      "matchedLemma": "عُقْدَة",
+      "matchedRoot": "عقد",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 33
+      },
+      "matchedToken": "عَقَدَتْ",
+      "matchedLemma": "عَقَدَتْ",
+      "matchedRoot": "عقد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 1
+      },
+      "matchedToken": "بِٱلْعُقُودِ ۚ",
+      "matchedLemma": "عُقُود",
+      "matchedRoot": "عقد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 89
+      },
+      "matchedToken": "عَقَّدتُّمُ",
+      "matchedLemma": "عَقَّد",
+      "matchedRoot": "عقد",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 27
+      },
+      "matchedToken": "عُقْدَةًۭ",
+      "matchedLemma": "عُقْدَة",
+      "matchedRoot": "عقد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 113,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْعُقَدِ",
+      "matchedLemma": "عُقْدَة",
+      "matchedRoot": "عقد",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 235
+    },
+    {
+      "surah": 2,
+      "ayah": 237
+    },
+    {
+      "surah": 4,
+      "ayah": 33
+    },
+    {
+      "surah": 5,
+      "ayah": 1
+    },
+    {
+      "surah": 5,
+      "ayah": 89
+    },
+    {
+      "surah": 20,
+      "ayah": 27
+    },
+    {
+      "surah": 113,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

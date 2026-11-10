@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جفو",
+    "title": "جفو",
+    "arabicTitle": "جفو",
+    "roots": [
+      "جفو"
+    ],
+    "includedLemmas": [
+      "تَتَجَافَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 16
+      },
+      "matchedToken": "تَتَجَافَىٰ",
+      "matchedLemma": "تَتَجَافَىٰ",
+      "matchedRoot": "جفو",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 32,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

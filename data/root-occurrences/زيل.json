@@ -1,0 +1,151 @@
+{
+  "entry": {
+    "slug": "زيل",
+    "title": "زيل",
+    "arabicTitle": "زيل",
+    "roots": [
+      "زيل"
+    ],
+    "includedLemmas": [
+      "زَالَت",
+      "زَيَّلْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 217
+      },
+      "matchedToken": "يَزَالُونَ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 13
+      },
+      "matchedToken": "تَزَالُ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 110
+      },
+      "matchedToken": "يَزَالُ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 28
+      },
+      "matchedToken": "فَزَيَّلْنَا",
+      "matchedLemma": "زَيَّلْ",
+      "matchedRoot": "زيل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 118
+      },
+      "matchedToken": "يَزَالُونَ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 31
+      },
+      "matchedToken": "يَزَالُ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 15
+      },
+      "matchedToken": "زَالَت",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 55
+      },
+      "matchedToken": "يَزَالُ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 34
+      },
+      "matchedToken": "زِلْتُمْ",
+      "matchedLemma": "زَالَت",
+      "matchedRoot": "زيل",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 217
+    },
+    {
+      "surah": 5,
+      "ayah": 13
+    },
+    {
+      "surah": 9,
+      "ayah": 110
+    },
+    {
+      "surah": 10,
+      "ayah": 28
+    },
+    {
+      "surah": 11,
+      "ayah": 118
+    },
+    {
+      "surah": 13,
+      "ayah": 31
+    },
+    {
+      "surah": 21,
+      "ayah": 15
+    },
+    {
+      "surah": 22,
+      "ayah": 55
+    },
+    {
+      "surah": 40,
+      "ayah": 34
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

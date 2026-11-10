@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "ظفر",
+    "title": "ظفر",
+    "arabicTitle": "ظفر",
+    "roots": [
+      "ظفر"
+    ],
+    "includedLemmas": [
+      "أَظْفَرَ",
+      "ظُفُر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 146
+      },
+      "matchedToken": "ظُفُرٍۢ ۖ",
+      "matchedLemma": "ظُفُر",
+      "matchedRoot": "ظفر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 24
+      },
+      "matchedToken": "أَظْفَرَكُمْ",
+      "matchedLemma": "أَظْفَرَ",
+      "matchedRoot": "ظفر",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 146
+    },
+    {
+      "surah": 48,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

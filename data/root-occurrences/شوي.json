@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "شوي",
+    "title": "شوي",
+    "arabicTitle": "شوي",
+    "roots": [
+      "شوي"
+    ],
+    "includedLemmas": [
+      "شَّوَىٰ",
+      "يَشْوِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "يَشْوِى",
+      "matchedLemma": "يَشْوِى",
+      "matchedRoot": "شوي",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 16
+      },
+      "matchedToken": "لِّلشَّوَىٰ",
+      "matchedLemma": "شَّوَىٰ",
+      "matchedRoot": "شوي",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 29
+    },
+    {
+      "surah": 70,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

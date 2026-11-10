@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "صنم",
+    "title": "صنم",
+    "arabicTitle": "صنم",
+    "roots": [
+      "صنم"
+    ],
+    "includedLemmas": [
+      "أَصْنَام"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 74
+      },
+      "matchedToken": "أَصْنَامًا",
+      "matchedLemma": "أَصْنَام",
+      "matchedRoot": "صنم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 138
+      },
+      "matchedToken": "أَصْنَامٍۢ",
+      "matchedLemma": "أَصْنَام",
+      "matchedRoot": "صنم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 35
+      },
+      "matchedToken": "ٱلْأَصْنَامَ",
+      "matchedLemma": "أَصْنَام",
+      "matchedRoot": "صنم",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 57
+      },
+      "matchedToken": "أَصْنَـٰمَكُم",
+      "matchedLemma": "أَصْنَام",
+      "matchedRoot": "صنم",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 71
+      },
+      "matchedToken": "أَصْنَامًۭا",
+      "matchedLemma": "أَصْنَام",
+      "matchedRoot": "صنم",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 74
+    },
+    {
+      "surah": 7,
+      "ayah": 138
+    },
+    {
+      "surah": 14,
+      "ayah": 35
+    },
+    {
+      "surah": 21,
+      "ayah": 57
+    },
+    {
+      "surah": 26,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

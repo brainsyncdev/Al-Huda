@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "حرك",
+    "title": "حرك",
+    "arabicTitle": "حرك",
+    "roots": [
+      "حرك"
+    ],
+    "includedLemmas": [
+      "تُحَرِّكْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 16
+      },
+      "matchedToken": "تُحَرِّكْ",
+      "matchedLemma": "تُحَرِّكْ",
+      "matchedRoot": "حرك",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 75,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

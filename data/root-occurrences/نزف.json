@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "نزف",
+    "title": "نزف",
+    "arabicTitle": "نزف",
+    "roots": [
+      "نزف"
+    ],
+    "includedLemmas": [
+      "يُنزَفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 47
+      },
+      "matchedToken": "يُنزَفُونَ",
+      "matchedLemma": "يُنزَفُ",
+      "matchedRoot": "نزف",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 19
+      },
+      "matchedToken": "يُنزِفُونَ",
+      "matchedLemma": "يُنزَفُ",
+      "matchedRoot": "نزف",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 47
+    },
+    {
+      "surah": 56,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

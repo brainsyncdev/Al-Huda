@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "لزم",
+    "title": "لزم",
+    "arabicTitle": "لزم",
+    "roots": [
+      "لزم"
+    ],
+    "includedLemmas": [
+      "أَلْزَمَ",
+      "لِزَام"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 28
+      },
+      "matchedToken": "أَنُلْزِمُكُمُوهَا",
+      "matchedLemma": "أَلْزَمَ",
+      "matchedRoot": "لزم",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 13
+      },
+      "matchedToken": "أَلْزَمْنَـٰهُ",
+      "matchedLemma": "أَلْزَمَ",
+      "matchedRoot": "لزم",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 129
+      },
+      "matchedToken": "لِزَامًۭا",
+      "matchedLemma": "لِزَام",
+      "matchedRoot": "لزم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 77
+      },
+      "matchedToken": "لِزَامًۢا",
+      "matchedLemma": "لِزَام",
+      "matchedRoot": "لزم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 26
+      },
+      "matchedToken": "وَأَلْزَمَهُمْ",
+      "matchedLemma": "أَلْزَمَ",
+      "matchedRoot": "لزم",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 28
+    },
+    {
+      "surah": 17,
+      "ayah": 13
+    },
+    {
+      "surah": 20,
+      "ayah": 129
+    },
+    {
+      "surah": 25,
+      "ayah": 77
+    },
+    {
+      "surah": 48,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

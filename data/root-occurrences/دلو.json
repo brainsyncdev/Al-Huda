@@ -1,0 +1,78 @@
+{
+  "entry": {
+    "slug": "دلو",
+    "title": "دلو",
+    "arabicTitle": "دلو",
+    "roots": [
+      "دلو"
+    ],
+    "includedLemmas": [
+      "أَدْلَىٰ",
+      "تَدَلَّىٰ",
+      "دَلْو"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 188
+      },
+      "matchedToken": "وَتُدْلُوا۟",
+      "matchedLemma": "أَدْلَىٰ",
+      "matchedRoot": "دلو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 19
+      },
+      "matchedToken": "فَأَدْلَىٰ",
+      "matchedLemma": "أَدْلَىٰ",
+      "matchedRoot": "دلو",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 19
+      },
+      "matchedToken": "دَلْوَهُۥ ۖ",
+      "matchedLemma": "دَلْو",
+      "matchedRoot": "دلو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 8
+      },
+      "matchedToken": "فَتَدَلَّىٰ",
+      "matchedLemma": "تَدَلَّىٰ",
+      "matchedRoot": "دلو",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 188
+    },
+    {
+      "surah": 12,
+      "ayah": 19
+    },
+    {
+      "surah": 53,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

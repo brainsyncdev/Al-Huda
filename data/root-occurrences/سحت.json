@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "سحت",
+    "title": "سحت",
+    "arabicTitle": "سحت",
+    "roots": [
+      "سحت"
+    ],
+    "includedLemmas": [
+      "سُّحْت",
+      "يُسْحِتَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 42
+      },
+      "matchedToken": "لِلسُّحْتِ ۚ",
+      "matchedLemma": "سُّحْت",
+      "matchedRoot": "سحت",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 62
+      },
+      "matchedToken": "ٱلسُّحْتَ ۚ",
+      "matchedLemma": "سُّحْت",
+      "matchedRoot": "سحت",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 63
+      },
+      "matchedToken": "ٱلسُّحْتَ ۚ",
+      "matchedLemma": "سُّحْت",
+      "matchedRoot": "سحت",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 61
+      },
+      "matchedToken": "فَيُسْحِتَكُم",
+      "matchedLemma": "يُسْحِتَ",
+      "matchedRoot": "سحت",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 42
+    },
+    {
+      "surah": 5,
+      "ayah": 62
+    },
+    {
+      "surah": 5,
+      "ayah": 63
+    },
+    {
+      "surah": 20,
+      "ayah": 61
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

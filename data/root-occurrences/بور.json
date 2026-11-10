@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "بور",
+    "title": "بور",
+    "arabicTitle": "بور",
+    "roots": [
+      "بور"
+    ],
+    "includedLemmas": [
+      "بَوَار",
+      "بُور",
+      "يَبُورُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 28
+      },
+      "matchedToken": "ٱلْبَوَارِ",
+      "matchedLemma": "بَوَار",
+      "matchedRoot": "بور",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 18
+      },
+      "matchedToken": "بُورًۭا",
+      "matchedLemma": "بُور",
+      "matchedRoot": "بور",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 10
+      },
+      "matchedToken": "يَبُورُ",
+      "matchedLemma": "يَبُورُ",
+      "matchedRoot": "بور",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 29
+      },
+      "matchedToken": "تَبُورَ",
+      "matchedLemma": "يَبُورُ",
+      "matchedRoot": "بور",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 12
+      },
+      "matchedToken": "بُورًۭا",
+      "matchedLemma": "بُور",
+      "matchedRoot": "بور",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 28
+    },
+    {
+      "surah": 25,
+      "ayah": 18
+    },
+    {
+      "surah": 35,
+      "ayah": 10
+    },
+    {
+      "surah": 35,
+      "ayah": 29
+    },
+    {
+      "surah": 48,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

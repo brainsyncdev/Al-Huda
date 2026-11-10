@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "دلل",
+    "title": "دلل",
+    "arabicTitle": "دلل",
+    "roots": [
+      "دلل"
+    ],
+    "includedLemmas": [
+      "دَلِيل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 45
+      },
+      "matchedToken": "دَلِيلًۭا",
+      "matchedLemma": "دَلِيل",
+      "matchedRoot": "دلل",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 45
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "زلق",
+    "title": "زلق",
+    "arabicTitle": "زلق",
+    "roots": [
+      "زلق"
+    ],
+    "includedLemmas": [
+      "زَلَق",
+      "يُزْلِقُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 40
+      },
+      "matchedToken": "زَلَقًا",
+      "matchedLemma": "زَلَق",
+      "matchedRoot": "زلق",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 51
+      },
+      "matchedToken": "لَيُزْلِقُونَكَ",
+      "matchedLemma": "يُزْلِقُ",
+      "matchedRoot": "زلق",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 40
+    },
+    {
+      "surah": 68,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

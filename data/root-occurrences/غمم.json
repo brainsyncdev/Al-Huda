@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "غمم",
+    "title": "غمم",
+    "arabicTitle": "غمم",
+    "roots": [
+      "غمم"
+    ],
+    "includedLemmas": [
+      "غَمَٰم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 57
+      },
+      "matchedToken": "ٱلْغَمَامَ",
+      "matchedLemma": "غَمَٰم",
+      "matchedRoot": "غمم",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 210
+      },
+      "matchedToken": "ٱلْغَمَامِ",
+      "matchedLemma": "غَمَٰم",
+      "matchedRoot": "غمم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "ٱلْغَمَـٰمَ",
+      "matchedLemma": "غَمَٰم",
+      "matchedRoot": "غمم",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 25
+      },
+      "matchedToken": "بِٱلْغَمَـٰمِ",
+      "matchedLemma": "غَمَٰم",
+      "matchedRoot": "غمم",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 57
+    },
+    {
+      "surah": 2,
+      "ayah": 210
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    },
+    {
+      "surah": 25,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

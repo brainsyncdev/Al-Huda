@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "ذرع",
+    "title": "ذرع",
+    "arabicTitle": "ذرع",
+    "roots": [
+      "ذرع"
+    ],
+    "includedLemmas": [
+      "ذَرْع",
+      "ذِرَاع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 77
+      },
+      "matchedToken": "ذَرْعًۭا",
+      "matchedLemma": "ذَرْع",
+      "matchedRoot": "ذرع",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 18
+      },
+      "matchedToken": "ذِرَاعَيْهِ",
+      "matchedLemma": "ذِرَاع",
+      "matchedRoot": "ذرع",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 33
+      },
+      "matchedToken": "ذَرْعًۭا",
+      "matchedLemma": "ذَرْع",
+      "matchedRoot": "ذرع",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 32
+      },
+      "matchedToken": "ذَرْعُهَا",
+      "matchedLemma": "ذَرْع",
+      "matchedRoot": "ذرع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 32
+      },
+      "matchedToken": "ذِرَاعًۭا",
+      "matchedLemma": "ذِرَاع",
+      "matchedRoot": "ذرع",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 77
+    },
+    {
+      "surah": 18,
+      "ayah": 18
+    },
+    {
+      "surah": 29,
+      "ayah": 33
+    },
+    {
+      "surah": 69,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

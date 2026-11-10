@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "لغب",
+    "title": "لغب",
+    "arabicTitle": "لغب",
+    "roots": [
+      "لغب"
+    ],
+    "includedLemmas": [
+      "لُّغُوب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 35
+      },
+      "matchedToken": "لُغُوبٌۭ",
+      "matchedLemma": "لُّغُوب",
+      "matchedRoot": "لغب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 38
+      },
+      "matchedToken": "لُّغُوبٍۢ",
+      "matchedLemma": "لُّغُوب",
+      "matchedRoot": "لغب",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 35,
+      "ayah": 35
+    },
+    {
+      "surah": 50,
+      "ayah": 38
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

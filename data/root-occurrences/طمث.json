@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "طمث",
+    "title": "طمث",
+    "arabicTitle": "طمث",
+    "roots": [
+      "طمث"
+    ],
+    "includedLemmas": [
+      "يَطْمِثْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 56
+      },
+      "matchedToken": "يَطْمِثْهُنَّ",
+      "matchedLemma": "يَطْمِثْ",
+      "matchedRoot": "طمث",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 74
+      },
+      "matchedToken": "يَطْمِثْهُنَّ",
+      "matchedLemma": "يَطْمِثْ",
+      "matchedRoot": "طمث",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 55,
+      "ayah": 56
+    },
+    {
+      "surah": 55,
+      "ayah": 74
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

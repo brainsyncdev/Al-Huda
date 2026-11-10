@@ -1,0 +1,153 @@
+{
+  "entry": {
+    "slug": "عبر",
+    "title": "عبر",
+    "arabicTitle": "عبر",
+    "roots": [
+      "عبر"
+    ],
+    "includedLemmas": [
+      "اعْتَبِرُ",
+      "تَعْبُرُ",
+      "عَابِرِى",
+      "عِبْرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 13
+      },
+      "matchedToken": "لَعِبْرَةًۭ",
+      "matchedLemma": "عِبْرَة",
+      "matchedRoot": "عبر",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 43
+      },
+      "matchedToken": "عَابِرِى",
+      "matchedLemma": "عَابِرِى",
+      "matchedRoot": "عبر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 43
+      },
+      "matchedToken": "تَعْبُرُونَ",
+      "matchedLemma": "تَعْبُرُ",
+      "matchedRoot": "عبر",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 111
+      },
+      "matchedToken": "عِبْرَةٌۭ",
+      "matchedLemma": "عِبْرَة",
+      "matchedRoot": "عبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 66
+      },
+      "matchedToken": "لَعِبْرَةًۭ ۖ",
+      "matchedLemma": "عِبْرَة",
+      "matchedRoot": "عبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 21
+      },
+      "matchedToken": "لَعِبْرَةًۭ ۖ",
+      "matchedLemma": "عِبْرَة",
+      "matchedRoot": "عبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 44
+      },
+      "matchedToken": "لَعِبْرَةًۭ",
+      "matchedLemma": "عِبْرَة",
+      "matchedRoot": "عبر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 2
+      },
+      "matchedToken": "فَٱعْتَبِرُوا۟",
+      "matchedLemma": "اعْتَبِرُ",
+      "matchedRoot": "عبر",
+      "wordPosition": 38
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 26
+      },
+      "matchedToken": "لَعِبْرَةًۭ",
+      "matchedLemma": "عِبْرَة",
+      "matchedRoot": "عبر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 13
+    },
+    {
+      "surah": 4,
+      "ayah": 43
+    },
+    {
+      "surah": 12,
+      "ayah": 43
+    },
+    {
+      "surah": 12,
+      "ayah": 111
+    },
+    {
+      "surah": 16,
+      "ayah": 66
+    },
+    {
+      "surah": 23,
+      "ayah": 21
+    },
+    {
+      "surah": 24,
+      "ayah": 44
+    },
+    {
+      "surah": 59,
+      "ayah": 2
+    },
+    {
+      "surah": 79,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

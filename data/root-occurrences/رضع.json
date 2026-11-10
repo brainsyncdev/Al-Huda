@@ -1,0 +1,148 @@
+{
+  "entry": {
+    "slug": "رضع",
+    "title": "رضع",
+    "arabicTitle": "رضع",
+    "roots": [
+      "رضع"
+    ],
+    "includedLemmas": [
+      "أَرْضَعَتْ",
+      "تَسْتَرْضِعُ",
+      "رَّضَاعَة",
+      "مُرْضِعَة",
+      "يُرْضِعْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 233
+      },
+      "matchedToken": "يُرْضِعْنَ",
+      "matchedLemma": "يُرْضِعْ",
+      "matchedRoot": "رضع",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 233
+      },
+      "matchedToken": "ٱلرَّضَاعَةَ ۚ",
+      "matchedLemma": "رَّضَاعَة",
+      "matchedRoot": "رضع",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 233
+      },
+      "matchedToken": "تَسْتَرْضِعُوٓا۟",
+      "matchedLemma": "تَسْتَرْضِعُ",
+      "matchedRoot": "رضع",
+      "wordPosition": 47
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 23
+      },
+      "matchedToken": "أَرْضَعْنَكُمْ",
+      "matchedLemma": "أَرْضَعَتْ",
+      "matchedRoot": "رضع",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 23
+      },
+      "matchedToken": "ٱلرَّضَـٰعَةِ",
+      "matchedLemma": "رَّضَاعَة",
+      "matchedRoot": "رضع",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 2
+      },
+      "matchedToken": "مُرْضِعَةٍ",
+      "matchedLemma": "مُرْضِعَة",
+      "matchedRoot": "رضع",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 2
+      },
+      "matchedToken": "أَرْضَعَتْ",
+      "matchedLemma": "أَرْضَعَتْ",
+      "matchedRoot": "رضع",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 7
+      },
+      "matchedToken": "أَرْضِعِيهِ ۖ",
+      "matchedLemma": "أَرْضَعَتْ",
+      "matchedRoot": "رضع",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 6
+      },
+      "matchedToken": "أَرْضَعْنَ",
+      "matchedLemma": "أَرْضَعَتْ",
+      "matchedRoot": "رضع",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 6
+      },
+      "matchedToken": "فَسَتُرْضِعُ",
+      "matchedLemma": "أَرْضَعَتْ",
+      "matchedRoot": "رضع",
+      "wordPosition": 30
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 233
+    },
+    {
+      "surah": 4,
+      "ayah": 23
+    },
+    {
+      "surah": 22,
+      "ayah": 2
+    },
+    {
+      "surah": 28,
+      "ayah": 7
+    },
+    {
+      "surah": 65,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "فوت",
+    "title": "فوت",
+    "arabicTitle": "فوت",
+    "roots": [
+      "فوت"
+    ],
+    "includedLemmas": [
+      "تَفَٰوُت",
+      "فَاتَ",
+      "فَوْت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 153
+      },
+      "matchedToken": "فَاتَكُمْ",
+      "matchedLemma": "فَاتَ",
+      "matchedRoot": "فوت",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 51
+      },
+      "matchedToken": "فَوْتَ",
+      "matchedLemma": "فَوْت",
+      "matchedRoot": "فوت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 23
+      },
+      "matchedToken": "فَاتَكُمْ",
+      "matchedLemma": "فَاتَ",
+      "matchedRoot": "فوت",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 11
+      },
+      "matchedToken": "فَاتَكُمْ",
+      "matchedLemma": "فَاتَ",
+      "matchedRoot": "فوت",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 3
+      },
+      "matchedToken": "تَفَـٰوُتٍۢ ۖ",
+      "matchedLemma": "تَفَٰوُت",
+      "matchedRoot": "فوت",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 153
+    },
+    {
+      "surah": 34,
+      "ayah": 51
+    },
+    {
+      "surah": 57,
+      "ayah": 23
+    },
+    {
+      "surah": 60,
+      "ayah": 11
+    },
+    {
+      "surah": 67,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "محق",
+    "title": "محق",
+    "arabicTitle": "محق",
+    "roots": [
+      "محق"
+    ],
+    "includedLemmas": [
+      "يَمْحَقُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 276
+      },
+      "matchedToken": "يَمْحَقُ",
+      "matchedLemma": "يَمْحَقُ",
+      "matchedRoot": "محق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 141
+      },
+      "matchedToken": "وَيَمْحَقَ",
+      "matchedLemma": "يَمْحَقُ",
+      "matchedRoot": "محق",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 276
+    },
+    {
+      "surah": 3,
+      "ayah": 141
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

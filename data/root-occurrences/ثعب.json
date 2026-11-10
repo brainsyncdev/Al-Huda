@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "ثعب",
+    "title": "ثعب",
+    "arabicTitle": "ثعب",
+    "roots": [
+      "ثعب"
+    ],
+    "includedLemmas": [
+      "ثُعْبَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 107
+      },
+      "matchedToken": "ثُعْبَانٌۭ",
+      "matchedLemma": "ثُعْبَان",
+      "matchedRoot": "ثعب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 32
+      },
+      "matchedToken": "ثُعْبَانٌۭ",
+      "matchedLemma": "ثُعْبَان",
+      "matchedRoot": "ثعب",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 107
+    },
+    {
+      "surah": 26,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

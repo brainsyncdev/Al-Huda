@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "طلح",
+    "title": "طلح",
+    "arabicTitle": "طلح",
+    "roots": [
+      "طلح"
+    ],
+    "includedLemmas": [
+      "طَلْح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 29
+      },
+      "matchedToken": "وَطَلْحٍۢ",
+      "matchedLemma": "طَلْح",
+      "matchedRoot": "طلح",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 56,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

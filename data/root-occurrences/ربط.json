@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "ربط",
+    "title": "ربط",
+    "arabicTitle": "ربط",
+    "roots": [
+      "ربط"
+    ],
+    "includedLemmas": [
+      "رَابِطُ",
+      "رَّبَطْ",
+      "رِّبَاط"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 200
+      },
+      "matchedToken": "وَرَابِطُوا۟",
+      "matchedLemma": "رَابِطُ",
+      "matchedRoot": "ربط",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 11
+      },
+      "matchedToken": "وَلِيَرْبِطَ",
+      "matchedLemma": "رَّبَطْ",
+      "matchedRoot": "ربط",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 60
+      },
+      "matchedToken": "رِّبَاطِ",
+      "matchedLemma": "رِّبَاط",
+      "matchedRoot": "ربط",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 14
+      },
+      "matchedToken": "وَرَبَطْنَا",
+      "matchedLemma": "رَّبَطْ",
+      "matchedRoot": "ربط",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 10
+      },
+      "matchedToken": "رَّبَطْنَا",
+      "matchedLemma": "رَّبَطْ",
+      "matchedRoot": "ربط",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 200
+    },
+    {
+      "surah": 8,
+      "ayah": 11
+    },
+    {
+      "surah": 8,
+      "ayah": 60
+    },
+    {
+      "surah": 18,
+      "ayah": 14
+    },
+    {
+      "surah": 28,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

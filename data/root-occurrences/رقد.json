@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "رقد",
+    "title": "رقد",
+    "arabicTitle": "رقد",
+    "roots": [
+      "رقد"
+    ],
+    "includedLemmas": [
+      "رُقُود",
+      "مَّرْقَد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 18
+      },
+      "matchedToken": "رُقُودٌۭ ۚ",
+      "matchedLemma": "رُقُود",
+      "matchedRoot": "رقد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 52
+      },
+      "matchedToken": "مَّرْقَدِنَا ۜ ۗ",
+      "matchedLemma": "مَّرْقَد",
+      "matchedRoot": "رقد",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 18
+    },
+    {
+      "surah": 36,
+      "ayah": 52
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

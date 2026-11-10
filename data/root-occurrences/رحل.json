@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "رحل",
+    "title": "رحل",
+    "arabicTitle": "رحل",
+    "roots": [
+      "رحل"
+    ],
+    "includedLemmas": [
+      "رَحْل",
+      "رِحْلَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 62
+      },
+      "matchedToken": "رِحَالِهِمْ",
+      "matchedLemma": "رَحْل",
+      "matchedRoot": "رحل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 70
+      },
+      "matchedToken": "رَحْلِ",
+      "matchedLemma": "رَحْل",
+      "matchedRoot": "رحل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 75
+      },
+      "matchedToken": "رَحْلِهِۦ",
+      "matchedLemma": "رَحْل",
+      "matchedRoot": "رحل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 106,
+        "ayah": 2
+      },
+      "matchedToken": "رِحْلَةَ",
+      "matchedLemma": "رِحْلَة",
+      "matchedRoot": "رحل",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 62
+    },
+    {
+      "surah": 12,
+      "ayah": 70
+    },
+    {
+      "surah": 12,
+      "ayah": 75
+    },
+    {
+      "surah": 106,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

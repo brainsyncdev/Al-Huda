@@ -1,0 +1,107 @@
+{
+  "entry": {
+    "slug": "وطا",
+    "title": "وطا",
+    "arabicTitle": "وطا",
+    "roots": [
+      "وطا"
+    ],
+    "includedLemmas": [
+      "مَوْطِئ",
+      "وَطْـٔ",
+      "يَطَـُٔ",
+      "يُوَاطِـُٔ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 37
+      },
+      "matchedToken": "لِّيُوَاطِـُٔوا۟",
+      "matchedLemma": "يُوَاطِـُٔ",
+      "matchedRoot": "وطا",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 120
+      },
+      "matchedToken": "يَطَـُٔونَ",
+      "matchedLemma": "يَطَـُٔ",
+      "matchedRoot": "وطا",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 120
+      },
+      "matchedToken": "مَوْطِئًۭا",
+      "matchedLemma": "مَوْطِئ",
+      "matchedRoot": "وطا",
+      "wordPosition": 33
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 27
+      },
+      "matchedToken": "تَطَـُٔوهَا ۚ",
+      "matchedLemma": "يَطَـُٔ",
+      "matchedRoot": "وطا",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 25
+      },
+      "matchedToken": "تَطَـُٔوهُمْ",
+      "matchedLemma": "يَطَـُٔ",
+      "matchedRoot": "وطا",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 6
+      },
+      "matchedToken": "وَطْـًۭٔا",
+      "matchedLemma": "وَطْـٔ",
+      "matchedRoot": "وطا",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 37
+    },
+    {
+      "surah": 9,
+      "ayah": 120
+    },
+    {
+      "surah": 33,
+      "ayah": 27
+    },
+    {
+      "surah": 48,
+      "ayah": 25
+    },
+    {
+      "surah": 73,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

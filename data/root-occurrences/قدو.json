@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "قدو",
+    "title": "قدو",
+    "arabicTitle": "قدو",
+    "roots": [
+      "قدو"
+    ],
+    "includedLemmas": [
+      "اقْتَدِهْ",
+      "مُّقْتَدُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 90
+      },
+      "matchedToken": "ٱقْتَدِهْ ۗ",
+      "matchedLemma": "اقْتَدِهْ",
+      "matchedRoot": "قدو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 23
+      },
+      "matchedToken": "مُّقْتَدُونَ",
+      "matchedLemma": "مُّقْتَدُون",
+      "matchedRoot": "قدو",
+      "wordPosition": 21
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 90
+    },
+    {
+      "surah": 43,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

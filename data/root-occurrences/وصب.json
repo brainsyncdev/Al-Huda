@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "وصب",
+    "title": "وصب",
+    "arabicTitle": "وصب",
+    "roots": [
+      "وصب"
+    ],
+    "includedLemmas": [
+      "وَاصِب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 52
+      },
+      "matchedToken": "وَاصِبًا ۚ",
+      "matchedLemma": "وَاصِب",
+      "matchedRoot": "وصب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 9
+      },
+      "matchedToken": "وَاصِبٌ",
+      "matchedLemma": "وَاصِب",
+      "matchedRoot": "وصب",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 52
+    },
+    {
+      "surah": 37,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

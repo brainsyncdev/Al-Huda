@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "سلل",
+    "title": "سلل",
+    "arabicTitle": "سلل",
+    "roots": [
+      "سلل"
+    ],
+    "includedLemmas": [
+      "سُلَٰلَة",
+      "يَتَسَلَّلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 12
+      },
+      "matchedToken": "سُلَـٰلَةٍۢ",
+      "matchedLemma": "سُلَٰلَة",
+      "matchedRoot": "سلل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 63
+      },
+      "matchedToken": "يَتَسَلَّلُونَ",
+      "matchedLemma": "يَتَسَلَّلُ",
+      "matchedRoot": "سلل",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 8
+      },
+      "matchedToken": "سُلَـٰلَةٍۢ",
+      "matchedLemma": "سُلَٰلَة",
+      "matchedRoot": "سلل",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 12
+    },
+    {
+      "surah": 24,
+      "ayah": 63
+    },
+    {
+      "surah": 32,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

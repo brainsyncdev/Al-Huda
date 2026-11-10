@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "عصب",
+    "title": "عصب",
+    "arabicTitle": "عصب",
+    "roots": [
+      "عصب"
+    ],
+    "includedLemmas": [
+      "عَصِيب",
+      "عُصْبَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 77
+      },
+      "matchedToken": "عَصِيبٌۭ",
+      "matchedLemma": "عَصِيب",
+      "matchedRoot": "عصب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 8
+      },
+      "matchedToken": "عُصْبَةٌ",
+      "matchedLemma": "عُصْبَة",
+      "matchedRoot": "عصب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 14
+      },
+      "matchedToken": "عُصْبَةٌ",
+      "matchedLemma": "عُصْبَة",
+      "matchedRoot": "عصب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 11
+      },
+      "matchedToken": "عُصْبَةٌۭ",
+      "matchedLemma": "عُصْبَة",
+      "matchedRoot": "عصب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 76
+      },
+      "matchedToken": "بِٱلْعُصْبَةِ",
+      "matchedLemma": "عُصْبَة",
+      "matchedRoot": "عصب",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 77
+    },
+    {
+      "surah": 12,
+      "ayah": 8
+    },
+    {
+      "surah": 12,
+      "ayah": 14
+    },
+    {
+      "surah": 24,
+      "ayah": 11
+    },
+    {
+      "surah": 28,
+      "ayah": 76
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

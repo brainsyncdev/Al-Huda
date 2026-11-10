@@ -1,0 +1,177 @@
+{
+  "entry": {
+    "slug": "سفه",
+    "title": "سفه",
+    "arabicTitle": "سفه",
+    "roots": [
+      "سفه"
+    ],
+    "includedLemmas": [
+      "سَفَاهَة",
+      "سَفَه",
+      "سَفِهَ",
+      "سَفِيه"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 13
+      },
+      "matchedToken": "ٱلسُّفَهَآءُ ۗ",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 13
+      },
+      "matchedToken": "ٱلسُّفَهَآءُ",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 130
+      },
+      "matchedToken": "سَفِهَ",
+      "matchedLemma": "سَفِهَ",
+      "matchedRoot": "سفه",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 142
+      },
+      "matchedToken": "ٱلسُّفَهَآءُ",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 282
+      },
+      "matchedToken": "سَفِيهًا",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 5
+      },
+      "matchedToken": "ٱلسُّفَهَآءَ",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 140
+      },
+      "matchedToken": "سَفَهًۢا",
+      "matchedLemma": "سَفَه",
+      "matchedRoot": "سفه",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 66
+      },
+      "matchedToken": "سَفَاهَةٍۢ",
+      "matchedLemma": "سَفَاهَة",
+      "matchedRoot": "سفه",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 67
+      },
+      "matchedToken": "سَفَاهَةٌۭ",
+      "matchedLemma": "سَفَاهَة",
+      "matchedRoot": "سفه",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 155
+      },
+      "matchedToken": "ٱلسُّفَهَآءُ",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 4
+      },
+      "matchedToken": "سَفِيهُنَا",
+      "matchedLemma": "سَفِيه",
+      "matchedRoot": "سفه",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 13
+    },
+    {
+      "surah": 2,
+      "ayah": 130
+    },
+    {
+      "surah": 2,
+      "ayah": 142
+    },
+    {
+      "surah": 2,
+      "ayah": 282
+    },
+    {
+      "surah": 4,
+      "ayah": 5
+    },
+    {
+      "surah": 6,
+      "ayah": 140
+    },
+    {
+      "surah": 7,
+      "ayah": 66
+    },
+    {
+      "surah": 7,
+      "ayah": 67
+    },
+    {
+      "surah": 7,
+      "ayah": 155
+    },
+    {
+      "surah": 72,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 11,
+  "totalMatches": 11,
+  "pagination": null
+}

@@ -1,0 +1,65 @@
+{
+  "auditDate": "2026-11-10T13:17:06.069Z",
+  "registrySummary": {
+    "totalRoots": 1642,
+    "activated": 1471,
+    "partiallyActivated": 103,
+    "needsReview": 68,
+    "discovered": 0,
+    "totalOccurrences": 44550,
+    "totalDistinctAyat": 39720,
+    "totalLemmasActivated": 4350
+  },
+  "statusBreakdown": {
+    "activated": 1471,
+    "partiallyActivated": 103,
+    "needsReview": 68,
+    "discovered": 0,
+    "total": 1642
+  },
+  "occurrenceFiles": {
+    "total": 1576,
+    "populated": 1574
+  },
+  "distinctAyat": {
+    "globalUnion": 6205,
+    "sumOfPerRoot": 39720,
+    "registryReported": 39720,
+    "explanation": "Global count is union across all roots. Per-root sum exceeds global because ayat can appear in multiple roots."
+  },
+  "reconciliations": {
+    "sprint48VsRegistry": {
+      "sprint48Activated": 1331,
+      "registryActivated": 1471,
+      "difference": 140,
+      "explanation": "Registry was regenerated after Sprint 48, possibly including roots that were activated but not counted in Sprint 48 report."
+    },
+    "sprint49VsRegistry": {
+      "sprint49Reported": 1574,
+      "registryActivated": 1471,
+      "difference": -103,
+      "explanation": "Sprint 49 may have counted populated occurrence files as \"activated\" rather than using registry status field."
+    },
+    "distinctAyatDiscrepancy": {
+      "sprint48Reported": 29684,
+      "sprint49Reported": 39720,
+      "registryReported": 39720,
+      "globalUnion": 6205,
+      "explanation": "Sprint 48 may have counted only fully-activated roots. Sprint 49 and registry count all populated files. Global union is authoritative."
+    }
+  },
+  "integrity": {
+    "duplicatesFound": 0,
+    "phantomsFound": 0,
+    "filesChecked": 92,
+    "status": "PASS"
+  },
+  "conclusions": [
+    "Registry status counts are mutually exclusive and sum to 1,642.",
+    "Populated occurrence files (1,576) exceed activated+partially-activated roots in registry.",
+    "Global distinct ayat count (union) is authoritative for total coverage.",
+    "Per-root distinct ayat sums exceed global because ayat appear in multiple roots.",
+    "Sprint 48 and Sprint 49 used different counting methodologies.",
+    "No data integrity issues found in sampled occurrence files."
+  ]
+}

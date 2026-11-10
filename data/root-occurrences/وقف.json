@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "وقف",
+    "title": "وقف",
+    "arabicTitle": "وقف",
+    "roots": [
+      "وقف"
+    ],
+    "includedLemmas": [
+      "مَوْقُوفُون",
+      "وُقِفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 27
+      },
+      "matchedToken": "وُقِفُوا۟",
+      "matchedLemma": "وُقِفُ",
+      "matchedRoot": "وقف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 30
+      },
+      "matchedToken": "وُقِفُوا۟",
+      "matchedLemma": "وُقِفُ",
+      "matchedRoot": "وقف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 31
+      },
+      "matchedToken": "مَوْقُوفُونَ",
+      "matchedLemma": "مَوْقُوفُون",
+      "matchedRoot": "وقف",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 24
+      },
+      "matchedToken": "وَقِفُوهُمْ ۖ",
+      "matchedLemma": "وُقِفُ",
+      "matchedRoot": "وقف",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 27
+    },
+    {
+      "surah": 6,
+      "ayah": 30
+    },
+    {
+      "surah": 34,
+      "ayah": 31
+    },
+    {
+      "surah": 37,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

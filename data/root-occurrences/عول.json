@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "عول",
+    "title": "عول",
+    "arabicTitle": "عول",
+    "roots": [
+      "عول"
+    ],
+    "includedLemmas": [
+      "تَعُولُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 3
+      },
+      "matchedToken": "تَعُولُوا۟",
+      "matchedLemma": "تَعُولُ",
+      "matchedRoot": "عول",
+      "wordPosition": 28
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

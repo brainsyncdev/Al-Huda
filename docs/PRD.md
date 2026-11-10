@@ -1,45 +1,53 @@
 # Al-Huda — Product Requirements Document (PRD)
 
-Version: 3.0
-Status: Product blueprint / implementation baseline
-Prepared: 17 October 2026
+Version: 4.0
+Status: Implementation baseline + roadmap — single source of truth
+Prepared: 09 November 2026
 Product category: Quran learning, discovery, reflection, and knowledge platform
-Initial platform: SEO-first responsive web application
-Primary stack direction: Next.js App Router, TypeScript, Tailwind CSS
+Platform: SEO-first responsive web application (local-first, account-free)
+Stack: Next.js 15 App Router, TypeScript, Tailwind CSS, Radix/shadcn UI, Vitest
+
+**Supersession.** This document supersedes both earlier PRDs, which are preserved in `archive/`:
+
+- [`archive/PRD-v3.0.md`](archive/PRD-v3.0.md) — the corrective web-first rewrite.
+- [`archive/AL-HUDA-PRD-v2.0-COMPLETE.md`](archive/AL-HUDA-PRD-v2.0-COMPLETE.md) — the aspirational Flutter/NestJS/kids-mode blueprint. Most of its scope was never built and is now explicitly deferred (Appendix A).
+
+Every statement in this document marked **COMPLETE**, **PARTIAL**, or **BLOCKED** is grounded in the source code as of Sprint 44 (2026-11-02). Claims cite repository paths. Where a capability is implemented in code but not measured or human-verified, it is marked **UNVERIFIED**.
 
 ---
 
 ## 1. Executive Summary
 
-Al-Huda is a Quran-centered digital product that helps people move from fragmented Quran reading and searching to a connected experience. It links Quranic ayat with verified translations, tafsir, themes, cross-references, learning and memorization tools, and private personal reflections.
+Al-Huda is a Quran-centered web product that helps people move from fragmented Quran reading and searching to a connected experience. It links Quranic ayat with verified translations, tafsir, themes, roots, cross-references, learning and memorization tools, and private personal reflections.
 
-The core product idea is an interconnected Quran knowledge system: users should be able to begin with an ayah, a topic, a question, or a life situation and discover relevant Quranic passages with clear references and trustworthy scholarly context.
+**The product that exists today** is a local-first, account-free, SEO-first Next.js application. It ships:
 
-Al-Huda must not present AI-generated religious interpretation as authoritative. Quran text, translations, tafsir, recitation metadata, and scholarly references must have explicit provenance. AI may help users search, navigate, summarize approved sources, and organize personal learning, but it must not fabricate verses, citations, hadith, rulings, or scholarly consensus.
+- All **114 surahs / 6,236 ayat** from a pinned, versioned dataset (`quran-json@3.1.2`, CC-BY-4.0), structurally validated at build time.
+- **116 translation editions across 44 languages** delivered on demand from Tanzil.net through a constrained first-party proxy (default: Urdu — Jalandhry). Rights review outstanding.
+- **Two classical Arabic tafsirs** readable in-app via the same proxy (al-Jalalayn, al-Muyassar) and two English tafsirs as outbound links.
+- **Word-by-word analysis** from vendored QUL data (77,429 words, sha256-manifested).
+- **Root and morphology exploration**: 1,642 source-backed roots discovered, 1,469 published through an automated, deterministic pipeline; a 124,147-record morphology index.
+- **11 curated topics**, **10 life-dimensions** (topic-level navigation aid), and a **14-domain catalog** (organizational proposal), all stamped `pending-scholarly-review`.
+- **Spaced-repetition revision, deterministic quizzes, curated learning paths, and user-defined reading plans** — all stored locally.
+- A **4-locale UI** (English default, Urdu, Arabic, Chinese) with RTL handling.
+- A **public read-only `/api/v1` surface** (13 self-documenting endpoints) plus JSON-LD, sitemap, robots, and canonical URL integrity.
+- **AI religious answers compile-time disabled** (`AI_ANSWER_FEATURE_ENABLED = false as const`); a grounded-answer harness and seven safety gates exist, of which only one (`source-registry`) is met.
 
-**Product thesis**
+**The core product idea** is an interconnected Quran knowledge system: users can begin with an ayah, a topic, a root, a dimension, or a search query and discover relevant Quranic passages with clear references and trustworthy scholarly context.
 
-Make the Quran easier to explore, understand in context, revisit, memorize, and connect across topics—without altering the text or replacing qualified scholarship.
+Al-Huda does **not** present AI-generated religious interpretation as authoritative. Quran text, translations, tafsir, recitation metadata, and scholarly references have explicit provenance. AI may help users search, navigate, summarize approved sources, and organize personal learning, but it must not fabricate verses, citations, hadith, rulings, or scholarly consensus.
 
-**Initial product promise**
+**Product thesis.** Make the Quran easier to explore, understand in context, revisit, memorize, and connect across topics — without altering the text or replacing qualified scholarship.
 
-- Find relevant ayat through Surah, ayah, keyword, theme, or natural-language question.
-- Explore verified relationships between ayat and topics.
-- Read translations and approved tafsir with clear source attribution.
-- Save passages, take private notes, and return to them.
-- Build a sustainable Quran reading and revision routine.
+---
 
 ## 2. Vision, Mission, and Principles
 
-**Vision**
+**Vision.** A trusted, accessible, interconnected Quran platform for Muslims and anyone sincerely exploring the Quran.
 
-A trusted, accessible, interconnected Quran platform for Muslims and anyone sincerely exploring the Quran.
+**Mission.** Bring Quranic text, reliable source material, thematic discovery, and personal learning into one coherent experience.
 
-**Mission**
-
-Bring Quranic text, reliable source material, thematic discovery, and personal learning into one coherent experience.
-
-**Product principles**
+**Product principles** (carried verbatim from v3.0; still correct):
 
 1. **Textual integrity**: The Quranic Arabic text must be sourced, versioned, and validated. Never silently alter it.
 2. **Source transparency**: Every translation, tafsir excerpt, audio asset, and scholarly claim has a source and edition where applicable.
@@ -50,821 +58,570 @@ Bring Quranic text, reliable source material, thematic discovery, and personal l
 7. **SEO with integrity**: Public reference pages should be useful and accurate, not thin pages generated solely to capture search traffic.
 8. **Incremental delivery**: Ship a reliable Quran reader and discovery foundation before advanced AI or social features.
 
+---
+
 ## 3. Goals and Non-Goals
 
-**Product goals**
+**Product goals.**
 
-- Provide accurate, fast access to all 114 Surahs and 6,236 ayat in the selected canonical dataset, with dataset-specific numbering conventions documented.
-- Support Arabic text, transliteration where licensed/available, translations, and sourced tafsir.
-- Connect ayat to topics and cross-references through an auditable relationship model.
-- Enable search by reference, Arabic text, translation text, topic, and natural-language intent.
-- Offer private bookmarks, notes, reading progress, and optional memorization/revision.
-- Create indexable, canonical public pages for Surahs, ayat, and curated topics.
-- Build a maintainable architecture that can later support Android/iOS clients.
+- Provide accurate, fast access to all 114 Surahs and 6,236 ayat in the canonical dataset, with dataset-specific numbering conventions documented.
+- Support Arabic text, transliteration, translations, and sourced tafsir.
+- Connect ayat to topics, roots, dimensions, and cross-references through an auditable relationship model.
+- Enable search by reference, Arabic text, translation text, topic, root, and natural-language intent.
+- Offer private bookmarks, notes, reading progress, and memorization/revision.
+- Create indexable, canonical public pages for Surahs, ayat, topics, roots, and dimensions.
+- Build a maintainable architecture that can later support mobile clients.
 
-**Non-goals for MVP**
+**Non-goals for the active product.** These v2.0 ambitions are explicitly deferred to Appendix A and are NOT part of the normative scope:
+
+- NOOR kids mode (3–12) with AI-generated personalized stories.
+- Flutter Android/iOS native clients.
+- A NestJS backend service.
+- Monetization, subscriptions, and a scholar partnership program.
+- A hadith corpus (Sihah Sitta / 50,884 hadiths).
+- An AI story generator and a live "guidance mode" chat.
+- Ayah-level 10-dimension tagging of all 6,236 ayat.
+
+**Continuing non-goals** (from v3.0):
 
 - Issuing fatwas or acting as a religious authority.
 - Replacing scholars, teachers, or established tafsir works.
 - Unreviewed AI-generated tafsir presented as fact.
 - Public social feed, open comments, follower graphs, or debate forums.
 - Full Quran audio hosting unless licensing and infrastructure are confirmed.
-- A comprehensive Islamic lifestyle super-app (prayer times, qibla, mosque finder, commerce) in the first release.
 - User-generated public interpretations or unmoderated verse-topic claims.
+
+---
 
 ## 4. Target Users and Jobs to Be Done
 
-**Primary segments**
+**Primary segments served by the shipped product.**
 
-1. **Everyday reader**: Wants a clean Quran reading experience, translation, bookmarks, and continuity.
-2. **Topic explorer**: Wants to explore themes such as sabr, shukr, tawakkul, mercy, justice, family, loss, or hope.
-3. **Learner/student**: Wants to compare translations, inspect context, and consult referenced tafsir.
-4. **Hifz learner**: Wants a structured, adjustable ayah revision workflow.
-5. **New Muslim or non-Muslim explorer**: Wants clear language, introductory navigation, and transparent references without assuming prior knowledge.
-6. **Researcher/developer**: Wants stable references, structured data, provenance, and potentially documented APIs or export tools.
+1. **Everyday reader**: Clean Quran reading experience, translation, bookmarks, continuity. Served by `/`, `/quran`, `/ayah/:s/:a`, `/library`.
+2. **Topic explorer**: Explore themes (sabr, shukr, tawakkul, mercy, justice, family, loss, hope). Served by `/topics`, `/explore`.
+3. **Learner/student**: Compare translations, inspect context, consult referenced tafsir and roots. Served by `/topics`, `/explore/root`, `/sources`.
+4. **Hifz learner**: Structured, adjustable ayah revision workflow. Served by `/learn/revision`.
+5. **New Muslim or non-Muslim explorer**: Clear language, introductory navigation, transparent references. Served by `/onboarding`, `/learn/paths`, home.
+6. **Researcher/developer**: Stable references, structured data, provenance, documented read-only API. Served by `/api/v1`, JSON-LD.
 
-**Jobs to be done**
+**Jobs to be done.**
 
 - "When I encounter an ayah, help me understand where it sits in the Surah and find reliable explanations."
-- "When I have a topic in mind, help me discover relevant ayat without claiming that a verse says more than its source supports."
+- "When I have a topic or root in mind, help me discover relevant ayat without claiming a verse says more than its source supports."
 - "When I save an ayah, let me attach a private reflection and find it again later."
 - "When I memorize, help me revise at an appropriate interval and track my own progress."
 - "When I share a reference, give others a stable, readable page with correct citations."
 
-## 5. Product Scope and Release Priorities
+> v2.0's additional personas (children in NOOR mode, non-Muslim "Kashf" seekers) are deferred with their modes to Appendix A.
 
-**MVP — required**
+---
 
-- Home/discovery page
-- Quran reader: Surah list, Surah page, ayah navigation
-- Arabic text with one verified translation initially
-- Ayah detail/reference view
-- Search by Surah/ayah reference and text
-- Curated topic pages with reviewed ayah links
-- Basic cross-reference links where source-backed
-- Tafsir/source panel for content available and licensed for use
-- Bookmarks and reading progress
-- Responsive design, Arabic RTL, accessibility baseline
-- SEO metadata, canonical URLs, sitemap, robots rules
-- Admin/editor workflow or controlled data-import pipeline for reviewed topic/source content
-- Error states, loading states, monitoring, backups, privacy policy, terms
+## 5. Release Priorities
 
-**Release 1.1 — after MVP validation**
+**MVP (shipped).** Quran reader, surah/ayah navigation, Arabic + built-in English translation, on-demand 116-edition translation catalog, word-by-word, mushaf metadata, search (lexical + opt-in semantic), curated topics, 10 dimensions, 14 domains, root/morphology explorer, knowledge-graph API/UI, discover hub, library (local), settings, revision, reading plans, quizzes, learning paths, onboarding, sources/provenance, editorial log, report intake, SEO + JSON-LD + sitemap + robots, 4-locale UI, `/api/v1`. AI answers disabled.
 
-- Additional licensed translations
-- Word-by-word analysis, only from a verified dataset
-- Audio recitation integration, subject to rights and provider reliability
-- Personal notes and tags
-- Reading plans and optional reminders
-- Improved search filters and result snippets
-- Export of user data
+**Release 1.x (next).** Clear the release blockers in §19 (licensing reviews, qualified reviewer, report destination, a11y audit, Core Web Vitals, rendered social metadata, durable rate limiting). Expand curated topics and root activation behind human review.
 
-**Release 2 — advanced learning**
+**Release 2 (later).** Grounded AI assistant after all seven safety gates pass. Deeper taxonomy (domain → topic/passage assignments). Interactive graph visualization refinement.
 
-- Spaced-repetition memorization/revision
-- Weak-ayah review and configurable revision schedule
-- Topic knowledge graph visualization
-- AI-assisted retrieval grounded in approved source corpus, with citations
-- Natural-language question interface with safety boundaries
-- Cross-device sync and mobile app shell/client
+**Deferred.** Everything in Appendix A.
 
-**Explicitly deferred**
+---
 
-- Public sharing of personal journals by default
-- Open user-generated tafsir
-- Automated religious rulings
-- AI-generated Arabic Quran text
-- Unreviewed claims that a particular ayah is a guaranteed remedy for a medical, financial, or psychological condition
+## 6. Current State — What Is Built
 
-## 6. Information Architecture
+This section is the audit anchor. Every row cites a repository path verifiable in the source tree as of Sprint 44.
 
-**Primary navigation**
+### 6.1 Route inventory (from `src/app/`)
 
-- Home
-- Read Quran
-- Explore Topics
-- Search
-- My Library (signed-in users)
-- About / Sources
+**Public content.** `/` (home), `/quran`, `/quran/[slug]`, `/ayah/[surah]/[ayah]`, `/topics`, `/topics/[slug]`, `/search`, `/discover`.
 
-**Public routes**
+**Explore.** `/explore` (hub), `/explore/dimension/[id]`, `/explore/domains`, `/explore/domains/[id]`, `/explore/graph`, `/explore/root`, `/explore/root/[root]`, `/explore/theme/[name]` (redirect).
 
-- `/` — homepage
-- `/quran` — Surah index
-- `/quran/[surah-slug]` — Surah page
-- `/ayah/[surah-number]/[ayah-number]` — stable ayah reference
-- `/topics` — curated topic index
-- `/topics/[topic-slug]` — topic page
-- `/search?q=...` — search results, with indexation policy determined by query quality
-- `/sources` — source catalog and editorial methodology
-- `/about` — mission and limitations
-- `/privacy`, `/terms`, `/accessibility`
+**Learn.** `/learn` (hub), `/learn/paths`, `/learn/paths/[slug]`, `/learn/plans`, `/learn/quiz`, `/learn/revision`.
 
-**Authenticated routes**
+**Personal (local-first).** `/library`, `/library/notes`, `/settings`, `/settings/privacy`, `/onboarding` (noindex).
 
-- `/library` — bookmarks, notes, reading history
-- `/library/notes`
-- `/learn/revision`
-- `/settings`
-- `/settings/privacy`
+**Trust & legal.** `/sources`, `/editorial`, `/report`, `/about`, `/privacy`, `/terms`, `/accessibility`.
 
-**URL and SEO rules**
+**System.** `error.tsx`, `not-found.tsx`, `robots.ts`, `sitemap.ts`, `layout.tsx`.
+
+Canonical URL conventions are enforced by tests: `src/app/url-integrity.test.ts`, `src/app/sitemap.test.ts`.
+
+### 6.2 Data assets
+
+| Asset | Path | Facts |
+|---|---|---|
+| Quran core | `quran-json@3.1.2` (npm, pinned) | 114 surahs, 6,236 ayat, Arabic + built-in English + transliteration. CC-BY-4.0. |
+| Morphology index | `data/morphology-index.json` | 124,147 records (74,179 word-level + 49,968 ayah-level). |
+| QUL SQLite DBs | `data/word-root.db`, `word-lemma.db`, `ayah-root.db`, `word-stem.db`, etc. | Imported by `scripts/import-morphology.py`. |
+| Root occurrence indexes | `data/root-occurrences/` | 1,469 per-root files. |
+| Root discovery registry | `data/root-discovery-registry.json` | 1,642 discovered roots. |
+| Batch publication report | `data/batch-publication-report.json` | Reconciliation of eligible/blocked/published. |
+| Word-by-word data | `public/word-data/` | 115 files, 77,429 words, sha256 manifest (QUL, MIT). |
+| Semantic embeddings | `public/embeddings/` | 6,236 × 384 float16, Xenova/all-MiniLM-L6-v2 (Apache-2.0). |
+| Mushaf metadata | `src/lib/quran/mushaf-data.ts` | Generated from `quran-data.xml`; build-verified 30 juz / 604 pages / 240 quarters / 556 rukus / 7 manzils / 15 sajda / 6,236 ayat. |
+| Editorial review log | `content/editorial/reviews.json` | 23 entries (11 topics, 6 sources, 6 features). |
+
+### 6.3 Quality facts
+
+| Check | Reported value | Command |
+|---|---|---|
+| Test suite | 809 tests / 48 files passing | `pnpm vitest run` |
+| Quran data validation | 114 surahs, 6,236 ayat, 0 issues | `pnpm validate:quran` |
+| License register validation | 13 source records, 0 issues | `pnpm validate:licenses` |
+| Production build | 6,433 static pages, exit 0 | `pnpm build` |
+| Lint / typecheck | clean | `pnpm lint`, `pnpm typecheck` |
+| Build gate | blocks localhost/invalid `NEXT_PUBLIC_SITE_URL` | `scripts/validate-build-env.mjs` |
+
+> These are **reported** results from Sprint 44, recorded as the verification basis. A passing validator is structural assurance, not licensing clearance or scholarly approval.
+
+### 6.4 Source catalog (from `src/lib/quran/sources.ts`)
+
+| ID | Provides | License | Method |
+|---|---|---|---|
+| `quran-json` | Structure, surah metadata, Arabic, translation, transliteration | CC-BY-4.0 | package |
+| `quranenc` | Uthmani Arabic text + Arabic chapter metadata | per quran-json CC-BY metadata | package |
+| `tanzil-sahih` | English (Saheeh International) | Tanzil terms | package |
+| `tanzil-translit` | Latin transliteration | Tanzil terms | package |
+| `tanzil-translations` | 116 editions / 44 languages on demand | Tanzil terms | link (proxy) |
+| `islamic-network-audio` | Per-ayah MP3, 12 reciters | streamed, no recording licence published | link |
+| `tanzil-mushaf-metadata` | juz/page/hizb/quarter/ruku/manzil/sajda | CC-BY | package |
+| `tafsir-jalalayn` | Tafsir al-Jalalayn (Arabic) | Tanzil terms | link (proxy) |
+| `tafsir-muyassar` | Tafsir al-Muyassar (Arabic) | Tanzil terms | link (proxy) |
+| `semantic-embeddings` | English semantic search index | Apache-2.0 | package |
+| `qul-word-data` | Word-by-word segmentation/gloss | MIT | package |
+| `tafsir-ibn-kathir` | Tafsir Ibn Kathir (English abridged) | external | link-out |
+| `tafsir-ma(arif)` | Ma'ariful Quran (English) | external | link-out |
+
+**Delivered ≠ Cleared.** Per [`DATA-PROVENANCE.md`](DATA-PROVENANCE.md): *Delivered* means the mechanism exists and content is reachable; *Cleared* means a human reviewed the terms and permission is established. Nothing in this repository establishes clearance for the audio recordings, the Tanzil proxy catalog, or the two in-app tafsirs. These remain **release dependencies**, not cleared assets.
+
+---
+
+## 7. Information Architecture
+
+**Primary navigation.** Home, Read Quran, Explore (Topics / Dimensions / Domains / Roots / Graph), Search, Discover, Learn (Paths / Plans / Quiz / Revision), My Library (local), Settings, About / Sources.
+
+**URL and SEO rules.**
 
 - Use stable, human-readable URLs.
-- Pick one canonical URL convention and enforce it consistently.
-- Avoid duplicate indexed routes for the same ayah.
-- Do not use a colon in the canonical path if it complicates routing or sharing; e.g. `/ayah/2/255`.
-- Topic pages must be editorially meaningful and source-backed.
-- User-specific pages must be private and noindex.
-- Search-result pages with low-value or user-specific query states should generally be noindex.
-- Use correct Arabic page direction and language metadata.
-- Do not claim React/Vite makes SEO impossible; the chosen reason for Next.js is its strong SSR/SSG, routing, metadata, and ecosystem support.
+- Canonical convention: `/quran/[slug]`, `/ayah/[surah]/[ayah]` (no colon in path), `/topics/[slug]`, `/explore/root/[root]`, `/explore/dimension/[id]`.
+- Enforced consistently; duplicate indexed routes for the same ayah are prevented and asserted by `src/app/url-integrity.test.ts`.
+- User-specific pages (`/library`, `/settings`, `/onboarding`) are local and noindex.
+- Correct Arabic page direction and language metadata per content block.
+
+---
+
+## 8. Core User Journeys
+
+**Journey A — Read an ayah.** Open index or shared link → select surah → read Arabic + chosen translation → open ayah detail → see reference, surrounding context, tafsir, related topics → save or copy stable link.
+Acceptance: references consistent with dataset; Arabic selectable and RTL; translation edition labeled; missing tafsir shown as unavailable, not fabricated. — **COMPLETE**.
+
+**Journey B — Explore a topic/root/dimension.** Select curated topic/root/dimension or search → results show ayat with reference, translation, relevance → open ayah for context/sources → move to related items.
+Acceptance: curated relationships carry provenance and review status; UI distinguishes lexical matches from thematic/editorial associations; curated lists never implied exhaustive. — **COMPLETE**.
+
+**Journey C — Ask a question (AI).** User submits question → system retrieves from approved corpus → concise cited answer or abstention.
+— **BLOCKED by design.** `AI_ANSWER_FEATURE_ENABLED = false as const` (`src/lib/ai/feature-flag.ts`). No `/api/ai/ask` route exists. Re-opening requires all seven safety gates (§11).
+
+**Journey D — Save and revisit.** Bookmark ayah → add private note/tag → find in Library → export/delete.
+Acceptance: notes private by default; export/delete functional (backup envelope v4); local-only persistence disclosed. — **COMPLETE (local-only)**.
+
+**Journey E — Memorization/revision.** Choose ayat/range → select revision mode/frequency → mark recall → scheduler proposes reviews → user edits/resets.
+Acceptance: reminders optional; no shame/streak; progress is personal learning data, not a measure of faith. — **COMPLETE**.
+
+---
+
+## 9. Functional Requirements — Statused Ledger
+
+Priority: **P0** = release blocker; **P1** = important; **P2** = later. Status legend in §9.10. FR numbers FR-001–FR-075 are preserved verbatim from v3.0; status reflects Sprint-44 code. FR-009 (a v3.0 gap) is assigned to word-by-word analysis, which is built. Gaps FR-045–049, FR-055–059, FR-067–069 remain reserved and are **not** backfilled. New built capabilities use FR-076+ blocks.
+
+### 9.1 Quran reader
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-001 | P0 | Surah index with Arabic name, transliteration/English, verse count, verified revelation metadata | COMPLETE |
+| FR-002 | P0 | Display all available ayat in canonical order | COMPLETE |
+| FR-003 | P0 | Navigation by Surah and ayah number | COMPLETE |
+| FR-004 | P0 | Display selected translation with edition/source label | COMPLETE — built-in English + 116 Tanzil editions on demand |
+| FR-005 | P0 | Copy/share link to stable ayah reference | COMPLETE |
+| FR-006 | P1 | Font size, line spacing, reading layout preferences | COMPLETE |
+| FR-007 | P1 | Continuous reading + next/previous Surah navigation | COMPLETE |
+| FR-008 | P1 | Juz/page metadata validated against chosen mushaf dataset | COMPLETE — Tanzil CC-BY boundaries verified at build |
+| FR-009 | P1 | Word-by-word analysis from a verified dataset | COMPLETE — QUL vendored (`src/lib/quran/words.ts`, `public/word-data/`); roots not bundled here |
+
+### 9.2 Search and discovery
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-010 | P0 | Search by exact reference (e.g. 2:255) | COMPLETE |
+| FR-011 | P0 | Search Arabic and translation text with normalized indexing | COMPLETE — Arabic + built-in English indexed; runtime translation not indexed |
+| FR-012 | P1 | Filter by Surah, edition, topic, content type | COMPLETE — surah/topic/juz/revelation filters; edition search as separate mode |
+| FR-013 | P1 | Snippets with highlighted terms preserving readable Arabic | COMPLETE — highlighting for built-in English |
+| FR-014 | P2 | Natural-language semantic retrieval over approved content | PARTIAL — lexical default; opt-in client-side embeddings, English-only |
+| FR-015 | P2 | Show why a result matched | COMPLETE |
+
+### 9.3 Topic system and knowledge graph
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-020 | P0 | Curated topics with stable slug, title, description, language, editorial status | COMPLETE |
+| FR-021 | P0 | Link topics to ayat through typed relationships | COMPLETE |
+| FR-022 | P0 | Record creator/source/review status/last-reviewed per relationship | COMPLETE |
+| FR-023 | P1 | Related topics and ayah-to-ayah cross-references | COMPLETE |
+| FR-024 | P1 | Accessible list view alongside any graph visualization | COMPLETE |
+| FR-025 | P2 | Interactive graph visualization with keyboard-accessible alternatives | COMPLETE — SVG with keyboard-focusable nodes (`/explore/graph`) |
+
+### 9.4 Tafsir and source presentation
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-030 | P0 | Show author/work/edition/language for tafsir | COMPLETE |
+| FR-031 | P0 | Distinguish full text, excerpt, summary, external link | COMPLETE |
+| FR-032 | P0 | Track licensing and permitted display/use per source | COMPLETE — rights register in `src/lib/quran/sources.ts` |
+| FR-033 | P1 | Compare multiple translations side-by-side | PARTIAL — parallel mode up to 3 editions; per-edition rights unverified |
+| FR-034 | P1 | Source details and editorial methodology | COMPLETE |
+| FR-035 | P2 | Tafsir search across works where rights/quality permit | COMPLETE — merged search over al-Jalalayn + al-Muyassar (`/search?mode=tafsir`) |
+
+### 9.5 User library
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-040 | P0 | Allow authenticated users to bookmark ayat | PARTIAL — bookmarking works locally; no accounts exist; FR-044 is the deliberate substitute |
+| FR-041 | P1 | Private notes and tags | COMPLETE |
+| FR-042 | P1 | Sync library across devices | BLOCKED — no accounts/server store by design |
+| FR-043 | P1 | Export and delete personal data | COMPLETE — backup envelope v4 |
+| FR-044 | P2 | Local-only anonymous library with transparent persistence limits | COMPLETE — this is the architecture, not an alternative |
+
+### 9.6 Learning and memorization
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-050 | P1 | Select a revision range | COMPLETE |
+| FR-051 | P1 | Record review events and self-rated recall | COMPLETE |
+| FR-052 | P1 | Schedule reviews with configurable spaced repetition | COMPLETE |
+| FR-053 | P1 | No-streak / no-shame progress interface | COMPLETE |
+| FR-054 | P2 | Audio-assisted review if licensed assets/playback ready | PARTIAL — streaming implemented; recording rights unresolved |
+
+### 9.7 AI assistant
+
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-060 | P2 | Retrieve only from approved, versioned source material | PARTIAL — allowlist + refusal path in code; runtime disabled; allowlist admits non-prose package records and must be narrowed |
+| FR-061 | P2 | Return citations with each factual claim | PARTIAL — claim-level checks unit-tested; never run against a live model |
+| FR-062 | P2 | Separate retrieved quotations from generated summaries | PARTIAL — implemented; unverified end-to-end |
+| FR-063 | P2 | Abstain when retrieval is insufficient | PARTIAL — abstention paths implemented; unverified |
+| FR-064 | P2 | Avoid presenting opinion/generated content as Quran/hadith/tafsir/fatwa/consensus | PARTIAL — non-authority claims refused before retrieval |
+| FR-065 | P2 | Log source IDs and model/version metadata for audits | PARTIAL — `AUDIT_RETENTION` defined; records hold no user/prompt; privacy review gate unmet |
+| FR-066 | P2 | User feedback/reporting for inaccurate answers | PARTIAL — `/report` intake exists; no destination configured; no AI answers to report |
 
-## 7. Core User Journeys
+The feature flag is off (`src/lib/ai/feature-flag.ts`); no `/api/ai/ask` route exists. See §11.
 
-**Journey A — Read an ayah**
+### 9.8 Editorial/admin tooling
 
-1. User opens Quran index or a shared Surah link.
-2. Selects a Surah.
-3. Reads Arabic and chosen translation.
-4. Opens an ayah detail panel.
-5. Sees reference, surrounding ayat, available tafsir, and related topics.
-6. Saves the ayah or copies a stable share link.
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-070 | P0 | Import datasets with schema validation and duplicate detection | COMPLETE — package pin + validation scripts |
+| FR-071 | P0 | Immutable source/version metadata for Quran text and translations | PARTIAL — version string + structural scan; no byte-level checksum baseline for the core package |
+| FR-072 | P0 | Review and approve topic-to-ayah mappings before publication | PARTIAL — workflow + review log exist; no qualified reviewer, so nothing can be approved |
+| FR-073 | P1 | Track changes, reviewers, publication state | PARTIAL — current state/curator/date recorded; per-event history relies on git |
+| FR-074 | P1 | Roll back an incorrect mapping or dataset release | COMPLETE — revert commit / re-pin, documented |
+| FR-075 | P1 | Display content rights and source status to editors | COMPLETE — `/sources`, `/editorial` |
 
-Acceptance criteria
+### 9.9 Reference & attribution display standard (new)
 
-- Surah and ayah references are consistent with the selected dataset.
-- Arabic text is selectable and rendered RTL.
-- Translation edition is clearly labeled.
-- Missing tafsir or translation is shown as unavailable, not fabricated.
+This block ports the mandatory reference-card rule from v2.0 §05.5 into the normative spec, statused against actual code.
 
-**Journey B — Explore a topic**
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-076 | P0 | Every displayed ayah carries surah name, ayah number, and a stable reference path | COMPLETE — `/ayah/[surah]/[ayah]` header, `src/lib/quran/reference.ts` |
+| FR-077 | P1 | Ayah view shows juz, page, hizb, ruku, manzil, and sajda markers from validated mushaf metadata | COMPLETE — `src/app/ayah/[surah]/[ayah]/page.tsx` via `src/lib/quran/juz.ts` |
+| FR-078 | P1 | Tafsir/attribution is labeled with author, language, and license and never mistaken for Quran translation | COMPLETE — `TafsirLinks`, `TafsirViewer`, `SourcePanel` on the ayah page |
+| FR-079 | P2 | Public API publishes validated juz/page references | PARTIAL — juz published; page numbers deliberately withheld from `/api/v1` pending printed-mushaf verification (`src/app/api/v1/route.ts`) |
 
-1. User selects a curated topic or enters a search query.
-2. Results show ayat with reference, translation, and relevance explanation.
-3. User opens an ayah to inspect context and sources.
-4. User can move to related topics or verified cross-references.
+> Page numbers ARE shown in the UI (Madani Mushaf via CC-BY Tanzil metadata, build-verified for 604 pages) but are withheld from the machine-readable API until verified against a specific printed mushaf. This asymmetry is intentional.
 
-Acceptance criteria
+### 9.10 Status legend
 
-- Each curated relationship has provenance and review status.
-- The UI distinguishes direct lexical matches from thematic/editorial associations.
-- The product does not imply that a curated list is exhaustive.
+| Code | Meaning |
+|---|---|
+| COMPLETE | Code, behavior, integration, and the stated verification basis are in place. |
+| PARTIAL | Some behavior exists, but a named piece is missing, unverified, or blocked. |
+| NOT IMPLEMENTED | No code exists for this requirement. |
+| BLOCKED | Cannot be completed without an external dependency, licence, authority, or architectural change. |
+| DEFERRED | Explicitly out of scope (see Appendix A). |
+| UNVERIFIED | Implemented in code, but no measurement or rendered-output check exists. |
 
-**Journey C — Ask a question**
+### 9.11 Discovery & taxonomy (new)
 
-1. User submits a question in supported language.
-2. System retrieves relevant Quran passages and approved source excerpts.
-3. Response presents a concise answer only when retrieval supports it.
-4. Every substantive religious claim links to the underlying source and exact reference.
-5. If evidence is insufficient or the question requires a ruling, the system says so and directs the user to a qualified scholar.
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-080 | P1 | 10 life-dimensions as topic-level navigation aids (not ayah-level tags) | COMPLETE — `src/lib/explore/dimensions.ts`, `/explore/dimension/[id]` |
+| FR-081 | P2 | 14-domain organizational catalog (proposal; no topic/passage assignments) | COMPLETE — `src/lib/taxonomy/domains.ts`, `/explore/domains` |
+| FR-082 | P1 | Knowledge-graph nodes/edges with scope, provenance, review status | COMPLETE — `src/lib/graph/knowledge-graph.ts`, `/api/v1/graph` |
+| FR-083 | P1 | Discover hub aggregating entry points | COMPLETE — `/discover` |
+| FR-084 | P2 | Deterministic verse-of-the-day from curated refs | COMPLETE — 34 curated refs, day-of-year (`src/lib/quran/verse-of-day.ts`) |
+| FR-085 | P2 | Onboarding for goal-based path selection (noindex) | COMPLETE — `/onboarding` |
+| FR-086 | P2 | Content report intake | PARTIAL — `/report` + `src/lib/report-destination.ts`; destination unconfigured |
 
-Acceptance criteria
-
-- No unsupported citation is rendered.
-- The system never invents an ayah or misattributes a translation.
-- The answer labels translation/paraphrase and source excerpts accurately.
-- High-risk religious/legal/medical matters receive appropriate limitations.
+### 9.12 Morphology & roots (new)
 
-**Journey D — Save and revisit**
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-090 | P1 | Import and validate QUL morphology with reconciliation | COMPLETE — `scripts/import-morphology.py`, `data/morphology-index.json` |
+| FR-091 | P1 | Separate occurrence validity / lemma coverage / thematic classification | COMPLETE — three-dimension separation enforced |
+| FR-092 | P1 | Disclosed-coverage publication policy (Policy B) | COMPLETE — `docs/POLICY-DECISION-43.md`, publication-policy v2.0.0 |
+| FR-093 | P2 | AI-assisted lemma review harness | PARTIAL — `src/lib/morphology/ai-lemma-reviewer.ts`; offline, never run against a live model |
+| FR-094 | P1 | Deterministic root discovery + batch publication preserving manual decisions | COMPLETE — `root-discovery.ts`, `batch-eligibility.ts`, `scripts/batch-publish-roots.ts` |
+| FR-095 | P1 | Searchable/filterable root listing and per-root detail | COMPLETE — `/explore/root`, `/explore/root/[root]` |
+| FR-096 | P1 | Guarantee: no fabricated roots/lemmas, no automatic scholarly approval or topic creation | COMPLETE — enforced and regression-tested |
 
-1. User bookmarks an ayah.
-2. Optionally adds a private note or tag.
-3. Finds it in My Library and filters by tag or date.
-4. Deletes or exports their data.
+### 9.13 Learning extensions (new)
 
-Acceptance criteria
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-100 | P2 | Deterministic seeded quiz generator from dataset/topics/paths (no fabricated content) | COMPLETE — `src/lib/quiz/`, `/learn/quiz` |
+| FR-101 | P1 | Curated learning paths with provenance and review status | COMPLETE — 5 paths (`src/lib/paths/data.ts`), `/learn/paths` |
+| FR-102 | P2 | User-defined reading plans with position/goal tracking | COMPLETE — `src/lib/reading-plans/`, `/learn/plans` |
+| FR-103 | P2 | Ayah-level backlinks from topics and learning paths | COMPLETE — ayah page shows topic + path membership |
 
-- Notes are private by default.
-- Delete/export behavior is explained and functional.
-- Anonymous users may use local-only bookmarks if implemented, with a clear warning that browser data may be lost.
+### 9.14 Localization (new)
 
-**Journey E — Memorization/revision**
+| FR | Priority | Requirement | Status |
+|---|---|---|---|
+| FR-110 | P1 | 4-locale UI (en default / ur / ar / zh) with correct RTL/LTR direction | COMPLETE — `src/lib/i18n/` |
+| FR-111 | P1 | Content translations managed separately from UI locale | COMPLETE — via FR-004/FR-033 catalog |
 
-1. User chooses ayat or a range.
-2. Selects a revision mode and frequency.
-3. Marks recall as easy, difficult, or missed.
-4. The scheduler proposes future reviews.
-5. User can edit or reset the schedule.
+---
 
-Acceptance criteria
-
-- Revision reminders are optional.
-- Scheduling supports user control and does not shame the user.
-- Progress is presented as personal learning data, not a measure of faith.
-
-## 8. Functional Requirements
-
-Priority definitions: **P0** = release blocker; **P1** = important; **P2** = later enhancement.
-
-### 8.1 Quran reader
+## 10. Content, Data, and Provenance Model
 
-- FR-001 (P0): Display Surah index with Arabic name, transliteration/English label where available, verse count, and revelation metadata only when verified.
-- FR-002 (P0): Display all available ayat in canonical order.
-- FR-003 (P0): Support navigation by Surah and ayah number.
-- FR-004 (P0): Display selected translation and edition/source label.
-- FR-005 (P0): Provide copy/share link to stable ayah reference.
-- FR-006 (P1): Allow font size, line spacing, and reading layout preferences.
-- FR-007 (P1): Support continuous reading and next/previous Surah navigation.
-- FR-008 (P1): Provide juz/page metadata only if validated against the chosen mushaf dataset.
+**Core entities** (match `src/lib/quran/types.ts`, `src/lib/topics/data.ts`, `src/lib/quran/sources.ts`): Surah, Ayah, TranslationEdition, AyahTranslation, TafsirWork, TafsirEntry, Topic, AyahTopicRelation, CrossReference, AudioAsset, UserBookmark, UserNote, RevisionItem/ReviewEvent, SourceRecord.
 
-### 8.2 Search and discovery
+**Typed relationship types** (match `RelationType` in `src/lib/topics/data.ts`): `TOPIC_ASSOCIATION`, `LEXICAL_MATCH`, `CROSS_REFERENCE`, `SEQUENTIAL_CONTEXT`. Root occurrence links are a separate, neutral dimension ("verses containing forms associated with this root"), not a thematic claim.
 
-- FR-010 (P0): Search by exact reference (e.g. 2:255).
-- FR-011 (P0): Search Arabic and translation text using normalized indexing.
-- FR-012 (P1): Filter results by Surah, translation edition, topic, or content type.
-- FR-013 (P1): Show snippets with highlighted terms while preserving readable Arabic.
-- FR-014 (P2): Natural-language semantic retrieval across approved content.
-- FR-015 (P2): Show why a result matched (exact phrase, translation term, curated theme, or semantic similarity).
-
-### 8.3 Topic system and knowledge graph
-
-- FR-020 (P0): Support curated topics with stable slug, title, description, language, and editorial status.
-- FR-021 (P0): Link topics to ayat through typed relationships.
-- FR-022 (P0): Record who/what created the relationship, source, review status, and last-reviewed date.
-- FR-023 (P1): Support related topics and ayah-to-ayah cross-references.
-- FR-024 (P1): Provide an accessible list view even if a graph visualization exists.
-- FR-025 (P2): Interactive graph visualization with keyboard-accessible alternatives.
-
-### 8.4 Tafsir and source presentation
-
-- FR-030 (P0): Show author/work/edition/language for tafsir.
-- FR-031 (P0): Distinguish full text, excerpt, summary, and link to external source.
-- FR-032 (P0): Track licensing and permitted display/use per source.
-- FR-033 (P1): Compare multiple translations side-by-side.
-- FR-034 (P1): Provide source details and editorial methodology.
-- FR-035 (P2): Add tafsir search across works where rights and data quality permit.
-
-### 8.5 User library
-
-- FR-040 (P0): Allow authenticated users to bookmark ayat.
-- FR-041 (P1): Allow private notes and tags.
-- FR-042 (P1): Sync library across devices.
-- FR-043 (P1): Export and delete personal data.
-- FR-044 (P2): Local-only anonymous library, if implemented with transparent persistence limits.
-
-### 8.6 Learning and memorization
-
-- FR-050 (P1): Let users select a revision range.
-- FR-051 (P1): Record review events and self-rated recall.
-- FR-052 (P1): Schedule reviews using a configurable spaced-repetition algorithm.
-- FR-053 (P1): Provide a no-streak / no-shame progress interface.
-- FR-054 (P2): Audio-assisted review if licensed assets and playback UX are ready.
-
-### 8.7 AI assistant
-
-- FR-060 (P2): Retrieve only from approved, versioned source material.
-- FR-061 (P2): Return citations with each factual Quranic or scholarly claim.
-- FR-062 (P2): Separate retrieved quotations from generated summaries.
-- FR-063 (P2): Abstain when retrieval is insufficient.
-- FR-064 (P2): Avoid presenting personal opinions or generated content as Quran, hadith, tafsir, fatwa, or scholarly consensus.
-- FR-065 (P2): Log source IDs and model/version metadata for quality audits, subject to privacy policy.
-- FR-066 (P2): Provide user feedback/reporting for inaccurate or inappropriate answers.
-
-### 8.8 Editorial/admin tooling
-
-- FR-070 (P0): Import datasets with schema validation and duplicate detection.
-- FR-071 (P0): Keep immutable source/version metadata for Quran text and translations.
-- FR-072 (P0): Review and approve topic-to-ayah mappings before public publication.
-- FR-073 (P1): Track changes, reviewers, and publication state.
-- FR-074 (P1): Roll back an incorrect topic mapping or dataset release.
-- FR-075 (P1): Display content rights and source status to editors.
-
-## 9. Content, Data, and Provenance Model
-
-**Data policy**
-
-The referenced quran-database project can be evaluated as a candidate source, not automatically trusted as the sole production source. Verify the repository's license, source provenance, schema, text accuracy, numbering conventions, translation rights, maintenance status, and release process before use. Never assume that "open source" means every included translation/audio/tafsir can be redistributed without restrictions.
-
-**Core entities**
-
-- **Surah**: canonical number, Arabic name, transliteration, translated name, verse count, metadata source.
-- **Ayah**: stable reference, Surah number, ayah number, Arabic text, text edition/version, optional juz/page metadata.
-- **TranslationEdition**: language, translator, title, publisher/source, license, version.
-- **AyahTranslation**: ayah reference, edition ID, translated text, provenance.
-- **TafsirWork**: title, author, language, edition, rights/license, source URL.
-- **TafsirEntry**: work ID, ayah/range reference, content or excerpt, source location.
-- **Topic**: slug, localized title, description, editorial state.
-- **AyahTopicRelation**: ayah reference, topic ID, relation type, rationale, provenance, reviewer, status.
-- **CrossReference**: source ayah, target ayah, relation type, evidence/source, review status.
-- **AudioAsset**: reciter, recording edition, ayah/range, provider, rights, URL, integrity metadata.
-- **UserBookmark**: user ID, ayah reference, created time.
-- **UserNote**: user ID, ayah reference, encrypted/private content where appropriate, timestamps.
-- **RevisionItem / ReviewEvent**: user, ayah/range, due date, review outcome, algorithm version.
-- **SourceRecord**: source name, URL, license, version, date checked, ingestion date, checksum, validation status.
-
-**Relationship types**
-
-Relationships must be typed rather than treated as generic "related" links. Examples:
-
-- `TOPIC_ASSOCIATION`
-- `LEXICAL_MATCH`
-- `CROSS_REFERENCE`
-- `TAFSIR_REFERENCE`
-- `SAME_ROOT` (only with validated morphology data)
-- `SEQUENTIAL_CONTEXT`
-- `USER_PERSONAL_TAG` (private, not a public religious claim)
-
-**Data validation gates**
-
-Before publishing a dataset:
-
-1. Confirm all expected Surahs and ayat exist according to the chosen source's numbering convention.
-2. Detect duplicate, missing, reordered, or malformed records.
-3. Validate Arabic Unicode normalization without changing canonical text.
-4. Compare sampled passages against a trusted reference.
-5. Verify translation edition and license.
-6. Store source URL, version, checksum, and import date.
-7. Run regression tests against known references.
-8. Require a review and rollback procedure for corrections.
-
-## 10. AI and Religious-Content Safety
-
-**Permitted AI tasks**
-
-- Find potentially relevant ayat in approved sources.
-- Summarize retrieved source passages with clear labels.
-- Explain navigation and terminology in plain language.
-- Help users organize their own notes.
-- Translate interface text, subject to review.
-
-**Restricted or disallowed behavior**
-
-- Generating or reconstructing Quranic Arabic text from a language model.
-- Inventing ayah references, hadith citations, tafsir quotations, or scholarly attributions.
-- Declaring a definitive ruling without a qualified, sourced review workflow.
-- Claiming that a specific verse guarantees a cure, financial outcome, or other worldly result.
-- Presenting a thematic association as the only or universally accepted interpretation.
-- Concealing uncertainty or failing to show source boundaries.
-
-**Grounded answer pipeline**
-
-1. Classify the request and identify whether it asks for a factual reference, explanation, ruling, or sensitive advice.
-2. Retrieve from an allowlisted, versioned corpus.
-3. Validate each reference against the canonical database.
-4. Generate only from retrieved material.
-5. Attach citations at claim level.
-6. Run citation/reference validation.
-7. Abstain or provide a safe redirect if sources are insufficient.
-8. Preserve a reviewable audit record without unnecessarily storing private user questions.
-
-**User-facing labels**
-
-Use explicit labels such as:
-
-- Quran text
-- Translation
-- Tafsir source
-- Editorial topic connection
-- AI-assisted summary
-- Your private note
-
-## 11. UX and Visual Design Requirements
-
-**Design direction**
-
-Premium, calm, modern, respectful, and content-first. The experience should feel like a high-quality reading and research tool rather than a noisy social network or generic AI chatbot.
-
-**Layout**
-
-- Desktop: spacious reading column, optional contextual side panel, clear navigation.
-- Mobile: single-column reading experience, compact controls, accessible bottom navigation where useful.
-- Arabic text: right-to-left with a dedicated font and tested line-height.
-- English/Urdu and other translations: correct language and direction per content.
-- Topic pages: editorial introduction, ayah list, context links, sources, and related topics.
-
-**UI rules**
-
-- Prioritize legibility and reading comfort over animation.
-- Respect reduced-motion preferences.
-- Make audio controls keyboard and screen-reader accessible.
-- Never rely on color alone to convey source status or review state.
-- Preserve Arabic punctuation and glyph rendering.
-- Use skeletons only where they improve perceived loading; avoid layout shifts.
-- Include empty, loading, offline, error, and not-found states.
-- Avoid intrusive interstitials or ads between ayat.
-
-**Accessibility**
-
-Target WCAG 2.2 AA where practical:
-
-- Keyboard navigation and visible focus.
-- Semantic headings and landmarks.
-- Screen-reader labels for Arabic controls and audio.
-- Adequate contrast and scalable typography.
-- RTL/LTR mixed-content testing.
-- Reduced motion and non-color status indicators.
-
-## 12. Technical Architecture
-
-**Recommended initial stack**
-
-- Framework: Next.js App Router with TypeScript.
-- Styling: Tailwind CSS, accessible component primitives.
-- Client state: Zustand only for genuinely shared client-side UI state; keep server data in server components or a query/cache layer as appropriate.
-- Data fetching: Server-side data access for public Quran content; use TanStack Query when client-side caching/mutations justify it.
-- Database: PostgreSQL recommended for structured relational data and future search extensions; MySQL is also viable if already selected. Do not add a graph database before the relationship model proves it is needed.
-- Search: Start with database full-text search and normalized indexes; evaluate a dedicated search engine only when scale/relevance requires it.
-- Authentication: Use a maintained auth solution with secure sessions and account deletion/export support.
-- Validation: Runtime schema validation at import and API boundaries.
-- Testing: Unit, integration, end-to-end, accessibility, and dataset validation tests.
-- Observability: Error tracking, structured logs, uptime checks, and performance monitoring.
-
-**Rendering strategy**
-
-- SSG/ISR: Surah pages, stable ayah pages, curated topic pages where content is public and stable.
-- SSR: Personalized or request-dependent pages when necessary.
-- Client components: Interactive reader controls, search filters, audio controls, graph interactions, and local UI state.
-- API routes: Use Next.js route handlers for initial application APIs, search, and tightly scoped AI proxying. Keep secrets server-side.
-- Future backend: Extract a dedicated NestJS service only when domain complexity, independent deployment, integrations, or workload justify the extra operational cost.
-
-**Important Capacitor qualification**
-
-Capacitor is not automatically compatible with every Next.js server feature. A fully static export cannot run Next.js server-side rendering, server actions, or dynamic route handlers inside the exported bundle. If mobile apps are required, choose deliberately between:
-
-1. A hosted Next.js website displayed in a Capacitor shell, or
-2. A static/mobile client that calls a hosted API.
-
-Do not assume `next export` is a current command; use the supported Next.js `output: 'export'` configuration only if the application avoids unsupported server features.
-
-**High-level architecture**
-
-1. Source ingestion and validation pipeline
-2. Canonical Quran/content database
-3. Server-side domain/data access layer
-4. Public Next.js routes and private user workspace
-5. Search/retrieval layer
-6. Optional grounded AI service
-7. Editorial review and monitoring
-8. Backup, restore, and release pipeline
-
-**Security requirements**
-
-- Secrets and model API keys must remain server-side.
-- Rate-limit search and AI endpoints.
-- Validate and sanitize all user input.
-- Apply authorization checks to every user-owned record.
-- Prevent cross-user access to notes/bookmarks.
-- Use secure cookies and standard CSRF protections where applicable.
-- Encrypt traffic in transit; protect backups and sensitive stored data.
-- Maintain dependency updates and security scanning.
-- Define retention and deletion policies for prompts, logs, and user notes.
-
-## 13. Suggested Repository Structure
+**Provenance record** (`ProvenanceRecord`): method, curator, reviewedAt, status. Every topic, dimension mapping, domain, and learning path carries one. All 11 topics are `pending-scholarly-review`.
+
+**Data validation gates** (PRD §9 lineage): expected-record check, duplicate/missing/reorder/malformed detection, Arabic normalization without altering canonical text, sampled comparison against a trusted reference, translation edition + license verification, source URL/version/checksum/import-date storage, regression tests, review + rollback procedure. Gates 1–3 and 6–8 are structurally enforced; gate 4 (sampled human comparison) and gate 5 (license verification) have no recorded human sign-off.
+
+**Policy B (disclosed coverage).** Per [`POLICY-DECISION-43.md`](POLICY-DECISION-43.md): missing lemmas (1,669 of 50,298 word-level records, 3.3%) are disclosed in UI and metadata but do not block publication when occurrence alignment is valid. Publication (automated) is separate from activation (human gate).
+
+**Delivered vs Cleared** runs through all ingestion: see §6.4 and [`DATA-PROVENANCE.md`](DATA-PROVENANCE.md).
+
+---
+
+## 11. AI and Religious-Content Safety
+
+The grounded-answer pipeline and permitted/restricted behaviors are defined in [`AI-SAFETY.md`](AI-SAFETY.md) and implemented as code paths in `src/lib/ai/`. **The public feature is off.**
+
+**Seven safety gates** (from `src/lib/ai/feature-flag.ts`):
+
+| Gate | Met | Evidence |
+|---|---|---|
+| source-registry | ✅ | `src/lib/quran/sources.ts` rendered on `/sources` |
+| evaluation-dataset | ❌ | Cases exist in `evaluation-set.ts`; no run executed/signed off |
+| citation-coverage | ❌ | Enforced in `grounding.ts`; coverage run not recorded |
+| abstention-rate | ❌ | Threshold undefined/unmeasured |
+| hallucination-zero | ❌ | Test artifact exists; no executed run |
+| privacy-review | ❌ | Records store no user/prompt by construction; policy not reviewed |
+| editorial-reviewer | ❌ | No qualified reviewer assigned |
+
+`allGatesMet()` must be true before any answer is emitted. Flipping the flag would not expose an endpoint — none exists. **Enablement additionally requires** narrowing the retrieval allowlist (currently derived from `method === "package"`) to prose sources only, excluding bundled datasets (embeddings, word data, mushaf metadata).
+
+---
+
+## 12. UX and Visual Design
+
+Design direction: premium, calm, modern, respectful, content-first — a reading/research tool, not a social feed or chatbot.
+
+- Desktop: spacious reading column, contextual panels, clear nav. Mobile: single-column, compact controls.
+- Arabic: RTL, dedicated font, tested line-height. Mixed Arabic/English/Urdu layouts per content language/direction.
+- Legibility over animation; respect reduced-motion; keyboard/screen-reader accessible controls; non-color status indicators; empty/loading/offline/error/not-found states.
+
+**Accessibility.** Sprints 20–25 performed keyboard, focus, touch-target, and browser-verified remediation (see `SPRINT-20`–`SPRINT-25-REPORT.md`). Implemented in code. **WCAG 2.2 AA conformance is UNVERIFIED** — no automated axe audit or formal certification is recorded.
+
+---
+
+## 13. Technical Architecture
+
+**Actual stack.** Next.js 15.3.8 (App Router) · React 19 · TypeScript · Tailwind CSS · Radix/shadcn (`src/components/ui/`) · Lucide · React Hook Form + Zod · Sonner · Recharts · Vitest.
+
+**Deliberate deviations from v3.0's recommended stack** (documented, compliant in spirit):
+
+| v3.0 recommendation | Actual | Reason |
+|---|---|---|
+| PostgreSQL / relational DB | None — static data + localStorage | Local-first, no accounts |
+| Authentication solution | None | No accounts by design |
+| Server-side data access for public content | Server components + static JSON | Compliant |
+| Dedicated search service | In-memory lexical index + client-side embeddings | Scale not reached |
+| Runtime schema validation at import | Build-time validators | No runtime import path |
+| Error tracking / observability | None | No analytics/telemetry by design |
+
+**Rendering.** SSG/ISR for stable public pages (6,433 prerendered); client components for reader controls, search filters, quiz, graph. API routes for `/api/v1`, translation proxy, verse-of-day, dataset validation. Secrets stay server-side.
+
+**Deployment.** See [`../DEPLOYMENT.md`](../DEPLOYMENT.md). `NEXT_PUBLIC_SITE_URL` must be a bare `https://` origin inlined at build time via `scripts/validate-build-env.mjs`. No committed hosting config exists. **Known hardening gap:** rate limiting is per-process only; durable enforcement belongs at CDN/edge.
+
+---
+
+## 14. Repository Structure (actual)
 
 ```
-al-huda/
-├── src/
-│   ├── app/
-│   │   ├── page.tsx
-│   │   ├── quran/
-│   │   │   ├── page.tsx
-│   │   │   └── [surahSlug]/page.tsx
-│   │   ├── ayah/
-│   │   │   └── [surahNumber]/[ayahNumber]/page.tsx
-│   │   ├── topics/
-│   │   │   ├── page.tsx
-│   │   │   └── [topicSlug]/page.tsx
-│   │   ├── search/page.tsx
-│   │   ├── library/
-│   │   ├── sources/page.tsx
-│   │   └── api/
-│   ├── components/
-│   │   ├── quran/
-│   │   ├── topics/
-│   │   ├── search/
-│   │   ├── library/
-│   │   └── ui/
-│   ├── lib/
-│   │   ├── quran/
-│   │   ├── search/
-│   │   ├── sources/
-│   │   ├── auth/
-│   │   └── validation/
-│   ├── server/
-│   │   ├── repositories/
-│   │   ├── services/
-│   │   └── ai/
-│   ├── data/
-│   │   └── seed/
-│   ├── types/
-│   └── tests/
-├── scripts/
-│   ├── import-quran-data.*
-│   ├── validate-quran-data.*
-│   └── validate-source-licenses.*
-├── docs/
-│   ├── PRD.md
-│   ├── DATA-PROVENANCE.md
-│   ├── AI-SAFETY.md
-│   └── ADR/
-├── public/
-└── ...
+src/
+  app/          routes + api/v1 + sitemap/robots + tests
+  components/   ayah, graph, home, layout, learn, library, paths,
+                quiz, quran, reading-plans, revision, search, seo,
+                topics, ui
+  hooks/
+  lib/          ai, api, comprehension, editorial, explore, graph,
+                i18n, library, morphology, paths, prefs, quiz, quran,
+                reading-plans, revision, search, seo, taxonomy, topics
+scripts/        import/validate/generate tooling
+content/editorial/reviews.json
+data/           morphology DBs, indexes, root-occurrences
+docs/           PRD, provenance, AI-safety, editorial, policy, archive
+public/         embeddings, word-data, admin
 ```
 
-This is a suggested structure, not a mandate. Keep the initial implementation simple and avoid creating empty abstraction layers without a current need.
+---
 
-## 14. API Surface (Initial Proposal)
+## 15. API Surface (implemented)
 
-API design should be finalized after the database and auth approach are chosen. Example endpoints:
+Self-documenting read-only index at `GET /api/v1` (`src/app/api/v1/route.ts`). **No authenticated endpoints exist because there are no accounts.**
 
-- `GET /api/surahs`
-- `GET /api/surahs/:surahNumber`
-- `GET /api/ayahs/:surahNumber/:ayahNumber`
-- `GET /api/search?q=...&language=...`
-- `GET /api/topics`
-- `GET /api/topics/:slug`
-- `GET /api/topics/:slug/ayahs`
-- `GET /api/ayahs/:surahNumber/:ayahNumber/tafsir`
-- `GET /api/library/bookmarks` (authenticated)
-- `POST /api/library/bookmarks` (authenticated)
-- `DELETE /api/library/bookmarks/:id` (authenticated)
-- `POST /api/library/notes` (authenticated)
-- `POST /api/ai/ask` (later release, authenticated or rate-limited according to policy)
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/api/v1/surahs` | All 114 surahs metadata |
+| GET | `/api/v1/surahs/{n}` | One surah + every ayah verbatim |
+| GET | `/api/v1/ayahs/{s}/{a}` | One ayah + cross-refs + topic membership |
+| GET | `/api/v1/ayahs/{s}/{a}/tafsir` | Tafsir availability (editions + link records) |
+| GET | `/api/v1/search` | Normalized search, paginated, match-reason + snippet |
+| GET | `/api/v1/search/tafsir` | Merged search over the two in-app Arabic tafsirs |
+| GET | `/api/v1/search/suggestions` | Autocomplete |
+| GET | `/api/v1/translations` | Catalog of readable editions |
+| GET | `/api/v1/topics` | Curated topic index |
+| GET | `/api/v1/topics/{slug}` | One topic with relations + provenance |
+| GET | `/api/v1/topics/{slug}/ayahs` | Resolved verses for a topic |
+| GET | `/api/v1/sources` | Source catalog (license/version/method) |
+| GET | `/api/v1/explore/dimensions` (+ `/{id}`) | 10 dimensions + mapped topics |
+| GET | `/api/v1/graph` | Typed dimension/topic nodes + edges |
+| GET | `/api/v1/quiz/generate` | Deterministic quiz questions |
 
-**API requirements**
+**Support routes.** `/api/translations/[id]` (constrained Tanzil proxy), `/api/verse-of-day`, `/api/validate-dataset`.
 
-- Stable response schemas and explicit versioning strategy.
-- Pagination for large result sets.
-- Input validation and bounded query sizes.
-- Consistent error format.
-- Rate limits and abuse controls.
-- No sensitive personal data in public endpoints.
-- Quran references validated against canonical records.
+**Requirements.** Stable schemas, pagination, bounded queries, consistent errors, rate limits (per-process only — see §13), no sensitive personal data, Quran references validated against canonical records.
 
-## 15. SEO and Public Discovery
+---
 
-**Indexable content**
+## 16. SEO and Public Discovery
 
-- Surah pages with meaningful unique metadata.
-- Ayah reference pages with correct text, edition attribution, and useful surrounding context.
-- Curated topic pages with editorially reviewed descriptions and related ayat.
-- Source/methodology pages explaining the platform's approach.
+**Implemented.** JSON-LD (`src/lib/seo/json-ld.ts`), `sitemap.ts`, `robots.ts`, canonical URLs, per-route noindex, URL-integrity tests. Surah, ayah, topic, root, dimension, and domain pages are indexable with meaningful unique metadata.
 
-**Requirements**
+**Open.** Rendered Open Graph/Twitter output and live crawl/indexation are **UNVERIFIED** (metadata asserted in code, not checked against a production build). This is a release dependency (§19).
 
-- Server-render useful content for crawlers.
-- Use unique titles/descriptions without keyword stuffing.
-- Add canonical tags and XML sitemap entries only for valid public pages.
-- Include structured data only when semantically appropriate and accurate.
-- Keep private notes, account pages, internal search states, and thin pages out of the index.
-- Avoid mass-generating low-value topic pages.
-- Monitor indexing, crawl errors, duplicate URLs, and Core Web Vitals.
+**Guardrails.** Index only useful canonical pages; noindex low-value/personal routes; do not mass-generate thin topic pages; each indexed page is editorially meaningful and source-backed.
 
-**Example URL convention**
+---
 
-- `/quran/al-baqarah`
-- `/ayah/2/255`
-- `/topics/sabr`
+## 17. Non-Functional Requirements
 
-## 16. Non-Functional Requirements
+- **Performance.** Target good Core Web Vitals on representative mobile; minimize client JS on reading pages; avoid layout shifts on Arabic font load. **UNVERIFIED** — Lighthouse folders exist in the repo but no recorded pass criteria.
+- **Reliability.** Reading survives optional-service (audio/AI) failure; dataset rollback documented; no DB to back up (none exists).
+- **Localization.** UI in 4 locales; content translations via catalog. Each text field declares language and direction.
+- **Privacy.** Local-only architecture = no server-side user data, no analytics, no telemetry. Export/delete via backup controls. Private notes never leave the browser.
 
-**Performance**
+---
 
-- Target Core Web Vitals in the "good" range on representative mobile devices.
-- Minimize client JavaScript on public reading pages.
-- Cache stable public content safely.
-- Avoid layout shifts when Arabic fonts load.
-- Paginate or virtualize long Surah views if testing shows a need.
+## 18. Success Metrics and Analytics
 
-**Reliability**
+**Analytics: not implemented, by design.** No event is emitted; no consent/retention policy is needed because no event data exists.
 
-- Public Quran reading should fail gracefully if optional AI/audio services are unavailable.
-- Back up the database and test restoration.
-- Version imported datasets and provide rollback.
-- Monitor API errors, latency, and failed ingestion jobs.
+**Consequence.** v3.0 §17 engagement metrics (activation, retention, sessions) are intentionally unmeasurable in this build. This is a deliberate outcome of the privacy-first architecture, not an oversight.
 
-**Localization**
+**Measurable quality metrics** (the substitute): Quran reference validation pass rate (target 100% for published references), dataset import validation pass rate, published source records with complete provenance, and — once AI is enabled — incorrect/missing citation reports per 1,000 answers.
 
-- Architecture should support English and Urdu first, with Arabic source text.
-- Pashto and additional languages can follow when translations/UI copy are reviewed.
-- Each text field must declare its language and direction.
-- Do not assume all translations are licensed for redistribution.
+---
 
-**Privacy**
+## 19. Testing, QA, and Release Blockers
 
-- Private notes and learning history must not be public or used for model training without explicit, informed permission.
-- Provide account deletion and data export.
-- Minimize telemetry and retention.
-- Explain what is stored and why.
+**Automated.** 809 unit/integration tests (48 files); dataset validators (`validate:quran`, `validate:licenses`); `seo-smoke-test.mjs`; sitemap + URL-integrity + settings tests.
 
-## 17. Success Metrics
+**Missing / not recorded.** End-to-end (Playwright/Cypress) suite, automated axe accessibility audit, rendered-SEO/social verification, manual QA checklist record, qualified topic review.
 
-**North-star metric**
+**Standing release blockers (require a human decision):**
 
-Meaningful Quran learning sessions per active user, defined as sessions in which the user reads a passage and completes at least one meaningful action such as opening context, viewing a source, saving a passage, or completing a revision.
+1. Legal/licensing review of audio recordings (CDN publishes no explicit recording licence).
+2. Legal/licensing review of the Tanzil translation catalog as proxied via `/api/translations/[id]`.
+3. Legal/licensing review of the two in-app tafsir texts.
+4. Assignment of a qualified reviewer for topic mappings and (future) AI outputs.
+5. Configuration of a report delivery destination (`NEXT_PUBLIC_REPORT_EMAIL` or issue tracker).
+6. Accessibility audit (WCAG 2.2 AA).
+7. Core Web Vitals measurement.
+8. Rendered SEO/social metadata verification after a production build.
+9. Deployment hardening: durable rate limiting at CDN/edge.
 
-**Activation**
+**Release blockers that are a hard stop if they ever occur:** any known Quran text corruption or incorrect reference; missing provenance for published translations/tafsir; cross-user access to private content; exposed API secrets; public AI answers with unvalidated citations; broken canonical URLs or unusable Arabic reading layout.
 
-- Percentage of new users who open an ayah and view its translation/context.
-- Percentage who save a passage or explore a topic in their first session.
+---
 
-**Engagement and retention**
+## 20. Editorial Governance
 
-- Weekly returning readers.
-- Returning users who continue a reading plan or revision session.
-- Topic-to-ayah exploration completion.
-- Bookmark and note retrieval usage.
+**Roles.** Product owner, data maintainer, content editor, qualified reviewer/advisor, developer/administrator. One person may hold several initially, but responsibilities stay explicit.
 
-**Quality and trust**
+**Current state.** Roles are defined; **the qualified reviewer role is unfilled** — this blocks FR-072 approval and the `editorial-reviewer` AI gate. The seven-step workflow is documented in [`EDITORIAL.md`](EDITORIAL.md). Tooling exists: `content/editorial/reviews.json` (23 entries), `/editorial` page, `scripts/build-editorial-log.mjs`. Correction intake (`/report`) exists without a configured destination. Rollback is documented.
 
-- Quran reference validation pass rate: target 100% for published references.
-- Published source records with complete provenance/license status.
-- Incorrect/missing citation reports per 1,000 AI answers.
-- Dataset import validation pass rate.
-- User-reported content errors and time to resolution.
-
-**Performance and reliability**
-
-- Core Web Vitals.
-- Search latency and zero-result rate.
-- API availability and error rate.
-- Failed import/release count.
-
-Do not optimize for session length alone; the product should support focused, respectful use.
-
-## 18. Analytics and Event Taxonomy
-
-Collect only events needed to improve the product, with clear privacy disclosure.
-
-Possible events:
-
-- `surah_opened`
-- `ayah_opened`
-- `translation_changed`
-- `tafsir_opened`
-- `topic_opened`
-- `topic_ayah_clicked`
-- `search_submitted`
-- `search_result_opened`
-- `bookmark_created`
-- `bookmark_removed`
-- `note_created`
-- `revision_started`
-- `revision_completed`
-- `source_report_submitted`
-
-Avoid recording the full text of private notes or sensitive free-text questions in general analytics. Define retention, consent, and access rules before launch.
-
-## 19. Testing and Quality Assurance
-
-**Automated tests**
-
-- Unit tests for reference parsing, normalization, route generation, and scheduling.
-- Import tests for missing/duplicate ayat and translation coverage.
-- Integration tests for search, source retrieval, authentication, and private library permissions.
-- End-to-end tests for core reading and bookmarking journeys.
-- Accessibility checks for key flows.
-- SEO tests for canonical URLs, metadata, sitemap, and robots rules.
-- AI citation validation tests before AI features launch.
-
-**Manual QA checklist**
-
-- Verify sample ayat across the beginning, middle, and end of multiple Surahs.
-- Test Arabic RTL and mixed Arabic/English/Urdu layouts.
-- Test small screens, desktop, keyboard-only navigation, and screen readers.
-- Test missing translation/tafsir/audio gracefully.
-- Test user A cannot access user B's notes or bookmarks.
-- Test source license display and attribution.
-- Test backup restoration and dataset rollback.
-- Review topic mappings with a qualified reviewer before public release.
-
-**Release blockers**
-
-- Any known Quran text corruption or incorrect reference.
-- Missing provenance for published translations or tafsir.
-- Cross-user access to private content.
-- Exposed API secrets.
-- Public AI answers with unvalidated citations.
-- Broken canonical URLs or unusable Arabic reading layout.
-
-## 20. Editorial Governance and Operations
-
-**Roles**
-
-- **Product owner**: Defines scope and release decisions.
-- **Data maintainer**: Owns import pipelines, source versions, and validation.
-- **Content editor**: Drafts topic pages and editorial descriptions.
-- **Qualified reviewer/advisor**: Reviews religiously substantive topic mappings and sensitive explanations.
-- **Developer/administrator**: Maintains application, security, and release process.
-
-One person may hold multiple roles initially, but the responsibilities should remain explicit.
-
-**Editorial workflow**
-
-1. Draft content or relationship.
-2. Attach source and rationale.
-3. Validate references and licensing.
-4. Review religiously substantive claims.
-5. Approve and publish.
-6. Record version and review date.
-7. Accept correction reports and provide rollback.
-
-**Correction process**
-
-Provide a visible way to report incorrect text, reference, translation attribution, topic link, or technical defect. Prioritize Quran text/reference errors as critical incidents.
+---
 
 ## 21. Roadmap
 
-**Phase 0 — Foundation**
+| Phase | Scope | Status |
+|---|---|---|
+| 0 — Foundation | Source/license audit, canonical refs, validator, provenance registry, CI | **Incomplete** — licensing review outstanding |
+| 1 — Reading MVP | Reader, ayah pages, translation, search, bookmarks, SEO, a11y/privacy baseline | Functionally complete; a11y QA + CWV unverified |
+| 2 — Connected discovery | Topics, reviewed relations, cross-refs, source panels, editorial tooling | Functionally complete; qualified review outstanding |
+| 3 — Personal learning | Notes, reading plans, spaced-repetition, progress | Complete (local-only) |
+| 4 — Grounded AI + graph | Retrieval-grounded assistant, citations, abstention, graph viz | Harness only; disabled; 6/7 gates unmet |
+| 5 — Mobile | Hosted shell vs API-backed client; offline; audio rights | Not started (deferred pending web stability) |
 
-- Finalize source selection and licensing audit.
-- Define canonical reference and numbering rules.
-- Build dataset validator and provenance registry.
-- Confirm design system and route convention.
-- Establish repository, CI, tests, and deployment.
+**Next actions** = the nine human-decision release blockers in §19, in that order.
 
-Exit criteria: Source and license review completed; sample validation passes; data model approved.
-
-**Phase 1 — Quran reading MVP**
-
-- Surah index and reader.
-- Ayah reference pages.
-- One verified translation.
-- Search by reference and text.
-- Bookmarks and basic progress.
-- SEO metadata and sitemap.
-- Accessibility and privacy baseline.
-
-Exit criteria: Core journeys pass QA; no known text/reference integrity issue; public pages perform acceptably.
-
-**Phase 2 — Connected discovery**
-
-- Curated topics.
-- Reviewed ayah-topic relationships.
-- Cross-references and source panels.
-- Additional translations where licensed.
-- Editorial tooling and correction workflow.
-
-Exit criteria: Topic pages have source/provenance coverage and review status.
-
-**Phase 3 — Personal learning**
-
-- Private notes and tags.
-- Reading plans.
-- Spaced-repetition revision.
-- Optional reminders and progress view.
-
-Exit criteria: Privacy and deletion/export tests pass; learning schedule is user-controllable.
-
-**Phase 4 — Grounded AI and graph exploration**
-
-- Retrieval-grounded question interface.
-- Claim-level citations and abstention.
-- Audit and feedback pipeline.
-- Optional interactive graph visualization.
-
-Exit criteria: Evaluation dataset passes citation and reference checks; safety review is approved.
-
-**Phase 5 — Mobile expansion**
-
-- Decide hosted web shell vs dedicated API-backed mobile client.
-- Validate offline behavior and audio rights.
-- Add platform-specific UX and store compliance.
-
-Exit criteria: Mobile architecture and offline limitations are documented and tested.
+---
 
 ## 22. Risks and Mitigations
 
 | Risk | Impact | Mitigation |
-|------|--------|------------|
-| Incorrect Arabic text or numbering | Critical trust failure | Canonical source, checksums, automated validation, sampled human review, rollback |
-| Translation/tafsir licensing uncertainty | Legal and distribution risk | License audit before ingestion/publication; attribution and takedown process |
-| AI hallucination or false attribution | Religious misinformation | Retrieval grounding, reference validation, citations, abstention, human review |
-| Topic links oversimplify interpretation | Misleading discovery | Typed relationships, editorial rationale, reviewed status, context-first UI |
-| SEO creates thin or duplicated pages | Search quality and maintenance cost | Index only useful canonical pages; noindex low-value search/personal routes |
-| Overbuilt architecture | Slow delivery and maintenance burden | Start relational; add graph/search services only when justified |
-| User notes leak | Severe privacy failure | Authorization tests, private-by-default design, secure sessions, deletion controls |
-| Audio provider changes or rights lapse | Playback failure/legal risk | Track provider and rights; make audio optional; monitor URLs |
-| Notifications become guilt-driven | Poor trust and retention | Optional reminders, neutral language, no shame-based streaks |
+|---|---|---|
+| Incorrect Arabic text or numbering | Critical trust failure | Canonical pinned source, validators, sampled human review, rollback |
+| Translation/tafsir/audio licensing uncertainty | Legal + distribution risk | License audit before publication; Delivered≠Cleared; attribution + takedown path |
+| AI hallucination / false attribution | Religious misinformation | Retrieval grounding, reference validation, citations, abstention, gates, human review; feature off |
+| Topic links oversimplify interpretation | Misleading discovery | Typed relationships, rationale, review status, context-first UI, `pending-scholarly-review` labels |
+| SEO creates thin/duplicate pages | Search quality + cost | Index only useful canonical pages; noindex low-value routes |
+| Overbuilt architecture | Slow delivery | Local-first; add graph/search/DB services only when justified |
+| User notes leak | Privacy failure | No server data by construction; local-only; export/delete |
+| Audio provider/rights lapse | Playback/legal risk | Stream only, no redistribution; monitor URLs |
+| Notifications become guilt-driven | Trust/retention | Optional reminders, neutral language, no shame streaks |
+| Root publication ships a wrong grouping | Scholarly credibility | Policy B disclosure, human activation gate, no automatic approval, regression tests |
 
-## 23. Open Decisions Before Implementation
+---
 
-These decisions should be resolved explicitly rather than silently assumed:
+## 23. Resolved Decisions
 
-1. **Initial language**: English-only interface first, or English plus Urdu at launch?
-2. **Translation source**: Which edition(s) are licensed and approved for display?
-3. **Tafsir scope**: Link externally, show licensed excerpts, or ingest a licensed corpus?
-4. **Authentication**: Launch anonymous-first, or require accounts for library features?
-5. **Database**: PostgreSQL or MySQL? Choose based on hosting, team familiarity, and deployment constraints.
-6. **Search**: Database full-text search initially, or a dedicated search service?
-7. **Editorial review**: Who reviews topic mappings and sensitive AI outputs?
-8. **Audio**: External links/streaming provider or self-hosted assets?
-9. **Mobile**: Is mobile a later responsive/PWA goal or a committed Capacitor app?
-10. **AI launch gate**: Which source corpus and evaluation threshold must be met before the assistant is enabled?
+All ten v3.0 open decisions and their actual outcomes:
 
-**Recommended default decisions for MVP**
+| Decision | Resolution |
+|---|---|
+| Initial language | English UI; Arabic text; Urdu (Jalandhry) default translation |
+| Translation source | 116 Tanzil editions via runtime proxy; per-edition rights unverified |
+| Tafsir scope | Two Arabic tafsirs in-app via proxy; two English tafsirs link-out; rights review outstanding |
+| Authentication | Anonymous-only (no accounts) |
+| Database | None (static data + localStorage) |
+| Search | In-memory lexical + client-side embeddings |
+| Editorial review | Roles defined; reviewer unassigned |
+| Audio | Streamed from Islamic Network CDN; rights unresolved |
+| Mobile | Deferred |
+| AI launch gate | Not met (6/7 gates); feature flag `false as const` |
 
-- English UI with Arabic Quran text; architect for Urdu and Pashto localization.
-- One verified translation with documented license.
-- Tafsir links or licensed excerpts only.
-- Anonymous public reading; accounts optional for synced library.
-- PostgreSQL if no existing database constraint; otherwise use the database the team can operate reliably.
-- Database full-text search first.
-- Human-reviewed topic relationships.
-- Audio deferred until source and rights are verified.
-- Responsive web first; decide mobile packaging after the core web experience is stable.
-- No public AI religious-answer feature until source grounding, citation validation, and abstention are tested.
+**Still open** (not decisions but dependencies): the licensing reviews, reviewer assignment, and report destination listed in §19.
+
+---
 
 ## 24. Definition of Done
 
@@ -881,18 +638,48 @@ A feature is done only when:
 - Documentation is updated.
 - Product owner accepts the behavior against the acceptance criteria.
 
-For any feature touching Quran text, numbering, translation, tafsir, or religious claims, **content integrity and provenance are release gates—not optional polish**.
+For any feature touching Quran text, numbering, translation, tafsir, or religious claims, **content integrity and provenance are release gates — not optional polish.**
 
-## 25. Final Product Definition
+---
 
-Al-Huda is a Quran reading, discovery, and personal learning platform built around trustworthy interconnected content. Its differentiator is not simply having a Quran database or an AI chat box; it is the quality of the connections between canonical ayat, sourced scholarship, curated themes, and a user's own private learning journey.
+## Appendix A — Deferred Long-Term Vision (NON-NORMATIVE)
 
-**Build in this order:**
+> **DEFERRED — NOT PART OF THE ACTIVE SPEC.** The items below originate from the v2.0 "COMPLETE" PRD. They are preserved here so the long-term ambition is not lost, but they are NOT committed scope. Re-activation requires explicit re-scoping plus the preconditions listed for each. The full original text remains in [`archive/AL-HUDA-PRD-v2.0-COMPLETE.md`](archive/AL-HUDA-PRD-v2.0-COMPLETE.md).
 
-1. Correct text and transparent sources.
-2. Excellent reading and search.
-3. Reviewed thematic connections.
-4. Private library and learning tools.
-5. Grounded AI only after trust and validation are established.
+| Item | What it is | Why deferred | Re-activation criteria |
+|---|---|---|---|
+| **NOOR kids mode** | Story-driven Arabic/Quran learning for ages 3–12 with "Ammi"/"Dadi Jan" narration and AI-personalized stories | High child-safety, COPPA/GDPR-K, app-store kids-category, and misquotation risk | Only after a dedicated child-safety, privacy, and scholarly-safety review; not before Phases 1–3 blockers clear |
+| **Seeker mode for non-Muslims** (v2.0 "Kashf") | Pressure-free discovery path with misconceptions Q&A and comparative context | Renamed to avoid collision with the shipped `/explore` area; scope overlaps current reader | Re-scope as an Explore refinement after core discovery is stable |
+| **Flutter Android/iOS clients** | Native mobile apps | Web-first; offline + audio rights unresolved | After Phase 5 architecture decision and stable web core |
+| **NestJS backend** | Dedicated domain service | No current workload justifies the operational cost | Only when integrations/scale demand it |
+| **Monetization & scholar partnerships** | Subscriptions, scholar advisory program | Premature before trust + traffic | After public launch and validated retention |
+| **Hadith corpus** | 9–12 books, ~50,884 hadiths with grading | Large licensing + grading burden; Quran layer must be flawless first | After Quran integrity + licensing audit pass and a hadith rights review |
+| **AI story generator / guidance chat** | Personalized story + life-guidance generation | Requires the full AI safety gate set, currently 6/7 unmet | Only when all seven gates are met and the allowlist is narrowed |
+| **Ayah-level 10-dimension tagging** | Tag all 6,236 ayat across 10 dimensions | A major scholarly undertaking the build deliberately does not attempt | Requires a qualified reviewer program; dimensions remain a topic-level aid meanwhile |
+| **NotebookLM content pipeline** | Scholar-PDF → simplified content pipeline | Depends on scholar review capacity | After a reviewer is assigned and the pipeline is validated |
 
-That order protects the product's credibility while creating a foundation that can expand into a larger Quran knowledge ecosystem.
+---
+
+## Appendix B — FR ↔ Implementation Evidence Map
+
+Entry points for the next engineer, grouped by FR block.
+
+| FR block | Primary implementation |
+|---|---|
+| FR-001–009 Reader / word-by-word | `src/lib/quran/data.ts`, `reference.ts`, `words.ts`, `mushaf-data.ts`, `public/word-data/`, `src/app/quran/`, `src/app/ayah/` |
+| FR-010–015 Search | `src/lib/quran/search.ts`, `semantic-search.ts`, `translation-search.ts`, `src/lib/search/`, `src/app/search/page.tsx` |
+| FR-020–025 Topics / graph | `src/lib/topics/data.ts`, `src/lib/graph/knowledge-graph.ts`, `src/app/topics/`, `src/app/explore/graph/` |
+| FR-030–035 Tafsir / sources | `src/lib/quran/sources.ts`, `tafsir-search.ts`, `translations.ts`, `src/app/sources/` |
+| FR-040–044 Library | `src/lib/library/context.tsx`, `src/lib/comprehension/notes.ts`, `src/lib/backup.ts`, `src/app/library/` |
+| FR-050–054 Revision | `src/lib/revision/`, `src/app/learn/revision/` |
+| FR-060–066 AI | `src/lib/ai/` (`feature-flag.ts`, `grounding.ts`, `audit.ts`, `evaluation-set.ts`) |
+| FR-070–075 Editorial | `src/lib/editorial/reviews.ts`, `content/editorial/reviews.json`, `scripts/validate-*.mjs`, `src/app/editorial/` |
+| FR-076–079 Reference display | `src/app/ayah/[surah]/[ayah]/page.tsx`, `src/lib/quran/juz.ts`, `src/components/quran/source-panel.tsx` |
+| FR-080–086 Discovery / taxonomy | `src/lib/explore/dimensions.ts`, `src/lib/taxonomy/`, `src/app/discover/`, `src/lib/quran/verse-of-day.ts` |
+| FR-090–096 Morphology / roots | `src/lib/morphology/`, `scripts/import-morphology.py`, `discover-roots.ts`, `batch-publish-roots.ts`, `src/app/explore/root/` |
+| FR-100–103 Learning extensions | `src/lib/quiz/`, `src/lib/paths/`, `src/lib/reading-plans/`, `src/app/learn/` |
+| FR-110–111 Localization | `src/lib/i18n/` |
+
+---
+
+*End of PRD v4.0. This document is the single source of truth. Update it whenever shipped state, status, or scope changes; archive superseded versions under `docs/archive/`.*

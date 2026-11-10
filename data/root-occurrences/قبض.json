@@ -1,0 +1,145 @@
+{
+  "entry": {
+    "slug": "قبض",
+    "title": "قبض",
+    "arabicTitle": "قبض",
+    "roots": [
+      "قبض"
+    ],
+    "includedLemmas": [
+      "قَبَضْ",
+      "قَبْض",
+      "قَبْضَة",
+      "مَّقْبُوضَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 245
+      },
+      "matchedToken": "يَقْبِضُ",
+      "matchedLemma": "قَبَضْ",
+      "matchedRoot": "قبض",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 283
+      },
+      "matchedToken": "مَّقْبُوضَةٌۭ ۖ",
+      "matchedLemma": "مَّقْبُوضَة",
+      "matchedRoot": "قبض",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 67
+      },
+      "matchedToken": "وَيَقْبِضُونَ",
+      "matchedLemma": "قَبَضْ",
+      "matchedRoot": "قبض",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 96
+      },
+      "matchedToken": "فَقَبَضْتُ",
+      "matchedLemma": "قَبَضْ",
+      "matchedRoot": "قبض",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 96
+      },
+      "matchedToken": "قَبْضَةًۭ",
+      "matchedLemma": "قَبْضَة",
+      "matchedRoot": "قبض",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 46
+      },
+      "matchedToken": "قَبَضْنَـٰهُ",
+      "matchedLemma": "قَبَضْ",
+      "matchedRoot": "قبض",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 46
+      },
+      "matchedToken": "قَبْضًۭا",
+      "matchedLemma": "قَبْض",
+      "matchedRoot": "قبض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 67
+      },
+      "matchedToken": "قَبْضَتُهُۥ",
+      "matchedLemma": "قَبْضَة",
+      "matchedRoot": "قبض",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 19
+      },
+      "matchedToken": "وَيَقْبِضْنَ ۚ",
+      "matchedLemma": "قَبَضْ",
+      "matchedRoot": "قبض",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 245
+    },
+    {
+      "surah": 2,
+      "ayah": 283
+    },
+    {
+      "surah": 9,
+      "ayah": 67
+    },
+    {
+      "surah": 20,
+      "ayah": 96
+    },
+    {
+      "surah": 25,
+      "ayah": 46
+    },
+    {
+      "surah": 39,
+      "ayah": 67
+    },
+    {
+      "surah": 67,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

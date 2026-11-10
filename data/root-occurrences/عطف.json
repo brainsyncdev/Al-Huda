@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "عطف",
+    "title": "عطف",
+    "arabicTitle": "عطف",
+    "roots": [
+      "عطف"
+    ],
+    "includedLemmas": [
+      "عِطْف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 9
+      },
+      "matchedToken": "عِطْفِهِۦ",
+      "matchedLemma": "عِطْف",
+      "matchedRoot": "عطف",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جرع",
+    "title": "جرع",
+    "arabicTitle": "جرع",
+    "roots": [
+      "جرع"
+    ],
+    "includedLemmas": [
+      "يَتَجَرَّعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 17
+      },
+      "matchedToken": "يَتَجَرَّعُهُۥ",
+      "matchedLemma": "يَتَجَرَّعُ",
+      "matchedRoot": "جرع",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

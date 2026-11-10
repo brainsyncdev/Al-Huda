@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "ودق",
+    "title": "ودق",
+    "arabicTitle": "ودق",
+    "roots": [
+      "ودق"
+    ],
+    "includedLemmas": [
+      "وَدْق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 43
+      },
+      "matchedToken": "ٱلْوَدْقَ",
+      "matchedLemma": "وَدْق",
+      "matchedRoot": "ودق",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 48
+      },
+      "matchedToken": "ٱلْوَدْقَ",
+      "matchedLemma": "وَدْق",
+      "matchedRoot": "ودق",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 24,
+      "ayah": 43
+    },
+    {
+      "surah": 30,
+      "ayah": 48
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

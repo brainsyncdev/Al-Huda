@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "نسا",
+    "title": "نسا",
+    "arabicTitle": "نسا",
+    "roots": [
+      "نسا"
+    ],
+    "includedLemmas": [
+      "مِنسَأَت",
+      "نَّسِىٓء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 37
+      },
+      "matchedToken": "ٱلنَّسِىٓءُ",
+      "matchedLemma": "نَّسِىٓء",
+      "matchedRoot": "نسا",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 14
+      },
+      "matchedToken": "مِنسَأَتَهُۥ ۖ",
+      "matchedLemma": "مِنسَأَت",
+      "matchedRoot": "نسا",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 37
+    },
+    {
+      "surah": 34,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "رمن",
+    "title": "رمن",
+    "arabicTitle": "رمن",
+    "roots": [
+      "رمن"
+    ],
+    "includedLemmas": [
+      "رُّمَّان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 99
+      },
+      "matchedToken": "وَٱلرُّمَّانَ",
+      "matchedLemma": "رُّمَّان",
+      "matchedRoot": "رمن",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 141
+      },
+      "matchedToken": "وَٱلرُّمَّانَ",
+      "matchedLemma": "رُّمَّان",
+      "matchedRoot": "رمن",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 68
+      },
+      "matchedToken": "وَرُمَّانٌۭ",
+      "matchedLemma": "رُّمَّان",
+      "matchedRoot": "رمن",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 99
+    },
+    {
+      "surah": 6,
+      "ayah": 141
+    },
+    {
+      "surah": 55,
+      "ayah": 68
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

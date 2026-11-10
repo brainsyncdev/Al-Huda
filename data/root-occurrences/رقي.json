@@ -1,0 +1,79 @@
+{
+  "entry": {
+    "slug": "رقي",
+    "title": "رقي",
+    "arabicTitle": "رقي",
+    "roots": [
+      "رقي"
+    ],
+    "includedLemmas": [
+      "تَرْقَىٰ",
+      "رَاق",
+      "رُقِيّ",
+      "يَرْتَقُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 93
+      },
+      "matchedToken": "تَرْقَىٰ",
+      "matchedLemma": "تَرْقَىٰ",
+      "matchedRoot": "رقي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 93
+      },
+      "matchedToken": "لِرُقِيِّكَ",
+      "matchedLemma": "رُقِيّ",
+      "matchedRoot": "رقي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 10
+      },
+      "matchedToken": "فَلْيَرْتَقُوا۟",
+      "matchedLemma": "يَرْتَقُ",
+      "matchedRoot": "رقي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 27
+      },
+      "matchedToken": "رَاقٍۢ",
+      "matchedLemma": "رَاق",
+      "matchedRoot": "رقي",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 93
+    },
+    {
+      "surah": 38,
+      "ayah": 10
+    },
+    {
+      "surah": 75,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

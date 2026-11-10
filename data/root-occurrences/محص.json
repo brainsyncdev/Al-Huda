@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "محص",
+    "title": "محص",
+    "arabicTitle": "محص",
+    "roots": [
+      "محص"
+    ],
+    "includedLemmas": [
+      "يُمَحِّصَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 141
+      },
+      "matchedToken": "وَلِيُمَحِّصَ",
+      "matchedLemma": "يُمَحِّصَ",
+      "matchedRoot": "محص",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 154
+      },
+      "matchedToken": "وَلِيُمَحِّصَ",
+      "matchedLemma": "يُمَحِّصَ",
+      "matchedRoot": "محص",
+      "wordPosition": 68
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 141
+    },
+    {
+      "surah": 3,
+      "ayah": 154
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "برد",
+    "title": "برد",
+    "arabicTitle": "برد",
+    "roots": [
+      "برد"
+    ],
+    "includedLemmas": [
+      "بَارِد",
+      "بَرَد",
+      "بَرْد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 69
+      },
+      "matchedToken": "بَرْدًۭا",
+      "matchedLemma": "بَرْد",
+      "matchedRoot": "برد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 43
+      },
+      "matchedToken": "بَرَدٍۢ",
+      "matchedLemma": "بَرَد",
+      "matchedRoot": "برد",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 44
+      },
+      "matchedToken": "بَارِدٍۢ",
+      "matchedLemma": "بَارِد",
+      "matchedRoot": "برد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 24
+      },
+      "matchedToken": "بَرْدًۭا",
+      "matchedLemma": "بَرْد",
+      "matchedRoot": "برد",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 69
+    },
+    {
+      "surah": 24,
+      "ayah": 43
+    },
+    {
+      "surah": 56,
+      "ayah": 44
+    },
+    {
+      "surah": 78,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

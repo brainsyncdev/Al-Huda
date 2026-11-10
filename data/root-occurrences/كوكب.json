@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "كوكب",
+    "title": "كوكب",
+    "arabicTitle": "كوكب",
+    "roots": [
+      "كوكب"
+    ],
+    "includedLemmas": [
+      "كَوْكَب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 76
+      },
+      "matchedToken": "كَوْكَبًۭا ۖ",
+      "matchedLemma": "كَوْكَب",
+      "matchedRoot": "كوكب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 4
+      },
+      "matchedToken": "كَوْكَبًۭا",
+      "matchedLemma": "كَوْكَب",
+      "matchedRoot": "كوكب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 6
+      },
+      "matchedToken": "ٱلْكَوَاكِبِ",
+      "matchedLemma": "كَوْكَب",
+      "matchedRoot": "كوكب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 82,
+        "ayah": 2
+      },
+      "matchedToken": "ٱلْكَوَاكِبُ",
+      "matchedLemma": "كَوْكَب",
+      "matchedRoot": "كوكب",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 76
+    },
+    {
+      "surah": 12,
+      "ayah": 4
+    },
+    {
+      "surah": 37,
+      "ayah": 6
+    },
+    {
+      "surah": 82,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

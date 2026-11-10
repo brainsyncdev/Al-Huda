@@ -1,0 +1,152 @@
+{
+  "entry": {
+    "slug": "حرق",
+    "title": "حرق",
+    "arabicTitle": "حرق",
+    "roots": [
+      "حرق"
+    ],
+    "includedLemmas": [
+      "احْتَرَقَتْ",
+      "حَرِيق",
+      "حَرِّقُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 266
+      },
+      "matchedToken": "فَٱحْتَرَقَتْ ۗ",
+      "matchedLemma": "احْتَرَقَتْ",
+      "matchedRoot": "حرق",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 181
+      },
+      "matchedToken": "ٱلْحَرِيقِ",
+      "matchedLemma": "حَرِيق",
+      "matchedRoot": "حرق",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 50
+      },
+      "matchedToken": "ٱلْحَرِيقِ",
+      "matchedLemma": "حَرِيق",
+      "matchedRoot": "حرق",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 97
+      },
+      "matchedToken": "لَّنُحَرِّقَنَّهُۥ",
+      "matchedLemma": "حَرِّقُ",
+      "matchedRoot": "حرق",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 68
+      },
+      "matchedToken": "حَرِّقُوهُ",
+      "matchedLemma": "حَرِّقُ",
+      "matchedRoot": "حرق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 9
+      },
+      "matchedToken": "ٱلْحَرِيقِ",
+      "matchedLemma": "حَرِيق",
+      "matchedRoot": "حرق",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 22
+      },
+      "matchedToken": "ٱلْحَرِيقِ",
+      "matchedLemma": "حَرِيق",
+      "matchedRoot": "حرق",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 24
+      },
+      "matchedToken": "حَرِّقُوهُ",
+      "matchedLemma": "حَرِّقُ",
+      "matchedRoot": "حرق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 85,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْحَرِيقِ",
+      "matchedLemma": "حَرِيق",
+      "matchedRoot": "حرق",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 266
+    },
+    {
+      "surah": 3,
+      "ayah": 181
+    },
+    {
+      "surah": 8,
+      "ayah": 50
+    },
+    {
+      "surah": 20,
+      "ayah": 97
+    },
+    {
+      "surah": 21,
+      "ayah": 68
+    },
+    {
+      "surah": 22,
+      "ayah": 9
+    },
+    {
+      "surah": 22,
+      "ayah": 22
+    },
+    {
+      "surah": 29,
+      "ayah": 24
+    },
+    {
+      "surah": 85,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

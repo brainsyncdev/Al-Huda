@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "همن",
+    "title": "همن",
+    "arabicTitle": "همن",
+    "roots": [
+      "همن"
+    ],
+    "includedLemmas": [
+      "مُهَيْمِن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 48
+      },
+      "matchedToken": "وَمُهَيْمِنًا",
+      "matchedLemma": "مُهَيْمِن",
+      "matchedRoot": "همن",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 23
+      },
+      "matchedToken": "ٱلْمُهَيْمِنُ",
+      "matchedLemma": "مُهَيْمِن",
+      "matchedRoot": "همن",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 48
+    },
+    {
+      "surah": 59,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

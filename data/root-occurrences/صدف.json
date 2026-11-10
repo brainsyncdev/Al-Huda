@@ -1,0 +1,87 @@
+{
+  "entry": {
+    "slug": "صدف",
+    "title": "صدف",
+    "arabicTitle": "صدف",
+    "roots": [
+      "صدف"
+    ],
+    "includedLemmas": [
+      "صَدَفَ",
+      "صَّدَفَيْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 46
+      },
+      "matchedToken": "يَصْدِفُونَ",
+      "matchedLemma": "صَدَفَ",
+      "matchedRoot": "صدف",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 157
+      },
+      "matchedToken": "وَصَدَفَ",
+      "matchedLemma": "صَدَفَ",
+      "matchedRoot": "صدف",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 157
+      },
+      "matchedToken": "يَصْدِفُونَ",
+      "matchedLemma": "صَدَفَ",
+      "matchedRoot": "صدف",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 157
+      },
+      "matchedToken": "يَصْدِفُونَ",
+      "matchedLemma": "صَدَفَ",
+      "matchedRoot": "صدف",
+      "wordPosition": 35
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 96
+      },
+      "matchedToken": "ٱلصَّدَفَيْنِ",
+      "matchedLemma": "صَّدَفَيْن",
+      "matchedRoot": "صدف",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 46
+    },
+    {
+      "surah": 6,
+      "ayah": 157
+    },
+    {
+      "surah": 18,
+      "ayah": 96
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

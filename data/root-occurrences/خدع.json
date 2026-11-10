@@ -1,0 +1,88 @@
+{
+  "entry": {
+    "slug": "خدع",
+    "title": "خدع",
+    "arabicTitle": "خدع",
+    "roots": [
+      "خدع"
+    ],
+    "includedLemmas": [
+      "خَٰدِع",
+      "يَخْدَعُ",
+      "يُخَٰدِعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 9
+      },
+      "matchedToken": "يُخَـٰدِعُونَ",
+      "matchedLemma": "يُخَٰدِعُ",
+      "matchedRoot": "خدع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 9
+      },
+      "matchedToken": "يَخْدَعُونَ",
+      "matchedLemma": "يَخْدَعُ",
+      "matchedRoot": "خدع",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 142
+      },
+      "matchedToken": "يُخَـٰدِعُونَ",
+      "matchedLemma": "يُخَٰدِعُ",
+      "matchedRoot": "خدع",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 142
+      },
+      "matchedToken": "خَـٰدِعُهُمْ",
+      "matchedLemma": "خَٰدِع",
+      "matchedRoot": "خدع",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 62
+      },
+      "matchedToken": "يَخْدَعُوكَ",
+      "matchedLemma": "يَخْدَعُ",
+      "matchedRoot": "خدع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 9
+    },
+    {
+      "surah": 4,
+      "ayah": 142
+    },
+    {
+      "surah": 8,
+      "ayah": 62
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

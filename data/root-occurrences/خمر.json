@@ -1,0 +1,123 @@
+{
+  "entry": {
+    "slug": "خمر",
+    "title": "خمر",
+    "arabicTitle": "خمر",
+    "roots": [
+      "خمر"
+    ],
+    "includedLemmas": [
+      "خَمْر",
+      "خُمُر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 219
+      },
+      "matchedToken": "ٱلْخَمْرِ",
+      "matchedLemma": "خَمْر",
+      "matchedRoot": "خمر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 90
+      },
+      "matchedToken": "ٱلْخَمْرُ",
+      "matchedLemma": "خَمْر",
+      "matchedRoot": "خمر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 91
+      },
+      "matchedToken": "ٱلْخَمْرِ",
+      "matchedLemma": "خَمْر",
+      "matchedRoot": "خمر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 36
+      },
+      "matchedToken": "خَمْرًۭا ۖ",
+      "matchedLemma": "خَمْر",
+      "matchedRoot": "خمر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 41
+      },
+      "matchedToken": "خَمْرًۭا ۖ",
+      "matchedLemma": "خَمْر",
+      "matchedRoot": "خمر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 31
+      },
+      "matchedToken": "بِخُمُرِهِنَّ",
+      "matchedLemma": "خُمُر",
+      "matchedRoot": "خمر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 15
+      },
+      "matchedToken": "خَمْرٍۢ",
+      "matchedLemma": "خَمْر",
+      "matchedRoot": "خمر",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 219
+    },
+    {
+      "surah": 5,
+      "ayah": 90
+    },
+    {
+      "surah": 5,
+      "ayah": 91
+    },
+    {
+      "surah": 12,
+      "ayah": 36
+    },
+    {
+      "surah": 12,
+      "ayah": 41
+    },
+    {
+      "surah": 24,
+      "ayah": 31
+    },
+    {
+      "surah": 47,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

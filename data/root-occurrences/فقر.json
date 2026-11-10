@@ -1,0 +1,222 @@
+{
+  "entry": {
+    "slug": "فقر",
+    "title": "فقر",
+    "arabicTitle": "فقر",
+    "roots": [
+      "فقر"
+    ],
+    "includedLemmas": [
+      "فَاقِرَة",
+      "فَقِير",
+      "فَقْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 268
+      },
+      "matchedToken": "ٱلْفَقْرَ",
+      "matchedLemma": "فَقْر",
+      "matchedRoot": "فقر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 271
+      },
+      "matchedToken": "ٱلْفُقَرَآءَ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 273
+      },
+      "matchedToken": "لِلْفُقَرَآءِ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 181
+      },
+      "matchedToken": "فَقِيرٌۭ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 6
+      },
+      "matchedToken": "فَقِيرًۭا",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 135
+      },
+      "matchedToken": "فَقِيرًۭا",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 60
+      },
+      "matchedToken": "لِلْفُقَرَآءِ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 28
+      },
+      "matchedToken": "ٱلْفَقِيرَ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 32
+      },
+      "matchedToken": "فُقَرَآءَ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 24
+      },
+      "matchedToken": "فَقِيرٌۭ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 15
+      },
+      "matchedToken": "ٱلْفُقَرَآءُ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 38
+      },
+      "matchedToken": "ٱلْفُقَرَآءُ ۚ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 8
+      },
+      "matchedToken": "لِلْفُقَرَآءِ",
+      "matchedLemma": "فَقِير",
+      "matchedRoot": "فقر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 25
+      },
+      "matchedToken": "فَاقِرَةٌۭ",
+      "matchedLemma": "فَاقِرَة",
+      "matchedRoot": "فقر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 268
+    },
+    {
+      "surah": 2,
+      "ayah": 271
+    },
+    {
+      "surah": 2,
+      "ayah": 273
+    },
+    {
+      "surah": 3,
+      "ayah": 181
+    },
+    {
+      "surah": 4,
+      "ayah": 6
+    },
+    {
+      "surah": 4,
+      "ayah": 135
+    },
+    {
+      "surah": 9,
+      "ayah": 60
+    },
+    {
+      "surah": 22,
+      "ayah": 28
+    },
+    {
+      "surah": 24,
+      "ayah": 32
+    },
+    {
+      "surah": 28,
+      "ayah": 24
+    },
+    {
+      "surah": 35,
+      "ayah": 15
+    },
+    {
+      "surah": 47,
+      "ayah": 38
+    },
+    {
+      "surah": 59,
+      "ayah": 8
+    },
+    {
+      "surah": 75,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 14,
+  "totalMatches": 14,
+  "pagination": null
+}

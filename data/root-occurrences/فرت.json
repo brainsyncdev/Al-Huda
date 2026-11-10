@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "فرت",
+    "title": "فرت",
+    "arabicTitle": "فرت",
+    "roots": [
+      "فرت"
+    ],
+    "includedLemmas": [
+      "فُرَات"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 53
+      },
+      "matchedToken": "فُرَاتٌۭ",
+      "matchedLemma": "فُرَات",
+      "matchedRoot": "فرت",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "فُرَاتٌۭ",
+      "matchedLemma": "فُرَات",
+      "matchedRoot": "فرت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 27
+      },
+      "matchedToken": "فُرَاتًۭا",
+      "matchedLemma": "فُرَات",
+      "matchedRoot": "فرت",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 53
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    },
+    {
+      "surah": 77,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

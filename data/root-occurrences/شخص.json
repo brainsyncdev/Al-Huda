@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "شخص",
+    "title": "شخص",
+    "arabicTitle": "شخص",
+    "roots": [
+      "شخص"
+    ],
+    "includedLemmas": [
+      "تَشْخَصُ",
+      "شَٰخِصَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 42
+      },
+      "matchedToken": "تَشْخَصُ",
+      "matchedLemma": "تَشْخَصُ",
+      "matchedRoot": "شخص",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 97
+      },
+      "matchedToken": "شَـٰخِصَةٌ",
+      "matchedLemma": "شَٰخِصَة",
+      "matchedRoot": "شخص",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 42
+    },
+    {
+      "surah": 21,
+      "ayah": 97
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

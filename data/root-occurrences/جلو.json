@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "جلو",
+    "title": "جلو",
+    "arabicTitle": "جلو",
+    "roots": [
+      "جلو"
+    ],
+    "includedLemmas": [
+      "تَجَلَّىٰ",
+      "جَلَآء",
+      "جَلَّىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 143
+      },
+      "matchedToken": "تَجَلَّىٰ",
+      "matchedLemma": "تَجَلَّىٰ",
+      "matchedRoot": "جلو",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 187
+      },
+      "matchedToken": "يُجَلِّيهَا",
+      "matchedLemma": "جَلَّىٰ",
+      "matchedRoot": "جلو",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلْجَلَآءَ",
+      "matchedLemma": "جَلَآء",
+      "matchedRoot": "جلو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 91,
+        "ayah": 3
+      },
+      "matchedToken": "جَلَّىٰهَا",
+      "matchedLemma": "جَلَّىٰ",
+      "matchedRoot": "جلو",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 92,
+        "ayah": 2
+      },
+      "matchedToken": "تَجَلَّىٰ",
+      "matchedLemma": "تَجَلَّىٰ",
+      "matchedRoot": "جلو",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 143
+    },
+    {
+      "surah": 7,
+      "ayah": 187
+    },
+    {
+      "surah": 59,
+      "ayah": 3
+    },
+    {
+      "surah": 91,
+      "ayah": 3
+    },
+    {
+      "surah": 92,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

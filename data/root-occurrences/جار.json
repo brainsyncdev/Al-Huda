@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "جار",
+    "title": "جار",
+    "arabicTitle": "جار",
+    "roots": [
+      "جار"
+    ],
+    "includedLemmas": [
+      "يَجْـَٔرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 53
+      },
+      "matchedToken": "تَجْـَٔرُونَ",
+      "matchedLemma": "يَجْـَٔرُ",
+      "matchedRoot": "جار",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 64
+      },
+      "matchedToken": "يَجْـَٔرُونَ",
+      "matchedLemma": "يَجْـَٔرُ",
+      "matchedRoot": "جار",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 65
+      },
+      "matchedToken": "تَجْـَٔرُوا۟",
+      "matchedLemma": "يَجْـَٔرُ",
+      "matchedRoot": "جار",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 53
+    },
+    {
+      "surah": 23,
+      "ayah": 64
+    },
+    {
+      "surah": 23,
+      "ayah": 65
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

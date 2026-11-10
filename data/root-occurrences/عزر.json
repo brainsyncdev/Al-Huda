@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "عزر",
+    "title": "عزر",
+    "arabicTitle": "عزر",
+    "roots": [
+      "عزر"
+    ],
+    "includedLemmas": [
+      "عَزَّرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 12
+      },
+      "matchedToken": "وَعَزَّرْتُمُوهُمْ",
+      "matchedLemma": "عَزَّرُ",
+      "matchedRoot": "عزر",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 157
+      },
+      "matchedToken": "وَعَزَّرُوهُ",
+      "matchedLemma": "عَزَّرُ",
+      "matchedRoot": "عزر",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 9
+      },
+      "matchedToken": "وَتُعَزِّرُوهُ",
+      "matchedLemma": "عَزَّرُ",
+      "matchedRoot": "عزر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 12
+    },
+    {
+      "surah": 7,
+      "ayah": 157
+    },
+    {
+      "surah": 48,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

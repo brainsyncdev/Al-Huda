@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ركض",
+    "title": "ركض",
+    "arabicTitle": "ركض",
+    "roots": [
+      "ركض"
+    ],
+    "includedLemmas": [
+      "يَرْكُضُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 12
+      },
+      "matchedToken": "يَرْكُضُونَ",
+      "matchedLemma": "يَرْكُضُ",
+      "matchedRoot": "ركض",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 13
+      },
+      "matchedToken": "تَرْكُضُوا۟",
+      "matchedLemma": "يَرْكُضُ",
+      "matchedRoot": "ركض",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 42
+      },
+      "matchedToken": "ٱرْكُضْ",
+      "matchedLemma": "يَرْكُضُ",
+      "matchedRoot": "ركض",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 12
+    },
+    {
+      "surah": 21,
+      "ayah": 13
+    },
+    {
+      "surah": 38,
+      "ayah": 42
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

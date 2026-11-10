@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "ملح",
+    "title": "ملح",
+    "arabicTitle": "ملح",
+    "roots": [
+      "ملح"
+    ],
+    "includedLemmas": [
+      "مِلْح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 53
+      },
+      "matchedToken": "مِلْحٌ",
+      "matchedLemma": "مِلْح",
+      "matchedRoot": "ملح",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "مِلْحٌ",
+      "matchedLemma": "مِلْح",
+      "matchedRoot": "ملح",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 53
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

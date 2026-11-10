@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "لمح",
+    "title": "لمح",
+    "arabicTitle": "لمح",
+    "roots": [
+      "لمح"
+    ],
+    "includedLemmas": [
+      "لَمْح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 77
+      },
+      "matchedToken": "كَلَمْحِ",
+      "matchedLemma": "لَمْح",
+      "matchedRoot": "لمح",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 50
+      },
+      "matchedToken": "كَلَمْحٍۭ",
+      "matchedLemma": "لَمْح",
+      "matchedRoot": "لمح",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 77
+    },
+    {
+      "surah": 54,
+      "ayah": 50
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

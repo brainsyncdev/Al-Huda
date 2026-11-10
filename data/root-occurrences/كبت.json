@@ -1,0 +1,62 @@
+{
+  "entry": {
+    "slug": "كبت",
+    "title": "كبت",
+    "arabicTitle": "كبت",
+    "roots": [
+      "كبت"
+    ],
+    "includedLemmas": [
+      "كُبِتَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 127
+      },
+      "matchedToken": "يَكْبِتَهُمْ",
+      "matchedLemma": "كُبِتَ",
+      "matchedRoot": "كبت",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 5
+      },
+      "matchedToken": "كُبِتُوا۟",
+      "matchedLemma": "كُبِتَ",
+      "matchedRoot": "كبت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 5
+      },
+      "matchedToken": "كُبِتَ",
+      "matchedLemma": "كُبِتَ",
+      "matchedRoot": "كبت",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 127
+    },
+    {
+      "surah": 58,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "slug": "وسط",
+    "title": "وسط",
+    "arabicTitle": "وسط",
+    "roots": [
+      "وسط"
+    ],
+    "includedLemmas": [
+      "أَوْسَط",
+      "وَسَط",
+      "وَسَطْ",
+      "وُسْطَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 143
+      },
+      "matchedToken": "وَسَطًۭا",
+      "matchedLemma": "وَسَط",
+      "matchedRoot": "وسط",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 238
+      },
+      "matchedToken": "ٱلْوُسْطَىٰ",
+      "matchedLemma": "وُسْطَىٰ",
+      "matchedRoot": "وسط",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 28
+      },
+      "matchedToken": "أَوْسَطُهُمْ",
+      "matchedLemma": "أَوْسَط",
+      "matchedRoot": "وسط",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 100,
+        "ayah": 5
+      },
+      "matchedToken": "فَوَسَطْنَ",
+      "matchedLemma": "وَسَطْ",
+      "matchedRoot": "وسط",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 143
+    },
+    {
+      "surah": 2,
+      "ayah": 238
+    },
+    {
+      "surah": 68,
+      "ayah": 28
+    },
+    {
+      "surah": 100,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

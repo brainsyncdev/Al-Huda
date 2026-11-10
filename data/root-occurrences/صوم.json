@@ -1,0 +1,212 @@
+{
+  "entry": {
+    "slug": "صوم",
+    "title": "صوم",
+    "arabicTitle": "صوم",
+    "roots": [
+      "صوم"
+    ],
+    "includedLemmas": [
+      "صَوْم",
+      "صِيَام",
+      "صَّٰٓئِمَٰت",
+      "صَّٰٓئِمِين",
+      "يَصُمْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 183
+      },
+      "matchedToken": "ٱلصِّيَامُ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 184
+      },
+      "matchedToken": "تَصُومُوا۟",
+      "matchedLemma": "يَصُمْ",
+      "matchedRoot": "صوم",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 185
+      },
+      "matchedToken": "فَلْيَصُمْهُ ۖ",
+      "matchedLemma": "يَصُمْ",
+      "matchedRoot": "صوم",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "ٱلصِّيَامِ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "ٱلصِّيَامَ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 45
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 196
+      },
+      "matchedToken": "صِيَامٍ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 196
+      },
+      "matchedToken": "فَصِيَامُ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 48
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 92
+      },
+      "matchedToken": "فَصِيَامُ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 51
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 89
+      },
+      "matchedToken": "فَصِيَامُ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 95
+      },
+      "matchedToken": "صِيَامًۭا",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 26
+      },
+      "matchedToken": "صَوْمًۭا",
+      "matchedLemma": "صَوْم",
+      "matchedRoot": "صوم",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 35
+      },
+      "matchedToken": "وَٱلصَّـٰٓئِمِينَ",
+      "matchedLemma": "صَّٰٓئِمِين",
+      "matchedRoot": "صوم",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 35
+      },
+      "matchedToken": "وَٱلصَّـٰٓئِمَـٰتِ",
+      "matchedLemma": "صَّٰٓئِمَٰت",
+      "matchedRoot": "صوم",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 4
+      },
+      "matchedToken": "فَصِيَامُ",
+      "matchedLemma": "صِيَام",
+      "matchedRoot": "صوم",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 183
+    },
+    {
+      "surah": 2,
+      "ayah": 184
+    },
+    {
+      "surah": 2,
+      "ayah": 185
+    },
+    {
+      "surah": 2,
+      "ayah": 187
+    },
+    {
+      "surah": 2,
+      "ayah": 196
+    },
+    {
+      "surah": 4,
+      "ayah": 92
+    },
+    {
+      "surah": 5,
+      "ayah": 89
+    },
+    {
+      "surah": 5,
+      "ayah": 95
+    },
+    {
+      "surah": 19,
+      "ayah": 26
+    },
+    {
+      "surah": 33,
+      "ayah": 35
+    },
+    {
+      "surah": 58,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 14,
+  "totalMatches": 14,
+  "pagination": null
+}

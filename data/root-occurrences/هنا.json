@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "هنا",
+    "title": "هنا",
+    "arabicTitle": "هنا",
+    "roots": [
+      "هنا"
+    ],
+    "includedLemmas": [
+      "هَنِيٓـٔ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 4
+      },
+      "matchedToken": "هَنِيٓـًۭٔا",
+      "matchedLemma": "هَنِيٓـٔ",
+      "matchedRoot": "هنا",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 19
+      },
+      "matchedToken": "هَنِيٓـًٔۢا",
+      "matchedLemma": "هَنِيٓـٔ",
+      "matchedRoot": "هنا",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 24
+      },
+      "matchedToken": "هَنِيٓـًٔۢا",
+      "matchedLemma": "هَنِيٓـٔ",
+      "matchedRoot": "هنا",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 43
+      },
+      "matchedToken": "هَنِيٓـًٔۢا",
+      "matchedLemma": "هَنِيٓـٔ",
+      "matchedRoot": "هنا",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 4
+    },
+    {
+      "surah": 52,
+      "ayah": 19
+    },
+    {
+      "surah": 69,
+      "ayah": 24
+    },
+    {
+      "surah": 77,
+      "ayah": 43
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

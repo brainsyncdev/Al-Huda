@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "سجل",
+    "title": "سجل",
+    "arabicTitle": "سجل",
+    "roots": [
+      "سجل"
+    ],
+    "includedLemmas": [
+      "سِجِّيل",
+      "سِّجِلّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 82
+      },
+      "matchedToken": "سِجِّيلٍۢ",
+      "matchedLemma": "سِجِّيل",
+      "matchedRoot": "سجل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 74
+      },
+      "matchedToken": "سِجِّيلٍ",
+      "matchedLemma": "سِجِّيل",
+      "matchedRoot": "سجل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 104
+      },
+      "matchedToken": "ٱلسِّجِلِّ",
+      "matchedLemma": "سِّجِلّ",
+      "matchedRoot": "سجل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 105,
+        "ayah": 4
+      },
+      "matchedToken": "سِجِّيلٍۢ",
+      "matchedLemma": "سِجِّيل",
+      "matchedRoot": "سجل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 82
+    },
+    {
+      "surah": 15,
+      "ayah": 74
+    },
+    {
+      "surah": 21,
+      "ayah": 104
+    },
+    {
+      "surah": 105,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

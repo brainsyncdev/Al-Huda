@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "سطح",
+    "title": "سطح",
+    "arabicTitle": "سطح",
+    "roots": [
+      "سطح"
+    ],
+    "includedLemmas": [
+      "سُطِحَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 20
+      },
+      "matchedToken": "سُطِحَتْ",
+      "matchedLemma": "سُطِحَتْ",
+      "matchedRoot": "سطح",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 88,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

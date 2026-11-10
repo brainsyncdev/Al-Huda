@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "عثر",
+    "title": "عثر",
+    "arabicTitle": "عثر",
+    "roots": [
+      "عثر"
+    ],
+    "includedLemmas": [
+      "أَعْثَرْ",
+      "عُثِرَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 107
+      },
+      "matchedToken": "عُثِرَ",
+      "matchedLemma": "عُثِرَ",
+      "matchedRoot": "عثر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 21
+      },
+      "matchedToken": "أَعْثَرْنَا",
+      "matchedLemma": "أَعْثَرْ",
+      "matchedRoot": "عثر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 107
+    },
+    {
+      "surah": 18,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

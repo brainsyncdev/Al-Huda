@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "ثري",
+    "title": "ثري",
+    "arabicTitle": "ثري",
+    "roots": [
+      "ثري"
+    ],
+    "includedLemmas": [
+      "ثَّرَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 6
+      },
+      "matchedToken": "ٱلثَّرَىٰ",
+      "matchedLemma": "ثَّرَىٰ",
+      "matchedRoot": "ثري",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "غلف",
+    "title": "غلف",
+    "arabicTitle": "غلف",
+    "roots": [
+      "غلف"
+    ],
+    "includedLemmas": [
+      "غُلْف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 88
+      },
+      "matchedToken": "غُلْفٌۢ ۚ",
+      "matchedLemma": "غُلْف",
+      "matchedRoot": "غلف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 155
+      },
+      "matchedToken": "غُلْفٌۢ ۚ",
+      "matchedLemma": "غُلْف",
+      "matchedRoot": "غلف",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 88
+    },
+    {
+      "surah": 4,
+      "ayah": 155
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

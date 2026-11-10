@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "جدث",
+    "title": "جدث",
+    "arabicTitle": "جدث",
+    "roots": [
+      "جدث"
+    ],
+    "includedLemmas": [
+      "أَجْدَاث"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 51
+      },
+      "matchedToken": "ٱلْأَجْدَاثِ",
+      "matchedLemma": "أَجْدَاث",
+      "matchedRoot": "جدث",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 7
+      },
+      "matchedToken": "ٱلْأَجْدَاثِ",
+      "matchedLemma": "أَجْدَاث",
+      "matchedRoot": "جدث",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 43
+      },
+      "matchedToken": "ٱلْأَجْدَاثِ",
+      "matchedLemma": "أَجْدَاث",
+      "matchedRoot": "جدث",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 36,
+      "ayah": 51
+    },
+    {
+      "surah": 54,
+      "ayah": 7
+    },
+    {
+      "surah": 70,
+      "ayah": 43
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

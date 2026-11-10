@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "رهن",
+    "title": "رهن",
+    "arabicTitle": "رهن",
+    "roots": [
+      "رهن"
+    ],
+    "includedLemmas": [
+      "رَهِين",
+      "رَهِينَة",
+      "رِهَٰن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 283
+      },
+      "matchedToken": "فَرِهَـٰنٌۭ",
+      "matchedLemma": "رِهَٰن",
+      "matchedRoot": "رهن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 21
+      },
+      "matchedToken": "رَهِينٌۭ",
+      "matchedLemma": "رَهِين",
+      "matchedRoot": "رهن",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 38
+      },
+      "matchedToken": "رَهِينَةٌ",
+      "matchedLemma": "رَهِينَة",
+      "matchedRoot": "رهن",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 283
+    },
+    {
+      "surah": 52,
+      "ayah": 21
+    },
+    {
+      "surah": 74,
+      "ayah": 38
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

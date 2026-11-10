@@ -1,0 +1,74 @@
+{
+  "entry": {
+    "slug": "نمل",
+    "title": "نمل",
+    "arabicTitle": "نمل",
+    "roots": [
+      "نمل"
+    ],
+    "includedLemmas": [
+      "أَنَامِل",
+      "نَمْلَة",
+      "نَّمْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 119
+      },
+      "matchedToken": "ٱلْأَنَامِلَ",
+      "matchedLemma": "أَنَامِل",
+      "matchedRoot": "نمل",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلنَّمْلِ",
+      "matchedLemma": "نَّمْل",
+      "matchedRoot": "نمل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 18
+      },
+      "matchedToken": "نَمْلَةٌۭ",
+      "matchedLemma": "نَمْلَة",
+      "matchedRoot": "نمل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلنَّمْلُ",
+      "matchedLemma": "نَّمْل",
+      "matchedRoot": "نمل",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 119
+    },
+    {
+      "surah": 27,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

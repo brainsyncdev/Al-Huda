@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "كهل",
+    "title": "كهل",
+    "arabicTitle": "كهل",
+    "roots": [
+      "كهل"
+    ],
+    "includedLemmas": [
+      "كَهْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 46
+      },
+      "matchedToken": "وَكَهْلًۭا",
+      "matchedLemma": "كَهْل",
+      "matchedRoot": "كهل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 110
+      },
+      "matchedToken": "وَكَهْلًۭا ۖ",
+      "matchedLemma": "كَهْل",
+      "matchedRoot": "كهل",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 46
+    },
+    {
+      "surah": 5,
+      "ayah": 110
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

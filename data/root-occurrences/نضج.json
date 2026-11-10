@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نضج",
+    "title": "نضج",
+    "arabicTitle": "نضج",
+    "roots": [
+      "نضج"
+    ],
+    "includedLemmas": [
+      "نَضِجَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 56
+      },
+      "matchedToken": "نَضِجَتْ",
+      "matchedLemma": "نَضِجَتْ",
+      "matchedRoot": "نضج",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 56
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

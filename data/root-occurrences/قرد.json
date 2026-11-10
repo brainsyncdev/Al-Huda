@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "قرد",
+    "title": "قرد",
+    "arabicTitle": "قرد",
+    "roots": [
+      "قرد"
+    ],
+    "includedLemmas": [
+      "قِرَدَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 65
+      },
+      "matchedToken": "قِرَدَةً",
+      "matchedLemma": "قِرَدَة",
+      "matchedRoot": "قرد",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 60
+      },
+      "matchedToken": "ٱلْقِرَدَةَ",
+      "matchedLemma": "قِرَدَة",
+      "matchedRoot": "قرد",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 166
+      },
+      "matchedToken": "قِرَدَةً",
+      "matchedLemma": "قِرَدَة",
+      "matchedRoot": "قرد",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 65
+    },
+    {
+      "surah": 5,
+      "ayah": 60
+    },
+    {
+      "surah": 7,
+      "ayah": 166
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

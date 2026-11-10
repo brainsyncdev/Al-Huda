@@ -1,0 +1,139 @@
+{
+  "entry": {
+    "slug": "ختم",
+    "title": "ختم",
+    "arabicTitle": "ختم",
+    "roots": [
+      "ختم"
+    ],
+    "includedLemmas": [
+      "خَاتَم",
+      "خَتَمَ",
+      "خِتَٰم",
+      "مَّخْتُوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 7
+      },
+      "matchedToken": "خَتَمَ",
+      "matchedLemma": "خَتَمَ",
+      "matchedRoot": "ختم",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 46
+      },
+      "matchedToken": "وَخَتَمَ",
+      "matchedLemma": "خَتَمَ",
+      "matchedRoot": "ختم",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 40
+      },
+      "matchedToken": "وَخَاتَمَ",
+      "matchedLemma": "خَاتَم",
+      "matchedRoot": "ختم",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 65
+      },
+      "matchedToken": "نَخْتِمُ",
+      "matchedLemma": "خَتَمَ",
+      "matchedRoot": "ختم",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 24
+      },
+      "matchedToken": "يَخْتِمْ",
+      "matchedLemma": "خَتَمَ",
+      "matchedRoot": "ختم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 23
+      },
+      "matchedToken": "وَخَتَمَ",
+      "matchedLemma": "خَتَمَ",
+      "matchedRoot": "ختم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 25
+      },
+      "matchedToken": "مَّخْتُومٍ",
+      "matchedLemma": "مَّخْتُوم",
+      "matchedRoot": "ختم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 26
+      },
+      "matchedToken": "خِتَـٰمُهُۥ",
+      "matchedLemma": "خِتَٰم",
+      "matchedRoot": "ختم",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 7
+    },
+    {
+      "surah": 6,
+      "ayah": 46
+    },
+    {
+      "surah": 33,
+      "ayah": 40
+    },
+    {
+      "surah": 36,
+      "ayah": 65
+    },
+    {
+      "surah": 42,
+      "ayah": 24
+    },
+    {
+      "surah": 45,
+      "ayah": 23
+    },
+    {
+      "surah": 83,
+      "ayah": 25
+    },
+    {
+      "surah": 83,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

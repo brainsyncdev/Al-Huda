@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "رمد",
+    "title": "رمد",
+    "arabicTitle": "رمد",
+    "roots": [
+      "رمد"
+    ],
+    "includedLemmas": [
+      "رَمَاد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 18
+      },
+      "matchedToken": "كَرَمَادٍ",
+      "matchedLemma": "رَمَاد",
+      "matchedRoot": "رمد",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

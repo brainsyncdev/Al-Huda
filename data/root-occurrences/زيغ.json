@@ -1,0 +1,148 @@
+{
+  "entry": {
+    "slug": "زيغ",
+    "title": "زيغ",
+    "arabicTitle": "زيغ",
+    "roots": [
+      "زيغ"
+    ],
+    "includedLemmas": [
+      "أَزَاغَ",
+      "زَاغَ",
+      "زَيْغ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 7
+      },
+      "matchedToken": "زَيْغٌۭ",
+      "matchedLemma": "زَيْغ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 8
+      },
+      "matchedToken": "تُزِغْ",
+      "matchedLemma": "أَزَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 117
+      },
+      "matchedToken": "يَزِيغُ",
+      "matchedLemma": "زَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 10
+      },
+      "matchedToken": "زَاغَتِ",
+      "matchedLemma": "زَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 12
+      },
+      "matchedToken": "يَزِغْ",
+      "matchedLemma": "زَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 63
+      },
+      "matchedToken": "زَاغَتْ",
+      "matchedLemma": "زَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 17
+      },
+      "matchedToken": "زَاغَ",
+      "matchedLemma": "زَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 5
+      },
+      "matchedToken": "زَاغُوٓا۟",
+      "matchedLemma": "زَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 5
+      },
+      "matchedToken": "أَزَاغَ",
+      "matchedLemma": "أَزَاغَ",
+      "matchedRoot": "زيغ",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 7
+    },
+    {
+      "surah": 3,
+      "ayah": 8
+    },
+    {
+      "surah": 9,
+      "ayah": 117
+    },
+    {
+      "surah": 33,
+      "ayah": 10
+    },
+    {
+      "surah": 34,
+      "ayah": 12
+    },
+    {
+      "surah": 38,
+      "ayah": 63
+    },
+    {
+      "surah": 53,
+      "ayah": 17
+    },
+    {
+      "surah": 61,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

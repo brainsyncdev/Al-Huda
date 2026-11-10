@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "slug": "مزق",
+    "title": "مزق",
+    "arabicTitle": "مزق",
+    "roots": [
+      "مزق"
+    ],
+    "includedLemmas": [
+      "مُزِّقْ",
+      "مُمَزَّق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 7
+      },
+      "matchedToken": "مُزِّقْتُمْ",
+      "matchedLemma": "مُزِّقْ",
+      "matchedRoot": "مزق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 7
+      },
+      "matchedToken": "مُمَزَّقٍ",
+      "matchedLemma": "مُمَزَّق",
+      "matchedRoot": "مزق",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 19
+      },
+      "matchedToken": "وَمَزَّقْنَـٰهُمْ",
+      "matchedLemma": "مُزِّقْ",
+      "matchedRoot": "مزق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 19
+      },
+      "matchedToken": "مُمَزَّقٍ ۚ",
+      "matchedLemma": "مُمَزَّق",
+      "matchedRoot": "مزق",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 34,
+      "ayah": 7
+    },
+    {
+      "surah": 34,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

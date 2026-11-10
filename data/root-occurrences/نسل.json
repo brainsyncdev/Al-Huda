@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "نسل",
+    "title": "نسل",
+    "arabicTitle": "نسل",
+    "roots": [
+      "نسل"
+    ],
+    "includedLemmas": [
+      "نَسْل",
+      "يَنسِلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 205
+      },
+      "matchedToken": "وَٱلنَّسْلَ ۗ",
+      "matchedLemma": "نَسْل",
+      "matchedRoot": "نسل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 96
+      },
+      "matchedToken": "يَنسِلُونَ",
+      "matchedLemma": "يَنسِلُ",
+      "matchedRoot": "نسل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 8
+      },
+      "matchedToken": "نَسْلَهُۥ",
+      "matchedLemma": "نَسْل",
+      "matchedRoot": "نسل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 51
+      },
+      "matchedToken": "يَنسِلُونَ",
+      "matchedLemma": "يَنسِلُ",
+      "matchedRoot": "نسل",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 205
+    },
+    {
+      "surah": 21,
+      "ayah": 96
+    },
+    {
+      "surah": 32,
+      "ayah": 8
+    },
+    {
+      "surah": 36,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,136 @@
+{
+  "entry": {
+    "slug": "خسف",
+    "title": "خسف",
+    "arabicTitle": "خسف",
+    "roots": [
+      "خسف"
+    ],
+    "includedLemmas": [
+      "خَسَفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 45
+      },
+      "matchedToken": "يَخْسِفَ",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 68
+      },
+      "matchedToken": "يَخْسِفَ",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 81
+      },
+      "matchedToken": "فَخَسَفْنَا",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 82
+      },
+      "matchedToken": "لَخَسَفَ",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 40
+      },
+      "matchedToken": "خَسَفْنَا",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 9
+      },
+      "matchedToken": "نَخْسِفْ",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 16
+      },
+      "matchedToken": "يَخْسِفَ",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 8
+      },
+      "matchedToken": "وَخَسَفَ",
+      "matchedLemma": "خَسَفَ",
+      "matchedRoot": "خسف",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 45
+    },
+    {
+      "surah": 17,
+      "ayah": 68
+    },
+    {
+      "surah": 28,
+      "ayah": 81
+    },
+    {
+      "surah": 28,
+      "ayah": 82
+    },
+    {
+      "surah": 29,
+      "ayah": 40
+    },
+    {
+      "surah": 34,
+      "ayah": 9
+    },
+    {
+      "surah": 67,
+      "ayah": 16
+    },
+    {
+      "surah": 75,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

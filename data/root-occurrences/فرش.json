@@ -1,0 +1,111 @@
+{
+  "entry": {
+    "slug": "فرش",
+    "title": "فرش",
+    "arabicTitle": "فرش",
+    "roots": [
+      "فرش"
+    ],
+    "includedLemmas": [
+      "فَرَاش",
+      "فَرَشْ",
+      "فَرْش",
+      "فِرَٰش"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 22
+      },
+      "matchedToken": "فِرَٰشًۭا",
+      "matchedLemma": "فِرَٰش",
+      "matchedRoot": "فرش",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 142
+      },
+      "matchedToken": "وَفَرْشًۭا ۚ",
+      "matchedLemma": "فَرْش",
+      "matchedRoot": "فرش",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 48
+      },
+      "matchedToken": "فَرَشْنَـٰهَا",
+      "matchedLemma": "فَرَشْ",
+      "matchedRoot": "فرش",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 54
+      },
+      "matchedToken": "فُرُشٍۭ",
+      "matchedLemma": "فِرَٰش",
+      "matchedRoot": "فرش",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 34
+      },
+      "matchedToken": "وَفُرُشٍۢ",
+      "matchedLemma": "فِرَٰش",
+      "matchedRoot": "فرش",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 4
+      },
+      "matchedToken": "كَٱلْفَرَاشِ",
+      "matchedLemma": "فَرَاش",
+      "matchedRoot": "فرش",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 22
+    },
+    {
+      "surah": 6,
+      "ayah": 142
+    },
+    {
+      "surah": 51,
+      "ayah": 48
+    },
+    {
+      "surah": 55,
+      "ayah": 54
+    },
+    {
+      "surah": 56,
+      "ayah": 34
+    },
+    {
+      "surah": 101,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

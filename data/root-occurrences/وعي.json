@@ -1,0 +1,113 @@
+{
+  "entry": {
+    "slug": "وعي",
+    "title": "وعي",
+    "arabicTitle": "وعي",
+    "roots": [
+      "وعي"
+    ],
+    "includedLemmas": [
+      "أَوْعَىٰٓ",
+      "تَعِيَ",
+      "وَٰعِيَة",
+      "وِعَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 76
+      },
+      "matchedToken": "بِأَوْعِيَتِهِمْ",
+      "matchedLemma": "وِعَآء",
+      "matchedRoot": "وعي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 76
+      },
+      "matchedToken": "وِعَآءِ",
+      "matchedLemma": "وِعَآء",
+      "matchedRoot": "وعي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 76
+      },
+      "matchedToken": "وِعَآءِ",
+      "matchedLemma": "وِعَآء",
+      "matchedRoot": "وعي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 12
+      },
+      "matchedToken": "وَتَعِيَهَآ",
+      "matchedLemma": "تَعِيَ",
+      "matchedRoot": "وعي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 12
+      },
+      "matchedToken": "وَٰعِيَةٌۭ",
+      "matchedLemma": "وَٰعِيَة",
+      "matchedRoot": "وعي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 18
+      },
+      "matchedToken": "فَأَوْعَىٰٓ",
+      "matchedLemma": "أَوْعَىٰٓ",
+      "matchedRoot": "وعي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 23
+      },
+      "matchedToken": "يُوعُونَ",
+      "matchedLemma": "أَوْعَىٰٓ",
+      "matchedRoot": "وعي",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 76
+    },
+    {
+      "surah": 69,
+      "ayah": 12
+    },
+    {
+      "surah": 70,
+      "ayah": 18
+    },
+    {
+      "surah": 84,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

@@ -1,0 +1,137 @@
+{
+  "entry": {
+    "slug": "صحف",
+    "title": "صحف",
+    "arabicTitle": "صحف",
+    "roots": [
+      "صحف"
+    ],
+    "includedLemmas": [
+      "صُحُف",
+      "صِحَاف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 71
+      },
+      "matchedToken": "بِصِحَافٍۢ",
+      "matchedLemma": "صِحَاف",
+      "matchedRoot": "صحف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 36
+      },
+      "matchedToken": "صُحُفِ",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 52
+      },
+      "matchedToken": "صُحُفًۭا",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 80,
+        "ayah": 13
+      },
+      "matchedToken": "صُحُفٍۢ",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلصُّحُفُ",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 87,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلصُّحُفِ",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 87,
+        "ayah": 19
+      },
+      "matchedToken": "صُحُفِ",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 98,
+        "ayah": 2
+      },
+      "matchedToken": "صُحُفًۭا",
+      "matchedLemma": "صُحُف",
+      "matchedRoot": "صحف",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 43,
+      "ayah": 71
+    },
+    {
+      "surah": 53,
+      "ayah": 36
+    },
+    {
+      "surah": 74,
+      "ayah": 52
+    },
+    {
+      "surah": 80,
+      "ayah": 13
+    },
+    {
+      "surah": 81,
+      "ayah": 10
+    },
+    {
+      "surah": 87,
+      "ayah": 18
+    },
+    {
+      "surah": 87,
+      "ayah": 19
+    },
+    {
+      "surah": 98,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

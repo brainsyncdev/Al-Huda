@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "قنو",
+    "title": "قنو",
+    "arabicTitle": "قنو",
+    "roots": [
+      "قنو"
+    ],
+    "includedLemmas": [
+      "قِنْوَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 99
+      },
+      "matchedToken": "قِنْوَانٌۭ",
+      "matchedLemma": "قِنْوَان",
+      "matchedRoot": "قنو",
+      "wordPosition": 23
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 99
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "هجع",
+    "title": "هجع",
+    "arabicTitle": "هجع",
+    "roots": [
+      "هجع"
+    ],
+    "includedLemmas": [
+      "يَهْجَعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 17
+      },
+      "matchedToken": "يَهْجَعُونَ",
+      "matchedLemma": "يَهْجَعُ",
+      "matchedRoot": "هجع",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 51,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

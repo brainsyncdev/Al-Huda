@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "عرجن",
+    "title": "عرجن",
+    "arabicTitle": "عرجن",
+    "roots": [
+      "عرجن"
+    ],
+    "includedLemmas": [
+      "عُرْجُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 39
+      },
+      "matchedToken": "كَٱلْعُرْجُونِ",
+      "matchedLemma": "عُرْجُون",
+      "matchedRoot": "عرجن",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 36,
+      "ayah": 39
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

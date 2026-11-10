@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "حطم",
+    "title": "حطم",
+    "arabicTitle": "حطم",
+    "roots": [
+      "حطم"
+    ],
+    "includedLemmas": [
+      "حُطَمَة",
+      "حُطَٰم",
+      "يَحْطِمَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 18
+      },
+      "matchedToken": "يَحْطِمَنَّكُمْ",
+      "matchedLemma": "يَحْطِمَ",
+      "matchedRoot": "حطم",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 21
+      },
+      "matchedToken": "حُطَـٰمًا ۚ",
+      "matchedLemma": "حُطَٰم",
+      "matchedRoot": "حطم",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 65
+      },
+      "matchedToken": "حُطَـٰمًۭا",
+      "matchedLemma": "حُطَٰم",
+      "matchedRoot": "حطم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 20
+      },
+      "matchedToken": "حُطَـٰمًۭا ۖ",
+      "matchedLemma": "حُطَٰم",
+      "matchedRoot": "حطم",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْحُطَمَةِ",
+      "matchedLemma": "حُطَمَة",
+      "matchedRoot": "حطم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 5
+      },
+      "matchedToken": "ٱلْحُطَمَةُ",
+      "matchedLemma": "حُطَمَة",
+      "matchedRoot": "حطم",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 27,
+      "ayah": 18
+    },
+    {
+      "surah": 39,
+      "ayah": 21
+    },
+    {
+      "surah": 56,
+      "ayah": 65
+    },
+    {
+      "surah": 57,
+      "ayah": 20
+    },
+    {
+      "surah": 104,
+      "ayah": 4
+    },
+    {
+      "surah": 104,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

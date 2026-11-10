@@ -1,0 +1,138 @@
+{
+  "entry": {
+    "slug": "عرج",
+    "title": "عرج",
+    "arabicTitle": "عرج",
+    "roots": [
+      "عرج"
+    ],
+    "includedLemmas": [
+      "أَعْرَج",
+      "مَعَارِج",
+      "يَعْرُجُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 14
+      },
+      "matchedToken": "يَعْرُجُونَ",
+      "matchedLemma": "يَعْرُجُ",
+      "matchedRoot": "عرج",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 61
+      },
+      "matchedToken": "ٱلْأَعْرَجِ",
+      "matchedLemma": "أَعْرَج",
+      "matchedRoot": "عرج",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 5
+      },
+      "matchedToken": "يَعْرُجُ",
+      "matchedLemma": "يَعْرُجُ",
+      "matchedRoot": "عرج",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 2
+      },
+      "matchedToken": "يَعْرُجُ",
+      "matchedLemma": "يَعْرُجُ",
+      "matchedRoot": "عرج",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 33
+      },
+      "matchedToken": "وَمَعَارِجَ",
+      "matchedLemma": "مَعَارِج",
+      "matchedRoot": "عرج",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 17
+      },
+      "matchedToken": "ٱلْأَعْرَجِ",
+      "matchedLemma": "أَعْرَج",
+      "matchedRoot": "عرج",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلْمَعَارِجِ",
+      "matchedLemma": "مَعَارِج",
+      "matchedRoot": "عرج",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 4
+      },
+      "matchedToken": "تَعْرُجُ",
+      "matchedLemma": "يَعْرُجُ",
+      "matchedRoot": "عرج",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 14
+    },
+    {
+      "surah": 24,
+      "ayah": 61
+    },
+    {
+      "surah": 32,
+      "ayah": 5
+    },
+    {
+      "surah": 34,
+      "ayah": 2
+    },
+    {
+      "surah": 43,
+      "ayah": 33
+    },
+    {
+      "surah": 48,
+      "ayah": 17
+    },
+    {
+      "surah": 70,
+      "ayah": 3
+    },
+    {
+      "surah": 70,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

@@ -1,0 +1,123 @@
+{
+  "entry": {
+    "slug": "ضحو",
+    "title": "ضحو",
+    "arabicTitle": "ضحو",
+    "roots": [
+      "ضحو"
+    ],
+    "includedLemmas": [
+      "تَضْحَىٰ",
+      "ضُحًى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 98
+      },
+      "matchedToken": "ضُحًۭى",
+      "matchedLemma": "ضُحًى",
+      "matchedRoot": "ضحو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 59
+      },
+      "matchedToken": "ضُحًۭى",
+      "matchedLemma": "ضُحًى",
+      "matchedRoot": "ضحو",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 119
+      },
+      "matchedToken": "تَضْحَىٰ",
+      "matchedLemma": "تَضْحَىٰ",
+      "matchedRoot": "ضحو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 29
+      },
+      "matchedToken": "ضُحَىٰهَا",
+      "matchedLemma": "ضُحًى",
+      "matchedRoot": "ضحو",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 46
+      },
+      "matchedToken": "ضُحَىٰهَا",
+      "matchedLemma": "ضُحًى",
+      "matchedRoot": "ضحو",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 91,
+        "ayah": 1
+      },
+      "matchedToken": "وَضُحَىٰهَا",
+      "matchedLemma": "ضُحًى",
+      "matchedRoot": "ضحو",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 93,
+        "ayah": 1
+      },
+      "matchedToken": "وَٱلضُّحَىٰ",
+      "matchedLemma": "ضُحًى",
+      "matchedRoot": "ضحو",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 98
+    },
+    {
+      "surah": 20,
+      "ayah": 59
+    },
+    {
+      "surah": 20,
+      "ayah": 119
+    },
+    {
+      "surah": 79,
+      "ayah": 29
+    },
+    {
+      "surah": 79,
+      "ayah": 46
+    },
+    {
+      "surah": 91,
+      "ayah": 1
+    },
+    {
+      "surah": 93,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "رفث",
+    "title": "رفث",
+    "arabicTitle": "رفث",
+    "roots": [
+      "رفث"
+    ],
+    "includedLemmas": [
+      "رَفَث"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "ٱلرَّفَثُ",
+      "matchedLemma": "رَفَث",
+      "matchedRoot": "رفث",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 197
+      },
+      "matchedToken": "رَفَثَ",
+      "matchedLemma": "رَفَث",
+      "matchedRoot": "رفث",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 187
+    },
+    {
+      "surah": 2,
+      "ayah": 197
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,79 @@
+{
+  "entry": {
+    "slug": "طلب",
+    "title": "طلب",
+    "arabicTitle": "طلب",
+    "roots": [
+      "طلب"
+    ],
+    "includedLemmas": [
+      "طَلَب",
+      "طَّالِب",
+      "مَطْلُوب",
+      "يَطْلُبُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 54
+      },
+      "matchedToken": "يَطْلُبُهُۥ",
+      "matchedLemma": "يَطْلُبُ",
+      "matchedRoot": "طلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 41
+      },
+      "matchedToken": "طَلَبًۭا",
+      "matchedLemma": "طَلَب",
+      "matchedRoot": "طلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 73
+      },
+      "matchedToken": "ٱلطَّالِبُ",
+      "matchedLemma": "طَّالِب",
+      "matchedRoot": "طلب",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 73
+      },
+      "matchedToken": "وَٱلْمَطْلُوبُ",
+      "matchedLemma": "مَطْلُوب",
+      "matchedRoot": "طلب",
+      "wordPosition": 28
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 54
+    },
+    {
+      "surah": 18,
+      "ayah": 41
+    },
+    {
+      "surah": 22,
+      "ayah": 73
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

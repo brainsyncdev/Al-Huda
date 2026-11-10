@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "كوي",
+    "title": "كوي",
+    "arabicTitle": "كوي",
+    "roots": [
+      "كوي"
+    ],
+    "includedLemmas": [
+      "تُكْوَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 35
+      },
+      "matchedToken": "فَتُكْوَىٰ",
+      "matchedLemma": "تُكْوَىٰ",
+      "matchedRoot": "كوي",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

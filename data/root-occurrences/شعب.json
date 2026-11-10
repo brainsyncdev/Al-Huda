@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "شعب",
+    "title": "شعب",
+    "arabicTitle": "شعب",
+    "roots": [
+      "شعب"
+    ],
+    "includedLemmas": [
+      "شُعَب",
+      "شُعُوب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 13
+      },
+      "matchedToken": "شُعُوبًۭا",
+      "matchedLemma": "شُعُوب",
+      "matchedRoot": "شعب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 30
+      },
+      "matchedToken": "شُعَبٍۢ",
+      "matchedLemma": "شُعَب",
+      "matchedRoot": "شعب",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 49,
+      "ayah": 13
+    },
+    {
+      "surah": 77,
+      "ayah": 30
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

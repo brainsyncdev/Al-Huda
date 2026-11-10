@@ -1,0 +1,59 @@
+{
+  "entry": {
+    "slug": "فسح",
+    "title": "فسح",
+    "arabicTitle": "فسح",
+    "roots": [
+      "فسح"
+    ],
+    "includedLemmas": [
+      "تَفَسَّحُ",
+      "يَفْسَحِ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 11
+      },
+      "matchedToken": "تَفَسَّحُوا۟",
+      "matchedLemma": "تَفَسَّحُ",
+      "matchedRoot": "فسح",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 11
+      },
+      "matchedToken": "فَٱفْسَحُوا۟",
+      "matchedLemma": "يَفْسَحِ",
+      "matchedRoot": "فسح",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 11
+      },
+      "matchedToken": "يَفْسَحِ",
+      "matchedLemma": "يَفْسَحِ",
+      "matchedRoot": "فسح",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 58,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

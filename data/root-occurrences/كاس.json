@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "slug": "كاس",
+    "title": "كاس",
+    "arabicTitle": "كاس",
+    "roots": [
+      "كاس"
+    ],
+    "includedLemmas": [
+      "كَأْس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 45
+      },
+      "matchedToken": "بِكَأْسٍۢ",
+      "matchedLemma": "كَأْس",
+      "matchedRoot": "كاس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 23
+      },
+      "matchedToken": "كَأْسًۭا",
+      "matchedLemma": "كَأْس",
+      "matchedRoot": "كاس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 18
+      },
+      "matchedToken": "وَكَأْسٍۢ",
+      "matchedLemma": "كَأْس",
+      "matchedRoot": "كاس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 5
+      },
+      "matchedToken": "كَأْسٍۢ",
+      "matchedLemma": "كَأْس",
+      "matchedRoot": "كاس",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 17
+      },
+      "matchedToken": "كَأْسًۭا",
+      "matchedLemma": "كَأْس",
+      "matchedRoot": "كاس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 34
+      },
+      "matchedToken": "وَكَأْسًۭا",
+      "matchedLemma": "كَأْس",
+      "matchedRoot": "كاس",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 45
+    },
+    {
+      "surah": 52,
+      "ayah": 23
+    },
+    {
+      "surah": 56,
+      "ayah": 18
+    },
+    {
+      "surah": 76,
+      "ayah": 5
+    },
+    {
+      "surah": 76,
+      "ayah": 17
+    },
+    {
+      "surah": 78,
+      "ayah": 34
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

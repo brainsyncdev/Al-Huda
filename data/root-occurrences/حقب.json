@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "حقب",
+    "title": "حقب",
+    "arabicTitle": "حقب",
+    "roots": [
+      "حقب"
+    ],
+    "includedLemmas": [
+      "أَحْقَاب",
+      "حُقُب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 60
+      },
+      "matchedToken": "حُقُبًۭا",
+      "matchedLemma": "حُقُب",
+      "matchedRoot": "حقب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 23
+      },
+      "matchedToken": "أَحْقَابًۭا",
+      "matchedLemma": "أَحْقَاب",
+      "matchedRoot": "حقب",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 60
+    },
+    {
+      "surah": 78,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

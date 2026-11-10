@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "دخر",
+    "title": "دخر",
+    "arabicTitle": "دخر",
+    "roots": [
+      "دخر"
+    ],
+    "includedLemmas": [
+      "دَٰخِرُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 48
+      },
+      "matchedToken": "دَٰخِرُونَ",
+      "matchedLemma": "دَٰخِرُون",
+      "matchedRoot": "دخر",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 87
+      },
+      "matchedToken": "دَٰخِرِينَ",
+      "matchedLemma": "دَٰخِرُون",
+      "matchedRoot": "دخر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 18
+      },
+      "matchedToken": "دَٰخِرُونَ",
+      "matchedLemma": "دَٰخِرُون",
+      "matchedRoot": "دخر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 60
+      },
+      "matchedToken": "دَاخِرِينَ",
+      "matchedLemma": "دَٰخِرُون",
+      "matchedRoot": "دخر",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 48
+    },
+    {
+      "surah": 27,
+      "ayah": 87
+    },
+    {
+      "surah": 37,
+      "ayah": 18
+    },
+    {
+      "surah": 40,
+      "ayah": 60
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

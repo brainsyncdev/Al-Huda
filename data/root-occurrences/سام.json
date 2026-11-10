@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "سام",
+    "title": "سام",
+    "arabicTitle": "سام",
+    "roots": [
+      "سام"
+    ],
+    "includedLemmas": [
+      "يَسْـَٔمُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 282
+      },
+      "matchedToken": "تَسْـَٔمُوٓا۟",
+      "matchedLemma": "يَسْـَٔمُ",
+      "matchedRoot": "سام",
+      "wordPosition": 79
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 38
+      },
+      "matchedToken": "يَسْـَٔمُونَ ۩",
+      "matchedLemma": "يَسْـَٔمُ",
+      "matchedRoot": "سام",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 49
+      },
+      "matchedToken": "يَسْـَٔمُ",
+      "matchedLemma": "يَسْـَٔمُ",
+      "matchedRoot": "سام",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 282
+    },
+    {
+      "surah": 41,
+      "ayah": 38
+    },
+    {
+      "surah": 41,
+      "ayah": 49
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

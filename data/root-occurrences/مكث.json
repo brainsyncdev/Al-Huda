@@ -1,0 +1,124 @@
+{
+  "entry": {
+    "slug": "مكث",
+    "title": "مكث",
+    "arabicTitle": "مكث",
+    "roots": [
+      "مكث"
+    ],
+    "includedLemmas": [
+      "مَكَثَ",
+      "مُكْث",
+      "مَّٰكِثِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 17
+      },
+      "matchedToken": "فَيَمْكُثُ",
+      "matchedLemma": "مَكَثَ",
+      "matchedRoot": "مكث",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 106
+      },
+      "matchedToken": "مُكْثٍۢ",
+      "matchedLemma": "مُكْث",
+      "matchedRoot": "مكث",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 3
+      },
+      "matchedToken": "مَّـٰكِثِينَ",
+      "matchedLemma": "مَّٰكِثِين",
+      "matchedRoot": "مكث",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 10
+      },
+      "matchedToken": "ٱمْكُثُوٓا۟",
+      "matchedLemma": "مَكَثَ",
+      "matchedRoot": "مكث",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 22
+      },
+      "matchedToken": "فَمَكَثَ",
+      "matchedLemma": "مَكَثَ",
+      "matchedRoot": "مكث",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 29
+      },
+      "matchedToken": "ٱمْكُثُوٓا۟",
+      "matchedLemma": "مَكَثَ",
+      "matchedRoot": "مكث",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 77
+      },
+      "matchedToken": "مَّـٰكِثُونَ",
+      "matchedLemma": "مَّٰكِثِين",
+      "matchedRoot": "مكث",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 17
+    },
+    {
+      "surah": 17,
+      "ayah": 106
+    },
+    {
+      "surah": 18,
+      "ayah": 3
+    },
+    {
+      "surah": 20,
+      "ayah": 10
+    },
+    {
+      "surah": 27,
+      "ayah": 22
+    },
+    {
+      "surah": 28,
+      "ayah": 29
+    },
+    {
+      "surah": 43,
+      "ayah": 77
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "كسو",
+    "title": "كسو",
+    "arabicTitle": "كسو",
+    "roots": [
+      "كسو"
+    ],
+    "includedLemmas": [
+      "كَسَوْ",
+      "كِسْوَت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 233
+      },
+      "matchedToken": "وَكِسْوَتُهُنَّ",
+      "matchedLemma": "كِسْوَت",
+      "matchedRoot": "كسو",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "نَكْسُوهَا",
+      "matchedLemma": "كَسَوْ",
+      "matchedRoot": "كسو",
+      "wordPosition": 55
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 5
+      },
+      "matchedToken": "وَٱكْسُوهُمْ",
+      "matchedLemma": "كَسَوْ",
+      "matchedRoot": "كسو",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 89
+      },
+      "matchedToken": "كِسْوَتُهُمْ",
+      "matchedLemma": "كِسْوَت",
+      "matchedRoot": "كسو",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 14
+      },
+      "matchedToken": "فَكَسَوْنَا",
+      "matchedLemma": "كَسَوْ",
+      "matchedRoot": "كسو",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 233
+    },
+    {
+      "surah": 2,
+      "ayah": 259
+    },
+    {
+      "surah": 4,
+      "ayah": 5
+    },
+    {
+      "surah": 5,
+      "ayah": 89
+    },
+    {
+      "surah": 23,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

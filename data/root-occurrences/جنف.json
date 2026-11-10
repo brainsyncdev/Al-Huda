@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "جنف",
+    "title": "جنف",
+    "arabicTitle": "جنف",
+    "roots": [
+      "جنف"
+    ],
+    "includedLemmas": [
+      "جَنَف",
+      "مُتَجَانِف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 182
+      },
+      "matchedToken": "جَنَفًا",
+      "matchedLemma": "جَنَف",
+      "matchedRoot": "جنف",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 3
+      },
+      "matchedToken": "مُتَجَانِفٍۢ",
+      "matchedLemma": "مُتَجَانِف",
+      "matchedRoot": "جنف",
+      "wordPosition": 56
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 182
+    },
+    {
+      "surah": 5,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

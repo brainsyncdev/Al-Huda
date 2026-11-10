@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جمح",
+    "title": "جمح",
+    "arabicTitle": "جمح",
+    "roots": [
+      "جمح"
+    ],
+    "includedLemmas": [
+      "يَجْمَحُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 57
+      },
+      "matchedToken": "يَجْمَحُونَ",
+      "matchedLemma": "يَجْمَحُ",
+      "matchedRoot": "جمح",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 57
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

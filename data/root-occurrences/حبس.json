@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "حبس",
+    "title": "حبس",
+    "arabicTitle": "حبس",
+    "roots": [
+      "حبس"
+    ],
+    "includedLemmas": [
+      "يَحْبِسُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 106
+      },
+      "matchedToken": "تَحْبِسُونَهُمَا",
+      "matchedLemma": "يَحْبِسُ",
+      "matchedRoot": "حبس",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 8
+      },
+      "matchedToken": "يَحْبِسُهُۥٓ ۗ",
+      "matchedLemma": "يَحْبِسُ",
+      "matchedRoot": "حبس",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 106
+    },
+    {
+      "surah": 11,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

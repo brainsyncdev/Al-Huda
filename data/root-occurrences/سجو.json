@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "سجو",
+    "title": "سجو",
+    "arabicTitle": "سجو",
+    "roots": [
+      "سجو"
+    ],
+    "includedLemmas": [
+      "سَجَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 93,
+        "ayah": 2
+      },
+      "matchedToken": "سَجَىٰ",
+      "matchedLemma": "سَجَىٰ",
+      "matchedRoot": "سجو",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 93,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "همر",
+    "title": "همر",
+    "arabicTitle": "همر",
+    "roots": [
+      "همر"
+    ],
+    "includedLemmas": [
+      "مُّنْهَمِر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 11
+      },
+      "matchedToken": "مُّنْهَمِرٍۢ",
+      "matchedLemma": "مُّنْهَمِر",
+      "matchedRoot": "همر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 54,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

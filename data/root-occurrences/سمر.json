@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "سمر",
+    "title": "سمر",
+    "arabicTitle": "سمر",
+    "roots": [
+      "سمر"
+    ],
+    "includedLemmas": [
+      "سَٰمِر",
+      "سَّامِرِىّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 85
+      },
+      "matchedToken": "ٱلسَّامِرِىُّ",
+      "matchedLemma": "سَّامِرِىّ",
+      "matchedRoot": "سمر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 87
+      },
+      "matchedToken": "ٱلسَّامِرِىُّ",
+      "matchedLemma": "سَّامِرِىّ",
+      "matchedRoot": "سمر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 95
+      },
+      "matchedToken": "يَـٰسَـٰمِرِىُّ",
+      "matchedLemma": "سَّامِرِىّ",
+      "matchedRoot": "سمر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 67
+      },
+      "matchedToken": "سَـٰمِرًۭا",
+      "matchedLemma": "سَٰمِر",
+      "matchedRoot": "سمر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 85
+    },
+    {
+      "surah": 20,
+      "ayah": 87
+    },
+    {
+      "surah": 20,
+      "ayah": 95
+    },
+    {
+      "surah": 23,
+      "ayah": 67
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "slug": "ذرا",
+    "title": "ذرا",
+    "arabicTitle": "ذرا",
+    "roots": [
+      "ذرا"
+    ],
+    "includedLemmas": [
+      "ذَرَأَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 136
+      },
+      "matchedToken": "ذَرَأَ",
+      "matchedLemma": "ذَرَأَ",
+      "matchedRoot": "ذرا",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 179
+      },
+      "matchedToken": "ذَرَأْنَا",
+      "matchedLemma": "ذَرَأَ",
+      "matchedRoot": "ذرا",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 13
+      },
+      "matchedToken": "ذَرَأَ",
+      "matchedLemma": "ذَرَأَ",
+      "matchedRoot": "ذرا",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 79
+      },
+      "matchedToken": "ذَرَأَكُمْ",
+      "matchedLemma": "ذَرَأَ",
+      "matchedRoot": "ذرا",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 11
+      },
+      "matchedToken": "يَذْرَؤُكُمْ",
+      "matchedLemma": "ذَرَأَ",
+      "matchedRoot": "ذرا",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 24
+      },
+      "matchedToken": "ذَرَأَكُمْ",
+      "matchedLemma": "ذَرَأَ",
+      "matchedRoot": "ذرا",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 136
+    },
+    {
+      "surah": 7,
+      "ayah": 179
+    },
+    {
+      "surah": 16,
+      "ayah": 13
+    },
+    {
+      "surah": 23,
+      "ayah": 79
+    },
+    {
+      "surah": 42,
+      "ayah": 11
+    },
+    {
+      "surah": 67,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

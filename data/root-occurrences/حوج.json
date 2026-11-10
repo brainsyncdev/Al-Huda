@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "حوج",
+    "title": "حوج",
+    "arabicTitle": "حوج",
+    "roots": [
+      "حوج"
+    ],
+    "includedLemmas": [
+      "حَاجَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 68
+      },
+      "matchedToken": "حَاجَةًۭ",
+      "matchedLemma": "حَاجَة",
+      "matchedRoot": "حوج",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 80
+      },
+      "matchedToken": "حَاجَةًۭ",
+      "matchedLemma": "حَاجَة",
+      "matchedRoot": "حوج",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 9
+      },
+      "matchedToken": "حَاجَةًۭ",
+      "matchedLemma": "حَاجَة",
+      "matchedRoot": "حوج",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 68
+    },
+    {
+      "surah": 40,
+      "ayah": 80
+    },
+    {
+      "surah": 59,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

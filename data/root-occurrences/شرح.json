@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "شرح",
+    "title": "شرح",
+    "arabicTitle": "شرح",
+    "roots": [
+      "شرح"
+    ],
+    "includedLemmas": [
+      "شَرَحَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 125
+      },
+      "matchedToken": "يَشْرَحْ",
+      "matchedLemma": "شَرَحَ",
+      "matchedRoot": "شرح",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 106
+      },
+      "matchedToken": "شَرَحَ",
+      "matchedLemma": "شَرَحَ",
+      "matchedRoot": "شرح",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 25
+      },
+      "matchedToken": "ٱشْرَحْ",
+      "matchedLemma": "شَرَحَ",
+      "matchedRoot": "شرح",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 22
+      },
+      "matchedToken": "شَرَحَ",
+      "matchedLemma": "شَرَحَ",
+      "matchedRoot": "شرح",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 94,
+        "ayah": 1
+      },
+      "matchedToken": "نَشْرَحْ",
+      "matchedLemma": "شَرَحَ",
+      "matchedRoot": "شرح",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 125
+    },
+    {
+      "surah": 16,
+      "ayah": 106
+    },
+    {
+      "surah": 20,
+      "ayah": 25
+    },
+    {
+      "surah": 39,
+      "ayah": 22
+    },
+    {
+      "surah": 94,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

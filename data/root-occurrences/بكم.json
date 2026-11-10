@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "slug": "بكم",
+    "title": "بكم",
+    "arabicTitle": "بكم",
+    "roots": [
+      "بكم"
+    ],
+    "includedLemmas": [
+      "أَبْكَم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 18
+      },
+      "matchedToken": "بُكْمٌ",
+      "matchedLemma": "أَبْكَم",
+      "matchedRoot": "بكم",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 171
+      },
+      "matchedToken": "بُكْمٌ",
+      "matchedLemma": "أَبْكَم",
+      "matchedRoot": "بكم",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 39
+      },
+      "matchedToken": "وَبُكْمٌۭ",
+      "matchedLemma": "أَبْكَم",
+      "matchedRoot": "بكم",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 22
+      },
+      "matchedToken": "ٱلْبُكْمُ",
+      "matchedLemma": "أَبْكَم",
+      "matchedRoot": "بكم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 76
+      },
+      "matchedToken": "أَبْكَمُ",
+      "matchedLemma": "أَبْكَم",
+      "matchedRoot": "بكم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 97
+      },
+      "matchedToken": "وَبُكْمًۭا",
+      "matchedLemma": "أَبْكَم",
+      "matchedRoot": "بكم",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 18
+    },
+    {
+      "surah": 2,
+      "ayah": 171
+    },
+    {
+      "surah": 6,
+      "ayah": 39
+    },
+    {
+      "surah": 8,
+      "ayah": 22
+    },
+    {
+      "surah": 16,
+      "ayah": 76
+    },
+    {
+      "surah": 17,
+      "ayah": 97
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

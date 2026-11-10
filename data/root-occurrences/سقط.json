@@ -1,0 +1,139 @@
+{
+  "entry": {
+    "slug": "سقط",
+    "title": "سقط",
+    "arabicTitle": "سقط",
+    "roots": [
+      "سقط"
+    ],
+    "includedLemmas": [
+      "تُسَٰقِطْ",
+      "تُسْقِطَ",
+      "سَاقِط",
+      "سُقِطَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 59
+      },
+      "matchedToken": "تَسْقُطُ",
+      "matchedLemma": "سُقِطَ",
+      "matchedRoot": "سقط",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 149
+      },
+      "matchedToken": "سُقِطَ",
+      "matchedLemma": "سُقِطَ",
+      "matchedRoot": "سقط",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 49
+      },
+      "matchedToken": "سَقَطُوا۟ ۗ",
+      "matchedLemma": "سُقِطَ",
+      "matchedRoot": "سقط",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 92
+      },
+      "matchedToken": "تُسْقِطَ",
+      "matchedLemma": "تُسْقِطَ",
+      "matchedRoot": "سقط",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 25
+      },
+      "matchedToken": "تُسَـٰقِطْ",
+      "matchedLemma": "تُسَٰقِطْ",
+      "matchedRoot": "سقط",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 187
+      },
+      "matchedToken": "فَأَسْقِطْ",
+      "matchedLemma": "تُسْقِطَ",
+      "matchedRoot": "سقط",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 9
+      },
+      "matchedToken": "نُسْقِطْ",
+      "matchedLemma": "تُسْقِطَ",
+      "matchedRoot": "سقط",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 44
+      },
+      "matchedToken": "سَاقِطًۭا",
+      "matchedLemma": "سَاقِط",
+      "matchedRoot": "سقط",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 59
+    },
+    {
+      "surah": 7,
+      "ayah": 149
+    },
+    {
+      "surah": 9,
+      "ayah": 49
+    },
+    {
+      "surah": 17,
+      "ayah": 92
+    },
+    {
+      "surah": 19,
+      "ayah": 25
+    },
+    {
+      "surah": 26,
+      "ayah": 187
+    },
+    {
+      "surah": 34,
+      "ayah": 9
+    },
+    {
+      "surah": 52,
+      "ayah": 44
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

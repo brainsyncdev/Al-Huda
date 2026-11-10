@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "رصص",
+    "title": "رصص",
+    "arabicTitle": "رصص",
+    "roots": [
+      "رصص"
+    ],
+    "includedLemmas": [
+      "مَّرْصُوص"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 4
+      },
+      "matchedToken": "مَّرْصُوصٌۭ",
+      "matchedLemma": "مَّرْصُوص",
+      "matchedRoot": "رصص",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 61,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "بطر",
+    "title": "بطر",
+    "arabicTitle": "بطر",
+    "roots": [
+      "بطر"
+    ],
+    "includedLemmas": [
+      "بَطَر",
+      "بَطِرَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 47
+      },
+      "matchedToken": "بَطَرًۭا",
+      "matchedLemma": "بَطَر",
+      "matchedRoot": "بطر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 58
+      },
+      "matchedToken": "بَطِرَتْ",
+      "matchedLemma": "بَطِرَتْ",
+      "matchedRoot": "بطر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 47
+    },
+    {
+      "surah": 28,
+      "ayah": 58
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

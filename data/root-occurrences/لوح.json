@@ -1,0 +1,109 @@
+{
+  "entry": {
+    "slug": "لوح",
+    "title": "لوح",
+    "arabicTitle": "لوح",
+    "roots": [
+      "لوح"
+    ],
+    "includedLemmas": [
+      "لَوَّاحَة",
+      "لَوْح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 145
+      },
+      "matchedToken": "ٱلْأَلْوَاحِ",
+      "matchedLemma": "لَوْح",
+      "matchedRoot": "لوح",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 150
+      },
+      "matchedToken": "ٱلْأَلْوَاحَ",
+      "matchedLemma": "لَوْح",
+      "matchedRoot": "لوح",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 154
+      },
+      "matchedToken": "ٱلْأَلْوَاحَ ۖ",
+      "matchedLemma": "لَوْح",
+      "matchedRoot": "لوح",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 13
+      },
+      "matchedToken": "أَلْوَٰحٍۢ",
+      "matchedLemma": "لَوْح",
+      "matchedRoot": "لوح",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 29
+      },
+      "matchedToken": "لَوَّاحَةٌۭ",
+      "matchedLemma": "لَوَّاحَة",
+      "matchedRoot": "لوح",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 85,
+        "ayah": 22
+      },
+      "matchedToken": "لَوْحٍۢ",
+      "matchedLemma": "لَوْح",
+      "matchedRoot": "لوح",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 145
+    },
+    {
+      "surah": 7,
+      "ayah": 150
+    },
+    {
+      "surah": 7,
+      "ayah": 154
+    },
+    {
+      "surah": 54,
+      "ayah": 13
+    },
+    {
+      "surah": 74,
+      "ayah": 29
+    },
+    {
+      "surah": 85,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

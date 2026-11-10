@@ -1,0 +1,77 @@
+{
+  "entry": {
+    "slug": "قنطر",
+    "title": "قنطر",
+    "arabicTitle": "قنطر",
+    "roots": [
+      "قنطر"
+    ],
+    "includedLemmas": [
+      "قِنطَار",
+      "مُقَنطَرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 14
+      },
+      "matchedToken": "وَٱلْقَنَـٰطِيرِ",
+      "matchedLemma": "قِنطَار",
+      "matchedRoot": "قنطر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 14
+      },
+      "matchedToken": "ٱلْمُقَنطَرَةِ",
+      "matchedLemma": "مُقَنطَرَة",
+      "matchedRoot": "قنطر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 75
+      },
+      "matchedToken": "بِقِنطَارٍۢ",
+      "matchedLemma": "قِنطَار",
+      "matchedRoot": "قنطر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 20
+      },
+      "matchedToken": "قِنطَارًۭا",
+      "matchedLemma": "قِنطَار",
+      "matchedRoot": "قنطر",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 14
+    },
+    {
+      "surah": 3,
+      "ayah": 75
+    },
+    {
+      "surah": 4,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

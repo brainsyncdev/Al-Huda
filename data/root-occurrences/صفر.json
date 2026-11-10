@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "صفر",
+    "title": "صفر",
+    "arabicTitle": "صفر",
+    "roots": [
+      "صفر"
+    ],
+    "includedLemmas": [
+      "صَفْرَآء",
+      "صُفْر",
+      "مُصْفَرّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 69
+      },
+      "matchedToken": "صَفْرَآءُ",
+      "matchedLemma": "صَفْرَآء",
+      "matchedRoot": "صفر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 51
+      },
+      "matchedToken": "مُصْفَرًّۭا",
+      "matchedLemma": "مُصْفَرّ",
+      "matchedRoot": "صفر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 21
+      },
+      "matchedToken": "مُصْفَرًّۭا",
+      "matchedLemma": "مُصْفَرّ",
+      "matchedRoot": "صفر",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 33
+      },
+      "matchedToken": "صُفْرٌۭ",
+      "matchedLemma": "صُفْر",
+      "matchedRoot": "صفر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 69
+    },
+    {
+      "surah": 30,
+      "ayah": 51
+    },
+    {
+      "surah": 39,
+      "ayah": 21
+    },
+    {
+      "surah": 77,
+      "ayah": 33
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

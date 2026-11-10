@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "سول",
+    "title": "سول",
+    "arabicTitle": "سول",
+    "roots": [
+      "سول"
+    ],
+    "includedLemmas": [
+      "سَوَّلَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 18
+      },
+      "matchedToken": "سَوَّلَتْ",
+      "matchedLemma": "سَوَّلَ",
+      "matchedRoot": "سول",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 83
+      },
+      "matchedToken": "سَوَّلَتْ",
+      "matchedLemma": "سَوَّلَ",
+      "matchedRoot": "سول",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 96
+      },
+      "matchedToken": "سَوَّلَتْ",
+      "matchedLemma": "سَوَّلَ",
+      "matchedRoot": "سول",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 25
+      },
+      "matchedToken": "سَوَّلَ",
+      "matchedLemma": "سَوَّلَ",
+      "matchedRoot": "سول",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 18
+    },
+    {
+      "surah": 12,
+      "ayah": 83
+    },
+    {
+      "surah": 20,
+      "ayah": 96
+    },
+    {
+      "surah": 47,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

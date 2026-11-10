@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "قرطس",
+    "title": "قرطس",
+    "arabicTitle": "قرطس",
+    "roots": [
+      "قرطس"
+    ],
+    "includedLemmas": [
+      "قِرْطَاس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 7
+      },
+      "matchedToken": "قِرْطَاسٍۢ",
+      "matchedLemma": "قِرْطَاس",
+      "matchedRoot": "قرطس",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 91
+      },
+      "matchedToken": "قَرَاطِيسَ",
+      "matchedLemma": "قِرْطَاس",
+      "matchedRoot": "قرطس",
+      "wordPosition": 27
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 7
+    },
+    {
+      "surah": 6,
+      "ayah": 91
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

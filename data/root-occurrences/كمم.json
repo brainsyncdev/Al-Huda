@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "كمم",
+    "title": "كمم",
+    "arabicTitle": "كمم",
+    "roots": [
+      "كمم"
+    ],
+    "includedLemmas": [
+      "أَكْمَام"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 47
+      },
+      "matchedToken": "أَكْمَامِهَا",
+      "matchedLemma": "أَكْمَام",
+      "matchedRoot": "كمم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 11
+      },
+      "matchedToken": "ٱلْأَكْمَامِ",
+      "matchedLemma": "أَكْمَام",
+      "matchedRoot": "كمم",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 41,
+      "ayah": 47
+    },
+    {
+      "surah": 55,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

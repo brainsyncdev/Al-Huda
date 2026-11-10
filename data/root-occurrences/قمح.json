@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "قمح",
+    "title": "قمح",
+    "arabicTitle": "قمح",
+    "roots": [
+      "قمح"
+    ],
+    "includedLemmas": [
+      "مُّقْمَحُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 8
+      },
+      "matchedToken": "مُّقْمَحُونَ",
+      "matchedLemma": "مُّقْمَحُون",
+      "matchedRoot": "قمح",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 36,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

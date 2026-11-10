@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "غدر",
+    "title": "غدر",
+    "arabicTitle": "غدر",
+    "roots": [
+      "غدر"
+    ],
+    "includedLemmas": [
+      "يُغَادِرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 47
+      },
+      "matchedToken": "نُغَادِرْ",
+      "matchedLemma": "يُغَادِرُ",
+      "matchedRoot": "غدر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 49
+      },
+      "matchedToken": "يُغَادِرُ",
+      "matchedLemma": "يُغَادِرُ",
+      "matchedRoot": "غدر",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 47
+    },
+    {
+      "surah": 18,
+      "ayah": 49
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

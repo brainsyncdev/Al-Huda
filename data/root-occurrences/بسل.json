@@ -1,0 +1,48 @@
+{
+  "entry": {
+    "slug": "بسل",
+    "title": "بسل",
+    "arabicTitle": "بسل",
+    "roots": [
+      "بسل"
+    ],
+    "includedLemmas": [
+      "أُبْسِلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 70
+      },
+      "matchedToken": "تُبْسَلَ",
+      "matchedLemma": "أُبْسِلُ",
+      "matchedRoot": "بسل",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 70
+      },
+      "matchedToken": "أُبْسِلُوا۟",
+      "matchedLemma": "أُبْسِلُ",
+      "matchedRoot": "بسل",
+      "wordPosition": 34
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 70
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,62 @@
+{
+  "entry": {
+    "slug": "مضغ",
+    "title": "مضغ",
+    "arabicTitle": "مضغ",
+    "roots": [
+      "مضغ"
+    ],
+    "includedLemmas": [
+      "مُضْغَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 5
+      },
+      "matchedToken": "مُّضْغَةٍۢ",
+      "matchedLemma": "مُضْغَة",
+      "matchedRoot": "مضغ",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 14
+      },
+      "matchedToken": "مُضْغَةًۭ",
+      "matchedLemma": "مُضْغَة",
+      "matchedRoot": "مضغ",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 14
+      },
+      "matchedToken": "ٱلْمُضْغَةَ",
+      "matchedLemma": "مُضْغَة",
+      "matchedRoot": "مضغ",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 5
+    },
+    {
+      "surah": 23,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

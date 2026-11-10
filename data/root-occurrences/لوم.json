@@ -1,0 +1,218 @@
+{
+  "entry": {
+    "slug": "لوم",
+    "title": "لوم",
+    "arabicTitle": "لوم",
+    "roots": [
+      "لوم"
+    ],
+    "includedLemmas": [
+      "لَآئِم",
+      "لَوْمَة",
+      "لُمْ",
+      "لَّوَّامَة",
+      "مَلُوم",
+      "مُلِيم",
+      "يَتَلَٰوَمُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 7 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 54
+      },
+      "matchedToken": "لَوْمَةَ",
+      "matchedLemma": "لَوْمَة",
+      "matchedRoot": "لوم",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 54
+      },
+      "matchedToken": "لَآئِمٍۢ ۚ",
+      "matchedLemma": "لَآئِم",
+      "matchedRoot": "لوم",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 32
+      },
+      "matchedToken": "لُمْتُنَّنِى",
+      "matchedLemma": "لُمْ",
+      "matchedRoot": "لوم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 22
+      },
+      "matchedToken": "تَلُومُونِى",
+      "matchedLemma": "لُمْ",
+      "matchedRoot": "لوم",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 22
+      },
+      "matchedToken": "وَلُومُوٓا۟",
+      "matchedLemma": "لُمْ",
+      "matchedRoot": "لوم",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 29
+      },
+      "matchedToken": "مَلُومًۭا",
+      "matchedLemma": "مَلُوم",
+      "matchedRoot": "لوم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 39
+      },
+      "matchedToken": "مَلُومًۭا",
+      "matchedLemma": "مَلُوم",
+      "matchedRoot": "لوم",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 6
+      },
+      "matchedToken": "مَلُومِينَ",
+      "matchedLemma": "مَلُوم",
+      "matchedRoot": "لوم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 142
+      },
+      "matchedToken": "مُلِيمٌۭ",
+      "matchedLemma": "مُلِيم",
+      "matchedRoot": "لوم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 40
+      },
+      "matchedToken": "مُلِيمٌۭ",
+      "matchedLemma": "مُلِيم",
+      "matchedRoot": "لوم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 54
+      },
+      "matchedToken": "بِمَلُومٍۢ",
+      "matchedLemma": "مَلُوم",
+      "matchedRoot": "لوم",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 30
+      },
+      "matchedToken": "يَتَلَـٰوَمُونَ",
+      "matchedLemma": "يَتَلَٰوَمُ",
+      "matchedRoot": "لوم",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 30
+      },
+      "matchedToken": "مَلُومِينَ",
+      "matchedLemma": "مَلُوم",
+      "matchedRoot": "لوم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 2
+      },
+      "matchedToken": "ٱللَّوَّامَةِ",
+      "matchedLemma": "لَّوَّامَة",
+      "matchedRoot": "لوم",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 54
+    },
+    {
+      "surah": 12,
+      "ayah": 32
+    },
+    {
+      "surah": 14,
+      "ayah": 22
+    },
+    {
+      "surah": 17,
+      "ayah": 29
+    },
+    {
+      "surah": 17,
+      "ayah": 39
+    },
+    {
+      "surah": 23,
+      "ayah": 6
+    },
+    {
+      "surah": 37,
+      "ayah": 142
+    },
+    {
+      "surah": 51,
+      "ayah": 40
+    },
+    {
+      "surah": 51,
+      "ayah": 54
+    },
+    {
+      "surah": 68,
+      "ayah": 30
+    },
+    {
+      "surah": 70,
+      "ayah": 30
+    },
+    {
+      "surah": 75,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 14,
+  "totalMatches": 14,
+  "pagination": null
+}

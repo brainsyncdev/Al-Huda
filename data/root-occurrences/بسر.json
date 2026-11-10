@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "بسر",
+    "title": "بسر",
+    "arabicTitle": "بسر",
+    "roots": [
+      "بسر"
+    ],
+    "includedLemmas": [
+      "بَاسِرَة",
+      "بَسَرَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 22
+      },
+      "matchedToken": "وَبَسَرَ",
+      "matchedLemma": "بَسَرَ",
+      "matchedRoot": "بسر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 24
+      },
+      "matchedToken": "بَاسِرَةٌۭ",
+      "matchedLemma": "بَاسِرَة",
+      "matchedRoot": "بسر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 74,
+      "ayah": 22
+    },
+    {
+      "surah": 75,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

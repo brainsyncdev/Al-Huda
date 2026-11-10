@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وجب",
+    "title": "وجب",
+    "arabicTitle": "وجب",
+    "roots": [
+      "وجب"
+    ],
+    "includedLemmas": [
+      "وَجَبَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 36
+      },
+      "matchedToken": "وَجَبَتْ",
+      "matchedLemma": "وَجَبَتْ",
+      "matchedRoot": "وجب",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "مكن",
+    "title": "مكن",
+    "arabicTitle": "مكن",
+    "roots": [
+      "مكن"
+    ],
+    "includedLemmas": [
+      "أَمْكَنَ",
+      "مَّكِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 71
+      },
+      "matchedToken": "فَأَمْكَنَ",
+      "matchedLemma": "أَمْكَنَ",
+      "matchedRoot": "مكن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 54
+      },
+      "matchedToken": "مَكِينٌ",
+      "matchedLemma": "مَّكِين",
+      "matchedRoot": "مكن",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 13
+      },
+      "matchedToken": "مَّكِينٍۢ",
+      "matchedLemma": "مَّكِين",
+      "matchedRoot": "مكن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 21
+      },
+      "matchedToken": "مَّكِينٍ",
+      "matchedLemma": "مَّكِين",
+      "matchedRoot": "مكن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 20
+      },
+      "matchedToken": "مَكِينٍۢ",
+      "matchedLemma": "مَّكِين",
+      "matchedRoot": "مكن",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 71
+    },
+    {
+      "surah": 12,
+      "ayah": 54
+    },
+    {
+      "surah": 23,
+      "ayah": 13
+    },
+    {
+      "surah": 77,
+      "ayah": 21
+    },
+    {
+      "surah": 81,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "متن",
+    "title": "متن",
+    "arabicTitle": "متن",
+    "roots": [
+      "متن"
+    ],
+    "includedLemmas": [
+      "مَتِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 183
+      },
+      "matchedToken": "مَتِينٌ",
+      "matchedLemma": "مَتِين",
+      "matchedRoot": "متن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 58
+      },
+      "matchedToken": "ٱلْمَتِينُ",
+      "matchedLemma": "مَتِين",
+      "matchedRoot": "متن",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 45
+      },
+      "matchedToken": "مَتِينٌ",
+      "matchedLemma": "مَتِين",
+      "matchedRoot": "متن",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 183
+    },
+    {
+      "surah": 51,
+      "ayah": 58
+    },
+    {
+      "surah": 68,
+      "ayah": 45
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

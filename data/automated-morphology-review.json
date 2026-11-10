@@ -1,0 +1,3893 @@
+{
+  "schemaVersion": 1,
+  "policyVersion": "1.0.0",
+  "generatedAt": "2026-11-10T08:40:34.734Z",
+  "sourceDataset": "qul-morphology-v1",
+  "aiProvider": "none",
+  "scope": "manual-pilot",
+  "activationPerformed": false,
+  "roots": [
+    {
+      "slug": "sabr",
+      "root": "صبر",
+      "lemmas": [
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "اصْطَبِرْ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 3,
+          "sourceWordLocations": [
+            "20:132:4",
+            "54:27:7",
+            "19:65:7"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَابِر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 20,
+          "sourceWordLocations": [
+            "3:17:1",
+            "18:69:6",
+            "47:31:6",
+            "22:35:7",
+            "21:85:7",
+            "2:153:10",
+            "33:35:10",
+            "38:44:10",
+            "8:65:11",
+            "2:155:12"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَابِرَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "8:66:13"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَابِرُ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "3:200:5"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَبَرَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 58,
+          "sourceWordLocations": [
+            "11:115:1",
+            "76:24:1",
+            "40:77:1",
+            "68:48:1",
+            "52:48:1",
+            "70:5:1",
+            "30:60:1",
+            "16:127:1",
+            "73:10:1",
+            "18:28:1"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَبَّار",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 4,
+          "sourceWordLocations": [
+            "42:33:14",
+            "31:31:18",
+            "34:19:18",
+            "14:5:20"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَبْر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 15,
+          "sourceWordLocations": [
+            "2:45:2",
+            "70:5:2",
+            "16:127:3",
+            "2:153:5",
+            "18:67:6",
+            "90:17:7",
+            "12:83:7",
+            "18:72:8",
+            "2:250:9",
+            "18:75:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صبر",
+          "rootSlug": "sabr",
+          "lemma": "صَّٰبِرَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "33:35:11"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 8,
+        "autoAccepted": 8,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 103,
+        "distinctAyat": 93,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 103,
+        "activatableDistinctAyat": 93
+      }
+    },
+    {
+      "slug": "shukr",
+      "root": "شكر",
+      "lemmas": [
+        {
+          "root": "شكر",
+          "rootSlug": "shukr",
+          "lemma": "شَاكِر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 14,
+          "sourceWordLocations": [
+            "16:121:1",
+            "76:3:5",
+            "39:66:6",
+            "4:147:10",
+            "21:80:10",
+            "7:144:14",
+            "7:17:15",
+            "6:53:15",
+            "6:63:17",
+            "2:158:23"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "شكر",
+          "rootSlug": "shukr",
+          "lemma": "شَكَرَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 46,
+          "sourceWordLocations": [
+            "2:152:3",
+            "14:7:5",
+            "31:12:6",
+            "56:70:6",
+            "4:147:6",
+            "36:73:6",
+            "2:56:7",
+            "16:114:7",
+            "54:35:7",
+            "36:35:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "شكر",
+          "rootSlug": "shukr",
+          "lemma": "شَكُور",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 10,
+          "sourceWordLocations": [
+            "35:30:8",
+            "17:3:9",
+            "35:34:11",
+            "64:17:11",
+            "42:33:15",
+            "34:13:19",
+            "34:19:19",
+            "31:31:19",
+            "14:5:21",
+            "42:23:29"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "شكر",
+          "rootSlug": "shukr",
+          "lemma": "شُكُور",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "76:9:10",
+            "25:62:13"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "شكر",
+          "rootSlug": "shukr",
+          "lemma": "شُكْر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "34:13:15"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "شكر",
+          "rootSlug": "shukr",
+          "lemma": "مَّشْكُور",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "76:22:8",
+            "17:19:12"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 6,
+        "autoAccepted": 6,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 75,
+        "distinctAyat": 69,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 75,
+        "activatableDistinctAyat": 69
+      }
+    },
+    {
+      "slug": "rahmah",
+      "root": "رحم",
+      "lemmas": [
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "أَرْحَام",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 12,
+          "sourceWordLocations": [
+            "60:3:3",
+            "3:6:5",
+            "13:8:9",
+            "33:6:9",
+            "47:22:10",
+            "8:75:11",
+            "31:34:11",
+            "2:228:15",
+            "6:144:15",
+            "6:143:17"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "أَرْحَم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 4,
+          "sourceWordLocations": [
+            "21:83:9",
+            "7:151:10",
+            "12:92:10",
+            "12:64:16"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "رَحْمَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 114,
+          "sourceWordLocations": [
+            "44:6:1",
+            "19:2:2",
+            "3:159:2",
+            "36:44:2",
+            "3:74:2",
+            "17:87:2",
+            "10:86:2",
+            "31:3:2",
+            "28:73:2",
+            "9:21:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "رُحْم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "18:81:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "رَّحِمَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 28,
+          "sourceWordLocations": [
+            "23:75:2",
+            "44:42:3",
+            "11:119:3",
+            "29:21:4",
+            "23:118:4",
+            "17:8:4",
+            "3:132:5",
+            "6:16:6",
+            "17:54:6",
+            "6:155:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "رَّحِيم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 116,
+          "sourceWordLocations": [
+            "1:3:2",
+            "36:5:3",
+            "26:217:4",
+            "1:1:4",
+            "41:2:4",
+            "41:32:4",
+            "36:58:5",
+            "26:140:5",
+            "26:104:5",
+            "26:191:5"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "رَّحْمَٰن",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 57,
+          "sourceWordLocations": [
+            "55:1:1",
+            "1:3:1",
+            "20:5:1",
+            "25:63:2",
+            "19:88:3",
+            "19:91:3",
+            "50:33:3",
+            "1:1:3",
+            "41:2:3",
+            "67:29:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "رَّٰحِمِين",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 6,
+          "sourceWordLocations": [
+            "23:118:7",
+            "21:83:10",
+            "7:151:11",
+            "12:92:11",
+            "23:109:14",
+            "12:64:17"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "رحم",
+          "rootSlug": "rahmah",
+          "lemma": "مَرْحَمَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "90:17:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 9,
+        "autoAccepted": 9,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 339,
+        "distinctAyat": 313,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 339,
+        "activatableDistinctAyat": 313
+      }
+    },
+    {
+      "slug": "ilm",
+      "root": "علم",
+      "lemmas": [
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "أَعْلَم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 49,
+          "sourceWordLocations": [
+            "17:25:2",
+            "84:23:2",
+            "17:55:2",
+            "50:45:2",
+            "4:45:2",
+            "17:54:2",
+            "17:47:2",
+            "20:104:2",
+            "18:26:3",
+            "19:70:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "أَعْلَٰم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "42:32:6",
+            "55:24:6"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَلَٰمَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "16:16:1"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَلِمَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 382,
+          "sourceWordLocations": [
+            "40:19:1",
+            "21:28:1",
+            "22:76:1",
+            "49:7:1",
+            "22:54:1",
+            "82:12:1",
+            "54:26:1",
+            "82:5:1",
+            "72:28:1",
+            "8:41:1"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَلِيم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 163,
+          "sourceWordLocations": [
+            "26:220:4",
+            "7:112:4",
+            "26:37:4",
+            "15:86:5",
+            "3:63:5",
+            "22:59:6",
+            "40:2:6",
+            "49:8:6",
+            "10:79:6",
+            "24:18:6"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَلَّمَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 41,
+          "sourceWordLocations": [
+            "53:5:1",
+            "96:5:1",
+            "55:4:1",
+            "55:2:1",
+            "21:80:1",
+            "2:31:1",
+            "3:48:1",
+            "36:69:2",
+            "96:4:2",
+            "49:16:2"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَلَّٰم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 4,
+          "sourceWordLocations": [
+            "34:48:6",
+            "9:78:10",
+            "5:109:14",
+            "5:116:43"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَٰلَمِين",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 73,
+          "sourceWordLocations": [
+            "37:182:4",
+            "26:47:4",
+            "1:2:4",
+            "26:192:4",
+            "26:98:4",
+            "7:121:4",
+            "37:87:4",
+            "26:165:4",
+            "56:80:4",
+            "69:43:4"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عَٰلِم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 12,
+          "sourceWordLocations": [
+            "13:9:1",
+            "23:92:1",
+            "64:18:1",
+            "72:26:1",
+            "32:6:2",
+            "35:38:3",
+            "39:46:6",
+            "12:44:8",
+            "29:43:8",
+            "21:51:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "عِلْم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 105,
+          "sourceWordLocations": [
+            "43:61:2",
+            "20:52:2",
+            "53:35:2",
+            "7:7:3",
+            "46:23:3",
+            "26:112:3",
+            "41:47:3",
+            "27:66:3",
+            "67:26:3",
+            "22:54:4"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "مُعَلَّم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "44:14:5"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "مَّعْلُوم",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 11,
+          "sourceWordLocations": [
+            "77:22:3",
+            "38:81:4",
+            "15:38:4",
+            "37:41:4",
+            "26:38:5",
+            "56:50:5",
+            "70:24:5",
+            "37:164:6",
+            "15:4:8",
+            "26:155:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "مَّعْلُومَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "2:197:3",
+            "22:28:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "علم",
+          "rootSlug": "ilm",
+          "lemma": "يَتَعَلَّمُ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "2:102:35",
+            "2:102:52"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 14,
+        "autoAccepted": 14,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 848,
+        "distinctAyat": 722,
+        "recordsWithoutLemma": 6,
+        "activatableOccurrences": 848,
+        "activatableDistinctAyat": 722
+      }
+    },
+    {
+      "slug": "tawbah",
+      "root": "توب",
+      "lemmas": [
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "تَابَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 63,
+          "sourceWordLocations": [
+            "5:74:2",
+            "9:117:2",
+            "5:39:2",
+            "66:4:2",
+            "9:11:2",
+            "9:27:2",
+            "25:71:2",
+            "3:89:3",
+            "28:67:3",
+            "25:70:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "تَوَّاب",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 12,
+          "sourceWordLocations": [
+            "110:3:7",
+            "24:10:8",
+            "2:37:10",
+            "2:160:10",
+            "4:16:13",
+            "9:104:15",
+            "2:128:16",
+            "4:64:22",
+            "2:222:25",
+            "2:54:25"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "تَوْبَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 7,
+          "sourceWordLocations": [
+            "4:18:2",
+            "4:17:2",
+            "42:25:4",
+            "9:104:7",
+            "66:8:7",
+            "3:90:11",
+            "4:92:54"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "تَٰٓئِبَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "66:5:13"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "تَّوْب",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "40:3:4"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "تَّٰٓئِبُون",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "9:112:1"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "توب",
+          "rootSlug": "tawbah",
+          "lemma": "مَتَاب",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "25:71:9",
+            "13:30:28"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 7,
+        "autoAccepted": 7,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 87,
+        "distinctAyat": 69,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 87,
+        "activatableDistinctAyat": 69
+      }
+    },
+    {
+      "slug": "maghfirah",
+      "root": "غفر",
+      "lemmas": [
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "اسْتَغْفَرَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 40,
+          "sourceWordLocations": [
+            "11:90:1",
+            "9:80:1",
+            "4:106:1",
+            "11:3:2",
+            "71:10:2",
+            "11:52:2",
+            "51:18:3",
+            "12:97:3",
+            "63:6:3",
+            "12:98:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "اسْتِغْفَار",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "9:114:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "غَافِر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "40:3:1",
+            "7:155:41"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "غَفَرَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 65,
+          "sourceWordLocations": [
+            "48:2:1",
+            "71:4:1",
+            "61:12:1",
+            "38:25:1",
+            "26:86:1",
+            "36:27:2",
+            "71:28:2",
+            "14:41:2",
+            "23:118:3",
+            "38:35:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "غَفُور",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 58,
+          "sourceWordLocations": [
+            "85:14:2",
+            "18:58:2",
+            "41:32:3",
+            "2:192:5",
+            "5:98:8",
+            "8:69:10",
+            "4:99:10",
+            "3:89:10",
+            "24:5:10",
+            "27:11:10"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "غَفَّار",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 5,
+          "sourceWordLocations": [
+            "20:82:2",
+            "71:10:6",
+            "38:66:7",
+            "40:42:15",
+            "39:5:23"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "غُفْرَان",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "2:285:24"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "كَانَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 4,
+          "sourceWordLocations": [
+            "4:106:6",
+            "25:6:11",
+            "33:24:15",
+            "4:23:53"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "inconclusive",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 0,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "needs-review",
+          "reasonCodes": [
+            "COMPATIBILITY_INCONCLUSIVE"
+          ],
+          "explanation": "The mapping is source-backed but morphological compatibility is inconclusive. Requires further morphological analysis or human review.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "مُسْتَغْفِرِين",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "3:17:5"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "غفر",
+          "rootSlug": "maghfirah",
+          "lemma": "مَّغْفِرَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 28,
+          "sourceWordLocations": [
+            "3:136:3",
+            "4:96:3",
+            "3:133:3",
+            "57:21:3",
+            "2:263:3",
+            "22:50:6",
+            "2:175:7",
+            "67:12:7",
+            "5:9:8",
+            "34:4:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 10,
+        "autoAccepted": 9,
+        "needsReview": 1,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 205,
+        "distinctAyat": 182,
+        "recordsWithoutLemma": 29,
+        "activatableOccurrences": 201,
+        "activatableDistinctAyat": 179
+      }
+    },
+    {
+      "slug": "kibr",
+      "root": "كبر",
+      "lemmas": [
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "أَكْبَر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 24,
+          "sourceWordLocations": [
+            "6:19:4",
+            "21:103:4",
+            "40:57:4",
+            "88:24:4",
+            "68:33:5",
+            "6:123:6",
+            "32:21:7",
+            "40:10:7",
+            "43:48:7",
+            "17:21:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "أَكْبَرْ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "12:31:19"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "اسْتَكْبَرَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 40,
+          "sourceWordLocations": [
+            "28:39:1",
+            "41:38:2",
+            "7:76:3",
+            "74:23:3",
+            "34:32:3",
+            "38:74:3",
+            "41:15:3",
+            "40:48:3",
+            "7:88:4",
+            "23:46:4"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "اسْتِكْبَار",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "35:43:1",
+            "71:7:14"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "تَكْبِير",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "17:111:21"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كَانَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "10:71:11"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "inconclusive",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 1,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "needs-review",
+          "reasonCodes": [
+            "COMPATIBILITY_INCONCLUSIVE"
+          ],
+          "explanation": "The mapping is source-backed but morphological compatibility is inconclusive. Requires further morphological analysis or human review.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كَبُرَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 3,
+          "sourceWordLocations": [
+            "61:3:1",
+            "6:35:3",
+            "17:51:4"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كَبِير",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 40,
+          "sourceWordLocations": [
+            "54:53:3",
+            "21:63:4",
+            "13:9:4",
+            "21:58:4",
+            "17:43:6",
+            "25:52:7",
+            "12:80:7",
+            "76:20:7",
+            "33:47:8",
+            "12:78:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كَبِيرَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 7,
+          "sourceWordLocations": [
+            "53:32:3",
+            "4:31:3",
+            "42:37:3",
+            "2:45:5",
+            "9:121:6",
+            "18:49:17",
+            "2:143:30"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كَبِّرْ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 4,
+          "sourceWordLocations": [
+            "74:3:2",
+            "22:37:14",
+            "17:111:20",
+            "2:185:38"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كُبَرَآء",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "33:67:6"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كُبَّار",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "71:22:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كُبْرَىٰ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 7,
+          "sourceWordLocations": [
+            "74:35:3",
+            "79:20:3",
+            "20:23:4",
+            "44:16:4",
+            "87:12:4",
+            "79:34:4",
+            "53:18:6"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كِبَر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 6,
+          "sourceWordLocations": [
+            "15:54:6",
+            "14:39:7",
+            "3:40:9",
+            "17:23:12",
+            "19:8:13",
+            "2:266:20"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كِبْر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "40:56:14",
+            "24:11:24"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "كِبْرِيَآء",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "45:37:2",
+            "10:78:10"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "مُتَكَبِّر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 7,
+          "sourceWordLocations": [
+            "40:76:8",
+            "16:29:8",
+            "40:27:9",
+            "39:72:9",
+            "39:60:14",
+            "59:23:15",
+            "40:35:22"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "مُسْتَكْبِر",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 6,
+          "sourceWordLocations": [
+            "23:67:1",
+            "31:7:6",
+            "45:8:8",
+            "16:22:11",
+            "16:23:13",
+            "63:5:14"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "كبر",
+          "rootSlug": "kibr",
+          "lemma": "يَتَكَبَّرُ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "7:146:5",
+            "7:13:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 19,
+        "autoAccepted": 18,
+        "needsReview": 1,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 157,
+        "distinctAyat": 150,
+        "recordsWithoutLemma": 4,
+        "activatableOccurrences": 156,
+        "activatableDistinctAyat": 149
+      }
+    },
+    {
+      "slug": "khushu",
+      "root": "خشع",
+      "lemmas": [
+        {
+          "root": "خشع",
+          "rootSlug": "khushu",
+          "lemma": "خَاشِع",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 14,
+          "sourceWordLocations": [
+            "70:44:1",
+            "54:7:1",
+            "68:43:1",
+            "79:9:2",
+            "88:2:3",
+            "42:45:4",
+            "23:2:5",
+            "41:39:6",
+            "2:45:8",
+            "59:21:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "خشع",
+          "rootSlug": "khushu",
+          "lemma": "خَشَعَتِ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "57:16:6",
+            "20:108:7"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "خشع",
+          "rootSlug": "khushu",
+          "lemma": "خُشُوع",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "17:109:5"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 3,
+        "autoAccepted": 3,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 17,
+        "distinctAyat": 16,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 17,
+        "activatableDistinctAyat": 16
+      }
+    },
+    {
+      "slug": "sidq",
+      "root": "صدق",
+      "lemmas": [
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "أَصْدَق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "4:87:14",
+            "4:122:18"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "تَصَدَّقَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 6,
+          "sourceWordLocations": [
+            "9:75:9",
+            "2:280:9",
+            "12:88:16",
+            "63:10:18",
+            "5:45:18",
+            "4:92:22"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "تَصْدِيق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "10:37:11",
+            "12:111:13"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَادِق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 59,
+          "sourceWordLocations": [
+            "33:8:2",
+            "3:17:2",
+            "51:5:3",
+            "33:24:3",
+            "56:87:4",
+            "15:64:4",
+            "44:36:5",
+            "37:157:5",
+            "52:34:6",
+            "5:119:6"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَدَقَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 15,
+          "sourceWordLocations": [
+            "3:152:2",
+            "21:9:2",
+            "48:27:2",
+            "3:95:2",
+            "27:27:3",
+            "33:23:4",
+            "39:74:5",
+            "47:21:8",
+            "29:3:9",
+            "5:113:11"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَدَقَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 5,
+          "sourceWordLocations": [
+            "9:103:4",
+            "2:263:6",
+            "4:114:10",
+            "58:12:11",
+            "2:196:31"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَدَقَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 8,
+          "sourceWordLocations": [
+            "9:60:2",
+            "2:271:3",
+            "9:58:5",
+            "2:276:5",
+            "2:264:6",
+            "9:79:7",
+            "58:13:7",
+            "9:104:11"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَدُقَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "4:4:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَدِيق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "26:101:2",
+            "24:61:49"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَدَّقَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 10,
+          "sourceWordLocations": [
+            "92:6:1",
+            "37:105:2",
+            "34:20:2",
+            "75:31:2",
+            "70:26:2",
+            "39:33:4",
+            "56:57:4",
+            "37:37:4",
+            "28:34:10",
+            "66:12:11"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صِدِّيق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 5,
+          "sourceWordLocations": [
+            "12:46:3",
+            "19:41:7",
+            "57:19:7",
+            "19:56:7",
+            "4:69:13"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صِدِّيقَة",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "5:75:13"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صِدْق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 14,
+          "sourceWordLocations": [
+            "39:33:3",
+            "54:55:3",
+            "6:115:4",
+            "33:24:4",
+            "33:8:4",
+            "26:84:4",
+            "17:80:5",
+            "10:93:6",
+            "5:119:7",
+            "39:32:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "صَّٰدِقَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "33:35:9"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "مُتَصَدِّقَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "33:35:15"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "مُتَصَدِّقِين",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "33:35:14",
+            "12:88:21"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "مُصَدِّق",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 19,
+          "sourceWordLocations": [
+            "3:50:1",
+            "37:52:4",
+            "2:41:4",
+            "6:92:5",
+            "5:48:5",
+            "3:3:5",
+            "2:89:7",
+            "5:46:7",
+            "2:101:7",
+            "35:31:8"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "مُصَّدِّقَٰت",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "57:18:3"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "صدق",
+          "rootSlug": "sidq",
+          "lemma": "مُصَّدِّقِين",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 1,
+          "sourceWordLocations": [
+            "57:18:2"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 3,
+            "rootStrongLetterCount": 3,
+            "rootHasWeakLetters": false
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 19,
+        "autoAccepted": 19,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 155,
+        "distinctAyat": 144,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 155,
+        "activatableDistinctAyat": 144
+      }
+    },
+    {
+      "slug": "tawakkul",
+      "root": "وكل",
+      "lemmas": [
+        {
+          "root": "وكل",
+          "rootSlug": "tawakkul",
+          "lemma": "تَوَكَّلْ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 40,
+          "sourceWordLocations": [
+            "27:79:1",
+            "26:217:1",
+            "25:58:1",
+            "33:3:1",
+            "11:56:2",
+            "14:12:4",
+            "10:85:4",
+            "29:59:5",
+            "16:42:5",
+            "8:61:6"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "وكل",
+          "rootSlug": "tawakkul",
+          "lemma": "مُتَوَكِّلُون",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 4,
+          "sourceWordLocations": [
+            "14:12:17",
+            "12:67:27",
+            "3:159:30",
+            "39:38:36"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "وكل",
+          "rootSlug": "tawakkul",
+          "lemma": "وَكِيل",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 24,
+          "sourceWordLocations": [
+            "33:3:6",
+            "17:65:9",
+            "39:62:9",
+            "6:66:9",
+            "73:9:9",
+            "25:43:9",
+            "4:132:10",
+            "17:2:12",
+            "42:6:12",
+            "33:48:12"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        },
+        {
+          "root": "وكل",
+          "rootSlug": "tawakkul",
+          "lemma": "وُكِّلَ",
+          "sourceLemmaId": null,
+          "sourceDataset": "qul-morphology-v1",
+          "sourceOccurrenceCount": 2,
+          "sourceWordLocations": [
+            "32:11:6",
+            "6:89:12"
+          ],
+          "deterministicChecks": {
+            "hasSourceRecords": true,
+            "hasWordLocations": true,
+            "hasLemmas": true,
+            "noDuplicates": true
+          },
+          "compatibilityResult": "compatible",
+          "compatibilityDetail": {
+            "sharedStrongLetters": 2,
+            "rootStrongLetterCount": 2,
+            "rootHasWeakLetters": true
+          },
+          "aiRecommendation": null,
+          "outcome": "auto-accepted",
+          "reasonCodes": [
+            "ALL_CHECKS_PASS",
+            "COMPATIBILITY_CONFIRMED"
+          ],
+          "explanation": "Automated morphological acceptance: source-backed, all structural checks pass, consonantal skeleton fully compatible. Not a scholarly or thematic classification.",
+          "policyVersion": "1.0.0",
+          "reviewerOverride": null,
+          "reviewedAt": "2026-11-10T08:40:34.734Z"
+        }
+      ],
+      "summary": {
+        "totalLemmas": 4,
+        "autoAccepted": 4,
+        "needsReview": 0,
+        "rejected": 0,
+        "reviewerOverrides": 0,
+        "totalOccurrences": 70,
+        "distinctAyat": 61,
+        "recordsWithoutLemma": 0,
+        "activatableOccurrences": 70,
+        "activatableDistinctAyat": 61
+      }
+    }
+  ],
+  "globalSummary": {
+    "totalRootsProcessed": 10,
+    "totalLemmasEvaluated": 99,
+    "totalAutoAccepted": 97,
+    "totalNeedsReview": 2,
+    "totalRejected": 0,
+    "totalReviewerOverrides": 0,
+    "totalSourceOccurrences": 2056,
+    "totalActivatableOccurrences": 2051,
+    "totalRecordsWithoutLemma": 39
+  }
+}

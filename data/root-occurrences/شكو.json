@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "شكو",
+    "title": "شكو",
+    "arabicTitle": "شكو",
+    "roots": [
+      "شكو"
+    ],
+    "includedLemmas": [
+      "أَشْكُوا۟",
+      "تَشْتَكِىٓ",
+      "مِشْكَوٰة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 86
+      },
+      "matchedToken": "أَشْكُوا۟",
+      "matchedLemma": "أَشْكُوا۟",
+      "matchedRoot": "شكو",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 35
+      },
+      "matchedToken": "كَمِشْكَوٰةٍۢ",
+      "matchedLemma": "مِشْكَوٰة",
+      "matchedRoot": "شكو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 1
+      },
+      "matchedToken": "وَتَشْتَكِىٓ",
+      "matchedLemma": "تَشْتَكِىٓ",
+      "matchedRoot": "شكو",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 86
+    },
+    {
+      "surah": 24,
+      "ayah": 35
+    },
+    {
+      "surah": 58,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "خسا",
+    "title": "خسا",
+    "arabicTitle": "خسا",
+    "roots": [
+      "خسا"
+    ],
+    "includedLemmas": [
+      "اخْسَـُٔ",
+      "خَاسِئ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 65
+      },
+      "matchedToken": "خَـٰسِـِٔينَ",
+      "matchedLemma": "خَاسِئ",
+      "matchedRoot": "خسا",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 166
+      },
+      "matchedToken": "خَـٰسِـِٔينَ",
+      "matchedLemma": "خَاسِئ",
+      "matchedRoot": "خسا",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 108
+      },
+      "matchedToken": "ٱخْسَـُٔوا۟",
+      "matchedLemma": "اخْسَـُٔ",
+      "matchedRoot": "خسا",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 4
+      },
+      "matchedToken": "خَاسِئًۭا",
+      "matchedLemma": "خَاسِئ",
+      "matchedRoot": "خسا",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 65
+    },
+    {
+      "surah": 7,
+      "ayah": 166
+    },
+    {
+      "surah": 23,
+      "ayah": 108
+    },
+    {
+      "surah": 67,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,92 @@
+{
+  "entry": {
+    "slug": "نشز",
+    "title": "نشز",
+    "arabicTitle": "نشز",
+    "roots": [
+      "نشز"
+    ],
+    "includedLemmas": [
+      "انشُزُ",
+      "نُشُوز",
+      "نُنشِزُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "نُنشِزُهَا",
+      "matchedLemma": "نُنشِزُ",
+      "matchedRoot": "نشز",
+      "wordPosition": 53
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 34
+      },
+      "matchedToken": "نُشُوزَهُنَّ",
+      "matchedLemma": "نُشُوز",
+      "matchedRoot": "نشز",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 128
+      },
+      "matchedToken": "نُشُوزًا",
+      "matchedLemma": "نُشُوز",
+      "matchedRoot": "نشز",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 11
+      },
+      "matchedToken": "ٱنشُزُوا۟",
+      "matchedLemma": "انشُزُ",
+      "matchedRoot": "نشز",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 11
+      },
+      "matchedToken": "فَٱنشُزُوا۟",
+      "matchedLemma": "انشُزُ",
+      "matchedRoot": "نشز",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 259
+    },
+    {
+      "surah": 4,
+      "ayah": 34
+    },
+    {
+      "surah": 4,
+      "ayah": 128
+    },
+    {
+      "surah": 58,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

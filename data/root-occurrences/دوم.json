@@ -1,0 +1,151 @@
+{
+  "entry": {
+    "slug": "دوم",
+    "title": "دوم",
+    "arabicTitle": "دوم",
+    "roots": [
+      "دوم"
+    ],
+    "includedLemmas": [
+      "دَامُ",
+      "دَآئِم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 75
+      },
+      "matchedToken": "دُمْتَ",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 24
+      },
+      "matchedToken": "دَامُوا۟",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 96
+      },
+      "matchedToken": "دُمْتُمْ",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 117
+      },
+      "matchedToken": "دُمْتُ",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 107
+      },
+      "matchedToken": "دَامَتِ",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 108
+      },
+      "matchedToken": "دَامَتِ",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 35
+      },
+      "matchedToken": "دَآئِمٌۭ",
+      "matchedLemma": "دَآئِم",
+      "matchedRoot": "دوم",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 31
+      },
+      "matchedToken": "دُمْتُ",
+      "matchedLemma": "دَامُ",
+      "matchedRoot": "دوم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 23
+      },
+      "matchedToken": "دَآئِمُونَ",
+      "matchedLemma": "دَآئِم",
+      "matchedRoot": "دوم",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 75
+    },
+    {
+      "surah": 5,
+      "ayah": 24
+    },
+    {
+      "surah": 5,
+      "ayah": 96
+    },
+    {
+      "surah": 5,
+      "ayah": 117
+    },
+    {
+      "surah": 11,
+      "ayah": 107
+    },
+    {
+      "surah": 11,
+      "ayah": 108
+    },
+    {
+      "surah": 13,
+      "ayah": 35
+    },
+    {
+      "surah": 19,
+      "ayah": 31
+    },
+    {
+      "surah": 70,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

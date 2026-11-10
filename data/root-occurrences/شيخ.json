@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "شيخ",
+    "title": "شيخ",
+    "arabicTitle": "شيخ",
+    "roots": [
+      "شيخ"
+    ],
+    "includedLemmas": [
+      "شَيْخ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 72
+      },
+      "matchedToken": "شَيْخًا ۖ",
+      "matchedLemma": "شَيْخ",
+      "matchedRoot": "شيخ",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 78
+      },
+      "matchedToken": "شَيْخًۭا",
+      "matchedLemma": "شَيْخ",
+      "matchedRoot": "شيخ",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 23
+      },
+      "matchedToken": "شَيْخٌۭ",
+      "matchedLemma": "شَيْخ",
+      "matchedRoot": "شيخ",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 67
+      },
+      "matchedToken": "شُيُوخًۭا ۚ",
+      "matchedLemma": "شَيْخ",
+      "matchedRoot": "شيخ",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 72
+    },
+    {
+      "surah": 12,
+      "ayah": 78
+    },
+    {
+      "surah": 28,
+      "ayah": 23
+    },
+    {
+      "surah": 40,
+      "ayah": 67
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

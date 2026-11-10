@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "حفر",
+    "title": "حفر",
+    "arabicTitle": "حفر",
+    "roots": [
+      "حفر"
+    ],
+    "includedLemmas": [
+      "حَافِرَة",
+      "حُفْرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 103
+      },
+      "matchedToken": "حُفْرَةٍۢ",
+      "matchedLemma": "حُفْرَة",
+      "matchedRoot": "حفر",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْحَافِرَةِ",
+      "matchedLemma": "حَافِرَة",
+      "matchedRoot": "حفر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 103
+    },
+    {
+      "surah": 79,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

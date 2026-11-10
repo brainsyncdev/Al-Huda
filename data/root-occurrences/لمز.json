@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "لمز",
+    "title": "لمز",
+    "arabicTitle": "لمز",
+    "roots": [
+      "لمز"
+    ],
+    "includedLemmas": [
+      "لُّمَزَة",
+      "يَلْمِزُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 58
+      },
+      "matchedToken": "يَلْمِزُكَ",
+      "matchedLemma": "يَلْمِزُ",
+      "matchedRoot": "لمز",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 79
+      },
+      "matchedToken": "يَلْمِزُونَ",
+      "matchedLemma": "يَلْمِزُ",
+      "matchedRoot": "لمز",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 1
+      },
+      "matchedToken": "لُّمَزَةٍ",
+      "matchedLemma": "لُّمَزَة",
+      "matchedRoot": "لمز",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 58
+    },
+    {
+      "surah": 9,
+      "ayah": 79
+    },
+    {
+      "surah": 104,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

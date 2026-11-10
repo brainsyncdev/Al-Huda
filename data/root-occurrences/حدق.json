@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "حدق",
+    "title": "حدق",
+    "arabicTitle": "حدق",
+    "roots": [
+      "حدق"
+    ],
+    "includedLemmas": [
+      "حَدَآئِق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 60
+      },
+      "matchedToken": "حَدَآئِقَ",
+      "matchedLemma": "حَدَآئِق",
+      "matchedRoot": "حدق",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 32
+      },
+      "matchedToken": "حَدَآئِقَ",
+      "matchedLemma": "حَدَآئِق",
+      "matchedRoot": "حدق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 80,
+        "ayah": 30
+      },
+      "matchedToken": "وَحَدَآئِقَ",
+      "matchedLemma": "حَدَآئِق",
+      "matchedRoot": "حدق",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 27,
+      "ayah": 60
+    },
+    {
+      "surah": 78,
+      "ayah": 32
+    },
+    {
+      "surah": 80,
+      "ayah": 30
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نغض",
+    "title": "نغض",
+    "arabicTitle": "نغض",
+    "roots": [
+      "نغض"
+    ],
+    "includedLemmas": [
+      "يُنْغِضُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 51
+      },
+      "matchedToken": "فَسَيُنْغِضُونَ",
+      "matchedLemma": "يُنْغِضُ",
+      "matchedRoot": "نغض",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

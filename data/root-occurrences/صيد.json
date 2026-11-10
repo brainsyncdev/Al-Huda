@@ -1,0 +1,105 @@
+{
+  "entry": {
+    "slug": "صيد",
+    "title": "صيد",
+    "arabicTitle": "صيد",
+    "roots": [
+      "صيد"
+    ],
+    "includedLemmas": [
+      "اصْطَادُ",
+      "صَيْد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلصَّيْدِ",
+      "matchedLemma": "صَيْد",
+      "matchedRoot": "صيد",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 2
+      },
+      "matchedToken": "فَٱصْطَادُوا۟ ۚ",
+      "matchedLemma": "اصْطَادُ",
+      "matchedRoot": "صيد",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 94
+      },
+      "matchedToken": "ٱلصَّيْدِ",
+      "matchedLemma": "صَيْد",
+      "matchedRoot": "صيد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 95
+      },
+      "matchedToken": "ٱلصَّيْدَ",
+      "matchedLemma": "صَيْد",
+      "matchedRoot": "صيد",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 96
+      },
+      "matchedToken": "صَيْدُ",
+      "matchedLemma": "صَيْد",
+      "matchedRoot": "صيد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 96
+      },
+      "matchedToken": "صَيْدُ",
+      "matchedLemma": "صَيْد",
+      "matchedRoot": "صيد",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 1
+    },
+    {
+      "surah": 5,
+      "ayah": 2
+    },
+    {
+      "surah": 5,
+      "ayah": 94
+    },
+    {
+      "surah": 5,
+      "ayah": 95
+    },
+    {
+      "surah": 5,
+      "ayah": 96
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

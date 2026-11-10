@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "لفت",
+    "title": "لفت",
+    "arabicTitle": "لفت",
+    "roots": [
+      "لفت"
+    ],
+    "includedLemmas": [
+      "تَلْفِتَ",
+      "يَلْتَفِتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 78
+      },
+      "matchedToken": "لِتَلْفِتَنَا",
+      "matchedLemma": "تَلْفِتَ",
+      "matchedRoot": "لفت",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 81
+      },
+      "matchedToken": "يَلْتَفِتْ",
+      "matchedLemma": "يَلْتَفِتْ",
+      "matchedRoot": "لفت",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 65
+      },
+      "matchedToken": "يَلْتَفِتْ",
+      "matchedLemma": "يَلْتَفِتْ",
+      "matchedRoot": "لفت",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 10,
+      "ayah": 78
+    },
+    {
+      "surah": 11,
+      "ayah": 81
+    },
+    {
+      "surah": 15,
+      "ayah": 65
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

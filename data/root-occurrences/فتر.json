@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "فتر",
+    "title": "فتر",
+    "arabicTitle": "فتر",
+    "roots": [
+      "فتر"
+    ],
+    "includedLemmas": [
+      "فَتْرَة",
+      "يَفْتُرُ",
+      "يُفَتَّرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 19
+      },
+      "matchedToken": "فَتْرَةٍۢ",
+      "matchedLemma": "فَتْرَة",
+      "matchedRoot": "فتر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 20
+      },
+      "matchedToken": "يَفْتُرُونَ",
+      "matchedLemma": "يَفْتُرُ",
+      "matchedRoot": "فتر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 75
+      },
+      "matchedToken": "يُفَتَّرُ",
+      "matchedLemma": "يُفَتَّرُ",
+      "matchedRoot": "فتر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 19
+    },
+    {
+      "surah": 21,
+      "ayah": 20
+    },
+    {
+      "surah": 43,
+      "ayah": 75
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

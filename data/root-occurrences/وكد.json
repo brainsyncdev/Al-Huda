@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وكد",
+    "title": "وكد",
+    "arabicTitle": "وكد",
+    "roots": [
+      "وكد"
+    ],
+    "includedLemmas": [
+      "تَوْكِيد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 91
+      },
+      "matchedToken": "تَوْكِيدِهَا",
+      "matchedLemma": "تَوْكِيد",
+      "matchedRoot": "وكد",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 91
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

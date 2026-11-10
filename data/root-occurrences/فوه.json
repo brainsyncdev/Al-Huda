@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "فوه",
+    "title": "فوه",
+    "arabicTitle": "فوه",
+    "roots": [
+      "فوه"
+    ],
+    "includedLemmas": [
+      "أَفْوَٰه"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 118
+      },
+      "matchedToken": "أَفْوَٰهِهِمْ",
+      "matchedLemma": "أَفْوَٰه",
+      "matchedRoot": "فوه",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 32
+      },
+      "matchedToken": "بِأَفْوَٰهِهِمْ",
+      "matchedLemma": "أَفْوَٰه",
+      "matchedRoot": "فوه",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 15
+      },
+      "matchedToken": "بِأَفْوَاهِكُم",
+      "matchedLemma": "أَفْوَٰه",
+      "matchedRoot": "فوه",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 65
+      },
+      "matchedToken": "أَفْوَٰهِهِمْ",
+      "matchedLemma": "أَفْوَٰه",
+      "matchedRoot": "فوه",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 8
+      },
+      "matchedToken": "بِأَفْوَٰهِهِمْ",
+      "matchedLemma": "أَفْوَٰه",
+      "matchedRoot": "فوه",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 118
+    },
+    {
+      "surah": 9,
+      "ayah": 32
+    },
+    {
+      "surah": 24,
+      "ayah": 15
+    },
+    {
+      "surah": 36,
+      "ayah": 65
+    },
+    {
+      "surah": 61,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

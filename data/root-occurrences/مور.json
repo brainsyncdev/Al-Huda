@@ -1,0 +1,63 @@
+{
+  "entry": {
+    "slug": "مور",
+    "title": "مور",
+    "arabicTitle": "مور",
+    "roots": [
+      "مور"
+    ],
+    "includedLemmas": [
+      "تَمُورُ",
+      "مَوْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 9
+      },
+      "matchedToken": "تَمُورُ",
+      "matchedLemma": "تَمُورُ",
+      "matchedRoot": "مور",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 9
+      },
+      "matchedToken": "مَوْرًۭا",
+      "matchedLemma": "مَوْر",
+      "matchedRoot": "مور",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 16
+      },
+      "matchedToken": "تَمُورُ",
+      "matchedLemma": "تَمُورُ",
+      "matchedRoot": "مور",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 52,
+      "ayah": 9
+    },
+    {
+      "surah": 67,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

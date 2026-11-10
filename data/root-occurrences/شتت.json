@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "شتت",
+    "title": "شتت",
+    "arabicTitle": "شتت",
+    "roots": [
+      "شتت"
+    ],
+    "includedLemmas": [
+      "أَشْتَات"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 61
+      },
+      "matchedToken": "أَشْتَاتًۭا ۚ",
+      "matchedLemma": "أَشْتَات",
+      "matchedRoot": "شتت",
+      "wordPosition": 57
+    },
+    {
+      "ref": {
+        "surah": 99,
+        "ayah": 6
+      },
+      "matchedToken": "أَشْتَاتًۭا",
+      "matchedLemma": "أَشْتَات",
+      "matchedRoot": "شتت",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 24,
+      "ayah": 61
+    },
+    {
+      "surah": 99,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

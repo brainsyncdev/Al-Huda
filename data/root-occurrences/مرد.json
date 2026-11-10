@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "مرد",
+    "title": "مرد",
+    "arabicTitle": "مرد",
+    "roots": [
+      "مرد"
+    ],
+    "includedLemmas": [
+      "مَرَدُ",
+      "مَّارِد",
+      "مَّرِيد",
+      "مُّمَرَّد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 117
+      },
+      "matchedToken": "مَّرِيدًۭا",
+      "matchedLemma": "مَّرِيد",
+      "matchedRoot": "مرد",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 101
+      },
+      "matchedToken": "مَرَدُوا۟",
+      "matchedLemma": "مَرَدُ",
+      "matchedRoot": "مرد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 3
+      },
+      "matchedToken": "مَّرِيدٍۢ",
+      "matchedLemma": "مَّرِيد",
+      "matchedRoot": "مرد",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 44
+      },
+      "matchedToken": "مُّمَرَّدٌۭ",
+      "matchedLemma": "مُّمَرَّد",
+      "matchedRoot": "مرد",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 7
+      },
+      "matchedToken": "مَّارِدٍۢ",
+      "matchedLemma": "مَّارِد",
+      "matchedRoot": "مرد",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 117
+    },
+    {
+      "surah": 9,
+      "ayah": 101
+    },
+    {
+      "surah": 22,
+      "ayah": 3
+    },
+    {
+      "surah": 27,
+      "ayah": 44
+    },
+    {
+      "surah": 37,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

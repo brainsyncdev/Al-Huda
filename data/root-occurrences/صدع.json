@@ -1,0 +1,98 @@
+{
+  "entry": {
+    "slug": "صدع",
+    "title": "صدع",
+    "arabicTitle": "صدع",
+    "roots": [
+      "صدع"
+    ],
+    "includedLemmas": [
+      "اصْدَعْ",
+      "صَّدْع",
+      "مُّتَصَدِّع",
+      "يَصَّدَّعُ",
+      "يُصَدَّعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 94
+      },
+      "matchedToken": "فَٱصْدَعْ",
+      "matchedLemma": "اصْدَعْ",
+      "matchedRoot": "صدع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 43
+      },
+      "matchedToken": "يَصَّدَّعُونَ",
+      "matchedLemma": "يَصَّدَّعُ",
+      "matchedRoot": "صدع",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 19
+      },
+      "matchedToken": "يُصَدَّعُونَ",
+      "matchedLemma": "يُصَدَّعُ",
+      "matchedRoot": "صدع",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 21
+      },
+      "matchedToken": "مُّتَصَدِّعًۭا",
+      "matchedLemma": "مُّتَصَدِّع",
+      "matchedRoot": "صدع",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 86,
+        "ayah": 12
+      },
+      "matchedToken": "ٱلصَّدْعِ",
+      "matchedLemma": "صَّدْع",
+      "matchedRoot": "صدع",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 94
+    },
+    {
+      "surah": 30,
+      "ayah": 43
+    },
+    {
+      "surah": 56,
+      "ayah": 19
+    },
+    {
+      "surah": 59,
+      "ayah": 21
+    },
+    {
+      "surah": 86,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

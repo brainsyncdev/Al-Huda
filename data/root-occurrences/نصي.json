@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "نصي",
+    "title": "نصي",
+    "arabicTitle": "نصي",
+    "roots": [
+      "نصي"
+    ],
+    "includedLemmas": [
+      "نَاصِيَة",
+      "نَّوَٰصِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 56
+      },
+      "matchedToken": "بِنَاصِيَتِهَآ ۚ",
+      "matchedLemma": "نَاصِيَة",
+      "matchedRoot": "نصي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 41
+      },
+      "matchedToken": "بِٱلنَّوَٰصِى",
+      "matchedLemma": "نَّوَٰصِى",
+      "matchedRoot": "نصي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 96,
+        "ayah": 15
+      },
+      "matchedToken": "بِٱلنَّاصِيَةِ",
+      "matchedLemma": "نَاصِيَة",
+      "matchedRoot": "نصي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 96,
+        "ayah": 16
+      },
+      "matchedToken": "نَاصِيَةٍۢ",
+      "matchedLemma": "نَاصِيَة",
+      "matchedRoot": "نصي",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 56
+    },
+    {
+      "surah": 55,
+      "ayah": 41
+    },
+    {
+      "surah": 96,
+      "ayah": 15
+    },
+    {
+      "surah": 96,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

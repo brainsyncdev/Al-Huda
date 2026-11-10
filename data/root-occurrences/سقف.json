@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "سقف",
+    "title": "سقف",
+    "arabicTitle": "سقف",
+    "roots": [
+      "سقف"
+    ],
+    "includedLemmas": [
+      "سَقْف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلسَّقْفُ",
+      "matchedLemma": "سَقْف",
+      "matchedRoot": "سقف",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 32
+      },
+      "matchedToken": "سَقْفًۭا",
+      "matchedLemma": "سَقْف",
+      "matchedRoot": "سقف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 33
+      },
+      "matchedToken": "سُقُفًۭا",
+      "matchedLemma": "سَقْف",
+      "matchedRoot": "سقف",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 5
+      },
+      "matchedToken": "وَٱلسَّقْفِ",
+      "matchedLemma": "سَقْف",
+      "matchedRoot": "سقف",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 26
+    },
+    {
+      "surah": 21,
+      "ayah": 32
+    },
+    {
+      "surah": 43,
+      "ayah": 33
+    },
+    {
+      "surah": 52,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,1433 @@
+{
+  "entry": {
+    "slug": "sabr",
+    "title": "Patience",
+    "arabicTitle": "صبر",
+    "roots": [
+      "صبر"
+    ],
+    "includedLemmas": [
+      "اصْطَبِرْ",
+      "صَابِر",
+      "صَابِرَة",
+      "صَابِرُ",
+      "صَبَرَ",
+      "صَبَّار",
+      "صَبْر",
+      "صَّٰبِرَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 8 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 45
+      },
+      "matchedToken": "بِٱلصَّبْرِ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 61
+      },
+      "matchedToken": "نَّصْبِرَ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 153
+      },
+      "matchedToken": "بِٱلصَّبْرِ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 153
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 155
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 175
+      },
+      "matchedToken": "أَصْبَرَهُمْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 177
+      },
+      "matchedToken": "وَٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 249
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 60
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 250
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 17
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 120
+      },
+      "matchedToken": "تَصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 125
+      },
+      "matchedToken": "تَصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 142
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 146
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 186
+      },
+      "matchedToken": "تَصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 200
+      },
+      "matchedToken": "ٱصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 200
+      },
+      "matchedToken": "وَصَابِرُوا۟",
+      "matchedLemma": "صَابِرُ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 25
+      },
+      "matchedToken": "تَصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 53
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 34
+      },
+      "matchedToken": "فَصَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 87
+      },
+      "matchedToken": "فَٱصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 126
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 128
+      },
+      "matchedToken": "وَٱصْبِرُوٓا۟ ۖ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 137
+      },
+      "matchedToken": "صَبَرُوا۟ ۖ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 46
+      },
+      "matchedToken": "وَٱصْبِرُوٓا۟ ۚ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 46
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 65
+      },
+      "matchedToken": "صَـٰبِرُونَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 66
+      },
+      "matchedToken": "صَابِرَةٌۭ",
+      "matchedLemma": "صَابِرَة",
+      "matchedRoot": "صبر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 66
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 109
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 11
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 49
+      },
+      "matchedToken": "فَٱصْبِرْ ۖ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 115
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 18
+      },
+      "matchedToken": "فَصَبْرٌۭ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 83
+      },
+      "matchedToken": "فَصَبْرٌۭ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 90
+      },
+      "matchedToken": "وَيَصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 22
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 24
+      },
+      "matchedToken": "صَبَرْتُمْ ۚ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 5
+      },
+      "matchedToken": "صَبَّارٍۢ",
+      "matchedLemma": "صَبَّار",
+      "matchedRoot": "صبر",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 12
+      },
+      "matchedToken": "وَلَنَصْبِرَنَّ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 21
+      },
+      "matchedToken": "صَبَرْنَا",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 42
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 96
+      },
+      "matchedToken": "صَبَرُوٓا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 110
+      },
+      "matchedToken": "وَصَبَرُوٓا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 126
+      },
+      "matchedToken": "صَبَرْتُمْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 126
+      },
+      "matchedToken": "لِّلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 127
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 127
+      },
+      "matchedToken": "صَبْرُكَ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 28
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 67
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 68
+      },
+      "matchedToken": "تَصْبِرُ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 69
+      },
+      "matchedToken": "صَابِرًۭا",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 72
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 75
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 78
+      },
+      "matchedToken": "صَبْرًا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 82
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 35
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 65
+      },
+      "matchedToken": "وَٱصْطَبِرْ",
+      "matchedLemma": "اصْطَبِرْ",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 130
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 132
+      },
+      "matchedToken": "وَٱصْطَبِرْ",
+      "matchedLemma": "اصْطَبِرْ",
+      "matchedRoot": "صبر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 85
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 35
+      },
+      "matchedToken": "وَٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 111
+      },
+      "matchedToken": "صَبَرُوٓا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 20
+      },
+      "matchedToken": "أَتَصْبِرُونَ ۗ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 42
+      },
+      "matchedToken": "صَبَرْنَا",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 75
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 54
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 80
+      },
+      "matchedToken": "ٱلصَّـٰبِرُونَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 59
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 60
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 17
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 31
+      },
+      "matchedToken": "صَبَّارٍۢ",
+      "matchedLemma": "صَبَّار",
+      "matchedRoot": "صبر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 24
+      },
+      "matchedToken": "صَبَرُوا۟ ۖ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 35
+      },
+      "matchedToken": "وَٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 35
+      },
+      "matchedToken": "وَٱلصَّـٰبِرَٰتِ",
+      "matchedLemma": "صَّٰبِرَٰت",
+      "matchedRoot": "صبر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 19
+      },
+      "matchedToken": "صَبَّارٍۢ",
+      "matchedLemma": "صَبَّار",
+      "matchedRoot": "صبر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 102
+      },
+      "matchedToken": "ٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 6
+      },
+      "matchedToken": "وَٱصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 17
+      },
+      "matchedToken": "ٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 44
+      },
+      "matchedToken": "صَابِرًۭا ۚ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلصَّـٰبِرُونَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 55
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 77
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 24
+      },
+      "matchedToken": "يَصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 35
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 33
+      },
+      "matchedToken": "صَبَّارٍۢ",
+      "matchedLemma": "صَبَّار",
+      "matchedRoot": "صبر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 43
+      },
+      "matchedToken": "صَبَرَ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 35
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 35
+      },
+      "matchedToken": "صَبَرَ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 31
+      },
+      "matchedToken": "وَٱلصَّـٰبِرِينَ",
+      "matchedLemma": "صَابِر",
+      "matchedRoot": "صبر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 5
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 39
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 16
+      },
+      "matchedToken": "فَٱصْبِرُوٓا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 16
+      },
+      "matchedToken": "تَصْبِرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 48
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 27
+      },
+      "matchedToken": "وَٱصْطَبِرْ",
+      "matchedLemma": "اصْطَبِرْ",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 48
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 5
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 5
+      },
+      "matchedToken": "صَبْرًۭا",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 10
+      },
+      "matchedToken": "وَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 7
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 12
+      },
+      "matchedToken": "صَبَرُوا۟",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 24
+      },
+      "matchedToken": "فَٱصْبِرْ",
+      "matchedLemma": "صَبَرَ",
+      "matchedRoot": "صبر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 90,
+        "ayah": 17
+      },
+      "matchedToken": "بِٱلصَّبْرِ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 103,
+        "ayah": 3
+      },
+      "matchedToken": "بِٱلصَّبْرِ",
+      "matchedLemma": "صَبْر",
+      "matchedRoot": "صبر",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 45
+    },
+    {
+      "surah": 2,
+      "ayah": 61
+    },
+    {
+      "surah": 2,
+      "ayah": 153
+    },
+    {
+      "surah": 2,
+      "ayah": 155
+    },
+    {
+      "surah": 2,
+      "ayah": 175
+    },
+    {
+      "surah": 2,
+      "ayah": 177
+    },
+    {
+      "surah": 2,
+      "ayah": 249
+    },
+    {
+      "surah": 2,
+      "ayah": 250
+    },
+    {
+      "surah": 3,
+      "ayah": 17
+    },
+    {
+      "surah": 3,
+      "ayah": 120
+    },
+    {
+      "surah": 3,
+      "ayah": 125
+    },
+    {
+      "surah": 3,
+      "ayah": 142
+    },
+    {
+      "surah": 3,
+      "ayah": 146
+    },
+    {
+      "surah": 3,
+      "ayah": 186
+    },
+    {
+      "surah": 3,
+      "ayah": 200
+    },
+    {
+      "surah": 4,
+      "ayah": 25
+    },
+    {
+      "surah": 6,
+      "ayah": 34
+    },
+    {
+      "surah": 7,
+      "ayah": 87
+    },
+    {
+      "surah": 7,
+      "ayah": 126
+    },
+    {
+      "surah": 7,
+      "ayah": 128
+    },
+    {
+      "surah": 7,
+      "ayah": 137
+    },
+    {
+      "surah": 8,
+      "ayah": 46
+    },
+    {
+      "surah": 8,
+      "ayah": 65
+    },
+    {
+      "surah": 8,
+      "ayah": 66
+    },
+    {
+      "surah": 10,
+      "ayah": 109
+    },
+    {
+      "surah": 11,
+      "ayah": 11
+    },
+    {
+      "surah": 11,
+      "ayah": 49
+    },
+    {
+      "surah": 11,
+      "ayah": 115
+    },
+    {
+      "surah": 12,
+      "ayah": 18
+    },
+    {
+      "surah": 12,
+      "ayah": 83
+    },
+    {
+      "surah": 12,
+      "ayah": 90
+    },
+    {
+      "surah": 13,
+      "ayah": 22
+    },
+    {
+      "surah": 13,
+      "ayah": 24
+    },
+    {
+      "surah": 14,
+      "ayah": 5
+    },
+    {
+      "surah": 14,
+      "ayah": 12
+    },
+    {
+      "surah": 14,
+      "ayah": 21
+    },
+    {
+      "surah": 16,
+      "ayah": 42
+    },
+    {
+      "surah": 16,
+      "ayah": 96
+    },
+    {
+      "surah": 16,
+      "ayah": 110
+    },
+    {
+      "surah": 16,
+      "ayah": 126
+    },
+    {
+      "surah": 16,
+      "ayah": 127
+    },
+    {
+      "surah": 18,
+      "ayah": 28
+    },
+    {
+      "surah": 18,
+      "ayah": 67
+    },
+    {
+      "surah": 18,
+      "ayah": 68
+    },
+    {
+      "surah": 18,
+      "ayah": 69
+    },
+    {
+      "surah": 18,
+      "ayah": 72
+    },
+    {
+      "surah": 18,
+      "ayah": 75
+    },
+    {
+      "surah": 18,
+      "ayah": 78
+    },
+    {
+      "surah": 18,
+      "ayah": 82
+    },
+    {
+      "surah": 19,
+      "ayah": 65
+    },
+    {
+      "surah": 20,
+      "ayah": 130
+    },
+    {
+      "surah": 20,
+      "ayah": 132
+    },
+    {
+      "surah": 21,
+      "ayah": 85
+    },
+    {
+      "surah": 22,
+      "ayah": 35
+    },
+    {
+      "surah": 23,
+      "ayah": 111
+    },
+    {
+      "surah": 25,
+      "ayah": 20
+    },
+    {
+      "surah": 25,
+      "ayah": 42
+    },
+    {
+      "surah": 25,
+      "ayah": 75
+    },
+    {
+      "surah": 28,
+      "ayah": 54
+    },
+    {
+      "surah": 28,
+      "ayah": 80
+    },
+    {
+      "surah": 29,
+      "ayah": 59
+    },
+    {
+      "surah": 30,
+      "ayah": 60
+    },
+    {
+      "surah": 31,
+      "ayah": 17
+    },
+    {
+      "surah": 31,
+      "ayah": 31
+    },
+    {
+      "surah": 32,
+      "ayah": 24
+    },
+    {
+      "surah": 33,
+      "ayah": 35
+    },
+    {
+      "surah": 34,
+      "ayah": 19
+    },
+    {
+      "surah": 37,
+      "ayah": 102
+    },
+    {
+      "surah": 38,
+      "ayah": 6
+    },
+    {
+      "surah": 38,
+      "ayah": 17
+    },
+    {
+      "surah": 38,
+      "ayah": 44
+    },
+    {
+      "surah": 39,
+      "ayah": 10
+    },
+    {
+      "surah": 40,
+      "ayah": 55
+    },
+    {
+      "surah": 40,
+      "ayah": 77
+    },
+    {
+      "surah": 41,
+      "ayah": 24
+    },
+    {
+      "surah": 41,
+      "ayah": 35
+    },
+    {
+      "surah": 42,
+      "ayah": 33
+    },
+    {
+      "surah": 42,
+      "ayah": 43
+    },
+    {
+      "surah": 46,
+      "ayah": 35
+    },
+    {
+      "surah": 47,
+      "ayah": 31
+    },
+    {
+      "surah": 49,
+      "ayah": 5
+    },
+    {
+      "surah": 50,
+      "ayah": 39
+    },
+    {
+      "surah": 52,
+      "ayah": 16
+    },
+    {
+      "surah": 52,
+      "ayah": 48
+    },
+    {
+      "surah": 54,
+      "ayah": 27
+    },
+    {
+      "surah": 68,
+      "ayah": 48
+    },
+    {
+      "surah": 70,
+      "ayah": 5
+    },
+    {
+      "surah": 73,
+      "ayah": 10
+    },
+    {
+      "surah": 74,
+      "ayah": 7
+    },
+    {
+      "surah": 76,
+      "ayah": 12
+    },
+    {
+      "surah": 76,
+      "ayah": 24
+    },
+    {
+      "surah": 90,
+      "ayah": 17
+    },
+    {
+      "surah": 103,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 103,
+  "totalMatches": 103,
+  "pagination": null
+}

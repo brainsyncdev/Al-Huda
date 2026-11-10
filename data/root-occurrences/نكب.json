@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "نكب",
+    "title": "نكب",
+    "arabicTitle": "نكب",
+    "roots": [
+      "نكب"
+    ],
+    "includedLemmas": [
+      "مَنَاكِب",
+      "نَٰكِبُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 74
+      },
+      "matchedToken": "لَنَـٰكِبُونَ",
+      "matchedLemma": "نَٰكِبُون",
+      "matchedRoot": "نكب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 15
+      },
+      "matchedToken": "مَنَاكِبِهَا",
+      "matchedLemma": "مَنَاكِب",
+      "matchedRoot": "نكب",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 74
+    },
+    {
+      "surah": 67,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

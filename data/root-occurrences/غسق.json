@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "غسق",
+    "title": "غسق",
+    "arabicTitle": "غسق",
+    "roots": [
+      "غسق"
+    ],
+    "includedLemmas": [
+      "غَاسِق",
+      "غَسَق",
+      "غَسَّاق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 78
+      },
+      "matchedToken": "غَسَقِ",
+      "matchedLemma": "غَسَق",
+      "matchedRoot": "غسق",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 57
+      },
+      "matchedToken": "وَغَسَّاقٌۭ",
+      "matchedLemma": "غَسَّاق",
+      "matchedRoot": "غسق",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 25
+      },
+      "matchedToken": "وَغَسَّاقًۭا",
+      "matchedLemma": "غَسَّاق",
+      "matchedRoot": "غسق",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 113,
+        "ayah": 3
+      },
+      "matchedToken": "غَاسِقٍ",
+      "matchedLemma": "غَاسِق",
+      "matchedRoot": "غسق",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 78
+    },
+    {
+      "surah": 38,
+      "ayah": 57
+    },
+    {
+      "surah": 78,
+      "ayah": 25
+    },
+    {
+      "surah": 113,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

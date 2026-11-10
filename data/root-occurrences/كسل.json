@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "كسل",
+    "title": "كسل",
+    "arabicTitle": "كسل",
+    "roots": [
+      "كسل"
+    ],
+    "includedLemmas": [
+      "كُسَالَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 142
+      },
+      "matchedToken": "كُسَالَىٰ",
+      "matchedLemma": "كُسَالَىٰ",
+      "matchedRoot": "كسل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 54
+      },
+      "matchedToken": "كُسَالَىٰ",
+      "matchedLemma": "كُسَالَىٰ",
+      "matchedRoot": "كسل",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 142
+    },
+    {
+      "surah": 9,
+      "ayah": 54
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

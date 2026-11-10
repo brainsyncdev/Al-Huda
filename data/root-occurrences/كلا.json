@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "كلا",
+    "title": "كلا",
+    "arabicTitle": "كلا",
+    "roots": [
+      "كلا"
+    ],
+    "includedLemmas": [
+      "يَكْلَؤُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 42
+      },
+      "matchedToken": "يَكْلَؤُكُم",
+      "matchedLemma": "يَكْلَؤُ",
+      "matchedRoot": "كلا",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 42
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

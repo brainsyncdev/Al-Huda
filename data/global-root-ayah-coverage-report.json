@@ -1,0 +1,43 @@
+{
+  "auditDate": "2026-11-10T13:17:05.467Z",
+  "registrySummary": {
+    "totalRoots": 1642,
+    "activated": 1471,
+    "partiallyActivated": 103,
+    "needsReview": 68,
+    "discovered": 0,
+    "totalOccurrences": 44550,
+    "totalDistinctAyat": 39720,
+    "totalLemmasActivated": 4350
+  },
+  "globalCoverage": {
+    "uniqueAyat": 6205,
+    "totalOccurrences": 44550,
+    "totalMatches": 44550,
+    "occurrenceFiles": 1576
+  },
+  "perRootCoverage": {
+    "sumOfDistinctAyat": 39720,
+    "explanation": "Sum of per-root distinctAyahCount. Exceeds global count because ayat can appear in multiple roots."
+  },
+  "integrity": {
+    "duplicateWithinRoot": 0,
+    "duplicateAcrossRoots": 38345,
+    "invalidReferences": 0,
+    "status": "PASS"
+  },
+  "statusBreakdown": {
+    "activated": 1471,
+    "partially-activated": 103,
+    "needs-review": 68,
+    "discovered": 0
+  },
+  "conclusions": [
+    "Global unique ayat count: 6205",
+    "This is the authoritative count of unique ayat covered by at least one activated root.",
+    "Per-root sum (39720) exceeds global count due to cross-root duplicates.",
+    "No within-root duplicates found.",
+    "No invalid references found.",
+    "All status counts are mutually exclusive and sum to 1642."
+  ]
+}

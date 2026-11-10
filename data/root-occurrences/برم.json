@@ -1,0 +1,49 @@
+{
+  "entry": {
+    "slug": "برم",
+    "title": "برم",
+    "arabicTitle": "برم",
+    "roots": [
+      "برم"
+    ],
+    "includedLemmas": [
+      "أَبْرَمُ",
+      "مُبْرِمُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 79
+      },
+      "matchedToken": "أَبْرَمُوٓا۟",
+      "matchedLemma": "أَبْرَمُ",
+      "matchedRoot": "برم",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 79
+      },
+      "matchedToken": "مُبْرِمُونَ",
+      "matchedLemma": "مُبْرِمُون",
+      "matchedRoot": "برم",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 43,
+      "ayah": 79
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

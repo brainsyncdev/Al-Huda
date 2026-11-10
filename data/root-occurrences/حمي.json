@@ -1,0 +1,107 @@
+{
+  "entry": {
+    "slug": "حمي",
+    "title": "حمي",
+    "arabicTitle": "حمي",
+    "roots": [
+      "حمي"
+    ],
+    "includedLemmas": [
+      "حَام",
+      "حَامِيَة",
+      "حَمِيَّة",
+      "يُحْمَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 103
+      },
+      "matchedToken": "حَامٍۢ ۙ",
+      "matchedLemma": "حَام",
+      "matchedRoot": "حمي",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 35
+      },
+      "matchedToken": "يُحْمَىٰ",
+      "matchedLemma": "يُحْمَىٰ",
+      "matchedRoot": "حمي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلْحَمِيَّةَ",
+      "matchedLemma": "حَمِيَّة",
+      "matchedRoot": "حمي",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 26
+      },
+      "matchedToken": "حَمِيَّةَ",
+      "matchedLemma": "حَمِيَّة",
+      "matchedRoot": "حمي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 4
+      },
+      "matchedToken": "حَامِيَةًۭ",
+      "matchedLemma": "حَامِيَة",
+      "matchedRoot": "حمي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 11
+      },
+      "matchedToken": "حَامِيَةٌۢ",
+      "matchedLemma": "حَامِيَة",
+      "matchedRoot": "حمي",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 103
+    },
+    {
+      "surah": 9,
+      "ayah": 35
+    },
+    {
+      "surah": 48,
+      "ayah": 26
+    },
+    {
+      "surah": 88,
+      "ayah": 4
+    },
+    {
+      "surah": 101,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

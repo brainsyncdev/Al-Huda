@@ -1,0 +1,133 @@
+{
+  "entry": {
+    "slug": "صفح",
+    "title": "صفح",
+    "arabicTitle": "صفح",
+    "roots": [
+      "صفح"
+    ],
+    "includedLemmas": [
+      "صَفْح",
+      "يَصْفَحُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 109
+      },
+      "matchedToken": "وَٱصْفَحُوا۟",
+      "matchedLemma": "يَصْفَحُ",
+      "matchedRoot": "صفح",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 13
+      },
+      "matchedToken": "وَٱصْفَحْ ۚ",
+      "matchedLemma": "يَصْفَحُ",
+      "matchedRoot": "صفح",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 85
+      },
+      "matchedToken": "فَٱصْفَحِ",
+      "matchedLemma": "يَصْفَحُ",
+      "matchedRoot": "صفح",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 85
+      },
+      "matchedToken": "ٱلصَّفْحَ",
+      "matchedLemma": "صَفْح",
+      "matchedRoot": "صفح",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 22
+      },
+      "matchedToken": "وَلْيَصْفَحُوٓا۟ ۗ",
+      "matchedLemma": "يَصْفَحُ",
+      "matchedRoot": "صفح",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 5
+      },
+      "matchedToken": "صَفْحًا",
+      "matchedLemma": "صَفْح",
+      "matchedRoot": "صفح",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 89
+      },
+      "matchedToken": "فَٱصْفَحْ",
+      "matchedLemma": "يَصْفَحُ",
+      "matchedRoot": "صفح",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 64,
+        "ayah": 14
+      },
+      "matchedToken": "وَتَصْفَحُوا۟",
+      "matchedLemma": "يَصْفَحُ",
+      "matchedRoot": "صفح",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 109
+    },
+    {
+      "surah": 5,
+      "ayah": 13
+    },
+    {
+      "surah": 15,
+      "ayah": 85
+    },
+    {
+      "surah": 24,
+      "ayah": 22
+    },
+    {
+      "surah": 43,
+      "ayah": 5
+    },
+    {
+      "surah": 43,
+      "ayah": 89
+    },
+    {
+      "surah": 64,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

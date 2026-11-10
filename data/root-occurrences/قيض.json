@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "قيض",
+    "title": "قيض",
+    "arabicTitle": "قيض",
+    "roots": [
+      "قيض"
+    ],
+    "includedLemmas": [
+      "قَيَّضْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 25
+      },
+      "matchedToken": "۞ وَقَيَّضْنَا",
+      "matchedLemma": "قَيَّضْ",
+      "matchedRoot": "قيض",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 36
+      },
+      "matchedToken": "نُقَيِّضْ",
+      "matchedLemma": "قَيَّضْ",
+      "matchedRoot": "قيض",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 41,
+      "ayah": 25
+    },
+    {
+      "surah": 43,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

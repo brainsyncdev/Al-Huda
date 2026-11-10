@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "رفت",
+    "title": "رفت",
+    "arabicTitle": "رفت",
+    "roots": [
+      "رفت"
+    ],
+    "includedLemmas": [
+      "رُفَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 49
+      },
+      "matchedToken": "وَرُفَـٰتًا",
+      "matchedLemma": "رُفَٰت",
+      "matchedRoot": "رفت",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 98
+      },
+      "matchedToken": "وَرُفَـٰتًا",
+      "matchedLemma": "رُفَٰت",
+      "matchedRoot": "رفت",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 49
+    },
+    {
+      "surah": 17,
+      "ayah": 98
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

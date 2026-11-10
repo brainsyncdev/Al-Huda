@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "صخر",
+    "title": "صخر",
+    "arabicTitle": "صخر",
+    "roots": [
+      "صخر"
+    ],
+    "includedLemmas": [
+      "صَخْرَة",
+      "صَّخْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 63
+      },
+      "matchedToken": "ٱلصَّخْرَةِ",
+      "matchedLemma": "صَخْرَة",
+      "matchedRoot": "صخر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 16
+      },
+      "matchedToken": "صَخْرَةٍ",
+      "matchedLemma": "صَخْرَة",
+      "matchedRoot": "صخر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 89,
+        "ayah": 9
+      },
+      "matchedToken": "ٱلصَّخْرَ",
+      "matchedLemma": "صَّخْر",
+      "matchedRoot": "صخر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 63
+    },
+    {
+      "surah": 31,
+      "ayah": 16
+    },
+    {
+      "surah": 89,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

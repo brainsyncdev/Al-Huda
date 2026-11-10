@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "سدس",
+    "title": "سدس",
+    "arabicTitle": "سدس",
+    "roots": [
+      "سدس"
+    ],
+    "includedLemmas": [
+      "سَادِس",
+      "سُّدُس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 11
+      },
+      "matchedToken": "ٱلسُّدُسُ",
+      "matchedLemma": "سُّدُس",
+      "matchedRoot": "سدس",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 11
+      },
+      "matchedToken": "ٱلسُّدُسُ ۚ",
+      "matchedLemma": "سُّدُس",
+      "matchedRoot": "سدس",
+      "wordPosition": 48
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 12
+      },
+      "matchedToken": "ٱلسُّدُسُ ۚ",
+      "matchedLemma": "سُّدُس",
+      "matchedRoot": "سدس",
+      "wordPosition": 64
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 22
+      },
+      "matchedToken": "سَادِسُهُمْ",
+      "matchedLemma": "سَادِس",
+      "matchedRoot": "سدس",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 7
+      },
+      "matchedToken": "سَادِسُهُمْ",
+      "matchedLemma": "سَادِس",
+      "matchedRoot": "سدس",
+      "wordPosition": 24
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 11
+    },
+    {
+      "surah": 4,
+      "ayah": 12
+    },
+    {
+      "surah": 18,
+      "ayah": 22
+    },
+    {
+      "surah": 58,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

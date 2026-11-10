@@ -1,0 +1,152 @@
+{
+  "entry": {
+    "slug": "نوم",
+    "title": "نوم",
+    "arabicTitle": "نوم",
+    "roots": [
+      "نوم"
+    ],
+    "includedLemmas": [
+      "مَنَام",
+      "نَآئِمُون",
+      "نَوْم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 255
+      },
+      "matchedToken": "نَوْمٌۭ ۚ",
+      "matchedLemma": "نَوْم",
+      "matchedRoot": "نوم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 97
+      },
+      "matchedToken": "نَآئِمُونَ",
+      "matchedLemma": "نَآئِمُون",
+      "matchedRoot": "نوم",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 43
+      },
+      "matchedToken": "مَنَامِكَ",
+      "matchedLemma": "مَنَام",
+      "matchedRoot": "نوم",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 47
+      },
+      "matchedToken": "وَٱلنَّوْمَ",
+      "matchedLemma": "نَوْم",
+      "matchedRoot": "نوم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 23
+      },
+      "matchedToken": "مَنَامُكُم",
+      "matchedLemma": "مَنَام",
+      "matchedRoot": "نوم",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 102
+      },
+      "matchedToken": "ٱلْمَنَامِ",
+      "matchedLemma": "مَنَام",
+      "matchedRoot": "نوم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 42
+      },
+      "matchedToken": "مَنَامِهَا ۖ",
+      "matchedLemma": "مَنَام",
+      "matchedRoot": "نوم",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 19
+      },
+      "matchedToken": "نَآئِمُونَ",
+      "matchedLemma": "نَآئِمُون",
+      "matchedRoot": "نوم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 9
+      },
+      "matchedToken": "نَوْمَكُمْ",
+      "matchedLemma": "نَوْم",
+      "matchedRoot": "نوم",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 255
+    },
+    {
+      "surah": 7,
+      "ayah": 97
+    },
+    {
+      "surah": 8,
+      "ayah": 43
+    },
+    {
+      "surah": 25,
+      "ayah": 47
+    },
+    {
+      "surah": 30,
+      "ayah": 23
+    },
+    {
+      "surah": 37,
+      "ayah": 102
+    },
+    {
+      "surah": 39,
+      "ayah": 42
+    },
+    {
+      "surah": 68,
+      "ayah": 19
+    },
+    {
+      "surah": 78,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

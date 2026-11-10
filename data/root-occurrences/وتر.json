@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "وتر",
+    "title": "وتر",
+    "arabicTitle": "وتر",
+    "roots": [
+      "وتر"
+    ],
+    "includedLemmas": [
+      "تَتْرَا",
+      "وَتْر",
+      "يَتِرَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 44
+      },
+      "matchedToken": "تَتْرَا ۖ",
+      "matchedLemma": "تَتْرَا",
+      "matchedRoot": "وتر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 35
+      },
+      "matchedToken": "يَتِرَكُمْ",
+      "matchedLemma": "يَتِرَ",
+      "matchedRoot": "وتر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 89,
+        "ayah": 3
+      },
+      "matchedToken": "وَٱلْوَتْرِ",
+      "matchedLemma": "وَتْر",
+      "matchedRoot": "وتر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 44
+    },
+    {
+      "surah": 47,
+      "ayah": 35
+    },
+    {
+      "surah": 89,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

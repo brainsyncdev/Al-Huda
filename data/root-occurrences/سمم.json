@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "سمم",
+    "title": "سمم",
+    "arabicTitle": "سمم",
+    "roots": [
+      "سمم"
+    ],
+    "includedLemmas": [
+      "سَمُوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 27
+      },
+      "matchedToken": "ٱلسَّمُومِ",
+      "matchedLemma": "سَمُوم",
+      "matchedRoot": "سمم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 27
+      },
+      "matchedToken": "ٱلسَّمُومِ",
+      "matchedLemma": "سَمُوم",
+      "matchedRoot": "سمم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 42
+      },
+      "matchedToken": "سَمُومٍۢ",
+      "matchedLemma": "سَمُوم",
+      "matchedRoot": "سمم",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 27
+    },
+    {
+      "surah": 52,
+      "ayah": 27
+    },
+    {
+      "surah": 56,
+      "ayah": 42
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

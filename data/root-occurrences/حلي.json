@@ -1,0 +1,138 @@
+{
+  "entry": {
+    "slug": "حلي",
+    "title": "حلي",
+    "arabicTitle": "حلي",
+    "roots": [
+      "حلي"
+    ],
+    "includedLemmas": [
+      "حُلِيّ",
+      "حُلُّ",
+      "حِلْيَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 148
+      },
+      "matchedToken": "حُلِيِّهِمْ",
+      "matchedLemma": "حُلِيّ",
+      "matchedRoot": "حلي",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 17
+      },
+      "matchedToken": "حِلْيَةٍ",
+      "matchedLemma": "حِلْيَة",
+      "matchedRoot": "حلي",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 14
+      },
+      "matchedToken": "حِلْيَةًۭ",
+      "matchedLemma": "حِلْيَة",
+      "matchedRoot": "حلي",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 31
+      },
+      "matchedToken": "يُحَلَّوْنَ",
+      "matchedLemma": "حُلُّ",
+      "matchedRoot": "حلي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 23
+      },
+      "matchedToken": "يُحَلَّوْنَ",
+      "matchedLemma": "حُلُّ",
+      "matchedRoot": "حلي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "حِلْيَةًۭ",
+      "matchedLemma": "حِلْيَة",
+      "matchedRoot": "حلي",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 33
+      },
+      "matchedToken": "يُحَلَّوْنَ",
+      "matchedLemma": "حُلُّ",
+      "matchedRoot": "حلي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلْحِلْيَةِ",
+      "matchedLemma": "حِلْيَة",
+      "matchedRoot": "حلي",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 148
+    },
+    {
+      "surah": 13,
+      "ayah": 17
+    },
+    {
+      "surah": 16,
+      "ayah": 14
+    },
+    {
+      "surah": 18,
+      "ayah": 31
+    },
+    {
+      "surah": 22,
+      "ayah": 23
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    },
+    {
+      "surah": 35,
+      "ayah": 33
+    },
+    {
+      "surah": 43,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

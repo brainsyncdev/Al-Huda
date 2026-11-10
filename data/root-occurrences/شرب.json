@@ -1,0 +1,556 @@
+{
+  "entry": {
+    "slug": "شرب",
+    "title": "شرب",
+    "arabicTitle": "شرب",
+    "roots": [
+      "شرب"
+    ],
+    "includedLemmas": [
+      "أُشْرِبُ",
+      "شَرَاب",
+      "شَرِبَ",
+      "شُرْب",
+      "شِرْب",
+      "شَّٰرِبِين",
+      "مَّشْرَب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 7 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 60
+      },
+      "matchedToken": "مَّشْرَبَهُمْ ۖ",
+      "matchedLemma": "مَّشْرَب",
+      "matchedRoot": "شرب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 60
+      },
+      "matchedToken": "وَٱشْرَبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 93
+      },
+      "matchedToken": "وَأُشْرِبُوا۟",
+      "matchedLemma": "أُشْرِبُ",
+      "matchedRoot": "شرب",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "وَٱشْرَبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 249
+      },
+      "matchedToken": "شَرِبَ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 249
+      },
+      "matchedToken": "فَشَرِبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "وَشَرَابِكَ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 70
+      },
+      "matchedToken": "شَرَابٌۭ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 38
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 31
+      },
+      "matchedToken": "وَٱشْرَبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "مَّشْرَبَهُمْ ۚ",
+      "matchedLemma": "مَّشْرَب",
+      "matchedRoot": "شرب",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 4
+      },
+      "matchedToken": "شَرَابٌۭ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 10
+      },
+      "matchedToken": "شَرَابٌۭ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 66
+      },
+      "matchedToken": "لِّلشَّـٰرِبِينَ",
+      "matchedLemma": "شَّٰرِبِين",
+      "matchedRoot": "شرب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 69
+      },
+      "matchedToken": "شَرَابٌۭ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "ٱلشَّرَابُ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 26
+      },
+      "matchedToken": "وَٱشْرَبِى",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 33
+      },
+      "matchedToken": "وَيَشْرَبُ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 33
+      },
+      "matchedToken": "تَشْرَبُونَ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 155
+      },
+      "matchedToken": "شِرْبٌۭ",
+      "matchedLemma": "شِرْب",
+      "matchedRoot": "شرب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 155
+      },
+      "matchedToken": "شِرْبُ",
+      "matchedLemma": "شِرْب",
+      "matchedRoot": "شرب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "شَرَابُهُۥ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 73
+      },
+      "matchedToken": "وَمَشَارِبُ ۖ",
+      "matchedLemma": "مَّشْرَب",
+      "matchedRoot": "شرب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 46
+      },
+      "matchedToken": "لِّلشَّـٰرِبِينَ",
+      "matchedLemma": "شَّٰرِبِين",
+      "matchedRoot": "شرب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 42
+      },
+      "matchedToken": "وَشَرَابٌۭ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 51
+      },
+      "matchedToken": "وَشَرَابٍۢ",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 15
+      },
+      "matchedToken": "لِّلشَّـٰرِبِينَ",
+      "matchedLemma": "شَّٰرِبِين",
+      "matchedRoot": "شرب",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 19
+      },
+      "matchedToken": "وَٱشْرَبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 28
+      },
+      "matchedToken": "شِرْبٍۢ",
+      "matchedLemma": "شِرْب",
+      "matchedRoot": "شرب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 54
+      },
+      "matchedToken": "فَشَـٰرِبُونَ",
+      "matchedLemma": "شَّٰرِبِين",
+      "matchedRoot": "شرب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 55
+      },
+      "matchedToken": "فَشَـٰرِبُونَ",
+      "matchedLemma": "شَّٰرِبِين",
+      "matchedRoot": "شرب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 55
+      },
+      "matchedToken": "شُرْبَ",
+      "matchedLemma": "شُرْب",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 68
+      },
+      "matchedToken": "تَشْرَبُونَ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 24
+      },
+      "matchedToken": "وَٱشْرَبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 5
+      },
+      "matchedToken": "يَشْرَبُونَ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 6
+      },
+      "matchedToken": "يَشْرَبُ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 21
+      },
+      "matchedToken": "شَرَابًۭا",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 43
+      },
+      "matchedToken": "وَٱشْرَبُوا۟",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 24
+      },
+      "matchedToken": "شَرَابًا",
+      "matchedLemma": "شَرَاب",
+      "matchedRoot": "شرب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 28
+      },
+      "matchedToken": "يَشْرَبُ",
+      "matchedLemma": "شَرِبَ",
+      "matchedRoot": "شرب",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 60
+    },
+    {
+      "surah": 2,
+      "ayah": 93
+    },
+    {
+      "surah": 2,
+      "ayah": 187
+    },
+    {
+      "surah": 2,
+      "ayah": 249
+    },
+    {
+      "surah": 2,
+      "ayah": 259
+    },
+    {
+      "surah": 6,
+      "ayah": 70
+    },
+    {
+      "surah": 7,
+      "ayah": 31
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    },
+    {
+      "surah": 10,
+      "ayah": 4
+    },
+    {
+      "surah": 16,
+      "ayah": 10
+    },
+    {
+      "surah": 16,
+      "ayah": 66
+    },
+    {
+      "surah": 16,
+      "ayah": 69
+    },
+    {
+      "surah": 18,
+      "ayah": 29
+    },
+    {
+      "surah": 19,
+      "ayah": 26
+    },
+    {
+      "surah": 23,
+      "ayah": 33
+    },
+    {
+      "surah": 26,
+      "ayah": 155
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    },
+    {
+      "surah": 36,
+      "ayah": 73
+    },
+    {
+      "surah": 37,
+      "ayah": 46
+    },
+    {
+      "surah": 38,
+      "ayah": 42
+    },
+    {
+      "surah": 38,
+      "ayah": 51
+    },
+    {
+      "surah": 47,
+      "ayah": 15
+    },
+    {
+      "surah": 52,
+      "ayah": 19
+    },
+    {
+      "surah": 54,
+      "ayah": 28
+    },
+    {
+      "surah": 56,
+      "ayah": 54
+    },
+    {
+      "surah": 56,
+      "ayah": 55
+    },
+    {
+      "surah": 56,
+      "ayah": 68
+    },
+    {
+      "surah": 69,
+      "ayah": 24
+    },
+    {
+      "surah": 76,
+      "ayah": 5
+    },
+    {
+      "surah": 76,
+      "ayah": 6
+    },
+    {
+      "surah": 76,
+      "ayah": 21
+    },
+    {
+      "surah": 77,
+      "ayah": 43
+    },
+    {
+      "surah": 78,
+      "ayah": 24
+    },
+    {
+      "surah": 83,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 39,
+  "totalMatches": 39,
+  "pagination": null
+}

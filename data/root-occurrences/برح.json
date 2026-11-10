@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "برح",
+    "title": "برح",
+    "arabicTitle": "برح",
+    "roots": [
+      "برح"
+    ],
+    "includedLemmas": [
+      "أَبْرَحَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 80
+      },
+      "matchedToken": "أَبْرَحَ",
+      "matchedLemma": "أَبْرَحَ",
+      "matchedRoot": "برح",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 60
+      },
+      "matchedToken": "أَبْرَحُ",
+      "matchedLemma": "أَبْرَحَ",
+      "matchedRoot": "برح",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 91
+      },
+      "matchedToken": "نَّبْرَحَ",
+      "matchedLemma": "أَبْرَحَ",
+      "matchedRoot": "برح",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 80
+    },
+    {
+      "surah": 18,
+      "ayah": 60
+    },
+    {
+      "surah": 20,
+      "ayah": 91
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "سدد",
+    "title": "سدد",
+    "arabicTitle": "سدد",
+    "roots": [
+      "سدد"
+    ],
+    "includedLemmas": [
+      "سَدِيد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 9
+      },
+      "matchedToken": "سَدِيدًا",
+      "matchedLemma": "سَدِيد",
+      "matchedRoot": "سدد",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 70
+      },
+      "matchedToken": "سَدِيدًۭا",
+      "matchedLemma": "سَدِيد",
+      "matchedRoot": "سدد",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 9
+    },
+    {
+      "surah": 33,
+      "ayah": 70
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

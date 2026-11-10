@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "غور",
+    "title": "غور",
+    "arabicTitle": "غور",
+    "roots": [
+      "غور"
+    ],
+    "includedLemmas": [
+      "غَار",
+      "غَوْر",
+      "مَغَٰرَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 40
+      },
+      "matchedToken": "ٱلْغَارِ",
+      "matchedLemma": "غَار",
+      "matchedRoot": "غور",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 57
+      },
+      "matchedToken": "مَغَـٰرَٰتٍ",
+      "matchedLemma": "مَغَٰرَٰت",
+      "matchedRoot": "غور",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 41
+      },
+      "matchedToken": "غَوْرًۭا",
+      "matchedLemma": "غَوْر",
+      "matchedRoot": "غور",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 30
+      },
+      "matchedToken": "غَوْرًۭا",
+      "matchedLemma": "غَوْر",
+      "matchedRoot": "غور",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 40
+    },
+    {
+      "surah": 9,
+      "ayah": 57
+    },
+    {
+      "surah": 18,
+      "ayah": 41
+    },
+    {
+      "surah": 67,
+      "ayah": 30
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

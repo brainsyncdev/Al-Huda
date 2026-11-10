@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وشي",
+    "title": "وشي",
+    "arabicTitle": "وشي",
+    "roots": [
+      "وشي"
+    ],
+    "includedLemmas": [
+      "شِيَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 71
+      },
+      "matchedToken": "شِيَةَ",
+      "matchedLemma": "شِيَة",
+      "matchedRoot": "وشي",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

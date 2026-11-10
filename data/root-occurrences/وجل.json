@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "وجل",
+    "title": "وجل",
+    "arabicTitle": "وجل",
+    "roots": [
+      "وجل"
+    ],
+    "includedLemmas": [
+      "وَجِلَة",
+      "وَجِلَتْ",
+      "وَجِلُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 2
+      },
+      "matchedToken": "وَجِلَتْ",
+      "matchedLemma": "وَجِلَتْ",
+      "matchedRoot": "وجل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 52
+      },
+      "matchedToken": "وَجِلُونَ",
+      "matchedLemma": "وَجِلُون",
+      "matchedRoot": "وجل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 53
+      },
+      "matchedToken": "تَوْجَلْ",
+      "matchedLemma": "وَجِلَتْ",
+      "matchedRoot": "وجل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 35
+      },
+      "matchedToken": "وَجِلَتْ",
+      "matchedLemma": "وَجِلَتْ",
+      "matchedRoot": "وجل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 60
+      },
+      "matchedToken": "وَجِلَةٌ",
+      "matchedLemma": "وَجِلَة",
+      "matchedRoot": "وجل",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 2
+    },
+    {
+      "surah": 15,
+      "ayah": 52
+    },
+    {
+      "surah": 15,
+      "ayah": 53
+    },
+    {
+      "surah": 22,
+      "ayah": 35
+    },
+    {
+      "surah": 23,
+      "ayah": 60
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "غرو",
+    "title": "غرو",
+    "arabicTitle": "غرو",
+    "roots": [
+      "غرو"
+    ],
+    "includedLemmas": [
+      "أَغْرَيْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 14
+      },
+      "matchedToken": "فَأَغْرَيْنَا",
+      "matchedLemma": "أَغْرَيْ",
+      "matchedRoot": "غرو",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 60
+      },
+      "matchedToken": "لَنُغْرِيَنَّكَ",
+      "matchedLemma": "أَغْرَيْ",
+      "matchedRoot": "غرو",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 14
+    },
+    {
+      "surah": 33,
+      "ayah": 60
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

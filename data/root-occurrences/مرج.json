@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "مرج",
+    "title": "مرج",
+    "arabicTitle": "مرج",
+    "roots": [
+      "مرج"
+    ],
+    "includedLemmas": [
+      "مَرَجَ",
+      "مَرْجَان",
+      "مَّارِج",
+      "مَّرِيج"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 5
+      },
+      "matchedToken": "مَّرِيجٍ",
+      "matchedLemma": "مَّرِيج",
+      "matchedRoot": "مرج",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 15
+      },
+      "matchedToken": "مَّارِجٍۢ",
+      "matchedLemma": "مَّارِج",
+      "matchedRoot": "مرج",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 19
+      },
+      "matchedToken": "مَرَجَ",
+      "matchedLemma": "مَرَجَ",
+      "matchedRoot": "مرج",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 22
+      },
+      "matchedToken": "وَٱلْمَرْجَانُ",
+      "matchedLemma": "مَرْجَان",
+      "matchedRoot": "مرج",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 58
+      },
+      "matchedToken": "وَٱلْمَرْجَانُ",
+      "matchedLemma": "مَرْجَان",
+      "matchedRoot": "مرج",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 50,
+      "ayah": 5
+    },
+    {
+      "surah": 55,
+      "ayah": 15
+    },
+    {
+      "surah": 55,
+      "ayah": 19
+    },
+    {
+      "surah": 55,
+      "ayah": 22
+    },
+    {
+      "surah": 55,
+      "ayah": 58
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

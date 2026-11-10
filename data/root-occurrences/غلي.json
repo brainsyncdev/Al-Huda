@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "غلي",
+    "title": "غلي",
+    "arabicTitle": "غلي",
+    "roots": [
+      "غلي"
+    ],
+    "includedLemmas": [
+      "غَلْى",
+      "يَغْلِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 45
+      },
+      "matchedToken": "يَغْلِى",
+      "matchedLemma": "يَغْلِى",
+      "matchedRoot": "غلي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 46
+      },
+      "matchedToken": "كَغَلْىِ",
+      "matchedLemma": "غَلْى",
+      "matchedRoot": "غلي",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 44,
+      "ayah": 45
+    },
+    {
+      "surah": 44,
+      "ayah": 46
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

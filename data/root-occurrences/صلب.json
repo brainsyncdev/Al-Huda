@@ -1,0 +1,138 @@
+{
+  "entry": {
+    "slug": "صلب",
+    "title": "صلب",
+    "arabicTitle": "صلب",
+    "roots": [
+      "صلب"
+    ],
+    "includedLemmas": [
+      "صَلَبُ",
+      "صُّلْب",
+      "يُصَلَّبُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 23
+      },
+      "matchedToken": "أَصْلَـٰبِكُمْ",
+      "matchedLemma": "صُّلْب",
+      "matchedRoot": "صلب",
+      "wordPosition": 41
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 157
+      },
+      "matchedToken": "صَلَبُوهُ",
+      "matchedLemma": "صَلَبُ",
+      "matchedRoot": "صلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 33
+      },
+      "matchedToken": "يُصَلَّبُوٓا۟",
+      "matchedLemma": "يُصَلَّبُ",
+      "matchedRoot": "صلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 124
+      },
+      "matchedToken": "لَأُصَلِّبَنَّكُمْ",
+      "matchedLemma": "يُصَلَّبُ",
+      "matchedRoot": "صلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 41
+      },
+      "matchedToken": "فَيُصْلَبُ",
+      "matchedLemma": "صَلَبُ",
+      "matchedRoot": "صلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 71
+      },
+      "matchedToken": "وَلَأُصَلِّبَنَّكُمْ",
+      "matchedLemma": "يُصَلَّبُ",
+      "matchedRoot": "صلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 49
+      },
+      "matchedToken": "وَلَأُصَلِّبَنَّكُمْ",
+      "matchedLemma": "يُصَلَّبُ",
+      "matchedRoot": "صلب",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 86,
+        "ayah": 7
+      },
+      "matchedToken": "ٱلصُّلْبِ",
+      "matchedLemma": "صُّلْب",
+      "matchedRoot": "صلب",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 23
+    },
+    {
+      "surah": 4,
+      "ayah": 157
+    },
+    {
+      "surah": 5,
+      "ayah": 33
+    },
+    {
+      "surah": 7,
+      "ayah": 124
+    },
+    {
+      "surah": 12,
+      "ayah": 41
+    },
+    {
+      "surah": 20,
+      "ayah": 71
+    },
+    {
+      "surah": 26,
+      "ayah": 49
+    },
+    {
+      "surah": 86,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

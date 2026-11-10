@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "بزغ",
+    "title": "بزغ",
+    "arabicTitle": "بزغ",
+    "roots": [
+      "بزغ"
+    ],
+    "includedLemmas": [
+      "بَازِغ",
+      "بَازِغَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 77
+      },
+      "matchedToken": "بَازِغًۭا",
+      "matchedLemma": "بَازِغ",
+      "matchedRoot": "بزغ",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 78
+      },
+      "matchedToken": "بَازِغَةًۭ",
+      "matchedLemma": "بَازِغَة",
+      "matchedRoot": "بزغ",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 77
+    },
+    {
+      "surah": 6,
+      "ayah": 78
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

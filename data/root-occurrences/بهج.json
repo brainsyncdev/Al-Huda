@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "بهج",
+    "title": "بهج",
+    "arabicTitle": "بهج",
+    "roots": [
+      "بهج"
+    ],
+    "includedLemmas": [
+      "بَهِيج",
+      "بَهْجَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 5
+      },
+      "matchedToken": "بَهِيجٍۢ",
+      "matchedLemma": "بَهِيج",
+      "matchedRoot": "بهج",
+      "wordPosition": 69
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 60
+      },
+      "matchedToken": "بَهْجَةٍۢ",
+      "matchedLemma": "بَهْجَة",
+      "matchedRoot": "بهج",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 7
+      },
+      "matchedToken": "بَهِيجٍۢ",
+      "matchedLemma": "بَهِيج",
+      "matchedRoot": "بهج",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 5
+    },
+    {
+      "surah": 27,
+      "ayah": 60
+    },
+    {
+      "surah": 50,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

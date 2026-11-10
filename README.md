@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Al-Huda (الهدى) — The Quran, Connected
 
-## Getting Started
+Al-Huda is a Quran reading, discovery, and learning platform: an interconnected Quran knowledge system built as a local-first, account-free, SEO-first Next.js web application. It connects all 114 surahs / 6,236 ayat to translations (116 editions, 44 languages), tafsir, curated topics, root-word and morphology exploration, cross-references, and private local learning tools (bookmarks, notes, spaced-repetition revision, quizzes, learning paths).
 
-First, run the development server:
+## Status
+
+- Roadmap Phases 1–3 are functionally complete (reader, connected discovery, personal learning); Phase 4 (grounded AI) is harness-only and disabled; see the roadmap and release blockers in `docs/PRD.md` §19–§21.
+- **Source of truth:** [`docs/PRD.md`](docs/PRD.md) (v4.0). Superseded PRDs (v3.0, v2.0) are archived in [`docs/archive/`](docs/archive/).
+- Content provenance and licensing status: [`docs/DATA-PROVENANCE.md`](docs/DATA-PROVENANCE.md). Content is tracked as *delivered* vs *cleared*; audio, the proxied translation catalog, and in-app tafsir texts still require rights review before publication.
+- AI religious-answer features are compile-time disabled (`src/lib/ai/feature-flag.ts`); see [`docs/AI-SAFETY.md`](docs/AI-SAFETY.md).
+
+## Quickstart
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Useful commands:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm build              # production build (requires NEXT_PUBLIC_SITE_URL)
+pnpm test               # vitest suite
+pnpm typecheck          # tsc --noEmit
+pnpm lint               # eslint
+pnpm validate:quran     # integrity check: 114 surahs / 6,236 ayat
+pnpm validate:licenses  # source-register field check
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+See [`DEPLOYMENT.md`](DEPLOYMENT.md) for production build and deployment requirements.
 
-## Learn More
+## Documentation
 
-To learn more about Next.js, take a look at the following resources:
+| Document | Purpose |
+|---|---|
+| [`docs/PRD.md`](docs/PRD.md) | Product Requirements Document v4.0 — single source of truth |
+| [`docs/DATA-PROVENANCE.md`](docs/DATA-PROVENANCE.md) | Sources, licences, and provenance for all Quranic content |
+| [`docs/AI-SAFETY.md`](docs/AI-SAFETY.md) | AI and religious-content safety rules and gates |
+| [`docs/EDITORIAL.md`](docs/EDITORIAL.md) | Editorial workflow and governance |
+| [`AI_RULES.md`](AI_RULES.md) | Stack and library-usage rules for AI-assisted development |
+| [`DEPLOYMENT.md`](DEPLOYMENT.md) | Deployment checklist |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 15 (App Router) · TypeScript · Tailwind CSS · Radix/shadcn UI · Vitest. No database and no accounts by design — library state (bookmarks, notes, revision history) lives in the reader's own browser.

@@ -1,0 +1,92 @@
+{
+  "entry": {
+    "slug": "سنبل",
+    "title": "سنبل",
+    "arabicTitle": "سنبل",
+    "roots": [
+      "سنبل"
+    ],
+    "includedLemmas": [
+      "سُنبُل",
+      "سُنبُلَة",
+      "سُنبُلَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 261
+      },
+      "matchedToken": "سَنَابِلَ",
+      "matchedLemma": "سُنبُلَة",
+      "matchedRoot": "سنبل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 261
+      },
+      "matchedToken": "سُنۢبُلَةٍۢ",
+      "matchedLemma": "سُنبُلَة",
+      "matchedRoot": "سنبل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 43
+      },
+      "matchedToken": "سُنۢبُلَـٰتٍ",
+      "matchedLemma": "سُنبُلَٰت",
+      "matchedRoot": "سنبل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 46
+      },
+      "matchedToken": "سُنۢبُلَـٰتٍ",
+      "matchedLemma": "سُنبُلَٰت",
+      "matchedRoot": "سنبل",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 47
+      },
+      "matchedToken": "سُنۢبُلِهِۦٓ",
+      "matchedLemma": "سُنبُل",
+      "matchedRoot": "سنبل",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 261
+    },
+    {
+      "surah": 12,
+      "ayah": 43
+    },
+    {
+      "surah": 12,
+      "ayah": 46
+    },
+    {
+      "surah": 12,
+      "ayah": 47
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "فتل",
+    "title": "فتل",
+    "arabicTitle": "فتل",
+    "roots": [
+      "فتل"
+    ],
+    "includedLemmas": [
+      "فَتِيل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 49
+      },
+      "matchedToken": "فَتِيلًا",
+      "matchedLemma": "فَتِيل",
+      "matchedRoot": "فتل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 77
+      },
+      "matchedToken": "فَتِيلًا",
+      "matchedLemma": "فَتِيل",
+      "matchedRoot": "فتل",
+      "wordPosition": 48
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 71
+      },
+      "matchedToken": "فَتِيلًۭا",
+      "matchedLemma": "فَتِيل",
+      "matchedRoot": "فتل",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 49
+    },
+    {
+      "surah": 4,
+      "ayah": 77
+    },
+    {
+      "surah": 17,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "سمن",
+    "title": "سمن",
+    "arabicTitle": "سمن",
+    "roots": [
+      "سمن"
+    ],
+    "includedLemmas": [
+      "سَمِين",
+      "يُسْمِنُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 43
+      },
+      "matchedToken": "سِمَانٍۢ",
+      "matchedLemma": "سَمِين",
+      "matchedRoot": "سمن",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 46
+      },
+      "matchedToken": "سِمَانٍۢ",
+      "matchedLemma": "سَمِين",
+      "matchedRoot": "سمن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 26
+      },
+      "matchedToken": "سَمِينٍۢ",
+      "matchedLemma": "سَمِين",
+      "matchedRoot": "سمن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 7
+      },
+      "matchedToken": "يُسْمِنُ",
+      "matchedLemma": "يُسْمِنُ",
+      "matchedRoot": "سمن",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 43
+    },
+    {
+      "surah": 12,
+      "ayah": 46
+    },
+    {
+      "surah": 51,
+      "ayah": 26
+    },
+    {
+      "surah": 88,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

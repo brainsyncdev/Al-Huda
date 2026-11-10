@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "خدن",
+    "title": "خدن",
+    "arabicTitle": "خدن",
+    "roots": [
+      "خدن"
+    ],
+    "includedLemmas": [
+      "أَخْدَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 25
+      },
+      "matchedToken": "أَخْدَانٍۢ ۚ",
+      "matchedLemma": "أَخْدَان",
+      "matchedRoot": "خدن",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 5
+      },
+      "matchedToken": "أَخْدَانٍۢ ۗ",
+      "matchedLemma": "أَخْدَان",
+      "matchedRoot": "خدن",
+      "wordPosition": 32
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 25
+    },
+    {
+      "surah": 5,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

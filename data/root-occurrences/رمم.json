@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "رمم",
+    "title": "رمم",
+    "arabicTitle": "رمم",
+    "roots": [
+      "رمم"
+    ],
+    "includedLemmas": [
+      "رَمِيم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 78
+      },
+      "matchedToken": "رَمِيمٌۭ",
+      "matchedLemma": "رَمِيم",
+      "matchedRoot": "رمم",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 42
+      },
+      "matchedToken": "كَٱلرَّمِيمِ",
+      "matchedLemma": "رَمِيم",
+      "matchedRoot": "رمم",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 36,
+      "ayah": 78
+    },
+    {
+      "surah": 51,
+      "ayah": 42
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

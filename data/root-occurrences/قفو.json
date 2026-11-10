@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "قفو",
+    "title": "قفو",
+    "arabicTitle": "قفو",
+    "roots": [
+      "قفو"
+    ],
+    "includedLemmas": [
+      "تَقْفُ",
+      "قَفَّيْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 87
+      },
+      "matchedToken": "وَقَفَّيْنَا",
+      "matchedLemma": "قَفَّيْ",
+      "matchedRoot": "قفو",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 46
+      },
+      "matchedToken": "وَقَفَّيْنَا",
+      "matchedLemma": "قَفَّيْ",
+      "matchedRoot": "قفو",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 36
+      },
+      "matchedToken": "تَقْفُ",
+      "matchedLemma": "تَقْفُ",
+      "matchedRoot": "قفو",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 27
+      },
+      "matchedToken": "قَفَّيْنَا",
+      "matchedLemma": "قَفَّيْ",
+      "matchedRoot": "قفو",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 27
+      },
+      "matchedToken": "وَقَفَّيْنَا",
+      "matchedLemma": "قَفَّيْ",
+      "matchedRoot": "قفو",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 87
+    },
+    {
+      "surah": 5,
+      "ayah": 46
+    },
+    {
+      "surah": 17,
+      "ayah": 36
+    },
+    {
+      "surah": 57,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,76 @@
+{
+  "entry": {
+    "slug": "صرح",
+    "title": "صرح",
+    "arabicTitle": "صرح",
+    "roots": [
+      "صرح"
+    ],
+    "includedLemmas": [
+      "صَرْح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 44
+      },
+      "matchedToken": "ٱلصَّرْحَ ۖ",
+      "matchedLemma": "صَرْح",
+      "matchedRoot": "صرح",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 44
+      },
+      "matchedToken": "صَرْحٌۭ",
+      "matchedLemma": "صَرْح",
+      "matchedRoot": "صرح",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 38
+      },
+      "matchedToken": "صَرْحًۭا",
+      "matchedLemma": "صَرْح",
+      "matchedRoot": "صرح",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 36
+      },
+      "matchedToken": "صَرْحًۭا",
+      "matchedLemma": "صَرْح",
+      "matchedRoot": "صرح",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 27,
+      "ayah": 44
+    },
+    {
+      "surah": 28,
+      "ayah": 38
+    },
+    {
+      "surah": 40,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

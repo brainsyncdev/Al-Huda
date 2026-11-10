@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "وسوس",
+    "title": "وسوس",
+    "arabicTitle": "وسوس",
+    "roots": [
+      "وسوس"
+    ],
+    "includedLemmas": [
+      "وَسْوَاس",
+      "وَسْوَسَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 20
+      },
+      "matchedToken": "فَوَسْوَسَ",
+      "matchedLemma": "وَسْوَسَ",
+      "matchedRoot": "وسوس",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 120
+      },
+      "matchedToken": "فَوَسْوَسَ",
+      "matchedLemma": "وَسْوَسَ",
+      "matchedRoot": "وسوس",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 16
+      },
+      "matchedToken": "تُوَسْوِسُ",
+      "matchedLemma": "وَسْوَسَ",
+      "matchedRoot": "وسوس",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 114,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْوَسْوَاسِ",
+      "matchedLemma": "وَسْوَاس",
+      "matchedRoot": "وسوس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 114,
+        "ayah": 5
+      },
+      "matchedToken": "يُوَسْوِسُ",
+      "matchedLemma": "وَسْوَسَ",
+      "matchedRoot": "وسوس",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 20
+    },
+    {
+      "surah": 20,
+      "ayah": 120
+    },
+    {
+      "surah": 50,
+      "ayah": 16
+    },
+    {
+      "surah": 114,
+      "ayah": 4
+    },
+    {
+      "surah": 114,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

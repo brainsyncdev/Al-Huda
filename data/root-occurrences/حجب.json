@@ -1,0 +1,137 @@
+{
+  "entry": {
+    "slug": "حجب",
+    "title": "حجب",
+    "arabicTitle": "حجب",
+    "roots": [
+      "حجب"
+    ],
+    "includedLemmas": [
+      "حِجَاب",
+      "مَحْجُوبُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 46
+      },
+      "matchedToken": "حِجَابٌۭ ۚ",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 45
+      },
+      "matchedToken": "حِجَابًۭا",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 17
+      },
+      "matchedToken": "حِجَابًۭا",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 53
+      },
+      "matchedToken": "حِجَابٍۢ ۚ",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 45
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 32
+      },
+      "matchedToken": "بِٱلْحِجَابِ",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 5
+      },
+      "matchedToken": "حِجَابٌۭ",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 51
+      },
+      "matchedToken": "حِجَابٍ",
+      "matchedLemma": "حِجَاب",
+      "matchedRoot": "حجب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 15
+      },
+      "matchedToken": "لَّمَحْجُوبُونَ",
+      "matchedLemma": "مَحْجُوبُون",
+      "matchedRoot": "حجب",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 46
+    },
+    {
+      "surah": 17,
+      "ayah": 45
+    },
+    {
+      "surah": 19,
+      "ayah": 17
+    },
+    {
+      "surah": 33,
+      "ayah": 53
+    },
+    {
+      "surah": 38,
+      "ayah": 32
+    },
+    {
+      "surah": 41,
+      "ayah": 5
+    },
+    {
+      "surah": 42,
+      "ayah": 51
+    },
+    {
+      "surah": 83,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

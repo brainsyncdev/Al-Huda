@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جفا",
+    "title": "جفا",
+    "arabicTitle": "جفا",
+    "roots": [
+      "جفا"
+    ],
+    "includedLemmas": [
+      "جُفَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 17
+      },
+      "matchedToken": "جُفَآءًۭ ۖ",
+      "matchedLemma": "جُفَآء",
+      "matchedRoot": "جفا",
+      "wordPosition": 31
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

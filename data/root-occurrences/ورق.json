@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "ورق",
+    "title": "ورق",
+    "arabicTitle": "ورق",
+    "roots": [
+      "ورق"
+    ],
+    "includedLemmas": [
+      "وَرَق",
+      "وَرَقَة",
+      "وَرِق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 59
+      },
+      "matchedToken": "وَرَقَةٍ",
+      "matchedLemma": "وَرَقَة",
+      "matchedRoot": "ورق",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 22
+      },
+      "matchedToken": "وَرَقِ",
+      "matchedLemma": "وَرَق",
+      "matchedRoot": "ورق",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 19
+      },
+      "matchedToken": "بِوَرِقِكُمْ",
+      "matchedLemma": "وَرِق",
+      "matchedRoot": "ورق",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 121
+      },
+      "matchedToken": "وَرَقِ",
+      "matchedLemma": "وَرَق",
+      "matchedRoot": "ورق",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 59
+    },
+    {
+      "surah": 7,
+      "ayah": 22
+    },
+    {
+      "surah": 18,
+      "ayah": 19
+    },
+    {
+      "surah": 20,
+      "ayah": 121
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

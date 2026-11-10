@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "لفو",
+    "title": "لفو",
+    "arabicTitle": "لفو",
+    "roots": [
+      "لفو"
+    ],
+    "includedLemmas": [
+      "أَلْفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 170
+      },
+      "matchedToken": "أَلْفَيْنَا",
+      "matchedLemma": "أَلْفَ",
+      "matchedRoot": "لفو",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 25
+      },
+      "matchedToken": "وَأَلْفَيَا",
+      "matchedLemma": "أَلْفَ",
+      "matchedRoot": "لفو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 69
+      },
+      "matchedToken": "أَلْفَوْا۟",
+      "matchedLemma": "أَلْفَ",
+      "matchedRoot": "لفو",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 170
+    },
+    {
+      "surah": 12,
+      "ayah": 25
+    },
+    {
+      "surah": 37,
+      "ayah": 69
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

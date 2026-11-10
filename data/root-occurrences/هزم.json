@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "هزم",
+    "title": "هزم",
+    "arabicTitle": "هزم",
+    "roots": [
+      "هزم"
+    ],
+    "includedLemmas": [
+      "مَهْزُوم",
+      "هَزَمُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 251
+      },
+      "matchedToken": "فَهَزَمُوهُم",
+      "matchedLemma": "هَزَمُ",
+      "matchedRoot": "هزم",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 11
+      },
+      "matchedToken": "مَهْزُومٌۭ",
+      "matchedLemma": "مَهْزُوم",
+      "matchedRoot": "هزم",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 45
+      },
+      "matchedToken": "سَيُهْزَمُ",
+      "matchedLemma": "هَزَمُ",
+      "matchedRoot": "هزم",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 251
+    },
+    {
+      "surah": 38,
+      "ayah": 11
+    },
+    {
+      "surah": 54,
+      "ayah": 45
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

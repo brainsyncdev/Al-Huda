@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "خضع",
+    "title": "خضع",
+    "arabicTitle": "خضع",
+    "roots": [
+      "خضع"
+    ],
+    "includedLemmas": [
+      "تَخْضَعْ",
+      "خَٰضِعِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 4
+      },
+      "matchedToken": "خَـٰضِعِينَ",
+      "matchedLemma": "خَٰضِعِين",
+      "matchedRoot": "خضع",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 32
+      },
+      "matchedToken": "تَخْضَعْنَ",
+      "matchedLemma": "تَخْضَعْ",
+      "matchedRoot": "خضع",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 26,
+      "ayah": 4
+    },
+    {
+      "surah": 33,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

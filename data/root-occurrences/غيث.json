@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "غيث",
+    "title": "غيث",
+    "arabicTitle": "غيث",
+    "roots": [
+      "غيث"
+    ],
+    "includedLemmas": [
+      "غَيْث",
+      "يُغَاثُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 49
+      },
+      "matchedToken": "يُغَاثُ",
+      "matchedLemma": "يُغَاثُ",
+      "matchedRoot": "غيث",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 34
+      },
+      "matchedToken": "ٱلْغَيْثَ",
+      "matchedLemma": "غَيْث",
+      "matchedRoot": "غيث",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 28
+      },
+      "matchedToken": "ٱلْغَيْثَ",
+      "matchedLemma": "غَيْث",
+      "matchedRoot": "غيث",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 20
+      },
+      "matchedToken": "غَيْثٍ",
+      "matchedLemma": "غَيْث",
+      "matchedRoot": "غيث",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 49
+    },
+    {
+      "surah": 31,
+      "ayah": 34
+    },
+    {
+      "surah": 42,
+      "ayah": 28
+    },
+    {
+      "surah": 57,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

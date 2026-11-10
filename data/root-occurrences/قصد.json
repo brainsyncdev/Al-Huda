@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "قصد",
+    "title": "قصد",
+    "arabicTitle": "قصد",
+    "roots": [
+      "قصد"
+    ],
+    "includedLemmas": [
+      "اقْصِدْ",
+      "قَاصِد",
+      "قَصْد",
+      "مُّقْتَصِد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 42
+      },
+      "matchedToken": "قَاصِدًۭا",
+      "matchedLemma": "قَاصِد",
+      "matchedRoot": "قصد",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 9
+      },
+      "matchedToken": "قَصْدُ",
+      "matchedLemma": "قَصْد",
+      "matchedRoot": "قصد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 19
+      },
+      "matchedToken": "وَٱقْصِدْ",
+      "matchedLemma": "اقْصِدْ",
+      "matchedRoot": "قصد",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 32
+      },
+      "matchedToken": "مُّقْتَصِدٌۭ ۚ",
+      "matchedLemma": "مُّقْتَصِد",
+      "matchedRoot": "قصد",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 32
+      },
+      "matchedToken": "مُّقْتَصِدٌۭ",
+      "matchedLemma": "مُّقْتَصِد",
+      "matchedRoot": "قصد",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 42
+    },
+    {
+      "surah": 16,
+      "ayah": 9
+    },
+    {
+      "surah": 31,
+      "ayah": 19
+    },
+    {
+      "surah": 31,
+      "ayah": 32
+    },
+    {
+      "surah": 35,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

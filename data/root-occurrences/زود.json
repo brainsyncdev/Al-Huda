@@ -1,0 +1,49 @@
+{
+  "entry": {
+    "slug": "زود",
+    "title": "زود",
+    "arabicTitle": "زود",
+    "roots": [
+      "زود"
+    ],
+    "includedLemmas": [
+      "تَزَوَّدُ",
+      "زَّاد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 197
+      },
+      "matchedToken": "وَتَزَوَّدُوا۟",
+      "matchedLemma": "تَزَوَّدُ",
+      "matchedRoot": "زود",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 197
+      },
+      "matchedToken": "ٱلزَّادِ",
+      "matchedLemma": "زَّاد",
+      "matchedRoot": "زود",
+      "wordPosition": 25
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 197
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

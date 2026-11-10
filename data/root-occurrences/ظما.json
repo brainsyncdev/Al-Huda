@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "ظما",
+    "title": "ظما",
+    "arabicTitle": "ظما",
+    "roots": [
+      "ظما"
+    ],
+    "includedLemmas": [
+      "تَظْمَؤُا۟",
+      "ظَمَأ",
+      "ظَّمْـَٔان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 120
+      },
+      "matchedToken": "ظَمَأٌۭ",
+      "matchedLemma": "ظَمَأ",
+      "matchedRoot": "ظما",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 119
+      },
+      "matchedToken": "تَظْمَؤُا۟",
+      "matchedLemma": "تَظْمَؤُا۟",
+      "matchedRoot": "ظما",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 39
+      },
+      "matchedToken": "ٱلظَّمْـَٔانُ",
+      "matchedLemma": "ظَّمْـَٔان",
+      "matchedRoot": "ظما",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 120
+    },
+    {
+      "surah": 20,
+      "ayah": 119
+    },
+    {
+      "surah": 24,
+      "ayah": 39
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

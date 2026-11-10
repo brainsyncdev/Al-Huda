@@ -1,5 +1,7 @@
 # PRD v3.0 Implementation Checklist
 
+> **Historical snapshot.** This checklist reconciles PRD **v3.0** as of 2026-10-23, with counts reflecting the Sprint-44 era. PRD **v4.0** ([`docs/PRD.md`](PRD.md)) now carries the live status ledger in §9 and supersedes this document as the source of truth for requirement status. Rows below are preserved as-is and are not updated here.
+
 **Document control:** reconciled 2026-10-23 against the repository. This
 revision supersedes the earlier text that claimed no typecheck, test, build, or
 validation command had been executed.

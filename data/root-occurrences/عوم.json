@@ -1,0 +1,142 @@
+{
+  "entry": {
+    "slug": "عوم",
+    "title": "عوم",
+    "arabicTitle": "عوم",
+    "roots": [
+      "عوم"
+    ],
+    "includedLemmas": [
+      "عَام"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "عَامٍۢ",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "عَامٍۢ",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 28
+      },
+      "matchedToken": "عَامِهِمْ",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 37
+      },
+      "matchedToken": "عَامًۭا",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 37
+      },
+      "matchedToken": "عَامًۭا",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 126
+      },
+      "matchedToken": "عَامٍۢ",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 49
+      },
+      "matchedToken": "عَامٌۭ",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 14
+      },
+      "matchedToken": "عَامًۭا",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 14
+      },
+      "matchedToken": "عَامَيْنِ",
+      "matchedLemma": "عَام",
+      "matchedRoot": "عوم",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 259
+    },
+    {
+      "surah": 9,
+      "ayah": 28
+    },
+    {
+      "surah": 9,
+      "ayah": 37
+    },
+    {
+      "surah": 9,
+      "ayah": 126
+    },
+    {
+      "surah": 12,
+      "ayah": 49
+    },
+    {
+      "surah": 29,
+      "ayah": 14
+    },
+    {
+      "surah": 31,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "فقد",
+    "title": "فقد",
+    "arabicTitle": "فقد",
+    "roots": [
+      "فقد"
+    ],
+    "includedLemmas": [
+      "تَفَقَّدَ",
+      "تَفْقِدُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 71
+      },
+      "matchedToken": "تَفْقِدُونَ",
+      "matchedLemma": "تَفْقِدُ",
+      "matchedRoot": "فقد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 72
+      },
+      "matchedToken": "نَفْقِدُ",
+      "matchedLemma": "تَفْقِدُ",
+      "matchedRoot": "فقد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 20
+      },
+      "matchedToken": "وَتَفَقَّدَ",
+      "matchedLemma": "تَفَقَّدَ",
+      "matchedRoot": "فقد",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 71
+    },
+    {
+      "surah": 12,
+      "ayah": 72
+    },
+    {
+      "surah": 27,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

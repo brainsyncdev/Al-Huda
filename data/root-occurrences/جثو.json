@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "جثو",
+    "title": "جثو",
+    "arabicTitle": "جثو",
+    "roots": [
+      "جثو"
+    ],
+    "includedLemmas": [
+      "جَاثِيَة",
+      "جِثِيّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 68
+      },
+      "matchedToken": "جِثِيًّۭا",
+      "matchedLemma": "جِثِيّ",
+      "matchedRoot": "جثو",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 72
+      },
+      "matchedToken": "جِثِيًّۭا",
+      "matchedLemma": "جِثِيّ",
+      "matchedRoot": "جثو",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 28
+      },
+      "matchedToken": "جَاثِيَةًۭ ۚ",
+      "matchedLemma": "جَاثِيَة",
+      "matchedRoot": "جثو",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 19,
+      "ayah": 68
+    },
+    {
+      "surah": 19,
+      "ayah": 72
+    },
+    {
+      "surah": 45,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

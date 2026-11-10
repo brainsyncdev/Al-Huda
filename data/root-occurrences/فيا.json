@@ -1,0 +1,120 @@
+{
+  "entry": {
+    "slug": "فيا",
+    "title": "فيا",
+    "arabicTitle": "فيا",
+    "roots": [
+      "فيا"
+    ],
+    "includedLemmas": [
+      "أَفَآءَ",
+      "فَآءُ",
+      "يَتَفَيَّؤُا۟"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 226
+      },
+      "matchedToken": "فَآءُو",
+      "matchedLemma": "فَآءُ",
+      "matchedRoot": "فيا",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 48
+      },
+      "matchedToken": "يَتَفَيَّؤُا۟",
+      "matchedLemma": "يَتَفَيَّؤُا۟",
+      "matchedRoot": "فيا",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 50
+      },
+      "matchedToken": "أَفَآءَ",
+      "matchedLemma": "أَفَآءَ",
+      "matchedRoot": "فيا",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 9
+      },
+      "matchedToken": "تَفِىٓءَ",
+      "matchedLemma": "فَآءُ",
+      "matchedRoot": "فيا",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 9
+      },
+      "matchedToken": "فَآءَتْ",
+      "matchedLemma": "فَآءُ",
+      "matchedRoot": "فيا",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 6
+      },
+      "matchedToken": "أَفَآءَ",
+      "matchedLemma": "أَفَآءَ",
+      "matchedRoot": "فيا",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 7
+      },
+      "matchedToken": "أَفَآءَ",
+      "matchedLemma": "أَفَآءَ",
+      "matchedRoot": "فيا",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 226
+    },
+    {
+      "surah": 16,
+      "ayah": 48
+    },
+    {
+      "surah": 33,
+      "ayah": 50
+    },
+    {
+      "surah": 49,
+      "ayah": 9
+    },
+    {
+      "surah": 59,
+      "ayah": 6
+    },
+    {
+      "surah": 59,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

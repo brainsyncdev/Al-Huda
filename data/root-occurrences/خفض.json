@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "خفض",
+    "title": "خفض",
+    "arabicTitle": "خفض",
+    "roots": [
+      "خفض"
+    ],
+    "includedLemmas": [
+      "اخْفِضْ",
+      "خَافِضَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 88
+      },
+      "matchedToken": "وَٱخْفِضْ",
+      "matchedLemma": "اخْفِضْ",
+      "matchedRoot": "خفض",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 24
+      },
+      "matchedToken": "وَٱخْفِضْ",
+      "matchedLemma": "اخْفِضْ",
+      "matchedRoot": "خفض",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 215
+      },
+      "matchedToken": "وَٱخْفِضْ",
+      "matchedLemma": "اخْفِضْ",
+      "matchedRoot": "خفض",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 3
+      },
+      "matchedToken": "خَافِضَةٌۭ",
+      "matchedLemma": "خَافِضَة",
+      "matchedRoot": "خفض",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 88
+    },
+    {
+      "surah": 17,
+      "ayah": 24
+    },
+    {
+      "surah": 26,
+      "ayah": 215
+    },
+    {
+      "surah": 56,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

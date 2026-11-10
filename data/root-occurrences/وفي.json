@@ -1,0 +1,741 @@
+{
+  "entry": {
+    "slug": "وفي",
+    "title": "وفي",
+    "arabicTitle": "وفي",
+    "roots": [
+      "وفي"
+    ],
+    "includedLemmas": [
+      "أَوْفَىٰ",
+      "تَوَفَّىٰ",
+      "مُتَوَفِّي",
+      "مُوفُون",
+      "مُوَفُّو",
+      "نَفْس",
+      "وَفَّىٰٓ",
+      "يَسْتَوْفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 8 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 40
+      },
+      "matchedToken": "وَأَوْفُوا۟",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 40
+      },
+      "matchedToken": "أُوفِ",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 177
+      },
+      "matchedToken": "وَٱلْمُوفُونَ",
+      "matchedLemma": "مُوفُون",
+      "matchedRoot": "وفي",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 234
+      },
+      "matchedToken": "يُتَوَفَّوْنَ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 240
+      },
+      "matchedToken": "يُتَوَفَّوْنَ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 25
+      },
+      "matchedToken": "وَوُفِّيَتْ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 55
+      },
+      "matchedToken": "مُتَوَفِّيكَ",
+      "matchedLemma": "مُتَوَفِّي",
+      "matchedRoot": "وفي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 57
+      },
+      "matchedToken": "فَيُوَفِّيهِمْ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 76
+      },
+      "matchedToken": "أَوْفَىٰ",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 193
+      },
+      "matchedToken": "وَتَوَفَّنَا",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 15
+      },
+      "matchedToken": "يَتَوَفَّىٰهُنَّ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 97
+      },
+      "matchedToken": "تَوَفَّىٰهُمُ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 173
+      },
+      "matchedToken": "فَيُوَفِّيهِمْ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 1
+      },
+      "matchedToken": "أَوْفُوا۟",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 117
+      },
+      "matchedToken": "تَوَفَّيْتَنِى",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 60
+      },
+      "matchedToken": "يَتَوَفَّىٰكُم",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 61
+      },
+      "matchedToken": "تَوَفَّتْهُ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 37
+      },
+      "matchedToken": "يَتَوَفَّوْنَهُمْ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 126
+      },
+      "matchedToken": "وَتَوَفَّنَا",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 50
+      },
+      "matchedToken": "يَتَوَفَّى",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 46
+      },
+      "matchedToken": "نَتَوَفَّيَنَّكَ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 104
+      },
+      "matchedToken": "يَتَوَفَّىٰكُمْ ۖ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 15
+      },
+      "matchedToken": "نُوَفِّ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 85
+      },
+      "matchedToken": "أَوْفُوا۟",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 109
+      },
+      "matchedToken": "لَمُوَفُّوهُمْ",
+      "matchedLemma": "مُوَفُّو",
+      "matchedRoot": "وفي",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 111
+      },
+      "matchedToken": "لَيُوَفِّيَنَّهُمْ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 88
+      },
+      "matchedToken": "فَأَوْفِ",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 101
+      },
+      "matchedToken": "تَوَفَّنِى",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 20
+      },
+      "matchedToken": "يُوفُونَ",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 40
+      },
+      "matchedToken": "نَتَوَفَّيَنَّكَ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 28
+      },
+      "matchedToken": "تَتَوَفَّىٰهُمُ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 32
+      },
+      "matchedToken": "تَتَوَفَّىٰهُمُ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 70
+      },
+      "matchedToken": "يَتَوَفَّىٰكُمْ ۚ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 91
+      },
+      "matchedToken": "وَأَوْفُوا۟",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 111
+      },
+      "matchedToken": "وَتُوَفَّىٰ",
+      "matchedLemma": "نَفْس",
+      "matchedRoot": "وفي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 35
+      },
+      "matchedToken": "وَأَوْفُوا۟",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 5
+      },
+      "matchedToken": "يُتَوَفَّىٰ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 43
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 29
+      },
+      "matchedToken": "وَلْيُوفُوا۟",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 25
+      },
+      "matchedToken": "يُوَفِّيهِمُ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 39
+      },
+      "matchedToken": "فَوَفَّىٰهُ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 11
+      },
+      "matchedToken": "يَتَوَفَّىٰكُم",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 30
+      },
+      "matchedToken": "لِيُوَفِّيَهُمْ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 42
+      },
+      "matchedToken": "يَتَوَفَّى",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 70
+      },
+      "matchedToken": "وَوُفِّيَتْ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 67
+      },
+      "matchedToken": "يُتَوَفَّىٰ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 77
+      },
+      "matchedToken": "نَتَوَفَّيَنَّكَ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 27
+      },
+      "matchedToken": "تَوَفَّتْهُمُ",
+      "matchedLemma": "تَوَفَّىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 37
+      },
+      "matchedToken": "وَفَّىٰٓ",
+      "matchedLemma": "وَفَّىٰٓ",
+      "matchedRoot": "وفي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 41
+      },
+      "matchedToken": "ٱلْأَوْفَىٰ",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 7
+      },
+      "matchedToken": "يُوفُونَ",
+      "matchedLemma": "أَوْفَىٰ",
+      "matchedRoot": "وفي",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 2
+      },
+      "matchedToken": "يَسْتَوْفُونَ",
+      "matchedLemma": "يَسْتَوْفُ",
+      "matchedRoot": "وفي",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 40
+    },
+    {
+      "surah": 2,
+      "ayah": 177
+    },
+    {
+      "surah": 2,
+      "ayah": 234
+    },
+    {
+      "surah": 2,
+      "ayah": 240
+    },
+    {
+      "surah": 3,
+      "ayah": 25
+    },
+    {
+      "surah": 3,
+      "ayah": 55
+    },
+    {
+      "surah": 3,
+      "ayah": 57
+    },
+    {
+      "surah": 3,
+      "ayah": 76
+    },
+    {
+      "surah": 3,
+      "ayah": 193
+    },
+    {
+      "surah": 4,
+      "ayah": 15
+    },
+    {
+      "surah": 4,
+      "ayah": 97
+    },
+    {
+      "surah": 4,
+      "ayah": 173
+    },
+    {
+      "surah": 5,
+      "ayah": 1
+    },
+    {
+      "surah": 5,
+      "ayah": 117
+    },
+    {
+      "surah": 6,
+      "ayah": 60
+    },
+    {
+      "surah": 6,
+      "ayah": 61
+    },
+    {
+      "surah": 7,
+      "ayah": 37
+    },
+    {
+      "surah": 7,
+      "ayah": 126
+    },
+    {
+      "surah": 8,
+      "ayah": 50
+    },
+    {
+      "surah": 10,
+      "ayah": 46
+    },
+    {
+      "surah": 10,
+      "ayah": 104
+    },
+    {
+      "surah": 11,
+      "ayah": 15
+    },
+    {
+      "surah": 11,
+      "ayah": 85
+    },
+    {
+      "surah": 11,
+      "ayah": 109
+    },
+    {
+      "surah": 11,
+      "ayah": 111
+    },
+    {
+      "surah": 12,
+      "ayah": 88
+    },
+    {
+      "surah": 12,
+      "ayah": 101
+    },
+    {
+      "surah": 13,
+      "ayah": 20
+    },
+    {
+      "surah": 13,
+      "ayah": 40
+    },
+    {
+      "surah": 16,
+      "ayah": 28
+    },
+    {
+      "surah": 16,
+      "ayah": 32
+    },
+    {
+      "surah": 16,
+      "ayah": 70
+    },
+    {
+      "surah": 16,
+      "ayah": 91
+    },
+    {
+      "surah": 16,
+      "ayah": 111
+    },
+    {
+      "surah": 17,
+      "ayah": 35
+    },
+    {
+      "surah": 22,
+      "ayah": 5
+    },
+    {
+      "surah": 22,
+      "ayah": 29
+    },
+    {
+      "surah": 24,
+      "ayah": 25
+    },
+    {
+      "surah": 24,
+      "ayah": 39
+    },
+    {
+      "surah": 32,
+      "ayah": 11
+    },
+    {
+      "surah": 35,
+      "ayah": 30
+    },
+    {
+      "surah": 39,
+      "ayah": 42
+    },
+    {
+      "surah": 39,
+      "ayah": 70
+    },
+    {
+      "surah": 40,
+      "ayah": 67
+    },
+    {
+      "surah": 40,
+      "ayah": 77
+    },
+    {
+      "surah": 47,
+      "ayah": 27
+    },
+    {
+      "surah": 53,
+      "ayah": 37
+    },
+    {
+      "surah": 53,
+      "ayah": 41
+    },
+    {
+      "surah": 76,
+      "ayah": 7
+    },
+    {
+      "surah": 83,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 51,
+  "totalMatches": 51,
+  "pagination": null
+}

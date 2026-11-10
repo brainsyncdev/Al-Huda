@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "زقم",
+    "title": "زقم",
+    "arabicTitle": "زقم",
+    "roots": [
+      "زقم"
+    ],
+    "includedLemmas": [
+      "زَقُّوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 62
+      },
+      "matchedToken": "ٱلزَّقُّومِ",
+      "matchedLemma": "زَقُّوم",
+      "matchedRoot": "زقم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 43
+      },
+      "matchedToken": "ٱلزَّقُّومِ",
+      "matchedLemma": "زَقُّوم",
+      "matchedRoot": "زقم",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 52
+      },
+      "matchedToken": "زَقُّومٍۢ",
+      "matchedLemma": "زَقُّوم",
+      "matchedRoot": "زقم",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 62
+    },
+    {
+      "surah": 44,
+      "ayah": 43
+    },
+    {
+      "surah": 56,
+      "ayah": 52
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

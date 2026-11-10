@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "ميد",
+    "title": "ميد",
+    "arabicTitle": "ميد",
+    "roots": [
+      "ميد"
+    ],
+    "includedLemmas": [
+      "تَمِيدَ",
+      "مَآئِدَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 112
+      },
+      "matchedToken": "مَآئِدَةًۭ",
+      "matchedLemma": "مَآئِدَة",
+      "matchedRoot": "ميد",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 114
+      },
+      "matchedToken": "مَآئِدَةًۭ",
+      "matchedLemma": "مَآئِدَة",
+      "matchedRoot": "ميد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 15
+      },
+      "matchedToken": "تَمِيدَ",
+      "matchedLemma": "تَمِيدَ",
+      "matchedRoot": "ميد",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 31
+      },
+      "matchedToken": "تَمِيدَ",
+      "matchedLemma": "تَمِيدَ",
+      "matchedRoot": "ميد",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 10
+      },
+      "matchedToken": "تَمِيدَ",
+      "matchedLemma": "تَمِيدَ",
+      "matchedRoot": "ميد",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 112
+    },
+    {
+      "surah": 5,
+      "ayah": 114
+    },
+    {
+      "surah": 16,
+      "ayah": 15
+    },
+    {
+      "surah": 21,
+      "ayah": 31
+    },
+    {
+      "surah": 31,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

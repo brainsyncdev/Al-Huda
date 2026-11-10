@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "ستر",
+    "title": "ستر",
+    "arabicTitle": "ستر",
+    "roots": [
+      "ستر"
+    ],
+    "includedLemmas": [
+      "تَسْتَتِرُ",
+      "سِتْر",
+      "مَّسْتُور"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 45
+      },
+      "matchedToken": "مَّسْتُورًۭا",
+      "matchedLemma": "مَّسْتُور",
+      "matchedRoot": "ستر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 90
+      },
+      "matchedToken": "سِتْرًۭا",
+      "matchedLemma": "سِتْر",
+      "matchedRoot": "ستر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 22
+      },
+      "matchedToken": "تَسْتَتِرُونَ",
+      "matchedLemma": "تَسْتَتِرُ",
+      "matchedRoot": "ستر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 45
+    },
+    {
+      "surah": 18,
+      "ayah": 90
+    },
+    {
+      "surah": 41,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

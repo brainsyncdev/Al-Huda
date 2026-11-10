@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "قبس",
+    "title": "قبس",
+    "arabicTitle": "قبس",
+    "roots": [
+      "قبس"
+    ],
+    "includedLemmas": [
+      "قَبَس",
+      "نَقْتَبِسْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 10
+      },
+      "matchedToken": "بِقَبَسٍ",
+      "matchedLemma": "قَبَس",
+      "matchedRoot": "قبس",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 7
+      },
+      "matchedToken": "قَبَسٍۢ",
+      "matchedLemma": "قَبَس",
+      "matchedRoot": "قبس",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 13
+      },
+      "matchedToken": "نَقْتَبِسْ",
+      "matchedLemma": "نَقْتَبِسْ",
+      "matchedRoot": "قبس",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 10
+    },
+    {
+      "surah": 27,
+      "ayah": 7
+    },
+    {
+      "surah": 57,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

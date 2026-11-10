@@ -1,0 +1,111 @@
+{
+  "entry": {
+    "slug": "ردي",
+    "title": "ردي",
+    "arabicTitle": "ردي",
+    "roots": [
+      "ردي"
+    ],
+    "includedLemmas": [
+      "أَرْدَىٰ",
+      "تَرَدَّىٰٓ",
+      "تَرْدَىٰ",
+      "مُتَرَدِّيَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 3
+      },
+      "matchedToken": "وَٱلْمُتَرَدِّيَةُ",
+      "matchedLemma": "مُتَرَدِّيَة",
+      "matchedRoot": "ردي",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 137
+      },
+      "matchedToken": "لِيُرْدُوهُمْ",
+      "matchedLemma": "أَرْدَىٰ",
+      "matchedRoot": "ردي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 16
+      },
+      "matchedToken": "فَتَرْدَىٰ",
+      "matchedLemma": "تَرْدَىٰ",
+      "matchedRoot": "ردي",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 56
+      },
+      "matchedToken": "لَتُرْدِينِ",
+      "matchedLemma": "أَرْدَىٰ",
+      "matchedRoot": "ردي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 23
+      },
+      "matchedToken": "أَرْدَىٰكُمْ",
+      "matchedLemma": "أَرْدَىٰ",
+      "matchedRoot": "ردي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 92,
+        "ayah": 11
+      },
+      "matchedToken": "تَرَدَّىٰٓ",
+      "matchedLemma": "تَرَدَّىٰٓ",
+      "matchedRoot": "ردي",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 3
+    },
+    {
+      "surah": 6,
+      "ayah": 137
+    },
+    {
+      "surah": 20,
+      "ayah": 16
+    },
+    {
+      "surah": 37,
+      "ayah": 56
+    },
+    {
+      "surah": 41,
+      "ayah": 23
+    },
+    {
+      "surah": 92,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نحب",
+    "title": "نحب",
+    "arabicTitle": "نحب",
+    "roots": [
+      "نحب"
+    ],
+    "includedLemmas": [
+      "نَحْب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 23
+      },
+      "matchedToken": "نَحْبَهُۥ",
+      "matchedLemma": "نَحْب",
+      "matchedRoot": "نحب",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 33,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

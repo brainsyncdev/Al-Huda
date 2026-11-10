@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "وزع",
+    "title": "وزع",
+    "arabicTitle": "وزع",
+    "roots": [
+      "وزع"
+    ],
+    "includedLemmas": [
+      "أَوْزِعْ",
+      "يُوزَعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 17
+      },
+      "matchedToken": "يُوزَعُونَ",
+      "matchedLemma": "يُوزَعُ",
+      "matchedRoot": "وزع",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 19
+      },
+      "matchedToken": "أَوْزِعْنِىٓ",
+      "matchedLemma": "أَوْزِعْ",
+      "matchedRoot": "وزع",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 83
+      },
+      "matchedToken": "يُوزَعُونَ",
+      "matchedLemma": "يُوزَعُ",
+      "matchedRoot": "وزع",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 19
+      },
+      "matchedToken": "يُوزَعُونَ",
+      "matchedLemma": "يُوزَعُ",
+      "matchedRoot": "وزع",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 27,
+      "ayah": 17
+    },
+    {
+      "surah": 27,
+      "ayah": 19
+    },
+    {
+      "surah": 27,
+      "ayah": 83
+    },
+    {
+      "surah": 41,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

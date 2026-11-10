@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "دهم",
+    "title": "دهم",
+    "arabicTitle": "دهم",
+    "roots": [
+      "دهم"
+    ],
+    "includedLemmas": [
+      "مُدْهَآمَّتَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 64
+      },
+      "matchedToken": "مُدْهَآمَّتَانِ",
+      "matchedLemma": "مُدْهَآمَّتَان",
+      "matchedRoot": "دهم",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 55,
+      "ayah": 64
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

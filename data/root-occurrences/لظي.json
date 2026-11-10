@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "لظي",
+    "title": "لظي",
+    "arabicTitle": "لظي",
+    "roots": [
+      "لظي"
+    ],
+    "includedLemmas": [
+      "تَلَظَّىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 92,
+        "ayah": 14
+      },
+      "matchedToken": "تَلَظَّىٰ",
+      "matchedLemma": "تَلَظَّىٰ",
+      "matchedRoot": "لظي",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 92,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

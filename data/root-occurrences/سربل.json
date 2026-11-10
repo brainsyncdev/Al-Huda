@@ -1,0 +1,62 @@
+{
+  "entry": {
+    "slug": "سربل",
+    "title": "سربل",
+    "arabicTitle": "سربل",
+    "roots": [
+      "سربل"
+    ],
+    "includedLemmas": [
+      "سَرَٰبِيل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 50
+      },
+      "matchedToken": "سَرَابِيلُهُم",
+      "matchedLemma": "سَرَٰبِيل",
+      "matchedRoot": "سربل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 81
+      },
+      "matchedToken": "سَرَٰبِيلَ",
+      "matchedLemma": "سَرَٰبِيل",
+      "matchedRoot": "سربل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 81
+      },
+      "matchedToken": "وَسَرَٰبِيلَ",
+      "matchedLemma": "سَرَٰبِيل",
+      "matchedRoot": "سربل",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 50
+    },
+    {
+      "surah": 16,
+      "ayah": 81
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

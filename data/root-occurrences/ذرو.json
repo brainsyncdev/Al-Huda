@@ -1,0 +1,64 @@
+{
+  "entry": {
+    "slug": "ذرو",
+    "title": "ذرو",
+    "arabicTitle": "ذرو",
+    "roots": [
+      "ذرو"
+    ],
+    "includedLemmas": [
+      "تَذْرُو",
+      "ذَرْو",
+      "ذَّٰرِيَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 45
+      },
+      "matchedToken": "تَذْرُوهُ",
+      "matchedLemma": "تَذْرُو",
+      "matchedRoot": "ذرو",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 1
+      },
+      "matchedToken": "وَٱلذَّٰرِيَـٰتِ",
+      "matchedLemma": "ذَّٰرِيَٰت",
+      "matchedRoot": "ذرو",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 1
+      },
+      "matchedToken": "ذَرْوًۭا",
+      "matchedLemma": "ذَرْو",
+      "matchedRoot": "ذرو",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 45
+    },
+    {
+      "surah": 51,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

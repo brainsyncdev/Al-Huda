@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "اشر",
+    "title": "اشر",
+    "arabicTitle": "اشر",
+    "roots": [
+      "اشر"
+    ],
+    "includedLemmas": [
+      "أَشِر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 25
+      },
+      "matchedToken": "أَشِرٌۭ",
+      "matchedLemma": "أَشِر",
+      "matchedRoot": "اشر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلْأَشِرُ",
+      "matchedLemma": "أَشِر",
+      "matchedRoot": "اشر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 54,
+      "ayah": 25
+    },
+    {
+      "surah": 54,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

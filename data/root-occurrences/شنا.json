@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "شنا",
+    "title": "شنا",
+    "arabicTitle": "شنا",
+    "roots": [
+      "شنا"
+    ],
+    "includedLemmas": [
+      "شَانِئ",
+      "شَنَـَٔان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 2
+      },
+      "matchedToken": "شَنَـَٔانُ",
+      "matchedLemma": "شَنَـَٔان",
+      "matchedRoot": "شنا",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 8
+      },
+      "matchedToken": "شَنَـَٔانُ",
+      "matchedLemma": "شَنَـَٔان",
+      "matchedRoot": "شنا",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 108,
+        "ayah": 3
+      },
+      "matchedToken": "شَانِئَكَ",
+      "matchedLemma": "شَانِئ",
+      "matchedRoot": "شنا",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 2
+    },
+    {
+      "surah": 5,
+      "ayah": 8
+    },
+    {
+      "surah": 108,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "حنجر",
+    "title": "حنجر",
+    "arabicTitle": "حنجر",
+    "roots": [
+      "حنجر"
+    ],
+    "includedLemmas": [
+      "حَنَاجِر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْحَنَاجِرَ",
+      "matchedLemma": "حَنَاجِر",
+      "matchedRoot": "حنجر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلْحَنَاجِرِ",
+      "matchedLemma": "حَنَاجِر",
+      "matchedRoot": "حنجر",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 33,
+      "ayah": 10
+    },
+    {
+      "surah": 40,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

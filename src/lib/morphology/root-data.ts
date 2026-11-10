@@ -194,3 +194,150 @@ export function getRootTopicEntryBySlug(slug: string): RootTopicEntry | null {
 export function isMorphologyDataAvailable(): boolean {
   return fs.existsSync(MORPHOLOGY_INDEX_PATH);
 }
+
+// Sprint 48 registry format
+interface Sprint48RegistryRoot {
+  slug: string;
+  root: string;
+  status: "activated" | "partially-activated" | "needs-review" | "discovered";
+  totalLemmas: number;
+  autoAcceptedLemmas: number;
+  needsReviewLemmas: number;
+  rejectedLemmas: number;
+  occurrenceCount: number;
+  distinctAyahCount: number;
+  includedLemmas: string[];
+  missingLemmaRecords: number;
+  policyVersion: string;
+  sourceDataset: string;
+  activatedAt: string | null;
+}
+
+interface Sprint48Registry {
+  generatedAt: string;
+  policyVersion: string;
+  sourceDataset: string;
+  aiProvider: string;
+  summary: {
+    totalRoots: number;
+    activated: number;
+    partiallyActivated: number;
+    needsReview: number;
+    discovered: number;
+    totalOccurrences: number;
+    totalDistinctAyat: number;
+    totalLemmasActivated: number;
+  };
+  roots: Sprint48RegistryRoot[];
+}
+
+/**
+ * Load the root discovery registry (Sprint 44, updated Sprint 48).
+ * Contains all discovered roots with their statistics.
+ * 
+ * Sprint 48 changed the registry format to { summary, roots }.
+ * This loader transforms the new format to the legacy array format
+ * for backward compatibility with existing pages.
+ */
+export function loadDiscoveryRegistry(): Array<{
+  slug: string;
+  root: string;
+  totalWordRecords: number;
+  distinctAyahCount: number;
+  distinctSurahCount: number;
+  recordsWithLemma: number;
+  missingLemmaCount: number;
+  lemmaCoverageRatio: number;
+  observedLemmas: string[];
+  occurrenceAlignmentStatus: "valid" | "invalid" | "unknown";
+  discoveryStatus: "eligible" | "needs-validation" | "blocked";
+  publicationStatus: "not-published" | "published" | "blocked";
+  sourceDatasetVersion: string;
+  policyVersion: string;
+}> {
+  const registryPath = path.join(DATA_DIR, "root-discovery-registry.json");
+  if (!fs.existsSync(registryPath)) {
+    return [];
+  }
+  try {
+    const raw = fs.readFileSync(registryPath, "utf-8");
+    const data = JSON.parse(raw) as Sprint48Registry | unknown[];
+    
+    // Sprint 48 format: { summary, roots }
+    if (!Array.isArray(data) && data.roots && Array.isArray(data.roots)) {
+      return data.roots.map((r) => ({
+        slug: r.slug,
+        root: r.root,
+        totalWordRecords: r.occurrenceCount || 0,
+        distinctAyahCount: r.distinctAyahCount || 0,
+        distinctSurahCount: 0, // Not tracked in new format
+        recordsWithLemma: r.occurrenceCount || 0,
+        missingLemmaCount: r.missingLemmaRecords || 0,
+        lemmaCoverageRatio: r.totalLemmas > 0 ? r.autoAcceptedLemmas / r.totalLemmas : 0,
+        observedLemmas: r.includedLemmas || [],
+        occurrenceAlignmentStatus: r.occurrenceCount > 0 ? "valid" : "unknown",
+        discoveryStatus: r.status === "activated" || r.status === "partially-activated" ? "eligible" : "needs-validation",
+        publicationStatus: r.status === "activated" || r.status === "partially-activated" ? "published" : r.status === "needs-review" ? "blocked" : "not-published",
+        sourceDatasetVersion: r.sourceDataset || "qul-morphology-v1",
+        policyVersion: r.policyVersion || "1.0.0",
+      }));
+    }
+    
+    // Legacy format: array
+    if (Array.isArray(data)) {
+      return data as Array<{
+        slug: string;
+        root: string;
+        totalWordRecords: number;
+        distinctAyahCount: number;
+        distinctSurahCount: number;
+        recordsWithLemma: number;
+        missingLemmaCount: number;
+        lemmaCoverageRatio: number;
+        observedLemmas: string[];
+        occurrenceAlignmentStatus: "valid" | "invalid" | "unknown";
+        discoveryStatus: "eligible" | "needs-validation" | "blocked";
+        publicationStatus: "not-published" | "published" | "blocked";
+        sourceDatasetVersion: string;
+        policyVersion: string;
+      }>;
+    }
+    return [];
+  } catch (error) {
+    console.error("Failed to load discovery registry:", error);
+    return [];
+  }
+}
+
+/**
+ * Load the batch publication report (Sprint 44).
+ * Contains publication decisions for all discovered roots.
+ */
+export function loadBatchPublicationReport(): {
+  totalDiscovered: number;
+  eligibleCount: number;
+  publishedCount: number;
+  blockedCount: number;
+  decisions: Array<{
+    slug: string;
+    root: string;
+    decision: "publish" | "needs-review" | "blocked";
+    reasons: string[];
+    totalWordRecords: number;
+    distinctAyahCount: number;
+    lemmaCoverageRatio: number;
+    matchedManualEntry: boolean;
+  }>;
+} | null {
+  const reportPath = path.join(DATA_DIR, "batch-publication-report.json");
+  if (!fs.existsSync(reportPath)) {
+    return null;
+  }
+  try {
+    const raw = fs.readFileSync(reportPath, "utf-8");
+    return JSON.parse(raw);
+  } catch (error) {
+    console.error("Failed to load batch publication report:", error);
+    return null;
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "صغو",
+    "title": "صغو",
+    "arabicTitle": "صغو",
+    "roots": [
+      "صغو"
+    ],
+    "includedLemmas": [
+      "صَغَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 113
+      },
+      "matchedToken": "وَلِتَصْغَىٰٓ",
+      "matchedLemma": "صَغَتْ",
+      "matchedRoot": "صغو",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 66,
+        "ayah": 4
+      },
+      "matchedToken": "صَغَتْ",
+      "matchedLemma": "صَغَتْ",
+      "matchedRoot": "صغو",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 113
+    },
+    {
+      "surah": 66,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

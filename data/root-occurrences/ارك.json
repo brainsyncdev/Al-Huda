@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "ارك",
+    "title": "ارك",
+    "arabicTitle": "ارك",
+    "roots": [
+      "ارك"
+    ],
+    "includedLemmas": [
+      "أَرَآئِك"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 31
+      },
+      "matchedToken": "ٱلْأَرَآئِكِ ۚ",
+      "matchedLemma": "أَرَآئِك",
+      "matchedRoot": "ارك",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 56
+      },
+      "matchedToken": "ٱلْأَرَآئِكِ",
+      "matchedLemma": "أَرَآئِك",
+      "matchedRoot": "ارك",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 13
+      },
+      "matchedToken": "ٱلْأَرَآئِكِ ۖ",
+      "matchedLemma": "أَرَآئِك",
+      "matchedRoot": "ارك",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 23
+      },
+      "matchedToken": "ٱلْأَرَآئِكِ",
+      "matchedLemma": "أَرَآئِك",
+      "matchedRoot": "ارك",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 35
+      },
+      "matchedToken": "ٱلْأَرَآئِكِ",
+      "matchedLemma": "أَرَآئِك",
+      "matchedRoot": "ارك",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 31
+    },
+    {
+      "surah": 36,
+      "ayah": 56
+    },
+    {
+      "surah": 76,
+      "ayah": 13
+    },
+    {
+      "surah": 83,
+      "ayah": 23
+    },
+    {
+      "surah": 83,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "عبا",
+    "title": "عبا",
+    "arabicTitle": "عبا",
+    "roots": [
+      "عبا"
+    ],
+    "includedLemmas": [
+      "يَعْبَؤُا۟"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 77
+      },
+      "matchedToken": "يَعْبَؤُا۟",
+      "matchedLemma": "يَعْبَؤُا۟",
+      "matchedRoot": "عبا",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 77
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "مضي",
+    "title": "مضي",
+    "arabicTitle": "مضي",
+    "roots": [
+      "مضي"
+    ],
+    "includedLemmas": [
+      "مَضَىٰ",
+      "مُضِيّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 38
+      },
+      "matchedToken": "مَضَتْ",
+      "matchedLemma": "مَضَىٰ",
+      "matchedRoot": "مضي",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 65
+      },
+      "matchedToken": "وَٱمْضُوا۟",
+      "matchedLemma": "مَضَىٰ",
+      "matchedRoot": "مضي",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 60
+      },
+      "matchedToken": "أَمْضِىَ",
+      "matchedLemma": "مَضَىٰ",
+      "matchedRoot": "مضي",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 67
+      },
+      "matchedToken": "مُضِيًّۭا",
+      "matchedLemma": "مُضِيّ",
+      "matchedRoot": "مضي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 8
+      },
+      "matchedToken": "وَمَضَىٰ",
+      "matchedLemma": "مَضَىٰ",
+      "matchedRoot": "مضي",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 38
+    },
+    {
+      "surah": 15,
+      "ayah": 65
+    },
+    {
+      "surah": 18,
+      "ayah": 60
+    },
+    {
+      "surah": 36,
+      "ayah": 67
+    },
+    {
+      "surah": 43,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

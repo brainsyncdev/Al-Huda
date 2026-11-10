@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "معن",
+    "title": "معن",
+    "arabicTitle": "معن",
+    "roots": [
+      "معن"
+    ],
+    "includedLemmas": [
+      "مَاعُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 107,
+        "ayah": 7
+      },
+      "matchedToken": "ٱلْمَاعُونَ",
+      "matchedLemma": "مَاعُون",
+      "matchedRoot": "معن",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 107,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

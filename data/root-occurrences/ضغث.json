@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ضغث",
+    "title": "ضغث",
+    "arabicTitle": "ضغث",
+    "roots": [
+      "ضغث"
+    ],
+    "includedLemmas": [
+      "ضِغْث"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 44
+      },
+      "matchedToken": "أَضْغَـٰثُ",
+      "matchedLemma": "ضِغْث",
+      "matchedRoot": "ضغث",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 5
+      },
+      "matchedToken": "أَضْغَـٰثُ",
+      "matchedLemma": "ضِغْث",
+      "matchedRoot": "ضغث",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 44
+      },
+      "matchedToken": "ضِغْثًۭا",
+      "matchedLemma": "ضِغْث",
+      "matchedRoot": "ضغث",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 44
+    },
+    {
+      "surah": 21,
+      "ayah": 5
+    },
+    {
+      "surah": 38,
+      "ayah": 44
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

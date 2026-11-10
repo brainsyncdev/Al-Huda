@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "داب",
+    "title": "داب",
+    "arabicTitle": "داب",
+    "roots": [
+      "داب"
+    ],
+    "includedLemmas": [
+      "دَأَب",
+      "دَأْب",
+      "دَآئِبَيْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 11
+      },
+      "matchedToken": "كَدَأْبِ",
+      "matchedLemma": "دَأْب",
+      "matchedRoot": "داب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 52
+      },
+      "matchedToken": "كَدَأْبِ",
+      "matchedLemma": "دَأْب",
+      "matchedRoot": "داب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 54
+      },
+      "matchedToken": "كَدَأْبِ",
+      "matchedLemma": "دَأْب",
+      "matchedRoot": "داب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 47
+      },
+      "matchedToken": "دَأَبًۭا",
+      "matchedLemma": "دَأَب",
+      "matchedRoot": "داب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 33
+      },
+      "matchedToken": "دَآئِبَيْنِ ۖ",
+      "matchedLemma": "دَآئِبَيْن",
+      "matchedRoot": "داب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 31
+      },
+      "matchedToken": "دَأْبِ",
+      "matchedLemma": "دَأْب",
+      "matchedRoot": "داب",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 11
+    },
+    {
+      "surah": 8,
+      "ayah": 52
+    },
+    {
+      "surah": 8,
+      "ayah": 54
+    },
+    {
+      "surah": 12,
+      "ayah": 47
+    },
+    {
+      "surah": 14,
+      "ayah": 33
+    },
+    {
+      "surah": 40,
+      "ayah": 31
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

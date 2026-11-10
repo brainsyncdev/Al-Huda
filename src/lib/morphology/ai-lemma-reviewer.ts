@@ -101,13 +101,14 @@ export function reviewLemmasDeterministic(
     );
   }
 
-  // If structural validation fails, return uncertain result
-  if (missingLemmas.length > 0 || duplicates.length > 0) {
+  // Sprint 43 Policy B: missing lemmas are disclosed but don't block publication
+  // when alignment is valid. Only duplicate positions block (data integrity issue).
+  if (duplicates.length > 0) {
     return {
       recommendedLemmas: [],
       selectionMode: "full-set",
       rationale:
-        "Structural validation failed — cannot recommend lemma set until data integrity issues are resolved.",
+        "Structural validation failed — duplicate positions detected, data integrity issue must be resolved.",
       evidence: [],
       reviewer: "deterministic-fallback",
       warnings,
@@ -115,7 +116,8 @@ export function reviewLemmasDeterministic(
     };
   }
 
-  // Structural validation passed — recommend full set for neutral root-index framing
+  // Structural validation passed (or only missing lemmas, which Policy B allows)
+  // Recommend full set of observed lemmas for neutral root-index framing
   const allLemmas = lemmaDistribution.map((l) => l.lemma);
 
   // Build evidence: for each lemma, show count and up to 3 sample ayat

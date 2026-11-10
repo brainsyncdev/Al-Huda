@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "نبع",
+    "title": "نبع",
+    "arabicTitle": "نبع",
+    "roots": [
+      "نبع"
+    ],
+    "includedLemmas": [
+      "يَنبُوع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 90
+      },
+      "matchedToken": "يَنۢبُوعًا",
+      "matchedLemma": "يَنبُوع",
+      "matchedRoot": "نبع",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 21
+      },
+      "matchedToken": "يَنَـٰبِيعَ",
+      "matchedLemma": "يَنبُوع",
+      "matchedRoot": "نبع",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 90
+    },
+    {
+      "surah": 39,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

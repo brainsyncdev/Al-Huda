@@ -1,0 +1,152 @@
+{
+  "entry": {
+    "slug": "خيل",
+    "title": "خيل",
+    "arabicTitle": "خيل",
+    "roots": [
+      "خيل"
+    ],
+    "includedLemmas": [
+      "خَيْل",
+      "مُخْتَال",
+      "يُخَيَّلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 14
+      },
+      "matchedToken": "وَٱلْخَيْلِ",
+      "matchedLemma": "خَيْل",
+      "matchedRoot": "خيل",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 36
+      },
+      "matchedToken": "مُخْتَالًۭا",
+      "matchedLemma": "مُخْتَال",
+      "matchedRoot": "خيل",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 60
+      },
+      "matchedToken": "ٱلْخَيْلِ",
+      "matchedLemma": "خَيْل",
+      "matchedRoot": "خيل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 8
+      },
+      "matchedToken": "وَٱلْخَيْلَ",
+      "matchedLemma": "خَيْل",
+      "matchedRoot": "خيل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 64
+      },
+      "matchedToken": "بِخَيْلِكَ",
+      "matchedLemma": "خَيْل",
+      "matchedRoot": "خيل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 66
+      },
+      "matchedToken": "يُخَيَّلُ",
+      "matchedLemma": "يُخَيَّلُ",
+      "matchedRoot": "خيل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 18
+      },
+      "matchedToken": "مُخْتَالٍۢ",
+      "matchedLemma": "مُخْتَال",
+      "matchedRoot": "خيل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 23
+      },
+      "matchedToken": "مُخْتَالٍۢ",
+      "matchedLemma": "مُخْتَال",
+      "matchedRoot": "خيل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 6
+      },
+      "matchedToken": "خَيْلٍۢ",
+      "matchedLemma": "خَيْل",
+      "matchedRoot": "خيل",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 14
+    },
+    {
+      "surah": 4,
+      "ayah": 36
+    },
+    {
+      "surah": 8,
+      "ayah": 60
+    },
+    {
+      "surah": 16,
+      "ayah": 8
+    },
+    {
+      "surah": 17,
+      "ayah": 64
+    },
+    {
+      "surah": 20,
+      "ayah": 66
+    },
+    {
+      "surah": 31,
+      "ayah": 18
+    },
+    {
+      "surah": 57,
+      "ayah": 23
+    },
+    {
+      "surah": 59,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

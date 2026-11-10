@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ذاب",
+    "title": "ذاب",
+    "arabicTitle": "ذاب",
+    "roots": [
+      "ذاب"
+    ],
+    "includedLemmas": [
+      "ذِّئْب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 13
+      },
+      "matchedToken": "ٱلذِّئْبُ",
+      "matchedLemma": "ذِّئْب",
+      "matchedRoot": "ذاب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 14
+      },
+      "matchedToken": "ٱلذِّئْبُ",
+      "matchedLemma": "ذِّئْب",
+      "matchedRoot": "ذاب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 17
+      },
+      "matchedToken": "ٱلذِّئْبُ ۖ",
+      "matchedLemma": "ذِّئْب",
+      "matchedRoot": "ذاب",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 13
+    },
+    {
+      "surah": 12,
+      "ayah": 14
+    },
+    {
+      "surah": 12,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

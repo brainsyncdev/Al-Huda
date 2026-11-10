@@ -1,0 +1,166 @@
+{
+  "entry": {
+    "slug": "نقص",
+    "title": "نقص",
+    "arabicTitle": "نقص",
+    "roots": [
+      "نقص"
+    ],
+    "includedLemmas": [
+      "مَنقُوص",
+      "نَقْص",
+      "يُنقَصُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 155
+      },
+      "matchedToken": "وَنَقْصٍۢ",
+      "matchedLemma": "نَقْص",
+      "matchedRoot": "نقص",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 130
+      },
+      "matchedToken": "وَنَقْصٍۢ",
+      "matchedLemma": "نَقْص",
+      "matchedRoot": "نقص",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 4
+      },
+      "matchedToken": "يَنقُصُوكُمْ",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 84
+      },
+      "matchedToken": "تَنقُصُوا۟",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 109
+      },
+      "matchedToken": "مَنقُوصٍۢ",
+      "matchedLemma": "مَنقُوص",
+      "matchedRoot": "نقص",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 41
+      },
+      "matchedToken": "نَنقُصُهَا",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 44
+      },
+      "matchedToken": "نَنقُصُهَا",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 11
+      },
+      "matchedToken": "يُنقَصُ",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 4
+      },
+      "matchedToken": "تَنقُصُ",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 3
+      },
+      "matchedToken": "ٱنقُصْ",
+      "matchedLemma": "يُنقَصُ",
+      "matchedRoot": "نقص",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 155
+    },
+    {
+      "surah": 7,
+      "ayah": 130
+    },
+    {
+      "surah": 9,
+      "ayah": 4
+    },
+    {
+      "surah": 11,
+      "ayah": 84
+    },
+    {
+      "surah": 11,
+      "ayah": 109
+    },
+    {
+      "surah": 13,
+      "ayah": 41
+    },
+    {
+      "surah": 21,
+      "ayah": 44
+    },
+    {
+      "surah": 35,
+      "ayah": 11
+    },
+    {
+      "surah": 50,
+      "ayah": 4
+    },
+    {
+      "surah": 73,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

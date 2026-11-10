@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "تور",
+    "title": "تور",
+    "arabicTitle": "تور",
+    "roots": [
+      "تور"
+    ],
+    "includedLemmas": [
+      "تَارَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 69
+      },
+      "matchedToken": "تَارَةً",
+      "matchedLemma": "تَارَة",
+      "matchedRoot": "تور",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 55
+      },
+      "matchedToken": "تَارَةً",
+      "matchedLemma": "تَارَة",
+      "matchedRoot": "تور",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 69
+    },
+    {
+      "surah": 20,
+      "ayah": 55
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

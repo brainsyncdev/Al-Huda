@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "جيب",
+    "title": "جيب",
+    "arabicTitle": "جيب",
+    "roots": [
+      "جيب"
+    ],
+    "includedLemmas": [
+      "جَيْب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 31
+      },
+      "matchedToken": "جُيُوبِهِنَّ ۖ",
+      "matchedLemma": "جَيْب",
+      "matchedRoot": "جيب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 12
+      },
+      "matchedToken": "جَيْبِكَ",
+      "matchedLemma": "جَيْب",
+      "matchedRoot": "جيب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 32
+      },
+      "matchedToken": "جَيْبِكَ",
+      "matchedLemma": "جَيْب",
+      "matchedRoot": "جيب",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 24,
+      "ayah": 31
+    },
+    {
+      "surah": 27,
+      "ayah": 12
+    },
+    {
+      "surah": 28,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,819 @@
+{
+  "entry": {
+    "slug": "حمل",
+    "title": "حمل",
+    "arabicTitle": "حمل",
+    "roots": [
+      "حمل"
+    ],
+    "includedLemmas": [
+      "أَحْمَال",
+      "احْتَمَلَ",
+      "حَمَلَ",
+      "حَمُولَة",
+      "حَمَّالَة",
+      "حَمْل",
+      "حَٰمِلَٰت",
+      "حَٰمِلِين",
+      "حُمِّلَ",
+      "حِمْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 10 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 248
+      },
+      "matchedToken": "تَحْمِلُهُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 286
+      },
+      "matchedToken": "تَحْمِلْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 286
+      },
+      "matchedToken": "حَمَلْتَهُۥ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 286
+      },
+      "matchedToken": "تُحَمِّلْنَا",
+      "matchedLemma": "حُمِّلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 33
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 112
+      },
+      "matchedToken": "ٱحْتَمَلَ",
+      "matchedLemma": "احْتَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 31
+      },
+      "matchedToken": "يَحْمِلُونَ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 142
+      },
+      "matchedToken": "حَمُولَةًۭ",
+      "matchedLemma": "حَمُولَة",
+      "matchedRoot": "حمل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 146
+      },
+      "matchedToken": "حَمَلَتْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 176
+      },
+      "matchedToken": "تَحْمِلْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 189
+      },
+      "matchedToken": "حَمَلَتْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 92
+      },
+      "matchedToken": "لِتَحْمِلَهُمْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 92
+      },
+      "matchedToken": "أَحْمِلُكُمْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 40
+      },
+      "matchedToken": "ٱحْمِلْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 36
+      },
+      "matchedToken": "أَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 72
+      },
+      "matchedToken": "حِمْلُ",
+      "matchedLemma": "حِمْل",
+      "matchedRoot": "حمل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 8
+      },
+      "matchedToken": "تَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 17
+      },
+      "matchedToken": "فَٱحْتَمَلَ",
+      "matchedLemma": "احْتَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 7
+      },
+      "matchedToken": "وَتَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 25
+      },
+      "matchedToken": "لِيَحْمِلُوٓا۟",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 3
+      },
+      "matchedToken": "حَمَلْنَا",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 70
+      },
+      "matchedToken": "وَحَمَلْنَـٰهُمْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 22
+      },
+      "matchedToken": "۞ فَحَمَلَتْهُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 27
+      },
+      "matchedToken": "تَحْمِلُهُۥ ۖ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 58
+      },
+      "matchedToken": "حَمَلْنَا",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 87
+      },
+      "matchedToken": "حُمِّلْنَآ",
+      "matchedLemma": "حُمِّلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 100
+      },
+      "matchedToken": "يَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 101
+      },
+      "matchedToken": "حِمْلًۭا",
+      "matchedLemma": "حِمْل",
+      "matchedRoot": "حمل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 111
+      },
+      "matchedToken": "حَمَلَ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 2
+      },
+      "matchedToken": "حَمْلٍ",
+      "matchedLemma": "حَمْل",
+      "matchedRoot": "حمل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 2
+      },
+      "matchedToken": "حَمْلَهَا",
+      "matchedLemma": "حَمْل",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 22
+      },
+      "matchedToken": "تُحْمَلُونَ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 54
+      },
+      "matchedToken": "حُمِّلَ",
+      "matchedLemma": "حُمِّلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 54
+      },
+      "matchedToken": "حُمِّلْتُمْ ۖ",
+      "matchedLemma": "حُمِّلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 12
+      },
+      "matchedToken": "وَلْنَحْمِلْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 12
+      },
+      "matchedToken": "بِحَـٰمِلِينَ",
+      "matchedLemma": "حَٰمِلِين",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 13
+      },
+      "matchedToken": "وَلَيَحْمِلُنَّ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 60
+      },
+      "matchedToken": "تَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 14
+      },
+      "matchedToken": "حَمَلَتْهُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 58
+      },
+      "matchedToken": "ٱحْتَمَلُوا۟",
+      "matchedLemma": "احْتَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 72
+      },
+      "matchedToken": "يَحْمِلْنَهَا",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 72
+      },
+      "matchedToken": "وَحَمَلَهَا",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 11
+      },
+      "matchedToken": "تَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 18
+      },
+      "matchedToken": "حِمْلِهَا",
+      "matchedLemma": "حِمْل",
+      "matchedRoot": "حمل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 18
+      },
+      "matchedToken": "يُحْمَلْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 41
+      },
+      "matchedToken": "حَمَلْنَا",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 7
+      },
+      "matchedToken": "يَحْمِلُونَ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 80
+      },
+      "matchedToken": "تُحْمَلُونَ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 47
+      },
+      "matchedToken": "تَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 15
+      },
+      "matchedToken": "حَمَلَتْهُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 2
+      },
+      "matchedToken": "فَٱلْحَـٰمِلَـٰتِ",
+      "matchedLemma": "حَٰمِلَٰت",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 13
+      },
+      "matchedToken": "وَحَمَلْنَـٰهُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 62,
+        "ayah": 5
+      },
+      "matchedToken": "حُمِّلُوا۟",
+      "matchedLemma": "حُمِّلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 62,
+        "ayah": 5
+      },
+      "matchedToken": "يَحْمِلُوهَا",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 62,
+        "ayah": 5
+      },
+      "matchedToken": "يَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْأَحْمَالِ",
+      "matchedLemma": "أَحْمَال",
+      "matchedRoot": "حمل",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 11
+      },
+      "matchedToken": "حَمَلْنَـٰكُمْ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 14
+      },
+      "matchedToken": "وَحُمِلَتِ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 17
+      },
+      "matchedToken": "وَيَحْمِلُ",
+      "matchedLemma": "حَمَلَ",
+      "matchedRoot": "حمل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 111,
+        "ayah": 4
+      },
+      "matchedToken": "حَمَّالَةَ",
+      "matchedLemma": "حَمَّالَة",
+      "matchedRoot": "حمل",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 248
+    },
+    {
+      "surah": 2,
+      "ayah": 286
+    },
+    {
+      "surah": 4,
+      "ayah": 112
+    },
+    {
+      "surah": 6,
+      "ayah": 31
+    },
+    {
+      "surah": 6,
+      "ayah": 142
+    },
+    {
+      "surah": 6,
+      "ayah": 146
+    },
+    {
+      "surah": 7,
+      "ayah": 176
+    },
+    {
+      "surah": 7,
+      "ayah": 189
+    },
+    {
+      "surah": 9,
+      "ayah": 92
+    },
+    {
+      "surah": 11,
+      "ayah": 40
+    },
+    {
+      "surah": 12,
+      "ayah": 36
+    },
+    {
+      "surah": 12,
+      "ayah": 72
+    },
+    {
+      "surah": 13,
+      "ayah": 8
+    },
+    {
+      "surah": 13,
+      "ayah": 17
+    },
+    {
+      "surah": 16,
+      "ayah": 7
+    },
+    {
+      "surah": 16,
+      "ayah": 25
+    },
+    {
+      "surah": 17,
+      "ayah": 3
+    },
+    {
+      "surah": 17,
+      "ayah": 70
+    },
+    {
+      "surah": 19,
+      "ayah": 22
+    },
+    {
+      "surah": 19,
+      "ayah": 27
+    },
+    {
+      "surah": 19,
+      "ayah": 58
+    },
+    {
+      "surah": 20,
+      "ayah": 87
+    },
+    {
+      "surah": 20,
+      "ayah": 100
+    },
+    {
+      "surah": 20,
+      "ayah": 101
+    },
+    {
+      "surah": 20,
+      "ayah": 111
+    },
+    {
+      "surah": 22,
+      "ayah": 2
+    },
+    {
+      "surah": 23,
+      "ayah": 22
+    },
+    {
+      "surah": 24,
+      "ayah": 54
+    },
+    {
+      "surah": 29,
+      "ayah": 12
+    },
+    {
+      "surah": 29,
+      "ayah": 13
+    },
+    {
+      "surah": 29,
+      "ayah": 60
+    },
+    {
+      "surah": 31,
+      "ayah": 14
+    },
+    {
+      "surah": 33,
+      "ayah": 58
+    },
+    {
+      "surah": 33,
+      "ayah": 72
+    },
+    {
+      "surah": 35,
+      "ayah": 11
+    },
+    {
+      "surah": 35,
+      "ayah": 18
+    },
+    {
+      "surah": 36,
+      "ayah": 41
+    },
+    {
+      "surah": 40,
+      "ayah": 7
+    },
+    {
+      "surah": 40,
+      "ayah": 80
+    },
+    {
+      "surah": 41,
+      "ayah": 47
+    },
+    {
+      "surah": 46,
+      "ayah": 15
+    },
+    {
+      "surah": 51,
+      "ayah": 2
+    },
+    {
+      "surah": 54,
+      "ayah": 13
+    },
+    {
+      "surah": 62,
+      "ayah": 5
+    },
+    {
+      "surah": 65,
+      "ayah": 4
+    },
+    {
+      "surah": 69,
+      "ayah": 11
+    },
+    {
+      "surah": 69,
+      "ayah": 14
+    },
+    {
+      "surah": 69,
+      "ayah": 17
+    },
+    {
+      "surah": 111,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 59,
+  "totalMatches": 59,
+  "pagination": null
+}

@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "رعب",
+    "title": "رعب",
+    "arabicTitle": "رعب",
+    "roots": [
+      "رعب"
+    ],
+    "includedLemmas": [
+      "رُعْب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 151
+      },
+      "matchedToken": "ٱلرُّعْبَ",
+      "matchedLemma": "رُعْب",
+      "matchedRoot": "رعب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 12
+      },
+      "matchedToken": "ٱلرُّعْبَ",
+      "matchedLemma": "رُعْب",
+      "matchedRoot": "رعب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 18
+      },
+      "matchedToken": "رُعْبًۭا",
+      "matchedLemma": "رُعْب",
+      "matchedRoot": "رعب",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلرُّعْبَ",
+      "matchedLemma": "رُعْب",
+      "matchedRoot": "رعب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 2
+      },
+      "matchedToken": "ٱلرُّعْبَ ۚ",
+      "matchedLemma": "رُعْب",
+      "matchedRoot": "رعب",
+      "wordPosition": 32
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 151
+    },
+    {
+      "surah": 8,
+      "ayah": 12
+    },
+    {
+      "surah": 18,
+      "ayah": 18
+    },
+    {
+      "surah": 33,
+      "ayah": 26
+    },
+    {
+      "surah": 59,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

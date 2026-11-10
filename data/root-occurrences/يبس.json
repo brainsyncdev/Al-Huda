@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "يبس",
+    "title": "يبس",
+    "arabicTitle": "يبس",
+    "roots": [
+      "يبس"
+    ],
+    "includedLemmas": [
+      "يَابِس",
+      "يَابِسَٰت",
+      "يَبَس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 59
+      },
+      "matchedToken": "يَابِسٍ",
+      "matchedLemma": "يَابِس",
+      "matchedRoot": "يبس",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 43
+      },
+      "matchedToken": "يَابِسَـٰتٍۢ ۖ",
+      "matchedLemma": "يَابِسَٰت",
+      "matchedRoot": "يبس",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 46
+      },
+      "matchedToken": "يَابِسَـٰتٍۢ",
+      "matchedLemma": "يَابِسَٰت",
+      "matchedRoot": "يبس",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 77
+      },
+      "matchedToken": "يَبَسًۭا",
+      "matchedLemma": "يَبَس",
+      "matchedRoot": "يبس",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 59
+    },
+    {
+      "surah": 12,
+      "ayah": 43
+    },
+    {
+      "surah": 12,
+      "ayah": 46
+    },
+    {
+      "surah": 20,
+      "ayah": 77
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

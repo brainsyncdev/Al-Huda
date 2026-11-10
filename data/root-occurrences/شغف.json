@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "شغف",
+    "title": "شغف",
+    "arabicTitle": "شغف",
+    "roots": [
+      "شغف"
+    ],
+    "includedLemmas": [
+      "شَغَفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 30
+      },
+      "matchedToken": "شَغَفَهَا",
+      "matchedLemma": "شَغَفَ",
+      "matchedRoot": "شغف",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 30
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

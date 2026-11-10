@@ -1,0 +1,121 @@
+{
+  "entry": {
+    "slug": "سكر",
+    "title": "سكر",
+    "arabicTitle": "سكر",
+    "roots": [
+      "سكر"
+    ],
+    "includedLemmas": [
+      "سَكَر",
+      "سَكْرَة",
+      "سُكَٰرَىٰ",
+      "سُكِّرَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 43
+      },
+      "matchedToken": "سُكَـٰرَىٰ",
+      "matchedLemma": "سُكَٰرَىٰ",
+      "matchedRoot": "سكر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 15
+      },
+      "matchedToken": "سُكِّرَتْ",
+      "matchedLemma": "سُكِّرَتْ",
+      "matchedRoot": "سكر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 72
+      },
+      "matchedToken": "سَكْرَتِهِمْ",
+      "matchedLemma": "سَكْرَة",
+      "matchedRoot": "سكر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 67
+      },
+      "matchedToken": "سَكَرًۭا",
+      "matchedLemma": "سَكَر",
+      "matchedRoot": "سكر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 2
+      },
+      "matchedToken": "سُكَـٰرَىٰ",
+      "matchedLemma": "سُكَٰرَىٰ",
+      "matchedRoot": "سكر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 2
+      },
+      "matchedToken": "بِسُكَـٰرَىٰ",
+      "matchedLemma": "سُكَٰرَىٰ",
+      "matchedRoot": "سكر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 19
+      },
+      "matchedToken": "سَكْرَةُ",
+      "matchedLemma": "سَكْرَة",
+      "matchedRoot": "سكر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 43
+    },
+    {
+      "surah": 15,
+      "ayah": 15
+    },
+    {
+      "surah": 15,
+      "ayah": 72
+    },
+    {
+      "surah": 16,
+      "ayah": 67
+    },
+    {
+      "surah": 22,
+      "ayah": 2
+    },
+    {
+      "surah": 50,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

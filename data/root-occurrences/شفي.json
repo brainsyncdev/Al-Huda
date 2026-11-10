@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "شفي",
+    "title": "شفي",
+    "arabicTitle": "شفي",
+    "roots": [
+      "شفي"
+    ],
+    "includedLemmas": [
+      "شِفَآء",
+      "يَشْفِ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 14
+      },
+      "matchedToken": "وَيَشْفِ",
+      "matchedLemma": "يَشْفِ",
+      "matchedRoot": "شفي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 57
+      },
+      "matchedToken": "وَشِفَآءٌۭ",
+      "matchedLemma": "شِفَآء",
+      "matchedRoot": "شفي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 82
+      },
+      "matchedToken": "شِفَآءٌۭ",
+      "matchedLemma": "شِفَآء",
+      "matchedRoot": "شفي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 80
+      },
+      "matchedToken": "يَشْفِينِ",
+      "matchedLemma": "يَشْفِ",
+      "matchedRoot": "شفي",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 14
+    },
+    {
+      "surah": 10,
+      "ayah": 57
+    },
+    {
+      "surah": 17,
+      "ayah": 82
+    },
+    {
+      "surah": 26,
+      "ayah": 80
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

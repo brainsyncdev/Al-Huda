@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "ركن",
+    "title": "ركن",
+    "arabicTitle": "ركن",
+    "roots": [
+      "ركن"
+    ],
+    "includedLemmas": [
+      "تَرْكَنُ",
+      "رُكْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 80
+      },
+      "matchedToken": "رُكْنٍۢ",
+      "matchedLemma": "رُكْن",
+      "matchedRoot": "ركن",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 113
+      },
+      "matchedToken": "تَرْكَنُوٓا۟",
+      "matchedLemma": "تَرْكَنُ",
+      "matchedRoot": "ركن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 74
+      },
+      "matchedToken": "تَرْكَنُ",
+      "matchedLemma": "تَرْكَنُ",
+      "matchedRoot": "ركن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 39
+      },
+      "matchedToken": "بِرُكْنِهِۦ",
+      "matchedLemma": "رُكْن",
+      "matchedRoot": "ركن",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 80
+    },
+    {
+      "surah": 11,
+      "ayah": 113
+    },
+    {
+      "surah": 17,
+      "ayah": 74
+    },
+    {
+      "surah": 51,
+      "ayah": 39
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

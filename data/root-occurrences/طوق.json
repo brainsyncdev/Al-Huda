@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "طوق",
+    "title": "طوق",
+    "arabicTitle": "طوق",
+    "roots": [
+      "طوق"
+    ],
+    "includedLemmas": [
+      "طَاقَة",
+      "يُطَوَّقُ",
+      "يُطِيقُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 184
+      },
+      "matchedToken": "يُطِيقُونَهُۥ",
+      "matchedLemma": "يُطِيقُ",
+      "matchedRoot": "طوق",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 249
+      },
+      "matchedToken": "طَاقَةَ",
+      "matchedLemma": "طَاقَة",
+      "matchedRoot": "طوق",
+      "wordPosition": 38
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 286
+      },
+      "matchedToken": "طَاقَةَ",
+      "matchedLemma": "طَاقَة",
+      "matchedRoot": "طوق",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 180
+      },
+      "matchedToken": "سَيُطَوَّقُونَ",
+      "matchedLemma": "يُطَوَّقُ",
+      "matchedRoot": "طوق",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 184
+    },
+    {
+      "surah": 2,
+      "ayah": 249
+    },
+    {
+      "surah": 2,
+      "ayah": 286
+    },
+    {
+      "surah": 3,
+      "ayah": 180
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

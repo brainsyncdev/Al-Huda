@@ -1,0 +1,48 @@
+{
+  "entry": {
+    "slug": "لهث",
+    "title": "لهث",
+    "arabicTitle": "لهث",
+    "roots": [
+      "لهث"
+    ],
+    "includedLemmas": [
+      "يَلْهَثْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 176
+      },
+      "matchedToken": "يَلْهَثْ",
+      "matchedLemma": "يَلْهَثْ",
+      "matchedRoot": "لهث",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 176
+      },
+      "matchedToken": "يَلْهَث ۚ",
+      "matchedLemma": "يَلْهَثْ",
+      "matchedRoot": "لهث",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 176
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

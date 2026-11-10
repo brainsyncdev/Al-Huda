@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "يمم",
+    "title": "يمم",
+    "arabicTitle": "يمم",
+    "roots": [
+      "يمم"
+    ],
+    "includedLemmas": [
+      "تَيَمَّمُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 267
+      },
+      "matchedToken": "تَيَمَّمُوا۟",
+      "matchedLemma": "تَيَمَّمُ",
+      "matchedRoot": "يمم",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 43
+      },
+      "matchedToken": "فَتَيَمَّمُوا۟",
+      "matchedLemma": "تَيَمَّمُ",
+      "matchedRoot": "يمم",
+      "wordPosition": 38
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 6
+      },
+      "matchedToken": "فَتَيَمَّمُوا۟",
+      "matchedLemma": "تَيَمَّمُ",
+      "matchedRoot": "يمم",
+      "wordPosition": 40
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 267
+    },
+    {
+      "surah": 4,
+      "ayah": 43
+    },
+    {
+      "surah": 5,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

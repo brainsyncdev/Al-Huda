@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "صفف",
+    "title": "صفف",
+    "arabicTitle": "صفف",
+    "roots": [
+      "صفف"
+    ],
+    "includedLemmas": [
+      "مَصْفُوفَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 20
+      },
+      "matchedToken": "مَّصْفُوفَةٍۢ ۖ",
+      "matchedLemma": "مَصْفُوفَة",
+      "matchedRoot": "صفف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 15
+      },
+      "matchedToken": "مَصْفُوفَةٌۭ",
+      "matchedLemma": "مَصْفُوفَة",
+      "matchedRoot": "صفف",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 52,
+      "ayah": 20
+    },
+    {
+      "surah": 88,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

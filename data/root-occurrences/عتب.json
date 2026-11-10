@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "عتب",
+    "title": "عتب",
+    "arabicTitle": "عتب",
+    "roots": [
+      "عتب"
+    ],
+    "includedLemmas": [
+      "مُعْتَبِين",
+      "يَسْتَعْتِبُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 84
+      },
+      "matchedToken": "يُسْتَعْتَبُونَ",
+      "matchedLemma": "يَسْتَعْتِبُ",
+      "matchedRoot": "عتب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 57
+      },
+      "matchedToken": "يُسْتَعْتَبُونَ",
+      "matchedLemma": "يَسْتَعْتِبُ",
+      "matchedRoot": "عتب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 24
+      },
+      "matchedToken": "يَسْتَعْتِبُوا۟",
+      "matchedLemma": "يَسْتَعْتِبُ",
+      "matchedRoot": "عتب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 24
+      },
+      "matchedToken": "ٱلْمُعْتَبِينَ",
+      "matchedLemma": "مُعْتَبِين",
+      "matchedRoot": "عتب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 35
+      },
+      "matchedToken": "يُسْتَعْتَبُونَ",
+      "matchedLemma": "يَسْتَعْتِبُ",
+      "matchedRoot": "عتب",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 84
+    },
+    {
+      "surah": 30,
+      "ayah": 57
+    },
+    {
+      "surah": 41,
+      "ayah": 24
+    },
+    {
+      "surah": 45,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "صوف",
+    "title": "صوف",
+    "arabicTitle": "صوف",
+    "roots": [
+      "صوف"
+    ],
+    "includedLemmas": [
+      "أَصْوَاف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 80
+      },
+      "matchedToken": "أَصْوَافِهَا",
+      "matchedLemma": "أَصْوَاف",
+      "matchedRoot": "صوف",
+      "wordPosition": 19
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 80
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

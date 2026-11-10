@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "ردم",
+    "title": "ردم",
+    "arabicTitle": "ردم",
+    "roots": [
+      "ردم"
+    ],
+    "includedLemmas": [
+      "رَدْم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 95
+      },
+      "matchedToken": "رَدْمًا",
+      "matchedLemma": "رَدْم",
+      "matchedRoot": "ردم",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 95
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

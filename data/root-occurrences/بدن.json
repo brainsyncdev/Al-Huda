@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "بدن",
+    "title": "بدن",
+    "arabicTitle": "بدن",
+    "roots": [
+      "بدن"
+    ],
+    "includedLemmas": [
+      "بَدَن",
+      "بُدْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 92
+      },
+      "matchedToken": "بِبَدَنِكَ",
+      "matchedLemma": "بَدَن",
+      "matchedRoot": "بدن",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 36
+      },
+      "matchedToken": "وَٱلْبُدْنَ",
+      "matchedLemma": "بُدْن",
+      "matchedRoot": "بدن",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 10,
+      "ayah": 92
+    },
+    {
+      "surah": 22,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

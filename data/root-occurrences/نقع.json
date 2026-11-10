@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نقع",
+    "title": "نقع",
+    "arabicTitle": "نقع",
+    "roots": [
+      "نقع"
+    ],
+    "includedLemmas": [
+      "نَقْع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 100,
+        "ayah": 4
+      },
+      "matchedToken": "نَقْعًۭا",
+      "matchedLemma": "نَقْع",
+      "matchedRoot": "نقع",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 100,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

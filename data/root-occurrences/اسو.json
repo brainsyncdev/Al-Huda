@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "اسو",
+    "title": "اسو",
+    "arabicTitle": "اسو",
+    "roots": [
+      "اسو"
+    ],
+    "includedLemmas": [
+      "أُسْوَة",
+      "تَأْسَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 21
+      },
+      "matchedToken": "أُسْوَةٌ",
+      "matchedLemma": "أُسْوَة",
+      "matchedRoot": "اسو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 23
+      },
+      "matchedToken": "تَأْسَوْا۟",
+      "matchedLemma": "تَأْسَ",
+      "matchedRoot": "اسو",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 4
+      },
+      "matchedToken": "أُسْوَةٌ",
+      "matchedLemma": "أُسْوَة",
+      "matchedRoot": "اسو",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 6
+      },
+      "matchedToken": "أُسْوَةٌ",
+      "matchedLemma": "أُسْوَة",
+      "matchedRoot": "اسو",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 33,
+      "ayah": 21
+    },
+    {
+      "surah": 57,
+      "ayah": 23
+    },
+    {
+      "surah": 60,
+      "ayah": 4
+    },
+    {
+      "surah": 60,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

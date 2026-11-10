@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ناي",
+    "title": "ناي",
+    "arabicTitle": "ناي",
+    "roots": [
+      "ناي"
+    ],
+    "includedLemmas": [
+      "نَـَٔا"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 26
+      },
+      "matchedToken": "وَيَنْـَٔوْنَ",
+      "matchedLemma": "نَـَٔا",
+      "matchedRoot": "ناي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 83
+      },
+      "matchedToken": "وَنَـَٔا",
+      "matchedLemma": "نَـَٔا",
+      "matchedRoot": "ناي",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 51
+      },
+      "matchedToken": "وَنَـَٔا",
+      "matchedLemma": "نَـَٔا",
+      "matchedRoot": "ناي",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 26
+    },
+    {
+      "surah": 17,
+      "ayah": 83
+    },
+    {
+      "surah": 41,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "فرد",
+    "title": "فرد",
+    "arabicTitle": "فرد",
+    "roots": [
+      "فرد"
+    ],
+    "includedLemmas": [
+      "فَرْد",
+      "فُرَٰدَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 94
+      },
+      "matchedToken": "فُرَٰدَىٰ",
+      "matchedLemma": "فُرَٰدَىٰ",
+      "matchedRoot": "فرد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 80
+      },
+      "matchedToken": "فَرْدًۭا",
+      "matchedLemma": "فَرْد",
+      "matchedRoot": "فرد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 95
+      },
+      "matchedToken": "فَرْدًا",
+      "matchedLemma": "فَرْد",
+      "matchedRoot": "فرد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 89
+      },
+      "matchedToken": "فَرْدًۭا",
+      "matchedLemma": "فَرْد",
+      "matchedRoot": "فرد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 46
+      },
+      "matchedToken": "وَفُرَٰدَىٰ",
+      "matchedLemma": "فُرَٰدَىٰ",
+      "matchedRoot": "فرد",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 94
+    },
+    {
+      "surah": 19,
+      "ayah": 80
+    },
+    {
+      "surah": 19,
+      "ayah": 95
+    },
+    {
+      "surah": 21,
+      "ayah": 89
+    },
+    {
+      "surah": 34,
+      "ayah": 46
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

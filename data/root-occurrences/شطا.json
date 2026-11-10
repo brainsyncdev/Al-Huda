@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "شطا",
+    "title": "شطا",
+    "arabicTitle": "شطا",
+    "roots": [
+      "شطا"
+    ],
+    "includedLemmas": [
+      "شَطْـٔ",
+      "شَٰطِئ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 30
+      },
+      "matchedToken": "شَـٰطِئِ",
+      "matchedLemma": "شَٰطِئ",
+      "matchedRoot": "شطا",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 29
+      },
+      "matchedToken": "شَطْـَٔهُۥ",
+      "matchedLemma": "شَطْـٔ",
+      "matchedRoot": "شطا",
+      "wordPosition": 34
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 28,
+      "ayah": 30
+    },
+    {
+      "surah": 48,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

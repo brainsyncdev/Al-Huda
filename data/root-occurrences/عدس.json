@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "عدس",
+    "title": "عدس",
+    "arabicTitle": "عدس",
+    "roots": [
+      "عدس"
+    ],
+    "includedLemmas": [
+      "عَدَس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 61
+      },
+      "matchedToken": "وَعَدَسِهَا",
+      "matchedLemma": "عَدَس",
+      "matchedRoot": "عدس",
+      "wordPosition": 21
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 61
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "لبن",
+    "title": "لبن",
+    "arabicTitle": "لبن",
+    "roots": [
+      "لبن"
+    ],
+    "includedLemmas": [
+      "لَّبَن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 66
+      },
+      "matchedToken": "لَّبَنًا",
+      "matchedLemma": "لَّبَن",
+      "matchedRoot": "لبن",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 15
+      },
+      "matchedToken": "لَّبَنٍۢ",
+      "matchedLemma": "لَّبَن",
+      "matchedRoot": "لبن",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 66
+    },
+    {
+      "surah": 47,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

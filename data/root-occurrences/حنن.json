@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "حنن",
+    "title": "حنن",
+    "arabicTitle": "حنن",
+    "roots": [
+      "حنن"
+    ],
+    "includedLemmas": [
+      "حَنَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 13
+      },
+      "matchedToken": "وَحَنَانًۭا",
+      "matchedLemma": "حَنَان",
+      "matchedRoot": "حنن",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 19,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

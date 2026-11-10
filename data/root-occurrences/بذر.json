@@ -1,0 +1,64 @@
+{
+  "entry": {
+    "slug": "بذر",
+    "title": "بذر",
+    "arabicTitle": "بذر",
+    "roots": [
+      "بذر"
+    ],
+    "includedLemmas": [
+      "تَبْذِير",
+      "تُبَذِّرْ",
+      "مُبَذِّرِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 26
+      },
+      "matchedToken": "تُبَذِّرْ",
+      "matchedLemma": "تُبَذِّرْ",
+      "matchedRoot": "بذر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 26
+      },
+      "matchedToken": "تَبْذِيرًا",
+      "matchedLemma": "تَبْذِير",
+      "matchedRoot": "بذر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 27
+      },
+      "matchedToken": "ٱلْمُبَذِّرِينَ",
+      "matchedLemma": "مُبَذِّرِين",
+      "matchedRoot": "بذر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 26
+    },
+    {
+      "surah": 17,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

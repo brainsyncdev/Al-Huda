@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "محو",
+    "title": "محو",
+    "arabicTitle": "محو",
+    "roots": [
+      "محو"
+    ],
+    "includedLemmas": [
+      "مَحَوْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 39
+      },
+      "matchedToken": "يَمْحُوا۟",
+      "matchedLemma": "مَحَوْ",
+      "matchedRoot": "محو",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 12
+      },
+      "matchedToken": "فَمَحَوْنَآ",
+      "matchedLemma": "مَحَوْ",
+      "matchedRoot": "محو",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 24
+      },
+      "matchedToken": "وَيَمْحُ",
+      "matchedLemma": "مَحَوْ",
+      "matchedRoot": "محو",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 39
+    },
+    {
+      "surah": 17,
+      "ayah": 12
+    },
+    {
+      "surah": 42,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

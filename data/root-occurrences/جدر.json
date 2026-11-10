@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "جدر",
+    "title": "جدر",
+    "arabicTitle": "جدر",
+    "roots": [
+      "جدر"
+    ],
+    "includedLemmas": [
+      "أَجْدَر",
+      "جُدُر",
+      "جِدَار"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 97
+      },
+      "matchedToken": "وَأَجْدَرُ",
+      "matchedLemma": "أَجْدَر",
+      "matchedRoot": "جدر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 77
+      },
+      "matchedToken": "جِدَارًۭا",
+      "matchedLemma": "جِدَار",
+      "matchedRoot": "جدر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 82
+      },
+      "matchedToken": "ٱلْجِدَارُ",
+      "matchedLemma": "جِدَار",
+      "matchedRoot": "جدر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 14
+      },
+      "matchedToken": "جُدُرٍۭ ۚ",
+      "matchedLemma": "جُدُر",
+      "matchedRoot": "جدر",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 97
+    },
+    {
+      "surah": 18,
+      "ayah": 77
+    },
+    {
+      "surah": 18,
+      "ayah": 82
+    },
+    {
+      "surah": 59,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

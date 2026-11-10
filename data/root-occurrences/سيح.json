@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "سيح",
+    "title": "سيح",
+    "arabicTitle": "سيح",
+    "roots": [
+      "سيح"
+    ],
+    "includedLemmas": [
+      "سَٰٓئِحَٰت",
+      "سِيحُ",
+      "سَّٰٓئِحُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 2
+      },
+      "matchedToken": "فَسِيحُوا۟",
+      "matchedLemma": "سِيحُ",
+      "matchedRoot": "سيح",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 112
+      },
+      "matchedToken": "ٱلسَّـٰٓئِحُونَ",
+      "matchedLemma": "سَّٰٓئِحُون",
+      "matchedRoot": "سيح",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 66,
+        "ayah": 5
+      },
+      "matchedToken": "سَـٰٓئِحَـٰتٍۢ",
+      "matchedLemma": "سَٰٓئِحَٰت",
+      "matchedRoot": "سيح",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 2
+    },
+    {
+      "surah": 9,
+      "ayah": 112
+    },
+    {
+      "surah": 66,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

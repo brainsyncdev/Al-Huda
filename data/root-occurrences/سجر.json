@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "سجر",
+    "title": "سجر",
+    "arabicTitle": "سجر",
+    "roots": [
+      "سجر"
+    ],
+    "includedLemmas": [
+      "سُجِّرَتْ",
+      "مَسْجُور",
+      "يُسْجَرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 72
+      },
+      "matchedToken": "يُسْجَرُونَ",
+      "matchedLemma": "يُسْجَرُ",
+      "matchedRoot": "سجر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 6
+      },
+      "matchedToken": "ٱلْمَسْجُورِ",
+      "matchedLemma": "مَسْجُور",
+      "matchedRoot": "سجر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 6
+      },
+      "matchedToken": "سُجِّرَتْ",
+      "matchedLemma": "سُجِّرَتْ",
+      "matchedRoot": "سجر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 40,
+      "ayah": 72
+    },
+    {
+      "surah": 52,
+      "ayah": 6
+    },
+    {
+      "surah": 81,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

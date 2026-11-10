@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "لحد",
+    "title": "لحد",
+    "arabicTitle": "لحد",
+    "roots": [
+      "لحد"
+    ],
+    "includedLemmas": [
+      "إِلْحَاد",
+      "مُلْتَحَد",
+      "يُلْحِدُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 180
+      },
+      "matchedToken": "يُلْحِدُونَ",
+      "matchedLemma": "يُلْحِدُ",
+      "matchedRoot": "لحد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 103
+      },
+      "matchedToken": "يُلْحِدُونَ",
+      "matchedLemma": "يُلْحِدُ",
+      "matchedRoot": "لحد",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 27
+      },
+      "matchedToken": "مُلْتَحَدًۭا",
+      "matchedLemma": "مُلْتَحَد",
+      "matchedRoot": "لحد",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 25
+      },
+      "matchedToken": "بِإِلْحَادٍۭ",
+      "matchedLemma": "إِلْحَاد",
+      "matchedRoot": "لحد",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 40
+      },
+      "matchedToken": "يُلْحِدُونَ",
+      "matchedLemma": "يُلْحِدُ",
+      "matchedRoot": "لحد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 22
+      },
+      "matchedToken": "مُلْتَحَدًا",
+      "matchedLemma": "مُلْتَحَد",
+      "matchedRoot": "لحد",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 180
+    },
+    {
+      "surah": 16,
+      "ayah": 103
+    },
+    {
+      "surah": 18,
+      "ayah": 27
+    },
+    {
+      "surah": 22,
+      "ayah": 25
+    },
+    {
+      "surah": 41,
+      "ayah": 40
+    },
+    {
+      "surah": 72,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

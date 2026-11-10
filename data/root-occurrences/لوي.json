@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "لوي",
+    "title": "لوي",
+    "arabicTitle": "لوي",
+    "roots": [
+      "لوي"
+    ],
+    "includedLemmas": [
+      "لَوَّ",
+      "لَيّ",
+      "يَلْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 78
+      },
+      "matchedToken": "يَلْوُۥنَ",
+      "matchedLemma": "يَلْ",
+      "matchedRoot": "لوي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 153
+      },
+      "matchedToken": "تَلْوُۥنَ",
+      "matchedLemma": "يَلْ",
+      "matchedRoot": "لوي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 46
+      },
+      "matchedToken": "لَيًّۢا",
+      "matchedLemma": "لَيّ",
+      "matchedRoot": "لوي",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 135
+      },
+      "matchedToken": "تَلْوُۥٓا۟",
+      "matchedLemma": "يَلْ",
+      "matchedRoot": "لوي",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 63,
+        "ayah": 5
+      },
+      "matchedToken": "لَوَّوْا۟",
+      "matchedLemma": "لَوَّ",
+      "matchedRoot": "لوي",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 78
+    },
+    {
+      "surah": 3,
+      "ayah": 153
+    },
+    {
+      "surah": 4,
+      "ayah": 46
+    },
+    {
+      "surah": 4,
+      "ayah": 135
+    },
+    {
+      "surah": 63,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

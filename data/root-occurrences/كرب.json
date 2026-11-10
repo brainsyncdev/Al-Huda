@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "كرب",
+    "title": "كرب",
+    "arabicTitle": "كرب",
+    "roots": [
+      "كرب"
+    ],
+    "includedLemmas": [
+      "كَرْب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 64
+      },
+      "matchedToken": "كَرْبٍۢ",
+      "matchedLemma": "كَرْب",
+      "matchedRoot": "كرب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 76
+      },
+      "matchedToken": "ٱلْكَرْبِ",
+      "matchedLemma": "كَرْب",
+      "matchedRoot": "كرب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 76
+      },
+      "matchedToken": "ٱلْكَرْبِ",
+      "matchedLemma": "كَرْب",
+      "matchedRoot": "كرب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 115
+      },
+      "matchedToken": "ٱلْكَرْبِ",
+      "matchedLemma": "كَرْب",
+      "matchedRoot": "كرب",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 64
+    },
+    {
+      "surah": 21,
+      "ayah": 76
+    },
+    {
+      "surah": 37,
+      "ayah": 76
+    },
+    {
+      "surah": 37,
+      "ayah": 115
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

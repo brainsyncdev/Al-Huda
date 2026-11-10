@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "مجد",
+    "title": "مجد",
+    "arabicTitle": "مجد",
+    "roots": [
+      "مجد"
+    ],
+    "includedLemmas": [
+      "مَّجِيد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 73
+      },
+      "matchedToken": "مَّجِيدٌۭ",
+      "matchedLemma": "مَّجِيد",
+      "matchedRoot": "مجد",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْمَجِيدِ",
+      "matchedLemma": "مَّجِيد",
+      "matchedRoot": "مجد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 85,
+        "ayah": 15
+      },
+      "matchedToken": "ٱلْمَجِيدُ",
+      "matchedLemma": "مَّجِيد",
+      "matchedRoot": "مجد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 85,
+        "ayah": 21
+      },
+      "matchedToken": "مَّجِيدٌۭ",
+      "matchedLemma": "مَّجِيد",
+      "matchedRoot": "مجد",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 73
+    },
+    {
+      "surah": 50,
+      "ayah": 1
+    },
+    {
+      "surah": 85,
+      "ayah": 15
+    },
+    {
+      "surah": 85,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "جذذ",
+    "title": "جذذ",
+    "arabicTitle": "جذذ",
+    "roots": [
+      "جذذ"
+    ],
+    "includedLemmas": [
+      "جُذَٰذ",
+      "مَجْذُوذ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 108
+      },
+      "matchedToken": "مَجْذُوذٍۢ",
+      "matchedLemma": "مَجْذُوذ",
+      "matchedRoot": "جذذ",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 58
+      },
+      "matchedToken": "جُذَٰذًا",
+      "matchedLemma": "جُذَٰذ",
+      "matchedRoot": "جذذ",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 108
+    },
+    {
+      "surah": 21,
+      "ayah": 58
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

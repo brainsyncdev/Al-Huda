@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "لين",
+    "title": "لين",
+    "arabicTitle": "لين",
+    "roots": [
+      "لين"
+    ],
+    "includedLemmas": [
+      "لِن",
+      "لَّيِّن",
+      "لِّينَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 159
+      },
+      "matchedToken": "لِنتَ",
+      "matchedLemma": "لِن",
+      "matchedRoot": "لين",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 44
+      },
+      "matchedToken": "لَّيِّنًۭا",
+      "matchedLemma": "لَّيِّن",
+      "matchedRoot": "لين",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 23
+      },
+      "matchedToken": "تَلِينُ",
+      "matchedLemma": "لِن",
+      "matchedRoot": "لين",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 5
+      },
+      "matchedToken": "لِّينَةٍ",
+      "matchedLemma": "لِّينَة",
+      "matchedRoot": "لين",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 159
+    },
+    {
+      "surah": 20,
+      "ayah": 44
+    },
+    {
+      "surah": 39,
+      "ayah": 23
+    },
+    {
+      "surah": 59,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

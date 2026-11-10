@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "دحر",
+    "title": "دحر",
+    "arabicTitle": "دحر",
+    "roots": [
+      "دحر"
+    ],
+    "includedLemmas": [
+      "دُحُور",
+      "مَّدْحُور"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 18
+      },
+      "matchedToken": "مَّدْحُورًۭا ۖ",
+      "matchedLemma": "مَّدْحُور",
+      "matchedRoot": "دحر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 18
+      },
+      "matchedToken": "مَّدْحُورًۭا",
+      "matchedLemma": "مَّدْحُور",
+      "matchedRoot": "دحر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 39
+      },
+      "matchedToken": "مَّدْحُورًا",
+      "matchedLemma": "مَّدْحُور",
+      "matchedRoot": "دحر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 9
+      },
+      "matchedToken": "دُحُورًۭا ۖ",
+      "matchedLemma": "دُحُور",
+      "matchedRoot": "دحر",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 18
+    },
+    {
+      "surah": 17,
+      "ayah": 18
+    },
+    {
+      "surah": 17,
+      "ayah": 39
+    },
+    {
+      "surah": 37,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "صبو",
+    "title": "صبو",
+    "arabicTitle": "صبو",
+    "roots": [
+      "صبو"
+    ],
+    "includedLemmas": [
+      "أَصْبُ",
+      "صَبِيّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 33
+      },
+      "matchedToken": "أَصْبُ",
+      "matchedLemma": "أَصْبُ",
+      "matchedRoot": "صبو",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 12
+      },
+      "matchedToken": "صَبِيًّۭا",
+      "matchedLemma": "صَبِيّ",
+      "matchedRoot": "صبو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 29
+      },
+      "matchedToken": "صَبِيًّۭا",
+      "matchedLemma": "صَبِيّ",
+      "matchedRoot": "صبو",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 33
+    },
+    {
+      "surah": 19,
+      "ayah": 12
+    },
+    {
+      "surah": 19,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

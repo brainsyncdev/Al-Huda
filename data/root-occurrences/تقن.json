@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "تقن",
+    "title": "تقن",
+    "arabicTitle": "تقن",
+    "roots": [
+      "تقن"
+    ],
+    "includedLemmas": [
+      "أَتْقَنَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 88
+      },
+      "matchedToken": "أَتْقَنَ",
+      "matchedLemma": "أَتْقَنَ",
+      "matchedRoot": "تقن",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 27,
+      "ayah": 88
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

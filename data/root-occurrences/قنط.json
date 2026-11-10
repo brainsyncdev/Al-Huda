@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "قنط",
+    "title": "قنط",
+    "arabicTitle": "قنط",
+    "roots": [
+      "قنط"
+    ],
+    "includedLemmas": [
+      "قَنَطُ",
+      "قَنُوط",
+      "قَٰنِطِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 55
+      },
+      "matchedToken": "ٱلْقَـٰنِطِينَ",
+      "matchedLemma": "قَٰنِطِين",
+      "matchedRoot": "قنط",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 56
+      },
+      "matchedToken": "يَقْنَطُ",
+      "matchedLemma": "قَنَطُ",
+      "matchedRoot": "قنط",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 36
+      },
+      "matchedToken": "يَقْنَطُونَ",
+      "matchedLemma": "قَنَطُ",
+      "matchedRoot": "قنط",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 53
+      },
+      "matchedToken": "تَقْنَطُوا۟",
+      "matchedLemma": "قَنَطُ",
+      "matchedRoot": "قنط",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 49
+      },
+      "matchedToken": "قَنُوطٌۭ",
+      "matchedLemma": "قَنُوط",
+      "matchedRoot": "قنط",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 28
+      },
+      "matchedToken": "قَنَطُوا۟",
+      "matchedLemma": "قَنَطُ",
+      "matchedRoot": "قنط",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 55
+    },
+    {
+      "surah": 15,
+      "ayah": 56
+    },
+    {
+      "surah": 30,
+      "ayah": 36
+    },
+    {
+      "surah": 39,
+      "ayah": 53
+    },
+    {
+      "surah": 41,
+      "ayah": 49
+    },
+    {
+      "surah": 42,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

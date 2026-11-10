@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "سفح",
+    "title": "سفح",
+    "arabicTitle": "سفح",
+    "roots": [
+      "سفح"
+    ],
+    "includedLemmas": [
+      "مُسَٰفِحَٰت",
+      "مُسَٰفِحِين",
+      "مَّسْفُوح"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 24
+      },
+      "matchedToken": "مُسَـٰفِحِينَ ۚ",
+      "matchedLemma": "مُسَٰفِحِين",
+      "matchedRoot": "سفح",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 25
+      },
+      "matchedToken": "مُسَـٰفِحَـٰتٍۢ",
+      "matchedLemma": "مُسَٰفِحَٰت",
+      "matchedRoot": "سفح",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 5
+      },
+      "matchedToken": "مُسَـٰفِحِينَ",
+      "matchedLemma": "مُسَٰفِحِين",
+      "matchedRoot": "سفح",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 145
+      },
+      "matchedToken": "مَّسْفُوحًا",
+      "matchedLemma": "مَّسْفُوح",
+      "matchedRoot": "سفح",
+      "wordPosition": 18
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 24
+    },
+    {
+      "surah": 4,
+      "ayah": 25
+    },
+    {
+      "surah": 5,
+      "ayah": 5
+    },
+    {
+      "surah": 6,
+      "ayah": 145
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

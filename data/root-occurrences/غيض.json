@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "غيض",
+    "title": "غيض",
+    "arabicTitle": "غيض",
+    "roots": [
+      "غيض"
+    ],
+    "includedLemmas": [
+      "غِيضَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 44
+      },
+      "matchedToken": "وَغِيضَ",
+      "matchedLemma": "غِيضَ",
+      "matchedRoot": "غيض",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 8
+      },
+      "matchedToken": "تَغِيضُ",
+      "matchedLemma": "غِيضَ",
+      "matchedRoot": "غيض",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 44
+    },
+    {
+      "surah": 13,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

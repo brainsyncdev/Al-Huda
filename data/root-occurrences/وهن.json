@@ -1,0 +1,149 @@
+{
+  "entry": {
+    "slug": "وهن",
+    "title": "وهن",
+    "arabicTitle": "وهن",
+    "roots": [
+      "وهن"
+    ],
+    "includedLemmas": [
+      "أَوْهَن",
+      "مُوهِن",
+      "وَهَنَ",
+      "وَهْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 139
+      },
+      "matchedToken": "تَهِنُوا۟",
+      "matchedLemma": "وَهَنَ",
+      "matchedRoot": "وهن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 146
+      },
+      "matchedToken": "وَهَنُوا۟",
+      "matchedLemma": "وَهَنَ",
+      "matchedRoot": "وهن",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 104
+      },
+      "matchedToken": "تَهِنُوا۟",
+      "matchedLemma": "وَهَنَ",
+      "matchedRoot": "وهن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 18
+      },
+      "matchedToken": "مُوهِنُ",
+      "matchedLemma": "مُوهِن",
+      "matchedRoot": "وهن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 4
+      },
+      "matchedToken": "وَهَنَ",
+      "matchedLemma": "وَهَنَ",
+      "matchedRoot": "وهن",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 41
+      },
+      "matchedToken": "أَوْهَنَ",
+      "matchedLemma": "أَوْهَن",
+      "matchedRoot": "وهن",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 14
+      },
+      "matchedToken": "وَهْنًا",
+      "matchedLemma": "وَهْن",
+      "matchedRoot": "وهن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 14
+      },
+      "matchedToken": "وَهْنٍۢ",
+      "matchedLemma": "وَهْن",
+      "matchedRoot": "وهن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 35
+      },
+      "matchedToken": "تَهِنُوا۟",
+      "matchedLemma": "وَهَنَ",
+      "matchedRoot": "وهن",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 139
+    },
+    {
+      "surah": 3,
+      "ayah": 146
+    },
+    {
+      "surah": 4,
+      "ayah": 104
+    },
+    {
+      "surah": 8,
+      "ayah": 18
+    },
+    {
+      "surah": 19,
+      "ayah": 4
+    },
+    {
+      "surah": 29,
+      "ayah": 41
+    },
+    {
+      "surah": 31,
+      "ayah": 14
+    },
+    {
+      "surah": 47,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

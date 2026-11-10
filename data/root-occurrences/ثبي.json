@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "ثبي",
+    "title": "ثبي",
+    "arabicTitle": "ثبي",
+    "roots": [
+      "ثبي"
+    ],
+    "includedLemmas": [
+      "ثُبَات"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 71
+      },
+      "matchedToken": "ثُبَاتٍ",
+      "matchedLemma": "ثُبَات",
+      "matchedRoot": "ثبي",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

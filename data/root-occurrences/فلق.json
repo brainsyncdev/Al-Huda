@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "فلق",
+    "title": "فلق",
+    "arabicTitle": "فلق",
+    "roots": [
+      "فلق"
+    ],
+    "includedLemmas": [
+      "انفَلَقَ",
+      "فَالِق",
+      "فَلَق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 95
+      },
+      "matchedToken": "فَالِقُ",
+      "matchedLemma": "فَالِق",
+      "matchedRoot": "فلق",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 96
+      },
+      "matchedToken": "فَالِقُ",
+      "matchedLemma": "فَالِق",
+      "matchedRoot": "فلق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 63
+      },
+      "matchedToken": "فَٱنفَلَقَ",
+      "matchedLemma": "انفَلَقَ",
+      "matchedRoot": "فلق",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 113,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْفَلَقِ",
+      "matchedLemma": "فَلَق",
+      "matchedRoot": "فلق",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 95
+    },
+    {
+      "surah": 6,
+      "ayah": 96
+    },
+    {
+      "surah": 26,
+      "ayah": 63
+    },
+    {
+      "surah": 113,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

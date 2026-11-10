@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "وصد",
+    "title": "وصد",
+    "arabicTitle": "وصد",
+    "roots": [
+      "وصد"
+    ],
+    "includedLemmas": [
+      "مُّؤْصَدَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 90,
+        "ayah": 20
+      },
+      "matchedToken": "مُّؤْصَدَةٌۢ",
+      "matchedLemma": "مُّؤْصَدَة",
+      "matchedRoot": "وصد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 8
+      },
+      "matchedToken": "مُّؤْصَدَةٌۭ",
+      "matchedLemma": "مُّؤْصَدَة",
+      "matchedRoot": "وصد",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 90,
+      "ayah": 20
+    },
+    {
+      "surah": 104,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

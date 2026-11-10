@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "كلو",
+    "title": "كلو",
+    "arabicTitle": "كلو",
+    "roots": [
+      "كلو"
+    ],
+    "includedLemmas": [
+      "كِلَا",
+      "كِلْتَا"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 23
+      },
+      "matchedToken": "كِلَاهُمَا",
+      "matchedLemma": "كِلَا",
+      "matchedRoot": "كلو",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 33
+      },
+      "matchedToken": "كِلْتَا",
+      "matchedLemma": "كِلْتَا",
+      "matchedRoot": "كلو",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 23
+    },
+    {
+      "surah": 18,
+      "ayah": 33
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

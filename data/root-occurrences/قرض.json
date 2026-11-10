@@ -1,0 +1,184 @@
+{
+  "entry": {
+    "slug": "قرض",
+    "title": "قرض",
+    "arabicTitle": "قرض",
+    "roots": [
+      "قرض"
+    ],
+    "includedLemmas": [
+      "أَقْرَضُ",
+      "تَّقْرِضُ",
+      "قَرْض"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 245
+      },
+      "matchedToken": "يُقْرِضُ",
+      "matchedLemma": "أَقْرَضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 245
+      },
+      "matchedToken": "قَرْضًا",
+      "matchedLemma": "قَرْض",
+      "matchedRoot": "قرض",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 12
+      },
+      "matchedToken": "وَأَقْرَضْتُمُ",
+      "matchedLemma": "أَقْرَضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 12
+      },
+      "matchedToken": "قَرْضًا",
+      "matchedLemma": "قَرْض",
+      "matchedRoot": "قرض",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 17
+      },
+      "matchedToken": "تَّقْرِضُهُمْ",
+      "matchedLemma": "تَّقْرِضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 11
+      },
+      "matchedToken": "يُقْرِضُ",
+      "matchedLemma": "أَقْرَضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 11
+      },
+      "matchedToken": "قَرْضًا",
+      "matchedLemma": "قَرْض",
+      "matchedRoot": "قرض",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 18
+      },
+      "matchedToken": "وَأَقْرَضُوا۟",
+      "matchedLemma": "أَقْرَضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 18
+      },
+      "matchedToken": "قَرْضًا",
+      "matchedLemma": "قَرْض",
+      "matchedRoot": "قرض",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 64,
+        "ayah": 17
+      },
+      "matchedToken": "تُقْرِضُوا۟",
+      "matchedLemma": "أَقْرَضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 64,
+        "ayah": 17
+      },
+      "matchedToken": "قَرْضًا",
+      "matchedLemma": "قَرْض",
+      "matchedRoot": "قرض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 20
+      },
+      "matchedToken": "وَأَقْرِضُوا۟",
+      "matchedLemma": "أَقْرَضُ",
+      "matchedRoot": "قرض",
+      "wordPosition": 57
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 20
+      },
+      "matchedToken": "قَرْضًا",
+      "matchedLemma": "قَرْض",
+      "matchedRoot": "قرض",
+      "wordPosition": 59
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 245
+    },
+    {
+      "surah": 5,
+      "ayah": 12
+    },
+    {
+      "surah": 18,
+      "ayah": 17
+    },
+    {
+      "surah": 57,
+      "ayah": 11
+    },
+    {
+      "surah": 57,
+      "ayah": 18
+    },
+    {
+      "surah": 64,
+      "ayah": 17
+    },
+    {
+      "surah": 73,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 13,
+  "totalMatches": 13,
+  "pagination": null
+}

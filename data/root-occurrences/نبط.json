@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نبط",
+    "title": "نبط",
+    "arabicTitle": "نبط",
+    "roots": [
+      "نبط"
+    ],
+    "includedLemmas": [
+      "يَسْتَنۢبِطُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 83
+      },
+      "matchedToken": "يَسْتَنۢبِطُونَهُۥ",
+      "matchedLemma": "يَسْتَنۢبِطُ",
+      "matchedRoot": "نبط",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 83
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

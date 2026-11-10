@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "وجس",
+    "title": "وجس",
+    "arabicTitle": "وجس",
+    "roots": [
+      "وجس"
+    ],
+    "includedLemmas": [
+      "أَوْجَسَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 70
+      },
+      "matchedToken": "وَأَوْجَسَ",
+      "matchedLemma": "أَوْجَسَ",
+      "matchedRoot": "وجس",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 67
+      },
+      "matchedToken": "فَأَوْجَسَ",
+      "matchedLemma": "أَوْجَسَ",
+      "matchedRoot": "وجس",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 28
+      },
+      "matchedToken": "فَأَوْجَسَ",
+      "matchedLemma": "أَوْجَسَ",
+      "matchedRoot": "وجس",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 70
+    },
+    {
+      "surah": 20,
+      "ayah": 67
+    },
+    {
+      "surah": 51,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

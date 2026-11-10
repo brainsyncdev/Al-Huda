@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "نفش",
+    "title": "نفش",
+    "arabicTitle": "نفش",
+    "roots": [
+      "نفش"
+    ],
+    "includedLemmas": [
+      "مَنفُوش",
+      "نَفَشَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 78
+      },
+      "matchedToken": "نَفَشَتْ",
+      "matchedLemma": "نَفَشَتْ",
+      "matchedRoot": "نفش",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 5
+      },
+      "matchedToken": "ٱلْمَنفُوشِ",
+      "matchedLemma": "مَنفُوش",
+      "matchedRoot": "نفش",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 78
+    },
+    {
+      "surah": 101,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

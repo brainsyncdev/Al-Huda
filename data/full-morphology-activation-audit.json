@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-11-10T13:17:06.742Z",
+  "policyVersion": "1.0.0",
+  "sourceDataset": "qul-morphology-v1",
+  "summary": {
+    "occurrenceFilesTotal": 1576,
+    "occurrenceFilesPopulated": 1574,
+    "occurrenceFilesEmpty": 2,
+    "totalOccurrencesInFiles": 44550,
+    "totalDistinctAyatInFiles": 39720,
+    "rootsWithActivatedOccurrences": 1574
+  },
+  "sourceReconciliation": {
+    "totalWordLevelRecords": 50298,
+    "activated": 44550,
+    "needsReview": 4079,
+    "missingLemma": 1669,
+    "unexplained": 0,
+    "accountedFor": 50298,
+    "allAccountedFor": true
+  },
+  "verification": {
+    "failures": [],
+    "warnings": [],
+    "failureCount": 0,
+    "warningCount": 0,
+    "passed": true
+  }
+}

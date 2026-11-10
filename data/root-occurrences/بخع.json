@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "بخع",
+    "title": "بخع",
+    "arabicTitle": "بخع",
+    "roots": [
+      "بخع"
+    ],
+    "includedLemmas": [
+      "بَٰخِع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 6
+      },
+      "matchedToken": "بَـٰخِعٌۭ",
+      "matchedLemma": "بَٰخِع",
+      "matchedRoot": "بخع",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 3
+      },
+      "matchedToken": "بَـٰخِعٌۭ",
+      "matchedLemma": "بَٰخِع",
+      "matchedRoot": "بخع",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 6
+    },
+    {
+      "surah": 26,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

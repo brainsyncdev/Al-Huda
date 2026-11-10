@@ -1,0 +1,1786 @@
+{
+  "generatedAt": "2026-11-09T10:45:59.391Z",
+  "generator": "scripts/extract-lemma-evidence.mjs",
+  "sourceDataset": "qul-morphology-v1",
+  "purpose": "Evidence workbook for human lemma review of the 10 manual ROOT_ALLOWLIST entries. The reviewer fills in `inclusionDecision` and `reviewerStatus` for each root. This script makes NO inclusion decisions.",
+  "instructions": "For each root: (1) examine the lemma distribution, (2) consider the polysemy concerns, (3) mark each lemma as 'include' or 'exclude' in the reviewerDecision field, (4) set reviewerStatus to 'approved' when complete. The includedLemmas array in root-allowlist.ts should then be populated with the approved lemmas.",
+  "roots": [
+    {
+      "slug": "sabr",
+      "title": "Patience",
+      "arabicTitle": "الصبر",
+      "root": "صبر",
+      "existingAllowlistNotes": "103 occurrences across 93 ayat, 8 lemmas. Top: صَبَرَ (58), صَابِرُ (20), صَبْرٌ (15). Polysemy: relatively unambiguous — primary meaning is patience/perseverance.",
+      "polysemyConcerns": [
+        "Relatively unambiguous — primary meaning is patience/perseverance"
+      ],
+      "totalWordRecords": 103,
+      "distinctAyat": 93,
+      "recordsWithLemma": 103,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "صَبَرَ",
+          "count": 58,
+          "percentage": 56.310679611650485,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَابِر",
+          "count": 20,
+          "percentage": 19.41747572815534,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَبْر",
+          "count": 15,
+          "percentage": 14.563106796116504,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَبَّار",
+          "count": 4,
+          "percentage": 3.8834951456310676,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "اصْطَبِرْ",
+          "count": 3,
+          "percentage": 2.912621359223301,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَابِرُ",
+          "count": 1,
+          "percentage": 0.9708737864077669,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَّٰبِرَٰت",
+          "count": 1,
+          "percentage": 0.9708737864077669,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَابِرَة",
+          "count": 1,
+          "percentage": 0.9708737864077669,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 45,
+          "token": "بِٱلصَّبْرِ",
+          "lemma": "صَبْر",
+          "wordPosition": 2
+        },
+        {
+          "surah": 2,
+          "ayah": 61,
+          "token": "نَّصْبِرَ",
+          "lemma": "صَبَرَ",
+          "wordPosition": 5
+        },
+        {
+          "surah": 2,
+          "ayah": 153,
+          "token": "بِٱلصَّبْرِ",
+          "lemma": "صَبْر",
+          "wordPosition": 5
+        },
+        {
+          "surah": 2,
+          "ayah": 153,
+          "token": "ٱلصَّـٰبِرِينَ",
+          "lemma": "صَابِر",
+          "wordPosition": 10
+        },
+        {
+          "surah": 2,
+          "ayah": 155,
+          "token": "ٱلصَّـٰبِرِينَ",
+          "lemma": "صَابِر",
+          "wordPosition": 12
+        },
+        {
+          "surah": 2,
+          "ayah": 175,
+          "token": "أَصْبَرَهُمْ",
+          "lemma": "صَبَرَ",
+          "wordPosition": 9
+        },
+        {
+          "surah": 2,
+          "ayah": 177,
+          "token": "وَٱلصَّـٰبِرِينَ",
+          "lemma": "صَابِر",
+          "wordPosition": 40
+        },
+        {
+          "surah": 2,
+          "ayah": 249,
+          "token": "ٱلصَّـٰبِرِينَ",
+          "lemma": "صَابِر",
+          "wordPosition": 60
+        },
+        {
+          "surah": 2,
+          "ayah": 250,
+          "token": "صَبْرًۭا",
+          "lemma": "صَبْر",
+          "wordPosition": 9
+        },
+        {
+          "surah": 3,
+          "ayah": 17,
+          "token": "ٱلصَّـٰبِرِينَ",
+          "lemma": "صَابِر",
+          "wordPosition": 1
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "shukr",
+      "title": "Gratitude",
+      "arabicTitle": "الشكر",
+      "root": "شكر",
+      "existingAllowlistNotes": "75 occurrences across 69 ayat, 6 lemmas. Top: شَكَرَ (46), شَاكِرُ (14), شَكُورٌ (10). Polysemy: relatively unambiguous — primary meaning is gratitude/thankfulness.",
+      "polysemyConcerns": [
+        "Relatively unambiguous — primary meaning is gratitude/thankfulness"
+      ],
+      "totalWordRecords": 75,
+      "distinctAyat": 69,
+      "recordsWithLemma": 75,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "شَكَرَ",
+          "count": 46,
+          "percentage": 61.33333333333333,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "شَاكِر",
+          "count": 14,
+          "percentage": 18.666666666666668,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "شَكُور",
+          "count": 10,
+          "percentage": 13.333333333333334,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مَّشْكُور",
+          "count": 2,
+          "percentage": 2.666666666666667,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "شُكُور",
+          "count": 2,
+          "percentage": 2.666666666666667,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "شُكْر",
+          "count": 1,
+          "percentage": 1.3333333333333335,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 52,
+          "token": "تَشْكُرُونَ",
+          "lemma": "شَكَرَ",
+          "wordPosition": 8
+        },
+        {
+          "surah": 2,
+          "ayah": 56,
+          "token": "تَشْكُرُونَ",
+          "lemma": "شَكَرَ",
+          "wordPosition": 7
+        },
+        {
+          "surah": 2,
+          "ayah": 152,
+          "token": "وَٱشْكُرُوا۟",
+          "lemma": "شَكَرَ",
+          "wordPosition": 3
+        },
+        {
+          "surah": 2,
+          "ayah": 158,
+          "token": "شَاكِرٌ",
+          "lemma": "شَاكِر",
+          "wordPosition": 23
+        },
+        {
+          "surah": 2,
+          "ayah": 172,
+          "token": "وَٱشْكُرُوا۟",
+          "lemma": "شَكَرَ",
+          "wordPosition": 9
+        },
+        {
+          "surah": 2,
+          "ayah": 185,
+          "token": "تَشْكُرُونَ",
+          "lemma": "شَكَرَ",
+          "wordPosition": 44
+        },
+        {
+          "surah": 2,
+          "ayah": 243,
+          "token": "يَشْكُرُونَ",
+          "lemma": "شَكَرَ",
+          "wordPosition": 28
+        },
+        {
+          "surah": 3,
+          "ayah": 123,
+          "token": "تَشْكُرُونَ",
+          "lemma": "شَكَرَ",
+          "wordPosition": 10
+        },
+        {
+          "surah": 3,
+          "ayah": 144,
+          "token": "ٱلشَّـٰكِرِينَ",
+          "lemma": "شَاكِر",
+          "wordPosition": 27
+        },
+        {
+          "surah": 3,
+          "ayah": 145,
+          "token": "ٱلشَّـٰكِرِينَ",
+          "lemma": "شَاكِر",
+          "wordPosition": 24
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "rahmah",
+      "title": "Mercy",
+      "arabicTitle": "الرحمة",
+      "root": "رحم",
+      "existingAllowlistNotes": "339 occurrences across 313 ayat, 9 lemmas. Top: رَّحِيمٌ (116), رَحْمَةٌ (114), رَّحْمَٰنٌ (57). Polysemy: includes الأرحام (kinship/womb) — reviewer must decide which lemmas belong to mercy topic.",
+      "polysemyConcerns": [
+        "Includes الأرحام (kinship/womb) — would pollute mercy topic",
+        "Reviewer must decide which lemmas belong"
+      ],
+      "totalWordRecords": 339,
+      "distinctAyat": 313,
+      "recordsWithLemma": 339,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "رَّحِيم",
+          "count": 116,
+          "percentage": 34.21828908554572,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "رَحْمَة",
+          "count": 114,
+          "percentage": 33.6283185840708,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "رَّحْمَٰن",
+          "count": 57,
+          "percentage": 16.8141592920354,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "رَّحِمَ",
+          "count": 28,
+          "percentage": 8.259587020648967,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَرْحَام",
+          "count": 12,
+          "percentage": 3.5398230088495577,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "رَّٰحِمِين",
+          "count": 6,
+          "percentage": 1.7699115044247788,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَرْحَم",
+          "count": 4,
+          "percentage": 1.1799410029498525,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "رُحْم",
+          "count": 1,
+          "percentage": 0.2949852507374631,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مَرْحَمَة",
+          "count": 1,
+          "percentage": 0.2949852507374631,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 1,
+          "ayah": 1,
+          "token": "ٱلرَّحْمَـٰنِ",
+          "lemma": "رَّحْمَٰن",
+          "wordPosition": 3
+        },
+        {
+          "surah": 1,
+          "ayah": 1,
+          "token": "ٱلرَّحِيمِ",
+          "lemma": "رَّحِيم",
+          "wordPosition": 4
+        },
+        {
+          "surah": 1,
+          "ayah": 3,
+          "token": "ٱلرَّحْمَـٰنِ",
+          "lemma": "رَّحْمَٰن",
+          "wordPosition": 1
+        },
+        {
+          "surah": 1,
+          "ayah": 3,
+          "token": "ٱلرَّحِيمِ",
+          "lemma": "رَّحِيم",
+          "wordPosition": 2
+        },
+        {
+          "surah": 2,
+          "ayah": 37,
+          "token": "ٱلرَّحِيمُ",
+          "lemma": "رَّحِيم",
+          "wordPosition": 11
+        },
+        {
+          "surah": 2,
+          "ayah": 54,
+          "token": "ٱلرَّحِيمُ",
+          "lemma": "رَّحِيم",
+          "wordPosition": 26
+        },
+        {
+          "surah": 2,
+          "ayah": 64,
+          "token": "وَرَحْمَتُهُۥ",
+          "lemma": "رَحْمَة",
+          "wordPosition": 10
+        },
+        {
+          "surah": 2,
+          "ayah": 105,
+          "token": "بِرَحْمَتِهِۦ",
+          "lemma": "رَحْمَة",
+          "wordPosition": 19
+        },
+        {
+          "surah": 2,
+          "ayah": 128,
+          "token": "ٱلرَّحِيمُ",
+          "lemma": "رَّحِيم",
+          "wordPosition": 17
+        },
+        {
+          "surah": 2,
+          "ayah": 143,
+          "token": "رَّحِيمٌۭ",
+          "lemma": "رَّحِيم",
+          "wordPosition": 45
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "ilm",
+      "title": "Knowledge",
+      "arabicTitle": "العلم",
+      "root": "علم",
+      "existingAllowlistNotes": "854 occurrences across 728 ayat, 14 lemmas. Top: عَلِمَ (382), عَلِيمٌ (163), عِلْمٌ (105). Polysemy: includes العالمين (the worlds) — would put 'Rabb al-alamin' ayahs in knowledge topic. Very high frequency root.",
+      "polysemyConcerns": [
+        "Includes العالمين (the worlds) — would put 'Rabb al-alamin' ayahs in knowledge topic",
+        "Very high frequency root"
+      ],
+      "totalWordRecords": 854,
+      "distinctAyat": 728,
+      "recordsWithLemma": 848,
+      "recordsWithoutLemma": 6,
+      "lemmaCoverage": 0.9929742388758782,
+      "lemmaDistribution": [
+        {
+          "lemma": "عَلِمَ",
+          "count": 382,
+          "percentage": 44.730679156908664,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عَلِيم",
+          "count": 163,
+          "percentage": 19.086651053864166,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عِلْم",
+          "count": 105,
+          "percentage": 12.295081967213115,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عَٰلَمِين",
+          "count": 73,
+          "percentage": 8.548009367681498,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَعْلَم",
+          "count": 49,
+          "percentage": 5.737704918032787,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عَلَّمَ",
+          "count": 41,
+          "percentage": 4.8009367681498825,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عَٰلِم",
+          "count": 12,
+          "percentage": 1.405152224824356,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مَّعْلُوم",
+          "count": 11,
+          "percentage": 1.288056206088993,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عَلَّٰم",
+          "count": 4,
+          "percentage": 0.468384074941452,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مَّعْلُومَٰت",
+          "count": 2,
+          "percentage": 0.234192037470726,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَعْلَٰم",
+          "count": 2,
+          "percentage": 0.234192037470726,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "يَتَعَلَّمُ",
+          "count": 2,
+          "percentage": 0.234192037470726,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "عَلَٰمَٰت",
+          "count": 1,
+          "percentage": 0.117096018735363,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُعَلَّم",
+          "count": 1,
+          "percentage": 0.117096018735363,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 1,
+          "ayah": 2,
+          "token": "ٱلْعَـٰلَمِينَ",
+          "lemma": "عَٰلَمِين",
+          "wordPosition": 4
+        },
+        {
+          "surah": 2,
+          "ayah": 13,
+          "token": "يَعْلَمُونَ",
+          "lemma": "عَلِمَ",
+          "wordPosition": 19
+        },
+        {
+          "surah": 2,
+          "ayah": 22,
+          "token": "تَعْلَمُونَ",
+          "lemma": "عَلِمَ",
+          "wordPosition": 23
+        },
+        {
+          "surah": 2,
+          "ayah": 26,
+          "token": "فَيَعْلَمُونَ",
+          "lemma": "عَلِمَ",
+          "wordPosition": 15
+        },
+        {
+          "surah": 2,
+          "ayah": 29,
+          "token": "عَلِيمٌۭ",
+          "lemma": "عَلِيم",
+          "wordPosition": 19
+        },
+        {
+          "surah": 2,
+          "ayah": 30,
+          "token": "أَعْلَمُ",
+          "lemma": "عَلِمَ",
+          "wordPosition": 25
+        },
+        {
+          "surah": 2,
+          "ayah": 30,
+          "token": "تَعْلَمُونَ",
+          "lemma": "عَلِمَ",
+          "wordPosition": 28
+        },
+        {
+          "surah": 2,
+          "ayah": 31,
+          "token": "وَعَلَّمَ",
+          "lemma": "عَلَّمَ",
+          "wordPosition": 1
+        },
+        {
+          "surah": 2,
+          "ayah": 32,
+          "token": "عِلْمَ",
+          "lemma": "عِلْم",
+          "wordPosition": 4
+        },
+        {
+          "surah": 2,
+          "ayah": 32,
+          "token": "عَلَّمْتَنَآ ۖ",
+          "lemma": "عَلَّمَ",
+          "wordPosition": 8
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "tawbah",
+      "title": "Repentance",
+      "arabicTitle": "التوبة",
+      "root": "توب",
+      "existingAllowlistNotes": "87 occurrences across 69 ayat, 7 lemmas. Top: تَابَ (63), تَوَّابٌ (12), تَوْبَةٌ (7). Polysemy: relatively unambiguous — primary meaning is repentance/return.",
+      "polysemyConcerns": [
+        "Relatively unambiguous — primary meaning is repentance/return"
+      ],
+      "totalWordRecords": 87,
+      "distinctAyat": 69,
+      "recordsWithLemma": 87,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "تَابَ",
+          "count": 63,
+          "percentage": 72.41379310344827,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَوَّاب",
+          "count": 12,
+          "percentage": 13.793103448275861,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَوْبَة",
+          "count": 7,
+          "percentage": 8.045977011494253,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مَتَاب",
+          "count": 2,
+          "percentage": 2.2988505747126435,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَّٰٓئِبُون",
+          "count": 1,
+          "percentage": 1.1494252873563218,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَّوْب",
+          "count": 1,
+          "percentage": 1.1494252873563218,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَٰٓئِبَٰت",
+          "count": 1,
+          "percentage": 1.1494252873563218,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 37,
+          "token": "فَتَابَ",
+          "lemma": "تَابَ",
+          "wordPosition": 6
+        },
+        {
+          "surah": 2,
+          "ayah": 37,
+          "token": "ٱلتَّوَّابُ",
+          "lemma": "تَوَّاب",
+          "wordPosition": 10
+        },
+        {
+          "surah": 2,
+          "ayah": 54,
+          "token": "فَتُوبُوٓا۟",
+          "lemma": "تَابَ",
+          "wordPosition": 11
+        },
+        {
+          "surah": 2,
+          "ayah": 54,
+          "token": "فَتَابَ",
+          "lemma": "تَابَ",
+          "wordPosition": 21
+        },
+        {
+          "surah": 2,
+          "ayah": 54,
+          "token": "ٱلتَّوَّابُ",
+          "lemma": "تَوَّاب",
+          "wordPosition": 25
+        },
+        {
+          "surah": 2,
+          "ayah": 128,
+          "token": "وَتُبْ",
+          "lemma": "تَابَ",
+          "wordPosition": 12
+        },
+        {
+          "surah": 2,
+          "ayah": 128,
+          "token": "ٱلتَّوَّابُ",
+          "lemma": "تَوَّاب",
+          "wordPosition": 16
+        },
+        {
+          "surah": 2,
+          "ayah": 160,
+          "token": "تَابُوا۟",
+          "lemma": "تَابَ",
+          "wordPosition": 3
+        },
+        {
+          "surah": 2,
+          "ayah": 160,
+          "token": "أَتُوبُ",
+          "lemma": "تَابَ",
+          "wordPosition": 7
+        },
+        {
+          "surah": 2,
+          "ayah": 160,
+          "token": "ٱلتَّوَّابُ",
+          "lemma": "تَوَّاب",
+          "wordPosition": 10
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "maghfirah",
+      "title": "Forgiveness",
+      "arabicTitle": "المغفرة",
+      "root": "غفر",
+      "existingAllowlistNotes": "234 occurrences across 202 ayat, 10 lemmas. Top: غَفَرَ (65), غَفُورٌ (58), اسْتَغْفَرَ (40). Polysemy: relatively unambiguous — primary meaning is forgiveness/covering.",
+      "polysemyConcerns": [
+        "Relatively unambiguous — primary meaning is forgiveness/covering"
+      ],
+      "totalWordRecords": 234,
+      "distinctAyat": 202,
+      "recordsWithLemma": 205,
+      "recordsWithoutLemma": 29,
+      "lemmaCoverage": 0.8760683760683761,
+      "lemmaDistribution": [
+        {
+          "lemma": "غَفَرَ",
+          "count": 65,
+          "percentage": 27.77777777777778,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "غَفُور",
+          "count": 58,
+          "percentage": 24.786324786324787,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "اسْتَغْفَرَ",
+          "count": 40,
+          "percentage": 17.094017094017094,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مَّغْفِرَة",
+          "count": 28,
+          "percentage": 11.965811965811966,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "غَفَّار",
+          "count": 5,
+          "percentage": 2.1367521367521367,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كَانَ",
+          "count": 4,
+          "percentage": 1.7094017094017095,
+          "consonantallyCompatible": false,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "غَافِر",
+          "count": 2,
+          "percentage": 0.8547008547008548,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "اسْتِغْفَار",
+          "count": 1,
+          "percentage": 0.4273504273504274,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُسْتَغْفِرِين",
+          "count": 1,
+          "percentage": 0.4273504273504274,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "غُفْرَان",
+          "count": 1,
+          "percentage": 0.4273504273504274,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 1,
+      "incompatibleLemmas": [
+        {
+          "lemma": "كَانَ",
+          "count": 4
+        }
+      ],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 58,
+          "token": "نَّغْفِرْ",
+          "lemma": "غَفَرَ",
+          "wordPosition": 16
+        },
+        {
+          "surah": 2,
+          "ayah": 173,
+          "token": "غَفُورٌۭ",
+          "lemma": "غَفُور",
+          "wordPosition": 24
+        },
+        {
+          "surah": 2,
+          "ayah": 175,
+          "token": "بِٱلْمَغْفِرَةِ ۚ",
+          "lemma": "مَّغْفِرَة",
+          "wordPosition": 7
+        },
+        {
+          "surah": 2,
+          "ayah": 182,
+          "token": "غَفُورٌۭ",
+          "lemma": null,
+          "wordPosition": 15
+        },
+        {
+          "surah": 2,
+          "ayah": 192,
+          "token": "غَفُورٌۭ",
+          "lemma": "غَفُور",
+          "wordPosition": 5
+        },
+        {
+          "surah": 2,
+          "ayah": 199,
+          "token": "وَٱسْتَغْفِرُوا۟",
+          "lemma": "اسْتَغْفَرَ",
+          "wordPosition": 7
+        },
+        {
+          "surah": 2,
+          "ayah": 199,
+          "token": "غَفُورٌۭ",
+          "lemma": null,
+          "wordPosition": 11
+        },
+        {
+          "surah": 2,
+          "ayah": 218,
+          "token": "غَفُورٌۭ",
+          "lemma": null,
+          "wordPosition": 15
+        },
+        {
+          "surah": 2,
+          "ayah": 221,
+          "token": "وَٱلْمَغْفِرَةِ",
+          "lemma": "مَّغْفِرَة",
+          "wordPosition": 33
+        },
+        {
+          "surah": 2,
+          "ayah": 225,
+          "token": "غَفُورٌ",
+          "lemma": null,
+          "wordPosition": 13
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "kibr",
+      "title": "Greatness/Arrogance",
+      "arabicTitle": "الكبر",
+      "root": "كبر",
+      "existingAllowlistNotes": "161 occurrences across 153 ayat, 19 lemmas. Top: اسْتَكْبَرَ (40), كَبِيرٌ (40), أَكْبَرٌ (24). Polysemy: includes أكبر/كبير (big/great) AND استكبر (arrogance) — same root spans neutral size and negative arrogance, reviewer must split lemmas.",
+      "polysemyConcerns": [
+        "Includes أكبر/كبير (big/great) AND استكبر (arrogance)",
+        "Same root spans neutral size and negative arrogance — reviewer must split lemmas"
+      ],
+      "totalWordRecords": 161,
+      "distinctAyat": 153,
+      "recordsWithLemma": 157,
+      "recordsWithoutLemma": 4,
+      "lemmaCoverage": 0.9751552795031055,
+      "lemmaDistribution": [
+        {
+          "lemma": "اسْتَكْبَرَ",
+          "count": 40,
+          "percentage": 24.84472049689441,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كَبِير",
+          "count": 40,
+          "percentage": 24.84472049689441,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَكْبَر",
+          "count": 24,
+          "percentage": 14.906832298136646,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كَبِيرَة",
+          "count": 7,
+          "percentage": 4.3478260869565215,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كُبْرَىٰ",
+          "count": 7,
+          "percentage": 4.3478260869565215,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُتَكَبِّر",
+          "count": 7,
+          "percentage": 4.3478260869565215,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُسْتَكْبِر",
+          "count": 6,
+          "percentage": 3.7267080745341614,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كِبَر",
+          "count": 6,
+          "percentage": 3.7267080745341614,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كَبِّرْ",
+          "count": 4,
+          "percentage": 2.484472049689441,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كَبُرَ",
+          "count": 3,
+          "percentage": 1.8633540372670807,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "اسْتِكْبَار",
+          "count": 2,
+          "percentage": 1.2422360248447204,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كِبْرِيَآء",
+          "count": 2,
+          "percentage": 1.2422360248447204,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "يَتَكَبَّرُ",
+          "count": 2,
+          "percentage": 1.2422360248447204,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كِبْر",
+          "count": 2,
+          "percentage": 1.2422360248447204,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كُبَّار",
+          "count": 1,
+          "percentage": 0.6211180124223602,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كُبَرَآء",
+          "count": 1,
+          "percentage": 0.6211180124223602,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "كَانَ",
+          "count": 1,
+          "percentage": 0.6211180124223602,
+          "consonantallyCompatible": false,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَكْبَرْ",
+          "count": 1,
+          "percentage": 0.6211180124223602,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَكْبِير",
+          "count": 1,
+          "percentage": 0.6211180124223602,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 1,
+      "incompatibleLemmas": [
+        {
+          "lemma": "كَانَ",
+          "count": 1
+        }
+      ],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 34,
+          "token": "وَٱسْتَكْبَرَ",
+          "lemma": "اسْتَكْبَرَ",
+          "wordPosition": 10
+        },
+        {
+          "surah": 2,
+          "ayah": 45,
+          "token": "لَكَبِيرَةٌ",
+          "lemma": "كَبِيرَة",
+          "wordPosition": 5
+        },
+        {
+          "surah": 2,
+          "ayah": 87,
+          "token": "ٱسْتَكْبَرْتُمْ",
+          "lemma": "اسْتَكْبَرَ",
+          "wordPosition": 24
+        },
+        {
+          "surah": 2,
+          "ayah": 143,
+          "token": "لَكَبِيرَةً",
+          "lemma": "كَبِيرَة",
+          "wordPosition": 30
+        },
+        {
+          "surah": 2,
+          "ayah": 185,
+          "token": "وَلِتُكَبِّرُوا۟",
+          "lemma": "كَبِّرْ",
+          "wordPosition": 38
+        },
+        {
+          "surah": 2,
+          "ayah": 217,
+          "token": "كَبِيرٌۭ ۖ",
+          "lemma": "كَبِير",
+          "wordPosition": 10
+        },
+        {
+          "surah": 2,
+          "ayah": 217,
+          "token": "أَكْبَرُ",
+          "lemma": "أَكْبَر",
+          "wordPosition": 22
+        },
+        {
+          "surah": 2,
+          "ayah": 217,
+          "token": "أَكْبَرُ",
+          "lemma": "أَكْبَر",
+          "wordPosition": 26
+        },
+        {
+          "surah": 2,
+          "ayah": 219,
+          "token": "كَبِيرٌۭ",
+          "lemma": "كَبِير",
+          "wordPosition": 8
+        },
+        {
+          "surah": 2,
+          "ayah": 219,
+          "token": "أَكْبَرُ",
+          "lemma": "أَكْبَر",
+          "wordPosition": 12
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "khushu",
+      "title": "Humility",
+      "arabicTitle": "الخضوع",
+      "root": "خشع",
+      "existingAllowlistNotes": "17 occurrences across 16 ayat, 3 lemmas. Top: خَاشِعٌ (14), خَشَعَتِ (2), خُشُوعٌ (1). Polysemy: relatively unambiguous — primary meaning is humility/submission.",
+      "polysemyConcerns": [
+        "Relatively unambiguous — primary meaning is humility/submission"
+      ],
+      "totalWordRecords": 17,
+      "distinctAyat": 16,
+      "recordsWithLemma": 17,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "خَاشِع",
+          "count": 14,
+          "percentage": 82.35294117647058,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "خَشَعَتِ",
+          "count": 2,
+          "percentage": 11.76470588235294,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "خُشُوع",
+          "count": 1,
+          "percentage": 5.88235294117647,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 45,
+          "token": "ٱلْخَـٰشِعِينَ",
+          "lemma": "خَاشِع",
+          "wordPosition": 8
+        },
+        {
+          "surah": 3,
+          "ayah": 199,
+          "token": "خَـٰشِعِينَ",
+          "lemma": "خَاشِع",
+          "wordPosition": 14
+        },
+        {
+          "surah": 17,
+          "ayah": 109,
+          "token": "خُشُوعًۭا ۩",
+          "lemma": "خُشُوع",
+          "wordPosition": 5
+        },
+        {
+          "surah": 20,
+          "ayah": 108,
+          "token": "وَخَشَعَتِ",
+          "lemma": "خَشَعَتِ",
+          "wordPosition": 7
+        },
+        {
+          "surah": 21,
+          "ayah": 90,
+          "token": "خَـٰشِعِينَ",
+          "lemma": "خَاشِع",
+          "wordPosition": 19
+        },
+        {
+          "surah": 23,
+          "ayah": 2,
+          "token": "خَـٰشِعُونَ",
+          "lemma": "خَاشِع",
+          "wordPosition": 5
+        },
+        {
+          "surah": 33,
+          "ayah": 35,
+          "token": "وَٱلْخَـٰشِعِينَ",
+          "lemma": "خَاشِع",
+          "wordPosition": 12
+        },
+        {
+          "surah": 33,
+          "ayah": 35,
+          "token": "وَٱلْخَـٰشِعَـٰتِ",
+          "lemma": "خَاشِع",
+          "wordPosition": 13
+        },
+        {
+          "surah": 41,
+          "ayah": 39,
+          "token": "خَـٰشِعَةًۭ",
+          "lemma": "خَاشِع",
+          "wordPosition": 6
+        },
+        {
+          "surah": 42,
+          "ayah": 45,
+          "token": "خَـٰشِعِينَ",
+          "lemma": "خَاشِع",
+          "wordPosition": 4
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "sidq",
+      "title": "Truthfulness",
+      "arabicTitle": "الصدق",
+      "root": "صدق",
+      "existingAllowlistNotes": "155 occurrences across 144 ayat, 19 lemmas. Top: صَادِقٌ (59), مُصَدِّقٌ (19), صَدَقَ (15). Polysemy: includes صدقة (charity) — would pollute truthfulness topic, reviewer must exclude charity-related lemmas.",
+      "polysemyConcerns": [
+        "Includes صدقة (charity) — would pollute truthfulness topic",
+        "Reviewer must exclude charity-related lemmas"
+      ],
+      "totalWordRecords": 155,
+      "distinctAyat": 144,
+      "recordsWithLemma": 155,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "صَادِق",
+          "count": 59,
+          "percentage": 38.064516129032256,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُصَدِّق",
+          "count": 19,
+          "percentage": 12.258064516129032,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَدَقَ",
+          "count": 15,
+          "percentage": 9.67741935483871,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صِدْق",
+          "count": 14,
+          "percentage": 9.032258064516128,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَدَّقَ",
+          "count": 10,
+          "percentage": 6.451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَدَقَٰت",
+          "count": 8,
+          "percentage": 5.161290322580645,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَصَدَّقَ",
+          "count": 6,
+          "percentage": 3.870967741935484,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صِدِّيق",
+          "count": 5,
+          "percentage": 3.225806451612903,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَدَقَة",
+          "count": 5,
+          "percentage": 3.225806451612903,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَدِيق",
+          "count": 2,
+          "percentage": 1.2903225806451613,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "تَصْدِيق",
+          "count": 2,
+          "percentage": 1.2903225806451613,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُتَصَدِّقِين",
+          "count": 2,
+          "percentage": 1.2903225806451613,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "أَصْدَق",
+          "count": 2,
+          "percentage": 1.2903225806451613,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُصَّدِّقِين",
+          "count": 1,
+          "percentage": 0.6451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَدُقَٰت",
+          "count": 1,
+          "percentage": 0.6451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُصَّدِّقَٰت",
+          "count": 1,
+          "percentage": 0.6451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صَّٰدِقَٰت",
+          "count": 1,
+          "percentage": 0.6451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "صِدِّيقَة",
+          "count": 1,
+          "percentage": 0.6451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُتَصَدِّقَٰت",
+          "count": 1,
+          "percentage": 0.6451612903225806,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 2,
+          "ayah": 23,
+          "token": "صَـٰدِقِينَ",
+          "lemma": "صَادِق",
+          "wordPosition": 20
+        },
+        {
+          "surah": 2,
+          "ayah": 31,
+          "token": "صَـٰدِقِينَ",
+          "lemma": "صَادِق",
+          "wordPosition": 15
+        },
+        {
+          "surah": 2,
+          "ayah": 41,
+          "token": "مُصَدِّقًۭا",
+          "lemma": "مُصَدِّق",
+          "wordPosition": 4
+        },
+        {
+          "surah": 2,
+          "ayah": 89,
+          "token": "مُصَدِّقٌۭ",
+          "lemma": "مُصَدِّق",
+          "wordPosition": 7
+        },
+        {
+          "surah": 2,
+          "ayah": 91,
+          "token": "مُصَدِّقًۭا",
+          "lemma": "مُصَدِّق",
+          "wordPosition": 18
+        },
+        {
+          "surah": 2,
+          "ayah": 94,
+          "token": "صَـٰدِقِينَ",
+          "lemma": "صَادِق",
+          "wordPosition": 17
+        },
+        {
+          "surah": 2,
+          "ayah": 97,
+          "token": "مُصَدِّقًۭا",
+          "lemma": "مُصَدِّق",
+          "wordPosition": 12
+        },
+        {
+          "surah": 2,
+          "ayah": 101,
+          "token": "مُصَدِّقٌۭ",
+          "lemma": "مُصَدِّق",
+          "wordPosition": 7
+        },
+        {
+          "surah": 2,
+          "ayah": 111,
+          "token": "صَـٰدِقِينَ",
+          "lemma": "صَادِق",
+          "wordPosition": 18
+        },
+        {
+          "surah": 2,
+          "ayah": 177,
+          "token": "صَدَقُوا۟ ۖ",
+          "lemma": "صَدَقَ",
+          "wordPosition": 48
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    },
+    {
+      "slug": "tawakkul",
+      "title": "Trust/Delegation",
+      "arabicTitle": "التوكل",
+      "root": "وكل",
+      "existingAllowlistNotes": "70 occurrences across 61 ayat, 4 lemmas. Top: تَوَكَّلْ (40), وَكِيلٌ (24), مُتَوَكِّلُونَ (4). Polysemy: includes وكيل (guardian/agent) and توكل (trust in God) — may need lemma-level split between legal agency and spiritual trust.",
+      "polysemyConcerns": [
+        "Includes وكيل (guardian/agent) and توكل (trust in God)",
+        "May need lemma-level split between legal agency and spiritual trust"
+      ],
+      "totalWordRecords": 70,
+      "distinctAyat": 61,
+      "recordsWithLemma": 70,
+      "recordsWithoutLemma": 0,
+      "lemmaCoverage": 1,
+      "lemmaDistribution": [
+        {
+          "lemma": "تَوَكَّلْ",
+          "count": 40,
+          "percentage": 57.14285714285714,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "وَكِيل",
+          "count": 24,
+          "percentage": 34.285714285714285,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "مُتَوَكِّلُون",
+          "count": 4,
+          "percentage": 5.714285714285714,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        },
+        {
+          "lemma": "وُكِّلَ",
+          "count": 2,
+          "percentage": 2.857142857142857,
+          "consonantallyCompatible": true,
+          "reviewerDecision": null,
+          "reviewerRationale": null
+        }
+      ],
+      "incompatibleLemmaCount": 0,
+      "incompatibleLemmas": [],
+      "sampleAyat": [
+        {
+          "surah": 3,
+          "ayah": 122,
+          "token": "فَلْيَتَوَكَّلِ",
+          "lemma": "تَوَكَّلْ",
+          "wordPosition": 11
+        },
+        {
+          "surah": 3,
+          "ayah": 159,
+          "token": "فَتَوَكَّلْ",
+          "lemma": "تَوَكَّلْ",
+          "wordPosition": 24
+        },
+        {
+          "surah": 3,
+          "ayah": 159,
+          "token": "ٱلْمُتَوَكِّلِينَ",
+          "lemma": "مُتَوَكِّلُون",
+          "wordPosition": 30
+        },
+        {
+          "surah": 3,
+          "ayah": 160,
+          "token": "فَلْيَتَوَكَّلِ",
+          "lemma": "تَوَكَّلْ",
+          "wordPosition": 17
+        },
+        {
+          "surah": 3,
+          "ayah": 173,
+          "token": "ٱلْوَكِيلُ",
+          "lemma": "وَكِيل",
+          "wordPosition": 17
+        },
+        {
+          "surah": 4,
+          "ayah": 81,
+          "token": "وَتَوَكَّلْ",
+          "lemma": "تَوَكَّلْ",
+          "wordPosition": 19
+        },
+        {
+          "surah": 4,
+          "ayah": 81,
+          "token": "وَكِيلًا",
+          "lemma": "وَكِيل",
+          "wordPosition": 24
+        },
+        {
+          "surah": 4,
+          "ayah": 109,
+          "token": "وَكِيلًۭا",
+          "lemma": "وَكِيل",
+          "wordPosition": 18
+        },
+        {
+          "surah": 4,
+          "ayah": 132,
+          "token": "وَكِيلًا",
+          "lemma": "وَكِيل",
+          "wordPosition": 10
+        },
+        {
+          "surah": 4,
+          "ayah": 171,
+          "token": "وَكِيلًۭا",
+          "lemma": "وَكِيل",
+          "wordPosition": 53
+        }
+      ],
+      "reviewerStatus": "pending-review",
+      "reviewerIdentity": null,
+      "reviewDate": null,
+      "finalIncludedLemmas": null,
+      "finalExcludedLemmas": null,
+      "reviewerNotes": null
+    }
+  ]
+}

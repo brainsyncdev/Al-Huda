@@ -1,0 +1,63 @@
+{
+  "entry": {
+    "slug": "انف",
+    "title": "انف",
+    "arabicTitle": "انف",
+    "roots": [
+      "انف"
+    ],
+    "includedLemmas": [
+      "ءَانِف",
+      "أَنف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 45
+      },
+      "matchedToken": "وَٱلْأَنفَ",
+      "matchedLemma": "أَنف",
+      "matchedRoot": "انف",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 45
+      },
+      "matchedToken": "بِٱلْأَنفِ",
+      "matchedLemma": "أَنف",
+      "matchedRoot": "انف",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 16
+      },
+      "matchedToken": "ءَانِفًا ۚ",
+      "matchedLemma": "ءَانِف",
+      "matchedRoot": "انف",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 45
+    },
+    {
+      "surah": 47,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

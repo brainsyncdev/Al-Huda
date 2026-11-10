@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "شحن",
+    "title": "شحن",
+    "arabicTitle": "شحن",
+    "roots": [
+      "شحن"
+    ],
+    "includedLemmas": [
+      "مَشْحُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 119
+      },
+      "matchedToken": "ٱلْمَشْحُونِ",
+      "matchedLemma": "مَشْحُون",
+      "matchedRoot": "شحن",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 41
+      },
+      "matchedToken": "ٱلْمَشْحُونِ",
+      "matchedLemma": "مَشْحُون",
+      "matchedRoot": "شحن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 140
+      },
+      "matchedToken": "ٱلْمَشْحُونِ",
+      "matchedLemma": "مَشْحُون",
+      "matchedRoot": "شحن",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 26,
+      "ayah": 119
+    },
+    {
+      "surah": 36,
+      "ayah": 41
+    },
+    {
+      "surah": 37,
+      "ayah": 140
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

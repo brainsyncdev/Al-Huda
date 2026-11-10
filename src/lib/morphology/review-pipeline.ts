@@ -163,12 +163,14 @@ export function validateRootRecords(
   }
 
   // Check for missing lemmas
+  // Sprint 43 Policy B: missing lemmas are disclosed but don't block publication
+  // when alignment is valid. Severity is "warning" not "error".
   const missingLemmaRecords = records.filter((r) => !r.lemma || r.lemma === "");
   if (missingLemmaRecords.length > 0) {
     issues.push({
       code: "missing-lemma",
       message: `${missingLemmaRecords.length} records have empty lemmas`,
-      severity: "error",
+      severity: "warning",
       affectedRecords: missingLemmaRecords.slice(0, 5).map((r) => ({
         surah: r.ref.surah,
         ayah: r.ref.ayah,

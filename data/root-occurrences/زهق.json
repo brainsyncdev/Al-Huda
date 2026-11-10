@@ -1,0 +1,92 @@
+{
+  "entry": {
+    "slug": "زهق",
+    "title": "زهق",
+    "arabicTitle": "زهق",
+    "roots": [
+      "زهق"
+    ],
+    "includedLemmas": [
+      "زَاهِق",
+      "زَهَقَ",
+      "زَهُوق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 55
+      },
+      "matchedToken": "وَتَزْهَقَ",
+      "matchedLemma": "زَهَقَ",
+      "matchedRoot": "زهق",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 85
+      },
+      "matchedToken": "وَتَزْهَقَ",
+      "matchedLemma": "زَهَقَ",
+      "matchedRoot": "زهق",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 81
+      },
+      "matchedToken": "وَزَهَقَ",
+      "matchedLemma": "زَهَقَ",
+      "matchedRoot": "زهق",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 81
+      },
+      "matchedToken": "زَهُوقًۭا",
+      "matchedLemma": "زَهُوق",
+      "matchedRoot": "زهق",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 18
+      },
+      "matchedToken": "زَاهِقٌۭ ۚ",
+      "matchedLemma": "زَاهِق",
+      "matchedRoot": "زهق",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 55
+    },
+    {
+      "surah": 9,
+      "ayah": 85
+    },
+    {
+      "surah": 17,
+      "ayah": 81
+    },
+    {
+      "surah": 21,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

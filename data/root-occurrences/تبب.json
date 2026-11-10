@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "تبب",
+    "title": "تبب",
+    "arabicTitle": "تبب",
+    "roots": [
+      "تبب"
+    ],
+    "includedLemmas": [
+      "تَبَاب",
+      "تَتْبِيب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 101
+      },
+      "matchedToken": "تَتْبِيبٍۢ",
+      "matchedLemma": "تَتْبِيب",
+      "matchedRoot": "تبب",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 37
+      },
+      "matchedToken": "تَبَابٍۢ",
+      "matchedLemma": "تَبَاب",
+      "matchedRoot": "تبب",
+      "wordPosition": 23
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 101
+    },
+    {
+      "surah": 40,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

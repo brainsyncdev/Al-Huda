@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "وسق",
+    "title": "وسق",
+    "arabicTitle": "وسق",
+    "roots": [
+      "وسق"
+    ],
+    "includedLemmas": [
+      "اتَّسَقَ",
+      "وَسَقَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 17
+      },
+      "matchedToken": "وَسَقَ",
+      "matchedLemma": "وَسَقَ",
+      "matchedRoot": "وسق",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 18
+      },
+      "matchedToken": "ٱتَّسَقَ",
+      "matchedLemma": "اتَّسَقَ",
+      "matchedRoot": "وسق",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 84,
+      "ayah": 17
+    },
+    {
+      "surah": 84,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

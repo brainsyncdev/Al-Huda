@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "ردف",
+    "title": "ردف",
+    "arabicTitle": "ردف",
+    "roots": [
+      "ردف"
+    ],
+    "includedLemmas": [
+      "رَدِفَ",
+      "رَّادِفَة",
+      "مُرْدِفِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 9
+      },
+      "matchedToken": "مُرْدِفِينَ",
+      "matchedLemma": "مُرْدِفِين",
+      "matchedRoot": "ردف",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 72
+      },
+      "matchedToken": "رَدِفَ",
+      "matchedLemma": "رَدِفَ",
+      "matchedRoot": "ردف",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 7
+      },
+      "matchedToken": "ٱلرَّادِفَةُ",
+      "matchedLemma": "رَّادِفَة",
+      "matchedRoot": "ردف",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 9
+    },
+    {
+      "surah": 27,
+      "ayah": 72
+    },
+    {
+      "surah": 79,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

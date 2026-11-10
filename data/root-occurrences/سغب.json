@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "سغب",
+    "title": "سغب",
+    "arabicTitle": "سغب",
+    "roots": [
+      "سغب"
+    ],
+    "includedLemmas": [
+      "مَسْغَبَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 90,
+        "ayah": 14
+      },
+      "matchedToken": "مَسْغَبَةٍۢ",
+      "matchedLemma": "مَسْغَبَة",
+      "matchedRoot": "سغب",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 90,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,104 @@
+{
+  "entry": {
+    "slug": "مقت",
+    "title": "مقت",
+    "arabicTitle": "مقت",
+    "roots": [
+      "مقت"
+    ],
+    "includedLemmas": [
+      "مَقْت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 22
+      },
+      "matchedToken": "وَمَقْتًۭا",
+      "matchedLemma": "مَقْت",
+      "matchedRoot": "مقت",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 39
+      },
+      "matchedToken": "مَقْتًۭا ۖ",
+      "matchedLemma": "مَقْت",
+      "matchedRoot": "مقت",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 10
+      },
+      "matchedToken": "لَمَقْتُ",
+      "matchedLemma": "مَقْت",
+      "matchedRoot": "مقت",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 10
+      },
+      "matchedToken": "مَّقْتِكُمْ",
+      "matchedLemma": "مَقْت",
+      "matchedRoot": "مقت",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 35
+      },
+      "matchedToken": "مَقْتًا",
+      "matchedLemma": "مَقْت",
+      "matchedRoot": "مقت",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 3
+      },
+      "matchedToken": "مَقْتًا",
+      "matchedLemma": "مَقْت",
+      "matchedRoot": "مقت",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 22
+    },
+    {
+      "surah": 35,
+      "ayah": 39
+    },
+    {
+      "surah": 40,
+      "ayah": 10
+    },
+    {
+      "surah": 40,
+      "ayah": 35
+    },
+    {
+      "surah": 61,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

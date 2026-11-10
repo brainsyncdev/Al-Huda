@@ -1,0 +1,88 @@
+{
+  "entry": {
+    "slug": "ميل",
+    "title": "ميل",
+    "arabicTitle": "ميل",
+    "roots": [
+      "ميل"
+    ],
+    "includedLemmas": [
+      "مَيْل",
+      "مَّيْلَة",
+      "يَمِيلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 27
+      },
+      "matchedToken": "تَمِيلُوا۟",
+      "matchedLemma": "يَمِيلُ",
+      "matchedRoot": "ميل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 27
+      },
+      "matchedToken": "مَيْلًا",
+      "matchedLemma": "مَيْل",
+      "matchedRoot": "ميل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 102
+      },
+      "matchedToken": "فَيَمِيلُونَ",
+      "matchedLemma": "يَمِيلُ",
+      "matchedRoot": "ميل",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 102
+      },
+      "matchedToken": "مَّيْلَةًۭ",
+      "matchedLemma": "مَّيْلَة",
+      "matchedRoot": "ميل",
+      "wordPosition": 38
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 129
+      },
+      "matchedToken": "تَمِيلُوا۟",
+      "matchedLemma": "يَمِيلُ",
+      "matchedRoot": "ميل",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 27
+    },
+    {
+      "surah": 4,
+      "ayah": 102
+    },
+    {
+      "surah": 4,
+      "ayah": 129
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

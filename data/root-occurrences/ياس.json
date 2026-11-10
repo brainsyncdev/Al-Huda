@@ -1,0 +1,200 @@
+{
+  "entry": {
+    "slug": "ياس",
+    "title": "ياس",
+    "arabicTitle": "ياس",
+    "roots": [
+      "ياس"
+    ],
+    "includedLemmas": [
+      "اسْتَيْـَٔسَ",
+      "يَئِسَ",
+      "يَـُٔوس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 3
+      },
+      "matchedToken": "يَئِسَ",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 9
+      },
+      "matchedToken": "لَيَـُٔوسٌۭ",
+      "matchedLemma": "يَـُٔوس",
+      "matchedRoot": "ياس",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 80
+      },
+      "matchedToken": "ٱسْتَيْـَٔسُوا۟",
+      "matchedLemma": "اسْتَيْـَٔسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 87
+      },
+      "matchedToken": "تَا۟يْـَٔسُوا۟",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 87
+      },
+      "matchedToken": "يَا۟يْـَٔسُ",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 110
+      },
+      "matchedToken": "ٱسْتَيْـَٔسَ",
+      "matchedLemma": "اسْتَيْـَٔسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 31
+      },
+      "matchedToken": "يَا۟يْـَٔسِ",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 83
+      },
+      "matchedToken": "يَـُٔوسًۭا",
+      "matchedLemma": "يَـُٔوس",
+      "matchedRoot": "ياس",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 23
+      },
+      "matchedToken": "يَئِسُوا۟",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 49
+      },
+      "matchedToken": "فَيَـُٔوسٌۭ",
+      "matchedLemma": "يَـُٔوس",
+      "matchedRoot": "ياس",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 13
+      },
+      "matchedToken": "يَئِسُوا۟",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 13
+      },
+      "matchedToken": "يَئِسَ",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 4
+      },
+      "matchedToken": "يَئِسْنَ",
+      "matchedLemma": "يَئِسَ",
+      "matchedRoot": "ياس",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 3
+    },
+    {
+      "surah": 11,
+      "ayah": 9
+    },
+    {
+      "surah": 12,
+      "ayah": 80
+    },
+    {
+      "surah": 12,
+      "ayah": 87
+    },
+    {
+      "surah": 12,
+      "ayah": 110
+    },
+    {
+      "surah": 13,
+      "ayah": 31
+    },
+    {
+      "surah": 17,
+      "ayah": 83
+    },
+    {
+      "surah": 29,
+      "ayah": 23
+    },
+    {
+      "surah": 41,
+      "ayah": 49
+    },
+    {
+      "surah": 60,
+      "ayah": 13
+    },
+    {
+      "surah": 65,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 13,
+  "totalMatches": 13,
+  "pagination": null
+}

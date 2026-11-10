@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "بلس",
+    "title": "بلس",
+    "arabicTitle": "بلس",
+    "roots": [
+      "بلس"
+    ],
+    "includedLemmas": [
+      "مُبْلِسُون",
+      "يُبْلِسُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 44
+      },
+      "matchedToken": "مُّبْلِسُونَ",
+      "matchedLemma": "مُبْلِسُون",
+      "matchedRoot": "بلس",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 77
+      },
+      "matchedToken": "مُبْلِسُونَ",
+      "matchedLemma": "مُبْلِسُون",
+      "matchedRoot": "بلس",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 12
+      },
+      "matchedToken": "يُبْلِسُ",
+      "matchedLemma": "يُبْلِسُ",
+      "matchedRoot": "بلس",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 49
+      },
+      "matchedToken": "لَمُبْلِسِينَ",
+      "matchedLemma": "مُبْلِسُون",
+      "matchedRoot": "بلس",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 75
+      },
+      "matchedToken": "مُبْلِسُونَ",
+      "matchedLemma": "مُبْلِسُون",
+      "matchedRoot": "بلس",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 44
+    },
+    {
+      "surah": 23,
+      "ayah": 77
+    },
+    {
+      "surah": 30,
+      "ayah": 12
+    },
+    {
+      "surah": 30,
+      "ayah": 49
+    },
+    {
+      "surah": 43,
+      "ayah": 75
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

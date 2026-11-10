@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "تعس",
+    "title": "تعس",
+    "arabicTitle": "تعس",
+    "roots": [
+      "تعس"
+    ],
+    "includedLemmas": [
+      "تَعْس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 8
+      },
+      "matchedToken": "فَتَعْسًۭا",
+      "matchedLemma": "تَعْس",
+      "matchedRoot": "تعس",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 47,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "خرص",
+    "title": "خرص",
+    "arabicTitle": "خرص",
+    "roots": [
+      "خرص"
+    ],
+    "includedLemmas": [
+      "خَرَّٰصُون",
+      "يَخْرُصُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 116
+      },
+      "matchedToken": "يَخْرُصُونَ",
+      "matchedLemma": "يَخْرُصُ",
+      "matchedRoot": "خرص",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 148
+      },
+      "matchedToken": "تَخْرُصُونَ",
+      "matchedLemma": "يَخْرُصُ",
+      "matchedRoot": "خرص",
+      "wordPosition": 37
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 66
+      },
+      "matchedToken": "يَخْرُصُونَ",
+      "matchedLemma": "يَخْرُصُ",
+      "matchedRoot": "خرص",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 20
+      },
+      "matchedToken": "يَخْرُصُونَ",
+      "matchedLemma": "يَخْرُصُ",
+      "matchedRoot": "خرص",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْخَرَّٰصُونَ",
+      "matchedLemma": "خَرَّٰصُون",
+      "matchedRoot": "خرص",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 116
+    },
+    {
+      "surah": 6,
+      "ayah": 148
+    },
+    {
+      "surah": 10,
+      "ayah": 66
+    },
+    {
+      "surah": 43,
+      "ayah": 20
+    },
+    {
+      "surah": 51,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

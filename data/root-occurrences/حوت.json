@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "حوت",
+    "title": "حوت",
+    "arabicTitle": "حوت",
+    "roots": [
+      "حوت"
+    ],
+    "includedLemmas": [
+      "حُوت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 163
+      },
+      "matchedToken": "حِيتَانُهُمْ",
+      "matchedLemma": "حُوت",
+      "matchedRoot": "حوت",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 61
+      },
+      "matchedToken": "حُوتَهُمَا",
+      "matchedLemma": "حُوت",
+      "matchedRoot": "حوت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 63
+      },
+      "matchedToken": "ٱلْحُوتَ",
+      "matchedLemma": "حُوت",
+      "matchedRoot": "حوت",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 142
+      },
+      "matchedToken": "ٱلْحُوتُ",
+      "matchedLemma": "حُوت",
+      "matchedRoot": "حوت",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 48
+      },
+      "matchedToken": "ٱلْحُوتِ",
+      "matchedLemma": "حُوت",
+      "matchedRoot": "حوت",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 163
+    },
+    {
+      "surah": 18,
+      "ayah": 61
+    },
+    {
+      "surah": 18,
+      "ayah": 63
+    },
+    {
+      "surah": 37,
+      "ayah": 142
+    },
+    {
+      "surah": 68,
+      "ayah": 48
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

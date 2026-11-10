@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جفن",
+    "title": "جفن",
+    "arabicTitle": "جفن",
+    "roots": [
+      "جفن"
+    ],
+    "includedLemmas": [
+      "جِفَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 13
+      },
+      "matchedToken": "وَجِفَانٍۢ",
+      "matchedLemma": "جِفَان",
+      "matchedRoot": "جفن",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 34,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

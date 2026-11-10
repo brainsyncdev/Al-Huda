@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "خفت",
+    "title": "خفت",
+    "arabicTitle": "خفت",
+    "roots": [
+      "خفت"
+    ],
+    "includedLemmas": [
+      "تُخَافِتْ",
+      "يَتَخَٰفَتُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 110
+      },
+      "matchedToken": "تُخَافِتْ",
+      "matchedLemma": "تُخَافِتْ",
+      "matchedRoot": "خفت",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 103
+      },
+      "matchedToken": "يَتَخَـٰفَتُونَ",
+      "matchedLemma": "يَتَخَٰفَتُ",
+      "matchedRoot": "خفت",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 23
+      },
+      "matchedToken": "يَتَخَـٰفَتُونَ",
+      "matchedLemma": "يَتَخَٰفَتُ",
+      "matchedRoot": "خفت",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 110
+    },
+    {
+      "surah": 20,
+      "ayah": 103
+    },
+    {
+      "surah": 68,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

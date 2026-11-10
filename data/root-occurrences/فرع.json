@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "فرع",
+    "title": "فرع",
+    "arabicTitle": "فرع",
+    "roots": [
+      "فرع"
+    ],
+    "includedLemmas": [
+      "فَرْع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 24
+      },
+      "matchedToken": "وَفَرْعُهَا",
+      "matchedLemma": "فَرْع",
+      "matchedRoot": "فرع",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

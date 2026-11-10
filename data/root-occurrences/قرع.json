@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "قرع",
+    "title": "قرع",
+    "arabicTitle": "قرع",
+    "roots": [
+      "قرع"
+    ],
+    "includedLemmas": [
+      "قَارِعَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 31
+      },
+      "matchedToken": "قَارِعَةٌ",
+      "matchedLemma": "قَارِعَة",
+      "matchedRoot": "قرع",
+      "wordPosition": 37
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 4
+      },
+      "matchedToken": "بِٱلْقَارِعَةِ",
+      "matchedLemma": "قَارِعَة",
+      "matchedRoot": "قرع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْقَارِعَةُ",
+      "matchedLemma": "قَارِعَة",
+      "matchedRoot": "قرع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 2
+      },
+      "matchedToken": "ٱلْقَارِعَةُ",
+      "matchedLemma": "قَارِعَة",
+      "matchedRoot": "قرع",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلْقَارِعَةُ",
+      "matchedLemma": "قَارِعَة",
+      "matchedRoot": "قرع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 31
+    },
+    {
+      "surah": 69,
+      "ayah": 4
+    },
+    {
+      "surah": 101,
+      "ayah": 1
+    },
+    {
+      "surah": 101,
+      "ayah": 2
+    },
+    {
+      "surah": 101,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

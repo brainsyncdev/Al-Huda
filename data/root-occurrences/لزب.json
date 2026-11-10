@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "لزب",
+    "title": "لزب",
+    "arabicTitle": "لزب",
+    "roots": [
+      "لزب"
+    ],
+    "includedLemmas": [
+      "لَّازِب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 11
+      },
+      "matchedToken": "لَّازِبٍۭ",
+      "matchedLemma": "لَّازِب",
+      "matchedRoot": "لزب",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

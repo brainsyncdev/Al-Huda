@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "بغض",
+    "title": "بغض",
+    "arabicTitle": "بغض",
+    "roots": [
+      "بغض"
+    ],
+    "includedLemmas": [
+      "بَغْضَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 118
+      },
+      "matchedToken": "ٱلْبَغْضَآءُ",
+      "matchedLemma": "بَغْضَآء",
+      "matchedRoot": "بغض",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 14
+      },
+      "matchedToken": "وَٱلْبَغْضَآءَ",
+      "matchedLemma": "بَغْضَآء",
+      "matchedRoot": "بغض",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 64
+      },
+      "matchedToken": "وَٱلْبَغْضَآءَ",
+      "matchedLemma": "بَغْضَآء",
+      "matchedRoot": "بغض",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 91
+      },
+      "matchedToken": "وَٱلْبَغْضَآءَ",
+      "matchedLemma": "بَغْضَآء",
+      "matchedRoot": "بغض",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 4
+      },
+      "matchedToken": "وَٱلْبَغْضَآءُ",
+      "matchedLemma": "بَغْضَآء",
+      "matchedRoot": "بغض",
+      "wordPosition": 27
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 118
+    },
+    {
+      "surah": 5,
+      "ayah": 14
+    },
+    {
+      "surah": 5,
+      "ayah": 64
+    },
+    {
+      "surah": 5,
+      "ayah": 91
+    },
+    {
+      "surah": 60,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

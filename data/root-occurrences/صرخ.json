@@ -1,0 +1,93 @@
+{
+  "entry": {
+    "slug": "صرخ",
+    "title": "صرخ",
+    "arabicTitle": "صرخ",
+    "roots": [
+      "صرخ"
+    ],
+    "includedLemmas": [
+      "صَرِيخ",
+      "مُصْرِخ",
+      "يَسْتَصْرِخُ",
+      "يَصْطَرِخُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 22
+      },
+      "matchedToken": "بِمُصْرِخِكُمْ",
+      "matchedLemma": "مُصْرِخ",
+      "matchedRoot": "صرخ",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 22
+      },
+      "matchedToken": "بِمُصْرِخِىَّ ۖ",
+      "matchedLemma": "مُصْرِخ",
+      "matchedRoot": "صرخ",
+      "wordPosition": 33
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 18
+      },
+      "matchedToken": "يَسْتَصْرِخُهُۥ ۚ",
+      "matchedLemma": "يَسْتَصْرِخُ",
+      "matchedRoot": "صرخ",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 37
+      },
+      "matchedToken": "يَصْطَرِخُونَ",
+      "matchedLemma": "يَصْطَرِخُ",
+      "matchedRoot": "صرخ",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 43
+      },
+      "matchedToken": "صَرِيخَ",
+      "matchedLemma": "صَرِيخ",
+      "matchedRoot": "صرخ",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 22
+    },
+    {
+      "surah": 28,
+      "ayah": 18
+    },
+    {
+      "surah": 35,
+      "ayah": 37
+    },
+    {
+      "surah": 36,
+      "ayah": 43
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

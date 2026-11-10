@@ -1,0 +1,183 @@
+{
+  "entry": {
+    "slug": "قصر",
+    "title": "قصر",
+    "arabicTitle": "قصر",
+    "roots": [
+      "قصر"
+    ],
+    "includedLemmas": [
+      "تَقْصُرُ",
+      "قَصْر",
+      "قَٰصِرَٰت",
+      "مُقَصِّرِين",
+      "مَّقْصُورَٰت",
+      "يُقْصِرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 6 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 101
+      },
+      "matchedToken": "تَقْصُرُوا۟",
+      "matchedLemma": "تَقْصُرُ",
+      "matchedRoot": "قصر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 74
+      },
+      "matchedToken": "قُصُورًۭا",
+      "matchedLemma": "قَصْر",
+      "matchedRoot": "قصر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 202
+      },
+      "matchedToken": "يُقْصِرُونَ",
+      "matchedLemma": "يُقْصِرُ",
+      "matchedRoot": "قصر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 45
+      },
+      "matchedToken": "وَقَصْرٍۢ",
+      "matchedLemma": "قَصْر",
+      "matchedRoot": "قصر",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 10
+      },
+      "matchedToken": "قُصُورًۢا",
+      "matchedLemma": "قَصْر",
+      "matchedRoot": "قصر",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 48
+      },
+      "matchedToken": "قَـٰصِرَٰتُ",
+      "matchedLemma": "قَٰصِرَٰت",
+      "matchedRoot": "قصر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 52
+      },
+      "matchedToken": "قَـٰصِرَٰتُ",
+      "matchedLemma": "قَٰصِرَٰت",
+      "matchedRoot": "قصر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 27
+      },
+      "matchedToken": "وَمُقَصِّرِينَ",
+      "matchedLemma": "مُقَصِّرِين",
+      "matchedRoot": "قصر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 56
+      },
+      "matchedToken": "قَـٰصِرَٰتُ",
+      "matchedLemma": "قَٰصِرَٰت",
+      "matchedRoot": "قصر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 72
+      },
+      "matchedToken": "مَّقْصُورَٰتٌۭ",
+      "matchedLemma": "مَّقْصُورَٰت",
+      "matchedRoot": "قصر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 32
+      },
+      "matchedToken": "كَٱلْقَصْرِ",
+      "matchedLemma": "قَصْر",
+      "matchedRoot": "قصر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 101
+    },
+    {
+      "surah": 7,
+      "ayah": 74
+    },
+    {
+      "surah": 7,
+      "ayah": 202
+    },
+    {
+      "surah": 22,
+      "ayah": 45
+    },
+    {
+      "surah": 25,
+      "ayah": 10
+    },
+    {
+      "surah": 37,
+      "ayah": 48
+    },
+    {
+      "surah": 38,
+      "ayah": 52
+    },
+    {
+      "surah": 48,
+      "ayah": 27
+    },
+    {
+      "surah": 55,
+      "ayah": 56
+    },
+    {
+      "surah": 55,
+      "ayah": 72
+    },
+    {
+      "surah": 77,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 11,
+  "totalMatches": 11,
+  "pagination": null
+}

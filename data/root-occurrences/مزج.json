@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "مزج",
+    "title": "مزج",
+    "arabicTitle": "مزج",
+    "roots": [
+      "مزج"
+    ],
+    "includedLemmas": [
+      "مِزَاج"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 5
+      },
+      "matchedToken": "مِزَاجُهَا",
+      "matchedLemma": "مِزَاج",
+      "matchedRoot": "مزج",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 17
+      },
+      "matchedToken": "مِزَاجُهَا",
+      "matchedLemma": "مِزَاج",
+      "matchedRoot": "مزج",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 27
+      },
+      "matchedToken": "وَمِزَاجُهُۥ",
+      "matchedLemma": "مِزَاج",
+      "matchedRoot": "مزج",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 76,
+      "ayah": 5
+    },
+    {
+      "surah": 76,
+      "ayah": 17
+    },
+    {
+      "surah": 83,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

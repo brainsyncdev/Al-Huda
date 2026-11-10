@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "هرع",
+    "title": "هرع",
+    "arabicTitle": "هرع",
+    "roots": [
+      "هرع"
+    ],
+    "includedLemmas": [
+      "يُهْرَعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 78
+      },
+      "matchedToken": "يُهْرَعُونَ",
+      "matchedLemma": "يُهْرَعُ",
+      "matchedRoot": "هرع",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 70
+      },
+      "matchedToken": "يُهْرَعُونَ",
+      "matchedLemma": "يُهْرَعُ",
+      "matchedRoot": "هرع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 78
+    },
+    {
+      "surah": 37,
+      "ayah": 70
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

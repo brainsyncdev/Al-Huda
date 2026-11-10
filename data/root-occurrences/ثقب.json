@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "ثقب",
+    "title": "ثقب",
+    "arabicTitle": "ثقب",
+    "roots": [
+      "ثقب"
+    ],
+    "includedLemmas": [
+      "ثَاقِب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 10
+      },
+      "matchedToken": "ثَاقِبٌۭ",
+      "matchedLemma": "ثَاقِب",
+      "matchedRoot": "ثقب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 86,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلثَّاقِبُ",
+      "matchedLemma": "ثَاقِب",
+      "matchedRoot": "ثقب",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 10
+    },
+    {
+      "surah": 86,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

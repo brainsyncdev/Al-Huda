@@ -1,0 +1,87 @@
+{
+  "entry": {
+    "slug": "زلزل",
+    "title": "زلزل",
+    "arabicTitle": "زلزل",
+    "roots": [
+      "زلزل"
+    ],
+    "includedLemmas": [
+      "زُلْزِلُ",
+      "زِلْزَال"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 214
+      },
+      "matchedToken": "وَزُلْزِلُوا۟",
+      "matchedLemma": "زُلْزِلُ",
+      "matchedRoot": "زلزل",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 11
+      },
+      "matchedToken": "وَزُلْزِلُوا۟",
+      "matchedLemma": "زُلْزِلُ",
+      "matchedRoot": "زلزل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 11
+      },
+      "matchedToken": "زِلْزَالًۭا",
+      "matchedLemma": "زِلْزَال",
+      "matchedRoot": "زلزل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 99,
+        "ayah": 1
+      },
+      "matchedToken": "زُلْزِلَتِ",
+      "matchedLemma": "زُلْزِلُ",
+      "matchedRoot": "زلزل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 99,
+        "ayah": 1
+      },
+      "matchedToken": "زِلْزَالَهَا",
+      "matchedLemma": "زِلْزَال",
+      "matchedRoot": "زلزل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 214
+    },
+    {
+      "surah": 33,
+      "ayah": 11
+    },
+    {
+      "surah": 99,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

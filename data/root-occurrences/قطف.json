@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "قطف",
+    "title": "قطف",
+    "arabicTitle": "قطف",
+    "roots": [
+      "قطف"
+    ],
+    "includedLemmas": [
+      "قُطُوف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 23
+      },
+      "matchedToken": "قُطُوفُهَا",
+      "matchedLemma": "قُطُوف",
+      "matchedRoot": "قطف",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 14
+      },
+      "matchedToken": "قُطُوفُهَا",
+      "matchedLemma": "قُطُوف",
+      "matchedRoot": "قطف",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 69,
+      "ayah": 23
+    },
+    {
+      "surah": 76,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

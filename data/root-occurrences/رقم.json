@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "رقم",
+    "title": "رقم",
+    "arabicTitle": "رقم",
+    "roots": [
+      "رقم"
+    ],
+    "includedLemmas": [
+      "رَّقِيم",
+      "مَّرْقُوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 9
+      },
+      "matchedToken": "وَٱلرَّقِيمِ",
+      "matchedLemma": "رَّقِيم",
+      "matchedRoot": "رقم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 9
+      },
+      "matchedToken": "مَّرْقُومٌۭ",
+      "matchedLemma": "مَّرْقُوم",
+      "matchedRoot": "رقم",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 20
+      },
+      "matchedToken": "مَّرْقُومٌۭ",
+      "matchedLemma": "مَّرْقُوم",
+      "matchedRoot": "رقم",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 9
+    },
+    {
+      "surah": 83,
+      "ayah": 9
+    },
+    {
+      "surah": 83,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

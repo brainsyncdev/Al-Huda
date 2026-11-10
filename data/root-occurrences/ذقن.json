@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "ذقن",
+    "title": "ذقن",
+    "arabicTitle": "ذقن",
+    "roots": [
+      "ذقن"
+    ],
+    "includedLemmas": [
+      "أَذْقَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 107
+      },
+      "matchedToken": "لِلْأَذْقَانِ",
+      "matchedLemma": "أَذْقَان",
+      "matchedRoot": "ذقن",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 109
+      },
+      "matchedToken": "لِلْأَذْقَانِ",
+      "matchedLemma": "أَذْقَان",
+      "matchedRoot": "ذقن",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 8
+      },
+      "matchedToken": "ٱلْأَذْقَانِ",
+      "matchedLemma": "أَذْقَان",
+      "matchedRoot": "ذقن",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 107
+    },
+    {
+      "surah": 17,
+      "ayah": 109
+    },
+    {
+      "surah": 36,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

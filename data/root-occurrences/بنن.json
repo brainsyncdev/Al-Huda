@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "بنن",
+    "title": "بنن",
+    "arabicTitle": "بنن",
+    "roots": [
+      "بنن"
+    ],
+    "includedLemmas": [
+      "بَنَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 12
+      },
+      "matchedToken": "بَنَانٍۢ",
+      "matchedLemma": "بَنَان",
+      "matchedRoot": "بنن",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 4
+      },
+      "matchedToken": "بَنَانَهُۥ",
+      "matchedLemma": "بَنَان",
+      "matchedRoot": "بنن",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 12
+    },
+    {
+      "surah": 75,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

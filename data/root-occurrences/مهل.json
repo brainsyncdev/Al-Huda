@@ -1,0 +1,106 @@
+{
+  "entry": {
+    "slug": "مهل",
+    "title": "مهل",
+    "arabicTitle": "مهل",
+    "roots": [
+      "مهل"
+    ],
+    "includedLemmas": [
+      "أَمْهِلْ",
+      "مَهِّلِ",
+      "مُهْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "كَٱلْمُهْلِ",
+      "matchedLemma": "مُهْل",
+      "matchedRoot": "مهل",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 45
+      },
+      "matchedToken": "كَٱلْمُهْلِ",
+      "matchedLemma": "مُهْل",
+      "matchedRoot": "مهل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 8
+      },
+      "matchedToken": "كَٱلْمُهْلِ",
+      "matchedLemma": "مُهْل",
+      "matchedRoot": "مهل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 11
+      },
+      "matchedToken": "وَمَهِّلْهُمْ",
+      "matchedLemma": "مَهِّلِ",
+      "matchedRoot": "مهل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 86,
+        "ayah": 17
+      },
+      "matchedToken": "فَمَهِّلِ",
+      "matchedLemma": "مَهِّلِ",
+      "matchedRoot": "مهل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 86,
+        "ayah": 17
+      },
+      "matchedToken": "أَمْهِلْهُمْ",
+      "matchedLemma": "أَمْهِلْ",
+      "matchedRoot": "مهل",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 29
+    },
+    {
+      "surah": 44,
+      "ayah": 45
+    },
+    {
+      "surah": 70,
+      "ayah": 8
+    },
+    {
+      "surah": 73,
+      "ayah": 11
+    },
+    {
+      "surah": 86,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

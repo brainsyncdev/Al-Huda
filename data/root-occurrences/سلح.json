@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "سلح",
+    "title": "سلح",
+    "arabicTitle": "سلح",
+    "roots": [
+      "سلح"
+    ],
+    "includedLemmas": [
+      "أَسْلِحَت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 102
+      },
+      "matchedToken": "أَسْلِحَتَهُمْ",
+      "matchedLemma": "أَسْلِحَت",
+      "matchedRoot": "سلح",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 102
+      },
+      "matchedToken": "وَأَسْلِحَتَهُمْ ۗ",
+      "matchedLemma": "أَسْلِحَت",
+      "matchedRoot": "سلح",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 102
+      },
+      "matchedToken": "أَسْلِحَتِكُمْ",
+      "matchedLemma": "أَسْلِحَت",
+      "matchedRoot": "سلح",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 102
+      },
+      "matchedToken": "أَسْلِحَتَكُمْ ۖ",
+      "matchedLemma": "أَسْلِحَت",
+      "matchedRoot": "سلح",
+      "wordPosition": 54
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 102
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

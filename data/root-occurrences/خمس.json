@@ -1,0 +1,139 @@
+{
+  "entry": {
+    "slug": "خمس",
+    "title": "خمس",
+    "arabicTitle": "خمس",
+    "roots": [
+      "خمس"
+    ],
+    "includedLemmas": [
+      "خَمْسَة",
+      "خَمْسِين",
+      "خَٰمِسَة",
+      "خُمُس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 125
+      },
+      "matchedToken": "بِخَمْسَةِ",
+      "matchedLemma": "خَمْسَة",
+      "matchedRoot": "خمس",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 41
+      },
+      "matchedToken": "خُمُسَهُۥ",
+      "matchedLemma": "خُمُس",
+      "matchedRoot": "خمس",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 22
+      },
+      "matchedToken": "خَمْسَةٌۭ",
+      "matchedLemma": "خَمْسَة",
+      "matchedRoot": "خمس",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 7
+      },
+      "matchedToken": "وَٱلْخَـٰمِسَةُ",
+      "matchedLemma": "خَٰمِسَة",
+      "matchedRoot": "خمس",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 9
+      },
+      "matchedToken": "وَٱلْخَـٰمِسَةَ",
+      "matchedLemma": "خَٰمِسَة",
+      "matchedRoot": "خمس",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 14
+      },
+      "matchedToken": "خَمْسِينَ",
+      "matchedLemma": "خَمْسِين",
+      "matchedRoot": "خمس",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 7
+      },
+      "matchedToken": "خَمْسَةٍ",
+      "matchedLemma": "خَمْسَة",
+      "matchedRoot": "خمس",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 4
+      },
+      "matchedToken": "خَمْسِينَ",
+      "matchedLemma": "خَمْسِين",
+      "matchedRoot": "خمس",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 125
+    },
+    {
+      "surah": 8,
+      "ayah": 41
+    },
+    {
+      "surah": 18,
+      "ayah": 22
+    },
+    {
+      "surah": 24,
+      "ayah": 7
+    },
+    {
+      "surah": 24,
+      "ayah": 9
+    },
+    {
+      "surah": 29,
+      "ayah": 14
+    },
+    {
+      "surah": 58,
+      "ayah": 7
+    },
+    {
+      "surah": 70,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

@@ -1,0 +1,48 @@
+{
+  "entry": {
+    "slug": "وطر",
+    "title": "وطر",
+    "arabicTitle": "وطر",
+    "roots": [
+      "وطر"
+    ],
+    "includedLemmas": [
+      "وَطَر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 37
+      },
+      "matchedToken": "وَطَرًۭا",
+      "matchedLemma": "وَطَر",
+      "matchedRoot": "وطر",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 37
+      },
+      "matchedToken": "وَطَرًۭا ۚ",
+      "matchedLemma": "وَطَر",
+      "matchedRoot": "وطر",
+      "wordPosition": 44
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 33,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

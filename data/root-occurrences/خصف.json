@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "خصف",
+    "title": "خصف",
+    "arabicTitle": "خصف",
+    "roots": [
+      "خصف"
+    ],
+    "includedLemmas": [
+      "يَخْصِفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 22
+      },
+      "matchedToken": "يَخْصِفَانِ",
+      "matchedLemma": "يَخْصِفَ",
+      "matchedRoot": "خصف",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 121
+      },
+      "matchedToken": "يَخْصِفَانِ",
+      "matchedLemma": "يَخْصِفَ",
+      "matchedRoot": "خصف",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 22
+    },
+    {
+      "surah": 20,
+      "ayah": 121
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

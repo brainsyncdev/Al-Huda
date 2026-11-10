@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "زمهر",
+    "title": "زمهر",
+    "arabicTitle": "زمهر",
+    "roots": [
+      "زمهر"
+    ],
+    "includedLemmas": [
+      "زَمْهَرِير"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 13
+      },
+      "matchedToken": "زَمْهَرِيرًۭا",
+      "matchedLemma": "زَمْهَرِير",
+      "matchedRoot": "زمهر",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 76,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

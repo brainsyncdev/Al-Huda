@@ -1,0 +1,147 @@
+{
+  "entry": {
+    "slug": "فيض",
+    "title": "فيض",
+    "arabicTitle": "فيض",
+    "roots": [
+      "فيض"
+    ],
+    "includedLemmas": [
+      "أَفَاضَ",
+      "تَفِيضُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 198
+      },
+      "matchedToken": "أَفَضْتُم",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 199
+      },
+      "matchedToken": "أَفِيضُوا۟",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 199
+      },
+      "matchedToken": "أَفَاضَ",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 83
+      },
+      "matchedToken": "تَفِيضُ",
+      "matchedLemma": "تَفِيضُ",
+      "matchedRoot": "فيض",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 50
+      },
+      "matchedToken": "أَفِيضُوا۟",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 92
+      },
+      "matchedToken": "تَفِيضُ",
+      "matchedLemma": "تَفِيضُ",
+      "matchedRoot": "فيض",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 61
+      },
+      "matchedToken": "تُفِيضُونَ",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 14
+      },
+      "matchedToken": "أَفَضْتُمْ",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 8
+      },
+      "matchedToken": "تُفِيضُونَ",
+      "matchedLemma": "أَفَاضَ",
+      "matchedRoot": "فيض",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 198
+    },
+    {
+      "surah": 2,
+      "ayah": 199
+    },
+    {
+      "surah": 5,
+      "ayah": 83
+    },
+    {
+      "surah": 7,
+      "ayah": 50
+    },
+    {
+      "surah": 9,
+      "ayah": 92
+    },
+    {
+      "surah": 10,
+      "ayah": 61
+    },
+    {
+      "surah": 24,
+      "ayah": 14
+    },
+    {
+      "surah": 46,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "شرر",
+    "title": "شرر",
+    "arabicTitle": "شرر",
+    "roots": [
+      "شرر"
+    ],
+    "includedLemmas": [
+      "شَرَر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 32
+      },
+      "matchedToken": "بِشَرَرٍۢ",
+      "matchedLemma": "شَرَر",
+      "matchedRoot": "شرر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 77,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

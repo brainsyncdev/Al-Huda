@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "شيب",
+    "title": "شيب",
+    "arabicTitle": "شيب",
+    "roots": [
+      "شيب"
+    ],
+    "includedLemmas": [
+      "شَيْب",
+      "شَيْبَة",
+      "شِيب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 4
+      },
+      "matchedToken": "شَيْبًۭا",
+      "matchedLemma": "شَيْب",
+      "matchedRoot": "شيب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 54
+      },
+      "matchedToken": "وَشَيْبَةًۭ ۚ",
+      "matchedLemma": "شَيْبَة",
+      "matchedRoot": "شيب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 17
+      },
+      "matchedToken": "شِيبًا",
+      "matchedLemma": "شِيب",
+      "matchedRoot": "شيب",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 19,
+      "ayah": 4
+    },
+    {
+      "surah": 30,
+      "ayah": 54
+    },
+    {
+      "surah": 73,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

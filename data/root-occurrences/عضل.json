@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "عضل",
+    "title": "عضل",
+    "arabicTitle": "عضل",
+    "roots": [
+      "عضل"
+    ],
+    "includedLemmas": [
+      "تَعْضُلُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 232
+      },
+      "matchedToken": "تَعْضُلُوهُنَّ",
+      "matchedLemma": "تَعْضُلُ",
+      "matchedRoot": "عضل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 19
+      },
+      "matchedToken": "تَعْضُلُوهُنَّ",
+      "matchedLemma": "تَعْضُلُ",
+      "matchedRoot": "عضل",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 232
+    },
+    {
+      "surah": 4,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

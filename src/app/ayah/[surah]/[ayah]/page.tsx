@@ -27,9 +27,66 @@ import {
 } from "@/components/quran/cross-reference-panel";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB, ayahJsonLd, breadcrumbs } from "@/lib/seo/json-ld";
+import { RootContextPanel } from "@/components/quran/root-context-panel";
+import {
+  getSprint48RootBySlug,
+  loadSprint48OccurrenceFile,
+} from "@/lib/morphology/sprint-48-root-data";
 
 interface Props {
   params: Promise<{ surah: string; ayah: string }>;
+  searchParams: Promise<{ from?: string; root?: string }>;
+}
+
+/**
+ * Sprint 50: Build root context for ayah reader when navigating from root discovery.
+ * Returns null if the root or occurrence data is not available.
+ */
+function buildRootContext(
+  rootSlug: string,
+  surah: number,
+  ayah: number
+): {
+  root: string;
+  slug: string;
+  transliteration?: string;
+  lemma?: string;
+  occurrenceIndex: number;
+  totalOccurrences: number;
+  prevOccurrence?: { surah: number; ayah: number };
+  nextOccurrence?: { surah: number; ayah: number };
+} | null {
+  const rootEntry = getSprint48RootBySlug(rootSlug);
+  if (!rootEntry) return null;
+
+  const occurrenceFile = loadSprint48OccurrenceFile(rootSlug);
+  if (!occurrenceFile || occurrenceFile.totalMatches === 0) return null;
+
+  // Find occurrences of this ayah in the root
+  const ayahOccurrences = occurrenceFile.occurrences.filter(
+    (occ) => occ.ref.surah === surah && occ.ref.ayah === ayah
+  );
+
+  if (ayahOccurrences.length === 0) return null;
+
+  // Use the first occurrence for context
+  const firstOcc = ayahOccurrences[0];
+  const occurrenceIndex = occurrenceFile.occurrences.indexOf(firstOcc) + 1;
+
+  // Find previous and next occurrences for navigation
+  const prevOcc = occurrenceIndex > 1 ? occurrenceFile.occurrences[occurrenceIndex - 2] : undefined;
+  const nextOcc = occurrenceIndex < occurrenceFile.totalMatches ? occurrenceFile.occurrences[occurrenceIndex] : undefined;
+
+  return {
+    root: rootEntry.root,
+    slug: rootSlug,
+    transliteration: rootEntry.transliteration,
+    lemma: firstOcc.matchedLemma,
+    occurrenceIndex,
+    totalOccurrences: occurrenceFile.totalMatches,
+    prevOccurrence: prevOcc ? { surah: prevOcc.ref.surah, ayah: prevOcc.ref.ayah } : undefined,
+    nextOccurrence: nextOcc ? { surah: nextOcc.ref.surah, ayah: nextOcc.ref.ayah } : undefined,
+  };
 }
 
 /**
@@ -71,8 +128,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function AyahPage({ params }: Props) {
+export default async function AyahPage({ params, searchParams }: Props) {
   const { surah, ayah } = await params;
+  const { from, root: rootSlug } = await searchParams;
   const s = Number(surah);
   const a = Number(ayah);
   if (!Number.isInteger(s) || !Number.isInteger(a)) return notFound();
@@ -112,9 +170,15 @@ export default async function AyahPage({ params }: Props) {
     )
   );
 
+  // Sprint 50: Root context when navigating from root discovery
+  const rootContext = from === "root" && rootSlug
+    ? buildRootContext(rootSlug, s, a)
+    : null;
+
   const ayahPagePath = ayahPath({ surah: s, ayah: a });
 
   return (
+
     <div className="space-y-8 pb-8">
       <JsonLd
         nodes={[
@@ -194,6 +258,19 @@ export default async function AyahPage({ params }: Props) {
         surahTransliteration={surahMeta.transliteration}
         variant="full"
       />
+
+      {rootContext && (
+        <RootContextPanel
+          root={rootContext.root}
+          slug={rootContext.slug}
+          transliteration={rootContext.transliteration}
+          lemma={rootContext.lemma}
+          occurrenceIndex={rootContext.occurrenceIndex}
+          totalOccurrences={rootContext.totalOccurrences}
+          prevOccurrence={rootContext.prevOccurrence}
+          nextOccurrence={rootContext.nextOccurrence}
+        />
+      )}
 
       {topics.length > 0 && (
         <section

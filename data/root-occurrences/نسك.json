@@ -1,0 +1,120 @@
+{
+  "entry": {
+    "slug": "نسك",
+    "title": "نسك",
+    "arabicTitle": "نسك",
+    "roots": [
+      "نسك"
+    ],
+    "includedLemmas": [
+      "مَنسَك",
+      "نَاسِكُو",
+      "نُسُك"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 128
+      },
+      "matchedToken": "مَنَاسِكَنَا",
+      "matchedLemma": "مَنسَك",
+      "matchedRoot": "نسك",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 196
+      },
+      "matchedToken": "نُسُكٍۢ ۚ",
+      "matchedLemma": "نُسُك",
+      "matchedRoot": "نسك",
+      "wordPosition": 33
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 200
+      },
+      "matchedToken": "مَّنَـٰسِكَكُمْ",
+      "matchedLemma": "مَنسَك",
+      "matchedRoot": "نسك",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 162
+      },
+      "matchedToken": "وَنُسُكِى",
+      "matchedLemma": "نُسُك",
+      "matchedRoot": "نسك",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 34
+      },
+      "matchedToken": "مَنسَكًۭا",
+      "matchedLemma": "مَنسَك",
+      "matchedRoot": "نسك",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 67
+      },
+      "matchedToken": "مَنسَكًا",
+      "matchedLemma": "مَنسَك",
+      "matchedRoot": "نسك",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 67
+      },
+      "matchedToken": "نَاسِكُوهُ ۖ",
+      "matchedLemma": "نَاسِكُو",
+      "matchedRoot": "نسك",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 128
+    },
+    {
+      "surah": 2,
+      "ayah": 196
+    },
+    {
+      "surah": 2,
+      "ayah": 200
+    },
+    {
+      "surah": 6,
+      "ayah": 162
+    },
+    {
+      "surah": 22,
+      "ayah": 34
+    },
+    {
+      "surah": 22,
+      "ayah": 67
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

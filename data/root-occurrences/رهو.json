@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "رهو",
+    "title": "رهو",
+    "arabicTitle": "رهو",
+    "roots": [
+      "رهو"
+    ],
+    "includedLemmas": [
+      "رَهْو"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 24
+      },
+      "matchedToken": "رَهْوًا ۖ",
+      "matchedLemma": "رَهْو",
+      "matchedRoot": "رهو",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 44,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

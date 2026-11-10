@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "اثث",
+    "title": "اثث",
+    "arabicTitle": "اثث",
+    "roots": [
+      "اثث"
+    ],
+    "includedLemmas": [
+      "أَثَٰث"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 80
+      },
+      "matchedToken": "أَثَـٰثًۭا",
+      "matchedLemma": "أَثَٰث",
+      "matchedRoot": "اثث",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 74
+      },
+      "matchedToken": "أَثَـٰثًۭا",
+      "matchedLemma": "أَثَٰث",
+      "matchedRoot": "اثث",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 80
+    },
+    {
+      "surah": 19,
+      "ayah": 74
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

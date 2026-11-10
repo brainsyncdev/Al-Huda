@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "عيي",
+    "title": "عيي",
+    "arabicTitle": "عيي",
+    "roots": [
+      "عيي"
+    ],
+    "includedLemmas": [
+      "عَيِي"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 33
+      },
+      "matchedToken": "يَعْىَ",
+      "matchedLemma": "عَيِي",
+      "matchedRoot": "عيي",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 15
+      },
+      "matchedToken": "أَفَعَيِينَا",
+      "matchedLemma": "عَيِي",
+      "matchedRoot": "عيي",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 46,
+      "ayah": 33
+    },
+    {
+      "surah": 50,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

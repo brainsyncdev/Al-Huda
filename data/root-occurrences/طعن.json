@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "طعن",
+    "title": "طعن",
+    "arabicTitle": "طعن",
+    "roots": [
+      "طعن"
+    ],
+    "includedLemmas": [
+      "طَعَنُ",
+      "طَعْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 46
+      },
+      "matchedToken": "وَطَعْنًۭا",
+      "matchedLemma": "طَعْن",
+      "matchedRoot": "طعن",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 12
+      },
+      "matchedToken": "وَطَعَنُوا۟",
+      "matchedLemma": "طَعَنُ",
+      "matchedRoot": "طعن",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 46
+    },
+    {
+      "surah": 9,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

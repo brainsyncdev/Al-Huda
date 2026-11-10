@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "نسب",
+    "title": "نسب",
+    "arabicTitle": "نسب",
+    "roots": [
+      "نسب"
+    ],
+    "includedLemmas": [
+      "نَسَب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 101
+      },
+      "matchedToken": "أَنسَابَ",
+      "matchedLemma": "نَسَب",
+      "matchedRoot": "نسب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 54
+      },
+      "matchedToken": "نَسَبًۭا",
+      "matchedLemma": "نَسَب",
+      "matchedRoot": "نسب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 158
+      },
+      "matchedToken": "نَسَبًۭا ۚ",
+      "matchedLemma": "نَسَب",
+      "matchedRoot": "نسب",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 101
+    },
+    {
+      "surah": 25,
+      "ayah": 54
+    },
+    {
+      "surah": 37,
+      "ayah": 158
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

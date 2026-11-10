@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "اصر",
+    "title": "اصر",
+    "arabicTitle": "اصر",
+    "roots": [
+      "اصر"
+    ],
+    "includedLemmas": [
+      "إِصْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 286
+      },
+      "matchedToken": "إِصْرًۭا",
+      "matchedLemma": "إِصْر",
+      "matchedRoot": "اصر",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 81
+      },
+      "matchedToken": "إِصْرِى ۖ",
+      "matchedLemma": "إِصْر",
+      "matchedRoot": "اصر",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 157
+      },
+      "matchedToken": "إِصْرَهُمْ",
+      "matchedLemma": "إِصْر",
+      "matchedRoot": "اصر",
+      "wordPosition": 26
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 286
+    },
+    {
+      "surah": 3,
+      "ayah": 81
+    },
+    {
+      "surah": 7,
+      "ayah": 157
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

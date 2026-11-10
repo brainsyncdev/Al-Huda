@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "slug": "لالا",
+    "title": "لالا",
+    "arabicTitle": "لالا",
+    "roots": [
+      "لالا"
+    ],
+    "includedLemmas": [
+      "لُؤْلُؤ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 23
+      },
+      "matchedToken": "وَلُؤْلُؤًۭا ۖ",
+      "matchedLemma": "لُؤْلُؤ",
+      "matchedRoot": "لالا",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 33
+      },
+      "matchedToken": "وَلُؤْلُؤًۭا ۖ",
+      "matchedLemma": "لُؤْلُؤ",
+      "matchedRoot": "لالا",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 24
+      },
+      "matchedToken": "لُؤْلُؤٌۭ",
+      "matchedLemma": "لُؤْلُؤ",
+      "matchedRoot": "لالا",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 22
+      },
+      "matchedToken": "ٱللُّؤْلُؤُ",
+      "matchedLemma": "لُؤْلُؤ",
+      "matchedRoot": "لالا",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 23
+      },
+      "matchedToken": "ٱللُّؤْلُؤِ",
+      "matchedLemma": "لُؤْلُؤ",
+      "matchedRoot": "لالا",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 19
+      },
+      "matchedToken": "لُؤْلُؤًۭا",
+      "matchedLemma": "لُؤْلُؤ",
+      "matchedRoot": "لالا",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 23
+    },
+    {
+      "surah": 35,
+      "ayah": 33
+    },
+    {
+      "surah": 52,
+      "ayah": 24
+    },
+    {
+      "surah": 55,
+      "ayah": 22
+    },
+    {
+      "surah": 56,
+      "ayah": 23
+    },
+    {
+      "surah": 76,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

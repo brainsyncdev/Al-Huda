@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "خرب",
+    "title": "خرب",
+    "arabicTitle": "خرب",
+    "roots": [
+      "خرب"
+    ],
+    "includedLemmas": [
+      "خَرَاب",
+      "يُخْرِبُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 114
+      },
+      "matchedToken": "خَرَابِهَآ ۚ",
+      "matchedLemma": "خَرَاب",
+      "matchedRoot": "خرب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 2
+      },
+      "matchedToken": "يُخْرِبُونَ",
+      "matchedLemma": "يُخْرِبُ",
+      "matchedRoot": "خرب",
+      "wordPosition": 33
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 114
+    },
+    {
+      "surah": 59,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

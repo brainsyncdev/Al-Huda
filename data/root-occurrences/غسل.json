@@ -1,0 +1,83 @@
+{
+  "entry": {
+    "slug": "غسل",
+    "title": "غسل",
+    "arabicTitle": "غسل",
+    "roots": [
+      "غسل"
+    ],
+    "includedLemmas": [
+      "اغْسِلُ",
+      "تَغْتَسِلُ",
+      "غِسْلِين",
+      "مُغْتَسَل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 43
+      },
+      "matchedToken": "تَغْتَسِلُوا۟ ۚ",
+      "matchedLemma": "تَغْتَسِلُ",
+      "matchedRoot": "غسل",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 6
+      },
+      "matchedToken": "فَٱغْسِلُوا۟",
+      "matchedLemma": "اغْسِلُ",
+      "matchedRoot": "غسل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 42
+      },
+      "matchedToken": "مُغْتَسَلٌۢ",
+      "matchedLemma": "مُغْتَسَل",
+      "matchedRoot": "غسل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 36
+      },
+      "matchedToken": "غِسْلِينٍۢ",
+      "matchedLemma": "غِسْلِين",
+      "matchedRoot": "غسل",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 43
+    },
+    {
+      "surah": 5,
+      "ayah": 6
+    },
+    {
+      "surah": 38,
+      "ayah": 42
+    },
+    {
+      "surah": 69,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

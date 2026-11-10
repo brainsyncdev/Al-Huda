@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "ثقف",
+    "title": "ثقف",
+    "arabicTitle": "ثقف",
+    "roots": [
+      "ثقف"
+    ],
+    "includedLemmas": [
+      "ثُقِفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 191
+      },
+      "matchedToken": "ثَقِفْتُمُوهُمْ",
+      "matchedLemma": "ثُقِفُ",
+      "matchedRoot": "ثقف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 112
+      },
+      "matchedToken": "ثُقِفُوٓا۟",
+      "matchedLemma": "ثُقِفُ",
+      "matchedRoot": "ثقف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 57
+      },
+      "matchedToken": "تَثْقَفَنَّهُمْ",
+      "matchedLemma": "ثُقِفُ",
+      "matchedRoot": "ثقف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 2
+      },
+      "matchedToken": "يَثْقَفُوكُمْ",
+      "matchedLemma": "ثُقِفُ",
+      "matchedRoot": "ثقف",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 191
+    },
+    {
+      "surah": 3,
+      "ayah": 112
+    },
+    {
+      "surah": 8,
+      "ayah": 57
+    },
+    {
+      "surah": 60,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

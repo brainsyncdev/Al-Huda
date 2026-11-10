@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "خضد",
+    "title": "خضد",
+    "arabicTitle": "خضد",
+    "roots": [
+      "خضد"
+    ],
+    "includedLemmas": [
+      "مَّخْضُود"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 28
+      },
+      "matchedToken": "مَّخْضُودٍۢ",
+      "matchedLemma": "مَّخْضُود",
+      "matchedRoot": "خضد",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 56,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

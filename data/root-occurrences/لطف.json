@@ -1,0 +1,137 @@
+{
+  "entry": {
+    "slug": "لطف",
+    "title": "لطف",
+    "arabicTitle": "لطف",
+    "roots": [
+      "لطف"
+    ],
+    "includedLemmas": [
+      "لَطِيف",
+      "يَتَلَطَّفْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 103
+      },
+      "matchedToken": "ٱللَّطِيفُ",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 100
+      },
+      "matchedToken": "لَطِيفٌۭ",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 19
+      },
+      "matchedToken": "وَلْيَتَلَطَّفْ",
+      "matchedLemma": "يَتَلَطَّفْ",
+      "matchedRoot": "لطف",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 63
+      },
+      "matchedToken": "لَطِيفٌ",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 16
+      },
+      "matchedToken": "لَطِيفٌ",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 34
+      },
+      "matchedToken": "لَطِيفًا",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 19
+      },
+      "matchedToken": "لَطِيفٌۢ",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 14
+      },
+      "matchedToken": "ٱللَّطِيفُ",
+      "matchedLemma": "لَطِيف",
+      "matchedRoot": "لطف",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 103
+    },
+    {
+      "surah": 12,
+      "ayah": 100
+    },
+    {
+      "surah": 18,
+      "ayah": 19
+    },
+    {
+      "surah": 22,
+      "ayah": 63
+    },
+    {
+      "surah": 31,
+      "ayah": 16
+    },
+    {
+      "surah": 33,
+      "ayah": 34
+    },
+    {
+      "surah": 42,
+      "ayah": 19
+    },
+    {
+      "surah": 67,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

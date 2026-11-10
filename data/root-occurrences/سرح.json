@@ -1,0 +1,117 @@
+{
+  "entry": {
+    "slug": "سرح",
+    "title": "سرح",
+    "arabicTitle": "سرح",
+    "roots": [
+      "سرح"
+    ],
+    "includedLemmas": [
+      "تَسْرَحُ",
+      "تَسْرِيح",
+      "سَرَاح",
+      "سَرِّحُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 229
+      },
+      "matchedToken": "تَسْرِيحٌۢ",
+      "matchedLemma": "تَسْرِيح",
+      "matchedRoot": "سرح",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 231
+      },
+      "matchedToken": "سَرِّحُوهُنَّ",
+      "matchedLemma": "سَرِّحُ",
+      "matchedRoot": "سرح",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 6
+      },
+      "matchedToken": "تَسْرَحُونَ",
+      "matchedLemma": "تَسْرَحُ",
+      "matchedRoot": "سرح",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 28
+      },
+      "matchedToken": "وَأُسَرِّحْكُنَّ",
+      "matchedLemma": "سَرِّحُ",
+      "matchedRoot": "سرح",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 28
+      },
+      "matchedToken": "سَرَاحًۭا",
+      "matchedLemma": "سَرَاح",
+      "matchedRoot": "سرح",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 49
+      },
+      "matchedToken": "وَسَرِّحُوهُنَّ",
+      "matchedLemma": "سَرِّحُ",
+      "matchedRoot": "سرح",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 49
+      },
+      "matchedToken": "سَرَاحًۭا",
+      "matchedLemma": "سَرَاح",
+      "matchedRoot": "سرح",
+      "wordPosition": 21
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 229
+    },
+    {
+      "surah": 2,
+      "ayah": 231
+    },
+    {
+      "surah": 16,
+      "ayah": 6
+    },
+    {
+      "surah": 33,
+      "ayah": 28
+    },
+    {
+      "surah": 33,
+      "ayah": 49
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

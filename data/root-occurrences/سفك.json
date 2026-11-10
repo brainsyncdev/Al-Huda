@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "سفك",
+    "title": "سفك",
+    "arabicTitle": "سفك",
+    "roots": [
+      "سفك"
+    ],
+    "includedLemmas": [
+      "يَسْفِكُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 30
+      },
+      "matchedToken": "وَيَسْفِكُ",
+      "matchedLemma": "يَسْفِكُ",
+      "matchedRoot": "سفك",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 84
+      },
+      "matchedToken": "تَسْفِكُونَ",
+      "matchedLemma": "يَسْفِكُ",
+      "matchedRoot": "سفك",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 30
+    },
+    {
+      "surah": 2,
+      "ayah": 84
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

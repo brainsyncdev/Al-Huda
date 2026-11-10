@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "عفف",
+    "title": "عفف",
+    "arabicTitle": "عفف",
+    "roots": [
+      "عفف"
+    ],
+    "includedLemmas": [
+      "تَّعَفُّف",
+      "يَسْتَعْفِفْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 273
+      },
+      "matchedToken": "ٱلتَّعَفُّفِ",
+      "matchedLemma": "تَّعَفُّف",
+      "matchedRoot": "عفف",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 6
+      },
+      "matchedToken": "فَلْيَسْتَعْفِفْ ۖ",
+      "matchedLemma": "يَسْتَعْفِفْ",
+      "matchedRoot": "عفف",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 33
+      },
+      "matchedToken": "وَلْيَسْتَعْفِفِ",
+      "matchedLemma": "يَسْتَعْفِفْ",
+      "matchedRoot": "عفف",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 60
+      },
+      "matchedToken": "يَسْتَعْفِفْنَ",
+      "matchedLemma": "يَسْتَعْفِفْ",
+      "matchedRoot": "عفف",
+      "wordPosition": 18
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 273
+    },
+    {
+      "surah": 4,
+      "ayah": 6
+    },
+    {
+      "surah": 24,
+      "ayah": 33
+    },
+    {
+      "surah": 24,
+      "ayah": 60
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

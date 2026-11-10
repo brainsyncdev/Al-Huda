@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "مخر",
+    "title": "مخر",
+    "arabicTitle": "مخر",
+    "roots": [
+      "مخر"
+    ],
+    "includedLemmas": [
+      "مَوَاخِر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 14
+      },
+      "matchedToken": "مَوَاخِرَ",
+      "matchedLemma": "مَوَاخِر",
+      "matchedRoot": "مخر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "مَوَاخِرَ",
+      "matchedLemma": "مَوَاخِر",
+      "matchedRoot": "مخر",
+      "wordPosition": 23
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 14
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

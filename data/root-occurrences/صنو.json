@@ -1,0 +1,48 @@
+{
+  "entry": {
+    "slug": "صنو",
+    "title": "صنو",
+    "arabicTitle": "صنو",
+    "roots": [
+      "صنو"
+    ],
+    "includedLemmas": [
+      "صِنْوَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 4
+      },
+      "matchedToken": "صِنْوَانٌۭ",
+      "matchedLemma": "صِنْوَان",
+      "matchedRoot": "صنو",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 4
+      },
+      "matchedToken": "صِنْوَانٍۢ",
+      "matchedLemma": "صِنْوَان",
+      "matchedRoot": "صنو",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

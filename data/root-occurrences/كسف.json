@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "كسف",
+    "title": "كسف",
+    "arabicTitle": "كسف",
+    "roots": [
+      "كسف"
+    ],
+    "includedLemmas": [
+      "كِسَف",
+      "كِسْف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 92
+      },
+      "matchedToken": "كِسَفًا",
+      "matchedLemma": "كِسَف",
+      "matchedRoot": "كسف",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 187
+      },
+      "matchedToken": "كِسَفًۭا",
+      "matchedLemma": "كِسَف",
+      "matchedRoot": "كسف",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 48
+      },
+      "matchedToken": "كِسَفًۭا",
+      "matchedLemma": "كِسَف",
+      "matchedRoot": "كسف",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 9
+      },
+      "matchedToken": "كِسَفًۭا",
+      "matchedLemma": "كِسَف",
+      "matchedRoot": "كسف",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 44
+      },
+      "matchedToken": "كِسْفًۭا",
+      "matchedLemma": "كِسْف",
+      "matchedRoot": "كسف",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 92
+    },
+    {
+      "surah": 26,
+      "ayah": 187
+    },
+    {
+      "surah": 30,
+      "ayah": 48
+    },
+    {
+      "surah": 34,
+      "ayah": 9
+    },
+    {
+      "surah": 52,
+      "ayah": 44
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

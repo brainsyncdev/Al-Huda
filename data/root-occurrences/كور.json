@@ -1,0 +1,62 @@
+{
+  "entry": {
+    "slug": "كور",
+    "title": "كور",
+    "arabicTitle": "كور",
+    "roots": [
+      "كور"
+    ],
+    "includedLemmas": [
+      "كُوِّرَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 5
+      },
+      "matchedToken": "يُكَوِّرُ",
+      "matchedLemma": "كُوِّرَتْ",
+      "matchedRoot": "كور",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 5
+      },
+      "matchedToken": "وَيُكَوِّرُ",
+      "matchedLemma": "كُوِّرَتْ",
+      "matchedRoot": "كور",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 1
+      },
+      "matchedToken": "كُوِّرَتْ",
+      "matchedLemma": "كُوِّرَتْ",
+      "matchedRoot": "كور",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 39,
+      "ayah": 5
+    },
+    {
+      "surah": 81,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

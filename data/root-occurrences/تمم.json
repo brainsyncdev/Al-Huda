@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "تمم",
+    "title": "تمم",
+    "arabicTitle": "تمم",
+    "roots": [
+      "تمم"
+    ],
+    "includedLemmas": [
+      "تَمَام"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 154
+      },
+      "matchedToken": "تَمَامًا",
+      "matchedLemma": "تَمَام",
+      "matchedRoot": "تمم",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 154
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

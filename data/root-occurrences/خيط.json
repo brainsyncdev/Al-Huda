@@ -1,0 +1,63 @@
+{
+  "entry": {
+    "slug": "خيط",
+    "title": "خيط",
+    "arabicTitle": "خيط",
+    "roots": [
+      "خيط"
+    ],
+    "includedLemmas": [
+      "خَيْط",
+      "خِيَاط"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "ٱلْخَيْطُ",
+      "matchedLemma": "خَيْط",
+      "matchedRoot": "خيط",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 187
+      },
+      "matchedToken": "ٱلْخَيْطِ",
+      "matchedLemma": "خَيْط",
+      "matchedRoot": "خيط",
+      "wordPosition": 39
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 40
+      },
+      "matchedToken": "ٱلْخِيَاطِ ۚ",
+      "matchedLemma": "خِيَاط",
+      "matchedRoot": "خيط",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 187
+    },
+    {
+      "surah": 7,
+      "ayah": 40
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

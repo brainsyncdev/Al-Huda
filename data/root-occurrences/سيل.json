@@ -1,0 +1,78 @@
+{
+  "entry": {
+    "slug": "سيل",
+    "title": "سيل",
+    "arabicTitle": "سيل",
+    "roots": [
+      "سيل"
+    ],
+    "includedLemmas": [
+      "أَسَلْ",
+      "سَالَتْ",
+      "سَيْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 17
+      },
+      "matchedToken": "فَسَالَتْ",
+      "matchedLemma": "سَالَتْ",
+      "matchedRoot": "سيل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 17
+      },
+      "matchedToken": "ٱلسَّيْلُ",
+      "matchedLemma": "سَيْل",
+      "matchedRoot": "سيل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 12
+      },
+      "matchedToken": "وَأَسَلْنَا",
+      "matchedLemma": "أَسَلْ",
+      "matchedRoot": "سيل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 16
+      },
+      "matchedToken": "سَيْلَ",
+      "matchedLemma": "سَيْل",
+      "matchedRoot": "سيل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 17
+    },
+    {
+      "surah": 34,
+      "ayah": 12
+    },
+    {
+      "surah": 34,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

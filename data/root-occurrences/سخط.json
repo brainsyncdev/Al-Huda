@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "سخط",
+    "title": "سخط",
+    "arabicTitle": "سخط",
+    "roots": [
+      "سخط"
+    ],
+    "includedLemmas": [
+      "أَسْخَطَ",
+      "سَخَط",
+      "سَخِطَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 162
+      },
+      "matchedToken": "بِسَخَطٍۢ",
+      "matchedLemma": "سَخَط",
+      "matchedRoot": "سخط",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 80
+      },
+      "matchedToken": "سَخِطَ",
+      "matchedLemma": "سَخِطَ",
+      "matchedRoot": "سخط",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 58
+      },
+      "matchedToken": "يَسْخَطُونَ",
+      "matchedLemma": "سَخِطَ",
+      "matchedRoot": "سخط",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 28
+      },
+      "matchedToken": "أَسْخَطَ",
+      "matchedLemma": "أَسْخَطَ",
+      "matchedRoot": "سخط",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 162
+    },
+    {
+      "surah": 5,
+      "ayah": 80
+    },
+    {
+      "surah": 9,
+      "ayah": 58
+    },
+    {
+      "surah": 47,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

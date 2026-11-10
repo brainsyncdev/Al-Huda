@@ -1,0 +1,97 @@
+{
+  "entry": {
+    "slug": "عصر",
+    "title": "عصر",
+    "arabicTitle": "عصر",
+    "roots": [
+      "عصر"
+    ],
+    "includedLemmas": [
+      "إِعْصَار",
+      "عَصْر",
+      "مُعْصِرَٰت",
+      "يَعْصِرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 266
+      },
+      "matchedToken": "إِعْصَارٌۭ",
+      "matchedLemma": "إِعْصَار",
+      "matchedRoot": "عصر",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 36
+      },
+      "matchedToken": "أَعْصِرُ",
+      "matchedLemma": "يَعْصِرُ",
+      "matchedRoot": "عصر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 49
+      },
+      "matchedToken": "يَعْصِرُونَ",
+      "matchedLemma": "يَعْصِرُ",
+      "matchedRoot": "عصر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 14
+      },
+      "matchedToken": "ٱلْمُعْصِرَٰتِ",
+      "matchedLemma": "مُعْصِرَٰت",
+      "matchedRoot": "عصر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 103,
+        "ayah": 1
+      },
+      "matchedToken": "وَٱلْعَصْرِ",
+      "matchedLemma": "عَصْر",
+      "matchedRoot": "عصر",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 266
+    },
+    {
+      "surah": 12,
+      "ayah": 36
+    },
+    {
+      "surah": 12,
+      "ayah": 49
+    },
+    {
+      "surah": 78,
+      "ayah": 14
+    },
+    {
+      "surah": 103,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

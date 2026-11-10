@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وتن",
+    "title": "وتن",
+    "arabicTitle": "وتن",
+    "roots": [
+      "وتن"
+    ],
+    "includedLemmas": [
+      "وَتِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 46
+      },
+      "matchedToken": "ٱلْوَتِينَ",
+      "matchedLemma": "وَتِين",
+      "matchedRoot": "وتن",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 69,
+      "ayah": 46
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,76 @@
+{
+  "entry": {
+    "slug": "عور",
+    "title": "عور",
+    "arabicTitle": "عور",
+    "roots": [
+      "عور"
+    ],
+    "includedLemmas": [
+      "عَوْرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 31
+      },
+      "matchedToken": "عَوْرَٰتِ",
+      "matchedLemma": "عَوْرَة",
+      "matchedRoot": "عور",
+      "wordPosition": 61
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 58
+      },
+      "matchedToken": "عَوْرَٰتٍۢ",
+      "matchedLemma": "عَوْرَة",
+      "matchedRoot": "عور",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 13
+      },
+      "matchedToken": "عَوْرَةٌۭ",
+      "matchedLemma": "عَوْرَة",
+      "matchedRoot": "عور",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 13
+      },
+      "matchedToken": "بِعَوْرَةٍ ۖ",
+      "matchedLemma": "عَوْرَة",
+      "matchedRoot": "عور",
+      "wordPosition": 21
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 24,
+      "ayah": 31
+    },
+    {
+      "surah": 24,
+      "ayah": 58
+    },
+    {
+      "surah": 33,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

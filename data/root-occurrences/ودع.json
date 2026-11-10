@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "ودع",
+    "title": "ودع",
+    "arabicTitle": "ودع",
+    "roots": [
+      "ودع"
+    ],
+    "includedLemmas": [
+      "دَعْ",
+      "مُسْتَوْدَع",
+      "وَدَّعَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 98
+      },
+      "matchedToken": "وَمُسْتَوْدَعٌۭ ۗ",
+      "matchedLemma": "مُسْتَوْدَع",
+      "matchedRoot": "ودع",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 6
+      },
+      "matchedToken": "وَمُسْتَوْدَعَهَا ۚ",
+      "matchedLemma": "مُسْتَوْدَع",
+      "matchedRoot": "ودع",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 48
+      },
+      "matchedToken": "وَدَعْ",
+      "matchedLemma": "دَعْ",
+      "matchedRoot": "ودع",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 93,
+        "ayah": 3
+      },
+      "matchedToken": "وَدَّعَكَ",
+      "matchedLemma": "وَدَّعَ",
+      "matchedRoot": "ودع",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 98
+    },
+    {
+      "surah": 11,
+      "ayah": 6
+    },
+    {
+      "surah": 33,
+      "ayah": 48
+    },
+    {
+      "surah": 93,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

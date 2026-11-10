@@ -1,0 +1,77 @@
+{
+  "entry": {
+    "slug": "زول",
+    "title": "زول",
+    "arabicTitle": "زول",
+    "roots": [
+      "زول"
+    ],
+    "includedLemmas": [
+      "زَالَ",
+      "زَوَال"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 44
+      },
+      "matchedToken": "زَوَالٍۢ",
+      "matchedLemma": "زَوَال",
+      "matchedRoot": "زول",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 46
+      },
+      "matchedToken": "لِتَزُولَ",
+      "matchedLemma": "زَالَ",
+      "matchedRoot": "زول",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 41
+      },
+      "matchedToken": "تَزُولَا ۚ",
+      "matchedLemma": "زَالَ",
+      "matchedRoot": "زول",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 41
+      },
+      "matchedToken": "زَالَتَآ",
+      "matchedLemma": "زَالَ",
+      "matchedRoot": "زول",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 44
+    },
+    {
+      "surah": 14,
+      "ayah": 46
+    },
+    {
+      "surah": 35,
+      "ayah": 41
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "اجج",
+    "title": "اجج",
+    "arabicTitle": "اجج",
+    "roots": [
+      "اجج"
+    ],
+    "includedLemmas": [
+      "أُجَاج"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 53
+      },
+      "matchedToken": "أُجَاجٌۭ",
+      "matchedLemma": "أُجَاج",
+      "matchedRoot": "اجج",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 12
+      },
+      "matchedToken": "أُجَاجٌۭ ۖ",
+      "matchedLemma": "أُجَاج",
+      "matchedRoot": "اجج",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 70
+      },
+      "matchedToken": "أُجَاجًۭا",
+      "matchedLemma": "أُجَاج",
+      "matchedRoot": "اجج",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 53
+    },
+    {
+      "surah": 35,
+      "ayah": 12
+    },
+    {
+      "surah": 56,
+      "ayah": 70
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

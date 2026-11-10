@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "قوت",
+    "title": "قوت",
+    "arabicTitle": "قوت",
+    "roots": [
+      "قوت"
+    ],
+    "includedLemmas": [
+      "أَقْوَٰت",
+      "مُّقِيت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 85
+      },
+      "matchedToken": "مُّقِيتًۭا",
+      "matchedLemma": "مُّقِيت",
+      "matchedRoot": "قوت",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 10
+      },
+      "matchedToken": "أَقْوَٰتَهَا",
+      "matchedLemma": "أَقْوَٰت",
+      "matchedRoot": "قوت",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 85
+    },
+    {
+      "surah": 41,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

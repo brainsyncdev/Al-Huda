@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "افق",
+    "title": "افق",
+    "arabicTitle": "افق",
+    "roots": [
+      "افق"
+    ],
+    "includedLemmas": [
+      "أُفُق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 53
+      },
+      "matchedToken": "ٱلْـَٔافَاقِ",
+      "matchedLemma": "أُفُق",
+      "matchedRoot": "افق",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 7
+      },
+      "matchedToken": "بِٱلْأُفُقِ",
+      "matchedLemma": "أُفُق",
+      "matchedRoot": "افق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 23
+      },
+      "matchedToken": "بِٱلْأُفُقِ",
+      "matchedLemma": "أُفُق",
+      "matchedRoot": "افق",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 41,
+      "ayah": 53
+    },
+    {
+      "surah": 53,
+      "ayah": 7
+    },
+    {
+      "surah": 81,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

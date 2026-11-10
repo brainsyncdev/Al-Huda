@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "طفق",
+    "title": "طفق",
+    "arabicTitle": "طفق",
+    "roots": [
+      "طفق"
+    ],
+    "includedLemmas": [
+      "طَفِقَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 22
+      },
+      "matchedToken": "وَطَفِقَا",
+      "matchedLemma": "طَفِقَ",
+      "matchedRoot": "طفق",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 121
+      },
+      "matchedToken": "وَطَفِقَا",
+      "matchedLemma": "طَفِقَ",
+      "matchedRoot": "طفق",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 33
+      },
+      "matchedToken": "فَطَفِقَ",
+      "matchedLemma": "طَفِقَ",
+      "matchedRoot": "طفق",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 22
+    },
+    {
+      "surah": 20,
+      "ayah": 121
+    },
+    {
+      "surah": 38,
+      "ayah": 33
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

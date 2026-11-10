@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "ضغن",
+    "title": "ضغن",
+    "arabicTitle": "ضغن",
+    "roots": [
+      "ضغن"
+    ],
+    "includedLemmas": [
+      "أَضْغَٰن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 29
+      },
+      "matchedToken": "أَضْغَـٰنَهُمْ",
+      "matchedLemma": "أَضْغَٰن",
+      "matchedRoot": "ضغن",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 37
+      },
+      "matchedToken": "أَضْغَـٰنَكُمْ",
+      "matchedLemma": "أَضْغَٰن",
+      "matchedRoot": "ضغن",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 47,
+      "ayah": 29
+    },
+    {
+      "surah": 47,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "فوض",
+    "title": "فوض",
+    "arabicTitle": "فوض",
+    "roots": [
+      "فوض"
+    ],
+    "includedLemmas": [
+      "أُفَوِّضُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 44
+      },
+      "matchedToken": "وَأُفَوِّضُ",
+      "matchedLemma": "أُفَوِّضُ",
+      "matchedRoot": "فوض",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 40,
+      "ayah": 44
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

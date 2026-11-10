@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "عبس",
+    "title": "عبس",
+    "arabicTitle": "عبس",
+    "roots": [
+      "عبس"
+    ],
+    "includedLemmas": [
+      "عَبَسَ",
+      "عَبُوس"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 22
+      },
+      "matchedToken": "عَبَسَ",
+      "matchedLemma": "عَبَسَ",
+      "matchedRoot": "عبس",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 10
+      },
+      "matchedToken": "عَبُوسًۭا",
+      "matchedLemma": "عَبُوس",
+      "matchedRoot": "عبس",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 80,
+        "ayah": 1
+      },
+      "matchedToken": "عَبَسَ",
+      "matchedLemma": "عَبَسَ",
+      "matchedRoot": "عبس",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 74,
+      "ayah": 22
+    },
+    {
+      "surah": 76,
+      "ayah": 10
+    },
+    {
+      "surah": 80,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

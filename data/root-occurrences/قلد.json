@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "قلد",
+    "title": "قلد",
+    "arabicTitle": "قلد",
+    "roots": [
+      "قلد"
+    ],
+    "includedLemmas": [
+      "قَلَٰٓئِد",
+      "مَقَالِيد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 2
+      },
+      "matchedToken": "ٱلْقَلَـٰٓئِدَ",
+      "matchedLemma": "قَلَٰٓئِد",
+      "matchedRoot": "قلد",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 97
+      },
+      "matchedToken": "وَٱلْقَلَـٰٓئِدَ ۚ",
+      "matchedLemma": "قَلَٰٓئِد",
+      "matchedRoot": "قلد",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 63
+      },
+      "matchedToken": "مَقَالِيدُ",
+      "matchedLemma": "مَقَالِيد",
+      "matchedRoot": "قلد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 12
+      },
+      "matchedToken": "مَقَالِيدُ",
+      "matchedLemma": "مَقَالِيد",
+      "matchedRoot": "قلد",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 2
+    },
+    {
+      "surah": 5,
+      "ayah": 97
+    },
+    {
+      "surah": 39,
+      "ayah": 63
+    },
+    {
+      "surah": 42,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

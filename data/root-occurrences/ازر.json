@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "ازر",
+    "title": "ازر",
+    "arabicTitle": "ازر",
+    "roots": [
+      "ازر"
+    ],
+    "includedLemmas": [
+      "أَزْر",
+      "آزَرَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 31
+      },
+      "matchedToken": "أَزْرِى",
+      "matchedLemma": "أَزْر",
+      "matchedRoot": "ازر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 29
+      },
+      "matchedToken": "فَـَٔازَرَهُۥ",
+      "matchedLemma": "آزَرَ",
+      "matchedRoot": "ازر",
+      "wordPosition": 35
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 31
+    },
+    {
+      "surah": 48,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

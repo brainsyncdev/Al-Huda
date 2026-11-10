@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جبت",
+    "title": "جبت",
+    "arabicTitle": "جبت",
+    "roots": [
+      "جبت"
+    ],
+    "includedLemmas": [
+      "جِبْت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 51
+      },
+      "matchedToken": "بِٱلْجِبْتِ",
+      "matchedLemma": "جِبْت",
+      "matchedRoot": "جبت",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

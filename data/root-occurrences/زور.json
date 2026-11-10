@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "زور",
+    "title": "زور",
+    "arabicTitle": "زور",
+    "roots": [
+      "زور"
+    ],
+    "includedLemmas": [
+      "تَّزَٰوَرُ",
+      "زُرْ",
+      "زُّور"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 17
+      },
+      "matchedToken": "تَّزَٰوَرُ",
+      "matchedLemma": "تَّزَٰوَرُ",
+      "matchedRoot": "زور",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 30
+      },
+      "matchedToken": "ٱلزُّورِ",
+      "matchedLemma": "زُّور",
+      "matchedRoot": "زور",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 4
+      },
+      "matchedToken": "وَزُورًۭا",
+      "matchedLemma": "زُّور",
+      "matchedRoot": "زور",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 72
+      },
+      "matchedToken": "ٱلزُّورَ",
+      "matchedLemma": "زُّور",
+      "matchedRoot": "زور",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 2
+      },
+      "matchedToken": "وَزُورًۭا ۚ",
+      "matchedLemma": "زُّور",
+      "matchedRoot": "زور",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 102,
+        "ayah": 2
+      },
+      "matchedToken": "زُرْتُمُ",
+      "matchedLemma": "زُرْ",
+      "matchedRoot": "زور",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 17
+    },
+    {
+      "surah": 22,
+      "ayah": 30
+    },
+    {
+      "surah": 25,
+      "ayah": 4
+    },
+    {
+      "surah": 25,
+      "ayah": 72
+    },
+    {
+      "surah": 58,
+      "ayah": 2
+    },
+    {
+      "surah": 102,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

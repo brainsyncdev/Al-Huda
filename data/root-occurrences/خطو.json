@@ -1,0 +1,90 @@
+{
+  "entry": {
+    "slug": "خطو",
+    "title": "خطو",
+    "arabicTitle": "خطو",
+    "roots": [
+      "خطو"
+    ],
+    "includedLemmas": [
+      "خُطُوَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 168
+      },
+      "matchedToken": "خُطُوَٰتِ",
+      "matchedLemma": "خُطُوَٰت",
+      "matchedRoot": "خطو",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 208
+      },
+      "matchedToken": "خُطُوَٰتِ",
+      "matchedLemma": "خُطُوَٰت",
+      "matchedRoot": "خطو",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 142
+      },
+      "matchedToken": "خُطُوَٰتِ",
+      "matchedLemma": "خُطُوَٰت",
+      "matchedRoot": "خطو",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 21
+      },
+      "matchedToken": "خُطُوَٰتِ",
+      "matchedLemma": "خُطُوَٰت",
+      "matchedRoot": "خطو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 21
+      },
+      "matchedToken": "خُطُوَٰتِ",
+      "matchedLemma": "خُطُوَٰت",
+      "matchedRoot": "خطو",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 168
+    },
+    {
+      "surah": 2,
+      "ayah": 208
+    },
+    {
+      "surah": 6,
+      "ayah": 142
+    },
+    {
+      "surah": 24,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

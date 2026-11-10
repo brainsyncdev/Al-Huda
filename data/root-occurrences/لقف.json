@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "لقف",
+    "title": "لقف",
+    "arabicTitle": "لقف",
+    "roots": [
+      "لقف"
+    ],
+    "includedLemmas": [
+      "تَلْقَفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 117
+      },
+      "matchedToken": "تَلْقَفُ",
+      "matchedLemma": "تَلْقَفُ",
+      "matchedRoot": "لقف",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 69
+      },
+      "matchedToken": "تَلْقَفْ",
+      "matchedLemma": "تَلْقَفُ",
+      "matchedRoot": "لقف",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 45
+      },
+      "matchedToken": "تَلْقَفُ",
+      "matchedLemma": "تَلْقَفُ",
+      "matchedRoot": "لقف",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 117
+    },
+    {
+      "surah": 20,
+      "ayah": 69
+    },
+    {
+      "surah": 26,
+      "ayah": 45
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "سدر",
+    "title": "سدر",
+    "arabicTitle": "سدر",
+    "roots": [
+      "سدر"
+    ],
+    "includedLemmas": [
+      "سِدْر",
+      "سِدْرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 16
+      },
+      "matchedToken": "سِدْرٍۢ",
+      "matchedLemma": "سِدْر",
+      "matchedRoot": "سدر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 14
+      },
+      "matchedToken": "سِدْرَةِ",
+      "matchedLemma": "سِدْرَة",
+      "matchedRoot": "سدر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلسِّدْرَةَ",
+      "matchedLemma": "سِدْرَة",
+      "matchedRoot": "سدر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 28
+      },
+      "matchedToken": "سِدْرٍۢ",
+      "matchedLemma": "سِدْر",
+      "matchedRoot": "سدر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 34,
+      "ayah": 16
+    },
+    {
+      "surah": 53,
+      "ayah": 14
+    },
+    {
+      "surah": 53,
+      "ayah": 16
+    },
+    {
+      "surah": 56,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

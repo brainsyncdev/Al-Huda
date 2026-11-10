@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "سبط",
+    "title": "سبط",
+    "arabicTitle": "سبط",
+    "roots": [
+      "سبط"
+    ],
+    "includedLemmas": [
+      "أَسْبَاط"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 136
+      },
+      "matchedToken": "وَٱلْأَسْبَاطِ",
+      "matchedLemma": "أَسْبَاط",
+      "matchedRoot": "سبط",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 140
+      },
+      "matchedToken": "وَٱلْأَسْبَاطَ",
+      "matchedLemma": "أَسْبَاط",
+      "matchedRoot": "سبط",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 84
+      },
+      "matchedToken": "وَٱلْأَسْبَاطِ",
+      "matchedLemma": "أَسْبَاط",
+      "matchedRoot": "سبط",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "أَسْبَاطًا",
+      "matchedLemma": "أَسْبَاط",
+      "matchedRoot": "سبط",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 136
+    },
+    {
+      "surah": 2,
+      "ayah": 140
+    },
+    {
+      "surah": 3,
+      "ayah": 84
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

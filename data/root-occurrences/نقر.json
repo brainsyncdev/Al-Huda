@@ -1,0 +1,78 @@
+{
+  "entry": {
+    "slug": "نقر",
+    "title": "نقر",
+    "arabicTitle": "نقر",
+    "roots": [
+      "نقر"
+    ],
+    "includedLemmas": [
+      "نَقِير",
+      "نُقِرَ",
+      "نَّاقُور"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 53
+      },
+      "matchedToken": "نَقِيرًا",
+      "matchedLemma": "نَقِير",
+      "matchedRoot": "نقر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 124
+      },
+      "matchedToken": "نَقِيرًۭا",
+      "matchedLemma": "نَقِير",
+      "matchedRoot": "نقر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 8
+      },
+      "matchedToken": "نُقِرَ",
+      "matchedLemma": "نُقِرَ",
+      "matchedRoot": "نقر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 8
+      },
+      "matchedToken": "ٱلنَّاقُورِ",
+      "matchedLemma": "نَّاقُور",
+      "matchedRoot": "نقر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 53
+    },
+    {
+      "surah": 4,
+      "ayah": 124
+    },
+    {
+      "surah": 74,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

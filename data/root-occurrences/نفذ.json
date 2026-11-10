@@ -1,0 +1,58 @@
+{
+  "entry": {
+    "slug": "نفذ",
+    "title": "نفذ",
+    "arabicTitle": "نفذ",
+    "roots": [
+      "نفذ"
+    ],
+    "includedLemmas": [
+      "تَنفُذُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 33
+      },
+      "matchedToken": "تَنفُذُوا۟",
+      "matchedLemma": "تَنفُذُ",
+      "matchedRoot": "نفذ",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 33
+      },
+      "matchedToken": "فَٱنفُذُوا۟ ۚ",
+      "matchedLemma": "تَنفُذُ",
+      "matchedRoot": "نفذ",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 33
+      },
+      "matchedToken": "تَنفُذُونَ",
+      "matchedLemma": "تَنفُذُ",
+      "matchedRoot": "نفذ",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 55,
+      "ayah": 33
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

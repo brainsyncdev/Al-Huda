@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "هطع",
+    "title": "هطع",
+    "arabicTitle": "هطع",
+    "roots": [
+      "هطع"
+    ],
+    "includedLemmas": [
+      "مُهْطِعِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 43
+      },
+      "matchedToken": "مُهْطِعِينَ",
+      "matchedLemma": "مُهْطِعِين",
+      "matchedRoot": "هطع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 8
+      },
+      "matchedToken": "مُّهْطِعِينَ",
+      "matchedLemma": "مُهْطِعِين",
+      "matchedRoot": "هطع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 36
+      },
+      "matchedToken": "مُهْطِعِينَ",
+      "matchedLemma": "مُهْطِعِين",
+      "matchedRoot": "هطع",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 43
+    },
+    {
+      "surah": 54,
+      "ayah": 8
+    },
+    {
+      "surah": 70,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

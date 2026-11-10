@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "كوب",
+    "title": "كوب",
+    "arabicTitle": "كوب",
+    "roots": [
+      "كوب"
+    ],
+    "includedLemmas": [
+      "أَكْوَاب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 71
+      },
+      "matchedToken": "وَأَكْوَابٍۢ ۖ",
+      "matchedLemma": "أَكْوَاب",
+      "matchedRoot": "كوب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 18
+      },
+      "matchedToken": "بِأَكْوَابٍۢ",
+      "matchedLemma": "أَكْوَاب",
+      "matchedRoot": "كوب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 15
+      },
+      "matchedToken": "وَأَكْوَابٍۢ",
+      "matchedLemma": "أَكْوَاب",
+      "matchedRoot": "كوب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 14
+      },
+      "matchedToken": "وَأَكْوَابٌۭ",
+      "matchedLemma": "أَكْوَاب",
+      "matchedRoot": "كوب",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 43,
+      "ayah": 71
+    },
+    {
+      "surah": 56,
+      "ayah": 18
+    },
+    {
+      "surah": 76,
+      "ayah": 15
+    },
+    {
+      "surah": 88,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

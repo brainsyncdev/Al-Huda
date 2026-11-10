@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "سكت",
+    "title": "سكت",
+    "arabicTitle": "سكت",
+    "roots": [
+      "سكت"
+    ],
+    "includedLemmas": [
+      "سَكَتَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 154
+      },
+      "matchedToken": "سَكَتَ",
+      "matchedLemma": "سَكَتَ",
+      "matchedRoot": "سكت",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 154
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

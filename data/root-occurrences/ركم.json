@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "ركم",
+    "title": "ركم",
+    "arabicTitle": "ركم",
+    "roots": [
+      "ركم"
+    ],
+    "includedLemmas": [
+      "رُكَام",
+      "مَّرْكُوم",
+      "يَرْكُمَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 37
+      },
+      "matchedToken": "فَيَرْكُمَهُۥ",
+      "matchedLemma": "يَرْكُمَ",
+      "matchedRoot": "ركم",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 43
+      },
+      "matchedToken": "رُكَامًۭا",
+      "matchedLemma": "رُكَام",
+      "matchedRoot": "ركم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 44
+      },
+      "matchedToken": "مَّرْكُومٌۭ",
+      "matchedLemma": "مَّرْكُوم",
+      "matchedRoot": "ركم",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 37
+    },
+    {
+      "surah": 24,
+      "ayah": 43
+    },
+    {
+      "surah": 52,
+      "ayah": 44
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

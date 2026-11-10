@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "اسر",
+    "title": "اسر",
+    "arabicTitle": "اسر",
+    "roots": [
+      "اسر"
+    ],
+    "includedLemmas": [
+      "أَسِير",
+      "أَسْر",
+      "تَأْسِرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 85
+      },
+      "matchedToken": "أُسَـٰرَىٰ",
+      "matchedLemma": "أَسِير",
+      "matchedRoot": "اسر",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 67
+      },
+      "matchedToken": "أَسْرَىٰ",
+      "matchedLemma": "أَسِير",
+      "matchedRoot": "اسر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 70
+      },
+      "matchedToken": "ٱلْأَسْرَىٰٓ",
+      "matchedLemma": "أَسِير",
+      "matchedRoot": "اسر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 26
+      },
+      "matchedToken": "وَتَأْسِرُونَ",
+      "matchedLemma": "تَأْسِرُ",
+      "matchedRoot": "اسر",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 8
+      },
+      "matchedToken": "وَأَسِيرًا",
+      "matchedLemma": "أَسِير",
+      "matchedRoot": "اسر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 28
+      },
+      "matchedToken": "أَسْرَهُمْ ۖ",
+      "matchedLemma": "أَسْر",
+      "matchedRoot": "اسر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 85
+    },
+    {
+      "surah": 8,
+      "ayah": 67
+    },
+    {
+      "surah": 8,
+      "ayah": 70
+    },
+    {
+      "surah": 33,
+      "ayah": 26
+    },
+    {
+      "surah": 76,
+      "ayah": 8
+    },
+    {
+      "surah": 76,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

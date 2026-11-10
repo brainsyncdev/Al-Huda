@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "نصت",
+    "title": "نصت",
+    "arabicTitle": "نصت",
+    "roots": [
+      "نصت"
+    ],
+    "includedLemmas": [
+      "أَنصِتُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 204
+      },
+      "matchedToken": "وَأَنصِتُوا۟",
+      "matchedLemma": "أَنصِتُ",
+      "matchedRoot": "نصت",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 29
+      },
+      "matchedToken": "أَنصِتُوا۟ ۖ",
+      "matchedLemma": "أَنصِتُ",
+      "matchedRoot": "نصت",
+      "wordPosition": 12
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 204
+    },
+    {
+      "surah": 46,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

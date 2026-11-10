@@ -1,0 +1,137 @@
+{
+  "entry": {
+    "slug": "زني",
+    "title": "زني",
+    "arabicTitle": "زني",
+    "roots": [
+      "زني"
+    ],
+    "includedLemmas": [
+      "زَان",
+      "زَانِيَة",
+      "زِّنَىٰٓ",
+      "يَزْنُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 32
+      },
+      "matchedToken": "ٱلزِّنَىٰٓ ۖ",
+      "matchedLemma": "زِّنَىٰٓ",
+      "matchedRoot": "زني",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 2
+      },
+      "matchedToken": "ٱلزَّانِيَةُ",
+      "matchedLemma": "زَانِيَة",
+      "matchedRoot": "زني",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 2
+      },
+      "matchedToken": "وَٱلزَّانِى",
+      "matchedLemma": "زَان",
+      "matchedRoot": "زني",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلزَّانِى",
+      "matchedLemma": "زَان",
+      "matchedRoot": "زني",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 3
+      },
+      "matchedToken": "زَانِيَةً",
+      "matchedLemma": "زَانِيَة",
+      "matchedRoot": "زني",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 3
+      },
+      "matchedToken": "وَٱلزَّانِيَةُ",
+      "matchedLemma": "زَانِيَة",
+      "matchedRoot": "زني",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 3
+      },
+      "matchedToken": "زَانٍ",
+      "matchedLemma": "زَان",
+      "matchedRoot": "زني",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 68
+      },
+      "matchedToken": "يَزْنُونَ ۚ",
+      "matchedLemma": "يَزْنُ",
+      "matchedRoot": "زني",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 60,
+        "ayah": 12
+      },
+      "matchedToken": "يَزْنِينَ",
+      "matchedLemma": "يَزْنُ",
+      "matchedRoot": "زني",
+      "wordPosition": 16
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 32
+    },
+    {
+      "surah": 24,
+      "ayah": 2
+    },
+    {
+      "surah": 24,
+      "ayah": 3
+    },
+    {
+      "surah": 25,
+      "ayah": 68
+    },
+    {
+      "surah": 60,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

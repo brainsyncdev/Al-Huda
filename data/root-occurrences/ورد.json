@@ -1,0 +1,176 @@
+{
+  "entry": {
+    "slug": "ورد",
+    "title": "ورد",
+    "arabicTitle": "ورد",
+    "roots": [
+      "ورد"
+    ],
+    "includedLemmas": [
+      "أَوْرَدَ",
+      "مَوْرُود",
+      "وَارِد",
+      "وَرَدَ",
+      "وَرِيد",
+      "وَرْدَة",
+      "وِرْد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 7 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 98
+      },
+      "matchedToken": "فَأَوْرَدَهُمُ",
+      "matchedLemma": "أَوْرَدَ",
+      "matchedRoot": "ورد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 98
+      },
+      "matchedToken": "ٱلْوِرْدُ",
+      "matchedLemma": "وِرْد",
+      "matchedRoot": "ورد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 98
+      },
+      "matchedToken": "ٱلْمَوْرُودُ",
+      "matchedLemma": "مَوْرُود",
+      "matchedRoot": "ورد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 19
+      },
+      "matchedToken": "وَارِدَهُمْ",
+      "matchedLemma": "وَارِد",
+      "matchedRoot": "ورد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 71
+      },
+      "matchedToken": "وَارِدُهَا ۚ",
+      "matchedLemma": "وَارِد",
+      "matchedRoot": "ورد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 86
+      },
+      "matchedToken": "وِرْدًۭا",
+      "matchedLemma": "وِرْد",
+      "matchedRoot": "ورد",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 98
+      },
+      "matchedToken": "وَٰرِدُونَ",
+      "matchedLemma": "وَارِد",
+      "matchedRoot": "ورد",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 99
+      },
+      "matchedToken": "وَرَدُوهَا ۖ",
+      "matchedLemma": "وَرَدَ",
+      "matchedRoot": "ورد",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 23
+      },
+      "matchedToken": "وَرَدَ",
+      "matchedLemma": "وَرَدَ",
+      "matchedRoot": "ورد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلْوَرِيدِ",
+      "matchedLemma": "وَرِيد",
+      "matchedRoot": "ورد",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 37
+      },
+      "matchedToken": "وَرْدَةًۭ",
+      "matchedLemma": "وَرْدَة",
+      "matchedRoot": "ورد",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 98
+    },
+    {
+      "surah": 12,
+      "ayah": 19
+    },
+    {
+      "surah": 19,
+      "ayah": 71
+    },
+    {
+      "surah": 19,
+      "ayah": 86
+    },
+    {
+      "surah": 21,
+      "ayah": 98
+    },
+    {
+      "surah": 21,
+      "ayah": 99
+    },
+    {
+      "surah": 28,
+      "ayah": 23
+    },
+    {
+      "surah": 50,
+      "ayah": 16
+    },
+    {
+      "surah": 55,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 11,
+  "totalMatches": 11,
+  "pagination": null
+}

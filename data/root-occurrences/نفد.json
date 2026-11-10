@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "نفد",
+    "title": "نفد",
+    "arabicTitle": "نفد",
+    "roots": [
+      "نفد"
+    ],
+    "includedLemmas": [
+      "نَفِدَ",
+      "نَّفَاد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 96
+      },
+      "matchedToken": "يَنفَدُ ۖ",
+      "matchedLemma": "نَفِدَ",
+      "matchedRoot": "نفد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 109
+      },
+      "matchedToken": "لَنَفِدَ",
+      "matchedLemma": "نَفِدَ",
+      "matchedRoot": "نفد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 109
+      },
+      "matchedToken": "تَنفَدَ",
+      "matchedLemma": "نَفِدَ",
+      "matchedRoot": "نفد",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 27
+      },
+      "matchedToken": "نَفِدَتْ",
+      "matchedLemma": "نَفِدَ",
+      "matchedRoot": "نفد",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 54
+      },
+      "matchedToken": "نَّفَادٍ",
+      "matchedLemma": "نَّفَاد",
+      "matchedRoot": "نفد",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 16,
+      "ayah": 96
+    },
+    {
+      "surah": 18,
+      "ayah": 109
+    },
+    {
+      "surah": 31,
+      "ayah": 27
+    },
+    {
+      "surah": 38,
+      "ayah": 54
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

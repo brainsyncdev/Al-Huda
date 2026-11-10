@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "قشعر",
+    "title": "قشعر",
+    "arabicTitle": "قشعر",
+    "roots": [
+      "قشعر"
+    ],
+    "includedLemmas": [
+      "تَقْشَعِرُّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 23
+      },
+      "matchedToken": "تَقْشَعِرُّ",
+      "matchedLemma": "تَقْشَعِرُّ",
+      "matchedRoot": "قشعر",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 39,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

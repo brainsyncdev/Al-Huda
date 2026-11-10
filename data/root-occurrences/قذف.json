@@ -1,0 +1,146 @@
+{
+  "entry": {
+    "slug": "قذف",
+    "title": "قذف",
+    "arabicTitle": "قذف",
+    "roots": [
+      "قذف"
+    ],
+    "includedLemmas": [
+      "قَذَفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 39
+      },
+      "matchedToken": "ٱقْذِفِيهِ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 39
+      },
+      "matchedToken": "فَٱقْذِفِيهِ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 87
+      },
+      "matchedToken": "فَقَذَفْنَـٰهَا",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 18
+      },
+      "matchedToken": "نَقْذِفُ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 26
+      },
+      "matchedToken": "وَقَذَفَ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 48
+      },
+      "matchedToken": "يَقْذِفُ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 53
+      },
+      "matchedToken": "وَيَقْذِفُونَ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 8
+      },
+      "matchedToken": "وَيُقْذَفُونَ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 2
+      },
+      "matchedToken": "وَقَذَفَ",
+      "matchedLemma": "قَذَفَ",
+      "matchedRoot": "قذف",
+      "wordPosition": 29
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 39
+    },
+    {
+      "surah": 20,
+      "ayah": 87
+    },
+    {
+      "surah": 21,
+      "ayah": 18
+    },
+    {
+      "surah": 33,
+      "ayah": 26
+    },
+    {
+      "surah": 34,
+      "ayah": 48
+    },
+    {
+      "surah": 34,
+      "ayah": 53
+    },
+    {
+      "surah": 37,
+      "ayah": 8
+    },
+    {
+      "surah": 59,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

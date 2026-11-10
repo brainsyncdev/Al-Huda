@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "slug": "زجر",
+    "title": "زجر",
+    "arabicTitle": "زجر",
+    "roots": [
+      "زجر"
+    ],
+    "includedLemmas": [
+      "ازْدُجِرَ",
+      "زَجْر",
+      "زَجْرَة",
+      "زَّٰجِرَٰت",
+      "مُزْدَجَر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 2
+      },
+      "matchedToken": "فَٱلزَّٰجِرَٰتِ",
+      "matchedLemma": "زَّٰجِرَٰت",
+      "matchedRoot": "زجر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 2
+      },
+      "matchedToken": "زَجْرًۭا",
+      "matchedLemma": "زَجْر",
+      "matchedRoot": "زجر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 19
+      },
+      "matchedToken": "زَجْرَةٌۭ",
+      "matchedLemma": "زَجْرَة",
+      "matchedRoot": "زجر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 4
+      },
+      "matchedToken": "مُزْدَجَرٌ",
+      "matchedLemma": "مُزْدَجَر",
+      "matchedRoot": "زجر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 9
+      },
+      "matchedToken": "وَٱزْدُجِرَ",
+      "matchedLemma": "ازْدُجِرَ",
+      "matchedRoot": "زجر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 13
+      },
+      "matchedToken": "زَجْرَةٌۭ",
+      "matchedLemma": "زَجْرَة",
+      "matchedRoot": "زجر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 2
+    },
+    {
+      "surah": 37,
+      "ayah": 19
+    },
+    {
+      "surah": 54,
+      "ayah": 4
+    },
+    {
+      "surah": 54,
+      "ayah": 9
+    },
+    {
+      "surah": 79,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "قلي",
+    "title": "قلي",
+    "arabicTitle": "قلي",
+    "roots": [
+      "قلي"
+    ],
+    "includedLemmas": [
+      "قَالِين",
+      "قَلَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 168
+      },
+      "matchedToken": "ٱلْقَالِينَ",
+      "matchedLemma": "قَالِين",
+      "matchedRoot": "قلي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 93,
+        "ayah": 3
+      },
+      "matchedToken": "قَلَىٰ",
+      "matchedLemma": "قَلَىٰ",
+      "matchedRoot": "قلي",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 26,
+      "ayah": 168
+    },
+    {
+      "surah": 93,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

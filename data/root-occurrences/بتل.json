@@ -1,0 +1,49 @@
+{
+  "entry": {
+    "slug": "بتل",
+    "title": "بتل",
+    "arabicTitle": "بتل",
+    "roots": [
+      "بتل"
+    ],
+    "includedLemmas": [
+      "تَبَتَّلْ",
+      "تَبْتِيل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 8
+      },
+      "matchedToken": "وَتَبَتَّلْ",
+      "matchedLemma": "تَبَتَّلْ",
+      "matchedRoot": "بتل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 8
+      },
+      "matchedToken": "تَبْتِيلًۭا",
+      "matchedLemma": "تَبْتِيل",
+      "matchedRoot": "بتل",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 73,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

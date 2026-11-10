@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "خوي",
+    "title": "خوي",
+    "arabicTitle": "خوي",
+    "roots": [
+      "خوي"
+    ],
+    "includedLemmas": [
+      "خَاوِيَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "خَاوِيَةٌ",
+      "matchedLemma": "خَاوِيَة",
+      "matchedRoot": "خوي",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 42
+      },
+      "matchedToken": "خَاوِيَةٌ",
+      "matchedLemma": "خَاوِيَة",
+      "matchedRoot": "خوي",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 45
+      },
+      "matchedToken": "خَاوِيَةٌ",
+      "matchedLemma": "خَاوِيَة",
+      "matchedRoot": "خوي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 52
+      },
+      "matchedToken": "خَاوِيَةًۢ",
+      "matchedLemma": "خَاوِيَة",
+      "matchedRoot": "خوي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 7
+      },
+      "matchedToken": "خَاوِيَةٍۢ",
+      "matchedLemma": "خَاوِيَة",
+      "matchedRoot": "خوي",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 259
+    },
+    {
+      "surah": 18,
+      "ayah": 42
+    },
+    {
+      "surah": 22,
+      "ayah": 45
+    },
+    {
+      "surah": 27,
+      "ayah": 52
+    },
+    {
+      "surah": 69,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

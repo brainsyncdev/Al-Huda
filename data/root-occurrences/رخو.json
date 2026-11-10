@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "رخو",
+    "title": "رخو",
+    "arabicTitle": "رخو",
+    "roots": [
+      "رخو"
+    ],
+    "includedLemmas": [
+      "رُخَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 36
+      },
+      "matchedToken": "رُخَآءً",
+      "matchedLemma": "رُخَآء",
+      "matchedRoot": "رخو",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 38,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

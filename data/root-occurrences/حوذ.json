@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "حوذ",
+    "title": "حوذ",
+    "arabicTitle": "حوذ",
+    "roots": [
+      "حوذ"
+    ],
+    "includedLemmas": [
+      "اسْتَحْوَذَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 141
+      },
+      "matchedToken": "نَسْتَحْوِذْ",
+      "matchedLemma": "اسْتَحْوَذَ",
+      "matchedRoot": "حوذ",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 19
+      },
+      "matchedToken": "ٱسْتَحْوَذَ",
+      "matchedLemma": "اسْتَحْوَذَ",
+      "matchedRoot": "حوذ",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 141
+    },
+    {
+      "surah": 58,
+      "ayah": 19
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

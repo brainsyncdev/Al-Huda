@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "قطر",
+    "title": "قطر",
+    "arabicTitle": "قطر",
+    "roots": [
+      "قطر"
+    ],
+    "includedLemmas": [
+      "أَقْطَار",
+      "قَطِرَان",
+      "قِطْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 50
+      },
+      "matchedToken": "قَطِرَانٍۢ",
+      "matchedLemma": "قَطِرَان",
+      "matchedRoot": "قطر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 96
+      },
+      "matchedToken": "قِطْرًۭا",
+      "matchedLemma": "قِطْر",
+      "matchedRoot": "قطر",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 14
+      },
+      "matchedToken": "أَقْطَارِهَا",
+      "matchedLemma": "أَقْطَار",
+      "matchedRoot": "قطر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 12
+      },
+      "matchedToken": "ٱلْقِطْرِ ۖ",
+      "matchedLemma": "قِطْر",
+      "matchedRoot": "قطر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 33
+      },
+      "matchedToken": "أَقْطَارِ",
+      "matchedLemma": "أَقْطَار",
+      "matchedRoot": "قطر",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 50
+    },
+    {
+      "surah": 18,
+      "ayah": 96
+    },
+    {
+      "surah": 33,
+      "ayah": 14
+    },
+    {
+      "surah": 34,
+      "ayah": 12
+    },
+    {
+      "surah": 55,
+      "ayah": 33
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

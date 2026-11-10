@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "بدع",
+    "title": "بدع",
+    "arabicTitle": "بدع",
+    "roots": [
+      "بدع"
+    ],
+    "includedLemmas": [
+      "ابْتَدَعُ",
+      "بَدِيع",
+      "بِدْع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 117
+      },
+      "matchedToken": "بَدِيعُ",
+      "matchedLemma": "بَدِيع",
+      "matchedRoot": "بدع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 101
+      },
+      "matchedToken": "بَدِيعُ",
+      "matchedLemma": "بَدِيع",
+      "matchedRoot": "بدع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 9
+      },
+      "matchedToken": "بِدْعًۭا",
+      "matchedLemma": "بِدْع",
+      "matchedRoot": "بدع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 27
+      },
+      "matchedToken": "ٱبْتَدَعُوهَا",
+      "matchedLemma": "ابْتَدَعُ",
+      "matchedRoot": "بدع",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 117
+    },
+    {
+      "surah": 6,
+      "ayah": 101
+    },
+    {
+      "surah": 46,
+      "ayah": 9
+    },
+    {
+      "surah": 57,
+      "ayah": 27
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "فوم",
+    "title": "فوم",
+    "arabicTitle": "فوم",
+    "roots": [
+      "فوم"
+    ],
+    "includedLemmas": [
+      "فُوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 61
+      },
+      "matchedToken": "وَفُومِهَا",
+      "matchedLemma": "فُوم",
+      "matchedRoot": "فوم",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 61
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

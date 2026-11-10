@@ -1,0 +1,120 @@
+{
+  "entry": {
+    "slug": "قسو",
+    "title": "قسو",
+    "arabicTitle": "قسو",
+    "roots": [
+      "قسو"
+    ],
+    "includedLemmas": [
+      "قَسَتْ",
+      "قَسْوَة",
+      "قَٰسِيَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 74
+      },
+      "matchedToken": "قَسَتْ",
+      "matchedLemma": "قَسَتْ",
+      "matchedRoot": "قسو",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 74
+      },
+      "matchedToken": "قَسْوَةًۭ ۚ",
+      "matchedLemma": "قَسْوَة",
+      "matchedRoot": "قسو",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 13
+      },
+      "matchedToken": "قَـٰسِيَةًۭ ۖ",
+      "matchedLemma": "قَٰسِيَة",
+      "matchedRoot": "قسو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 43
+      },
+      "matchedToken": "قَسَتْ",
+      "matchedLemma": "قَسَتْ",
+      "matchedRoot": "قسو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 53
+      },
+      "matchedToken": "وَٱلْقَاسِيَةِ",
+      "matchedLemma": "قَٰسِيَة",
+      "matchedRoot": "قسو",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 22
+      },
+      "matchedToken": "لِّلْقَـٰسِيَةِ",
+      "matchedLemma": "قَٰسِيَة",
+      "matchedRoot": "قسو",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 16
+      },
+      "matchedToken": "فَقَسَتْ",
+      "matchedLemma": "قَسَتْ",
+      "matchedRoot": "قسو",
+      "wordPosition": 24
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 74
+    },
+    {
+      "surah": 5,
+      "ayah": 13
+    },
+    {
+      "surah": 6,
+      "ayah": 43
+    },
+    {
+      "surah": 22,
+      "ayah": 53
+    },
+    {
+      "surah": 39,
+      "ayah": 22
+    },
+    {
+      "surah": 57,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

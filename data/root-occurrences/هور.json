@@ -1,0 +1,49 @@
+{
+  "entry": {
+    "slug": "هور",
+    "title": "هور",
+    "arabicTitle": "هور",
+    "roots": [
+      "هور"
+    ],
+    "includedLemmas": [
+      "انْهَارَ",
+      "هَار"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 109
+      },
+      "matchedToken": "هَارٍۢ",
+      "matchedLemma": "هَار",
+      "matchedRoot": "هور",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 109
+      },
+      "matchedToken": "فَٱنْهَارَ",
+      "matchedLemma": "انْهَارَ",
+      "matchedRoot": "هور",
+      "wordPosition": 18
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 109
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "صبع",
+    "title": "صبع",
+    "arabicTitle": "صبع",
+    "roots": [
+      "صبع"
+    ],
+    "includedLemmas": [
+      "أَصَٰبِع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 19
+      },
+      "matchedToken": "أَصَـٰبِعَهُمْ",
+      "matchedLemma": "أَصَٰبِع",
+      "matchedRoot": "صبع",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 71,
+        "ayah": 7
+      },
+      "matchedToken": "أَصَـٰبِعَهُمْ",
+      "matchedLemma": "أَصَٰبِع",
+      "matchedRoot": "صبع",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 19
+    },
+    {
+      "surah": 71,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

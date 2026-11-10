@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "امل",
+    "title": "امل",
+    "arabicTitle": "امل",
+    "roots": [
+      "امل"
+    ],
+    "includedLemmas": [
+      "أَمَل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلْأَمَلُ ۖ",
+      "matchedLemma": "أَمَل",
+      "matchedRoot": "امل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 46
+      },
+      "matchedToken": "أَمَلًۭا",
+      "matchedLemma": "أَمَل",
+      "matchedRoot": "امل",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 3
+    },
+    {
+      "surah": 18,
+      "ayah": 46
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

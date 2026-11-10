@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "عرو",
+    "title": "عرو",
+    "arabicTitle": "عرو",
+    "roots": [
+      "عرو"
+    ],
+    "includedLemmas": [
+      "اعْتَرَىٰ",
+      "عُرْوَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 256
+      },
+      "matchedToken": "بِٱلْعُرْوَةِ",
+      "matchedLemma": "عُرْوَة",
+      "matchedRoot": "عرو",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 54
+      },
+      "matchedToken": "ٱعْتَرَىٰكَ",
+      "matchedLemma": "اعْتَرَىٰ",
+      "matchedRoot": "عرو",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 22
+      },
+      "matchedToken": "بِٱلْعُرْوَةِ",
+      "matchedLemma": "عُرْوَة",
+      "matchedRoot": "عرو",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 256
+    },
+    {
+      "surah": 11,
+      "ayah": 54
+    },
+    {
+      "surah": 31,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

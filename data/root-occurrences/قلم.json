@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "قلم",
+    "title": "قلم",
+    "arabicTitle": "قلم",
+    "roots": [
+      "قلم"
+    ],
+    "includedLemmas": [
+      "قَلَم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 44
+      },
+      "matchedToken": "أَقْلَـٰمَهُمْ",
+      "matchedLemma": "قَلَم",
+      "matchedRoot": "قلم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 27
+      },
+      "matchedToken": "أَقْلَـٰمٌۭ",
+      "matchedLemma": "قَلَم",
+      "matchedRoot": "قلم",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 1
+      },
+      "matchedToken": "وَٱلْقَلَمِ",
+      "matchedLemma": "قَلَم",
+      "matchedRoot": "قلم",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 96,
+        "ayah": 4
+      },
+      "matchedToken": "بِٱلْقَلَمِ",
+      "matchedLemma": "قَلَم",
+      "matchedRoot": "قلم",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 44
+    },
+    {
+      "surah": 31,
+      "ayah": 27
+    },
+    {
+      "surah": 68,
+      "ayah": 1
+    },
+    {
+      "surah": 96,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

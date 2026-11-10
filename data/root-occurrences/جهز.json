@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "slug": "جهز",
+    "title": "جهز",
+    "arabicTitle": "جهز",
+    "roots": [
+      "جهز"
+    ],
+    "includedLemmas": [
+      "جَهَاز",
+      "جَهَّزَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 59
+      },
+      "matchedToken": "جَهَّزَهُم",
+      "matchedLemma": "جَهَّزَ",
+      "matchedRoot": "جهز",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 59
+      },
+      "matchedToken": "بِجَهَازِهِمْ",
+      "matchedLemma": "جَهَاز",
+      "matchedRoot": "جهز",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 70
+      },
+      "matchedToken": "جَهَّزَهُم",
+      "matchedLemma": "جَهَّزَ",
+      "matchedRoot": "جهز",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 70
+      },
+      "matchedToken": "بِجَهَازِهِمْ",
+      "matchedLemma": "جَهَاز",
+      "matchedRoot": "جهز",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 59
+    },
+    {
+      "surah": 12,
+      "ayah": 70
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

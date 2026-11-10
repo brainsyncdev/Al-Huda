@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "جوع",
+    "title": "جوع",
+    "arabicTitle": "جوع",
+    "roots": [
+      "جوع"
+    ],
+    "includedLemmas": [
+      "تَجُوعَ",
+      "جُوع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 155
+      },
+      "matchedToken": "وَٱلْجُوعِ",
+      "matchedLemma": "جُوع",
+      "matchedRoot": "جوع",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 112
+      },
+      "matchedToken": "ٱلْجُوعِ",
+      "matchedLemma": "جُوع",
+      "matchedRoot": "جوع",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 118
+      },
+      "matchedToken": "تَجُوعَ",
+      "matchedLemma": "تَجُوعَ",
+      "matchedRoot": "جوع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 88,
+        "ayah": 7
+      },
+      "matchedToken": "جُوعٍۢ",
+      "matchedLemma": "جُوع",
+      "matchedRoot": "جوع",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 106,
+        "ayah": 4
+      },
+      "matchedToken": "جُوعٍۢ",
+      "matchedLemma": "جُوع",
+      "matchedRoot": "جوع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 155
+    },
+    {
+      "surah": 16,
+      "ayah": 112
+    },
+    {
+      "surah": 20,
+      "ayah": 118
+    },
+    {
+      "surah": 88,
+      "ayah": 7
+    },
+    {
+      "surah": 106,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

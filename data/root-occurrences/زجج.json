@@ -1,0 +1,48 @@
+{
+  "entry": {
+    "slug": "زجج",
+    "title": "زجج",
+    "arabicTitle": "زجج",
+    "roots": [
+      "زجج"
+    ],
+    "includedLemmas": [
+      "زُجَاجَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 35
+      },
+      "matchedToken": "زُجَاجَةٍ ۖ",
+      "matchedLemma": "زُجَاجَة",
+      "matchedRoot": "زجج",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 35
+      },
+      "matchedToken": "ٱلزُّجَاجَةُ",
+      "matchedLemma": "زُجَاجَة",
+      "matchedRoot": "زجج",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 24,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

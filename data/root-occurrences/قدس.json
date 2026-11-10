@@ -1,0 +1,168 @@
+{
+  "entry": {
+    "slug": "قدس",
+    "title": "قدس",
+    "arabicTitle": "قدس",
+    "roots": [
+      "قدس"
+    ],
+    "includedLemmas": [
+      "قُدُس",
+      "قُدُّوس",
+      "مُقَدَّس",
+      "مُقَدَّسَة",
+      "نُقَدِّسُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 30
+      },
+      "matchedToken": "وَنُقَدِّسُ",
+      "matchedLemma": "نُقَدِّسُ",
+      "matchedRoot": "قدس",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 87
+      },
+      "matchedToken": "ٱلْقُدُسِ ۗ",
+      "matchedLemma": "قُدُس",
+      "matchedRoot": "قدس",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 253
+      },
+      "matchedToken": "ٱلْقُدُسِ ۗ",
+      "matchedLemma": "قُدُس",
+      "matchedRoot": "قدس",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 21
+      },
+      "matchedToken": "ٱلْمُقَدَّسَةَ",
+      "matchedLemma": "مُقَدَّسَة",
+      "matchedRoot": "قدس",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 110
+      },
+      "matchedToken": "ٱلْقُدُسِ",
+      "matchedLemma": "قُدُس",
+      "matchedRoot": "قدس",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 102
+      },
+      "matchedToken": "ٱلْقُدُسِ",
+      "matchedLemma": "قُدُس",
+      "matchedRoot": "قدس",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 12
+      },
+      "matchedToken": "ٱلْمُقَدَّسِ",
+      "matchedLemma": "مُقَدَّس",
+      "matchedRoot": "قدس",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 23
+      },
+      "matchedToken": "ٱلْقُدُّوسُ",
+      "matchedLemma": "قُدُّوس",
+      "matchedRoot": "قدس",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 62,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْقُدُّوسِ",
+      "matchedLemma": "قُدُّوس",
+      "matchedRoot": "قدس",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلْمُقَدَّسِ",
+      "matchedLemma": "مُقَدَّس",
+      "matchedRoot": "قدس",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 30
+    },
+    {
+      "surah": 2,
+      "ayah": 87
+    },
+    {
+      "surah": 2,
+      "ayah": 253
+    },
+    {
+      "surah": 5,
+      "ayah": 21
+    },
+    {
+      "surah": 5,
+      "ayah": 110
+    },
+    {
+      "surah": 16,
+      "ayah": 102
+    },
+    {
+      "surah": 20,
+      "ayah": 12
+    },
+    {
+      "surah": 59,
+      "ayah": 23
+    },
+    {
+      "surah": 62,
+      "ayah": 1
+    },
+    {
+      "surah": 79,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

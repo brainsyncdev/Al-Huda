@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "اود",
+    "title": "اود",
+    "arabicTitle": "اود",
+    "roots": [
+      "اود"
+    ],
+    "includedLemmas": [
+      "يَـُٔودُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 255
+      },
+      "matchedToken": "يَـُٔودُهُۥ",
+      "matchedLemma": "يَـُٔودُ",
+      "matchedRoot": "اود",
+      "wordPosition": 46
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 255
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

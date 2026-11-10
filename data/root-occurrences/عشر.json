@@ -1,0 +1,408 @@
+{
+  "entry": {
+    "slug": "عشر",
+    "title": "عشر",
+    "arabicTitle": "عشر",
+    "roots": [
+      "عشر"
+    ],
+    "includedLemmas": [
+      "عَاشِرُ",
+      "عَشَر",
+      "عَشَرَة",
+      "عَشِير",
+      "عَشِيرَت",
+      "عَشْر",
+      "عَشْرَة",
+      "عِشَار",
+      "عِشْرُون",
+      "مَعْشَر",
+      "مِعْشَار"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 11 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 60
+      },
+      "matchedToken": "عَشْرَةَ",
+      "matchedLemma": "عَشْرَة",
+      "matchedRoot": "عشر",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 196
+      },
+      "matchedToken": "عَشَرَةٌۭ",
+      "matchedLemma": "عَشَرَة",
+      "matchedRoot": "عشر",
+      "wordPosition": 57
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 234
+      },
+      "matchedToken": "وَعَشْرًۭا ۖ",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 19
+      },
+      "matchedToken": "وَعَاشِرُوهُنَّ",
+      "matchedLemma": "عَاشِرُ",
+      "matchedRoot": "عشر",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 12
+      },
+      "matchedToken": "عَشَرَ",
+      "matchedLemma": "عَشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 89
+      },
+      "matchedToken": "عَشَرَةِ",
+      "matchedLemma": "عَشَرَة",
+      "matchedRoot": "عشر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 128
+      },
+      "matchedToken": "يَـٰمَعْشَرَ",
+      "matchedLemma": "مَعْشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 130
+      },
+      "matchedToken": "يَـٰمَعْشَرَ",
+      "matchedLemma": "مَعْشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 160
+      },
+      "matchedToken": "عَشْرُ",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 142
+      },
+      "matchedToken": "بِعَشْرٍۢ",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "عَشْرَةَ",
+      "matchedLemma": "عَشْرَة",
+      "matchedRoot": "عشر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "عَشْرَةَ",
+      "matchedLemma": "عَشْرَة",
+      "matchedRoot": "عشر",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 65
+      },
+      "matchedToken": "عِشْرُونَ",
+      "matchedLemma": "عِشْرُون",
+      "matchedRoot": "عشر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 24
+      },
+      "matchedToken": "وَعَشِيرَتُكُمْ",
+      "matchedLemma": "عَشِيرَت",
+      "matchedRoot": "عشر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 36
+      },
+      "matchedToken": "عَشَرَ",
+      "matchedLemma": "عَشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 13
+      },
+      "matchedToken": "بِعَشْرِ",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 4
+      },
+      "matchedToken": "عَشَرَ",
+      "matchedLemma": "عَشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 103
+      },
+      "matchedToken": "عَشْرًۭا",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 13
+      },
+      "matchedToken": "ٱلْعَشِيرُ",
+      "matchedLemma": "عَشِير",
+      "matchedRoot": "عشر",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 214
+      },
+      "matchedToken": "عَشِيرَتَكَ",
+      "matchedLemma": "عَشِيرَت",
+      "matchedRoot": "عشر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 27
+      },
+      "matchedToken": "عَشْرًۭا",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 45
+      },
+      "matchedToken": "مِعْشَارَ",
+      "matchedLemma": "مِعْشَار",
+      "matchedRoot": "عشر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 55,
+        "ayah": 33
+      },
+      "matchedToken": "يَـٰمَعْشَرَ",
+      "matchedLemma": "مَعْشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 22
+      },
+      "matchedToken": "عَشِيرَتَهُمْ ۚ",
+      "matchedLemma": "عَشِيرَت",
+      "matchedRoot": "عشر",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 30
+      },
+      "matchedToken": "عَشَرَ",
+      "matchedLemma": "عَشَر",
+      "matchedRoot": "عشر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْعِشَارُ",
+      "matchedLemma": "عِشَار",
+      "matchedRoot": "عشر",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 89,
+        "ayah": 2
+      },
+      "matchedToken": "عَشْرٍۢ",
+      "matchedLemma": "عَشْر",
+      "matchedRoot": "عشر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 60
+    },
+    {
+      "surah": 2,
+      "ayah": 196
+    },
+    {
+      "surah": 2,
+      "ayah": 234
+    },
+    {
+      "surah": 4,
+      "ayah": 19
+    },
+    {
+      "surah": 5,
+      "ayah": 12
+    },
+    {
+      "surah": 5,
+      "ayah": 89
+    },
+    {
+      "surah": 6,
+      "ayah": 128
+    },
+    {
+      "surah": 6,
+      "ayah": 130
+    },
+    {
+      "surah": 6,
+      "ayah": 160
+    },
+    {
+      "surah": 7,
+      "ayah": 142
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    },
+    {
+      "surah": 8,
+      "ayah": 65
+    },
+    {
+      "surah": 9,
+      "ayah": 24
+    },
+    {
+      "surah": 9,
+      "ayah": 36
+    },
+    {
+      "surah": 11,
+      "ayah": 13
+    },
+    {
+      "surah": 12,
+      "ayah": 4
+    },
+    {
+      "surah": 20,
+      "ayah": 103
+    },
+    {
+      "surah": 22,
+      "ayah": 13
+    },
+    {
+      "surah": 26,
+      "ayah": 214
+    },
+    {
+      "surah": 28,
+      "ayah": 27
+    },
+    {
+      "surah": 34,
+      "ayah": 45
+    },
+    {
+      "surah": 55,
+      "ayah": 33
+    },
+    {
+      "surah": 58,
+      "ayah": 22
+    },
+    {
+      "surah": 74,
+      "ayah": 30
+    },
+    {
+      "surah": 81,
+      "ayah": 4
+    },
+    {
+      "surah": 89,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 27,
+  "totalMatches": 27,
+  "pagination": null
+}

@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "موج",
+    "title": "موج",
+    "arabicTitle": "موج",
+    "roots": [
+      "موج"
+    ],
+    "includedLemmas": [
+      "مَوْج",
+      "يَمُوجُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 42
+      },
+      "matchedToken": "مَوْجٍۢ",
+      "matchedLemma": "مَوْج",
+      "matchedRoot": "موج",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 99
+      },
+      "matchedToken": "يَمُوجُ",
+      "matchedLemma": "يَمُوجُ",
+      "matchedRoot": "موج",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 40
+      },
+      "matchedToken": "مَوْجٌۭ",
+      "matchedLemma": "مَوْج",
+      "matchedRoot": "موج",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 40
+      },
+      "matchedToken": "مَوْجٌۭ",
+      "matchedLemma": "مَوْج",
+      "matchedRoot": "موج",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 32
+      },
+      "matchedToken": "مَّوْجٌۭ",
+      "matchedLemma": "مَوْج",
+      "matchedRoot": "موج",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 42
+    },
+    {
+      "surah": 18,
+      "ayah": 99
+    },
+    {
+      "surah": 24,
+      "ayah": 40
+    },
+    {
+      "surah": 31,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

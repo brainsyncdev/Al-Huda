@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "قفل",
+    "title": "قفل",
+    "arabicTitle": "قفل",
+    "roots": [
+      "قفل"
+    ],
+    "includedLemmas": [
+      "أَقْفَال"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 24
+      },
+      "matchedToken": "أَقْفَالُهَآ",
+      "matchedLemma": "أَقْفَال",
+      "matchedRoot": "قفل",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 47,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

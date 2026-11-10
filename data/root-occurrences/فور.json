@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "فور",
+    "title": "فور",
+    "arabicTitle": "فور",
+    "roots": [
+      "فور"
+    ],
+    "includedLemmas": [
+      "فَارَ",
+      "فَوْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 125
+      },
+      "matchedToken": "فَوْرِهِمْ",
+      "matchedLemma": "فَوْر",
+      "matchedRoot": "فور",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 40
+      },
+      "matchedToken": "وَفَارَ",
+      "matchedLemma": "فَارَ",
+      "matchedRoot": "فور",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 27
+      },
+      "matchedToken": "وَفَارَ",
+      "matchedLemma": "فَارَ",
+      "matchedRoot": "فور",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 7
+      },
+      "matchedToken": "تَفُورُ",
+      "matchedLemma": "فَارَ",
+      "matchedRoot": "فور",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 125
+    },
+    {
+      "surah": 11,
+      "ayah": 40
+    },
+    {
+      "surah": 23,
+      "ayah": 27
+    },
+    {
+      "surah": 67,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

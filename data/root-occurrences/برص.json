@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "برص",
+    "title": "برص",
+    "arabicTitle": "برص",
+    "roots": [
+      "برص"
+    ],
+    "includedLemmas": [
+      "أَبْرَص"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 49
+      },
+      "matchedToken": "وَٱلْأَبْرَصَ",
+      "matchedLemma": "أَبْرَص",
+      "matchedRoot": "برص",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 110
+      },
+      "matchedToken": "وَٱلْأَبْرَصَ",
+      "matchedLemma": "أَبْرَص",
+      "matchedRoot": "برص",
+      "wordPosition": 41
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 49
+    },
+    {
+      "surah": 5,
+      "ayah": 110
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

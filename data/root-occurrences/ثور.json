@@ -1,0 +1,94 @@
+{
+  "entry": {
+    "slug": "ثور",
+    "title": "ثور",
+    "arabicTitle": "ثور",
+    "roots": [
+      "ثور"
+    ],
+    "includedLemmas": [
+      "أَثَارُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 71
+      },
+      "matchedToken": "تُثِيرُ",
+      "matchedLemma": "أَثَارُ",
+      "matchedRoot": "ثور",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 9
+      },
+      "matchedToken": "وَأَثَارُوا۟",
+      "matchedLemma": "أَثَارُ",
+      "matchedRoot": "ثور",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 48
+      },
+      "matchedToken": "فَتُثِيرُ",
+      "matchedLemma": "أَثَارُ",
+      "matchedRoot": "ثور",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 9
+      },
+      "matchedToken": "فَتُثِيرُ",
+      "matchedLemma": "أَثَارُ",
+      "matchedRoot": "ثور",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 100,
+        "ayah": 4
+      },
+      "matchedToken": "فَأَثَرْنَ",
+      "matchedLemma": "أَثَارُ",
+      "matchedRoot": "ثور",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 71
+    },
+    {
+      "surah": 30,
+      "ayah": 9
+    },
+    {
+      "surah": 30,
+      "ayah": 48
+    },
+    {
+      "surah": 35,
+      "ayah": 9
+    },
+    {
+      "surah": 100,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

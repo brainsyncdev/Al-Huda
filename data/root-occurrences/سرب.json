@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "سرب",
+    "title": "سرب",
+    "arabicTitle": "سرب",
+    "roots": [
+      "سرب"
+    ],
+    "includedLemmas": [
+      "سَارِب",
+      "سَرَاب",
+      "سَرَب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 10
+      },
+      "matchedToken": "وَسَارِبٌۢ",
+      "matchedLemma": "سَارِب",
+      "matchedRoot": "سرب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 61
+      },
+      "matchedToken": "سَرَبًۭا",
+      "matchedLemma": "سَرَب",
+      "matchedRoot": "سرب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 39
+      },
+      "matchedToken": "كَسَرَابٍۭ",
+      "matchedLemma": "سَرَاب",
+      "matchedRoot": "سرب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 20
+      },
+      "matchedToken": "سَرَابًا",
+      "matchedLemma": "سَرَاب",
+      "matchedRoot": "سرب",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 13,
+      "ayah": 10
+    },
+    {
+      "surah": 18,
+      "ayah": 61
+    },
+    {
+      "surah": 24,
+      "ayah": 39
+    },
+    {
+      "surah": 78,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

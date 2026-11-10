@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "جوز",
+    "title": "جوز",
+    "arabicTitle": "جوز",
+    "roots": [
+      "جوز"
+    ],
+    "includedLemmas": [
+      "جَاوَزَ",
+      "نَتَجَاوَزُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 249
+      },
+      "matchedToken": "جَاوَزَهُۥ",
+      "matchedLemma": "جَاوَزَ",
+      "matchedRoot": "جوز",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 138
+      },
+      "matchedToken": "وَجَـٰوَزْنَا",
+      "matchedLemma": "جَاوَزَ",
+      "matchedRoot": "جوز",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 90
+      },
+      "matchedToken": "۞ وَجَـٰوَزْنَا",
+      "matchedLemma": "جَاوَزَ",
+      "matchedRoot": "جوز",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 62
+      },
+      "matchedToken": "جَاوَزَا",
+      "matchedLemma": "جَاوَزَ",
+      "matchedRoot": "جوز",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 16
+      },
+      "matchedToken": "وَنَتَجَاوَزُ",
+      "matchedLemma": "نَتَجَاوَزُ",
+      "matchedRoot": "جوز",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 249
+    },
+    {
+      "surah": 7,
+      "ayah": 138
+    },
+    {
+      "surah": 10,
+      "ayah": 90
+    },
+    {
+      "surah": 18,
+      "ayah": 62
+    },
+    {
+      "surah": 46,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "slug": "حيض",
+    "title": "حيض",
+    "arabicTitle": "حيض",
+    "roots": [
+      "حيض"
+    ],
+    "includedLemmas": [
+      "مَحِيض",
+      "يَحِضْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 222
+      },
+      "matchedToken": "ٱلْمَحِيضِ ۖ",
+      "matchedLemma": "مَحِيض",
+      "matchedRoot": "حيض",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 222
+      },
+      "matchedToken": "ٱلْمَحِيضِ ۖ",
+      "matchedLemma": "مَحِيض",
+      "matchedRoot": "حيض",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلْمَحِيضِ",
+      "matchedLemma": "مَحِيض",
+      "matchedRoot": "حيض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 65,
+        "ayah": 4
+      },
+      "matchedToken": "يَحِضْنَ ۚ",
+      "matchedLemma": "يَحِضْ",
+      "matchedRoot": "حيض",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 222
+    },
+    {
+      "surah": 65,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

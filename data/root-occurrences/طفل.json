@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "طفل",
+    "title": "طفل",
+    "arabicTitle": "طفل",
+    "roots": [
+      "طفل"
+    ],
+    "includedLemmas": [
+      "طِفْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 5
+      },
+      "matchedToken": "طِفْلًۭا",
+      "matchedLemma": "طِفْل",
+      "matchedRoot": "طفل",
+      "wordPosition": 37
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 31
+      },
+      "matchedToken": "ٱلطِّفْلِ",
+      "matchedLemma": "طِفْل",
+      "matchedRoot": "طفل",
+      "wordPosition": 56
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 59
+      },
+      "matchedToken": "ٱلْأَطْفَـٰلُ",
+      "matchedLemma": "طِفْل",
+      "matchedRoot": "طفل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 67
+      },
+      "matchedToken": "طِفْلًۭا",
+      "matchedLemma": "طِفْل",
+      "matchedRoot": "طفل",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 5
+    },
+    {
+      "surah": 24,
+      "ayah": 31
+    },
+    {
+      "surah": 24,
+      "ayah": 59
+    },
+    {
+      "surah": 40,
+      "ayah": 67
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

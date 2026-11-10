@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "حصب",
+    "title": "حصب",
+    "arabicTitle": "حصب",
+    "roots": [
+      "حصب"
+    ],
+    "includedLemmas": [
+      "حَاصِب",
+      "حَصَب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 68
+      },
+      "matchedToken": "حَاصِبًۭا",
+      "matchedLemma": "حَاصِب",
+      "matchedRoot": "حصب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 98
+      },
+      "matchedToken": "حَصَبُ",
+      "matchedLemma": "حَصَب",
+      "matchedRoot": "حصب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 40
+      },
+      "matchedToken": "حَاصِبًۭا",
+      "matchedLemma": "حَاصِب",
+      "matchedRoot": "حصب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 34
+      },
+      "matchedToken": "حَاصِبًا",
+      "matchedLemma": "حَاصِب",
+      "matchedRoot": "حصب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 17
+      },
+      "matchedToken": "حَاصِبًۭا ۖ",
+      "matchedLemma": "حَاصِب",
+      "matchedRoot": "حصب",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 17,
+      "ayah": 68
+    },
+    {
+      "surah": 21,
+      "ayah": 98
+    },
+    {
+      "surah": 29,
+      "ayah": 40
+    },
+    {
+      "surah": 54,
+      "ayah": 34
+    },
+    {
+      "surah": 67,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

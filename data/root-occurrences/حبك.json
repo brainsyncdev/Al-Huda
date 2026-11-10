@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "حبك",
+    "title": "حبك",
+    "arabicTitle": "حبك",
+    "roots": [
+      "حبك"
+    ],
+    "includedLemmas": [
+      "حُبُك"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 7
+      },
+      "matchedToken": "ٱلْحُبُكِ",
+      "matchedLemma": "حُبُك",
+      "matchedRoot": "حبك",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 51,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

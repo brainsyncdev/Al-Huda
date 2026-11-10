@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وهي",
+    "title": "وهي",
+    "arabicTitle": "وهي",
+    "roots": [
+      "وهي"
+    ],
+    "includedLemmas": [
+      "وَاهِيَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 16
+      },
+      "matchedToken": "وَاهِيَةٌۭ",
+      "matchedLemma": "وَاهِيَة",
+      "matchedRoot": "وهي",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 69,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

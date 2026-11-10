@@ -1,0 +1,119 @@
+{
+  "entry": {
+    "slug": "بضع",
+    "title": "بضع",
+    "arabicTitle": "بضع",
+    "roots": [
+      "بضع"
+    ],
+    "includedLemmas": [
+      "بِضَٰعَة",
+      "بِضْع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 19
+      },
+      "matchedToken": "بِضَـٰعَةًۭ ۚ",
+      "matchedLemma": "بِضَٰعَة",
+      "matchedRoot": "بضع",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 42
+      },
+      "matchedToken": "بِضْعَ",
+      "matchedLemma": "بِضْع",
+      "matchedRoot": "بضع",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 62
+      },
+      "matchedToken": "بِضَـٰعَتَهُمْ",
+      "matchedLemma": "بِضَٰعَة",
+      "matchedRoot": "بضع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 65
+      },
+      "matchedToken": "بِضَـٰعَتَهُمْ",
+      "matchedLemma": "بِضَٰعَة",
+      "matchedRoot": "بضع",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 65
+      },
+      "matchedToken": "بِضَـٰعَتُنَا",
+      "matchedLemma": "بِضَٰعَة",
+      "matchedRoot": "بضع",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 88
+      },
+      "matchedToken": "بِبِضَـٰعَةٍۢ",
+      "matchedLemma": "بِضَٰعَة",
+      "matchedRoot": "بضع",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 4
+      },
+      "matchedToken": "بِضْعِ",
+      "matchedLemma": "بِضْع",
+      "matchedRoot": "بضع",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 19
+    },
+    {
+      "surah": 12,
+      "ayah": 42
+    },
+    {
+      "surah": 12,
+      "ayah": 62
+    },
+    {
+      "surah": 12,
+      "ayah": 65
+    },
+    {
+      "surah": 12,
+      "ayah": 88
+    },
+    {
+      "surah": 30,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

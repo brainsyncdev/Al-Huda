@@ -1,14 +1,13 @@
 // /explore/root/[root] — Root-word discovery detail page.
 //
-// Displays root-topic details based on review state:
-//   - "approved" with non-empty includedLemmas: shows paginated ayah results
-//   - "pending-review": shows review information (lemma breakdown, counts)
-//   - "rejected": shows rejection reason
-//   - unknown slug: 404
+// Sprint 49: Now supports both manual roots (ROOT_ALLOWLIST) and all 1,574
+// Sprint 48 auto-activated roots. The page detects which source the slug
+// belongs to and renders the appropriate view.
+//
+// Manual roots (10): Use ROOT_ALLOWLIST + human review workflow
+// Auto-activated roots (1,574): Use Sprint 48 registry + occurrence files
 //
 // This page uses server-side data loading to access the morphology index.
-// The canActivateRootTopic guard prevents public display without validated data
-// and explicit lemma review.
 
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -20,6 +19,7 @@ import {
   CheckCircle2,
   BookOpen,
   Info,
+  ArrowLeft,
 } from "lucide-react";
 import {
   getRootTopicEntryBySlug,
@@ -39,10 +39,16 @@ import { buildRootTopicIndex, type RootOccurrence } from "@/lib/morphology/occur
 import { getSurah } from "@/lib/quran/data";
 import type { RootTopicEntry } from "@/lib/morphology/root-allowlist";
 import type { Ayah } from "@/lib/quran/types";
+import {
+  getSprint48RootBySlug,
+  loadSprint48OccurrenceFile,
+  type Sprint48RegistryRoot,
+  type Sprint48OccurrenceIndex,
+} from "@/lib/morphology/sprint-48-root-data";
 
 interface Props {
   params: Promise<{ root: string }>;
-  searchParams: Promise<{ page?: string }>;
+  searchParams: Promise<{ page?: string; lemma?: string }>;
 }
 
 /** Occurrences per page on an approved root page. */
@@ -50,27 +56,38 @@ const PAGE_SIZE = 25;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { root: slug } = await params;
-  const entry = getRootTopicEntryBySlug(slug);
 
-  if (!entry) {
+  // Try manual roots first
+  const manualEntry = getRootTopicEntryBySlug(slug);
+  if (manualEntry) {
+    const decision = getPublicationDecision(slug);
+    const automated = canPublishRootIndex(manualEntry, decision);
+    const isPublic = manualEntry.reviewState === "approved" || automated.canPublish;
+
     return {
-      title: `Root not found · Al-Huda`,
-      robots: { index: false },
+      title: `${manualEntry.title} (${manualEntry.arabicTitle}) · Al-Huda`,
+      description: `Arabic root ${manualEntry.roots[0]} — ${manualEntry.title}. ${
+        isPublic
+          ? "Verses containing forms associated with this root."
+          : "Pending review — lemma selection not yet approved."
+      }`,
+      robots: isPublic ? undefined : { index: false },
     };
   }
 
-  const decision = getPublicationDecision(slug);
-  const automated = canPublishRootIndex(entry, decision);
-  const isPublic = entry.reviewState === "approved" || automated.canPublish;
+  // Try Sprint 48 auto-activated roots
+  const s48Root = getSprint48RootBySlug(slug);
+  if (s48Root && (s48Root.status === "activated" || s48Root.status === "partially-activated")) {
+    return {
+      title: `Root ${s48Root.root} · Al-Huda`,
+      description: `Arabic root ${s48Root.root} — ${s48Root.occurrenceCount} word occurrences across ${s48Root.distinctAyahCount} distinct ayat. ${s48Root.autoAcceptedLemmas} lemmas auto-accepted by deterministic morphology validation.`,
+      robots: undefined,
+    };
+  }
 
   return {
-    title: `${entry.title} (${entry.arabicTitle}) · Al-Huda`,
-    description: `Arabic root ${entry.roots[0]} — ${entry.title}. ${
-      isPublic
-        ? "Verses containing forms associated with this root."
-        : "Pending review — lemma selection not yet approved."
-    }`,
-    robots: isPublic ? undefined : { index: false },
+    title: `Root not found · Al-Huda`,
+    robots: { index: false },
   };
 }
 
@@ -79,16 +96,59 @@ export default async function RootDiscoveryDetailPage({
   searchParams,
 }: Props) {
   const { root: slug } = await params;
-  const { page: pageParam } = await searchParams;
+  const { page: pageParam, lemma: lemmaParam } = await searchParams;
   const parsedPage = Number.parseInt(pageParam ?? "1", 10);
   const requestedPage =
     Number.isFinite(parsedPage) && parsedPage > 0 ? parsedPage : 1;
-  const entry = getRootTopicEntryBySlug(slug);
 
-  if (!entry) {
-    notFound();
+  // Try manual roots first (ROOT_ALLOWLIST)
+  const manualEntry = getRootTopicEntryBySlug(slug);
+  if (manualEntry) {
+    return (
+      <ManualRootView
+        entry={manualEntry}
+        page={requestedPage}
+        slug={slug}
+      />
+    );
   }
 
+  // Try Sprint 48 auto-activated roots
+  const s48Root = getSprint48RootBySlug(slug);
+  if (s48Root) {
+    if (s48Root.status === "activated" || s48Root.status === "partially-activated") {
+      return (
+        <Sprint48RootView
+          root={s48Root}
+          page={requestedPage}
+          slug={slug}
+          lemmaFilter={lemmaParam}
+        />
+      );
+    } else if (s48Root.status === "needs-review") {
+      return <Sprint48NeedsReviewView root={s48Root} />;
+    } else {
+      return <Sprint48DiscoveredView root={s48Root} />;
+    }
+  }
+
+  // Not found
+  notFound();
+}
+
+// ============================================================================
+// Manual Root View (ROOT_ALLOWLIST)
+// ============================================================================
+
+function ManualRootView({
+  entry,
+  page,
+  slug,
+}: {
+  entry: RootTopicEntry;
+  page: number;
+  slug: string;
+}) {
   const dataAvailable = isMorphologyDataAvailable();
 
   if (!dataAvailable) {
@@ -141,13 +201,11 @@ export default async function RootDiscoveryDetailPage({
   const decision = getPublicationDecision(slug);
   const automatedGate = canPublishRootIndex(entry, decision);
 
-  // Human approval is the stronger claim and the existing lifecycle. The
-  // pipeline never rewrites `reviewState`, so this branch stays authoritative.
   if (humanGate.canActivate) {
     return (
       <RootIndexView
         entry={entry}
-        page={requestedPage}
+        page={page}
         slug={slug}
         provenance="human-approved"
         decision={null}
@@ -155,14 +213,11 @@ export default async function RootDiscoveryDetailPage({
     );
   }
 
-  // Automated publication: structural validation passed, no documented
-  // ambiguity was observed, and the review recommended the complete attested
-  // lemma set.
   if (automatedGate.canPublish && decision) {
     return (
       <RootIndexView
         entry={entry}
-        page={requestedPage}
+        page={page}
         slug={slug}
         provenance="automated-policy"
         decision={decision}
@@ -179,6 +234,423 @@ export default async function RootDiscoveryDetailPage({
   );
 }
 
+// ============================================================================
+// Sprint 48 Auto-Activated Root View
+// ============================================================================
+
+function Sprint48RootView({
+  root,
+  page,
+  slug,
+  lemmaFilter,
+}: {
+  root: Sprint48RegistryRoot;
+  page: number;
+  slug: string;
+  lemmaFilter?: string;
+}) {
+  const occurrenceIndex = loadSprint48OccurrenceFile(slug);
+
+  if (!occurrenceIndex || occurrenceIndex.totalMatches === 0) {
+    return (
+      <div className="mx-auto max-w-2xl space-y-8 pb-12">
+        <BackToRootsLink />
+        <header className="space-y-3">
+          <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            Explore · Arabic root
+          </p>
+          <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+            <span className="arabic-display mr-3 text-gold" lang="ar" dir="rtl">
+              {root.root}
+            </span>
+            Root
+          </h1>
+        </header>
+
+        <section
+          aria-labelledby="no-occurrences"
+          className="rounded-2xl border border-border/60 bg-card/60 p-8 text-center"
+        >
+          <BookOpen className="mx-auto h-12 w-12 text-muted-foreground/50" aria-hidden />
+          <h2 id="no-occurrences" className="mt-4 font-display text-lg font-semibold">
+            No occurrences available
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            This root has been discovered but no occurrence data is currently available.
+          </p>
+        </section>
+      </div>
+    );
+  }
+
+  // Filter by lemma if requested
+  let filteredOccurrences = occurrenceIndex.occurrences;
+  if (lemmaFilter) {
+    filteredOccurrences = occurrenceIndex.occurrences.filter(
+      (occ) => occ.matchedLemma === lemmaFilter
+    );
+  }
+
+  const totalMatches = filteredOccurrences.length;
+  const totalPages = Math.max(1, Math.ceil(totalMatches / PAGE_SIZE));
+  const currentPage = Math.min(Math.max(page, 1), totalPages);
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageOccurrences = filteredOccurrences.slice(start, start + PAGE_SIZE);
+
+  // Calculate distinct ayat for filtered results
+  const filteredAyat = new Set(
+    filteredOccurrences.map((occ) => `${occ.ref.surah}:${occ.ref.ayah}`)
+  );
+
+  return (
+    <div className="mx-auto max-w-4xl space-y-8 pb-12">
+      <BackToRootsLink />
+
+      <header className="space-y-3">
+        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          Explore · Arabic root
+        </p>
+        <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+          <span className="arabic-display mr-3 text-gold" lang="ar" dir="rtl">
+            {root.root}
+          </span>
+          {root.transliteration && (
+            <span className="text-muted-foreground">({root.transliteration})</span>
+          )}
+        </h1>
+        <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <CheckCircle2 className="h-4 w-4 text-green-600 dark:text-green-400" aria-hidden />
+          <span>
+            {root.status === "activated" ? "Activated" : "Partially available"} ·{" "}
+            {occurrenceIndex.totalMatches} word occurrences across{" "}
+            {occurrenceIndex.uniqueAyahs.length} distinct ayat
+          </span>
+        </div>
+        <p className="max-w-prose text-muted-foreground">
+          Verses containing forms associated with this root. This list shows
+          verses in which words derived from the root{" "}
+          <span lang="ar" dir="rtl">{root.root}</span> appear, filtered by
+          the auto-accepted lemma forms. Each row corresponds to one word
+          occurrence; an ayah containing two forms of the root appears twice.
+        </p>
+        <div className="flex items-start gap-2 rounded-xl border border-border/60 bg-secondary/30 p-3 text-xs text-muted-foreground">
+          <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+          <p>
+            Lemma selection produced by automated review (policy{" "}
+            {root.policyVersion}) from QUL morphology data. This is not a
+            scholarly approval or a thematic classification.
+          </p>
+        </div>
+      </header>
+
+      {/* Lemma distribution */}
+      <section aria-labelledby="lemma-distribution" className="space-y-3">
+        <h2 id="lemma-distribution" className="font-display text-xl font-semibold tracking-tight">
+          Lemma distribution ({root.includedLemmas.length})
+        </h2>
+        <div className="grid gap-2 sm:grid-cols-2">
+          {root.includedLemmas.map((lemma) => {
+            const count = occurrenceIndex.occurrences.filter(
+              (occ) => occ.matchedLemma === lemma
+            ).length;
+            const isActive = lemmaFilter === lemma;
+            return (
+              <Link
+                key={lemma}
+                href={
+                  isActive
+                    ? `/explore/root/${slug}`
+                    : `/explore/root/${slug}?lemma=${encodeURIComponent(lemma)}`
+                }
+                className={`flex items-center justify-between rounded-lg border px-3 py-2 text-sm transition-colors ${
+                  isActive
+                    ? "border-primary bg-primary/10 text-primary"
+                    : "border-border/60 bg-card hover:bg-secondary/50"
+                }`}
+              >
+                <span className="arabic-display" lang="ar" dir="rtl">
+                  {lemma}
+                </span>
+                <span className="text-xs text-muted-foreground">{count}</span>
+              </Link>
+            );
+          })}
+        </div>
+        {lemmaFilter && (
+          <p className="text-xs text-muted-foreground">
+            Showing occurrences for lemma{" "}
+            <span className="arabic-display" lang="ar" dir="rtl">
+              {lemmaFilter}
+            </span>
+            .{" "}
+            <Link href={`/explore/root/${slug}`} className="text-primary hover:underline">
+              Clear filter
+            </Link>
+          </p>
+        )}
+      </section>
+
+      {/* Occurrence list */}
+      {pageOccurrences.length === 0 ? (
+        <section
+          aria-labelledby="no-results"
+          className="rounded-2xl border border-border/60 bg-card/60 p-8 text-center"
+        >
+          <BookOpen className="mx-auto h-12 w-12 text-muted-foreground/50" aria-hidden />
+          <h2 id="no-results" className="mt-4 font-display text-lg font-semibold">
+            No matching ayat found
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            No ayat matched the selected lemma filter.
+          </p>
+        </section>
+      ) : (
+        <section aria-labelledby="ayah-results" className="space-y-4">
+          <div className="flex items-baseline justify-between gap-3">
+            <h2 id="ayah-results" className="font-display text-xl font-semibold tracking-tight">
+              Word occurrences ({totalMatches})
+            </h2>
+            <p className="text-xs text-muted-foreground">
+              Showing {start + 1}–{start + pageOccurrences.length} of{" "}
+              {totalMatches}
+              {lemmaFilter ? "" : ` across ${filteredAyat.size} ayat`}
+            </p>
+          </div>
+          <div className="space-y-3">
+            {pageOccurrences.map((occ, i) => (
+              <Sprint48OccurrenceCard
+                key={`${occ.ref.surah}:${occ.ref.ayah}:${occ.wordPosition ?? i}`}
+                occurrence={occ}
+                slug={slug}
+              />
+            ))}
+          </div>
+
+          {totalPages > 1 && (
+            <nav
+              aria-label="Root occurrence pagination"
+              className="flex items-center justify-center gap-2 pt-2"
+            >
+              {currentPage > 1 ? (
+                <Link
+                  href={
+                    lemmaFilter
+                      ? `/explore/root/${slug}?page=${currentPage - 1}&lemma=${encodeURIComponent(lemmaFilter)}`
+                      : `/explore/root/${slug}?page=${currentPage - 1}`
+                  }
+                  className="rounded-lg border border-border/80 bg-card px-3 py-1.5 text-sm font-medium hover:bg-secondary/50"
+                >
+                  ← Previous
+                </Link>
+              ) : (
+                <span className="rounded-lg border border-border/40 bg-muted/40 px-3 py-1.5 text-sm text-muted-foreground/60">
+                  ← Previous
+                </span>
+              )}
+              <span className="px-3 text-sm text-muted-foreground">
+                Page {currentPage} of {totalPages}
+              </span>
+              {currentPage < totalPages ? (
+                <Link
+                  href={
+                    lemmaFilter
+                      ? `/explore/root/${slug}?page=${currentPage + 1}&lemma=${encodeURIComponent(lemmaFilter)}`
+                      : `/explore/root/${slug}?page=${currentPage + 1}`
+                  }
+                  className="rounded-lg border border-border/80 bg-card px-3 py-1.5 text-sm font-medium hover:bg-secondary/50"
+                >
+                  Next →
+                </Link>
+              ) : (
+                <span className="rounded-lg border border-border/40 bg-muted/40 px-3 py-1.5 text-sm text-muted-foreground/60">
+                  Next →
+                </span>
+              )}
+            </nav>
+          )}
+        </section>
+      )}
+
+      {/* Coverage disclosure */}
+      <section className="rounded-2xl border border-border/60 bg-card/60 p-5 text-xs text-muted-foreground">
+        <p className="flex items-start gap-2">
+          <Info className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+          <span>
+            <strong className="text-foreground">Coverage disclosure.</strong>{" "}
+            Showing source-backed occurrences for the currently activated lemma
+            set. This root has {root.totalLemmas} total lemmas in the source,
+            of which {root.autoAcceptedLemmas} are auto-accepted and{" "}
+            {root.needsReviewLemmas} remain under review. Additional source
+            records may have incomplete lemma information.
+          </span>
+        </p>
+      </section>
+
+      <footer className="rounded-2xl border border-border/60 bg-card/60 p-5 text-xs text-muted-foreground">
+        <p>
+          <strong className="text-foreground">Source integrity.</strong> All occurrence
+          data is derived from QUL morphology v1, validated against the pinned Quran
+          dataset. No Quran text has been altered.
+        </p>
+      </footer>
+    </div>
+  );
+}
+
+function Sprint48OccurrenceCard({
+  occurrence,
+  slug,
+}: {
+  occurrence: Sprint48OccurrenceIndex["occurrences"][number];
+  slug: string;
+}) {
+  const surah = getSurah(occurrence.ref.surah);
+  if (!surah) return null;
+
+  const ayah = surah.ayat.find((a) => a.ayah === occurrence.ref.ayah);
+  if (!ayah) return null;
+
+  return (
+    <article className="rounded-xl border border-border/60 bg-card p-4 transition-colors hover:bg-secondary/30">
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0 flex-1 space-y-2">
+          <p className="arabic-display text-lg leading-loose" lang="ar" dir="rtl">
+            {ayah.arabic}
+          </p>
+          <p className="text-sm text-muted-foreground">{ayah.translation}</p>
+        </div>
+      </div>
+      <div className="mt-3 flex items-center justify-between gap-3 border-t border-border/40 pt-3">
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+          <span>
+            {surah.transliteration} ({occurrence.ref.surah}:{occurrence.ref.ayah})
+          </span>
+          <span>·</span>
+          <span>
+            Lemma:{" "}
+            <span className="arabic-display" lang="ar" dir="rtl">
+              {occurrence.matchedLemma}
+            </span>
+          </span>
+          <span>·</span>
+          <span>
+            Form:{" "}
+            <span className="arabic-display" lang="ar" dir="rtl">
+              {occurrence.matchedToken}
+            </span>
+          </span>
+        </div>
+        <Link
+          href={`/ayah/${occurrence.ref.surah}/${occurrence.ref.ayah}?from=root&root=${slug}`}
+          className="shrink-0 rounded-lg border border-border/80 bg-card px-3 py-1 text-xs font-medium hover:bg-secondary/50"
+        >
+          View ayah →
+        </Link>
+      </div>
+    </article>
+  );
+}
+
+function Sprint48NeedsReviewView({ root }: { root: Sprint48RegistryRoot }) {
+  return (
+    <div className="mx-auto max-w-2xl space-y-8 pb-12">
+      <BackToRootsLink />
+      <header className="space-y-3">
+        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          Explore · Arabic root
+        </p>
+        <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+          <span className="arabic-display mr-3 text-gold" lang="ar" dir="rtl">
+            {root.root}
+          </span>
+          {root.transliteration && (
+            <span className="text-muted-foreground">({root.transliteration})</span>
+          )}
+        </h1>
+      </header>
+
+      <section
+        aria-labelledby="under-review"
+        className="rounded-2xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-900/50 dark:bg-amber-950/20"
+      >
+        <div className="flex items-start gap-3">
+          <Clock
+            className="mt-0.5 h-5 w-5 shrink-0 text-amber-600 dark:text-amber-400"
+            aria-hidden
+          />
+          <div className="space-y-2 text-sm">
+            <h2 id="under-review" className="font-display text-base font-semibold">
+              Under review
+            </h2>
+            <p>
+              This root has {root.needsReviewLemmas} lemma{root.needsReviewLemmas !== 1 ? "s" : ""}{" "}
+              that require further investigation. Occurrence data is not yet available.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function Sprint48DiscoveredView({ root }: { root: Sprint48RegistryRoot }) {
+  return (
+    <div className="mx-auto max-w-2xl space-y-8 pb-12">
+      <BackToRootsLink />
+      <header className="space-y-3">
+        <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+          Explore · Arabic root
+        </p>
+        <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+          <span className="arabic-display mr-3 text-gold" lang="ar" dir="rtl">
+            {root.root}
+          </span>
+          {root.transliteration && (
+            <span className="text-muted-foreground">({root.transliteration})</span>
+          )}
+        </h1>
+      </header>
+
+      <section
+        aria-labelledby="not-activated"
+        className="rounded-2xl border border-border/60 bg-card/60 p-6"
+      >
+        <div className="flex items-start gap-3">
+          <AlertCircle
+            className="mt-0.5 h-5 w-5 shrink-0 text-muted-foreground"
+            aria-hidden
+          />
+          <div className="space-y-2 text-sm">
+            <h2 id="not-activated" className="font-display text-base font-semibold">
+              Not yet activated
+            </h2>
+            <p>
+              This root has been discovered in the morphology source but has no
+              auto-accepted lemmas. Occurrence data is not available.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function BackToRootsLink() {
+  return (
+    <Link
+      href="/explore/root"
+      className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary"
+    >
+      <ArrowLeft className="h-4 w-4" aria-hidden />
+      Back to root discovery
+    </Link>
+  );
+}
+
+// ============================================================================
+// Legacy views (kept for manual roots)
+// ============================================================================
+
 function RootIndexView({
   entry,
   page,
@@ -193,18 +665,12 @@ function RootIndexView({
   decision: PublicationDecision | null;
 }) {
   const records = loadMorphologyIndex();
-  // Only the lemma selection is substituted. `reviewState` is untouched, so
-  // nothing downstream can mistake this for human approval.
   const indexEntry = decision ? buildPublishedIndexEntry(entry, decision) : entry;
 
-  // Build the complete index once. Paginating through buildRootTopicIndex()
-  // would also paginate uniqueAyahs, so the "distinct ayat" total would report
-  // the page size instead of the real count.
   const fullIndex = buildRootTopicIndex(indexEntry, records);
   const totalMatches = fullIndex.totalMatches;
   const totalAyat = fullIndex.uniqueAyahs.length;
   const totalPages = Math.max(1, Math.ceil(totalMatches / PAGE_SIZE));
-  // Clamp out-of-range page numbers rather than rendering an empty page.
   const currentPage = Math.min(Math.max(page, 1), totalPages);
   const start = (currentPage - 1) * PAGE_SIZE;
   const pageOccurrences = fullIndex.occurrences.slice(start, start + PAGE_SIZE);
@@ -278,7 +744,7 @@ function RootIndexView({
           </div>
           <div className="space-y-3">
             {pageOccurrences.map((occ, i) => (
-              <AyahOccurrenceCard key={`${occ.ref.surah}:${occ.ref.ayah}:${occ.wordPosition ?? i}`} occurrence={occ} />
+              <AyahOccurrenceCard key={`${occ.ref.surah}:${occ.ref.ayah}:${occ.wordPosition ?? i}`} occurrence={occ} slug={slug} />
             ))}
           </div>
 
@@ -333,7 +799,7 @@ function RootIndexView({
 function PendingReviewRootView({
   entry,
   reasons,
-  decision,
+  decision: _decision,
 }: {
   entry: RootTopicEntry;
   reasons: string[];
@@ -342,17 +808,17 @@ function PendingReviewRootView({
   const stats = getRootStats(entry.roots[0]);
   const occurrences = getRootOccurrences(entry.roots[0]);
 
-  // Group by lemma for review display
   const lemmaCounts = new Map<string, number>();
   for (const occ of occurrences) {
     if (occ.lemma) {
       lemmaCounts.set(occ.lemma, (lemmaCounts.get(occ.lemma) ?? 0) + 1);
     }
   }
+
   const sortedLemmas = Array.from(lemmaCounts.entries()).sort((a, b) => b[1] - a[1]);
 
   return (
-    <div className="mx-auto max-w-3xl space-y-8 pb-12">
+    <div className="mx-auto max-w-2xl space-y-8 pb-12">
       <header className="space-y-3">
         <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
           Explore · Arabic root
@@ -363,128 +829,55 @@ function PendingReviewRootView({
           </span>
           {entry.title}
         </h1>
-        <div className="flex items-center gap-2 text-sm text-amber-600 dark:text-amber-400">
-          <Clock className="h-4 w-4" aria-hidden />
-          <span>Pending review</span>
-        </div>
       </header>
 
       <section
-        aria-labelledby="review-status"
+        aria-labelledby="pending-review"
         className="rounded-2xl border border-amber-200 bg-amber-50 p-6 dark:border-amber-900/50 dark:bg-amber-950/20"
       >
         <div className="flex items-start gap-3">
-          <AlertCircle
+          <Clock
             className="mt-0.5 h-5 w-5 shrink-0 text-amber-600 dark:text-amber-400"
             aria-hidden
           />
           <div className="space-y-2 text-sm">
-            <h2 id="review-status" className="font-display text-base font-semibold">
-              This root is pending review
+            <h2 id="pending-review" className="font-display text-base font-semibold">
+              Pending review
             </h2>
             <p>
-              The morphology data for this root has been imported and validated, but
-              the lemma selections have not yet been reviewed by a human. Ayah results
-              are withheld until the review is complete.
+              This root is awaiting lemma review. {stats.totalOccurrences} word
+              occurrences across {stats.distinctAyat} distinct ayat have been
+              identified, but the lemma selection has not been approved.
             </p>
             {reasons.length > 0 && (
-              <ul className="list-inside list-disc space-y-1 text-muted-foreground">
+              <ul className="mt-3 space-y-1 text-xs">
                 {reasons.map((reason, i) => (
-                  <li key={i}>{reason}</li>
+                  <li key={i}>• {reason}</li>
                 ))}
               </ul>
             )}
-            {decision && (
-              <div className="space-y-2 text-xs text-muted-foreground">
-                <p>
-                  Automated review decision: {decision.decision} (policy{" "}
-                  {decision.policyVersion}). Not a scholarly approval.
-                </p>
-                {decision.missingLemmaCount > 0 && (
-                  <div className="rounded-lg border border-amber-300/60 bg-amber-50/50 p-3 dark:border-amber-900/50 dark:bg-amber-950/30">
-                    <p className="font-medium text-foreground">
-                      Lemma coverage: {decision.recordsWithLemma} of{" "}
-                      {decision.totalWordRecords} ({Math.round(decision.lemmaCoverageRatio * 100)}%)
-                    </p>
-                    <p className="mt-1">
-                      {decision.missingLemmaCount} word-level records for this
-                      root have no lemma in the QUL morphology source. All
-                      source-backed root occurrences are available in the
-                      occurrence index, but lemma-based filtering (e.g., &ldquo;show
-                      only specific forms&rdquo;) is restricted because some records
-                      lack lemma mappings. Missing lemmas are not fabricated,
-                      inferred, or silently dropped.
-                    </p>
-                    <p className="mt-1 text-[11px]">
-                      Full per-record evidence:{" "}
-                      <code className="rounded bg-secondary/60 px-1 py-0.5">
-                        data/lemma-recovery-audit.json
-                      </code>
-                    </p>
-                  </div>
-                )}
-              </div>
-            )}
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="raw-data" className="space-y-4">
-        <h2 id="raw-data" className="font-display text-xl font-semibold tracking-tight">
-          Raw occurrence data (for review)
-        </h2>
-        <div className="grid grid-cols-2 gap-4">
-          <div className="rounded-2xl border border-border/60 bg-card/60 p-4">
-            <div className="text-xs text-muted-foreground">Total occurrences</div>
-            <div className="mt-1 text-2xl font-semibold">{stats.totalOccurrences}</div>
-          </div>
-          <div className="rounded-2xl border border-border/60 bg-card/60 p-4">
-            <div className="text-xs text-muted-foreground">Distinct ayat</div>
-            <div className="mt-1 text-2xl font-semibold">{stats.distinctAyat}</div>
-          </div>
-        </div>
-
-        {sortedLemmas.length > 0 && (
+      {sortedLemmas.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="font-display text-lg font-semibold">Lemma breakdown</h2>
           <div className="space-y-2">
-            <h3 className="font-display text-base font-semibold">Lemma breakdown</h3>
-            <div className="rounded-2xl border border-border/60 bg-card/60 overflow-hidden">
-              <table className="w-full text-sm">
-                <thead className="bg-secondary/40">
-                  <tr>
-                    <th className="px-4 py-2 text-left font-medium">Lemma</th>
-                    <th className="px-4 py-2 text-right font-medium">Count</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedLemmas.map(([lemma, count]) => (
-                    <tr key={lemma} className="border-t border-border/40">
-                      <td className="px-4 py-2 arabic-display" lang="ar" dir="rtl">
-                        {lemma}
-                      </td>
-                      <td className="px-4 py-2 text-right font-mono">{count}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            {sortedLemmas.slice(0, 20).map(([lemma, count]) => (
+              <div
+                key={lemma}
+                className="flex items-center justify-between rounded-lg border border-border/60 bg-card px-3 py-2 text-sm"
+              >
+                <span className="arabic-display" lang="ar" dir="rtl">
+                  {lemma}
+                </span>
+                <span className="text-xs text-muted-foreground">{count}</span>
+              </div>
+            ))}
           </div>
-        )}
-
-        {entry.notes && (
-          <div className="rounded-2xl border border-border/60 bg-card/60 p-4">
-            <h3 className="font-display text-base font-semibold">Review notes</h3>
-            <p className="mt-2 text-sm text-muted-foreground">{entry.notes}</p>
-          </div>
-        )}
-      </section>
-
-      <footer className="rounded-2xl border border-border/60 bg-card/60 p-5 text-xs text-muted-foreground">
-        <p>
-          <strong className="text-foreground">Review required.</strong> This root cannot
-          be publicly displayed until a reviewer selects which lemmas belong to this
-          topic and approves the entry.
-        </p>
-      </footer>
+        </section>
+      )}
     </div>
   );
 }
@@ -502,14 +895,10 @@ function RejectedRootView({ entry }: { entry: RootTopicEntry }) {
           </span>
           {entry.title}
         </h1>
-        <div className="flex items-center gap-2 text-sm text-red-600 dark:text-red-400">
-          <XCircle className="h-4 w-4" aria-hidden />
-          <span>Rejected</span>
-        </div>
       </header>
 
       <section
-        aria-labelledby="rejection-reason"
+        aria-labelledby="rejected"
         className="rounded-2xl border border-red-200 bg-red-50 p-6 dark:border-red-900/50 dark:bg-red-950/20"
       >
         <div className="flex items-start gap-3">
@@ -518,19 +907,14 @@ function RejectedRootView({ entry }: { entry: RootTopicEntry }) {
             aria-hidden
           />
           <div className="space-y-2 text-sm">
-            <h2 id="rejection-reason" className="font-display text-base font-semibold">
-              This root has been rejected
+            <h2 id="rejected" className="font-display text-base font-semibold">
+              Root rejected
             </h2>
             <p>
-              This root was reviewed and rejected. It will not be displayed in the
-              root-discovery experience.
+              This root has been reviewed and rejected. It is not displayed
+              publicly.
             </p>
-            {entry.notes && (
-              <div className="mt-4 rounded-lg bg-white/50 p-3 dark:bg-black/20">
-                <p className="text-xs font-medium">Review notes:</p>
-                <p className="mt-1 text-muted-foreground">{entry.notes}</p>
-              </div>
-            )}
+            {entry.notes && <p className="text-xs">{entry.notes}</p>}
           </div>
         </div>
       </section>
@@ -538,44 +922,47 @@ function RejectedRootView({ entry }: { entry: RootTopicEntry }) {
   );
 }
 
-function AyahOccurrenceCard({ occurrence }: { occurrence: RootOccurrence }) {
+function AyahOccurrenceCard({ occurrence, slug }: { occurrence: RootOccurrence; slug: string }) {
   const surah = getSurah(occurrence.ref.surah);
-  const ayah: Ayah | undefined = surah?.ayat.find(
-    (a) => a.ayah === occurrence.ref.ayah
-  );
+  if (!surah) return null;
 
-  if (!surah || !ayah) return null;
+  const ayah = surah.ayat.find((a: Ayah) => a.ayah === occurrence.ref.ayah);
+  if (!ayah) return null;
 
   return (
-    <div className="rounded-2xl border border-border/60 bg-card/60 p-4">
+    <article className="rounded-xl border border-border/60 bg-card p-4 transition-colors hover:bg-secondary/30">
       <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0 flex-1">
-          <p className="arabic-display text-lg leading-relaxed" lang="ar" dir="rtl">
+        <div className="min-w-0 flex-1 space-y-2">
+          <p className="arabic-display text-lg leading-loose" lang="ar" dir="rtl">
             {ayah.arabic}
           </p>
-          <p className="mt-2 text-sm text-muted-foreground">{ayah.translation}</p>
+          <p className="text-sm text-muted-foreground">{ayah.translation}</p>
+        </div>
+      </div>
+      <div className="mt-3 flex items-center justify-between gap-3 border-t border-border/40 pt-3">
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+          <span>
+            {surah.transliteration} ({occurrence.ref.surah}:{occurrence.ref.ayah})
+          </span>
+          {occurrence.matchedLemma && (
+            <>
+              <span>·</span>
+              <span>
+                Lemma:{" "}
+                <span className="arabic-display" lang="ar" dir="rtl">
+                  {occurrence.matchedLemma}
+                </span>
+              </span>
+            </>
+          )}
         </div>
         <Link
-          href={`/ayah/${occurrence.ref.surah}/${occurrence.ref.ayah}`}
-          className="shrink-0 rounded-lg bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary hover:bg-primary/20"
+          href={`/ayah/${occurrence.ref.surah}/${occurrence.ref.ayah}?from=root&root=${slug}`}
+          className="shrink-0 rounded-lg border border-border/80 bg-card px-3 py-1 text-xs font-medium hover:bg-secondary/50"
         >
-          {surah.transliteration} {occurrence.ref.ayah}
+          View ayah →
         </Link>
       </div>
-      <div className="mt-3 flex gap-4 text-xs text-muted-foreground">
-        <div>
-          <span className="font-medium">Matched form:</span>{" "}
-          <span className="arabic-display" lang="ar" dir="rtl">
-            {occurrence.matchedToken}
-          </span>
-        </div>
-        <div>
-          <span className="font-medium">Lemma:</span>{" "}
-          <span className="arabic-display" lang="ar" dir="rtl">
-            {occurrence.matchedLemma}
-          </span>
-        </div>
-      </div>
-    </div>
+    </article>
   );
 }

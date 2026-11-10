@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "ظلل",
+    "title": "ظلل",
+    "arabicTitle": "ظلل",
+    "roots": [
+      "ظلل"
+    ],
+    "includedLemmas": [
+      "ظَلِيل",
+      "ظَلَّلْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 57
+      },
+      "matchedToken": "وَظَلَّلْنَا",
+      "matchedLemma": "ظَلَّلْ",
+      "matchedRoot": "ظلل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 57
+      },
+      "matchedToken": "ظَلِيلًا",
+      "matchedLemma": "ظَلِيل",
+      "matchedRoot": "ظلل",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "وَظَلَّلْنَا",
+      "matchedLemma": "ظَلَّلْ",
+      "matchedRoot": "ظلل",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 31
+      },
+      "matchedToken": "ظَلِيلٍۢ",
+      "matchedLemma": "ظَلِيل",
+      "matchedRoot": "ظلل",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 57
+    },
+    {
+      "surah": 4,
+      "ayah": 57
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    },
+    {
+      "surah": 77,
+      "ayah": 31
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

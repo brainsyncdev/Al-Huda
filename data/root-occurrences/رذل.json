@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "رذل",
+    "title": "رذل",
+    "arabicTitle": "رذل",
+    "roots": [
+      "رذل"
+    ],
+    "includedLemmas": [
+      "أَرْذَل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 27
+      },
+      "matchedToken": "أَرَاذِلُنَا",
+      "matchedLemma": "أَرْذَل",
+      "matchedRoot": "رذل",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 70
+      },
+      "matchedToken": "أَرْذَلِ",
+      "matchedLemma": "أَرْذَل",
+      "matchedRoot": "رذل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 5
+      },
+      "matchedToken": "أَرْذَلِ",
+      "matchedLemma": "أَرْذَل",
+      "matchedRoot": "رذل",
+      "wordPosition": 48
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 111
+      },
+      "matchedToken": "ٱلْأَرْذَلُونَ",
+      "matchedLemma": "أَرْذَل",
+      "matchedRoot": "رذل",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 27
+    },
+    {
+      "surah": 16,
+      "ayah": 70
+    },
+    {
+      "surah": 22,
+      "ayah": 5
+    },
+    {
+      "surah": 26,
+      "ayah": 111
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

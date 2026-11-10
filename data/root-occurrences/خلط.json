@@ -1,0 +1,111 @@
+{
+  "entry": {
+    "slug": "خلط",
+    "title": "خلط",
+    "arabicTitle": "خلط",
+    "roots": [
+      "خلط"
+    ],
+    "includedLemmas": [
+      "اخْتَلَطَ",
+      "تُخَالِطُ",
+      "خَلَطُ",
+      "خُلَطَآء"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 220
+      },
+      "matchedToken": "تُخَالِطُوهُمْ",
+      "matchedLemma": "تُخَالِطُ",
+      "matchedRoot": "خلط",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 146
+      },
+      "matchedToken": "ٱخْتَلَطَ",
+      "matchedLemma": "اخْتَلَطَ",
+      "matchedRoot": "خلط",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 102
+      },
+      "matchedToken": "خَلَطُوا۟",
+      "matchedLemma": "خَلَطُ",
+      "matchedRoot": "خلط",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 24
+      },
+      "matchedToken": "فَٱخْتَلَطَ",
+      "matchedLemma": "اخْتَلَطَ",
+      "matchedRoot": "خلط",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 45
+      },
+      "matchedToken": "فَٱخْتَلَطَ",
+      "matchedLemma": "اخْتَلَطَ",
+      "matchedRoot": "خلط",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 24
+      },
+      "matchedToken": "ٱلْخُلَطَآءِ",
+      "matchedLemma": "خُلَطَآء",
+      "matchedRoot": "خلط",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 220
+    },
+    {
+      "surah": 6,
+      "ayah": 146
+    },
+    {
+      "surah": 9,
+      "ayah": 102
+    },
+    {
+      "surah": 10,
+      "ayah": 24
+    },
+    {
+      "surah": 18,
+      "ayah": 45
+    },
+    {
+      "surah": 38,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

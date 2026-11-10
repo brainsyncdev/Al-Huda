@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "زخرف",
+    "title": "زخرف",
+    "arabicTitle": "زخرف",
+    "roots": [
+      "زخرف"
+    ],
+    "includedLemmas": [
+      "زُخْرُف"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 112
+      },
+      "matchedToken": "زُخْرُفَ",
+      "matchedLemma": "زُخْرُف",
+      "matchedRoot": "زخرف",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 24
+      },
+      "matchedToken": "زُخْرُفَهَا",
+      "matchedLemma": "زُخْرُف",
+      "matchedRoot": "زخرف",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 93
+      },
+      "matchedToken": "زُخْرُفٍ",
+      "matchedLemma": "زُخْرُف",
+      "matchedRoot": "زخرف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 35
+      },
+      "matchedToken": "وَزُخْرُفًۭا ۚ",
+      "matchedLemma": "زُخْرُف",
+      "matchedRoot": "زخرف",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 112
+    },
+    {
+      "surah": 10,
+      "ayah": 24
+    },
+    {
+      "surah": 17,
+      "ayah": 93
+    },
+    {
+      "surah": 43,
+      "ayah": 35
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

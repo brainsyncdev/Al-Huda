@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "بعثر",
+    "title": "بعثر",
+    "arabicTitle": "بعثر",
+    "roots": [
+      "بعثر"
+    ],
+    "includedLemmas": [
+      "بُعْثِرَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 82,
+        "ayah": 4
+      },
+      "matchedToken": "بُعْثِرَتْ",
+      "matchedLemma": "بُعْثِرَ",
+      "matchedRoot": "بعثر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 100,
+        "ayah": 9
+      },
+      "matchedToken": "بُعْثِرَ",
+      "matchedLemma": "بُعْثِرَ",
+      "matchedRoot": "بعثر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 82,
+      "ayah": 4
+    },
+    {
+      "surah": 100,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

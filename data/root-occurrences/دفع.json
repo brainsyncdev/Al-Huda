@@ -1,0 +1,163 @@
+{
+  "entry": {
+    "slug": "دفع",
+    "title": "دفع",
+    "arabicTitle": "دفع",
+    "roots": [
+      "دفع"
+    ],
+    "includedLemmas": [
+      "دَافِع",
+      "دَفَعْ",
+      "دَفْع",
+      "يُدَٰفِعُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 251
+      },
+      "matchedToken": "دَفْعُ",
+      "matchedLemma": "دَفْع",
+      "matchedRoot": "دفع",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 167
+      },
+      "matchedToken": "ٱدْفَعُوا۟ ۖ",
+      "matchedLemma": "دَفَعْ",
+      "matchedRoot": "دفع",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 6
+      },
+      "matchedToken": "فَٱدْفَعُوٓا۟",
+      "matchedLemma": "دَفَعْ",
+      "matchedRoot": "دفع",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 6
+      },
+      "matchedToken": "دَفَعْتُمْ",
+      "matchedLemma": "دَفَعْ",
+      "matchedRoot": "دفع",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 38
+      },
+      "matchedToken": "يُدَٰفِعُ",
+      "matchedLemma": "يُدَٰفِعُ",
+      "matchedRoot": "دفع",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 40
+      },
+      "matchedToken": "دَفْعُ",
+      "matchedLemma": "دَفْع",
+      "matchedRoot": "دفع",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 96
+      },
+      "matchedToken": "ٱدْفَعْ",
+      "matchedLemma": "دَفَعْ",
+      "matchedRoot": "دفع",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 34
+      },
+      "matchedToken": "ٱدْفَعْ",
+      "matchedLemma": "دَفَعْ",
+      "matchedRoot": "دفع",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 8
+      },
+      "matchedToken": "دَافِعٍۢ",
+      "matchedLemma": "دَافِع",
+      "matchedRoot": "دفع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 2
+      },
+      "matchedToken": "دَافِعٌۭ",
+      "matchedLemma": "دَافِع",
+      "matchedRoot": "دفع",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 251
+    },
+    {
+      "surah": 3,
+      "ayah": 167
+    },
+    {
+      "surah": 4,
+      "ayah": 6
+    },
+    {
+      "surah": 22,
+      "ayah": 38
+    },
+    {
+      "surah": 22,
+      "ayah": 40
+    },
+    {
+      "surah": 23,
+      "ayah": 96
+    },
+    {
+      "surah": 41,
+      "ayah": 34
+    },
+    {
+      "surah": 52,
+      "ayah": 8
+    },
+    {
+      "surah": 70,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

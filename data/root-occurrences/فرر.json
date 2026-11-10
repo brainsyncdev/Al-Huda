@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "فرر",
+    "title": "فرر",
+    "arabicTitle": "فرر",
+    "roots": [
+      "فرر"
+    ],
+    "includedLemmas": [
+      "فِرَار"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 18
+      },
+      "matchedToken": "فِرَارًۭا",
+      "matchedLemma": "فِرَار",
+      "matchedRoot": "فرر",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 13
+      },
+      "matchedToken": "فِرَارًۭا",
+      "matchedLemma": "فِرَار",
+      "matchedRoot": "فرر",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلْفِرَارُ",
+      "matchedLemma": "فِرَار",
+      "matchedRoot": "فرر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 71,
+        "ayah": 6
+      },
+      "matchedToken": "فِرَارًۭا",
+      "matchedLemma": "فِرَار",
+      "matchedRoot": "فرر",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 18
+    },
+    {
+      "surah": 33,
+      "ayah": 13
+    },
+    {
+      "surah": 33,
+      "ayah": 16
+    },
+    {
+      "surah": 71,
+      "ayah": 6
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

@@ -1,0 +1,77 @@
+{
+  "entry": {
+    "slug": "نفل",
+    "title": "نفل",
+    "arabicTitle": "نفل",
+    "roots": [
+      "نفل"
+    ],
+    "includedLemmas": [
+      "أَنفَال",
+      "نَافِلَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْأَنفَالِ ۖ",
+      "matchedLemma": "أَنفَال",
+      "matchedRoot": "نفل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْأَنفَالُ",
+      "matchedLemma": "أَنفَال",
+      "matchedRoot": "نفل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 79
+      },
+      "matchedToken": "نَافِلَةًۭ",
+      "matchedLemma": "نَافِلَة",
+      "matchedRoot": "نفل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 72
+      },
+      "matchedToken": "نَافِلَةًۭ ۖ",
+      "matchedLemma": "نَافِلَة",
+      "matchedRoot": "نفل",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 1
+    },
+    {
+      "surah": 17,
+      "ayah": 79
+    },
+    {
+      "surah": 21,
+      "ayah": 72
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

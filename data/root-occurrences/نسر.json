@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نسر",
+    "title": "نسر",
+    "arabicTitle": "نسر",
+    "roots": [
+      "نسر"
+    ],
+    "includedLemmas": [
+      "نَسْر"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 71,
+        "ayah": 23
+      },
+      "matchedToken": "وَنَسْرًۭا",
+      "matchedLemma": "نَسْر",
+      "matchedRoot": "نسر",
+      "wordPosition": 13
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 71,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

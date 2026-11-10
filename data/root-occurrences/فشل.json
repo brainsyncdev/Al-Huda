@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "فشل",
+    "title": "فشل",
+    "arabicTitle": "فشل",
+    "roots": [
+      "فشل"
+    ],
+    "includedLemmas": [
+      "فَشِلْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 122
+      },
+      "matchedToken": "تَفْشَلَا",
+      "matchedLemma": "فَشِلْ",
+      "matchedRoot": "فشل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 152
+      },
+      "matchedToken": "فَشِلْتُمْ",
+      "matchedLemma": "فَشِلْ",
+      "matchedRoot": "فشل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 43
+      },
+      "matchedToken": "لَّفَشِلْتُمْ",
+      "matchedLemma": "فَشِلْ",
+      "matchedRoot": "فشل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 46
+      },
+      "matchedToken": "فَتَفْشَلُوا۟",
+      "matchedLemma": "فَشِلْ",
+      "matchedRoot": "فشل",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 122
+    },
+    {
+      "surah": 3,
+      "ayah": 152
+    },
+    {
+      "surah": 8,
+      "ayah": 43
+    },
+    {
+      "surah": 8,
+      "ayah": 46
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

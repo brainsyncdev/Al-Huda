@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "نكس",
+    "title": "نكس",
+    "arabicTitle": "نكس",
+    "roots": [
+      "نكس"
+    ],
+    "includedLemmas": [
+      "نَاكِسُوا",
+      "نُكِسُ",
+      "نُنَكِّسْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 65
+      },
+      "matchedToken": "نُكِسُوا۟",
+      "matchedLemma": "نُكِسُ",
+      "matchedRoot": "نكس",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 12
+      },
+      "matchedToken": "نَاكِسُوا۟",
+      "matchedLemma": "نَاكِسُوا",
+      "matchedRoot": "نكس",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 68
+      },
+      "matchedToken": "نُنَكِّسْهُ",
+      "matchedLemma": "نُنَكِّسْ",
+      "matchedRoot": "نكس",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 65
+    },
+    {
+      "surah": 32,
+      "ayah": 12
+    },
+    {
+      "surah": 36,
+      "ayah": 68
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "جبن",
+    "title": "جبن",
+    "arabicTitle": "جبن",
+    "roots": [
+      "جبن"
+    ],
+    "includedLemmas": [
+      "جَبِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 103
+      },
+      "matchedToken": "لِلْجَبِينِ",
+      "matchedLemma": "جَبِين",
+      "matchedRoot": "جبن",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 37,
+      "ayah": 103
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

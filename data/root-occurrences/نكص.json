@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "نكص",
+    "title": "نكص",
+    "arabicTitle": "نكص",
+    "roots": [
+      "نكص"
+    ],
+    "includedLemmas": [
+      "نَكَصَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 48
+      },
+      "matchedToken": "نَكَصَ",
+      "matchedLemma": "نَكَصَ",
+      "matchedRoot": "نكص",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 66
+      },
+      "matchedToken": "تَنكِصُونَ",
+      "matchedLemma": "نَكَصَ",
+      "matchedRoot": "نكص",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 48
+    },
+    {
+      "surah": 23,
+      "ayah": 66
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

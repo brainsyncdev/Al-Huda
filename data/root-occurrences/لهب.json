@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "لهب",
+    "title": "لهب",
+    "arabicTitle": "لهب",
+    "roots": [
+      "لهب"
+    ],
+    "includedLemmas": [
+      "لَهَب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 31
+      },
+      "matchedToken": "ٱللَّهَبِ",
+      "matchedLemma": "لَهَب",
+      "matchedRoot": "لهب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 111,
+        "ayah": 1
+      },
+      "matchedToken": "لَهَبٍۢ",
+      "matchedLemma": "لَهَب",
+      "matchedRoot": "لهب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 111,
+        "ayah": 3
+      },
+      "matchedToken": "لَهَبٍۢ",
+      "matchedLemma": "لَهَب",
+      "matchedRoot": "لهب",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 77,
+      "ayah": 31
+    },
+    {
+      "surah": 111,
+      "ayah": 1
+    },
+    {
+      "surah": 111,
+      "ayah": 3
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

@@ -1,0 +1,118 @@
+{
+  "entry": {
+    "slug": "حبل",
+    "title": "حبل",
+    "arabicTitle": "حبل",
+    "roots": [
+      "حبل"
+    ],
+    "includedLemmas": [
+      "حَبْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 103
+      },
+      "matchedToken": "بِحَبْلِ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 112
+      },
+      "matchedToken": "بِحَبْلٍۢ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 112
+      },
+      "matchedToken": "وَحَبْلٍۢ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 66
+      },
+      "matchedToken": "حِبَالُهُمْ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 44
+      },
+      "matchedToken": "حِبَالَهُمْ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 16
+      },
+      "matchedToken": "حَبْلِ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 111,
+        "ayah": 5
+      },
+      "matchedToken": "حَبْلٌۭ",
+      "matchedLemma": "حَبْل",
+      "matchedRoot": "حبل",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 103
+    },
+    {
+      "surah": 3,
+      "ayah": 112
+    },
+    {
+      "surah": 20,
+      "ayah": 66
+    },
+    {
+      "surah": 26,
+      "ayah": 44
+    },
+    {
+      "surah": 50,
+      "ayah": 16
+    },
+    {
+      "surah": 111,
+      "ayah": 5
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

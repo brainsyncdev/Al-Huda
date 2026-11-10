@@ -1,0 +1,91 @@
+{
+  "entry": {
+    "slug": "قرف",
+    "title": "قرف",
+    "arabicTitle": "قرف",
+    "roots": [
+      "قرف"
+    ],
+    "includedLemmas": [
+      "اقْتَرَفْ",
+      "مُّقْتَرِفُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 113
+      },
+      "matchedToken": "وَلِيَقْتَرِفُوا۟",
+      "matchedLemma": "اقْتَرَفْ",
+      "matchedRoot": "قرف",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 113
+      },
+      "matchedToken": "مُّقْتَرِفُونَ",
+      "matchedLemma": "مُّقْتَرِفُون",
+      "matchedRoot": "قرف",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 120
+      },
+      "matchedToken": "يَقْتَرِفُونَ",
+      "matchedLemma": "اقْتَرَفْ",
+      "matchedRoot": "قرف",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 24
+      },
+      "matchedToken": "ٱقْتَرَفْتُمُوهَا",
+      "matchedLemma": "اقْتَرَفْ",
+      "matchedRoot": "قرف",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 23
+      },
+      "matchedToken": "يَقْتَرِفْ",
+      "matchedLemma": "اقْتَرَفْ",
+      "matchedRoot": "قرف",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 113
+    },
+    {
+      "surah": 6,
+      "ayah": 120
+    },
+    {
+      "surah": 9,
+      "ayah": 24
+    },
+    {
+      "surah": 42,
+      "ayah": 23
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

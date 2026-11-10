@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "زلم",
+    "title": "زلم",
+    "arabicTitle": "زلم",
+    "roots": [
+      "زلم"
+    ],
+    "includedLemmas": [
+      "أَزْلَٰم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 3
+      },
+      "matchedToken": "بِٱلْأَزْلَـٰمِ ۚ",
+      "matchedLemma": "أَزْلَٰم",
+      "matchedRoot": "زلم",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 90
+      },
+      "matchedToken": "وَٱلْأَزْلَـٰمُ",
+      "matchedLemma": "أَزْلَٰم",
+      "matchedRoot": "زلم",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 3
+    },
+    {
+      "surah": 5,
+      "ayah": 90
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

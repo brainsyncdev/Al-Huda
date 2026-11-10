@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "كفت",
+    "title": "كفت",
+    "arabicTitle": "كفت",
+    "roots": [
+      "كفت"
+    ],
+    "includedLemmas": [
+      "كِفَات"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 25
+      },
+      "matchedToken": "كِفَاتًا",
+      "matchedLemma": "كِفَات",
+      "matchedRoot": "كفت",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 77,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

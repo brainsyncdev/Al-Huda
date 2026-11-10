@@ -1,0 +1,139 @@
+{
+  "entry": {
+    "slug": "فرط",
+    "title": "فرط",
+    "arabicTitle": "فرط",
+    "roots": [
+      "فرط"
+    ],
+    "includedLemmas": [
+      "فَرَّط",
+      "فُرُط",
+      "مُّفْرَطُون",
+      "يَفْرُطَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 31
+      },
+      "matchedToken": "فَرَّطْنَا",
+      "matchedLemma": "فَرَّط",
+      "matchedRoot": "فرط",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 38
+      },
+      "matchedToken": "فَرَّطْنَا",
+      "matchedLemma": "فَرَّط",
+      "matchedRoot": "فرط",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 61
+      },
+      "matchedToken": "يُفَرِّطُونَ",
+      "matchedLemma": "فَرَّط",
+      "matchedRoot": "فرط",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 80
+      },
+      "matchedToken": "فَرَّطتُمْ",
+      "matchedLemma": "فَرَّط",
+      "matchedRoot": "فرط",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 62
+      },
+      "matchedToken": "مُّفْرَطُونَ",
+      "matchedLemma": "مُّفْرَطُون",
+      "matchedRoot": "فرط",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 28
+      },
+      "matchedToken": "فُرُطًۭا",
+      "matchedLemma": "فُرُط",
+      "matchedRoot": "فرط",
+      "wordPosition": 30
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 45
+      },
+      "matchedToken": "يَفْرُطَ",
+      "matchedLemma": "يَفْرُطَ",
+      "matchedRoot": "فرط",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 56
+      },
+      "matchedToken": "فَرَّطتُ",
+      "matchedLemma": "فَرَّط",
+      "matchedRoot": "فرط",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 31
+    },
+    {
+      "surah": 6,
+      "ayah": 38
+    },
+    {
+      "surah": 6,
+      "ayah": 61
+    },
+    {
+      "surah": 12,
+      "ayah": 80
+    },
+    {
+      "surah": 16,
+      "ayah": 62
+    },
+    {
+      "surah": 18,
+      "ayah": 28
+    },
+    {
+      "surah": 20,
+      "ayah": 45
+    },
+    {
+      "surah": 39,
+      "ayah": 56
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

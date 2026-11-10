@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "قوس",
+    "title": "قوس",
+    "arabicTitle": "قوس",
+    "roots": [
+      "قوس"
+    ],
+    "includedLemmas": [
+      "قَوْسَيْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 9
+      },
+      "matchedToken": "قَوْسَيْنِ",
+      "matchedLemma": "قَوْسَيْن",
+      "matchedRoot": "قوس",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 53,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

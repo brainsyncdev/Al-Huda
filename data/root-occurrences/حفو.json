@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "حفو",
+    "title": "حفو",
+    "arabicTitle": "حفو",
+    "roots": [
+      "حفو"
+    ],
+    "includedLemmas": [
+      "حَفِيّ",
+      "يُحْفِ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 187
+      },
+      "matchedToken": "حَفِىٌّ",
+      "matchedLemma": "حَفِيّ",
+      "matchedRoot": "حفو",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 47
+      },
+      "matchedToken": "حَفِيًّۭا",
+      "matchedLemma": "حَفِيّ",
+      "matchedRoot": "حفو",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 37
+      },
+      "matchedToken": "فَيُحْفِكُمْ",
+      "matchedLemma": "يُحْفِ",
+      "matchedRoot": "حفو",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 187
+    },
+    {
+      "surah": 19,
+      "ayah": 47
+    },
+    {
+      "surah": 47,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

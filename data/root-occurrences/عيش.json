@@ -1,0 +1,139 @@
+{
+  "entry": {
+    "slug": "عيش",
+    "title": "عيش",
+    "arabicTitle": "عيش",
+    "roots": [
+      "عيش"
+    ],
+    "includedLemmas": [
+      "عِيشَة",
+      "مَعَاش",
+      "مَعَٰيِش",
+      "مَعِيشَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 4 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 10
+      },
+      "matchedToken": "مَعَـٰيِشَ ۗ",
+      "matchedLemma": "مَعَٰيِش",
+      "matchedRoot": "عيش",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 20
+      },
+      "matchedToken": "مَعَـٰيِشَ",
+      "matchedLemma": "مَعَٰيِش",
+      "matchedRoot": "عيش",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 124
+      },
+      "matchedToken": "مَعِيشَةًۭ",
+      "matchedLemma": "مَعِيشَة",
+      "matchedRoot": "عيش",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 58
+      },
+      "matchedToken": "مَعِيشَتَهَا ۖ",
+      "matchedLemma": "مَعِيشَة",
+      "matchedRoot": "عيش",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 32
+      },
+      "matchedToken": "مَّعِيشَتَهُمْ",
+      "matchedLemma": "مَعِيشَة",
+      "matchedRoot": "عيش",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 21
+      },
+      "matchedToken": "عِيشَةٍۢ",
+      "matchedLemma": "عِيشَة",
+      "matchedRoot": "عيش",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 11
+      },
+      "matchedToken": "مَعَاشًۭا",
+      "matchedLemma": "مَعَاش",
+      "matchedRoot": "عيش",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 7
+      },
+      "matchedToken": "عِيشَةٍۢ",
+      "matchedLemma": "عِيشَة",
+      "matchedRoot": "عيش",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 10
+    },
+    {
+      "surah": 15,
+      "ayah": 20
+    },
+    {
+      "surah": 20,
+      "ayah": 124
+    },
+    {
+      "surah": 28,
+      "ayah": 58
+    },
+    {
+      "surah": 43,
+      "ayah": 32
+    },
+    {
+      "surah": 69,
+      "ayah": 21
+    },
+    {
+      "surah": 78,
+      "ayah": 11
+    },
+    {
+      "surah": 101,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

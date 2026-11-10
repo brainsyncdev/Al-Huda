@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-11-10T11:30:49.139Z",
+  "policyVersion": "1.0.0",
+  "sourceDataset": "qul-morphology-v1",
+  "aiProvider": "none",
+  "dryRun": false,
+  "totals": {
+    "rootsDiscovered": 1642,
+    "rootsProcessed": 1642,
+    "rootsActivated": 1574,
+    "rootsSkippedNoAutoAcceptedLemmas": 68,
+    "rootsSkippedNoSourceRecords": 0,
+    "rootsSkippedZeroMatches": 0,
+    "rootsWithWarnings": 0,
+    "rootsWithNeedsReviewLemmas": 171,
+    "rootsWithRejectedLemmas": 0,
+    "totalOccurrencesActivated": 44550,
+    "totalDistinctAyatActivated": 39720,
+    "totalLemmasActivated": 4350
+  },
+  "reconciliation": {
+    "totalWordLevelRecords": 50298,
+    "recordsActivated": 44550,
+    "recordsNeedsReview": 4079,
+    "recordsRejected": 0,
+    "recordsMissingLemma": 1669,
+    "recordsUnexplained": 0,
+    "accountedFor": 50298,
+    "allAccountedFor": true
+  },
+  "globalSummary": {
+    "totalRootsProcessed": 1642,
+    "totalLemmasEvaluated": 4709,
+    "totalAutoAccepted": 4350,
+    "totalNeedsReview": 359,
+    "totalRejected": 0,
+    "totalReviewerOverrides": 0,
+    "totalSourceOccurrences": 48629,
+    "totalActivatableOccurrences": 44550,
+    "totalRecordsWithoutLemma": 1669
+  }
+}

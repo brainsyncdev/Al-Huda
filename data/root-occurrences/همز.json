@@ -1,0 +1,68 @@
+{
+  "entry": {
+    "slug": "همز",
+    "title": "همز",
+    "arabicTitle": "همز",
+    "roots": [
+      "همز"
+    ],
+    "includedLemmas": [
+      "هَمَزَٰت",
+      "هَمَّاز",
+      "هُمَزَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 97
+      },
+      "matchedToken": "هَمَزَٰتِ",
+      "matchedLemma": "هَمَزَٰت",
+      "matchedRoot": "همز",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 11
+      },
+      "matchedToken": "هَمَّازٍۢ",
+      "matchedLemma": "هَمَّاز",
+      "matchedRoot": "همز",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 104,
+        "ayah": 1
+      },
+      "matchedToken": "هُمَزَةٍۢ",
+      "matchedLemma": "هُمَزَة",
+      "matchedRoot": "همز",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 23,
+      "ayah": 97
+    },
+    {
+      "surah": 68,
+      "ayah": 11
+    },
+    {
+      "surah": 104,
+      "ayah": 1
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

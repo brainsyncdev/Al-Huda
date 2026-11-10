@@ -1,0 +1,95 @@
+{
+  "entry": {
+    "slug": "خيب",
+    "title": "خيب",
+    "arabicTitle": "خيب",
+    "roots": [
+      "خيب"
+    ],
+    "includedLemmas": [
+      "خَابَ",
+      "خَآئِبِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 127
+      },
+      "matchedToken": "خَآئِبِينَ",
+      "matchedLemma": "خَآئِبِين",
+      "matchedRoot": "خيب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 15
+      },
+      "matchedToken": "وَخَابَ",
+      "matchedLemma": "خَابَ",
+      "matchedRoot": "خيب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 61
+      },
+      "matchedToken": "خَابَ",
+      "matchedLemma": "خَابَ",
+      "matchedRoot": "خيب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 111
+      },
+      "matchedToken": "خَابَ",
+      "matchedLemma": "خَابَ",
+      "matchedRoot": "خيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 91,
+        "ayah": 10
+      },
+      "matchedToken": "خَابَ",
+      "matchedLemma": "خَابَ",
+      "matchedRoot": "خيب",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 127
+    },
+    {
+      "surah": 14,
+      "ayah": 15
+    },
+    {
+      "surah": 20,
+      "ayah": 61
+    },
+    {
+      "surah": 20,
+      "ayah": 111
+    },
+    {
+      "surah": 91,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

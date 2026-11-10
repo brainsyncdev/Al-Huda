@@ -1,0 +1,116 @@
+{
+  "entry": {
+    "slug": "خول",
+    "title": "خول",
+    "arabicTitle": "خول",
+    "roots": [
+      "خول"
+    ],
+    "includedLemmas": [
+      "خَال",
+      "خَوَّلَ",
+      "خَٰلَٰت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 23
+      },
+      "matchedToken": "وَخَـٰلَـٰتُكُمْ",
+      "matchedLemma": "خَٰلَٰت",
+      "matchedRoot": "خول",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 94
+      },
+      "matchedToken": "خَوَّلْنَـٰكُمْ",
+      "matchedLemma": "خَوَّلَ",
+      "matchedRoot": "خول",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 61
+      },
+      "matchedToken": "أَخْوَٰلِكُمْ",
+      "matchedLemma": "خَال",
+      "matchedRoot": "خول",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 61
+      },
+      "matchedToken": "خَـٰلَـٰتِكُمْ",
+      "matchedLemma": "خَٰلَٰت",
+      "matchedRoot": "خول",
+      "wordPosition": 43
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 50
+      },
+      "matchedToken": "خَالِكَ",
+      "matchedLemma": "خَال",
+      "matchedRoot": "خول",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 50
+      },
+      "matchedToken": "خَـٰلَـٰتِكَ",
+      "matchedLemma": "خَٰلَٰت",
+      "matchedRoot": "خول",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 49
+      },
+      "matchedToken": "خَوَّلْنَـٰهُ",
+      "matchedLemma": "خَوَّلَ",
+      "matchedRoot": "خول",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 23
+    },
+    {
+      "surah": 6,
+      "ayah": 94
+    },
+    {
+      "surah": 24,
+      "ayah": 61
+    },
+    {
+      "surah": 33,
+      "ayah": 50
+    },
+    {
+      "surah": 39,
+      "ayah": 49
+    }
+  ],
+  "totalOccurrences": 7,
+  "totalMatches": 7,
+  "pagination": null
+}

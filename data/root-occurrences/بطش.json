@@ -1,0 +1,158 @@
+{
+  "entry": {
+    "slug": "بطش",
+    "title": "بطش",
+    "arabicTitle": "بطش",
+    "roots": [
+      "بطش"
+    ],
+    "includedLemmas": [
+      "بَطَشْ",
+      "بَطْش",
+      "بَطْشَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 195
+      },
+      "matchedToken": "يَبْطِشُونَ",
+      "matchedLemma": "بَطَشْ",
+      "matchedRoot": "بطش",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 130
+      },
+      "matchedToken": "بَطَشْتُم",
+      "matchedLemma": "بَطَشْ",
+      "matchedRoot": "بطش",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 130
+      },
+      "matchedToken": "بَطَشْتُمْ",
+      "matchedLemma": "بَطَشْ",
+      "matchedRoot": "بطش",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 19
+      },
+      "matchedToken": "يَبْطِشَ",
+      "matchedLemma": "بَطَشْ",
+      "matchedRoot": "بطش",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 8
+      },
+      "matchedToken": "بَطْشًۭا",
+      "matchedLemma": "بَطْش",
+      "matchedRoot": "بطش",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 16
+      },
+      "matchedToken": "نَبْطِشُ",
+      "matchedLemma": "بَطَشْ",
+      "matchedRoot": "بطش",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلْبَطْشَةَ",
+      "matchedLemma": "بَطْشَة",
+      "matchedRoot": "بطش",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 36
+      },
+      "matchedToken": "بَطْشًۭا",
+      "matchedLemma": "بَطْش",
+      "matchedRoot": "بطش",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 36
+      },
+      "matchedToken": "بَطْشَتَنَا",
+      "matchedLemma": "بَطْشَة",
+      "matchedRoot": "بطش",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 85,
+        "ayah": 12
+      },
+      "matchedToken": "بَطْشَ",
+      "matchedLemma": "بَطْش",
+      "matchedRoot": "بطش",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 195
+    },
+    {
+      "surah": 26,
+      "ayah": 130
+    },
+    {
+      "surah": 28,
+      "ayah": 19
+    },
+    {
+      "surah": 43,
+      "ayah": 8
+    },
+    {
+      "surah": 44,
+      "ayah": 16
+    },
+    {
+      "surah": 50,
+      "ayah": 36
+    },
+    {
+      "surah": 54,
+      "ayah": 36
+    },
+    {
+      "surah": 85,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 10,
+  "totalMatches": 10,
+  "pagination": null
+}

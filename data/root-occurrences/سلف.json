@@ -1,0 +1,138 @@
+{
+  "entry": {
+    "slug": "سلف",
+    "title": "سلف",
+    "arabicTitle": "سلف",
+    "roots": [
+      "سلف"
+    ],
+    "includedLemmas": [
+      "أَسْلَفَتْ",
+      "سَلَف",
+      "سَلَفَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 275
+      },
+      "matchedToken": "سَلَفَ",
+      "matchedLemma": "سَلَفَ",
+      "matchedRoot": "سلف",
+      "wordPosition": 34
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 22
+      },
+      "matchedToken": "سَلَفَ ۚ",
+      "matchedLemma": "سَلَفَ",
+      "matchedRoot": "سلف",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 23
+      },
+      "matchedToken": "سَلَفَ ۗ",
+      "matchedLemma": "سَلَفَ",
+      "matchedRoot": "سلف",
+      "wordPosition": 49
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 95
+      },
+      "matchedToken": "سَلَفَ ۚ",
+      "matchedLemma": "سَلَفَ",
+      "matchedRoot": "سلف",
+      "wordPosition": 41
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 38
+      },
+      "matchedToken": "سَلَفَ",
+      "matchedLemma": "سَلَفَ",
+      "matchedRoot": "سلف",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 30
+      },
+      "matchedToken": "أَسْلَفَتْ ۚ",
+      "matchedLemma": "أَسْلَفَتْ",
+      "matchedRoot": "سلف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 56
+      },
+      "matchedToken": "سَلَفًۭا",
+      "matchedLemma": "سَلَف",
+      "matchedRoot": "سلف",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 24
+      },
+      "matchedToken": "أَسْلَفْتُمْ",
+      "matchedLemma": "أَسْلَفَتْ",
+      "matchedRoot": "سلف",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 275
+    },
+    {
+      "surah": 4,
+      "ayah": 22
+    },
+    {
+      "surah": 4,
+      "ayah": 23
+    },
+    {
+      "surah": 5,
+      "ayah": 95
+    },
+    {
+      "surah": 8,
+      "ayah": 38
+    },
+    {
+      "surah": 10,
+      "ayah": 30
+    },
+    {
+      "surah": 43,
+      "ayah": 56
+    },
+    {
+      "surah": 69,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 8,
+  "totalMatches": 8,
+  "pagination": null
+}

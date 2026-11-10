@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "جذع",
+    "title": "جذع",
+    "arabicTitle": "جذع",
+    "roots": [
+      "جذع"
+    ],
+    "includedLemmas": [
+      "جِذْع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 23
+      },
+      "matchedToken": "جِذْعِ",
+      "matchedLemma": "جِذْع",
+      "matchedRoot": "جذع",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 25
+      },
+      "matchedToken": "بِجِذْعِ",
+      "matchedLemma": "جِذْع",
+      "matchedRoot": "جذع",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 71
+      },
+      "matchedToken": "جُذُوعِ",
+      "matchedLemma": "جِذْع",
+      "matchedRoot": "جذع",
+      "wordPosition": 20
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 19,
+      "ayah": 23
+    },
+    {
+      "surah": 19,
+      "ayah": 25
+    },
+    {
+      "surah": 20,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

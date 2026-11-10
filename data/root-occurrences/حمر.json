@@ -1,0 +1,109 @@
+{
+  "entry": {
+    "slug": "حمر",
+    "title": "حمر",
+    "arabicTitle": "حمر",
+    "roots": [
+      "حمر"
+    ],
+    "includedLemmas": [
+      "حُمْر",
+      "حِمَار"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 259
+      },
+      "matchedToken": "حِمَارِكَ",
+      "matchedLemma": "حِمَار",
+      "matchedRoot": "حمر",
+      "wordPosition": 45
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 8
+      },
+      "matchedToken": "وَٱلْحَمِيرَ",
+      "matchedLemma": "حِمَار",
+      "matchedRoot": "حمر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 31,
+        "ayah": 19
+      },
+      "matchedToken": "ٱلْحَمِيرِ",
+      "matchedLemma": "حِمَار",
+      "matchedRoot": "حمر",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 27
+      },
+      "matchedToken": "وَحُمْرٌۭ",
+      "matchedLemma": "حُمْر",
+      "matchedRoot": "حمر",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 62,
+        "ayah": 5
+      },
+      "matchedToken": "ٱلْحِمَارِ",
+      "matchedLemma": "حِمَار",
+      "matchedRoot": "حمر",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 50
+      },
+      "matchedToken": "حُمُرٌۭ",
+      "matchedLemma": "حِمَار",
+      "matchedRoot": "حمر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 259
+    },
+    {
+      "surah": 16,
+      "ayah": 8
+    },
+    {
+      "surah": 31,
+      "ayah": 19
+    },
+    {
+      "surah": 35,
+      "ayah": 27
+    },
+    {
+      "surah": 62,
+      "ayah": 5
+    },
+    {
+      "surah": 74,
+      "ayah": 50
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

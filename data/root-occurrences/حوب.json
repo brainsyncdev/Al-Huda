@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "حوب",
+    "title": "حوب",
+    "arabicTitle": "حوب",
+    "roots": [
+      "حوب"
+    ],
+    "includedLemmas": [
+      "حُوب"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 2
+      },
+      "matchedToken": "حُوبًۭا",
+      "matchedLemma": "حُوب",
+      "matchedRoot": "حوب",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 2
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

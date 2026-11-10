@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "هيا",
+    "title": "هيا",
+    "arabicTitle": "هيا",
+    "roots": [
+      "هيا"
+    ],
+    "includedLemmas": [
+      "هَيْـَٔة",
+      "يُهَيِّئْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 49
+      },
+      "matchedToken": "كَهَيْـَٔةِ",
+      "matchedLemma": "هَيْـَٔة",
+      "matchedRoot": "هيا",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 110
+      },
+      "matchedToken": "كَهَيْـَٔةِ",
+      "matchedLemma": "هَيْـَٔة",
+      "matchedRoot": "هيا",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 10
+      },
+      "matchedToken": "وَهَيِّئْ",
+      "matchedLemma": "يُهَيِّئْ",
+      "matchedRoot": "هيا",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 16
+      },
+      "matchedToken": "وَيُهَيِّئْ",
+      "matchedLemma": "يُهَيِّئْ",
+      "matchedRoot": "هيا",
+      "wordPosition": 15
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 49
+    },
+    {
+      "surah": 5,
+      "ayah": 110
+    },
+    {
+      "surah": 18,
+      "ayah": 10
+    },
+    {
+      "surah": 18,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

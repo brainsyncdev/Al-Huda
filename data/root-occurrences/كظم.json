@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "كظم",
+    "title": "كظم",
+    "arabicTitle": "كظم",
+    "roots": [
+      "كظم"
+    ],
+    "includedLemmas": [
+      "كَظِيم",
+      "كَٰظِمِين",
+      "مَكْظُوم"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 134
+      },
+      "matchedToken": "وَٱلْكَـٰظِمِينَ",
+      "matchedLemma": "كَٰظِمِين",
+      "matchedRoot": "كظم",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 84
+      },
+      "matchedToken": "كَظِيمٌۭ",
+      "matchedLemma": "كَظِيم",
+      "matchedRoot": "كظم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 58
+      },
+      "matchedToken": "كَظِيمٌۭ",
+      "matchedLemma": "كَظِيم",
+      "matchedRoot": "كظم",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 18
+      },
+      "matchedToken": "كَـٰظِمِينَ ۚ",
+      "matchedLemma": "كَٰظِمِين",
+      "matchedRoot": "كظم",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 17
+      },
+      "matchedToken": "كَظِيمٌ",
+      "matchedLemma": "كَظِيم",
+      "matchedRoot": "كظم",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 48
+      },
+      "matchedToken": "مَكْظُومٌۭ",
+      "matchedLemma": "مَكْظُوم",
+      "matchedRoot": "كظم",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 134
+    },
+    {
+      "surah": 12,
+      "ayah": 84
+    },
+    {
+      "surah": 16,
+      "ayah": 58
+    },
+    {
+      "surah": 40,
+      "ayah": 18
+    },
+    {
+      "surah": 43,
+      "ayah": 17
+    },
+    {
+      "surah": 68,
+      "ayah": 48
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

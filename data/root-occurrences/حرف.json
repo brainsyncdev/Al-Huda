@@ -1,0 +1,110 @@
+{
+  "entry": {
+    "slug": "حرف",
+    "title": "حرف",
+    "arabicTitle": "حرف",
+    "roots": [
+      "حرف"
+    ],
+    "includedLemmas": [
+      "حَرْف",
+      "مُتَحَرِّف",
+      "يُحَرِّفُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 75
+      },
+      "matchedToken": "يُحَرِّفُونَهُۥ",
+      "matchedLemma": "يُحَرِّفُ",
+      "matchedRoot": "حرف",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 46
+      },
+      "matchedToken": "يُحَرِّفُونَ",
+      "matchedLemma": "يُحَرِّفُ",
+      "matchedRoot": "حرف",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 13
+      },
+      "matchedToken": "يُحَرِّفُونَ",
+      "matchedLemma": "يُحَرِّفُ",
+      "matchedRoot": "حرف",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 41
+      },
+      "matchedToken": "يُحَرِّفُونَ",
+      "matchedLemma": "يُحَرِّفُ",
+      "matchedRoot": "حرف",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 16
+      },
+      "matchedToken": "مُتَحَرِّفًۭا",
+      "matchedLemma": "مُتَحَرِّف",
+      "matchedRoot": "حرف",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 11
+      },
+      "matchedToken": "حَرْفٍۢ ۖ",
+      "matchedLemma": "حَرْف",
+      "matchedRoot": "حرف",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 75
+    },
+    {
+      "surah": 4,
+      "ayah": 46
+    },
+    {
+      "surah": 5,
+      "ayah": 13
+    },
+    {
+      "surah": 5,
+      "ayah": 41
+    },
+    {
+      "surah": 8,
+      "ayah": 16
+    },
+    {
+      "surah": 22,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

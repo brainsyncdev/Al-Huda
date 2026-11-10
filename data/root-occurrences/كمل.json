@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "كمل",
+    "title": "كمل",
+    "arabicTitle": "كمل",
+    "roots": [
+      "كمل"
+    ],
+    "includedLemmas": [
+      "أَكْمَلْ",
+      "كَامِلَة",
+      "كَامِلَيْن"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 185
+      },
+      "matchedToken": "وَلِتُكْمِلُوا۟",
+      "matchedLemma": "أَكْمَلْ",
+      "matchedRoot": "كمل",
+      "wordPosition": 36
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 196
+      },
+      "matchedToken": "كَامِلَةٌۭ ۗ",
+      "matchedLemma": "كَامِلَة",
+      "matchedRoot": "كمل",
+      "wordPosition": 58
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 233
+      },
+      "matchedToken": "كَامِلَيْنِ ۖ",
+      "matchedLemma": "كَامِلَيْن",
+      "matchedRoot": "كمل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 3
+      },
+      "matchedToken": "أَكْمَلْتُ",
+      "matchedLemma": "أَكْمَلْ",
+      "matchedRoot": "كمل",
+      "wordPosition": 41
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 25
+      },
+      "matchedToken": "كَامِلَةًۭ",
+      "matchedLemma": "كَامِلَة",
+      "matchedRoot": "كمل",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 185
+    },
+    {
+      "surah": 2,
+      "ayah": 196
+    },
+    {
+      "surah": 2,
+      "ayah": 233
+    },
+    {
+      "surah": 5,
+      "ayah": 3
+    },
+    {
+      "surah": 16,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

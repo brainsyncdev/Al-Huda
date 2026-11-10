@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "سلخ",
+    "title": "سلخ",
+    "arabicTitle": "سلخ",
+    "roots": [
+      "سلخ"
+    ],
+    "includedLemmas": [
+      "انسَلَخَ",
+      "نَسْلَخُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 175
+      },
+      "matchedToken": "فَٱنسَلَخَ",
+      "matchedLemma": "انسَلَخَ",
+      "matchedRoot": "سلخ",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 5
+      },
+      "matchedToken": "ٱنسَلَخَ",
+      "matchedLemma": "انسَلَخَ",
+      "matchedRoot": "سلخ",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 37
+      },
+      "matchedToken": "نَسْلَخُ",
+      "matchedLemma": "نَسْلَخُ",
+      "matchedRoot": "سلخ",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 175
+    },
+    {
+      "surah": 9,
+      "ayah": 5
+    },
+    {
+      "surah": 36,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

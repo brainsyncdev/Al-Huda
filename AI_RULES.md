@@ -1,11 +1,12 @@
 # AI Development Rules
 
-This project follows the Product Requirements Document (PRD) in `docs/PRD.md` as the single source of truth for scope, constraints, and acceptance criteria.
+This project follows the Product Requirements Document (PRD) in `docs/PRD.md` (v4.0) as the single source of truth for scope, constraints, and acceptance criteria. Superseded PRDs live in `docs/archive/` and are historical references only — do not build from them.
 
 Key references:
-- PRD: `docs/PRD.md`
+- PRD (v4.0 — single source of truth): `docs/PRD.md`
 - Data provenance: `docs/DATA-PROVENANCE.md`
 - AI safety: `docs/AI-SAFETY.md`
+- Archived PRDs (historical): `docs/archive/PRD-v3.0.md`, `docs/archive/AL-HUDA-PRD-v2.0-COMPLETE.md`
 
 This document outlines the technology stack and specific library usage guidelines for this Next.js application. Adhering to these rules will help maintain consistency, improve collaboration, and ensure the AI assistant can effectively understand and modify the codebase.
 

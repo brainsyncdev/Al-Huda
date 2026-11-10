@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "وسم",
+    "title": "وسم",
+    "arabicTitle": "وسم",
+    "roots": [
+      "وسم"
+    ],
+    "includedLemmas": [
+      "مُتَوَسِّمِين",
+      "نَسِمُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 75
+      },
+      "matchedToken": "لِّلْمُتَوَسِّمِينَ",
+      "matchedLemma": "مُتَوَسِّمِين",
+      "matchedRoot": "وسم",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 16
+      },
+      "matchedToken": "سَنَسِمُهُۥ",
+      "matchedLemma": "نَسِمُ",
+      "matchedRoot": "وسم",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 15,
+      "ayah": 75
+    },
+    {
+      "surah": 68,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

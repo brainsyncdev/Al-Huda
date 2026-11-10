@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "رغد",
+    "title": "رغد",
+    "arabicTitle": "رغد",
+    "roots": [
+      "رغد"
+    ],
+    "includedLemmas": [
+      "رَغَد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 35
+      },
+      "matchedToken": "رَغَدًا",
+      "matchedLemma": "رَغَد",
+      "matchedRoot": "رغد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 58
+      },
+      "matchedToken": "رَغَدًۭا",
+      "matchedLemma": "رَغَد",
+      "matchedRoot": "رغد",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 112
+      },
+      "matchedToken": "رَغَدًۭا",
+      "matchedLemma": "رَغَد",
+      "matchedRoot": "رغد",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 35
+    },
+    {
+      "surah": 2,
+      "ayah": 58
+    },
+    {
+      "surah": 16,
+      "ayah": 112
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

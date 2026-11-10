@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "وتد",
+    "title": "وتد",
+    "arabicTitle": "وتد",
+    "roots": [
+      "وتد"
+    ],
+    "includedLemmas": [
+      "أَوْتَاد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 12
+      },
+      "matchedToken": "ٱلْأَوْتَادِ",
+      "matchedLemma": "أَوْتَاد",
+      "matchedRoot": "وتد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 7
+      },
+      "matchedToken": "أَوْتَادًۭا",
+      "matchedLemma": "أَوْتَاد",
+      "matchedRoot": "وتد",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 89,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْأَوْتَادِ",
+      "matchedLemma": "أَوْتَاد",
+      "matchedRoot": "وتد",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 38,
+      "ayah": 12
+    },
+    {
+      "surah": 78,
+      "ayah": 7
+    },
+    {
+      "surah": 89,
+      "ayah": 10
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

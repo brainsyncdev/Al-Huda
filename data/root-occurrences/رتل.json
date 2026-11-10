@@ -1,0 +1,73 @@
+{
+  "entry": {
+    "slug": "رتل",
+    "title": "رتل",
+    "arabicTitle": "رتل",
+    "roots": [
+      "رتل"
+    ],
+    "includedLemmas": [
+      "تَرْتِيل",
+      "رَتَّلْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 32
+      },
+      "matchedToken": "وَرَتَّلْنَـٰهُ",
+      "matchedLemma": "رَتَّلْ",
+      "matchedRoot": "رتل",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 32
+      },
+      "matchedToken": "تَرْتِيلًۭا",
+      "matchedLemma": "تَرْتِيل",
+      "matchedRoot": "رتل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 4
+      },
+      "matchedToken": "وَرَتِّلِ",
+      "matchedLemma": "رَتَّلْ",
+      "matchedRoot": "رتل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 73,
+        "ayah": 4
+      },
+      "matchedToken": "تَرْتِيلًا",
+      "matchedLemma": "تَرْتِيل",
+      "matchedRoot": "رتل",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 32
+    },
+    {
+      "surah": 73,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

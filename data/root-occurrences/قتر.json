@@ -1,0 +1,98 @@
+{
+  "entry": {
+    "slug": "قتر",
+    "title": "قتر",
+    "arabicTitle": "قتر",
+    "roots": [
+      "قتر"
+    ],
+    "includedLemmas": [
+      "قَتَر",
+      "قَتَرَة",
+      "قَتُور",
+      "مُقْتِر",
+      "يَقْتُرُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 236
+      },
+      "matchedToken": "ٱلْمُقْتِرِ",
+      "matchedLemma": "مُقْتِر",
+      "matchedRoot": "قتر",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 26
+      },
+      "matchedToken": "قَتَرٌۭ",
+      "matchedLemma": "قَتَر",
+      "matchedRoot": "قتر",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 100
+      },
+      "matchedToken": "قَتُورًۭا",
+      "matchedLemma": "قَتُور",
+      "matchedRoot": "قتر",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 67
+      },
+      "matchedToken": "يَقْتُرُوا۟",
+      "matchedLemma": "يَقْتُرُ",
+      "matchedRoot": "قتر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 80,
+        "ayah": 41
+      },
+      "matchedToken": "قَتَرَةٌ",
+      "matchedLemma": "قَتَرَة",
+      "matchedRoot": "قتر",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 236
+    },
+    {
+      "surah": 10,
+      "ayah": 26
+    },
+    {
+      "surah": 17,
+      "ayah": 100
+    },
+    {
+      "surah": 25,
+      "ayah": 67
+    },
+    {
+      "surah": 80,
+      "ayah": 41
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

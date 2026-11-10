@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "سلو",
+    "title": "سلو",
+    "arabicTitle": "سلو",
+    "roots": [
+      "سلو"
+    ],
+    "includedLemmas": [
+      "سَّلْوَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 57
+      },
+      "matchedToken": "وَٱلسَّلْوَىٰ ۖ",
+      "matchedLemma": "سَّلْوَىٰ",
+      "matchedRoot": "سلو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "وَٱلسَّلْوَىٰ ۖ",
+      "matchedLemma": "سَّلْوَىٰ",
+      "matchedRoot": "سلو",
+      "wordPosition": 32
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 80
+      },
+      "matchedToken": "وَٱلسَّلْوَىٰ",
+      "matchedLemma": "سَّلْوَىٰ",
+      "matchedRoot": "سلو",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 57
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    },
+    {
+      "surah": 20,
+      "ayah": 80
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

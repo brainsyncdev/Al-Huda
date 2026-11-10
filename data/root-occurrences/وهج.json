@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وهج",
+    "title": "وهج",
+    "arabicTitle": "وهج",
+    "roots": [
+      "وهج"
+    ],
+    "includedLemmas": [
+      "وَهَّاج"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 13
+      },
+      "matchedToken": "وَهَّاجًۭا",
+      "matchedLemma": "وَهَّاج",
+      "matchedRoot": "وهج",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 78,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

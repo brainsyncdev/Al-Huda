@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "حرص",
+    "title": "حرص",
+    "arabicTitle": "حرص",
+    "roots": [
+      "حرص"
+    ],
+    "includedLemmas": [
+      "أَحْرَص",
+      "حَرَصْ",
+      "حَرِيص"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 96
+      },
+      "matchedToken": "أَحْرَصَ",
+      "matchedLemma": "أَحْرَص",
+      "matchedRoot": "حرص",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 129
+      },
+      "matchedToken": "حَرَصْتُمْ ۖ",
+      "matchedLemma": "حَرَصْ",
+      "matchedRoot": "حرص",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 128
+      },
+      "matchedToken": "حَرِيصٌ",
+      "matchedLemma": "حَرِيص",
+      "matchedRoot": "حرص",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 103
+      },
+      "matchedToken": "حَرَصْتَ",
+      "matchedLemma": "حَرَصْ",
+      "matchedRoot": "حرص",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 37
+      },
+      "matchedToken": "تَحْرِصْ",
+      "matchedLemma": "حَرَصْ",
+      "matchedRoot": "حرص",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 96
+    },
+    {
+      "surah": 4,
+      "ayah": 129
+    },
+    {
+      "surah": 9,
+      "ayah": 128
+    },
+    {
+      "surah": 12,
+      "ayah": 103
+    },
+    {
+      "surah": 16,
+      "ayah": 37
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

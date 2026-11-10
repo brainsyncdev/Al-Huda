@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "وبق",
+    "title": "وبق",
+    "arabicTitle": "وبق",
+    "roots": [
+      "وبق"
+    ],
+    "includedLemmas": [
+      "مَّوْبِق",
+      "يُوبِقْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 52
+      },
+      "matchedToken": "مَّوْبِقًۭا",
+      "matchedLemma": "مَّوْبِق",
+      "matchedRoot": "وبق",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 34
+      },
+      "matchedToken": "يُوبِقْهُنَّ",
+      "matchedLemma": "يُوبِقْ",
+      "matchedRoot": "وبق",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 52
+    },
+    {
+      "surah": 42,
+      "ayah": 34
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

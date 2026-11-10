@@ -1,0 +1,2332 @@
+{
+  "entry": {
+    "slug": "قلب",
+    "title": "قلب",
+    "arabicTitle": "قلب",
+    "roots": [
+      "قلب"
+    ],
+    "includedLemmas": [
+      "انقَلَبَ",
+      "تَتَقَلَّبُ",
+      "تَقَلُّب",
+      "تُقْلَبُ",
+      "قَلَّبُ",
+      "قَلْب",
+      "مُتَقَلَّب",
+      "مُنقَلَب",
+      "مُنقَلِبُون"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 9 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 7
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 10
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 74
+      },
+      "matchedToken": "قُلُوبُكُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 88
+      },
+      "matchedToken": "قُلُوبُنَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 93
+      },
+      "matchedToken": "قُلُوبِهِمُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 97
+      },
+      "matchedToken": "قَلْبِكَ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 118
+      },
+      "matchedToken": "قُلُوبُهُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 143
+      },
+      "matchedToken": "يَنقَلِبُ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 144
+      },
+      "matchedToken": "تَقَلُّبَ",
+      "matchedLemma": "تَقَلُّب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 204
+      },
+      "matchedToken": "قَلْبِهِۦ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 225
+      },
+      "matchedToken": "قُلُوبُكُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 260
+      },
+      "matchedToken": "قَلْبِى ۖ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 283
+      },
+      "matchedToken": "قَلْبُهُۥ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 7
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 8
+      },
+      "matchedToken": "قُلُوبَنَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 103
+      },
+      "matchedToken": "قُلُوبِكُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 126
+      },
+      "matchedToken": "قُلُوبُكُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 127
+      },
+      "matchedToken": "فَيَنقَلِبُوا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 144
+      },
+      "matchedToken": "ٱنقَلَبْتُمْ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 144
+      },
+      "matchedToken": "يَنقَلِبْ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 149
+      },
+      "matchedToken": "فَتَنقَلِبُوا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 151
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 154
+      },
+      "matchedToken": "قُلُوبِكُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 71
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 156
+      },
+      "matchedToken": "قُلُوبِهِمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 159
+      },
+      "matchedToken": "ٱلْقَلْبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 167
+      },
+      "matchedToken": "قُلُوبِهِمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 174
+      },
+      "matchedToken": "فَٱنقَلَبُوا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 196
+      },
+      "matchedToken": "تَقَلُّبُ",
+      "matchedLemma": "تَقَلُّب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 63
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 155
+      },
+      "matchedToken": "قُلُوبُنَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 13
+      },
+      "matchedToken": "قُلُوبَهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 21
+      },
+      "matchedToken": "فَتَنقَلِبُوا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 41
+      },
+      "matchedToken": "قُلُوبُهُمْ ۛ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 41
+      },
+      "matchedToken": "قُلُوبَهُمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 58
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 52
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 113
+      },
+      "matchedToken": "قُلُوبُنَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 25
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 43
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 46
+      },
+      "matchedToken": "قُلُوبِكُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 110
+      },
+      "matchedToken": "وَنُقَلِّبُ",
+      "matchedLemma": "قَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 100
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 101
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 119
+      },
+      "matchedToken": "وَٱنقَلَبُوا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 125
+      },
+      "matchedToken": "مُنقَلِبُونَ",
+      "matchedLemma": "مُنقَلِبُون",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 179
+      },
+      "matchedToken": "قُلُوبٌۭ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 2
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 10
+      },
+      "matchedToken": "قُلُوبُكُمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 11
+      },
+      "matchedToken": "قُلُوبِكُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 12
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 24
+      },
+      "matchedToken": "وَقَلْبِهِۦ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 49
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 63
+      },
+      "matchedToken": "قُلُوبِهِمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 63
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 70
+      },
+      "matchedToken": "قُلُوبِكُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 8
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 15
+      },
+      "matchedToken": "قُلُوبِهِمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 45
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 48
+      },
+      "matchedToken": "وَقَلَّبُوا۟",
+      "matchedLemma": "قَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 60
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 64
+      },
+      "matchedToken": "قُلُوبِهِمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 77
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 87
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 93
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 95
+      },
+      "matchedToken": "ٱنقَلَبْتُمْ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 110
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 110
+      },
+      "matchedToken": "قُلُوبُهُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 117
+      },
+      "matchedToken": "قُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 125
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 127
+      },
+      "matchedToken": "قُلُوبَهُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 74
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 88
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 62
+      },
+      "matchedToken": "ٱنقَلَبُوٓا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 28
+      },
+      "matchedToken": "قُلُوبُهُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 28
+      },
+      "matchedToken": "ٱلْقُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 12
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 22
+      },
+      "matchedToken": "قُلُوبُهُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 46
+      },
+      "matchedToken": "تَقَلُّبِهِمْ",
+      "matchedLemma": "تَقَلُّب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 106
+      },
+      "matchedToken": "وَقَلْبُهُۥ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 108
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 46
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 14
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 18
+      },
+      "matchedToken": "وَنُقَلِّبُهُمْ",
+      "matchedLemma": "قَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 28
+      },
+      "matchedToken": "قَلْبَهُۥ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 36
+      },
+      "matchedToken": "مُنقَلَبًۭا",
+      "matchedLemma": "مُنقَلَب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 42
+      },
+      "matchedToken": "يُقَلِّبُ",
+      "matchedLemma": "قَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 57
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 3
+      },
+      "matchedToken": "قُلُوبُهُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 11
+      },
+      "matchedToken": "ٱنقَلَبَ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 32
+      },
+      "matchedToken": "ٱلْقُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 35
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 46
+      },
+      "matchedToken": "قُلُوبٌۭ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 46
+      },
+      "matchedToken": "ٱلْقُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 53
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 53
+      },
+      "matchedToken": "قُلُوبُهُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 54
+      },
+      "matchedToken": "قُلُوبُهُمْ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 60
+      },
+      "matchedToken": "وَّقُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 63
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 37
+      },
+      "matchedToken": "تَتَقَلَّبُ",
+      "matchedLemma": "تَتَقَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 37
+      },
+      "matchedToken": "ٱلْقُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 44
+      },
+      "matchedToken": "يُقَلِّبُ",
+      "matchedLemma": "قَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 50
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 50
+      },
+      "matchedToken": "مُنقَلِبُونَ",
+      "matchedLemma": "مُنقَلِبُون",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 89
+      },
+      "matchedToken": "بِقَلْبٍۢ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 194
+      },
+      "matchedToken": "قَلْبِكَ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 200
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 219
+      },
+      "matchedToken": "وَتَقَلُّبَكَ",
+      "matchedLemma": "تَقَلُّب",
+      "matchedRoot": "قلب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 227
+      },
+      "matchedToken": "مُنقَلَبٍۢ",
+      "matchedLemma": "مُنقَلَب",
+      "matchedRoot": "قلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 227
+      },
+      "matchedToken": "يَنقَلِبُونَ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 10
+      },
+      "matchedToken": "قَلْبِهَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 21
+      },
+      "matchedToken": "تُقْلَبُونَ",
+      "matchedLemma": "تُقْلَبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 59
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 4
+      },
+      "matchedToken": "قَلْبَيْنِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 5
+      },
+      "matchedToken": "قُلُوبُكُمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلْقُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 12
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 26
+      },
+      "matchedToken": "قُلُوبِهِمُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 32
+      },
+      "matchedToken": "قَلْبِهِۦ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 51
+      },
+      "matchedToken": "قُلُوبِكُمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 53
+      },
+      "matchedToken": "لِقُلُوبِكُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 48
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 53
+      },
+      "matchedToken": "وَقُلُوبِهِنَّ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 49
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 60
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 66
+      },
+      "matchedToken": "تُقَلَّبُ",
+      "matchedLemma": "قَلَّبُ",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 23
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 84
+      },
+      "matchedToken": "بِقَلْبٍۢ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 22
+      },
+      "matchedToken": "قُلُوبُهُم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 23
+      },
+      "matchedToken": "وَقُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 45
+      },
+      "matchedToken": "قُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 4
+      },
+      "matchedToken": "تَقَلُّبُهُمْ",
+      "matchedLemma": "تَقَلُّب",
+      "matchedRoot": "قلب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 18
+      },
+      "matchedToken": "ٱلْقُلُوبُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 35
+      },
+      "matchedToken": "قَلْبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 5
+      },
+      "matchedToken": "قُلُوبُنَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 24
+      },
+      "matchedToken": "قَلْبِكَ ۗ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 14
+      },
+      "matchedToken": "لَمُنقَلِبُونَ",
+      "matchedLemma": "مُنقَلِبُون",
+      "matchedRoot": "قلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 23
+      },
+      "matchedToken": "وَقَلْبِهِۦ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 16
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 19
+      },
+      "matchedToken": "مُتَقَلَّبَكُمْ",
+      "matchedLemma": "مُتَقَلَّب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 20
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 24
+      },
+      "matchedToken": "قُلُوبٍ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 29
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 4
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 11
+      },
+      "matchedToken": "قُلُوبِهِمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 12
+      },
+      "matchedToken": "يَنقَلِبَ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 12
+      },
+      "matchedToken": "قُلُوبِكُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 18
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 26
+      },
+      "matchedToken": "قُلُوبِهِمُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 3
+      },
+      "matchedToken": "قُلُوبَهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 7
+      },
+      "matchedToken": "قُلُوبِكُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 14
+      },
+      "matchedToken": "قُلُوبِكُمْ ۖ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 33
+      },
+      "matchedToken": "بِقَلْبٍۢ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 37
+      },
+      "matchedToken": "قَلْبٌ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 16
+      },
+      "matchedToken": "قُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 16
+      },
+      "matchedToken": "قُلُوبُهُمْ ۖ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 27
+      },
+      "matchedToken": "قُلُوبِ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 58,
+        "ayah": 22
+      },
+      "matchedToken": "قُلُوبِهِمُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 2
+      },
+      "matchedToken": "قُلُوبِهِمُ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 10
+      },
+      "matchedToken": "قُلُوبِنَا",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 14
+      },
+      "matchedToken": "وَقُلُوبُهُمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 5
+      },
+      "matchedToken": "قُلُوبَهُمْ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 63,
+        "ayah": 3
+      },
+      "matchedToken": "قُلُوبِهِمْ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 64,
+        "ayah": 11
+      },
+      "matchedToken": "قَلْبَهُۥ ۚ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 66,
+        "ayah": 4
+      },
+      "matchedToken": "قُلُوبُكُمَا ۖ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 4
+      },
+      "matchedToken": "يَنقَلِبْ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 31
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 31
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 8
+      },
+      "matchedToken": "قُلُوبٌۭ",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 14
+      },
+      "matchedToken": "قُلُوبِهِم",
+      "matchedLemma": "قَلْب",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 31
+      },
+      "matchedToken": "ٱنقَلَبُوٓا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 31
+      },
+      "matchedToken": "ٱنقَلَبُوا۟",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 84,
+        "ayah": 9
+      },
+      "matchedToken": "وَيَنقَلِبُ",
+      "matchedLemma": "انقَلَبَ",
+      "matchedRoot": "قلب",
+      "wordPosition": 1
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 7
+    },
+    {
+      "surah": 2,
+      "ayah": 10
+    },
+    {
+      "surah": 2,
+      "ayah": 74
+    },
+    {
+      "surah": 2,
+      "ayah": 88
+    },
+    {
+      "surah": 2,
+      "ayah": 93
+    },
+    {
+      "surah": 2,
+      "ayah": 97
+    },
+    {
+      "surah": 2,
+      "ayah": 118
+    },
+    {
+      "surah": 2,
+      "ayah": 143
+    },
+    {
+      "surah": 2,
+      "ayah": 144
+    },
+    {
+      "surah": 2,
+      "ayah": 204
+    },
+    {
+      "surah": 2,
+      "ayah": 225
+    },
+    {
+      "surah": 2,
+      "ayah": 260
+    },
+    {
+      "surah": 2,
+      "ayah": 283
+    },
+    {
+      "surah": 3,
+      "ayah": 7
+    },
+    {
+      "surah": 3,
+      "ayah": 8
+    },
+    {
+      "surah": 3,
+      "ayah": 103
+    },
+    {
+      "surah": 3,
+      "ayah": 126
+    },
+    {
+      "surah": 3,
+      "ayah": 127
+    },
+    {
+      "surah": 3,
+      "ayah": 144
+    },
+    {
+      "surah": 3,
+      "ayah": 149
+    },
+    {
+      "surah": 3,
+      "ayah": 151
+    },
+    {
+      "surah": 3,
+      "ayah": 154
+    },
+    {
+      "surah": 3,
+      "ayah": 156
+    },
+    {
+      "surah": 3,
+      "ayah": 159
+    },
+    {
+      "surah": 3,
+      "ayah": 167
+    },
+    {
+      "surah": 3,
+      "ayah": 174
+    },
+    {
+      "surah": 3,
+      "ayah": 196
+    },
+    {
+      "surah": 4,
+      "ayah": 63
+    },
+    {
+      "surah": 4,
+      "ayah": 155
+    },
+    {
+      "surah": 5,
+      "ayah": 13
+    },
+    {
+      "surah": 5,
+      "ayah": 21
+    },
+    {
+      "surah": 5,
+      "ayah": 41
+    },
+    {
+      "surah": 5,
+      "ayah": 52
+    },
+    {
+      "surah": 5,
+      "ayah": 113
+    },
+    {
+      "surah": 6,
+      "ayah": 25
+    },
+    {
+      "surah": 6,
+      "ayah": 43
+    },
+    {
+      "surah": 6,
+      "ayah": 46
+    },
+    {
+      "surah": 6,
+      "ayah": 110
+    },
+    {
+      "surah": 7,
+      "ayah": 100
+    },
+    {
+      "surah": 7,
+      "ayah": 101
+    },
+    {
+      "surah": 7,
+      "ayah": 119
+    },
+    {
+      "surah": 7,
+      "ayah": 125
+    },
+    {
+      "surah": 7,
+      "ayah": 179
+    },
+    {
+      "surah": 8,
+      "ayah": 2
+    },
+    {
+      "surah": 8,
+      "ayah": 10
+    },
+    {
+      "surah": 8,
+      "ayah": 11
+    },
+    {
+      "surah": 8,
+      "ayah": 12
+    },
+    {
+      "surah": 8,
+      "ayah": 24
+    },
+    {
+      "surah": 8,
+      "ayah": 49
+    },
+    {
+      "surah": 8,
+      "ayah": 63
+    },
+    {
+      "surah": 8,
+      "ayah": 70
+    },
+    {
+      "surah": 9,
+      "ayah": 8
+    },
+    {
+      "surah": 9,
+      "ayah": 15
+    },
+    {
+      "surah": 9,
+      "ayah": 45
+    },
+    {
+      "surah": 9,
+      "ayah": 48
+    },
+    {
+      "surah": 9,
+      "ayah": 60
+    },
+    {
+      "surah": 9,
+      "ayah": 64
+    },
+    {
+      "surah": 9,
+      "ayah": 77
+    },
+    {
+      "surah": 9,
+      "ayah": 87
+    },
+    {
+      "surah": 9,
+      "ayah": 93
+    },
+    {
+      "surah": 9,
+      "ayah": 95
+    },
+    {
+      "surah": 9,
+      "ayah": 110
+    },
+    {
+      "surah": 9,
+      "ayah": 117
+    },
+    {
+      "surah": 9,
+      "ayah": 125
+    },
+    {
+      "surah": 9,
+      "ayah": 127
+    },
+    {
+      "surah": 10,
+      "ayah": 74
+    },
+    {
+      "surah": 10,
+      "ayah": 88
+    },
+    {
+      "surah": 12,
+      "ayah": 62
+    },
+    {
+      "surah": 13,
+      "ayah": 28
+    },
+    {
+      "surah": 15,
+      "ayah": 12
+    },
+    {
+      "surah": 16,
+      "ayah": 22
+    },
+    {
+      "surah": 16,
+      "ayah": 46
+    },
+    {
+      "surah": 16,
+      "ayah": 106
+    },
+    {
+      "surah": 16,
+      "ayah": 108
+    },
+    {
+      "surah": 17,
+      "ayah": 46
+    },
+    {
+      "surah": 18,
+      "ayah": 14
+    },
+    {
+      "surah": 18,
+      "ayah": 18
+    },
+    {
+      "surah": 18,
+      "ayah": 28
+    },
+    {
+      "surah": 18,
+      "ayah": 36
+    },
+    {
+      "surah": 18,
+      "ayah": 42
+    },
+    {
+      "surah": 18,
+      "ayah": 57
+    },
+    {
+      "surah": 21,
+      "ayah": 3
+    },
+    {
+      "surah": 22,
+      "ayah": 11
+    },
+    {
+      "surah": 22,
+      "ayah": 32
+    },
+    {
+      "surah": 22,
+      "ayah": 35
+    },
+    {
+      "surah": 22,
+      "ayah": 46
+    },
+    {
+      "surah": 22,
+      "ayah": 53
+    },
+    {
+      "surah": 22,
+      "ayah": 54
+    },
+    {
+      "surah": 23,
+      "ayah": 60
+    },
+    {
+      "surah": 23,
+      "ayah": 63
+    },
+    {
+      "surah": 24,
+      "ayah": 37
+    },
+    {
+      "surah": 24,
+      "ayah": 44
+    },
+    {
+      "surah": 24,
+      "ayah": 50
+    },
+    {
+      "surah": 26,
+      "ayah": 50
+    },
+    {
+      "surah": 26,
+      "ayah": 89
+    },
+    {
+      "surah": 26,
+      "ayah": 194
+    },
+    {
+      "surah": 26,
+      "ayah": 200
+    },
+    {
+      "surah": 26,
+      "ayah": 219
+    },
+    {
+      "surah": 26,
+      "ayah": 227
+    },
+    {
+      "surah": 28,
+      "ayah": 10
+    },
+    {
+      "surah": 29,
+      "ayah": 21
+    },
+    {
+      "surah": 30,
+      "ayah": 59
+    },
+    {
+      "surah": 33,
+      "ayah": 4
+    },
+    {
+      "surah": 33,
+      "ayah": 5
+    },
+    {
+      "surah": 33,
+      "ayah": 10
+    },
+    {
+      "surah": 33,
+      "ayah": 12
+    },
+    {
+      "surah": 33,
+      "ayah": 26
+    },
+    {
+      "surah": 33,
+      "ayah": 32
+    },
+    {
+      "surah": 33,
+      "ayah": 51
+    },
+    {
+      "surah": 33,
+      "ayah": 53
+    },
+    {
+      "surah": 33,
+      "ayah": 60
+    },
+    {
+      "surah": 33,
+      "ayah": 66
+    },
+    {
+      "surah": 34,
+      "ayah": 23
+    },
+    {
+      "surah": 37,
+      "ayah": 84
+    },
+    {
+      "surah": 39,
+      "ayah": 22
+    },
+    {
+      "surah": 39,
+      "ayah": 23
+    },
+    {
+      "surah": 39,
+      "ayah": 45
+    },
+    {
+      "surah": 40,
+      "ayah": 4
+    },
+    {
+      "surah": 40,
+      "ayah": 18
+    },
+    {
+      "surah": 40,
+      "ayah": 35
+    },
+    {
+      "surah": 41,
+      "ayah": 5
+    },
+    {
+      "surah": 42,
+      "ayah": 24
+    },
+    {
+      "surah": 43,
+      "ayah": 14
+    },
+    {
+      "surah": 45,
+      "ayah": 23
+    },
+    {
+      "surah": 47,
+      "ayah": 16
+    },
+    {
+      "surah": 47,
+      "ayah": 19
+    },
+    {
+      "surah": 47,
+      "ayah": 20
+    },
+    {
+      "surah": 47,
+      "ayah": 24
+    },
+    {
+      "surah": 47,
+      "ayah": 29
+    },
+    {
+      "surah": 48,
+      "ayah": 4
+    },
+    {
+      "surah": 48,
+      "ayah": 11
+    },
+    {
+      "surah": 48,
+      "ayah": 12
+    },
+    {
+      "surah": 48,
+      "ayah": 18
+    },
+    {
+      "surah": 48,
+      "ayah": 26
+    },
+    {
+      "surah": 49,
+      "ayah": 3
+    },
+    {
+      "surah": 49,
+      "ayah": 7
+    },
+    {
+      "surah": 49,
+      "ayah": 14
+    },
+    {
+      "surah": 50,
+      "ayah": 33
+    },
+    {
+      "surah": 50,
+      "ayah": 37
+    },
+    {
+      "surah": 57,
+      "ayah": 16
+    },
+    {
+      "surah": 57,
+      "ayah": 27
+    },
+    {
+      "surah": 58,
+      "ayah": 22
+    },
+    {
+      "surah": 59,
+      "ayah": 2
+    },
+    {
+      "surah": 59,
+      "ayah": 10
+    },
+    {
+      "surah": 59,
+      "ayah": 14
+    },
+    {
+      "surah": 61,
+      "ayah": 5
+    },
+    {
+      "surah": 63,
+      "ayah": 3
+    },
+    {
+      "surah": 64,
+      "ayah": 11
+    },
+    {
+      "surah": 66,
+      "ayah": 4
+    },
+    {
+      "surah": 67,
+      "ayah": 4
+    },
+    {
+      "surah": 74,
+      "ayah": 31
+    },
+    {
+      "surah": 79,
+      "ayah": 8
+    },
+    {
+      "surah": 83,
+      "ayah": 14
+    },
+    {
+      "surah": 83,
+      "ayah": 31
+    },
+    {
+      "surah": 84,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 168,
+  "totalMatches": 168,
+  "pagination": null
+}

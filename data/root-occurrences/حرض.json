@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "حرض",
+    "title": "حرض",
+    "arabicTitle": "حرض",
+    "roots": [
+      "حرض"
+    ],
+    "includedLemmas": [
+      "حَرَض",
+      "حَرِّضِ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 84
+      },
+      "matchedToken": "وَحَرِّضِ",
+      "matchedLemma": "حَرِّضِ",
+      "matchedRoot": "حرض",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 65
+      },
+      "matchedToken": "حَرِّضِ",
+      "matchedLemma": "حَرِّضِ",
+      "matchedRoot": "حرض",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 85
+      },
+      "matchedToken": "حَرَضًا",
+      "matchedLemma": "حَرَض",
+      "matchedRoot": "حرض",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 84
+    },
+    {
+      "surah": 8,
+      "ayah": 65
+    },
+    {
+      "surah": 12,
+      "ayah": 85
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

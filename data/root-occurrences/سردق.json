@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "سردق",
+    "title": "سردق",
+    "arabicTitle": "سردق",
+    "roots": [
+      "سردق"
+    ],
+    "includedLemmas": [
+      "سُرَادِق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 29
+      },
+      "matchedToken": "سُرَادِقُهَا ۚ",
+      "matchedLemma": "سُرَادِق",
+      "matchedRoot": "سردق",
+      "wordPosition": 17
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "وفق",
+    "title": "وفق",
+    "arabicTitle": "وفق",
+    "roots": [
+      "وفق"
+    ],
+    "includedLemmas": [
+      "تَوْفِيق",
+      "وِفَاق",
+      "يُوَفِّقِ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 35
+      },
+      "matchedToken": "يُوَفِّقِ",
+      "matchedLemma": "يُوَفِّقِ",
+      "matchedRoot": "وفق",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 62
+      },
+      "matchedToken": "وَتَوْفِيقًا",
+      "matchedLemma": "تَوْفِيق",
+      "matchedRoot": "وفق",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 88
+      },
+      "matchedToken": "تَوْفِيقِىٓ",
+      "matchedLemma": "تَوْفِيق",
+      "matchedRoot": "وفق",
+      "wordPosition": 29
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 26
+      },
+      "matchedToken": "وِفَاقًا",
+      "matchedLemma": "وِفَاق",
+      "matchedRoot": "وفق",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 4,
+      "ayah": 35
+    },
+    {
+      "surah": 4,
+      "ayah": 62
+    },
+    {
+      "surah": 11,
+      "ayah": 88
+    },
+    {
+      "surah": 78,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

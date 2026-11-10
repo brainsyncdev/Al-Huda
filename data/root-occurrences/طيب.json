@@ -1,0 +1,712 @@
+{
+  "entry": {
+    "slug": "طيب",
+    "title": "طيب",
+    "arabicTitle": "طيب",
+    "roots": [
+      "طيب"
+    ],
+    "includedLemmas": [
+      "طَابَ",
+      "طَيِّب",
+      "طَيِّبَة",
+      "طَيِّبَٰت",
+      "طُوبَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 57
+      },
+      "matchedToken": "طَيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 168
+      },
+      "matchedToken": "طَيِّبًۭا",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 172
+      },
+      "matchedToken": "طَيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 267
+      },
+      "matchedToken": "طَيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 38
+      },
+      "matchedToken": "طَيِّبَةً ۖ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 179
+      },
+      "matchedToken": "ٱلطَّيِّبِ ۗ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 2
+      },
+      "matchedToken": "بِٱلطَّيِّبِ ۖ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 3
+      },
+      "matchedToken": "طَابَ",
+      "matchedLemma": "طَابَ",
+      "matchedRoot": "طيب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 4
+      },
+      "matchedToken": "طِبْنَ",
+      "matchedLemma": "طَابَ",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 43
+      },
+      "matchedToken": "طَيِّبًۭا",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 40
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 160
+      },
+      "matchedToken": "طَيِّبَـٰتٍ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 4
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتُ ۙ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 5
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتُ ۖ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 6
+      },
+      "matchedToken": "طَيِّبًۭا",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 42
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 87
+      },
+      "matchedToken": "طَيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 88
+      },
+      "matchedToken": "طَيِّبًۭا ۚ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 100
+      },
+      "matchedToken": "وَٱلطَّيِّبُ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 32
+      },
+      "matchedToken": "وَٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 58
+      },
+      "matchedToken": "ٱلطَّيِّبُ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 157
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 160
+      },
+      "matchedToken": "طَيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 35
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 37
+      },
+      "matchedToken": "ٱلطَّيِّبِ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 69
+      },
+      "matchedToken": "طَيِّبًۭا ۚ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 72
+      },
+      "matchedToken": "طَيِّبَةًۭ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 22
+      },
+      "matchedToken": "طَيِّبَةٍۢ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 93
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 29
+      },
+      "matchedToken": "طُوبَىٰ",
+      "matchedLemma": "طُوبَىٰ",
+      "matchedRoot": "طيب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 24
+      },
+      "matchedToken": "طَيِّبَةًۭ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 24
+      },
+      "matchedToken": "طَيِّبَةٍ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 32
+      },
+      "matchedToken": "طَيِّبِينَ ۙ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 72
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ ۚ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 97
+      },
+      "matchedToken": "طَيِّبَةًۭ ۖ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 114
+      },
+      "matchedToken": "طَيِّبًۭا",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 70
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 81
+      },
+      "matchedToken": "طَيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 24
+      },
+      "matchedToken": "ٱلطَّيِّبِ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 51
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 26
+      },
+      "matchedToken": "وَٱلطَّيِّبَـٰتُ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 26
+      },
+      "matchedToken": "لِلطَّيِّبِينَ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 26
+      },
+      "matchedToken": "وَٱلطَّيِّبُونَ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 26
+      },
+      "matchedToken": "لِلطَّيِّبَـٰتِ ۚ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 61
+      },
+      "matchedToken": "طَيِّبَةًۭ ۚ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 69
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 15
+      },
+      "matchedToken": "طَيِّبَةٌۭ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلطَّيِّبُ",
+      "matchedLemma": "طَيِّب",
+      "matchedRoot": "طيب",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 39,
+        "ayah": 73
+      },
+      "matchedToken": "طِبْتُمْ",
+      "matchedLemma": "طَابَ",
+      "matchedRoot": "طيب",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 64
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ ۚ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلطَّيِّبَـٰتِ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 20
+      },
+      "matchedToken": "طَيِّبَـٰتِكُمْ",
+      "matchedLemma": "طَيِّبَٰت",
+      "matchedRoot": "طيب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 12
+      },
+      "matchedToken": "طَيِّبَةًۭ",
+      "matchedLemma": "طَيِّبَة",
+      "matchedRoot": "طيب",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 57
+    },
+    {
+      "surah": 2,
+      "ayah": 168
+    },
+    {
+      "surah": 2,
+      "ayah": 172
+    },
+    {
+      "surah": 2,
+      "ayah": 267
+    },
+    {
+      "surah": 3,
+      "ayah": 38
+    },
+    {
+      "surah": 3,
+      "ayah": 179
+    },
+    {
+      "surah": 4,
+      "ayah": 2
+    },
+    {
+      "surah": 4,
+      "ayah": 3
+    },
+    {
+      "surah": 4,
+      "ayah": 4
+    },
+    {
+      "surah": 4,
+      "ayah": 43
+    },
+    {
+      "surah": 4,
+      "ayah": 160
+    },
+    {
+      "surah": 5,
+      "ayah": 4
+    },
+    {
+      "surah": 5,
+      "ayah": 5
+    },
+    {
+      "surah": 5,
+      "ayah": 6
+    },
+    {
+      "surah": 5,
+      "ayah": 87
+    },
+    {
+      "surah": 5,
+      "ayah": 88
+    },
+    {
+      "surah": 5,
+      "ayah": 100
+    },
+    {
+      "surah": 7,
+      "ayah": 32
+    },
+    {
+      "surah": 7,
+      "ayah": 58
+    },
+    {
+      "surah": 7,
+      "ayah": 157
+    },
+    {
+      "surah": 7,
+      "ayah": 160
+    },
+    {
+      "surah": 8,
+      "ayah": 26
+    },
+    {
+      "surah": 8,
+      "ayah": 37
+    },
+    {
+      "surah": 8,
+      "ayah": 69
+    },
+    {
+      "surah": 9,
+      "ayah": 72
+    },
+    {
+      "surah": 10,
+      "ayah": 22
+    },
+    {
+      "surah": 10,
+      "ayah": 93
+    },
+    {
+      "surah": 13,
+      "ayah": 29
+    },
+    {
+      "surah": 14,
+      "ayah": 24
+    },
+    {
+      "surah": 16,
+      "ayah": 32
+    },
+    {
+      "surah": 16,
+      "ayah": 72
+    },
+    {
+      "surah": 16,
+      "ayah": 97
+    },
+    {
+      "surah": 16,
+      "ayah": 114
+    },
+    {
+      "surah": 17,
+      "ayah": 70
+    },
+    {
+      "surah": 20,
+      "ayah": 81
+    },
+    {
+      "surah": 22,
+      "ayah": 24
+    },
+    {
+      "surah": 23,
+      "ayah": 51
+    },
+    {
+      "surah": 24,
+      "ayah": 26
+    },
+    {
+      "surah": 24,
+      "ayah": 61
+    },
+    {
+      "surah": 34,
+      "ayah": 15
+    },
+    {
+      "surah": 35,
+      "ayah": 10
+    },
+    {
+      "surah": 39,
+      "ayah": 73
+    },
+    {
+      "surah": 40,
+      "ayah": 64
+    },
+    {
+      "surah": 45,
+      "ayah": 16
+    },
+    {
+      "surah": 46,
+      "ayah": 20
+    },
+    {
+      "surah": 61,
+      "ayah": 12
+    }
+  ],
+  "totalOccurrences": 50,
+  "totalMatches": 50,
+  "pagination": null
+}

@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "جسد",
+    "title": "جسد",
+    "arabicTitle": "جسد",
+    "roots": [
+      "جسد"
+    ],
+    "includedLemmas": [
+      "جَسَد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 148
+      },
+      "matchedToken": "جَسَدًۭا",
+      "matchedLemma": "جَسَد",
+      "matchedRoot": "جسد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 88
+      },
+      "matchedToken": "جَسَدًۭا",
+      "matchedLemma": "جَسَد",
+      "matchedRoot": "جسد",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 8
+      },
+      "matchedToken": "جَسَدًۭا",
+      "matchedLemma": "جَسَد",
+      "matchedRoot": "جسد",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 34
+      },
+      "matchedToken": "جَسَدًۭا",
+      "matchedLemma": "جَسَد",
+      "matchedRoot": "جسد",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 148
+    },
+    {
+      "surah": 20,
+      "ayah": 88
+    },
+    {
+      "surah": 21,
+      "ayah": 8
+    },
+    {
+      "surah": 38,
+      "ayah": 34
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

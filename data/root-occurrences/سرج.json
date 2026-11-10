@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "سرج",
+    "title": "سرج",
+    "arabicTitle": "سرج",
+    "roots": [
+      "سرج"
+    ],
+    "includedLemmas": [
+      "سِرَاج"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 61
+      },
+      "matchedToken": "سِرَٰجًۭا",
+      "matchedLemma": "سِرَاج",
+      "matchedRoot": "سرج",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 46
+      },
+      "matchedToken": "وَسِرَاجًۭا",
+      "matchedLemma": "سِرَاج",
+      "matchedRoot": "سرج",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 71,
+        "ayah": 16
+      },
+      "matchedToken": "سِرَاجًۭا",
+      "matchedLemma": "سِرَاج",
+      "matchedRoot": "سرج",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 78,
+        "ayah": 13
+      },
+      "matchedToken": "سِرَاجًۭا",
+      "matchedLemma": "سِرَاج",
+      "matchedRoot": "سرج",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 61
+    },
+    {
+      "surah": 33,
+      "ayah": 46
+    },
+    {
+      "surah": 71,
+      "ayah": 16
+    },
+    {
+      "surah": 78,
+      "ayah": 13
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

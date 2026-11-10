@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "اوه",
+    "title": "اوه",
+    "arabicTitle": "اوه",
+    "roots": [
+      "اوه"
+    ],
+    "includedLemmas": [
+      "أَوَّٰه"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 114
+      },
+      "matchedToken": "لَأَوَّٰهٌ",
+      "matchedLemma": "أَوَّٰه",
+      "matchedRoot": "اوه",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 75
+      },
+      "matchedToken": "أَوَّٰهٌۭ",
+      "matchedLemma": "أَوَّٰه",
+      "matchedRoot": "اوه",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 114
+    },
+    {
+      "surah": 11,
+      "ayah": 75
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "صمع",
+    "title": "صمع",
+    "arabicTitle": "صمع",
+    "roots": [
+      "صمع"
+    ],
+    "includedLemmas": [
+      "صَوَٰمِع"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 40
+      },
+      "matchedToken": "صَوَٰمِعُ",
+      "matchedLemma": "صَوَٰمِع",
+      "matchedRoot": "صمع",
+      "wordPosition": 19
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 22,
+      "ayah": 40
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

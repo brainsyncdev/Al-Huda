@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "نبز",
+    "title": "نبز",
+    "arabicTitle": "نبز",
+    "roots": [
+      "نبز"
+    ],
+    "includedLemmas": [
+      "تَنَابَزُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 49,
+        "ayah": 11
+      },
+      "matchedToken": "تَنَابَزُوا۟",
+      "matchedLemma": "تَنَابَزُ",
+      "matchedRoot": "نبز",
+      "wordPosition": 27
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 49,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "قنع",
+    "title": "قنع",
+    "arabicTitle": "قنع",
+    "roots": [
+      "قنع"
+    ],
+    "includedLemmas": [
+      "قَانِع",
+      "مُقْنِعِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 43
+      },
+      "matchedToken": "مُقْنِعِى",
+      "matchedLemma": "مُقْنِعِى",
+      "matchedRoot": "قنع",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 36
+      },
+      "matchedToken": "ٱلْقَانِعَ",
+      "matchedLemma": "قَانِع",
+      "matchedRoot": "قنع",
+      "wordPosition": 21
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 14,
+      "ayah": 43
+    },
+    {
+      "surah": 22,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

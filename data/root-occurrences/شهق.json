@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "شهق",
+    "title": "شهق",
+    "arabicTitle": "شهق",
+    "roots": [
+      "شهق"
+    ],
+    "includedLemmas": [
+      "شَهِيق"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 106
+      },
+      "matchedToken": "وَشَهِيقٌ",
+      "matchedLemma": "شَهِيق",
+      "matchedRoot": "شهق",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 67,
+        "ayah": 7
+      },
+      "matchedToken": "شَهِيقًۭا",
+      "matchedLemma": "شَهِيق",
+      "matchedRoot": "شهق",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 106
+    },
+    {
+      "surah": 67,
+      "ayah": 7
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

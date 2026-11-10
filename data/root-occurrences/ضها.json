@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "ضها",
+    "title": "ضها",
+    "arabicTitle": "ضها",
+    "roots": [
+      "ضها"
+    ],
+    "includedLemmas": [
+      "يُضَٰهِـُٔ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 30
+      },
+      "matchedToken": "يُضَـٰهِـُٔونَ",
+      "matchedLemma": "يُضَٰهِـُٔ",
+      "matchedRoot": "ضها",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 30
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

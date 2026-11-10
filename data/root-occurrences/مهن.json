@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "مهن",
+    "title": "مهن",
+    "arabicTitle": "مهن",
+    "roots": [
+      "مهن"
+    ],
+    "includedLemmas": [
+      "مَّهِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 32,
+        "ayah": 8
+      },
+      "matchedToken": "مَّهِينٍۢ",
+      "matchedLemma": "مَّهِين",
+      "matchedRoot": "مهن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 43,
+        "ayah": 52
+      },
+      "matchedToken": "مَهِينٌۭ",
+      "matchedLemma": "مَّهِين",
+      "matchedRoot": "مهن",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 10
+      },
+      "matchedToken": "مَّهِينٍ",
+      "matchedLemma": "مَّهِين",
+      "matchedRoot": "مهن",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 77,
+        "ayah": 20
+      },
+      "matchedToken": "مَّهِينٍۢ",
+      "matchedLemma": "مَّهِين",
+      "matchedRoot": "مهن",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 32,
+      "ayah": 8
+    },
+    {
+      "surah": 43,
+      "ayah": 52
+    },
+    {
+      "surah": 68,
+      "ayah": 10
+    },
+    {
+      "surah": 77,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

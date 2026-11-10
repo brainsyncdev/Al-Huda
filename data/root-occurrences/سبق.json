@@ -1,0 +1,540 @@
+{
+  "entry": {
+    "slug": "سبق",
+    "title": "سبق",
+    "arabicTitle": "سبق",
+    "roots": [
+      "سبق"
+    ],
+    "includedLemmas": [
+      "اسْتَبَقَ",
+      "سَابِق",
+      "سَابِقُ",
+      "سَبَقَ",
+      "سَبْق",
+      "سَّٰبِقَٰت",
+      "مَسْبُوقِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 7 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 148
+      },
+      "matchedToken": "فَٱسْتَبِقُوا۟",
+      "matchedLemma": "اسْتَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 48
+      },
+      "matchedToken": "فَٱسْتَبِقُوا۟",
+      "matchedLemma": "اسْتَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 41
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 80
+      },
+      "matchedToken": "سَبَقَكُم",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 59
+      },
+      "matchedToken": "سَبَقُوٓا۟ ۚ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 68
+      },
+      "matchedToken": "سَبَقَ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 100
+      },
+      "matchedToken": "وَٱلسَّـٰبِقُونَ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 19
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 40
+      },
+      "matchedToken": "سَبَقَ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 110
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 17
+      },
+      "matchedToken": "نَسْتَبِقُ",
+      "matchedLemma": "اسْتَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 25
+      },
+      "matchedToken": "وَٱسْتَبَقَا",
+      "matchedLemma": "اسْتَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 5
+      },
+      "matchedToken": "تَسْبِقُ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 99
+      },
+      "matchedToken": "سَبَقَ ۚ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 129
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 27
+      },
+      "matchedToken": "يَسْبِقُونَهُۥ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 101
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 27
+      },
+      "matchedToken": "سَبَقَ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 43
+      },
+      "matchedToken": "تَسْبِقُ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 61
+      },
+      "matchedToken": "سَـٰبِقُونَ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 4
+      },
+      "matchedToken": "يَسْبِقُونَا ۚ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 28
+      },
+      "matchedToken": "سَبَقَكُم",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 29,
+        "ayah": 39
+      },
+      "matchedToken": "سَـٰبِقِينَ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 32
+      },
+      "matchedToken": "سَابِقٌۢ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 40
+      },
+      "matchedToken": "سَابِقُ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 66
+      },
+      "matchedToken": "فَٱسْتَبَقُوا۟",
+      "matchedLemma": "اسْتَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 171
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 41,
+        "ayah": 45
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 14
+      },
+      "matchedToken": "سَبَقَتْ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 46,
+        "ayah": 11
+      },
+      "matchedToken": "سَبَقُونَآ",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 10
+      },
+      "matchedToken": "وَٱلسَّـٰبِقُونَ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 10
+      },
+      "matchedToken": "ٱلسَّـٰبِقُونَ",
+      "matchedLemma": "سَابِق",
+      "matchedRoot": "سبق",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 60
+      },
+      "matchedToken": "بِمَسْبُوقِينَ",
+      "matchedLemma": "مَسْبُوقِين",
+      "matchedRoot": "سبق",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 21
+      },
+      "matchedToken": "سَابِقُوٓا۟",
+      "matchedLemma": "سَابِقُ",
+      "matchedRoot": "سبق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 59,
+        "ayah": 10
+      },
+      "matchedToken": "سَبَقُونَا",
+      "matchedLemma": "سَبَقَ",
+      "matchedRoot": "سبق",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 41
+      },
+      "matchedToken": "بِمَسْبُوقِينَ",
+      "matchedLemma": "مَسْبُوقِين",
+      "matchedRoot": "سبق",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 4
+      },
+      "matchedToken": "فَٱلسَّـٰبِقَـٰتِ",
+      "matchedLemma": "سَّٰبِقَٰت",
+      "matchedRoot": "سبق",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 4
+      },
+      "matchedToken": "سَبْقًۭا",
+      "matchedLemma": "سَبْق",
+      "matchedRoot": "سبق",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 148
+    },
+    {
+      "surah": 5,
+      "ayah": 48
+    },
+    {
+      "surah": 7,
+      "ayah": 80
+    },
+    {
+      "surah": 8,
+      "ayah": 59
+    },
+    {
+      "surah": 8,
+      "ayah": 68
+    },
+    {
+      "surah": 9,
+      "ayah": 100
+    },
+    {
+      "surah": 10,
+      "ayah": 19
+    },
+    {
+      "surah": 11,
+      "ayah": 40
+    },
+    {
+      "surah": 11,
+      "ayah": 110
+    },
+    {
+      "surah": 12,
+      "ayah": 17
+    },
+    {
+      "surah": 12,
+      "ayah": 25
+    },
+    {
+      "surah": 15,
+      "ayah": 5
+    },
+    {
+      "surah": 20,
+      "ayah": 99
+    },
+    {
+      "surah": 20,
+      "ayah": 129
+    },
+    {
+      "surah": 21,
+      "ayah": 27
+    },
+    {
+      "surah": 21,
+      "ayah": 101
+    },
+    {
+      "surah": 23,
+      "ayah": 27
+    },
+    {
+      "surah": 23,
+      "ayah": 43
+    },
+    {
+      "surah": 23,
+      "ayah": 61
+    },
+    {
+      "surah": 29,
+      "ayah": 4
+    },
+    {
+      "surah": 29,
+      "ayah": 28
+    },
+    {
+      "surah": 29,
+      "ayah": 39
+    },
+    {
+      "surah": 35,
+      "ayah": 32
+    },
+    {
+      "surah": 36,
+      "ayah": 40
+    },
+    {
+      "surah": 36,
+      "ayah": 66
+    },
+    {
+      "surah": 37,
+      "ayah": 171
+    },
+    {
+      "surah": 41,
+      "ayah": 45
+    },
+    {
+      "surah": 42,
+      "ayah": 14
+    },
+    {
+      "surah": 46,
+      "ayah": 11
+    },
+    {
+      "surah": 56,
+      "ayah": 10
+    },
+    {
+      "surah": 56,
+      "ayah": 60
+    },
+    {
+      "surah": 57,
+      "ayah": 21
+    },
+    {
+      "surah": 59,
+      "ayah": 10
+    },
+    {
+      "surah": 70,
+      "ayah": 41
+    },
+    {
+      "surah": 79,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 37,
+  "totalMatches": 37,
+  "pagination": null
+}

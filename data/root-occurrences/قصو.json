@@ -1,0 +1,96 @@
+{
+  "entry": {
+    "slug": "قصو",
+    "title": "قصو",
+    "arabicTitle": "قصو",
+    "roots": [
+      "قصو"
+    ],
+    "includedLemmas": [
+      "أَقْصَا",
+      "قَصِيّ",
+      "قُصْوَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 8,
+        "ayah": 42
+      },
+      "matchedToken": "ٱلْقُصْوَىٰ",
+      "matchedLemma": "قُصْوَىٰ",
+      "matchedRoot": "قصو",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 1
+      },
+      "matchedToken": "ٱلْأَقْصَا",
+      "matchedLemma": "أَقْصَا",
+      "matchedRoot": "قصو",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 19,
+        "ayah": 22
+      },
+      "matchedToken": "قَصِيًّۭا",
+      "matchedLemma": "قَصِيّ",
+      "matchedRoot": "قصو",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 20
+      },
+      "matchedToken": "أَقْصَا",
+      "matchedLemma": "أَقْصَا",
+      "matchedRoot": "قصو",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 20
+      },
+      "matchedToken": "أَقْصَا",
+      "matchedLemma": "أَقْصَا",
+      "matchedRoot": "قصو",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 8,
+      "ayah": 42
+    },
+    {
+      "surah": 17,
+      "ayah": 1
+    },
+    {
+      "surah": 19,
+      "ayah": 22
+    },
+    {
+      "surah": 28,
+      "ayah": 20
+    },
+    {
+      "surah": 36,
+      "ayah": 20
+    }
+  ],
+  "totalOccurrences": 5,
+  "totalMatches": 5,
+  "pagination": null
+}

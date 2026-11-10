@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "ضنك",
+    "title": "ضنك",
+    "arabicTitle": "ضنك",
+    "roots": [
+      "ضنك"
+    ],
+    "includedLemmas": [
+      "ضَنك"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 124
+      },
+      "matchedToken": "ضَنكًۭا",
+      "matchedLemma": "ضَنك",
+      "matchedRoot": "ضنك",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 20,
+      "ayah": 124
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

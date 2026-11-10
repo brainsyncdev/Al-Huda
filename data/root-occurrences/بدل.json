@@ -1,0 +1,631 @@
+{
+  "entry": {
+    "slug": "بدل",
+    "title": "بدل",
+    "arabicTitle": "بدل",
+    "roots": [
+      "بدل"
+    ],
+    "includedLemmas": [
+      "اسْتِبْدَال",
+      "بَدَل",
+      "بَدَّلَ",
+      "تَبْدِيل",
+      "مُبَدِّل",
+      "يَتَبَدَّلِ",
+      "يَسْتَبْدِلْ",
+      "يُبْدِلَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 8 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 59
+      },
+      "matchedToken": "فَبَدَّلَ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 61
+      },
+      "matchedToken": "أَتَسْتَبْدِلُونَ",
+      "matchedLemma": "يَسْتَبْدِلْ",
+      "matchedRoot": "بدل",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 108
+      },
+      "matchedToken": "يَتَبَدَّلِ",
+      "matchedLemma": "يَتَبَدَّلِ",
+      "matchedRoot": "بدل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 181
+      },
+      "matchedToken": "بَدَّلَهُۥ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 181
+      },
+      "matchedToken": "يُبَدِّلُونَهُۥٓ ۚ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 211
+      },
+      "matchedToken": "يُبَدِّلْ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 2
+      },
+      "matchedToken": "تَتَبَدَّلُوا۟",
+      "matchedLemma": "يَتَبَدَّلِ",
+      "matchedRoot": "بدل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 20
+      },
+      "matchedToken": "ٱسْتِبْدَالَ",
+      "matchedLemma": "اسْتِبْدَال",
+      "matchedRoot": "بدل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 56
+      },
+      "matchedToken": "بَدَّلْنَـٰهُمْ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 34
+      },
+      "matchedToken": "مُبَدِّلَ",
+      "matchedLemma": "مُبَدِّل",
+      "matchedRoot": "بدل",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 115
+      },
+      "matchedToken": "مُبَدِّلَ",
+      "matchedLemma": "مُبَدِّل",
+      "matchedRoot": "بدل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 95
+      },
+      "matchedToken": "بَدَّلْنَا",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 162
+      },
+      "matchedToken": "فَبَدَّلَ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 39
+      },
+      "matchedToken": "وَيَسْتَبْدِلْ",
+      "matchedLemma": "يَسْتَبْدِلْ",
+      "matchedRoot": "بدل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 15
+      },
+      "matchedToken": "بَدِّلْهُ ۚ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 15
+      },
+      "matchedToken": "أُبَدِّلَهُۥ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 10,
+        "ayah": 64
+      },
+      "matchedToken": "تَبْدِيلَ",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 28
+      },
+      "matchedToken": "بَدَّلُوا۟",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 48
+      },
+      "matchedToken": "تُبَدَّلُ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 16,
+        "ayah": 101
+      },
+      "matchedToken": "بَدَّلْنَآ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 27
+      },
+      "matchedToken": "مُبَدِّلَ",
+      "matchedLemma": "مُبَدِّل",
+      "matchedRoot": "بدل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 50
+      },
+      "matchedToken": "بَدَلًۭا",
+      "matchedLemma": "بَدَل",
+      "matchedRoot": "بدل",
+      "wordPosition": 26
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 81
+      },
+      "matchedToken": "يُبْدِلَهُمَا",
+      "matchedLemma": "يُبْدِلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 55
+      },
+      "matchedToken": "وَلَيُبَدِّلَنَّهُم",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 70
+      },
+      "matchedToken": "يُبَدِّلُ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 11
+      },
+      "matchedToken": "بَدَّلَ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 30
+      },
+      "matchedToken": "تَبْدِيلَ",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 23
+      },
+      "matchedToken": "بَدَّلُوا۟",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 23
+      },
+      "matchedToken": "تَبْدِيلًۭا",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 52
+      },
+      "matchedToken": "تَبَدَّلَ",
+      "matchedLemma": "يَتَبَدَّلِ",
+      "matchedRoot": "بدل",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 33,
+        "ayah": 62
+      },
+      "matchedToken": "تَبْدِيلًۭا",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 34,
+        "ayah": 16
+      },
+      "matchedToken": "وَبَدَّلْنَـٰهُم",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 35,
+        "ayah": 43
+      },
+      "matchedToken": "تَبْدِيلًۭا ۖ",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 26
+      },
+      "matchedToken": "يُبَدِّلَ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 38
+      },
+      "matchedToken": "يَسْتَبْدِلْ",
+      "matchedLemma": "يَسْتَبْدِلْ",
+      "matchedRoot": "بدل",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 15
+      },
+      "matchedToken": "يُبَدِّلُوا۟",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 48,
+        "ayah": 23
+      },
+      "matchedToken": "تَبْدِيلًۭا",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 50,
+        "ayah": 29
+      },
+      "matchedToken": "يُبَدَّلُ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 61
+      },
+      "matchedToken": "نُّبَدِّلَ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 66,
+        "ayah": 5
+      },
+      "matchedToken": "يُبْدِلَهُۥٓ",
+      "matchedLemma": "يُبْدِلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 68,
+        "ayah": 32
+      },
+      "matchedToken": "يُبْدِلَنَا",
+      "matchedLemma": "يُبْدِلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 70,
+        "ayah": 41
+      },
+      "matchedToken": "نُّبَدِّلَ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 28
+      },
+      "matchedToken": "بَدَّلْنَآ",
+      "matchedLemma": "بَدَّلَ",
+      "matchedRoot": "بدل",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 28
+      },
+      "matchedToken": "تَبْدِيلًا",
+      "matchedLemma": "تَبْدِيل",
+      "matchedRoot": "بدل",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 59
+    },
+    {
+      "surah": 2,
+      "ayah": 61
+    },
+    {
+      "surah": 2,
+      "ayah": 108
+    },
+    {
+      "surah": 2,
+      "ayah": 181
+    },
+    {
+      "surah": 2,
+      "ayah": 211
+    },
+    {
+      "surah": 4,
+      "ayah": 2
+    },
+    {
+      "surah": 4,
+      "ayah": 20
+    },
+    {
+      "surah": 4,
+      "ayah": 56
+    },
+    {
+      "surah": 6,
+      "ayah": 34
+    },
+    {
+      "surah": 6,
+      "ayah": 115
+    },
+    {
+      "surah": 7,
+      "ayah": 95
+    },
+    {
+      "surah": 7,
+      "ayah": 162
+    },
+    {
+      "surah": 9,
+      "ayah": 39
+    },
+    {
+      "surah": 10,
+      "ayah": 15
+    },
+    {
+      "surah": 10,
+      "ayah": 64
+    },
+    {
+      "surah": 14,
+      "ayah": 28
+    },
+    {
+      "surah": 14,
+      "ayah": 48
+    },
+    {
+      "surah": 16,
+      "ayah": 101
+    },
+    {
+      "surah": 18,
+      "ayah": 27
+    },
+    {
+      "surah": 18,
+      "ayah": 50
+    },
+    {
+      "surah": 18,
+      "ayah": 81
+    },
+    {
+      "surah": 24,
+      "ayah": 55
+    },
+    {
+      "surah": 25,
+      "ayah": 70
+    },
+    {
+      "surah": 27,
+      "ayah": 11
+    },
+    {
+      "surah": 30,
+      "ayah": 30
+    },
+    {
+      "surah": 33,
+      "ayah": 23
+    },
+    {
+      "surah": 33,
+      "ayah": 52
+    },
+    {
+      "surah": 33,
+      "ayah": 62
+    },
+    {
+      "surah": 34,
+      "ayah": 16
+    },
+    {
+      "surah": 35,
+      "ayah": 43
+    },
+    {
+      "surah": 40,
+      "ayah": 26
+    },
+    {
+      "surah": 47,
+      "ayah": 38
+    },
+    {
+      "surah": 48,
+      "ayah": 15
+    },
+    {
+      "surah": 48,
+      "ayah": 23
+    },
+    {
+      "surah": 50,
+      "ayah": 29
+    },
+    {
+      "surah": 56,
+      "ayah": 61
+    },
+    {
+      "surah": 66,
+      "ayah": 5
+    },
+    {
+      "surah": 68,
+      "ayah": 32
+    },
+    {
+      "surah": 70,
+      "ayah": 41
+    },
+    {
+      "surah": 76,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 44,
+  "totalMatches": 44,
+  "pagination": null
+}

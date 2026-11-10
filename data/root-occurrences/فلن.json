@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "فلن",
+    "title": "فلن",
+    "arabicTitle": "فلن",
+    "roots": [
+      "فلن"
+    ],
+    "includedLemmas": [
+      "فُلَان"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 28
+      },
+      "matchedToken": "فُلَانًا",
+      "matchedLemma": "فُلَان",
+      "matchedRoot": "فلن",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 25,
+      "ayah": 28
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

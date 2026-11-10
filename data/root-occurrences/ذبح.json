@@ -1,0 +1,152 @@
+{
+  "entry": {
+    "slug": "ذبح",
+    "title": "ذبح",
+    "arabicTitle": "ذبح",
+    "roots": [
+      "ذبح"
+    ],
+    "includedLemmas": [
+      "ذُبِحَ",
+      "ذِبْح",
+      "يُذَبِّحُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 49
+      },
+      "matchedToken": "يُذَبِّحُونَ",
+      "matchedLemma": "يُذَبِّحُ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 67
+      },
+      "matchedToken": "تَذْبَحُوا۟",
+      "matchedLemma": "ذُبِحَ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 71
+      },
+      "matchedToken": "فَذَبَحُوهَا",
+      "matchedLemma": "ذُبِحَ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 21
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 3
+      },
+      "matchedToken": "ذُبِحَ",
+      "matchedLemma": "ذُبِحَ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 6
+      },
+      "matchedToken": "وَيُذَبِّحُونَ",
+      "matchedLemma": "يُذَبِّحُ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 27,
+        "ayah": 21
+      },
+      "matchedToken": "لَأَا۟ذْبَحَنَّهُۥٓ",
+      "matchedLemma": "ذُبِحَ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 4
+      },
+      "matchedToken": "يُذَبِّحُ",
+      "matchedLemma": "يُذَبِّحُ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 102
+      },
+      "matchedToken": "أَذْبَحُكَ",
+      "matchedLemma": "ذُبِحَ",
+      "matchedRoot": "ذبح",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 107
+      },
+      "matchedToken": "بِذِبْحٍ",
+      "matchedLemma": "ذِبْح",
+      "matchedRoot": "ذبح",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 49
+    },
+    {
+      "surah": 2,
+      "ayah": 67
+    },
+    {
+      "surah": 2,
+      "ayah": 71
+    },
+    {
+      "surah": 5,
+      "ayah": 3
+    },
+    {
+      "surah": 14,
+      "ayah": 6
+    },
+    {
+      "surah": 27,
+      "ayah": 21
+    },
+    {
+      "surah": 28,
+      "ayah": 4
+    },
+    {
+      "surah": 37,
+      "ayah": 102
+    },
+    {
+      "surah": 37,
+      "ayah": 107
+    }
+  ],
+  "totalOccurrences": 9,
+  "totalMatches": 9,
+  "pagination": null
+}

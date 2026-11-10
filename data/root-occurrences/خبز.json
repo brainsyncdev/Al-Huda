@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "خبز",
+    "title": "خبز",
+    "arabicTitle": "خبز",
+    "roots": [
+      "خبز"
+    ],
+    "includedLemmas": [
+      "خُبْز"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 36
+      },
+      "matchedToken": "خُبْزًۭا",
+      "matchedLemma": "خُبْز",
+      "matchedRoot": "خبز",
+      "wordPosition": 18
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 36
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

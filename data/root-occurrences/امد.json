@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "امد",
+    "title": "امد",
+    "arabicTitle": "امد",
+    "roots": [
+      "امد"
+    ],
+    "includedLemmas": [
+      "أَمَد"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 30
+      },
+      "matchedToken": "أَمَدًۢا",
+      "matchedLemma": "أَمَد",
+      "matchedRoot": "امد",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 12
+      },
+      "matchedToken": "أَمَدًۭا",
+      "matchedLemma": "أَمَد",
+      "matchedRoot": "امد",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 57,
+        "ayah": 16
+      },
+      "matchedToken": "ٱلْأَمَدُ",
+      "matchedLemma": "أَمَد",
+      "matchedRoot": "امد",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 72,
+        "ayah": 25
+      },
+      "matchedToken": "أَمَدًا",
+      "matchedLemma": "أَمَد",
+      "matchedRoot": "امد",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 3,
+      "ayah": 30
+    },
+    {
+      "surah": 18,
+      "ayah": 12
+    },
+    {
+      "surah": 57,
+      "ayah": 16
+    },
+    {
+      "surah": 72,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

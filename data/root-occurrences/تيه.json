@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "تيه",
+    "title": "تيه",
+    "arabicTitle": "تيه",
+    "roots": [
+      "تيه"
+    ],
+    "includedLemmas": [
+      "يَتِيهُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 26
+      },
+      "matchedToken": "يَتِيهُونَ",
+      "matchedLemma": "يَتِيهُ",
+      "matchedRoot": "تيه",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 26
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

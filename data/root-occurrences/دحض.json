@@ -1,0 +1,82 @@
+{
+  "entry": {
+    "slug": "دحض",
+    "title": "دحض",
+    "arabicTitle": "دحض",
+    "roots": [
+      "دحض"
+    ],
+    "includedLemmas": [
+      "دَاحِضَة",
+      "مُدْحَضِين",
+      "يُدْحِضُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 3 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 56
+      },
+      "matchedToken": "لِيُدْحِضُوا۟",
+      "matchedLemma": "يُدْحِضُ",
+      "matchedRoot": "دحض",
+      "wordPosition": 11
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 141
+      },
+      "matchedToken": "ٱلْمُدْحَضِينَ",
+      "matchedLemma": "مُدْحَضِين",
+      "matchedRoot": "دحض",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 5
+      },
+      "matchedToken": "لِيُدْحِضُوا۟",
+      "matchedLemma": "يُدْحِضُ",
+      "matchedRoot": "دحض",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 16
+      },
+      "matchedToken": "دَاحِضَةٌ",
+      "matchedLemma": "دَاحِضَة",
+      "matchedRoot": "دحض",
+      "wordPosition": 11
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 18,
+      "ayah": 56
+    },
+    {
+      "surah": 37,
+      "ayah": 141
+    },
+    {
+      "surah": 40,
+      "ayah": 5
+    },
+    {
+      "surah": 42,
+      "ayah": 16
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

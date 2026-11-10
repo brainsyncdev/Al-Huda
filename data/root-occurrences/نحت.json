@@ -1,0 +1,80 @@
+{
+  "entry": {
+    "slug": "نحت",
+    "title": "نحت",
+    "arabicTitle": "نحت",
+    "roots": [
+      "نحت"
+    ],
+    "includedLemmas": [
+      "يَنْحِتُ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 74
+      },
+      "matchedToken": "وَتَنْحِتُونَ",
+      "matchedLemma": "يَنْحِتُ",
+      "matchedRoot": "نحت",
+      "wordPosition": 15
+    },
+    {
+      "ref": {
+        "surah": 15,
+        "ayah": 82
+      },
+      "matchedToken": "يَنْحِتُونَ",
+      "matchedLemma": "يَنْحِتُ",
+      "matchedRoot": "نحت",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 26,
+        "ayah": 149
+      },
+      "matchedToken": "وَتَنْحِتُونَ",
+      "matchedLemma": "يَنْحِتُ",
+      "matchedRoot": "نحت",
+      "wordPosition": 1
+    },
+    {
+      "ref": {
+        "surah": 37,
+        "ayah": 95
+      },
+      "matchedToken": "تَنْحِتُونَ",
+      "matchedLemma": "يَنْحِتُ",
+      "matchedRoot": "نحت",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 7,
+      "ayah": 74
+    },
+    {
+      "surah": 15,
+      "ayah": 82
+    },
+    {
+      "surah": 26,
+      "ayah": 149
+    },
+    {
+      "surah": 37,
+      "ayah": 95
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

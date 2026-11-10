@@ -1,0 +1,49 @@
+{
+  "entry": {
+    "slug": "رفد",
+    "title": "رفد",
+    "arabicTitle": "رفد",
+    "roots": [
+      "رفد"
+    ],
+    "includedLemmas": [
+      "رِّفْد",
+      "مَرْفُود"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 99
+      },
+      "matchedToken": "ٱلرِّفْدُ",
+      "matchedLemma": "رِّفْد",
+      "matchedRoot": "رفد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 11,
+        "ayah": 99
+      },
+      "matchedToken": "ٱلْمَرْفُودُ",
+      "matchedLemma": "مَرْفُود",
+      "matchedRoot": "رفد",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 11,
+      "ayah": 99
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

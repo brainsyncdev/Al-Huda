@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "طفا",
+    "title": "طفا",
+    "arabicTitle": "طفا",
+    "roots": [
+      "طفا"
+    ],
+    "includedLemmas": [
+      "أَطْفَأَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 9,
+        "ayah": 32
+      },
+      "matchedToken": "يُطْفِـُٔوا۟",
+      "matchedLemma": "أَطْفَأَ",
+      "matchedRoot": "طفا",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 61,
+        "ayah": 8
+      },
+      "matchedToken": "لِيُطْفِـُٔوا۟",
+      "matchedLemma": "أَطْفَأَ",
+      "matchedRoot": "طفا",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 9,
+      "ayah": 32
+    },
+    {
+      "surah": 61,
+      "ayah": 8
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "روض",
+    "title": "روض",
+    "arabicTitle": "روض",
+    "roots": [
+      "روض"
+    ],
+    "includedLemmas": [
+      "رَوْضَات",
+      "رَوْضَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 15
+      },
+      "matchedToken": "رَوْضَةٍۢ",
+      "matchedLemma": "رَوْضَة",
+      "matchedRoot": "روض",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 22
+      },
+      "matchedToken": "رَوْضَاتِ",
+      "matchedLemma": "رَوْضَات",
+      "matchedRoot": "روض",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 30,
+      "ayah": 15
+    },
+    {
+      "surah": 42,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "نضر",
+    "title": "نضر",
+    "arabicTitle": "نضر",
+    "roots": [
+      "نضر"
+    ],
+    "includedLemmas": [
+      "نَضْرَة",
+      "نَّاضِرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 75,
+        "ayah": 22
+      },
+      "matchedToken": "نَّاضِرَةٌ",
+      "matchedLemma": "نَّاضِرَة",
+      "matchedRoot": "نضر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 11
+      },
+      "matchedToken": "نَضْرَةًۭ",
+      "matchedLemma": "نَضْرَة",
+      "matchedRoot": "نضر",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 83,
+        "ayah": 24
+      },
+      "matchedToken": "نَضْرَةَ",
+      "matchedLemma": "نَضْرَة",
+      "matchedRoot": "نضر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 75,
+      "ayah": 22
+    },
+    {
+      "surah": 76,
+      "ayah": 11
+    },
+    {
+      "surah": 83,
+      "ayah": 24
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

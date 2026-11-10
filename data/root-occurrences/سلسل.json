@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "سلسل",
+    "title": "سلسل",
+    "arabicTitle": "سلسل",
+    "roots": [
+      "سلسل"
+    ],
+    "includedLemmas": [
+      "سِلْسِلَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 40,
+        "ayah": 71
+      },
+      "matchedToken": "وَٱلسَّلَـٰسِلُ",
+      "matchedLemma": "سِلْسِلَة",
+      "matchedRoot": "سلسل",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 69,
+        "ayah": 32
+      },
+      "matchedToken": "سِلْسِلَةٍۢ",
+      "matchedLemma": "سِلْسِلَة",
+      "matchedRoot": "سلسل",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 76,
+        "ayah": 4
+      },
+      "matchedToken": "سَلَـٰسِلَا۟",
+      "matchedLemma": "سِلْسِلَة",
+      "matchedRoot": "سلسل",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 40,
+      "ayah": 71
+    },
+    {
+      "surah": 69,
+      "ayah": 32
+    },
+    {
+      "surah": 76,
+      "ayah": 4
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

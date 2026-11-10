@@ -1,0 +1,101 @@
+{
+  "entry": {
+    "slug": "كلب",
+    "title": "كلب",
+    "arabicTitle": "كلب",
+    "roots": [
+      "كلب"
+    ],
+    "includedLemmas": [
+      "كَلْب",
+      "مُكَلِّبِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 4
+      },
+      "matchedToken": "مُكَلِّبِينَ",
+      "matchedLemma": "مُكَلِّبِين",
+      "matchedRoot": "كلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 176
+      },
+      "matchedToken": "ٱلْكَلْبِ",
+      "matchedLemma": "كَلْب",
+      "matchedRoot": "كلب",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 18
+      },
+      "matchedToken": "وَكَلْبُهُم",
+      "matchedLemma": "كَلْب",
+      "matchedRoot": "كلب",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 22
+      },
+      "matchedToken": "كَلْبُهُمْ",
+      "matchedLemma": "كَلْب",
+      "matchedRoot": "كلب",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 22
+      },
+      "matchedToken": "كَلْبُهُمْ",
+      "matchedLemma": "كَلْب",
+      "matchedRoot": "كلب",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 22
+      },
+      "matchedToken": "كَلْبُهُمْ ۚ",
+      "matchedLemma": "كَلْب",
+      "matchedRoot": "كلب",
+      "wordPosition": 14
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 5,
+      "ayah": 4
+    },
+    {
+      "surah": 7,
+      "ayah": 176
+    },
+    {
+      "surah": 18,
+      "ayah": 18
+    },
+    {
+      "surah": 18,
+      "ayah": 22
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

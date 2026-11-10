@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "الت",
+    "title": "الت",
+    "arabicTitle": "الت",
+    "roots": [
+      "الت"
+    ],
+    "includedLemmas": [
+      "أَلَتْ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 52,
+        "ayah": 21
+      },
+      "matchedToken": "أَلَتْنَـٰهُم",
+      "matchedLemma": "أَلَتْ",
+      "matchedRoot": "الت",
+      "wordPosition": 10
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 52,
+      "ayah": 21
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,53 @@
+{
+  "entry": {
+    "slug": "عنت",
+    "title": "عنت",
+    "arabicTitle": "عنت",
+    "roots": [
+      "عنت"
+    ],
+    "includedLemmas": [
+      "أَعْنَتَ",
+      "عَنَت"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 220
+      },
+      "matchedToken": "لَأَعْنَتَكُمْ ۚ",
+      "matchedLemma": "أَعْنَتَ",
+      "matchedRoot": "عنت",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 25
+      },
+      "matchedToken": "ٱلْعَنَتَ",
+      "matchedLemma": "عَنَت",
+      "matchedRoot": "عنت",
+      "wordPosition": 50
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 220
+    },
+    {
+      "surah": 4,
+      "ayah": 25
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,67 @@
+{
+  "entry": {
+    "slug": "زجو",
+    "title": "زجو",
+    "arabicTitle": "زجو",
+    "roots": [
+      "زجو"
+    ],
+    "includedLemmas": [
+      "مُّزْجَىٰة",
+      "يُزْجِى"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 12,
+        "ayah": 88
+      },
+      "matchedToken": "مُّزْجَىٰةٍۢ",
+      "matchedLemma": "مُّزْجَىٰة",
+      "matchedRoot": "زجو",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 66
+      },
+      "matchedToken": "يُزْجِى",
+      "matchedLemma": "يُزْجِى",
+      "matchedRoot": "زجو",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 43
+      },
+      "matchedToken": "يُزْجِى",
+      "matchedLemma": "يُزْجِى",
+      "matchedRoot": "زجو",
+      "wordPosition": 5
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 12,
+      "ayah": 88
+    },
+    {
+      "surah": 17,
+      "ayah": 66
+    },
+    {
+      "surah": 24,
+      "ayah": 43
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

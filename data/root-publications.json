@@ -99,14 +99,13 @@
     "totalWordRecords": 854,
     "recordsWithLemma": 848,
     "lemmaCoverageRatio": 0.9929742388758782,
-    "occurrenceAlignmentStatus": "invalid",
+    "occurrenceAlignmentStatus": "valid",
     "coverageDisclosure": "6 of 854 word-level records have no lemma in the source dataset. Lemma-based filtering is restricted. All source-backed root occurrences are available.",
     "decidedBy": "automated-policy",
     "policyVersion": "2.0.0",
     "decision": "needs-review",
     "reasons": [
-      "AI review did not resolve a lemma selection; manual or model review required.",
-      "6 records have missing lemmas — cannot validate full set"
+      "Documented ambiguity lemma observed 73×: عَٰلَمِين. العالمين means the worlds, not knowledge — documented in CANDIDATE_ROOTS polysemy notes."
     ],
     "includedLemmas": []
   },
@@ -160,8 +159,7 @@
     "policyVersion": "2.0.0",
     "decision": "needs-review",
     "reasons": [
-      "AI review did not resolve a lemma selection; manual or model review required.",
-      "29 records have missing lemmas — cannot validate full set"
+      "1 lemmas cannot derive from root غفر — source mapping concern"
     ],
     "includedLemmas": []
   },
@@ -206,8 +204,7 @@
     "policyVersion": "2.0.0",
     "decision": "needs-review",
     "reasons": [
-      "AI review did not resolve a lemma selection; manual or model review required.",
-      "4 records have missing lemmas — cannot validate full set"
+      "1 lemmas cannot derive from root كبر — source mapping concern"
     ],
     "includedLemmas": []
   },

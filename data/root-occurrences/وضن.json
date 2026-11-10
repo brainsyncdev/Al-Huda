@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "وضن",
+    "title": "وضن",
+    "arabicTitle": "وضن",
+    "roots": [
+      "وضن"
+    ],
+    "includedLemmas": [
+      "مَّوْضُونَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 56,
+        "ayah": 15
+      },
+      "matchedToken": "مَّوْضُونَةٍۢ",
+      "matchedLemma": "مَّوْضُونَة",
+      "matchedRoot": "وضن",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 56,
+      "ayah": 15
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

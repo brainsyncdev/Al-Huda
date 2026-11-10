@@ -1,0 +1,66 @@
+{
+  "entry": {
+    "slug": "صبا",
+    "title": "صبا",
+    "arabicTitle": "صبا",
+    "roots": [
+      "صبا"
+    ],
+    "includedLemmas": [
+      "صَّٰبِـِٔين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 62
+      },
+      "matchedToken": "وَٱلصَّـٰبِـِٔينَ",
+      "matchedLemma": "صَّٰبِـِٔين",
+      "matchedRoot": "صبا",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 69
+      },
+      "matchedToken": "وَٱلصَّـٰبِـُٔونَ",
+      "matchedLemma": "صَّٰبِـِٔين",
+      "matchedRoot": "صبا",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 17
+      },
+      "matchedToken": "وَٱلصَّـٰبِـِٔينَ",
+      "matchedLemma": "صَّٰبِـِٔين",
+      "matchedRoot": "صبا",
+      "wordPosition": 6
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 62
+    },
+    {
+      "surah": 5,
+      "ayah": 69
+    },
+    {
+      "surah": 22,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 3,
+  "totalMatches": 3,
+  "pagination": null
+}

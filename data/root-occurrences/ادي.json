@@ -1,0 +1,105 @@
+{
+  "entry": {
+    "slug": "ادي",
+    "title": "ادي",
+    "arabicTitle": "ادي",
+    "roots": [
+      "ادي"
+    ],
+    "includedLemmas": [
+      "أَدَآء",
+      "يُؤَدِّ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 178
+      },
+      "matchedToken": "وَأَدَآءٌ",
+      "matchedLemma": "أَدَآء",
+      "matchedRoot": "ادي",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 283
+      },
+      "matchedToken": "فَلْيُؤَدِّ",
+      "matchedLemma": "يُؤَدِّ",
+      "matchedRoot": "ادي",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 75
+      },
+      "matchedToken": "يُؤَدِّهِۦٓ",
+      "matchedLemma": "يُؤَدِّ",
+      "matchedRoot": "ادي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 3,
+        "ayah": 75
+      },
+      "matchedToken": "يُؤَدِّهِۦٓ",
+      "matchedLemma": "يُؤَدِّ",
+      "matchedRoot": "ادي",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 58
+      },
+      "matchedToken": "تُؤَدُّوا۟",
+      "matchedLemma": "يُؤَدِّ",
+      "matchedRoot": "ادي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 44,
+        "ayah": 18
+      },
+      "matchedToken": "أَدُّوٓا۟",
+      "matchedLemma": "يُؤَدِّ",
+      "matchedRoot": "ادي",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 178
+    },
+    {
+      "surah": 2,
+      "ayah": 283
+    },
+    {
+      "surah": 3,
+      "ayah": 75
+    },
+    {
+      "surah": 4,
+      "ayah": 58
+    },
+    {
+      "surah": 44,
+      "ayah": 18
+    }
+  ],
+  "totalOccurrences": 6,
+  "totalMatches": 6,
+  "pagination": null
+}

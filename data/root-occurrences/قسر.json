@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "قسر",
+    "title": "قسر",
+    "arabicTitle": "قسر",
+    "roots": [
+      "قسر"
+    ],
+    "includedLemmas": [
+      "قَسْوَرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 74,
+        "ayah": 51
+      },
+      "matchedToken": "قَسْوَرَةٍۭ",
+      "matchedLemma": "قَسْوَرَة",
+      "matchedRoot": "قسر",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 74,
+      "ayah": 51
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

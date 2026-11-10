@@ -1,0 +1,81 @@
+{
+  "entry": {
+    "slug": "غمر",
+    "title": "غمر",
+    "arabicTitle": "غمر",
+    "roots": [
+      "غمر"
+    ],
+    "includedLemmas": [
+      "غَمَرَٰت",
+      "غَمْرَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 2 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 93
+      },
+      "matchedToken": "غَمَرَٰتِ",
+      "matchedLemma": "غَمَرَٰت",
+      "matchedRoot": "غمر",
+      "wordPosition": 28
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 54
+      },
+      "matchedToken": "غَمْرَتِهِمْ",
+      "matchedLemma": "غَمْرَة",
+      "matchedRoot": "غمر",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 63
+      },
+      "matchedToken": "غَمْرَةٍۢ",
+      "matchedLemma": "غَمْرَة",
+      "matchedRoot": "غمر",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 51,
+        "ayah": 11
+      },
+      "matchedToken": "غَمْرَةٍۢ",
+      "matchedLemma": "غَمْرَة",
+      "matchedRoot": "غمر",
+      "wordPosition": 4
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 93
+    },
+    {
+      "surah": 23,
+      "ayah": 54
+    },
+    {
+      "surah": 23,
+      "ayah": 63
+    },
+    {
+      "surah": 51,
+      "ayah": 11
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

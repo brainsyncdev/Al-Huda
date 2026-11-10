@@ -1,0 +1,556 @@
+{
+  "entry": {
+    "slug": "هوي",
+    "title": "هوي",
+    "arabicTitle": "هوي",
+    "roots": [
+      "هوي"
+    ],
+    "includedLemmas": [
+      "أَهْوَآء",
+      "اسْتَهْوَتْ",
+      "هَاوِيَة",
+      "هَوَآء",
+      "هَوَىٰ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 5 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 87
+      },
+      "matchedToken": "تَهْوَىٰٓ",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 120
+      },
+      "matchedToken": "أَهْوَآءَهُم",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 18
+    },
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 145
+      },
+      "matchedToken": "أَهْوَآءَهُم",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 22
+    },
+    {
+      "ref": {
+        "surah": 4,
+        "ayah": 135
+      },
+      "matchedToken": "ٱلْهَوَىٰٓ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 25
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 48
+      },
+      "matchedToken": "أَهْوَآءَهُمْ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 49
+      },
+      "matchedToken": "أَهْوَآءَهُمْ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 70
+      },
+      "matchedToken": "تَهْوَىٰٓ",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 5,
+        "ayah": 77
+      },
+      "matchedToken": "أَهْوَآءَ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 12
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 56
+      },
+      "matchedToken": "أَهْوَآءَكُمْ ۙ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 14
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 71
+      },
+      "matchedToken": "ٱسْتَهْوَتْهُ",
+      "matchedLemma": "اسْتَهْوَتْ",
+      "matchedRoot": "هوي",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 119
+      },
+      "matchedToken": "بِأَهْوَآئِهِم",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 23
+    },
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 150
+      },
+      "matchedToken": "أَهْوَآءَ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 7,
+        "ayah": 176
+      },
+      "matchedToken": "هَوَىٰهُ ۚ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 13,
+        "ayah": 37
+      },
+      "matchedToken": "أَهْوَآءَهُم",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 37
+      },
+      "matchedToken": "تَهْوِىٓ",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 20
+    },
+    {
+      "ref": {
+        "surah": 14,
+        "ayah": 43
+      },
+      "matchedToken": "هَوَآءٌۭ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 28
+      },
+      "matchedToken": "هَوَىٰهُ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 27
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 16
+      },
+      "matchedToken": "هَوَىٰهُ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 20,
+        "ayah": 81
+      },
+      "matchedToken": "هَوَىٰ",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 17
+    },
+    {
+      "ref": {
+        "surah": 22,
+        "ayah": 31
+      },
+      "matchedToken": "تَهْوِى",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 16
+    },
+    {
+      "ref": {
+        "surah": 23,
+        "ayah": 71
+      },
+      "matchedToken": "أَهْوَآءَهُمْ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 25,
+        "ayah": 43
+      },
+      "matchedToken": "هَوَىٰهُ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 50
+      },
+      "matchedToken": "أَهْوَآءَهُمْ ۚ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 28,
+        "ayah": 50
+      },
+      "matchedToken": "هَوَىٰهُ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 30,
+        "ayah": 29
+      },
+      "matchedToken": "أَهْوَآءَهُم",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 38,
+        "ayah": 26
+      },
+      "matchedToken": "ٱلْهَوَىٰ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 42,
+        "ayah": 15
+      },
+      "matchedToken": "أَهْوَآءَهُمْ ۖ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 18
+      },
+      "matchedToken": "أَهْوَآءَ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 10
+    },
+    {
+      "ref": {
+        "surah": 45,
+        "ayah": 23
+      },
+      "matchedToken": "هَوَىٰهُ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 5
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 14
+      },
+      "matchedToken": "أَهْوَآءَهُم",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 13
+    },
+    {
+      "ref": {
+        "surah": 47,
+        "ayah": 16
+      },
+      "matchedToken": "أَهْوَآءَهُمْ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 24
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 1
+      },
+      "matchedToken": "هَوَىٰ",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 3
+      },
+      "matchedToken": "ٱلْهَوَىٰٓ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 4
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 23
+      },
+      "matchedToken": "تَهْوَى",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 19
+    },
+    {
+      "ref": {
+        "surah": 53,
+        "ayah": 53
+      },
+      "matchedToken": "أَهْوَىٰ",
+      "matchedLemma": "هَوَىٰ",
+      "matchedRoot": "هوي",
+      "wordPosition": 2
+    },
+    {
+      "ref": {
+        "surah": 54,
+        "ayah": 3
+      },
+      "matchedToken": "أَهْوَآءَهُمْ ۚ",
+      "matchedLemma": "أَهْوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 3
+    },
+    {
+      "ref": {
+        "surah": 79,
+        "ayah": 40
+      },
+      "matchedToken": "ٱلْهَوَىٰ",
+      "matchedLemma": "هَوَآء",
+      "matchedRoot": "هوي",
+      "wordPosition": 9
+    },
+    {
+      "ref": {
+        "surah": 101,
+        "ayah": 9
+      },
+      "matchedToken": "هَاوِيَةٌۭ",
+      "matchedLemma": "هَاوِيَة",
+      "matchedRoot": "هوي",
+      "wordPosition": 2
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 87
+    },
+    {
+      "surah": 2,
+      "ayah": 120
+    },
+    {
+      "surah": 2,
+      "ayah": 145
+    },
+    {
+      "surah": 4,
+      "ayah": 135
+    },
+    {
+      "surah": 5,
+      "ayah": 48
+    },
+    {
+      "surah": 5,
+      "ayah": 49
+    },
+    {
+      "surah": 5,
+      "ayah": 70
+    },
+    {
+      "surah": 5,
+      "ayah": 77
+    },
+    {
+      "surah": 6,
+      "ayah": 56
+    },
+    {
+      "surah": 6,
+      "ayah": 71
+    },
+    {
+      "surah": 6,
+      "ayah": 119
+    },
+    {
+      "surah": 6,
+      "ayah": 150
+    },
+    {
+      "surah": 7,
+      "ayah": 176
+    },
+    {
+      "surah": 13,
+      "ayah": 37
+    },
+    {
+      "surah": 14,
+      "ayah": 37
+    },
+    {
+      "surah": 14,
+      "ayah": 43
+    },
+    {
+      "surah": 18,
+      "ayah": 28
+    },
+    {
+      "surah": 20,
+      "ayah": 16
+    },
+    {
+      "surah": 20,
+      "ayah": 81
+    },
+    {
+      "surah": 22,
+      "ayah": 31
+    },
+    {
+      "surah": 23,
+      "ayah": 71
+    },
+    {
+      "surah": 25,
+      "ayah": 43
+    },
+    {
+      "surah": 28,
+      "ayah": 50
+    },
+    {
+      "surah": 30,
+      "ayah": 29
+    },
+    {
+      "surah": 38,
+      "ayah": 26
+    },
+    {
+      "surah": 42,
+      "ayah": 15
+    },
+    {
+      "surah": 45,
+      "ayah": 18
+    },
+    {
+      "surah": 45,
+      "ayah": 23
+    },
+    {
+      "surah": 47,
+      "ayah": 14
+    },
+    {
+      "surah": 47,
+      "ayah": 16
+    },
+    {
+      "surah": 53,
+      "ayah": 1
+    },
+    {
+      "surah": 53,
+      "ayah": 3
+    },
+    {
+      "surah": 53,
+      "ayah": 23
+    },
+    {
+      "surah": 53,
+      "ayah": 53
+    },
+    {
+      "surah": 54,
+      "ayah": 3
+    },
+    {
+      "surah": 79,
+      "ayah": 40
+    },
+    {
+      "surah": 101,
+      "ayah": 9
+    }
+  ],
+  "totalOccurrences": 38,
+  "totalMatches": 38,
+  "pagination": null
+}

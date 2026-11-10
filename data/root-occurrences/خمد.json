@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "خمد",
+    "title": "خمد",
+    "arabicTitle": "خمد",
+    "roots": [
+      "خمد"
+    ],
+    "includedLemmas": [
+      "خَٰمِدِين"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 21,
+        "ayah": 15
+      },
+      "matchedToken": "خَـٰمِدِينَ",
+      "matchedLemma": "خَٰمِدِين",
+      "matchedRoot": "خمد",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 36,
+        "ayah": 29
+      },
+      "matchedToken": "خَـٰمِدُونَ",
+      "matchedLemma": "خَٰمِدِين",
+      "matchedRoot": "خمد",
+      "wordPosition": 8
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 21,
+      "ayah": 15
+    },
+    {
+      "surah": 36,
+      "ayah": 29
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

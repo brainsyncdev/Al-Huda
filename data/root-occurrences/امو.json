@@ -1,0 +1,52 @@
+{
+  "entry": {
+    "slug": "امو",
+    "title": "امو",
+    "arabicTitle": "امو",
+    "roots": [
+      "امو"
+    ],
+    "includedLemmas": [
+      "أَمَة"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 2,
+        "ayah": 221
+      },
+      "matchedToken": "وَلَأَمَةٌۭ",
+      "matchedLemma": "أَمَة",
+      "matchedRoot": "امو",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 24,
+        "ayah": 32
+      },
+      "matchedToken": "وَإِمَآئِكُمْ ۚ",
+      "matchedLemma": "أَمَة",
+      "matchedRoot": "امو",
+      "wordPosition": 7
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 2,
+      "ayah": 221
+    },
+    {
+      "surah": 24,
+      "ayah": 32
+    }
+  ],
+  "totalOccurrences": 2,
+  "totalMatches": 2,
+  "pagination": null
+}

@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "هزل",
+    "title": "هزل",
+    "arabicTitle": "هزل",
+    "roots": [
+      "هزل"
+    ],
+    "includedLemmas": [
+      "هَزْل"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 86,
+        "ayah": 14
+      },
+      "matchedToken": "بِٱلْهَزْلِ",
+      "matchedLemma": "هَزْل",
+      "matchedRoot": "هزل",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 86,
+      "ayah": 14
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}

@@ -1,0 +1,76 @@
+{
+  "entry": {
+    "slug": "خرق",
+    "title": "خرق",
+    "arabicTitle": "خرق",
+    "roots": [
+      "خرق"
+    ],
+    "includedLemmas": [
+      "خَرَقَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 6,
+        "ayah": 100
+      },
+      "matchedToken": "وَخَرَقُوا۟",
+      "matchedLemma": "خَرَقَ",
+      "matchedRoot": "خرق",
+      "wordPosition": 6
+    },
+    {
+      "ref": {
+        "surah": 17,
+        "ayah": 37
+      },
+      "matchedToken": "تَخْرِقَ",
+      "matchedLemma": "خَرَقَ",
+      "matchedRoot": "خرق",
+      "wordPosition": 8
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 71
+      },
+      "matchedToken": "خَرَقَهَا ۖ",
+      "matchedLemma": "خَرَقَ",
+      "matchedRoot": "خرق",
+      "wordPosition": 7
+    },
+    {
+      "ref": {
+        "surah": 18,
+        "ayah": 71
+      },
+      "matchedToken": "أَخَرَقْتَهَا",
+      "matchedLemma": "خَرَقَ",
+      "matchedRoot": "خرق",
+      "wordPosition": 9
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 6,
+      "ayah": 100
+    },
+    {
+      "surah": 17,
+      "ayah": 37
+    },
+    {
+      "surah": 18,
+      "ayah": 71
+    }
+  ],
+  "totalOccurrences": 4,
+  "totalMatches": 4,
+  "pagination": null
+}

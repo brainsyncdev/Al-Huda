@@ -1,0 +1,38 @@
+{
+  "entry": {
+    "slug": "عسعس",
+    "title": "عسعس",
+    "arabicTitle": "عسعس",
+    "roots": [
+      "عسعس"
+    ],
+    "includedLemmas": [
+      "عَسْعَسَ"
+    ],
+    "reviewState": "auto-accepted",
+    "assertedBy": "automated-morphology-review",
+    "assertedAt": "2026-11-10",
+    "notes": "Activated via Sprint 48 automated morphology review. 1 lemmas auto-accepted by deterministic validation."
+  },
+  "occurrences": [
+    {
+      "ref": {
+        "surah": 81,
+        "ayah": 17
+      },
+      "matchedToken": "عَسْعَسَ",
+      "matchedLemma": "عَسْعَسَ",
+      "matchedRoot": "عسعس",
+      "wordPosition": 3
+    }
+  ],
+  "uniqueAyahs": [
+    {
+      "surah": 81,
+      "ayah": 17
+    }
+  ],
+  "totalOccurrences": 1,
+  "totalMatches": 1,
+  "pagination": null
+}
