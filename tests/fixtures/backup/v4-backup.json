@@ -1,0 +1,124 @@
+{
+  "format": "al-huda-backup",
+  "version": 4,
+  "app": "Al-Huda",
+  "exportedAt": "2024-07-20T11:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 2,
+        "ayah": 255,
+        "savedAt": "2024-07-10T08:15:00.000Z"
+      },
+      {
+        "surah": 55,
+        "ayah": 13,
+        "savedAt": "2024-07-15T14:20:00.000Z"
+      },
+      {
+        "surah": 67,
+        "ayah": 1,
+        "savedAt": "2024-07-18T09:30:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-v4-1",
+        "surah": 2,
+        "ayah": 255,
+        "text": "Ayat al-Kursi — the Throne Verse. A comprehensive declaration of Allah's sovereignty.",
+        "tags": ["sovereignty", "mercy"],
+        "createdAt": "2024-07-10T08:20:00.000Z",
+        "updatedAt": "2024-07-12T10:00:00.000Z"
+      },
+      {
+        "id": "note-v4-2",
+        "surah": 112,
+        "ayah": 1,
+        "text": "Surah Al-Ikhlas — the purity of tawheed in four verses.",
+        "tags": ["tawheed"],
+        "createdAt": "2024-07-14T11:00:00.000Z",
+        "updatedAt": "2024-07-14T11:00:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 2,
+        "ayah": 286,
+        "at": "2024-07-19T16:45:00.000Z"
+      },
+      {
+        "surah": 36,
+        "ayah": 20,
+        "at": "2024-07-17T07:30:00.000Z"
+      }
+    ],
+    "collections": [],
+    "collectionAyat": []
+  },
+  "revision": {
+    "items": {
+      "2:255": {
+        "reference": "2:255",
+        "surah": 2,
+        "ayah": 255,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 3,
+        "dueDate": "2024-07-25",
+        "addedAt": "2024-07-10T08:20:00.000Z",
+        "lastReviewedAt": "2024-07-20T10:00:00.000Z",
+        "reviewCount": 5
+      },
+      "112:1": {
+        "reference": "112:1",
+        "surah": 112,
+        "ayah": 1,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 1,
+        "dueDate": "2024-07-22",
+        "addedAt": "2024-07-14T11:05:00.000Z",
+        "lastReviewedAt": "2024-07-18T09:00:00.000Z",
+        "reviewCount": 2
+      }
+    },
+    "events": [
+      {
+        "id": "evt-v4-1",
+        "reference": "2:255",
+        "owner": "local",
+        "kind": "recall",
+        "rating": "easy",
+        "previousDueDate": "2024-07-20",
+        "newDueDate": "2024-07-25",
+        "stepBefore": 2,
+        "stepAfter": 3,
+        "at": "2024-07-20T10:00:00.000Z",
+        "algorithmVersion": "1"
+      }
+    ],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "lg",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": true,
+    "translationId": "en.sahih"
+  },
+  "paths": {
+    "progress": {
+      "first-steps": {
+        "pathSlug": "first-steps",
+        "completedSteps": [1, 2, 3, 4, 5],
+        "startedAt": "2024-07-01T10:00:00.000Z",
+        "lastActivityAt": "2024-07-19T16:45:00.000Z"
+      }
+    },
+    "selectedGoal": "regular-reader",
+    "onboardingCompleted": true
+  }
+}

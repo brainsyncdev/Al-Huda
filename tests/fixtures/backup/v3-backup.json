@@ -1,0 +1,92 @@
+{
+  "format": "al-huda-backup",
+  "version": 3,
+  "app": "Al-Huda",
+  "exportedAt": "2024-06-15T10:30:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 2,
+        "ayah": 255,
+        "savedAt": "2024-06-10T08:15:00.000Z"
+      },
+      {
+        "surah": 36,
+        "ayah": 1,
+        "savedAt": "2024-06-12T14:20:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-1",
+        "surah": 1,
+        "ayah": 1,
+        "text": "The opening verse of the Quran, establishing the theme of praise.",
+        "tags": ["opening", "praise"],
+        "createdAt": "2024-06-08T09:00:00.000Z",
+        "updatedAt": "2024-06-08T09:00:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 1,
+        "ayah": 7,
+        "at": "2024-06-14T16:45:00.000Z"
+      }
+    ],
+    "collections": [],
+    "collectionAyat": []
+  },
+  "revision": {
+    "items": {
+      "2:255": {
+        "reference": "2:255",
+        "surah": 2,
+        "ayah": 255,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 2,
+        "dueDate": "2024-06-20",
+        "addedAt": "2024-06-10T08:20:00.000Z",
+        "lastReviewedAt": "2024-06-15T10:00:00.000Z",
+        "reviewCount": 3
+      }
+    },
+    "events": [
+      {
+        "id": "evt-1",
+        "reference": "2:255",
+        "owner": "local",
+        "kind": "recall",
+        "rating": "easy",
+        "previousDueDate": "2024-06-15",
+        "newDueDate": "2024-06-20",
+        "stepBefore": 1,
+        "stepAfter": 2,
+        "at": "2024-06-15T10:00:00.000Z",
+        "algorithmVersion": "1"
+      }
+    ],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "lg",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": false
+  },
+  "paths": {
+    "progress": {
+      "first-steps": {
+        "pathSlug": "first-steps",
+        "completedSteps": [1, 2, 3],
+        "startedAt": "2024-06-01T10:00:00.000Z",
+        "lastActivityAt": "2024-06-14T16:45:00.000Z"
+      }
+    },
+    "selectedGoal": "regular-reader",
+    "onboardingCompleted": true
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "format": "al-huda-backup",
+  "version": 6,
+  "app": "Al-Huda",
+  "exportedAt": "2024-09-30T13:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 18,
+        "ayah": 10,
+        "savedAt": "2024-09-10T08:15:00.000Z"
+      },
+      {
+        "surah": 18,
+        "ayah": 28,
+        "savedAt": "2024-09-12T14:20:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-v6-1",
+        "surah": 18,
+        "ayah": 10,
+        "text": "The beginning of the story of the People of the Cave — young men who sought refuge for their faith.",
+        "tags": ["stories", "faith"],
+        "createdAt": "2024-09-10T08:20:00.000Z",
+        "updatedAt": "2024-09-10T08:20:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 18,
+        "ayah": 50,
+        "at": "2024-09-29T16:45:00.000Z"
+      }
+    ],
+    "collections": [],
+    "collectionAyat": []
+  },
+  "revision": {
+    "items": {},
+    "events": [],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "lg",
+    "lineHeight": "loose",
+    "showTranslation": true,
+    "showTransliteration": false,
+    "translationId": "en.sahih"
+  },
+  "paths": {
+    "progress": {},
+    "selectedGoal": "explorer",
+    "onboardingCompleted": true
+  },
+  "quiz": {
+    "attempts": [],
+    "currentAttemptId": null
+  },
+  "readingPlans": {
+    "targets": [
+      {
+        "id": "plan-v6-1",
+        "label": "Surah Al-Kahf weekly",
+        "start": { "surah": 18, "ayah": 1 },
+        "end": { "surah": 18, "ayah": 110 },
+        "goalPerSession": 10,
+        "createdAt": "2024-09-01T10:00:00.000Z",
+        "lastActivityAt": "2024-09-29T16:45:00.000Z",
+        "currentPosition": { "surah": 18, "ayah": 51 },
+        "paused": false
+      },
+      {
+        "id": "plan-v6-2",
+        "label": "Juz Amma review",
+        "start": { "surah": 78, "ayah": 1 },
+        "end": { "surah": 114, "ayah": 6 },
+        "goalPerSession": 5,
+        "createdAt": "2024-09-05T09:00:00.000Z",
+        "lastActivityAt": "2024-09-28T07:30:00.000Z",
+        "currentPosition": { "surah": 85, "ayah": 1 },
+        "paused": false
+      }
+    ]
+  }
+}

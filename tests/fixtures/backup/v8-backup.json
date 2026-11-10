@@ -1,0 +1,96 @@
+{
+  "format": "al-huda-backup",
+  "version": 8,
+  "app": "Al-Huda",
+  "exportedAt": "2024-11-10T15:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 2,
+        "ayah": 286,
+        "savedAt": "2024-11-01T08:15:00.000Z"
+      },
+      {
+        "surah": 4,
+        "ayah": 135,
+        "savedAt": "2024-11-05T14:20:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-v8-1",
+        "surah": 4,
+        "ayah": 135,
+        "text": "The command to stand firmly for justice, even against oneself or one's parents.",
+        "tags": ["justice", "ethics"],
+        "createdAt": "2024-11-05T14:25:00.000Z",
+        "updatedAt": "2024-11-05T14:25:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 4,
+        "ayah": 176,
+        "at": "2024-11-09T16:45:00.000Z"
+      }
+    ],
+    "collections": [
+      {
+        "id": "coll-v8-1",
+        "name": "Ethical Commands",
+        "createdAt": "2024-11-01T10:00:00.000Z",
+        "updatedAt": "2024-11-05T14:30:00.000Z"
+      }
+    ],
+    "collectionAyat": [
+      {
+        "id": "ca-v8-1",
+        "collectionId": "coll-v8-1",
+        "surah": 4,
+        "ayah": 135,
+        "createdAt": "2024-11-05T14:30:00.000Z"
+      }
+    ]
+  },
+  "revision": {
+    "items": {},
+    "events": [],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "md",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": false,
+    "translationId": "en.sahih",
+    "showAudio": false,
+    "reciterId": "ar.alafasy",
+    "parallelMode": false,
+    "parallelTranslationIds": []
+  },
+  "paths": {
+    "progress": {},
+    "selectedGoal": "student",
+    "onboardingCompleted": true
+  },
+  "quiz": {
+    "attempts": [],
+    "currentAttemptId": null
+  },
+  "readingPlans": {
+    "targets": []
+  },
+  "journeys": {
+    "progress": {
+      "understanding-tawheed": {
+        "journeySlug": "understanding-tawheed",
+        "completedStages": [1, 2, 3],
+        "startedAt": "2024-11-01T10:00:00.000Z",
+        "lastActivityAt": "2024-11-09T16:45:00.000Z",
+        "journeyVersion": 1
+      }
+    }
+  }
+}

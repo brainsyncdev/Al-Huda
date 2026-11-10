@@ -1,0 +1,123 @@
+{
+  "format": "al-huda-backup",
+  "version": 7,
+  "app": "Al-Huda",
+  "exportedAt": "2024-10-15T14:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 55,
+        "ayah": 1,
+        "savedAt": "2024-10-01T08:15:00.000Z"
+      },
+      {
+        "surah": 55,
+        "ayah": 13,
+        "savedAt": "2024-10-05T14:20:00.000Z"
+      },
+      {
+        "surah": 56,
+        "ayah": 1,
+        "savedAt": "2024-10-10T09:30:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-v7-1",
+        "surah": 55,
+        "ayah": 13,
+        "text": "The recurring refrain: 'So which of the favors of your Lord will you deny?' — a meditation on gratitude.",
+        "tags": ["gratitude", "mercy"],
+        "createdAt": "2024-10-05T14:25:00.000Z",
+        "updatedAt": "2024-10-05T14:25:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 55,
+        "ayah": 78,
+        "at": "2024-10-14T16:45:00.000Z"
+      }
+    ],
+    "collections": [
+      {
+        "id": "coll-v7-1",
+        "name": "Verses of Mercy",
+        "createdAt": "2024-10-01T10:00:00.000Z",
+        "updatedAt": "2024-10-10T09:30:00.000Z"
+      },
+      {
+        "id": "coll-v7-2",
+        "name": "Stories of the Prophets",
+        "createdAt": "2024-10-02T11:00:00.000Z",
+        "updatedAt": "2024-10-02T11:00:00.000Z"
+      }
+    ],
+    "collectionAyat": [
+      {
+        "id": "ca-v7-1",
+        "collectionId": "coll-v7-1",
+        "surah": 55,
+        "ayah": 13,
+        "createdAt": "2024-10-05T14:30:00.000Z"
+      },
+      {
+        "id": "ca-v7-2",
+        "collectionId": "coll-v7-1",
+        "surah": 2,
+        "ayah": 163,
+        "createdAt": "2024-10-06T08:00:00.000Z"
+      },
+      {
+        "id": "ca-v7-3",
+        "collectionId": "coll-v7-2",
+        "surah": 18,
+        "ayah": 9,
+        "createdAt": "2024-10-03T09:00:00.000Z"
+      }
+    ]
+  },
+  "revision": {
+    "items": {
+      "55:13": {
+        "reference": "55:13",
+        "surah": 55,
+        "ayah": 13,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 2,
+        "dueDate": "2024-10-20",
+        "addedAt": "2024-10-05T14:30:00.000Z",
+        "lastReviewedAt": "2024-10-15T10:00:00.000Z",
+        "reviewCount": 3
+      }
+    },
+    "events": [],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "lg",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": false,
+    "translationId": "en.sahih",
+    "showAudio": true,
+    "reciterId": "ar.alafasy",
+    "parallelMode": false,
+    "parallelTranslationIds": []
+  },
+  "paths": {
+    "progress": {},
+    "selectedGoal": "regular-reader",
+    "onboardingCompleted": true
+  },
+  "quiz": {
+    "attempts": [],
+    "currentAttemptId": null
+  },
+  "readingPlans": {
+    "targets": []
+  }
+}

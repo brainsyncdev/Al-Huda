@@ -1,0 +1,245 @@
+{
+  "format": "al-huda-backup",
+  "version": 9,
+  "app": "Al-Huda",
+  "exportedAt": "2026-11-10T16:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 2,
+        "ayah": 255,
+        "savedAt": "2026-11-01T08:15:00.000Z"
+      },
+      {
+        "surah": 36,
+        "ayah": 1,
+        "savedAt": "2026-11-05T14:20:00.000Z"
+      },
+      {
+        "surah": 67,
+        "ayah": 1,
+        "savedAt": "2026-11-08T09:30:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-v9-1",
+        "surah": 2,
+        "ayah": 255,
+        "text": "Ayat al-Kursi — the greatest verse of the Quran, declaring Allah's absolute sovereignty.",
+        "tags": ["sovereignty", "mercy"],
+        "createdAt": "2026-11-01T08:20:00.000Z",
+        "updatedAt": "2026-11-02T10:00:00.000Z"
+      },
+      {
+        "id": "note-v9-2",
+        "surah": 36,
+        "ayah": 1,
+        "text": "Ya-Sin — the opening letters whose meaning is known only to Allah.",
+        "tags": ["opening", "mystery"],
+        "createdAt": "2026-11-05T14:25:00.000Z",
+        "updatedAt": "2026-11-05T14:25:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 2,
+        "ayah": 286,
+        "at": "2026-11-09T16:45:00.000Z"
+      },
+      {
+        "surah": 36,
+        "ayah": 83,
+        "at": "2026-11-07T07:30:00.000Z"
+      }
+    ],
+    "collections": [
+      {
+        "id": "coll-v9-1",
+        "name": "Verses of Light",
+        "createdAt": "2026-11-01T10:00:00.000Z",
+        "updatedAt": "2026-11-08T09:30:00.000Z"
+      },
+      {
+        "id": "coll-v9-2",
+        "name": "Guidance for Life",
+        "createdAt": "2026-11-02T11:00:00.000Z",
+        "updatedAt": "2026-11-02T11:00:00.000Z"
+      }
+    ],
+    "collectionAyat": [
+      {
+        "id": "ca-v9-1",
+        "collectionId": "coll-v9-1",
+        "surah": 24,
+        "ayah": 35,
+        "createdAt": "2026-11-03T14:30:00.000Z"
+      },
+      {
+        "id": "ca-v9-2",
+        "collectionId": "coll-v9-2",
+        "surah": 2,
+        "ayah": 2,
+        "createdAt": "2026-11-04T08:00:00.000Z"
+      }
+    ]
+  },
+  "revision": {
+    "items": {
+      "2:255": {
+        "reference": "2:255",
+        "surah": 2,
+        "ayah": 255,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 5,
+        "dueDate": "2026-11-20",
+        "addedAt": "2026-11-01T08:20:00.000Z",
+        "lastReviewedAt": "2026-11-10T10:00:00.000Z",
+        "reviewCount": 10
+      },
+      "36:1": {
+        "reference": "36:1",
+        "surah": 36,
+        "ayah": 1,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 2,
+        "dueDate": "2026-11-15",
+        "addedAt": "2026-11-05T14:30:00.000Z",
+        "lastReviewedAt": "2026-11-09T09:00:00.000Z",
+        "reviewCount": 4
+      }
+    },
+    "events": [
+      {
+        "id": "evt-v9-1",
+        "reference": "2:255",
+        "owner": "local",
+        "kind": "recall",
+        "rating": "easy",
+        "previousDueDate": "2026-11-10",
+        "newDueDate": "2026-11-20",
+        "stepBefore": 4,
+        "stepAfter": 5,
+        "at": "2026-11-10T10:00:00.000Z",
+        "algorithmVersion": "1"
+      }
+    ],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "lg",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": true,
+    "translationId": "en.sahih",
+    "showAudio": true,
+    "reciterId": "ar.alafasy",
+    "parallelMode": true,
+    "parallelTranslationIds": ["en.pickthall"]
+  },
+  "paths": {
+    "progress": {
+      "first-steps": {
+        "pathSlug": "first-steps",
+        "completedSteps": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        "startedAt": "2026-10-01T10:00:00.000Z",
+        "lastActivityAt": "2026-11-09T16:45:00.000Z"
+      }
+    },
+    "selectedGoal": "student",
+    "onboardingCompleted": true
+  },
+  "quiz": {
+    "attempts": [
+      {
+        "id": "attempt-v9-1",
+        "startedAt": "2026-11-08T10:00:00.000Z",
+        "completedAt": "2026-11-08T10:15:00.000Z",
+        "questions": [
+          {
+            "id": "q-v9-1",
+            "kind": "surah-identification",
+            "prompt": "Which surah does this ayah belong to?",
+            "refs": [{ "surah": 2, "ayah": 255 }],
+            "data": {
+              "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+              "options": [
+                { "surahId": 2, "surahName": "Al-Baqarah" },
+                { "surahId": 3, "surahName": "Ali 'Imran" }
+              ],
+              "correctIndex": 0
+            }
+          }
+        ],
+        "responses": {
+          "q-v9-1": { "kind": "surah-identification", "selectedIndex": 0 }
+        },
+        "config": {
+          "source": { "kind": "default" },
+          "enabledKinds": ["surah-identification"],
+          "requestedCount": 1
+        }
+      }
+    ],
+    "currentAttemptId": null
+  },
+  "readingPlans": {
+    "targets": [
+      {
+        "id": "plan-v9-1",
+        "label": "Complete Quran in 6 months",
+        "start": { "surah": 1, "ayah": 1 },
+        "end": { "surah": 114, "ayah": 6 },
+        "goalPerSession": 20,
+        "createdAt": "2026-10-01T10:00:00.000Z",
+        "lastActivityAt": "2026-11-09T16:45:00.000Z",
+        "currentPosition": { "surah": 15, "ayah": 50 },
+        "paused": false
+      }
+    ]
+  },
+  "journeys": {
+    "progress": {
+      "understanding-tawheed": {
+        "journeySlug": "understanding-tawheed",
+        "completedStages": [1, 2, 3, 4, 5],
+        "startedAt": "2026-10-15T10:00:00.000Z",
+        "lastActivityAt": "2026-11-09T16:45:00.000Z",
+        "journeyVersion": 1
+      }
+    }
+  },
+  "reflections": {
+    "version": 1,
+    "reflections": [
+      {
+        "id": "ref-v9-1",
+        "targetType": "ayah",
+        "targetRef": "2:255",
+        "content": "This verse reminds me of Allah's complete knowledge and power. Every time I read it, I feel a deeper sense of peace knowing that nothing is hidden from Him.",
+        "createdAt": "2026-11-05T10:00:00.000Z",
+        "updatedAt": "2026-11-05T10:00:00.000Z"
+      },
+      {
+        "id": "ref-v9-2",
+        "targetType": "topic",
+        "targetRef": "mercy",
+        "content": "The Quran repeatedly emphasizes mercy — it is not just an attribute but a way of life we are called to embody.",
+        "createdAt": "2026-11-06T14:30:00.000Z",
+        "updatedAt": "2026-11-07T09:00:00.000Z"
+      },
+      {
+        "id": "ref-v9-3",
+        "targetType": "journey-stage",
+        "targetRef": "understanding-tawheed:3",
+        "content": "Stage 3 helped me understand that tawheed is not just theological — it shapes how I interact with the world daily.",
+        "createdAt": "2026-11-08T11:00:00.000Z",
+        "updatedAt": "2026-11-08T11:00:00.000Z"
+      }
+    ]
+  }
+}

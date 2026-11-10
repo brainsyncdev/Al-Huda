@@ -1,0 +1,106 @@
+{
+  "format": "al-huda-backup",
+  "version": 5,
+  "app": "Al-Huda",
+  "exportedAt": "2024-08-25T12:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      {
+        "surah": 2,
+        "ayah": 255,
+        "savedAt": "2024-08-10T08:15:00.000Z"
+      },
+      {
+        "surah": 3,
+        "ayah": 190,
+        "savedAt": "2024-08-15T14:20:00.000Z"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-v5-1",
+        "surah": 3,
+        "ayah": 190,
+        "text": "Verses on the creation of the heavens and earth — signs for people of understanding.",
+        "tags": ["signs", "creation"],
+        "createdAt": "2024-08-15T14:25:00.000Z",
+        "updatedAt": "2024-08-15T14:25:00.000Z"
+      }
+    ],
+    "progress": [
+      {
+        "surah": 3,
+        "ayah": 200,
+        "at": "2024-08-24T16:45:00.000Z"
+      }
+    ],
+    "collections": [],
+    "collectionAyat": []
+  },
+  "revision": {
+    "items": {
+      "2:255": {
+        "reference": "2:255",
+        "surah": 2,
+        "ayah": 255,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 4,
+        "dueDate": "2024-08-30",
+        "addedAt": "2024-08-01T08:20:00.000Z",
+        "lastReviewedAt": "2024-08-25T10:00:00.000Z",
+        "reviewCount": 7
+      }
+    },
+    "events": [],
+    "settings": {
+      "ladderId": "default"
+    }
+  },
+  "preferences": {
+    "arabicSize": "md",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": false,
+    "translationId": "en.sahih"
+  },
+  "paths": {
+    "progress": {},
+    "selectedGoal": "student",
+    "onboardingCompleted": true
+  },
+  "quiz": {
+    "attempts": [
+      {
+        "id": "attempt-v5-1",
+        "startedAt": "2024-08-20T10:00:00.000Z",
+        "completedAt": "2024-08-20T10:15:00.000Z",
+        "questions": [
+          {
+            "id": "q-v5-1",
+            "kind": "surah-identification",
+            "prompt": "Which surah does this ayah belong to?",
+            "refs": [{ "surah": 2, "ayah": 255 }],
+            "data": {
+              "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+              "options": [
+                { "surahId": 2, "surahName": "Al-Baqarah" },
+                { "surahId": 3, "surahName": "Ali 'Imran" }
+              ],
+              "correctIndex": 0
+            }
+          }
+        ],
+        "responses": {
+          "q-v5-1": { "kind": "surah-identification", "selectedIndex": 0 }
+        },
+        "config": {
+          "source": { "kind": "default" },
+          "enabledKinds": ["surah-identification"],
+          "requestedCount": 1
+        }
+      }
+    ],
+    "currentAttemptId": null
+  }
+}

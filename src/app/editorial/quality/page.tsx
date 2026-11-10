@@ -5,6 +5,14 @@ import { DOMAINS } from "@/lib/taxonomy/domains";
 import { JOURNEYS } from "@/lib/study-journeys/data";
 import { AlertTriangle, CheckCircle, XCircle, Info } from "lucide-react";
 import Link from "next/link";
+import {
+  validateTopicTechnicalIntegrity,
+  validateTopicEditorialCompleteness,
+  validateTopicScholarlyReview,
+  validateJourneyTechnicalIntegrity,
+  validateJourneyEditorialCompleteness,
+  validateJourneyScholarlyReview,
+} from "@/lib/quality/validation";
 
 export const metadata: Metadata = {
   title: "Editorial Quality Dashboard — Al-Huda",
@@ -19,12 +27,13 @@ interface QualityIssue {
   category: string;
   message: string;
   slug?: string;
+  dimension?: "technical" | "editorial" | "scholarly";
 }
 
 export default function EditorialQualityPage() {
   const issues: QualityIssue[] = [];
 
-  // Check topics
+  // Topic quality metrics
   let topicsWithUrdu = 0;
   let topicsMissingDescription = 0;
   let topicsMissingLimitations = 0;
@@ -32,8 +41,31 @@ export default function EditorialQualityPage() {
   let totalAyahRefs = 0;
   let duplicateRefs = 0;
 
+  // Three-dimension quality tracking
+  let technicalPassed = 0;
+  let technicalFailed = 0;
+  let editorialComplete = 0;
+  let editorialIncomplete = 0;
+  let scholarlyPending = 0;
+  let scholarlyReviewed = 0;
+
+  // Check topics
   for (const topic of TOPICS) {
     totalAyahRefs += topic.relations.length;
+
+    // Validate three dimensions
+    const technical = validateTopicTechnicalIntegrity(topic);
+    const editorial = validateTopicEditorialCompleteness(topic);
+    const scholarly = validateTopicScholarlyReview(topic);
+
+    if (technical.status === "passed") technicalPassed++;
+    else technicalFailed++;
+
+    if (editorial.status === "complete") editorialComplete++;
+    else editorialIncomplete++;
+
+    if (scholarly.status === "pending") scholarlyPending++;
+    else if (scholarly.status === "reviewed") scholarlyReviewed++;
 
     if (topic.urduTitle) {
       topicsWithUrdu++;
@@ -46,6 +78,7 @@ export default function EditorialQualityPage() {
         category: "Topic",
         message: `${topic.slug}: missing editorialDescription`,
         slug: topic.slug,
+        dimension: "editorial",
       });
     }
 
@@ -56,6 +89,7 @@ export default function EditorialQualityPage() {
         category: "Topic",
         message: `${topic.slug}: missing knownLimitations`,
         slug: topic.slug,
+        dimension: "editorial",
       });
     }
 
@@ -67,6 +101,7 @@ export default function EditorialQualityPage() {
         category: "Topic",
         message: `${topic.slug}: invalid reviewState "${topic.reviewState}"`,
         slug: topic.slug,
+        dimension: "editorial",
       });
     }
 
@@ -81,24 +116,48 @@ export default function EditorialQualityPage() {
           category: "Topic",
           message: `${topic.slug}: duplicate reference ${key}`,
           slug: topic.slug,
+          dimension: "technical",
         });
       }
       refKeys.add(key);
     }
+
+    // Add technical issues
+    for (const issue of technical.issues) {
+      issues.push({
+        type: issue.severity === "error" ? "error" : "warning",
+        category: "Topic",
+        message: `${topic.slug}: ${issue.message}`,
+        slug: topic.slug,
+        dimension: "technical",
+      });
+    }
   }
 
-  // Check journeys
+  // Journey quality metrics
   let stagesMissingReflection = 0;
   let stagesMissingCriteria = 0;
   let totalStages = 0;
+  let journeysTechnicalPassed = 0;
+  let journeysEditorialComplete = 0;
+  let journeysScholarlyPending = 0;
 
   for (const journey of JOURNEYS) {
+    const technical = validateJourneyTechnicalIntegrity(journey);
+    const editorial = validateJourneyEditorialCompleteness(journey);
+    const scholarly = validateJourneyScholarlyReview(journey);
+
+    if (technical.status === "passed") journeysTechnicalPassed++;
+    if (editorial.status === "complete") journeysEditorialComplete++;
+    if (scholarly.status === "pending") journeysScholarlyPending++;
+
     if (!journey.learningObjective || journey.learningObjective.trim() === "") {
       issues.push({
         type: "error",
         category: "Journey",
         message: `${journey.slug}: missing learningObjective`,
         slug: journey.slug,
+        dimension: "editorial",
       });
     }
 
@@ -112,6 +171,7 @@ export default function EditorialQualityPage() {
           category: "Journey Stage",
           message: `${journey.slug} stage ${stage.order}: missing reflectionPrompt`,
           slug: journey.slug,
+          dimension: "editorial",
         });
       }
 
@@ -122,6 +182,7 @@ export default function EditorialQualityPage() {
           category: "Journey Stage",
           message: `${journey.slug} stage ${stage.order}: missing completionCriteria`,
           slug: journey.slug,
+          dimension: "editorial",
         });
       }
     }
@@ -133,6 +194,7 @@ export default function EditorialQualityPage() {
       type: "info",
       category: "Multilingual",
       message: "No topics have verified Urdu titles yet",
+      dimension: "editorial",
     });
   }
 
@@ -148,8 +210,7 @@ export default function EditorialQualityPage() {
         </h1>
         <p className="max-w-2xl text-lg text-muted-foreground">
           Internal editorial management tool. This dashboard shows the quality
-          and completeness of curated content. It is not a public scholarly
-          certification system.
+          and completeness of curated content across three independent dimensions.
         </p>
         <aside className="rounded-2xl border border-gold/30 bg-gold-soft/60 p-4 text-sm text-accent-foreground">
           <p className="flex items-start gap-2">
@@ -189,9 +250,96 @@ export default function EditorialQualityPage() {
         </div>
       </section>
 
+      {/* Three-Dimension Quality Model */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold tracking-tight">
+          Three-Dimension Quality Model
+        </h2>
+        <p className="text-sm text-muted-foreground">
+          Quality is measured across three independent dimensions. Passing one dimension does not automatically satisfy others.
+        </p>
+
+        <div className="grid gap-6 lg:grid-cols-3">
+          {/* Dimension 1: Technical Integrity */}
+          <div className="rounded-2xl border bg-card p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <CheckCircle className="h-5 w-5 text-primary" />
+              <h3 className="font-semibold">Technical Integrity</h3>
+            </div>
+            <p className="text-xs text-muted-foreground mb-4">
+              Structural and technical validity
+            </p>
+            <div className="space-y-2">
+              <div className="flex justify-between text-sm">
+                <span>Topics Passed</span>
+                <span className="font-semibold">{technicalPassed} / {TOPICS.length}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span>Topics Failed</span>
+                <span className="font-semibold text-destructive">{technicalFailed}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span>Journeys Passed</span>
+                <span className="font-semibold">{journeysTechnicalPassed} / {JOURNEYS.length}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Dimension 2: Editorial Completeness */}
+          <div className="rounded-2xl border bg-card p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <Info className="h-5 w-5 text-gold" />
+              <h3 className="font-semibold">Editorial Completeness</h3>
+            </div>
+            <p className="text-xs text-muted-foreground mb-4">
+              Presence of required editorial information
+            </p>
+            <div className="space-y-2">
+              <div className="flex justify-between text-sm">
+                <span>Topics Complete</span>
+                <span className="font-semibold">{editorialComplete} / {TOPICS.length}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span>Topics Incomplete</span>
+                <span className="font-semibold text-gold">{editorialIncomplete}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span>Journeys Complete</span>
+                <span className="font-semibold">{journeysEditorialComplete} / {JOURNEYS.length}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Dimension 3: Scholarly Review */}
+          <div className="rounded-2xl border bg-card p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <AlertTriangle className="h-5 w-5 text-accent-foreground" />
+              <h3 className="font-semibold">Scholarly Review</h3>
+            </div>
+            <p className="text-xs text-muted-foreground mb-4">
+              Actual scholarly review status
+            </p>
+            <div className="space-y-2">
+              <div className="flex justify-between text-sm">
+                <span>Topics Pending</span>
+                <span className="font-semibold">{scholarlyPending} / {TOPICS.length}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span>Topics Reviewed</span>
+                <span className="font-semibold text-primary">{scholarlyReviewed}</span>
+              </div>
+              <div className="flex justify-between text-sm">
+                <span>Journeys Pending</span>
+                <span className="font-semibold">{journeysScholarlyPending} / {JOURNEYS.length}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quality Score */}
       <section className="rounded-2xl border bg-card p-6">
-        <h2 className="text-xl font-semibold tracking-tight">Quality Score</h2>
+        <h2 className="text-xl font-semibold tracking-tight">Issue Summary</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
           <div className="flex items-center gap-3">
             <XCircle className="h-6 w-6 text-destructive" />
@@ -322,7 +470,14 @@ export default function EditorialQualityPage() {
                     <Info className="h-5 w-5 text-primary" />
                   )}
                   <div className="flex-1">
-                    <p className="font-medium">{issue.category}</p>
+                    <div className="flex items-center gap-2 mb-1">
+                      <p className="font-medium">{issue.category}</p>
+                      {issue.dimension && (
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground">
+                          {issue.dimension}
+                        </span>
+                      )}
+                    </div>
                     <p className="text-sm text-muted-foreground">
                       {issue.message}
                     </p>
