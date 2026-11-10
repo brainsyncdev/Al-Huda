@@ -168,15 +168,34 @@ All quality gates pass:
 
 ## Metrics
 
-- **Dimensions:** 15 (was 10)
-- **Topics:** 18 (was 11)
+- **Dimensions:** 15 (was 10, +5 new)
+- **Topics:** 18 (was 11, +7 new)
 - **Domains:** 14 (unchanged)
-- **Domain-Topic Relationships:** 18 (was 11)
+- **Domain-Topic Relationships:** 18 (was 11, +7 new)
 - **Study Journeys:** 4 (new)
 - **Total Journey Stages:** 20
+- **Curated Ayat:** 93 total across 18 topics (was 56 across 11 topics, +37 new)
 - **Backup Envelope Version:** 8 (was 7)
-- **Tests:** 998 pass (unchanged)
+- **Tests:** 998 pass (unchanged, 56 test files)
 - **Static Pages:** 347 (was 343, +4 for study-journeys and explore/topics)
+- **Sitemap Entries:** 6,409 (was 6,397, +12 for new topics and dimensions)
+- **Knowledge Graph Nodes:** 33 (was 21, +12 for new dimensions and topics)
+
+### New Dimensions Added
+1. Worship and Devotion (عبادة)
+2. Prophets and Their Stories (الأنبياء)
+3. Creation and Signs in Nature (الخلق)
+4. The Hereafter and Resurrection (الآخرة)
+5. Law and Legal Obligations (الأحكام)
+
+### New Topics Added
+1. Divine Oneness (التوحيد) — 6 ayat
+2. Prayer (الصلاة) — 6 ayat
+3. Supplication (الدعاء) — 5 ayat
+4. God-Consciousness (التقوى) — 5 ayat
+5. Repentance (التوبة) — 5 ayat
+6. Prophets and Their Stories (الأنبياء) — 5 ayat
+7. Good Character (الأخلاق) — 5 ayat
 
 ## Constraints Preserved
 
