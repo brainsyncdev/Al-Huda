@@ -30,9 +30,12 @@ import { normalizeQuizState } from "@/lib/quiz/storage";
 import type { QuizState } from "@/lib/quiz/types";
 import { normalizeReadingPlansState } from "@/lib/reading-plans/storage";
 import type { ReadingPlansState } from "@/lib/reading-plans/types";
+import { normalizeJourneysState } from "@/lib/study-journeys/storage";
+import type { JourneysState } from "@/lib/study-journeys/types";
+import { EMPTY_JOURNEYS_STATE } from "@/lib/study-journeys/data";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 7;
+export const BACKUP_VERSION = 8;
 export const BACKUP_APP = "Al-Huda";
 
 /** Empty quiz state, used when restoring a legacy backup that had no quiz. */
@@ -64,6 +67,8 @@ export interface BackupFile {
   paths: PathsState;
   quiz: QuizState;
   readingPlans: ReadingPlansState;
+  /** Sprint 52: study journeys added in v8. */
+  journeys: JourneysState;
 }
 
 export interface RestorableBackup {
@@ -73,14 +78,15 @@ export interface RestorableBackup {
   paths: PathsState;
   quiz: QuizState;
   readingPlans: ReadingPlansState;
+  journeys: JourneysState;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
    * export; 2 added revision and preferences; 3 added paths; 4 added
    * translationId in preferences; 5 added quiz; 6 added reading plans;
-   * 7 added collections and collectionAyat.
+   * 7 added collections and collectionAyat; 8 added study journeys.
    * Older versions get defaults for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7;
+  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -96,6 +102,7 @@ export interface BackupInput {
   paths: PathsState;
   quiz: QuizState;
   readingPlans: ReadingPlansState;
+  journeys: JourneysState;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -114,6 +121,7 @@ export function buildBackup(
     paths: input.paths,
     quiz: input.quiz,
     readingPlans: input.readingPlans,
+    journeys: input.journeys,
   };
 }
 
@@ -153,14 +161,22 @@ export function parseBackup(text: string): ParseBackupResult {
   const exportedAt = typeof file.exportedAt === "string" ? file.exportedAt : "";
 
   if (file.format === BACKUP_FORMAT) {
-    // v3–v7 share the same envelope shape. v4 added translationId inside
-    // preferences; v5 added quiz; v6 added reading plans; v7 added collections.
-    if (version !== 3 && version !== 4 && version !== 5 && version !== 6 && version !== 7) {
+    // v3–v8 share the same envelope shape. v4 added translationId inside
+    // preferences; v5 added quiz; v6 added reading plans; v7 added collections;
+    // v8 added study journeys.
+    if (
+      version !== 3 &&
+      version !== 4 &&
+      version !== 5 &&
+      version !== 6 &&
+      version !== 7 &&
+      version !== 8
+    ) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads versions 3–7. Nothing was imported.`,
+        }, and this build reads versions 3–8. Nothing was imported.`,
       };
     }
     return {
@@ -181,7 +197,11 @@ export function parseBackup(text: string): ParseBackupResult {
           file.readingPlans === undefined
             ? EMPTY_READING_PLANS_STATE
             : normalizeReadingPlansState(file.readingPlans),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7) : 7,
+        journeys:
+          file.journeys === undefined
+            ? { ...EMPTY_JOURNEYS_STATE }
+            : normalizeJourneysState(file.journeys),
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8) : 8,
         exportedAt,
       },
     };
@@ -198,6 +218,7 @@ export function parseBackup(text: string): ParseBackupResult {
         paths: { ...EMPTY_PATHS_STATE },
         quiz: { ...EMPTY_QUIZ_STATE },
         readingPlans: { ...EMPTY_READING_PLANS_STATE },
+        journeys: { ...EMPTY_JOURNEYS_STATE },
         sourceVersion: 1,
         exportedAt,
       },

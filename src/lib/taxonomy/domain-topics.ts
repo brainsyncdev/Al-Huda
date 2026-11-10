@@ -265,6 +265,55 @@ export const DOMAIN_TOPIC_RELATIONS: DomainTopicRelation[] = [
     "The topic of the hereafter is a core subject within the eschatology and afterlife domain.",
     "The domain's subjects include 'death and the soul', 'the Day of Judgment', 'resurrection'; the topic's canonical title is 'The Hereafter' (الآخرة) and the domain's Arabic title is also الآخرة. The topic's summary addresses verses about the life to come — every soul tasting death, deeds weighed, and the scales of justice."
   ),
+  rel(
+    "belief-theology",
+    "tawheed",
+    "organizational-membership",
+    "The topic of divine oneness (tawheed) is the foundational subject within the belief and theology domain.",
+    "The domain's subjects include 'belief in God', 'divine attributes', 'tawheed'; the topic's canonical title is 'Divine Oneness' (التوحيد) and its summary addresses verses about tawheed — the absolute oneness of God, His unique attributes, and the rejection of any partners. This is the foundational theme of the Quran."
+  ),
+  rel(
+    "worship-practice",
+    "prayer",
+    "organizational-membership",
+    "The topic of prayer (salah) is a core subject within the worship and spiritual practice domain.",
+    "The domain's subjects include 'salah (prayer)'; the topic's canonical title is 'Prayer' (الصلاة) and its summary addresses verses about salah — the prescribed prayer, its establishment, its timing, and its significance as the pillar of worship."
+  ),
+  rel(
+    "worship-practice",
+    "supplication",
+    "organizational-membership",
+    "The topic of supplication (dua) is a core subject within the worship and spiritual practice domain.",
+    "The domain's subjects include 'dua (supplication)'; the topic's canonical title is 'Supplication' (الدعاء) and its summary addresses verses about dua — calling upon God, the invitation to ask, and the assurance that God responds to those who call upon Him."
+  ),
+  rel(
+    "ethics-character",
+    "god-consciousness",
+    "organizational-membership",
+    "The topic of god-consciousness (taqwa) is a core subject within the ethics and character domain.",
+    "The domain's subjects include 'taqwa (god-consciousness)'; the topic's canonical title is 'God-Consciousness' (التقوى) and its summary addresses verses about taqwa — consciousness of God, mindfulness that shapes conduct, and the promise that taqwa is the true measure of nobility."
+  ),
+  rel(
+    "ethics-character",
+    "repentance",
+    "organizational-membership",
+    "The topic of repentance (tawbah) is a core subject within the ethics and character domain.",
+    "The domain's subjects include 'repentance'; the topic's canonical title is 'Repentance' (التوبة) and its summary addresses verses about tawbah — turning back to God, the invitation to repent, and the assurance that God accepts repentance from those who sincerely return to Him."
+  ),
+  rel(
+    "prophets-narratives",
+    "prophets",
+    "organizational-membership",
+    "The topic of prophets and their stories is the core subject within the prophets and narratives domain.",
+    "The domain's subjects include 'stories of the prophets', 'prophetic narratives'; the topic's canonical title is 'Prophets and Their Stories' (الأنبياء) and its summary addresses verses about the prophets — their mission, their trials, their patience, and the lessons drawn from their experiences."
+  ),
+  rel(
+    "ethics-character",
+    "good-character",
+    "organizational-membership",
+    "The topic of good character (akhlaq) is a core subject within the ethics and character domain.",
+    "The domain's subjects include 'good character and manners'; the topic's canonical title is 'Good Character' (الأخلاق) and its summary addresses verses about akhlaq — good character, kindness, honesty, humility, and the moral qualities that shape a believer's conduct with others."
+  ),
 ];
 
 /**

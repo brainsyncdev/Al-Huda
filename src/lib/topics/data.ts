@@ -521,6 +521,305 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     ],
     provenance: REVIEW,
   },
+  {
+    slug: "tawheed",
+    title: "Divine Oneness",
+    arabicTitle: "التوحيد",
+    summary:
+      "Verses about tawheed — the absolute oneness of God, His unique attributes, and the rejection of any partners or intermediaries. This is the foundational theme of the Quran.",
+    related: ["remembrance", "trust-in-god"],
+    relations: [
+      {
+        ref: rel(1, 112),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "The declaration: 'Say: He is God, One' — the purest statement of divine oneness.",
+      },
+      {
+        ref: rel(2, 112),
+        type: "SEQUENTIAL_CONTEXT",
+        rationale:
+          "'God, the Eternal Refuge' — establishes God as the ultimate source of reliance.",
+      },
+      {
+        ref: rel(3, 112),
+        type: "SEQUENTIAL_CONTEXT",
+        rationale:
+          "'He neither begets nor is born' — rejects any notion of divine family or origin.",
+      },
+      {
+        ref: rel(4, 112),
+        type: "SEQUENTIAL_CONTEXT",
+        rationale:
+          "'Nor is there to Him any equivalent' — absolute statement of uniqueness.",
+      },
+      {
+        ref: rel(255, 2),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "Ayat al-Kursi declares God's unique sovereignty — 'There is no deity except Him, the Ever-Living, the Sustainer'.",
+      },
+      {
+        ref: rel(22, 59),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'He is God, besides whom there is no deity, the Knower of the unseen and the witnessed' — comprehensive declaration.",
+      },
+    ],
+    provenance: REVIEW,
+  },
+  {
+    slug: "prayer",
+    title: "Prayer",
+    arabicTitle: "الصلاة",
+    summary:
+      "Verses about salah — the prescribed prayer, its establishment, its timing, and its significance as the pillar of worship.",
+    related: ["supplication", "remembrance", "tawheed"],
+    relations: [
+      {
+        ref: rel(43, 2),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And establish prayer and give zakah' — pairs prayer with charity as fundamental obligations.",
+      },
+      {
+        ref: rel(110, 2),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And establish prayer and give zakah and borrow from Allah a goodly loan' — connects prayer, charity, and spending.",
+      },
+      {
+        ref: rel(238, 2),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'Maintain with care the [middle] prayers' — emphasizes consistency and devotion in prayer.",
+      },
+      {
+        ref: rel(114, 11),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'Establish prayer at the decline of the sun' — specifies prayer timing.",
+      },
+      {
+        ref: rel(45, 29),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'Recite, [O Muhammad], what has been revealed to you of the Book and establish prayer' — links revelation to prayer.",
+      },
+      {
+        ref: rel(14, 20),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'Indeed, I am Allah. There is no deity except Me, so worship Me and establish prayer' — connects worship to prayer.",
+      },
+    ],
+    provenance: REVIEW,
+  },
+  {
+    slug: "supplication",
+    title: "Supplication",
+    arabicTitle: "الدعاء",
+    summary:
+      "Verses about dua — calling upon God, the invitation to ask, and the assurance that God responds to those who call upon Him.",
+    related: ["prayer", "trust-in-god", "mercy-and-forgiveness"],
+    relations: [
+      {
+        ref: rel(186, 2),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And when My servants ask you concerning Me, indeed I am near. I respond to the invocation of the supplicant' — direct assurance of divine response.",
+      },
+      {
+        ref: rel(60, 40),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And your Lord says, Call upon Me; I will respond to you' — explicit invitation to supplicate.",
+      },
+      {
+        ref: rel(55, 7),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'Call upon your Lord in humility and in private' — describes the manner of supplication.",
+      },
+      {
+        ref: rel(201, 2),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "Supplication: 'Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good' — comprehensive prayer for good.",
+      },
+      {
+        ref: rel(38, 3),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "Zakariya's supplication: 'My Lord, indeed my bones have weakened' — example of personal supplication.",
+      },
+    ],
+    provenance: REVIEW,
+  },
+  {
+    slug: "god-consciousness",
+    title: "God-Consciousness",
+    arabicTitle: "التقوى",
+    summary:
+      "Verses about taqwa — consciousness of God, mindfulness that shapes conduct, and the promise that taqwa is the true measure of nobility.",
+    related: ["tawheed", "patience", "gratitude"],
+    relations: [
+      {
+        ref: rel(13, 49),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'Indeed, the most noble of you in the sight of Allah is the most righteous (muttaqi)' — taqwa as the measure of nobility.",
+      },
+      {
+        ref: rel(197, 2),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And take provisions for the journey, but indeed, the best provision is taqwa' — taqwa as spiritual provision.",
+      },
+      {
+        ref: rel(2, 65),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'And whoever fears Allah - He will make for him a way out' — promise for those with taqwa.",
+      },
+      {
+        ref: rel(3, 65),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'O you who have believed, fear Allah as He should be feared' — command to attain taqwa.",
+      },
+      {
+        ref: rel(2, 2),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'This is the Book about which there is no doubt, a guidance for those conscious of Allah' — Quran as guidance for the muttaqeen.",
+      },
+    ],
+    provenance: REVIEW,
+  },
+  {
+    slug: "repentance",
+    title: "Repentance",
+    arabicTitle: "التوبة",
+    summary:
+      "Verses about tawbah — turning back to God, the invitation to repent, and the assurance that God accepts repentance from those who sincerely return to Him.",
+    related: ["mercy-and-forgiveness", "god-consciousness", "gratitude"],
+    relations: [
+      {
+        ref: rel(53, 39),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'Do not despair of the mercy of Allah. Indeed, Allah forgives all sins' — assurance of divine forgiveness.",
+      },
+      {
+        ref: rel(70, 25),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'Except those who repent, believe and do righteous work' — condition for transformation.",
+      },
+      {
+        ref: rel(8, 66),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'O you who have believed, repent to Allah with sincere repentance' — command for sincere repentance.",
+      },
+      {
+        ref: rel(104, 9),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'Do they not know that it is Allah who accepts repentance from His servants' — God as the acceptor of repentance.",
+      },
+      {
+        ref: rel(89, 3),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'Except those who repent after their wrongdoing and correct themselves' — repentance paired with correction.",
+      },
+    ],
+    provenance: REVIEW,
+  },
+  {
+    slug: "prophets",
+    title: "Prophets and Their Stories",
+    arabicTitle: "الأنبياء",
+    summary:
+      "Verses about the prophets — their mission, their trials, their patience, and the lessons drawn from their experiences. The Quran presents their stories as guidance for all humanity.",
+    related: ["patience", "trust-in-god", "hardship-and-ease"],
+    relations: [
+      {
+        ref: rel(107, 21),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'And We have not sent you, [O Muhammad], except as a mercy to the worlds' — prophetic mission as mercy.",
+      },
+      {
+        ref: rel(34, 6),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And there came to you news of the messengers before you' — reference to prophetic narratives.",
+      },
+      {
+        ref: rel(111, 12),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'There was certainly in their stories a lesson for those of understanding' — prophetic stories as guidance.",
+      },
+      {
+        ref: rel(7, 33),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'And [mention] when We took from the prophets their covenant' — the covenant with prophets.",
+      },
+      {
+        ref: rel(13, 42),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'He has ordained for you of religion what He enjoined upon Noah' — continuity of prophetic message.",
+      },
+    ],
+    provenance: REVIEW,
+  },
+  {
+    slug: "good-character",
+    title: "Good Character",
+    arabicTitle: "الأخلاق",
+    summary:
+      "Verses about akhlaq — good character, kindness, honesty, humility, and the moral qualities that shape a believer's conduct with others.",
+    related: ["justice", "parents-and-family", "giving"],
+    relations: [
+      {
+        ref: rel(4, 68),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And indeed, you are of a great moral character' — affirmation of the Prophet's character.",
+      },
+      {
+        ref: rel(159, 3),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'So by mercy from Allah, you were gentle with them' — gentleness as a moral quality.",
+      },
+      {
+        ref: rel(63, 25),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "'The servants of the Most Merciful are those who walk upon the earth easily' — humility in conduct.",
+      },
+      {
+        ref: rel(11, 49),
+        type: "TOPIC_ASSOCIATION",
+        rationale:
+          "Prohibition of mockery and backbiting — moral boundaries in social conduct.",
+      },
+      {
+        ref: rel(37, 17),
+        type: "LEXICAL_MATCH",
+        rationale:
+          "'And do not walk upon the earth exultantly' — prohibition of arrogance.",
+      },
+    ],
+    provenance: REVIEW,
+  },
 ];
 
 /**

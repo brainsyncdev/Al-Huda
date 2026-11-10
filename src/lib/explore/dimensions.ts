@@ -1,4 +1,4 @@
-// Ten-dimension taxonomy for Explore mode (PRD §04.3, §05.3, §12.3).
+// Fifteen-dimension taxonomy for Explore mode (PRD §04.3, §05.3, §12.3).
 //
 // PURE MODULE: no React, no fs, no network. Safe to import from client code.
 //
@@ -20,7 +20,7 @@
 
 import type { ProvenanceRecord } from "../topics/data";
 
-/** The ten dimension identifiers, matching PRD §04.3 numbering. */
+/** The fifteen dimension identifiers, matching PRD §04.3 numbering. */
 export type DimensionId =
   | "spiritual"
   | "personal"
@@ -31,7 +31,12 @@ export type DimensionId =
   | "governance"
   | "jihad"
   | "interfaith"
-  | "ilm";
+  | "ilm"
+  | "worship"
+  | "prophets"
+  | "creation"
+  | "hereafter"
+  | "law";
 
 export interface Dimension {
   /** PRD §04.3 ordinal (1–10). */
@@ -67,7 +72,7 @@ export const DIMENSION_PROVENANCE: ProvenanceRecord = {
   method:
     "editorial-navigation-mapping-v1 (topic-level navigation aid, not ayat-level tagging)",
   curator: "Al-Huda editorial team",
-  reviewedAt: "2026-10-23",
+  reviewedAt: "2026-11-11",
   status: "pending-scholarly-review",
 };
 
@@ -220,6 +225,109 @@ export const DIMENSIONS: Dimension[] = [
       "Verses about knowledge as divine signs — the command to read, the prayer for increase in knowledge, and the remembrance of God as the greater matter. This dimension gathers topics that center on learning and awareness.",
     topicSlugs: ["knowledge-and-reflection", "remembrance"],
     searchTerms: ["knowledge", "signs", "learning", "wisdom", "remembrance"],
+  },
+  {
+    number: 11,
+    id: "worship",
+    title: "Worship and Devotion",
+    arabicTitle: "عبادة",
+    covers:
+      "Prescribed acts of worship — prayer (salah), fasting (sawm), pilgrimage (hajj), supplication (dua), and other formal acts of devotion",
+    description:
+      "The dimension of formal worship and prescribed devotional acts. While the spiritual dimension addresses the inner relationship with God, worship covers the outward, prescribed practices that structure a believer's devotion.",
+    topicSlugs: ["prayer", "supplication"],
+    searchTerms: [
+      "prayer",
+      "salah",
+      "fasting",
+      "pilgrimage",
+      "hajj",
+      "supplication",
+      "dua",
+      "worship",
+    ],
+  },
+  {
+    number: 12,
+    id: "prophets",
+    title: "Prophets and Their Stories",
+    arabicTitle: "الأنبياء",
+    covers:
+      "Narratives of the prophets, their trials, their messages, and the lessons drawn from their experiences",
+    description:
+      "The dimension of prophetic narratives and historical lessons. The Quran presents the stories of prophets as guidance and warning, each illustrating different aspects of faith, patience, and divine interaction.",
+    topicSlugs: ["prophets"],
+    searchTerms: [
+      "prophets",
+      "messengers",
+      "stories",
+      "narratives",
+      "ibrahim",
+      "musa",
+      "isa",
+      "muhammad",
+    ],
+  },
+  {
+    number: 13,
+    id: "creation",
+    title: "Creation and Signs in Nature",
+    arabicTitle: "الخلق",
+    covers:
+      "The natural world as signs of God — the heavens, the earth, the alternation of night and day, the diversity of creation",
+    description:
+      "The dimension of observing creation as signs of the Creator. The Quran repeatedly invites reflection on the natural world — the heavens, the earth, the water, the diversity of life — as evidence of divine wisdom and power.",
+    topicSlugs: [],
+    searchTerms: [
+      "creation",
+      "signs",
+      "nature",
+      "heavens",
+      "earth",
+      "universe",
+      "natural world",
+    ],
+  },
+  {
+    number: 14,
+    id: "hereafter",
+    title: "The Hereafter and Resurrection",
+    arabicTitle: "الآخرة",
+    covers:
+      "Life after death, resurrection, judgment, paradise and hell, the final accounting",
+    description:
+      "The dimension of eschatology — what comes after this life. The Quran speaks extensively of the Day of Judgment, resurrection, paradise and hell, and the final accounting of deeds. This is distinct from the spiritual dimension (present-life relationship with God).",
+    topicSlugs: ["the-hereafter"],
+    searchTerms: [
+      "hereafter",
+      "resurrection",
+      "judgment",
+      "paradise",
+      "hell",
+      "death",
+      "afterlife",
+      "day of judgment",
+    ],
+  },
+  {
+    number: 15,
+    id: "law",
+    title: "Law and Legal Obligations",
+    arabicTitle: "الأحكام",
+    covers:
+      "Legal rulings, halal and haram, obligations and prohibitions, the framework of Islamic law",
+    description:
+      "The dimension of legal rulings and obligations. While governance addresses justice and leadership in society, law covers the specific rulings — what is permitted, what is forbidden, what is obligatory — that structure a Muslim's life.",
+    topicSlugs: [],
+    searchTerms: [
+      "law",
+      "halal",
+      "haram",
+      "obligations",
+      "prohibitions",
+      "rulings",
+      "fiqh",
+    ],
   },
 ];
 
