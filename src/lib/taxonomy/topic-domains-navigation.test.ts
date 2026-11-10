@@ -67,12 +67,12 @@ describe("Sprint 35 — Topic-domain navigation data layer", () => {
     expect(Array.isArray(relations)).toBe(true);
   });
 
-  it("each of the 11 topics has exactly 1 domain relation", () => {
+  it("each of the 18 topics has exactly 1 domain relation", () => {
     const relationCounts = new Map<string, number>();
     for (const relation of DOMAIN_TOPIC_RELATIONS) {
       relationCounts.set(relation.topicSlug, (relationCounts.get(relation.topicSlug) ?? 0) + 1);
     }
-    expect(relationCounts.size).toBe(11);
+    expect(relationCounts.size).toBe(18);
     for (const [slug, count] of relationCounts) {
       expect(count, `topic ${slug} has ${count} relations, expected 1`).toBe(1);
     }
