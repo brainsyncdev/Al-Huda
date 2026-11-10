@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { TOPICS, getTopic } from "@/lib/topics/data";
+import { TOPICS } from "@/lib/topics/data";
 import { getDimensionsForTopic } from "@/lib/explore/dimensions";
 import { getTopicDomainRelations } from "@/lib/taxonomy/domain-topics";
 import { getDomain } from "@/lib/taxonomy/domains";
@@ -33,7 +33,7 @@ export default function ExploreTopicsPage() {
 
   return (
     <div className="space-y-8 pb-8">
-      <JsonLd data={jsonLd} />
+      <JsonLd nodes={[jsonLd]} />
 
       <header className="space-y-3">
         <div className="flex items-center gap-3">
@@ -159,7 +159,7 @@ export default function ExploreTopicsPage() {
           Each topic is an editorial selection of well-known ayat — entry points
           for reflection. Every verse relation is typed (thematic association,
           lexical match, cross-reference, or sequential context) with a neutral
-          rationale explaining why it's included. Topics are not tafsir and not
+          rationale explaining why it&apos;s included. Topics are not tafsir and not
           rulings.
         </p>
         <p className="text-sm text-muted-foreground">

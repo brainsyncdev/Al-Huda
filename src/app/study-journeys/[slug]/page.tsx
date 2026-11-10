@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { AlertTriangle, BookOpen, Clock, CheckCircle, Circle, ArrowRight } from "lucide-react";
+import { AlertTriangle, BookOpen, Clock, ArrowRight } from "lucide-react";
 import { JOURNEYS, getJourney } from "@/lib/study-journeys/data";
 import { getDimension } from "@/lib/explore/dimensions";
 import { getTopic } from "@/lib/topics/data";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
-import { HOME_CRUMB, breadcrumbs } from "@/lib/seo/json-ld";
+import { HOME_CRUMB } from "@/lib/seo/json-ld";
 import { JourneyProgressTracker } from "./progress-tracker";
 
 interface Props {
@@ -80,14 +80,14 @@ export default async function StudyJourneyDetailPage({ params }: Props) {
 
   return (
     <div className="space-y-8 pb-8">
-      <JsonLd data={jsonLd} />
+      <JsonLd nodes={[jsonLd]} />
       <nav aria-label="Breadcrumb" className="text-sm text-muted-foreground">
         <ol className="flex flex-wrap items-center gap-1.5">
           {crumbs.map((crumb, i) => (
-            <li key={crumb.href} className="flex items-center gap-1.5">
+            <li key={crumb.path} className="flex items-center gap-1.5">
               {i > 0 && <span aria-hidden>/</span>}
-              {crumb.href ? (
-                <Link href={crumb.href} className="hover:text-foreground">
+              {crumb.path ? (
+                <Link href={crumb.path} className="hover:text-foreground">
                   {crumb.name}
                 </Link>
               ) : (
@@ -222,7 +222,7 @@ export default async function StudyJourneyDetailPage({ params }: Props) {
 
       <div className="text-xs text-muted-foreground space-y-1">
         <p>
-          Provenance: method "{journey.provenance.method}", curated by{" "}
+          Provenance: method &ldquo;{journey.provenance.method}&rdquo;, curated by{" "}
           {journey.provenance.curator}, last reviewed{" "}
           {journey.provenance.reviewedAt}, status{" "}
           {journey.provenance.status}. Version {journey.version}.

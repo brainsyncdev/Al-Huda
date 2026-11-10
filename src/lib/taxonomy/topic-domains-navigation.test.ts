@@ -96,11 +96,11 @@ describe("Sprint 35 — Topic-domain navigation data layer", () => {
 });
 
 describe("Sprint 35 — Catalog integrity", () => {
-  it("existing catalogs unchanged: 14 domains, 10 dimensions, 11 topics, 11 relations", () => {
+  it("existing catalogs unchanged: 14 domains, 15 dimensions, 18 topics, 18 relations", () => {
     expect(DOMAINS.length).toBe(14);
-    expect(DIMENSIONS.length).toBe(10);
-    expect(TOPICS.length).toBe(11);
-    expect(DOMAIN_TOPIC_RELATIONS.length).toBe(11);
+    expect(DIMENSIONS.length).toBe(15);
+    expect(TOPICS.length).toBe(18);
+    expect(DOMAIN_TOPIC_RELATIONS.length).toBe(18);
   });
 
   it("evidence policy intact: validateDomainTopicCatalog passes", () => {

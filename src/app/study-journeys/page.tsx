@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { JOURNEYS, getAllJourneys } from "@/lib/study-journeys/data";
+import { getAllJourneys } from "@/lib/study-journeys/data";
 import { getDimension } from "@/lib/explore/dimensions";
 import { absoluteUrl } from "@/lib/site";
 import { AlertTriangle, BookOpen, Clock, ArrowRight } from "lucide-react";
@@ -103,7 +103,7 @@ export default function StudyJourneysIndexPage() {
         <p>
           Each journey carries its editorial provenance — method, curator, review
           date, and status. The UI displays this transparently so you know what
-          you're looking at.
+          you&apos;re looking at.
         </p>
       </aside>
     </div>
