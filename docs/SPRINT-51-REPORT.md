@@ -3,7 +3,7 @@
 **Sprint:** 51  
 **Date:** November 10, 2026  
 **Status:** ✅ Complete  
-**Commit:** [pending]
+**Commit:** 856ffc9
 
 ## Executive Summary
 
@@ -274,14 +274,15 @@ Ayah card includes "Collections" button with picker showing all collections and 
 
 ## Metrics
 
-- **Files created:** 9 (6 pages, 1 storage module, 1 test, 4 docs)
+- **Files created:** 14 (7 page routes, 1 layout, 1 storage module, 1 test, 4 docs)
 - **Files modified:** 4 (context.tsx, backup.ts, ayah-card.tsx, backup-controls.tsx)
-- **Lines added:** ~1,500
+- **Lines added:** 3,079
+- **Lines removed:** 132
 - **Tests added:** 6
-- **Tests passing:** 992+ (all existing + 6 new)
+- **Tests passing:** 998 (56 test files)
 - **Typecheck:** ✅ Pass
-- **Lint:** ✅ Pass (pending)
-- **Build:** ✅ Pass (pending)
+- **Lint:** ✅ Pass
+- **Build:** ✅ Pass
 
 ## Known Limitations
 
@@ -305,7 +306,7 @@ These require separate policy decisions and are NOT part of Sprint 51.
 
 If Sprint 51 causes issues:
 
-1. Revert commit [pending]
+1. Revert commit 856ffc9
 2. Collections in localStorage will be ignored by older builds (backward compatible)
 3. v7 backups will be rejected by v6 builds with clear error message
 4. No data loss: v6 backups restore successfully
