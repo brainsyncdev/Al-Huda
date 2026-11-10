@@ -360,7 +360,7 @@ describe("Sprint 42 — Root/Topic separation", () => {
         // These are root-index fields that topics should NOT have
         expect(topic).not.toHaveProperty("roots");
         expect(topic).not.toHaveProperty("includedLemmas");
-        expect(topic).not.toHaveProperty("reviewState");
+        // Note: reviewState IS a valid topic field (editorial workflow state, not root-index)
       }
     });
   });

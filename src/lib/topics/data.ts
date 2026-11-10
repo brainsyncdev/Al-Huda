@@ -47,6 +47,8 @@ export interface TopicRelation {
   provenance?: ProvenanceRecord;
 }
 
+export type ReviewState = "draft" | "needs_review" | "reviewed" | "published";
+
 export interface Topic {
   slug: string;
   /**
@@ -59,8 +61,16 @@ export interface Topic {
   title: string;
   /** Arabic label for display next to the title. */
   arabicTitle: string;
+  /** Urdu title (optional, only where verified translations exist). */
+  urduTitle?: string;
   /** One-paragraph editorial summary shown above the verse list. */
   summary: string;
+  /** Expanded editorial description of what the topic covers and its scope. */
+  editorialDescription: string;
+  /** Known limitations and scope disclosures for this topic. */
+  knownLimitations: string[];
+  /** Editorial workflow state (not scholarly certification). */
+  reviewState: ReviewState;
   /** Related topic slugs for lateral navigation. */
   related: string[];
   relations: TopicRelation[];
@@ -85,6 +95,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الصبر",
     summary:
       "Verses that speak about patience (sabr) — seeking help through patience and prayer, responding to loss, and the reward promised to those who persevere. This selection is a starting point, not a complete treatment of the theme.",
+    editorialDescription:
+      "This topic collects verses addressing the Quranic theme of patience (sabr). It covers seeking divine help through patience and prayer, the believer's response to trials and loss, and the promise of reward for those who persevere. The selection provides entry points for reflection on this foundational virtue.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on patience",
+      "Does not cover all dimensions of sabr in Islamic theology",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["hardship-and-ease", "trust-in-god"],
     relations: [
       {
@@ -132,6 +150,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الشكر",
     summary:
       "Verses about gratitude (shukr) — remembering God's favors, the promise that gratitude brings increase, and invitations to be thankful for provision.",
+    editorialDescription:
+      "This topic gathers verses on gratitude (shukr) in the Quran. It includes passages on remembering divine favors, the promise that gratitude leads to increase, and invitations to thank God for provision. The selection explores gratitude as both recognition and practice.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on gratitude",
+      "Focuses on major thematic passages rather than comprehensive coverage",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["remembrance", "mercy-and-forgiveness"],
     relations: [
       {
@@ -172,6 +198,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "التوكل",
     summary:
       "Verses about tawakkul — relying upon God after taking action, and the statement that He is sufficient for those who trust Him.",
+    editorialDescription:
+      "This topic presents verses on trust in God (tawakkul). It covers the concept of relying upon God after taking appropriate action, and the assurance that God is sufficient for those who place their trust in Him. The selection addresses this key aspect of faith and reliance.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on trust and reliance",
+      "Does not address all theological dimensions of tawakkul",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["patience", "hardship-and-ease"],
     relations: [
       {
@@ -207,6 +241,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الرحمة والمغفرة",
     summary:
       "Verses about God's mercy and forgiveness — the breadth of His mercy, the invitation to seek forgiveness, and the caution against despairing of it.",
+    editorialDescription:
+      "This topic collects verses on divine mercy and forgiveness. It addresses the vastness of God's mercy, the invitation extended to seek forgiveness, and the warning against despairing of divine compassion. The selection provides foundational passages on these central themes.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on mercy and forgiveness",
+      "Does not cover all aspects of divine compassion in the Quran",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["gratitude", "hardship-and-ease"],
     relations: [
       {
@@ -247,6 +289,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الذكر",
     summary:
       "Verses about dhikr — the remembrance of God, the tranquility it brings to hearts, and calls to remember Him frequently.",
+    editorialDescription:
+      "This topic gathers verses on remembrance (dhikr) of God. It covers the tranquility that remembrance brings to hearts, calls to remember God frequently, and the spiritual significance of this practice. The selection explores dhikr as both individual and collective devotion.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on remembrance",
+      "Does not address all forms and contexts of dhikr",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["gratitude", "patience"],
     relations: [
       {
@@ -293,6 +343,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الإنفاق",
     summary:
       "Verses about charity and spending in God's cause — the parable of the seed, quiet giving, and giving from what one values.",
+    editorialDescription:
+      "This topic presents verses on charity and spending in God's cause (infaq). It includes the parable of the seed that multiplies, the virtue of quiet giving, and the principle of giving from what one values. The selection addresses generosity as both spiritual practice and social responsibility.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on charity and spending",
+      "Does not cover all rulings and dimensions of zakat and sadaqah",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["justice", "gratitude"],
     relations: [
       {
@@ -333,6 +391,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "العدل",
     summary:
       "Verses about justice — standing firmly for fairness, testifying truthfully even against oneself, and the command to act justly without letting hatred distort judgment.",
+    editorialDescription:
+      "This topic collects verses on justice (adl) in the Quran. It addresses the command to stand firmly for fairness, to testify truthfully even against oneself or family, and to act justly without letting personal feelings distort judgment. The selection presents justice as a foundational ethical principle.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on justice",
+      "Does not cover all legal and social dimensions of justice in Islamic law",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["giving", "patience"],
     relations: [
       {
@@ -367,6 +433,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الوالدان والأسرة",
     summary:
       "Verses about parents and family — the command to treat parents with kindness, the effort of a mother, and the duty of care toward relatives.",
+    editorialDescription:
+      "This topic gathers verses on parents and family relationships. It covers the command to treat parents with kindness, acknowledgment of a mother's hardship, and the duty of care toward relatives. The selection addresses family bonds as central to ethical life.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on family relationships",
+      "Does not cover all dimensions of family law and ethics",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["giving", "gratitude"],
     relations: [
       {
@@ -407,6 +481,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "العسر واليسر",
     summary:
       "Verses about difficulty and relief — the pairing of hardship with ease, the principle that no soul is burdened beyond capacity, and the change that follows inner change.",
+    editorialDescription:
+      "This topic presents verses on hardship and ease. It covers the Quranic principle that hardship is paired with ease, that no soul is burdened beyond its capacity, and that change follows inner transformation. The selection addresses trials and relief as aspects of the human condition.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on hardship and relief",
+      "Does not address all theological dimensions of suffering and divine wisdom",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["patience", "trust-in-god"],
     relations: [
       {
@@ -446,6 +528,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "العلم والتدبر",
     summary:
       "Verses about seeking knowledge and reflecting — the first revelation's command to read, prayers for increase in knowledge, and calls to ponder the Quran and creation.",
+    editorialDescription:
+      "This topic collects verses on knowledge and reflection. It includes the first revelation's command to read, prayers for increase in knowledge, and calls to ponder the Quran and creation. The selection addresses the pursuit of understanding as a spiritual and intellectual endeavor.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on knowledge and reflection",
+      "Does not cover all dimensions of Islamic epistemology",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["remembrance", "gratitude"],
     relations: [
       {
@@ -489,6 +579,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الآخرة",
     summary:
       "Verses about the life to come — every soul tasting death, deeds weighed, and the scales of justice set for the Day of Judgment.",
+    editorialDescription:
+      "This topic gathers verses on the Hereafter (al-akhira). It covers the certainty that every soul will taste death, the weighing of deeds, and the scales of justice established for the Day of Judgment. The selection addresses eschatological themes central to Quranic worldview.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on the Hereafter",
+      "Does not cover all dimensions of Islamic eschatology",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["justice", "hardship-and-ease"],
     relations: [
       {
@@ -527,6 +625,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "التوحيد",
     summary:
       "Verses about tawheed — the absolute oneness of God, His unique attributes, and the rejection of any partners or intermediaries. This is the foundational theme of the Quran.",
+    editorialDescription:
+      "This topic presents verses on divine oneness (tawheed). It covers the absolute oneness of God, His unique attributes, and the rejection of any partners or intermediaries. As the foundational theme of the Quran, tawheed is presented through its most definitive passages.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on divine oneness",
+      "Does not cover all theological dimensions of tawheed in Islamic thought",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["remembrance", "trust-in-god"],
     relations: [
       {
@@ -574,6 +680,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الصلاة",
     summary:
       "Verses about salah — the prescribed prayer, its establishment, its timing, and its significance as the pillar of worship.",
+    editorialDescription:
+      "This topic collects verses on prayer (salah). It covers the establishment of prescribed prayer, its timing, and its significance as the pillar of worship. The selection addresses salah as both individual devotion and communal practice.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on prayer",
+      "Does not cover all rulings and dimensions of salah jurisprudence",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["supplication", "remembrance", "tawheed"],
     relations: [
       {
@@ -621,6 +735,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الدعاء",
     summary:
       "Verses about dua — calling upon God, the invitation to ask, and the assurance that God responds to those who call upon Him.",
+    editorialDescription:
+      "This topic gathers verses on supplication (dua). It covers calling upon God, the invitation to ask, and the assurance that God responds to those who call upon Him. The selection presents supplication as direct communication with the divine.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on supplication",
+      "Does not cover all prophetic supplications and their contexts",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["prayer", "trust-in-god", "mercy-and-forgiveness"],
     relations: [
       {
@@ -662,6 +784,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "التقوى",
     summary:
       "Verses about taqwa — consciousness of God, mindfulness that shapes conduct, and the promise that taqwa is the true measure of nobility.",
+    editorialDescription:
+      "This topic presents verses on God-consciousness (taqwa). It covers consciousness of God, mindfulness that shapes conduct, and the promise that taqwa is the true measure of nobility. The selection addresses taqwa as the foundation of ethical and spiritual life.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on God-consciousness",
+      "Does not cover all dimensions of taqwa in Islamic spirituality",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["tawheed", "patience", "gratitude"],
     relations: [
       {
@@ -703,6 +833,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "التوبة",
     summary:
       "Verses about tawbah — turning back to God, the invitation to repent, and the assurance that God accepts repentance from those who sincerely return to Him.",
+    editorialDescription:
+      "This topic collects verses on repentance (tawbah). It covers turning back to God, the invitation to repent, and the assurance that God accepts repentance from those who sincerely return to Him. The selection addresses repentance as transformation and return to the divine.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on repentance",
+      "Does not cover all conditions and dimensions of tawbah in Islamic theology",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["mercy-and-forgiveness", "god-consciousness", "gratitude"],
     relations: [
       {
@@ -744,6 +882,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الأنبياء",
     summary:
       "Verses about the prophets — their mission, their trials, their patience, and the lessons drawn from their experiences. The Quran presents their stories as guidance for all humanity.",
+    editorialDescription:
+      "This topic gathers verses on the prophets and their stories. It covers their mission, their trials, their patience, and the lessons drawn from their experiences. The Quran presents their stories as guidance for all humanity, and this selection provides key entry points into these narratives.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on prophetic stories",
+      "Does not cover all prophets mentioned in the Quran",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["patience", "trust-in-god", "hardship-and-ease"],
     relations: [
       {
@@ -785,6 +931,14 @@ const RAW_TOPICS: Omit<Topic, "language">[] = [
     arabicTitle: "الأخلاق",
     summary:
       "Verses about akhlaq — good character, kindness, honesty, humility, and the moral qualities that shape a believer's conduct with others.",
+    editorialDescription:
+      "This topic presents verses on good character (akhlaq). It covers kindness, honesty, humility, and the moral qualities that shape a believer's conduct with others. The selection addresses ethical conduct as expression of faith.",
+    knownLimitations: [
+      "Non-exhaustive selection of verses on moral character",
+      "Does not cover all dimensions of Islamic ethics and morality",
+      "Pending scholarly review of thematic categorization"
+    ],
+    reviewState: "reviewed",
     related: ["justice", "parents-and-family", "giving"],
     relations: [
       {

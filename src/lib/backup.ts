@@ -33,9 +33,12 @@ import type { ReadingPlansState } from "@/lib/reading-plans/types";
 import { normalizeJourneysState } from "@/lib/study-journeys/storage";
 import type { JourneysState } from "@/lib/study-journeys/types";
 import { EMPTY_JOURNEYS_STATE } from "@/lib/study-journeys/data";
+import { normalizeReflectionsState } from "@/lib/reflections/storage";
+import type { ReflectionsState } from "@/lib/reflections/types";
+import { EMPTY_REFLECTIONS_STATE } from "@/lib/reflections/storage";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 8;
+export const BACKUP_VERSION = 9;
 export const BACKUP_APP = "Al-Huda";
 
 /** Empty quiz state, used when restoring a legacy backup that had no quiz. */
@@ -69,6 +72,8 @@ export interface BackupFile {
   readingPlans: ReadingPlansState;
   /** Sprint 52: study journeys added in v8. */
   journeys: JourneysState;
+  /** Sprint 53: personal reflections added in v9. */
+  reflections: ReflectionsState;
 }
 
 export interface RestorableBackup {
@@ -79,14 +84,16 @@ export interface RestorableBackup {
   quiz: QuizState;
   readingPlans: ReadingPlansState;
   journeys: JourneysState;
+  reflections: ReflectionsState;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
    * export; 2 added revision and preferences; 3 added paths; 4 added
    * translationId in preferences; 5 added quiz; 6 added reading plans;
-   * 7 added collections and collectionAyat; 8 added study journeys.
+   * 7 added collections and collectionAyat; 8 added study journeys;
+   * 9 added personal reflections.
    * Older versions get defaults for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
+  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -103,6 +110,7 @@ export interface BackupInput {
   quiz: QuizState;
   readingPlans: ReadingPlansState;
   journeys: JourneysState;
+  reflections: ReflectionsState;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -122,6 +130,7 @@ export function buildBackup(
     quiz: input.quiz,
     readingPlans: input.readingPlans,
     journeys: input.journeys,
+    reflections: input.reflections,
   };
 }
 
@@ -161,22 +170,23 @@ export function parseBackup(text: string): ParseBackupResult {
   const exportedAt = typeof file.exportedAt === "string" ? file.exportedAt : "";
 
   if (file.format === BACKUP_FORMAT) {
-    // v3–v8 share the same envelope shape. v4 added translationId inside
+    // v3–v9 share the same envelope shape. v4 added translationId inside
     // preferences; v5 added quiz; v6 added reading plans; v7 added collections;
-    // v8 added study journeys.
+    // v8 added study journeys; v9 added personal reflections.
     if (
       version !== 3 &&
       version !== 4 &&
       version !== 5 &&
       version !== 6 &&
       version !== 7 &&
-      version !== 8
+      version !== 8 &&
+      version !== 9
     ) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads versions 3–8. Nothing was imported.`,
+        }, and this build reads versions 3–9. Nothing was imported.`,
       };
     }
     return {
@@ -201,7 +211,11 @@ export function parseBackup(text: string): ParseBackupResult {
           file.journeys === undefined
             ? { ...EMPTY_JOURNEYS_STATE }
             : normalizeJourneysState(file.journeys),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8) : 8,
+        reflections:
+          file.reflections === undefined
+            ? { ...EMPTY_REFLECTIONS_STATE }
+            : normalizeReflectionsState(file.reflections),
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8 | 9) : 9,
         exportedAt,
       },
     };
@@ -219,6 +233,7 @@ export function parseBackup(text: string): ParseBackupResult {
         quiz: { ...EMPTY_QUIZ_STATE },
         readingPlans: { ...EMPTY_READING_PLANS_STATE },
         journeys: { ...EMPTY_JOURNEYS_STATE },
+        reflections: { ...EMPTY_REFLECTIONS_STATE },
         sourceVersion: 1,
         exportedAt,
       },

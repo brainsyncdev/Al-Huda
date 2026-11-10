@@ -32,6 +32,10 @@ export interface JourneyStage {
   objective: string;
   /** Optional question for personal reflection. Not prescriptive. */
   reflectionPrompt?: string;
+  /** What the learner should be able to do after completing this stage. */
+  completionCriteria: string;
+  /** Guidance on what to do after completing this stage. */
+  nextStep: string;
   /** Per-stage provenance override (inherits from journey if absent). */
   provenance?: ProvenanceRecord;
 }
@@ -51,6 +55,12 @@ export interface StudyJourney {
   arabicTitle: string;
   /** One-paragraph summary of what this journey covers. */
   summary: string;
+  /** What the learner will achieve by completing this journey. */
+  learningObjective: string;
+  /** Optional description of the intended audience. */
+  intendedAudience?: string;
+  /** What constitutes completion of this journey. */
+  completionCriteria: string[];
   /** Which dimension this journey belongs to. */
   dimensionId: string;
   /** Difficulty level. */

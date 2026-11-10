@@ -103,7 +103,7 @@ export default async function StudyJourneyDetailPage({ params }: Props) {
           <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
             {journey.title}
           </h1>
-          <span className="arabic-display text-3xl text-gold" lang="ar">
+          <span className="arabic-display text-3xl text-gold" lang="ar" dir="rtl">
             {journey.arabicTitle}
           </span>
         </div>

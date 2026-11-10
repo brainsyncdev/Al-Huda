@@ -64,6 +64,7 @@ export default function StudyJourneysIndexPage() {
                     <span
                       className="arabic-display text-2xl text-gold"
                       lang="ar"
+                      dir="rtl"
                     >
                       {journey.arabicTitle}
                     </span>

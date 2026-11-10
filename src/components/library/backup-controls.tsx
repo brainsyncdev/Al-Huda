@@ -28,6 +28,7 @@ import { usePaths } from "@/lib/paths/context";
 import { useQuiz } from "@/lib/quiz/context";
 import { useReadingPlans } from "@/lib/reading-plans/context";
 import { useJourneys } from "@/lib/study-journeys/context";
+import { useReflections } from "@/lib/reflections/context";
 
 const BUTTON_CLASS =
   "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50";
@@ -40,6 +41,7 @@ export function BackupControls() {
   const quiz = useQuiz();
   const readingPlans = useReadingPlans();
   const journeys = useJourneys();
+  const reflections = useReflections();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [reading, setReading] = useState(false);
   const [note, setNote] = useState<string | null>(null);
@@ -51,7 +53,8 @@ export function BackupControls() {
     paths.hydrated &&
     quiz.hydrated &&
     readingPlans.hydrated &&
-    journeys.hydrated;
+    journeys.hydrated &&
+    reflections.hydrated;
   const planCount = Object.keys(revision.items).length;
   const pathsCount = Object.keys(paths.state.progress).length;
   const quizCount = quiz.state.attempts.filter(
@@ -59,6 +62,7 @@ export function BackupControls() {
   ).length;
   const readingPlansCount = readingPlans.state.targets.length;
   const journeysCount = Object.keys(journeys.state.progress).length;
+  const reflectionsCount = reflections.state.reflections.length;
 
   function handleExport() {
     if (!ready) return;
@@ -76,10 +80,11 @@ export function BackupControls() {
       quiz: quiz.exportState(),
       readingPlans: readingPlans.exportState(),
       journeys: journeys.exportState(),
+      reflections: reflections.exportState(),
     });
     downloadJson(file, backupFileName());
     toast.success(
-      `Backup exported — ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${planCount} planned verse${planCount === 1 ? "" : "s"}, ${pathsCount} learning path${pathsCount === 1 ? "" : "s"}, ${quizCount} quiz attempt${quizCount === 1 ? "" : "s"}, ${readingPlansCount} reading plan${readingPlansCount === 1 ? "" : "s"}, ${journeysCount} study journey${journeysCount === 1 ? "" : "s"}.`
+      `Backup exported — ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${planCount} planned verse${planCount === 1 ? "" : "s"}, ${pathsCount} learning path${pathsCount === 1 ? "" : "s"}, ${quizCount} quiz attempt${quizCount === 1 ? "" : "s"}, ${readingPlansCount} reading plan${readingPlansCount === 1 ? "" : "s"}, ${journeysCount} study journey${journeysCount === 1 ? "" : "s"}, ${reflectionsCount} reflection${reflectionsCount === 1 ? "" : "s"}.`
     );
     setNote(null);
   }
@@ -117,12 +122,14 @@ export function BackupControls() {
           `• ${pathsCount} learning path progress entries\n` +
           `• ${quizCount} completed quiz attempts\n` +
           `• ${journeysCount} study journey progress entries\n` +
+          `• ${reflectionsCount} personal reflections\n` +
           `• your reader preferences\n\n` +
           `The backup contains ${data.library.bookmarks.length} bookmarks, ` +
           `${data.library.notes.length} notes, ${Object.keys(data.revision.items).length} planned verses, ` +
           `${Object.keys(data.paths.progress).length} learning paths, ` +
-          `${data.quiz.attempts.filter((a) => a.completedAt !== null).length} completed quiz attempts, and ` +
-          `${Object.keys(data.journeys.progress).length} study journeys. ` +
+          `${data.quiz.attempts.filter((a) => a.completedAt !== null).length} completed quiz attempts, ` +
+          `${Object.keys(data.journeys.progress).length} study journeys, and ` +
+          `${data.reflections.reflections.length} reflections. ` +
           `This cannot be undone.`
       );
       if (!confirmed) {
@@ -137,9 +144,10 @@ export function BackupControls() {
       quiz.restoreState(data.quiz);
       readingPlans.restoreState(data.readingPlans);
       journeys.restoreState(data.journeys);
+      reflections.restoreState(data.reflections);
 
       toast.success(
-        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths, ${data.quiz.attempts.length} quiz attempts, ${data.readingPlans.targets.length} reading plans, ${Object.keys(data.journeys.progress).length} study journeys.`
+        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths, ${data.quiz.attempts.length} quiz attempts, ${data.readingPlans.targets.length} reading plans, ${Object.keys(data.journeys.progress).length} study journeys, ${data.reflections.reflections.length} reflections.`
       );
       setNote(
         data.sourceVersion === 1
@@ -169,6 +177,7 @@ export function BackupControls() {
         "• learning path progress and onboarding\n" +
         "• quiz attempts and their answers\n" +
         "• study journey progress\n" +
+        "• personal reflections\n" +
         "• reader preferences\n\n" +
         "There is no server copy to restore from. Export a backup first if you want to keep any of it. This cannot be undone."
     );
@@ -180,6 +189,7 @@ export function BackupControls() {
     quiz.clearAll();
     readingPlans.clearAll();
     journeys.clearAll();
+    reflections.clearAll();
     setNote("All local data erased from this device.");
     toast.success("All local data erased");
   }

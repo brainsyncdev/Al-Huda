@@ -341,6 +341,20 @@ function Sprint48RootView({
             scholarly approval or a thematic classification.
           </p>
         </div>
+        <aside className="flex items-start gap-2 rounded-xl border border-gold/30 bg-gold-soft/40 p-3 text-xs text-accent-foreground">
+          <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
+          <p>
+            <strong>Important distinction:</strong> Root occurrences are
+            linguistic units based on morphology, not thematic classifications.
+            This page shows where words derived from this root appear — it does
+            not claim these verses share a theme. For curated thematic
+            exploration, see{" "}
+            <Link href="/explore/topics" className="text-primary hover:underline">
+              Topics
+            </Link>
+            .
+          </p>
+        </aside>
       </header>
 
       {/* Lemma distribution */}

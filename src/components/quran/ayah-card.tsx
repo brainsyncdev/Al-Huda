@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Bookmark, BookOpen, Check, Copy, FolderHeart, Link2, ListPlus, NotebookPen, Trash2 } from "lucide-react";
+import { Bookmark, BookOpen, Check, Compass, Copy, FolderHeart, Link2, ListPlus, NotebookPen, Tag, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import type { Ayah } from "@/lib/quran/types";
 import { useLibrary } from "@/lib/library/context";
@@ -13,6 +13,7 @@ import { absoluteUrl } from "@/lib/site";
 import { getComprehensionNote } from "@/lib/comprehension/notes";
 import { useTranslationText } from "@/lib/quran/translation-store";
 import { getTranslation } from "@/lib/quran/translations";
+import { getTopicsForAyah, getDimensionForTopic, getTopicUrl, getDimensionUrl } from "@/lib/topics/navigation";
 import { AudioPlayer } from "./audio-player";
 
 interface AyahCardProps {
@@ -272,6 +273,51 @@ export function AyahCard({
           ))}
         </div>
       )}
+
+      {/* Sprint 53: Topic context section */}
+      {variant === "full" && (() => {
+        const topics = getTopicsForAyah(ayah.surah, ayah.ayah);
+        if (topics.length === 0) return null;
+        return (
+          <div className="mt-4 rounded-xl border border-border/60 bg-secondary/30 p-4">
+            <div className="flex items-start gap-2">
+              <Tag className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden />
+              <div className="space-y-2">
+                <p className="text-sm font-medium text-foreground">
+                  Explore this ayah through curated topics:
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {topics.map((topic) => {
+                    const dimension = getDimensionForTopic(topic.slug);
+                    return (
+                      <div key={topic.slug} className="space-y-1">
+                        <Link
+                          href={getTopicUrl(topic.slug)}
+                          className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1.5 text-xs font-medium text-primary transition-colors hover:bg-primary/20"
+                        >
+                          {topic.title}
+                          <span className="arabic-display text-xs" lang="ar" aria-hidden>
+                            {topic.arabicTitle}
+                          </span>
+                        </Link>
+                        {dimension && (
+                          <Link
+                            href={getDimensionUrl(dimension.id)}
+                            className="ml-2 inline-flex items-center gap-1 text-[10px] text-muted-foreground hover:text-primary"
+                          >
+                            <Compass className="h-3 w-3" aria-hidden />
+                            {dimension.title}
+                          </Link>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       <div className="mt-4 flex flex-wrap items-center gap-1.5">
         <button
