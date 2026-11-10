@@ -1,16 +1,20 @@
 # Al-Huda — Product Requirements Document (PRD)
 
-Version: 4.0
+Version: 4.1
 Status: Implementation baseline + roadmap — single source of truth
-Prepared: 09 November 2026
+Prepared: 11 November 2026 (Sprint 52 update)
+Previous version: [archive/PRD-v4.0.md](archive/PRD-v4.0.md)
 Product category: Quran learning, discovery, reflection, and knowledge platform
 Platform: SEO-first responsive web application (local-first, account-free)
 Stack: Next.js 15 App Router, TypeScript, Tailwind CSS, Radix/shadcn UI, Vitest
 
-**Supersession.** This document supersedes both earlier PRDs, which are preserved in `archive/`:
+**Supersession.** This document supersedes earlier PRDs, which are preserved in `archive/`:
 
+- [`archive/PRD-v4.0.md`](archive/PRD-v4.0.md) — Sprint 44 baseline.
 - [`archive/PRD-v3.0.md`](archive/PRD-v3.0.md) — the corrective web-first rewrite.
 - [`archive/AL-HUDA-PRD-v2.0-COMPLETE.md`](archive/AL-HUDA-PRD-v2.0-COMPLETE.md) — the aspirational Flutter/NestJS/kids-mode blueprint. Most of its scope was never built and is now explicitly deferred (Appendix A).
+
+**Sprint 52 changes (v4.0 → v4.1).** Expanded the Quranic knowledge architecture from 10 dimensions to 15, from 11 curated topics to 18, and introduced a new study journeys system with local-first progress storage. See [`SPRINT-52-REPORT.md`](SPRINT-52-REPORT.md), [`POLICY-DECISION-52.md`](POLICY-DECISION-52.md), and [`QURANIC-TAXONOMY-52.md`](QURANIC-TAXONOMY-52.md) for full details.
 
 Every statement in this document marked **COMPLETE**, **PARTIAL**, or **BLOCKED** is grounded in the source code as of Sprint 44 (2026-11-02). Claims cite repository paths. Where a capability is implemented in code but not measured or human-verified, it is marked **UNVERIFIED**.
 
@@ -27,7 +31,8 @@ Al-Huda is a Quran-centered web product that helps people move from fragmented Q
 - **Two classical Arabic tafsirs** readable in-app via the same proxy (al-Jalalayn, al-Muyassar) and two English tafsirs as outbound links.
 - **Word-by-word analysis** from vendored QUL data (77,429 words, sha256-manifested).
 - **Root and morphology exploration**: 1,642 source-backed roots discovered, 1,469 published through an automated, deterministic pipeline; a 124,147-record morphology index.
-- **11 curated topics**, **10 life-dimensions** (topic-level navigation aid), and a **14-domain catalog** (organizational proposal), all stamped `pending-scholarly-review`.
+- **18 curated topics**, **15 life-dimensions** (topic-level navigation aid), and a **14-domain catalog** (organizational proposal), all stamped `pending-scholarly-review`.
+- **4 structured study journeys** with local-first progress storage, integrated with the personal study workspace.
 - **Spaced-repetition revision, deterministic quizzes, curated learning paths, and user-defined reading plans** — all stored locally.
 - A **4-locale UI** (English default, Urdu, Arabic, Chinese) with RTL handling.
 - A **public read-only `/api/v1` surface** (13 self-documenting endpoints) plus JSON-LD, sitemap, robots, and canonical URL integrity.
@@ -118,7 +123,7 @@ Al-Huda does **not** present AI-generated religious interpretation as authoritat
 
 ## 5. Release Priorities
 
-**MVP (shipped).** Quran reader, surah/ayah navigation, Arabic + built-in English translation, on-demand 116-edition translation catalog, word-by-word, mushaf metadata, search (lexical + opt-in semantic), curated topics, 10 dimensions, 14 domains, root/morphology explorer, knowledge-graph API/UI, discover hub, library (local), settings, revision, reading plans, quizzes, learning paths, onboarding, sources/provenance, editorial log, report intake, SEO + JSON-LD + sitemap + robots, 4-locale UI, `/api/v1`. AI answers disabled.
+**MVP (shipped).** Quran reader, surah/ayah navigation, Arabic + built-in English translation, on-demand 116-edition translation catalog, word-by-word, mushaf metadata, search (lexical + opt-in semantic), curated topics (18), 15 dimensions, 14 domains, root/morphology explorer, knowledge-graph API/UI, discover hub, library (local), settings, revision, reading plans, quizzes, learning paths, study journeys (4 initial), onboarding, sources/provenance, editorial log, report intake, SEO + JSON-LD + sitemap + robots, 4-locale UI, `/api/v1`. AI answers disabled.
 
 **Release 1.x (next).** Clear the release blockers in §19 (licensing reviews, qualified reviewer, report destination, a11y audit, Core Web Vitals, rendered social metadata, durable rate limiting). Expand curated topics and root activation behind human review.
 
@@ -167,12 +172,14 @@ Canonical URL conventions are enforced by tests: `src/app/url-integrity.test.ts`
 
 | Check | Reported value | Command |
 |---|---|---|
-| Test suite | 809 tests / 48 files passing | `pnpm vitest run` |
+| Test suite | 998 tests / 56 files passing | `pnpm vitest run` |
 | Quran data validation | 114 surahs, 6,236 ayat, 0 issues | `pnpm validate:quran` |
 | License register validation | 13 source records, 0 issues | `pnpm validate:licenses` |
-| Production build | 6,433 static pages, exit 0 | `pnpm build` |
+| Production build | 347 static pages, exit 0 | `pnpm build` |
 | Lint / typecheck | clean | `pnpm lint`, `pnpm typecheck` |
 | Build gate | blocks localhost/invalid `NEXT_PUBLIC_SITE_URL` | `scripts/validate-build-env.mjs` |
+| Quranic taxonomy audit | 15 dimensions, 18 topics, 14 domains, 18 relationships | `node scripts/audit-quranic-taxonomy.mjs` |
+| Study journeys audit | 4 journeys, 20 stages, all references valid | `node scripts/audit-study-journeys.mjs` |
 
 > These are **reported** results from Sprint 44, recorded as the verification basis. A passing validator is structural assurance, not licensing clearance or scholarly approval.
 
