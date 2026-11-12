@@ -51,6 +51,7 @@ export const ur: Record<TranslationKey, string | { one?: string; other?: string 
   "nav.plans": "منصوبے",
   "nav.quiz": "کوئز",
   "nav.library": "لائبریری",
+  "nav.myStudy": "میرا مطالعہ",
   "nav.settings": "ترتیبات",
   "nav.primary": "بنیادی",
   "nav.footer": "فوٹر",

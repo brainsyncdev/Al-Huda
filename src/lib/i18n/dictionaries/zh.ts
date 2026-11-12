@@ -51,6 +51,7 @@ export const zh = {
   "nav.plans": "计划",
   "nav.quiz": "测验",
   "nav.library": "图书馆",
+  "nav.myStudy": "我的学习",
   "nav.settings": "设置",
   "nav.primary": "主要",
   "nav.footer": "页脚",

@@ -57,6 +57,7 @@ export const ar: Record<
   "nav.plans": "الخطط",
   "nav.quiz": "اختبار",
   "nav.library": "المكتبة",
+  "nav.myStudy": "دراستي",
   "nav.settings": "الإعدادات",
   "nav.primary": "الرئيسية",
   "nav.footer": "التذييل",

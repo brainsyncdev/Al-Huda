@@ -1,16 +1,23 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { AlertTriangle, BookMarked, Compass, Search } from "lucide-react";
+import { AlertTriangle, BookMarked, Compass, GraduationCap, Search } from "lucide-react";
 import { getAllDimensions } from "@/lib/explore/dimensions";
 import { TOPICS } from "@/lib/topics/data";
 import { DOMAINS } from "@/lib/taxonomy/domains";
+import {
+  PATHS,
+  RECOMMENDED_PATHS,
+  AUDIENCE_LABELS,
+  AUDIENCE_DESCRIPTIONS,
+  type TargetAudience,
+} from "@/lib/paths/data";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Explore — 10 Dimensions of the Quran",
+  title: "Explore — 15 Dimensions of the Quran",
   description:
-    "Discover the Quran through 10 life dimensions: Spiritual, Personal, Family, Social, Economic, Intellectual, Governance, Jihad, Interfaith, and Ilm. Each dimension connects to curated topics and search.",
+    "Discover the Quran through 15 life dimensions. Each dimension connects to curated topics and search.",
   alternates: { canonical: absoluteUrl("/explore") },
 };
 
@@ -26,9 +33,9 @@ export default function ExplorePage() {
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: "Explore — 10 Dimensions of the Quran",
+            name: "Explore — 15 Dimensions of the Quran",
             description:
-              "Discover the Quran through 10 life dimensions, each connecting to curated topics and search.",
+              "Discover the Quran through 15 life dimensions, each connecting to curated topics and search.",
             url: absoluteUrl("/explore"),
             inLanguage: ["en", "ar"],
           },
@@ -43,7 +50,7 @@ export default function ExplorePage() {
           </h1>
         </div>
         <p className="max-w-2xl text-lg text-muted-foreground">
-          Discover the Quran through 10 life dimensions. Each dimension connects
+          Discover the Quran through 15 life dimensions. Each dimension connects
           to curated topics and search, offering entry points for reflection and
           study.
         </p>
@@ -65,12 +72,86 @@ export default function ExplorePage() {
         </div>
       </header>
 
+      {/* Audience-based recommended paths */}
+      <section aria-labelledby="recommended-paths-heading" className="space-y-5">
+        <div>
+          <div className="flex items-center gap-3 mb-2">
+            <GraduationCap className="h-6 w-6 text-primary" aria-hidden />
+            <h2
+              id="recommended-paths-heading"
+              className="font-display text-2xl font-semibold tracking-tight"
+            >
+              Start with a Learning Path
+            </h2>
+          </div>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Curated journeys tailored to where you are in your Quran study.
+            Each path is a sequenced set of ayat with objectives and reflection
+            prompts. All content is pending scholarly review.
+          </p>
+        </div>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          {(Object.keys(RECOMMENDED_PATHS) as TargetAudience[]).map((audience) => {
+            const pathSlug = RECOMMENDED_PATHS[audience][0];
+            const path = PATHS.find((p) => p.slug === pathSlug);
+            if (!path) return null;
+
+            return (
+              <Link
+                key={audience}
+                href={`/learn/paths/${path.slug}`}
+                className="group rounded-2xl border border-border/80 bg-card p-5 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+              >
+                <div className="flex items-start justify-between gap-3 mb-3">
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-gold mb-1">
+                      For {AUDIENCE_LABELS[audience]}
+                    </p>
+                    <h3 className="font-display text-lg font-semibold tracking-tight group-hover:text-primary transition-colors">
+                      {path.title}
+                    </h3>
+                    <p
+                      className="arabic-display text-base text-gold mt-0.5"
+                      lang="ar"
+                      dir="rtl"
+                    >
+                      {path.arabicTitle}
+                    </p>
+                  </div>
+                  <GraduationCap
+                    className="h-5 w-5 shrink-0 text-primary"
+                    aria-hidden
+                  />
+                </div>
+                <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                  {path.summary}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {path.steps.length} steps · {AUDIENCE_DESCRIPTIONS[audience]}
+                </p>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="flex items-center gap-2">
+          <Link
+            href="/learn/paths"
+            className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+          >
+            <GraduationCap className="h-4 w-4" aria-hidden />
+            Browse all paths
+          </Link>
+        </div>
+      </section>
+
       <section aria-labelledby="dimensions-heading" className="space-y-6">
         <h2
           id="dimensions-heading"
           className="font-display text-2xl font-semibold tracking-tight"
         >
-          10 Dimensions
+          15 Dimensions
         </h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {dimensions.map((dim) => (
@@ -178,7 +259,7 @@ export default function ExplorePage() {
           law, and eschatology. This is an organizational catalog, not an
           approved taxonomy; no topic or passage has been assigned yet.
           Domains are different from dimensions: domains organize broad
-          subject areas for future work, while the 10 dimensions above
+          subject areas for future work, while the 15 dimensions above
           are the active navigation system.
         </p>
         <Link
@@ -204,7 +285,7 @@ export default function ExplorePage() {
           </h2>
         </div>
         <p className="text-sm text-muted-foreground mb-4">
-          See how the ten dimensions connect to curated topics, and how topics
+          See how the fifteen dimensions connect to curated topics, and how topics
           relate to each other. Every node and edge carries its editorial
           review status.
         </p>

@@ -3,13 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
+  Bookmark,
   BookOpen,
   Compass,
   GraduationCap,
   Home,
-  Library,
-  Search,
-  Settings,
 } from "lucide-react";
 import { useTranslation } from "@/lib/i18n/context";
 import { LanguageSelector } from "@/components/layout/language-selector";
@@ -19,10 +17,12 @@ function isActive(pathname: string, href: string): boolean {
   if (href === "/") return pathname === "/";
   if (href === "/quran")
     return pathname === "/quran" || pathname.startsWith("/quran/");
-  if (href === "/topics")
-    return pathname === "/topics" || pathname.startsWith("/topics/");
   if (href === "/explore")
     return pathname === "/explore" || pathname.startsWith("/explore/");
+  if (href === "/learn")
+    return pathname === "/learn" || pathname.startsWith("/learn/");
+  if (href === "/my-study")
+    return pathname === "/my-study" || pathname.startsWith("/my-study/");
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
@@ -42,10 +42,8 @@ export function MobileBottomNav() {
     { href: "/", label: t("common.home"), icon: Home },
     { href: "/quran", label: t("nav.read"), icon: BookOpen },
     { href: "/explore", label: t("nav.explore"), icon: Compass },
-    { href: "/search", label: t("nav.search"), icon: Search },
     { href: "/learn", label: t("nav.learn"), icon: GraduationCap },
-    { href: "/library", label: t("nav.library"), icon: Library },
-    { href: "/settings", label: t("nav.settings"), icon: Settings },
+    { href: "/my-study", label: t("nav.myStudy"), icon: Bookmark },
   ] as const;
 
   return (

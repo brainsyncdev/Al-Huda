@@ -51,6 +51,7 @@ export const en = {
   "nav.plans": "Plans",
   "nav.quiz": "Quiz",
   "nav.library": "Library",
+  "nav.myStudy": "My Study",
   "nav.settings": "Settings",
   "nav.primary": "Primary",
   "nav.footer": "Footer",
