@@ -396,18 +396,18 @@ async function CanonicalTopicView({ topic }: { topic: CanonicalTopic }) {
             <h2 id="related-roots" className="font-display text-lg font-semibold tracking-tight">
               Related Arabic Roots (suggested connections)
             </h2>
-            <p className="mt-1 text-xs text-muted-foreground">
-              Root connections are heuristic suggestions based on topic keywords. They are not authoritative classifications.
+            <p className="mt-1 text-xs italic text-muted-foreground">
+              Suggested connections — requires linguistic verification. Root matches are heuristic keyword suggestions, not authoritative scholarly classifications.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
             {relatedRoots.map((root) => (
-              <Link key={root.slug} href={`/explore/root/${root.slug}`} className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary/40 px-3 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/70">
-                <span className="arabic-display text-base text-gold" lang="ar" dir="rtl">
+              <Link key={root.slug} href={`/explore/root/${root.slug}`} className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary/40 px-3 py-1.5 text-sm italic font-medium text-muted-foreground transition-colors hover:bg-secondary/70 hover:text-secondary-foreground">
+                <span className="arabic-display text-base text-gold not-italic" lang="ar" dir="rtl">
                   {root.root}
                 </span>
                 {root.transliteration && (
-                  <span className="text-xs text-muted-foreground">({root.transliteration})</span>
+                  <span className="text-xs text-muted-foreground not-italic">({root.transliteration})</span>
                 )}
               </Link>
             ))}

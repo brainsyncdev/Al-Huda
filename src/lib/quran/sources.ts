@@ -27,6 +27,13 @@ export interface SourceRecord {
   /** How the hub obtains the content. */
   method: "package" | "link";
   notes?: string;
+  /**
+   * Whether this source is currently available. Defaults to true if unset.
+   * Set to false when the homepage URL is broken or points to the wrong resource.
+   * MFD-08 Phase 5: tafsir-ma(arif) marked unavailable (homepage is a courses
+   * institute, not the Ma'ariful Quran tafsir).
+   */
+  available?: boolean;
 }
 
 export const SOURCES: SourceRecord[] = [
@@ -77,7 +84,7 @@ export const SOURCES: SourceRecord[] = [
   },
   {
     id: "tanzil-translations",
-    provides: "Quran translations in 50+ languages (Urdu, Persian, Turkish, French, German, Spanish, Indonesian, and many more)",
+    provides: "Quran translations in 44 languages (Urdu, Persian, Turkish, French, German, Spanish, Indonesian, and many more)",
     attribution: "Various translators — see tanzil.net/trans/ for full list",
     publisher: "Tanzil.net",
     license: "Tanzil terms of use (attribution + no modification)",
@@ -203,6 +210,7 @@ export const SOURCES: SourceRecord[] = [
         version: "Link target, not version-pinned in this app",
     method: "link",
     notes: "Link-out only for tafsir; no text bundled.",
+    available: false,
   },
 ];
 
@@ -244,7 +252,7 @@ export function sourceVersionLabel(record: SourceRecord): string {
 
 /** Default translation credit line shown in the reader. */
 export const TRANSLATION_CREDIT =
-  "100+ translations in 50+ languages via Tanzil.net (default: Urdu — Jalandhry)";
+  "116 translations in 44 languages via Tanzil.net (default: Urdu — Jalandhry)";
 
 /** Arabic text credit line. */
 export const ARABIC_CREDIT = "Arabic text: Uthmani and chapter metadata via quranenc.com";

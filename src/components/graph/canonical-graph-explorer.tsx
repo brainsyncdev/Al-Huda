@@ -27,6 +27,7 @@ import {
   Sparkles,
   Info,
 } from "lucide-react";
+import { getMappingTypeLabel } from "@/lib/taxonomy/mapping-type-labels";
 
 interface CanonicalGraphExplorerProps {
   graph: CanonicalKnowledgeGraph;
@@ -50,14 +51,6 @@ const NODE_KIND_LABELS: Record<CanonicalGraphNodeKind, string> = {
   dimension: "Dimension",
   subdimension: "Subdimension",
   topic: "Topic",
-};
-
-const MAPPING_TYPE_LABELS: Record<string, string> = {
-  DIRECT_REFERENCE: "Direct reference",
-  EXPLICIT_INSTRUCTION: "Explicit instruction",
-  PROPHETIC_NARRATIVE: "Prophetic narrative",
-  THEMATIC_REFERENCE: "Thematic reference",
-  IMPLICIT_REFERENCE: "Implicit reference",
 };
 
 const MAPPING_TYPE_COLORS: Record<string, string> = {
@@ -1031,8 +1024,7 @@ function QuranicEnrichmentSection({
                   ? Math.round((count / totalMappings) * 100)
                   : 0;
               const color = MAPPING_TYPE_COLORS[type] ?? "#94a3b8";
-              const label =
-                MAPPING_TYPE_LABELS[type] ?? type.replace(/_/g, " ");
+              const label = getMappingTypeLabel(type);
               return (
                 <div key={type} className="flex items-center gap-2 text-xs">
                   <span
@@ -1053,16 +1045,19 @@ function QuranicEnrichmentSection({
 
       {enrichment.relatedRoots.length > 0 && (
         <div className="mb-4">
-          <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground mb-2 flex items-center gap-1">
+          <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground mb-1 flex items-center gap-1">
             <Link2 className="h-3 w-3" aria-hidden />
             Suggested Arabic roots
+          </p>
+          <p className="text-[10px] italic text-muted-foreground mb-2">
+            Heuristic keyword matches — requires linguistic verification
           </p>
           <div className="flex flex-wrap gap-1.5">
             {enrichment.relatedRoots.map((rootSlug) => (
               <Link
                 key={rootSlug}
                 href={`/explore/root/${encodeURIComponent(rootSlug)}`}
-                className="inline-flex items-center rounded-full border border-border/60 bg-card px-2.5 py-0.5 text-xs font-medium hover:border-gold hover:text-gold transition-colors"
+                className="inline-flex items-center rounded-full border border-border/60 bg-card px-2.5 py-0.5 text-xs italic font-medium text-muted-foreground hover:border-gold hover:text-gold transition-colors"
               >
                 <span lang="ar" dir="rtl" className="arabic-display">
                   {rootSlug}

@@ -17,6 +17,11 @@ import type {
   TopicTranslationResult,
   TranslationSummary,
 } from "@/lib/taxonomy/topic-translation-data";
+import {
+  getMappingTypeLabel,
+  getMappingTypeDescription,
+  getMappingTypeCategory,
+} from "@/lib/taxonomy/mapping-type-labels";
 
 interface TopicTranslationViewerProps {
   result: TopicTranslationResult;
@@ -58,18 +63,15 @@ export function TopicTranslationViewer({
     {}
   );
 
-  const mappingTypeLabels: Record<string, string> = {
-    DIRECT_REFERENCE: "Direct Reference",
-    EXPLICIT_INSTRUCTION: "Explicit Instruction",
-    PROPHETIC_NARRATIVE: "Prophetic Narrative",
-    THEMATIC_REFERENCE: "Thematic Reference",
-  };
-
   const mappingTypeColors: Record<string, string> = {
     DIRECT_REFERENCE: "bg-blue-100 text-blue-800 border-blue-200",
-    EXPLICIT_INSTRUCTION: "bg-green-100 text-green-800 border-green-200",
+    EXPLICIT_INSTRUCTION: "bg-emerald-100 text-emerald-800 border-emerald-200",
     PROPHETIC_NARRATIVE: "bg-purple-100 text-purple-800 border-purple-200",
     THEMATIC_REFERENCE: "bg-amber-100 text-amber-800 border-amber-200",
+    GENERAL_QURANIC_PRINCIPLE: "bg-teal-100 text-teal-800 border-teal-200",
+    TAFSIR_SUPPORTED: "bg-indigo-100 text-indigo-800 border-indigo-200",
+    EDITORIAL_CROSS_REFERENCE: "bg-gray-100 text-gray-800 border-gray-200",
+    CONTEMPORARY_APPLICATION: "bg-rose-100 text-rose-800 border-rose-200",
   };
 
   return (
@@ -122,7 +124,7 @@ export function TopicTranslationViewer({
                       mappingTypeColors[type] || "bg-gray-100 text-gray-800"
                     )}
                   >
-                    {mappingTypeLabels[type] || type}: {count}
+                    {getMappingTypeLabel(type)}: {count}
                   </Badge>
                 )
               )}
@@ -163,8 +165,16 @@ export function TopicTranslationViewer({
                       <ChevronRight className="h-5 w-5" />
                     )}
                     <CardTitle className="text-lg">
-                      {mappingTypeLabels[type] || type}
+                      {getMappingTypeLabel(type)}
                     </CardTitle>
+                    {getMappingTypeDescription(type) && (
+                      <p className="text-xs text-muted-foreground italic mt-1">
+                        {getMappingTypeDescription(type)}
+                        {getMappingTypeCategory(type) === 'editorial' && (
+                          <span className="ml-2 text-[10px] uppercase tracking-wider font-medium not-italic">Editorial association</span>
+                        )}
+                      </p>
+                    )}
                     <Badge variant="outline" className="ml-2">
                       {ayahs.length} {ayahs.length === 1 ? "ayah" : "ayat"}
                     </Badge>

@@ -161,7 +161,7 @@ function buildTafsirLink(
       : "unspecified",
     url: source.buildUrl(surah, ayah),
     isExternal: source.isExternal,
-    available: Boolean(record),
+    available: record != null && record.available !== false,
   };
 }
 

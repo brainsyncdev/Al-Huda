@@ -281,7 +281,8 @@ function ayahKey(a: AyahTafsirResult): string {
 
 function TafsirLinkGrid({ links }: { links: TafsirLink[] }) {
   const inApp = links.filter((l) => !l.isExternal);
-  const external = links.filter((l) => l.isExternal);
+  const external = links.filter((l) => l.isExternal && l.available);
+  const unavailable = links.filter((l) => !l.available);
 
   return (
     <div className="space-y-3">
@@ -308,6 +309,20 @@ function TafsirLinkGrid({ links }: { links: TafsirLink[] }) {
           <div className="flex flex-wrap gap-2">
             {external.map((link) => (
               <ExternalTafsirLink key={link.tafsirId} link={link} />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {unavailable.length > 0 && (
+        <div>
+          <p className="mb-1.5 flex items-center gap-1.5 text-[0.6875rem] font-semibold uppercase tracking-wider text-muted-foreground">
+            <ExternalLink className="h-3 w-3" aria-hidden />
+            Unavailable
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {unavailable.map((link) => (
+              <UnavailableTafsirLink key={link.tafsirId} link={link} />
             ))}
           </div>
         </div>
@@ -356,6 +371,28 @@ function ExternalTafsirLink({ link }: { link: TafsirLink }) {
         </span>
       </span>
     </a>
+  );
+}
+
+function UnavailableTafsirLink({ link }: { link: TafsirLink }) {
+  return (
+    <div
+      className="group inline-flex items-center gap-2 rounded-lg border border-border/50 bg-muted/30 px-3 py-1.5 text-sm font-medium text-muted-foreground opacity-60"
+      aria-label={`${link.tafsirName} is currently unavailable`}
+    >
+      <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+      <span className="flex flex-col items-start leading-tight">
+        <span className="line-through">
+          {link.tafsirName}
+          <span className="ml-1 text-[0.625rem] font-normal text-muted-foreground">
+            Unavailable
+          </span>
+        </span>
+        <span className="text-[0.625rem] font-normal text-muted-foreground">
+          {link.tafsirAttribution}
+        </span>
+      </span>
+    </div>
   );
 }
 

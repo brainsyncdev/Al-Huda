@@ -35,6 +35,12 @@ import {
 import { getServerTranslation } from "@/lib/i18n/server-translate";
 import { getCanonicalTopic } from "@/lib/taxonomy/canonical-adapter";
 import topicAyahMappings from "../../../../../data/taxonomy/topic-ayah-mappings.json";
+import {
+  getMappingTypeLabel,
+  getMappingTypeDescription,
+  getMappingTypeCategory,
+  getReviewStatusInfo,
+} from "@/lib/taxonomy/mapping-type-labels";
 
 interface AyahMapping {
   id: string;
@@ -170,23 +176,25 @@ export default async function AyahPage({ params, searchParams }: Props) {
 
   const topics = topicsForAyah({ surah: s, ayah: a });
 
-  // MFD-07 Phase 9: Find canonical topics that reference this ayah.
+  // MFD-07 Phase 9 + MFD-08 Phase 8: Find canonical topics that reference this ayah.
   // Derives from the pinned topic-ayah-mappings dataset; no fabrication.
+  // Now includes mapping type and review status for transparency.
   const canonicalTopicsForAyah = (() => {
     const mappings = topicAyahMappings as AyahMapping[];
-    const matchingTopicIds = new Set<string>();
+    const topicMap = new Map<string, { topic: NonNullable<ReturnType<typeof getCanonicalTopic>>; mapping: AyahMapping }>();
     for (const m of mappings) {
       if (
         m.surahNumber === s &&
         m.ayahStart <= a &&
         m.ayahEnd >= a
       ) {
-        matchingTopicIds.add(m.topicId);
+        const topic = getCanonicalTopic(m.topicId);
+        if (topic && !topicMap.has(m.topicId)) {
+          topicMap.set(m.topicId, { topic, mapping: m });
+        }
       }
     }
-    return Array.from(matchingTopicIds)
-      .map((id) => getCanonicalTopic(id))
-      .filter((t): t is NonNullable<typeof t> => t !== null);
+    return Array.from(topicMap.values());
   })();
 
   const juz = getJuzForAyah(s, a);
@@ -355,22 +363,54 @@ export default async function AyahPage({ params, searchParams }: Props) {
           <p className="mt-2 text-xs text-muted-foreground">
             Taxonomy-driven references from the expanded canonical topic system.
           </p>
-          <ul className="mt-3 flex flex-wrap gap-2">
-            {canonicalTopicsForAyah.map((topic) => (
-              <li key={topic.id}>
-                <Link
-                  href={`/explore/topics/${topic.id}`}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
-                >
-                  {topic.arabicTitle && (
-                    <span className="arabic-display text-base text-gold">
-                      {topic.arabicTitle}
-                    </span>
-                  )}
-                  {topic.title}
-                </Link>
-              </li>
-            ))}
+          <ul className="mt-3 space-y-3">
+            {canonicalTopicsForAyah.map(({ topic, mapping }) => {
+              const typeLabel = getMappingTypeLabel(mapping.mappingType);
+              const typeDescription = getMappingTypeDescription(mapping.mappingType);
+              const typeCategory = getMappingTypeCategory(mapping.mappingType);
+              const statusInfo = getReviewStatusInfo(mapping.status);
+              
+              return (
+                <li key={topic.id} className="rounded-xl border border-border/60 bg-card/60 p-3">
+                  <div className="space-y-2">
+                    <div className="flex items-start justify-between gap-2">
+                      <Link
+                        href={`/explore/topics/${topic.id}`}
+                        className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+                      >
+                        {topic.arabicTitle && (
+                          <span className="arabic-display text-base text-gold">
+                            {topic.arabicTitle}
+                          </span>
+                        )}
+                        {topic.title}
+                      </Link>
+                      <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider ${statusInfo.className}`}>
+                        {statusInfo.label}
+                      </span>
+                    </div>
+                    <div className="space-y-1">
+                      <p className="text-xs font-medium text-foreground">
+                        {typeLabel}
+                        {typeCategory === 'editorial' && (
+                          <span className="ml-2 text-[10px] uppercase tracking-wider font-medium text-muted-foreground">Editorial association</span>
+                        )}
+                      </p>
+                      {typeDescription && (
+                        <p className="text-xs text-muted-foreground italic">
+                          {typeDescription}
+                        </p>
+                      )}
+                      {mapping.rationale && (
+                        <p className="text-xs text-muted-foreground">
+                          {mapping.rationale}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
           <p className="mt-3 text-xs text-muted-foreground">
             Canonical topics are part of the expanded taxonomy and are pending scholarly review.
