@@ -11,6 +11,7 @@ import { getSurah, getSurahIndex } from "@/lib/quran/data";
 import { TOPICS, topicsForAyah } from "@/lib/topics/data";
 import { PATHS } from "@/lib/paths/data";
 import { absoluteUrl } from "@/lib/site";
+import { getCanonicalTopics } from "@/lib/taxonomy/canonical-adapter";
 import {
   parseSearchFilters,
   passesStructuralFilters as checkStructuralFilters,
@@ -23,6 +24,7 @@ import { searchTafsir } from "@/lib/quran/tafsir-search";
 import type { TafsirSearchResults } from "@/lib/quran/tafsir-search";
 import { getTranslation, TRANSLATIONS } from "@/lib/quran/translations";
 import type { TranslationMeta } from "@/lib/quran/translations";
+import { getServerTranslation } from "@/lib/i18n/server-translate";
 
 interface Props {
   searchParams: Promise<{
@@ -54,6 +56,7 @@ const SNIPPET_PAD = 60;
 
 export default async function SearchPage({ searchParams }: Props) {
   const rawParams = await searchParams;
+  const t = await getServerTranslation();
   const index = getSurahIndex();
   const filters = parseSearchFilters(rawParams);
   const revelationMap = buildRevelationMap(index);
@@ -329,6 +332,25 @@ export default async function SearchPage({ searchParams }: Props) {
 
   const results = searchQuran(query, { limit: 100 });
 
+  // MFD-07 Phase 9: Find canonical topics that match the search query.
+  // Matches against title, arabicTitle, urduTitle, description, and searchAliases.
+  const canonicalTopicMatches = (() => {
+    const allTopics = getCanonicalTopics();
+    const queryLower = query.toLowerCase();
+    return allTopics.filter((topic) => {
+      const searchableText = [
+        topic.title,
+        topic.arabicTitle ?? "",
+        topic.urduTitle ?? "",
+        topic.description,
+        ...topic.searchAliases,
+      ]
+        .join(" ")
+        .toLowerCase();
+      return searchableText.includes(queryLower);
+    }).slice(0, 10); // Limit to top 10 matches
+  })();
+
   // Structural filters are shared with the edition/tafsir branches; the
   // language filter is specific to default search, where one result list can
   // mix Arabic-text and translation matches. A parsed reference is
@@ -387,7 +409,7 @@ export default async function SearchPage({ searchParams }: Props) {
           )}
         </div>
         <nav
-          aria-label="Search modes"
+          aria-label={t("searchPage.searchModes")}
           className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground"
         >
           <span className="font-medium text-foreground/80">Also search:</span>
@@ -395,28 +417,70 @@ export default async function SearchPage({ searchParams }: Props) {
             href={`/search?q=${encodeURIComponent(query)}&mode=tafsir`}
             className="text-primary underline-offset-2 hover:underline"
           >
-            both classical tafsirs
+            {t("searchFilters.bothClassicalTafsirs")}
           </Link>
           <Link
             href={`/search?q=${encodeURIComponent(query)}&edition=ar.jalalayn`}
             className="text-primary underline-offset-2 hover:underline"
           >
-            Tafsir al-Jalalayn
+            {t("searchPage.tafsirJalalayn")}
           </Link>
           <Link
             href={`/search?q=${encodeURIComponent(query)}&edition=en.pickthall`}
             className="text-primary underline-offset-2 hover:underline"
           >
-            Pickthall
+            {t("searchPage.pickthall")}
           </Link>
           <Link
             href={`/search?q=${encodeURIComponent(query)}&edition=ur.jalandhry`}
             className="text-primary underline-offset-2 hover:underline"
           >
-            Jalandhry (Urdu)
+            {t("searchPage.jalandhry")}
           </Link>
         </nav>
       </header>
+
+      {canonicalTopicMatches.length > 0 && (
+        <section
+          aria-labelledby="canonical-topics-search"
+          className="rounded-2xl border border-primary/30 bg-primary/5 p-5 space-y-3"
+        >
+          <div>
+            <h2
+              id="canonical-topics-search"
+              className="font-display text-lg font-semibold tracking-tight text-primary"
+            >
+              Canonical Topics ({canonicalTopicMatches.length})
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Topics from the expanded canonical taxonomy that match your query.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {canonicalTopicMatches.map((topic) => (
+              <Link
+                key={topic.id}
+                href={`/explore/topics/${topic.id}`}
+                className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+              >
+                {topic.arabicTitle && (
+                  <span
+                    className="arabic-display text-base text-gold"
+                    lang="ar"
+                    dir="rtl"
+                  >
+                    {topic.arabicTitle}
+                  </span>
+                )}
+                {topic.title}
+              </Link>
+            ))}
+          </div>
+          <p className="text-xs text-muted-foreground">
+            Canonical topics are part of the expanded taxonomy and are pending scholarly review.
+          </p>
+        </section>
+      )}
 
       {filteredHits.length === 0 ? (
         <div className="rounded-2xl border border-border/80 bg-card p-6 text-sm text-muted-foreground">
@@ -475,6 +539,7 @@ export default async function SearchPage({ searchParams }: Props) {
                   snippet={snippet}
                   matchReasonLabel={REASON_LABELS[hit.reason]}
                   matchReasonDescription={REASON_DESCRIPTIONS[hit.reason]}
+                  truncateTranslationWhenNoSnippet={!snippet}
                 />
                 {relatedTopics.length > 0 && (
                   <div className="mt-2 flex flex-wrap gap-2">
@@ -487,6 +552,7 @@ export default async function SearchPage({ searchParams }: Props) {
                         <span
                           className="arabic-display text-sm text-gold"
                           lang="ar"
+                          dir="rtl"
                           aria-hidden
                         >
                           {topic.arabicTitle}
@@ -620,6 +686,7 @@ function EditionSearchResultsView({
                         <span
                           className="arabic-display text-sm text-gold"
                           lang="ar"
+                          dir="rtl"
                           aria-hidden
                         >
                           {topic.arabicTitle}
@@ -750,6 +817,7 @@ function TafsirSearchResultsView({
                         <span
                           className="arabic-display text-sm text-gold"
                           lang="ar"
+                          dir="rtl"
                           aria-hidden
                         >
                           {topic.arabicTitle}

@@ -25,17 +25,8 @@ const nextConfig: NextConfig = {
         destination: '/my-study/notes',
         permanent: true, // HTTP 308
       },
-      // Phase 2: Topics migration
-      {
-        source: '/explore/topics',
-        destination: '/topics',
-        permanent: true, // HTTP 308
-      },
-      {
-        source: '/explore/topics/:slug',
-        destination: '/topics/:slug',
-        permanent: true, // HTTP 308
-      },
+      // Phase 6: Topics redirects REMOVED — /explore/topics now serves unified listing
+      // Legacy /topics/:slug routes remain for the 18 editorial topics
       // Final IA: Study Journeys migration
       {
         source: '/study-journeys',

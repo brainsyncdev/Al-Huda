@@ -1,0 +1,182 @@
+[
+  {
+    "id": "belief-theology",
+    "title": "Belief & Theology",
+    "urduTitle": "عقیدہ اور الہیات",
+    "arabicTitle": "العقيدة واللاهوت",
+    "description": "Core Islamic creed, theology, and foundational beliefs about Allah, divine attributes, and the unseen world",
+    "scope": "Foundational beliefs, Tawheed, divine names and attributes, angels, jinn, divine decree",
+    "dimensionIds": ["allah-divine-attributes", "tawheed-oneness", "iman-faith-pillars", "angels-unseen-world", "divine-decree-qadr"]
+  },
+  {
+    "id": "revelation-guidance",
+    "title": "Revelation & Guidance",
+    "urduTitle": "وحی اور ہدایت",
+    "arabicTitle": "الوحي والهداية",
+    "description": "Divine revelation, Quranic sciences, prophetic guidance, and sources of Islamic knowledge",
+    "scope": "Quran, Sunnah, divine scriptures, prophetic guidance, Quranic sciences",
+    "dimensionIds": ["quran-science", "sunnah-prophetic-tradition", "divine-scriptures", "prophetic-guidance", "quranic-linguistics"]
+  },
+  {
+    "id": "prophets-narratives",
+    "title": "Prophets & Narratives",
+    "urduTitle": "انبیاء اور قصص",
+    "arabicTitle": "الأنبياء والقصص",
+    "description": "Stories of prophets, messengers, and historical narratives with lessons and guidance",
+    "scope": "Prophet stories, messengership, prophetic history, lessons from narratives",
+    "dimensionIds": ["prophethood-messengership", "major-prophets-stories", "minor-prophets", "prophetic-lessons", "dreams-visions"]
+  },
+  {
+    "id": "worship-practice",
+    "title": "Worship Practice",
+    "urduTitle": "عبادات اور اعمال",
+    "arabicTitle": "العبادات والممارسات",
+    "description": "Pillars of Islam, worship acts, purification, and spiritual practices",
+    "scope": "Salah, zakat, sawm, hajj, purification, congregational worship, spiritual practices",
+    "dimensionIds": ["salah-prayer", "zakat-obligatory-charity", "sawm-fasting", "hajj-umrah-pilgrimage", "purification-ritual", "congregational-worship"]
+  },
+  {
+    "id": "ethics-character",
+    "title": "Ethics & Character",
+    "urduTitle": "اخلاقیات اور کردار",
+    "arabicTitle": "الأخلاق والصفات",
+    "description": "Islamic ethics, moral virtues, character development, and spiritual states",
+    "scope": "Virtues, vices, spiritual states, character traits, moral development",
+    "dimensionIds": ["spiritual-states-nafs", "moral-virtues", "moral-vice", "character-development", "sincerity-ikhlas"]
+  },
+  {
+    "id": "human-experiences",
+    "title": "Human Experiences",
+    "urduTitle": "انسانی تجربات",
+    "arabicTitle": "التجارب الإنسانية",
+    "description": "Human life stages, psychology, emotions, intellect, and personal development",
+    "scope": "Life stages, psychology, emotions, intellect, personal development, human dignity",
+    "dimensionIds": ["human-creation-purpose", "life-stages", "intellect-reason", "psychology-emotions", "personal-development", "gender-cultural-experiences", "education-systems"]
+  },
+  {
+    "id": "family-relationships",
+    "title": "Family & Relationships",
+    "urduTitle": "خاندان اور رشتے",
+    "arabicTitle": "الأسرة والعلاقات",
+    "description": "Marriage, family structure, parenting, kinship, and interpersonal relationships",
+    "scope": "Marriage, parenting, extended family, kinship, spousal relations, divorce",
+    "dimensionIds": ["marriage-nikah", "spousal-relations", "parenting-child-development", "parents-elderly-care", "kinship-extended-family", "divorce-separation"]
+  },
+  {
+    "id": "society-justice",
+    "title": "Society & Justice",
+    "urduTitle": "معاشرہ اور عدل",
+    "arabicTitle": "المجتمع والعدالة",
+    "description": "Social structure, community life, human rights, equality, and social responsibility",
+    "scope": "Ummah, community, social justice, human rights, equality, diversity, social welfare",
+    "dimensionIds": ["ummah-community", "equality-diversity", "human-rights", "social-responsibility", "poverty-welfare", "urban-rural-media-ethics", "digital-technology-ethics"]
+  },
+  {
+    "id": "economic-conduct",
+    "title": "Economic Conduct",
+    "urduTitle": "معاشی اصول",
+    "arabicTitle": "السلوك الاقتصادي",
+    "description": "Islamic economics, business ethics, trade, wealth management, and financial transactions",
+    "scope": "Trade, business ethics, wealth, finance, charity, economic justice, modern economics",
+    "dimensionIds": ["trade-commerce", "business-ethics", "wealth-property", "finance-debt", "charity-giving", "economic-justice", "modern-economic-issues"]
+  },
+  {
+    "id": "law-obligations",
+    "title": "Law & Obligations",
+    "urduTitle": "قانون اور واجبات",
+    "arabicTitle": "القانون والالتزامات",
+    "description": "Islamic law, jurisprudence, legal obligations, criminal law, and international law",
+    "scope": "Shariah, jurisprudence, criminal law, international law, oaths, covenants, food laws",
+    "dimensionIds": ["shariah-legal-principles", "criminal-law", "international-law", "oaths-vows-covenants", "food-dietary-laws"]
+  },
+  {
+    "id": "creation-signs",
+    "title": "Creation & Signs",
+    "urduTitle": "کائنات اور نشانیان",
+    "arabicTitle": "الخلق والعلامات",
+    "description": "Universe, nature, environment, natural resources, and divine signs in creation",
+    "scope": "Animals, natural resources, environment, climate, agriculture, travel, time, human biology",
+    "dimensionIds": ["animals-creation", "natural-resources", "environment-balance", "agriculture-farming", "travel-exploration", "time-seasons", "human-biology-ecology", "scientific-knowledge-observation", "mathematics-measurement"]
+  },
+  {
+    "id": "eschatology-afterlife",
+    "title": "Eschatology & Afterlife",
+    "urduTitle": "قیامت اور آخرت",
+    "arabicTitle": "الإسكاتولوجيا والحياة الآخرة",
+    "description": "Afterlife, resurrection, judgment, paradise, hell, and signs of the Hour",
+    "scope": "Akhirah, resurrection, judgment, jannah, jahannam, signs of the Hour, death",
+    "dimensionIds": ["resurrection-judgment", "paradise-jannah", "hell-jahannam", "signs-of-hour", "death-dying"]
+  },
+  {
+    "id": "interfaith-communities",
+    "title": "Interfaith & Communities",
+    "urduTitle": "بین المذاہب اور برادریاں",
+    "arabicTitle": "الأديان والمجتمعات",
+    "description": "Relations with other faith communities, religious diversity, and interfaith dialogue",
+    "scope": "People of the Book, religious communities, interfaith dialogue, religious diversity",
+    "dimensionIds": ["people-of-book", "religious-communities", "interfaith-dialogue"]
+  },
+  {
+    "id": "language-vocabulary",
+    "title": "Language & Vocabulary",
+    "urduTitle": "زبان اور الفاظ",
+    "arabicTitle": "اللغة والمفردات",
+    "description": "Quranic Arabic, linguistics, eloquence, and language sciences",
+    "scope": "Quranic Arabic, linguistics, eloquence, vocabulary, language sciences",
+    "dimensionIds": ["quranic-arabic", "linguistics-eloquence", "quranic-vocabulary"]
+  },
+  {
+    "id": "health-medicine",
+    "title": "Health & Medicine",
+    "urduTitle": "صحت اور طب",
+    "arabicTitle": "الصحة والطب",
+    "description": "Physical and mental health, healing, disease, medicinal substances, and body as divine trust",
+    "scope": "Healing, disease, medicine, mental health, nutrition, body as trust",
+    "dimensionIds": ["physical-health", "mental-wellbeing", "healing-medicine", "body-as-trust"]
+  },
+  {
+    "id": "environment-stewardship",
+    "title": "Environment & Stewardship",
+    "urduTitle": "ماحولیات اور امانت",
+    "arabicTitle": "البيئة والوكالة",
+    "description": "Environmental ethics, stewardship (khalifah), conservation, and ecological balance",
+    "scope": "Khalifah concept, fasad prohibition, mizan balance, conservation, environmental protection",
+    "dimensionIds": ["khalifah-stewardship", "fasad-prohibition", "mizan-balance", "environmental-protection"]
+  },
+  {
+    "id": "governance-political-authority",
+    "title": "Governance & Political Authority",
+    "urduTitle": "حکومت اور سیاسی اقتدار",
+    "arabicTitle": "الحكم والسلطة السياسية",
+    "description": "Islamic governance, leadership, political authority, consultation, and public administration",
+    "scope": "Shura, leadership, authority, public administration, accountability, governance",
+    "dimensionIds": ["shura-consultation", "leadership-authority", "public-administration", "accountability"]
+  },
+  {
+    "id": "war-peace-conflict",
+    "title": "War, Peace & Conflict",
+    "urduTitle": "جنگ، امن اور تنازع",
+    "arabicTitle": "الحرب والسلام والنزاع",
+    "description": "Jihad, rules of engagement, peace treaties, conflict resolution, and international security",
+    "scope": "Jihad, warfare ethics, peace treaties, conflict resolution, security, diplomacy",
+    "dimensionIds": ["jihad-concept", "warfare-ethics", "peace-treaties", "conflict-resolution"]
+  },
+  {
+    "id": "arts-beauty-aesthetics",
+    "title": "Arts, Beauty & Aesthetics",
+    "urduTitle": "فن، حسن اور جمالیات",
+    "arabicTitle": "الفنون والجمال والجماليات",
+    "description": "Islamic aesthetics, beauty (husn), artistic expression, creativity, and adornment",
+    "scope": "Husn concept, artistic expression, creativity, beauty, adornment, design",
+    "dimensionIds": ["husn-beauty", "artistic-expression", "creativity-design", "adornment-ethics", "architecture-engineering"]
+  },
+  {
+    "id": "work-vocation",
+    "title": "Work & Vocation",
+    "urduTitle": "کام اور پیشہ",
+    "arabicTitle": "العمل والمهنة",
+    "description": "Dignity of work, professional ethics, craftsmanship, vocations, and labor rights",
+    "scope": "Work dignity, prophetic professions, craftsmanship, labor rights, professional ethics",
+    "dimensionIds": ["work-dignity", "prophetic-professions", "craftsmanship", "labor-rights"]
+  }
+]

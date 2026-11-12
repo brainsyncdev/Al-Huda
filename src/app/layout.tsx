@@ -17,6 +17,10 @@ import { GlobalSearchShortcut } from "@/components/search/global-search-shortcut
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 import { I18nProvider } from "@/lib/i18n/context";
 import { SkipLink } from "@/components/layout/skip-link";
+import { ThemeProvider } from "@/components/providers/theme-provider";
+import { resolveServerLocale } from "@/lib/i18n/server";
+import { directionOf } from "@/lib/i18n/locales";
+import type { Locale } from "@/lib/i18n/types";
 
 const geist = Geist({
   variable: "--font-sans",
@@ -69,46 +73,76 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale: Locale = await resolveServerLocale();
+  const dir = directionOf(locale);
+
   return (
-    <html lang="en" className="light">
+    <html lang={locale} dir={dir} suppressHydrationWarning>
+      <head>
+        {/* Blocking script to prevent theme flash - runs before React hydrates */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('fahm-theme');
+                  var resolved = theme;
+                  if (theme === 'system' || !theme) {
+                    resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  }
+                  if (resolved === 'dark') {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.add('light');
+                  }
+                } catch (e) {
+                  document.documentElement.classList.add('light');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${geist.variable} ${lora.variable} ${amiriQuran.variable} font-sans antialiased min-h-dvh flex flex-col`}
       >
-      <I18nProvider>
-        <SkipLink />
-      <LibraryProvider>
-        <PrefsProvider>
-          <RevisionProvider>
-            <PathsProvider>
-              <QuizProvider>
-                <ReadingPlansProvider>
-                  <JourneysProvider>
-                    <ReflectionsProvider>
-                      <SiteHeader />
-                      <main
-                        id="main-content"
-                        className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
-                      >
-                        {children}
-                      </main>
-                      <SiteFooter />
-                      <MobileBottomNav />
-                      <GlobalSearchShortcut />
-                      <Toaster position="bottom-center" />
-                    </ReflectionsProvider>
-                  </JourneysProvider>
-                </ReadingPlansProvider>
-              </QuizProvider>
-            </PathsProvider>
-            </RevisionProvider>
-          </PrefsProvider>
-        </LibraryProvider>
-      </I18nProvider>
+      <ThemeProvider>
+        <I18nProvider initialLocale={locale}>
+          <SkipLink />
+          <LibraryProvider>
+            <PrefsProvider>
+              <RevisionProvider>
+                <PathsProvider>
+                  <QuizProvider>
+                    <ReadingPlansProvider>
+                      <JourneysProvider>
+                        <ReflectionsProvider>
+                          <SiteHeader />
+                          <main
+                            id="main-content"
+                            className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 pb-24 md:pb-12 pt-6"
+                          >
+                            {children}
+                          </main>
+                          <SiteFooter />
+                          <MobileBottomNav />
+                          <GlobalSearchShortcut />
+                          <Toaster position="bottom-center" />
+                        </ReflectionsProvider>
+                      </JourneysProvider>
+                    </ReadingPlansProvider>
+                  </QuizProvider>
+                </PathsProvider>
+                </RevisionProvider>
+              </PrefsProvider>
+            </LibraryProvider>
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

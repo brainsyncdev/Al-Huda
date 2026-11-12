@@ -32,7 +32,7 @@ export function HomeClient({ featured, featuredTopics, dimensions, siteName }: H
           className="pointer-events-none absolute inset-x-0 top-0 -z-10 select-none text-center text-[7rem] leading-none text-gold/10 md:text-[10rem]"
           aria-hidden
         >
-          <span className="arabic-display">اقرأ</span>
+          <span className="arabic-display" lang="ar" dir="rtl">اقرأ</span>
         </div>
 
         <div className="mx-auto max-w-2xl text-center">
@@ -174,7 +174,7 @@ export function HomeClient({ featured, featuredTopics, dimensions, siteName }: H
         </ul>
       </section>
 
-      {/* Explore: 10 dimensions ------------------------------------------- */}
+      {/* Explore: 15 dimensions ------------------------------------------- */}
       <section aria-labelledby="explore-heading">
         <div className="mb-5 flex items-end justify-between gap-4">
           <div>
@@ -259,6 +259,7 @@ export function HomeClient({ featured, featuredTopics, dimensions, siteName }: H
                 <span
                   className="arabic-display text-base text-gold"
                   lang="ar"
+                  dir="rtl"
                   aria-hidden
                 >
                   {topic.arabicTitle}

@@ -32,6 +32,22 @@ import {
   getSprint48RootBySlug,
   loadSprint48OccurrenceFile,
 } from "@/lib/morphology/sprint-48-root-data";
+import { getServerTranslation } from "@/lib/i18n/server-translate";
+import { getCanonicalTopic } from "@/lib/taxonomy/canonical-adapter";
+import topicAyahMappings from "../../../../../data/taxonomy/topic-ayah-mappings.json";
+
+interface AyahMapping {
+  id: string;
+  topicId: string;
+  surahNumber: number;
+  ayahStart: number;
+  ayahEnd: number;
+  mappingType: string;
+  rationale: string;
+  sourceIds: string[];
+  provenance: string;
+  status: string;
+}
 
 interface Props {
   params: Promise<{ surah: string; ayah: string }>;
@@ -137,6 +153,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
   const verse = getAyah(s, a);
   const surahMeta = getSurah(s);
   if (!verse || !surahMeta) return notFound();
+  const t = await getServerTranslation();
 
   const prev =
     a > 1
@@ -152,6 +169,26 @@ export default async function AyahPage({ params, searchParams }: Props) {
         : null;
 
   const topics = topicsForAyah({ surah: s, ayah: a });
+
+  // MFD-07 Phase 9: Find canonical topics that reference this ayah.
+  // Derives from the pinned topic-ayah-mappings dataset; no fabrication.
+  const canonicalTopicsForAyah = (() => {
+    const mappings = topicAyahMappings as AyahMapping[];
+    const matchingTopicIds = new Set<string>();
+    for (const m of mappings) {
+      if (
+        m.surahNumber === s &&
+        m.ayahStart <= a &&
+        m.ayahEnd >= a
+      ) {
+        matchingTopicIds.add(m.topicId);
+      }
+    }
+    return Array.from(matchingTopicIds)
+      .map((id) => getCanonicalTopic(id))
+      .filter((t): t is NonNullable<typeof t> => t !== null);
+  })();
+
   const juz = getJuzForAyah(s, a);
   const page = getPageForAyah(s, a);
   const hizb = getHizbForAyah(s, a);
@@ -201,7 +238,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="min-w-0 space-y-1.5">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
-              Ayah reference
+              {t("quran.ayahReference")}
             </p>
             <h1 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
               {surahMeta.transliteration} {s}:{a}
@@ -246,7 +283,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
             href={surahPath(surahMeta.id, surahMeta.slug)}
             className="rounded-full border border-border/80 bg-secondary px-3.5 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
-            Read full surah
+            {t("quran.readFullSurah")}
           </Link>
         </div>
       </header>
@@ -281,7 +318,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
             id="topics-for-ayah"
             className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
           >
-            Appears in topics
+            {t("quran.appearsInTopics")}
           </h2>
           <ul className="mt-3 flex flex-wrap gap-2">
             {topics.map((t) => (
@@ -299,7 +336,44 @@ export default async function AyahPage({ params, searchParams }: Props) {
             ))}
           </ul>
           <p className="mt-3 text-xs text-muted-foreground">
-            Topic pages mark the review status and are not tafsir.
+            Editorial topics are curated thematic connections. Topic pages mark the review status and are not tafsir.
+          </p>
+        </section>
+      )}
+
+      {canonicalTopicsForAyah.length > 0 && (
+        <section
+          aria-labelledby="canonical-topics-for-ayah"
+          className="rounded-2xl border border-primary/30 bg-primary/5 p-5"
+        >
+          <h2
+            id="canonical-topics-for-ayah"
+            className="text-xs font-semibold uppercase tracking-wider text-primary"
+          >
+            Canonical Topics
+          </h2>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Taxonomy-driven references from the expanded canonical topic system.
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {canonicalTopicsForAyah.map((topic) => (
+              <li key={topic.id}>
+                <Link
+                  href={`/explore/topics/${topic.id}`}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+                >
+                  {topic.arabicTitle && (
+                    <span className="arabic-display text-base text-gold">
+                      {topic.arabicTitle}
+                    </span>
+                  )}
+                  {topic.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Canonical topics are part of the expanded taxonomy and are pending scholarly review.
           </p>
         </section>
       )}
@@ -313,7 +387,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
             id="paths-for-ayah"
             className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
           >
-            Appears in learning paths
+            {t("quran.appearsInPaths")}
           </h2>
           <ul className="mt-3 flex flex-wrap gap-2">
             {relatedPaths.map((path) => (
@@ -351,7 +425,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
             className="inline-flex items-center gap-1.5 rounded-2xl border border-border/80 bg-card px-4 py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
           >
             <ChevronLeft className="h-4 w-4" aria-hidden />
-            Previous · {prev.surah}:{prev.ayah}
+            {t("quran.previousAyah", { surah: prev.surah, ayah: prev.ayah })}
           </Link>
         )}
         {next && (
@@ -359,7 +433,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
             href={ayahPath(next)}
             className="ml-auto inline-flex items-center gap-1.5 rounded-2xl border border-border/80 bg-card px-4 py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
           >
-            Next · {next.surah}:{next.ayah}
+            {t("quran.nextAyah", { surah: next.surah, ayah: next.ayah })}
             <ChevronRight className="h-4 w-4" aria-hidden />
           </Link>
         )}

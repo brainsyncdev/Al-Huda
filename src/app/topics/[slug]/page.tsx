@@ -144,12 +144,26 @@ export default async function TopicDetailPage({ params }: Props) {
         <p className="max-w-prose text-muted-foreground">{topic.summary}</p>
 
         <div className="rounded-2xl border border-gold/30 bg-gold-soft/60 p-4 text-sm text-accent-foreground">
-          <p className="flex items-start gap-2">
+          <div className="flex items-start gap-2">
             <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-gold" aria-hidden />
-            <span>
-              Review status: {topic.provenance.status.replace(/-/g, " ")} — curated by {topic.provenance.curator} via {topic.provenance.method} (last pass {topic.provenance.reviewedAt}). Editorial content language: {LANGUAGE_LABELS[topic.language] ?? topic.language} ({topic.language}); the Quran text itself is always Arabic and is rendered verbatim from the pinned dataset. Editorial selections are not tafsir and are not intended as rulings.
-            </span>
-          </p>
+            <div className="flex-1 space-y-2">
+              <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-xs">
+                <dt className="font-medium text-muted-foreground">Review status:</dt>
+                <dd>{topic.provenance.status.replace(/-/g, " ")}</dd>
+                <dt className="font-medium text-muted-foreground">Curator:</dt>
+                <dd>{topic.provenance.curator}</dd>
+                <dt className="font-medium text-muted-foreground">Method:</dt>
+                <dd>{topic.provenance.method}</dd>
+                <dt className="font-medium text-muted-foreground">Last pass:</dt>
+                <dd>{topic.provenance.reviewedAt}</dd>
+                <dt className="font-medium text-muted-foreground">Language:</dt>
+                <dd>{LANGUAGE_LABELS[topic.language] ?? topic.language} ({topic.language})</dd>
+              </dl>
+              <p className="text-xs text-muted-foreground pt-1 border-t border-gold/20">
+                The Quran text itself is always Arabic and is rendered verbatim from the pinned dataset. Editorial selections are not tafsir and are not intended as rulings.
+              </p>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -218,282 +232,307 @@ export default async function TopicDetailPage({ params }: Props) {
         </section>
       )}
 
-      {dimensions.length > 0 && (
-        <section aria-labelledby="topic-dimensions" className="space-y-4">
-          <h2
-            id="topic-dimensions"
-            className="font-display text-xl font-semibold tracking-tight"
-          >
-            Explore this theme by dimension
-          </h2>
-          <p className="text-sm text-muted-foreground">
-            This topic appears in the editorial navigation mapping for{" "}
-            {dimensions.length === 1
-              ? "the following dimension"
-              : `these ${dimensions.length} dimensions`}
-            . Each dimension page shows how this theme connects to other topics
-            and offers search terms for further exploration.
-          </p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {dimensions.map((dim) => (
-              <Link
-                key={dim.id}
-                href={`/explore/dimension/${dim.id}`}
-                className="group rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
-              >
-                <div className="flex items-start gap-3">
-                  <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-semibold">
-                    {dim.number}
-                  </span>
-                  <div className="min-w-0 flex-1">
-                    <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors">
-                      {dim.title}
-                    </h3>
-                    <p
-                      className="arabic-display text-lg text-gold mt-0.5"
-                      lang="ar"
-                      dir="rtl"
-                    >
-                      {dim.arabicTitle}
-                    </p>
-                    <p className="mt-1.5 text-xs text-muted-foreground line-clamp-2">
-                      {dim.covers}
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-2 text-xs font-medium text-primary group-hover:underline">
-                  Open {dim.title} dimension →
-                </p>
-              </Link>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground">
-            Dimension-to-topic mappings are editorial navigation aids, not
-            ayah-level classifications. Each dimension page carries its review
-            status.
-          </p>
-        </section>
-      )}
-
-      {domainRelations.length > 0 && (
-        <section aria-labelledby="topic-domains" className="space-y-4">
-          <h2
-            id="topic-domains"
-            className="font-display text-xl font-semibold tracking-tight"
-          >
-            Proposed exploration domains
-          </h2>
-          <p className="text-sm text-muted-foreground">
-            This topic is editorially proposed to belong to{" "}
-            {domainRelations.length === 1
-              ? "the following domain"
-              : `these ${domainRelations.length} domains`}
-            . These are organizational proposals pending review — not scholarly
-            classifications of Quranic passages.
-          </p>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {domainRelations.map(({ relation, domain }) => (
-              <Link
-                key={relation.id}
-                href={`/explore/domains/${domain.id}`}
-                className="group rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
-              >
-                <div className="flex items-start gap-3">
-                  <div className="min-w-0 flex-1">
-                    <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors">
-                      {domain.title}
-                    </h3>
-                    {domain.arabicTitle && (
-                      <p
-                        className="arabic-display text-lg text-gold mt-0.5"
-                        lang="ar"
-                        dir="rtl"
-                      >
-                        {domain.arabicTitle}
-                      </p>
-                    )}
-                    <div className="mt-2 flex flex-wrap gap-2">
-                      <span className="rounded-full border border-border/80 bg-muted/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                        {relation.semantics === "navigation-only"
-                          ? "navigation aid"
-                          : "organizational proposal"}
-                      </span>
-                      <span className="rounded-full border border-gold/40 bg-gold-soft/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent-foreground">
-                        {relation.provenance.state.replace(/-/g, " ")}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <p className="mt-2 text-xs font-medium text-primary group-hover:underline">
-                  Open {domain.title} domain →
-                </p>
-              </Link>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground">
-            Domain-topic relationships are organizational proposals, not scholarly
-            conclusions. Each domain page carries its review status and explains
-            what the relationship does and does not claim.
-          </p>
-        </section>
-      )}
-
-      {rootLinks.length > 0 && (
-        <section aria-labelledby="topic-roots" className="space-y-4">
-          <h2
-            id="topic-roots"
-            className="font-display text-xl font-semibold tracking-tight"
-          >
-            Arabic root index
-          </h2>
-          {activeRootLinks.length === 0 ? (
-            <div className="rounded-2xl border border-border/60 bg-card/60 p-5 text-sm text-muted-foreground">
-              <p>
-                A word-occurrence index for the root{" "}
-                <span lang="ar" dir="rtl" className="arabic-display text-gold">
-                  {rootLinks[0].entry.roots[0]}
-                </span>{" "}
-                ({rootLinks[0].entry.title}) has been prepared from the QUL
-                morphology dataset, but it is awaiting lemma review before it
-                can be shown. The configuration for this link is in place; once
-                a reviewer approves the lemma selection the link will appear
-                here automatically.
-              </p>
-            </div>
-          ) : (
-            <>
-              <p className="text-sm text-muted-foreground">
-                Word-occurrence index for the related Arabic root{" "}
-                {activeRootLinks.length === 1 ? "" : "s"}. Each link opens the
-                validated word-form list for that root — not a thematic
-                classification of the ayat.
-              </p>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {activeRootLinks.map(({ link, entry }) => (
-                  <Link
-                    key={link.rootSlug}
-                    href={`/explore/root/${entry.slug}`}
-                    className="group rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
-                  >
-                    <div className="flex items-start gap-3">
-                      <span
-                        className="arabic-display text-2xl text-gold"
-                        lang="ar"
-                        dir="rtl"
-                      >
-                        {entry.arabicTitle}
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors">
-                          {entry.title}
-                        </h3>
-                        <p className="mt-0.5 text-xs text-muted-foreground">
-                          Root: {entry.roots[0]}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="mt-2 text-xs text-muted-foreground line-clamp-2">
-                      {link.note}
-                    </p>
-                    <p className="mt-2 text-xs font-medium text-primary group-hover:underline">
-                      Open root index →
-                    </p>
-                  </Link>
-                ))}
-              </div>
-            </>
-          )}
-          <p className="text-xs text-muted-foreground">
-            Root-topic links are navigational aids, not scholarly claims that
-            the ayat are thematically about the root. Each root page carries
-            its own review status.
-          </p>
-        </section>
-      )}
-
-      {relatedPaths.length > 0 && (
-        <section aria-labelledby="related-paths" className="space-y-4">
-          <h2
-            id="related-paths"
-            className="font-display text-xl font-semibold tracking-tight"
-          >
-            Learning paths on this theme
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {relatedPaths.map((path) => (
-              <Link
-                key={path.slug}
-                href={`/learn/paths/${path.slug}`}
-                className="rounded-2xl border border-border/80 bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
-              >
-                <span className="arabic-display mr-2 text-lg text-gold" lang="ar" dir="rtl">
-                  {path.arabicTitle}
-                </span>
-                {path.title}
-              </Link>
-            ))}
-          </div>
-          <p className="text-xs text-muted-foreground">
-            These paths include steps that reference this topic. Each path
-            marks its review status and is not tafsir.
-          </p>
-        </section>
-      )}
-
-      {/* Study journeys integration */}
-      {relatedJourneys.length > 0 && (
-        <section
-          aria-labelledby="related-journeys-heading"
-          className="rounded-2xl border border-border/80 bg-muted/30 p-5"
-        >
-          <div className="flex items-center gap-2 mb-3">
-            <Map className="h-5 w-5 text-primary" aria-hidden />
-            <h2
-              id="related-journeys-heading"
-              className="font-display text-lg font-semibold tracking-tight"
-            >
-              Related Study Journeys
-            </h2>
-          </div>
-          <p className="text-sm text-muted-foreground mb-4">
-            Structured learning experiences that include this topic. Each
-            journey provides a guided progression through ayat and themes.
-          </p>
-          <ul className="space-y-3">
-            {relatedJourneys.map((journey) => (
-              <li key={journey.slug}>
-                <Link
-                  href={`/learn/journeys/${journey.slug}`}
-                  className="group block rounded-xl border border-border/70 bg-background/50 p-4 transition-colors hover:border-primary/30 hover:bg-secondary/30"
+      {(dimensions.length > 0 || domainRelations.length > 0 || rootLinks.length > 0) && (
+        <details className="group rounded-2xl border border-border/80 bg-card/40">
+          <summary className="flex cursor-pointer items-center justify-between p-4 font-display text-lg font-semibold tracking-tight list-none [&::-webkit-details-marker]:hidden">
+            <span>Explore further</span>
+            <svg className="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div className="px-4 pb-4 space-y-6">
+            {dimensions.length > 0 && (
+              <section aria-labelledby="topic-dimensions" className="space-y-4">
+                <h2
+                  id="topic-dimensions"
+                  className="font-display text-xl font-semibold tracking-tight"
                 >
-                  <div className="flex items-start justify-between gap-3">
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary">
-                        {journey.title}
-                      </h3>
-                      <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
-                        {journey.summary}
-                      </p>
-                    </div>
-                    <span
-                      className="arabic-display text-xl text-gold shrink-0"
-                      lang="ar"
+                  Explore this theme by dimension
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  This topic appears in the editorial navigation mapping for{" "}
+                  {dimensions.length === 1
+                    ? "the following dimension"
+                    : `these ${dimensions.length} dimensions`}
+                  . Each dimension page shows how this theme connects to other topics
+                  and offers search terms for further exploration.
+                </p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {dimensions.map((dim) => (
+                    <Link
+                      key={dim.id}
+                      href={`/explore/dimension/${dim.id}`}
+                      className="group/dim rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
                     >
-                      {journey.arabicTitle}
-                    </span>
+                      <div className="flex items-start gap-3">
+                        <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-semibold">
+                          {dim.number}
+                        </span>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="font-display text-base font-semibold tracking-tight group-hover/dim:text-primary transition-colors">
+                            {dim.title}
+                          </h3>
+                          <p
+                            className="arabic-display text-lg text-gold mt-0.5"
+                            lang="ar"
+                            dir="rtl"
+                          >
+                            {dim.arabicTitle}
+                          </p>
+                          <p className="mt-1.5 text-xs text-muted-foreground line-clamp-2">
+                            {dim.covers}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-2 text-xs font-medium text-primary group-hover/dim:underline">
+                        Open {dim.title} dimension →
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Dimension-to-topic mappings are editorial navigation aids, not
+                  ayah-level classifications. Each dimension page carries its review
+                  status.
+                </p>
+              </section>
+            )}
+
+            {domainRelations.length > 0 && (
+              <section aria-labelledby="topic-domains" className="space-y-4">
+                <h2
+                  id="topic-domains"
+                  className="font-display text-xl font-semibold tracking-tight"
+                >
+                  Proposed exploration domains
+                </h2>
+                <p className="text-sm text-muted-foreground">
+                  This topic is editorially proposed to belong to{" "}
+                  {domainRelations.length === 1
+                    ? "the following domain"
+                    : `these ${domainRelations.length} domains`}
+                  . These are organizational proposals pending review — not scholarly
+                  classifications of Quranic passages.
+                </p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {domainRelations.map(({ relation, domain }) => (
+                    <Link
+                      key={relation.id}
+                      href={`/explore/domains/${domain.id}`}
+                      className="group/dom rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+                    >
+                      <div className="flex items-start gap-3">
+                        <div className="min-w-0 flex-1">
+                          <h3 className="font-display text-base font-semibold tracking-tight group-hover/dom:text-primary transition-colors">
+                            {domain.title}
+                          </h3>
+                          {domain.arabicTitle && (
+                            <p
+                              className="arabic-display text-lg text-gold mt-0.5"
+                              lang="ar"
+                              dir="rtl"
+                            >
+                              {domain.arabicTitle}
+                            </p>
+                          )}
+                          <div className="mt-2 flex flex-wrap gap-2">
+                            <span className="rounded-full border border-border/80 bg-muted/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                              {relation.semantics === "navigation-only"
+                                ? "navigation aid"
+                                : "organizational proposal"}
+                            </span>
+                            <span className="rounded-full border border-gold/40 bg-gold-soft/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent-foreground">
+                              {relation.provenance.state.replace(/-/g, " ")}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="mt-2 text-xs font-medium text-primary group-hover/dom:underline">
+                        Open {domain.title} domain →
+                      </p>
+                    </Link>
+                  ))}
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  Domain-topic relationships are organizational proposals, not scholarly
+                  conclusions. Each domain page carries its review status and explains
+                  what the relationship does and does not claim.
+                </p>
+              </section>
+            )}
+
+            {rootLinks.length > 0 && (
+              <section aria-labelledby="topic-roots" className="space-y-4">
+                <h2
+                  id="topic-roots"
+                  className="font-display text-xl font-semibold tracking-tight"
+                >
+                  Arabic root index
+                </h2>
+                {activeRootLinks.length === 0 ? (
+                  <div className="rounded-2xl border border-border/60 bg-card/60 p-5 text-sm text-muted-foreground">
+                    <p>
+                      A word-occurrence index for the root{" "}
+                      <span lang="ar" dir="rtl" className="arabic-display text-gold">
+                        {rootLinks[0].entry.roots[0]}
+                      </span>{" "}
+                      ({rootLinks[0].entry.title}) has been prepared from the QUL
+                      morphology dataset, but it is awaiting lemma review before it
+                      can be shown. The configuration for this link is in place; once
+                      a reviewer approves the lemma selection the link will appear
+                      here automatically.
+                    </p>
                   </div>
-                  <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
-                    <span>{journey.stages.length} stages</span>
-                    <span aria-hidden>·</span>
-                    <span>{journey.estimatedMinutes} min</span>
-                    <span aria-hidden>·</span>
-                    <span className="capitalize">{journey.difficulty}</span>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
+                ) : (
+                  <>
+                    <p className="text-sm text-muted-foreground">
+                      Word-occurrence index for the related Arabic root{" "}
+                      {activeRootLinks.length === 1 ? "" : "s"}. Each link opens the
+                      validated word-form list for that root — not a thematic
+                      classification of the ayat.
+                    </p>
+                    <div className="grid gap-3 sm:grid-cols-2">
+                      {activeRootLinks.map(({ link, entry }) => (
+                        <Link
+                          key={link.rootSlug}
+                          href={`/explore/root/${entry.slug}`}
+                          className="group/dom rounded-2xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+                        >
+                          <div className="flex items-start gap-3">
+                            <span
+                              className="arabic-display text-2xl text-gold"
+                              lang="ar"
+                              dir="rtl"
+                            >
+                              {entry.arabicTitle}
+                            </span>
+                            <div className="min-w-0 flex-1">
+                              <h3 className="font-display text-base font-semibold tracking-tight group-hover/dom:text-primary transition-colors">
+                                {entry.title}
+                              </h3>
+                              <p className="mt-0.5 text-xs text-muted-foreground">
+                                Root: {entry.roots[0]}
+                              </p>
+                            </div>
+                          </div>
+                          <p className="mt-2 text-xs text-muted-foreground line-clamp-2">
+                            {link.note}
+                          </p>
+                          <p className="mt-2 text-xs font-medium text-primary group-hover/dom:underline">
+                            Open root index →
+                          </p>
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                )}
+                <p className="text-xs text-muted-foreground">
+                  Root-topic links are navigational aids, not scholarly claims that
+                  the ayat are thematically about the root. Each root page carries
+                  its own review status.
+                </p>
+              </section>
+            )}
+          </div>
+        </details>
+      )}
+
+      {(relatedPaths.length > 0 || relatedJourneys.length > 0) && (
+        <details className="group rounded-2xl border border-border/80 bg-card/40">
+          <summary className="flex cursor-pointer items-center justify-between p-4 font-display text-lg font-semibold tracking-tight list-none [&::-webkit-details-marker]:hidden">
+            <span>Learning resources</span>
+            <svg className="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div className="px-4 pb-4 space-y-6">
+            {relatedPaths.length > 0 && (
+              <section aria-labelledby="related-paths" className="space-y-4">
+                <h2
+                  id="related-paths"
+                  className="font-display text-xl font-semibold tracking-tight"
+                >
+                  Learning paths on this theme
+                </h2>
+                <div className="flex flex-wrap gap-3">
+                  {relatedPaths.map((path) => (
+                    <Link
+                      key={path.slug}
+                      href={`/learn/paths/${path.slug}`}
+                      className="rounded-2xl border border-border/80 bg-card px-5 py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
+                    >
+                      <span className="arabic-display mr-2 text-lg text-gold" lang="ar" dir="rtl">
+                        {path.arabicTitle}
+                      </span>
+                      {path.title}
+                    </Link>
+                  ))}
+                </div>
+                <p className="text-xs text-muted-foreground">
+                  These paths include steps that reference this topic. Each path
+                  marks its review status and is not tafsir.
+                </p>
+              </section>
+            )}
+
+            {/* Study journeys integration */}
+            {relatedJourneys.length > 0 && (
+              <section
+                aria-labelledby="related-journeys-heading"
+                className="rounded-2xl border border-border/80 bg-muted/30 p-5"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  <Map className="h-5 w-5 text-primary" aria-hidden />
+                  <h2
+                    id="related-journeys-heading"
+                    className="font-display text-lg font-semibold tracking-tight"
+                  >
+                    Related Study Journeys
+                  </h2>
+                </div>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Structured learning experiences that include this topic. Each
+                  journey provides a guided progression through ayat and themes.
+                </p>
+                <ul className="space-y-3">
+                  {relatedJourneys.map((journey) => (
+                    <li key={journey.slug}>
+                      <Link
+                        href={`/learn/journeys/${journey.slug}`}
+                        className="group block rounded-xl border border-border/70 bg-background/50 p-4 transition-colors hover:border-primary/30 hover:bg-secondary/30"
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="flex-1 min-w-0">
+                            <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary">
+                              {journey.title}
+                            </h3>
+                            <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                              {journey.summary}
+                            </p>
+                          </div>
+                          <span
+                            className="arabic-display text-xl text-gold shrink-0"
+                            lang="ar"
+                            dir="rtl"
+                          >
+                            {journey.arabicTitle}
+                          </span>
+                        </div>
+                        <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                          <span>{journey.stages.length} stages</span>
+                          <span aria-hidden>·</span>
+                          <span>{journey.estimatedMinutes} min</span>
+                          <span aria-hidden>·</span>
+                          <span className="capitalize">{journey.difficulty}</span>
+                        </div>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+          </div>
+        </details>
       )}
 
       {/* FR-073: state the provenance model readers are looking at — including

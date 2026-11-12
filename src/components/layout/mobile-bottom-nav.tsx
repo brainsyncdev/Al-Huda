@@ -69,8 +69,8 @@ export function MobileBottomNav() {
                   className={cn(
                     "flex min-h-14 flex-col items-center justify-center gap-0.5 px-1 py-2 text-[0.6875rem] font-medium transition-colors",
                     active
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
+                      ? "border-t-2 border-primary text-primary"
+                      : "border-t-2 border-transparent text-muted-foreground hover:text-foreground"
                   )}
                 >
                   <Icon className="h-5 w-5" aria-hidden />

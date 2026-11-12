@@ -115,12 +115,12 @@ function WordCell({ word }: { word: WordToken }) {
         {word.arabic}
       </p>
       {word.transliteration && (
-        <p lang="ar-Latn" className="mt-0.5 text-xs italic text-muted-foreground">
+        <p lang="ar-Latn" dir="ltr" className="mt-0.5 text-xs italic text-muted-foreground">
           {word.transliteration}
         </p>
       )}
       {word.translation && (
-        <p lang="en" className="text-xs leading-snug text-foreground/80">
+        <p lang="en" dir="ltr" className="text-xs leading-snug text-foreground/80">
           {word.translation}
         </p>
       )}

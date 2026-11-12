@@ -1,0 +1,177 @@
+[
+  {
+    "id": "divine-names",
+    "title": "Divine Names",
+    "description": "The beautiful names of Allah (Asma ul Husna) and their meanings",
+    "parentDimensionId": "allah-divine-attributes",
+    "topicIds": ["asma-ul-husna-names", "asma-ul-husna-meanings", "asma-ul-husna-benefits"]
+  },
+  {
+    "id": "divine-attributes-categories",
+    "title": "Divine Attributes Categories",
+    "description": "Categories of divine attributes (attributes of essence, action, etc.)",
+    "parentDimensionId": "allah-divine-attributes",
+    "topicIds": ["attributes-of-essence", "attributes-of-action", "attributes-of-beauty", "attributes-of-majesty"]
+  },
+  {
+    "id": "angels-specific",
+    "title": "Specific Angels",
+    "description": "Named angels and their specific roles",
+    "parentDimensionId": "angels-unseen-world",
+    "topicIds": ["jibril-gabriel", "mikael-michael", "israfil-raphael", "azrael-angel-of-death", "kiraman-katibin"]
+  },
+  {
+    "id": "jinn-shaytan",
+    "title": "Jinn & Shaytan",
+    "description": "Jinn creation, shaytan, and unseen beings",
+    "parentDimensionId": "angels-unseen-world",
+    "topicIds": ["jinn-nature", "jinn-types", "shaytan-enemy", "shaytan-whispers", "protection-from-jinn"]
+  },
+  {
+    "id": "quran-revelation",
+    "title": "Quran Revelation",
+    "description": "Process and stages of Quranic revelation",
+    "parentDimensionId": "quran-science",
+    "topicIds": ["revelation-process", "gradual-revelation", "revelation-contexts", "first-revelation"]
+  },
+  {
+    "id": "quran-interpretation",
+    "title": "Quran Interpretation",
+    "description": "Principles and methodology of Quranic interpretation",
+    "parentDimensionId": "quran-science",
+    "topicIds": ["tafsir-methodology", "interpretation-principles", "quran-by-quran", "asbab-al-nuzul"]
+  },
+  {
+    "id": "hadith-sciences",
+    "title": "Hadith Sciences",
+    "description": "Sciences of hadith authentication and classification",
+    "parentDimensionId": "sunnah-prophetic-tradition",
+    "topicIds": ["hadith-classification", "hadith-authentication", "hadith-collections", "hadith-terminology"]
+  },
+  {
+    "id": "sunnah-application",
+    "title": "Sunnah Application",
+    "description": "Application of Sunnah in daily life",
+    "parentDimensionId": "sunnah-prophetic-tradition",
+    "topicIds": ["following-sunnah", "sunnah-vs-bidah", "prophetic-example", "sunnah-practices"]
+  },
+  {
+    "id": "adam-ibrahim-musa",
+    "title": "Adam, Ibrahim & Musa",
+    "description": "Stories of Adam, Ibrahim, and Musa (peace be upon them)",
+    "parentDimensionId": "major-prophets-stories",
+    "topicIds": ["adam-story", "ibrahim-story", "musa-story", "pharaoh-story", "exodus-narrative"]
+  },
+  {
+    "id": "isa-muhammad",
+    "title": "Isa & Muhammad",
+    "description": "Stories of Isa and Muhammad (peace be upon them)",
+    "parentDimensionId": "major-prophets-stories",
+    "topicIds": ["isa-story", "muhammad-story", "miracles-of-isa", "seal-of-prophethood", "final-message"]
+  },
+  {
+    "id": "salah-obligatory",
+    "title": "Obligatory Prayers",
+    "description": "The five daily obligatory prayers",
+    "parentDimensionId": "salah-prayer",
+    "topicIds": ["five-daily-prayers", "prayer-times", "prayer-conditions", "prayer-acceptance"]
+  },
+  {
+    "id": "salah-voluntary",
+    "title": "Voluntary Prayers",
+    "description": "Recommended and voluntary prayers",
+    "parentDimensionId": "salah-prayer",
+    "topicIds": ["sunnah-prayers", "night-prayer", "duha-prayer", "tahajjud", "awwabin-prayer"]
+  },
+  {
+    "id": "dua-supplication",
+    "title": "Dua & Supplication",
+    "description": "Supplication and calling upon Allah",
+    "parentDimensionId": "salah-prayer",
+    "topicIds": ["dua-etiquette", "dua-answers", "prophetic-duas", "dua-times", "dua-conditions"]
+  },
+  {
+    "id": "nafs-levels",
+    "title": "Levels of Nafs",
+    "description": "Different levels and states of the self (nafs)",
+    "parentDimensionId": "spiritual-states-nafs",
+    "topicIds": ["nafs-ammara", "nafs-lawwama", "nafs-mutmainna", "nafs-purification"]
+  },
+  {
+    "id": "qalb-heart",
+    "title": "Qalb & Heart",
+    "description": "The spiritual heart and its purification",
+    "parentDimensionId": "spiritual-states-nafs",
+    "topicIds": ["qalb-purification", "spiritual-diseases", "heart-softening", "tazkiyah"]
+  },
+  {
+    "id": "marriage-preparation",
+    "title": "Marriage Preparation",
+    "description": "Preparation and selection for marriage",
+    "parentDimensionId": "marriage-nikah",
+    "topicIds": ["spouse-selection", "marriage-proposal", "compatibility", "marriage-readiness"]
+  },
+  {
+    "id": "marriage-ceremony",
+    "title": "Marriage Ceremony",
+    "description": "Islamic marriage ceremony and contract",
+    "parentDimensionId": "marriage-nikah",
+    "topicIds": ["nikah-ceremony", "mahr-dowry", "marriage-contract", "walima-feast", "marriage-witnesses"]
+  },
+  {
+    "id": "child-rights",
+    "title": "Child Rights",
+    "description": "Rights of children in Islam",
+    "parentDimensionId": "parenting-child-development",
+    "topicIds": ["newborn-rights", "naming-ceremony", "breastfeeding-rights", "child-maintenance", "fair-treatment"]
+  },
+  {
+    "id": "child-education",
+    "title": "Child Education",
+    "description": "Education and upbringing of children",
+    "parentDimensionId": "parenting-child-development",
+    "topicIds": ["child-education", "moral-education", "religious-teaching", "discipline-methods", "role-modeling"]
+  },
+  {
+    "id": "business-operations",
+    "title": "Business Operations",
+    "description": "Day-to-day business operations and practices",
+    "parentDimensionId": "trade-commerce",
+    "topicIds": ["business-ethics", "trade-principles", "entrepreneurship", "partnerships", "commercial-transactions"]
+  },
+  {
+    "id": "market-ethics",
+    "title": "Market Ethics",
+    "description": "Ethical principles in marketplace",
+    "parentDimensionId": "trade-commerce",
+    "topicIds": ["market-regulation", "fair-pricing", "commercial-fraud-prohibition", "honest-dealing", "weights-measures"]
+  },
+  {
+    "id": "legal-sources",
+    "title": "Legal Sources",
+    "description": "Sources of Islamic law",
+    "parentDimensionId": "shariah-legal-principles",
+    "topicIds": ["quran-as-source", "sunnah-as-source", "ijma-consensus", "qiyas-analogy", "legal-maxims"]
+  },
+  {
+    "id": "jurisprudence",
+    "title": "Jurisprudence",
+    "description": "Islamic jurisprudence and legal methodology",
+    "parentDimensionId": "shariah-legal-principles",
+    "topicIds": ["fiqh-methodology", "usul-al-fiqh", "legal-schools", "ijtihad", "judicial-independence"]
+  },
+  {
+    "id": "specific-animals",
+    "title": "Specific Animals",
+    "description": "Specific animals mentioned in Quran and Sunnah",
+    "parentDimensionId": "animals-creation",
+    "topicIds": ["camel-creation", "cow-creation", "sheep-creation", "bird-creation", "insect-creation", "marine-creatures"]
+  },
+  {
+    "id": "animal-ethics",
+    "title": "Animal Ethics",
+    "description": "Ethical treatment of animals",
+    "parentDimensionId": "animals-creation",
+    "topicIds": ["animal-welfare", "animal-sacrifice", "animal-rights", "humane-treatment", "animal-stories"]
+  }
+]

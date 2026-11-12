@@ -5,9 +5,19 @@ import Link from "next/link";
 import { ArrowLeft, Download, Shield, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { BackupControls } from "@/components/library/backup-controls";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { useLibrary } from "@/lib/library/context";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function MyStudySettingsPage() {
+  const t = useTranslation();
   const { clearAll, bookmarks, notes, collections, progress, hydrated } =
     useLibrary();
   const [confirmClear, setConfirmClear] = useState(false);
@@ -15,7 +25,7 @@ export default function MyStudySettingsPage() {
   function handleClearAll() {
     clearAll();
     setConfirmClear(false);
-    toast.success("All personal study data cleared");
+    toast.success(t("myStudySettings.clearedToast"));
   }
 
   return (
@@ -26,22 +36,21 @@ export default function MyStudySettingsPage() {
           className="inline-flex items-center gap-1.5 text-xs font-medium text-primary underline underline-offset-2 hover:decoration-gold"
         >
           <ArrowLeft className="h-3.5 w-3.5" aria-hidden />
-          Back to My Study
+          {t("myStudySettings.backToMyStudy")}
         </Link>
         <div className="space-y-1">
           <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-            Settings & Privacy
+            {t("myStudySettings.title")}
           </h1>
           <p className="max-w-prose text-sm text-muted-foreground">
-            Manage your personal study data. Everything is stored locally on
-            this device — no account, no cloud sync, no analytics.
+            {t("myStudySettings.subtitle")}
           </p>
         </div>
       </header>
 
       {!hydrated && (
         <div className="rounded-2xl border border-border/80 bg-card p-6 text-sm text-muted-foreground">
-          Loading settings…
+          {t("myStudySettings.loading")}
         </div>
       )}
 
@@ -57,15 +66,15 @@ export default function MyStudySettingsPage() {
               className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight"
             >
               <Shield className="h-5 w-5 text-gold" aria-hidden />
-              Privacy
+              {t("myStudySettings.privacy")}
             </h2>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-              <li>✓ All data stored locally in your browser</li>
-              <li>✓ No account required</li>
-              <li>✓ No cloud synchronization</li>
-              <li>✓ No analytics or tracking</li>
-              <li>✓ No data sent to external servers</li>
-              <li>✓ Clearing browser data will erase your study data unless you export a backup</li>
+              <li>✓ {t("myStudySettings.privacyLocalBrowser")}</li>
+              <li>✓ {t("myStudySettings.privacyNoAccount")}</li>
+              <li>✓ {t("myStudySettings.privacyNoCloud")}</li>
+              <li>✓ {t("myStudySettings.privacyNoAnalytics")}</li>
+              <li>✓ {t("myStudySettings.privacyNoExternal")}</li>
+              <li>✓ {t("myStudySettings.privacyClearing")}</li>
             </ul>
           </section>
 
@@ -75,13 +84,13 @@ export default function MyStudySettingsPage() {
               id="data-summary"
               className="font-display text-lg font-semibold tracking-tight"
             >
-              Your data
+              {t("myStudySettings.yourData")}
             </h2>
             <div className="rounded-2xl border border-border/80 bg-card p-5">
               <dl className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Bookmarks
+                    {t("myStudySettings.bookmarks")}
                   </dt>
                   <dd className="mt-1 font-display text-2xl font-semibold tabular-nums">
                     {bookmarks.length}
@@ -89,7 +98,7 @@ export default function MyStudySettingsPage() {
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Notes
+                    {t("myStudySettings.notes")}
                   </dt>
                   <dd className="mt-1 font-display text-2xl font-semibold tabular-nums">
                     {notes.length}
@@ -97,7 +106,7 @@ export default function MyStudySettingsPage() {
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Collections
+                    {t("myStudySettings.collections")}
                   </dt>
                   <dd className="mt-1 font-display text-2xl font-semibold tabular-nums">
                     {collections.length}
@@ -105,7 +114,7 @@ export default function MyStudySettingsPage() {
                 </div>
                 <div>
                   <dt className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                    Recent reads
+                    {t("myStudySettings.recentReads")}
                   </dt>
                   <dd className="mt-1 font-display text-2xl font-semibold tabular-nums">
                     {progress.length}
@@ -122,12 +131,11 @@ export default function MyStudySettingsPage() {
               className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight"
             >
               <Download className="h-5 w-5 text-gold" aria-hidden />
-              Backup & Restore
+              {t("myStudySettings.backupRestore")}
             </h2>
             <div className="rounded-2xl border border-border/80 bg-card p-5">
               <p className="text-sm text-muted-foreground">
-                Export all your personal study data as a JSON file. You can
-                restore it later on this device or another.
+                {t("myStudySettings.backupDesc")}
               </p>
               <div className="mt-4">
                 <BackupControls />
@@ -142,43 +150,52 @@ export default function MyStudySettingsPage() {
               className="flex items-center gap-2 font-display text-lg font-semibold tracking-tight"
             >
               <Trash2 className="h-5 w-5 text-destructive" aria-hidden />
-              Clear all data
+              {t("myStudySettings.clearAllData")}
             </h2>
             <div className="rounded-2xl border border-destructive/30 bg-destructive/5 p-5">
               <p className="text-sm text-muted-foreground">
-                This will permanently delete all your bookmarks, notes,
-                collections, and reading history from this device. This action
-                cannot be undone.
+                {t("myStudySettings.clearAllDataDesc")}
               </p>
-              {confirmClear ? (
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <button
-                    type="button"
-                    onClick={handleClearAll}
-                    className="rounded-full bg-destructive px-4 py-2 text-sm font-semibold text-destructive-foreground transition-opacity hover:opacity-90"
-                  >
-                    Yes, delete everything
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setConfirmClear(false)}
-                    className="rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent"
-                  >
-                    Cancel
-                  </button>
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  onClick={() => setConfirmClear(true)}
-                  className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-destructive px-4 py-2 text-sm font-semibold text-destructive-foreground transition-opacity hover:opacity-90"
-                >
-                  <Trash2 className="h-4 w-4" aria-hidden />
-                  Clear all data
-                </button>
-              )}
+              <button
+                type="button"
+                onClick={() => setConfirmClear(true)}
+                className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-destructive px-4 py-2 text-sm font-semibold text-destructive-foreground transition-opacity hover:opacity-90"
+              >
+                <Trash2 className="h-4 w-4" aria-hidden />
+                {t("myStudySettings.clearAllData")}
+              </button>
             </div>
           </section>
+
+          <Dialog open={confirmClear} onOpenChange={setConfirmClear}>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle className="flex items-center gap-2 text-destructive">
+                  <Trash2 className="h-5 w-5" aria-hidden />
+                  {t("myStudySettings.clearAllData")}
+                </DialogTitle>
+                <DialogDescription>
+                  {t("myStudySettings.clearAllDataDesc")}
+                </DialogDescription>
+              </DialogHeader>
+              <DialogFooter className="gap-2 sm:gap-0">
+                <button
+                  type="button"
+                  onClick={() => setConfirmClear(false)}
+                  className="rounded-full bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent"
+                >
+                  {t("common.cancel")}
+                </button>
+                <button
+                  type="button"
+                  onClick={handleClearAll}
+                  className="rounded-full bg-destructive px-4 py-2 text-sm font-semibold text-destructive-foreground transition-opacity hover:opacity-90"
+                >
+                  {t("myStudySettings.confirmDelete")}
+                </button>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
         </>
       )}
     </div>

@@ -225,6 +225,7 @@ export default function ExplorePage() {
                 <span
                   className="arabic-display text-base text-gold"
                   lang="ar"
+                  dir="rtl"
                   aria-hidden
                 >
                   {topic.arabicTitle}

@@ -39,6 +39,26 @@ const STATUS_STYLES: Record<string, string> = {
     "bg-gold-soft/70 text-accent-foreground border-gold/40",
 };
 
+const STATUS_LABELS: Record<string, string> = {
+  "editorial-approved": "Editorial approved",
+  "pending-scholarly-review": "Pending scholarly review",
+};
+
+function formatDate(dateString: string | null | undefined): string {
+  if (!dateString) return "—";
+  try {
+    const date = new Date(dateString);
+    if (isNaN(date.getTime())) return dateString;
+    return new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    }).format(date);
+  } catch {
+    return dateString;
+  }
+}
+
 export default function EditorialPage() {
   const report = validateDataset();
 
@@ -143,7 +163,64 @@ export default function EditorialPage() {
           topic-level record.
         </p>
 
-        <div className="mt-4 overflow-x-auto">
+        {/* Mobile card layout */}
+        <div className="mt-4 space-y-3 sm:hidden">
+          {topicRows.map(({ topic, unresolved, individuallyReviewed }) => (
+            <div key={topic.slug} className="rounded-xl border border-border/70 bg-background/60 p-3">
+              <div className="flex items-start justify-between gap-2">
+                <div>
+                  <Link
+                    href={`/topics/${topic.slug}`}
+                    className="font-medium text-primary hover:underline"
+                  >
+                    {topic.title}
+                  </Link>
+                  <span className="block text-xs text-muted-foreground">{topic.slug}</span>
+                </div>
+                <span
+                  className={`inline-block rounded-full border px-2 py-0.5 text-[0.6875rem] font-semibold uppercase tracking-wider ${
+                    STATUS_STYLES[topic.provenance.status] ?? ""
+                  }`}
+                >
+                  {topic.provenance.status}
+                </span>
+              </div>
+              <dl className="mt-3 space-y-2 text-xs">
+                <div>
+                  <dt className="font-medium text-muted-foreground">Relations</dt>
+                  <dd className="mt-0.5 tabular-nums text-foreground/85">
+                    {topic.relations.length}
+                    <span className="block font-normal text-muted-foreground">
+                      {individuallyReviewed} individually reviewed
+                    </span>
+                    {unresolved.length > 0 && (
+                      <span className="mt-0.5 inline-flex items-center gap-1 font-medium text-destructive">
+                        <AlertTriangle className="h-3.5 w-3.5" aria-hidden />
+                        {unresolved.length} unresolved
+                      </span>
+                    )}
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-medium text-muted-foreground">Curator / method</dt>
+                  <dd className="mt-0.5 text-muted-foreground">
+                    {topic.provenance.curator}
+                    <span className="block">{topic.provenance.method}</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt className="font-medium text-muted-foreground">Reviewed</dt>
+                  <dd className="mt-0.5 tabular-nums text-muted-foreground">
+                    {topic.provenance.reviewedAt}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop table layout */}
+        <div className="mt-4 hidden overflow-x-auto sm:block">
           <table className="w-full min-w-[46rem] text-left text-sm">
             <thead>
               <tr className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground">
@@ -172,7 +249,7 @@ export default function EditorialPage() {
                         STATUS_STYLES[topic.provenance.status] ?? ""
                       }`}
                     >
-                      {topic.provenance.status}
+                      {STATUS_LABELS[topic.provenance.status] ?? topic.provenance.status}
                     </span>
                   </td>
                   <td className="py-2.5 pr-3 tabular-nums text-foreground/85">
@@ -191,8 +268,11 @@ export default function EditorialPage() {
                     {topic.provenance.curator}
                     <span className="block">{topic.provenance.method}</span>
                   </td>
-                  <td className="py-2.5 text-xs tabular-nums text-muted-foreground">
-                    {topic.provenance.reviewedAt}
+                  <td
+                    className="py-2.5 text-xs tabular-nums text-muted-foreground"
+                    title={topic.provenance.reviewedAt ?? undefined}
+                  >
+                    {formatDate(topic.provenance.reviewedAt)}
                   </td>
                 </tr>
               ))}
@@ -232,7 +312,49 @@ export default function EditorialPage() {
                 <h3 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                   {label} ({rows.length})
                 </h3>
-                <div className="mt-2 overflow-x-auto">
+                {/* Mobile card layout */}
+                <div className="mt-2 space-y-3 sm:hidden">
+                  {rows.map((row) => (
+                    <div key={row.id} className="rounded-xl border border-border/70 bg-background/60 p-3">
+                      <div className="flex items-start justify-between gap-2">
+                        <p className="font-medium text-foreground/90">{row.subjectId}</p>
+                        <span
+                          className={`inline-block rounded-full border px-2 py-0.5 text-[0.6875rem] font-semibold uppercase tracking-wider ${
+                            STATUS_STYLES[row.status] ?? ""
+                          }`}
+                        >
+                          {row.status}
+                        </span>
+                      </div>
+                      <dl className="mt-3 space-y-2 text-xs">
+                        <div>
+                          <dt className="font-medium text-muted-foreground">Curator / method</dt>
+                          <dd className="mt-0.5 text-muted-foreground">
+                            {row.curator}
+                            <span className="block">{row.method}</span>
+                          </dd>
+                        </div>
+                        <div>
+                          <dt className="font-medium text-muted-foreground">Reviewed</dt>
+                          <dd className="mt-0.5 tabular-nums text-muted-foreground">
+                            {row.reviewedAt}
+                          </dd>
+                        </div>
+                        {row.notes && (
+                          <div>
+                            <dt className="font-medium text-muted-foreground">Notes</dt>
+                            <dd className="mt-0.5 leading-relaxed text-muted-foreground">
+                              {row.notes}
+                            </dd>
+                          </div>
+                        )}
+                      </dl>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Desktop table layout */}
+                <div className="mt-2 hidden overflow-x-auto sm:block">
                   <table className="w-full min-w-[44rem] text-left text-sm">
                     <thead>
                       <tr className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground">
@@ -255,15 +377,18 @@ export default function EditorialPage() {
                                 STATUS_STYLES[row.status] ?? ""
                               }`}
                             >
-                              {row.status}
+                              {STATUS_LABELS[row.status] ?? row.status}
                             </span>
                           </td>
                           <td className="py-2.5 pr-3 text-xs text-muted-foreground">
                             {row.curator}
                             <span className="block">{row.method}</span>
                           </td>
-                          <td className="py-2.5 pr-3 text-xs tabular-nums text-muted-foreground">
-                            {row.reviewedAt}
+                          <td
+                            className="py-2.5 pr-3 text-xs tabular-nums text-muted-foreground"
+                            title={row.reviewedAt ?? undefined}
+                          >
+                            {formatDate(row.reviewedAt)}
                           </td>
                           <td className="py-2.5 text-xs leading-relaxed text-muted-foreground">
                             {row.notes}

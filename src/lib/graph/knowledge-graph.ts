@@ -18,7 +18,7 @@
 //                        selections, not interpretation and not a ruling.
 //
 //   No ayah nodes or ayah-level edges are emitted. The PRD envisions every
-//   ayah tagged across ten dimensions; that work does not exist, and inventing
+//   ayah tagged across fifteen dimensions; that work does not exist, and inventing
 //   it would fabricate religious claims. This module serializes only the
 //   relationships the existing editorial data actually supports.
 //

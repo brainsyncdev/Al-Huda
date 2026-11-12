@@ -18,6 +18,7 @@ import {
   chapterJsonLd,
   quranJsonLd,
 } from "@/lib/seo/json-ld";
+import { getServerTranslation } from "@/lib/i18n/server-translate";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -53,6 +54,7 @@ export default async function SurahPage({ params }: Props) {
   if (!id) return notFound();
   const surah = getSurah(id);
   if (!surah) return notFound();
+  const t = await getServerTranslation();
 
   const index = getSurahIndex();
   const prev = surah.id > 1 ? index[surah.id - 2] : null;
@@ -104,8 +106,7 @@ export default async function SurahPage({ params }: Props) {
               {surah.ayahCount} ayat{ juzLabel && <> · {juzLabel}</>}
             </p>
             <p className="max-w-prose text-sm text-muted-foreground">
-              Read continuously below. Use the controls to adjust Arabic size
-              and toggle translation/transliteration.
+              {t("quran.readContinuously")}
             </p>
           </div>
           <div className="text-right">

@@ -136,7 +136,7 @@ export function LanguageSelector({
             role="listbox"
             aria-label={t("languageSelector.title")}
             onKeyDown={handleMenuKeyDown}
-            className="absolute bottom-full right-0 mb-2 w-44 overflow-hidden rounded-xl border border-border bg-popover shadow-lg"
+            className="absolute bottom-full end-0 mb-2 w-44 overflow-hidden rounded-xl border border-border bg-popover shadow-lg"
           >
             {LOCALES.map((loc, i) => (
               <button

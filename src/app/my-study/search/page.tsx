@@ -4,9 +4,11 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowLeft, Bookmark, FolderHeart, NotebookPen, Search } from "lucide-react";
 import { useLibrary } from "@/lib/library/context";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function MyStudySearchPage() {
   const { bookmarks, notes, collections, collectionAyat, hydrated } = useLibrary();
+  const t = useTranslation();
   const [query, setQuery] = useState("");
 
   const results = useMemo(() => {
@@ -23,8 +25,16 @@ export default function MyStudySearchPage() {
       return label.includes(q);
     });
 
+    // M19: also match collections whose ayat references contain the query.
+    // A query like "2:255" or "baqarah 255" should surface a collection that
+    // contains that ayah, not only one whose name happens to match.
     const matchedCollections = collections.filter((c) => {
-      return c.name.toLowerCase().includes(q);
+      if (c.name.toLowerCase().includes(q)) return true;
+      return collectionAyat.some((ca) => {
+        if (ca.collectionId !== c.id) return false;
+        const ref = `${ca.surah}:${ca.ayah}`.toLowerCase();
+        return ref.includes(q);
+      });
     });
 
     return {
@@ -54,6 +64,9 @@ export default function MyStudySearchPage() {
           <p className="max-w-prose text-sm text-muted-foreground">
             Search your bookmarks, notes, and collections — all local, nothing
             is sent to a server.
+          </p>
+          <p className="max-w-prose text-xs text-muted-foreground/80">
+            {t("myStudy.searchIncludesAyat")}
           </p>
         </div>
       </header>

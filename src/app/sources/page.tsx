@@ -52,46 +52,105 @@ export default function SourcesPage() {
                 {s.license}
               </span>
             </header>
-            <dl className="mt-4 grid grid-cols-1 gap-x-4 gap-y-2 text-sm sm:grid-cols-2">
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Publisher/maintainer</dt>
-                <dd className="mt-0.5">{s.publisher}</dd>
+
+            {/* Mobile: progressive disclosure — primary info visible, secondary behind toggle */}
+            <details className="group mt-3 sm:hidden">
+              <summary className="cursor-pointer list-none select-none rounded-lg border border-border/60 bg-secondary/40 px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground">
+                <span className="inline-flex items-center gap-1.5">
+                  Details
+                  <svg className="h-3 w-3 transition-transform group-open:rotate-180" aria-hidden viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clipRule="evenodd" />
+                  </svg>
+                </span>
+              </summary>
+              <div className="mt-3 space-y-3">
+                <dl className="grid grid-cols-1 gap-x-4 gap-y-2 text-sm">
+                  <div>
+                    <dt className="text-xs uppercase tracking-wider text-muted-foreground">Publisher/maintainer</dt>
+                    <dd className="mt-0.5">{s.publisher}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs uppercase tracking-wider text-muted-foreground">Version/pin</dt>
+                    <dd className="mt-0.5">{sourceVersionLabel(s)}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs uppercase tracking-wider text-muted-foreground">Delivery</dt>
+                    <dd className="mt-0.5 capitalize">{s.method}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-xs uppercase tracking-wider text-muted-foreground">Content language</dt>
+                    <dd className="mt-0.5">{sourceLanguageLabel(s.language)}</dd>
+                  </div>
+                </dl>
+                {s.notes && <p className="text-sm leading-relaxed text-muted-foreground">{s.notes}</p>}
+                <div className="flex flex-wrap gap-1.5">
+                  <Link
+                    href={s.homepage}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    Visit source
+                    <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                  </Link>
+                  {s.licenseUrl && (
+                    <Link
+                      href={s.licenseUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                    >
+                      License terms
+                      <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                    </Link>
+                  )}
+                </div>
               </div>
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Version/pin</dt>
-                <dd className="mt-0.5">{sourceVersionLabel(s)}</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Delivery</dt>
-                <dd className="mt-0.5 capitalize">{s.method}</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-wider text-muted-foreground">Content language</dt>
-                <dd className="mt-0.5">{sourceLanguageLabel(s.language)}</dd>
-              </div>
-            </dl>
-            {s.notes && <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.notes}</p>}
-            <div className="mt-4">
-              <Link
-                href={s.homepage}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-              >
-                Visit source
-                <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-              </Link>
-              {s.licenseUrl && (
+            </details>
+
+            {/* Desktop: all info visible */}
+            <div className="hidden sm:block">
+              <dl className="mt-4 grid grid-cols-1 gap-x-4 gap-y-2 text-sm sm:grid-cols-2">
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Publisher/maintainer</dt>
+                  <dd className="mt-0.5">{s.publisher}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Version/pin</dt>
+                  <dd className="mt-0.5">{sourceVersionLabel(s)}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Delivery</dt>
+                  <dd className="mt-0.5 capitalize">{s.method}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs uppercase tracking-wider text-muted-foreground">Content language</dt>
+                  <dd className="mt-0.5">{sourceLanguageLabel(s.language)}</dd>
+                </div>
+              </dl>
+              {s.notes && <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.notes}</p>}
+              <div className="mt-4">
                 <Link
-                  href={s.licenseUrl}
+                  href={s.homepage}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-1.5 inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                 >
-                  License terms
+                  Visit source
                   <ExternalLink className="h-3.5 w-3.5" aria-hidden />
                 </Link>
-              )}
+                {s.licenseUrl && (
+                  <Link
+                    href={s.licenseUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-1.5 inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    License terms
+                    <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                  </Link>
+                )}
+              </div>
             </div>
           </article>
         ))}
@@ -121,6 +180,15 @@ export default function SourcesPage() {
               checks surah/ayah counts, duplicate and sequential identifiers,
               and the canonical 6,236-ayah total before a release.
             </p>
+            <div className="mt-3 rounded-lg border border-border/60 bg-muted/30 p-3 text-xs">
+              <p className="font-medium mb-1">Important distinctions:</p>
+              <ul className="space-y-1 text-muted-foreground list-disc list-inside">
+                <li><strong>Quran text:</strong> The original Arabic revelation, reproduced verbatim from pinned sources</li>
+                <li><strong>Translation:</strong> Human-rendered meanings in other languages, each with its own translator, edition, and license</li>
+                <li><strong>Tafsir:</strong> Scholarly exegesis and interpretation — not present in this build until a verified corpus with usage rights is available</li>
+                <li><strong>Editorial explanations:</strong> Topic rationales and navigation aids created by the editorial team, clearly marked as <em>pending-scholarly-review</em> and distinct from scripture</li>
+              </ul>
+            </div>
           </div>
 
           <div>

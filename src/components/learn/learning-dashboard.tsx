@@ -400,7 +400,7 @@ function ContinueCard({
       <div className="flex-1 min-w-0 space-y-0.5">
         <h3 className="font-medium text-foreground truncate">
           {arabicTitle && (
-            <span className="arabic-display text-base text-gold mr-2">
+            <span className="arabic-display text-base text-gold mr-2" lang="ar" dir="rtl">
               {arabicTitle}
             </span>
           )}

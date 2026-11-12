@@ -9,7 +9,7 @@
 //
 // Why a schema-first sprint rather than a data-first sprint:
 //
-//   The current 10 dimensions and 11 topics are an initial navigation
+//   The current 15 dimensions and 11 topics are an initial navigation
 //   foundation, not an exhaustive representation of the Quran. Adding more
 //   concepts, stories, entities, and linguistic facts without a stable shape
 //   would either (a) force every new idea into one of two existing buckets,
@@ -346,7 +346,7 @@ export interface PassageEntity extends EntityBase {
 }
 
 /**
- * A user-facing exploration lens — the existing 10 dimensions fit here,
+ * A user-facing exploration lens — the existing 15 dimensions fit here,
  * as would any future alternative way of navigating (by story, by root,
  * by chronology). Lenses are navigation aids, not claims about the Quran.
  */
@@ -356,7 +356,7 @@ export interface ExplorationLensEntity extends EntityBase {
   lensKind: "dimension" | "chronology" | "audience" | "custom";
   /**
    * Stable ordinal for display ordering within a lens family. The existing
-   * 10 dimensions use their PRD §04.3 number here.
+   * 15 dimensions use their PRD §04.3 number here.
    */
   ordinal: number | null;
   /** Suggested search terms — derived, not a controlled vocabulary. */

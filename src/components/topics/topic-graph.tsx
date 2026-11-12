@@ -1,6 +1,7 @@
 "use client";
 
 import { useId } from "react";
+import Link from "next/link";
 import type { Topic } from "@/lib/topics/data";
 
 interface TopicGraphProps {
@@ -20,10 +21,22 @@ export function TopicGraph({ topics }: TopicGraphProps) {
 
   const centerX = 220;
   const centerY = 170;
-  const radius = 120;
+  const radius = 140;
 
-  const nodes: Node[] = topics.map((topic, index) => {
-    const angle = (2 * Math.PI * index) / topics.length - Math.PI / 2;
+  // Calculate relation count for each topic and sort by most connected
+  const topicsWithCount = topics.map((topic) => ({
+    topic,
+    relationCount: topic.related.length,
+  }));
+  topicsWithCount.sort((a, b) => b.relationCount - a.relationCount);
+
+  // Show only top 15 most connected topics to prevent label overlap
+  const MAX_NODES = 15;
+  const displayTopics = topicsWithCount.slice(0, MAX_NODES).map((t) => t.topic);
+  const hasMore = topics.length > MAX_NODES;
+
+  const nodes: Node[] = displayTopics.map((topic, index) => {
+    const angle = (2 * Math.PI * index) / displayTopics.length - Math.PI / 2;
     return {
       slug: topic.slug,
       title: topic.title,
@@ -37,7 +50,7 @@ export function TopicGraph({ topics }: TopicGraphProps) {
   const edges: Array<{ from: Node; to: Node }> = [];
   const seen = new Set<string>();
 
-  for (const topic of topics) {
+  for (const topic of displayTopics) {
     const from = nodeBySlug.get(topic.slug);
     if (!from) continue;
     for (const relatedSlug of topic.related) {
@@ -103,17 +116,17 @@ export function TopicGraph({ topics }: TopicGraphProps) {
                   cx={node.x}
                   cy={node.y}
                   r="10"
-                  className="fill-primary/90 stroke-background"
+                  className="fill-primary/90 stroke-background transition-all hover:fill-primary hover:r-12 focus:outline-2 focus:outline-ring"
                   strokeWidth="3"
                 />
                 <text
                   x={node.x}
-                  y={node.y - 16}
+                  y={node.y - 18}
                   textAnchor="middle"
-                  className="fill-foreground text-[10px] font-medium"
+                  className="fill-foreground text-[9px] font-medium pointer-events-none"
                 >
-                  {node.title.length > 16
-                    ? `${node.title.slice(0, 14)}…`
+                  {node.title.length > 14
+                    ? `${node.title.slice(0, 12)}…`
                     : node.title}
                 </text>
               </a>
@@ -126,6 +139,15 @@ export function TopicGraph({ topics }: TopicGraphProps) {
         Keyboard accessible: tab through nodes to open a topic. If your browser
         reduces motion, the static diagram remains readable.
       </p>
+
+      {hasMore && (
+        <p className="mt-2 text-sm text-muted-foreground">
+          Showing the {MAX_NODES} most connected topics.{' '}
+          <Link href="/topics" className="text-primary hover:underline font-medium">
+            View all {topics.length} topics →
+          </Link>
+        </p>
+      )}
     </section>
   );
 }

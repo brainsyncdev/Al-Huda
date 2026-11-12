@@ -45,6 +45,10 @@ import {
   type Sprint48RegistryRoot,
   type Sprint48OccurrenceIndex,
 } from "@/lib/morphology/sprint-48-root-data";
+import {
+  getGraphEnrichmentData,
+} from "@/lib/graph/canonical-graph-enrichment";
+import { getCanonicalTopic } from "@/lib/taxonomy/canonical-adapter";
 
 interface Props {
   params: Promise<{ root: string }>;
@@ -485,6 +489,9 @@ function Sprint48RootView({
         </section>
       )}
 
+      {/* MFD-07 Phase 9: Topics referencing this root */}
+      <RelatedTopicsForRootSection rootSlug={slug} />
+
       {/* Coverage disclosure */}
       <section className="rounded-2xl border border-border/60 bg-card/60 p-5 text-xs text-muted-foreground">
         <p className="flex items-start gap-2">
@@ -662,6 +669,69 @@ function BackToRootsLink() {
 }
 
 // ============================================================================
+// MFD-07 Phase 9: Related Topics for a root (heuristic, via enrichment layer)
+// ============================================================================
+
+/**
+ * Find canonical topics whose enrichment references this root slug.
+ * These are heuristic suggestions derived from keyword matching, not
+ * authoritative topic-root mappings.
+ */
+function getRelatedTopicsForRoot(rootSlug: string) {
+  const enrichment = getGraphEnrichmentData();
+  const topicIds = Object.entries(enrichment.topicEnrichments)
+    .filter(([, e]) => e.relatedRoots.includes(rootSlug))
+    .map(([id]) => id);
+  return topicIds
+    .map((id) => getCanonicalTopic(id))
+    .filter((t): t is NonNullable<typeof t> => t !== null);
+}
+
+function RelatedTopicsForRootSection({ rootSlug }: { rootSlug: string }) {
+  const relatedTopics = getRelatedTopicsForRoot(rootSlug);
+  if (relatedTopics.length === 0) return null;
+  return (
+    <section
+      aria-labelledby="related-topics-for-root"
+      className="rounded-2xl border border-border/80 bg-card p-5 space-y-3"
+    >
+      <div>
+        <h2
+          id="related-topics-for-root"
+          className="font-display text-lg font-semibold tracking-tight"
+        >
+          Topics Referencing This Root
+        </h2>
+        <p className="mt-1 text-xs text-muted-foreground">
+          Topic connections are heuristic suggestions based on keyword matching.
+          They are not authoritative classifications.
+        </p>
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {relatedTopics.map((topic) => (
+          <Link
+            key={topic.id}
+            href={`/explore/topics/${topic.id}`}
+            className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary/40 px-3 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary/70"
+          >
+            {topic.arabicTitle && (
+              <span
+                className="arabic-display text-base text-gold"
+                lang="ar"
+                dir="rtl"
+              >
+                {topic.arabicTitle}
+              </span>
+            )}
+            {topic.title}
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
 // Legacy views (kept for manual roots)
 // ============================================================================
 
@@ -798,6 +868,9 @@ function RootIndexView({
           )}
         </section>
       )}
+
+      {/* MFD-07 Phase 9: Topics referencing this root */}
+      <RelatedTopicsForRootSection rootSlug={slug} />
 
       <footer className="rounded-2xl border border-border/60 bg-card/60 p-5 text-xs text-muted-foreground">
         <p>

@@ -7,8 +7,10 @@
 
 import { useJourneys } from "@/lib/study-journeys/context";
 import { getJourney } from "@/lib/study-journeys/data";
+import { useTranslation } from "@/lib/i18n/context";
 import { CheckCircle, Circle, Play } from "lucide-react";
 import { useEffect } from "react";
+import { toast } from "sonner";
 
 interface JourneyProgressTrackerProps {
   journeySlug: string;
@@ -19,6 +21,7 @@ export function JourneyProgressTracker({
 }: JourneyProgressTrackerProps) {
   const { hydrated, startJourney, completeStage, isStageComplete, getProgress } =
     useJourneys();
+  const t = useTranslation();
 
   const journey = getJourney(journeySlug);
   const progress = getProgress(journeySlug);
@@ -27,8 +30,11 @@ export function JourneyProgressTracker({
   useEffect(() => {
     if (hydrated && journey && !progress) {
       startJourney(journeySlug);
+      toast.success(t("learn.journeyStarted"), {
+        description: t("learn.journeyStartedDescription"),
+      });
     }
-  }, [hydrated, journey, progress, journeySlug, startJourney]);
+  }, [hydrated, journey, progress, journeySlug, startJourney, t]);
 
   if (!hydrated || !journey) {
     return null;

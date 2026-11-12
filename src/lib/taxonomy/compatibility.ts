@@ -137,7 +137,7 @@ export function relationId(
 // ---------------------------------------------------------------------------
 
 /**
- * The existing 10 dimensions are topic-level NAVIGATION AIDS, not ayat-level
+ * The existing 15 dimensions are topic-level NAVIGATION AIDS, not ayat-level
  * classifications. In the new schema they map cleanly to `exploration-lens`
  * entities with lensKind `dimension`. Their `topicSlugs` field is preserved
  * verbatim as lens-overlays relations via `adaptDimensionTopicMapping`.

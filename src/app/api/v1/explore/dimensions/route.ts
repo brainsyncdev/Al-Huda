@@ -2,7 +2,7 @@ import type { NextRequest } from "next/server";
 import { apiOk, guarded } from "@/lib/api/v1";
 import { getAllDimensions, DIMENSION_PROVENANCE } from "@/lib/explore/dimensions";
 
-// GET /api/v1/explore/dimensions — list all 10 dimensions with topic mappings.
+// GET /api/v1/explore/dimensions — list all 15 dimensions with topic mappings.
 export const dynamic = "force-dynamic";
 
 export async function GET(request: NextRequest) {

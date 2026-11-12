@@ -1,7 +1,9 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { Filter, X } from "lucide-react";
+import { useState } from "react";
+import { ChevronDown, Filter, X } from "lucide-react";
+import { useTranslation } from "@/lib/i18n/context";
 import type { TranslationMeta } from "@/lib/quran/translations";
 
 interface SearchFiltersProps {
@@ -27,6 +29,8 @@ interface SearchFiltersProps {
 export function SearchFilters({ surahOptions, topicOptions, editions = [] }: SearchFiltersProps) {
   const router = useRouter();
   const params = useSearchParams();
+  const t = useTranslation();
+  const [advancedOpen, setAdvancedOpen] = useState(false);
 
   const rawSurah = params.get("surah") ?? "";
   const surah = surahOptions.some((s) => String(s.id) === rawSurah) ? rawSurah : "";
@@ -68,6 +72,9 @@ export function SearchFilters({ surahOptions, topicOptions, editions = [] }: Sea
       params.get("mode") ||
       params.get("language")
   );
+
+  // Count of "advanced" filters (Surah, type, Juz, topic) for the badge.
+  const advancedFilterCount = [surah, type, juz, topic].filter(Boolean).length;
 
   /**
    * Update one filter key. Edition and mode are mutually exclusive: setting one
@@ -171,6 +178,7 @@ export function SearchFilters({ surahOptions, topicOptions, editions = [] }: Sea
         )}
       </div>
 
+      {/* Primary filters — always visible */}
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {/* Search in (unifies edition + mode) */}
         <label className="space-y-1.5">
@@ -180,8 +188,8 @@ export function SearchFilters({ surahOptions, topicOptions, editions = [] }: Sea
             onChange={(e) => updateSearchIn(e.target.value)}
             className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
           >
-            <option value="default">Default (Arabic + built-in English)</option>
-            <option value="tafsir">Both classical tafsirs</option>
+            <option value="default">{t("searchFilters.defaultMode")}</option>
+            <option value="tafsir">{t("searchFilters.tafsirMode")}</option>
             {Array.from(editionsByLang.entries()).map(([lang, eds]) => (
               <optgroup key={lang} label={eds[0].languageLabel}>
                 {eds.map((e) => (
@@ -195,84 +203,114 @@ export function SearchFilters({ surahOptions, topicOptions, editions = [] }: Sea
         </label>
 
         {/* Language (only for default search) */}
-        <label className="space-y-1.5">
-          <span className="block text-xs font-medium text-muted-foreground">Language</span>
-          <select
-            value={language}
-            onChange={(e) => updateFilter("language", e.target.value)}
-            disabled={languageDisabled}
-            className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring disabled:opacity-50"
-          >
-            <option value="">Any</option>
-            <option value="ar">Arabic text only</option>
-            <option value="en">English text only</option>
-          </select>
-        </label>
+        <div className="space-y-1.5">
+          <label className="block space-y-1.5">
+            <span className="block text-xs font-medium text-muted-foreground">Language</span>
+            <select
+              value={language}
+              onChange={(e) => updateFilter("language", e.target.value)}
+              disabled={languageDisabled}
+              className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring disabled:opacity-50"
+            >
+              <option value="">{t("searchFilters.any")}</option>
+              <option value="ar">{t("searchFilters.arabicOnly")}</option>
+              <option value="en">{t("searchFilters.englishOnly")}</option>
+            </select>
+          </label>
+          {languageDisabled && (
+            <p className="text-xs text-muted-foreground">
+              {t("searchFilters.languageFilterHelp")}
+            </p>
+          )}
+        </div>
+      </div>
 
-        {/* Surah */}
-        <label className="space-y-1.5">
-          <span className="block text-xs font-medium text-muted-foreground">Surah</span>
-          <select
-            value={surah}
-            onChange={(e) => updateFilter("surah", e.target.value)}
-            className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
-          >
-            <option value="">All surahs</option>
-            {surahOptions.map((s) => (
-              <option key={s.id} value={s.id}>
-                {s.id}. {s.transliteration}
-              </option>
-            ))}
-          </select>
-        </label>
+      {/* Advanced filters — collapsed on mobile, always visible on sm+ */}
+      <div className={advancedOpen ? "block" : "hidden sm:block"}>
+        <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Surah */}
+          <label className="space-y-1.5">
+            <span className="block text-xs font-medium text-muted-foreground">Surah</span>
+            <select
+              value={surah}
+              onChange={(e) => updateFilter("surah", e.target.value)}
+              className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
+            >
+              <option value="">{t("searchFilters.allSurahs")}</option>
+              {surahOptions.map((s) => (
+                <option key={s.id} value={s.id}>
+                  {s.id}. {s.transliteration}
+                </option>
+              ))}
+            </select>
+          </label>
 
-        {/* Revelation type */}
-        <label className="space-y-1.5">
-          <span className="block text-xs font-medium text-muted-foreground">Revelation type</span>
-          <select
-            value={type}
-            onChange={(e) => updateFilter("type", e.target.value)}
-            className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
-          >
-            <option value="">All types</option>
-            <option value="meccan">Meccan</option>
-            <option value="medinan">Medinan</option>
-          </select>
-        </label>
+          {/* Revelation type */}
+          <label className="space-y-1.5">
+            <span className="block text-xs font-medium text-muted-foreground">Revelation type</span>
+            <select
+              value={type}
+              onChange={(e) => updateFilter("type", e.target.value)}
+              className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
+            >
+              <option value="">{t("searchFilters.allTypes")}</option>
+              <option value="meccan">{t("searchFilters.meccan")}</option>
+              <option value="medinan">{t("searchFilters.medinan")}</option>
+            </select>
+          </label>
 
-        {/* Juz */}
-        <label className="space-y-1.5">
-          <span className="block text-xs font-medium text-muted-foreground">Juz</span>
-          <select
-            value={juz}
-            onChange={(e) => updateFilter("juz", e.target.value)}
-            className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
-          >
-            <option value="">All juz</option>
-            {Array.from({ length: 30 }, (_, i) => i + 1).map((j) => (
-              <option key={j} value={j}>
-                Juz {j}
-              </option>
-            ))}
-          </select>
-        </label>
+          {/* Juz */}
+          <label className="space-y-1.5">
+            <span className="block text-xs font-medium text-muted-foreground">Juz</span>
+            <select
+              value={juz}
+              onChange={(e) => updateFilter("juz", e.target.value)}
+              className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
+            >
+              <option value="">{t("searchFilters.allJuz")}</option>
+              {Array.from({ length: 30 }, (_, i) => i + 1).map((j) => (
+                <option key={j} value={j}>
+                  Juz {j}
+                </option>
+              ))}
+            </select>
+          </label>
 
-        {/* Curated topic */}
-        <label className="space-y-1.5">
-          <span className="block text-xs font-medium text-muted-foreground">Curated topic</span>
-          <select
-            value={topic}
-            onChange={(e) => updateFilter("topic", e.target.value)}
-            className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
-          >
-            <option value="">All topics</option>
-            {topicOptions.map((t) => (
-              <option key={t.slug} value={t.slug}>
-                {t.title}
-              </option>
-            ))}
-          </select>
-        </label>
+          {/* Curated topic */}
+          <label className="space-y-1.5">
+            <span className="block text-xs font-medium text-muted-foreground">Curated topic</span>
+            <select
+              value={topic}
+              onChange={(e) => updateFilter("topic", e.target.value)}
+              className="h-10 w-full rounded-lg border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-2 focus-visible:outline-ring"
+            >
+              <option value="">{t("searchFilters.allTopics")}</option>
+              {topicOptions.map((topicOpt) => (
+                <option key={topicOpt.slug} value={topicOpt.slug}>
+                  {topicOpt.title}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+      </div>
+
+      {/* Mobile disclosure toggle for advanced filters */}
+      <div className="mt-2 sm:hidden">
+        <button
+          type="button"
+          onClick={() => setAdvancedOpen((v) => !v)}
+          className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-background px-3 py-1.5 text-xs font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+          aria-expanded={advancedOpen}
+        >
+          <ChevronDown
+            className={`h-3.5 w-3.5 transition-transform ${advancedOpen ? "rotate-180" : ""}`}
+            aria-hidden
+          />
+          {advancedFilterCount > 0
+            ? t("searchFilters.advancedFiltersCount", { count: advancedFilterCount })
+            : t("searchFilters.advancedFilters")}
+        </button>
       </div>
 
       {/* Active filter chips */}

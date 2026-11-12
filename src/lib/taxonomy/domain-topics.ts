@@ -22,7 +22,7 @@
 //
 // RELATIONSHIP TO DIMENSION.topicSlugs:
 //
-//   The 10 dimensions in `src/lib/explore/dimensions.ts` have `topicSlugs`
+//   The 15 dimensions in `src/lib/explore/dimensions.ts` have `topicSlugs`
 //   fields that are NAVIGATION AIDS, not domain assignments. This catalog
 //   is separate and distinct. A topic may appear in both a dimension's
 //   topicSlugs and a domain's relationships, but the two systems serve

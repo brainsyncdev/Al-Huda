@@ -20,7 +20,7 @@ import { DIMENSIONS } from "@/lib/explore/dimensions";
  * 4. All shipped relations are pending-review with organizational-membership semantics
  * 5. Topics without relationships render safely (unknown slug returns [])
  * 6. Bidirectional navigation works (domain → topic → domain)
- * 7. Existing catalogs unchanged (14 domains, 10 dimensions, 11 topics, 11 relations)
+ * 7. Existing catalogs unchanged (14 domains, 15 dimensions, 11 topics, 11 relations)
  * 8. Evidence policy intact
  * 9. UI source contains required copy (semantics, status, organizational proposal language)
  */

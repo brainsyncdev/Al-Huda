@@ -52,3 +52,17 @@ export function resolveInitialLocale(
   }
   return DEFAULT_LOCALE;
 }
+
+/**
+ * Set the NEXT_LOCALE cookie so SSR picks up the user's choice on the next
+ * request. Client-side only — silently no-ops during SSR.
+ */
+export function setLocaleCookie(locale: Locale): void {
+  if (typeof document === "undefined") return;
+  try {
+    const expires = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toUTCString();
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; expires=${expires}; SameSite=Lax`;
+  } catch {
+    // Silently fail if cookies are unavailable
+  }
+}

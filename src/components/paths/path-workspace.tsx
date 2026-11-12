@@ -204,7 +204,7 @@ export function PathWorkspace({ path, steps }: PathWorkspaceProps) {
                       href={`/topics/${step.topicSlug}`}
                       className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                     >
-                      <span className="arabic-display text-sm text-gold">
+                      <span className="arabic-display text-sm text-gold" lang="ar" dir="rtl">
                         {topic.arabicTitle}
                       </span>
                       {topic.title}

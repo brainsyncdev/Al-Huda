@@ -6,6 +6,7 @@ import { ArrowLeft, Clock, Hash, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { useLibrary } from "@/lib/library/context";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/lib/i18n/context";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -18,9 +19,11 @@ export default function CollectionDetailPage({ params }: Props) {
   const collectionId = decodeURIComponent(rawId);
   const { collections, getCollectionAyat, removeFromCollection, renameCollection, hydrated } =
     useLibrary();
+  const t = useTranslation();
   const [sort, setSort] = useState<SortMode>("added");
   const [editing, setEditing] = useState(false);
   const [newName, setNewName] = useState("");
+  const [confirmRemove, setConfirmRemove] = useState<string | null>(null);
 
   const collection = collections.find((c) => c.id === collectionId);
   const ayat = getCollectionAyat(collectionId);
@@ -37,7 +40,8 @@ export default function CollectionDetailPage({ params }: Props) {
 
   function handleRemove(surah: number, ayah: number) {
     removeFromCollection(collectionId, surah, ayah);
-    toast.success("Removed from collection");
+    setConfirmRemove(null);
+    toast.success(t("reader.removedFromCollection", { name: collection?.name ?? "" }));
   }
 
   function handleRename(e: React.FormEvent) {
@@ -193,14 +197,33 @@ export default function CollectionDetailPage({ params }: Props) {
                       Added {new Date(ca.createdAt).toLocaleDateString()}
                     </p>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => handleRemove(ca.surah, ca.ayah)}
-                    className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
-                    aria-label={`Remove ${ca.surah}:${ca.ayah} from collection`}
-                  >
-                    <Trash2 className="h-4 w-4" aria-hidden />
-                  </button>
+                  {confirmRemove === `${ca.surah}:${ca.ayah}` ? (
+                    <div className="flex items-center gap-1">
+                      <button
+                        type="button"
+                        onClick={() => handleRemove(ca.surah, ca.ayah)}
+                        className="rounded-full bg-destructive px-3 py-1 text-xs font-semibold text-destructive-foreground"
+                      >
+                        {t("myStudy.confirm")}
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setConfirmRemove(null)}
+                        className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
+                      >
+                        {t("common.cancel")}
+                      </button>
+                    </div>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setConfirmRemove(`${ca.surah}:${ca.ayah}`)}
+                      className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+                      aria-label={`Remove ${ca.surah}:${ca.ayah} from collection`}
+                    >
+                      <Trash2 className="h-4 w-4" aria-hidden />
+                    </button>
+                  )}
                 </div>
                 <div className="mt-3">
                   <Link

@@ -6,12 +6,15 @@ import { ArrowLeft, Bookmark, Clock, Hash, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { useLibrary } from "@/lib/library/context";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/lib/i18n/context";
 
 type SortMode = "recent" | "quran";
 
 export default function MyStudyBookmarksPage() {
   const { bookmarks, toggleBookmark, hydrated } = useLibrary();
+  const t = useTranslation();
   const [sort, setSort] = useState<SortMode>("recent");
+  const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
 
   const sorted = useMemo(() => {
     const list = [...bookmarks];
@@ -25,7 +28,8 @@ export default function MyStudyBookmarksPage() {
 
   function handleRemove(surah: number, ayah: number) {
     toggleBookmark(surah, ayah);
-    toast.success("Bookmark removed");
+    setConfirmDelete(null);
+    toast.success(t("reader.bookmarkRemoved"));
   }
 
   return (
@@ -117,14 +121,33 @@ export default function MyStudyBookmarksPage() {
                         Saved {new Date(b.savedAt).toLocaleString()}
                       </p>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => handleRemove(b.surah, b.ayah)}
-                      className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
-                      aria-label={`Remove bookmark for ${b.surah}:${b.ayah}`}
-                    >
-                      <Trash2 className="h-4 w-4" aria-hidden />
-                    </button>
+                    {confirmDelete === `${b.surah}:${b.ayah}` ? (
+                      <div className="flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={() => handleRemove(b.surah, b.ayah)}
+                          className="rounded-full bg-destructive px-3 py-1 text-xs font-semibold text-destructive-foreground"
+                        >
+                          {t("myStudy.confirm")}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setConfirmDelete(null)}
+                          className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
+                        >
+                          {t("common.cancel")}
+                        </button>
+                      </div>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => setConfirmDelete(`${b.surah}:${b.ayah}`)}
+                        className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+                        aria-label={`Remove bookmark for ${b.surah}:${b.ayah}`}
+                      >
+                        <Trash2 className="h-4 w-4" aria-hidden />
+                      </button>
+                    )}
                   </div>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     <Link

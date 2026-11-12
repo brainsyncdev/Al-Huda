@@ -34,6 +34,7 @@ export function SiteFooter() {
             </p>
           </div>
 
+          {/* TODO(i18n): translate aria-label via server-side t() once available */}
           <nav aria-label="Footer">
             <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
               {FOOTER_LINK_KEYS.map(({ href, key }) => (

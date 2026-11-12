@@ -160,7 +160,7 @@ export function DiscoverClient() {
         </div>
       </section>
 
-      {/* All 10 dimensions */}
+      {/* All 15 dimensions */}
       <section aria-labelledby="all-dimensions" className="space-y-5">
         <div>
           <h2

@@ -477,7 +477,7 @@ export function QuizWorkspace() {
                     href={`/learn/paths/${path.slug}`}
                     className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                   >
-                    <span className="arabic-display text-base text-gold">
+                    <span className="arabic-display text-base text-gold" lang="ar" dir="rtl">
                       {path.arabicTitle}
                     </span>
                     {path.title}
@@ -515,7 +515,7 @@ export function QuizWorkspace() {
                     href={`/topics/${t.slug}`}
                     className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
                   >
-                    <span className="arabic-display text-base text-gold">
+                    <span className="arabic-display text-base text-gold" lang="ar" dir="rtl">
                       {t.arabicTitle}
                     </span>
                     {t.title}

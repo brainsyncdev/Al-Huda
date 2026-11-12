@@ -15,6 +15,8 @@ import { useTranslationText } from "@/lib/quran/translation-store";
 import { getTranslation } from "@/lib/quran/translations";
 import { getTopicsForAyah, getDimensionForTopic, getTopicUrl, getDimensionUrl } from "@/lib/topics/navigation";
 import { AudioPlayer } from "./audio-player";
+import { useTranslation } from "@/lib/i18n/context";
+import { ExpandableTranslation } from "@/components/search/expandable-translation";
 
 interface AyahCardProps {
   ayah: Ayah;
@@ -34,6 +36,13 @@ interface AyahCardProps {
   matchReasonLabel?: string;
   /** FR-015: what the label actually means, exposed to assistive tech. */
   matchReasonDescription?: string;
+  /**
+   * MFD-02E M3: when true and there is no snippet highlight, the translation
+   * is truncated to 3 lines with a "Show full verse" toggle. Used on the
+   * search results page so long ayahs without a literal match don't dominate
+   * the list visually.
+   */
+  truncateTranslationWhenNoSnippet?: boolean;
 }
 
 function ParallelTranslationBlock({ translationId, surah, ayah }: { translationId: string; surah: number; ayah: number }) {
@@ -65,7 +74,9 @@ export function AyahCard({
   snippet = null,
   matchReasonLabel,
   matchReasonDescription,
+  truncateTranslationWhenNoSnippet = false,
 }: AyahCardProps) {
+  const t = useTranslation();
   const {
     isBookmarked,
     toggleBookmark,
@@ -149,12 +160,10 @@ export function AyahCard({
     if (!planHydrated) return;
     if (planned) {
       removeItem(ref);
-      toast.success(`${ref} removed from your plan. Its recorded reviews are kept.`);
+      toast.success(t("reader.removedFromPlan", { ref }));
     } else {
       addRange([{ surah: ayah.surah, ayah: ayah.ayah }]);
-      toast.success(
-        `${ref} added to your plan. The first review is scheduled for tomorrow.`
-      );
+      toast.success(t("reader.addedToPlan", { ref }));
     }
   }
 
@@ -162,10 +171,10 @@ export function AyahCard({
     try {
       await navigator.clipboard.writeText(value);
       setCopied(kind);
-      toast.success(kind === "link" ? "Link copied" : "Verse text copied");
+      toast.success(kind === "link" ? t("reader.linkCopied") : t("reader.verseCopied"));
       window.setTimeout(() => setCopied(null), 1800);
     } catch {
-      toast.error("Could not copy to clipboard");
+      toast.error(t("reader.couldNotCopy"));
     }
   }
 
@@ -194,7 +203,7 @@ export function AyahCard({
               <span className="ayah-number" aria-label={`Ayah ${ayah.ayah}`}>
                 {ayah.ayah}
               </span>
-              <div className="flex min-w-0 items-center justify-end gap-2">
+              <div className="flex min-w-0 flex-wrap items-center justify-end gap-2">
                 {matchReasonLabel && (
                   <span className="shrink-0 rounded-full bg-secondary px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wider text-secondary-foreground">
                     {/* Description is announced rather than mouse-only: `title` alone
@@ -208,7 +217,7 @@ export function AyahCard({
                     </span>
                   </span>
                 )}
-                <span className="truncate text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                <span className="flex-shrink-0 text-xs font-medium uppercase tracking-wider text-muted-foreground">
                   {surahTransliteration} · {ref}
                 </span>
               </div>
@@ -218,7 +227,7 @@ export function AyahCard({
         lang="ar"
         dir="rtl"
         className={cn(
-          "arabic-text text-foreground",
+          "arabic-text max-w-3xl text-foreground",
           variant === "full"
             ? hydrated
               ? cn(arabicSizeClass(arabicSize), arabicLineHeightClass(lineHeight))
@@ -234,7 +243,7 @@ export function AyahCard({
           lang={translationLang}
           dir={translationDir}
           className={cn(
-            "mt-4 text-foreground/85",
+            "mt-4 max-w-3xl text-foreground/85",
             variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
           )}
         >
@@ -248,6 +257,8 @@ export function AyahCard({
               </mark>
               {activeSnippet.text.slice(activeSnippet.matchEnd)}
             </>
+          ) : truncateTranslationWhenNoSnippet ? (
+            <ExpandableTranslation translation={displayTranslation} truncated />
           ) : (
             displayTranslation
           )}
@@ -284,7 +295,7 @@ export function AyahCard({
               <Tag className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden />
               <div className="space-y-2">
                 <p className="text-sm font-medium text-foreground">
-                  Explore this ayah through curated topics:
+                  {t("reader.exploreAyahThroughTopics")}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {topics.map((topic) => {
@@ -324,7 +335,7 @@ export function AyahCard({
           type="button"
           onClick={() => {
             toggleBookmark(ayah.surah, ayah.ayah);
-            toast.success(bookmarked ? "Bookmark removed" : "Saved to your library");
+            toast.success(bookmarked ? t("reader.bookmarkRemoved") : t("reader.savedToLibrary"));
           }}
           aria-pressed={bookmarked}
           className={cn(
@@ -338,7 +349,7 @@ export function AyahCard({
             className={cn("h-3.5 w-3.5", bookmarked && "fill-current")}
             aria-hidden
           />
-          {bookmarked ? "Saved" : "Save"}
+          {bookmarked ? t("reader.saved") : t("reader.save")}
         </button>
 
         <button
@@ -357,7 +368,7 @@ export function AyahCard({
           ) : (
             <ListPlus className="h-3.5 w-3.5" aria-hidden />
           )}
-          {planned ? "In plan" : "Add to plan"}
+          {planned ? t("reader.inPlan") : t("reader.addToPlan")}
         </button>
 
         <button
@@ -370,7 +381,7 @@ export function AyahCard({
           ) : (
             <Link2 className="h-3.5 w-3.5" aria-hidden />
           )}
-          Copy link
+          {t("reader.copyLink")}
         </button>
 
         <button
@@ -383,7 +394,7 @@ export function AyahCard({
           ) : (
             <Copy className="h-3.5 w-3.5" aria-hidden />
           )}
-          Copy verse
+          {t("reader.copyVerse")}
         </button>
 
         {comprehensionNote && variant === "full" && (
@@ -394,7 +405,7 @@ export function AyahCard({
             className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             <BookOpen className="h-3.5 w-3.5" aria-hidden />
-            Show context
+            {t("reader.showContext")}
           </button>
         )}
 
@@ -411,7 +422,7 @@ export function AyahCard({
             )}
           >
             <NotebookPen className="h-3.5 w-3.5" aria-hidden />
-            {existingNote ? "Edit note" : "Add note"}
+            {existingNote ? t("reader.editNote") : t("reader.addNote")}
           </button>
         )}
 
@@ -423,7 +434,7 @@ export function AyahCard({
             className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
           >
             <FolderHeart className="h-3.5 w-3.5" aria-hidden />
-            Collections
+            {t("reader.collections")}
           </button>
         )}
       </div>
@@ -431,11 +442,11 @@ export function AyahCard({
       {collectionPickerOpen && variant === "full" && (
         <div className="mt-4 rounded-xl border border-border/80 bg-background/70 p-3">
           <p className="mb-2 text-xs font-medium text-muted-foreground">
-            Add to collection
+            {t("reader.addToCollection")}
           </p>
           {collections.length === 0 ? (
             <p className="text-xs text-muted-foreground">
-              No collections yet. Create one in{" "}
+              {t("reader.noCollections")}{" "}
               <Link href="/my-study/collections" className="text-primary underline underline-offset-2">
                 My Study
               </Link>
@@ -452,10 +463,10 @@ export function AyahCard({
                       onClick={() => {
                         if (inCollection) {
                           removeFromCollection(col.id, ayah.surah, ayah.ayah);
-                          toast.success(`Removed from ${col.name}`);
+                          toast.success(t("reader.removedFromCollection", { name: col.name }));
                         } else {
                           addToCollection(col.id, ayah.surah, ayah.ayah);
-                          toast.success(`Added to ${col.name}`);
+                          toast.success(t("reader.addedToCollection", { name: col.name }));
                         }
                       }}
                       className={cn(
@@ -480,18 +491,17 @@ export function AyahCard({
         <div className="mt-4 rounded-xl border border-border/80 bg-background/70 p-4">
           <div className="flex items-start justify-between gap-3">
             <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-foreground">Context</h3>
+              <h3 className="text-sm font-semibold text-foreground">{t("reader.context")}</h3>
               <p className="text-sm leading-relaxed text-muted-foreground">
                 {comprehensionNote.context}
               </p>
             </div>
             <span className="shrink-0 rounded-full bg-gold-soft px-2 py-0.5 text-[0.625rem] font-semibold uppercase tracking-wider text-accent-foreground">
-              Pending review
+              {t("reader.pendingReview")}
             </span>
           </div>
           <p className="mt-3 text-[0.6875rem] text-muted-foreground">
-            This note provides historical or structural context only — not
-            interpretation. It has not yet been validated by a qualified scholar.
+            {t("reader.contextNoteDisclaimer")}
           </p>
         </div>
       )}
@@ -502,14 +512,14 @@ export function AyahCard({
             htmlFor={`note-${ayah.surah}-${ayah.ayah}`}
             className="mb-1.5 block text-xs font-medium text-muted-foreground"
           >
-            Private note — stored only on this device
+            {t("reader.privateNote")}
           </label>
           <textarea
             id={`note-${ayah.surah}-${ayah.ayah}`}
             value={noteDraft}
             onChange={(e) => setNoteDraft(e.target.value)}
             rows={3}
-            placeholder="Your reflection, a question to look up, a reminder…"
+            placeholder={t("reader.notePlaceholder")}
             className="w-full resize-y rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-2 focus-visible:outline-ring"
           />
 
@@ -517,19 +527,19 @@ export function AyahCard({
             htmlFor={`tags-${ayah.surah}-${ayah.ayah}`}
             className="mt-3 mb-1.5 block text-xs font-medium text-muted-foreground"
           >
-            Tags (comma-separated)
+            {t("reader.tags")}
           </label>
           <input
             id={`tags-${ayah.surah}-${ayah.ayah}`}
             value={tagDraft}
             onChange={(e) => setTagDraft(e.target.value)}
-            placeholder="e.g. patience, reflection, to-look-up"
+            placeholder={t("reader.tagPlaceholder")}
             className="w-full rounded-lg border border-input bg-card px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:outline-2 focus-visible:outline-ring"
           />
 
           <div className="mt-2 flex items-center justify-between gap-2">
             <p className="text-[0.6875rem] text-muted-foreground">
-              Notes and tags are never uploaded and can be exported or deleted in your Library.
+              {t("reader.notesPrivacy")}
             </p>
             <div className="flex shrink-0 items-center gap-1.5">
               {existingNote && (
@@ -538,12 +548,12 @@ export function AyahCard({
                   onClick={() => {
                     deleteNote(existingNote.id);
                     setNoteOpen(false);
-                    toast.success("Note deleted");
+                    toast.success(t("reader.noteDeleted"));
                   }}
                   className="inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-xs font-medium text-destructive transition-colors hover:bg-destructive/10"
                 >
                   <Trash2 className="h-3.5 w-3.5" aria-hidden />
-                  Delete
+                  {t("reader.delete")}
                 </button>
               )}
               <button
@@ -557,11 +567,11 @@ export function AyahCard({
                     tagDraft.split(",")
                   );
                   setNoteOpen(false);
-                  toast.success(noteDraft.trim() ? "Note saved" : "Note removed");
+                  toast.success(noteDraft.trim() ? t("reader.noteSaved") : t("reader.noteRemoved"));
                 }}
                 className="rounded-full bg-primary px-4 py-1.5 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Save note
+                {t("reader.saveNote")}
               </button>
             </div>
           </div>

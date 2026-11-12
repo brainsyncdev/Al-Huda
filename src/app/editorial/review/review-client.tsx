@@ -129,6 +129,7 @@ export default function ReviewClient({ workbook }: ReviewClientProps) {
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
   const [expandedLemma, setExpandedLemma] = useState<string | null>(null);
   const [storageWarning, setStorageWarning] = useState(false);
+  const [reviewerIdentity, setReviewerIdentity] = useState("");
 
   // Load stored reviews on mount
   useEffect(() => {
@@ -322,7 +323,7 @@ export default function ReviewClient({ workbook }: ReviewClientProps) {
                 ) : (
                   <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground" aria-hidden />
                 )}
-                <span className="arabic-display text-lg text-gold">{wbRoot.arabicTitle}</span>
+                <span className="arabic-display text-lg text-gold" lang="ar" dir="rtl">{wbRoot.arabicTitle}</span>
                 <span className="flex-1 text-sm font-medium">{wbRoot.title}</span>
                 <span className="text-xs text-muted-foreground">
                   {wbRoot.totalWordRecords} records · {wbRoot.distinctAyat} ayat
@@ -344,7 +345,7 @@ export default function ReviewClient({ workbook }: ReviewClientProps) {
         <section aria-labelledby="root-detail-heading" className="space-y-6">
           <div className="flex items-center justify-between">
             <h2 id="root-detail-heading" className="text-xl font-semibold">
-              <span className="arabic-display text-gold">{selectedRoot.arabicTitle}</span>{" "}
+              <span className="arabic-display text-gold" lang="ar" dir="rtl">{selectedRoot.arabicTitle}</span>{" "}
               — {selectedRoot.title} ({selectedRoot.root})
             </h2>
             <ReviewStateBadge state={selectedRoot.reviewState} />
@@ -404,7 +405,7 @@ export default function ReviewClient({ workbook }: ReviewClientProps) {
                   }`}
                 >
                   <div className="flex flex-wrap items-center gap-3">
-                    <span className="arabic-display text-base text-gold" dir="rtl">
+                    <span className="arabic-display text-base text-gold" lang="ar" dir="rtl">
                       {lr.lemma}
                     </span>
                     <span className="text-sm text-muted-foreground">
@@ -612,17 +613,15 @@ export default function ReviewClient({ workbook }: ReviewClientProps) {
                         <input
                           id={`reviewer-${selectedRoot.slug}`}
                           type="text"
+                          value={reviewerIdentity}
+                          onChange={(e) => setReviewerIdentity(e.target.value)}
                           className="w-full rounded-lg border border-border bg-card px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                           placeholder="e.g., Dawood (founder) or Scholar Advisory Board"
-                          defaultValue={selectedRoot.reviewerIdentity ?? ""}
                         />
                         <button
                           type="button"
                           onClick={() => {
-                            const input = document.getElementById(
-                              `reviewer-${selectedRoot.slug}`
-                            ) as HTMLInputElement;
-                            approveRoot(selectedRoot.slug, input.value.trim());
+                            approveRoot(selectedRoot.slug, reviewerIdentity.trim());
                           }}
                           className="rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-700"
                         >

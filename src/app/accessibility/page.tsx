@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Accessibility statement",
@@ -46,9 +47,9 @@ export default function AccessibilityPage() {
           <h2 className="text-base font-semibold">Feedback</h2>
           <p>
             If you encounter an accessibility barrier, use the{" "}
-            <a href="/report" className="font-medium text-primary hover:underline">
+            <Link href="/report" className="font-medium text-primary hover:underline">
               Report an issue
-            </a>{" "}
+            </Link>{" "}
             form — describe what blocked you and where. We aim to respond within a
             reasonable timeframe. If the page has no working contact channel, say
             so in the report so it can be fixed first.

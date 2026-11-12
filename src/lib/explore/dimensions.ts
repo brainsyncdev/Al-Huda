@@ -4,7 +4,7 @@
 //
 // IMPORTANT — SCOPE OF THIS MAPPING:
 //
-// The PRD envisions every ayah tagged across 10 life dimensions. That is a
+// The PRD envisions every ayah tagged across 15 life dimensions. That is a
 // large scholarly undertaking that this build does not attempt. What this
 // module provides instead is a TOPIC-LEVEL NAVIGATION AID: each dimension
 // lists existing curated topic slugs whose themes overlap the dimension's
@@ -77,7 +77,7 @@ export const DIMENSION_PROVENANCE: ProvenanceRecord = {
 };
 
 /**
- * The ten dimensions from PRD §04.3, with topic-level navigation mappings.
+ * The fifteen dimensions from PRD §04.3, with topic-level navigation mappings.
  *
  * Mapping rationale (all pending scholarly review):
  *
@@ -344,6 +344,9 @@ export function getDimension(id: string): Dimension | null {
 export function getAllDimensions(): Dimension[] {
   return DIMENSIONS;
 }
+
+/** Total number of dimensions in the taxonomy. */
+export const DIMENSION_COUNT = getAllDimensions().length;
 
 /** Get dimensions that have at least one curated topic mapping. */
 export function getDimensionsWithTopics(): Dimension[] {

@@ -20,6 +20,7 @@ import {
   buildBackup,
   downloadJson,
   parseBackup,
+  type RestorableBackup,
 } from "@/lib/backup";
 import { useLibrary } from "@/lib/library/context";
 import { usePrefs } from "@/lib/prefs/context";
@@ -29,6 +30,16 @@ import { useQuiz } from "@/lib/quiz/context";
 import { useReadingPlans } from "@/lib/reading-plans/context";
 import { useJourneys } from "@/lib/study-journeys/context";
 import { useReflections } from "@/lib/reflections/context";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { useTranslation } from "@/lib/i18n/context";
 
 const BUTTON_CLASS =
   "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50";
@@ -42,9 +53,14 @@ export function BackupControls() {
   const readingPlans = useReadingPlans();
   const journeys = useJourneys();
   const reflections = useReflections();
+  const t = useTranslation();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [reading, setReading] = useState(false);
   const [note, setNote] = useState<string | null>(null);
+  const [pendingImport, setPendingImport] = useState<RestorableBackup | null>(
+    null
+  );
+  const [showEraseDialog, setShowEraseDialog] = useState(false);
 
   const ready =
     library.hydrated &&
@@ -95,8 +111,8 @@ export function BackupControls() {
 
     // Checked before reading so a hostile file never gets buffered in full.
     if (file.size > MAX_BACKUP_CHARS) {
-      setNote("This file is larger than 5 MB, which no Al-Huda backup reaches. Nothing was imported.");
-      toast.error("Backup not imported");
+      setNote(t("backup.tooLarge"));
+      toast.error(t("backup.notImported"));
       return;
     }
 
@@ -107,60 +123,14 @@ export function BackupControls() {
       const result = parseBackup(text);
       if (!result.ok) {
         setNote(result.error);
-        toast.error("Backup not imported");
+        toast.error(t("backup.notImported"));
         return;
       }
-      const data = result.data;
-
-      const confirmed = window.confirm(
-        `Replace everything on this device with the backup${
-          data.exportedAt ? ` from ${new Date(data.exportedAt).toLocaleString()}` : ""
-        }?\n\n` +
-          `This overwrites:\n` +
-          `• ${library.bookmarks.length} bookmarks, ${library.notes.length} notes, ${library.progress.length} reading entries\n` +
-          `• ${planCount} planned verses and their schedules\n` +
-          `• ${pathsCount} learning path progress entries\n` +
-          `• ${quizCount} completed quiz attempts\n` +
-          `• ${journeysCount} study journey progress entries\n` +
-          `• ${reflectionsCount} personal reflections\n` +
-          `• your reader preferences\n\n` +
-          `The backup contains ${data.library.bookmarks.length} bookmarks, ` +
-          `${data.library.notes.length} notes, ${Object.keys(data.revision.items).length} planned verses, ` +
-          `${Object.keys(data.paths.progress).length} learning paths, ` +
-          `${data.quiz.attempts.filter((a) => a.completedAt !== null).length} completed quiz attempts, ` +
-          `${Object.keys(data.journeys.progress).length} study journeys, and ` +
-          `${data.reflections.reflections.length} reflections. ` +
-          `This cannot be undone.`
-      );
-      if (!confirmed) {
-        setNote("Import cancelled. Nothing on this device was changed.");
-        return;
-      }
-
-      const lib = library.restoreLibrary(data.library);
-      const rev = revision.restoreState(data.revision);
-      prefs.restorePrefs(data.preferences);
-      paths.restoreState(data.paths);
-      quiz.restoreState(data.quiz);
-      readingPlans.restoreState(data.readingPlans);
-      journeys.restoreState(data.journeys);
-      reflections.restoreState(data.reflections);
-
-      toast.success(
-        `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths, ${data.quiz.attempts.length} quiz attempts, ${data.readingPlans.targets.length} reading plans, ${Object.keys(data.journeys.progress).length} study journeys, ${data.reflections.reflections.length} reflections.`
-      );
-      setNote(
-        data.sourceVersion === 1
-          ? "This was a legacy (v1) library-only backup, so it contained no revision plan, learning paths, quiz attempts, or reader preferences: those were left empty and reset to defaults rather than guessed at."
-          : data.sourceVersion === 2
-          ? "This was a v2 backup without learning paths or quiz attempts: those sections were left empty."
-          : data.sourceVersion === 3
-          ? "This was a v3 backup without quiz attempts: that section was left empty."
-          : null
-      );
+      // Open the confirmation dialog instead of a blocking window.confirm.
+      setPendingImport(result.data);
     } catch {
-      setNote("The file could not be read. Nothing was imported.");
-      toast.error("Backup not imported");
+      setNote(t("backup.couldNotRead"));
+      toast.error(t("backup.notImported"));
     } finally {
       setReading(false);
       // Let the same file be picked again after a failed attempt.
@@ -168,20 +138,45 @@ export function BackupControls() {
     }
   }
 
+  function confirmImport() {
+    if (!pendingImport) return;
+    const data = pendingImport;
+
+    const lib = library.restoreLibrary(data.library);
+    const rev = revision.restoreState(data.revision);
+    prefs.restorePrefs(data.preferences);
+    paths.restoreState(data.paths);
+    quiz.restoreState(data.quiz);
+    readingPlans.restoreState(data.readingPlans);
+    journeys.restoreState(data.journeys);
+    reflections.restoreState(data.reflections);
+
+    toast.success(
+      `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths, ${data.quiz.attempts.length} quiz attempts, ${data.readingPlans.targets.length} reading plans, ${Object.keys(data.journeys.progress).length} study journeys, ${data.reflections.reflections.length} reflections.`
+    );
+    setNote(
+      data.sourceVersion === 1
+        ? "This was a legacy (v1) library-only backup, so it contained no revision plan, learning paths, quiz attempts, or reader preferences: those were left empty and reset to defaults rather than guessed at."
+        : data.sourceVersion === 2
+        ? "This was a v2 backup without learning paths or quiz attempts: those sections were left empty."
+        : data.sourceVersion === 3
+        ? "This was a v3 backup without quiz attempts: that section was left empty."
+        : null
+    );
+    setPendingImport(null);
+  }
+
+  function cancelImport() {
+    setPendingImport(null);
+    setNote(t("backup.importCancelled"));
+  }
+
   function handleErase() {
     if (!ready) return;
-    const confirmed = window.confirm(
-      "Erase all local data on this device?\n\n" +
-        "• bookmarks, private notes and reading history\n" +
-        "• your revision plan and its review log\n" +
-        "• learning path progress and onboarding\n" +
-        "• quiz attempts and their answers\n" +
-        "• study journey progress\n" +
-        "• personal reflections\n" +
-        "• reader preferences\n\n" +
-        "There is no server copy to restore from. Export a backup first if you want to keep any of it. This cannot be undone."
-    );
-    if (!confirmed) return;
+    setShowEraseDialog(true);
+  }
+
+  function confirmErase() {
     library.clearAll();
     revision.clearAll();
     prefs.restorePrefs(undefined); // back to defaults
@@ -190,9 +185,26 @@ export function BackupControls() {
     readingPlans.clearAll();
     journeys.clearAll();
     reflections.clearAll();
-    setNote("All local data erased from this device.");
-    toast.success("All local data erased");
+    setNote(t("backup.allDataErased"));
+    toast.success(t("backup.allDataErased"));
+    setShowEraseDialog(false);
   }
+
+  const backupIn = pendingImport;
+  const backupBookmarks = backupIn?.library.bookmarks.length ?? 0;
+  const backupNotes = backupIn?.library.notes.length ?? 0;
+  const backupPlanned = backupIn ? Object.keys(backupIn.revision.items).length : 0;
+  const backupPaths = backupIn ? Object.keys(backupIn.paths.progress).length : 0;
+  const backupQuiz = backupIn
+    ? backupIn.quiz.attempts.filter((a) => a.completedAt !== null).length
+    : 0;
+  const backupJourneys = backupIn
+    ? Object.keys(backupIn.journeys.progress).length
+    : 0;
+  const backupReflections = backupIn ? backupIn.reflections.reflections.length : 0;
+  const backupExportedAt = backupIn?.exportedAt
+    ? new Date(backupIn.exportedAt).toLocaleString()
+    : null;
 
   return (
     <div className="space-y-3">
@@ -204,7 +216,7 @@ export function BackupControls() {
           className={`${BUTTON_CLASS} bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground`}
         >
           <Download className="h-4 w-4" aria-hidden />
-          Export backup
+          {t("backup.exportBackup")}
         </button>
 
         <button
@@ -214,7 +226,7 @@ export function BackupControls() {
           className={`${BUTTON_CLASS} bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground`}
         >
           <Upload className="h-4 w-4" aria-hidden />
-          {reading ? "Reading…" : "Import backup"}
+          {reading ? t("backup.reading") : t("backup.importBackup")}
         </button>
 
         <button
@@ -224,7 +236,7 @@ export function BackupControls() {
           className={`${BUTTON_CLASS} text-destructive hover:bg-destructive/10`}
         >
           <Trash2 className="h-4 w-4" aria-hidden />
-          Delete all local data
+          {t("backup.deleteAll")}
         </button>
 
         <input
@@ -233,7 +245,7 @@ export function BackupControls() {
           accept=".json,application/json"
           onChange={handleFile}
           className="sr-only"
-          aria-label="Choose an Al-Huda backup file"
+          aria-label={t("backup.chooseFile")}
         />
       </div>
 
@@ -245,6 +257,113 @@ export function BackupControls() {
           {note}
         </p>
       )}
+
+      <Dialog open={pendingImport !== null} onOpenChange={(open) => { if (!open) cancelImport(); }}>
+        <DialogContent className="max-h-[90vh] overflow-y-auto sm:max-w-xl">
+          <DialogHeader>
+            <DialogTitle>{t("backup.importDialogTitle")}</DialogTitle>
+            <DialogDescription>
+              {t("backup.importDialogDescription")}
+              {backupExportedAt && (
+                <span className="mt-1 block text-xs text-muted-foreground">
+                  {t("backup.exportedOn").replace("{date}", backupExportedAt)}
+                </span>
+              )}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="grid gap-4 py-2 text-sm sm:grid-cols-2">
+            <div className="space-y-2">
+              <h4 className="font-semibold text-foreground">
+                {t("backup.importDialogCurrentDevice")}
+              </h4>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li>• {library.bookmarks.length} bookmarks</li>
+                <li>• {library.notes.length} notes</li>
+                <li>• {library.progress.length} reading entries</li>
+                <li>• {planCount} planned verses</li>
+                <li>• {pathsCount} learning path entries</li>
+                <li>• {quizCount} completed quiz attempts</li>
+                <li>• {journeysCount} study journey entries</li>
+                <li>• {reflectionsCount} reflections</li>
+              </ul>
+            </div>
+            <div className="space-y-2">
+              <h4 className="font-semibold text-foreground">
+                {t("backup.importDialogInBackup")}
+              </h4>
+              <ul className="space-y-1 text-sm text-muted-foreground">
+                <li>• {backupBookmarks} bookmarks</li>
+                <li>• {backupNotes} notes</li>
+                <li>• {backupPlanned} planned verses</li>
+                <li>• {backupPaths} learning path entries</li>
+                <li>• {backupQuiz} completed quiz attempts</li>
+                <li>• {backupJourneys} study journey entries</li>
+                <li>• {backupReflections} reflections</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="rounded-lg border border-destructive/30 bg-destructive/5 p-3 text-xs text-destructive">
+            {t("backup.cannotBeUndone")}
+          </p>
+
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={cancelImport}
+            >
+              {t("common.cancel")}
+            </Button>
+            <Button type="button" onClick={confirmImport}>
+              {t("backup.importDialogConfirm")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={showEraseDialog} onOpenChange={setShowEraseDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>{t("backup.eraseDialogTitle")}</DialogTitle>
+            <DialogDescription>
+              {t("backup.eraseDialogDescription")}
+            </DialogDescription>
+          </DialogHeader>
+
+          <div className="space-y-2 py-2 text-sm text-muted-foreground">
+            <p>• bookmarks, private notes and reading history</p>
+            <p>• your revision plan and its review log</p>
+            <p>• learning path progress and onboarding</p>
+            <p>• quiz attempts and their answers</p>
+            <p>• study journey progress</p>
+            <p>• personal reflections</p>
+            <p>• reader preferences</p>
+          </div>
+
+          <p className="rounded-lg border border-destructive/30 bg-destructive/5 p-3 text-xs text-destructive">
+            {t("backup.eraseWarning")}
+          </p>
+
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="outline"
+              onClick={() => setShowEraseDialog(false)}
+            >
+              {t("common.cancel")}
+            </Button>
+            <Button
+              type="button"
+              variant="destructive"
+              onClick={confirmErase}
+            >
+              {t("backup.eraseDialogConfirm")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

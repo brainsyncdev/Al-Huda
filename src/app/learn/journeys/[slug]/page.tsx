@@ -10,6 +10,7 @@ import { SITE_NAME, absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 import { HOME_CRUMB } from "@/lib/seo/json-ld";
 import { JourneyProgressTracker } from "./progress-tracker";
+import { StageList } from "./stage-list";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -168,56 +169,7 @@ export default async function StudyJourneyDetailPage({ params }: Props) {
         <h2 id="stages-heading" className="font-display text-xl font-semibold tracking-tight">
           Stages
         </h2>
-        <ol className="space-y-4">
-          {resolvedStages.map(({ stage, topic, ayah, surah }) => (
-            <li
-              key={stage.order}
-              className="rounded-2xl border border-border/80 bg-card p-5"
-            >
-              <div className="flex items-start gap-4">
-                <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary font-semibold text-sm">
-                  {stage.order}
-                </div>
-                <div className="flex-1 space-y-2">
-                  <h3 className="font-display text-lg font-semibold tracking-tight">
-                    {stage.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {stage.objective}
-                  </p>
-                  {stage.ref && ayah && surah && (
-                    <div className="text-sm">
-                      <Link
-                        href={`/ayah/${stage.ref.surah}/${stage.ref.ayah}`}
-                        className="inline-flex items-center gap-1 text-primary hover:underline"
-                      >
-                        {surah.transliteration} {stage.ref.surah}:{stage.ref.ayah}
-                        <ArrowRight className="h-3 w-3" />
-                      </Link>
-                    </div>
-                  )}
-                  {topic && (
-                    <div className="text-sm">
-                      <Link
-                        href={`/topics/${topic.slug}`}
-                        className="inline-flex items-center gap-1 text-primary hover:underline"
-                      >
-                        Topic: {topic.title}
-                        <ArrowRight className="h-3 w-3" />
-                      </Link>
-                    </div>
-                  )}
-                  {stage.reflectionPrompt && (
-                    <div className="mt-3 rounded-xl bg-secondary/40 p-3 text-sm italic text-muted-foreground">
-                      <span className="font-medium not-italic">Reflect:</span>{" "}
-                      {stage.reflectionPrompt}
-                    </div>
-                  )}
-                </div>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <StageList journey={journey} resolvedStages={resolvedStages} />
       </section>
 
       <div className="text-xs text-muted-foreground space-y-1">

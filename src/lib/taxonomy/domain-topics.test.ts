@@ -7,7 +7,7 @@
 //   - Machine-verified evidence can never satisfy an interpretive claim.
 //   - Approval requires a real reviewer id and qualifying evidence.
 //   - Nothing is auto-promoted: every shipped relationship is pending-review.
-//   - The domain catalog, the 10 dimensions, and the 11 topics are untouched.
+//   - The domain catalog, the 15 dimensions, and the 11 topics are untouched.
 
 import { describe, expect, it } from "vitest";
 import {

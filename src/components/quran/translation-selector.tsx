@@ -183,7 +183,7 @@ export function TranslationSelector({ compact = false }: { compact?: boolean }) 
             role="dialog"
             aria-label="Translation selector"
             aria-modal="true"
-            className="absolute right-0 top-full z-50 mt-2 w-80 rounded-xl border border-border/80 bg-card shadow-lg"
+            className="absolute start-0 end-0 z-50 mt-2 rounded-xl border border-border/80 bg-card shadow-lg sm:end-0 sm:start-auto sm:w-80"
           >
             {/* Search */}
             <div className="border-b border-border/60 p-3">

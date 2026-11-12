@@ -9,19 +9,10 @@ import {
 } from "@/lib/prefs/context";
 import { cn } from "@/lib/utils";
 import { TranslationSelector } from "./translation-selector";
+import { useTranslation } from "@/lib/i18n/context";
 
-const SIZES: { value: ArabicSize; label: string; accessibleLabel: string }[] = [
-  { value: "sm", label: "S", accessibleLabel: "Small text size" },
-  { value: "md", label: "M", accessibleLabel: "Medium text size" },
-  { value: "lg", label: "L", accessibleLabel: "Large text size" },
-  { value: "xl", label: "XL", accessibleLabel: "Extra large text size" },
-];
-
-const LINE_HEIGHT_LABELS: { value: LineHeight; label: string }[] = [
-  { value: "compact", label: "Compact" },
-  { value: "normal", label: "Normal" },
-  { value: "loose", label: "Loose" },
-];
+const SIZE_VALUES: ArabicSize[] = ["sm", "md", "lg", "xl"];
+const LINE_HEIGHT_VALUES: LineHeight[] = ["compact", "normal", "loose"];
 
 /**
  * Reader display controls (FR-006): translation edition selector, Arabic text
@@ -29,6 +20,7 @@ const LINE_HEIGHT_LABELS: { value: LineHeight; label: string }[] = [
  * applied immediately across the reader.
  */
 export function ReaderControls() {
+  const t = useTranslation();
   const {
     arabicSize,
     setArabicSize,
@@ -45,67 +37,80 @@ export function ReaderControls() {
     // size-button group carries min-h-[44px] buttons, and without a reserved
     // container height the SSR render and the hydrated render would disagree
     // on the row's height, producing a CLS spike on surah reader pages.
-    <div className="flex min-h-[76px] flex-col gap-3 rounded-2xl border border-border/80 bg-card p-4 sm:flex-row sm:items-center sm:justify-between">
-      <fieldset className="flex items-center gap-3">
+    <div className="flex min-h-[76px] flex-col gap-2 rounded-2xl border border-border/80 bg-card p-3 sm:gap-3 sm:p-4 sm:flex-row sm:items-center sm:justify-between">
+      <fieldset className="flex items-center gap-2 sm:gap-3">
         <legend className="sr-only">Translation edition</legend>
-        <span className="text-xs font-medium text-muted-foreground">Translation</span>
+        <span className="hidden text-xs font-medium text-muted-foreground sm:inline">
+          {t("reader.translation")}
+        </span>
         <TranslationSelector compact />
       </fieldset>
 
-      <fieldset className="flex items-center gap-3">
+      <fieldset className="flex items-center gap-2 sm:gap-3">
         <legend className="sr-only">Arabic text size</legend>
         <CaseSensitive className="h-4 w-4 text-muted-foreground" aria-hidden />
-        <span className="text-xs font-medium text-muted-foreground">Text size</span>
+        <span className="hidden text-xs font-medium text-muted-foreground sm:inline">
+          {t("reader.textSize")}
+        </span>
         <div
-          className="flex items-center gap-1 rounded-full bg-secondary p-1"
+          className="flex items-center gap-0.5 rounded-full bg-secondary p-0.5 sm:gap-1 sm:p-1"
           role="group"
           aria-label="Arabic text size"
         >
-          {SIZES.map(({ value, label, accessibleLabel }) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => setArabicSize(value)}
-              aria-pressed={arabicSize === value}
-              aria-label={accessibleLabel}
-              className={cn(
-                "inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full px-2.5 text-xs font-semibold transition-colors",
-                arabicSize === value
-                  ? "bg-primary text-primary-foreground"
-                  : "text-secondary-foreground hover:bg-background/70"
-              )}
-            >
-              {label}
-            </button>
-          ))}
+          {SIZE_VALUES.map((value) => {
+            const label = value === "sm" ? "S" : value === "md" ? "M" : value === "lg" ? "L" : "XL";
+            const accessibleLabel = value === "sm" ? t("reader.smallAria") : value === "md" ? t("reader.mediumAria") : value === "lg" ? t("reader.largeAria") : t("reader.extraLargeAria");
+            return (
+              <button
+                key={value}
+                type="button"
+                onClick={() => setArabicSize(value)}
+                aria-pressed={arabicSize === value}
+                aria-label={accessibleLabel}
+                className={cn(
+                  "inline-flex h-8 w-8 items-center justify-center rounded-full text-xs font-semibold transition-colors sm:min-h-[44px] sm:min-w-[44px] sm:px-2.5",
+                  arabicSize === value
+                    ? "bg-primary text-primary-foreground"
+                    : "text-secondary-foreground hover:bg-background/70"
+                )}
+              >
+                {label}
+              </button>
+            );
+          })}
         </div>
       </fieldset>
 
-      <fieldset className="flex items-center gap-3">
+      <fieldset className="flex items-center gap-2 sm:gap-3">
         <legend className="sr-only">Line spacing</legend>
         <AlignJustify className="h-4 w-4 text-muted-foreground" aria-hidden />
-        <span className="text-xs font-medium text-muted-foreground">Spacing</span>
+        <span className="hidden text-xs font-medium text-muted-foreground sm:inline">
+          {t("reader.spacing")}
+        </span>
         <div
-          className="flex items-center gap-1 rounded-full bg-secondary p-1"
+          className="flex items-center gap-0.5 rounded-full bg-secondary p-0.5 sm:gap-1 sm:p-1"
           role="group"
           aria-label="Line spacing"
         >
-          {LINE_HEIGHT_LABELS.map(({ value, label }) => (
-            <button
-              key={value}
-              type="button"
-              onClick={() => setLineHeight(value)}
-              aria-pressed={lineHeight === value}
-              className={cn(
-                "rounded-full px-2.5 py-1 text-xs font-semibold transition-colors",
-                lineHeight === value
-                  ? "bg-primary text-primary-foreground"
-                  : "text-secondary-foreground hover:bg-background/70"
-              )}
-            >
-              {label}
-            </button>
-          ))}
+          {LINE_HEIGHT_VALUES.map((value) => {
+            const label = value === "compact" ? t("reader.compact") : value === "normal" ? t("reader.normal") : t("reader.loose");
+            return (
+              <button
+                key={value}
+                type="button"
+                onClick={() => setLineHeight(value)}
+                aria-pressed={lineHeight === value}
+                className={cn(
+                  "inline-flex h-8 items-center justify-center rounded-full px-2 text-xs font-semibold transition-colors sm:min-h-[44px] sm:px-2.5 sm:py-1",
+                  lineHeight === value
+                    ? "bg-primary text-primary-foreground"
+                    : "text-secondary-foreground hover:bg-background/70"
+                )}
+              >
+                {label}
+              </button>
+            );
+          })}
         </div>
       </fieldset>
 
@@ -114,17 +119,17 @@ export function ReaderControls() {
           checked={showTranslation}
           onChange={(next) => {
             setShowTranslation(next);
-            toast.success(next ? "Translations shown" : "Translations hidden");
+            toast.success(next ? t("reader.translationsShown") : t("reader.translationsHidden"));
           }}
-          label="Translation"
+          label={t("reader.translation")}
         />
         <TogglePill
           checked={showTransliteration}
           onChange={(next) => {
             setShowTransliteration(next);
-            toast.success(next ? "Transliteration shown" : "Transliteration hidden");
+            toast.success(next ? t("reader.transliterationShown") : t("reader.transliterationHidden"));
           }}
-          label="Transliteration"
+          label={t("reader.transliteration")}
         />
       </div>
     </div>

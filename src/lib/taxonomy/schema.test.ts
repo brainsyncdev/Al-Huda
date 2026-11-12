@@ -522,7 +522,7 @@ describe("compatibility adapters", () => {
     expect(issues.filter((i) => i.severity === "error")).toHaveLength(0);
   });
 
-  it("all 10 dimensions and 11 topics project into entities that pass validation", () => {
+  it("all 15 dimensions and 11 topics project into entities that pass validation", () => {
     const allEntities: TaxonomyEntity[] = [];
     for (const dim of DIMENSIONS) allEntities.push(adaptDimension(dim));
     for (const topic of TOPICS) allEntities.push(adaptTopic(topic));

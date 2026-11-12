@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: dim.description,
     alternates: { canonical: absoluteUrl(`/explore/dimension/${dim.id}`) },
     openGraph: {
-      title: `${dim.title} — 10 Dimensions of the Quran`,
+      title: `${dim.title} — 15 Dimensions of the Quran`,
       description: dim.description,
       url: absoluteUrl(`/explore/dimension/${dim.id}`),
       type: "website",
@@ -66,7 +66,7 @@ export default async function DimensionPage({ params }: Props) {
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: `${dim.title} — 10 Dimensions of the Quran`,
+            name: `${dim.title} — 15 Dimensions of the Quran`,
             description: dim.description,
             url: absoluteUrl(dimensionPagePath),
             inLanguage: ["en", "ar"],

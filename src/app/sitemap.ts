@@ -9,7 +9,7 @@ import { absoluteUrl } from "@/lib/site";
  * Single sitemap containing all indexable URLs.
  *
  * Total count: 12 static (home + /explore/domains) + 114 surahs +
- * 11 topics + 10 dimensions + 14 domains + 6,236 ayahs = 6,397 URLs.
+ * 11 topics + 15 dimensions + 14 domains + 6,236 ayahs = 6,402 URLs.
  * Well under the sitemap.org limit of 50,000 URLs per file, so
  * partitioning is unnecessary.
  *

@@ -17,6 +17,7 @@ import {
   readStoredLocale,
   writeStoredLocale,
   resolveInitialLocale,
+  setLocaleCookie,
 } from "./storage";
 
 interface I18nContextValue {
@@ -37,7 +38,10 @@ const I18nContext = createContext<I18nContextValue | null>(null);
 /**
  * Root i18n provider.
  *
- * Resolution order on first render:
+ * Accepts an optional `initialLocale` from server-side resolution to avoid
+ * hydration mismatch. Falls back to client-side resolution if not provided.
+ *
+ * Resolution order on first render (when no initialLocale):
  *   1. Stored preference (localStorage)
  *   2. Browser language tag (navigator.language)
  *   3. Default locale (English)
@@ -45,18 +49,34 @@ const I18nContext = createContext<I18nContextValue | null>(null);
  * The document's `lang` and `dir` attributes are kept in sync so screen
  * readers and search engines see the correct values.
  */
-export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>(DEFAULT_LOCALE);
+export function I18nProvider({
+  children,
+  initialLocale,
+}: {
+  children: ReactNode;
+  initialLocale?: Locale;
+}) {
+  const [locale, setLocaleState] = useState<Locale>(
+    initialLocale ?? DEFAULT_LOCALE
+  );
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    // If we have a server-resolved locale, use it directly
+    if (initialLocale) {
+      setLocaleState(initialLocale);
+      setHydrated(true);
+      return;
+    }
+
+    // Otherwise, resolve client-side
     const browserTag =
       typeof navigator !== "undefined" ? navigator.language : undefined;
     const stored = readStoredLocale();
     const resolved = resolveInitialLocale(stored, browserTag);
     setLocaleState(resolved);
     setHydrated(true);
-  }, []);
+  }, [initialLocale]);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -68,6 +88,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const setLocale = useCallback((next: Locale) => {
     setLocaleState(next);
     writeStoredLocale(next);
+    setLocaleCookie(next);
   }, []);
 
   const value = useMemo<I18nContextValue>(() => {

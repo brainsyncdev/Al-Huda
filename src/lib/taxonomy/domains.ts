@@ -22,7 +22,7 @@
 //
 // RELATIONSHIP TO THE EXISTING 10 DIMENSIONS:
 //
-// The 10 dimensions in `src/lib/explore/dimensions.ts` are preserved
+// The 15 dimensions in `src/lib/explore/dimensions.ts` are preserved
 // verbatim as `exploration-lens` entities with `lensKind: "dimension"`.
 // They are topic-level navigation aids. Domains are a different
 // entity kind: broad organizational areas that may in the future contain

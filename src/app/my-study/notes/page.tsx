@@ -6,12 +6,15 @@ import { ArrowLeft, NotebookPen, Search, Tag, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 import { useLibrary } from "@/lib/library/context";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/lib/i18n/context";
 
 export default function MyStudyNotesPage() {
   const { notes, deleteNote, hydrated } = useLibrary();
+  const t = useTranslation();
   const [query, setQuery] = useState("");
   const [tagFilter, setTagFilter] = useState("");
   const [surahFilter, setSurahFilter] = useState<number | null>(null);
+  const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
 
   const allTags = useMemo(() => {
     const tags = new Set<string>();
@@ -39,7 +42,8 @@ export default function MyStudyNotesPage() {
 
   function handleDelete(id: string) {
     deleteNote(id);
-    toast.success("Note deleted");
+    setConfirmDelete(null);
+    toast.success(t("reader.noteDeleted"));
   }
 
   return (
@@ -176,14 +180,33 @@ export default function MyStudyNotesPage() {
                     <p className="text-xs tabular-nums text-muted-foreground">
                       {note.updatedAt.split("T")[0]}
                     </p>
-                    <button
-                      type="button"
-                      onClick={() => handleDelete(note.id)}
-                      className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
-                      aria-label={`Delete note for ${note.surah}:${note.ayah}`}
-                    >
-                      <Trash2 className="h-4 w-4" aria-hidden />
-                    </button>
+                    {confirmDelete === note.id ? (
+                      <div className="flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={() => handleDelete(note.id)}
+                          className="rounded-full bg-destructive px-3 py-1 text-xs font-semibold text-destructive-foreground"
+                        >
+                          {t("myStudy.confirm")}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setConfirmDelete(null)}
+                          className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground"
+                        >
+                          {t("common.cancel")}
+                        </button>
+                      </div>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={() => setConfirmDelete(note.id)}
+                        className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive"
+                        aria-label={`Delete note for ${note.surah}:${note.ayah}`}
+                      >
+                        <Trash2 className="h-4 w-4" aria-hidden />
+                      </button>
+                    )}
                   </div>
                 </div>
                 {note.text && (

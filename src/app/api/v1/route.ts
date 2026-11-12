@@ -76,7 +76,7 @@ const ENDPOINTS = [
     method: "GET",
     path: "/api/v1/explore/dimensions",
     description:
-      "The 10 life dimensions from PRD §04.3 with topic-level navigation mappings. Each dimension lists curated topic slugs whose themes overlap the dimension's description. This is a navigation aid, not ayat-level tagging.",
+      "The 15 life dimensions from PRD §04.3 with topic-level navigation mappings. Each dimension lists curated topic slugs whose themes overlap the dimension's description. This is a navigation aid, not ayat-level tagging.",
   },
   {
     method: "GET",

@@ -42,7 +42,7 @@ export function SiteHeader() {
           <span className="font-display text-lg font-semibold tracking-tight text-primary">
             {t("layout.siteName")}
           </span>
-          <span className="arabic-display text-base text-gold" aria-hidden>
+          <span className="arabic-display text-base text-gold" lang="ar" dir="rtl" aria-hidden>
             الحُدَى
           </span>
         </Link>
@@ -66,7 +66,7 @@ export function SiteHeader() {
             <span className="font-display text-xl font-semibold tracking-tight text-primary">
               {t("layout.siteName")}
             </span>
-            <span className="arabic-display text-lg text-gold" aria-hidden>
+            <span className="arabic-display text-lg text-gold" lang="ar" dir="rtl" aria-hidden>
               الحُدَى
             </span>
           </Link>

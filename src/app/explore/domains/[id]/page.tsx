@@ -1,42 +1,39 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { AlertTriangle, ArrowLeft } from "lucide-react";
+import { AlertTriangle, ArrowLeft, BookOpen, Layers, Tag } from "lucide-react";
 import {
-  DOMAINS,
-  DOMAIN_PROVENANCE,
-  getDomain,
-  getDomainsOverlappingWith,
-  type DomainId,
-} from "@/lib/taxonomy/domains";
-import {
-  getDomainTopicRelations,
-  type DomainTopicRelation,
-} from "@/lib/taxonomy/domain-topics";
-import { getTopic } from "@/lib/topics/data";
+  getCanonicalDomain,
+  getCanonicalDomains,
+  getDimensionsForDomain,
+  getTopicsForDomain,
+  getCanonicalSubdimensions,
+  getCanonicalDimension,
+} from "@/lib/taxonomy/canonical-adapter";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
+import { HOME_CRUMB, breadcrumbs } from "@/lib/seo/json-ld";
 
 interface Props {
   params: Promise<{ id: string }>;
 }
 
 export function generateStaticParams() {
-  return DOMAINS.map((d) => ({ id: d.id }));
+  return getCanonicalDomains().map((d) => ({ id: d.id }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const domain = getDomain(id);
+  const domain = getCanonicalDomain(id);
   if (!domain) return {};
   const canonical = absoluteUrl(`/explore/domains/${domain.id}`);
   return {
     title: `${domain.title} — Quran Domain`,
-    description: domain.scope,
+    description: domain.description,
     alternates: { canonical },
     openGraph: {
       title: `${domain.title} — Quran Domain`,
-      description: domain.scope,
+      description: domain.description,
       url: canonical,
       type: "website",
       siteName: "Al-Huda",
@@ -46,36 +43,38 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function DomainDetailPage({ params }: Props) {
   const { id } = await params;
-  const domain = getDomain(id);
+  const domain = getCanonicalDomain(id);
   if (!domain) return notFound();
 
-  const overlapping = getDomainsOverlappingWith(domain.id as DomainId);
-  const declaredOverlaps = domain.overlaps
-    .map((oid) => getDomain(oid))
-    .filter((d): d is NonNullable<typeof d> => Boolean(d));
+  const dimensions = getDimensionsForDomain(domain.id);
+  const topics = getTopicsForDomain(domain.id);
+  const allSubdimensions = getCanonicalSubdimensions();
 
-  // Resolve every relationship against the canonical topic catalog. A
-  // relation whose topic slug does not resolve is dropped rather than
-  // rendered with a broken link; the catalog validator already rejects
-  // such records, so this is defence in depth.
-  const topicRelations = getDomainTopicRelations(domain.id as DomainId)
-    .map((relation) => ({ relation, topic: getTopic(relation.topicSlug) }))
-    .filter(
-      (entry): entry is { relation: DomainTopicRelation; topic: NonNullable<ReturnType<typeof getTopic>> } =>
-        Boolean(entry.topic)
-    );
+  // Group subdimensions by their parent dimension within this domain
+  const dimensionIds = new Set(dimensions.map((d) => d.id));
+  const domainSubdimensions = allSubdimensions.filter((sd) =>
+    dimensionIds.has(sd.parentDimensionId)
+  );
+
+  const domainPagePath = `/explore/domains/${domain.id}`;
 
   return (
     <div className="space-y-8 pb-8">
       <JsonLd
         nodes={[
+          breadcrumbs([
+            HOME_CRUMB,
+            { name: "Explore", path: "/explore" },
+            { name: "Domains", path: "/explore/domains" },
+            { name: domain.title, path: domainPagePath },
+          ]),
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
             name: `${domain.title} — Quran Domain`,
-            description: domain.scope,
-            url: absoluteUrl(`/explore/domains/${domain.id}`),
-            inLanguage: ["en"],
+            description: domain.description,
+            url: absoluteUrl(domainPagePath),
+            inLanguage: ["en", "ar", "ur"],
           },
         ]}
       />
@@ -124,9 +123,18 @@ export default async function DomainDetailPage({ params }: Props) {
                 {domain.arabicTitle}
               </p>
             )}
+            {domain.urduTitle && (
+              <p
+                className="text-xl text-muted-foreground mt-1"
+                lang="ur"
+                dir="rtl"
+              >
+                {domain.urduTitle}
+              </p>
+            )}
           </div>
           <span className="shrink-0 rounded-full border border-gold/40 bg-gold-soft/60 px-3 py-1 text-xs font-medium uppercase tracking-wider text-accent-foreground">
-            proposed
+            pending review
           </span>
         </div>
 
@@ -135,6 +143,44 @@ export default async function DomainDetailPage({ params }: Props) {
             Scope
           </p>
           <p className="text-base text-foreground">{domain.scope}</p>
+          <p className="mt-3 text-muted-foreground">{domain.description}</p>
+        </div>
+
+        {/* Statistics */}
+        <div className="grid gap-4 sm:grid-cols-3">
+          <div className="rounded-2xl border border-border/80 bg-card p-4">
+            <div className="flex items-center gap-2 mb-1">
+              <Layers className="h-4 w-4 text-primary" aria-hidden />
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                Dimensions
+              </p>
+            </div>
+            <p className="text-2xl font-semibold text-primary">
+              {dimensions.length}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border/80 bg-card p-4">
+            <div className="flex items-center gap-2 mb-1">
+              <BookOpen className="h-4 w-4 text-primary" aria-hidden />
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                Subdimensions
+              </p>
+            </div>
+            <p className="text-2xl font-semibold text-primary">
+              {domainSubdimensions.length}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border/80 bg-card p-4">
+            <div className="flex items-center gap-2 mb-1">
+              <Tag className="h-4 w-4 text-primary" aria-hidden />
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                Topics
+              </p>
+            </div>
+            <p className="text-2xl font-semibold text-primary">
+              {topics.length}
+            </p>
+          </div>
         </div>
 
         <div className="rounded-2xl border border-gold/30 bg-gold-soft/60 p-4 text-sm text-accent-foreground">
@@ -144,128 +190,176 @@ export default async function DomainDetailPage({ params }: Props) {
               aria-hidden
             />
             <span>
-              <strong>Organizational proposal.</strong> This domain is a slot
-              for future editorial and scholarly work.{" "}
-              {topicRelations.length === 0
-                ? "No topic or passage has been assigned to it yet."
-                : `${topicRelations.length} curated ${
-                    topicRelations.length === 1 ? "topic is" : "topics are"
-                  } editorially proposed below. No Quran passage has been assigned to this domain.`}{" "}
-              Review status:{" "}
-              <strong>
-                {DOMAIN_PROVENANCE.status.replace(/-/g, " ")}
-              </strong>
-              . Catalog method: {DOMAIN_PROVENANCE.method}.
+              <strong>Pending scholarly review.</strong> This domain organizes{" "}
+              {dimensions.length} dimensions and {topics.length} topics as an
+              editorial framework for knowledge discovery. All content carries{" "}
+              <strong>pending-scholarly-review</strong> status. This is not a
+              scholarly classification of the Quran.
             </span>
           </p>
         </div>
       </header>
 
-      <section aria-labelledby="subjects-heading" className="space-y-4">
-        <h2
-          id="subjects-heading"
-          className="font-display text-xl font-semibold tracking-tight"
-        >
-          Subject areas this domain may cover
-        </h2>
-        <p className="text-sm text-muted-foreground">
-          A non-exhaustive list of subjects within this domain&apos;s scope.
-          These are placeholders for future editorial work — no Quran
-          passage has been classified under them yet.
-        </p>
-        <ul className="flex flex-wrap gap-2">
-          {domain.subjects.map((subject) => (
-            <li
-              key={subject}
-              className="rounded-full border border-border/80 bg-card px-3 py-1.5 text-sm"
-            >
-              {subject}
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      {topicRelations.length > 0 ? (
-        <section aria-labelledby="topics-heading" className="space-y-4">
-          <div>
-            <h2
-              id="topics-heading"
-              className="font-display text-xl font-semibold tracking-tight"
-            >
-              Curated topics in this domain
-            </h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Editorial proposals connecting existing curated topics to this
-              domain. Each link opens the topic&apos;s own page, where its
-              curated verses and review status are shown. These are
-              organizational proposals pending review — not a scholarly
-              classification of the Quran, and not a claim that any ayah
-              belongs to this domain.
-            </p>
-          </div>
-
-          <ul className="space-y-3">
-            {topicRelations.map(({ relation, topic }) => (
-              <li key={relation.id}>
-                <div className="rounded-2xl border border-border/80 bg-card p-5">
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div className="min-w-0">
-                      <h3 className="font-display text-lg font-semibold tracking-tight">
-                        <Link
-                          href={`/topics/${topic.slug}`}
-                          className="text-primary hover:underline"
-                        >
-                          {topic.title}
-                        </Link>
-                      </h3>
-                      <p
-                        className="arabic-display mt-0.5 text-lg text-gold"
-                        lang="ar"
-                        dir="rtl"
-                      >
-                        {topic.arabicTitle}
-                      </p>
-                    </div>
-                    <div className="flex shrink-0 flex-wrap gap-2">
-                      <span className="rounded-full border border-border/80 bg-muted/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                        {relation.semantics === "navigation-only"
-                          ? "navigation aid"
-                          : "organizational proposal"}
-                      </span>
-                      <span className="rounded-full border border-gold/40 bg-gold-soft/60 px-2.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-accent-foreground">
-                        {relation.provenance.state.replace(/-/g, " ")}
-                      </span>
-                    </div>
+      {/* Dimensions Section */}
+      {dimensions.length > 0 && (
+        <section aria-labelledby="dimensions-heading" className="space-y-4">
+          <h2
+            id="dimensions-heading"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Dimensions ({dimensions.length})
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Major areas of knowledge within this domain. Each dimension contains
+            subdimensions and specialized topics.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {dimensions.map((dimension) => {
+              const dimSubdimensions = allSubdimensions.filter(
+                (sd) => sd.parentDimensionId === dimension.id
+              );
+              return (
+                <Link
+                  key={dimension.id}
+                  href={`/explore/dimensions/${dimension.id}`}
+                  className="group rounded-2xl border border-border/80 bg-card p-5 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+                >
+                  <div className="flex items-start justify-between gap-2 mb-2">
+                    <h3 className="font-display text-lg font-semibold tracking-tight group-hover:text-primary transition-colors">
+                      {dimension.title}
+                    </h3>
                   </div>
-
-                  <p className="mt-3 text-sm text-foreground">
-                    {relation.purpose}
-                  </p>
-                  {relation.evidence[0]?.statement && (
-                    <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-                      {relation.evidence[0].statement}
+                  {dimension.arabicTitle && (
+                    <p
+                      className="arabic-display text-lg text-gold mb-2"
+                      lang="ar"
+                      dir="rtl"
+                    >
+                      {dimension.arabicTitle}
                     </p>
                   )}
-                  <p className="mt-3 text-xs">
-                    <Link
-                      href={`/topics/${topic.slug}`}
-                      className="font-medium text-primary hover:underline"
-                    >
-                      Open the {topic.title} topic page →
-                    </Link>
+                  <p className="text-sm text-muted-foreground line-clamp-2 mb-3">
+                    {dimension.description}
                   </p>
-                </div>
-              </li>
-            ))}
-          </ul>
-
-          <p className="text-xs text-muted-foreground">
-            No Quran passages are assigned to this domain. Passage-level
-            classification would require a real authorized reviewer decision
-            and is not claimed here.
-          </p>
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="text-muted-foreground">
+                      {dimSubdimensions.length} subdimension
+                      {dimSubdimensions.length === 1 ? "" : "s"} ·{" "}
+                      {dimension.topicIds.length} topic
+                      {dimension.topicIds.length === 1 ? "" : "s"}
+                    </span>
+                    <span className="text-primary font-medium group-hover:underline">
+                      Explore →
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </section>
-      ) : (
+      )}
+
+      {/* Subdimensions Section */}
+      {domainSubdimensions.length > 0 && (
+        <section
+          aria-labelledby="subdimensions-heading"
+          className="space-y-4"
+        >
+          <h2
+            id="subdimensions-heading"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Subdimensions ({domainSubdimensions.length})
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Specialized groupings within dimensions, providing finer-grained
+            navigation.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {domainSubdimensions.map((sub) => {
+              const parentDim = getCanonicalDimension(sub.parentDimensionId);
+              return (
+                <Link
+                  key={sub.id}
+                  href={`/explore/sub-dimensions/${sub.id}`}
+                  className="group rounded-xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+                >
+                  <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors mb-1">
+                    {sub.title}
+                  </h3>
+                  {parentDim && (
+                    <p className="text-xs text-muted-foreground mb-2">
+                      in {parentDim.title}
+                    </p>
+                  )}
+                  <p className="text-sm text-muted-foreground line-clamp-2">
+                    {sub.description}
+                  </p>
+                  <p className="mt-2 text-xs text-primary font-medium group-hover:underline">
+                    {sub.topicIds.length} topic
+                    {sub.topicIds.length === 1 ? "" : "s"} →
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* Topics Section */}
+      {topics.length > 0 && (
+        <section aria-labelledby="topics-heading" className="space-y-4">
+          <h2
+            id="topics-heading"
+            className="font-display text-xl font-semibold tracking-tight"
+          >
+            Topics ({topics.length})
+          </h2>
+          <p className="text-sm text-muted-foreground">
+            Specialized subjects within this domain. Each topic connects to
+            related topics across domains through the knowledge graph.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {topics.slice(0, 30).map((topic) => (
+              <Link
+                key={topic.id}
+                href={`/explore/topics/${topic.id}`}
+                className="group rounded-xl border border-border/80 bg-card p-4 transition-colors hover:border-primary/30 hover:bg-secondary/40"
+              >
+                <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary transition-colors mb-1">
+                  {topic.title}
+                </h3>
+                {topic.arabicTitle && (
+                  <p
+                    className="arabic-display text-sm text-gold mb-1"
+                    lang="ar"
+                    dir="rtl"
+                  >
+                    {topic.arabicTitle}
+                  </p>
+                )}
+                <p className="text-xs text-muted-foreground line-clamp-2">
+                  {topic.description}
+                </p>
+                {topic.specialized && (
+                  <span className="mt-2 inline-block rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-medium text-primary">
+                    specialized
+                  </span>
+                )}
+              </Link>
+            ))}
+          </div>
+          {topics.length > 30 && (
+            <p className="text-sm text-muted-foreground">
+              Showing 30 of {topics.length} topics. Use search to find specific
+              topics within this domain.
+            </p>
+          )}
+        </section>
+      )}
+
+      {/* Empty state */}
+      {dimensions.length === 0 && topics.length === 0 && (
         <section
           aria-labelledby="empty-state-heading"
           className="rounded-2xl border border-border/80 bg-muted/30 p-6"
@@ -274,95 +368,12 @@ export default async function DomainDetailPage({ params }: Props) {
             id="empty-state-heading"
             className="font-display text-lg font-semibold tracking-tight mb-2"
           >
-            Topics and passages
+            No content yet
           </h2>
           <p className="text-sm text-muted-foreground">
-            No curated topics and no Quran passages have been assigned to
-            this domain yet. Assignments will be added only after a real
-            editorial pass with review metadata, and — for passage
-            classifications — a real authorized reviewer decision. Until
-            then, this page honestly shows an empty state rather than
-            fabricated links.
+            This domain is a placeholder for future editorial and scholarly
+            work. No dimensions or topics have been assigned yet.
           </p>
-          <p className="mt-3 text-xs text-muted-foreground">
-            To explore existing content, visit the{" "}
-            <Link href="/topics" className="text-primary hover:underline">
-              topic catalog
-            </Link>{" "}
-            or the{" "}
-            <Link href="/explore" className="text-primary hover:underline">
-              10 life dimensions
-            </Link>
-            .
-          </p>
-        </section>
-      )}
-
-      {declaredOverlaps.length > 0 && (
-        <section aria-labelledby="overlaps-declared-heading" className="space-y-3">
-          <h2
-            id="overlaps-declared-heading"
-            className="font-display text-lg font-semibold tracking-tight"
-          >
-            Related domains (declared)
-          </h2>
-          <p className="text-xs text-muted-foreground">
-            Domains this domain declares as overlapping.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {declaredOverlaps.map((d) => (
-              <Link
-                key={d.id}
-                href={`/explore/domains/${d.id}`}
-                className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-4 py-2 text-sm font-medium transition-colors hover:border-primary/30 hover:bg-secondary/50"
-              >
-                {d.arabicTitle && (
-                  <span
-                    className="arabic-display text-base text-gold"
-                    lang="ar"
-                    aria-hidden
-                  >
-                    {d.arabicTitle}
-                  </span>
-                )}
-                {d.title}
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {overlapping.length > 0 && (
-        <section aria-labelledby="overlaps-inbound-heading" className="space-y-3">
-          <h2
-            id="overlaps-inbound-heading"
-            className="font-display text-lg font-semibold tracking-tight"
-          >
-            Domains that reference this one
-          </h2>
-          <p className="text-xs text-muted-foreground">
-            Domains whose declared overlaps include {domain.title}.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {overlapping.map((d) => (
-              <Link
-                key={d.id}
-                href={`/explore/domains/${d.id}`}
-                className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-4 py-2 text-sm font-medium transition-colors hover:border-primary/30 hover:bg-secondary/50"
-              >
-                {d.arabicTitle && (
-                  <span
-                    className="arabic-display text-base text-gold"
-                    lang="ar"
-                    aria-hidden
-                  >
-                    {d.arabicTitle}
-                  </span>
-                )}
-                {d.title}
-              </Link>
-            ))}
-          </div>
         </section>
       )}
 
@@ -377,23 +388,28 @@ export default async function DomainDetailPage({ params }: Props) {
           What this page does NOT claim
         </h2>
         <ul className="list-inside list-disc space-y-1">
-          <li>
-            That the Quran has been classified into these 14 domains.
-          </li>
-          <li>
-            That any specific ayah belongs to this domain.
-          </li>
-          <li>
-            That this domain is an exhaustive or canonical category.
-          </li>
-          <li>
-            That this catalog has been reviewed or approved by a scholar.
-          </li>
-          <li>
-            That subject-area placeholders represent actual content.
-          </li>
+          <li>That the Quran has been classified into these domains.</li>
+          <li>That any specific ayah belongs to this domain.</li>
+          <li>That this domain is an exhaustive or canonical category.</li>
+          <li>That this catalog has been reviewed or approved by a scholar.</li>
         </ul>
       </section>
+
+      <nav className="flex flex-wrap items-center justify-between gap-3">
+        <Link
+          href="/explore/domains"
+          className="inline-flex items-center gap-1.5 rounded-2xl border border-border/80 bg-card px-4 py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
+        >
+          <ArrowLeft className="h-4 w-4" aria-hidden />
+          All domains
+        </Link>
+        <Link
+          href="/explore"
+          className="text-sm text-muted-foreground transition-colors hover:text-primary"
+        >
+          Explore home
+        </Link>
+      </nav>
     </div>
   );
 }

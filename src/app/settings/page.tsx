@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Check, ExternalLink, ShieldCheck, X } from "lucide-react";
+import { Check, ChevronRight, ShieldCheck, X } from "lucide-react";
 import { BackupControls } from "@/components/library/backup-controls";
 import {
   ARABIC_SIZES,
@@ -108,7 +108,7 @@ export default function SettingsPage() {
                   }`}
                 >
                   {lineHeight === lh && <Check className="h-3.5 w-3.5" aria-hidden />}
-                  {lh.charAt(0).toUpperCase() + lh.slice(1)}
+                  {lh === "compact" ? t("settings.spacingCompact") : lh === "normal" ? t("settings.spacingNormal") : t("settings.spacingLoose")}
                 </button>
               ))}
             </div>
@@ -310,7 +310,7 @@ export default function SettingsPage() {
                 <ShieldCheck className="h-4 w-4 text-gold" aria-hidden />
                 {t("settings.privacyLocal")}
               </span>
-              <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
+              <ChevronRight className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
@@ -319,25 +319,25 @@ export default function SettingsPage() {
                 <ShieldCheck className="h-4 w-4 text-gold" aria-hidden />
                 {t("settings.sourcesProvenance")}
               </span>
-              <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
+              <ChevronRight className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
             <Link href="/privacy" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
               {t("settings.privacyPolicy")}
-              <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
+              <ChevronRight className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
             <Link href="/terms" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
               {t("settings.termsOfUse")}
-              <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
+              <ChevronRight className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
           <li>
             <Link href="/accessibility" className="flex items-center justify-between rounded-2xl border border-border/80 bg-card px-5 py-3 text-sm font-medium transition-colors hover:bg-secondary/40">
               {t("settings.accessibilityStatement")}
-              <ExternalLink className="h-4 w-4 text-muted-foreground" aria-hidden />
+              <ChevronRight className="h-4 w-4 text-muted-foreground" aria-hidden />
             </Link>
           </li>
         </ul>
