@@ -88,7 +88,7 @@ export default async function TopicDetailPage({ params }: Props) {
           <li aria-hidden>·</li>
           <li>
             <Link
-              href="/explore/topics"
+              href="/topics"
               className="hover:text-primary transition-colors"
             >
               Topics
@@ -370,7 +370,7 @@ export default async function TopicDetailPage({ params }: Props) {
       {/* Back navigation */}
       <div className="flex items-center justify-between gap-4 border-t border-border/60 pt-6">
         <Link
-          href="/explore/topics"
+          href="/topics"
           className="inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-primary"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden />

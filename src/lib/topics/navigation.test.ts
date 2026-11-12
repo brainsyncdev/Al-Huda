@@ -161,7 +161,7 @@ describe("navigation helpers", () => {
 
     test("getJourneyUrl returns correct path", () => {
       expect(getJourneyUrl("understanding-tawheed")).toBe(
-        "/study-journeys/understanding-tawheed"
+        "/learn/journeys/understanding-tawheed"
       );
     });
   });

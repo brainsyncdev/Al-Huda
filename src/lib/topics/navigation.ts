@@ -127,5 +127,5 @@ export function getDomainUrl(domainId: string): string {
  * @returns URL path to the study journey detail page
  */
 export function getJourneyUrl(journeySlug: string): string {
-  return `/study-journeys/${journeySlug}`;
+  return `/learn/journeys/${journeySlug}`;
 }

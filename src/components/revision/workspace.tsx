@@ -70,10 +70,10 @@ export function RevisionWorkspace({ surahOptions }: { surahOptions: SurahOption[
           server copy, which means clearing site data, using a private window, or
           switching device will remove it. Export a backup from your{" "}
           <Link
-            href="/library"
+            href="/my-study"
             className="font-medium text-primary underline decoration-gold/60 underline-offset-2 hover:decoration-gold"
           >
-            library
+            My Study
           </Link>{" "}
           if you intend to keep it. The app never sends reminders — there is no
           notification or messaging capability here.

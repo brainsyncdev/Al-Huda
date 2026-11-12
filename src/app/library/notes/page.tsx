@@ -36,11 +36,11 @@ export default function LibraryNotesPage() {
     <div className="space-y-8 pb-8">
       <header className="space-y-3">
         <Link
-          href="/library"
+          href="/my-study"
           className="inline-flex items-center gap-1.5 text-xs font-medium text-primary underline underline-offset-2 hover:decoration-gold"
         >
           <ArrowLeft className="h-3.5 w-3.5" aria-hidden />
-          Back to library
+          Back to My Study
         </Link>
         <div className="space-y-1">
           <h1 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">

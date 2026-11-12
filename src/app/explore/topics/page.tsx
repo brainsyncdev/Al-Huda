@@ -174,7 +174,7 @@ export default function ExploreTopicsPage() {
         <p>
           Looking for structured learning? Try{" "}
           <Link
-            href="/study-journeys"
+            href="/learn/journeys"
             className="text-primary hover:underline font-medium"
           >
             Study Journeys

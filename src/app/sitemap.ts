@@ -16,7 +16,7 @@ import { absoluteUrl } from "@/lib/site";
  * Deliberately excluded:
  * - /search (noindexed per PRD §15)
  * - /report (disallowed in robots.txt, user-facing form)
- * - /library, /settings, /learn, /editorial (disallowed in robots.txt)
+ * - /my-study, /settings, /learn, /editorial (disallowed in robots.txt)
  * - /explore/theme/[name] (redirect route, not indexable)
  * - /explore/root/[root] (noindex placeholder)
  */
@@ -30,7 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/explore",
     "/explore/graph",
     "/explore/domains",
-    "/discover",
     "/topics",
     "/about",
     "/sources",

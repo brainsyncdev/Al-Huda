@@ -349,7 +349,7 @@ function Sprint48RootView({
             This page shows where words derived from this root appear — it does
             not claim these verses share a theme. For curated thematic
             exploration, see{" "}
-            <Link href="/explore/topics" className="text-primary hover:underline">
+            <Link href="/topics" className="text-primary hover:underline">
               Topics
             </Link>
             .

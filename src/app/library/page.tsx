@@ -130,7 +130,7 @@ export default function LibraryPage() {
               Private notes
             </h2>
             <Link
-              href="/library/notes"
+              href="/my-study/notes"
               className="text-xs font-medium text-primary underline underline-offset-2 hover:decoration-gold"
             >
               View all notes &amp; filter by tag

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { AlertTriangle } from "lucide-react";
+import { AlertTriangle, Map } from "lucide-react";
 import { TopicAyahCard } from "@/components/topics/topic-ayah-card";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import type { AyahRef } from "@/lib/quran/types";
@@ -22,6 +22,7 @@ import {
 } from "@/lib/taxonomy/domain-topics";
 import { getDomain, type Domain } from "@/lib/taxonomy/domains";
 import { getTopicRootLinks } from "@/lib/morphology/root-links";
+import { getJourneysForTopic } from "@/lib/topics/navigation";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -86,6 +87,11 @@ export default async function TopicDetailPage({ params }: Props) {
   const relatedPaths = PATHS.filter((path) =>
     path.steps.some((step) => step.topicSlug === topic.slug)
   );
+
+  // Study journeys that reference this topic in their stages. Journeys are
+  // dimension-targeted learning experiences that provide structured progression
+  // through topics and ayat.
+  const relatedJourneys = getJourneysForTopic(topic.slug);
 
   // Dimensions whose editorial navigation mapping lists this topic. Derived
   // from the same canonical `Dimension.topicSlugs` the Explore pages use, so
@@ -431,6 +437,62 @@ export default async function TopicDetailPage({ params }: Props) {
             These paths include steps that reference this topic. Each path
             marks its review status and is not tafsir.
           </p>
+        </section>
+      )}
+
+      {/* Study journeys integration */}
+      {relatedJourneys.length > 0 && (
+        <section
+          aria-labelledby="related-journeys-heading"
+          className="rounded-2xl border border-border/80 bg-muted/30 p-5"
+        >
+          <div className="flex items-center gap-2 mb-3">
+            <Map className="h-5 w-5 text-primary" aria-hidden />
+            <h2
+              id="related-journeys-heading"
+              className="font-display text-lg font-semibold tracking-tight"
+            >
+              Related Study Journeys
+            </h2>
+          </div>
+          <p className="text-sm text-muted-foreground mb-4">
+            Structured learning experiences that include this topic. Each
+            journey provides a guided progression through ayat and themes.
+          </p>
+          <ul className="space-y-3">
+            {relatedJourneys.map((journey) => (
+              <li key={journey.slug}>
+                <Link
+                  href={`/learn/journeys/${journey.slug}`}
+                  className="group block rounded-xl border border-border/70 bg-background/50 p-4 transition-colors hover:border-primary/30 hover:bg-secondary/30"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-display text-base font-semibold tracking-tight group-hover:text-primary">
+                        {journey.title}
+                      </h3>
+                      <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                        {journey.summary}
+                      </p>
+                    </div>
+                    <span
+                      className="arabic-display text-xl text-gold shrink-0"
+                      lang="ar"
+                    >
+                      {journey.arabicTitle}
+                    </span>
+                  </div>
+                  <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
+                    <span>{journey.stages.length} stages</span>
+                    <span aria-hidden>·</span>
+                    <span>{journey.estimatedMinutes} min</span>
+                    <span aria-hidden>·</span>
+                    <span className="capitalize">{journey.difficulty}</span>
+                  </div>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

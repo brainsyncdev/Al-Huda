@@ -483,7 +483,7 @@ export default function EditorialQualityPage() {
                     </p>
                     {issue.slug && (
                       <Link
-                        href={`/explore/topics/${issue.slug}`}
+                        href={`/topics/${issue.slug}`}
                         className="mt-1 inline-block text-xs text-primary hover:underline"
                       >
                         View topic →

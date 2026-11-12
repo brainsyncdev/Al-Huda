@@ -177,7 +177,7 @@ export default function MyStudyDashboard() {
                     Recently read
                   </h2>
                   <Link
-                    href="/library"
+                    href="/my-study"
                     className="text-xs font-medium text-primary underline underline-offset-2 hover:decoration-gold"
                   >
                     View all
