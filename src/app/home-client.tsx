@@ -66,7 +66,7 @@ export function HomeClient({ featured, featuredTopics, dimensions, siteName }: H
             </p>
             <p className="mt-3 text-sm">
               <Link
-                href="/discover"
+                href="/explore"
                 className="inline-flex items-center gap-1 font-medium text-primary hover:underline"
               >
                 {t("home.discoverLink")}
