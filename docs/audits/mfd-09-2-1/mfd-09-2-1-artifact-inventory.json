@@ -1,0 +1,105 @@
+{
+  "aiAnswerFeatureEnabled": false,
+  "artifacts": [
+    {
+      "bytes": 1243,
+      "exists": true,
+      "path": "docs/MFD-09-2-BASELINE.md",
+      "requiredForReproducibility": true,
+      "sha256": "1452071D2BE2281A2F6B3219FECF88BC249A4EE670ABD0442B9E0FA59E80204E",
+      "type": "markdown"
+    },
+    {
+      "bytes": 12992,
+      "exists": true,
+      "path": "docs/MFD-09-2-FINAL-RECONCILIATION-REPORT.md",
+      "requiredForReproducibility": true,
+      "sha256": "CAE7E48CC298897F5A90A5BF56A0D2A7AF8AA266879B704C21823A33C62785BF",
+      "type": "markdown"
+    },
+    {
+      "bytes": 8509,
+      "exists": true,
+      "path": "docs/MFD-09-2-MAPPING-INTEGRITY-REPORT.md",
+      "requiredForReproducibility": true,
+      "sha256": "4676347DE59F7DD1623D685DF3D01094CC7CB9FA89AB1F3FC4C7784941E27561",
+      "type": "markdown"
+    },
+    {
+      "bytes": 13304,
+      "exists": true,
+      "path": "docs/MFD-09-2-TAXONOMY-INTEGRITY-REPORT.md",
+      "requiredForReproducibility": true,
+      "sha256": "15EE30A9675FD44F2DE254CBBD7985651D767DF0031F173E1175F37234A475CE",
+      "type": "markdown"
+    },
+    {
+      "bytes": 5738,
+      "exists": true,
+      "path": "data/audit/mfd-09-2-mapping-integrity.json",
+      "requiredForReproducibility": true,
+      "sha256": "F813EB73B85E16EA37A484EAF9F758AA2DE686A36DAE017CB7689A81B0768816",
+      "type": "json"
+    },
+    {
+      "bytes": 328424,
+      "exists": true,
+      "path": "data/audit/mfd-09-2-taxonomy-integrity.json",
+      "requiredForReproducibility": true,
+      "sha256": "DB9832E37D3A0CEA621E8532E53EB0287E955662371501F5DBE40EA05B285335",
+      "type": "json"
+    },
+    {
+      "bytes": 7810,
+      "exists": true,
+      "path": "scripts/validate-mfd-09-2.mjs",
+      "requiredForReproducibility": true,
+      "sha256": "0F2ADD6C8D30C5E56A6583C070B9757A2CB065043BB87E5C7EFBE0D7872E2209",
+      "type": "mjs"
+    }
+  ],
+  "auditId": "MFD-09.2.1-B1",
+  "countDiscrepancyNote": "docs/MFD-09-2-FINAL-RECONCILIATION-REPORT.md section 15 states \"6 new files\" while its own listing enumerates 4 Markdown + 2 JSON + 1 MJS = 7 files. The correct count is 7. Historical report preserved unchanged; correction recorded here.",
+  "deterministicGenerator": "scripts/generate-mfd-09-2-1-reports.mjs",
+  "fieldDocumentation": {
+    "bytes": "File size in bytes.",
+    "exists": "File present on disk at generation time.",
+    "requiredForReproducibility": "Whether the file is needed to reproduce the audit baseline.",
+    "sha256": "Uppercase hex SHA-256 of file contents."
+  },
+  "mfd092ActualArtifactCount": 7,
+  "mfd092ClaimedNewFileCount": 6,
+  "productionFiles": [
+    {
+      "bytes": 10373,
+      "path": "data/taxonomy/domains.json",
+      "sha256": "26322BAAFA13E967669B49D7117C6C51B238D4236E2B98D108248CB556D8F610"
+    },
+    {
+      "bytes": 50095,
+      "path": "data/taxonomy/dimensions.json",
+      "sha256": "A88CD118FBDD438D8742085631C4787B9BC920D846AA65809AEE85CC245138AA"
+    },
+    {
+      "bytes": 7247,
+      "path": "data/taxonomy/subdimensions.json",
+      "sha256": "B4CC4982FB079A45EB239592B0BEDE28A53B30D560F034F8DF42371D9279E6D6"
+    },
+    {
+      "bytes": 257559,
+      "path": "data/taxonomy/topics.json",
+      "sha256": "6571E74AA644D168ACC3EF2BA10DA889B02CA4F73B5B83156DA376E8C954C3E9"
+    },
+    {
+      "bytes": 35562,
+      "path": "data/taxonomy/relationships.json",
+      "sha256": "D545121703FFBC825A6F185052E49DC93BF415D233CC3FC188E355DF60E1B82A"
+    },
+    {
+      "bytes": 369113,
+      "path": "data/taxonomy/topic-ayah-mappings.json",
+      "sha256": "3CA33A47925E25E1BA282E28D3C3212F9654CE2DC897BA0A4150EB974D2C2CED"
+    }
+  ],
+  "schemaVersion": "1.0.0"
+}

@@ -1,0 +1,1933 @@
+{
+  "auditId": "MFD-09.2.1-TAXONOMY",
+  "bidirectionalCoverage": [
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "accountability",
+      "dimensionName": "Accountability",
+      "dimensionSideTopicCount": 5,
+      "domainId": "governance-political-authority",
+      "missingTopicIds": [
+        "anti-corruption",
+        "oversight-mechanisms",
+        "transparency"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "adornment-ethics",
+      "dimensionName": "Adornment & Ethics",
+      "dimensionSideTopicCount": 5,
+      "domainId": "arts-beauty-aesthetics",
+      "missingTopicIds": [
+        "adornment-limits",
+        "beauty-standards",
+        "clothing-ethics",
+        "modesty-adornment",
+        "vanity-prohibition"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "agriculture-farming",
+      "dimensionName": "Agriculture & Farming",
+      "dimensionSideTopicCount": 6,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "crop-cultivation",
+        "farming-ethics",
+        "food-production",
+        "gardens-orchards",
+        "harvest-seasons",
+        "rain-blessing"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": false,
+      "dimensionId": "allah-divine-attributes",
+      "dimensionName": "Allah & Divine Attributes",
+      "dimensionSideTopicCount": 7,
+      "domainId": "belief-theology",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 7,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": false,
+      "dimensionId": "angels-unseen-world",
+      "dimensionName": "Angels & Unseen World",
+      "dimensionSideTopicCount": 6,
+      "domainId": "belief-theology",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 6,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "animals-creation",
+      "dimensionName": "Animals & Creation",
+      "dimensionSideTopicCount": 7,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "animal-sacrifice",
+        "animal-welfare",
+        "bird-creation",
+        "insect-creation",
+        "livestock-animals",
+        "specific-animal-stories"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "architecture-engineering",
+      "dimensionName": "Architecture & Engineering",
+      "dimensionSideTopicCount": 5,
+      "domainId": "arts-beauty-aesthetics",
+      "missingTopicIds": [
+        "architectural-design",
+        "construction-principles",
+        "engineering-ethics",
+        "mosque-architecture",
+        "urban-planning"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "artistic-expression",
+      "dimensionName": "Artistic Expression",
+      "dimensionSideTopicCount": 5,
+      "domainId": "arts-beauty-aesthetics",
+      "missingTopicIds": [
+        "calligraphy",
+        "creative-expression",
+        "geometric-patterns",
+        "islamic-art"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "body-as-trust",
+      "dimensionName": "Body as Trust",
+      "dimensionSideTopicCount": 5,
+      "domainId": "health-medicine",
+      "missingTopicIds": [
+        "avoiding-harm",
+        "body-amanah",
+        "body-responsibility",
+        "health-stewardship",
+        "self-care-duty"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "business-ethics",
+      "dimensionName": "Business Ethics",
+      "dimensionSideTopicCount": 5,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "business-responsibility",
+        "contract-ethics",
+        "fair-dealing",
+        "honesty-business",
+        "transparency"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "character-development",
+      "dimensionName": "Character Development",
+      "dimensionSideTopicCount": 5,
+      "domainId": "ethics-character",
+      "missingTopicIds": [
+        "character-building",
+        "moral-education",
+        "role-models",
+        "self-improvement"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "charity-giving",
+      "dimensionName": "Charity & Giving",
+      "dimensionSideTopicCount": 5,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "charity-virtues",
+        "endowments-waqf",
+        "giving-ethics",
+        "sadaqah-voluntary"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "conflict-resolution",
+      "dimensionName": "Conflict Resolution",
+      "dimensionSideTopicCount": 5,
+      "domainId": "war-peace-conflict",
+      "missingTopicIds": [
+        "arbitration",
+        "dispute-resolution",
+        "mediation",
+        "peace-making",
+        "reconciliation"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "congregational-worship",
+      "dimensionName": "Congregational Worship",
+      "dimensionSideTopicCount": 5,
+      "domainId": "worship-practice",
+      "missingTopicIds": [
+        "congregation-virtues",
+        "eid-prayers",
+        "taraweeh"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "craftsmanship",
+      "dimensionName": "Craftsmanship",
+      "dimensionSideTopicCount": 5,
+      "domainId": "work-vocation",
+      "missingTopicIds": [
+        "artisan-ethics",
+        "craft-excellence",
+        "craftsmanship-virtue",
+        "quality-work",
+        "skill-development"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "creativity-design",
+      "dimensionName": "Creativity & Design",
+      "dimensionSideTopicCount": 5,
+      "domainId": "arts-beauty-aesthetics",
+      "missingTopicIds": [
+        "aesthetic-design",
+        "creativity-islam",
+        "design-principles",
+        "functional-beauty",
+        "innovation"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "criminal-law",
+      "dimensionName": "Criminal Law",
+      "dimensionSideTopicCount": 7,
+      "domainId": "law-obligations",
+      "missingTopicIds": [
+        "criminal-categories",
+        "diyah-compensation",
+        "qisas-retaliation",
+        "restorative-justice",
+        "tazir-discretionary"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "death-dying",
+      "dimensionName": "Death & Dying",
+      "dimensionSideTopicCount": 5,
+      "domainId": "eschatology-afterlife",
+      "missingTopicIds": [
+        "barzakh-interim",
+        "death-process",
+        "dying-ethics",
+        "grave-punishment-blessing",
+        "soul-departure"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "digital-technology-ethics",
+      "dimensionName": "Digital Technology & Ethics",
+      "dimensionSideTopicCount": 5,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "artificial-intelligence-ethics",
+        "digital-economy-ethics",
+        "digital-privacy",
+        "information-technology",
+        "social-media-responsibility"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": false,
+      "dimensionId": "divine-decree-qadr",
+      "dimensionName": "Divine Decree & Qadr",
+      "dimensionSideTopicCount": 4,
+      "domainId": "belief-theology",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 4,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "divine-scriptures",
+      "dimensionName": "Divine Scriptures",
+      "dimensionSideTopicCount": 4,
+      "domainId": "revelation-guidance",
+      "missingTopicIds": [
+        "belief-in-scriptures",
+        "scripture-corruption"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "divorce-separation",
+      "dimensionName": "Divorce & Separation",
+      "dimensionSideTopicCount": 7,
+      "domainId": "family-relationships",
+      "missingTopicIds": [
+        "divorce-arbitration",
+        "faskh-annulment",
+        "iddah-waiting",
+        "post-divorce-ethics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "dreams-visions",
+      "dimensionName": "Dreams & Visions",
+      "dimensionSideTopicCount": 4,
+      "domainId": "prophets-narratives",
+      "missingTopicIds": [
+        "prophetic-visions",
+        "true-vs-false-dreams"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "economic-justice",
+      "dimensionName": "Economic Justice",
+      "dimensionSideTopicCount": 5,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "economic-fairness",
+        "poverty-alleviation",
+        "wages-ethics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "education-systems",
+      "dimensionName": "Education & Learning Systems",
+      "dimensionSideTopicCount": 5,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "educational-institutions",
+        "knowledge-transmission",
+        "learning-ethics",
+        "mentorship-guidance",
+        "teaching-methods"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "environment-balance",
+      "dimensionName": "Environment & Balance",
+      "dimensionSideTopicCount": 5,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "climate-cycles",
+        "day-night-cycles",
+        "ecological-balance",
+        "environmental-signs"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "environmental-protection",
+      "dimensionName": "Environmental Protection",
+      "dimensionSideTopicCount": 6,
+      "domainId": "environment-stewardship",
+      "missingTopicIds": [
+        "animal-welfare",
+        "sacred-lands",
+        "sustainable-living",
+        "tree-protection",
+        "waste-reduction"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "equality-diversity",
+      "dimensionName": "Equality & Diversity",
+      "dimensionSideTopicCount": 5,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "gender-equity",
+        "racial-equality",
+        "tribes-peoples"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "fasad-prohibition",
+      "dimensionName": "Fasad Prohibition",
+      "dimensionSideTopicCount": 5,
+      "domainId": "environment-stewardship",
+      "missingTopicIds": [
+        "destruction-prohibition",
+        "ecological-damage",
+        "harm-prevention"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "finance-debt",
+      "dimensionName": "Finance & Debt",
+      "dimensionSideTopicCount": 6,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "debt-relief",
+        "islamic-finance",
+        "loan-ethics",
+        "repayment-obligations"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "food-dietary-laws",
+      "dimensionName": "Food & Dietary Laws",
+      "dimensionSideTopicCount": 6,
+      "domainId": "law-obligations",
+      "missingTopicIds": [
+        "dietary-restrictions",
+        "food-waste-prohibition",
+        "nutrition-ethics",
+        "slaughter-rules"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "gender-cultural-experiences",
+      "dimensionName": "Gender & Cultural Experiences",
+      "dimensionSideTopicCount": 4,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "cultural-diversity",
+        "cultural-practices",
+        "gender-equity",
+        "social-roles"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "hajj-umrah-pilgrimage",
+      "dimensionName": "Hajj & Umrah Pilgrimage",
+      "dimensionSideTopicCount": 5,
+      "domainId": "worship-practice",
+      "missingTopicIds": [
+        "hajj-mabrur",
+        "hajj-significance",
+        "ihram-rules",
+        "umrah-procedure"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "healing-medicine",
+      "dimensionName": "Healing & Medicine",
+      "dimensionSideTopicCount": 5,
+      "domainId": "health-medicine",
+      "missingTopicIds": [
+        "healing-prayers",
+        "medicinal-substances",
+        "seeking-treatment",
+        "treatment-ethics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "hell-jahannam",
+      "dimensionName": "Hell & Jahannam",
+      "dimensionSideTopicCount": 5,
+      "domainId": "eschatology-afterlife",
+      "missingTopicIds": [
+        "eternal-punishment",
+        "hell-levels",
+        "punishment-types",
+        "temporary-punishment"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "human-biology-ecology",
+      "dimensionName": "Human Biology & Ecology",
+      "dimensionSideTopicCount": 4,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "biological-diversity",
+        "ecological-systems",
+        "human-body-systems",
+        "human-nature"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "human-creation-purpose",
+      "dimensionName": "Human Creation & Purpose",
+      "dimensionSideTopicCount": 6,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "soul-body-balance"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 5,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "human-rights",
+      "dimensionName": "Human Rights",
+      "dimensionSideTopicCount": 5,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "justice-for-all",
+        "right-to-dignity",
+        "universal-rights",
+        "vulnerable-protection"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": [
+        "justice-oppression"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "husn-beauty",
+      "dimensionName": "Husn & Beauty",
+      "dimensionSideTopicCount": 5,
+      "domainId": "arts-beauty-aesthetics",
+      "missingTopicIds": [
+        "aesthetic-principles",
+        "beauty-creation",
+        "beauty-islam",
+        "divine-beauty"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": false,
+      "dimensionId": "iman-faith-pillars",
+      "dimensionName": "Iman & Faith Pillars",
+      "dimensionSideTopicCount": 4,
+      "domainId": "belief-theology",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 4,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "intellect-reason",
+      "dimensionName": "Intellect & Reason",
+      "dimensionSideTopicCount": 5,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "reason-vs-revelation"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 6,
+      "unexpectedTopicRefs": [
+        "knowledge-ignorance",
+        "signs-and-reflection"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "interfaith-dialogue",
+      "dimensionName": "Interfaith Dialogue",
+      "dimensionSideTopicCount": 5,
+      "domainId": "interfaith-communities",
+      "missingTopicIds": [
+        "common-ground",
+        "da'wah-methods",
+        "religious-freedom",
+        "respectful-engagement"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "international-law",
+      "dimensionName": "International Law",
+      "dimensionSideTopicCount": 5,
+      "domainId": "law-obligations",
+      "missingTopicIds": [
+        "diplomatic-immunity",
+        "diplomatic-relations",
+        "international-agreements",
+        "treaties-covenants",
+        "treaty-obligations"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "jihad-concept",
+      "dimensionName": "Jihad Concept",
+      "dimensionSideTopicCount": 5,
+      "domainId": "war-peace-conflict",
+      "missingTopicIds": [
+        "greater-lesser-jihad",
+        "jihad-conditions",
+        "jihad-purpose",
+        "jihad-types"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "khalifah-stewardship",
+      "dimensionName": "Khalifah & Stewardship",
+      "dimensionSideTopicCount": 5,
+      "domainId": "environment-stewardship",
+      "missingTopicIds": [
+        "creation-care",
+        "earth-stewardship",
+        "environmental-responsibility",
+        "trusteeship"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "kinship-extended-family",
+      "dimensionName": "Kinship & Extended Family",
+      "dimensionSideTopicCount": 5,
+      "domainId": "family-relationships",
+      "missingTopicIds": [
+        "extended-family-bonds",
+        "in-laws",
+        "relatives-rights",
+        "siblings-relationships"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "labor-rights",
+      "dimensionName": "Labor Rights",
+      "dimensionSideTopicCount": 5,
+      "domainId": "work-vocation",
+      "missingTopicIds": [
+        "employee-treatment",
+        "fair-wages",
+        "labor-justice",
+        "workplace-ethics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "leadership-authority",
+      "dimensionName": "Leadership & Authority",
+      "dimensionSideTopicCount": 5,
+      "domainId": "governance-political-authority",
+      "missingTopicIds": [
+        "authority-limits",
+        "authority-responsibility",
+        "just-leaders",
+        "leadership-ethics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "life-stages",
+      "dimensionName": "Life Stages",
+      "dimensionSideTopicCount": 5,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "death-process"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 4,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "linguistics-eloquence",
+      "dimensionName": "Linguistics & Eloquence",
+      "dimensionSideTopicCount": 5,
+      "domainId": "language-vocabulary",
+      "missingTopicIds": [
+        "arabic-rhetoric",
+        "eloquence-principles",
+        "linguistic-miracle",
+        "literary-beauty",
+        "quranic-style"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": false,
+      "dimensionId": "major-prophets-stories",
+      "dimensionName": "Major Prophets Stories",
+      "dimensionSideTopicCount": 7,
+      "domainId": "prophets-narratives",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 7,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "marriage-nikah",
+      "dimensionName": "Marriage & Nikah",
+      "dimensionSideTopicCount": 7,
+      "domainId": "family-relationships",
+      "missingTopicIds": [
+        "marriage-contract",
+        "marriage-proposal"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 5,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "mathematics-measurement",
+      "dimensionName": "Mathematics & Measurement",
+      "dimensionSideTopicCount": 5,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "calculation-methods",
+        "mathematical-concepts",
+        "measurement-precision",
+        "numerical-patterns",
+        "proportional-relationships"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "mental-wellbeing",
+      "dimensionName": "Mental Wellbeing",
+      "dimensionSideTopicCount": 5,
+      "domainId": "health-medicine",
+      "missingTopicIds": [
+        "anxiety-management",
+        "emotional-balance",
+        "psychological-resilience",
+        "stress-relief"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "minor-prophets",
+      "dimensionName": "Minor Prophets",
+      "dimensionSideTopicCount": 7,
+      "domainId": "prophets-narratives",
+      "missingTopicIds": [
+        "dhul-kifl",
+        "idris-story",
+        "shuayb-story",
+        "uzair-story"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "mizan-balance",
+      "dimensionName": "Mizan & Balance",
+      "dimensionSideTopicCount": 5,
+      "domainId": "environment-stewardship",
+      "missingTopicIds": [
+        "balance-maintenance",
+        "ecological-balance",
+        "mizan-concept",
+        "natural-order",
+        "proportional-creation"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "modern-economic-issues",
+      "dimensionName": "Modern Economic Issues",
+      "dimensionSideTopicCount": 5,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "cryptocurrency-ethics",
+        "digital-economy",
+        "globalization-impact",
+        "modern-banking",
+        "sustainable-economics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "moral-vice",
+      "dimensionName": "Moral Vices",
+      "dimensionSideTopicCount": 9,
+      "domainId": "ethics-character",
+      "missingTopicIds": [
+        "arrogance",
+        "greed"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 7,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "moral-virtues",
+      "dimensionName": "Moral Virtues",
+      "dimensionSideTopicCount": 7,
+      "domainId": "ethics-character",
+      "missingTopicIds": [
+        "haya-modesty",
+        "hilm-forbearance"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 8,
+      "unexpectedTopicRefs": [
+        "balance-moderation",
+        "gratitude-ingratitude",
+        "patience-haste",
+        "trust-responsibility"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "natural-resources",
+      "dimensionName": "Natural Resources",
+      "dimensionSideTopicCount": 7,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "earth-treasures",
+        "honey-production",
+        "metals-minerals",
+        "olive-oil",
+        "precious-stones",
+        "water-resources",
+        "wind-energy"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "oaths-vows-covenants",
+      "dimensionName": "Oaths, Vows & Covenants",
+      "dimensionSideTopicCount": 5,
+      "domainId": "law-obligations",
+      "missingTopicIds": [
+        "oaths-ayman",
+        "promise-keeping",
+        "vows-nadhr"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "paradise-jannah",
+      "dimensionName": "Paradise & Jannah",
+      "dimensionSideTopicCount": 5,
+      "domainId": "eschatology-afterlife",
+      "missingTopicIds": [
+        "eternal-bliss",
+        "jannah-rivers-gardens",
+        "paradise-levels",
+        "rewards-righteous"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "parenting-child-development",
+      "dimensionName": "Parenting & Child Development",
+      "dimensionSideTopicCount": 7,
+      "domainId": "family-relationships",
+      "missingTopicIds": [
+        "child-discipline",
+        "fair-treatment-children",
+        "naming-ceremony",
+        "righteous-offspring"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "parents-elderly-care",
+      "dimensionName": "Parents & Elderly Care",
+      "dimensionSideTopicCount": 5,
+      "domainId": "family-relationships",
+      "missingTopicIds": [
+        "prayer-for-parents",
+        "respecting-parents"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "peace-treaties",
+      "dimensionName": "Peace Treaties",
+      "dimensionSideTopicCount": 5,
+      "domainId": "war-peace-conflict",
+      "missingTopicIds": [
+        "ceasefire",
+        "conflict-prevention",
+        "peace-building",
+        "treaty-fulfillment"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "people-of-book",
+      "dimensionName": "People of the Book",
+      "dimensionSideTopicCount": 5,
+      "domainId": "interfaith-communities",
+      "missingTopicIds": [
+        "christians-islam",
+        "food-of-people-of-book",
+        "jews-islam",
+        "people-of-book-status"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "personal-development",
+      "dimensionName": "Personal Development",
+      "dimensionSideTopicCount": 6,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "continuous-improvement",
+        "discipline",
+        "goal-setting",
+        "habit-formation"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": [
+        "trial-and-test"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "physical-health",
+      "dimensionName": "Physical Health",
+      "dimensionSideTopicCount": 5,
+      "domainId": "health-medicine",
+      "missingTopicIds": [
+        "body-care",
+        "disease-prevention",
+        "hygiene-practices",
+        "nutrition-health",
+        "physical-fitness"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "poverty-welfare",
+      "dimensionName": "Poverty & Welfare",
+      "dimensionSideTopicCount": 6,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "orphan-support",
+        "social-welfare-system",
+        "traveler-assistance",
+        "widow-care"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "prophethood-messengership",
+      "dimensionName": "Prophethood & Messengership",
+      "dimensionSideTopicCount": 5,
+      "domainId": "prophets-narratives",
+      "missingTopicIds": [
+        "prophetic-mission",
+        "prophetic-qualities"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "prophetic-guidance",
+      "dimensionName": "Prophetic Guidance",
+      "dimensionSideTopicCount": 4,
+      "domainId": "revelation-guidance",
+      "missingTopicIds": [
+        "following-prophets",
+        "prophetic-miracles"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "prophetic-lessons",
+      "dimensionName": "Prophetic Lessons",
+      "dimensionSideTopicCount": 4,
+      "domainId": "prophets-narratives",
+      "missingTopicIds": [
+        "moral-lessons-from-prophets",
+        "patience-lessons",
+        "perseverance-lessons",
+        "trust-in-allah"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "prophetic-professions",
+      "dimensionName": "Prophetic Professions",
+      "dimensionSideTopicCount": 5,
+      "domainId": "work-vocation",
+      "missingTopicIds": [
+        "noble-professions",
+        "prophet-as-craftsman",
+        "prophet-as-merchant",
+        "prophet-as-shepherd",
+        "prophetic-examples"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "psychology-emotions",
+      "dimensionName": "Psychology & Emotions",
+      "dimensionSideTopicCount": 6,
+      "domainId": "human-experiences",
+      "missingTopicIds": [
+        "fear-hope-balance",
+        "grief-processing",
+        "joy-happiness"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "public-administration",
+      "dimensionName": "Public Administration",
+      "dimensionSideTopicCount": 5,
+      "domainId": "governance-political-authority",
+      "missingTopicIds": [
+        "administration-ethics",
+        "bureaucracy",
+        "governance-structures",
+        "public-service",
+        "public-trust"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "purification-ritual",
+      "dimensionName": "Purification & Ritual",
+      "dimensionSideTopicCount": 5,
+      "domainId": "worship-practice",
+      "missingTopicIds": [
+        "cleanliness-islam",
+        "ritual-purity"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "quran-science",
+      "dimensionName": "Quran Sciences",
+      "dimensionSideTopicCount": 6,
+      "domainId": "revelation-guidance",
+      "missingTopicIds": [
+        "quran-interpretation-principles"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 5,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "quranic-arabic",
+      "dimensionName": "Quranic Arabic",
+      "dimensionSideTopicCount": 5,
+      "domainId": "language-vocabulary",
+      "missingTopicIds": [
+        "arabic-eloquence",
+        "arabic-grammar",
+        "linguistic-features",
+        "quranic-terms"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "quranic-linguistics",
+      "dimensionName": "Quranic Linguistics",
+      "dimensionSideTopicCount": 4,
+      "domainId": "revelation-guidance",
+      "missingTopicIds": [
+        "linguistic-miracle",
+        "quranic-arabic-style",
+        "quranic-rhetoric",
+        "quranic-vocabulary-study"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "quranic-vocabulary",
+      "dimensionName": "Quranic Vocabulary",
+      "dimensionSideTopicCount": 5,
+      "domainId": "language-vocabulary",
+      "missingTopicIds": [
+        "key-terms",
+        "quranic-concepts",
+        "semantic-fields",
+        "terminology-study",
+        "word-roots"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": [
+        "quranic-vocabulary"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "religious-communities",
+      "dimensionName": "Religious Communities",
+      "dimensionSideTopicCount": 5,
+      "domainId": "interfaith-communities",
+      "missingTopicIds": [
+        "atheists-agnostics",
+        "coexistence",
+        "polytheists",
+        "religious-minorities",
+        "religious-pluralism"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "resurrection-judgment",
+      "dimensionName": "Resurrection & Judgment",
+      "dimensionSideTopicCount": 5,
+      "domainId": "eschatology-afterlife",
+      "missingTopicIds": [
+        "accountability",
+        "judgment-scene",
+        "scales-of-justice"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "salah-prayer",
+      "dimensionName": "Salah & Prayer",
+      "dimensionSideTopicCount": 7,
+      "domainId": "worship-practice",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 3,
+      "topicSideTopicCount": 8,
+      "unexpectedTopicRefs": [
+        "remembrance-forgetfulness"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "sawm-fasting",
+      "dimensionName": "Sawm & Fasting",
+      "dimensionSideTopicCount": 5,
+      "domainId": "worship-practice",
+      "missingTopicIds": [
+        "fasting-benefits",
+        "fasting-rules",
+        "voluntary-fasting"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "scientific-knowledge-observation",
+      "dimensionName": "Scientific Knowledge & Observation",
+      "dimensionSideTopicCount": 5,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "empirical-knowledge",
+        "experimental-method",
+        "natural-phenomena",
+        "observation-nature",
+        "scientific-inquiry"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "shariah-legal-principles",
+      "dimensionName": "Shariah & Legal Principles",
+      "dimensionSideTopicCount": 6,
+      "domainId": "law-obligations",
+      "missingTopicIds": [
+        "fiqh-methodology",
+        "islamic-law",
+        "judicial-independence",
+        "jurisprudence-principles",
+        "legal-maxims",
+        "shariah-sources"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "shura-consultation",
+      "dimensionName": "Shura & Consultation",
+      "dimensionSideTopicCount": 5,
+      "domainId": "governance-political-authority",
+      "missingTopicIds": [
+        "collective-decision",
+        "consultation-mechanism",
+        "participatory-governance",
+        "shura-examples"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "signs-of-hour",
+      "dimensionName": "Signs of the Hour",
+      "dimensionSideTopicCount": 5,
+      "domainId": "eschatology-afterlife",
+      "missingTopicIds": [
+        "dajjal-antichrist",
+        "end-times-events",
+        "return-of-isa"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "sincerity-ikhlas",
+      "dimensionName": "Sincerity & Ikhlas",
+      "dimensionSideTopicCount": 5,
+      "domainId": "ethics-character",
+      "missingTopicIds": [
+        "hidden-shirk",
+        "ikhlas-definition",
+        "intention-purification",
+        "sincerity-in-worship"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": [
+        "ikhlas-sincerity"
+      ]
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "social-responsibility",
+      "dimensionName": "Social Responsibility",
+      "dimensionSideTopicCount": 5,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "community-welfare",
+        "friendship-ethics",
+        "social-cohesion",
+        "social-duty"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "spiritual-states-nafs",
+      "dimensionName": "Spiritual States & Nafs",
+      "dimensionSideTopicCount": 6,
+      "domainId": "ethics-character",
+      "missingTopicIds": [
+        "spiritual-diseases",
+        "tazkiyah"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 4,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "spousal-relations",
+      "dimensionName": "Spousal Relations",
+      "dimensionSideTopicCount": 6,
+      "domainId": "family-relationships",
+      "missingTopicIds": [
+        "chastity-modesty",
+        "conflict-resolution",
+        "spousal-communication"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "sunnah-prophetic-tradition",
+      "dimensionName": "Sunnah & Prophetic Tradition",
+      "dimensionSideTopicCount": 5,
+      "domainId": "revelation-guidance",
+      "missingTopicIds": [
+        "prophetic-example"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 4,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": false,
+      "dimensionId": "tawheed-oneness",
+      "dimensionName": "Tawheed & Oneness",
+      "dimensionSideTopicCount": 5,
+      "domainId": "belief-theology",
+      "missingTopicIds": [],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 5,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "time-seasons",
+      "dimensionName": "Time & Seasons",
+      "dimensionSideTopicCount": 5,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "appointed-times",
+        "lunar-calendar",
+        "seasonal-cycles",
+        "time-as-trust"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "trade-commerce",
+      "dimensionName": "Trade & Commerce",
+      "dimensionSideTopicCount": 7,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "commercial-fraud-prohibition",
+        "entrepreneurship",
+        "fair-pricing",
+        "market-regulation",
+        "partnerships",
+        "trade-principles"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 2,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "travel-exploration",
+      "dimensionName": "Travel & Exploration",
+      "dimensionSideTopicCount": 6,
+      "domainId": "creation-signs",
+      "missingTopicIds": [
+        "exploration-purpose",
+        "journey-ethics",
+        "maritime-travel",
+        "navigation",
+        "observing-nations",
+        "travel-earth"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 0,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "ummah-community",
+      "dimensionName": "Ummah & Community",
+      "dimensionSideTopicCount": 5,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "collective-responsibility",
+        "community-cohesion",
+        "social-solidarity"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "urban-rural-media-ethics",
+      "dimensionName": "Urban, Rural & Media Ethics",
+      "dimensionSideTopicCount": 6,
+      "domainId": "society-justice",
+      "missingTopicIds": [
+        "digital-privacy",
+        "information-ethics",
+        "rural-ethics",
+        "urban-ethics"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "warfare-ethics",
+      "dimensionName": "Warfare Ethics",
+      "dimensionSideTopicCount": 5,
+      "domainId": "war-peace-conflict",
+      "missingTopicIds": [
+        "military-ethics",
+        "proportionality",
+        "war-conduct"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "wealth-property",
+      "dimensionName": "Wealth & Property",
+      "dimensionSideTopicCount": 5,
+      "domainId": "economic-conduct",
+      "missingTopicIds": [
+        "asset-management",
+        "financial-transactions",
+        "property-rights"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "work-dignity",
+      "dimensionName": "Work Dignity",
+      "dimensionSideTopicCount": 5,
+      "domainId": "work-vocation",
+      "missingTopicIds": [
+        "dignified-labor",
+        "work-purpose",
+        "work-value",
+        "work-worship"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": []
+    },
+    {
+      "coverageDiscrepancy": true,
+      "dimensionId": "zakat-obligatory-charity",
+      "dimensionName": "Zakat & Obligatory Charity",
+      "dimensionSideTopicCount": 5,
+      "domainId": "worship-practice",
+      "missingTopicIds": [
+        "sadaqah-obligatory",
+        "zakat-importance",
+        "zakat-ul-fitr"
+      ],
+      "reviewStatus": "PENDING_HUMAN_TAXONOMY_REVIEW",
+      "subdimensionCount": 0,
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": []
+    }
+  ],
+  "dimensionSideDistribution": {
+    "FIVE_OR_MORE_TOPICS": 94,
+    "ONE_TOPIC": 0,
+    "THREE_TO_FOUR_TOPICS": 9,
+    "TWO_TOPICS": 0,
+    "ZERO_TOPICS": 0
+  },
+  "entityCounts": {
+    "dimensions": 103,
+    "domains": 20,
+    "relationships": 150,
+    "subdimensions": 25,
+    "topics": 184
+  },
+  "openHumanDecisions": [
+    "Resolve 370 phantom topic references in dimensions.json.",
+    "Address 31 dimensions with zero actual topics.",
+    "Review 7 duplicate topic assignments on ayat.",
+    "Attach Tafsir evidence (currently 0 of 789 mappings).",
+    "Engage qualified scholars for all 789 mappings (all remain pending).",
+    "Approve or reject 60 classified topic proposals."
+  ],
+  "proposalIntegrity": {
+    "categoryDistribution": {
+      "CONTEMPORARY_APPLICATION": 3,
+      "EDITORIAL_EDUCATIONAL_CATEGORY": 2,
+      "QURANIC_EXPLICIT_CONCEPT": 16,
+      "QURANIC_THEMATIC_CONCEPT": 39
+    },
+    "duplicateIds": [],
+    "duplicateTitles": [],
+    "implementedInProduction": 0,
+    "invalidTargetReferences": [],
+    "note": "ACCEPT_FOR_FUTURE_REVIEW is a triage recommendation, not production approval or scholarly approval.",
+    "quranMappingAppropriateFalse": 5,
+    "quranMappingAppropriateTrue": 55,
+    "recommendationDistribution": {
+      "ACCEPT_FOR_FUTURE_REVIEW": 60
+    },
+    "reviewStatusDistribution": {
+      "PENDING": 60
+    },
+    "totalCount": 60,
+    "uniqueIdCount": 60
+  },
+  "relationshipIntegrity": {
+    "duplicateEdges": 0,
+    "orphanEndpoints": [],
+    "scholarlyValidity": "NOT_ASSESSED_BY_AUTOMATION",
+    "selfReferences": 0,
+    "semanticValidity": "NOT_ASSESSED_BY_AUTOMATION",
+    "structuralValidity": true,
+    "totalRelationships": 150,
+    "typeDistribution": {
+      "CONTAINS": 98,
+      "CROSS_REFERENCES": 42,
+      "SHARES_CONCEPT": 10
+    },
+    "uniqueRelationshipIds": 150,
+    "validEndpointPairs": 150
+  },
+  "schemaVersion": "1.0.0",
+  "sevenDiscrepancies": [
+    {
+      "dimensionId": "salah-prayer",
+      "dimensionName": "Salah & Prayer",
+      "dimensionSideTopicCount": 7,
+      "historicalMfd091TopicCount": 8,
+      "historicalMfd091TopicCountFromDimFile": 7,
+      "historicalMfd091TopicCountFromTopicFile": 8,
+      "missingTopicIds": [],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 8,
+      "unexpectedTopicRefs": [
+        "remembrance-forgetfulness"
+      ]
+    },
+    {
+      "dimensionId": "moral-virtues",
+      "dimensionName": "Moral Virtues",
+      "dimensionSideTopicCount": 7,
+      "historicalMfd091TopicCount": 11,
+      "historicalMfd091TopicCountFromDimFile": 7,
+      "historicalMfd091TopicCountFromTopicFile": 8,
+      "missingTopicIds": [
+        "haya-modesty",
+        "hilm-forbearance"
+      ],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 8,
+      "unexpectedTopicRefs": [
+        "balance-moderation",
+        "gratitude-ingratitude",
+        "patience-haste",
+        "trust-responsibility"
+      ]
+    },
+    {
+      "dimensionId": "sincerity-ikhlas",
+      "dimensionName": "Sincerity & Ikhlas",
+      "dimensionSideTopicCount": 5,
+      "historicalMfd091TopicCount": 6,
+      "historicalMfd091TopicCountFromDimFile": 5,
+      "historicalMfd091TopicCountFromTopicFile": 2,
+      "missingTopicIds": [
+        "hidden-shirk",
+        "ikhlas-definition",
+        "intention-purification",
+        "sincerity-in-worship"
+      ],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": [
+        "ikhlas-sincerity"
+      ]
+    },
+    {
+      "dimensionId": "intellect-reason",
+      "dimensionName": "Intellect & Reason",
+      "dimensionSideTopicCount": 5,
+      "historicalMfd091TopicCount": 7,
+      "historicalMfd091TopicCountFromDimFile": 5,
+      "historicalMfd091TopicCountFromTopicFile": 6,
+      "missingTopicIds": [
+        "reason-vs-revelation"
+      ],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 6,
+      "unexpectedTopicRefs": [
+        "knowledge-ignorance",
+        "signs-and-reflection"
+      ]
+    },
+    {
+      "dimensionId": "personal-development",
+      "dimensionName": "Personal Development",
+      "dimensionSideTopicCount": 6,
+      "historicalMfd091TopicCount": 7,
+      "historicalMfd091TopicCountFromDimFile": 6,
+      "historicalMfd091TopicCountFromTopicFile": 3,
+      "missingTopicIds": [
+        "continuous-improvement",
+        "discipline",
+        "goal-setting",
+        "habit-formation"
+      ],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 3,
+      "unexpectedTopicRefs": [
+        "trial-and-test"
+      ]
+    },
+    {
+      "dimensionId": "human-rights",
+      "dimensionName": "Human Rights",
+      "dimensionSideTopicCount": 5,
+      "historicalMfd091TopicCount": 6,
+      "historicalMfd091TopicCountFromDimFile": 5,
+      "historicalMfd091TopicCountFromTopicFile": 2,
+      "missingTopicIds": [
+        "justice-for-all",
+        "right-to-dignity",
+        "universal-rights",
+        "vulnerable-protection"
+      ],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 2,
+      "unexpectedTopicRefs": [
+        "justice-oppression"
+      ]
+    },
+    {
+      "dimensionId": "quranic-vocabulary",
+      "dimensionName": "Quranic Vocabulary",
+      "dimensionSideTopicCount": 5,
+      "historicalMfd091TopicCount": 6,
+      "historicalMfd091TopicCountFromDimFile": 5,
+      "historicalMfd091TopicCountFromTopicFile": 1,
+      "missingTopicIds": [
+        "key-terms",
+        "quranic-concepts",
+        "semantic-fields",
+        "terminology-study",
+        "word-roots"
+      ],
+      "resolution": "DOCUMENTED — REQUIRES HUMAN TAXONOMY DECISION",
+      "rootCause": "dimensions.json topicIds and topics.json parentDimensionId disagree. Missing ids are unimplemented references; unexpected refs are real topics absent from the dimension list. The historical MFD-09.1 topicCount matches neither side independently.",
+      "topicSideTopicCount": 1,
+      "unexpectedTopicRefs": [
+        "quranic-vocabulary"
+      ]
+    }
+  ],
+  "topicSideDistribution": {
+    "FIVE_OR_MORE_TOPICS": 11,
+    "ONE_TOPIC": 26,
+    "THREE_TO_FOUR_TOPICS": 14,
+    "TWO_TOPICS": 21,
+    "ZERO_TOPICS": 31
+  },
+  "upstreamFlagMeaning": "validationPassed:false in data/audit/mfd-09-2-taxonomy-integrity.json records that known data-integrity issues exist (phantom references, bidirectional asymmetry, cross-report inconsistencies). It is NOT the exit status of scripts/validate-mfd-09-2.mjs.",
+  "upstreamValidationPassedFlag": false
+}

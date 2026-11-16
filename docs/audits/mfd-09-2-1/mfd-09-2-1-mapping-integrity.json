@@ -1,0 +1,58 @@
+{
+  "auditId": "MFD-09.2.1-MAPPING",
+  "derivedVerdictDistribution": {
+    "ACCEPT_AS_DIRECT": 661,
+    "ACCEPT_AS_THEMATIC": 128
+  },
+  "duplicateMappingIds": [],
+  "duplicateOccurrenceCount": 7,
+  "evidenceIntegrity": {
+    "distinctSourceIdSets": [
+      "quran-json"
+    ],
+    "pendingScholarlyReviewCount": 789,
+    "quranTextCount": 789,
+    "scholarReviewedCount": 0,
+    "tafsirAttachedCount": 0,
+    "tafsirVerifiedCount": 0,
+    "translationSupportedCount": 789
+  },
+  "expandedOccurrences": 1886,
+  "historicalAuditComparison": {
+    "agreesWithRecomputation": true,
+    "expandedOccurrences": 1886,
+    "file": "data/audit/mfd-09-2-mapping-integrity.json",
+    "maxOverlap": 6,
+    "multiTopicAyat": 230,
+    "multiTopicAyatRaw": 236,
+    "threePlusTopicAyat": 74,
+    "totalRecords": 789,
+    "uniqueAyat": 1550
+  },
+  "invalidRanges": [],
+  "mappingTypeDistribution": {
+    "DIRECT_REFERENCE": 468,
+    "EXPLICIT_INSTRUCTION": 115,
+    "PROPHETIC_NARRATIVE": 78,
+    "THEMATIC_REFERENCE": 128
+  },
+  "maxOverlap": 6,
+  "multiTopicAyat": 230,
+  "provenanceDistribution": {
+    "pending-scholarly-review": 789
+  },
+  "recordsCarryingAnAuditVerdictField": 0,
+  "schemaVersion": "1.0.0",
+  "sourceFile": "data/taxonomy/topic-ayah-mappings.json",
+  "sourceIdDistribution": {
+    "quran-json": 789
+  },
+  "sourceSha256": "3CA33A47925E25E1BA282E28D3C3212F9654CE2DC897BA0A4150EB974D2C2CED",
+  "statusDistribution": {
+    "MAPPED": 789
+  },
+  "threePlusTopicAyat": 74,
+  "totalRecords": 789,
+  "uniqueAyat": 1550,
+  "verdictProvenanceNote": "No mapping record carries an auditVerdict/verdict field. The 661/128 split is DERIVED from mappingType (DIRECT_REFERENCE + EXPLICIT_INSTRUCTION + PROPHETIC_NARRATIVE = ACCEPT_AS_DIRECT; THEMATIC_REFERENCE = ACCEPT_AS_THEMATIC). It is a technical derivation, not a stored scholarly verdict."
+}
