@@ -1,0 +1,1038 @@
+﻿{
+    "branch":  "main",
+    "dimensions":  [
+                       {
+                           "id":  "allah-divine-attributes",
+                           "title":  "Allah \u0026 Divine Attributes",
+                           "parentDomainId":  "belief-theology",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  7,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "tawheed-oneness",
+                           "title":  "Tawheed \u0026 Oneness",
+                           "parentDomainId":  "belief-theology",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  5,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "iman-faith-pillars",
+                           "title":  "Iman \u0026 Faith Pillars",
+                           "parentDomainId":  "belief-theology",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "angels-unseen-world",
+                           "title":  "Angels \u0026 Unseen World",
+                           "parentDomainId":  "belief-theology",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  6,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "divine-decree-qadr",
+                           "title":  "Divine Decree \u0026 Qadr",
+                           "parentDomainId":  "belief-theology",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "quran-science",
+                           "title":  "Quran Sciences",
+                           "parentDomainId":  "revelation-guidance",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  5,
+                           "nonexistentTopicRefs":  1,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "sunnah-prophetic-tradition",
+                           "title":  "Sunnah \u0026 Prophetic Tradition",
+                           "parentDomainId":  "revelation-guidance",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  1,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "divine-scriptures",
+                           "title":  "Divine Scriptures",
+                           "parentDomainId":  "revelation-guidance",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "prophetic-guidance",
+                           "title":  "Prophetic Guidance",
+                           "parentDomainId":  "revelation-guidance",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "quranic-linguistics",
+                           "title":  "Quranic Linguistics",
+                           "parentDomainId":  "revelation-guidance",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "prophethood-messengership",
+                           "title":  "Prophethood \u0026 Messengership",
+                           "parentDomainId":  "prophets-narratives",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "major-prophets-stories",
+                           "title":  "Major Prophets Stories",
+                           "parentDomainId":  "prophets-narratives",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  7,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "minor-prophets",
+                           "title":  "Minor Prophets",
+                           "parentDomainId":  "prophets-narratives",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "prophetic-lessons",
+                           "title":  "Prophetic Lessons",
+                           "parentDomainId":  "prophets-narratives",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "dreams-visions",
+                           "title":  "Dreams \u0026 Visions",
+                           "parentDomainId":  "prophets-narratives",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "salah-prayer",
+                           "title":  "Salah \u0026 Prayer",
+                           "parentDomainId":  "worship-practice",
+                           "subdimensionCount":  3,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  7,
+                           "nonexistentTopicRefs":  0,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "zakat-obligatory-charity",
+                           "title":  "Zakat \u0026 Obligatory Charity",
+                           "parentDomainId":  "worship-practice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "sawm-fasting",
+                           "title":  "Sawm \u0026 Fasting",
+                           "parentDomainId":  "worship-practice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "hajj-umrah-pilgrimage",
+                           "title":  "Hajj \u0026 Umrah Pilgrimage",
+                           "parentDomainId":  "worship-practice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "purification-ritual",
+                           "title":  "Purification \u0026 Ritual",
+                           "parentDomainId":  "worship-practice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "congregational-worship",
+                           "title":  "Congregational Worship",
+                           "parentDomainId":  "worship-practice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "spiritual-states-nafs",
+                           "title":  "Spiritual States \u0026 Nafs",
+                           "parentDomainId":  "ethics-character",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "moral-virtues",
+                           "title":  "Moral Virtues",
+                           "parentDomainId":  "ethics-character",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  1
+                       },
+                       {
+                           "id":  "moral-vice",
+                           "title":  "Moral Vices",
+                           "parentDomainId":  "ethics-character",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  9,
+                           "validTopicRefs":  7,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "character-development",
+                           "title":  "Character Development",
+                           "parentDomainId":  "ethics-character",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "sincerity-ikhlas",
+                           "title":  "Sincerity \u0026 Ikhlas",
+                           "parentDomainId":  "ethics-character",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "human-creation-purpose",
+                           "title":  "Human Creation \u0026 Purpose",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  5,
+                           "nonexistentTopicRefs":  1,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "life-stages",
+                           "title":  "Life Stages",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  1,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "intellect-reason",
+                           "title":  "Intellect \u0026 Reason",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  4,
+                           "nonexistentTopicRefs":  1,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "psychology-emotions",
+                           "title":  "Psychology \u0026 Emotions",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "personal-development",
+                           "title":  "Personal Development",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "gender-cultural-experiences",
+                           "title":  "Gender \u0026 Cultural Experiences",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "marriage-nikah",
+                           "title":  "Marriage \u0026 Nikah",
+                           "parentDomainId":  "family-relationships",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  5,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "spousal-relations",
+                           "title":  "Spousal Relations",
+                           "parentDomainId":  "family-relationships",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "parenting-child-development",
+                           "title":  "Parenting \u0026 Child Development",
+                           "parentDomainId":  "family-relationships",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "parents-elderly-care",
+                           "title":  "Parents \u0026 Elderly Care",
+                           "parentDomainId":  "family-relationships",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  2,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "kinship-extended-family",
+                           "title":  "Kinship \u0026 Extended Family",
+                           "parentDomainId":  "family-relationships",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "divorce-separation",
+                           "title":  "Divorce \u0026 Separation",
+                           "parentDomainId":  "family-relationships",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  3,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "ummah-community",
+                           "title":  "Ummah \u0026 Community",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "equality-diversity",
+                           "title":  "Equality \u0026 Diversity",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "human-rights",
+                           "title":  "Human Rights",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "social-responsibility",
+                           "title":  "Social Responsibility",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "poverty-welfare",
+                           "title":  "Poverty \u0026 Welfare",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "urban-rural-media-ethics",
+                           "title":  "Urban, Rural \u0026 Media Ethics",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "trade-commerce",
+                           "title":  "Trade \u0026 Commerce",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  6,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "business-ethics",
+                           "title":  "Business Ethics",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "wealth-property",
+                           "title":  "Wealth \u0026 Property",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  1
+                       },
+                       {
+                           "id":  "finance-debt",
+                           "title":  "Finance \u0026 Debt",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "charity-giving",
+                           "title":  "Charity \u0026 Giving",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "economic-justice",
+                           "title":  "Economic Justice",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  1
+                       },
+                       {
+                           "id":  "modern-economic-issues",
+                           "title":  "Modern Economic Issues",
+                           "parentDomainId":  "economic-conduct",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "shariah-legal-principles",
+                           "title":  "Shariah \u0026 Legal Principles",
+                           "parentDomainId":  "law-obligations",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  6,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "criminal-law",
+                           "title":  "Criminal Law",
+                           "parentDomainId":  "law-obligations",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "international-law",
+                           "title":  "International Law",
+                           "parentDomainId":  "law-obligations",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "oaths-vows-covenants",
+                           "title":  "Oaths, Vows \u0026 Covenants",
+                           "parentDomainId":  "law-obligations",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "food-dietary-laws",
+                           "title":  "Food \u0026 Dietary Laws",
+                           "parentDomainId":  "law-obligations",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "animals-creation",
+                           "title":  "Animals \u0026 Creation",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  2,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  6,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "natural-resources",
+                           "title":  "Natural Resources",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  7,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  7,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "environment-balance",
+                           "title":  "Environment \u0026 Balance",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "agriculture-farming",
+                           "title":  "Agriculture \u0026 Farming",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  6,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "travel-exploration",
+                           "title":  "Travel \u0026 Exploration",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  6,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "time-seasons",
+                           "title":  "Time \u0026 Seasons",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  1
+                       },
+                       {
+                           "id":  "human-biology-ecology",
+                           "title":  "Human Biology \u0026 Ecology",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  4,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "resurrection-judgment",
+                           "title":  "Resurrection \u0026 Judgment",
+                           "parentDomainId":  "eschatology-afterlife",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "paradise-jannah",
+                           "title":  "Paradise \u0026 Jannah",
+                           "parentDomainId":  "eschatology-afterlife",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "hell-jahannam",
+                           "title":  "Hell \u0026 Jahannam",
+                           "parentDomainId":  "eschatology-afterlife",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "signs-of-hour",
+                           "title":  "Signs of the Hour",
+                           "parentDomainId":  "eschatology-afterlife",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "death-dying",
+                           "title":  "Death \u0026 Dying",
+                           "parentDomainId":  "eschatology-afterlife",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "people-of-book",
+                           "title":  "People of the Book",
+                           "parentDomainId":  "interfaith-communities",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  1
+                       },
+                       {
+                           "id":  "religious-communities",
+                           "title":  "Religious Communities",
+                           "parentDomainId":  "interfaith-communities",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "interfaith-dialogue",
+                           "title":  "Interfaith Dialogue",
+                           "parentDomainId":  "interfaith-communities",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "quranic-arabic",
+                           "title":  "Quranic Arabic",
+                           "parentDomainId":  "language-vocabulary",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  1
+                       },
+                       {
+                           "id":  "linguistics-eloquence",
+                           "title":  "Linguistics \u0026 Eloquence",
+                           "parentDomainId":  "language-vocabulary",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "quranic-vocabulary",
+                           "title":  "Quranic Vocabulary",
+                           "parentDomainId":  "language-vocabulary",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "physical-health",
+                           "title":  "Physical Health",
+                           "parentDomainId":  "health-medicine",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "mental-wellbeing",
+                           "title":  "Mental Wellbeing",
+                           "parentDomainId":  "health-medicine",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "healing-medicine",
+                           "title":  "Healing \u0026 Medicine",
+                           "parentDomainId":  "health-medicine",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "body-as-trust",
+                           "title":  "Body as Trust",
+                           "parentDomainId":  "health-medicine",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "khalifah-stewardship",
+                           "title":  "Khalifah \u0026 Stewardship",
+                           "parentDomainId":  "environment-stewardship",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "fasad-prohibition",
+                           "title":  "Fasad Prohibition",
+                           "parentDomainId":  "environment-stewardship",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "mizan-balance",
+                           "title":  "Mizan \u0026 Balance",
+                           "parentDomainId":  "environment-stewardship",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "environmental-protection",
+                           "title":  "Environmental Protection",
+                           "parentDomainId":  "environment-stewardship",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  6,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "shura-consultation",
+                           "title":  "Shura \u0026 Consultation",
+                           "parentDomainId":  "governance-political-authority",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "leadership-authority",
+                           "title":  "Leadership \u0026 Authority",
+                           "parentDomainId":  "governance-political-authority",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "public-administration",
+                           "title":  "Public Administration",
+                           "parentDomainId":  "governance-political-authority",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "accountability",
+                           "title":  "Accountability",
+                           "parentDomainId":  "governance-political-authority",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "jihad-concept",
+                           "title":  "Jihad Concept",
+                           "parentDomainId":  "war-peace-conflict",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "warfare-ethics",
+                           "title":  "Warfare Ethics",
+                           "parentDomainId":  "war-peace-conflict",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  2,
+                           "nonexistentTopicRefs":  3,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "peace-treaties",
+                           "title":  "Peace Treaties",
+                           "parentDomainId":  "war-peace-conflict",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "conflict-resolution",
+                           "title":  "Conflict Resolution",
+                           "parentDomainId":  "war-peace-conflict",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "husn-beauty",
+                           "title":  "Husn \u0026 Beauty",
+                           "parentDomainId":  "arts-beauty-aesthetics",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "artistic-expression",
+                           "title":  "Artistic Expression",
+                           "parentDomainId":  "arts-beauty-aesthetics",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "creativity-design",
+                           "title":  "Creativity \u0026 Design",
+                           "parentDomainId":  "arts-beauty-aesthetics",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "adornment-ethics",
+                           "title":  "Adornment \u0026 Ethics",
+                           "parentDomainId":  "arts-beauty-aesthetics",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "work-dignity",
+                           "title":  "Work Dignity",
+                           "parentDomainId":  "work-vocation",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "prophetic-professions",
+                           "title":  "Prophetic Professions",
+                           "parentDomainId":  "work-vocation",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "craftsmanship",
+                           "title":  "Craftsmanship",
+                           "parentDomainId":  "work-vocation",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "labor-rights",
+                           "title":  "Labor Rights",
+                           "parentDomainId":  "work-vocation",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  1,
+                           "nonexistentTopicRefs":  4,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "scientific-knowledge-observation",
+                           "title":  "Scientific Knowledge \u0026 Observation",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "mathematics-measurement",
+                           "title":  "Mathematics \u0026 Measurement",
+                           "parentDomainId":  "creation-signs",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "education-systems",
+                           "title":  "Education \u0026 Learning Systems",
+                           "parentDomainId":  "human-experiences",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "architecture-engineering",
+                           "title":  "Architecture \u0026 Engineering",
+                           "parentDomainId":  "arts-beauty-aesthetics",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       },
+                       {
+                           "id":  "digital-technology-ethics",
+                           "title":  "Digital Technology \u0026 Ethics",
+                           "parentDomainId":  "society-justice",
+                           "subdimensionCount":  0,
+                           "topicReferenceCount":  5,
+                           "validTopicRefs":  0,
+                           "nonexistentTopicRefs":  5,
+                           "wrongParentTopicRefs":  0
+                       }
+                   ],
+    "auditDate":  "2026-11-16",
+    "headCommit":  "9458f6091c590a460eeb1fef9fe86e13b3f4cd8e",
+    "totalDimensions":  103
+}

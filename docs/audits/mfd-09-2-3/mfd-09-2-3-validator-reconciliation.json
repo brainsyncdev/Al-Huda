@@ -1,0 +1,65 @@
+{
+  "auditId": "MFD-09.2.3",
+  "generatedAt": "2026-11-16T15:15:00+05:00",
+  "branch": "main",
+  "headCommit": "9458f6091c590a460eeb1fef9fe86e13b3f4cd8e",
+  "investigationTarget": "39-vs-80 check count discrepancy",
+  "findingClassification": "VERIFIED",
+  "explanation": {
+    "summary": "Both numbers are correct. They refer to two distinct validator scripts at different audit stages.",
+    "thirtyNineChecks": {
+      "validatorScript": "scripts/validate-mfd-09-2.mjs",
+      "resultsArtifact": "docs/audits/mfd-09-2-1/mfd-09-2-1-validator-results.json",
+      "totalChecks": 39,
+      "passed": 39,
+      "failed": 0,
+      "referencedBy": "Check D07 in scripts/validate-mfd-09-2-1.mjs (line 208)",
+      "context": "D07 is a meta-check verifying the older MFD-09.2 validator results artifact records exactly 39 checks. It does NOT claim the current validator has 39 checks."
+    },
+    "eightyChecks": {
+      "validatorScript": "scripts/validate-mfd-09-2-1.mjs",
+      "resultsArtifact": "docs/audits/mfd-09-2-2/mfd-09-2-2-validator-results.json",
+      "totalChecks": 80,
+      "passed": 80,
+      "failed": 0,
+      "warnings": 0,
+      "verifiedBy": "MFD-09.2.2 validator-exec-auditor",
+      "groups": [
+        { "name": "Mapping Integrity", "ids": "M01-M15", "count": 15 },
+        { "name": "Evidence and Scholarly Status", "ids": "E01-E08", "count": 8 },
+        { "name": "Taxonomy Integrity", "ids": "T01-T15", "count": 15 },
+        { "name": "Phantom References", "ids": "P01-P09", "count": 9 },
+        { "name": "Relationships and Proposals", "ids": "R01-R04,Q01-Q07", "count": 11 },
+        { "name": "Report-to-JSON Agreement", "ids": "D01-D08", "count": 8 },
+        { "name": "Deterministic Generation", "ids": "G01-G04", "count": 4 },
+        { "name": "Production Protection", "ids": "X01-X10", "count": 10 }
+      ]
+    }
+  },
+  "questionsAnswered": {
+    "whyDoesD07Mention39": "D07 verifies the older MFD-09.2 validator results JSON records 39 checks — a meta-check on a historical artifact",
+    "whyDoesJsonRecord80": "The current MFD-09.2.1 validator contains 80 check()/warn() calls, independently verified",
+    "areBothFromDifferentValidators": true,
+    "were80ChecksActuallyExecuted": true,
+    "doesValidatorCoverAllCanonicalDimensions": true
+  },
+  "defectAssessment": {
+    "isReportingDefect": false,
+    "isValidatorDefect": false,
+    "isDataIntegrityFailure": false,
+    "isInsufficientEvidence": false,
+    "finalClassification": "VERIFIED"
+  },
+  "inventorySummary": {
+    "totalReferencesScanned": 549,
+    "classificationCounts": {
+      "VALID": 170,
+      "NONEXISTENT": 370,
+      "WRONG_PARENT": 5,
+      "NAMESPACE_COLLISION_DIMENSION": 3,
+      "NAMESPACE_COLLISION_SUBDIMENSION": 1,
+      "NAMESPACE_COLLISION_DOMAIN": 0
+    },
+    "countsSumToTotal": true
+  }
+}

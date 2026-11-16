@@ -1,0 +1,15 @@
+﻿{
+    "auditId":  "MFD-09.2.3",
+    "generatedAt":  "2026-11-16T15:10:12.2494202+05:00",
+    "totalReferencesScanned":  549,
+    "classificationCounts":  {
+                                 "NAMESPACE_COLLISION_DIMENSION":  3,
+                                 "WRONG_PARENT":  5,
+                                 "NAMESPACE_COLLISION_DOMAIN":  0,
+                                 "NAMESPACE_COLLISION_SUBDIMENSION":  1,
+                                 "VALID":  170,
+                                 "NONEXISTENT":  370
+                             },
+    "countsSumCheck":  549,
+    "countsMatchTotal":  true
+}

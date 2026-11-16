@@ -1,0 +1,72 @@
+﻿{
+    "generated_at":  "2026-11-16T15:18:40.5985536+05:00",
+    "artifacts":  [
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/inventory-summary.json",
+                          "sha256":  "51F1946E30448AAFB54E6C35B36E2C4D8CEC4FBA150D7F2AEBAC827F453CAB69",
+                          "bytes":  630
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/mfd-09-2-3-all-topic-references.json",
+                          "sha256":  "7D21DBD5A0A87FCFCF9887E48D334EFB7BBC7A233F026761D287A0D8F13B0662",
+                          "bytes":  231039
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/MFD-09-2-3-BASELINE.md",
+                          "sha256":  "473EFB38E8285D9EA2A388CC93C68B2104F9980B341BA3DA00B2CF6E070A6374",
+                          "bytes":  2610
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/mfd-09-2-3-dimension-inventory.json",
+                          "sha256":  "64B0011AFB7AC7D79B9B912AA66F53048976C0F91C2C1D9EB2AB86F3ECB016C1",
+                          "bytes":  52865
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/MFD-09-2-3-DIMENSION-SCOPE-REPORT.md",
+                          "sha256":  "421A43F5E32B8CB1E6B73751E9535C80E4189D10DD8630B3E200F5AF754E0F29",
+                          "bytes":  5645
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/MFD-09-2-3-FINAL-RECONCILIATION-REPORT.md",
+                          "sha256":  "283369F4C10FD86296941451349950FA806DDD119AB4A27FBA7F2ECEEC2444A8",
+                          "bytes":  10153
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/MFD-09-2-3-FULL-PHANTOM-REFERENCE-REPORT.md",
+                          "sha256":  "2BA198220A0910C789A2F0E63E9A520558ABC943ECA9BE6AAE6B732C26F6A69F",
+                          "bytes":  7709
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/mfd-09-2-3-phantom-reference-full-list.json",
+                          "sha256":  "9E6B81033DC3F02D9A16C21B80C5C2CF4164E1D2EB6A2060193B6DC68A493C32",
+                          "bytes":  154867
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/mfd-09-2-3-subdimension-reconciliation.json",
+                          "sha256":  "F8B144F5713D01FF5059956F4B570244A87F78DF5EDD295334FC76714CBCC792",
+                          "bytes":  44626
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/MFD-09-2-3-SUBDIMENSION-RECONCILIATION.md",
+                          "sha256":  "AAED03FE3EFAD5A5F29D604997F1EDE6E5D2CAF91EE30DCB73E37229DFA3F17D",
+                          "bytes":  3302
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/MFD-09-2-3-VALIDATOR-INTEGRITY-REPORT.md",
+                          "sha256":  "0E72A701BD2EF755E5F2C654A32E716D80C178205A3CC18AD4526B13410DA397",
+                          "bytes":  4126
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/mfd-09-2-3-validator-reconciliation.json",
+                          "sha256":  "7FB7496A77E2F63F643257F9FDDF779A52AAB8F847FCBF3868B7DA5E324FA67C",
+                          "bytes":  2821
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-3/run-inventory.ps1",
+                          "sha256":  "6AA617AC686FE6B2C05775EC4F80F51794D7EA51FAFD35D01FA14C452035694F",
+                          "bytes":  4678
+                      }
+                  ],
+    "commit":  "9458f6091c590a460eeb1fef9fe86e13b3f4cd8e",
+    "audit_id":  "MFD-09-2.3"
+}
