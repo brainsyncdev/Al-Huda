@@ -25,8 +25,10 @@ import {
   getCanonicalDomain,
   getCanonicalDimension,
   getCanonicalSubdimension,
+  getRelationshipsFor,
   type CanonicalTopic,
 } from "@/lib/taxonomy/canonical-adapter";
+import { TopicTafsirViewer } from "@/components/taxonomy/topic-tafsir-viewer";
 import { getTopic, TOPICS, RELATION_TYPE_LABELS } from "@/lib/topics/data";
 import {
   getAllDimensionsForTopic,
@@ -197,13 +199,13 @@ async function CanonicalTopicView({ topic }: { topic: CanonicalTopic }) {
               Explore
             </Link>
           </li>
-          <li aria-hidden>·</li>
+          <li aria-hidden>/</li>
           <li>
             <Link href="/explore/topics" className="hover:text-primary transition-colors">
               Topics
             </Link>
           </li>
-          <li aria-hidden>·</li>
+          <li aria-hidden>/</li>
           <li className="text-foreground">{topic.title}</li>
         </ol>
       </nav>
@@ -369,25 +371,56 @@ async function CanonicalTopicView({ topic }: { topic: CanonicalTopic }) {
       )}
 
       {/* Related Topics */}
-      {relatedTopics.length > 0 && (
-        <section aria-labelledby="related-topics" className="space-y-3">
-          <h2 id="related-topics" className="font-display text-lg font-semibold tracking-tight">
-            Related Topics
-          </h2>
-          <div className="flex flex-wrap gap-2">
-            {relatedTopics.map((relatedTopic: CanonicalTopic) => (
-              <Link key={relatedTopic.id} href={`/explore/topics/${relatedTopic.id}`} className="inline-flex items-center gap-1.5 rounded-full bg-secondary/60 px-3 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary">
-                {relatedTopic.title}
-                {relatedTopic.arabicTitle && (
-                  <span className="arabic-display text-xs" lang="ar" dir="rtl" aria-hidden>
-                    {relatedTopic.arabicTitle}
-                  </span>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+      {relatedTopics.length > 0 && (() => {
+        // Build a lookup of relationship types for this topic's outgoing edges
+        const relationships = getRelationshipsFor(topic.id);
+        const relTypeByTarget = new Map<string, string>();
+        for (const rel of relationships) {
+          if (rel.sourceId === topic.id) {
+            relTypeByTarget.set(rel.targetId, rel.type);
+          } else if (rel.targetId === topic.id) {
+            relTypeByTarget.set(rel.sourceId, rel.type);
+          }
+        }
+        const REL_LABELS: Record<string, string> = {
+          CONTAINS: "contains",
+          BELONGS_TO: "belongs to",
+          RELATED_TO: "related to",
+          CROSS_REFERENCES: "cross-references",
+          SHARES_CONCEPT: "shares concept",
+        };
+        return (
+          <section aria-labelledby="related-topics" className="space-y-3">
+            <h2 id="related-topics" className="font-display text-lg font-semibold tracking-tight">
+              Related Topics
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {relatedTopics.map((relatedTopic: CanonicalTopic) => {
+                const relType = relTypeByTarget.get(relatedTopic.id);
+                const relLabel = relType ? REL_LABELS[relType] ?? relType.replace(/_/g, " ") : null;
+                return (
+                  <Link key={relatedTopic.id} href={`/explore/topics/${relatedTopic.id}`} className="group inline-flex items-center gap-1.5 rounded-full bg-secondary/60 px-3 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary">
+                    {relLabel && (
+                      <span className="text-[0.625rem] font-normal uppercase tracking-wider text-muted-foreground group-hover:text-secondary-foreground/80">
+                        {relLabel}
+                      </span>
+                    )}
+                    {relatedTopic.title}
+                    {relatedTopic.arabicTitle && (
+                      <span className="arabic-display text-xs" lang="ar" dir="rtl" aria-hidden>
+                        {relatedTopic.arabicTitle}
+                      </span>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* Tafsir References */}
+      <TopicTafsirViewer topicId={topic.id} title={topic.title} />
 
       {/* Related Arabic Roots */}
       {relatedRoots.length > 0 && (
@@ -512,13 +545,13 @@ async function LegacyTopicView({ topic }: { topic: typeof TOPICS[number] }) {
               Explore
             </Link>
           </li>
-          <li aria-hidden>·</li>
+          <li aria-hidden>/</li>
           <li>
             <Link href="/topics" className="hover:text-primary transition-colors">
               Topics
             </Link>
           </li>
-          <li aria-hidden>·</li>
+          <li aria-hidden>/</li>
           <li className="text-foreground">{topic.title}</li>
         </ol>
       </nav>

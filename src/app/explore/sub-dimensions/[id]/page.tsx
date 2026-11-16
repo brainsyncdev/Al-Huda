@@ -98,7 +98,7 @@ export default async function SubdimensionPage({ params }: Props) {
               Explore
             </Link>
           </li>
-          <li aria-hidden>·</li>
+          <li aria-hidden>/</li>
           <li>
             <Link
               href="/explore/domains"
@@ -109,7 +109,7 @@ export default async function SubdimensionPage({ params }: Props) {
           </li>
           {domain && domainPath && (
             <>
-              <li aria-hidden>·</li>
+              <li aria-hidden>/</li>
               <li>
                 <Link
                   href={domainPath}
@@ -122,7 +122,7 @@ export default async function SubdimensionPage({ params }: Props) {
           )}
           {dimension && dimensionPath && (
             <>
-              <li aria-hidden>·</li>
+              <li aria-hidden>/</li>
               <li>
                 <Link
                   href={dimensionPath}
@@ -133,7 +133,7 @@ export default async function SubdimensionPage({ params }: Props) {
               </li>
             </>
           )}
-          <li aria-hidden>·</li>
+          <li aria-hidden>/</li>
           <li className="text-foreground">{subdimension.title}</li>
         </ol>
       </nav>
