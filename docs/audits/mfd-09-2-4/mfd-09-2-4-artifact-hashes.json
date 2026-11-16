@@ -1,0 +1,47 @@
+﻿{
+    "generated_at":  "2026-11-16T16:24:47.3232859+05:00",
+    "artifacts":  [
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/classify-references.mjs",
+                          "sha256":  "9AB10EB4E6637BA9CA3856220925D97032B95530F000038EF6E7C000842C03D7",
+                          "bytes":  11101
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/mfd-09-2-4-canonical-reference-inventory.json",
+                          "sha256":  "442B5E8185BFA73AA2C87D331EA94E061D1720BC00FC1D2985003997688F2868",
+                          "bytes":  195928
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/MFD-09-2-4-CLASSIFICATION-PRECEDENCE-REPORT.md",
+                          "sha256":  "19ED092869C08D941C5121860790DCF86B37583E271A6B44D5F544F31BF802A2",
+                          "bytes":  15686
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/mfd-09-2-4-classification-summary.json",
+                          "sha256":  "F53F832FCB3EFC485E19172F43E29C30FE5A957E2DB2E2381EC77F753BD3C014",
+                          "bytes":  3786
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/mfd-09-2-4-dimension-inventory.json",
+                          "sha256":  "F62FDEAC250CE198CA6BAEB031D560A6C227DAF51793D649C3DA0EC1A93E1002",
+                          "bytes":  21470
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/MFD-09-2-4-FINAL-CLOSURE-REPORT.md",
+                          "sha256":  "D40BC6EF33B254BDC820888C9CFC0833D7A45AEDB914DA09C53D4A2D096C4314",
+                          "bytes":  12087
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/MFD-09-2-4-HISTORICAL-SCOPE-REPORT.md",
+                          "sha256":  "21283116EBFF199066DA3453F8D2B1F0D9A95090C93D8526BDD817345CA73873",
+                          "bytes":  5653
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-4/MFD-09-2-4-VALIDATOR-AND-GIT-REPORT.md",
+                          "sha256":  "12ACBDB9CC0EC6DFE1A595677C409EC521392DB8D243E3275C49FB21F7D7BFE7",
+                          "bytes":  7549
+                      }
+                  ],
+    "commit":  "0b83f684fa429d9fc885a70dc0db6dc0a960c56e",
+    "audit_id":  "MFD-09-2.4"
+}

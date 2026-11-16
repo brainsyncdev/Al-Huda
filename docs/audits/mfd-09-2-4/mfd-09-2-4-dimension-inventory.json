@@ -1,0 +1,929 @@
+[
+  {
+    "dimensionId": "allah-divine-attributes",
+    "domainId": "belief-theology",
+    "totalRefs": 7,
+    "validCount": 7,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "tawheed-oneness",
+    "domainId": "belief-theology",
+    "totalRefs": 5,
+    "validCount": 5,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "iman-faith-pillars",
+    "domainId": "belief-theology",
+    "totalRefs": 4,
+    "validCount": 4,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "angels-unseen-world",
+    "domainId": "belief-theology",
+    "totalRefs": 6,
+    "validCount": 6,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "divine-decree-qadr",
+    "domainId": "belief-theology",
+    "totalRefs": 4,
+    "validCount": 4,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "quran-science",
+    "domainId": "revelation-guidance",
+    "totalRefs": 6,
+    "validCount": 5,
+    "nonexistentCount": 1,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "sunnah-prophetic-tradition",
+    "domainId": "revelation-guidance",
+    "totalRefs": 5,
+    "validCount": 4,
+    "nonexistentCount": 1,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "divine-scriptures",
+    "domainId": "revelation-guidance",
+    "totalRefs": 4,
+    "validCount": 2,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "prophetic-guidance",
+    "domainId": "revelation-guidance",
+    "totalRefs": 4,
+    "validCount": 2,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "quranic-linguistics",
+    "domainId": "revelation-guidance",
+    "totalRefs": 4,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "prophethood-messengership",
+    "domainId": "prophets-narratives",
+    "totalRefs": 5,
+    "validCount": 3,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "major-prophets-stories",
+    "domainId": "prophets-narratives",
+    "totalRefs": 7,
+    "validCount": 7,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "minor-prophets",
+    "domainId": "prophets-narratives",
+    "totalRefs": 7,
+    "validCount": 3,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "prophetic-lessons",
+    "domainId": "prophets-narratives",
+    "totalRefs": 4,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "dreams-visions",
+    "domainId": "prophets-narratives",
+    "totalRefs": 4,
+    "validCount": 2,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "salah-prayer",
+    "domainId": "worship-practice",
+    "totalRefs": 7,
+    "validCount": 7,
+    "nonexistentCount": 0,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "zakat-obligatory-charity",
+    "domainId": "worship-practice",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "sawm-fasting",
+    "domainId": "worship-practice",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "hajj-umrah-pilgrimage",
+    "domainId": "worship-practice",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "purification-ritual",
+    "domainId": "worship-practice",
+    "totalRefs": 5,
+    "validCount": 3,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "congregational-worship",
+    "domainId": "worship-practice",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "spiritual-states-nafs",
+    "domainId": "ethics-character",
+    "totalRefs": 6,
+    "validCount": 4,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "moral-virtues",
+    "domainId": "ethics-character",
+    "totalRefs": 7,
+    "validCount": 4,
+    "nonexistentCount": 2,
+    "wrongParentCount": 1,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "moral-vice",
+    "domainId": "ethics-character",
+    "totalRefs": 9,
+    "validCount": 7,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "character-development",
+    "domainId": "ethics-character",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "sincerity-ikhlas",
+    "domainId": "ethics-character",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "human-creation-purpose",
+    "domainId": "human-experiences",
+    "totalRefs": 6,
+    "validCount": 5,
+    "nonexistentCount": 1,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "life-stages",
+    "domainId": "human-experiences",
+    "totalRefs": 5,
+    "validCount": 4,
+    "nonexistentCount": 1,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "intellect-reason",
+    "domainId": "human-experiences",
+    "totalRefs": 5,
+    "validCount": 4,
+    "nonexistentCount": 1,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "psychology-emotions",
+    "domainId": "human-experiences",
+    "totalRefs": 6,
+    "validCount": 3,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "personal-development",
+    "domainId": "human-experiences",
+    "totalRefs": 6,
+    "validCount": 2,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "gender-cultural-experiences",
+    "domainId": "human-experiences",
+    "totalRefs": 4,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "marriage-nikah",
+    "domainId": "family-relationships",
+    "totalRefs": 7,
+    "validCount": 5,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "spousal-relations",
+    "domainId": "family-relationships",
+    "totalRefs": 6,
+    "validCount": 3,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 1
+  },
+  {
+    "dimensionId": "parenting-child-development",
+    "domainId": "family-relationships",
+    "totalRefs": 7,
+    "validCount": 2,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 1
+  },
+  {
+    "dimensionId": "parents-elderly-care",
+    "domainId": "family-relationships",
+    "totalRefs": 5,
+    "validCount": 3,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "kinship-extended-family",
+    "domainId": "family-relationships",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "divorce-separation",
+    "domainId": "family-relationships",
+    "totalRefs": 7,
+    "validCount": 3,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "ummah-community",
+    "domainId": "society-justice",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "equality-diversity",
+    "domainId": "society-justice",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "human-rights",
+    "domainId": "society-justice",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "social-responsibility",
+    "domainId": "society-justice",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "poverty-welfare",
+    "domainId": "society-justice",
+    "totalRefs": 6,
+    "validCount": 2,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "urban-rural-media-ethics",
+    "domainId": "society-justice",
+    "totalRefs": 6,
+    "validCount": 2,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "trade-commerce",
+    "domainId": "economic-conduct",
+    "totalRefs": 7,
+    "validCount": 0,
+    "nonexistentCount": 6,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 1
+  },
+  {
+    "dimensionId": "business-ethics",
+    "domainId": "economic-conduct",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "wealth-property",
+    "domainId": "economic-conduct",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 3,
+    "wrongParentCount": 1,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "finance-debt",
+    "domainId": "economic-conduct",
+    "totalRefs": 6,
+    "validCount": 2,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "charity-giving",
+    "domainId": "economic-conduct",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "economic-justice",
+    "domainId": "economic-conduct",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 3,
+    "wrongParentCount": 1,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "modern-economic-issues",
+    "domainId": "economic-conduct",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "shariah-legal-principles",
+    "domainId": "law-obligations",
+    "totalRefs": 6,
+    "validCount": 0,
+    "nonexistentCount": 6,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "criminal-law",
+    "domainId": "law-obligations",
+    "totalRefs": 7,
+    "validCount": 2,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "international-law",
+    "domainId": "law-obligations",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "oaths-vows-covenants",
+    "domainId": "law-obligations",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "food-dietary-laws",
+    "domainId": "law-obligations",
+    "totalRefs": 6,
+    "validCount": 2,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "animals-creation",
+    "domainId": "creation-signs",
+    "totalRefs": 7,
+    "validCount": 1,
+    "nonexistentCount": 6,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "natural-resources",
+    "domainId": "creation-signs",
+    "totalRefs": 7,
+    "validCount": 0,
+    "nonexistentCount": 7,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "environment-balance",
+    "domainId": "creation-signs",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 1
+  },
+  {
+    "dimensionId": "agriculture-farming",
+    "domainId": "creation-signs",
+    "totalRefs": 6,
+    "validCount": 0,
+    "nonexistentCount": 6,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "travel-exploration",
+    "domainId": "creation-signs",
+    "totalRefs": 6,
+    "validCount": 0,
+    "nonexistentCount": 6,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "time-seasons",
+    "domainId": "creation-signs",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 1,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "human-biology-ecology",
+    "domainId": "creation-signs",
+    "totalRefs": 4,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "resurrection-judgment",
+    "domainId": "eschatology-afterlife",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 2,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 1
+  },
+  {
+    "dimensionId": "paradise-jannah",
+    "domainId": "eschatology-afterlife",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "hell-jahannam",
+    "domainId": "eschatology-afterlife",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "signs-of-hour",
+    "domainId": "eschatology-afterlife",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "death-dying",
+    "domainId": "eschatology-afterlife",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "people-of-book",
+    "domainId": "interfaith-communities",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 1,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "religious-communities",
+    "domainId": "interfaith-communities",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "interfaith-dialogue",
+    "domainId": "interfaith-communities",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "quranic-arabic",
+    "domainId": "language-vocabulary",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 1
+  },
+  {
+    "dimensionId": "linguistics-eloquence",
+    "domainId": "language-vocabulary",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "quranic-vocabulary",
+    "domainId": "language-vocabulary",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "physical-health",
+    "domainId": "health-medicine",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "mental-wellbeing",
+    "domainId": "health-medicine",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "healing-medicine",
+    "domainId": "health-medicine",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "body-as-trust",
+    "domainId": "health-medicine",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "khalifah-stewardship",
+    "domainId": "environment-stewardship",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "fasad-prohibition",
+    "domainId": "environment-stewardship",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "mizan-balance",
+    "domainId": "environment-stewardship",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "environmental-protection",
+    "domainId": "environment-stewardship",
+    "totalRefs": 6,
+    "validCount": 1,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "shura-consultation",
+    "domainId": "governance-political-authority",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "leadership-authority",
+    "domainId": "governance-political-authority",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "public-administration",
+    "domainId": "governance-political-authority",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "accountability",
+    "domainId": "governance-political-authority",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "jihad-concept",
+    "domainId": "war-peace-conflict",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "warfare-ethics",
+    "domainId": "war-peace-conflict",
+    "totalRefs": 5,
+    "validCount": 2,
+    "nonexistentCount": 3,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "peace-treaties",
+    "domainId": "war-peace-conflict",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "conflict-resolution",
+    "domainId": "war-peace-conflict",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "husn-beauty",
+    "domainId": "arts-beauty-aesthetics",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "artistic-expression",
+    "domainId": "arts-beauty-aesthetics",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "creativity-design",
+    "domainId": "arts-beauty-aesthetics",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "adornment-ethics",
+    "domainId": "arts-beauty-aesthetics",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "work-dignity",
+    "domainId": "work-vocation",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "prophetic-professions",
+    "domainId": "work-vocation",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "craftsmanship",
+    "domainId": "work-vocation",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "labor-rights",
+    "domainId": "work-vocation",
+    "totalRefs": 5,
+    "validCount": 1,
+    "nonexistentCount": 4,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "scientific-knowledge-observation",
+    "domainId": "creation-signs",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "mathematics-measurement",
+    "domainId": "creation-signs",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "education-systems",
+    "domainId": "human-experiences",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "architecture-engineering",
+    "domainId": "arts-beauty-aesthetics",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  },
+  {
+    "dimensionId": "digital-technology-ethics",
+    "domainId": "society-justice",
+    "totalRefs": 5,
+    "validCount": 0,
+    "nonexistentCount": 5,
+    "wrongParentCount": 0,
+    "nsCollisionCount": 0
+  }
+]

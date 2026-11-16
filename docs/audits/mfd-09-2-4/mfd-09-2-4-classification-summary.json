@@ -1,0 +1,122 @@
+{
+  "auditId": "MFD-09.2.4",
+  "generatedAt": "2026-11-16T11:22:18.108Z",
+  "totalReferencesScanned": 549,
+  "classificationCounts": {
+    "VALID": 170,
+    "NONEXISTENT": 368,
+    "WRONG_PARENT": 5,
+    "NAMESPACE_COLLISION_DIMENSION": 5,
+    "NAMESPACE_COLLISION_SUBDIMENSION": 1,
+    "NAMESPACE_COLLISION_DOMAIN": 0
+  },
+  "countsSumCheck": 549,
+  "countsMatchTotal": true,
+  "regressionTests": {
+    "passed": 20,
+    "failed": 0,
+    "details": [
+      {
+        "test": "conflict-resolution → NS_DIMENSION (spousal-relations)",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "business-ethics → NS_DIMENSION (trade-commerce)",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "mizan-balance → NS_DIMENSION (environment-balance)",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "accountability → NS_DIMENSION (resurrection-judgment)",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "quranic-vocabulary → NS_DIMENSION (quranic-arabic)",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "child-education → NS_SUBDIMENSION (parenting-child-development)",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_SUBDIMENSION"
+      },
+      {
+        "test": "tawheed-fundamentals → VALID (allah-divine-attributes)",
+        "status": "PASS",
+        "classification": "VALID"
+      },
+      {
+        "test": "quran-interpretation-principles → NONEXISTENT (quran-science)",
+        "status": "PASS",
+        "classification": "NONEXISTENT"
+      },
+      {
+        "test": "ikhlas-sincerity → WRONG_PARENT (moral-virtues)",
+        "status": "PASS",
+        "classification": "WRONG_PARENT"
+      },
+      {
+        "test": "wealth-distribution → WRONG_PARENT (wealth-property)",
+        "status": "PASS",
+        "classification": "WRONG_PARENT"
+      },
+      {
+        "test": "worker-rights → WRONG_PARENT (economic-justice)",
+        "status": "PASS",
+        "classification": "WRONG_PARENT"
+      },
+      {
+        "test": "time-management → WRONG_PARENT (time-seasons)",
+        "status": "PASS",
+        "classification": "WRONG_PARENT"
+      },
+      {
+        "test": "interfaith-marriage → WRONG_PARENT (people-of-book)",
+        "status": "PASS",
+        "classification": "WRONG_PARENT"
+      },
+      {
+        "test": "precedence: dimension-collision absent from topics.json ≠ NONEXISTENT",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "precedence: conflict-resolution absent from topics.json ≠ NONEXISTENT",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DIMENSION"
+      },
+      {
+        "test": "precedence: subdimension-collision outranks VALID",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_SUBDIMENSION"
+      },
+      {
+        "test": "precedence: domain ID resolves to NS_DOMAIN",
+        "status": "PASS",
+        "classification": "NAMESPACE_COLLISION_DOMAIN"
+      },
+      {
+        "test": "precedence: synthetic absent ID → NONEXISTENT",
+        "status": "PASS",
+        "classification": "NONEXISTENT"
+      },
+      {
+        "test": "precedence: matching parent → VALID",
+        "status": "PASS",
+        "classification": "VALID"
+      },
+      {
+        "test": "precedence: mismatched parent → WRONG_PARENT",
+        "status": "PASS",
+        "classification": "WRONG_PARENT"
+      }
+    ]
+  },
+  "phantomCount": 368
+}
