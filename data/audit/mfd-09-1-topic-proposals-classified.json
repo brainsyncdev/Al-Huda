@@ -1,0 +1,1082 @@
+[
+    {
+        "proposedTopicId":  "arabic-language-quran",
+        "proposedName":  "Arabic Language Quran",
+        "targetDomainId":  "revelation-guidance",
+        "targetDimensionId":  "quranic-linguistics",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Arabic as Quranic language, linguistic features",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in quranic-linguistics",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "quranic-rhetoric",
+        "proposedName":  "Quranic Rhetoric",
+        "targetDomainId":  "revelation-guidance",
+        "targetDimensionId":  "quranic-linguistics",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Balaghah, rhetorical devices in Quran",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in quranic-linguistics",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "quranic-eloquence",
+        "proposedName":  "Quranic Eloquence",
+        "targetDomainId":  "revelation-guidance",
+        "targetDimensionId":  "quranic-linguistics",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Ijaz al-balaghi (linguistic miracle)",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in quranic-linguistics",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "quranic-stylistics",
+        "proposedName":  "Quranic Stylistics",
+        "targetDomainId":  "revelation-guidance",
+        "targetDimensionId":  "quranic-linguistics",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Narrative styles, literary forms",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in quranic-linguistics",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "women-in-quran",
+        "proposedName":  "Women in Quran",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "gender-cultural-experiences",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Womens roles, rights, and examples in Quran",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in gender-cultural-experiences",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "gender-equity-islam",
+        "proposedName":  "Gender Equity Islam",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "gender-cultural-experiences",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Equity vs equality, complementary roles",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in gender-cultural-experiences",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "cultural-diversity-quran",
+        "proposedName":  "Cultural Diversity Quran",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "gender-cultural-experiences",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Diversity of peoples and tribes (49:13)",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in gender-cultural-experiences",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "family-gender-dynamics",
+        "proposedName":  "Family Gender Dynamics",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "gender-cultural-experiences",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Gender roles within family structure",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in gender-cultural-experiences",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "islamic-education-principles",
+        "proposedName":  "Islamic Education Principles",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "education-systems",
+        "knowledgeCategory":  "EDITORIAL_EDUCATIONAL_CATEGORY",
+        "definition":  "Tarbiyah, talim, tadib concepts",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in education-systems",
+        "sourceRequirements":  "Scholarly sources required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  false,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "knowledge-transmission",
+        "proposedName":  "Knowledge Transmission",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "education-systems",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Isnad, teaching methods, learning ethics",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in education-systems",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "educational-institutions",
+        "proposedName":  "Educational Institutions",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "education-systems",
+        "knowledgeCategory":  "EDITORIAL_EDUCATIONAL_CATEGORY",
+        "definition":  "Madrasas, mosques as learning centers",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in education-systems",
+        "sourceRequirements":  "Scholarly sources required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  false,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "lifelong-learning-islam",
+        "proposedName":  "Lifelong Learning Islam",
+        "targetDomainId":  "human-experiences",
+        "targetDimensionId":  "education-systems",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Seek knowledge from cradle to grave",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in education-systems",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "islamic-banking",
+        "proposedName":  "Islamic Banking",
+        "targetDomainId":  "economic-conduct",
+        "targetDimensionId":  "modern-economic-issues",
+        "knowledgeCategory":  "CONTEMPORARY_APPLICATION",
+        "definition":  "Principles of Islamic finance institutions",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in modern-economic-issues",
+        "sourceRequirements":  "Scholarly sources required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  false,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "islamic-investment",
+        "proposedName":  "Islamic Investment",
+        "targetDomainId":  "economic-conduct",
+        "targetDimensionId":  "modern-economic-issues",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Shariah-compliant investment principles",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in modern-economic-issues",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "cryptocurrency-islam",
+        "proposedName":  "Cryptocurrency Islam",
+        "targetDomainId":  "economic-conduct",
+        "targetDimensionId":  "modern-economic-issues",
+        "knowledgeCategory":  "CONTEMPORARY_APPLICATION",
+        "definition":  "Digital currencies from Islamic perspective",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in modern-economic-issues",
+        "sourceRequirements":  "Scholarly sources required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  false,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "contemporary-economic-challenges",
+        "proposedName":  "Contemporary Economic Challenges",
+        "targetDomainId":  "economic-conduct",
+        "targetDimensionId":  "modern-economic-issues",
+        "knowledgeCategory":  "CONTEMPORARY_APPLICATION",
+        "definition":  "Modern economic issues (inflation, unemployment)",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in modern-economic-issues",
+        "sourceRequirements":  "Scholarly sources required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  false,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "scientific-observation-quran",
+        "proposedName":  "Scientific Observation Quran",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "scientific-knowledge-observation",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Quranic encouragement of observation",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in scientific-knowledge-observation",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "natural-phenomena-signs",
+        "proposedName":  "Natural Phenomena Signs",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "scientific-knowledge-observation",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Natural phenomena as divine signs",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in scientific-knowledge-observation",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "science-faith-harmony",
+        "proposedName":  "Science Faith Harmony",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "scientific-knowledge-observation",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Relationship between science and faith",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in scientific-knowledge-observation",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "mathematics-quran",
+        "proposedName":  "Mathematics Quran",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "mathematics-measurement",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Mathematical concepts in Quran",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in mathematics-measurement",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "measurement-divine-order",
+        "proposedName":  "Measurement Divine Order",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "mathematics-measurement",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Divine order and measurement in creation (54:49)",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in mathematics-measurement",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "human-biology-quran",
+        "proposedName":  "Human Biology Quran",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "human-biology-ecology",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Human biological creation in Quran",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in human-biology-ecology",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "human-ecology",
+        "proposedName":  "Human Ecology",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "human-biology-ecology",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Humans in ecological context",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in human-biology-ecology",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "natural-resources-islam",
+        "proposedName":  "Natural Resources Islam",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "natural-resources",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Resources as divine provision",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in natural-resources",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "resource-management",
+        "proposedName":  "Resource Management",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "natural-resources",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Islamic principles of resource use",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in natural-resources",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "agriculture-quran",
+        "proposedName":  "Agriculture Quran",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "agriculture-farming",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Farming, cultivation in Quranic context",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in agriculture-farming",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "agricultural-ethics",
+        "proposedName":  "Agricultural Ethics",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "agriculture-farming",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Ethical farming, land use",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in agriculture-farming",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "travel-quran",
+        "proposedName":  "Travel Quran",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "travel-exploration",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Travel, journeying in Quran",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in travel-exploration",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "exploration-discovery",
+        "proposedName":  "Exploration Discovery",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "travel-exploration",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Exploration as seeking Allahs bounty",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in travel-exploration",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "time-quran",
+        "proposedName":  "Time Quran",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "time-seasons",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Time as divine creation, swearing by time",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in time-seasons",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "seasons-calendars",
+        "proposedName":  "Seasons Calendars",
+        "targetDomainId":  "creation-signs",
+        "targetDimensionId":  "time-seasons",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Seasons, lunar calendar in Islam",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in time-seasons",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "death-islam",
+        "proposedName":  "Death Islam",
+        "targetDomainId":  "eschatology-afterlife",
+        "targetDimensionId":  "death-dying",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Death concept, dying with faith",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in death-dying",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "funeral-rites",
+        "proposedName":  "Funeral Rites",
+        "targetDomainId":  "eschatology-afterlife",
+        "targetDimensionId":  "death-dying",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Janazah, burial rites",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in death-dying",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "barzakh",
+        "proposedName":  "Barzakh",
+        "targetDomainId":  "eschatology-afterlife",
+        "targetDimensionId":  "death-dying",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Intermediate state between death and resurrection",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in death-dying",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "soul-journey",
+        "proposedName":  "Soul Journey",
+        "targetDomainId":  "eschatology-afterlife",
+        "targetDimensionId":  "death-dying",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Souls journey after death",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in death-dying",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "jews-quran",
+        "proposedName":  "Jews Quran",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "people-of-book",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Jews in Quranic narrative",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in people-of-book",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "christians-quran",
+        "proposedName":  "Christians Quran",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "people-of-book",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Christians in Quranic narrative",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in people-of-book",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "sabians",
+        "proposedName":  "Sabians",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "people-of-book",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Sabians mentioned in Quran",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in people-of-book",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "people-of-book-rights",
+        "proposedName":  "People of Book Rights",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "people-of-book",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Rights and status of People of the Book",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in people-of-book",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "religious-pluralism-islam",
+        "proposedName":  "Religious Pluralism Islam",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "religious-communities",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Islamic perspective on religious diversity",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in religious-communities",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "religious-minorities",
+        "proposedName":  "Religious Minorities",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "religious-communities",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Protection of religious minorities",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in religious-communities",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "coexistence-principles",
+        "proposedName":  "Coexistence Principles",
+        "targetDomainId":  "interfaith-communities",
+        "targetDimensionId":  "religious-communities",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Principles of religious coexistence",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in religious-communities",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "quranic-arabic-features",
+        "proposedName":  "Quranic Arabic Features",
+        "targetDomainId":  "language-vocabulary",
+        "targetDimensionId":  "quranic-arabic",
+        "knowledgeCategory":  "QURANIC_EXPLICIT_CONCEPT",
+        "definition":  "Unique features of Quranic Arabic",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in quranic-arabic",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "arabic-language-virtue",
+        "proposedName":  "Arabic Language Virtue",
+        "targetDomainId":  "language-vocabulary",
+        "targetDimensionId":  "quranic-arabic",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Virtue of Arabic language in Islam",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in quranic-arabic",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "arabic-eloquence",
+        "proposedName":  "Arabic Eloquence",
+        "targetDomainId":  "language-vocabulary",
+        "targetDimensionId":  "linguistics-eloquence",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Balaghah, Fasahah concepts",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in linguistics-eloquence",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "linguistic-miracle",
+        "proposedName":  "Linguistic Miracle",
+        "targetDomainId":  "language-vocabulary",
+        "targetDimensionId":  "linguistics-eloquence",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Ijaz al-Quran linguistically",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in linguistics-eloquence",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "physical-health-islam",
+        "proposedName":  "Physical Health Islam",
+        "targetDomainId":  "health-medicine",
+        "targetDimensionId":  "physical-health",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Physical health in Islamic teaching",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in physical-health",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "body-care-hygiene",
+        "proposedName":  "Body Care Hygiene",
+        "targetDomainId":  "health-medicine",
+        "targetDimensionId":  "physical-health",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Hygiene, cleanliness in Islam",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in physical-health",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "body-amanah",
+        "proposedName":  "Body Amanah",
+        "targetDomainId":  "health-medicine",
+        "targetDimensionId":  "body-as-trust",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Body as trust from Allah",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in body-as-trust",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "health-ethics",
+        "proposedName":  "Health Ethics",
+        "targetDomainId":  "health-medicine",
+        "targetDimensionId":  "body-as-trust",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Ethical treatment of body",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in body-as-trust",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "creativity-islam",
+        "proposedName":  "Creativity Islam",
+        "targetDomainId":  "arts-beauty-aesthetics",
+        "targetDimensionId":  "creativity-design",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Creativity as divine attribute reflection",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in creativity-design",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "design-principles-islam",
+        "proposedName":  "Design Principles Islam",
+        "targetDomainId":  "arts-beauty-aesthetics",
+        "targetDimensionId":  "creativity-design",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Islamic design principles",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in creativity-design",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "adornment-islam",
+        "proposedName":  "Adornment Islam",
+        "targetDomainId":  "arts-beauty-aesthetics",
+        "targetDimensionId":  "adornment-ethics",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Adornment, beautification in Islam",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in adornment-ethics",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "dress-ethics",
+        "proposedName":  "Dress Ethics",
+        "targetDomainId":  "arts-beauty-aesthetics",
+        "targetDimensionId":  "adornment-ethics",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Islamic dress code, modesty",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in adornment-ethics",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "islamic-architecture",
+        "proposedName":  "Islamic Architecture",
+        "targetDomainId":  "arts-beauty-aesthetics",
+        "targetDimensionId":  "architecture-engineering",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Mosque architecture, Islamic design",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in architecture-engineering",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "engineering-ethics",
+        "proposedName":  "Engineering Ethics",
+        "targetDomainId":  "arts-beauty-aesthetics",
+        "targetDimensionId":  "architecture-engineering",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Ethical engineering, construction",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in architecture-engineering",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "prophet-occupations",
+        "proposedName":  "Prophet Occupations",
+        "targetDomainId":  "work-vocation",
+        "targetDimensionId":  "prophetic-professions",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Professions of prophets (shepherd, merchant, etc.)",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in prophetic-professions",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "prophetic-work-ethics",
+        "proposedName":  "Prophetic Work Ethics",
+        "targetDomainId":  "work-vocation",
+        "targetDimensionId":  "prophetic-professions",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Work ethics from prophetic example",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in prophetic-professions",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "craftsmanship-islam",
+        "proposedName":  "Craftsmanship Islam",
+        "targetDomainId":  "work-vocation",
+        "targetDimensionId":  "craftsmanship",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Excellence in craft (itqan)",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in craftsmanship",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    },
+    {
+        "proposedTopicId":  "skills-development",
+        "proposedName":  "Skills Development",
+        "targetDomainId":  "work-vocation",
+        "targetDimensionId":  "craftsmanship",
+        "knowledgeCategory":  "QURANIC_THEMATIC_CONCEPT",
+        "definition":  "Skill development in Islam",
+        "justification":  "Proposed in MFD-09 Missing Topics Report to fill gap in craftsmanship",
+        "sourceRequirements":  "Quranic ayah mappings required",
+        "duplicateOrOverlapCandidates":  [
+
+                                         ],
+        "quranMappingAppropriate":  true,
+        "recommendation":  "ACCEPT_FOR_FUTURE_REVIEW",
+        "mergeTargets":  null,
+        "reviewStatus":  "PENDING",
+        "priority":  "P1_CRITICAL_GAP"
+    }
+]

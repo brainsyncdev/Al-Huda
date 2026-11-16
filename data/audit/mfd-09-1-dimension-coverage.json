@@ -1,0 +1,2429 @@
+[
+    {
+        "domainId":  "belief-theology",
+        "dimensionId":  "allah-divine-attributes",
+        "dimensionName":  "Allah \u0026 Divine Attributes",
+        "topicCount":  7,
+        "topicIds":  [
+                         "tawheed-fundamentals",
+                         "asma-ul-husna",
+                         "divine-unity",
+                         "divine-mercy",
+                         "divine-wrath",
+                         "divine-knowledge",
+                         "divine-power"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "divine-names",
+                                "divine-attributes-categories"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  false,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  7
+    },
+    {
+        "domainId":  "belief-theology",
+        "dimensionId":  "tawheed-oneness",
+        "dimensionName":  "Tawheed \u0026 Oneness",
+        "topicCount":  5,
+        "topicIds":  [
+                         "tawheed-rububiyyah",
+                         "tawheed-uluhiyyah",
+                         "tawheed-asma-wa-sifat",
+                         "shirk-prohibition",
+                         "tawheed-evidence"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  false,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  5
+    },
+    {
+        "domainId":  "belief-theology",
+        "dimensionId":  "iman-faith-pillars",
+        "dimensionName":  "Iman \u0026 Faith Pillars",
+        "topicCount":  4,
+        "topicIds":  [
+                         "pillars-of-iman",
+                         "faith-increase-decrease",
+                         "iman-and-amal",
+                         "certainty-yaqeen"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  false,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  4
+    },
+    {
+        "domainId":  "belief-theology",
+        "dimensionId":  "angels-unseen-world",
+        "dimensionName":  "Angels \u0026 Unseen World",
+        "topicCount":  6,
+        "topicIds":  [
+                         "angels-creation",
+                         "angelic-duties",
+                         "jibril-michael",
+                         "jinn-creation",
+                         "shaytan-enemy",
+                         "unseen-belief"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "angels-specific",
+                                "jinn-shaytan"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  false,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  6
+    },
+    {
+        "domainId":  "belief-theology",
+        "dimensionId":  "divine-decree-qadr",
+        "dimensionName":  "Divine Decree \u0026 Qadr",
+        "topicCount":  4,
+        "topicIds":  [
+                         "qadr-four-levels",
+                         "divine-wisdom",
+                         "predestination-free-will",
+                         "qadr-and-dua"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  false,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  4
+    },
+    {
+        "domainId":  "revelation-guidance",
+        "dimensionId":  "quran-science",
+        "dimensionName":  "Quran Sciences",
+        "topicCount":  6,
+        "topicIds":  [
+                         "quran-revelation-process",
+                         "quran-compilation",
+                         "quran-preservation",
+                         "tafsir-methodology",
+                         "quran-abrogation",
+                         "quran-interpretation-principles"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "quran-revelation",
+                                "quran-interpretation"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  5
+    },
+    {
+        "domainId":  "revelation-guidance",
+        "dimensionId":  "sunnah-prophetic-tradition",
+        "dimensionName":  "Sunnah \u0026 Prophetic Tradition",
+        "topicCount":  5,
+        "topicIds":  [
+                         "sunnah-definition",
+                         "hadith-authentication",
+                         "hadith-collections",
+                         "prophetic-example",
+                         "sunnah-vs-bidah"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "hadith-sciences",
+                                "sunnah-application"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  4
+    },
+    {
+        "domainId":  "revelation-guidance",
+        "dimensionId":  "divine-scriptures",
+        "dimensionName":  "Divine Scriptures",
+        "topicCount":  4,
+        "topicIds":  [
+                         "torah-psalms-gospel",
+                         "quran-final-revelation",
+                         "scripture-corruption",
+                         "belief-in-scriptures"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "revelation-guidance",
+        "dimensionId":  "prophetic-guidance",
+        "dimensionName":  "Prophetic Guidance",
+        "topicCount":  4,
+        "topicIds":  [
+                         "prophetic-methodology",
+                         "prophetic-wisdom",
+                         "following-prophets",
+                         "prophetic-miracles"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "revelation-guidance",
+        "dimensionId":  "quranic-linguistics",
+        "dimensionName":  "Quranic Linguistics",
+        "topicCount":  4,
+        "topicIds":  [
+                         "quranic-arabic-style",
+                         "quranic-rhetoric",
+                         "quranic-vocabulary-study",
+                         "linguistic-miracle"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "prophets-narratives",
+        "dimensionId":  "prophethood-messengership",
+        "dimensionName":  "Prophethood \u0026 Messengership",
+        "topicCount":  5,
+        "topicIds":  [
+                         "prophet-definition",
+                         "prophet-vs-messenger",
+                         "prophetic-qualities",
+                         "seal-of-prophethood",
+                         "prophetic-mission"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "prophets-narratives",
+        "dimensionId":  "major-prophets-stories",
+        "dimensionName":  "Major Prophets Stories",
+        "topicCount":  7,
+        "topicIds":  [
+                         "adam-story",
+                         "ibrahim-story",
+                         "musa-story",
+                         "isa-story",
+                         "muhammad-story",
+                         "nuh-story",
+                         "yunus-story"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "adam-ibrahim-musa",
+                                "isa-muhammad"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  false,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  7
+    },
+    {
+        "domainId":  "prophets-narratives",
+        "dimensionId":  "minor-prophets",
+        "dimensionName":  "Minor Prophets",
+        "topicCount":  7,
+        "topicIds":  [
+                         "idris-story",
+                         "hud-story",
+                         "salih-story",
+                         "lut-story",
+                         "shuayb-story",
+                         "dhul-kifl",
+                         "uzair-story"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "prophets-narratives",
+        "dimensionId":  "prophetic-lessons",
+        "dimensionName":  "Prophetic Lessons",
+        "topicCount":  4,
+        "topicIds":  [
+                         "patience-lessons",
+                         "trust-in-allah",
+                         "perseverance-lessons",
+                         "moral-lessons-from-prophets"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "prophets-narratives",
+        "dimensionId":  "dreams-visions",
+        "dimensionName":  "Dreams \u0026 Visions",
+        "topicCount":  4,
+        "topicIds":  [
+                         "dream-interpretation",
+                         "yusuf-dreams",
+                         "prophetic-visions",
+                         "true-vs-false-dreams"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "worship-practice",
+        "dimensionId":  "salah-prayer",
+        "dimensionName":  "Salah \u0026 Prayer",
+        "topicCount":  8,
+        "topicIds":  [
+                         "five-daily-prayers",
+                         "prayer-conditions",
+                         "prayer-acceptance",
+                         "sunnah-prayers",
+                         "night-prayer",
+                         "dua-etiquette",
+                         "dua-answers",
+                         "remembrance-forgetfulness"
+                     ],
+        "subdimensionCount":  3,
+        "subdimensionIds":  [
+                                "salah-obligatory",
+                                "salah-voluntary",
+                                "dua-supplication"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  8
+    },
+    {
+        "domainId":  "worship-practice",
+        "dimensionId":  "zakat-obligatory-charity",
+        "dimensionName":  "Zakat \u0026 Obligatory Charity",
+        "topicCount":  5,
+        "topicIds":  [
+                         "zakat-calculation",
+                         "zakat-recipients",
+                         "zakat-ul-fitr",
+                         "zakat-importance",
+                         "sadaqah-obligatory"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "worship-practice",
+        "dimensionId":  "sawm-fasting",
+        "dimensionName":  "Sawm \u0026 Fasting",
+        "topicCount":  5,
+        "topicIds":  [
+                         "ramadan-fasting",
+                         "fasting-rules",
+                         "voluntary-fasting",
+                         "fasting-benefits",
+                         "laylatul-qadr"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "worship-practice",
+        "dimensionId":  "hajj-umrah-pilgrimage",
+        "dimensionName":  "Hajj \u0026 Umrah Pilgrimage",
+        "topicCount":  5,
+        "topicIds":  [
+                         "hajj-rites",
+                         "hajj-significance",
+                         "umrah-procedure",
+                         "ihram-rules",
+                         "hajj-mabrur"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "worship-practice",
+        "dimensionId":  "purification-ritual",
+        "dimensionName":  "Purification \u0026 Ritual",
+        "topicCount":  5,
+        "topicIds":  [
+                         "wudu-procedure",
+                         "ghusl-requirements",
+                         "tayammum",
+                         "ritual-purity",
+                         "cleanliness-islam"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "worship-practice",
+        "dimensionId":  "congregational-worship",
+        "dimensionName":  "Congregational Worship",
+        "topicCount":  5,
+        "topicIds":  [
+                         "congregational-prayer",
+                         "jumuah-friday-prayer",
+                         "eid-prayers",
+                         "taraweeh",
+                         "congregation-virtues"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "ethics-character",
+        "dimensionId":  "spiritual-states-nafs",
+        "dimensionName":  "Spiritual States \u0026 Nafs",
+        "topicCount":  6,
+        "topicIds":  [
+                         "nafs-ammara",
+                         "nafs-lawwama",
+                         "nafs-mutmainna",
+                         "qalb-purification",
+                         "spiritual-diseases",
+                         "tazkiyah"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "nafs-levels",
+                                "qalb-heart"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  4
+    },
+    {
+        "domainId":  "ethics-character",
+        "dimensionId":  "moral-virtues",
+        "dimensionName":  "Moral Virtues",
+        "topicCount":  11,
+        "topicIds":  [
+                         "taqwa-god-consciousness",
+                         "sabr-patience",
+                         "shukr-gratitude",
+                         "tawakkul-trust",
+                         "ikhlas-sincerity",
+                         "haya-modesty",
+                         "hilm-forbearance",
+                         "balance-moderation",
+                         "trust-responsibility",
+                         "gratitude-ingratitude",
+                         "patience-haste"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  8
+    },
+    {
+        "domainId":  "ethics-character",
+        "dimensionId":  "moral-vice",
+        "dimensionName":  "Moral Vices",
+        "topicCount":  9,
+        "topicIds":  [
+                         "anger-management",
+                         "envy-hasad",
+                         "pride-kibr",
+                         "arrogance",
+                         "greed",
+                         "backbiting",
+                         "slander",
+                         "lying",
+                         "hypocrisy"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  9,
+        "topicCountFromTopicFile":  7
+    },
+    {
+        "domainId":  "ethics-character",
+        "dimensionId":  "character-development",
+        "dimensionName":  "Character Development",
+        "topicCount":  5,
+        "topicIds":  [
+                         "prophetic-character",
+                         "character-building",
+                         "self-improvement",
+                         "moral-education",
+                         "role-models"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "ethics-character",
+        "dimensionId":  "sincerity-ikhlas",
+        "dimensionName":  "Sincerity \u0026 Ikhlas",
+        "topicCount":  6,
+        "topicIds":  [
+                         "ikhlas-definition",
+                         "sincerity-in-worship",
+                         "riya-showing-off",
+                         "intention-purification",
+                         "hidden-shirk",
+                         "ikhlas-sincerity"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "human-creation-purpose",
+        "dimensionName":  "Human Creation \u0026 Purpose",
+        "topicCount":  6,
+        "topicIds":  [
+                         "human-creation",
+                         "fitrah-nature",
+                         "khalifah-vicegerent",
+                         "human-dignity",
+                         "life-purpose",
+                         "soul-body-balance"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  5
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "life-stages",
+        "dimensionName":  "Life Stages",
+        "topicCount":  5,
+        "topicIds":  [
+                         "birth-childhood",
+                         "youth-adolescence",
+                         "adulthood-responsibility",
+                         "old-age-wisdom",
+                         "death-process"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  4
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "intellect-reason",
+        "dimensionName":  "Intellect \u0026 Reason",
+        "topicCount":  7,
+        "topicIds":  [
+                         "intellect-importance",
+                         "critical-thinking",
+                         "reflection-tafakkur",
+                         "knowledge-seeking",
+                         "reason-vs-revelation",
+                         "signs-and-reflection",
+                         "knowledge-ignorance"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  6
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "psychology-emotions",
+        "dimensionName":  "Psychology \u0026 Emotions",
+        "topicCount":  6,
+        "topicIds":  [
+                         "emotional-intelligence",
+                         "stress-management",
+                         "anxiety-relief",
+                         "grief-processing",
+                         "joy-happiness",
+                         "fear-hope-balance"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "personal-development",
+        "dimensionName":  "Personal Development",
+        "topicCount":  7,
+        "topicIds":  [
+                         "self-accountability",
+                         "time-management",
+                         "habit-formation",
+                         "discipline",
+                         "goal-setting",
+                         "continuous-improvement",
+                         "trial-and-test"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "gender-cultural-experiences",
+        "dimensionName":  "Gender \u0026 Cultural Experiences",
+        "topicCount":  4,
+        "topicIds":  [
+                         "gender-equity",
+                         "cultural-diversity",
+                         "social-roles",
+                         "cultural-practices"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "family-relationships",
+        "dimensionId":  "marriage-nikah",
+        "dimensionName":  "Marriage \u0026 Nikah",
+        "topicCount":  7,
+        "topicIds":  [
+                         "marriage-importance",
+                         "spouse-selection",
+                         "mahr-dowry",
+                         "marriage-proposal",
+                         "polygyny-conditions",
+                         "interfaith-marriage",
+                         "marriage-contract"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "marriage-preparation",
+                                "marriage-ceremony"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  5
+    },
+    {
+        "domainId":  "family-relationships",
+        "dimensionId":  "spousal-relations",
+        "dimensionName":  "Spousal Relations",
+        "topicCount":  6,
+        "topicIds":  [
+                         "spousal-love-mercy",
+                         "marital-rights",
+                         "intimacy-ethics",
+                         "chastity-modesty",
+                         "spousal-communication",
+                         "conflict-resolution"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "family-relationships",
+        "dimensionId":  "parenting-child-development",
+        "dimensionName":  "Parenting \u0026 Child Development",
+        "topicCount":  7,
+        "topicIds":  [
+                         "child-development",
+                         "child-education",
+                         "child-discipline",
+                         "righteous-offspring",
+                         "fair-treatment-children",
+                         "naming-ceremony",
+                         "orphan-care"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "child-rights",
+                                "child-education"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "family-relationships",
+        "dimensionId":  "parents-elderly-care",
+        "dimensionName":  "Parents \u0026 Elderly Care",
+        "topicCount":  5,
+        "topicIds":  [
+                         "mother-rights",
+                         "father-rights",
+                         "elderly-care",
+                         "respecting-parents",
+                         "prayer-for-parents"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "family-relationships",
+        "dimensionId":  "kinship-extended-family",
+        "dimensionName":  "Kinship \u0026 Extended Family",
+        "topicCount":  5,
+        "topicIds":  [
+                         "silat-al-rahim",
+                         "relatives-rights",
+                         "siblings-relationships",
+                         "in-laws",
+                         "extended-family-bonds"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "family-relationships",
+        "dimensionId":  "divorce-separation",
+        "dimensionName":  "Divorce \u0026 Separation",
+        "topicCount":  7,
+        "topicIds":  [
+                         "divorce-types",
+                         "khul-divorce",
+                         "faskh-annulment",
+                         "iddah-waiting",
+                         "child-custody-hadanah",
+                         "divorce-arbitration",
+                         "post-divorce-ethics"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  3
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "ummah-community",
+        "dimensionName":  "Ummah \u0026 Community",
+        "topicCount":  5,
+        "topicIds":  [
+                         "ummah-wahidah",
+                         "brotherhood-islam",
+                         "community-cohesion",
+                         "social-solidarity",
+                         "collective-responsibility"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "equality-diversity",
+        "dimensionName":  "Equality \u0026 Diversity",
+        "topicCount":  5,
+        "topicIds":  [
+                         "human-equality",
+                         "racial-equality",
+                         "gender-equity",
+                         "diversity-divine-sign",
+                         "tribes-peoples"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "human-rights",
+        "dimensionName":  "Human Rights",
+        "topicCount":  6,
+        "topicIds":  [
+                         "right-to-life",
+                         "right-to-dignity",
+                         "vulnerable-protection",
+                         "universal-rights",
+                         "justice-for-all",
+                         "justice-oppression"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "social-responsibility",
+        "dimensionName":  "Social Responsibility",
+        "topicCount":  5,
+        "topicIds":  [
+                         "community-welfare",
+                         "social-cohesion",
+                         "neighbor-rights",
+                         "friendship-ethics",
+                         "social-duty"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "poverty-welfare",
+        "dimensionName":  "Poverty \u0026 Welfare",
+        "topicCount":  6,
+        "topicIds":  [
+                         "poverty-causes",
+                         "poverty-solutions",
+                         "orphan-support",
+                         "widow-care",
+                         "traveler-assistance",
+                         "social-welfare-system"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "urban-rural-media-ethics",
+        "dimensionName":  "Urban, Rural \u0026 Media Ethics",
+        "topicCount":  6,
+        "topicIds":  [
+                         "urban-ethics",
+                         "rural-ethics",
+                         "media-responsibility",
+                         "digital-privacy",
+                         "information-ethics",
+                         "rumor-verification"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "trade-commerce",
+        "dimensionName":  "Trade \u0026 Commerce",
+        "topicCount":  7,
+        "topicIds":  [
+                         "business-ethics",
+                         "trade-principles",
+                         "entrepreneurship",
+                         "partnerships",
+                         "market-regulation",
+                         "fair-pricing",
+                         "commercial-fraud-prohibition"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "business-operations",
+                                "market-ethics"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "business-ethics",
+        "dimensionName":  "Business Ethics",
+        "topicCount":  5,
+        "topicIds":  [
+                         "honesty-business",
+                         "contract-ethics",
+                         "transparency",
+                         "fair-dealing",
+                         "business-responsibility"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "wealth-property",
+        "dimensionName":  "Wealth \u0026 Property",
+        "topicCount":  5,
+        "topicIds":  [
+                         "wealth-ownership",
+                         "property-rights",
+                         "asset-management",
+                         "wealth-distribution",
+                         "financial-transactions"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "finance-debt",
+        "dimensionName":  "Finance \u0026 Debt",
+        "topicCount":  6,
+        "topicIds":  [
+                         "riba-prohibition",
+                         "interest-free-finance",
+                         "debt-relief",
+                         "loan-ethics",
+                         "repayment-obligations",
+                         "islamic-finance"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "charity-giving",
+        "dimensionName":  "Charity \u0026 Giving",
+        "topicCount":  5,
+        "topicIds":  [
+                         "sadaqah-voluntary",
+                         "sadaqah-jariyah",
+                         "charity-virtues",
+                         "giving-ethics",
+                         "endowments-waqf"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "economic-justice",
+        "dimensionName":  "Economic Justice",
+        "topicCount":  5,
+        "topicIds":  [
+                         "wealth-distribution",
+                         "poverty-alleviation",
+                         "economic-fairness",
+                         "worker-rights",
+                         "wages-ethics"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "economic-conduct",
+        "dimensionId":  "modern-economic-issues",
+        "dimensionName":  "Modern Economic Issues",
+        "topicCount":  5,
+        "topicIds":  [
+                         "digital-economy",
+                         "cryptocurrency-ethics",
+                         "modern-banking",
+                         "globalization-impact",
+                         "sustainable-economics"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "law-obligations",
+        "dimensionId":  "shariah-legal-principles",
+        "dimensionName":  "Shariah \u0026 Legal Principles",
+        "topicCount":  6,
+        "topicIds":  [
+                         "shariah-sources",
+                         "legal-maxims",
+                         "jurisprudence-principles",
+                         "islamic-law",
+                         "fiqh-methodology",
+                         "judicial-independence"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "legal-sources",
+                                "jurisprudence"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "law-obligations",
+        "dimensionId":  "criminal-law",
+        "dimensionName":  "Criminal Law",
+        "topicCount":  7,
+        "topicIds":  [
+                         "hudud-punishments",
+                         "qisas-retaliation",
+                         "diyah-compensation",
+                         "tazir-discretionary",
+                         "evidence-standards",
+                         "criminal-categories",
+                         "restorative-justice"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "law-obligations",
+        "dimensionId":  "international-law",
+        "dimensionName":  "International Law",
+        "topicCount":  5,
+        "topicIds":  [
+                         "treaties-covenants",
+                         "diplomatic-relations",
+                         "international-agreements",
+                         "diplomatic-immunity",
+                         "treaty-obligations"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "law-obligations",
+        "dimensionId":  "oaths-vows-covenants",
+        "dimensionName":  "Oaths, Vows \u0026 Covenants",
+        "topicCount":  5,
+        "topicIds":  [
+                         "oaths-ayman",
+                         "vows-nadhr",
+                         "covenants-ahd",
+                         "promise-keeping",
+                         "covenant-breach"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "law-obligations",
+        "dimensionId":  "food-dietary-laws",
+        "dimensionName":  "Food \u0026 Dietary Laws",
+        "topicCount":  6,
+        "topicIds":  [
+                         "halal-food",
+                         "haram-food",
+                         "dietary-restrictions",
+                         "slaughter-rules",
+                         "nutrition-ethics",
+                         "food-waste-prohibition"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "animals-creation",
+        "dimensionName":  "Animals \u0026 Creation",
+        "topicCount":  7,
+        "topicIds":  [
+                         "animals-as-communities",
+                         "bird-creation",
+                         "insect-creation",
+                         "livestock-animals",
+                         "specific-animal-stories",
+                         "animal-welfare",
+                         "animal-sacrifice"
+                     ],
+        "subdimensionCount":  2,
+        "subdimensionIds":  [
+                                "specific-animals",
+                                "animal-ethics"
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "natural-resources",
+        "dimensionName":  "Natural Resources",
+        "topicCount":  7,
+        "topicIds":  [
+                         "metals-minerals",
+                         "precious-stones",
+                         "water-resources",
+                         "wind-energy",
+                         "earth-treasures",
+                         "olive-oil",
+                         "honey-production"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  7,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "environment-balance",
+        "dimensionName":  "Environment \u0026 Balance",
+        "topicCount":  5,
+        "topicIds":  [
+                         "mizan-balance",
+                         "ecological-balance",
+                         "environmental-signs",
+                         "climate-cycles",
+                         "day-night-cycles"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "agriculture-farming",
+        "dimensionName":  "Agriculture \u0026 Farming",
+        "topicCount":  6,
+        "topicIds":  [
+                         "crop-cultivation",
+                         "gardens-orchards",
+                         "rain-blessing",
+                         "harvest-seasons",
+                         "farming-ethics",
+                         "food-production"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "travel-exploration",
+        "dimensionName":  "Travel \u0026 Exploration",
+        "topicCount":  6,
+        "topicIds":  [
+                         "travel-earth",
+                         "observing-nations",
+                         "maritime-travel",
+                         "navigation",
+                         "journey-ethics",
+                         "exploration-purpose"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "time-seasons",
+        "dimensionName":  "Time \u0026 Seasons",
+        "topicCount":  5,
+        "topicIds":  [
+                         "lunar-calendar",
+                         "appointed-times",
+                         "seasonal-cycles",
+                         "time-as-trust",
+                         "time-management"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "human-biology-ecology",
+        "dimensionName":  "Human Biology \u0026 Ecology",
+        "topicCount":  4,
+        "topicIds":  [
+                         "human-body-systems",
+                         "biological-diversity",
+                         "ecological-systems",
+                         "human-nature"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "THREE_TO_FOUR_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  4,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "eschatology-afterlife",
+        "dimensionId":  "resurrection-judgment",
+        "dimensionName":  "Resurrection \u0026 Judgment",
+        "topicCount":  5,
+        "topicIds":  [
+                         "resurrection-process",
+                         "day-of-judgment",
+                         "accountability",
+                         "scales-of-justice",
+                         "judgment-scene"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "eschatology-afterlife",
+        "dimensionId":  "paradise-jannah",
+        "dimensionName":  "Paradise \u0026 Jannah",
+        "topicCount":  5,
+        "topicIds":  [
+                         "jannah-description",
+                         "paradise-levels",
+                         "eternal-bliss",
+                         "rewards-righteous",
+                         "jannah-rivers-gardens"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "eschatology-afterlife",
+        "dimensionId":  "hell-jahannam",
+        "dimensionName":  "Hell \u0026 Jahannam",
+        "topicCount":  5,
+        "topicIds":  [
+                         "jahannam-description",
+                         "hell-levels",
+                         "punishment-types",
+                         "eternal-punishment",
+                         "temporary-punishment"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "eschatology-afterlife",
+        "dimensionId":  "signs-of-hour",
+        "dimensionName":  "Signs of the Hour",
+        "topicCount":  5,
+        "topicIds":  [
+                         "minor-signs",
+                         "major-signs",
+                         "dajjal-antichrist",
+                         "return-of-isa",
+                         "end-times-events"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "eschatology-afterlife",
+        "dimensionId":  "death-dying",
+        "dimensionName":  "Death \u0026 Dying",
+        "topicCount":  5,
+        "topicIds":  [
+                         "death-process",
+                         "soul-departure",
+                         "dying-ethics",
+                         "grave-punishment-blessing",
+                         "barzakh-interim"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "interfaith-communities",
+        "dimensionId":  "people-of-book",
+        "dimensionName":  "People of the Book",
+        "topicCount":  5,
+        "topicIds":  [
+                         "jews-islam",
+                         "christians-islam",
+                         "people-of-book-status",
+                         "interfaith-marriage",
+                         "food-of-people-of-book"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "interfaith-communities",
+        "dimensionId":  "religious-communities",
+        "dimensionName":  "Religious Communities",
+        "topicCount":  5,
+        "topicIds":  [
+                         "polytheists",
+                         "atheists-agnostics",
+                         "religious-pluralism",
+                         "coexistence",
+                         "religious-minorities"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "interfaith-communities",
+        "dimensionId":  "interfaith-dialogue",
+        "dimensionName":  "Interfaith Dialogue",
+        "topicCount":  5,
+        "topicIds":  [
+                         "dialogue-principles",
+                         "respectful-engagement",
+                         "common-ground",
+                         "da\u0027wah-methods",
+                         "religious-freedom"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "language-vocabulary",
+        "dimensionId":  "quranic-arabic",
+        "dimensionName":  "Quranic Arabic",
+        "topicCount":  5,
+        "topicIds":  [
+                         "quranic-vocabulary",
+                         "arabic-grammar",
+                         "quranic-terms",
+                         "linguistic-features",
+                         "arabic-eloquence"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "language-vocabulary",
+        "dimensionId":  "linguistics-eloquence",
+        "dimensionName":  "Linguistics \u0026 Eloquence",
+        "topicCount":  5,
+        "topicIds":  [
+                         "arabic-rhetoric",
+                         "quranic-style",
+                         "linguistic-miracle",
+                         "eloquence-principles",
+                         "literary-beauty"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "language-vocabulary",
+        "dimensionId":  "quranic-vocabulary",
+        "dimensionName":  "Quranic Vocabulary",
+        "topicCount":  6,
+        "topicIds":  [
+                         "key-terms",
+                         "quranic-concepts",
+                         "terminology-study",
+                         "word-roots",
+                         "semantic-fields",
+                         "quranic-vocabulary"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "health-medicine",
+        "dimensionId":  "physical-health",
+        "dimensionName":  "Physical Health",
+        "topicCount":  5,
+        "topicIds":  [
+                         "body-care",
+                         "physical-fitness",
+                         "nutrition-health",
+                         "disease-prevention",
+                         "hygiene-practices"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "health-medicine",
+        "dimensionId":  "mental-wellbeing",
+        "dimensionName":  "Mental Wellbeing",
+        "topicCount":  5,
+        "topicIds":  [
+                         "mental-health",
+                         "stress-relief",
+                         "anxiety-management",
+                         "emotional-balance",
+                         "psychological-resilience"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "health-medicine",
+        "dimensionId":  "healing-medicine",
+        "dimensionName":  "Healing \u0026 Medicine",
+        "topicCount":  5,
+        "topicIds":  [
+                         "prophetic-medicine",
+                         "healing-prayers",
+                         "medicinal-substances",
+                         "treatment-ethics",
+                         "seeking-treatment"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "health-medicine",
+        "dimensionId":  "body-as-trust",
+        "dimensionName":  "Body as Trust",
+        "topicCount":  5,
+        "topicIds":  [
+                         "body-amanah",
+                         "self-care-duty",
+                         "avoiding-harm",
+                         "body-responsibility",
+                         "health-stewardship"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "environment-stewardship",
+        "dimensionId":  "khalifah-stewardship",
+        "dimensionName":  "Khalifah \u0026 Stewardship",
+        "topicCount":  5,
+        "topicIds":  [
+                         "khalifah-concept",
+                         "earth-stewardship",
+                         "environmental-responsibility",
+                         "creation-care",
+                         "trusteeship"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "environment-stewardship",
+        "dimensionId":  "fasad-prohibition",
+        "dimensionName":  "Fasad Prohibition",
+        "topicCount":  5,
+        "topicIds":  [
+                         "fasad-fil-ard",
+                         "environmental-corruption",
+                         "destruction-prohibition",
+                         "harm-prevention",
+                         "ecological-damage"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "environment-stewardship",
+        "dimensionId":  "mizan-balance",
+        "dimensionName":  "Mizan \u0026 Balance",
+        "topicCount":  5,
+        "topicIds":  [
+                         "mizan-concept",
+                         "ecological-balance",
+                         "natural-order",
+                         "proportional-creation",
+                         "balance-maintenance"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "environment-stewardship",
+        "dimensionId":  "environmental-protection",
+        "dimensionName":  "Environmental Protection",
+        "topicCount":  6,
+        "topicIds":  [
+                         "water-conservation",
+                         "tree-protection",
+                         "sacred-lands",
+                         "animal-welfare",
+                         "waste-reduction",
+                         "sustainable-living"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  6,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "governance-political-authority",
+        "dimensionId":  "shura-consultation",
+        "dimensionName":  "Shura \u0026 Consultation",
+        "topicCount":  5,
+        "topicIds":  [
+                         "shura-principle",
+                         "consultation-mechanism",
+                         "collective-decision",
+                         "participatory-governance",
+                         "shura-examples"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "governance-political-authority",
+        "dimensionId":  "leadership-authority",
+        "dimensionName":  "Leadership \u0026 Authority",
+        "topicCount":  5,
+        "topicIds":  [
+                         "leadership-qualities",
+                         "authority-responsibility",
+                         "just-leaders",
+                         "leadership-ethics",
+                         "authority-limits"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "governance-political-authority",
+        "dimensionId":  "public-administration",
+        "dimensionName":  "Public Administration",
+        "topicCount":  5,
+        "topicIds":  [
+                         "public-trust",
+                         "administration-ethics",
+                         "bureaucracy",
+                         "public-service",
+                         "governance-structures"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "governance-political-authority",
+        "dimensionId":  "accountability",
+        "dimensionName":  "Accountability",
+        "topicCount":  5,
+        "topicIds":  [
+                         "public-accountability",
+                         "corruption-prohibition",
+                         "transparency",
+                         "oversight-mechanisms",
+                         "anti-corruption"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "war-peace-conflict",
+        "dimensionId":  "jihad-concept",
+        "dimensionName":  "Jihad Concept",
+        "topicCount":  5,
+        "topicIds":  [
+                         "jihad-definition",
+                         "jihad-types",
+                         "greater-lesser-jihad",
+                         "jihad-conditions",
+                         "jihad-purpose"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "war-peace-conflict",
+        "dimensionId":  "warfare-ethics",
+        "dimensionName":  "Warfare Ethics",
+        "topicCount":  5,
+        "topicIds":  [
+                         "rules-of-engagement",
+                         "non-combatant-protection",
+                         "proportionality",
+                         "war-conduct",
+                         "military-ethics"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  2
+    },
+    {
+        "domainId":  "war-peace-conflict",
+        "dimensionId":  "peace-treaties",
+        "dimensionName":  "Peace Treaties",
+        "topicCount":  5,
+        "topicIds":  [
+                         "peace-agreements",
+                         "treaty-fulfillment",
+                         "ceasefire",
+                         "peace-building",
+                         "conflict-prevention"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "war-peace-conflict",
+        "dimensionId":  "conflict-resolution",
+        "dimensionName":  "Conflict Resolution",
+        "topicCount":  5,
+        "topicIds":  [
+                         "mediation",
+                         "arbitration",
+                         "reconciliation",
+                         "dispute-resolution",
+                         "peace-making"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "arts-beauty-aesthetics",
+        "dimensionId":  "husn-beauty",
+        "dimensionName":  "Husn \u0026 Beauty",
+        "topicCount":  5,
+        "topicIds":  [
+                         "husn-concept",
+                         "beauty-islam",
+                         "divine-beauty",
+                         "aesthetic-principles",
+                         "beauty-creation"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "arts-beauty-aesthetics",
+        "dimensionId":  "artistic-expression",
+        "dimensionName":  "Artistic Expression",
+        "topicCount":  5,
+        "topicIds":  [
+                         "art-boundaries",
+                         "creative-expression",
+                         "islamic-art",
+                         "calligraphy",
+                         "geometric-patterns"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "arts-beauty-aesthetics",
+        "dimensionId":  "creativity-design",
+        "dimensionName":  "Creativity \u0026 Design",
+        "topicCount":  5,
+        "topicIds":  [
+                         "creativity-islam",
+                         "design-principles",
+                         "innovation",
+                         "aesthetic-design",
+                         "functional-beauty"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "arts-beauty-aesthetics",
+        "dimensionId":  "adornment-ethics",
+        "dimensionName":  "Adornment \u0026 Ethics",
+        "topicCount":  5,
+        "topicIds":  [
+                         "modesty-adornment",
+                         "clothing-ethics",
+                         "beauty-standards",
+                         "adornment-limits",
+                         "vanity-prohibition"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "work-vocation",
+        "dimensionId":  "work-dignity",
+        "dimensionName":  "Work Dignity",
+        "topicCount":  5,
+        "topicIds":  [
+                         "work-honor",
+                         "work-worship",
+                         "work-purpose",
+                         "dignified-labor",
+                         "work-value"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "work-vocation",
+        "dimensionId":  "prophetic-professions",
+        "dimensionName":  "Prophetic Professions",
+        "topicCount":  5,
+        "topicIds":  [
+                         "prophet-as-shepherd",
+                         "prophet-as-merchant",
+                         "prophet-as-craftsman",
+                         "prophetic-examples",
+                         "noble-professions"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "work-vocation",
+        "dimensionId":  "craftsmanship",
+        "dimensionName":  "Craftsmanship",
+        "topicCount":  5,
+        "topicIds":  [
+                         "craft-excellence",
+                         "skill-development",
+                         "quality-work",
+                         "artisan-ethics",
+                         "craftsmanship-virtue"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "work-vocation",
+        "dimensionId":  "labor-rights",
+        "dimensionName":  "Labor Rights",
+        "topicCount":  5,
+        "topicIds":  [
+                         "worker-rights",
+                         "fair-wages",
+                         "workplace-ethics",
+                         "employee-treatment",
+                         "labor-justice"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  1
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "scientific-knowledge-observation",
+        "dimensionName":  "Scientific Knowledge \u0026 Observation",
+        "topicCount":  5,
+        "topicIds":  [
+                         "observation-nature",
+                         "empirical-knowledge",
+                         "natural-phenomena",
+                         "scientific-inquiry",
+                         "experimental-method"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "creation-signs",
+        "dimensionId":  "mathematics-measurement",
+        "dimensionName":  "Mathematics \u0026 Measurement",
+        "topicCount":  5,
+        "topicIds":  [
+                         "mathematical-concepts",
+                         "measurement-precision",
+                         "calculation-methods",
+                         "numerical-patterns",
+                         "proportional-relationships"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "human-experiences",
+        "dimensionId":  "education-systems",
+        "dimensionName":  "Education \u0026 Learning Systems",
+        "topicCount":  5,
+        "topicIds":  [
+                         "teaching-methods",
+                         "learning-ethics",
+                         "knowledge-transmission",
+                         "educational-institutions",
+                         "mentorship-guidance"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "arts-beauty-aesthetics",
+        "dimensionId":  "architecture-engineering",
+        "dimensionName":  "Architecture \u0026 Engineering",
+        "topicCount":  5,
+        "topicIds":  [
+                         "construction-principles",
+                         "architectural-design",
+                         "engineering-ethics",
+                         "mosque-architecture",
+                         "urban-planning"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    },
+    {
+        "domainId":  "society-justice",
+        "dimensionId":  "digital-technology-ethics",
+        "dimensionName":  "Digital Technology \u0026 Ethics",
+        "topicCount":  5,
+        "topicIds":  [
+                         "digital-privacy",
+                         "artificial-intelligence-ethics",
+                         "information-technology",
+                         "social-media-responsibility",
+                         "digital-economy-ethics"
+                     ],
+        "subdimensionCount":  0,
+        "subdimensionIds":  [
+
+                            ],
+        "coverageStatus":  "FIVE_OR_MORE_TOPICS",
+        "duplicateIdStatus":  "UNIQUE",
+        "missingReferenceStatus":  "VALID",
+        "reviewRequired":  true,
+        "topicCountFromDimFile":  5,
+        "topicCountFromTopicFile":  0
+    }
+]
