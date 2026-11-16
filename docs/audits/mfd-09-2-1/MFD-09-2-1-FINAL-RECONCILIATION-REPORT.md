@@ -4,7 +4,7 @@
 |---|---|
 | **Audit ID** | MFD-09.2.1 |
 | **Starting commit** | `a68cf79b88efc6cc625f3ca138b22906b1949e99` (branch `main`) |
-| **Ending commit** | recorded in section 9 after commit |
+| **Ending commit** | `5bce7e2dfbecbab15e4158b339d66736f578217a` (pushed to `origin/main`; ahead/behind = 0/0) |
 | **Working-tree status** | 36 pre-existing unrelated `docs/FAHM-MFD-*` deletions preserved untouched; only audit-scope files added |
 | **Subagents used** | exactly 2 — `validator-auditor`, `report-auditor`; Lead Orchestrator = `lead` |
 | **Files inspected** | 6 production taxonomy JSON, 3 audit JSON, 4 MFD-09.2 Markdown reports, `package.json`, `scripts/validate-mfd-09-2.mjs`, `scripts/validate-all.mjs`, `src/lib/ai/feature-flag.ts` |
@@ -275,7 +275,10 @@ None of these blocks technical acceptance of MFD-09.2.1. All are carried forward
 |---|---|
 | Branch | `main` |
 | Starting commit | `a68cf79b88efc6cc625f3ca138b22906b1949e99` |
-| Ending commit | see `git log -1` after this phase's commit |
+| Ending commit | `5bce7e2dfbecbab15e4158b339d66736f578217a` |
+| Commit contents | 14 files changed, 30,705 insertions(+), 0 deletions |
+| Push verification | `git rev-parse origin/main` == local HEAD; `git rev-list --left-right --count origin/main...HEAD` → `0	0` |
+| Production staged check | `git diff --cached --name-only -- data/taxonomy src` → empty before commit |
 | Added | `docs/audits/mfd-09-2-1/` (10 deliverables + 2 extra generated JSON), `scripts/generate-mfd-09-2-1-reports.mjs`, `scripts/validate-mfd-09-2-1.mjs` |
 | Modified | none outside audit scope |
 | Preserved untouched | 36 pre-existing `docs/FAHM-MFD-*` deletions (unrelated, not staged) |
