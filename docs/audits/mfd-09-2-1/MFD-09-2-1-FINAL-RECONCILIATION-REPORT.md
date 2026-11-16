@@ -4,7 +4,7 @@
 |---|---|
 | **Audit ID** | MFD-09.2.1 |
 | **Starting commit** | `a68cf79b88efc6cc625f3ca138b22906b1949e99` (branch `main`) |
-| **Ending commit** | `0afead77390f149840f31b57fcca63b0f2608123` — current `main` HEAD, pushed to `origin/main`, ahead/behind = 0/0. Deliverable commit: `5bce7e2dfbecbab15e4158b339d66736f578217a` (14 files); this follow-up commit records the Git evidence. |
+| **Ending commit** | `main` HEAD after this phase's commits, verified equal to `origin/main` (ahead/behind = 0/0). Commit chain: `5bce7e2` (14 deliverable files) → `0afead7` (Git evidence) → `6ff8cc2` (ending-commit reference correction) → final Git-evidence update. Exact hashes and verification commands are in section 9. |
 | **Working-tree status** | 36 pre-existing unrelated `docs/FAHM-MFD-*` deletions preserved untouched; only audit-scope files added |
 | **Subagents used** | exactly 2 — `validator-auditor`, `report-auditor`; Lead Orchestrator = `lead` |
 | **Files inspected** | 6 production taxonomy JSON, 3 audit JSON, 4 MFD-09.2 Markdown reports, `package.json`, `scripts/validate-mfd-09-2.mjs`, `scripts/validate-all.mjs`, `src/lib/ai/feature-flag.ts` |
@@ -275,10 +275,13 @@ None of these blocks technical acceptance of MFD-09.2.1. All are carried forward
 |---|---|
 | Branch | `main` |
 | Starting commit | `a68cf79b88efc6cc625f3ca138b22906b1949e99` |
-| Deliverable commit | `5bce7e2dfbecbab15e4158b339d66736f578217a` — 14 files changed, 30,705 insertions(+), 0 deletions |
-| Ending commit (`main` HEAD) | `0afead77390f149840f31b57fcca63b0f2608123` — 1 file changed, 5 insertions(+), 2 deletions(-); records this Git evidence |
-| Push range verified | `5bce7e2..0afead7  main -> main`, push exit 0 |
-| Push verification | `git rev-parse origin/main` == local HEAD; `git rev-list --left-right --count origin/main...HEAD` → `0	0` |
+| Commit 1 — deliverables | `5bce7e2dfbecbab15e4158b339d66736f578217a` — 14 files changed, 30,705 insertions(+), 0 deletions |
+| Commit 2 — Git evidence | `0afead77390f149840f31b57fcca63b0f2608123` — 1 file changed, 5 insertions(+), 2 deletions(-) |
+| Commit 3 — ending-commit reference correction | `6ff8cc2499f391d2b60d8ba0afc7a5bc183f1327` — 1 file changed, 4 insertions(+), 3 deletions(-) |
+| Commit 4 — final Git-evidence update | recorded by `git log -1` after this phase's last commit; this report cannot embed its own containing commit hash without a self-reference cycle |
+| Push ranges verified | `5bce7e2..0afead7  main -> main` (exit 0); `0afead7..6ff8cc2  main -> main` (exit 0); final update pushed and re-verified |
+| Push verification commands | `git fetch origin main`; `git rev-parse HEAD`; `git rev-parse origin/main`; `git rev-list --left-right --count origin/main...HEAD` → `0	0` |
+| Verification result at last check | HEAD = `6ff8cc2499f391d2b60d8ba0afc7a5bc183f1327`, `origin/main` identical, ahead/behind `0	0`, audit-scope working tree clean |
 | Production staged check | `git diff --cached --name-only -- data/taxonomy src` → empty before commit |
 | Added | `docs/audits/mfd-09-2-1/` (10 deliverables + 2 extra generated JSON), `scripts/generate-mfd-09-2-1-reports.mjs`, `scripts/validate-mfd-09-2-1.mjs` |
 | Modified | none outside audit scope |
