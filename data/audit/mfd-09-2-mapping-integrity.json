@@ -1,0 +1,144 @@
+{
+  "auditId": "MFD-09.2",
+  "auditType": "Canonical Mapping & Evidence Integrity Audit",
+  "generatedAt": "2026-11-16T10:30:00+05:00",
+  "auditor": "mfd092-mapping-auditor",
+  "sourceFile": "data/taxonomy/topic-ayah-mappings.json",
+  "auditJsonFile": "data/audit/mfd-09-1-canonical-mapping-audit.json",
+  "totalRecords": 789,
+  "expandedOccurrences": 1886,
+  "uniqueAyat": 1550,
+  "multiTopicAyat": 230,
+  "multiTopicAyatRaw": 236,
+  "multiTopicAyatNote": "230 unique-topic ayat; 236 raw count includes 7 ayat with duplicate topic assignments (same topic mapped twice to same ayah range)",
+  "threePlusTopicAyat": 74,
+  "maxOverlap": 6,
+  "invalidRanges": [],
+  "duplicateIds": [],
+  "duplicateRecords": [],
+  "duplicateTopicAssignments": [
+    {"ayah": "22:27", "topic": "hajj-rites"},
+    {"ayah": "17:23", "topic": "elderly-care"},
+    {"ayah": "22:33", "topic": "hajj-rites"},
+    {"ayah": "22:34", "topic": "hajj-rites"},
+    {"ayah": "2:184", "topic": "ramadan-fasting"},
+    {"ayah": "22:29", "topic": "hajj-rites"},
+    {"ayah": "22:28", "topic": "hajj-rites"}
+  ],
+  "verdictDistribution": {
+    "ACCEPT_AS_DIRECT": 661,
+    "ACCEPT_AS_THEMATIC": 128
+  },
+  "mappingTypeDistribution": {
+    "DIRECT_REFERENCE": 468,
+    "EXPLICIT_INSTRUCTION": 115,
+    "THEMATIC_REFERENCE": 128,
+    "PROPHETIC_NARRATIVE": 78
+  },
+  "reclassificationCandidates": [
+    {
+      "mappingId": "map-worker-rights-0729",
+      "ayah": "2:233",
+      "existsInSource": true,
+      "currentMappingType": "DIRECT_REFERENCE",
+      "auditVerdict": "ACCEPT_AS_DIRECT",
+      "recommendedMappingType": null,
+      "actualChangeMade": false,
+      "requiresHumanReview": true,
+      "reconciliationStatus": "RECONCILED"
+    },
+    {
+      "mappingId": "map-marital-rights-0480",
+      "ayah": "2:228",
+      "existsInSource": true,
+      "currentMappingType": "DIRECT_REFERENCE",
+      "auditVerdict": "ACCEPT_AS_DIRECT",
+      "recommendedMappingType": null,
+      "actualChangeMade": false,
+      "requiresHumanReview": true,
+      "reconciliationStatus": "RECONCILED"
+    },
+    {
+      "mappingId": "map-divorce-types-0514",
+      "ayah": "2:230",
+      "existsInSource": true,
+      "currentMappingType": "DIRECT_REFERENCE",
+      "auditVerdict": "ACCEPT_AS_DIRECT",
+      "recommendedMappingType": null,
+      "actualChangeMade": false,
+      "requiresHumanReview": true,
+      "reconciliationStatus": "RECONCILED"
+    },
+    {
+      "mappingId": "map-child-custody-hadanah-0519",
+      "ayah": "65:6",
+      "existsInSource": true,
+      "currentMappingType": "DIRECT_REFERENCE",
+      "auditVerdict": "ACCEPT_AS_DIRECT",
+      "recommendedMappingType": null,
+      "actualChangeMade": false,
+      "requiresHumanReview": true,
+      "reconciliationStatus": "RECONCILED"
+    },
+    {
+      "mappingId": "map-sadaqah-jariyah-0584",
+      "ayah": "57:18",
+      "existsInSource": true,
+      "currentMappingType": "DIRECT_REFERENCE",
+      "auditVerdict": "ACCEPT_AS_DIRECT",
+      "recommendedMappingType": null,
+      "actualChangeMade": false,
+      "requiresHumanReview": true,
+      "reconciliationStatus": "RECONCILED"
+    }
+  ],
+  "evidenceIntegrity": {
+    "quranTextCount": 789,
+    "translationSupportedCount": 789,
+    "tafsirAttachedCount": 0,
+    "tafsirVerifiedCount": 0,
+    "scholarReviewedCount": 0,
+    "allEvidenceSourcesValid": true,
+    "allEvidenceTypesAccurate": true,
+    "allTafsirStatusAccurate": true,
+    "allTranslationStatusAccurate": true,
+    "allReviewStatusPending": true,
+    "notes": "All 789 mappings reference only quran-json which provides text+translation but NOT tafsir. All evidence fields are internally consistent. No fabricated references detected."
+  },
+  "inconsistencies": [
+    {
+      "field": "multiTopicAyat",
+      "jsonValue": 230,
+      "markdownValue": 236,
+      "sourceFile": "docs/MFD-09-1-MAPPING-RECONCILIATION-REPORT.md",
+      "resolution": "MFD-09.1 reported raw count (236) which includes 7 ayat with duplicate topic assignments. Independent recalculation using unique topics per ayah yields 230. Both methodologies are valid but should be explicitly distinguished. Recommend using 230 (unique) as canonical and noting 236 (raw) as supplementary.",
+      "severity": "LOW"
+    },
+    {
+      "field": "multiTopicAyat",
+      "jsonValue": 230,
+      "markdownValue": 236,
+      "sourceFile": "docs/MFD-09-1-AYAH-COUNT-RECONCILIATION.md",
+      "resolution": "Same as above — AYAH-COUNT-RECONCILIATION.md also reports 236 without distinguishing methodology.",
+      "severity": "LOW"
+    },
+    {
+      "field": "multiTopicAyat",
+      "jsonValue": 230,
+      "markdownValue": 236,
+      "sourceFile": "docs/MFD-09-1-AYAH-OVERLAP-AUDIT.md",
+      "resolution": "Same as above — AYAH-OVERLAP-AUDIT.md also reports 236 without distinguishing methodology.",
+      "severity": "LOW"
+    },
+    {
+      "field": "duplicateTopicAssignments",
+      "jsonValue": "7 ayat with duplicate topic assignments detected",
+      "markdownValue": "Not mentioned in any MFD-09.1 report",
+      "sourceFile": "ALL MFD-09.1 REPORTS",
+      "resolution": "7 ayat have the same topic mapped twice to the same ayah range (e.g., hajj-rites appears twice for 22:27). These inflate raw multi-topic counts. Should be deduplicated or explicitly documented.",
+      "severity": "MEDIUM"
+    }
+  ],
+  "validationPassed": true,
+  "validationNotes": "All core statistics verified against source data. One methodological discrepancy identified (multi-topic counting methodology) — not a data corruption issue but requires documentation clarity. Evidence integrity is fully consistent. No fabricated scholarly approvals. All 5 reclassification candidates confirmed present and unreclassified pending human review."
+}
