@@ -1,0 +1,121 @@
+{
+  "auditId": "MFD-09.2.2",
+  "date": "2026-11-16",
+  "auditor": "Subagent 2 — Report, Taxonomy & Git Integrity Auditor",
+  "branch": "main",
+  "headCommit": "455d286556072a6291fa544ea599daf799bfe811",
+  "provenanceCorrection": {
+    "correctSource": "data/taxonomy/dimensions.json → topicIds → data/taxonomy/topics.json",
+    "incorrectPriorAttribution": "topic-ayah-mappings.json",
+    "note": "Phantom references are dimension-to-topic reference integrity findings, NOT ayah mapping issues."
+  },
+  "summary": {
+    "totalDimensionsScanned": 92,
+    "totalDimensionTopicReferences": 549,
+    "validReferences": 173,
+    "nonexistentCount": 368,
+    "wrongParentCount": 6,
+    "namespaceCollisionDimensionCount": 2,
+    "namespaceCollisionSubdimensionCount": 0,
+    "namespaceCollisionDomainCount": 0,
+    "totalFlagged": 376,
+    "categoriesMutuallyExclusive": true,
+    "reconciliationAgainstClaimed": {
+      "claimedNonexistent": 368,
+      "actualNonexistent": 368,
+      "match": true,
+      "claimedNamespaceCollisions": 2,
+      "actualNamespaceCollisions": 2,
+      "collisionMatch": true,
+      "claimedWrongParent": 6,
+      "actualWrongParent": 6,
+      "wrongParentMatch": true
+    }
+  },
+  "wrongParentRecords": [
+    {
+      "dimensionId": "moral-virtues",
+      "topicId": "ikhlas-sincerity",
+      "expectedParentDimensionId": "moral-virtues",
+      "actualParentDimensionId": "sincerity-ikhlas"
+    },
+    {
+      "dimensionId": "wealth-property",
+      "topicId": "wealth-distribution",
+      "expectedParentDimensionId": "wealth-property",
+      "actualParentDimensionId": "economic-justice"
+    },
+    {
+      "dimensionId": "economic-justice",
+      "topicId": "worker-rights",
+      "expectedParentDimensionId": "economic-justice",
+      "actualParentDimensionId": "labor-rights"
+    },
+    {
+      "dimensionId": "time-seasons",
+      "topicId": "time-management",
+      "expectedParentDimensionId": "time-seasons",
+      "actualParentDimensionId": "personal-development"
+    },
+    {
+      "dimensionId": "people-of-book",
+      "topicId": "interfaith-marriage",
+      "expectedParentDimensionId": "people-of-book",
+      "actualParentDimensionId": "marriage-nikah"
+    },
+    {
+      "dimensionId": "quranic-arabic",
+      "topicId": "quranic-vocabulary",
+      "expectedParentDimensionId": "quranic-arabic",
+      "actualParentDimensionId": "quranic-vocabulary"
+    }
+  ],
+  "namespaceCollisionRecords": [
+    {
+      "dimensionId": "spousal-relations",
+      "topicId": "conflict-resolution",
+      "collisionType": "NAMESPACE_COLLISION_DIMENSION",
+      "collidingEntityType": "dimension",
+      "collidingEntityDomain": "war-peace-conflict"
+    },
+    {
+      "dimensionId": "resurrection-judgment",
+      "topicId": "accountability",
+      "collisionType": "NAMESPACE_COLLISION_DIMENSION",
+      "collidingEntityType": "dimension",
+      "collidingEntityDomain": "governance-political-authority"
+    }
+  ],
+  "nonexistentRecordsSample": [
+    {"dimensionId": "quran-science", "topicId": "quran-interpretation-principles"},
+    {"dimensionId": "sunnah-prophetic-tradition", "topicId": "prophetic-example"},
+    {"dimensionId": "divine-scriptures", "topicId": "scripture-corruption"},
+    {"dimensionId": "divine-scriptures", "topicId": "belief-in-scriptures"},
+    {"dimensionId": "prophetic-guidance", "topicId": "following-prophets"},
+    {"dimensionId": "prophetic-guidance", "topicId": "prophetic-miracles"},
+    {"dimensionId": "quranic-linguistics", "topicId": "quranic-arabic-style"},
+    {"dimensionId": "quranic-linguistics", "topicId": "quranic-rhetoric"},
+    {"dimensionId": "quranic-linguistics", "topicId": "quranic-vocabulary-study"},
+    {"dimensionId": "quranic-linguistics", "topicId": "linguistic-miracle"},
+    {"dimensionId": "prophethood-messengership", "topicId": "prophetic-qualities"},
+    {"dimensionId": "prophethood-messengership", "topicId": "prophetic-mission"},
+    {"dimensionId": "minor-prophets", "topicId": "idris-story"},
+    {"dimensionId": "minor-prophets", "topicId": "shuayb-story"},
+    {"dimensionId": "minor-prophets", "topicId": "dhul-kifl"},
+    {"dimensionId": "minor-prophets", "topicId": "uzair-story"},
+    {"dimensionId": "prophetic-lessons", "topicId": "patience-lessons"},
+    {"dimensionId": "prophetic-lessons", "topicId": "trust-in-allah"},
+    {"dimensionId": "prophetic-lessons", "topicId": "perseverance-lessons"},
+    {"dimensionId": "prophetic-lessons", "topicId": "moral-lessons-from-prophets"}
+  ],
+  "nonexistentTotalCount": 368,
+  "immutableRestrictionsCompliance": {
+    "productionDataUnmodified": true,
+    "quranArabicTextUnchanged": true,
+    "mappingClassificationsUnchanged": true,
+    "scholarlyReviewStatusesUnchanged": true,
+    "noAutoRepairPerformed": true,
+    "mfd10NotStarted": true,
+    "onlyAuditFilesCreated": true
+  }
+}

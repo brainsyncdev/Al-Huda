@@ -1,0 +1,73 @@
+{
+  "auditId": "MFD-09.2.2",
+  "date": "2026-11-16",
+  "auditor": "Subagent 2 — Report, Taxonomy & Git Integrity Auditor",
+  "branch": "main",
+  "headCommit": "455d286556072a6291fa544ea599daf799bfe811",
+  "canonicalSource": "data/taxonomy/relationships.json",
+  "independentCalculation": {
+    "totalRelationships": 150,
+    "uniqueRelationshipIds": 150,
+    "duplicateIds": [],
+    "selfReferences": [],
+    "missingEndpointCount": 0,
+    "missingEndpoints": [],
+    "typeDistribution": {
+      "CONTAINS": 98,
+      "CROSS_REFERENCES": 42,
+      "SHARES_CONCEPT": 10
+    },
+    "typePercentages": {
+      "CONTAINS": "65.3%",
+      "CROSS_REFERENCES": "28.0%",
+      "SHARES_CONCEPT": "6.7%"
+    }
+  },
+  "discrepancyResolution": {
+    "mfd09_2_historical": {
+      "CONTAINS": 99,
+      "CROSS_REFERENCES": 42,
+      "SHARES_CONCEPT": 9,
+      "total": 150,
+      "matchesCanonical": false
+    },
+    "mfd09_2_1_reported": {
+      "CONTAINS": 98,
+      "CROSS_REFERENCES": 42,
+      "SHARES_CONCEPT": 10,
+      "total": 150,
+      "matchesCanonical": true
+    },
+    "canonical": {
+      "CONTAINS": 98,
+      "CROSS_REFERENCES": 42,
+      "SHARES_CONCEPT": 10,
+      "total": 150
+    },
+    "resolution": "MFD-09.2.1 figures are correct. MFD-09.2 historical claim of CONTAINS=99/SHARES_CONCEPT=9 was inaccurate. One CONTAINS was reclassified as SHARES_CONCEPT or original count had an error."
+  },
+  "structuralValidity": {
+    "allIdsUnique": true,
+    "noSelfReferences": true,
+    "noDuplicateIds": true,
+    "allEndpointsValid": true,
+    "typeValuesValid": true,
+    "provenanceFieldPresent": true,
+    "allProvenancePendingScholarlyReview": true
+  },
+  "semanticValidityScope": "Out of scope for this audit. All 150 relationships carry provenance 'pending-scholarly-review'.",
+  "endpointValidation": {
+    "entitySources": ["domains.json", "dimensions.json", "subdimensions.json", "topics.json"],
+    "totalEntitiesChecked": "20 domains + 92 dimensions + 26 subdimensions + 373+ topics",
+    "missingSourceEndpoints": 0,
+    "missingTargetEndpoints": 0
+  },
+  "immutableRestrictionsCompliance": {
+    "productionDataUnmodified": true,
+    "quranArabicTextUnchanged": true,
+    "mappingClassificationsUnchanged": true,
+    "scholarlyReviewStatusesUnchanged": true,
+    "mfd10NotStarted": true,
+    "onlyAuditFilesCreated": true
+  }
+}

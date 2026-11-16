@@ -1,0 +1,56 @@
+{
+  "auditId": "MFD-09-2-2",
+  "timestamp": "2026-11-16T13:15:00+05:00",
+  "auditor": "validator-exec-auditor",
+  "targetValidator": "scripts/validate-mfd-09-2-1.mjs",
+  "branch": "main",
+  "headCommit": "455d286556072a6291fa544ea599daf799bfe811",
+  "outcomeClassification": "VERIFIED_PASS",
+  "executionResult": {
+    "exitCode": 0,
+    "totalChecks": 80,
+    "passed": 80,
+    "failed": 0,
+    "warnings": 0,
+    "marksVerified": {
+      "checkmarks": 80,
+      "crosses": 0,
+      "exclamations": 0
+    }
+  },
+  "sourceInspection": {
+    "totalCheckCalls": 80,
+    "hardcodedPassesFound": 0,
+    "readsCanonicalSources": true,
+    "exitCodeEnforced": true,
+    "warningExcludedFromExit": true,
+    "groups": [
+      { "name": "Mapping Integrity", "ids": "M01-M15", "count": 15, "critical": 14, "high": 1 },
+      { "name": "Evidence and Scholarly Status", "ids": "E01-E08", "count": 8, "critical": 6, "high": 2 },
+      { "name": "Taxonomy Integrity", "ids": "T01-T15", "count": 15, "critical": 12, "high": 3 },
+      { "name": "Phantom References", "ids": "P01-P09", "count": 9, "critical": 7, "high": 2 },
+      { "name": "Relationships and Proposals", "ids": "R01-R04,Q01-Q07", "count": 11, "critical": 8, "high": 3 },
+      { "name": "Report-to-JSON Agreement", "ids": "D01-D08", "count": 8, "critical": 6, "high": 2 },
+      { "name": "Deterministic Generation", "ids": "G01-G04", "count": 4, "critical": 3, "high": 1 },
+      { "name": "Production Protection", "ids": "X01-X10", "count": 10, "critical": 8, "high": 2 }
+    ]
+  },
+  "fullValidationSuite": {
+    "exitCode": 0,
+    "validatorsRun": 5,
+    "passed": 5,
+    "failed": 0,
+    "names": ["Quran Data", "Source Licenses", "Taxonomy", "Ayah Mappings", "Root Registry"]
+  },
+  "productionProtectionVerified": {
+    "sha256BaselinesMatched": 6,
+    "gitDiffClean": true,
+    "aiFeatureFlagOff": true
+  },
+  "determinismVerified": {
+    "generatorExists": true,
+    "generatorExitCode": 0,
+    "byteIdenticalAfterRegen": true,
+    "noTimestampsInOutput": true
+  }
+}

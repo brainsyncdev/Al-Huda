@@ -1,0 +1,70 @@
+﻿{
+    "generated_at":  "2026-11-16T13:20:56.1565986+05:00",
+    "artifacts":  [
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/MFD-09-2-2-BASELINE.md",
+                          "sha256":  "A5FA5765F1F0C606312E7BB6868DC8633D05F0A6894A17E12926512D12AD8AAF",
+                          "bytes":  3012
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/MFD-09-2-2-GIT-INTEGRITY-REPORT.md",
+                          "sha256":  "6393ED703A8D0B2C44CC9A91116B5409AD8D81DFDB707E099D152A36D3B4113F",
+                          "bytes":  4615
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/mfd-09-2-2-git-verification.json",
+                          "sha256":  "499566EAD0458C20BAFA879BE5148EBA3923BAD285C184305F400C6A6C8C5AA5",
+                          "bytes":  3537
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/mfd-09-2-2-phantom-provenance.json",
+                          "sha256":  "DCF43B83D79D5035ADE93B074538B8FD0A593633522B988B70C40408044D40B6",
+                          "bytes":  4842
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/MFD-09-2-2-PHANTOM-PROVENANCE-CORRECTION-REPORT.md",
+                          "sha256":  "DB7DB0A391D828FB4B3ADFCB82E32E410C2B4C3AB2E1A07C760CAEE179563D0F",
+                          "bytes":  5500
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/MFD-09-2-2-RELATIONSHIP-DISTRIBUTION-REPORT.md",
+                          "sha256":  "5E5C3B094325D840DBEE6AB375ED5AC0D016A26105C797F857C7C9E5FF2E82B4",
+                          "bytes":  3783
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/mfd-09-2-2-relationship-reconciliation.json",
+                          "sha256":  "8FDA3068FDFDC7835A73ED797A4149DCE7C49C5241D2F3D6CF69294B3D0CE1CD",
+                          "bytes":  2346
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/MFD-09-2-2-VALIDATOR-EXECUTION-REPORT.md",
+                          "sha256":  "BB3BDDCA12988AF95D780885FB522CED5607679CAF77DC8AF04E0A81F201FE97",
+                          "bytes":  8294
+                      },
+                      {
+                          "path":  "docs/audits/mfd-09-2-2/mfd-09-2-2-validator-results.json",
+                          "sha256":  "6AD78FF7839AAFF4E440253989304A93269B2D1453A9FE36D4FC8B72F69B25B1",
+                          "bytes":  2030
+                      },
+                      {
+                          "path":  "scripts/validate-mfd-09-2-1.mjs",
+                          "sha256":  "B99356980F348A3926BDB7A4C79D9C6E57B9935213216576E2F81F080C6181B3",
+                          "bytes":  19050,
+                          "note":  "Pipeline input script (not generated output)"
+                      },
+                      {
+                          "path":  "scripts/generate-mfd-09-2-1-reports.mjs",
+                          "sha256":  "E0B4E6EBE14CE5BB6172E2AB2E8BCCB8DFF8C639952DA015FE532E10037CC016",
+                          "bytes":  42827,
+                          "note":  "Pipeline input script (not generated output)"
+                      },
+                      {
+                          "path":  "scripts/validate-mfd-09-2.mjs",
+                          "sha256":  "0F2ADD6C8D30C5E56A6583C070B9757A2CB065043BB87E5C7EFBE0D7872E2209",
+                          "bytes":  7810,
+                          "note":  "Pipeline input script (not generated output)"
+                      }
+                  ],
+    "commit":  "455d286556072a6291fa544ea599daf799bfe811",
+    "audit_id":  "MFD-09-2.2"
+}
