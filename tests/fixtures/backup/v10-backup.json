@@ -1,0 +1,194 @@
+{
+  "format": "al-huda-backup",
+  "version": 10,
+  "app": "Al-Huda",
+  "exportedAt": "2026-11-17T08:00:00.000Z",
+  "library": {
+    "bookmarks": [
+      { "surah": 2, "ayah": 255, "savedAt": "2026-01-15T10:30:00.000Z" },
+      { "surah": 1, "ayah": 1, "savedAt": "2026-02-20T14:00:00.000Z" },
+      { "surah": 18, "ayah": 110, "savedAt": "2026-03-10T09:15:00.000Z" }
+    ],
+    "notes": [
+      { "surah": 1, "ayah": 1, "text": "Bismillah reflection", "tags": ["opening"], "createdAt": "2026-01-10T08:00:00.000Z", "updatedAt": "2026-01-10T08:00:00.000Z" },
+      { "surah": 2, "ayah": 255, "text": "Ayat al-Kursi study note", "tags": ["tawheed"], "createdAt": "2026-02-15T12:00:00.000Z", "updatedAt": "2026-02-15T12:00:00.000Z" }
+    ],
+    "progress": [
+      { "surah": 1, "ayah": 7, "completedAt": "2026-01-05T07:00:00.000Z" }
+    ],
+    "collections": [
+      { "id": "coll-v10-1", "name": "Verses of Mercy", "description": "Ayat about Allah's mercy", "createdAt": "2026-01-20T10:00:00.000Z", "updatedAt": "2026-01-20T10:00:00.000Z" }
+    ],
+    "collectionAyat": [
+      { "collectionId": "coll-v10-1", "surah": 7, "ayah": 156, "addedAt": "2026-01-20T10:05:00.000Z" }
+    ]
+  },
+  "revision": {
+    "items": {
+      "2:255": {
+        "reference": "2:255",
+        "surah": 2,
+        "ayah": 255,
+        "owner": "local",
+        "ladderId": "default",
+        "step": 3,
+        "dueDate": "2026-12-31",
+        "addedAt": "2026-01-01T00:00:00.000Z",
+        "lastReviewedAt": "2026-06-15T08:00:00.000Z",
+        "reviewCount": 5
+      }
+    },
+    "events": [],
+    "settings": { "ladderId": "default" }
+  },
+  "preferences": {
+    "arabicSize": "lg",
+    "lineHeight": "normal",
+    "showTranslation": true,
+    "showTransliteration": false,
+    "translationId": "en.sahih",
+    "showAudio": true,
+    "reciterId": "ar.alafasy",
+    "parallelMode": false,
+    "parallelTranslationIds": []
+  },
+  "paths": {
+    "progress": {},
+    "selectedGoal": "regular-reader",
+    "onboardingCompleted": true
+  },
+  "quiz": {
+    "attempts": [
+      {
+        "id": "attempt-v10-1",
+        "startedAt": "2026-05-01T10:00:00.000Z",
+        "completedAt": "2026-05-01T10:15:00.000Z",
+        "questions": [
+          {
+            "id": "q-v10-1",
+            "kind": "surah-identification",
+            "prompt": "Which surah does this ayah belong to?",
+            "refs": [{ "surah": 2, "ayah": 255 }],
+            "data": {
+              "options": [
+                { "surahId": 2, "surahName": "Al-Baqarah" },
+                { "surahId": 3, "surahName": "Ali 'Imran" }
+              ],
+              "correctIndex": 0
+            }
+          }
+        ],
+        "responses": {
+          "q-v10-1": { "kind": "surah-identification", "selectedIndex": 0 }
+        },
+        "config": {
+          "source": { "kind": "default" },
+          "enabledKinds": ["surah-identification"],
+          "requestedCount": 1
+        }
+      }
+    ],
+    "currentAttemptId": null
+  },
+  "readingPlans": {
+    "targets": [
+      {
+        "id": "plan-v10-1",
+        "label": "Complete Surah Al-Kahf",
+        "start": { "surah": 18, "ayah": 1 },
+        "end": { "surah": 18, "ayah": 110 },
+        "goalPerSession": 10,
+        "createdAt": "2026-04-01T10:00:00.000Z",
+        "lastActivityAt": "2026-06-01T09:00:00.000Z",
+        "currentPosition": { "surah": 18, "ayah": 51 },
+        "paused": false
+      }
+    ]
+  },
+  "journeys": {
+    "progress": {
+      "understanding-tawheed": {
+        "journeySlug": "understanding-tawheed",
+        "completedStages": [1, 2, 3],
+        "startedAt": "2026-03-01T00:00:00.000Z",
+        "lastActivityAt": "2026-06-01T00:00:00.000Z",
+        "journeyVersion": 1
+      }
+    }
+  },
+  "reflections": {
+    "version": 1,
+    "reflections": [
+      {
+        "id": "ref-v10-1",
+        "targetType": "ayah",
+        "targetRef": "2:255",
+        "content": "Allah's complete knowledge encompasses all things.",
+        "createdAt": "2026-04-10T08:00:00.000Z",
+        "updatedAt": "2026-04-10T08:00:00.000Z"
+      },
+      {
+        "id": "ref-v10-2",
+        "targetType": "topic",
+        "targetRef": "tawheed-fundamentals",
+        "content": "The oneness of Allah is the foundation of all Islamic belief.",
+        "createdAt": "2026-05-15T12:00:00.000Z",
+        "updatedAt": "2026-05-15T12:00:00.000Z"
+      },
+      {
+        "id": "ref-v10-3",
+        "targetType": "journey-stage",
+        "targetRef": "understanding-tawheed:3",
+        "content": "Stage 3 deepened my understanding of divine attributes.",
+        "createdAt": "2026-06-01T09:00:00.000Z",
+        "updatedAt": "2026-06-01T09:00:00.000Z"
+      }
+    ]
+  },
+  "scholarly": {
+    "schemaVersion": 1,
+    "reviews": [
+      {
+        "id": "rev-map-tawheed-fundamentals-0001-001",
+        "mappingId": "map-tawheed-fundamentals-0001",
+        "reviewerId": "local-reviewer-1",
+        "reviewerRole": "Student of knowledge",
+        "decision": "APPROVED",
+        "rationale": "Direct Quranic declaration of tawheed. Evidence from al-Jalalayn confirms this mapping.",
+        "evidenceConsidered": ["ev-map-tawheed-fundamentals-0001-tafsir-jalalayn"],
+        "decidedAt": "2026-10-01T14:30:00.000Z",
+        "previousState": null,
+        "newState": "APPROVED"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "ev-map-tawheed-fundamentals-0001-tafsir-jalalayn",
+        "mappingId": "map-tawheed-fundamentals-0001",
+        "sourceId": "tafsir-jalalayn",
+        "sourceTitle": "Tafsir al-Jalalayn",
+        "sourceAuthor": "Jalal al-Din al-Mahalli and Jalal al-Din al-Suyuti",
+        "language": "Arabic",
+        "surahNumber": 2,
+        "ayahNumber": 163,
+        "sourceUrl": "/ayah/2/163?tafsir=ar.jalalayn",
+        "evidenceType": "TAFSIR_CLASSICAL",
+        "status": "VERIFIED",
+        "verifierId": "local-reviewer-1",
+        "verifiedAt": "2026-10-01T14:00:00.000Z",
+        "verificationNotes": "Confirmed tafsir text addresses the explicit declaration of divine oneness in this ayah.",
+        "rightsNote": "Tanzil terms of use (attribution + no modification)",
+        "createdAt": "2026-09-28T10:00:00.000Z",
+        "updatedAt": "2026-10-01T14:00:00.000Z"
+      }
+    ],
+    "reviewer": {
+      "id": "local-reviewer-1",
+      "displayName": "Local Reviewer",
+      "roleNote": "Student of knowledge",
+      "credentialVerified": false
+    },
+    "priorities": {},
+    "lastSavedAt": "2026-10-01T14:30:00.000Z"
+  }
+}

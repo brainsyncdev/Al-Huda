@@ -10,6 +10,7 @@ import { QuizProvider } from "@/lib/quiz/context";
 import { ReadingPlansProvider } from "@/lib/reading-plans/context";
 import { JourneysProvider } from "@/lib/study-journeys/context";
 import { ReflectionsProvider } from "@/lib/reflections/context";
+import { ScholarlyProvider } from "@/lib/scholarly/context";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
@@ -122,6 +123,7 @@ export default async function RootLayout({
                     <ReadingPlansProvider>
                       <JourneysProvider>
                         <ReflectionsProvider>
+                          <ScholarlyProvider>
                           <SiteHeader />
                           <main
                             id="main-content"
@@ -133,6 +135,7 @@ export default async function RootLayout({
                           <MobileBottomNav />
                           <GlobalSearchShortcut />
                           <Toaster position="bottom-center" />
+                          </ScholarlyProvider>
                         </ReflectionsProvider>
                       </JourneysProvider>
                     </ReadingPlansProvider>

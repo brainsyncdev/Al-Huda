@@ -409,6 +409,128 @@ describe("Backup Compatibility - Version Migration", () => {
   });
 });
 
+// MFD-10.2: v10 adds the scholarly evidence + review store. Older envelopes
+// must still import cleanly with an EMPTY scholarly section rather than a
+// guessed one, and no pre-existing section may change shape.
+describe("v10 Migration (MFD-10.2 scholarly store)", () => {
+  it("parses v10 backup successfully", () => {
+    const text = loadFixture(10);
+    const result = parseBackup(text);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.data.sourceVersion).toBe(10);
+    }
+  });
+
+  it("preserves scholarly review records from v10", () => {
+    const text = loadFixture(10);
+    const result = parseBackup(text);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.data.scholarly.reviews.length).toBeGreaterThan(0);
+      const review = result.data.scholarly.reviews[0];
+      expect(review.mappingId).toBe("map-tawheed-fundamentals-0001");
+      expect(review.decision).toBe("APPROVED");
+      expect(review.rationale.length).toBeGreaterThan(0);
+      expect(review.previousState).toBeNull();
+      expect(review.newState).toBe("APPROVED");
+    }
+  });
+
+  it("preserves scholarly evidence records from v10", () => {
+    const text = loadFixture(10);
+    const result = parseBackup(text);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.data.scholarly.evidence.length).toBeGreaterThan(0);
+      const ev = result.data.scholarly.evidence[0];
+      expect(ev.sourceId).toBe("tafsir-jalalayn");
+      expect(ev.status).toBe("VERIFIED");
+      expect(ev.verifierId).toBeTruthy();
+      expect(ev.verifiedAt).toBeTruthy();
+    }
+  });
+
+  it("never marks a restored reviewer credential as verified by default", () => {
+    const text = loadFixture(10);
+    const result = parseBackup(text);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.data.scholarly.reviewer.credentialVerified).toBe(false);
+    }
+  });
+
+  it("keeps every pre-existing section intact alongside the new store", () => {
+    const text = loadFixture(10);
+    const result = parseBackup(text);
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.data.library.bookmarks).toHaveLength(3);
+      expect(result.data.library.notes).toHaveLength(2);
+      expect(result.data.reflections.reflections).toHaveLength(3);
+      expect(Object.keys(result.data.journeys.progress)).toHaveLength(1);
+      expect(result.data.readingPlans.targets).toHaveLength(1);
+      expect(result.data.quiz.attempts).toHaveLength(1);
+    }
+  });
+
+  it("gives older envelopes an EMPTY scholarly store, not a guessed one", () => {
+    for (const version of [3, 4, 5, 6, 7, 8, 9]) {
+      const result = parseBackup(loadFixture(version));
+      expect(result.ok).toBe(true);
+      if (result.ok) {
+        expect(result.data.scholarly.reviews).toEqual([]);
+        expect(result.data.scholarly.evidence).toEqual([]);
+        expect(result.data.scholarly.reviewer.credentialVerified).toBe(false);
+      }
+    }
+  });
+
+  it("gives the legacy v1 library-only export an empty scholarly store", () => {
+    const legacy = {
+      version: 1,
+      library: { bookmarks: [], notes: [], progress: [] },
+    };
+    const result = parseBackup(JSON.stringify(legacy));
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      expect(result.data.sourceVersion).toBe(1);
+      expect(result.data.scholarly.reviews).toEqual([]);
+      expect(result.data.scholarly.evidence).toEqual([]);
+    }
+  });
+
+  it("round-trips a v10 backup through re-export without losing reviews", () => {
+    const result = parseBackup(loadFixture(10));
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      const reexported = buildBackup(result.data);
+      expect(reexported.version).toBe(BACKUP_VERSION);
+      const reimported = parseBackup(JSON.stringify(reexported));
+      expect(reimported.ok).toBe(true);
+      if (reimported.ok) {
+        expect(reimported.data.scholarly.reviews).toHaveLength(
+          result.data.scholarly.reviews.length
+        );
+        expect(reimported.data.scholarly.evidence).toHaveLength(
+          result.data.scholarly.evidence.length
+        );
+      }
+    }
+  });
+
+  it("builds an empty scholarly section when the caller omits it", () => {
+    const result = parseBackup(loadFixture(9));
+    expect(result.ok).toBe(true);
+    if (result.ok) {
+      const built = buildBackup(result.data);
+      expect(built.scholarly).toBeDefined();
+      expect(built.scholarly.reviews).toEqual([]);
+      expect(built.scholarly.evidence).toEqual([]);
+    }
+  });
+});
+
 describe("Backup Compatibility - Destructive Import Protection", () => {
   it("rejects invalid JSON", () => {
     const result = parseBackup("not valid json {");
@@ -453,21 +575,23 @@ describe("Backup Compatibility - Destructive Import Protection", () => {
     expect(result.ok).toBe(false);
     if (!result.ok) {
       expect(result.error).toContain("version 2");
-      expect(result.error).toContain("versions 3–9");
+      expect(result.error).toContain("versions 3–10");
     }
   });
 
+  // MFD-10.2: v10 is now a SUPPORTED envelope version (scholarly store).
+  // The "too new" guard moves to v11 so future envelopes are still rejected.
   it("rejects unsupported version (too new)", () => {
     const backup = {
       format: "al-huda-backup",
-      version: 10,
+      version: 11,
       app: "Al-Huda",
       exportedAt: new Date().toISOString(),
     };
     const result = parseBackup(JSON.stringify(backup));
     expect(result.ok).toBe(false);
     if (!result.ok) {
-      expect(result.error).toContain("version 10");
+      expect(result.error).toContain("version 11");
     }
   });
 

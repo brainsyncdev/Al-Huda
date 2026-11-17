@@ -36,9 +36,17 @@ import { EMPTY_JOURNEYS_STATE } from "@/lib/study-journeys/data";
 import { normalizeReflectionsState } from "@/lib/reflections/storage";
 import type { ReflectionsState } from "@/lib/reflections/types";
 import { EMPTY_REFLECTIONS_STATE } from "@/lib/reflections/storage";
+import {
+  EMPTY_SCHOLARLY_STATE,
+  normalizeScholarlyState,
+  type ScholarlyState,
+} from "@/lib/scholarly/storage";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-export const BACKUP_VERSION = 9;
+// v10 (MFD-10.2) adds the scholarly evidence + review store. Older envelopes
+// remain readable: a missing `scholarly` section restores to an empty store,
+// never to a guessed one, and no existing section changes shape.
+export const BACKUP_VERSION = 10;
 export const BACKUP_APP = "Al-Huda";
 
 /** Empty quiz state, used when restoring a legacy backup that had no quiz. */
@@ -74,6 +82,8 @@ export interface BackupFile {
   journeys: JourneysState;
   /** Sprint 53: personal reflections added in v9. */
   reflections: ReflectionsState;
+  /** MFD-10.2: scholarly evidence + review history added in v10. */
+  scholarly: ScholarlyState;
 }
 
 export interface RestorableBackup {
@@ -85,15 +95,16 @@ export interface RestorableBackup {
   readingPlans: ReadingPlansState;
   journeys: JourneysState;
   reflections: ReflectionsState;
+  scholarly: ScholarlyState;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
    * export; 2 added revision and preferences; 3 added paths; 4 added
    * translationId in preferences; 5 added quiz; 6 added reading plans;
    * 7 added collections and collectionAyat; 8 added study journeys;
-   * 9 added personal reflections.
+   * 9 added personal reflections; 10 added scholarly evidence/reviews.
    * Older versions get defaults for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -111,6 +122,8 @@ export interface BackupInput {
   readingPlans: ReadingPlansState;
   journeys: JourneysState;
   reflections: ReflectionsState;
+  /** Optional so older callers still compile; defaults to an empty store. */
+  scholarly?: ScholarlyState;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -131,6 +144,7 @@ export function buildBackup(
     readingPlans: input.readingPlans,
     journeys: input.journeys,
     reflections: input.reflections,
+    scholarly: input.scholarly ?? { ...EMPTY_SCHOLARLY_STATE },
   };
 }
 
@@ -180,13 +194,14 @@ export function parseBackup(text: string): ParseBackupResult {
       version !== 6 &&
       version !== 7 &&
       version !== 8 &&
-      version !== 9
+      version !== 9 &&
+      version !== 10
     ) {
       return {
         ok: false,
         error: `This backup was written as version ${
           typeof version === "number" ? String(version) : "unknown"
-        }, and this build reads versions 3–9. Nothing was imported.`,
+        }, and this build reads versions 3–10. Nothing was imported.`,
       };
     }
     return {
@@ -215,7 +230,11 @@ export function parseBackup(text: string): ParseBackupResult {
           file.reflections === undefined
             ? { ...EMPTY_REFLECTIONS_STATE }
             : normalizeReflectionsState(file.reflections),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8 | 9) : 9,
+        scholarly:
+          file.scholarly === undefined
+            ? { ...EMPTY_SCHOLARLY_STATE }
+            : normalizeScholarlyState(file.scholarly),
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) : 10,
         exportedAt,
       },
     };
@@ -234,6 +253,7 @@ export function parseBackup(text: string): ParseBackupResult {
         readingPlans: { ...EMPTY_READING_PLANS_STATE },
         journeys: { ...EMPTY_JOURNEYS_STATE },
         reflections: { ...EMPTY_REFLECTIONS_STATE },
+        scholarly: { ...EMPTY_SCHOLARLY_STATE },
         sourceVersion: 1,
         exportedAt,
       },

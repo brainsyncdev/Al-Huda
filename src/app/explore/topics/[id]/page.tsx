@@ -374,7 +374,9 @@ async function CanonicalTopicView({ topic }: { topic: CanonicalTopic }) {
       {relatedTopics.length > 0 && (() => {
         // Build a lookup of relationship types for this topic's outgoing edges
         const relationships = getRelationshipsFor(topic.id);
-        const relTypeByTarget = new Map<string, string>();
+        // The lucide `Map` icon is imported above and shadows the global Map
+        // constructor in this module scope, so reference it via globalThis.
+        const relTypeByTarget = new globalThis.Map<string, string>();
         for (const rel of relationships) {
           if (rel.sourceId === topic.id) {
             relTypeByTarget.set(rel.targetId, rel.type);
