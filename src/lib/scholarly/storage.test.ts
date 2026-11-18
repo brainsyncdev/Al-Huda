@@ -17,7 +17,10 @@ import {
   clearScholarlyState,
   type ScholarlyState,
 } from "./storage";
-import { SCHOLARLY_SCHEMA_VERSION } from "./types";
+import {
+  SCHOLARLY_SCHEMA_VERSION,
+  type ReviewRecord,
+} from "./types";
 import { getAllMappings, type TopicMapping } from "../taxonomy/topic-translation-data";
 
 let realMappings: TopicMapping[] = [];

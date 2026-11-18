@@ -27,6 +27,7 @@ import {
 import {
   SCHOLARLY_SCHEMA_VERSION,
   type EvidenceRecord,
+  type ReviewDecision,
   type ReviewRecord,
   type ScholarlyReviewStore,
 } from "./types";
