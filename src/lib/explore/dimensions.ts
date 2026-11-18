@@ -112,7 +112,7 @@ export const DIMENSIONS: Dimension[] = [
       "mercy-and-forgiveness",
       "remembrance",
       "the-hereafter",
-      "tawheed",
+      "tawheed-fundamentals",
     ],
     searchTerms: ["worship", "prayer", "faith", "reliance", "hereafter"],
   },
@@ -129,7 +129,7 @@ export const DIMENSIONS: Dimension[] = [
       "hardship-and-ease",
       "trust-in-god",
       "knowledge-and-reflection",
-      "god-consciousness",
+      "taqwa",
       "repentance",
       "good-character",
     ],
@@ -143,7 +143,7 @@ export const DIMENSIONS: Dimension[] = [
     covers: "Marriage, parenting, divorce, rights",
     description:
       "Verses about family life — the rights of parents, the duties of care, and the bonds of kinship. This dimension draws on the dedicated parents-and-family topic.",
-    topicSlugs: ["parents-and-family"],
+    topicSlugs: ["parents-and-elderly-care", "kinship-extended-family"],
     searchTerms: ["parents", "family", "marriage", "children", "kinship"],
   },
   {
@@ -154,7 +154,7 @@ export const DIMENSIONS: Dimension[] = [
     covers: "Justice, community, rights of others",
     description:
       "Verses about obligations to others — justice, fairness, and the duties of community life. These topics address how believers are called to treat one another and society at large.",
-    topicSlugs: ["justice", "giving", "parents-and-family"],
+    topicSlugs: ["justice", "giving", "parents-and-elderly-care"],
     searchTerms: ["justice", "community", "rights", "fairness", "others"],
   },
   {
@@ -239,7 +239,7 @@ export const DIMENSIONS: Dimension[] = [
       "Prescribed acts of worship — prayer (salah), fasting (sawm), pilgrimage (hajj), supplication (dua), and other formal acts of devotion",
     description:
       "The dimension of formal worship and prescribed devotional acts. While the spiritual dimension addresses the inner relationship with God, worship covers the outward, prescribed practices that structure a believer's devotion.",
-    topicSlugs: ["prayer", "supplication"],
+    topicSlugs: ["salah-prayer", "dua-supplication"],
     searchTerms: [
       "prayer",
       "salah",
@@ -260,7 +260,7 @@ export const DIMENSIONS: Dimension[] = [
       "Narratives of the prophets, their trials, their messages, and the lessons drawn from their experiences",
     description:
       "The dimension of prophetic narratives and historical lessons. The Quran presents the stories of prophets as guidance and warning, each illustrating different aspects of faith, patience, and divine interaction.",
-    topicSlugs: ["prophets"],
+    topicSlugs: ["prophetic-narratives"],
     searchTerms: [
       "prophets",
       "messengers",
