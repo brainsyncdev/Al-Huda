@@ -1,0 +1,248 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T16:25:00.000Z",
+  "sourceExtraction": "ext-002-p15,ext-002-p16,ext-002-p17",
+  "candidates": [
+    {
+      "candidateId": "cand-0057",
+      "label": "Envy-driven disbelief: rejecting revelation because Allah bestowed favor on another",
+      "definition": "In 2:90: Bani Israel sold themselves wretchedly by disbelieving in what Allah revealed out of baghy (outrage/envy) that Allah sends His favor upon whom He wills from among His servants — establishing envy as theological motive for kufr.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:90",
+          "excerpt": "بِئۡسَمَا ٱشۡتَرَوۡاْ بِهِۦٓ أَنفُسَهُمۡ أَن يَكۡفُرُواْ بِمَآ أَنزَلَ ٱللَّهُ بَغۡيًا أَن يُنَزِّلَ ٱللَّهُ مِن فَضۡلِهِۦ عَلَىٰ مَن يَشَآءُ مِنۡ عِبَادِهِۦۖ فَبَآءُو بِغَضَبٍ عَلَىٰ غَضَبٖۚ وَلِلۡكَٰفِرِينَ عَذَابٞ مُّهِينٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse identifies baghy as motive for disbelieving in Allah's revelation."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "envy-hasad",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "حسد کی وجہ سے انکار",
+      "notes": "Direct link to envy-hasad topic. Distinguishes envy-driven kufr from intellectual disagreement."
+    },
+    {
+      "candidateId": "cand-0058",
+      "label": "Isa ibn Maryam: clear proofs and Holy Spirit support as prophetic credentials",
+      "definition": "In 2:87: Allah gave Isa ibn Maryam al-bayyinat and supported him with Ruh al-Qudus — establishing his prophetic credentials parallel to Musa receiving the Kitab.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:87",
+          "excerpt": "وَلَقَدۡ ءَاتَيۡنَا مُوسَى ٱلۡكِتَٰبَ وَقَفَّيۡنَا مِنۢ بَعۡدِهِۦ بِٱلرُّسُلِۖ وَءَاتَيۡنَا عِيسَى ٱبۡنَ مَرۡيَمَ ٱلۡبَيِّنَٰتِ وَأَيَّدۡنَٰهُ بِرُوحِ ٱلۡقُدُسِۗ أَفَكُلَّمَا جَآءَكُمۡ رَسُولُۢ بِمَا لَا تَهۡوَىٰٓ أَنفُسُكُمُ ٱسۡتَكۡبَرۡتُمۡ فَفَرِيقٗا كَذَّبۡتُمۡ وَفَرِيقٗا تَقۡتُلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse explicitly names Isa's bayyinat and Ruh al-Qudus support."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "عیسیٰ ابن مریم کے معجزات اور روح القدس کی تایید",
+      "notes": "Core Isa narrative verse. Ruh al-Qudus identification key for angelology."
+    },
+    {
+      "candidateId": "cand-0059",
+      "label": "Systematic rejection pattern: denying some prophets and killing others",
+      "definition": "In 2:87 and 2:91: whenever a messenger came with undesired message, Bani Israel were arrogant — denying a party (fareeqan kaththabtum) and killing another party (fareeqan taqtuloona); challenged to explain why they killed prophets before if truly believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:87",
+          "excerpt": "وَلَقَدۡ ءَاتَيۡنَا مُوسَى ٱلۡكِتَٰبَ وَقَفَّيۡنَا مِنۢ بَعۡدِهِۦ بِٱلرُّسُلِۖ وَءَاتَيۡنَا عِيسَى ٱبۡنَ مَرۡيَمَ ٱلۡبَيِّنَٰتِ وَأَيَّدۡنَٰهُ بِرُوحِ ٱلۡقُدُسِۗ أَفَكُلَّمَا جَآءَكُمۡ رَسُولُۢ بِمَا لَا تَهۡوَىٰٓ أَنفُسُكُمُ ٱسۡتَكۡبَرۡتُمۡ فَفَرِيقٗا كَذَّبۡتُمۡ وَفَرِيقٗا تَقۡتُلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Describes dual rejection pattern: denial and killing."
+        },
+        {
+          "key": "2:91",
+          "excerpt": "وَإِذَا قِيلَ لَهُمۡ ءَامِنُواْ بِمَآ أَنزَلَ ٱللَّهُ قَالُواْ نُؤۡمِنُ بِمَآ أُنزِلَ عَلَيۡنَا وَيَكۡفُرُونَ بِمَا وَرَآءَهُۥ وَهُوَ ٱلۡحَقُّ مُصَدِّقٗا لِّمَا مَعَهُمۡۗ قُلۡ فَلِمَ تَقۡتُلُونَ أَنۢبِيَآءَ ٱللَّهِ مِن قَبۡلُ إِن كُنتُم مُّؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Rhetorical challenge about killing prophets despite professed belief."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "بعض انبیاء کا انکار اور بعض کا قتل",
+      "notes": "Gap candidate: systematic prophetic rejection as historical pattern distinct from individual incidents."
+    },
+    {
+      "candidateId": "cand-0060",
+      "label": "Verbal compliance masking disobedience: samiAAana wa-AAasayna",
+      "definition": "In 2:93: when commanded to take scripture with determination and listen, Bani Israel responded 'samiAAana wa-AAasayna' (we hear and disobey) — and their hearts absorbed calf worship through disbelief.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:93",
+          "excerpt": "وَإِذۡ أَخَذۡنَا مِيثَٰقَكُمۡ وَرَفَعۡنَا فَوۡقَكُمُ ٱلطُّورَ خُذُواْ مَآ ءَاتَيۡنَٰكُم بِقُوَّةٖ وَٱسۡمَعُواْۖ قَالُواْ سَمِعۡنَا وَعَصَيۡنَا وَأُشۡرِبُواْ فِي قُلُوبِهِمُ ٱلۡعِجۡلَ بِكُفۡرِهِمۡۚ قُلۡ بِئۡسَمَا يَأۡمُرُكُم بِهِۦٓ إِيمَٰنُكُمۡ إِن كُنتُم مُّؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse contains the exact phrase and describes heart absorption of idolatry."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "زبانی اطاعت مگر دلی نافرمانی",
+      "notes": "Gap candidate: specific linguistic formula of hypocritical compliance unique to this verse."
+    },
+    {
+      "candidateId": "cand-0061",
+      "label": "Greed for life exceeding even polytheists: wishing thousand-year lifespan",
+      "definition": "In 2:96: Bani Israel found most greedy for life (ahrasa al-nasi AAala hayat), even more than mushrikeen; one wishes to live a thousand years but longevity cannot remove him from punishment.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:96",
+          "excerpt": "وَلَتَجِدَنَّهُمۡ أَحۡرَصَ ٱلنَّاسِ عَلَىٰ حَيَوٰةٖ وَمِنَ ٱلَّذِينَ أَشۡرَكُواْۚ يَوَدُّ أَحَدُهُمۡ لَوۡ يُعَمَّرُ أَلۡفَ سَنَةٖ وَمَا هُوَ بِمُزَحۡزِحِهِۦ مِنَ ٱلۡعَذَابِ أَن يُعَمَّرَۗ وَٱللَّهُ بَصِيرُۢ بِمَا يَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse diagnoses extreme life-greed and its futility."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "حیات کی حرص جو مشرکین سے بھی زیادہ ہے",
+      "notes": "Gap candidate: comparative diagnosis of material attachment across communities."
+    },
+    {
+      "candidateId": "cand-0062",
+      "label": "Jibril's role: bringing Quran to Prophet's heart confirming previous scripture",
+      "definition": "In 2:97: Jibril brought down the Quran upon the Prophet's heart by Allah's permission, confirming (musaddiqan) what was before it, as guidance and glad tidings for believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:97",
+          "excerpt": "قُلۡ مَن كَانَ عَدُوّٗا لِّـجِبۡرِيلَ فَإِنَّهُۥ نَزَّلَهُۥ عَلَىٰ قَلۡبِكَ بِإِذۡنِ ٱللَّهِ مُصَدِّقٗا لِّمَا بَيۡنَ يَدَيۡهِ وَهُدٗى وَبُشۡرَىٰ لِلۡمُؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes Jibril's revelatory function and confirmation role."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jibril-michael",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "quran-preservation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "جبرائیل کا وحی لانے کا کردار",
+      "notes": "Primary Jibril-revelation verse. Links to both angelology and Quranic confirmation themes."
+    },
+    {
+      "candidateId": "cand-0063",
+      "label": "Divine enmity declared against those hostile to Allah, angels, and messengers",
+      "definition": "In 2:98: whoever is enemy of Allah, His angels, His messengers, Jibril, and Mikal — then Allah is enemy to the disbelievers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:98",
+          "excerpt": "مَن كَانَ عَدُوّٗا لِّلَّهِ وَمَلَـٰٓئِكَتِهِۦ وَرُسُلِهِۦ وَجِبۡرِيلَ وَمِيكَىٰلَ فَإِنَّ ٱللَّهَ عَدُوّٞ لِّلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse declares reciprocal divine enmity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jibril-michael",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "اللہ کے دوشمنوں سے اللہ کی دشمنی",
+      "notes": "Key verse for understanding hostility toward revelation agents as equivalent to hostility toward Allah."
+    },
+    {
+      "candidateId": "cand-0064",
+      "label": "Chronic covenant-breaking: every covenant thrown away by a party",
+      "definition": "In 2:100: every time they made a covenant (AAahadoo AAahdan), a party threw it away (nabathahu); most of them do not believe.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:100",
+          "excerpt": "أَوَكُلَّمَا عَٰهَدُواْ عَهۡدٗا نَّبَذَهُۥ فَرِيقٞ مِّنۡهُمۚ بَلۡ أَكۡثَرُهُمۡ لَا يُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse describes recurring pattern of covenant violation."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "عہد شکنی کی مستقل عادت",
+      "notes": "Establishes covenant-breaking as habitual rather than incidental."
+    },
+    {
+      "candidateId": "cand-0065",
+      "label": "Magic (sihr) narrative: Sulayman exonerated, devils and Harut-Marut trial",
+      "definition": "In 2:102: Bani Israel followed what devils recited during Sulayman's reign; Sulayman did not disbelieve but devils taught sihr including what was sent to Harut and Marut at Babylon who warned they were fitnah; people learned separation magic harming only by Allah's permission; knew purchaser has no Hereafter share.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:102",
+          "excerpt": "وَٱتَّبَعُواْ مَا تَتۡلُواْ ٱلشَّيَٰطِينُ عَلَىٰ مُلۡكِ سُلَيۡمَٰنَۖ وَمَا كَفَرَ سُلَيۡمَٰنُ وَلَٰكِنَّ ٱلشَّيَٰطِينَ كَفَرُواْ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحۡرَ وَمَآ أُنزِلَ عَلَى ٱلۡمَلَكَيۡنِ بِبَابِلَ هَٰرُوتَ وَمَٰرُوتَۚ وَمَا يُعَلِّمَانِ مِنۡ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحۡنُ فِتۡنَةٞ فَلَا تَكۡفُرۡۖ فَيَتَعَلَّمُونَ مِنۡهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيۡنَ ٱلۡمَرۡءِ وَزَوۡجِهِۦۚ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنۡ أَحَدٍ إِلَّا بِإِذۡنِ ٱللَّهِۚ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمۡ وَلَا يَنفَعُهُمۡۚ وَلَقَدۡ عَلِمُواْ لَمَنِ ٱشۡتَرَىٰهُ مَا لَهُۥ فِي ٱلۡأٓخِرَةِ مِنۡ خَلَٰقٖۚ وَلَبِئۡسَ مَا شَرَوۡاْ بِهِۦٓ أَنفُسَهُمۡۚ لَوۡ كَانُواْ يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse narrates magic origin, Sulayman's innocence, angelic warning, and consequences."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "جادو کا بیان: سلیمان کی برات اور ہاروت ماروت کا آزمائش",
+      "notes": "Gap candidate: comprehensive magic theology distinguishing divine trial from demonic deception. Exonerates Sulayman explicitly."
+    },
+    {
+      "candidateId": "cand-0066",
+      "label": "Throwing scripture behind backs: willful ignorance of known revelation",
+      "definition": "In 2:101: when messenger confirming what was with them came, a party of People of Book threw Allah's Book behind their backs (waraa thuhoorihim) as if they did not know.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:101",
+          "excerpt": "وَلَمَّا جَآءَهُمۡ رَسُولٞ مِّنۡ عِندِ ٱللَّهِ مُصَدِّقٞ لِّمَا مَعَهُمۡ نَبَذَ فَرِيقٞ مِّنَ ٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ كِتَٰبَ ٱللَّهِ وَرَآءَ ظُهُورِهِمۡ كَأَنَّهُمۡ لَا يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse describes deliberate dismissal of known scripture using physical metaphor."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:25:00.000Z",
+      "urduLabel": "کتاب اللہ کو پشت پانکھ پھینکنا",
+      "notes": "Gap candidate: vivid metaphor for willful scriptural neglect distinct from tahreef (distortion)."
+    }
+  ]
+}
