@@ -267,7 +267,7 @@ describe("EMPTY_SCHOLARLY_STATE", () => {
   it("cloneEmptyState produces independent copies", () => {
     const a = cloneEmptyState();
     const b = cloneEmptyState();
-    a.reviews.push({} as any);
+    a.reviews.push({} as unknown as ReviewRecord);
     expect(b.reviews.length).toBe(0);
   });
 });

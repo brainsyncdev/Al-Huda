@@ -14,7 +14,7 @@
 import type { Metadata } from "next";
 import { AlertCircle, ShieldAlert } from "lucide-react";
 import { getAllMappings } from "@/lib/taxonomy/topic-translation-data";
-import { getSurahIndex } from "@/lib/quran/data";
+import { getAyah, getSurahIndex } from "@/lib/quran/data";
 import { getCanonicalTopics } from "@/lib/taxonomy/canonical-adapter";
 import MappingsClient, {
   type MappingRow,
@@ -69,20 +69,27 @@ export default function ScholarlyMappingsPage() {
   }
 
   // Serializable rows: plain copies so the client never holds a reference to
-  // the server-side cached mapping objects.
-  const rows: MappingRow[] = mappings.map((m) => ({
-    id: m.id,
-    topicId: m.topicId,
-    topicTitle: topicTitles[m.topicId] ?? m.topicId,
-    surahNumber: m.surahNumber,
-    ayahStart: m.ayahStart,
-    ayahEnd: m.ayahEnd,
-    mappingType: m.mappingType,
-    rationale: m.rationale,
-    sourceIds: [...m.sourceIds],
-    provenance: m.provenance,
-    status: m.status,
-  }));
+  // the server-side cached mapping objects. Ayah text is resolved server-side
+  // so the client component never imports node:fs transitively.
+  const rows: MappingRow[] = mappings.map((m) => {
+    const ayah = getAyah(m.surahNumber, m.ayahStart);
+    return {
+      id: m.id,
+      topicId: m.topicId,
+      topicTitle: topicTitles[m.topicId] ?? m.topicId,
+      surahNumber: m.surahNumber,
+      ayahStart: m.ayahStart,
+      ayahEnd: m.ayahEnd,
+      mappingType: m.mappingType,
+      rationale: m.rationale,
+      sourceIds: [...m.sourceIds],
+      provenance: m.provenance,
+      status: m.status,
+      ayahText: ayah
+        ? { arabic: ayah.arabic, translation: ayah.translation }
+        : null,
+    };
+  });
 
   const surahs: SurahLabel[] = getSurahIndex().map((s) => ({
     id: s.id,

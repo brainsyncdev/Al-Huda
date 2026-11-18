@@ -196,7 +196,7 @@ describe("validateDecision", () => {
 
   it("rejects unknown decision value", () => {
     const result = validateDecision(
-      baseInput({ decision: "MAYBE" as any })
+      baseInput({ decision: "MAYBE" as unknown as ReviewDecision })
     );
     expect(result.ok).toBe(false);
   });
@@ -421,8 +421,8 @@ describe("setPriority / getPriority", () => {
 describe("isAllowedTransition / ALLOWED_TRANSITIONS gate", () => {
   it("allows any decision from UNREVIEWED", () => {
     for (const d of Object.keys(REVIEW_DECISION_LABELS)) {
-      expect(isAllowedTransition(null, d as any)).toBe(true);
-      expect(isAllowedTransition("UNREVIEWED", d as any)).toBe(true);
+      expect(isAllowedTransition(null, d as unknown as ReviewDecision)).toBe(true);
+      expect(isAllowedTransition("UNREVIEWED", d as unknown as ReviewDecision)).toBe(true);
     }
   });
 

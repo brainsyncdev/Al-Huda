@@ -98,6 +98,8 @@ export interface MappingRow {
   sourceIds: string[];
   provenance: string;
   status: string;
+  /** Pre-resolved ayah text (server-side). Null when resolution failed. */
+  ayahText?: { arabic: string; translation: string } | null;
 }
 
 export interface SurahLabel {
@@ -892,6 +894,7 @@ export default function MappingsClient({ mappings, surahs }: MappingsClientProps
                   <EvidencePanel
                     mapping={topicMapping}
                     evidence={selectedEvidence}
+                    ayahText={selected.ayahText}
                     reviewerId={state.reviewer.id || undefined}
                     onAttach={(sourceId, ref) => {
                       const result = scholarly.attachEvidence({

@@ -27,7 +27,6 @@ import {
 } from "lucide-react";
 import type { TopicMapping } from "@/lib/taxonomy/topic-translation-data";
 import type { EvidenceRecord } from "@/lib/scholarly/types";
-import { getAyah } from "@/lib/quran/data";
 import { TRANSLATION_CREDIT } from "@/lib/quran/sources";
 import {
   EVIDENCE_STATUS_LABELS,
@@ -36,7 +35,6 @@ import {
   summarizeEvidence,
   getAvailableTafsirSourcesForAyah,
   verifyEvidence,
-  createEvidenceRecord,
   validateEvidenceReference,
 } from "@/lib/scholarly/evidence";
 import { SourceAttribution } from "./source-attribution";
@@ -45,6 +43,8 @@ import { cn } from "@/lib/utils";
 interface EvidencePanelProps {
   mapping: TopicMapping;
   evidence: EvidenceRecord[];
+  /** Pre-resolved ayah text (server-side). When absent, a fallback message is shown. */
+  ayahText?: { arabic: string; translation: string } | null;
   onAttach?: (
     sourceId: string,
     ref: { volumePage?: string; sourceUrl?: string; excerpt?: string }
@@ -57,6 +57,7 @@ interface EvidencePanelProps {
 export function EvidencePanel({
   mapping,
   evidence,
+  ayahText,
   onAttach,
   onVerify,
   reviewerId,
@@ -65,8 +66,6 @@ export function EvidencePanel({
   const summary = summarizeEvidence(evidence);
   const hasVerifiedEvidence = summary.hasVerified;
 
-  // Resolve first ayah in range for display
-  const ayah = getAyah(mapping.surahNumber, mapping.ayahStart);
   const tafsirSources = getAvailableTafsirSourcesForAyah(
     mapping.surahNumber,
     mapping.ayahStart
@@ -100,13 +99,13 @@ export function EvidencePanel({
           Quran Text
         </h3>
         <div className="rounded-xl border border-border/70 bg-card p-4">
-          {ayah ? (
+          {ayahText ? (
             <p
               dir="rtl"
               lang="ar"
               className="arabic-display text-xl leading-loose text-foreground"
             >
-              {ayah.arabic}
+              {ayahText.arabic}
             </p>
           ) : (
             <p className="text-sm text-muted-foreground">
@@ -132,9 +131,9 @@ export function EvidencePanel({
           Translation
         </h3>
         <div className="rounded-xl border border-border/70 bg-card p-4">
-          {ayah ? (
+          {ayahText ? (
             <p className="text-sm leading-relaxed text-foreground">
-              {ayah.translation}
+              {ayahText.translation}
             </p>
           ) : (
             <p className="text-sm text-muted-foreground">
@@ -259,7 +258,7 @@ function TafsirSourceCard({
   const [inlineError, setInlineError] = useState<string | null>(null);
 
   const status = evidenceRecord?.status ?? "NOT_ATTACHED";
-  const statusLabel = EVIDENCE_STATUS_LABELS[status];
+  const _statusLabel = EVIDENCE_STATUS_LABELS[status];
   const statusDescription = EVIDENCE_STATUS_DESCRIPTIONS[status];
   const verified = isVerified(status);
 
