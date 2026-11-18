@@ -1,0 +1,225 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T09:25:00.000Z",
+  "sourceExtraction": "ext-001-p1",
+  "candidates": [
+    {
+      "candidateId": "cand-0001",
+      "label": "Praise of Allah (Hamd)",
+      "arabicLabel": "ٱلۡحَمۡدُ لِلَّهِ",
+      "urduLabel": "حمدِ الٰہی",
+      "definition": "The Qur'anic affirmation that praise belongs to Allah, opening al-Fatiha. Related to but not identical with shukr (gratitude); the precise relationship requires scholarly review.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:2",
+          "excerpt": "ٱلۡحَمۡدُ لِلَّهِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The verse explicitly states that praise is due to Allah; the concept's own terms appear in the text."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shukr-gratitude",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Shukr is gratitude for favor; hamd is praise. Classical scholarship distinguishes them; this candidate records hamd as its own Qur'anic concept."
+        },
+        {
+          "topicId": "gratitude",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    },
+    {
+      "candidateId": "cand-0002",
+      "label": "Allah's Lordship of the Worlds (Rabb al-'Alamin)",
+      "arabicLabel": "رَبِّ ٱلۡعَٰلَمِينَ",
+      "urduLabel": "ربوبیتِ الٰہی — رب العالمین",
+      "definition": "Allah's lordship over all worlds as affirmed in 1:2. Records the Qur'anic phrase and its immediate context; theological elaboration belongs to tafsir.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:2",
+          "excerpt": "رَبِّ ٱلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The verse names Allah as Rabb of all worlds; the exact phrase is present."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "The existing topic covers oneness of lordship; this candidate records the specific Qur'anic affirmation of Allah as Rabb of all worlds. Whether they should merge is a scholarly decision."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    },
+    {
+      "candidateId": "cand-0003",
+      "label": "The paired divine names ar-Rahman and ar-Rahim",
+      "arabicLabel": "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+      "urduLabel": "رحمٰن و رحیم — اسمائے الٰہی",
+      "definition": "The paired divine names ar-Rahman and ar-Rahim as they occur together in al-Fatiha (1:1, 1:3). Their pairing and repetition are the extracted phenomenon; interpretation of the distinction belongs to tafsir.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:1",
+          "excerpt": "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Both names appear together in the basmala."
+        },
+        {
+          "key": "1:3",
+          "excerpt": "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The pair is repeated as a complete verse, marking emphasis within the passage."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "narrower",
+          "note": "These are two of the divine names; the existing topic covers the names collectively."
+        },
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    },
+    {
+      "candidateId": "cand-0004",
+      "label": "Sovereignty of the Day of Recompense (Malik Yawm ad-Din)",
+      "arabicLabel": "مَٰلِكِ يَوۡمِ ٱلدِّينِ",
+      "urduLabel": "مالکِ یومِ الدین",
+      "definition": "Allah's sovereignty of the Day of Recompense as stated in 1:4. Distinct from a general hereafter topic: the extracted concept is Allah's ownership/sovereignty of that Day.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:4",
+          "excerpt": "مَٰلِكِ يَوۡمِ ٱلدِّينِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The complete verse states the concept explicitly."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "The existing topic covers the Day itself; this candidate records the sovereignty aspect affirmed here."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "narrower"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    },
+    {
+      "candidateId": "cand-0005",
+      "label": "Exclusive worship and seeking help (Iyyaka na'budu wa iyyaka nasta'in)",
+      "arabicLabel": "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ",
+      "urduLabel": "اخلاصِ عبادت و استعانت",
+      "definition": "The declaration that worship and seeking help are directed to Allah alone (1:5). The classical link to tawhid al-uluhiyyah is noted as related but requires tafsir evidence to assert.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:5",
+          "excerpt": "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The complete verse is the declaration itself; both verbs (worship, seek help) are explicit."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Tafsir literature cites this verse for oneness of worship; that identification is recorded as related, not asserted as verified evidence."
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "narrower"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    },
+    {
+      "candidateId": "cand-0006",
+      "label": "The taught supplication for guidance to the straight path",
+      "arabicLabel": "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
+      "urduLabel": "دعائے ہدایت (صراطِ مستقیم)",
+      "definition": "The supplication the Qur'an teaches believers to make: asking Allah for guidance to the straight path (1:6), specified in 1:7 as the path of the favored.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:6",
+          "excerpt": "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The imperative plea 'guide us' with its object 'the straight path' is the verse itself."
+        },
+        {
+          "key": "1:7",
+          "excerpt": "صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The continuation specifies whose path is meant, completing the taught supplication."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "narrower",
+          "note": "A specific Qur'an-taught supplication within the general supplication topic."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    },
+    {
+      "candidateId": "cand-0007",
+      "label": "The three groups: favored, anger-earned, astray",
+      "urduLabel": "صراطِ مستقیم اور تین گروہ",
+      "definition": "The distinction stated in 1:7 between those upon whom Allah bestowed favor, those who earned anger, and those astray. The verse does not name the groups; any identification requires verified tafsir evidence and is not asserted here.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "1:7",
+          "excerpt": "غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "The two negative categories are named explicitly; the favored category appears earlier in the same verse. The three-way distinction is the extracted concept, without identifying the groups."
+        }
+      ],
+      "notes": "No existing curated or scholarly topic records this specific three-way distinction; flagged as a gap candidate. Group identification is deliberately deferred to scholarly review with tafsir evidence.",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T09:25:00.000Z"
+    }
+  ]
+}

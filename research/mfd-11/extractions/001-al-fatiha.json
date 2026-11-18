@@ -1,0 +1,168 @@
+{
+  "extractionId": "ext-001-p1",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 1,
+  "surahName": "Al-Fatihah",
+  "passage": {
+    "fromAyah": 1,
+    "toAyah": 7,
+    "label": "Al-Fatiha — the complete surah read as one passage"
+  },
+  "verseKeys": ["1:1", "1:2", "1:3", "1:4", "1:5", "1:6", "1:7"],
+  "arabicExcerpts": [
+    { "key": "1:1", "text": "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ" },
+    { "key": "1:2", "text": "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ" },
+    { "key": "1:3", "text": "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ" },
+    { "key": "1:4", "text": "مَٰلِكِ يَوۡمِ ٱلدِّينِ" },
+    { "key": "1:5", "text": "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ" },
+    { "key": "1:6", "text": "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ" },
+    { "key": "1:7", "text": "صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ" }
+  ],
+  "mainSubject": {
+    "label": "Praise of Allah, exclusive worship and dependence on Him, and the plea for guidance to the straight path",
+    "keys": ["1:2", "1:5", "1:6"],
+    "evidenceClass": "EXPLICIT_TEXT",
+    "notes": "Each element of the composite subject is stated in the cited verses: al-hamd (1:2), na'budu/nasta'in (1:5), ihdina (1:6)."
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Beginning in the name of Allah (basmala)",
+      "keys": ["1:1"],
+      "evidenceClass": "EXPLICIT_TEXT",
+      "notes": "The basmala is counted as verse 1:1 in the pinned corpus numbering."
+    },
+    {
+      "label": "Allah's lordship over all worlds (rabb al-'alamin)",
+      "keys": ["1:2"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The paired divine names ar-Rahman and ar-Rahim",
+      "keys": ["1:1", "1:3"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Sovereignty of the Day of Recompense (malik yawm ad-din)",
+      "keys": ["1:4"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Worship and seeking help directed to Allah alone",
+      "keys": ["1:5"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The taught plea for guidance to the straight path",
+      "keys": ["1:6"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The path of the favored, distinguished from those who earned anger and those astray",
+      "keys": ["1:7"],
+      "evidenceClass": "EXPLICIT_TEXT",
+      "notes": "The verse states the distinction but does not name the groups. Identification is a tafsir question and is not asserted here."
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "TAUGHT_SUPPLICATION",
+      "keys": ["1:6"],
+      "excerpt": "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
+      "description": "The Qur'an teaches the supplication 'Guide us to the straight path', continued in 1:7 with the path of those upon whom Allah bestowed favor."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱللَّهِ",
+      "transliteration": "Allah",
+      "gloss": "The divine name (editorial gloss)",
+      "keys": ["1:1"]
+    },
+    {
+      "term": "رَبِّ",
+      "transliteration": "Rabb",
+      "gloss": "Lord, nurturer — here of all worlds (editorial gloss)",
+      "keys": ["1:2"]
+    },
+    {
+      "term": "ٱلرَّحۡمَٰنِ",
+      "transliteration": "ar-Rahman",
+      "gloss": "The Entirely Merciful — divine name (editorial gloss)",
+      "keys": ["1:1", "1:3"]
+    },
+    {
+      "term": "ٱلرَّحِيمِ",
+      "transliteration": "ar-Rahim",
+      "gloss": "The Especially Merciful — divine name (editorial gloss)",
+      "keys": ["1:1", "1:3"]
+    },
+    {
+      "term": "مَٰلِكِ",
+      "transliteration": "Malik",
+      "gloss": "Sovereign/Master — of the Day of Recompense (editorial gloss)",
+      "keys": ["1:4"]
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Grateful praise as the servant's stance before Allah",
+      "keys": ["1:2"],
+      "evidenceClass": "THEMATIC"
+    },
+    {
+      "label": "Dependence on Allah for help (isti'anah)",
+      "keys": ["1:5"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The servant's need for guidance",
+      "keys": ["1:6"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Humanity distinguished by response to guidance: favored, anger-earned, astray",
+      "keys": ["1:7"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "relationships": [
+    {
+      "label": "Allah as Lord (Rabb) of all worlds — the Creator–creation relationship",
+      "keys": ["1:2"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Servants direct worship and requests for help to Allah alone",
+      "keys": ["1:5"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Guidance as a divine gift requested by the servant",
+      "keys": ["1:6"],
+      "evidenceClass": "THEMATIC"
+    },
+    {
+      "label": "Divine favor (in'am) bestowed upon a group of people",
+      "keys": ["1:7"],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    { "term": "ٱلۡحَمۡدُ", "transliteration": "al-hamd", "gloss": "praise", "keys": ["1:2"] },
+    { "term": "ٱلۡعَٰلَمِينَ", "transliteration": "al-'alamin", "gloss": "the worlds", "keys": ["1:2"] },
+    { "term": "يَوۡمِ ٱلدِّينِ", "transliteration": "yawm ad-din", "gloss": "Day of Recompense", "keys": ["1:4"] },
+    { "term": "نَعۡبُدُ", "transliteration": "na'budu", "gloss": "we worship", "keys": ["1:5"] },
+    { "term": "نَسۡتَعِينُ", "transliteration": "nasta'in", "gloss": "we seek help", "keys": ["1:5"] },
+    { "term": "ٱهۡدِنَا", "transliteration": "ihdina", "gloss": "guide us", "keys": ["1:6"] },
+    { "term": "ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ", "transliteration": "as-sirat al-mustaqim", "gloss": "the straight path", "keys": ["1:6"] },
+    { "term": "أَنۡعَمۡتَ", "transliteration": "an'amta", "gloss": "You bestowed favor", "keys": ["1:7"] },
+    { "term": "ٱلۡمَغۡضُوبِ", "transliteration": "al-maghdub", "gloss": "those who earned anger", "keys": ["1:7"] },
+    { "term": "ٱلضَّآلِّينَ", "transliteration": "ad-dallin", "gloss": "those astray", "keys": ["1:7"] }
+  ],
+  "topicCandidateIds": ["cand-0001", "cand-0002", "cand-0003", "cand-0004", "cand-0005", "cand-0006", "cand-0007"],
+  "notes": "Pilot record for MFD-11 Pass A. All subjects are grounded in the passage text. Identification of the groups in 1:7 (e.g., as prophets or specific communities) is a tafsir question requiring verified evidence and is deliberately not asserted. Basmala numbering follows the pinned corpus (counted as 1:1). No prophetic narrative or social/economic subject is stated in this passage, so those arrays are omitted rather than populated by inference.",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-18T09:25:00.000Z"
+}

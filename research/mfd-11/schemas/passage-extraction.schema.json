@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-11/passage-extraction",
+  "title": "MFD-11 Pass A passage extraction record",
+  "type": "object",
+  "required": ["extractionId", "workstream", "pass", "surah", "passage", "verseKeys", "mainSubject", "proposedBy", "reviewStatus", "createdAt"],
+  "additionalProperties": false,
+  "properties": {
+    "extractionId": { "type": "string", "pattern": "^ext-[0-9]{3}-p[0-9]+$" },
+    "workstream": { "const": "MFD-11" },
+    "pass": { "const": "A" },
+    "surah": { "type": "integer", "minimum": 1, "maximum": 114 },
+    "surahName": { "type": "string" },
+    "passage": {
+      "type": "object",
+      "required": ["fromAyah", "toAyah"],
+      "additionalProperties": false,
+      "properties": {
+        "fromAyah": { "type": "integer", "minimum": 1 },
+        "toAyah": { "type": "integer", "minimum": 1 },
+        "label": { "type": "string" }
+      }
+    },
+    "verseKeys": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[0-9]{1,3}:[0-9]{1,3}$" } },
+    "arabicExcerpts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "type": "string" },
+          "text": { "type": "string", "minLength": 1, "description": "MUST be a verbatim substring of the pinned corpus verse text." }
+        }
+      }
+    },
+    "mainSubject": { "$ref": "#/$defs/subject" },
+    "subordinateSubjects": { "type": "array", "items": { "$ref": "#/$defs/subject" } },
+    "commandsAndProhibitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "keys", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": { "enum": ["COMMAND", "PROHIBITION", "TAUGHT_SUPPLICATION"] },
+          "keys": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "excerpt": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
+    },
+    "divineNamesAndAttributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "keys"],
+        "additionalProperties": false,
+        "properties": {
+          "term": { "type": "string", "description": "Arabic term; MUST appear verbatim in at least one cited verse." },
+          "transliteration": { "type": "string" },
+          "gloss": { "type": "string", "description": "Editorial gloss, not scholarly tafsir." },
+          "keys": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+        }
+      }
+    },
+    "propheticNarratives": { "type": "array", "items": { "$ref": "#/$defs/subject" } },
+    "humanConditionsAndSpiritualStates": { "type": "array", "items": { "$ref": "#/$defs/subject" } },
+    "relationships": { "type": "array", "items": { "$ref": "#/$defs/subject" } },
+    "socialEconomicCivilisational": { "type": "array", "items": { "$ref": "#/$defs/subject" } },
+    "terminology": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "keys"],
+        "additionalProperties": false,
+        "properties": {
+          "term": { "type": "string", "description": "Arabic term; MUST appear verbatim in at least one cited verse." },
+          "transliteration": { "type": "string" },
+          "gloss": { "type": "string", "description": "Editorial gloss, not scholarly tafsir." },
+          "keys": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+        }
+      }
+    },
+    "topicCandidateIds": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "proposedBy": { "const": "ai-assisted" },
+    "reviewStatus": { "const": "pending-scholarly-review" },
+    "createdAt": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "subject": {
+      "type": "object",
+      "required": ["label", "keys", "evidenceClass"],
+      "additionalProperties": false,
+      "properties": {
+        "label": { "type": "string" },
+        "keys": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "evidenceClass": { "enum": ["EXPLICIT_TEXT", "THEMATIC", "CONTEXTUAL"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

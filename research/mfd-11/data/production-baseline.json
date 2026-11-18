@@ -1,0 +1,57 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T09:30:36.443Z",
+  "gitHead": "f5ba511b34f7d37b33fb9bdb63937837fe9fbf4c",
+  "note": "Read-only snapshot of production taxonomy and curated layer at MFD-11 start. Research must never change these files; --verify proves it.",
+  "files": {
+    "data/taxonomy/domains.json": "26322baafa13e967669b49d7117c6c51b238d4236e2b98d108248cb556d8f610",
+    "data/taxonomy/dimensions.json": "a88cd118fbdd438d8742085631c4787b9bc920d846aa65809aee85cc245138aa",
+    "data/taxonomy/topics.json": "6571e74aa644d168acc3ef2ba10da889b02ca4f73b5b83156da376e8c954c3e9",
+    "data/taxonomy/topic-ayah-mappings.json": "3ca33a47925e25e1ba282e28d3c3212f9654ce2dc897ba0a4150eb974d2c2ced",
+    "src/lib/topics/data.ts": "80f81041332916840432851a3e43191ad1788f073353fce47ffa3e633ec1cc46",
+    "src/lib/explore/dimensions.ts": "be14ffc5b78cffa7a826bf827d46bf786e8f667058ced890d198a4af0d260efb"
+  },
+  "counts": {
+    "domains": 20,
+    "dimensions": 103,
+    "topics": 184,
+    "mappings": 789,
+    "uniqueMappingIds": 789,
+    "expandedAyat": 1886,
+    "uniqueAyahKeys": 1550,
+    "uniqueMappedTopicIds": 176,
+    "mappedTopicIdsResolved": 176,
+    "mappedTopicIdsUnresolved": 0,
+    "topicsWithoutMappings": 8,
+    "curatedTopics": 18,
+    "uiDimensions": 15
+  },
+  "unresolvedMappedTopicIds": [],
+  "topicsWithoutMappings": [
+    "covenants-ahd",
+    "day-of-judgment",
+    "environmental-corruption",
+    "evidence-standards",
+    "interest-free-finance",
+    "non-combatant-protection",
+    "public-accountability",
+    "wealth-ownership"
+  ],
+  "distributions": {
+    "mappingType": {
+      "DIRECT_REFERENCE": 468,
+      "EXPLICIT_INSTRUCTION": 115,
+      "THEMATIC_REFERENCE": 128,
+      "PROPHETIC_NARRATIVE": 78
+    },
+    "provenance": {
+      "pending-scholarly-review": 789
+    },
+    "status": {
+      "MAPPED": 789
+    },
+    "topicProvenance": {
+      "pending-scholarly-review": 184
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-11/topic-candidate",
+  "title": "MFD-11 topic candidate (proposal, never approved)",
+  "type": "object",
+  "required": ["candidateId", "label", "definition", "definitionStatus", "evidence", "proposedBy", "reviewStatus", "createdAt"],
+  "additionalProperties": false,
+  "properties": {
+    "candidateId": { "type": "string", "pattern": "^cand-[0-9]{4}$" },
+    "label": { "type": "string", "minLength": 1 },
+    "arabicLabel": { "type": "string" },
+    "urduLabel": { "type": "string" },
+    "definition": { "type": "string", "minLength": 1, "description": "Editorial working definition. Never presented as scholarly tafsir." },
+    "definitionStatus": { "const": "editorial-draft" },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "mfd-11/evidence-link" }
+    },
+    "existingTopicOverlap": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["topicId", "layer", "relationship"],
+        "additionalProperties": false,
+        "properties": {
+          "topicId": { "type": "string" },
+          "layer": { "enum": ["curated", "scholarly"] },
+          "relationship": { "enum": ["same-concept", "related-not-identical", "broader", "narrower", "uncertain"] },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "notes": { "type": "string" },
+    "proposedBy": { "const": "ai-assisted" },
+    "reviewStatus": { "const": "pending-scholarly-review" },
+    "createdAt": { "type": "string", "format": "date-time" }
+  }
+}

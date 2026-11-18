@@ -1,0 +1,1158 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T09:30:36.443Z",
+  "gitHead": "f5ba511b34f7d37b33fb9bdb63937837fe9fbf4c",
+  "source": {
+    "package": "quran-json",
+    "version": "3.1.2",
+    "license": "CC-BY-4.0",
+    "corpusDir": "node_modules/quran-json/dist/chapters/en",
+    "arabicProvenance": "The Noble Qur'an Encyclopedia (quranenc.com), via quran-json; see docs/DATA-PROVENANCE.md"
+  },
+  "totals": {
+    "surahs": 114,
+    "verses": 6236
+  },
+  "surahs": [
+    {
+      "number": 1,
+      "name": "الفاتحة",
+      "transliteration": "Al-Fatihah",
+      "translation": "The Opener",
+      "revelationType": "meccan",
+      "verseCount": 7,
+      "firstVerseKey": "1:1",
+      "lastVerseKey": "1:7"
+    },
+    {
+      "number": 2,
+      "name": "البقرة",
+      "transliteration": "Al-Baqarah",
+      "translation": "The Cow",
+      "revelationType": "medinan",
+      "verseCount": 286,
+      "firstVerseKey": "2:1",
+      "lastVerseKey": "2:286"
+    },
+    {
+      "number": 3,
+      "name": "آل عمران",
+      "transliteration": "Ali 'Imran",
+      "translation": "Family of Imran",
+      "revelationType": "medinan",
+      "verseCount": 200,
+      "firstVerseKey": "3:1",
+      "lastVerseKey": "3:200"
+    },
+    {
+      "number": 4,
+      "name": "النساء",
+      "transliteration": "An-Nisa",
+      "translation": "The Women",
+      "revelationType": "medinan",
+      "verseCount": 176,
+      "firstVerseKey": "4:1",
+      "lastVerseKey": "4:176"
+    },
+    {
+      "number": 5,
+      "name": "المائدة",
+      "transliteration": "Al-Ma'idah",
+      "translation": "The Table Spread",
+      "revelationType": "medinan",
+      "verseCount": 120,
+      "firstVerseKey": "5:1",
+      "lastVerseKey": "5:120"
+    },
+    {
+      "number": 6,
+      "name": "الأنعام",
+      "transliteration": "Al-An'am",
+      "translation": "The Cattle",
+      "revelationType": "meccan",
+      "verseCount": 165,
+      "firstVerseKey": "6:1",
+      "lastVerseKey": "6:165"
+    },
+    {
+      "number": 7,
+      "name": "الأعراف",
+      "transliteration": "Al-A'raf",
+      "translation": "The Heights",
+      "revelationType": "meccan",
+      "verseCount": 206,
+      "firstVerseKey": "7:1",
+      "lastVerseKey": "7:206"
+    },
+    {
+      "number": 8,
+      "name": "الأنفال",
+      "transliteration": "Al-Anfal",
+      "translation": "The Spoils of War",
+      "revelationType": "medinan",
+      "verseCount": 75,
+      "firstVerseKey": "8:1",
+      "lastVerseKey": "8:75"
+    },
+    {
+      "number": 9,
+      "name": "التوبة",
+      "transliteration": "At-Tawbah",
+      "translation": "The Repentance",
+      "revelationType": "medinan",
+      "verseCount": 129,
+      "firstVerseKey": "9:1",
+      "lastVerseKey": "9:129"
+    },
+    {
+      "number": 10,
+      "name": "يونس",
+      "transliteration": "Yunus",
+      "translation": "Jonah",
+      "revelationType": "meccan",
+      "verseCount": 109,
+      "firstVerseKey": "10:1",
+      "lastVerseKey": "10:109"
+    },
+    {
+      "number": 11,
+      "name": "هود",
+      "transliteration": "Hud",
+      "translation": "Hud",
+      "revelationType": "meccan",
+      "verseCount": 123,
+      "firstVerseKey": "11:1",
+      "lastVerseKey": "11:123"
+    },
+    {
+      "number": 12,
+      "name": "يوسف",
+      "transliteration": "Yusuf",
+      "translation": "Joseph",
+      "revelationType": "meccan",
+      "verseCount": 111,
+      "firstVerseKey": "12:1",
+      "lastVerseKey": "12:111"
+    },
+    {
+      "number": 13,
+      "name": "الرعد",
+      "transliteration": "Ar-Ra'd",
+      "translation": "The Thunder",
+      "revelationType": "medinan",
+      "verseCount": 43,
+      "firstVerseKey": "13:1",
+      "lastVerseKey": "13:43"
+    },
+    {
+      "number": 14,
+      "name": "ابراهيم",
+      "transliteration": "Ibrahim",
+      "translation": "Abraham",
+      "revelationType": "meccan",
+      "verseCount": 52,
+      "firstVerseKey": "14:1",
+      "lastVerseKey": "14:52"
+    },
+    {
+      "number": 15,
+      "name": "الحجر",
+      "transliteration": "Al-Hijr",
+      "translation": "The Rocky Tract",
+      "revelationType": "meccan",
+      "verseCount": 99,
+      "firstVerseKey": "15:1",
+      "lastVerseKey": "15:99"
+    },
+    {
+      "number": 16,
+      "name": "النحل",
+      "transliteration": "An-Nahl",
+      "translation": "The Bee",
+      "revelationType": "meccan",
+      "verseCount": 128,
+      "firstVerseKey": "16:1",
+      "lastVerseKey": "16:128"
+    },
+    {
+      "number": 17,
+      "name": "الإسراء",
+      "transliteration": "Al-Isra",
+      "translation": "The Night Journey",
+      "revelationType": "meccan",
+      "verseCount": 111,
+      "firstVerseKey": "17:1",
+      "lastVerseKey": "17:111"
+    },
+    {
+      "number": 18,
+      "name": "الكهف",
+      "transliteration": "Al-Kahf",
+      "translation": "The Cave",
+      "revelationType": "meccan",
+      "verseCount": 110,
+      "firstVerseKey": "18:1",
+      "lastVerseKey": "18:110"
+    },
+    {
+      "number": 19,
+      "name": "مريم",
+      "transliteration": "Maryam",
+      "translation": "Mary",
+      "revelationType": "meccan",
+      "verseCount": 98,
+      "firstVerseKey": "19:1",
+      "lastVerseKey": "19:98"
+    },
+    {
+      "number": 20,
+      "name": "طه",
+      "transliteration": "Taha",
+      "translation": "Ta-Ha",
+      "revelationType": "meccan",
+      "verseCount": 135,
+      "firstVerseKey": "20:1",
+      "lastVerseKey": "20:135"
+    },
+    {
+      "number": 21,
+      "name": "الأنبياء",
+      "transliteration": "Al-Anbya",
+      "translation": "The Prophets",
+      "revelationType": "meccan",
+      "verseCount": 112,
+      "firstVerseKey": "21:1",
+      "lastVerseKey": "21:112"
+    },
+    {
+      "number": 22,
+      "name": "الحج",
+      "transliteration": "Al-Hajj",
+      "translation": "The Pilgrimage",
+      "revelationType": "medinan",
+      "verseCount": 78,
+      "firstVerseKey": "22:1",
+      "lastVerseKey": "22:78"
+    },
+    {
+      "number": 23,
+      "name": "المؤمنون",
+      "transliteration": "Al-Mu'minun",
+      "translation": "The Believers",
+      "revelationType": "meccan",
+      "verseCount": 118,
+      "firstVerseKey": "23:1",
+      "lastVerseKey": "23:118"
+    },
+    {
+      "number": 24,
+      "name": "النور",
+      "transliteration": "An-Nur",
+      "translation": "The Light",
+      "revelationType": "medinan",
+      "verseCount": 64,
+      "firstVerseKey": "24:1",
+      "lastVerseKey": "24:64"
+    },
+    {
+      "number": 25,
+      "name": "الفرقان",
+      "transliteration": "Al-Furqan",
+      "translation": "The Criterion",
+      "revelationType": "meccan",
+      "verseCount": 77,
+      "firstVerseKey": "25:1",
+      "lastVerseKey": "25:77"
+    },
+    {
+      "number": 26,
+      "name": "الشعراء",
+      "transliteration": "Ash-Shu'ara",
+      "translation": "The Poets",
+      "revelationType": "meccan",
+      "verseCount": 227,
+      "firstVerseKey": "26:1",
+      "lastVerseKey": "26:227"
+    },
+    {
+      "number": 27,
+      "name": "النمل",
+      "transliteration": "An-Naml",
+      "translation": "The Ant",
+      "revelationType": "meccan",
+      "verseCount": 93,
+      "firstVerseKey": "27:1",
+      "lastVerseKey": "27:93"
+    },
+    {
+      "number": 28,
+      "name": "القصص",
+      "transliteration": "Al-Qasas",
+      "translation": "The Stories",
+      "revelationType": "meccan",
+      "verseCount": 88,
+      "firstVerseKey": "28:1",
+      "lastVerseKey": "28:88"
+    },
+    {
+      "number": 29,
+      "name": "العنكبوت",
+      "transliteration": "Al-'Ankabut",
+      "translation": "The Spider",
+      "revelationType": "meccan",
+      "verseCount": 69,
+      "firstVerseKey": "29:1",
+      "lastVerseKey": "29:69"
+    },
+    {
+      "number": 30,
+      "name": "الروم",
+      "transliteration": "Ar-Rum",
+      "translation": "The Romans",
+      "revelationType": "meccan",
+      "verseCount": 60,
+      "firstVerseKey": "30:1",
+      "lastVerseKey": "30:60"
+    },
+    {
+      "number": 31,
+      "name": "لقمان",
+      "transliteration": "Luqman",
+      "translation": "Luqman",
+      "revelationType": "meccan",
+      "verseCount": 34,
+      "firstVerseKey": "31:1",
+      "lastVerseKey": "31:34"
+    },
+    {
+      "number": 32,
+      "name": "السجدة",
+      "transliteration": "As-Sajdah",
+      "translation": "The Prostration",
+      "revelationType": "meccan",
+      "verseCount": 30,
+      "firstVerseKey": "32:1",
+      "lastVerseKey": "32:30"
+    },
+    {
+      "number": 33,
+      "name": "الأحزاب",
+      "transliteration": "Al-Ahzab",
+      "translation": "The Combined Forces",
+      "revelationType": "medinan",
+      "verseCount": 73,
+      "firstVerseKey": "33:1",
+      "lastVerseKey": "33:73"
+    },
+    {
+      "number": 34,
+      "name": "سبإ",
+      "transliteration": "Saba",
+      "translation": "Sheba",
+      "revelationType": "meccan",
+      "verseCount": 54,
+      "firstVerseKey": "34:1",
+      "lastVerseKey": "34:54"
+    },
+    {
+      "number": 35,
+      "name": "فاطر",
+      "transliteration": "Fatir",
+      "translation": "Originator",
+      "revelationType": "meccan",
+      "verseCount": 45,
+      "firstVerseKey": "35:1",
+      "lastVerseKey": "35:45"
+    },
+    {
+      "number": 36,
+      "name": "يس",
+      "transliteration": "Ya-Sin",
+      "translation": "Ya Sin",
+      "revelationType": "meccan",
+      "verseCount": 83,
+      "firstVerseKey": "36:1",
+      "lastVerseKey": "36:83"
+    },
+    {
+      "number": 37,
+      "name": "الصافات",
+      "transliteration": "As-Saffat",
+      "translation": "Those who set the Ranks",
+      "revelationType": "meccan",
+      "verseCount": 182,
+      "firstVerseKey": "37:1",
+      "lastVerseKey": "37:182"
+    },
+    {
+      "number": 38,
+      "name": "ص",
+      "transliteration": "Sad",
+      "translation": "The Letter \"Saad\"",
+      "revelationType": "meccan",
+      "verseCount": 88,
+      "firstVerseKey": "38:1",
+      "lastVerseKey": "38:88"
+    },
+    {
+      "number": 39,
+      "name": "الزمر",
+      "transliteration": "Az-Zumar",
+      "translation": "The Troops",
+      "revelationType": "meccan",
+      "verseCount": 75,
+      "firstVerseKey": "39:1",
+      "lastVerseKey": "39:75"
+    },
+    {
+      "number": 40,
+      "name": "غافر",
+      "transliteration": "Ghafir",
+      "translation": "The Forgiver",
+      "revelationType": "meccan",
+      "verseCount": 85,
+      "firstVerseKey": "40:1",
+      "lastVerseKey": "40:85"
+    },
+    {
+      "number": 41,
+      "name": "فصلت",
+      "transliteration": "Fussilat",
+      "translation": "Explained in Detail",
+      "revelationType": "meccan",
+      "verseCount": 54,
+      "firstVerseKey": "41:1",
+      "lastVerseKey": "41:54"
+    },
+    {
+      "number": 42,
+      "name": "الشورى",
+      "transliteration": "Ash-Shuraa",
+      "translation": "The Consultation",
+      "revelationType": "meccan",
+      "verseCount": 53,
+      "firstVerseKey": "42:1",
+      "lastVerseKey": "42:53"
+    },
+    {
+      "number": 43,
+      "name": "الزخرف",
+      "transliteration": "Az-Zukhruf",
+      "translation": "The Ornaments of Gold",
+      "revelationType": "meccan",
+      "verseCount": 89,
+      "firstVerseKey": "43:1",
+      "lastVerseKey": "43:89"
+    },
+    {
+      "number": 44,
+      "name": "الدخان",
+      "transliteration": "Ad-Dukhan",
+      "translation": "The Smoke",
+      "revelationType": "meccan",
+      "verseCount": 59,
+      "firstVerseKey": "44:1",
+      "lastVerseKey": "44:59"
+    },
+    {
+      "number": 45,
+      "name": "الجاثية",
+      "transliteration": "Al-Jathiyah",
+      "translation": "The Crouching",
+      "revelationType": "meccan",
+      "verseCount": 37,
+      "firstVerseKey": "45:1",
+      "lastVerseKey": "45:37"
+    },
+    {
+      "number": 46,
+      "name": "الأحقاف",
+      "transliteration": "Al-Ahqaf",
+      "translation": "The Wind-Curved Sandhills",
+      "revelationType": "meccan",
+      "verseCount": 35,
+      "firstVerseKey": "46:1",
+      "lastVerseKey": "46:35"
+    },
+    {
+      "number": 47,
+      "name": "محمد",
+      "transliteration": "Muhammad",
+      "translation": "Muhammad",
+      "revelationType": "medinan",
+      "verseCount": 38,
+      "firstVerseKey": "47:1",
+      "lastVerseKey": "47:38"
+    },
+    {
+      "number": 48,
+      "name": "الفتح",
+      "transliteration": "Al-Fath",
+      "translation": "The Victory",
+      "revelationType": "medinan",
+      "verseCount": 29,
+      "firstVerseKey": "48:1",
+      "lastVerseKey": "48:29"
+    },
+    {
+      "number": 49,
+      "name": "الحجرات",
+      "transliteration": "Al-Hujurat",
+      "translation": "The Rooms",
+      "revelationType": "medinan",
+      "verseCount": 18,
+      "firstVerseKey": "49:1",
+      "lastVerseKey": "49:18"
+    },
+    {
+      "number": 50,
+      "name": "ق",
+      "transliteration": "Qaf",
+      "translation": "The Letter \"Qaf\"",
+      "revelationType": "meccan",
+      "verseCount": 45,
+      "firstVerseKey": "50:1",
+      "lastVerseKey": "50:45"
+    },
+    {
+      "number": 51,
+      "name": "الذاريات",
+      "transliteration": "Adh-Dhariyat",
+      "translation": "The Winnowing Winds",
+      "revelationType": "meccan",
+      "verseCount": 60,
+      "firstVerseKey": "51:1",
+      "lastVerseKey": "51:60"
+    },
+    {
+      "number": 52,
+      "name": "الطور",
+      "transliteration": "At-Tur",
+      "translation": "The Mount",
+      "revelationType": "meccan",
+      "verseCount": 49,
+      "firstVerseKey": "52:1",
+      "lastVerseKey": "52:49"
+    },
+    {
+      "number": 53,
+      "name": "النجم",
+      "transliteration": "An-Najm",
+      "translation": "The Star",
+      "revelationType": "meccan",
+      "verseCount": 62,
+      "firstVerseKey": "53:1",
+      "lastVerseKey": "53:62"
+    },
+    {
+      "number": 54,
+      "name": "القمر",
+      "transliteration": "Al-Qamar",
+      "translation": "The Moon",
+      "revelationType": "meccan",
+      "verseCount": 55,
+      "firstVerseKey": "54:1",
+      "lastVerseKey": "54:55"
+    },
+    {
+      "number": 55,
+      "name": "الرحمن",
+      "transliteration": "Ar-Rahman",
+      "translation": "The Beneficent",
+      "revelationType": "medinan",
+      "verseCount": 78,
+      "firstVerseKey": "55:1",
+      "lastVerseKey": "55:78"
+    },
+    {
+      "number": 56,
+      "name": "الواقعة",
+      "transliteration": "Al-Waqi'ah",
+      "translation": "The Inevitable",
+      "revelationType": "meccan",
+      "verseCount": 96,
+      "firstVerseKey": "56:1",
+      "lastVerseKey": "56:96"
+    },
+    {
+      "number": 57,
+      "name": "الحديد",
+      "transliteration": "Al-Hadid",
+      "translation": "The Iron",
+      "revelationType": "medinan",
+      "verseCount": 29,
+      "firstVerseKey": "57:1",
+      "lastVerseKey": "57:29"
+    },
+    {
+      "number": 58,
+      "name": "المجادلة",
+      "transliteration": "Al-Mujadila",
+      "translation": "The Pleading Woman",
+      "revelationType": "medinan",
+      "verseCount": 22,
+      "firstVerseKey": "58:1",
+      "lastVerseKey": "58:22"
+    },
+    {
+      "number": 59,
+      "name": "الحشر",
+      "transliteration": "Al-Hashr",
+      "translation": "The Exile",
+      "revelationType": "medinan",
+      "verseCount": 24,
+      "firstVerseKey": "59:1",
+      "lastVerseKey": "59:24"
+    },
+    {
+      "number": 60,
+      "name": "الممتحنة",
+      "transliteration": "Al-Mumtahanah",
+      "translation": "She that is to be examined",
+      "revelationType": "medinan",
+      "verseCount": 13,
+      "firstVerseKey": "60:1",
+      "lastVerseKey": "60:13"
+    },
+    {
+      "number": 61,
+      "name": "الصف",
+      "transliteration": "As-Saf",
+      "translation": "The Ranks",
+      "revelationType": "medinan",
+      "verseCount": 14,
+      "firstVerseKey": "61:1",
+      "lastVerseKey": "61:14"
+    },
+    {
+      "number": 62,
+      "name": "الجمعة",
+      "transliteration": "Al-Jumu'ah",
+      "translation": "The Congregation, Friday",
+      "revelationType": "medinan",
+      "verseCount": 11,
+      "firstVerseKey": "62:1",
+      "lastVerseKey": "62:11"
+    },
+    {
+      "number": 63,
+      "name": "المنافقون",
+      "transliteration": "Al-Munafiqun",
+      "translation": "The Hypocrites",
+      "revelationType": "medinan",
+      "verseCount": 11,
+      "firstVerseKey": "63:1",
+      "lastVerseKey": "63:11"
+    },
+    {
+      "number": 64,
+      "name": "التغابن",
+      "transliteration": "At-Taghabun",
+      "translation": "The Mutual Disillusion",
+      "revelationType": "medinan",
+      "verseCount": 18,
+      "firstVerseKey": "64:1",
+      "lastVerseKey": "64:18"
+    },
+    {
+      "number": 65,
+      "name": "الطلاق",
+      "transliteration": "At-Talaq",
+      "translation": "The Divorce",
+      "revelationType": "medinan",
+      "verseCount": 12,
+      "firstVerseKey": "65:1",
+      "lastVerseKey": "65:12"
+    },
+    {
+      "number": 66,
+      "name": "التحريم",
+      "transliteration": "At-Tahrim",
+      "translation": "The Prohibition",
+      "revelationType": "medinan",
+      "verseCount": 12,
+      "firstVerseKey": "66:1",
+      "lastVerseKey": "66:12"
+    },
+    {
+      "number": 67,
+      "name": "الملك",
+      "transliteration": "Al-Mulk",
+      "translation": "The Sovereignty",
+      "revelationType": "meccan",
+      "verseCount": 30,
+      "firstVerseKey": "67:1",
+      "lastVerseKey": "67:30"
+    },
+    {
+      "number": 68,
+      "name": "القلم",
+      "transliteration": "Al-Qalam",
+      "translation": "The Pen",
+      "revelationType": "meccan",
+      "verseCount": 52,
+      "firstVerseKey": "68:1",
+      "lastVerseKey": "68:52"
+    },
+    {
+      "number": 69,
+      "name": "الحاقة",
+      "transliteration": "Al-Haqqah",
+      "translation": "The Reality",
+      "revelationType": "meccan",
+      "verseCount": 52,
+      "firstVerseKey": "69:1",
+      "lastVerseKey": "69:52"
+    },
+    {
+      "number": 70,
+      "name": "المعارج",
+      "transliteration": "Al-Ma'arij",
+      "translation": "The Ascending Stairways",
+      "revelationType": "meccan",
+      "verseCount": 44,
+      "firstVerseKey": "70:1",
+      "lastVerseKey": "70:44"
+    },
+    {
+      "number": 71,
+      "name": "نوح",
+      "transliteration": "Nuh",
+      "translation": "Noah",
+      "revelationType": "meccan",
+      "verseCount": 28,
+      "firstVerseKey": "71:1",
+      "lastVerseKey": "71:28"
+    },
+    {
+      "number": 72,
+      "name": "الجن",
+      "transliteration": "Al-Jinn",
+      "translation": "The Jinn",
+      "revelationType": "meccan",
+      "verseCount": 28,
+      "firstVerseKey": "72:1",
+      "lastVerseKey": "72:28"
+    },
+    {
+      "number": 73,
+      "name": "المزمل",
+      "transliteration": "Al-Muzzammil",
+      "translation": "The Enshrouded One",
+      "revelationType": "meccan",
+      "verseCount": 20,
+      "firstVerseKey": "73:1",
+      "lastVerseKey": "73:20"
+    },
+    {
+      "number": 74,
+      "name": "المدثر",
+      "transliteration": "Al-Muddaththir",
+      "translation": "The Cloaked One",
+      "revelationType": "meccan",
+      "verseCount": 56,
+      "firstVerseKey": "74:1",
+      "lastVerseKey": "74:56"
+    },
+    {
+      "number": 75,
+      "name": "القيامة",
+      "transliteration": "Al-Qiyamah",
+      "translation": "The Resurrection",
+      "revelationType": "meccan",
+      "verseCount": 40,
+      "firstVerseKey": "75:1",
+      "lastVerseKey": "75:40"
+    },
+    {
+      "number": 76,
+      "name": "الانسان",
+      "transliteration": "Al-Insan",
+      "translation": "The Man",
+      "revelationType": "medinan",
+      "verseCount": 31,
+      "firstVerseKey": "76:1",
+      "lastVerseKey": "76:31"
+    },
+    {
+      "number": 77,
+      "name": "المرسلات",
+      "transliteration": "Al-Mursalat",
+      "translation": "The Emissaries",
+      "revelationType": "meccan",
+      "verseCount": 50,
+      "firstVerseKey": "77:1",
+      "lastVerseKey": "77:50"
+    },
+    {
+      "number": 78,
+      "name": "النبإ",
+      "transliteration": "An-Naba",
+      "translation": "The Tidings",
+      "revelationType": "meccan",
+      "verseCount": 40,
+      "firstVerseKey": "78:1",
+      "lastVerseKey": "78:40"
+    },
+    {
+      "number": 79,
+      "name": "النازعات",
+      "transliteration": "An-Nazi'at",
+      "translation": "Those who drag forth",
+      "revelationType": "meccan",
+      "verseCount": 46,
+      "firstVerseKey": "79:1",
+      "lastVerseKey": "79:46"
+    },
+    {
+      "number": 80,
+      "name": "عبس",
+      "transliteration": "'Abasa",
+      "translation": "He Frowned",
+      "revelationType": "meccan",
+      "verseCount": 42,
+      "firstVerseKey": "80:1",
+      "lastVerseKey": "80:42"
+    },
+    {
+      "number": 81,
+      "name": "التكوير",
+      "transliteration": "At-Takwir",
+      "translation": "The Overthrowing",
+      "revelationType": "meccan",
+      "verseCount": 29,
+      "firstVerseKey": "81:1",
+      "lastVerseKey": "81:29"
+    },
+    {
+      "number": 82,
+      "name": "الإنفطار",
+      "transliteration": "Al-Infitar",
+      "translation": "The Cleaving",
+      "revelationType": "meccan",
+      "verseCount": 19,
+      "firstVerseKey": "82:1",
+      "lastVerseKey": "82:19"
+    },
+    {
+      "number": 83,
+      "name": "المطففين",
+      "transliteration": "Al-Mutaffifin",
+      "translation": "The Defrauding",
+      "revelationType": "meccan",
+      "verseCount": 36,
+      "firstVerseKey": "83:1",
+      "lastVerseKey": "83:36"
+    },
+    {
+      "number": 84,
+      "name": "الإنشقاق",
+      "transliteration": "Al-Inshiqaq",
+      "translation": "The Sundering",
+      "revelationType": "meccan",
+      "verseCount": 25,
+      "firstVerseKey": "84:1",
+      "lastVerseKey": "84:25"
+    },
+    {
+      "number": 85,
+      "name": "البروج",
+      "transliteration": "Al-Buruj",
+      "translation": "The Mansions of the Stars",
+      "revelationType": "meccan",
+      "verseCount": 22,
+      "firstVerseKey": "85:1",
+      "lastVerseKey": "85:22"
+    },
+    {
+      "number": 86,
+      "name": "الطارق",
+      "transliteration": "At-Tariq",
+      "translation": "The Nightcommer",
+      "revelationType": "meccan",
+      "verseCount": 17,
+      "firstVerseKey": "86:1",
+      "lastVerseKey": "86:17"
+    },
+    {
+      "number": 87,
+      "name": "الأعلى",
+      "transliteration": "Al-A'la",
+      "translation": "The Most High",
+      "revelationType": "meccan",
+      "verseCount": 19,
+      "firstVerseKey": "87:1",
+      "lastVerseKey": "87:19"
+    },
+    {
+      "number": 88,
+      "name": "الغاشية",
+      "transliteration": "Al-Ghashiyah",
+      "translation": "The Overwhelming",
+      "revelationType": "meccan",
+      "verseCount": 26,
+      "firstVerseKey": "88:1",
+      "lastVerseKey": "88:26"
+    },
+    {
+      "number": 89,
+      "name": "الفجر",
+      "transliteration": "Al-Fajr",
+      "translation": "The Dawn",
+      "revelationType": "meccan",
+      "verseCount": 30,
+      "firstVerseKey": "89:1",
+      "lastVerseKey": "89:30"
+    },
+    {
+      "number": 90,
+      "name": "البلد",
+      "transliteration": "Al-Balad",
+      "translation": "The City",
+      "revelationType": "meccan",
+      "verseCount": 20,
+      "firstVerseKey": "90:1",
+      "lastVerseKey": "90:20"
+    },
+    {
+      "number": 91,
+      "name": "الشمس",
+      "transliteration": "Ash-Shams",
+      "translation": "The Sun",
+      "revelationType": "meccan",
+      "verseCount": 15,
+      "firstVerseKey": "91:1",
+      "lastVerseKey": "91:15"
+    },
+    {
+      "number": 92,
+      "name": "الليل",
+      "transliteration": "Al-Layl",
+      "translation": "The Night",
+      "revelationType": "meccan",
+      "verseCount": 21,
+      "firstVerseKey": "92:1",
+      "lastVerseKey": "92:21"
+    },
+    {
+      "number": 93,
+      "name": "الضحى",
+      "transliteration": "Ad-Duhaa",
+      "translation": "The Morning Hours",
+      "revelationType": "meccan",
+      "verseCount": 11,
+      "firstVerseKey": "93:1",
+      "lastVerseKey": "93:11"
+    },
+    {
+      "number": 94,
+      "name": "الشرح",
+      "transliteration": "Ash-Sharh",
+      "translation": "The Relief",
+      "revelationType": "meccan",
+      "verseCount": 8,
+      "firstVerseKey": "94:1",
+      "lastVerseKey": "94:8"
+    },
+    {
+      "number": 95,
+      "name": "التين",
+      "transliteration": "At-Tin",
+      "translation": "The Fig",
+      "revelationType": "meccan",
+      "verseCount": 8,
+      "firstVerseKey": "95:1",
+      "lastVerseKey": "95:8"
+    },
+    {
+      "number": 96,
+      "name": "العلق",
+      "transliteration": "Al-'Alaq",
+      "translation": "The Clot",
+      "revelationType": "meccan",
+      "verseCount": 19,
+      "firstVerseKey": "96:1",
+      "lastVerseKey": "96:19"
+    },
+    {
+      "number": 97,
+      "name": "القدر",
+      "transliteration": "Al-Qadr",
+      "translation": "The Power",
+      "revelationType": "meccan",
+      "verseCount": 5,
+      "firstVerseKey": "97:1",
+      "lastVerseKey": "97:5"
+    },
+    {
+      "number": 98,
+      "name": "البينة",
+      "transliteration": "Al-Bayyinah",
+      "translation": "The Clear Proof",
+      "revelationType": "medinan",
+      "verseCount": 8,
+      "firstVerseKey": "98:1",
+      "lastVerseKey": "98:8"
+    },
+    {
+      "number": 99,
+      "name": "الزلزلة",
+      "transliteration": "Az-Zalzalah",
+      "translation": "The Earthquake",
+      "revelationType": "medinan",
+      "verseCount": 8,
+      "firstVerseKey": "99:1",
+      "lastVerseKey": "99:8"
+    },
+    {
+      "number": 100,
+      "name": "العاديات",
+      "transliteration": "Al-'Adiyat",
+      "translation": "The Courser",
+      "revelationType": "meccan",
+      "verseCount": 11,
+      "firstVerseKey": "100:1",
+      "lastVerseKey": "100:11"
+    },
+    {
+      "number": 101,
+      "name": "القارعة",
+      "transliteration": "Al-Qari'ah",
+      "translation": "The Calamity",
+      "revelationType": "meccan",
+      "verseCount": 11,
+      "firstVerseKey": "101:1",
+      "lastVerseKey": "101:11"
+    },
+    {
+      "number": 102,
+      "name": "التكاثر",
+      "transliteration": "At-Takathur",
+      "translation": "The Rivalry in world increase",
+      "revelationType": "meccan",
+      "verseCount": 8,
+      "firstVerseKey": "102:1",
+      "lastVerseKey": "102:8"
+    },
+    {
+      "number": 103,
+      "name": "العصر",
+      "transliteration": "Al-'Asr",
+      "translation": "The Declining Day",
+      "revelationType": "meccan",
+      "verseCount": 3,
+      "firstVerseKey": "103:1",
+      "lastVerseKey": "103:3"
+    },
+    {
+      "number": 104,
+      "name": "الهمزة",
+      "transliteration": "Al-Humazah",
+      "translation": "The Traducer",
+      "revelationType": "meccan",
+      "verseCount": 9,
+      "firstVerseKey": "104:1",
+      "lastVerseKey": "104:9"
+    },
+    {
+      "number": 105,
+      "name": "الفيل",
+      "transliteration": "Al-Fil",
+      "translation": "The Elephant",
+      "revelationType": "meccan",
+      "verseCount": 5,
+      "firstVerseKey": "105:1",
+      "lastVerseKey": "105:5"
+    },
+    {
+      "number": 106,
+      "name": "قريش",
+      "transliteration": "Quraysh",
+      "translation": "Quraysh",
+      "revelationType": "meccan",
+      "verseCount": 4,
+      "firstVerseKey": "106:1",
+      "lastVerseKey": "106:4"
+    },
+    {
+      "number": 107,
+      "name": "الماعون",
+      "transliteration": "Al-Ma'un",
+      "translation": "The Small kindnesses",
+      "revelationType": "meccan",
+      "verseCount": 7,
+      "firstVerseKey": "107:1",
+      "lastVerseKey": "107:7"
+    },
+    {
+      "number": 108,
+      "name": "الكوثر",
+      "transliteration": "Al-Kawthar",
+      "translation": "The Abundance",
+      "revelationType": "meccan",
+      "verseCount": 3,
+      "firstVerseKey": "108:1",
+      "lastVerseKey": "108:3"
+    },
+    {
+      "number": 109,
+      "name": "الكافرون",
+      "transliteration": "Al-Kafirun",
+      "translation": "The Disbelievers",
+      "revelationType": "meccan",
+      "verseCount": 6,
+      "firstVerseKey": "109:1",
+      "lastVerseKey": "109:6"
+    },
+    {
+      "number": 110,
+      "name": "النصر",
+      "transliteration": "An-Nasr",
+      "translation": "The Divine Support",
+      "revelationType": "medinan",
+      "verseCount": 3,
+      "firstVerseKey": "110:1",
+      "lastVerseKey": "110:3"
+    },
+    {
+      "number": 111,
+      "name": "المسد",
+      "transliteration": "Al-Masad",
+      "translation": "The Palm Fiber",
+      "revelationType": "meccan",
+      "verseCount": 5,
+      "firstVerseKey": "111:1",
+      "lastVerseKey": "111:5"
+    },
+    {
+      "number": 112,
+      "name": "الإخلاص",
+      "transliteration": "Al-Ikhlas",
+      "translation": "The Sincerity",
+      "revelationType": "meccan",
+      "verseCount": 4,
+      "firstVerseKey": "112:1",
+      "lastVerseKey": "112:4"
+    },
+    {
+      "number": 113,
+      "name": "الفلق",
+      "transliteration": "Al-Falaq",
+      "translation": "The Daybreak",
+      "revelationType": "meccan",
+      "verseCount": 5,
+      "firstVerseKey": "113:1",
+      "lastVerseKey": "113:5"
+    },
+    {
+      "number": 114,
+      "name": "الناس",
+      "transliteration": "An-Nas",
+      "translation": "Mankind",
+      "revelationType": "meccan",
+      "verseCount": 6,
+      "firstVerseKey": "114:1",
+      "lastVerseKey": "114:6"
+    }
+  ]
+}
