@@ -1,0 +1,277 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T16:45:00.000Z",
+  "sourceExtraction": "ext-002-p21,ext-002-p22,ext-002-p23,ext-002-p24",
+  "candidates": [
+    {
+      "candidateId": "cand-0077",
+      "label": "Imamah appointment: Ibrahim tested and made leader; covenant excludes wrongdoers",
+      "definition": "In 2:124: Ibrahim was tested by his Lord with commands and fulfilled them; Allah said 'I will make you imam for people'; Ibrahim asked about descendants; Allah said covenant does not include wrongdoers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:124",
+          "excerpt": "۞وَإِذِ ٱبۡتَلَىٰٓ إِبۡرَٰهِـۧمَ رَبُّهُۥ بِكَلِمَٰتٖ فَأَتَمَّهُنَّۖ قَالَ إِنِّي جَاعِلُكَ لِلنَّاسِ إِمَامٗاۖ قَالَ وَمِن ذُرِّيَّتِيۖ قَالَ لَا يَنَالُ عَهۡدِي ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes imamah appointment linked to passing divine tests and excludes wrongdoers from covenant."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "امامت: ابراہیم کا امتحان اور رہنمائی پر تقرر",
+      "notes": "Foundational imamah verse. Conditional leadership tied to moral qualification."
+    },
+    {
+      "candidateId": "cand-0078",
+      "label": "Kaaba construction and purification: Ibrahim and Ismail's joint service",
+      "definition": "In 2:125-127: Allah made the House a place of return and security; charged Ibrahim and Ismail to purify it for pilgrims; they raised its foundations praying for acceptance.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:125",
+          "excerpt": "وَإِذۡ جَعَلۡنَا ٱلۡبَيۡتَ مَثَابَةٗ لِّلنَّاسِ وَأَمۡنٗا وَٱتَّخِذُواْ مِن مَّقَامِ إِبۡرَٰهِـۧمَ مُصَلّٗىۖ وَعَهِدۡنَآ إِلَىٰٓ إِبۡرَٰهِـۧمَ وَإِسۡمَٰعِيلَ أَن طَهِّرَا بَيۡتِيَ لِلطَّآئِفِينَ وَٱلۡعَٰكِفِينَ وَٱلرُّكَّعِ ٱلسُّجُودِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Establishes Kaaba's purpose and purification mandate."
+        },
+        {
+          "key": "2:127",
+          "excerpt": "وَإِذۡ يَرۡفَعُ إِبۡرَٰهِـۧمُ ٱلۡقَوَاعِدَ مِنَ ٱلۡبَيۡتِ وَإِسۡمَٰعِيلُ رَبَّنَا تَقَبَّلۡ مِنَّآۖ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Shows active construction and accompanying supplication."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "کعبہ کی تعمیر اور پاکی: ابراہیم اور اسماعیل کی مشترک خدمت",
+      "notes": "Core Hajj/Kaaba origin narrative. Joint father-son prophetic labor."
+    },
+    {
+      "candidateId": "cand-0079",
+      "label": "Ibrahim's taught supplications: Muslim identity, rites, and future messenger",
+      "definition": "In 2:128-129: Ibrahim and Ismail pray to be Muslims, have Muslim descendants, be shown rites, receive repentance, and for a messenger who recites, teaches, and purifies.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:128",
+          "excerpt": "رَبَّنَا وَٱجۡعَلۡنَا مُسۡلِمَيۡنِ لَكَ وَمِن ذُرِّيَّتِنَآ أُمَّةٗ مُّسۡلِمَةٗ لَّكَ وَأَرِنَا مَنَاسِكَنَا وَتُبۡ عَلَيۡنَآۖ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Supplication for Muslim identity and rites."
+        },
+        {
+          "key": "2:129",
+          "excerpt": "رَبَّنَا وَٱبۡعَثۡ فِيهِمۡ رَسُولٗا مِّنۡهُمۡ يَتۡلُواْ عَلَيۡهِمۡ ءَايَٰتِكَ وَيُعَلِّمُهُمُ ٱلۡكِتَٰبَ وَٱلۡحِكۡمَةَ وَيُزَكِّيهِمۡۖ إِنَّكَ أَنتَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Supplication for future messenger with four functions."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "ابراہیم کی دعائیں: مسلم ہونا، مناسک، اور رسول کی بشارت",
+      "notes": "Three consecutive taught supplications forming liturgical template. Prophetic anticipation of Muhammad."
+    },
+    {
+      "candidateId": "cand-0080",
+      "label": "Millat Ibrahim: the universal creed excluding sectarian exclusivism",
+      "definition": "In 2:130-135: turning from millat Ibrahim is self-foolishness; Ibrahim chosen and righteous; submitted to Rabb al-aalameen; willed to descendants; Yaqoob's deathbed tawheed; reject Jewish/Christian exclusivism; follow millat Ibrahim hanifan.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:130",
+          "excerpt": "وَمَن يَرۡغَبُ عَن مِّلَّةِ إِبۡرَٰهِـۧمَ إِلَّا مَن سَفِهَ نَفۡسَهُۥۚ وَلَقَدِ ٱصۡطَفَيۡنَٰهُ فِي ٱلدُّنۡيَاۖ وَإِنَّهُۥ فِي ٱلۡأٓخِرَةِ لَمِنَ ٱلصَّـٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Defines rejection of millat Ibrahim as self-delusion."
+        },
+        {
+          "key": "2:135",
+          "excerpt": "وَقَالُواْ كُونُواْ هُودًا أَوۡ نَصَٰرَىٰ تَهۡتَدُواْۗ قُلۡ بَلۡ مِلَّةَ إِبۡرَٰهِـۧمَ حَنِيفٗاۖ وَمَا كَانَ مِنَ ٱلۡمُشۡرِكِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Prescribes millat Ibrahim hanifan as alternative to sectarian claims."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "ملت ابراہیم: عالمگیر عقیدہ جو فرقہ پرستی کو مسترد کرتا ہے",
+      "notes": "Defines Islam as pre-sectarian Abrahamic monotheism. Deathbed testimonies confirm continuity."
+    },
+    {
+      "candidateId": "cand-0081",
+      "label": "Individual accountability: each nation earns its own; no cross-generational burden",
+      "definition": "In 2:134 and 2:141: that was an ummah that has passed; it has what it earned and you have what you earned; you will not be asked about what they used to do.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:134",
+          "excerpt": "تِلۡكَ أُمَّةٞ قَدۡ خَلَتۡۖ لَهَا مَا كَسَبَتۡ وَلَكُم مَّا كَسَبۡتُمۡۖ وَلَا تُسۡـَٔلُونَ عَمَّا كَانُواْ يَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "First occurrence of individual accountability formula."
+        },
+        {
+          "key": "2:141",
+          "excerpt": "تِلۡكَ أُمَّةٞ قَدۡ خَلَتۡۖ لَهَا مَا كَسَبَتۡ وَلَكُم مَّا كَسَبۡتُمۡۖ وَلَا تُسۡـَٔلُونَ عَمَّا كَانُواْ يَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Repeated formula reinforcing principle in different context."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "انفرادی ذمہ داری: ہر امت کا اپنا حصاد، نہ دوسروں کا بوجھ",
+      "notes": "Repeated twice in close proximity emphasizing non-transferability of spiritual merit or blame."
+    },
+    {
+      "candidateId": "cand-0082",
+      "label": "Universal faith declaration: believing in all revelations without distinction",
+      "definition": "In 2:136: say we believe in Allah and what was revealed to us and to Ibrahim, Ismail, Ishaq, Yaqoob, asbaat, Musa, Isa, and all prophets; we make no distinction; we are Muslims to Him.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:136",
+          "excerpt": "قُولُوٓاْ ءَامَنَّا بِٱللَّهِ وَمَآ أُنزِلَ إِلَيۡنَا وَمَآ أُنزِلَ إِلَىٰٓ إِبۡرَٰهِـۧمَ وَإِسۡمَٰعِيلَ وَإِسۡحَٰقَ وَيَعۡقُوبَ وَٱلۡأَسۡبَاطِ وَمَآ أُوتِيَ مُوسَىٰ وَعِيسَىٰ وَمَآ أُوتِيَ ٱلنَّبِيُّونَ مِن رَّبِّهِمۡ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّنۡهُمۡ وَنَحۡنُ لَهُۥ مُسۡلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse articulates comprehensive creed encompassing all prophetic traditions."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "عالمگیر ایمانی اعلان: تمام وحیوں پر بغیر تفریق کے ایمان",
+      "notes": "Gap candidate: most explicit Quranic statement of non-discrimination between prophets."
+    },
+    {
+      "candidateId": "cand-0083",
+      "label": "Sibghat Allah: divine coloring as the best religion",
+      "definition": "In 2:138: sibghat Allah — and who is better than Allah in coloring/religion? And we are worshippers of Him.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:138",
+          "excerpt": "صِبۡغَةَ ٱللَّهِ وَمَنۡ أَحۡسَنُ مِنَ ٱللَّهِ صِبۡغَةٗۖ وَنَحۡنُ لَهُۥ عَٰبِدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Unique sibghah metaphor defining Islam as divinely ordained disposition."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "صبغت اللہ: اللہ کا رنگ بہترین دین",
+      "notes": "Gap candidate: hapax legomenon sibghah. Metaphor of divine imprint on human nature."
+    },
+    {
+      "candidateId": "cand-0084",
+      "label": "Qibla change: divine test establishing ummatan wasatan as witnesses",
+      "definition": "In 2:143: thus We made you a middle community to be witnesses over people and Messenger witness over you; previous qiblah was test to distinguish followers from reverters; difficult except for guided; Allah preserves iman.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:143",
+          "excerpt": "وَكَذَٰلِكَ جَعَلۡنَٰكُمۡ أُمَّةٗ وَسَطٗا لِّتَكُونُواْ شُهَدَآءَ عَلَى ٱلنَّاسِ وَيَكُونَ ٱلرَّسُولُ عَلَيۡكُمۡ شَهِيدٗاۗ وَمَا جَعَلۡنَا ٱلۡقِبۡلَةَ ٱلَّتِي كُنتَ عَلَيۡهَآ إِلَّا لِنَعۡلَمَ مَن يَتَّبِعُ ٱلرَّسُولَ مِمَّن يَنقَلِبُ عَلَىٰ عَقِبَيۡهِۚ وَإِن كَانَتۡ لَكَبِيرَةً إِلَّا عَلَى ٱلَّذِينَ هَدَى ٱللَّهُۗ وَمَا كَانَ ٱللَّهُ لِيُضِيعَ إِيمَٰنَكُمۡۚ إِنَّ ٱللَّهَ بِٱلنَّاسِ لَرَءُوفٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse defines ummatan wasatan purpose and qiblah change as obedience test."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "تبدیلی قبلہ: اللہ کا امتحان اور امت وسطیہ کی شناخت",
+      "notes": "Gap candidate: ummatan wasatan as defining communal identity. Qiblah change as epistemological test."
+    },
+    {
+      "candidateId": "cand-0085",
+      "label": "Mutual remembrance and gratitude: fadhkuroonee adhkurkum wa-ushkuroo lee",
+      "definition": "In 2:152: remember Me I will remember you; be grateful to Me and do not deny Me — establishing reciprocal divine-human relationship through dhikr and shukr.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:152",
+          "excerpt": "فَٱذۡكُرُونِيٓ أَذۡكُرۡكُمۡ وَٱشۡكُرُواْ لِي وَلَا تَكۡفُرُونِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse pairs mutual remembrance with gratitude command and ingratitude prohibition."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance-forgetfulness",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "shukr-gratitude",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "gratitude-ingratitude",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "باہمی یاد اور شکر: مجھے یاد کرو میں تمہیں یاد کروںگا، شکر کرو انکار نہ کرو",
+      "notes": "Culminating verse of qiblah section. Reciprocal covenant formula."
+    },
+    {
+      "candidateId": "cand-0086",
+      "label": "Following desires after knowledge: post-knowledge deviation as zulm",
+      "definition": "In 2:145: if you follow their desires after what has come to you of knowledge, you would then be among the wrongdoers — reiterating that knowledge increases accountability.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:145",
+          "excerpt": "وَلَئِنۡ أَتَيۡتَ ٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ بِكُلِّ ءَايَةٖ مَّا تَبِعُواْ قِبۡلَتَكَۚ وَمَآ أَنتَ بِتَابِعٖ قِبۡلَتَهُمۡۚ وَمَا بَعۡضُهُم بِتَابِعٖ قِبۡلَةَ بَعۡضٖۚ وَلَئِنِ ٱتَّبَعۡتَ أَهۡوَآءَهُم مِّنۢ بَعۡدِ مَا جَآءَكَ مِنَ ٱلۡعِلۡمِ إِنَّكَ إِذٗا لَّمِنَ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse warns that post-knowledge capitulation to desires constitutes injustice."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience-haste",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:45:00.000Z",
+      "urduLabel": "علم کے بعد خواہش کی پیروی: علم آنے کے بعد انحراف ظلم",
+      "notes": "Echoes 2:120 warning. Knowledge-heightened accountability theme."
+    }
+  ]
+}
