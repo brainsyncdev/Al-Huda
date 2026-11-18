@@ -1,0 +1,305 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T16:54:00.000Z",
+  "sourceExtraction": "ext-002-p25,ext-002-p26,ext-002-p27,ext-002-p28",
+  "candidates": [
+    {
+      "candidateId": "cand-0087",
+      "label": "Sabr as divine strategy: seeking help through patience and prayer in adversity",
+      "definition": "In 2:153: O you who believe, seek help through patience and prayer; indeed Allah is with the patient. In 2:155-157: divine testing through fear, hunger, loss; glad tidings to those who say inna lillahi wa inna ilayhi raji'un when afflicted; upon them blessings and mercy; they are guided.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:153",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱسۡتَعِينُواْ بِٱلصَّبۡرِ وَٱلصَّلَوٰةِۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes sabr and salah as primary means of seeking divine help."
+        },
+        {
+          "key": "2:155",
+          "excerpt": "وَلَنَبۡلُوَنَّكُم بِشَيۡءٖ مِّنَ ٱلۡخَوۡفِ وَٱلۡجُوعِ وَنَقۡصٖ مِّنَ ٱلۡأَمۡوَٰلِ وَٱلۡأَنفُسِ وَٱلثَّمَرَٰتِۗ وَبَشِّرِ ٱلصَّـٰبِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Defines scope of divine testing and promises glad tidings to the patient."
+        },
+        {
+          "key": "2:157",
+          "excerpt": "أُوْلَـٰٓئِكَ عَلَيۡهِمۡ صَلَوَٰتٞ مِّن رَّبِّهِمۡ وَرَحۡمَةٞۖ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡمُهۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Confirms blessings, mercy, and guidance as rewards of patience."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "sabr-patience",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "patience-haste",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "tawakkul-trust",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "صبر بطور حکمت الہی: مشکلات میں صبر اور نماز سے مدد",
+      "notes": "Foundational sabr passage. Establishes patience not as passive endurance but as active spiritual strategy paired with prayer."
+    },
+    {
+      "candidateId": "cand-0088",
+      "label": "Istirja': taught supplication recognizing divine ownership and return in calamity",
+      "definition": "In 2:156: who when disaster strikes them say 'Indeed we belong to Allah and indeed to Him we will return' — a taught response to calamity affirming divine ownership and ultimate return.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:156",
+          "excerpt": "ٱلَّذِينَ إِذَآ أَصَٰبَتۡهُم مُّصِيبَةٞ قَالُوٓاْ إِنَّا لِلَّهِ وَإِنَّآ إِلَيۡهِ رَٰجِعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse provides the exact taught formula for responding to calamity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "sabr-patience",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "remembrance-forgetfulness",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "استرجاع: مصیبت میں اللہ کی ملکیت اور رجوع کا اعتراف",
+      "notes": "Gap candidate: specific liturgical formula for grief/calamity. Bridges sabr and dhikr concepts."
+    },
+    {
+      "candidateId": "cand-0089",
+      "label": "Repentance with reform and clarification: conditions for divine acceptance",
+      "definition": "In 2:160: except those who repent, reform themselves, and make evident what they concealed — those Allah accepts their repentance; He is At-Tawwab Ar-Raheem. Contrasts with 2:159 curse on concealers and 2:161-162 eternal curse on persistent disbelievers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:160",
+          "excerpt": "إِلَّا ٱلَّذِينَ تَابُواْ وَأَصۡلَحُواْ وَبَيَّنُواْ فَأُوْلَـٰٓئِكَ أَتُوبُ عَلَيۡهِمۡ وَأَنَا ٱلتَّوَّابُ ٱلرَّحِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse specifies three conditions for repentance acceptance: tawbah, islah, tabyeen."
+        },
+        {
+          "key": "2:159",
+          "excerpt": "إِنَّ ٱلَّذِينَ يَكۡتُمُونَ مَآ أَنزَلۡنَا مِنَ ٱلۡبَيِّنَٰتِ وَٱلۡهُدَىٰ مِنۢ بَعۡدِ مَا بَيَّنَّـٰهُ لِلنَّاسِ فِي ٱلۡكِتَٰبِ أُوْلَـٰٓئِكَ يَلۡعَنُهُمُ ٱللَّهُ وَيَلۡعَنُهُمُ ٱللَّـٰعِنُونَ",
+          "evidenceClass": "CONTEXTUAL",
+          "rationale": "Preceding verse establishes the offense (concealment) that repentance addresses."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "توبہ با اصلاح اور وضاحت: اللہ کی قبولیت کی شرائط",
+      "notes": "Key repentance verse with three-part condition. Distinguishes genuine reform from mere verbal claim."
+    },
+    {
+      "candidateId": "cand-0090",
+      "label": "Cosmic signs in creation: heavens, earth, night/day, ships, rain, creatures, winds, clouds",
+      "definition": "In 2:164: indeed in creation of heavens and earth, alternation of night and day, ships sailing with benefit, rain reviving earth, dispersal of creatures, directing winds and controlled clouds are signs for people who reason.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:164",
+          "excerpt": "إِنَّ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَٱخۡتِلَٰفِ ٱلَّيۡلِ وَٱلنَّهَارِ وَٱلۡفُلۡكِ ٱلَّتِي تَجۡرِي فِي ٱلۡبَحۡرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٖ فَأَحۡيَا بِهِ ٱلۡأَرۡضَ بَعۡدَ مَوۡتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٖ وَتَصۡرِيفِ ٱلرِّيَٰحِ وَٱلسَّحَابِ ٱلۡمُسَخَّرِ بَيۡنَ ٱلسَّمَآءِ وَٱلۡأَرۡضِ لَأٓيَٰتٖ لِّقَوۡمٖ يَعۡقِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse provides comprehensive inventory of natural phenomena as divine signs requiring intellectual engagement."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "کائناتی نشانیاں: آسمان، زمین، رات دن، جہاز، بارش، مخلوقات، ہوائیں، بادل",
+      "notes": "Gap candidate: most detailed single-verse catalog of natural ayat in Al-Baqarah. Requires 'aql (reasoning) as reception faculty."
+    },
+    {
+      "candidateId": "cand-0091",
+      "label": "Misplaced love: taking rivals beside Allah and loving them as love of Allah",
+      "definition": "In 2:165: among people are those who take equals besides Allah, loving them as love of Allah; but believers are stronger in love for Allah. If wrongdoers saw punishment they would know all power belongs to Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:165",
+          "excerpt": "وَمِنَ ٱلنَّاسِ مَن يَتَّخِذُ مِن دُونِ ٱللَّهِ أَندَادٗا يُحِبُّونَهُمۡ كَحُبِّ ٱللَّهِۖ وَٱلَّذِينَ ءَامَنُوٓاْ أَشَدُّ حُبّٗا لِّلَّهِۗ وَلَوۡ يَرَى ٱلَّذِينَ ظَلَمُوٓاْ إِذۡ يَرَوۡنَ ٱلۡعَذَابَ أَنَّ ٱلۡقُوَّةَ لِلَّهِ جَمِيعٗا وَأَنَّ ٱللَّهَ شَدِيدُ ٱلۡعَذَابِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse defines idolatry in terms of misplaced emotional devotion and contrasts with believer's superior love."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "غلط محبت: اللہ کے سوا کو اللہ کی محبت کی طرح پر پیار کرنا",
+      "notes": "Gap candidate: defines shirk affectively rather than ritually. Love hierarchy as diagnostic of faith."
+    },
+    {
+      "candidateId": "cand-0092",
+      "label": "Halal and tayyib: dual criteria for lawful and wholesome consumption",
+      "definition": "In 2:168: O mankind, eat from whatever is on earth that is lawful (halal) and good (tayyib). In 2:172: O believers, eat from good things We provided and be grateful. In 2:173: specific prohibitions (dead meat, blood, pork, non-divine dedication) with necessity exemption.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:168",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّاسُ كُلُواْ مِمَّا فِي ٱلۡأَرۡضِ حَلَٰلٗا طَيِّبٗا وَلَا تَتَّبِعُواْ خُطُوَٰتِ ٱلشَّيۡطَٰنِۚ إِنَّهُۥ لَكُمۡ عَدُوّٞ مُّبِينٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Universal address establishes dual halal-tayyib standard for all humanity."
+        },
+        {
+          "key": "2:173",
+          "excerpt": "إِنَّمَا حَرَّمَ عَلَيۡكُمُ ٱلۡمَيۡتَةَ وَٱلدَّمَ وَلَحۡمَ ٱلۡخِنزِيرِ وَمَآ أُهِلَّ بِهِۦ لِغَيۡرِ ٱللَّهِۖ فَمَنِ ٱضۡطُرَّ غَيۡرَ بَاغٖ وَلَا عَادٖ فَلَآ إِثۡمَ عَلَيۡهِۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Specifies four prohibited categories and necessity exemption."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shukr-gratitude",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "حلال اور طیب: جائز اور خالص غذا کے دوہرے معیار",
+      "notes": "Gap candidate: halal-tayyib pairing adds qualitative dimension beyond mere permissibility. Universal address (not believer-specific) notable."
+    },
+    {
+      "candidateId": "cand-0093",
+      "label": "Blind ancestral following: rejecting revelation for inherited tradition without understanding",
+      "definition": "In 2:170: when told to follow what Allah revealed they say we follow what our fathers did — even though their fathers understood nothing and were not guided. Parable in 2:171: disbelievers like one shouting to what hears nothing but calls — deaf, dumb, blind.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:170",
+          "excerpt": "وَإِذَا قِيلَ لَهُمُ ٱتَّبِعُواْ مَآ أَنزَلَ ٱللَّهُ قَالُواْ بَلۡ نَتَّبِعُ مَآ أَلۡفَيۡنَا عَلَيۡهِ ءَابَآءَنَآۚ أَوَلَوۡ كَانَ ءَابَآؤُهُمۡ لَا يَعۡقِلُونَ شَيۡـٔٗا وَلَا يَهۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse captures the exchange between divine invitation and traditionalist refusal."
+        },
+        {
+          "key": "2:171",
+          "excerpt": "وَمَثَلُ ٱلَّذِينَ كَفَرُواْ كَمَثَلِ ٱلَّذِي يَنۡعِقُ بِمَا لَا يَسۡمَعُ إِلَّا دُعَآءٗ وَنِدَآءٗۚ صُمُّۢ بُكۡمٌ عُمۡيٞ فَهُمۡ لَا يَعۡقِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Parable illustrates cognitive incapacity underlying traditionalist rejection."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "آبائی تقلید: وحی کو چھوڑ کر بغیر سمجھے آبائی رسم کی پیروی",
+      "notes": "Gap candidate: archetypal critique of unexamined tradition. Recurring Quranic theme concentrated here."
+    },
+    {
+      "candidateId": "cand-0094",
+      "label": "Concealment of scripture for worldly gain: eating Fire and divine silence",
+      "definition": "In 2:174-176: those who conceal what Allah sent down of the Book and sell it for small price eat only Fire; Allah won't speak to them or purify them on Judgment Day; they exchanged guidance for error and forgiveness for punishment; Book sent in truth; dissenters in extreme dissension.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:174",
+          "excerpt": "إِنَّ ٱلَّذِينَ يَكۡتُمُونَ مَآ أَنزَلَ ٱللَّهُ مِنَ ٱلۡكِتَٰبِ وَيَشۡتَرُونَ بِهِۦ ثَمَنٗا قَلِيلًا أُوْلَـٰٓئِكَ مَا يَأۡكُلُونَ فِي بُطُونِهِمۡ إِلَّا ٱلنَّارَ وَلَا يُكَلِّمُهُمُ ٱللَّهُ يَوۡمَ ٱلۡقِيَٰمَةِ وَلَا يُزَكِّيهِمۡ وَلَهُمۡ عَذَابٌ أَلِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Details punishment for concealing scripture: Fire in bellies, divine silence, non-purification."
+        },
+        {
+          "key": "2:175",
+          "excerpt": "أُوْلَـٰٓئِكَ ٱلَّذِينَ ٱشۡتَرَوُاْ ٱلضَّلَٰلَةَ بِٱلۡهُدَىٰ وَٱلۡعَذَابَ بِٱلۡمَغۡفِرَةِۚ فَمَآ أَصۡبَرَهُمۡ عَلَى ٱلنَّارِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Describes the catastrophic exchange: guidance for error, forgiveness for punishment."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "کتاب چھپانا: دنیاوی فائدے کے لیے وحی کا اخفاء",
+      "notes": "Continues concealment theme from 2:159. Adds economic motive (thaman qaleel) and eschatological consequences."
+    },
+    {
+      "candidateId": "cand-0095",
+      "label": "Ayat al-Birr: comprehensive righteousness integrating faith pillars with ethical action",
+      "definition": "In 2:177: righteousness is not turning faces east/west but believing in Allah, Last Day, angels, Book, prophets; giving wealth despite love to relatives, orphans, needy, traveler, askers, freeing slaves; establishing prayer; giving zakah; fulfilling covenants; patience in poverty, hardship, battle. Those are truthful and righteous.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:177",
+          "excerpt": "۞لَّيۡسَ ٱلۡبِرَّ أَن تُوَلُّواْ وُجُوهَكُمۡ قِبَلَ ٱلۡمَشۡرِقِ وَٱلۡمَغۡرِبِ وَلَٰكِنَّ ٱلۡبِرَّ مَنۡ ءَامَنَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَٱلۡمَلَـٰٓئِكَةِ وَٱلۡكِتَٰبِ وَٱلنَّبِيِّـۧنَ وَءَاتَى ٱلۡمَالَ عَلَىٰ حُبِّهِۦ ذَوِي ٱلۡقُرۡبَىٰ وَٱلۡيَتَٰمَىٰ وَٱلۡمَسَٰكِينَ وَٱبۡنَ ٱلسَّبِيلِ وَٱلسَّآئِلِينَ وَفِي ٱلرِّقَابِ وَأَقَامَ ٱلصَّلَوٰةَ وَءَاتَى ٱلزَّكَوٰةَ وَٱلۡمُوفُونَ بِعَهۡدِهِمۡ إِذَا عَٰهَدُواْۖ وَٱلصَّـٰبِرِينَ فِي ٱلۡبَأۡسَآءِ وَٱلضَّرَّآءِ وَحِينَ ٱلۡبَأۡسِۗ أُوْلَـٰٓئِكَ ٱلَّذِينَ صَدَقُواْۖ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡمُتَّقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse provides the most comprehensive single-verse definition of righteousness in the Quran, integrating creed, charity, worship, integrity, and endurance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "sabr-patience",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "shukr-gratitude",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "آیت البر: ایمان اور عمل کا جامع تعریف",
+      "notes": "Gap candidate: ayat al-birr as ethical constitution. Redefines piety from ritual orientation to holistic virtue."
+    },
+    {
+      "candidateId": "cand-0096",
+      "label": "Qisas: legal retribution as life-preserving justice with built-in mercy",
+      "definition": "In 2:178-179: qisas prescribed for murder with proportionality (free for free, slave for slave, female for female); remission by brother should be followed with good conduct; this is alleviation and mercy from your Lord; in qisas there is life O people of understanding so you may attain taqwa.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:178",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ كُتِبَ عَلَيۡكُمُ ٱلۡقِصَاصُ فِي ٱلۡقَتۡلَىۖ ٱلۡحُرُّ بِٱلۡحُرِّ وَٱلۡعَبۡدُ بِٱلۡعَبۡدِ وَٱلۡأُنثَىٰ بِٱلۡأُنثَىٰۚ فَمَنۡ عُفِيَ لَهُۥ مِنۡ أَخِيهِ شَيۡءٞ فَٱتِّبَاعُۢ بِٱلۡمَعۡرُوفِ وَأَدَآءٌ إِلَيۡهِ بِإِحۡسَٰنٖۗ ذَٰلِكَ تَخۡفِيفٞ مِّن رَّبِّكُمۡ وَرَحۡمَةٞۗ فَمَنِ ٱعۡتَدَىٰ بَعۡدَ ذَٰلِكَ فَلَهُۥ عَذَابٌ أَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Establishes proportional retribution with remission option framed as divine mercy."
+        },
+        {
+          "key": "2:179",
+          "excerpt": "وَلَكُمۡ فِي ٱلۡقِصَاصِ حَيَوٰةٞ يَـٰٓأُوْلِي ٱلۡأَلۡبَٰبِ لَعَلَّكُمۡ تَتَّقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Declares deterrent purpose: life in retribution for people of understanding."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:54:00.000Z",
+      "urduLabel": "قصاص: حیات بخشنے والا عدل با رحمت",
+      "notes": "Gap candidate: qisas reframed not as vengeance but as life-preserving social mechanism with mercy valve. Addresses ulu al-albab."
+    }
+  ]
+}
