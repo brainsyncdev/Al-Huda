@@ -1,0 +1,253 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T16:32:00.000Z",
+  "sourceExtraction": "ext-002-p18,ext-002-p19,ext-002-p20",
+  "candidates": [
+    {
+      "candidateId": "cand-0067",
+      "label": "Abrogation (naskh): replacing verses with better or similar",
+      "definition": "In 2:106: whatever ayah We abrogate (nansakh) or cause to be forgotten, We bring better or similar; establishing divine authority over revelation modification.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:106",
+          "excerpt": "۞مَا نَنسَخۡ مِنۡ ءَايَةٍ أَوۡ نُنسِهَا نَأۡتِ بِخَيۡرٖ مِّنۡهَآ أَوۡ مِثۡلِهَآۗ أَلَمۡ تَعۡلَمۡ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse states the naskh principle with replacement guarantee."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "نسخ: آیات کی تبدیلی بہتر یا مماثل سے",
+      "notes": "Gap candidate: foundational naskh doctrine verse. Distinguishes abrogation from forgetting."
+    },
+    {
+      "candidateId": "cand-0068",
+      "label": "Speech etiquette: replacing ambiguous ra'ina with respectful unzurna",
+      "definition": "In 2:104: believers commanded not to say 'ra'ina' (ambiguous word with disrespectful connotation) but to say 'unzurna' (attend to us) and listen — establishing respectful address to the Prophet.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:104",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَقُولُواْ رَٰعِنَا وَقُولُواْ ٱنظُرۡنَا وَٱسۡمَعُواْۗ وَلِلۡكَٰفِرِينَ عَذَابٌ أَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse contains both the prohibition and the prescribed alternative."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "بات کرنے کا آداب: راعنا کی جگہ انظرنا",
+      "notes": "Gap candidate: unique speech etiquette correction addressing linguistic ambiguity."
+    },
+    {
+      "candidateId": "cand-0069",
+      "label": "Post-truth envy: wishing to revert believers after truth became clear",
+      "definition": "In 2:109: many People of Book wish to turn believers back to kufr out of hasad from themselves even after truth became clear to them; believers commanded to pardon and overlook.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:109",
+          "excerpt": "وَدَّ كَثِيرٞ مِّنۡ أَهۡلِ ٱلۡكِتَٰبِ لَوۡ يَرُدُّونَكُم مِّنۢ بَعۡدِ إِيمَٰنِكُمۡ كُفَّارًا حَسَدٗا مِّنۡ عِندِ أَنفُسِهِم مِّنۢ بَعۡدِ مَا تَبَيَّنَ لَهُمُ ٱلۡحَقُّۖ فَٱعۡفُواْ وَٱصۡفَحُواْ حَتَّىٰ يَأۡتِيَ ٱللَّهُ بِأَمۡرِهِۦٓۗ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse identifies post-clarity envy as motive and prescribes patient response."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "حق ظاہر ہونے کے بعد حسد سے کفر پر واپس لانے کی خواہش",
+      "notes": "Distinguishes post-truth envy from pre-truth ignorance. Links to hasad theme."
+    },
+    {
+      "candidateId": "cand-0070",
+      "label": "Salah and zakah: paired establishment as pillars of devotion",
+      "definition": "In 2:110: believers commanded to establish prayer and give zakah together, with assurance that whatever good sent ahead will be found with Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:110",
+          "excerpt": "وَأَقِيمُواْ ٱلصَّلَوٰةَ وَءَاتُواْ ٱلزَّكَوٰةَۚ وَمَا تُقَدِّمُواْ لِأَنفُسِكُم مِّنۡ خَيۡرٖ تَجِدُوهُ عِندَ ٱللَّهِۗ إِنَّ ٱللَّهَ بِمَا تَعۡمَلُونَ بَصِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse pairs salah and zakah commands with divine reward assurance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "five-daily-prayers",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "zakat-calculation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "نماز اور زکوۃہ: عبادت کے دو ستون",
+      "notes": "Core salah-zakah pairing verse. Forward-looking reward motivation."
+    },
+    {
+      "candidateId": "cand-0071",
+      "label": "Universal salvation: submitting face to Allah with ihsan",
+      "definition": "In 2:112: whoever submits his face to Allah as muhsin has reward with his Lord; no fear upon them nor grief — establishing universal criterion beyond ethnic/religious identity.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:112",
+          "excerpt": "بَلَىٰۚ مَنۡ أَسۡلَمَ وَجۡهَهُۥ لِلَّهِ وَهُوَ مُحۡسِنٞ فَلَهُۥٓ أَجۡرُهُۥ عِندَ رَبِّهِۦ وَلَا خَوۡفٌ عَلَيۡهِمۡ وَلَا هُمۡ يَحۡزَنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse defines salvation by submission and excellence, not group membership."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "عالمگیر نجات: اللہ کے آگے جھکنا اور احسان",
+      "notes": "Direct rebuttal to exclusive salvation claims in 2:111. Defines islam as universal submission."
+    },
+    {
+      "candidateId": "cand-0072",
+      "label": "Masjid sanctity: preventing Allah's remembrance as gravest injustice",
+      "definition": "In 2:114: none more unjust than one who prevents masajid Allah from dhikr of His name and strives for their destruction; they should only enter in fear; disgrace in dunya and great punishment in akhirah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:114",
+          "excerpt": "وَمَنۡ أَظۡلَمُ مِمَّن مَّنَعَ مَسَٰجِدَ ٱللَّهِ أَن يُذۡكَرَ فِيهَا ٱسۡمُهُۥ وَسَعَىٰ فِي خَرَابِهَآۚ أُوْلَـٰٓئِكَ مَا كَانَ لَهُمۡ أَن يَدۡخُلُوهَآ إِلَّا خَآئِفِينَۚ لَهُمۡ فِي ٱلدُّنۡيَا خِزۡيٞ وَلَهُمۡ فِي ٱلۡأٓخِرَةِ عَذَابٌ عَظِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes masjid protection as sacred duty with severe consequences."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "مسجد کی حرمت: اللہ کے ذکر کو روکنا سب سے بڑا ظلم",
+      "notes": "Gap candidate: comprehensive masjid sanctity doctrine with worldly and otherworldly consequences."
+    },
+    {
+      "candidateId": "cand-0073",
+      "label": "Refutation of divine sonship: subhanahu and universal qanitoon",
+      "definition": "In 2:116: they say Allah took a son; subhanahu! Rather to Him belongs whatever is in heavens and earth; all are qanitoon to Him — absolute refutation of divine offspring.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:116",
+          "excerpt": "وَقَالُواْ ٱتَّخَذَ ٱللَّهُ وَلَدٗاۗ سُبۡحَٰنَهُۥۖ بَل لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ كُلّٞ لَّهُۥ قَٰنِتُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse refutes sonship claim and affirms universal divine ownership and obedience."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "اللہ کے بیٹے کا انکار اور توحید کا اثبات",
+      "notes": "Core tawheed verse refuting trinitarian/pagan sonship claims."
+    },
+    {
+      "candidateId": "cand-0074",
+      "label": "Divine origination (BadiAA) and creative command (kun fayakoon)",
+      "definition": "In 2:117: Allah is BadiAA (Originator) of heavens and earth; when He decrees a matter He only says 'kun' (Be) and it is (fayakoon) — establishing effortless divine creation without precedent.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:117",
+          "excerpt": "بَدِيعُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَإِذَا قَضَىٰٓ أَمۡرٗا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse names BadiAA attribute and demonstrates instant creative command."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "بدیع اور کن فیکون: اللہ کا بدیع ہونا اور تخلیقی حکم",
+      "notes": "Key verse for divine creative power. BadiAA implies creation without prior model."
+    },
+    {
+      "candidateId": "cand-0075",
+      "label": "Following desires after knowledge: loss of divine protection",
+      "definition": "In 2:120: if you follow their desires after what has come to you of knowledge, you would have against Allah no protector or helper — warning that knowledge increases accountability.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:120",
+          "excerpt": "وَلَن تَرۡضَىٰ عَنكَ ٱلۡيَهُودُ وَلَا ٱلنَّصَٰرَىٰ حَتَّىٰ تَتَّبِعَ مِلَّتَهُمۡۗ قُلۡ إِنَّ هُدَى ٱللَّهِ هُوَ ٱلۡهُدَىٰۗ وَلَئِنِ ٱتَّبَعۡتَ أَهۡوَآءَهُم بَعۡدَ ٱلَّذِي جَآءَكَ مِنَ ٱلۡعِلۡمِ مَا لَكَ مِنَ ٱللَّهِ مِن وَلِيّٖ وَلَا نَصِيرٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse warns that post-knowledge deviation removes divine protection."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "علم آنے کے بعد خواہش نفس کی پیروی: اللہ کی حمایت سے محرومی",
+      "notes": "Gap candidate: knowledge-accountability nexus. Post-knowledge sin worse than pre-knowledge ignorance."
+    },
+    {
+      "candidateId": "cand-0076",
+      "label": "Judgment Day: no soul suffices for another; no compensation, intercession, or help",
+      "definition": "In 2:123: fear a Day when no soul suffices for another at all, no compensation accepted, no intercession benefits, no help given — comprehensive description of individual accountability.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:123",
+          "excerpt": "وَٱتَّقُواْ يَوۡمٗا لَّا تَجۡزِي نَفۡسٌ عَن نَّفۡسٖ شَيۡـٔٗا وَلَا يُقۡبَلُ مِنۡهَا عَدۡلٞ وَلَا تَنفَعُهَا شَفَٰعَةٞ وَلَا هُمۡ يُنصَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse enumerates four negations establishing absolute individual accountability."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:32:00.000Z",
+      "urduLabel": "یوم قیامت: نہ کوئی کسی کے کام آئےگا، نہ فدیہ، نہ شفاعت، نہ مدد",
+      "notes": "Comprehensive Judgment Day verse. Four-fold negation of external rescue mechanisms."
+    }
+  ]
+}
