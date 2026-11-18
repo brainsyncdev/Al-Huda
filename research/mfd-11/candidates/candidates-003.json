@@ -1,0 +1,270 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T15:58:00.000Z",
+  "sourceExtraction": "ext-002-p4,ext-002-p5,ext-002-p6,ext-002-p7",
+  "candidates": [
+    {
+      "candidateId": "cand-0026",
+      "label": "Universal command to worship the Creator",
+      "definition": "First direct address to all mankind in Al-Baqarah commanding worship of the Lord who created them and those before them.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:21",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱعۡبُدُواْ رَبَّكُمُ ٱلَّذِي خَلَقَكُمۡ وَٱلَّذِينَ مِن قَبۡلِكُمۡ لَعَلَّكُمۡ تَتَّقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse is the universal command."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "arabicLabel": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱعۡبُدُواْ رَبَّكُمُ ٱلَّذِي خَلَقَكُمۡ وَٱلَّذِينَ مِن قَبۡلِكُمۡ لَعَلَّكُمۡ تَتَّقُونَ"
+    },
+    {
+      "candidateId": "cand-0027",
+      "label": "Challenge to produce a surah like the Quran (tahaddi)",
+      "definition": "Conditional challenge in 2:23 to produce a single surah matching the revelation, addressed to those in doubt.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:23",
+          "excerpt": "وَإِن كُنتُمۡ فِي رَيۡبٖ مِّمَّا نَزَّلۡنَا عَلَىٰ عَبۡدِنَا فَأۡتُواْ بِسُورَةٖ مِّن مِّثۡلِهِۦ وَٱدۡعُواْ شُهَدَآءَكُم مِّن دُونِ ٱللَّهِ إِن كُنتُمۡ صَٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse explicitly issues the challenge with conditions."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "تحدی — سورہ لانے کا چیلنج",
+      "notes": "Gap candidate: tahaddi as Quranic literary-theological concept not yet in taxonomy."
+    },
+    {
+      "candidateId": "cand-0028",
+      "label": "Description of Paradise: gardens, rivers, purified spouses, eternal abode",
+      "definition": "First detailed description of Jannah in Al-Baqarah (2:25): gardens with flowing rivers, fruit provision, purified spouses, eternal dwelling.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:25",
+          "excerpt": "وَبَشِّرِ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ أَنَّ لَهُمۡ جَنَّـٰتٖ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُۖ كُلَّمَا رُزِقُواْ مِنۡهَا مِن ثَمَرَةٖ رِّزۡقٗا قَالُواْ هَٰذَا ٱلَّذِي رُزِقۡنَا مِن قَبۡلُۖ وَأُتُواْ بِهِۦ مُتَشَٰبِهٗاۖ وَلَهُمۡ فِيهَآ أَزۡوَٰجٞ مُّطَهَّرَةٞۖ وَهُمۡ فِيهَا خَٰلِدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse describes Paradise features."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jannah-description",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "جنت کا تصور"
+    },
+    {
+      "candidateId": "cand-0029",
+      "label": "Warning of Hellfire: fuel of people and stones, prepared for disbelievers",
+      "definition": "First description of Jahannam in Al-Baqarah (2:24): fire fueled by people and stones, specifically prepared for kafireen.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:24",
+          "excerpt": "فَإِن لَّمۡ تَفۡعَلُواْ وَلَن تَفۡعَلُواْ فَٱتَّقُواْ ٱلنَّارَ ٱلَّتِي وَقُودُهَا ٱلنَّاسُ وَٱلۡحِجَارَةُۖ أُعِدَّتۡ لِلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse describes Hellfire."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "جہنم کی تحذیر"
+    },
+    {
+      "candidateId": "cand-0030",
+      "label": "Divine parables (amthal): purpose and divergent reception",
+      "definition": "Allah's willingness to present any parable (even a mosquito) and the bifurcated response: believers recognize truth, disbelievers question intent (2:26).",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:26",
+          "excerpt": "۞إِنَّ ٱللَّهَ لَا يَسۡتَحۡيِۦٓ أَن يَضۡرِبَ مَثَلٗا مَّا بَعُوضَةٗ فَمَا فَوۡقَهَاۚ فَأَمَّا ٱلَّذِينَ ءَامَنُواْ فَيَعۡلَمُونَ أَنَّهُ ٱلۡحَقُّ مِن رَّبِّهِمۡۖ وَأَمَّا ٱلَّذِينَ كَفَرُواْ فَيَقُولُونَ مَاذَآ أَرَادَ ٱللَّهُ بِهَٰذَا مَثَلٗاۘ يُضِلُّ بِهِۦ كَثِيرٗا وَيَهۡدِي بِهِۦ كَثِيرٗاۚ وَمَا يُضِلُّ بِهِۦٓ إِلَّا ٱلۡفَٰسِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse introduces amthal concept and dual reception."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "اللہی مثالیں",
+      "notes": "Gap candidate: Quranic amthal as pedagogical method."
+    },
+    {
+      "candidateId": "cand-0031",
+      "label": "Covenant-breaking: severing bonds, corruption, and loss",
+      "definition": "Condemnation in 2:27 of those who break Allah's covenant, sever commanded bonds, and spread corruption — declared losers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:27",
+          "excerpt": "ٱلَّذِينَ يَنقُضُونَ عَهۡدَ ٱللَّهِ مِنۢ بَعۡدِ مِيثَٰقِهِۦ وَيَقۡطَعُونَ مَآ أَمَرَ ٱللَّهُ بِهِۦٓ أَن يُوصَلَ وَيُفۡسِدُونَ فِي ٱلۡأَرۡضِۚ أُوْلَـٰٓئِكَ هُمُ ٱلۡخَٰسِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse lists three violations and their consequence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "عہد شکنی اور اس کے نتائج"
+    },
+    {
+      "candidateId": "cand-0032",
+      "label": "Cycle of existence: lifelessness, animation, death, revival, return to Allah",
+      "definition": "Rhetorical argument in 2:28 tracing human existence through four stages as basis for questioning disbelief.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:28",
+          "excerpt": "كَيۡفَ تَكۡفُرُونَ بِٱللَّهِ وَكُنتُمۡ أَمۡوَٰتٗا فَأَحۡيَٰكُمۡۖ ثُمَّ يُمِيتُكُمۡ ثُمَّ يُحۡيِيكُمۡ ثُمَّ إِلَيۡهِ تُرۡجَعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse traces the existential cycle."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "حیات اور موت کا چکر",
+      "notes": "Gap candidate: existential cycle as argument for tawheed."
+    },
+    {
+      "candidateId": "cand-0033",
+      "label": "Human vicegerency (khilafah) on earth",
+      "definition": "Divine appointment of a khalifah on earth announced to angels in 2:30, establishing humanity's representative role.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:30",
+          "excerpt": "وَإِذۡ قَالَ رَبُّكَ لِلۡمَلَـٰٓئِكَةِ إِنِّي جَاعِلٞ فِي ٱلۡأَرۡضِ خَلِيفَةٗۖ قَالُوٓاْ أَتَجۡعَلُ فِيهَا مَن يُفۡسِدُ فِيهَا وَيَسۡفِكُ ٱلدِّمَآءَ وَنَحۡنُ نُسَبِّحُ بِحَمۡدِكَ وَنُقَدِّسُ لَكَۖ قَالَ إِنِّيٓ أَعۡلَمُ مَا لَا تَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse contains the khilafah declaration."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "خلافت — زمین پر انسان کا مقام",
+      "notes": "Gap candidate: foundational concept for Islamic anthropology."
+    },
+    {
+      "candidateId": "cand-0034",
+      "label": "Knowledge (ilm) as distinguishing human capacity",
+      "definition": "Teaching Adam all the names (2:31) as demonstration of human epistemic capacity surpassing angels, validated in 2:33.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:31",
+          "excerpt": "وَعَلَّمَ ءَادَمَ ٱلۡأَسۡمَآءَ كُلَّهَا ثُمَّ عَرَضَهُمۡ عَلَى ٱلۡمَلَـٰٓئِكَةِ فَقَالَ أَنۢبِـُٔونِي بِأَسۡمَآءِ هَـٰٓؤُلَآءِ إِن كُنتُمۡ صَٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Teaching of names described."
+        },
+        {
+          "key": "2:33",
+          "excerpt": "قَالَ يَـٰٓـَٔادَمُ أَنۢبِئۡهُم بِأَسۡمَآئِهِمۡۖ فَلَمَّآ أَنۢبَأَهُم بِأَسۡمَآئِهِمۡ قَالَ أَلَمۡ أَقُل لَّكُمۡ إِنِّيٓ أَعۡلَمُ غَيۡبَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَأَعۡلَمُ مَا تُبۡدُونَ وَمَا كُنتُمۡ تَكۡتُمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Adam's successful demonstration."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "علم — انسان کی ممتاز صلاحیت",
+      "notes": "Gap candidate: epistemological foundation linking knowledge to human status."
+    },
+    {
+      "candidateId": "cand-0035",
+      "label": "Repentance (tawbah): Adam receiving words and Allah accepting his return",
+      "definition": "Adam receiving kalimat from his Lord and Allah accepting his repentance (2:37), establishing tawbah as divinely enabled recovery.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:37",
+          "excerpt": "فَتَلَقَّىٰٓ ءَادَمُ مِن رَّبِّهِۦ كَلِمَٰتٖ فَتَابَ عَلَيۡهِۚ إِنَّهُۥ هُوَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse describes receiving words and acceptance of tawbah."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "توبہ — آدم کی معافی"
+    },
+    {
+      "candidateId": "cand-0036",
+      "label": "Address to Children of Israel: remembrance, covenant, exclusive awe",
+      "definition": "Opening of Bani Israel discourse in 2:40: remember favor, mutual covenant fulfillment, exclusive fear of Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:40",
+          "excerpt": "يَٰبَنِيٓ إِسۡرَـٰٓءِيلَ ٱذۡكُرُواْ نِعۡمَتِيَ ٱلَّتِيٓ أَنۡعَمۡتُ عَلَيۡكُمۡ وَأَوۡفُواْ بِعَهۡدِيٓ أُوفِ بِعَهۡدِكُمۡ وَإِيَّـٰيَ فَٱرۡهَبُونِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse addresses Bani Israel with three imperatives."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "torah-psalms-gospel",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T15:58:00.000Z",
+      "urduLabel": "بنی اسرائیل سے خطاب",
+      "notes": "Transition verse opening extended Bani Israel section."
+    }
+  ]
+}
