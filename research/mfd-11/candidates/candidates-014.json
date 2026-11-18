@@ -1,0 +1,307 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T17:45:00.000Z",
+  "sourceExtraction": "ext-003-p5,ext-003-p6,ext-003-p7,ext-003-p8",
+  "candidates": [
+    {
+      "candidateId": "cand-0137",
+      "label": "Maryam's election and purification: chosen, purified, and preferred above all women of the worlds",
+      "definition": "In 3:42: And when the angels said, O Mary, indeed Allah has chosen you and purified you and chosen you above the women of the worlds. In 3:43: O Mary, be devoutly obedient to your Lord and prostrate and bow with those who bow.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:42",
+          "excerpt": "وَإِذۡ قَالَتِ ٱلۡمَلَـٰٓئِكَةُ يَٰمَرۡيَمُ إِنَّ ٱللَّهَ ٱصۡطَفَىٰكِ وَطَهَّرَكِ وَٱصۡطَفَىٰكِ عَلَىٰ نِسَآءِ ٱلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Triple distinction formula: istafa (chose), tahhara (purified), istafa again with preference above all women."
+        },
+        {
+          "key": "3:43",
+          "excerpt": "يَٰمَرۡيَمُ ٱقۡنُتِي لِرَبِّكِ وَٱسۡجُدِي وَٱرۡكَعِي مَعَ ٱلرَّـٰكِعِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Obedience, prostration, and communal worship commanded as marks of her spiritual station."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "broader"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "مریم کا انتخاب اور پاکی: تمام عورتوں پر فضیلت",
+      "notes": "Gap candidate: no dedicated maryam-story topic. Triple-election formula unique in Quran. Links to isa-story but distinct as maternal election narrative."
+    },
+    {
+      "candidateId": "cand-0138",
+      "label": "Zakariyya's supplication for righteous offspring and angelic announcement of Yahya",
+      "definition": "In 3:38: Thereupon Zakariyya called upon his Lord: My Lord, grant me from Yourself good offspring; indeed You are the Hearer of supplication. In 3:39: The angels called him while he stood praying in the chamber: Allah gives you glad tidings of Yahya, confirming a Word from Allah, honorable, abstaining, a prophet from the righteous.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:38",
+          "excerpt": "هُنَالِكَ دَعَا زَكَرِيَّا رَبَّهُۥۖ قَالَ رَبِّ هَبۡ لِي مِن لَّدُنكَ ذُرِّيَّةٗ طَيِّبَةًۖ إِنَّكَ سَمِيعُ ٱلدُّعَآءِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Zakariyya's supplication prompted by witnessing Maryam's miraculous provision."
+        },
+        {
+          "key": "3:39",
+          "excerpt": "فَنَادَتۡهُ ٱلۡمَلَـٰٓئِكَةُ وَهُوَ قَآئِمٞ يُصَلِّي فِي ٱلۡمِحۡرَابِ أَنَّ ٱللَّهَ يُبَشِّرُكَ بِيَحۡيَىٰ مُصَدِّقَۢا بِكَلِمَةٖ مِّنَ ٱللَّهِ وَسَيِّدٗا وَحَصُورٗا وَنَبِيّٗا مِّنَ ٱلصَّـٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Angelic announcement with four attributes of Yahya: musaddiq, sayyid, hasoor, nabiyy."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "زکریا کی دعا اور یحیٰی کی بشارت",
+      "notes": "Gap candidate: no dedicated zakariyya-story topic. Yahya as precursor to Isa. Old-age birth miracle parallels Ibrahim/Sarah narrative."
+    },
+    {
+      "candidateId": "cand-0139",
+      "label": "Isa's miracles: four signs performed by divine permission establishing prophetic authority",
+      "definition": "In 3:49: Indeed I have come to you with a sign from your Lord: I create for you from clay the form of a bird, then I breathe into it and it becomes a bird by Allah's permission; I heal the blind and the leper and give life to the dead by Allah's permission; I inform you of what you eat and store in your houses. Indeed in that is a sign for you if you are believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:49",
+          "excerpt": "وَرَسُولًا إِلَىٰ بَنِيٓ إِسۡرَـٰٓءِيلَ أَنِّي قَدۡ جِئۡتُكُم بِـَٔايَةٖ مِّن رَّبِّكُمۡ أَنِّيٓ أَخۡلُقُ لَكُم مِّنَ ٱلطِّينِ كَهَيۡـَٔةِ ٱلطَّيۡرِ فَأَنفُخُ فِيهِ فَيَكُونُ طَيۡرَۢا بِإِذۡنِ ٱللَّهِۖ وَأُبۡرِئُ ٱلۡأَكۡمَهَ وَٱلۡأَبۡرَصَ وَأُحۡيِ ٱلۡمَوۡتَىٰ بِإِذۡنِ ٱللَّهِۖ وَأُنَبِّئُكُم بِمَا تَأۡكُلُونَ وَمَا تَدَّخِرُونَ فِي بُيُوتِكُمۡۚ إِنَّ فِي ذَٰلِكَ لَأٓيَةٗ لَّكُمۡ إِن كُنتُم مُّؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete enumeration of four miracles with repeated bi-idhnillah qualifier emphasizing divine agency over prophetic power."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "عیسیٰ کے معجزے: چار نشانیاں اللہ کی اجازت سے",
+      "notes": "Overlap with isa-story confirmed. Distinctive focus on bi-idhnillah theology preventing deification. Knowledge of hidden food stores less commonly discussed miracle."
+    },
+    {
+      "candidateId": "cand-0140",
+      "label": "Virgin birth of Isa: kun fayakoon creative fiat paralleling divine creation without paternal cause",
+      "definition": "In 3:47: She said, My Lord, how will I have a child when no man has touched me? He said, Thus is Allah; He creates what He wills. When He decrees a matter, He only says to it 'Be' and it is.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:47",
+          "excerpt": "قَالَتۡ رَبِّ أَنَّىٰ يَكُونُ لِي وَلَدٞ وَلَمۡ يَمۡسَسۡنِي بَشَرٞۖ قَالَ كَذَٰلِكِ ٱللَّهُ يَخۡلُقُ مَا يَشَآءُۚ إِذَا قَضَىٰٓ أَمۡرٗا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Virgin birth established through kun fayakoon formula identical to general creation, removing any implication of divine paternity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "عیسیٰ کا پیدائش: کن فیکون کا حکم",
+      "notes": "Overlap with isa-story. Distinctive theological function: kun fayakoon neutralizes incarnation theology by equating Isa's creation with all creation."
+    },
+    {
+      "candidateId": "cand-0141",
+      "label": "Isa's legislative authority: confirming prior Torah while making lawful some previously forbidden things",
+      "definition": "In 3:50: And [I have come] confirming what was before me of the Torah and to make lawful for you some of what was forbidden to you. And I have come to you with a sign from your Lord, so fear Allah and obey me.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:50",
+          "excerpt": "وَمُصَدِّقٗا لِّمَا بَيۡنَ يَدَيَّ مِنَ ٱلتَّوۡرَىٰةِ وَلِأُحِلَّ لَكُم بَعۡضَ ٱلَّذِي حُرِّمَ عَلَيۡكُمۡۚ وَجِئۡتُكُم بِـَٔايَةٖ مِّن رَّبِّكُمۡ فَٱتَّقُواْ ٱللَّهَ وَأَطِيعُونِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Dual legislative function: tasdiq (confirmation) of Torah plus selective tahlil (making lawful) of previously forbidden items, demonstrating prophetic authority within continuity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "عیسیٰ کا تشریعی اختیار: توریت کی تصدیق اور بعض ممنوعات کا حلال",
+      "notes": "Overlap with isa-story. Distinctive as legislative dimension of Isa's mission rarely emphasized. Ba'd alladhee hurrima implies specific relaxations rather than wholesale abrogation."
+    },
+    {
+      "candidateId": "cand-0142",
+      "label": "Hawariyyun's testimony: disciples declare faith, Islam, and request inscription among witnesses",
+      "definition": "In 3:52: The disciples said, We are supporters of Allah; we have believed in Allah and testify that we are Muslims. In 3:53: Our Lord, we have believed in what You revealed and followed the messenger, so register us among the witnesses.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:52",
+          "excerpt": "۞فَلَمَّآ أَحَسَّ عِيسَىٰ مِنۡهُمُ ٱلۡكُفۡرَ قَالَ مَنۡ أَنصَارِيٓ إِلَى ٱللَّهِۖ قَالَ ٱلۡحَوَارِيُّونَ نَحۡنُ أَنصَارُ ٱللَّهِ ءَامَنَّا بِٱللَّهِ وَٱشۡهَدۡ بِأَنَّا مُسۡلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Explicit self-identification as ansar Allah and muslimun within Isa's community."
+        },
+        {
+          "key": "3:53",
+          "excerpt": "رَبَّنَآ ءَامَنَّا بِمَآ أَنزَلۡتَ وَٱتَّبَعۡنَا ٱلرَّسُولَ فَٱكۡتُبۡنَا مَعَ ٱلشَّـٰهِدِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Supplication requesting inscription among shahidin establishes ongoing witness role."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "حواریین کی گواہی: ایمان، اسلام، اور گواہوں میں شمار",
+      "notes": "Gap candidate: no dedicated hawariyyun/disciples topic. Critical for understanding Islamic self-conception within pre-Quranic prophetic communities. Shahidin role connects to ummatic witness theology."
+    },
+    {
+      "candidateId": "cand-0143",
+      "label": "Isa-Adam creation parallel: both created by divine fiat without paternal cause as argument against deification",
+      "definition": "In 3:59: Indeed, the example of Jesus before Allah is like the example of Adam. He created him from dust; then He said to him, 'Be,' and he was.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:59",
+          "excerpt": "إِنَّ مَثَلَ عِيسَىٰ عِندَ ٱللَّهِ كَمَثَلِ ءَادَمَۖ خَلَقَهُۥ مِن تُرَابٖ ثُمَّ قَالَ لَهُۥ كُن فَيَكُونُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Direct analogical argument: Isa's fatherless creation paralleled to Adam's parentless creation, both via kun fayakoon, neutralizing incarnation theology."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "عیسیٰ اور آدم کی تشبیہ: خدائی حکم سے پیدائش",
+      "notes": "Overlap with isa-story. Distinctive as comparative theology tool specifically deployed against Christian deification claims. Adam-Isa typology unique to this passage."
+    },
+    {
+      "candidateId": "cand-0144",
+      "label": "Mubahalah: mutual invocation of divine curse upon liars as ultimate truth-establishment mechanism",
+      "definition": "In 3:61: Then whoever argues with you about it after knowledge has come to you, say: Come, let us call our sons and your sons, our women and your women, ourselves and yourselves, then supplicate earnestly and invoke the curse of Allah upon the liars.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:61",
+          "excerpt": "فَمَنۡ حَآجَّكَ فِيهِ مِنۢ بَعۡدِ مَا جَآءَكَ مِنَ ٱلۡعِلۡمِ فَقُلۡ تَعَالَوۡاْ نَدۡعُ أَبۡنَآءَنَا وَأَبۡنَآءَكُمۡ وَنِسَآءَنَا وَنِسَآءَكُمۡ وَأَنفُسَنَا وَأَنفُسَكُمۡ ثُمَّ نَبۡتَهِلۡ فَنَجۡعَل لَّعۡنَتَ ٱللَّهِ عَلَى ٱلۡكَٰذِبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete mubahalah protocol: family-inclusive mutual imprecation as final epistemic arbiter when rational argument exhausted."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "مباہلہ: جھوٹے پر اللہ کی لعنت کی دعا",
+      "notes": "Gap candidate: no dedicated mubahalah topic. Unique Quranic dispute-resolution mechanism. Family inclusion raises stakes beyond individual disputants. Historical context: Najran delegation."
+    },
+    {
+      "candidateId": "cand-0145",
+      "label": "Kalimat sawa': equitable common word as foundation for interfaith dialogue with People of the Book",
+      "definition": "In 3:64: Say, O People of the Scripture, come to a word that is equitable between us and you: that we will not worship except Allah, not associate anything with Him, and not take one another as lords instead of Allah. But if they turn away, then say: Bear witness that we are Muslims.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:64",
+          "excerpt": "قُلۡ يَـٰٓأَهۡلَ ٱلۡكِتَٰبِ تَعَالَوۡاْ إِلَىٰ كَلِمَةٖ سَوَآءِۭ بَيۡنَنَا وَبَيۡنَكُمۡ أَلَّا نَعۡبُدَ إِلَّا ٱللَّهَ وَلَا نُشۡرِكَ بِهِۦ شَيۡـٔٗا وَلَا يَتَّخِذَ بَعۡضُنَا بَعۡضًا أَرۡبَابٗا مِّن دُونِ ٱللَّهِۚ فَإِن تَوَلَّوۡاْ فَقُولُواْ ٱشۡهَدُواْ بِأَنَّا مُسۡلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete kalimat sawa' formula with three non-negotiable conditions and fallback testimony of Islam."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "uncertain",
+          "note": "Adjacent to Isa narrative but addresses broader People of Book engagement"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "کلمہ سواء: بین المذاہب مکالمہ کی بنیاد",
+      "notes": "Gap candidate: no dedicated interfaith-dialogue or kalimat-sawa topic. Foundational text for Islamic interfaith engagement theory. Three conditions define minimum shared theological ground."
+    },
+    {
+      "candidateId": "cand-0146",
+      "label": "Millat Ibrahim: Abraham as hanif Muslim, neither Jew nor Christian, defining primordial monotheism",
+      "definition": "In 3:67: Abraham was neither a Jew nor a Christian, but he was one inclining toward truth, a Muslim. And he was not of the polytheists. In 3:68: Indeed, the most worthy of Abraham among people are those who followed him and this prophet and those who believe. And Allah is the ally of the believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:67",
+          "excerpt": "مَا كَانَ إِبۡرَٰهِيمُ يَهُودِيّٗا وَلَا نَصۡرَانِيّٗا وَلَٰكِن كَانَ حَنِيفٗا مُّسۡلِمٗا وَمَا كَانَ مِنَ ٱلۡمُشۡرِكِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Definitive negation of Jewish/Christian claims on Ibrahim; positive identification as hanif muslim."
+        },
+        {
+          "key": "3:68",
+          "excerpt": "إِنَّ أَوۡلَى ٱلنَّاسِ بِإِبۡرَٰهِيمَ لَلَّذِينَ ٱتَّبَعُوهُ وَهَٰذَا ٱلنَّبِيُّ وَٱلَّذِينَ ءَامَنُواْۗ وَٱللَّهُ وَلِيُّ ٱلۡمُؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "True heirship defined by following rather than ethnic or sectarian affiliation."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:45:00.000Z",
+      "urduLabel": "ملت ابراہیم: حنیف مسلم، نہ یہودی نہ نصاری",
+      "notes": "Overlap with ibrahim-story confirmed. Distinctive as millat-ibrahim identity formulation independent of later religious categories. Hanif-muslim pairing defines pre-sectarian monotheism."
+    }
+  ]
+}
