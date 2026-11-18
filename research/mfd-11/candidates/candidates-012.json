@@ -1,0 +1,320 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T17:22:00.000Z",
+  "sourceExtraction": "ext-002-p37,ext-002-p38,ext-002-p39,ext-002-p40,ext-002-p41,ext-002-p42",
+  "candidates": [
+    {
+      "candidateId": "cand-0117",
+      "label": "No compulsion in religion: religious freedom established as divine principle",
+      "definition": "In 2:256: There shall be no compulsion in religion. The right course has become clear from the wrong. So whoever disbelieves in Taghut and believes in Allah has grasped the most trustworthy handhold with no break in it. And Allah is Hearing and Knowing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:256",
+          "excerpt": "لَآ إِكۡرَاهَ فِي ٱلدِّينِۖ قَد تَّبَيَّنَ ٱلرُّشۡدُ مِنَ ٱلۡغَيِّۚ فَمَن يَكۡفُرۡ بِٱلطَّـٰغُوتِ وَيُؤۡمِنۢ بِٱللَّهِ فَقَدِ ٱسۡتَمۡسَكَ بِٱلۡعُرۡوَةِ ٱلۡوُثۡقَىٰ لَا ٱنفِصَامَ لَهَاۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes la ikraha fi al-din as categorical principle with epistemological clarity (rushd vs ghayy) and volitional choice framework."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-fundamentals",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "دین میں کوئی جبر نہیں: مذہبی آزادی بطور الہی اصول",
+      "notes": "Gap candidate: no dedicated religious-freedom topic. La ikraha fi al-din is among most cited Quranic principles in interfaith discourse. Scholarly debate on scope (abrogation vs general principle) deferred to review."
+    },
+    {
+      "candidateId": "cand-0118",
+      "label": "Ayat al-Kursi: comprehensive declaration of divine sovereignty, knowledge, and transcendence",
+      "definition": "In 2:255: Allah - there is no deity except Him, the Ever-Living, the Sustainer of existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:255",
+          "excerpt": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse provides densest concentration of divine attributes in single ayah: tawheed, hayy/qayyum, omniscience, kursi, intercession-by-permission, transcendence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "آیت الکرسی: الہی حاکمیت، علم اور تعالی کا جامع اعلان",
+      "notes": "Overlap with asma-ul-husna and tawheed-rububiyyah. Distinctive as unified literary unit combining multiple attribute categories. Most memorized/recited verse in Muslim practice."
+    },
+    {
+      "candidateId": "cand-0119",
+      "label": "Divine wilayah: Allah brings believers from darkness to light; taghut leads disbelievers from light to darkness",
+      "definition": "In 2:257: Allah is the ally of those who believe. He brings them out from darknesses into the light. And those who disbelieve - their allies are Taghut. They take them out of the light into darknesses. Those are the companions of the Fire; they will abide eternally therein.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:257",
+          "excerpt": "ٱللَّهُ وَلِيُّ ٱلَّذِينَ ءَامَنُواْ يُخۡرِجُهُم مِّنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِۖ وَٱلَّذِينَ كَفَرُوٓاْ أَوۡلِيَآؤُهُمُ ٱلطَّـٰغُوتُ يُخۡرِجُونَهُم مِّنَ ٱلنُّورِ إِلَى ٱلظُّلُمَٰتِۗ أُوْلَـٰٓئِكَ أَصۡحَٰبُ ٱلنَّارِۖ هُمۡ فِيهَا خَٰلِدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes symmetric wilayah paradigm: divine guidance as light-extraction versus taghut misguidance as darkness-descent."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-fundamentals",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "الہی ولایت: اللہ مومنوں کو تاریکیوں سے نور کی طرف لاتا ہے",
+      "notes": "Gap candidate: no dedicated wilayah/nur-zulumat topic. Light-darkness binary foundational to Quranic epistemology and soteriology."
+    },
+    {
+      "candidateId": "cand-0120",
+      "label": "Charity ethics: kind word superior to harmful giving; quality standards; sincerity vs show-off",
+      "definition": "In 2:263: A kind word and forgiveness are better than charity followed by injury. In 2:264: Do not render vain your charities with reproach and injury. In 2:267: Spend from the good things you have earned. In 2:268: Satan promises poverty; Allah promises forgiveness and bounty.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:263",
+          "excerpt": "۞قَوۡلٞ مَّعۡرُوفٞ وَمَغۡفِرَةٌ خَيۡرٞ مِّن صَدَقَةٖ يَتۡبَعُهَآ أَذٗىۗ وَٱللَّهُ غَنِيٌّ حَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Establishes verbal kindness as superior to materially generous but emotionally harmful giving."
+        },
+        {
+          "key": "2:264",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تُبۡطِلُواْ صَدَقَٰتِكُم بِٱلۡمَنِّ وَٱلۡأَذَىٰ كَٱلَّذِي يُنفِقُ مَالَهُۥ رِئَآءَ ٱلنَّاسِ وَلَا يُؤۡمِنُ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِۖ فَمَثَلُهُۥ كَمَثَلِ صَفۡوَانٍ عَلَيۡهِ تُرَابٞ فَأَصَابَهُۥ وَابِلٞ فَتَرَكَهُۥ صَلۡدٗاۖ لَّا يَقۡدِرُونَ عَلَىٰ شَيۡءٖ مِّمَّا كَسَبُواْۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Prohibits nullification of sadaqah through mann and adha."
+        },
+        {
+          "key": "2:267",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ أَنفِقُواْ مِن طَيِّبَٰتِ مَا كَسَبۡتُمۡ وَمِمَّآ أَخۡرَجۡنَا لَكُم مِّنَ ٱلۡأَرۡضِۖ وَلَا تَيَمَّمُواْ ٱلۡخَبِيثَ مِنۡهُ تُنفِقُونَ وَلَسۡتُم بِـَٔاخِذِيهِ إِلَّآ أَن تُغۡمِضُواْ فِيهِۚ وَٱعۡلَمُوٓاْ أَنَّ ٱللَّهَ غَنِيٌّ حَمِيدٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Quality standard: only tayyibat acceptable for charity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "sadaqah-jariyah",
+          "layer": "scholarly",
+          "relationship": "broader"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "خیرات کی اخلاقیات: نرم گفتار، معیار، اخلاص",
+      "notes": "Overlap with curated 'giving' and scholarly 'sadaqah-jariyah'. This candidate captures ethical dimensions (intention, manner, quality) absent from existing topics."
+    },
+    {
+      "candidateId": "cand-0121",
+      "label": "Riba prohibition: explicit trade-riba distinction with divine war declaration for persistence",
+      "definition": "In 2:275: Those who consume riba will not stand except as one whom shaytan has driven to madness. That is because they say trade is like riba. But Allah has permitted trade and has forbidden riba. Whoever receives admonition from his Lord and desists may keep his past gains. But whoever returns to it - those are companions of the Fire. In 2:279: If you do not desist, be informed of war from Allah and His Messenger.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:275",
+          "excerpt": "ٱلَّذِينَ يَأۡكُلُونَ ٱلرِّبَوٰاْ لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ ٱلَّذِي يَتَخَبَّطُهُ ٱلشَّيۡطَٰنُ مِنَ ٱلۡمَسِّۚ ذَٰلِكَ بِأَنَّهُمۡ قَالُوٓاْ إِنَّمَا ٱلۡبَيۡعُ مِثۡلُ ٱلرِّبَوٰاْۗ وَأَحَلَّ ٱللَّهُ ٱلۡبَيۡعَ وَحَرَّمَ ٱلرِّبَوٰاْۚ فَمَن جَآءَهُۥ مَوۡعِظَةٞ مِّن رَّبِّهِۦ فَٱنتَهَىٰ فَلَهُۥ مَا سَلَفَ وَأَمۡرُهُۥٓ إِلَى ٱللَّهِۖ وَمَنۡ عَادَ فَأُوْلَـٰٓئِكَ أَصۡحَٰبُ ٱلنَّارِۖ هُمۡ فِيهَا خَٰلِدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Core riba text: psychological affliction metaphor, explicit trade-permitted/riba-forbidden distinction, graduated enforcement."
+        },
+        {
+          "key": "2:279",
+          "excerpt": "فَإِن لَّمۡ تَفۡعَلُواْ فَأۡذَنُواْ بِحَرۡبٖ مِّنَ ٱللَّهِ وَرَسُولِهِۦۖ وَإِن تُبۡتُمۡ فَلَكُمۡ رُءُوسُ أَمۡوَٰلِكُمۡ لَا تَظۡلِمُونَ وَلَا تُظۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ultimate enforcement: divine-messenger war declaration for non-compliance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "interest-free-finance",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "سود کی ممنوعت: تجارت اور سود کا فرق، الہی اعلان جنگ",
+      "notes": "Overlap confirmed with interest-free-finance (one of 8 unmapped scholarly topics). This candidate captures the theological enforcement dimension beyond mere financial regulation."
+    },
+    {
+      "candidateId": "cand-0122",
+      "label": "Debtor relief: mandatory respite for hardship cases; forgiveness as superior charitable act",
+      "definition": "In 2:280: And if someone is in hardship, then [let there be] postponement until [a time of] ease. But if you give [from your right as] charity, then it is better for you, if you only knew.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:280",
+          "excerpt": "وَإِن كَانَ ذُو عُسۡرَةٖ فَنَظِرَةٌ إِلَىٰ مَيۡسَرَةٖۚ وَأَن تَصَدَّقُواْ خَيۡرٞ لَّكُمۡ إِن كُنتُمۡ تَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes dual-tier debtor protection: mandatory respite + voluntary forgiveness as spiritually superior option."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "interest-free-finance",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "مقرض کی رعایت: مہلت، معافی بطور بہترین خیرات",
+      "notes": "Gap candidate: no dedicated debtor-relief/bankruptcy topic. Anticipates modern insolvency concepts. Connected to interest-free-finance but distinct in focus on human compassion over financial mechanics."
+    },
+    {
+      "candidateId": "cand-0123",
+      "label": "Contract documentation: written debt records, impartial scribes, witness requirements, and justice rationale",
+      "definition": "In 2:282: O you who have believed, when you contract a debt for a specified term, write it down. And let a scribe write [it] between you in justice... And bring to witness two witnesses from among your men. And if there are not two men [available], then a man and two women from those whom you accept as witnesses... And do not be [too] weary to write it, whether it is small or large, for its [specified] term. That is more just in the sight of Allah and stronger as evidence and closer to preventing doubt between you, except when it is an immediate transaction which you conduct among yourselves.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:282",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ إِذَا تَدَايَنتُم بِدَيۡنٍ إِلَىٰٓ أَجَلٖ مُّسَمّٗى فَٱكۡتُبُوهُۚ وَلۡيَكۡتُب بَّيۡنَكُمۡ كَاتِبُۢ بِٱلۡعَدۡلِۚ وَلَا يَأۡبَ كَاتِبٌ أَن يَكۡتُبَ كَمَا عَلَّمَهُ ٱللَّهُۚ فَلۡيَكۡتُبۡ وَلۡيُمۡلِلِ ٱلَّذِي عَلَيۡهِ ٱلۡحَقُّ وَلۡيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبۡخَسۡ مِنۡهُ شَيۡـٔٗاۚ فَإِن كَانَ ٱلَّذِي عَلَيۡهِ ٱلۡحَقُّ سَفِيهًا أَوۡ ضَعِيفًا أَوۡ لَا يَسۡتَطِيعُ أَن يُمِلَّ هُوَ فَلۡيُمۡلِلۡ وَلِيُّهُۥ بِٱلۡعَدۡلِۚ وَٱسۡتَشۡهِدُواْ شَهِيدَيۡنِ مِن رِّجَالِكُمۡۖ فَإِن لَّمۡ يَكُونَا رَجُلَيۡنِ فَرَجُلٞ وَٱمۡرَأَتَانِ مِمَّن تَرۡضَوۡنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحۡدَىٰهُمَا فَتُذَكِّرَ إِحۡدَىٰهُمَا ٱلۡأُخۡرَىٰۚ وَلَا يَأۡبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُواْۚ وَلَا تَسۡـَٔمُوٓاْ أَن تَكۡتُبُوهُ صَغِيرًا أَوۡ كَبِيرًا إِلَىٰٓ أَجَلِهِۦۚ ذَٰلِكُمۡ أَقۡسَطُ عِندَ ٱللَّهِ وَأَقۡوَمُ لِلشَّهَٰدَةِ وَأَدۡنَىٰٓ أَلَّا تَرۡتَابُوٓاْ إِلَّآ أَن تَكُونَ تِجَٰرَةً حَاضِرَةٗ تُدِيرُونَهَا بَيۡنَكُمۡ فَلَيۡسَ عَلَيۡكُمۡ جُنَاحٌ أَلَّا تَكۡتُبُوهَاۗ وَأَشۡهِدُوٓاْ إِذَا تَبَايَعۡتُمۡۚ وَلَا يُضَآرَّ كَاتِبٞ وَلَا شَهِيدٞۚ وَإِن تَفۡعَلُواْ فَإِنَّهُۥ فُسُوقُۢ بِكُمۡۗ وَٱتَّقُواْ ٱللَّهَۖ وَيُعَلِّمُكُمُ ٱللَّهُۗ وَٱللَّهُ بِكُلِّ شَيۡءٍ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Longest Quranic verse provides comprehensive commercial documentation law: writing mandate, scribe impartiality, witness formula, size-independence, spot-transaction exception, justice-testimony rationale."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "معاہدہ کی دستاویزات: تحریر، گواہ، عدل",
+      "notes": "Overlap confirmed with evidence-standards (one of 8 unmapped scholarly topics). This candidate captures the full contractual framework beyond evidentiary rules alone. Gender-differentiated witness requirement subject to scholarly interpretation."
+    },
+    {
+      "candidateId": "cand-0124",
+      "label": "Closing creedal affirmation: unified belief in Allah, angels, revealed books, and all messengers without distinction",
+      "definition": "In 2:285: The Messenger has believed in what was revealed to him from his Lord, and [so have] the believers. All of them have believed in Allah and His angels and His books and His messengers, [saying], 'We make no distinction between any of His messengers.' And they say, 'We hear and we obey. [We seek] Your forgiveness, our Lord, and to You is the [final] destination.'",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:285",
+          "excerpt": "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse provides compact creedal summary: four pillars of belief, non-distinction among messengers, submission formula, forgiveness petition."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-fundamentals",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "اختتامی عقیدہ: اللہ، فرشتوں، کتابوں اور سبی رسولوں پر ایمان",
+      "notes": "Overlap with tawheed-fundamentals and prophets. Distinctive as unified creedal formula combining all articles of faith with behavioral commitment (sami'na wa ata'na)."
+    },
+    {
+      "candidateId": "cand-0125",
+      "label": "Capacity principle: Allah does not burden any soul beyond its capacity",
+      "definition": "In 2:286: Allah does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:286",
+          "excerpt": "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Establishes la yukallifu Allahu nafsan illa wus'aha as foundational jurisprudential principle with individual accountability corollary."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "صلاحیت کا اصول: اللہ کسی جان پر اس کی طاقت سے زیادہ بوجھ نہیں ڈالتا",
+      "notes": "Echoes 2:233 capacity principle. Foundational to Islamic legal theory (fiqh maxims). Gap candidate: no dedicated capacity/wus' topic despite appearing twice in Al-Baqarah alone."
+    },
+    {
+      "candidateId": "cand-0126",
+      "label": "Closing supplication: divine pardon sought for forgetfulness, error, and excessive burdens",
+      "definition": "In 2:286: Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:286",
+          "excerpt": "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse provides comprehensive closing du'a: nisyana/khata' exemption, historical burden relief, capacity reaffirmation, pardon-forgive-mercy triad, mawlana-victory petition."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:22:00.000Z",
+      "urduLabel": "اختتامی دعا: بھول چوک کی معافی، بوجھ کی خففی",
+      "notes": "Overlap with supplication, mercy-and-forgiveness, repentance. Distinctive as Quran's own taught prayer concluding its longest surah. Among most frequently recited du'as in Muslim devotional practice."
+    }
+  ]
+}
