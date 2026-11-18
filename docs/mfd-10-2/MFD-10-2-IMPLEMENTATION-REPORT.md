@@ -314,11 +314,53 @@ This is a deployment configuration requirement, not a code defect. The build scr
 
 ---
 
-## 10. Git Evidence
+## 10. Deployment Fix (2026-11-18)
+
+### Client/Server Boundary Violation
+
+The initial implementation caused a production build failure on the deployment server. Two client components transitively imported `node:fs` and `node:path`:
+
+1. **TopicTafsirViewer** → `topic-tafsir-data` → `topic-translation-data` → fs (pre-existing MFD-10.1 issue)
+2. **EvidencePanel** → `quran/data.getAyah` → fs (MFD-10.2 regression)
+
+### Root Cause
+
+- `topic-translation-data.ts` used `fs.readFileSync` to load `topic-ayah-mappings.json` at runtime
+- `EvidencePanel` called `getAyah()` from `quran/data.ts`, which reads `quran-json` chapter files from disk
+- Both violations occurred because client components cannot import modules that transitively depend on Node.js-only APIs
+
+### Fix Applied (commit `7c89125`)
+
+1. **Static JSON import** — Replaced `fs.readFileSync` with `import mappingsData from "../../../data/taxonomy/topic-ayah-mappings.json"` (resolveJsonModule). This makes the mapping catalog client-safe.
+
+2. **Removed unused server functions** — Deleted `getTopicTranslations`, `validateMappings`, `getSurahMeta` (no callers anywhere in the codebase).
+
+3. **Server-side ayah text resolution** — Extended `MappingRow` to include `ayahText?: { arabic: string; translation: string } | null`. The server page (`/editorial/mappings/page.tsx`) resolves ayah text via `getAyah()` before passing to the client.
+
+4. **EvidencePanel prop injection** — Added `ayahText` prop to `EvidencePanel`. The client component no longer calls `getAyah()`; it receives pre-resolved text from the parent.
+
+### Verification
+
+- Production build (`npm run build` with `ALLOW_LOCALHOST_BUILD=1`): ✅ EXIT 0
+- TypeScript check (`tsc --noEmit`): ✅ EXIT 0
+- All tests (167): ✅ PASS
+- Validation suite (5/5): ✅ PASS
+
+### Lessons Learned
+
+- **Client/server boundaries are transitive**: A `"use client"` component cannot import any module that transitively depends on Node.js-only APIs, even if the component itself doesn't call those APIs directly.
+- **Static JSON imports are safer**: For read-only data that doesn't change at runtime, static imports (`resolveJsonModule`) are more portable than runtime `fs.readFileSync`.
+- **Pre-resolve on the server**: When client components need data from server-only sources, resolve it in the server component and pass it as serializable props.
+
+---
+
+## 11. Git Evidence
 
 - **Branch:** main
-- **Commit:** `1bbf6bc` — 20 files changed, 5,968 insertions(+), 13 deletions(-)
-- **Push:** `eb43ca4..1bbf6bc main -> main`, exit 0
+- **Implementation commit:** `1bbf6bc` — 20 files changed, 5,968 insertions(+), 13 deletions(-)
+- **Documentation commit:** `43dc495` — 1 file, 357 insertions
+- **Deployment fix commit:** `7c89125` — 6 files changed, 48 insertions(+), 207 deletions(-)
+- **Push:** `eb43ca4..7c89125 main -> main`, exit 0
 - **Remote sync:** HEAD = origin/main, ahead/behind 0/0
 - **Working tree:** Clean (only 36 pre-existing unrelated deletions of docs/FAHM-MFD-* files, preserved as-is)
 - **Production taxonomy:** Zero changes staged or committed
@@ -345,12 +387,14 @@ This is a deployment configuration requirement, not a code defect. The build scr
 - `tests/fixtures/backup/v10-backup.json`
 - `docs/mfd-10-2/MFD-10-2-IMPLEMENTATION-REPORT.md` (this file)
 
-### Modified Files (5)
+### Modified Files (7)
 - `src/lib/backup.ts` — v10 envelope
 - `src/lib/backup-compatibility.test.ts` — v10 tests
 - `src/components/library/backup-controls.tsx` — Scholarly store integration
 - `src/app/layout.tsx` — ScholarlyProvider wiring
 - `src/app/explore/topics/[id]/page.tsx` — Map shadowing fix
+- `src/lib/taxonomy/topic-translation-data.ts` — Static JSON import (removed node:fs)
+- `src/app/editorial/mappings/page.tsx` — Server-side ayah text resolution
 
 ---
 
