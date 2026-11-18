@@ -1,0 +1,117 @@
+{
+  "extractionId": "ext-002-p2",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 2,
+  "surahName": "Al-Baqarah",
+  "passage": {
+    "fromAyah": 6,
+    "toAyah": 7,
+    "label": "Al-Baqarah — those who disbelieve: warning ineffective, seal and veil, great punishment"
+  },
+  "verseKeys": [
+    "2:6",
+    "2:7"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "2:6",
+      "text": "إِنَّ ٱلَّذِينَ كَفَرُواْ سَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ"
+    },
+    {
+      "key": "2:7",
+      "text": "خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمۡ وَعَلَىٰ سَمۡعِهِمۡۖ وَعَلَىٰٓ أَبۡصَٰرِهِمۡ غِشَٰوَةٞۖ وَلَهُمۡ عَذَابٌ عَظِيمٞ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Those who disbelieve: warning makes no difference; seal upon hearts/hearing, veil over sight, great punishment",
+    "keys": [
+      "2:6",
+      "2:7"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Disbelief and ineffectiveness of warning",
+      "keys": [
+        "2:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT",
+      "notes": "Theology deferred to tafsir."
+    },
+    {
+      "label": "Seal (khatm) upon hearts and hearing",
+      "keys": [
+        "2:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Veil (ghishawah) over sight",
+      "keys": [
+        "2:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Great punishment (adhab azim)",
+      "keys": [
+        "2:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "َ ٱللَّهُ",
+      "transliteration": "Allah",
+      "gloss": "The divine name (editorial gloss)",
+      "keys": [
+        "2:7"
+      ]
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Spiritual insensibility (sealed hearts, veiled sight)",
+      "keys": [
+        "2:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Persistent non-belief despite warning",
+      "keys": [
+        "2:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "relationships": [
+    {
+      "label": "Allah as the one who sets the seal",
+      "keys": [
+        "2:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT",
+      "notes": "Theological reconciliation deferred."
+    },
+    {
+      "label": "Messenger's warning to a group that will not believe",
+      "keys": [
+        "2:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [],
+  "topicCandidateIds": [
+    "cand-0015",
+    "cand-0016"
+  ],
+  "notes": "Pass A pilot 2, passage 2/3. Agency/theology of seal deferred to tafsir.",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-18T10:00:00.000Z"
+}

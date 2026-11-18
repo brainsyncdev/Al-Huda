@@ -1,0 +1,439 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T10:00:00.000Z",
+  "sourceExtraction": "ext-002-p1,ext-002-p2,ext-002-p3",
+  "candidates": [
+    {
+      "candidateId": "cand-0008",
+      "label": "The doubtless Book as guidance",
+      "definition": "The opening declaration that the Book is free from doubt and serves as guidance.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:2",
+          "excerpt": "ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse explicitly describes the Book as doubtless guidance."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "arabicLabel": "ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ"
+    },
+    {
+      "candidateId": "cand-0009",
+      "label": "Taqwa as condition for receiving guidance",
+      "definition": "Taqwa identified in 2:2 as the condition for benefiting from the Book's guidance.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:2",
+          "excerpt": "ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Guidance explicitly specified for the muttaqin."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "taqwa-god-consciousness",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "تقویی — ہدایت کی شرط"
+    },
+    {
+      "candidateId": "cand-0010",
+      "label": "Belief in the unseen (iman bil-ghayb)",
+      "definition": "Faith in al-ghayb listed as first quality of muttaqin in 2:3.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:3",
+          "excerpt": "ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Belief in the unseen explicitly named."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "unseen-belief",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "pillars-of-iman",
+          "layer": "scholarly",
+          "relationship": "narrower"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "ایمان بالغیب"
+    },
+    {
+      "candidateId": "cand-0011",
+      "label": "Establishing prayer (iqamat as-salah)",
+      "definition": "Establishment of salah as second quality of muttaqin in 2:3.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:3",
+          "excerpt": "ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Establishing prayer explicitly named."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "five-daily-prayers",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "narrower"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "اقامتِ صلوٰة"
+    },
+    {
+      "candidateId": "cand-0012",
+      "label": "Spending from divine provision (infaq mimma razaqna)",
+      "definition": "Spending from what Allah provided, third quality of muttaqin in 2:3.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:3",
+          "excerpt": "ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Spending from divine provision explicitly named."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "رزقِ الٰہی سے انفاق"
+    },
+    {
+      "candidateId": "cand-0013",
+      "label": "Certainty in the Hereafter (yaqin bil-akhirah)",
+      "definition": "Absolute certainty regarding the Hereafter in 2:4.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:4",
+          "excerpt": "وَٱلَّذِينَ يُؤۡمِنُونَ بِمَآ أُنزِلَ إِلَيۡكَ وَمَآ أُنزِلَ مِن قَبۡلِكَ وَبِٱلۡأٓخِرَةِ هُمۡ يُوقِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Certainty in Hereafter explicitly stated."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "narrower"
+        },
+        {
+          "topicId": "certainty-yaqeen",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "یقین بالآخرت"
+    },
+    {
+      "candidateId": "cand-0014",
+      "label": "Success (falah) as outcome of divine guidance",
+      "definition": "State of being muflihun declared in 2:5 for those upon guidance.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:5",
+          "excerpt": "أُوْلَـٰٓئِكَ عَلَىٰ هُدٗى مِّن رَّبِّهِمۡۖ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡمُفۡلِحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Success explicitly declared."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "فلاح — کامیابی",
+      "notes": "Gap candidate: no existing topic addresses falah specifically."
+    },
+    {
+      "candidateId": "cand-0015",
+      "label": "Disbelief (kufr) and ineffectiveness of warning",
+      "definition": "State in 2:6 where disbelief renders warning equivalent to non-warning.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:6",
+          "excerpt": "إِنَّ ٱلَّذِينَ كَفَرُواْ سَوَآءٌ عَلَيۡهِمۡ ءَأَنذَرۡتَهُمۡ أَمۡ لَمۡ تُنذِرۡهُمۡ لَا يُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse states equivalence."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "کفر اور انذار کی بے اثری",
+      "notes": "Gap candidate."
+    },
+    {
+      "candidateId": "cand-0016",
+      "label": "Sealing of hearts, hearing, and veiling of sight",
+      "definition": "Divine act in 2:7 of sealing hearts/hearing and veiling sight. Theology deferred.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:7",
+          "excerpt": "خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمۡ وَعَلَىٰ سَمۡعِهِمۡۖ وَعَلَىٰٓ أَبۡصَٰرِهِمۡ غِشَٰوَةٞۖ وَلَهُمۡ عَذَابٌ عَظِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse describes seal, veil, and punishment."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "قلوب پر مہر اور بصارت پر پردہ",
+      "notes": "Gap candidate. Most theologically significant verse in opening of Al-Baqarah."
+    },
+    {
+      "candidateId": "cand-0017",
+      "label": "False profession of faith without possessing it",
+      "definition": "Phenomenon in 2:8 of verbal profession without actual belief.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:8",
+          "excerpt": "وَمِنَ ٱلنَّاسِ مَن يَقُولُ ءَامَنَّا بِٱللَّهِ وَبِٱلۡيَوۡمِ ٱلۡأٓخِرِ وَمَا هُم بِمُؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse contrasts verbal profession with actual belief."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "دعوائے ایمان بغیر حقیقت",
+      "notes": "Gap candidate."
+    },
+    {
+      "candidateId": "cand-0018",
+      "label": "Self-deception (attempting to deceive Allah but deceiving only oneself)",
+      "definition": "Self-deceptive dynamic in 2:9.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:9",
+          "excerpt": "يُخَٰدِعُونَ ٱللَّهَ وَٱلَّذِينَ ءَامَنُواْ وَمَا يَخۡدَعُونَ إِلَّآ أَنفُسَهُمۡ وَمَا يَشۡعُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse states they deceive only themselves."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "خود فریبی",
+      "notes": "Gap candidate."
+    },
+    {
+      "candidateId": "cand-0019",
+      "label": "Disease in the heart (marad fil-qulub) and its increase",
+      "definition": "Spiritual disease in hearts described in 2:10, increased by Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:10",
+          "excerpt": "فِي قُلُوبِهِم مَّرَضٞ فَزَادَهُمُ ٱللَّهُ مَرَضٗاۖ وَلَهُمۡ عَذَابٌ أَلِيمُۢ بِمَا كَانُواْ يَكۡذِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse names disease, increase, and links punishment to lying."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "قلوب کا مرض اور اس میں اضافہ",
+      "notes": "Nature of marad and theology of increase deferred to tafsir."
+    },
+    {
+      "candidateId": "cand-0020",
+      "label": "Corruption on earth (fasad fil-ard) and its denial",
+      "definition": "Prohibition against corruption (2:11) and false claim of being reformers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:11",
+          "excerpt": "وَإِذَا قِيلَ لَهُمۡ لَا تُفۡسِدُواْ فِي ٱلۡأَرۡضِ قَالُوٓاْ إِنَّمَا نَحۡنُ مُصۡلِحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Command and false response both explicit."
+        },
+        {
+          "key": "2:12",
+          "excerpt": "أَلَآ إِنَّهُمۡ هُمُ ٱلۡمُفۡسِدُونَ وَلَٰكِن لَّا يَشۡعُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Divine correction: they are the corrupters."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "fasad-fil-ard",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "فساد فی الارض اور مصلحین کا دعویی"
+    },
+    {
+      "candidateId": "cand-0021",
+      "label": "Arrogance toward believers — calling them foolish",
+      "definition": "Arrogance in 2:13 calling believers foolish; divine reversal.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:13",
+          "excerpt": "وَإِذَا قِيلَ لَهُمۡ ءَامِنُواْ كَمَآ ءَامَنَ ٱلنَّاسُ قَالُوٓاْ أَنُؤۡمِنُ كَمَآ ءَامَنَ ٱلسُّفَهَآءُۗ أَلَآ إِنَّهُمۡ هُمُ ٱلسُّفَهَآءُ وَلَٰكِن لَّا يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse contains arrogant claim and divine reversal."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "مؤمنین کو سفیہ کہنا"
+    },
+    {
+      "candidateId": "cand-0022",
+      "label": "Double-faced conduct — public profession vs. private alliance",
+      "definition": "Dual behavior in 2:14: professing belief publicly, declaring alliance with shayatin privately.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:14",
+          "excerpt": "وَإِذَا لَقُواْ ٱلَّذِينَ ءَامَنُواْ قَالُوٓاْ ءَامَنَّا وَإِذَا خَلَوۡاْ إِلَىٰ شَيَٰطِينِهِمۡ قَالُوٓاْ إِنَّا مَعَكُمۡ إِنَّمَا نَحۡنُ مُسۡتَهۡزِءُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Both faces explicitly stated in single verse."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hypocrisy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Word nifaq not in text; description matches."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "دوہرا رویہ"
+    },
+    {
+      "candidateId": "cand-0023",
+      "label": "Trading guidance for misguidance — the profitless transaction",
+      "definition": "Commercial metaphor in 2:16 for spiritual exchange.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:16",
+          "excerpt": "أُوْلَـٰٓئِكَ ٱلَّذِينَ ٱشۡتَرَوُاْ ٱلضَّلَٰلَةَ بِٱلۡهُدَىٰ فَمَا رَبِحَت تِّجَٰرَتُهُمۡ وَمَا كَانُواْ مُهۡتَدِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Commercial metaphor explicit throughout verse."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "ہدایت کے بدلے گمراہی کی تجارت",
+      "notes": "Gap candidate: Quranic commercial metaphor for spiritual choices."
+    },
+    {
+      "candidateId": "cand-0024",
+      "label": "Parable of the kindled fire — light given then withdrawn",
+      "definition": "First parable in 2:17 comparing hypocrites to one whose fire-light was taken away.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:17",
+          "excerpt": "مَثَلُهُمۡ كَمَثَلِ ٱلَّذِي ٱسۡتَوۡقَدَ نَارٗا فَلَمَّآ أَضَآءَتۡ مَا حَوۡلَهُۥ ذَهَبَ ٱللَّهُ بِنُورِهِمۡ وَتَرَكَهُمۡ فِي ظُلُمَٰتٖ لَّا يُبۡصِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Parable explicitly introduced with mathaluhum kamathali."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "آگ جلانے والی مثل",
+      "notes": "Gap candidate: Quranic parables (amthal) not represented in taxonomy."
+    },
+    {
+      "candidateId": "cand-0025",
+      "label": "Parable of the rainstorm — darkness, thunder, lightning, fear of death",
+      "definition": "Second parable in 2:19-20: rainstorm with darkness, thunder, lightning.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:19",
+          "excerpt": "أَوۡ كَصَيِّبٖ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٞ وَرَعۡدٞ وَبَرۡقٞ يَجۡعَلُونَ أَصَٰبِعَهُمۡ فِيٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلۡمَوۡتِۚ وَٱللَّهُ مُحِيطُۢ بِٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Rainstorm parable begins with aw kasayyibin."
+        },
+        {
+          "key": "2:20",
+          "excerpt": "يَكَادُ ٱلۡبَرۡقُ يَخۡطَفُ أَبۡصَٰرَهُمۡۖ كُلَّمَآ أَضَآءَ لَهُم مَّشَوۡاْ فِيهِ وَإِذَآ أَظۡلَمَ عَلَيۡهِمۡ قَامُواْۚ وَلَوۡ شَآءَ ٱللَّهُ لَذَهَبَ بِسَمۡعِهِمۡ وَأَبۡصَٰرِهِمۡۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Continuation with lightning/sight imagery and divine power."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T10:00:00.000Z",
+      "urduLabel": "آسمانی طوفان کی مثل",
+      "notes": "Gap candidate: continues amthal pattern."
+    }
+  ]
+}
