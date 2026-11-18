@@ -1,0 +1,254 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T16:18:00.000Z",
+  "sourceExtraction": "ext-002-p11,ext-002-p12,ext-002-p13,ext-002-p14",
+  "candidates": [
+    {
+      "candidateId": "cand-0047",
+      "label": "Universal salvation criteria: faith in Allah, Last Day, and righteous deeds across communities",
+      "definition": "In 2:62: believers, Jews, Christians, and Sabians who believe in Allah and the Last Day and do righteous deeds receive reward with no fear or grief — establishing salvation criteria based on faith and action rather than communal identity alone.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:62",
+          "excerpt": "إِنَّ ٱلَّذِينَ ءَامَنُواْ وَٱلَّذِينَ هَادُواْ وَٱلنَّصَٰرَىٰ وَٱلصَّـٰبِـِٔينَ مَنۡ ءَامَنَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَعَمِلَ صَٰلِحٗا فَلَهُمۡ أَجۡرُهُمۡ عِندَ رَبِّهِمۡ وَلَا خَوۡفٌ عَلَيۡهِمۡ وَلَا هُمۡ يَحۡزَنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse enumerates four communities and establishes universal salvation criteria."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "عالمی نجات کے معیارات",
+      "notes": "Gap candidate: ecumenical salvation principle distinct from interfaith dialogue. Addresses whether pre-Islamic adherents of other faiths can attain salvation."
+    },
+    {
+      "candidateId": "cand-0048",
+      "label": "Covenant at Mount Sinai: raising the mountain and commanding firm adherence to scripture",
+      "definition": "In 2:63: Allah took covenant from Bani Israel, raised Mount Sinai above them, and commanded them to take what was given with strength and remember its contents for taqwa.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:63",
+          "excerpt": "وَإِذۡ أَخَذۡنَا مِيثَٰقَكُمۡ وَرَفَعۡنَا فَوۡقَكُمُ ٱلطُّورَ خُذُواْ مَآ ءَاتَيۡنَٰكُم بِقُوَّةٖ وَٱذۡكُرُواْ مَا فِيهِ لَعَلَّكُمۡ تَتَّقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse describes covenant-taking, mountain-raising, and dual command."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "طور سینا پر عہد"
+    },
+    {
+      "candidateId": "cand-0049",
+      "label": "Sabbath transgression: transformation into despised apes as deterrent punishment",
+      "definition": "In 2:65-66: those who transgressed the sabbath were told 'be apes, despised' — made as nakal (deterrent) for contemporaries and successors, and mawAAithatan (admonition) for the muttaqeen.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:65",
+          "excerpt": "وَلَقَدۡ عَلِمۡتُمُ ٱلَّذِينَ ٱعۡتَدَوۡاْ مِنكُمۡ فِي ٱلسَّبۡتِ فَقُلۡنَا لَهُمۡ كُونُواْ قِرَدَةً خَٰسِـِٔينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Describes sabbath transgression and transformation command."
+        },
+        {
+          "key": "2:66",
+          "excerpt": "فَجَعَلۡنَٰهَا نَكَٰلٗا لِّمَا بَيۡنَ يَدَيۡهَا وَمَا خَلۡفَهَا وَمَوۡعِظَةٗ لِّلۡمُتَّقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Describes purpose as deterrent and admonition."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "سبت کی خلاف ورزی اور بندر بننا",
+      "notes": "Distinct from general covenant-breaking: specific sabbath violation with unique punitive transformation."
+    },
+    {
+      "candidateId": "cand-0050",
+      "label": "Excessive questioning making divine commands burdensome: the cow narrative",
+      "definition": "In 2:67-71: Bani Israel asked repeatedly about the cow's attributes despite a simple initial command, making compliance increasingly specific and difficult until they barely managed to fulfill it.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:67",
+          "excerpt": "وَإِذۡ قَالَ مُوسَىٰ لِقَوۡمِهِۦٓ إِنَّ ٱللَّهَ يَأۡمُرُكُمۡ أَن تَذۡبَحُواْ بَقَرَةٗۖ قَالُوٓاْ أَتَتَّخِذُنَا هُزُوٗاۖ قَالَ أَعُوذُ بِٱللَّهِ أَنۡ أَكُونَ مِنَ ٱلۡجَٰهِلِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Initial command and accusation of ridicule."
+        },
+        {
+          "key": "2:71",
+          "excerpt": "قَالَ إِنَّهُۥ يَقُولُ إِنَّهَا بَقَرَةٞ لَّا ذَلُولٞ تُثِيرُ ٱلۡأَرۡضَ وَلَا تَسۡقِي ٱلۡحَرۡثَ مُسَلَّمَةٞ لَّا شِيَةَ فِيهَاۚ قَالُواْ ٱلۡـَٰٔنَ جِئۡتَ بِٱلۡحَقِّۚ فَذَبَحُوهَا وَمَا كَادُواْ يَفۡعَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Final compliance described as barely done."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "ضرورت سے زیادہ سوالات",
+      "notes": "Gap candidate: behavioral pattern of making religion difficult through unnecessary detail-seeking."
+    },
+    {
+      "candidateId": "cand-0051",
+      "label": "Hardening of hearts (qaswat al-quloob) after witnessing divine signs",
+      "definition": "In 2:74: after witnessing revival through the cow, hearts became hardened like stones or even harder — contrasted with stones that burst forth rivers, split with water, or fall from fear of Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:74",
+          "excerpt": "ثُمَّ قَسَتۡ قُلُوبُكُم مِّنۢ بَعۡدِ ذَٰلِكَ فَهِيَ كَٱلۡحِجَارَةِ أَوۡ أَشَدُّ قَسۡوَةٗۚ وَإِنَّ مِنَ ٱلۡحِجَارَةِ لَمَا يَتَفَجَّرُ مِنۡهُ ٱلۡأَنۡهَٰرُۚ وَإِنَّ مِنۡهَا لَمَا يَشَّقَّقُ فَيَخۡرُجُ مِنۡهُ ٱلۡمَآءُۚ وَإِنَّ مِنۡهَا لَمَا يَهۡبِطُ مِنۡ خَشۡيَةِ ٱللَّهِۗ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse describes heart-hardening and stone comparison."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "دلوں کا سخت ہونا",
+      "notes": "Gap candidate: spiritual deterioration mechanism following exposure to clear signs."
+    },
+    {
+      "candidateId": "cand-0052",
+      "label": "Deliberate distortion (tahreef) of Allah's word after understanding it",
+      "definition": "In 2:75: a party among them hears Allah's word, understands it, then deliberately distorts it while knowing — establishing tahreef as conscious post-comprehension alteration.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:75",
+          "excerpt": "۞أَفَتَطۡمَعُونَ أَن يُؤۡمِنُواْ لَكُمۡ وَقَدۡ كَانَ فَرِيقٞ مِّنۡهُمۡ يَسۡمَعُونَ كَلَٰمَ ٱللَّهِ ثُمَّ يُحَرِّفُونَهُۥ مِنۢ بَعۡدِ مَا عَقَلُوهُ وَهُمۡ يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse explicitly describes hearing, understanding, then distorting knowingly."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "کلام اللہ کی تحریف",
+      "notes": "Key theological concept: distinguishes honest misunderstanding from deliberate post-understanding distortion."
+    },
+    {
+      "candidateId": "cand-0053",
+      "label": "Writing false scripture with own hands and attributing it to Allah for worldly gain",
+      "definition": "In 2:79: woe to those who write scripture with their own hands then say 'this is from Allah' to exchange it for a small price — double woe for what hands wrote and what they earn.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:79",
+          "excerpt": "فَوَيۡلٞ لِّلَّذِينَ يَكۡتُبُونَ ٱلۡكِتَٰبَ بِأَيۡدِيهِمۡ ثُمَّ يَقُولُونَ هَٰذَا مِنۡ عِندِ ٱللَّهِ لِيَشۡتَرُواْ بِهِۦ ثَمَنٗا قَلِيلٗاۖ فَوَيۡلٞ لَّهُم مِّمَّا كَتَبَتۡ أَيۡدِيهِمۡ وَوَيۡلٞ لَّهُم مِّمَّا يَكۡسِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse condemns fabrication and its motivation."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "آپ ہاتھ سے کتابت کر کے اللہ کی طرف منسوب کرنا",
+      "notes": "Gap candidate: specific category of religious fraud combining authorship deception with financial motive."
+    },
+    {
+      "candidateId": "cand-0054",
+      "label": "Believing in part of scripture while disbelieving in part",
+      "definition": "In 2:85: rhetorical question challenging those who believe in part of al-kitab and disbelieve in part — identified as cause of disgrace in worldly life and severest punishment in Hereafter.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:85",
+          "excerpt": "ثُمَّ أَنتُمۡ هَـٰٓؤُلَآءِ تَقۡتُلُونَ أَنفُسَكُمۡ وَتُخۡرِجُونَ فَرِيقٗا مِّنكُم مِّن دِيَٰرِهِمۡ تَظَٰهَرُونَ عَلَيۡهِم بِٱلۡإِثۡمِ وَٱلۡعُدۡوَٰنِ وَإِن يَأۡتُوكُمۡ أُسَٰرَىٰ تُفَٰدُوهُمۡ وَهُوَ مُحَرَّمٌ عَلَيۡكُمۡ إِخۡرَاجُهُمۡۚ أَفَتُؤۡمِنُونَ بِبَعۡضِ ٱلۡكِتَٰبِ وَتَكۡفُرُونَ بِبَعۡضٖۚ فَمَا جَزَآءُ مَن يَفۡعَلُ ذَٰلِكَ مِنكُمۡ إِلَّا خِزۡيٞ فِي ٱلۡحَيَوٰةِ ٱلدُّنۡيَاۖ وَيَوۡمَ ٱلۡقِيَٰمَةِ يُرَدُّونَ إِلَىٰٓ أَشَدِّ ٱلۡعَذَابِۗ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse poses direct challenge about selective belief and states consequences."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "کتاب کے بعض پر ایمان اور بعض کا انکار",
+      "notes": "Gap candidate: addresses partial acceptance of revelation as distinct from total rejection."
+    },
+    {
+      "candidateId": "cand-0055",
+      "label": "Killing and evicting own people despite covenant prohibition",
+      "definition": "In 2:84-85: covenant prohibited shedding blood and eviction, acknowledged while witnessing, yet violated through killing, eviction, cooperation in sin/aggression, and paradoxically ransoming captives whose eviction was forbidden.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:84",
+          "excerpt": "وَإِذۡ أَخَذۡنَا مِيثَٰقَكُمۡ لَا تَسۡفِكُونَ دِمَآءَكُمۡ وَلَا تُخۡرِجُونَ أَنفُسَكُم مِّن دِيَٰرِكُمۡ ثُمَّ أَقۡرَرۡتُمۡ وَأَنتُمۡ تَشۡهَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Covenant terms stated."
+        },
+        {
+          "key": "2:85",
+          "excerpt": "ثُمَّ أَنتُمۡ هَـٰٓؤُلَآءِ تَقۡتُلُونَ أَنفُسَكُمۡ وَتُخۡرِجُونَ فَرِيقٗا مِّنكُم مِّن دِيَٰرِهِمۡ تَظَٰهَرُونَ عَلَيۡهِم بِٱلۡإِثۡمِ وَٱلۡعُدۡوَٰنِ وَإِن يَأۡتُوكُمۡ أُسَٰرَىٰ تُفَٰدُوهُمۡ وَهُوَ مُحَرَّمٌ عَلَيۡكُمۡ إِخۡرَاجُهُمۡۚ أَفَتُؤۡمِنُونَ بِبَعۡضِ ٱلۡكِتَٰبِ وَتَكۡفُرُونَ بِبَعۡضٖۚ فَمَا جَزَآءُ مَن يَفۡعَلُ ذَٰلِكَ مِنكُمۡ إِلَّا خِزۡيٞ فِي ٱلۡحَيَوٰةِ ٱلدُّنۡيَاۖ وَيَوۡمَ ٱلۡقِيَٰمَةِ يُرَدُّونَ إِلَىٰٓ أَشَدِّ ٱلۡعَذَابِۗ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Violations enumerated including contradictory behavior."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "عہد کے باوجود آپس میں قتل اور بیدخلی",
+      "notes": "Highlights internal communal violence as covenant violation distinct from external conflict."
+    },
+    {
+      "candidateId": "cand-0056",
+      "label": "Buying worldly life in exchange for the Hereafter",
+      "definition": "In 2:86: those who bought (ishtaraw) the worldly life for the Hereafter face unlightened punishment and no aid — framing worldly preference as a transactional exchange with eternal consequences.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "2:86",
+          "excerpt": "أُوْلَـٰٓئِكَ ٱلَّذِينَ ٱشۡتَرَوُاْ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا بِٱلۡأٓخِرَةِۖ فَلَا يُخَفَّفُ عَنۡهُمُ ٱلۡعَذَابُ وَلَا هُمۡ يُنصَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Verse uses commercial metaphor (ishtaraw) for eschatological trade-off."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T16:18:00.000Z",
+      "urduLabel": "دنیا کو آخرت پر ترجیح دینا",
+      "notes": "Contrasts with divine mercy theme: this passage emphasizes absence of mitigation for deliberate worldly preference."
+    }
+  ]
+}
