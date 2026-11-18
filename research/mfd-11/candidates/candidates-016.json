@@ -1,0 +1,260 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T18:10:00.000Z",
+  "sourceExtraction": "ext-003-p13,ext-003-p14,ext-003-p15,ext-003-p16",
+  "candidates": [
+    {
+      "candidateId": "cand-0157",
+      "label": "Dual-rope exception: abasement lifted only through covenant from Allah and covenant from people",
+      "definition": "In 3:112: They have been put under humiliation wherever they are overtaken, except for a covenant from Allah and a rope from the Muslims. And they have drawn upon themselves anger from Allah and have been put under destitution.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:112",
+          "excerpt": "ضُرِبَتۡ عَلَيۡهِمُ ٱلذِّلَّةُ أَيۡنَ مَا ثُقِفُوٓاْ إِلَّا بِحَبۡلٖ مِّنَ ٱللَّهِ وَحَبۡلٖ مِّنَ ٱلنَّاسِ وَبَآءُو بِغَضَبٖ مِّنَ ٱللَّهِ وَضُرِبَتۡ عَلَيۡهِمُ ٱلۡمَسۡكَنَةُۚ ذَٰلِكَ بِأَنَّهُمۡ كَانُواْ يَكۡفُرُونَ بِـَٔايَٰتِ ٱللَّهِ وَيَقۡتُلُونَ ٱلۡأَنۢبِيَآءَ بِغَيۡرِ حَقّٖۚ ذَٰلِكَ بِمَا عَصَواْ وَّكَانُواْ يَعۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Illa bi-hablin min Allahi wa hablin min al-nas: dual exception clause specifying both divine and communal covenants as sole escape from universal abasement."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "دوگنی رسی: اللہ اور لوگوں کا عہد",
+      "notes": "Gap candidate: no dedicated habl/dual-covenant topic. Distinctive as only verse pairing divine and human ropes as joint exception. Connects to habl Allah in 3:103 (p12). Dhillah + maskanah double-stamping unique."
+    },
+    {
+      "candidateId": "cand-0158",
+      "label": "Ummah qaimah: upright community among People of the Book practicing night devotion, amr/nahy, and hastening to good",
+      "definition": "In 3:113-114: They are not all the same; among the People of the Scripture is a community standing in obedience, reciting the verses of Allah during periods of the night and prostrating. They believe in Allah and the Last Day, and they enjoin what is right and forbid what is wrong and hasten to good deeds. And those are among the righteous.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:113",
+          "excerpt": "۞لَيۡسُواْ سَوَآءٗۗ مِّنۡ أَهۡلِ ٱلۡكِتَٰبِ أُمَّةٞ قَآئِمَةٞ يَتۡلُونَ ءَايَٰتِ ٱللَّهِ ءَانَآءَ ٱلَّيۡلِ وَهُمۡ يَسۡجُدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ummatun qaimatun yatloona ayati Allahi ana'a al-layli wa hum yasjudun: night devotion as distinguishing mark."
+        },
+        {
+          "key": "3:114",
+          "excerpt": "يُؤۡمِنُونَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَيَأۡمُرُونَ بِٱلۡمَعۡرُوفِ وَيَنۡهَوۡنَ عَنِ ٱلۡمُنكَرِ وَيُسَٰرِعُونَ فِي ٱلۡخَيۡرَٰتِۖ وَأُوْلَـٰٓئِكَ مِنَ ٱلصَّـٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full ethical profile: iman + amr/nahy + musara'ah fi al-khayrat + min al-salihin."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "امت قائمہ: اہل کتاب میں نیک گروہ",
+      "notes": "Gap candidate: no dedicated people-of-book-righteous or ummah-qaimah topic. Parallels khayra ummah (3:110) with identical amr/nahy vocabulary. Provides theological basis for recognizing righteousness outside Muslim community."
+    },
+    {
+      "candidateId": "cand-0159",
+      "label": "Frost-wind parable: worldly spending without faith likened to frost-laden wind destroying harvest of self-wrongers",
+      "definition": "In 3:117: The example of what they spend in this worldly life is like that of a wind containing frost which strikes the harvest of a people who have wronged themselves and destroys it. And Allah has not wronged them, but they wrong themselves.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:117",
+          "excerpt": "مَثَلُ مَا يُنفِقُونَ فِي هَٰذِهِ ٱلۡحَيَوٰةِ ٱلدُّنۡيَا كَمَثَلِ رِيحٖ فِيهَا صِرٌّ أَصَابَتۡ حَرۡثَ قَوۡمٖ ظَلَمُوٓاْ أَنفُسَهُمۡ فَأَهۡلَكَتۡهُۚ وَمَا ظَلَمَهُمُ ٱللَّهُ وَلَٰكِنۡ أَنفُسَهُمۡ يَظۡلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Mathalu ma yunfiqoona... ka-mathali reehin feeha sirrun: complete agricultural parable linking godless charity to crop destruction. Self-wronging affirmed twice."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "تشبیہ برفیلی ہوا: بے ایمان خرچ کی مثال",
+      "notes": "Gap candidate: no dedicated mathal/parable or worldly-spending-futility topic. Unique agricultural metaphor in Quran. Contrasts sharply with birr-spending (3:92, p11). Zulm anfusihim framing emphasizes self-inflicted nature."
+    },
+    {
+      "candidateId": "cand-0160",
+      "label": "Bitanah prohibition: forbidding intimate alliances with those outside the faith who actively seek Muslim corruption",
+      "definition": "In 3:118: O you who have believed, do not take as intimates those other than yourselves, for they will not spare you any ruin. They wish you would have hardship. Hatred has already appeared from their mouths, and what their breasts conceal is greater.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:118",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَتَّخِذُواْ بِطَانَةٗ مِّن دُونِكُمۡ لَا يَأۡلُونَكُمۡ خَبَالٗا وَدُّواْ مَا عَنِتُّمۡ قَدۡ بَدَتِ ٱلۡبَغۡضَآءُ مِنۡ أَفۡوَٰهِهِمۡ وَمَا تُخۡفِي صُدُورُهُمۡ أَكۡبَرُۚ قَدۡ بَيَّنَّا لَكُمُ ٱلۡأٓيَٰتِۖ إِن كُنتُمۡ تَعۡقِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La tattakhithoo bitanatan min dunikum: explicit prohibition with rationale (la yaloonakum khabalan). Exposed vs concealed hatred gradient."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "بطانہ کی ممنوعیت: غیر مسلموں سے خفیہ تعلقات",
+      "notes": "Gap candidate: no dedicated bitanah or interfaith-alliance-boundaries topic. Distinctive as specific prohibition of intimate/confidential relationships rather than general interaction. Psychological insight into concealed enmity."
+    },
+    {
+      "candidateId": "cand-0161",
+      "label": "Anger restraint: kazimin al-ghayth and pardoning people as defining ethical traits of the muttaqin",
+      "definition": "In 3:134: Who spend during ease and hardship and who restrain anger and who pardon the people - and Allah loves the doers of good.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:134",
+          "excerpt": "ٱلَّذِينَ يُنفِقُونَ فِي ٱلسَّرَّآءِ وَٱلضَّرَّآءِ وَٱلۡكَٰظِمِينَ ٱلۡغَيۡظَ وَٱلۡعَافِينَ عَنِ ٱلنَّاسِۗ وَٱللَّهُ يُحِبُّ ٱلۡمُحۡسِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Al-kazimin al-ghaytha wa al-afeena an al-nas: paired ethical traits within muttaqin profile. Yuhibbu al-muhsinin as divine approval."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "anger-management",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "غصہ پینا: متقین کی پہچان",
+      "notes": "Overlap with anger-management confirmed. Primary Quranic locus for anger restraint vocabulary. Paired with afw (pardoning) creating two-step emotional discipline: restrain then forgive. Spending in sarra'/darra' provides economic context."
+    },
+    {
+      "candidateId": "cand-0162",
+      "label": "Riba prohibition: explicit ban on consuming interest doubled and multiplied with taqwa-success linkage",
+      "definition": "In 3:130: O you who have believed, do not consume usury, doubled and multiplied, but fear Allah that you may be successful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:130",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَأۡكُلُواْ ٱلرِّبَوٰٓاْ أَضۡعَٰفٗا مُّضَٰعَفَةٗۖ وَٱتَّقُواْ ٱللَّهَ لَعَلَّكُمۡ تُفۡلِحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La takulu al-riba ad'afan muda'afatan: specifies compounding mechanism. Ittaqoo Allah la'allakum tuflihun links avoidance to success."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "interest-free-finance",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "ربا کی ممنوعیت: دگنا سود خوری",
+      "notes": "Overlap with interest-free-finance confirmed. Distinctive specification of ad'afan muda'afatan (compounded multiplication) as the prohibited form. Taqwa-falah pairing frames riba avoidance as spiritual-economic success condition."
+    },
+    {
+      "candidateId": "cand-0163",
+      "label": "Post-sin repentance pattern: remembering Allah, seeking forgiveness, and not persisting knowingly after moral failure",
+      "definition": "In 3:135: And those who, when they commit an immorality or wrong themselves, remember Allah and seek forgiveness for their sins - and who can forgive sins except Allah? - and do not persist in what they have done while they know.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:135",
+          "excerpt": "وَٱلَّذِينَ إِذَا فَعَلُواْ فَٰحِشَةً أَوۡ ظَلَمُوٓاْ أَنفُسَهُمۡ ذَكَرُواْ ٱللَّهَ فَٱسۡتَغۡفَرُواْ لِذُنُوبِهِمۡ وَمَن يَغۡفِرُ ٱلذُّنُوبَ إِلَّا ٱللَّهُ وَلَمۡ يُصِرُّواْ عَلَىٰ مَا فَعَلُواْ وَهُمۡ يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete repentance sequence: fahishah/zulm -> dhikr Allah -> istighfar -> non-persistence. Rhetorical question affirms exclusive divine forgiveness authority."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "گناہ کے بعد توبہ: یاد، استغفار، عدم اصرار",
+      "notes": "Overlap with repentance (curated) confirmed. Most detailed Quranic repentance formula. Three-step sequence operationalizes tawbah. Walam yusirroo adds cognitive condition (knowingly). Fahishah covers major sins, zulm anfusihim covers self-wronging broadly."
+    },
+    {
+      "candidateId": "cand-0164",
+      "label": "Angelic reinforcement: divine military aid through descending angels escalating from 3000 to 5000 conditional on sabr and taqwa",
+      "definition": "In 3:124-125: Is it not sufficient for you that your Lord should reinforce you with three thousand angels sent down? Yes, if you remain patient and conscious of Allah and the enemy come upon you in rage, your Lord will reinforce you with five thousand angels having marks of distinction.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:124",
+          "excerpt": "إِذۡ تَقُولُ لِلۡمُؤۡمِنِينَ أَلَن يَكۡفِيَكُمۡ أَن يُمِدَّكُمۡ رَبُّكُم بِثَلَٰثَةِ ءَالَٰفٖ مِّنَ ٱلۡمَلَـٰٓئِكَةِ مُنزَلِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Bi-thalathati alafin min al-malaikati munzaleen: initial reinforcement offer."
+        },
+        {
+          "key": "3:125",
+          "excerpt": "بَلَىٰٓۚ إِن تَصۡبِرُواْ وَتَتَّقُواْ وَيَأۡتُوكُم مِّن فَوۡرِهِمۡ هَٰذَا يُمۡدِدۡكُمۡ رَبُّكُم بِخَمۡسَةِ ءَالَٰفٖ مِّنَ ٱلۡمَلَـٰٓئِكَةِ مُسَوِّمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Bi-khamsati alafin min al-malaikati musawwimeen: escalated reinforcement conditional on sabr+taqwa+fawr."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "فرشتوں کی مدد: 3000 سے 5000 تک",
+      "notes": "Gap candidate: no dedicated angelic-reinforcement or badr-uhud-angels topic. Distinctive numerical escalation (3000->5000) with explicit conditions. Musawwimeen (marked) adds visual distinction. Bushra/tatma'inna function (3:126) clarifies psychological purpose over military mechanics."
+    },
+    {
+      "candidateId": "cand-0165",
+      "label": "Alternating days: divine rotation of fortune and misfortune among people as test mechanism to distinguish believers and select martyrs",
+      "definition": "In 3:140: If a wound should touch you - there has already touched the opposing people a wound similar to it. And these days We alternate among the people so that Allah may make evident those who believe and may take to Himself from among you martyrs.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:140",
+          "excerpt": "إِن يَمۡسَسۡكُمۡ قَرۡحٞ فَقَدۡ مَسَّ ٱلۡقَوۡمَ قَرۡحٞ مِّثۡلُهُۥۚ وَتِلۡكَ ٱلۡأَيَّامُ نُدَاوِلُهَا بَيۡنَ ٱلنَّاسِ وَلِيَعۡلَمَ ٱللَّهُ ٱلَّذِينَ ءَامَنُواْ وَيَتَّخِذَ مِنكُمۡ شُهَدَآءَۗ وَٱللَّهُ لَا يُحِبُّ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Tilka al-ayyamu nudawiluha bayna al-nas: explicit divine rotation principle. Triple purpose: li-ya'lama allatheena amanoo + yattakhitha minkum shuhada'. Qarh mithluhu establishes reciprocity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "sabr-patience",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "patience-haste",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "دنوں کا الٹ پلٹ: اللہ کا آزمائشی نظام",
+      "notes": "Overlap with sabr-patience and patience-haste confirmed. Distinctive as explicit theology of historical vicissitude. Nudawiluha implies intentional divine alternation not random fortune. Shuhada' selection reframes battlefield death as divine honor."
+    },
+    {
+      "candidateId": "cand-0166",
+      "label": "Rabbana supplication: taught prayer combining forgiveness for sins/excesses, request for firm footing, and victory over disbelievers",
+      "definition": "In 3:147: And their words were not but that they said, Our Lord, forgive us our sins and the excess committed in our affairs and plant firmly our feet and give us victory over the disbelieving people.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:147",
+          "excerpt": "وَمَا كَانَ قَوۡلَهُمۡ إِلَّآ أَن قَالُواْ رَبَّنَا ٱغۡفِرۡ لَنَا ذُنُوبَنَا وَإِسۡرَافَنَا فِيٓ أَمۡرِنَا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Rabbana ighfir lana dhunoobana wa israfana fi amrina wa thabbit aqdamana wa onsurna ala al-qawmi al-kafireen: four-part supplication attributed to ribbiyyun/prophets."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T18:10:00.000Z",
+      "urduLabel": "دعائے ربنا: معافی، ثبات، فتح",
+      "notes": "Overlap with repentance via istighfar component. Distinctive as comprehensive battlefield supplication combining spiritual (forgiveness), physical (firm feet), and communal (victory) petitions. Thabbit aqdamana echoes military context. Attributed to prophetic-era righteous, not directly commanded to Muhammad's community."
+    }
+  ]
+}
