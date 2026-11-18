@@ -1,0 +1,334 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T17:35:00.000Z",
+  "sourceExtraction": "ext-003-p1,ext-003-p2,ext-003-p3,ext-003-p4",
+  "candidates": [
+    {
+      "candidateId": "cand-0127",
+      "label": "Quranic hermeneutics: muhkamat (precise) and mutashabihat (ambiguous) verses with interpretive boundaries",
+      "definition": "In 3:7: It is He who sent down the Book; in it are precise verses (muhkamat) — they are the foundation of the Book — and others ambiguous (mutashabihat). Those with deviation in hearts follow the ambiguous seeking discord and interpretation. Only Allah knows its interpretation. Those firm in knowledge say: We believe in it; all is from our Lord.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:7",
+          "excerpt": "هُوَ ٱلَّذِيٓ أَنزَلَ عَلَيۡكَ ٱلۡكِتَٰبَ مِنۡهُ ءَايَٰتٞ مُّحۡكَمَٰتٌ هُنَّ أُمُّ ٱلۡكِتَٰبِ وَأُخَرُ مُتَشَٰبِهَٰتٞۖ فَأَمَّا ٱلَّذِينَ فِي قُلُوبِهِمۡ زَيۡغٞ فَيَتَّبِعُونَ مَا تَشَٰبَهَ مِنۡهُ ٱبۡتِغَآءَ ٱلۡفِتۡنَةِ وَٱبۡتِغَآءَ تَأۡوِيلِهِۦۖ وَمَا يَعۡلَمُ تَأۡوِيلَهُۥٓ إِلَّا ٱللَّهُۗ وَٱلرَّـٰسِخُونَ فِي ٱلۡعِلۡمِ يَقُولُونَ ءَامَنَّا بِهِۦ كُلّٞ مِّنۡ عِندِ رَبِّنَاۗ وَمَا يَذَّكَّرُ إِلَّآ أُوْلُواْ ٱلۡأَلۡبَٰبِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete verse establishes the foundational Quranic hermeneutical distinction with epistemic boundaries."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "قرآنی تفسیر کا اصول: محکمات اور متشابہات",
+      "notes": "Gap candidate: no dedicated muhkamat-mutashabihat topic. Central to Quranic sciences (ulum al-Quran). Defines legitimate vs illegitimate interpretation."
+    },
+    {
+      "candidateId": "cand-0128",
+      "label": "Heart deviation (zaygh): spiritual pathology driving pursuit of ambiguous texts for discord",
+      "definition": "In 3:7: Those in whose hearts is deviation (zaygh) follow the ambiguous from it, seeking discord (fitnah) and seeking its interpretation. In 3:8: Our Lord, do not let our hearts deviate after You have guided us.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:7",
+          "excerpt": "هُوَ ٱلَّذِيٓ أَنزَلَ عَلَيۡكَ ٱلۡكِتَٰبَ مِنۡهُ ءَايَٰتٞ مُّحۡكَمَٰتٌ هُنَّ أُمُّ ٱلۡكِتَٰبِ وَأُخَرُ مُتَشَٰبِهَٰتٞۖ فَأَمَّا ٱلَّذِينَ فِي قُلُوبِهِمۡ زَيۡغٞ فَيَتَّبِعُونَ مَا تَشَٰبَهَ مِنۡهُ ٱبۡتِغَآءَ ٱلۡفِتۡنَةِ وَٱبۡتِغَآءَ تَأۡوِيلِهِۦۖ وَمَا يَعۡلَمُ تَأۡوِيلَهُۥٓ إِلَّا ٱللَّهُۗ وَٱلرَّـٰسِخُونَ فِي ٱلۡعِلۡمِ يَقُولُونَ ءَامَنَّا بِهِۦ كُلّٞ مِّنۡ عِندِ رَبِّنَاۗ وَمَا يَذَّكَّرُ إِلَّآ أُوْلُواْ ٱلۡأَلۡبَٰبِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Identifies zaygh as the root cause of illegitimate scriptural interpretation."
+        },
+        {
+          "key": "3:8",
+          "excerpt": "رَبَّنَا لَا تُزِغۡ قُلُوبَنَا بَعۡدَ إِذۡ هَدَيۡتَنَا وَهَبۡ لَنَا مِن لَّدُنكَ رَحۡمَةًۚ إِنَّكَ أَنتَ ٱلۡوَهَّابُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Supplication acknowledges ongoing vulnerability to heart deviation even after guidance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "دل کی انحراف: غلط تفسیر کی روحانی بیماری",
+      "notes": "Gap candidate: no dedicated zaygh/qalb topic. Connects epistemology to spiritual state. Supplication in 3:8 provides remedial framework."
+    },
+    {
+      "candidateId": "cand-0129",
+      "label": "Divine self-witness of tawheed: Allah, angels, and people of knowledge testify to divine unity and justice",
+      "definition": "In 3:18: Allah witnesses that there is no deity except Him, and [so do] the angels and those of knowledge — maintaining justice. There is no deity except Him, the Exalted in Might, the Wise.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:18",
+          "excerpt": "شَهِدَ ٱللَّهُ أَنَّهُۥ لَآ إِلَٰهَ إِلَّا هُوَ وَٱلۡمَلَـٰٓئِكَةُ وَأُوْلُواْ ٱلۡعِلۡمِ قَآئِمَۢا بِٱلۡقِسۡطِۚ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Unique triple-witness formulation: divine self-testimony joined by angels and scholars, establishing tawheed as objectively attested truth."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-fundamentals",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "توحید کی گواہی: اللہ، فرشتے، اور علماء کی شہادت",
+      "notes": "Overlap confirmed with tawheed-fundamentals. Distinctive feature: scholars (ulu al-ilm) elevated as co-witnesses alongside angels. Justice (qist) integrated into tawheed testimony."
+    },
+    {
+      "candidateId": "cand-0130",
+      "label": "Worldly desires taxonomy: seven categories of material attraction contrasted with eternal reward",
+      "definition": "In 3:14: Beautified for people is love of desires: women, sons, heaped-up gold and silver, fine branded horses, cattle, and tilled land. That is the enjoyment of worldly life, but Allah has with Him the best return. In 3:15: For the muttaqin: gardens with rivers, eternal abode, purified spouses, divine approval.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:14",
+          "excerpt": "زُيِّنَ لِلنَّاسِ حُبُّ ٱلشَّهَوَٰتِ مِنَ ٱلنِّسَآءِ وَٱلۡبَنِينَ وَٱلۡقَنَٰطِيرِ ٱلۡمُقَنطَرَةِ مِنَ ٱلذَّهَبِ وَٱلۡفِضَّةِ وَٱلۡخَيۡلِ ٱلۡمُسَوَّمَةِ وَٱلۡأَنۡعَٰمِ وَٱلۡحَرۡثِۗ ذَٰلِكَ مَتَٰعُ ٱلۡحَيَوٰةِ ٱلدُّنۡيَاۖ وَٱللَّهُ عِندَهُۥ حُسۡنُ ٱلۡمَـَٔابِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Comprehensive enumeration of seven worldly attraction categories as mata' al-hayat al-dunya."
+        },
+        {
+          "key": "3:15",
+          "excerpt": "۞قُلۡ أَؤُنَبِّئُكُم بِخَيۡرٖ مِّن ذَٰلِكُمۡۖ لِلَّذِينَ ٱتَّقَوۡاْ عِندَ رَبِّهِمۡ جَنَّـٰتٞ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَا وَأَزۡوَٰجٞ مُّطَهَّرَةٞ وَرِضۡوَٰنٞ مِّنَ ٱللَّهِۗ وَٱللَّهُ بَصِيرُۢ بِٱلۡعِبَادِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Contrasting eternal reward package establishing superiority of taqwa-based aspiration."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "دنیا کی خواہشات: سات اقسام اور ان کا متبدل",
+      "notes": "Gap candidate: no dedicated hubb al-shahawat / dunya-desires topic. Seven-item taxonomy more specific than general zuhd topics. Gender-specific appeal noted."
+    },
+    {
+      "candidateId": "cand-0131",
+      "label": "Five virtues taxonomy: patience, truthfulness, obedience, spending, and pre-dawn forgiveness-seeking",
+      "definition": "In 3:17: The patient, the truthful, the obedient, those who spend, and those who seek forgiveness before dawn.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:17",
+          "excerpt": "ٱلصَّـٰبِرِينَ وَٱلصَّـٰدِقِينَ وَٱلۡقَٰنِتِينَ وَٱلۡمُنفِقِينَ وَٱلۡمُسۡتَغۡفِرِينَ بِٱلۡأَسۡحَارِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Compact five-virtue taxonomy uniquely combining moral character (sabr, sidq), worship (qunut), charity (infaq), and temporal specificity (istighfar bil-asahar)."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "پانچ نیکیاں: صبر، سچائی، عبادت، انفاق، اور سحری استغفار",
+      "notes": "Gap candidate: no unified five-virtue topic. Pre-dawn istighfar (bil-asahar) is temporally specific marker absent from general virtue lists."
+    },
+    {
+      "candidateId": "cand-0132",
+      "label": "Prophet-killing and justice-enforcer persecution: triple crime with total deed nullification",
+      "definition": "In 3:21: Those who disbelieve in Allah's signs and kill the prophets without right and kill those who enjoin justice among people — give them tidings of painful punishment. In 3:22: Their deeds are voided in this world and the Hereafter; no helpers for them.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:21",
+          "excerpt": "إِنَّ ٱلَّذِينَ يَكۡفُرُونَ بِـَٔايَٰتِ ٱللَّهِ وَيَقۡتُلُونَ ٱلنَّبِيِّـۧنَ بِغَيۡرِ حَقّٖ وَيَقۡتُلُونَ ٱلَّذِينَ يَأۡمُرُونَ بِٱلۡقِسۡطِ مِنَ ٱلنَّاسِ فَبَشِّرۡهُم بِعَذَابٍ أَلِيمٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Triple crime formulation uniquely combining disbelief, prophet-killing, and justice-enforcer killing."
+        },
+        {
+          "key": "3:22",
+          "excerpt": "أُوْلَـٰٓئِكَ ٱلَّذِينَ حَبِطَتۡ أَعۡمَٰلُهُمۡ فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِ وَمَا لَهُم مِّن نَّـٰصِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Total deed nullification (habtat a'mal) across both worlds as consequence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "انبیاء کا قتل اور عدل کا حکم دینے والوں کا قتل",
+      "notes": "Gap candidate: no dedicated prophet-persecution topic. Justice-enforcer killing (allatheena yamuroona bil-qist) extends beyond prophets to include moral reformers."
+    },
+    {
+      "candidateId": "cand-0133",
+      "label": "False religious security: 'Fire only numbered days' doctrine identified as fabrication-based delusion",
+      "definition": "In 3:24: That is because they say 'Never will the Fire touch us except for numbered days,' and they were deluded in their religion by what they were fabricating.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:24",
+          "excerpt": "ذَٰلِكَ بِأَنَّهُمۡ قَالُواْ لَن تَمَسَّنَا ٱلنَّارُ إِلَّآ أَيَّامٗا مَّعۡدُودَٰتٖۖ وَغَرَّهُمۡ فِي دِينِهِم مَّا كَانُواْ يَفۡتَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Explicit identification of false eschatological security doctrine as rooted in fabrication (yaftaroon), producing religious delusion (gharrahum fi deenihim)."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "جھوٹا مذہبی تحفظ: آگ صرف گنی دنوں کا عقیدہ",
+      "notes": "Gap candidate: addresses specific theological error rather than general judgment belief. Fabrication-delusion causality chain is analytically distinctive."
+    },
+    {
+      "candidateId": "cand-0134",
+      "label": "Divine sovereignty (Malik al-Mulk): comprehensive supplication acknowledging absolute divine control over dominion, honor, provision, and cosmic cycles",
+      "definition": "In 3:26: Say, O Allah, Owner of Sovereignty, You give sovereignty to whom You will and take it from whom You will; You honor and humble; in Your hand is all good; You are over all things competent. In 3:27: You cause night to enter day and day into night; bring living from dead and dead from living; provide without measure.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:26",
+          "excerpt": "قُلِ ٱللَّهُمَّ مَٰلِكَ ٱلۡمُلۡكِ تُؤۡتِي ٱلۡمُلۡكَ مَن تَشَآءُ وَتَنزِعُ ٱلۡمُلۡكَ مِمَّن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُۖ بِيَدِكَ ٱلۡخَيۡرُۖ إِنَّكَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete sovereignty supplication covering political, social, and ontological dimensions of divine power."
+        },
+        {
+          "key": "3:27",
+          "excerpt": "تُولِجُ ٱلَّيۡلَ فِي ٱلنَّهَارِ وَتُولِجُ ٱلنَّهَارَ فِي ٱلَّيۡلِۖ وَتُخۡرِجُ ٱلۡحَيَّ مِنَ ٱلۡمَيِّتِ وَتُخۡرِجُ ٱلۡمَيِّتَ مِنَ ٱلۡحَيِّۖ وَتَرۡزُقُ مَن تَشَآءُ بِغَيۡرِ حِسَابٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Cosmic extensions: temporal cycles, life-death reversal, unlimited provision."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "اللہ کی حاکمیت: مالک الملک کی دعا",
+      "notes": "Overlap confirmed with tawheed-rububiyyah and divine-power. Distinctive as taught supplication format integrating multiple divine attributes in single address."
+    },
+    {
+      "candidateId": "cand-0135",
+      "label": "Love-following reciprocity: loving Allah requires following the Prophet, resulting in divine love and forgiveness",
+      "definition": "In 3:31: Say, If you love Allah, then follow me, [so] Allah will love you and forgive you your sins. And Allah is Forgiving and Merciful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:31",
+          "excerpt": "قُلۡ إِن كُنتُمۡ تُحِبُّونَ ٱللَّهَ فَٱتَّبِعُونِي يُحۡبِبۡكُمُ ٱللَّهُ وَيَغۡفِرۡ لَكُمۡ ذُنُوبَكُمۡۚ وَٱللَّهُ غَفُورٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Conditional reciprocity: human love for Allah validated only through prophetic following, producing divine love and forgiveness as result."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "uncertain",
+          "note": "Adjacent to Imran/Maryam narrative but this verse addresses Muhammad's followership"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "محبت اور اتباع: اللہ سے محبت کا شرط اتباع رسول",
+      "notes": "Gap candidate: no dedicated mahabbat-ittiba' topic. Establishes prophetic following as sole valid expression of divine love. Foundational to Sufi and orthodox spirituality debates."
+    },
+    {
+      "candidateId": "cand-0136",
+      "label": "Divine election of families: Adam, Noah, Abraham's family, and Imran's family chosen above all worlds",
+      "definition": "In 3:33: Indeed, Allah chose Adam and Noah and the family of Abraham and the family of Imran over the worlds. In 3:34: Descendants, some of them from others. And Allah is Hearing and Knowing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:33",
+          "excerpt": "۞إِنَّ ٱللَّهَ ٱصۡطَفَىٰٓ ءَادَمَ وَنُوحٗا وَءَالَ إِبۡرَٰهِيمَ وَءَالَ عِمۡرَٰنَ عَلَى ٱلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Explicit election list spanning four patriarchal lines with supra-worldly preference."
+        },
+        {
+          "key": "3:34",
+          "excerpt": "ذُرِّيَّةَۢ بَعۡضُهَا مِنۢ بَعۡضٖۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Generational continuity principle linking elected families through biological descent."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "broader"
+        },
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Abraham's family includes progenitors of Israelite line"
+        },
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "broader"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:35:00.000Z",
+      "urduLabel": "خاندانوں کا انتخاب: آدم، نوح، ابراہیم، عمران کے خاندان",
+      "notes": "Overlap with isa-story and ibrahim-story (Imran's family connected through Abrahamic lineage). Distinctive as collective/familial election concept rather than individual prophethood. Dhurriyyah principle connects to covenant theology."
+    }
+  ]
+}
