@@ -1,0 +1,289 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-18T17:55:00.000Z",
+  "sourceExtraction": "ext-003-p9,ext-003-p10,ext-003-p11,ext-003-p12",
+  "candidates": [
+    {
+      "candidateId": "cand-0147",
+      "label": "Truth-concealment and talbis: mixing haqq with batil as deliberate deception strategy",
+      "definition": "In 3:71: O People of the Scripture, why do you confuse the truth with falsehood and conceal the truth while you know. In 3:78: And indeed, there is among them a party who alter the Scripture with their tongues so you may think it is from the Scripture, but it is not from the Scripture. And they say, This is from Allah, but it is not from Allah. And they speak untruth about Allah while they know.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:71",
+          "excerpt": "يَـٰٓأَهۡلَ ٱلۡكِتَٰبِ لِمَ تَلۡبِسُونَ ٱلۡحَقَّ بِٱلۡبَٰطِلِ وَتَكۡتُمُونَ ٱلۡحَقَّ وَأَنتُمۡ تَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Direct condemnation of talbis (mixing truth/falsehood) and katm (concealment) performed knowingly."
+        },
+        {
+          "key": "3:78",
+          "excerpt": "وَإِنَّ مِنۡهُمۡ لَفَرِيقٗا يَلۡوُۥنَ أَلۡسِنَتَهُم بِٱلۡكِتَٰبِ لِتَحۡسَبُوهُ مِنَ ٱلۡكِتَٰبِ وَمَا هُوَ مِنَ ٱلۡكِتَٰبِ وَيَقُولُونَ هُوَ مِنۡ عِندِ ٱللَّهِ وَمَا هُوَ مِنۡ عِندِ ٱللَّهِۖ وَيَقُولُونَ عَلَى ٱللَّهِ ٱلۡكَذِبَ وَهُمۡ يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Tongue-twisting distortion (layy alsina) presenting human alteration as divine Scripture."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "حق اور باطل کا ملاپ: جان بوجھ کر حق چھپانا",
+      "notes": "Gap candidate: no dedicated talbis/truth-concealment or people-of-book topic in catalogs. Distinctive focus on deliberate epistemic corruption rather than mere disagreement. Layy alsina (3:78) describes mechanism of textual distortion."
+    },
+    {
+      "candidateId": "cand-0148",
+      "label": "Covenant-selling: exchanging Allah's covenant and oaths for small price resulting in total eschatological deprivation",
+      "definition": "In 3:77: Indeed, those who exchange the covenant of Allah and their oaths for a small price will have no share in the Hereafter, and Allah will not speak to them or look at them on the Day of Resurrection, nor will He purify them; and they will have a painful punishment.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:77",
+          "excerpt": "إِنَّ ٱلَّذِينَ يَشۡتَرُونَ بِعَهۡدِ ٱللَّهِ وَأَيۡمَٰنِهِمۡ ثَمَنٗا قَلِيلًا أُوْلَـٰٓئِكَ لَا خَلَٰقَ لَهُمۡ فِي ٱلۡأٓخِرَةِ وَلَا يُكَلِّمُهُمُ ٱللَّهُ وَلَا يَنظُرُ إِلَيۡهِمۡ يَوۡمَ ٱلۡقِيَٰمَةِ وَلَا يُزَكِّيهِمۡ وَلَهُمۡ عَذَابٌ أَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete enumeration of four eschatological deprivations: no share, no speech, no gaze, no purification, plus painful punishment."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "عہد کی فروخت: ممولی قیمت پر اللہ کا عہد بیچنا",
+      "notes": "Overlap with covenants-ahd confirmed. Distinctive as most severe covenant-violation consequence in Quran. Four-fold deprivation formula unique. Thaman qaleel emphasizes triviality of worldly gain traded."
+    },
+    {
+      "candidateId": "cand-0149",
+      "label": "Mithaq al-nabiyyin: universal covenant binding all prophets to believe in and support the confirming messenger",
+      "definition": "In 3:81: And when Allah took the covenant of the prophets, saying, Whatever I give you of the Scripture and wisdom and then there comes to you a messenger confirming what is with you, you must believe in him and support him. He said, Have you acknowledged and taken upon that My commitment? They said, We have acknowledged it. He said, Then bear witness, and I am with you among the witnesses.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:81",
+          "excerpt": "وَإِذۡ أَخَذَ ٱللَّهُ مِيثَٰقَ ٱلنَّبِيِّـۧنَ لَمَآ ءَاتَيۡتُكُم مِّن كِتَٰبٖ وَحِكۡمَةٖ ثُمَّ جَآءَكُمۡ رَسُولٞ مُّصَدِّقٞ لِّمَا مَعَكُمۡ لَتُؤۡمِنُنَّ بِهِۦ وَلَتَنصُرُنَّهُۥۚ قَالَ ءَأَقۡرَرۡتُمۡ وَأَخَذۡتُمۡ عَلَىٰ ذَٰلِكُمۡ إِصۡرِيۖ قَالُوٓاْ أَقۡرَرۡنَاۚ قَالَ فَٱشۡهَدُواْ وَأَنَا۠ مَعَكُم مِّنَ ٱلشَّـٰهِدِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Complete mithaq protocol: divine offer, prophetic acknowledgment, mutual witnessing. Establishes inter-prophetic continuity centered on confirming messenger."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "میثاق النبیین: تمام انبیا کا عہد",
+      "notes": "Overlap with covenants-ahd confirmed. Distinctive as meta-covenant encompassing all prophets rather than specific community. Musaddiq lima ma'akum establishes criterion for recognizing final messenger."
+    },
+    {
+      "candidateId": "cand-0150",
+      "label": "Repentance theology: acceptance for reformers, closure for escalating disbelievers, futility of material ransom at death",
+      "definition": "In 3:89: Except for those who repent after that and correct themselves. For indeed, Allah is Forgiving and Merciful. In 3:90: Indeed, those who reject the message after their belief and then increase in disbelief - never will their repentance be accepted, and they are the ones astray. In 3:91: Indeed, those who disbelieve and die while they are disbelievers - never would the capacity of the earth in gold be accepted from one of them.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:89",
+          "excerpt": "إِلَّا ٱلَّذِينَ تَابُواْ مِنۢ بَعۡدِ ذَٰلِكَ وَأَصۡلَحُواْ فَإِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Repentance gate remains open for those who reform (tabu wa aslahu), paired with Ghafur Raheem."
+        },
+        {
+          "key": "3:90",
+          "excerpt": "إِنَّ ٱلَّذِينَ كَفَرُواْ بَعۡدَ إِيمَٰنِهِمۡ ثُمَّ ٱزۡدَادُواْ كُفۡرٗا لَّن تُقۡبَلَ تَوۡبَتُهُمۡ وَأُوْلَـٰٓئِكَ هُمُ ٱلضَّآلُّونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Escalating disbelief (izdadu kufran) permanently closes repentance."
+        },
+        {
+          "key": "3:91",
+          "excerpt": "إِنَّ ٱلَّذِينَ كَفَرُواْ وَمَاتُواْ وَهُمۡ كُفَّارٞ فَلَن يُقۡبَلَ مِنۡ أَحَدِهِم مِّلۡءُ ٱلۡأَرۡضِ ذَهَبٗا وَلَوِ ٱفۡتَدَىٰ بِهِۦٓۗ أُوْلَـٰٓئِكَ لَهُمۡ عَذَابٌ أَلِيمٞ وَمَا لَهُم مِّن نَّـٰصِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Death in kufr renders all material ransom futile."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "توبہ کا فقہ: اصلاح کرنے والوں کی قبولیت",
+      "notes": "Overlap with repentance (curated) and divine-mercy confirmed. Distinctive three-tier structure: open (reform), closed (escalation), futile (death). Ghafur Raheem pairing anchors hope."
+    },
+    {
+      "candidateId": "cand-0151",
+      "label": "True righteousness (birr): unattainable without spending from beloved possessions as measure of sincere devotion",
+      "definition": "In 3:92: Never will you attain the good reward until you spend from that which you love. And whatever you spend - indeed, Allah is Knowing of it.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:92",
+          "excerpt": "لَن تَنَالُواْ ٱلۡبِرَّ حَتَّىٰ تُنفِقُواْ مِمَّا تُحِبُّونَۚ وَمَا تُنفِقُواْ مِن شَيۡءٖ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Lan tanalu al-birr hatta tunfiqoo mimma tuhibboona: absolute precondition linking birr to sacrifice of beloved wealth."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "wealth-distribution",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "حقیقی نیکی: محبوب مال سے خرچ کیے بغیر ناممکن",
+      "notes": "Gap candidate: no dedicated charity/infaq topic. Overlap with wealth-distribution (broader). Distinctive as making beloved-possession spending the necessary condition for birr, not merely recommended. Mimma tuhibboona personalizes the test."
+    },
+    {
+      "candidateId": "cand-0152",
+      "label": "Ka'bah at Bakkah: first house established for mankind, blessed, guidance for worlds, containing clear signs and sanctuary security",
+      "definition": "In 3:96: Indeed, the first House established for mankind was that at Makkah - blessed and a guidance for the worlds. In 3:97: In it are clear signs such as the standing place of Abraham. And whoever enters it shall be safe.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:96",
+          "excerpt": "إِنَّ أَوَّلَ بَيۡتٖ وُضِعَ لِلنَّاسِ لَلَّذِي بِبَكَّةَ مُبَارَكٗا وَهُدٗى لِّلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Awwal bayt wudi'a lil-nas: primacy claim. Mubarakan wa hudan lil-alamin: dual function."
+        },
+        {
+          "key": "3:97",
+          "excerpt": "فِيهِ ءَايَٰتُۢ بَيِّنَٰتٞ مَّقَامُ إِبۡرَٰهِيمَۖ وَمَن دَخَلَهُۥ كَانَ ءَامِنٗاۗ وَلِلَّهِ عَلَى ٱلنَّاسِ حِجُّ ٱلۡبَيۡتِ مَنِ ٱسۡتَطَاعَ إِلَيۡهِ سَبِيلٗاۚ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِيٌّ عَنِ ٱلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ayat bayyinat includes Maqam Ibrahim. Man dakhalahu kana aminan: sanctuary inviolability."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "کعبہ بکہ میں: پہلا گھر، بارکت والا، ہدایت",
+      "notes": "Overlap with ibrahim-story via Maqam Ibrahim. Gap candidate: no hajj-umrah-pilgrimage topic verified in catalogs. Distinctive five-fold characterization: awwal, mubarak, huda, ayat bayyinat, amn."
+    },
+    {
+      "candidateId": "cand-0153",
+      "label": "Hajj obligation: pilgrimage to the House as universal duty upon mankind conditional on finding a way (istita'ah)",
+      "definition": "In 3:97: And due to Allah from the people is a pilgrimage to the House - for whoever is able to find thereto a way. But whoever disbelieves - then indeed, Allah is free from need of the worlds.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:97",
+          "excerpt": "فِيهِ ءَايَٰتُۢ بَيِّنَٰتٞ مَّقَامُ إِبۡرَٰهِيمَۖ وَمَن دَخَلَهُۥ كَانَ ءَامِنٗاۗ وَلِلَّهِ عَلَى ٱلنَّاسِ حِجُّ ٱلۡبَيۡتِ مَنِ ٱسۡتَطَاعَ إِلَيۡهِ سَبِيلٗاۚ وَمَن كَفَرَ فَإِنَّ ٱللَّهَ غَنِيٌّ عَنِ ٱلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wa lillahi ala al-nasi hijju al-bayti mani istata'a ilayhi sabeelan: obligation stated with explicit ability condition. Ghaniyy an al-alamin negates divine need."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "حج کی فرضیت: استطاعت پر مشروط",
+      "notes": "Gap candidate: hajj-umrah-pilgrimage not verified in catalogs. Distinctive as sole Quranic verse establishing Hajj obligation with istita'ah condition. Divine self-sufficiency (Ghaniyy) frames obligation as purely for human benefit."
+    },
+    {
+      "candidateId": "cand-0154",
+      "label": "Habl Allah: collective adherence to Allah's rope as antidote to division, remembering divine favor of transformed enmity",
+      "definition": "In 3:103: And hold firmly to the rope of Allah all together and do not become divided. And remember the favor of Allah upon you - when you were enemies and He brought your hearts together and you became, by His favor, brothers. And you were on the edge of a pit of the Fire, and He saved you from it.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:103",
+          "excerpt": "وَٱعۡتَصِمُواْ بِحَبۡلِ ٱللَّهِ جَمِيعٗا وَلَا تَفَرَّقُواْۚ وَٱذۡكُرُواْ نِعۡمَتَ ٱللَّهِ عَلَيۡكُمۡ إِذۡ كُنتُمۡ أَعۡدَآءٗ فَأَلَّفَ بَيۡنَ قُلُوبِكُمۡ فَأَصۡبَحۡتُم بِنِعۡمَتِهِۦٓ إِخۡوَٰنٗا وَكُنتُمۡ عَلَىٰ شَفَا حُفۡرَةٖ مِّنَ ٱلنَّارِ فَأَنقَذَكُم مِّنۡهَاۗ كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ لَكُمۡ ءَايَٰتِهِۦ لَعَلَّكُمۡ تَهۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wa'tasimu bi-habl Allah jami'an wa la tafarraqoo: dual command (hold + don't divide). Ni'mah remembrance grounds unity in gratitude. Rescue from fire-edge underscores stakes."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "حبل اللہ: اللہ کی رسی کو مضبوطی سے پکڑنا",
+      "notes": "Overlap with brotherhood-islam confirmed. Distinctive triple grounding of unity: divine rope, remembered favor, rescue from destruction. Ikhwan bi-ni'matihi defines brotherhood as divine gift not natural bond."
+    },
+    {
+      "candidateId": "cand-0155",
+      "label": "Amr bi-ma'ruf wa nahy an munkar: enjoining right and forbidding wrong as defining characteristic of the best nation",
+      "definition": "In 3:104: And let there be arising from you a nation inviting to all that is good, enjoining what is right and forbidding what is wrong, and those will be the successful. In 3:110: You are the best nation produced for mankind. You enjoin what is right and forbid what is wrong and believe in Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:104",
+          "excerpt": "وَلۡتَكُن مِّنكُمۡ أُمَّةٞ يَدۡعُونَ إِلَى ٱلۡخَيۡرِ وَيَأۡمُرُونَ بِٱلۡمَعۡرُوفِ وَيَنۡهَوۡنَ عَنِ ٱلۡمُنكَرِۚ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡمُفۡلِحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waltakun minkum ummatun: imperative establishment of moral activist community. Muflihun as outcome."
+        },
+        {
+          "key": "3:110",
+          "excerpt": "كُنتُمۡ خَيۡرَ أُمَّةٍ أُخۡرِجَتۡ لِلنَّاسِ تَأۡمُرُونَ بِٱلۡمَعۡرُوفِ وَتَنۡهَوۡنَ عَنِ ٱلۡمُنكَرِ وَتُؤۡمِنُونَ بِٱللَّهِۗ وَلَوۡ ءَامَنَ أَهۡلُ ٱلۡكِتَٰبِ لَكَانَ خَيۡرٗا لَّهُمۚ مِّنۡهُمُ ٱلۡمُؤۡمِنُونَ وَأَكۡثَرُهُمُ ٱلۡفَٰسِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Kuntum khayra ummah: superlative status defined by amr/nahy/iman triad."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "امر بالمعروف و نہی عن المنکر: بہترین امت کی پہچان",
+      "notes": "Gap candidate: no dedicated amr-bil-maruf topic. Double occurrence (3:104, 3:110) within same passage emphasizes centrality. Khayra ummah status explicitly contingent on this function plus iman."
+    },
+    {
+      "candidateId": "cand-0156",
+      "label": "Khayra ummah: Muslim community declared best nation produced for mankind based on moral activism and faith",
+      "definition": "In 3:110: You are the best nation produced for mankind. You enjoin what is right and forbid what is wrong and believe in Allah. If only the People of the Scripture had believed, it would have been better for them. Among them are believers, but most of them are defiantly disobedient.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "3:110",
+          "excerpt": "كُنتُمۡ خَيۡرَ أُمَّةٍ أُخۡرِجَتۡ لِلنَّاسِ تَأۡمُرُونَ بِٱلۡمَعۡرُوفِ وَتَنۡهَوۡنَ عَنِ ٱلۡمُنكَرِ وَتُؤۡمِنُونَ بِٱللَّهِۗ وَلَوۡ ءَامَنَ أَهۡلُ ٱلۡكِتَٰبِ لَكَانَ خَيۡرٗا لَّهُمۚ مِّنۡهُمُ ٱلۡمُؤۡمِنُونَ وَأَكۡثَرُهُمُ ٱلۡفَٰسِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Kuntum khayra ummatin ukhrijat lil-nas: superlative designation with public purpose (lil-nas). Three defining traits enumerated. Conditional Ahl al-Kitab benefit noted."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-18T17:55:00.000Z",
+      "urduLabel": "خیر امت: انسانیت کے لیے بہترین گروہ",
+      "notes": "Gap candidate: no dedicated ummah/khayra-ummah or people-of-book topic in catalogs. Distinctive as sole Quranic superlative designation for Muslim community. Ukhrijat lil-nas implies outward-facing mission. Majority fasiqun among Ahl al-Kitab provides contrast."
+    }
+  ]
+}
