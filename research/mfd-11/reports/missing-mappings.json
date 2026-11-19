@@ -1,0 +1,4288 @@
+{
+  "workstream": "MFD-11",
+  "phase": "C",
+  "reportType": "missing-mappings",
+  "generatedAt": "2026-11-19T12:28:06.005Z",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "summary": {
+    "totalProductionMappings": 789,
+    "coveredByCandidates": 422,
+    "uncoveredByCandidates": 367,
+    "coveragePercent": "53.5",
+    "topicsWithUncoveredMappings": 161
+  },
+  "uncoveredMappingsByTopic": [
+    {
+      "topicId": "knowledge-ignorance",
+      "uncoveredCount": 7,
+      "ayahKeys": [
+        "2:269",
+        "20:114",
+        "39:9",
+        "58:11",
+        "6:122",
+        "12:76",
+        "16:43"
+      ]
+    },
+    {
+      "topicId": "trial-and-test",
+      "uncoveredCount": 6,
+      "ayahKeys": [
+        "2:214",
+        "3:186",
+        "21:35",
+        "29:2",
+        "47:31",
+        "89:15"
+      ]
+    },
+    {
+      "topicId": "halal-food",
+      "uncoveredCount": 5,
+      "ayahKeys": [
+        "2:172",
+        "5:1",
+        "5:4",
+        "16:114",
+        "22:36"
+      ]
+    },
+    {
+      "topicId": "resurrection-process",
+      "uncoveredCount": 5,
+      "ayahKeys": [
+        "39:68",
+        "39:69",
+        "75:7",
+        "80:33",
+        "22:5"
+      ]
+    },
+    {
+      "topicId": "ibrahim-story",
+      "uncoveredCount": 5,
+      "ayahKeys": [
+        "14:24",
+        "19:41",
+        "21:51",
+        "29:16",
+        "37:83"
+      ]
+    },
+    {
+      "topicId": "muhammad-story",
+      "uncoveredCount": 5,
+      "ayahKeys": [
+        "3:144",
+        "7:158",
+        "9:128",
+        "48:29",
+        "68:4"
+      ]
+    },
+    {
+      "topicId": "lut-story",
+      "uncoveredCount": 5,
+      "ayahKeys": [
+        "15:58",
+        "21:74",
+        "26:160",
+        "27:54",
+        "54:33"
+      ]
+    },
+    {
+      "topicId": "prophetic-character",
+      "uncoveredCount": 5,
+      "ayahKeys": [
+        "68:4",
+        "33:21",
+        "3:159",
+        "9:128",
+        "21:107"
+      ]
+    },
+    {
+      "topicId": "divine-wisdom",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "30:8",
+        "45:18",
+        "51:49",
+        "65:12"
+      ]
+    },
+    {
+      "topicId": "major-signs",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "21:96",
+        "18:98",
+        "27:82",
+        "6:73"
+      ]
+    },
+    {
+      "topicId": "trust-responsibility",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "8:27",
+        "23:8",
+        "33:72",
+        "70:32"
+      ]
+    },
+    {
+      "topicId": "signs-and-reflection",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "30:20",
+        "41:53",
+        "45:3",
+        "51:20"
+      ]
+    },
+    {
+      "topicId": "remembrance-forgetfulness",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "13:28",
+        "20:124",
+        "7:201",
+        "18:28"
+      ]
+    },
+    {
+      "topicId": "prophetic-methodology",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "6:107",
+        "14:4",
+        "16:35",
+        "29:46"
+      ]
+    },
+    {
+      "topicId": "salih-story",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "11:61",
+        "26:141",
+        "27:45",
+        "54:23"
+      ]
+    },
+    {
+      "topicId": "sunnah-prayers",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "2:43",
+        "17:79",
+        "25:64",
+        "39:9"
+      ]
+    },
+    {
+      "topicId": "night-prayer",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "17:79",
+        "25:64",
+        "39:9",
+        "73:20"
+      ]
+    },
+    {
+      "topicId": "dua-answers",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "13:14",
+        "27:62",
+        "40:60",
+        "41:49"
+      ]
+    },
+    {
+      "topicId": "slander",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "4:15",
+        "24:11",
+        "4:112",
+        "33:58"
+      ]
+    },
+    {
+      "topicId": "youth-adolescence",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "18:13",
+        "21:60",
+        "12:4",
+        "19:2"
+      ]
+    },
+    {
+      "topicId": "old-age-wisdom",
+      "uncoveredCount": 4,
+      "ayahKeys": [
+        "16:70",
+        "22:5",
+        "36:68",
+        "46:15"
+      ]
+    },
+    {
+      "topicId": "asma-ul-husna",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "7:180",
+        "17:110",
+        "20:8"
+      ]
+    },
+    {
+      "topicId": "shaytan-enemy",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "2:34",
+        "17:61",
+        "36:60"
+      ]
+    },
+    {
+      "topicId": "covenant-breach",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "13:20",
+        "16:91",
+        "47:22"
+      ]
+    },
+    {
+      "topicId": "animals-as-communities",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "16:66",
+        "55:6",
+        "79:4"
+      ]
+    },
+    {
+      "topicId": "prophetic-medicine",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "16:69",
+        "17:82",
+        "38:41"
+      ]
+    },
+    {
+      "topicId": "fasad-fil-ard",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "7:85",
+        "30:41",
+        "47:22"
+      ]
+    },
+    {
+      "topicId": "leadership-qualities",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "38:26",
+        "28:26",
+        "58:11"
+      ]
+    },
+    {
+      "topicId": "jihad-definition",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "2:216",
+        "9:41",
+        "25:52"
+      ]
+    },
+    {
+      "topicId": "peace-agreements",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "47:35",
+        "5:1",
+        "16:91"
+      ]
+    },
+    {
+      "topicId": "work-honor",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "28:26",
+        "67:15",
+        "73:20"
+      ]
+    },
+    {
+      "topicId": "quran-preservation",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "15:9",
+        "41:42",
+        "69:51"
+      ]
+    },
+    {
+      "topicId": "torah-psalms-gospel",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "3:3",
+        "5:46",
+        "17:55"
+      ]
+    },
+    {
+      "topicId": "musa-story",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "7:103",
+        "20:9",
+        "79:15"
+      ]
+    },
+    {
+      "topicId": "nuh-story",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "11:25",
+        "23:23",
+        "26:105"
+      ]
+    },
+    {
+      "topicId": "hud-story",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "11:50",
+        "26:123",
+        "46:21"
+      ]
+    },
+    {
+      "topicId": "dream-interpretation",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "12:4",
+        "12:36",
+        "12:43"
+      ]
+    },
+    {
+      "topicId": "yusuf-dreams",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "12:4",
+        "12:36",
+        "12:43"
+      ]
+    },
+    {
+      "topicId": "prayer-acceptance",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "5:27",
+        "14:40",
+        "19:55"
+      ]
+    },
+    {
+      "topicId": "shukr-gratitude",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "14:7",
+        "27:40",
+        "39:7"
+      ]
+    },
+    {
+      "topicId": "ikhlas-sincerity",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "39:11",
+        "40:14",
+        "4:146"
+      ]
+    },
+    {
+      "topicId": "riya-showing-off",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "107:4",
+        "4:142",
+        "18:110"
+      ]
+    },
+    {
+      "topicId": "envy-hasad",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "113:5",
+        "4:54",
+        "4:32"
+      ]
+    },
+    {
+      "topicId": "pride-kibr",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "28:83",
+        "16:29",
+        "7:13"
+      ]
+    },
+    {
+      "topicId": "lying",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "16:105",
+        "22:30",
+        "40:28"
+      ]
+    },
+    {
+      "topicId": "birth-childhood",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "3:36",
+        "46:15",
+        "31:14"
+      ]
+    },
+    {
+      "topicId": "knowledge-seeking",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "20:114",
+        "58:11",
+        "12:76"
+      ]
+    },
+    {
+      "topicId": "mahr-dowry",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "4:4",
+        "4:20",
+        "4:24"
+      ]
+    },
+    {
+      "topicId": "intimacy-ethics",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "2:222",
+        "2:223",
+        "24:58"
+      ]
+    },
+    {
+      "topicId": "mother-rights",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "46:15",
+        "31:14",
+        "17:23"
+      ]
+    },
+    {
+      "topicId": "father-rights",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "17:23",
+        "2:133",
+        "19:28"
+      ]
+    },
+    {
+      "topicId": "elderly-care",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "17:23",
+        "17:23",
+        "16:70"
+      ]
+    },
+    {
+      "topicId": "right-to-life",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "17:33",
+        "4:93",
+        "25:68"
+      ]
+    },
+    {
+      "topicId": "poverty-solutions",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "9:60",
+        "51:19",
+        "70:24"
+      ]
+    },
+    {
+      "topicId": "media-responsibility",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "4:83",
+        "17:36",
+        "24:11"
+      ]
+    },
+    {
+      "topicId": "rumor-verification",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "4:83",
+        "17:36",
+        "24:12"
+      ]
+    },
+    {
+      "topicId": "justice-oppression",
+      "uncoveredCount": 3,
+      "ayahKeys": [
+        "16:90",
+        "38:26",
+        "42:15"
+      ]
+    },
+    {
+      "topicId": "divine-knowledge",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "27:65",
+        "35:11"
+      ]
+    },
+    {
+      "topicId": "tawheed-rububiyyah",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "13:16",
+        "23:89"
+      ]
+    },
+    {
+      "topicId": "tawheed-uluhiyyah",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "2:83",
+        "51:56"
+      ]
+    },
+    {
+      "topicId": "tawheed-asma-wa-sifat",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "7:180",
+        "20:8"
+      ]
+    },
+    {
+      "topicId": "tawheed-evidence",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "6:97",
+        "45:3"
+      ]
+    },
+    {
+      "topicId": "iman-and-amal",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "2:82",
+        "3:57"
+      ]
+    },
+    {
+      "topicId": "certainty-yaqeen",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "15:99",
+        "69:51"
+      ]
+    },
+    {
+      "topicId": "angelic-duties",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "16:2",
+        "50:17"
+      ]
+    },
+    {
+      "topicId": "jinn-creation",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "51:56",
+        "55:14"
+      ]
+    },
+    {
+      "topicId": "qadr-four-levels",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "13:8",
+        "76:30"
+      ]
+    },
+    {
+      "topicId": "corruption-prohibition",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "7:85",
+        "30:41"
+      ]
+    },
+    {
+      "topicId": "mizan-balance",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "55:7",
+        "15:19"
+      ]
+    },
+    {
+      "topicId": "jannah-description",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "55:46",
+        "76:12"
+      ]
+    },
+    {
+      "topicId": "jahannam-description",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:56",
+        "56:41"
+      ]
+    },
+    {
+      "topicId": "minor-signs",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "47:18",
+        "30:8"
+      ]
+    },
+    {
+      "topicId": "mental-health",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "13:28",
+        "3:173"
+      ]
+    },
+    {
+      "topicId": "khalifah-concept",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "35:39",
+        "27:62"
+      ]
+    },
+    {
+      "topicId": "water-conservation",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "17:26",
+        "55:19"
+      ]
+    },
+    {
+      "topicId": "rules-of-engagement",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:90",
+        "9:6"
+      ]
+    },
+    {
+      "topicId": "husn-concept",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "16:90",
+        "32:7"
+      ]
+    },
+    {
+      "topicId": "art-boundaries",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "31:6",
+        "17:32"
+      ]
+    },
+    {
+      "topicId": "dialogue-principles",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "16:125",
+        "29:46"
+      ]
+    },
+    {
+      "topicId": "quran-revelation-process",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "16:102",
+        "42:51"
+      ]
+    },
+    {
+      "topicId": "quran-compilation",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "15:9",
+        "75:17"
+      ]
+    },
+    {
+      "topicId": "tafsir-methodology",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "16:44",
+        "47:24"
+      ]
+    },
+    {
+      "topicId": "sunnah-definition",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:80",
+        "33:21"
+      ]
+    },
+    {
+      "topicId": "hadith-authentication",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:83",
+        "17:36"
+      ]
+    },
+    {
+      "topicId": "prophetic-wisdom",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "3:164",
+        "16:125"
+      ]
+    },
+    {
+      "topicId": "isa-story",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "3:45",
+        "19:16"
+      ]
+    },
+    {
+      "topicId": "yunus-story",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "37:139",
+        "68:48"
+      ]
+    },
+    {
+      "topicId": "five-daily-prayers",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "20:130",
+        "30:17"
+      ]
+    },
+    {
+      "topicId": "dua-etiquette",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "7:55",
+        "40:60"
+      ]
+    },
+    {
+      "topicId": "hajj-rites",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "22:26",
+        "22:33"
+      ]
+    },
+    {
+      "topicId": "congregational-prayer",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "2:43",
+        "2:144"
+      ]
+    },
+    {
+      "topicId": "jumuah-friday-prayer",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "16:125",
+        "73:20"
+      ]
+    },
+    {
+      "topicId": "nafs-ammara",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "7:20",
+        "79:40"
+      ]
+    },
+    {
+      "topicId": "qalb-purification",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "26:88",
+        "8:11"
+      ]
+    },
+    {
+      "topicId": "taqwa-god-consciousness",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "2:197",
+        "3:102"
+      ]
+    },
+    {
+      "topicId": "tawakkul-trust",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "3:159",
+        "9:51"
+      ]
+    },
+    {
+      "topicId": "anger-management",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "42:37",
+        "3:133"
+      ]
+    },
+    {
+      "topicId": "hypocrisy",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:138",
+        "9:68"
+      ]
+    },
+    {
+      "topicId": "human-creation",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "32:7",
+        "75:37"
+      ]
+    },
+    {
+      "topicId": "fitrah-nature",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "30:30",
+        "43:67"
+      ]
+    },
+    {
+      "topicId": "khalifah-vicegerent",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "27:62",
+        "35:39"
+      ]
+    },
+    {
+      "topicId": "life-purpose",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "51:56",
+        "11:61"
+      ]
+    },
+    {
+      "topicId": "critical-thinking",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "47:24",
+        "30:8"
+      ]
+    },
+    {
+      "topicId": "reflection-tafakkur",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "45:3",
+        "51:47"
+      ]
+    },
+    {
+      "topicId": "emotional-intelligence",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "13:28",
+        "41:34"
+      ]
+    },
+    {
+      "topicId": "anxiety-relief",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "13:28",
+        "3:173"
+      ]
+    },
+    {
+      "topicId": "self-accountability",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "82:10",
+        "101:6"
+      ]
+    },
+    {
+      "topicId": "marriage-importance",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "24:32",
+        "4:25"
+      ]
+    },
+    {
+      "topicId": "marital-rights",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:19",
+        "4:34"
+      ]
+    },
+    {
+      "topicId": "child-education",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "66:6",
+        "20:132"
+      ]
+    },
+    {
+      "topicId": "silat-al-rahim",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "2:83",
+        "47:22"
+      ]
+    },
+    {
+      "topicId": "child-custody-hadanah",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "65:6",
+        "4:9"
+      ]
+    },
+    {
+      "topicId": "ummah-wahidah",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "21:92",
+        "8:46"
+      ]
+    },
+    {
+      "topicId": "brotherhood-islam",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "8:46",
+        "9:71"
+      ]
+    },
+    {
+      "topicId": "diversity-divine-sign",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "30:22",
+        "16:93"
+      ]
+    },
+    {
+      "topicId": "poverty-causes",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "4:32",
+        "9:28"
+      ]
+    },
+    {
+      "topicId": "riba-prohibition",
+      "uncoveredCount": 2,
+      "ayahKeys": [
+        "2:276",
+        "2:278"
+      ]
+    },
+    {
+      "topicId": "tawheed-fundamentals",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:163"
+      ]
+    },
+    {
+      "topicId": "divine-unity",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:163"
+      ]
+    },
+    {
+      "topicId": "divine-mercy",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "7:156"
+      ]
+    },
+    {
+      "topicId": "divine-wrath",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "3:131"
+      ]
+    },
+    {
+      "topicId": "divine-power",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "3:189"
+      ]
+    },
+    {
+      "topicId": "shirk-prohibition",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:116"
+      ]
+    },
+    {
+      "topicId": "pillars-of-iman",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:136"
+      ]
+    },
+    {
+      "topicId": "faith-increase-decrease",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "9:124"
+      ]
+    },
+    {
+      "topicId": "angels-creation",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "16:49"
+      ]
+    },
+    {
+      "topicId": "unseen-belief",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "27:65"
+      ]
+    },
+    {
+      "topicId": "predestination-free-will",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "17:15"
+      ]
+    },
+    {
+      "topicId": "qadr-and-dua",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "40:60"
+      ]
+    },
+    {
+      "topicId": "hudud-punishments",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "24:2"
+      ]
+    },
+    {
+      "topicId": "shura-principle",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "3:159"
+      ]
+    },
+    {
+      "topicId": "worker-rights",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "26:181"
+      ]
+    },
+    {
+      "topicId": "balance-moderation",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "31:17"
+      ]
+    },
+    {
+      "topicId": "gratitude-ingratitude",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "14:7"
+      ]
+    },
+    {
+      "topicId": "patience-haste",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "16:127"
+      ]
+    },
+    {
+      "topicId": "quran-abrogation",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "16:101"
+      ]
+    },
+    {
+      "topicId": "hadith-collections",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:83"
+      ]
+    },
+    {
+      "topicId": "prophet-definition",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "17:93"
+      ]
+    },
+    {
+      "topicId": "prophet-vs-messenger",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "22:52"
+      ]
+    },
+    {
+      "topicId": "seal-of-prophethood",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "7:158"
+      ]
+    },
+    {
+      "topicId": "zakat-calculation",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:43"
+      ]
+    },
+    {
+      "topicId": "zakat-recipients",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "9:60"
+      ]
+    },
+    {
+      "topicId": "wudu-procedure",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "8:11"
+      ]
+    },
+    {
+      "topicId": "ghusl-requirements",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:222"
+      ]
+    },
+    {
+      "topicId": "nafs-mutmainna",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "13:28"
+      ]
+    },
+    {
+      "topicId": "sabr-patience",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "16:127"
+      ]
+    },
+    {
+      "topicId": "human-dignity",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "95:4"
+      ]
+    },
+    {
+      "topicId": "adulthood-responsibility",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "17:15"
+      ]
+    },
+    {
+      "topicId": "intellect-importance",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "8:22"
+      ]
+    },
+    {
+      "topicId": "stress-management",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "13:28"
+      ]
+    },
+    {
+      "topicId": "time-management",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "73:20"
+      ]
+    },
+    {
+      "topicId": "spouse-selection",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:25"
+      ]
+    },
+    {
+      "topicId": "polygyny-conditions",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:3"
+      ]
+    },
+    {
+      "topicId": "spousal-love-mercy",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:19"
+      ]
+    },
+    {
+      "topicId": "child-development",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:9"
+      ]
+    },
+    {
+      "topicId": "orphan-care",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:83"
+      ]
+    },
+    {
+      "topicId": "divorce-types",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:227"
+      ]
+    },
+    {
+      "topicId": "khul-divorce",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:20"
+      ]
+    },
+    {
+      "topicId": "neighbor-rights",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:83"
+      ]
+    },
+    {
+      "topicId": "sadaqah-jariyah",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "2:261"
+      ]
+    },
+    {
+      "topicId": "wealth-distribution",
+      "uncoveredCount": 1,
+      "ayahKeys": [
+        "4:32"
+      ]
+    }
+  ],
+  "uncoveredMappings": [
+    {
+      "mappingId": "map-tawheed-fundamentals-0001",
+      "topicId": "tawheed-fundamentals",
+      "ayahKey": "2:163",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-asma-ul-husna-0007",
+      "topicId": "asma-ul-husna",
+      "ayahKey": "7:180",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-asma-ul-husna-0008",
+      "topicId": "asma-ul-husna",
+      "ayahKey": "17:110",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-asma-ul-husna-0009",
+      "topicId": "asma-ul-husna",
+      "ayahKey": "20:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-unity-0011",
+      "topicId": "divine-unity",
+      "ayahKey": "2:163",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-mercy-0016",
+      "topicId": "divine-mercy",
+      "ayahKey": "7:156",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-wrath-0019",
+      "topicId": "divine-wrath",
+      "ayahKey": "3:131",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-knowledge-0024",
+      "topicId": "divine-knowledge",
+      "ayahKey": "27:65",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-knowledge-0025",
+      "topicId": "divine-knowledge",
+      "ayahKey": "35:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-power-0028",
+      "topicId": "divine-power",
+      "ayahKey": "3:189",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-rububiyyah-0032",
+      "topicId": "tawheed-rububiyyah",
+      "ayahKey": "13:16",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-rububiyyah-0033",
+      "topicId": "tawheed-rububiyyah",
+      "ayahKey": "23:89",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-uluhiyyah-0035",
+      "topicId": "tawheed-uluhiyyah",
+      "ayahKey": "2:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-uluhiyyah-0037",
+      "topicId": "tawheed-uluhiyyah",
+      "ayahKey": "51:56",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-asma-wa-sifat-0038",
+      "topicId": "tawheed-asma-wa-sifat",
+      "ayahKey": "7:180",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-asma-wa-sifat-0039",
+      "topicId": "tawheed-asma-wa-sifat",
+      "ayahKey": "20:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shirk-prohibition-0043",
+      "topicId": "shirk-prohibition",
+      "ayahKey": "4:116",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-evidence-0049",
+      "topicId": "tawheed-evidence",
+      "ayahKey": "6:97",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawheed-evidence-0050",
+      "topicId": "tawheed-evidence",
+      "ayahKey": "45:3",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-pillars-of-iman-0053",
+      "topicId": "pillars-of-iman",
+      "ayahKey": "4:136",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-faith-increase-decrease-0055",
+      "topicId": "faith-increase-decrease",
+      "ayahKey": "9:124",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-iman-and-amal-0058",
+      "topicId": "iman-and-amal",
+      "ayahKey": "2:82",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-iman-and-amal-0059",
+      "topicId": "iman-and-amal",
+      "ayahKey": "3:57",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-certainty-yaqeen-0062",
+      "topicId": "certainty-yaqeen",
+      "ayahKey": "15:99",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-certainty-yaqeen-0064",
+      "topicId": "certainty-yaqeen",
+      "ayahKey": "69:51",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-angels-creation-0067",
+      "topicId": "angels-creation",
+      "ayahKey": "16:49",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-angelic-duties-0072",
+      "topicId": "angelic-duties",
+      "ayahKey": "16:2",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-angelic-duties-0074",
+      "topicId": "angelic-duties",
+      "ayahKey": "50:17",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jinn-creation-0077",
+      "topicId": "jinn-creation",
+      "ayahKey": "51:56",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jinn-creation-0078",
+      "topicId": "jinn-creation",
+      "ayahKey": "55:14",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shaytan-enemy-0080",
+      "topicId": "shaytan-enemy",
+      "ayahKey": "2:34",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shaytan-enemy-0083",
+      "topicId": "shaytan-enemy",
+      "ayahKey": "17:61",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shaytan-enemy-0085",
+      "topicId": "shaytan-enemy",
+      "ayahKey": "36:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-unseen-belief-0088",
+      "topicId": "unseen-belief",
+      "ayahKey": "27:65",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-qadr-four-levels-0092",
+      "topicId": "qadr-four-levels",
+      "ayahKey": "13:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-qadr-four-levels-0095",
+      "topicId": "qadr-four-levels",
+      "ayahKey": "76:30",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-wisdom-0102",
+      "topicId": "divine-wisdom",
+      "ayahKey": "30:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-wisdom-0103",
+      "topicId": "divine-wisdom",
+      "ayahKey": "45:18",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-wisdom-0104",
+      "topicId": "divine-wisdom",
+      "ayahKey": "51:49",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divine-wisdom-0105",
+      "topicId": "divine-wisdom",
+      "ayahKey": "65:12",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-predestination-free-will-0110",
+      "topicId": "predestination-free-will",
+      "ayahKey": "17:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-qadr-and-dua-0116",
+      "topicId": "qadr-and-dua",
+      "ayahKey": "40:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-halal-food-0594",
+      "topicId": "halal-food",
+      "ayahKey": "2:172",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-halal-food-0595",
+      "topicId": "halal-food",
+      "ayahKey": "5:1",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-halal-food-0597",
+      "topicId": "halal-food",
+      "ayahKey": "5:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-halal-food-0600",
+      "topicId": "halal-food",
+      "ayahKey": "16:114",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-halal-food-0601",
+      "topicId": "halal-food",
+      "ayahKey": "22:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hudud-punishments-0608",
+      "topicId": "hudud-punishments",
+      "ayahKey": "24:2",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shura-principle-0613",
+      "topicId": "shura-principle",
+      "ayahKey": "3:159",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-corruption-prohibition-0620",
+      "topicId": "corruption-prohibition",
+      "ayahKey": "7:85",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-corruption-prohibition-0622",
+      "topicId": "corruption-prohibition",
+      "ayahKey": "30:41",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-covenant-breach-0626",
+      "topicId": "covenant-breach",
+      "ayahKey": "13:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-covenant-breach-0627",
+      "topicId": "covenant-breach",
+      "ayahKey": "16:91",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-covenant-breach-0628",
+      "topicId": "covenant-breach",
+      "ayahKey": "47:22",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-animals-as-communities-0630",
+      "topicId": "animals-as-communities",
+      "ayahKey": "16:66",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-animals-as-communities-0632",
+      "topicId": "animals-as-communities",
+      "ayahKey": "55:6",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-animals-as-communities-0633",
+      "topicId": "animals-as-communities",
+      "ayahKey": "79:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mizan-balance-0634",
+      "topicId": "mizan-balance",
+      "ayahKey": "55:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mizan-balance-0635",
+      "topicId": "mizan-balance",
+      "ayahKey": "15:19",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-resurrection-process-0638",
+      "topicId": "resurrection-process",
+      "ayahKey": "39:68",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-resurrection-process-0639",
+      "topicId": "resurrection-process",
+      "ayahKey": "39:69",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-resurrection-process-0640",
+      "topicId": "resurrection-process",
+      "ayahKey": "75:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-resurrection-process-0641",
+      "topicId": "resurrection-process",
+      "ayahKey": "80:33",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-resurrection-process-0643",
+      "topicId": "resurrection-process",
+      "ayahKey": "22:5",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jannah-description-0648",
+      "topicId": "jannah-description",
+      "ayahKey": "55:46",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jannah-description-0650",
+      "topicId": "jannah-description",
+      "ayahKey": "76:12",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jahannam-description-0652",
+      "topicId": "jahannam-description",
+      "ayahKey": "4:56",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jahannam-description-0654",
+      "topicId": "jahannam-description",
+      "ayahKey": "56:41",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-minor-signs-0657",
+      "topicId": "minor-signs",
+      "ayahKey": "47:18",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-minor-signs-0659",
+      "topicId": "minor-signs",
+      "ayahKey": "30:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-major-signs-0660",
+      "topicId": "major-signs",
+      "ayahKey": "21:96",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-major-signs-0661",
+      "topicId": "major-signs",
+      "ayahKey": "18:98",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-major-signs-0663",
+      "topicId": "major-signs",
+      "ayahKey": "27:82",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-major-signs-0664",
+      "topicId": "major-signs",
+      "ayahKey": "6:73",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-medicine-0665",
+      "topicId": "prophetic-medicine",
+      "ayahKey": "16:69",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-medicine-0667",
+      "topicId": "prophetic-medicine",
+      "ayahKey": "17:82",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-medicine-0668",
+      "topicId": "prophetic-medicine",
+      "ayahKey": "38:41",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mental-health-0669",
+      "topicId": "mental-health",
+      "ayahKey": "13:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mental-health-0672",
+      "topicId": "mental-health",
+      "ayahKey": "3:173",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-khalifah-concept-0675",
+      "topicId": "khalifah-concept",
+      "ayahKey": "35:39",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-khalifah-concept-0676",
+      "topicId": "khalifah-concept",
+      "ayahKey": "27:62",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-fasad-fil-ard-0679",
+      "topicId": "fasad-fil-ard",
+      "ayahKey": "7:85",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-fasad-fil-ard-0681",
+      "topicId": "fasad-fil-ard",
+      "ayahKey": "30:41",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-fasad-fil-ard-0682",
+      "topicId": "fasad-fil-ard",
+      "ayahKey": "47:22",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-water-conservation-0685",
+      "topicId": "water-conservation",
+      "ayahKey": "17:26",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-water-conservation-0686",
+      "topicId": "water-conservation",
+      "ayahKey": "55:19",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-leadership-qualities-0687",
+      "topicId": "leadership-qualities",
+      "ayahKey": "38:26",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-leadership-qualities-0688",
+      "topicId": "leadership-qualities",
+      "ayahKey": "28:26",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-leadership-qualities-0691",
+      "topicId": "leadership-qualities",
+      "ayahKey": "58:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jihad-definition-0693",
+      "topicId": "jihad-definition",
+      "ayahKey": "2:216",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jihad-definition-0695",
+      "topicId": "jihad-definition",
+      "ayahKey": "9:41",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jihad-definition-0697",
+      "topicId": "jihad-definition",
+      "ayahKey": "25:52",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-rules-of-engagement-0700",
+      "topicId": "rules-of-engagement",
+      "ayahKey": "4:90",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-rules-of-engagement-0702",
+      "topicId": "rules-of-engagement",
+      "ayahKey": "9:6",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-peace-agreements-0707",
+      "topicId": "peace-agreements",
+      "ayahKey": "47:35",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-peace-agreements-0708",
+      "topicId": "peace-agreements",
+      "ayahKey": "5:1",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-peace-agreements-0709",
+      "topicId": "peace-agreements",
+      "ayahKey": "16:91",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-husn-concept-0711",
+      "topicId": "husn-concept",
+      "ayahKey": "16:90",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-husn-concept-0712",
+      "topicId": "husn-concept",
+      "ayahKey": "32:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-art-boundaries-0716",
+      "topicId": "art-boundaries",
+      "ayahKey": "31:6",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-art-boundaries-0717",
+      "topicId": "art-boundaries",
+      "ayahKey": "17:32",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-work-honor-0721",
+      "topicId": "work-honor",
+      "ayahKey": "28:26",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-work-honor-0722",
+      "topicId": "work-honor",
+      "ayahKey": "67:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-work-honor-0723",
+      "topicId": "work-honor",
+      "ayahKey": "73:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-worker-rights-0727",
+      "topicId": "worker-rights",
+      "ayahKey": "26:181",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-balance-moderation-0733",
+      "topicId": "balance-moderation",
+      "ayahKey": "31:17",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trust-responsibility-0736",
+      "topicId": "trust-responsibility",
+      "ayahKey": "8:27",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trust-responsibility-0737",
+      "topicId": "trust-responsibility",
+      "ayahKey": "23:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trust-responsibility-0738",
+      "topicId": "trust-responsibility",
+      "ayahKey": "33:72",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trust-responsibility-0739",
+      "topicId": "trust-responsibility",
+      "ayahKey": "70:32",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-signs-and-reflection-0743",
+      "topicId": "signs-and-reflection",
+      "ayahKey": "30:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-signs-and-reflection-0744",
+      "topicId": "signs-and-reflection",
+      "ayahKey": "41:53",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-signs-and-reflection-0745",
+      "topicId": "signs-and-reflection",
+      "ayahKey": "45:3",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-signs-and-reflection-0746",
+      "topicId": "signs-and-reflection",
+      "ayahKey": "51:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-gratitude-ingratitude-0747",
+      "topicId": "gratitude-ingratitude",
+      "ayahKey": "14:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trial-and-test-0753",
+      "topicId": "trial-and-test",
+      "ayahKey": "2:214",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trial-and-test-0754",
+      "topicId": "trial-and-test",
+      "ayahKey": "3:186",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trial-and-test-0755",
+      "topicId": "trial-and-test",
+      "ayahKey": "21:35",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trial-and-test-0756",
+      "topicId": "trial-and-test",
+      "ayahKey": "29:2",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trial-and-test-0757",
+      "topicId": "trial-and-test",
+      "ayahKey": "47:31",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-trial-and-test-0760",
+      "topicId": "trial-and-test",
+      "ayahKey": "89:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-patience-haste-0762",
+      "topicId": "patience-haste",
+      "ayahKey": "16:127",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0768",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "2:269",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0769",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "20:114",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0771",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "39:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0772",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "58:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0773",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "6:122",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0774",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "12:76",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-ignorance-0775",
+      "topicId": "knowledge-ignorance",
+      "ayahKey": "16:43",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dialogue-principles-0776",
+      "topicId": "dialogue-principles",
+      "ayahKey": "16:125",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dialogue-principles-0777",
+      "topicId": "dialogue-principles",
+      "ayahKey": "29:46",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-remembrance-forgetfulness-0784",
+      "topicId": "remembrance-forgetfulness",
+      "ayahKey": "13:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-remembrance-forgetfulness-0785",
+      "topicId": "remembrance-forgetfulness",
+      "ayahKey": "20:124",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-remembrance-forgetfulness-0786",
+      "topicId": "remembrance-forgetfulness",
+      "ayahKey": "7:201",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-remembrance-forgetfulness-0787",
+      "topicId": "remembrance-forgetfulness",
+      "ayahKey": "18:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-revelation-process-0118",
+      "topicId": "quran-revelation-process",
+      "ayahKey": "16:102",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-revelation-process-0120",
+      "topicId": "quran-revelation-process",
+      "ayahKey": "42:51",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-compilation-0122",
+      "topicId": "quran-compilation",
+      "ayahKey": "15:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-compilation-0123",
+      "topicId": "quran-compilation",
+      "ayahKey": "75:17",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-preservation-0125",
+      "topicId": "quran-preservation",
+      "ayahKey": "15:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-preservation-0126",
+      "topicId": "quran-preservation",
+      "ayahKey": "41:42",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-preservation-0127",
+      "topicId": "quran-preservation",
+      "ayahKey": "69:51",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tafsir-methodology-0129",
+      "topicId": "tafsir-methodology",
+      "ayahKey": "16:44",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tafsir-methodology-0130",
+      "topicId": "tafsir-methodology",
+      "ayahKey": "47:24",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-quran-abrogation-0133",
+      "topicId": "quran-abrogation",
+      "ayahKey": "16:101",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sunnah-definition-0136",
+      "topicId": "sunnah-definition",
+      "ayahKey": "4:80",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sunnah-definition-0138",
+      "topicId": "sunnah-definition",
+      "ayahKey": "33:21",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hadith-authentication-0139",
+      "topicId": "hadith-authentication",
+      "ayahKey": "4:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hadith-authentication-0141",
+      "topicId": "hadith-authentication",
+      "ayahKey": "17:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hadith-collections-0142",
+      "topicId": "hadith-collections",
+      "ayahKey": "4:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-torah-psalms-gospel-0147",
+      "topicId": "torah-psalms-gospel",
+      "ayahKey": "3:3",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-torah-psalms-gospel-0149",
+      "topicId": "torah-psalms-gospel",
+      "ayahKey": "5:46",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-torah-psalms-gospel-0150",
+      "topicId": "torah-psalms-gospel",
+      "ayahKey": "17:55",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-methodology-0154",
+      "topicId": "prophetic-methodology",
+      "ayahKey": "6:107",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-methodology-0155",
+      "topicId": "prophetic-methodology",
+      "ayahKey": "14:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-methodology-0156",
+      "topicId": "prophetic-methodology",
+      "ayahKey": "16:35",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-methodology-0157",
+      "topicId": "prophetic-methodology",
+      "ayahKey": "29:46",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-wisdom-0159",
+      "topicId": "prophetic-wisdom",
+      "ayahKey": "3:164",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-wisdom-0160",
+      "topicId": "prophetic-wisdom",
+      "ayahKey": "16:125",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophet-definition-0166",
+      "topicId": "prophet-definition",
+      "ayahKey": "17:93",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophet-vs-messenger-0167",
+      "topicId": "prophet-vs-messenger",
+      "ayahKey": "22:52",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-seal-of-prophethood-0172",
+      "topicId": "seal-of-prophethood",
+      "ayahKey": "7:158",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ibrahim-story-0179",
+      "topicId": "ibrahim-story",
+      "ayahKey": "14:24",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ibrahim-story-0180",
+      "topicId": "ibrahim-story",
+      "ayahKey": "19:41",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ibrahim-story-0181",
+      "topicId": "ibrahim-story",
+      "ayahKey": "21:51",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ibrahim-story-0182",
+      "topicId": "ibrahim-story",
+      "ayahKey": "29:16",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ibrahim-story-0183",
+      "topicId": "ibrahim-story",
+      "ayahKey": "37:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-musa-story-0185",
+      "topicId": "musa-story",
+      "ayahKey": "7:103",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-musa-story-0187",
+      "topicId": "musa-story",
+      "ayahKey": "20:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-musa-story-0191",
+      "topicId": "musa-story",
+      "ayahKey": "79:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-isa-story-0192",
+      "topicId": "isa-story",
+      "ayahKey": "3:45",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-isa-story-0194",
+      "topicId": "isa-story",
+      "ayahKey": "19:16",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-muhammad-story-0197",
+      "topicId": "muhammad-story",
+      "ayahKey": "3:144",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-muhammad-story-0198",
+      "topicId": "muhammad-story",
+      "ayahKey": "7:158",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-muhammad-story-0199",
+      "topicId": "muhammad-story",
+      "ayahKey": "9:128",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-muhammad-story-0201",
+      "topicId": "muhammad-story",
+      "ayahKey": "48:29",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-muhammad-story-0202",
+      "topicId": "muhammad-story",
+      "ayahKey": "68:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-nuh-story-0203",
+      "topicId": "nuh-story",
+      "ayahKey": "11:25",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-nuh-story-0204",
+      "topicId": "nuh-story",
+      "ayahKey": "23:23",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-nuh-story-0205",
+      "topicId": "nuh-story",
+      "ayahKey": "26:105",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-yunus-story-0209",
+      "topicId": "yunus-story",
+      "ayahKey": "37:139",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-yunus-story-0210",
+      "topicId": "yunus-story",
+      "ayahKey": "68:48",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hud-story-0211",
+      "topicId": "hud-story",
+      "ayahKey": "11:50",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hud-story-0212",
+      "topicId": "hud-story",
+      "ayahKey": "26:123",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hud-story-0213",
+      "topicId": "hud-story",
+      "ayahKey": "46:21",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-salih-story-0215",
+      "topicId": "salih-story",
+      "ayahKey": "11:61",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-salih-story-0216",
+      "topicId": "salih-story",
+      "ayahKey": "26:141",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-salih-story-0217",
+      "topicId": "salih-story",
+      "ayahKey": "27:45",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-salih-story-0218",
+      "topicId": "salih-story",
+      "ayahKey": "54:23",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lut-story-0221",
+      "topicId": "lut-story",
+      "ayahKey": "15:58",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lut-story-0222",
+      "topicId": "lut-story",
+      "ayahKey": "21:74",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lut-story-0223",
+      "topicId": "lut-story",
+      "ayahKey": "26:160",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lut-story-0224",
+      "topicId": "lut-story",
+      "ayahKey": "27:54",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lut-story-0226",
+      "topicId": "lut-story",
+      "ayahKey": "54:33",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dream-interpretation-0227",
+      "topicId": "dream-interpretation",
+      "ayahKey": "12:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dream-interpretation-0228",
+      "topicId": "dream-interpretation",
+      "ayahKey": "12:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dream-interpretation-0229",
+      "topicId": "dream-interpretation",
+      "ayahKey": "12:43",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-yusuf-dreams-0230",
+      "topicId": "yusuf-dreams",
+      "ayahKey": "12:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-yusuf-dreams-0231",
+      "topicId": "yusuf-dreams",
+      "ayahKey": "12:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-yusuf-dreams-0232",
+      "topicId": "yusuf-dreams",
+      "ayahKey": "12:43",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-five-daily-prayers-0238",
+      "topicId": "five-daily-prayers",
+      "ayahKey": "20:130",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-five-daily-prayers-0239",
+      "topicId": "five-daily-prayers",
+      "ayahKey": "30:17",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prayer-acceptance-0246",
+      "topicId": "prayer-acceptance",
+      "ayahKey": "5:27",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prayer-acceptance-0247",
+      "topicId": "prayer-acceptance",
+      "ayahKey": "14:40",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prayer-acceptance-0248",
+      "topicId": "prayer-acceptance",
+      "ayahKey": "19:55",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sunnah-prayers-0250",
+      "topicId": "sunnah-prayers",
+      "ayahKey": "2:43",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sunnah-prayers-0251",
+      "topicId": "sunnah-prayers",
+      "ayahKey": "17:79",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sunnah-prayers-0252",
+      "topicId": "sunnah-prayers",
+      "ayahKey": "25:64",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sunnah-prayers-0254",
+      "topicId": "sunnah-prayers",
+      "ayahKey": "39:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-night-prayer-0255",
+      "topicId": "night-prayer",
+      "ayahKey": "17:79",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-night-prayer-0256",
+      "topicId": "night-prayer",
+      "ayahKey": "25:64",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-night-prayer-0258",
+      "topicId": "night-prayer",
+      "ayahKey": "39:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-night-prayer-0260",
+      "topicId": "night-prayer",
+      "ayahKey": "73:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dua-etiquette-0262",
+      "topicId": "dua-etiquette",
+      "ayahKey": "7:55",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dua-etiquette-0264",
+      "topicId": "dua-etiquette",
+      "ayahKey": "40:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dua-answers-0267",
+      "topicId": "dua-answers",
+      "ayahKey": "13:14",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dua-answers-0268",
+      "topicId": "dua-answers",
+      "ayahKey": "27:62",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dua-answers-0269",
+      "topicId": "dua-answers",
+      "ayahKey": "40:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-dua-answers-0270",
+      "topicId": "dua-answers",
+      "ayahKey": "41:49",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-zakat-calculation-0271",
+      "topicId": "zakat-calculation",
+      "ayahKey": "2:43",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-zakat-recipients-0275",
+      "topicId": "zakat-recipients",
+      "ayahKey": "9:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hajj-rites-0285",
+      "topicId": "hajj-rites",
+      "ayahKey": "22:26",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hajj-rites-0287",
+      "topicId": "hajj-rites",
+      "ayahKey": "22:33",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-wudu-procedure-0292",
+      "topicId": "wudu-procedure",
+      "ayahKey": "8:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ghusl-requirements-0295",
+      "topicId": "ghusl-requirements",
+      "ayahKey": "2:222",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-congregational-prayer-0298",
+      "topicId": "congregational-prayer",
+      "ayahKey": "2:43",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-congregational-prayer-0301",
+      "topicId": "congregational-prayer",
+      "ayahKey": "2:144",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jumuah-friday-prayer-0303",
+      "topicId": "jumuah-friday-prayer",
+      "ayahKey": "16:125",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-jumuah-friday-prayer-0304",
+      "topicId": "jumuah-friday-prayer",
+      "ayahKey": "73:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-nafs-ammara-0306",
+      "topicId": "nafs-ammara",
+      "ayahKey": "7:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-nafs-ammara-0307",
+      "topicId": "nafs-ammara",
+      "ayahKey": "79:40",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-nafs-mutmainna-0311",
+      "topicId": "nafs-mutmainna",
+      "ayahKey": "13:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-qalb-purification-0312",
+      "topicId": "qalb-purification",
+      "ayahKey": "26:88",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-qalb-purification-0313",
+      "topicId": "qalb-purification",
+      "ayahKey": "8:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-taqwa-god-consciousness-0318",
+      "topicId": "taqwa-god-consciousness",
+      "ayahKey": "2:197",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-taqwa-god-consciousness-0319",
+      "topicId": "taqwa-god-consciousness",
+      "ayahKey": "3:102",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sabr-patience-0325",
+      "topicId": "sabr-patience",
+      "ayahKey": "16:127",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shukr-gratitude-0329",
+      "topicId": "shukr-gratitude",
+      "ayahKey": "14:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shukr-gratitude-0330",
+      "topicId": "shukr-gratitude",
+      "ayahKey": "27:40",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-shukr-gratitude-0332",
+      "topicId": "shukr-gratitude",
+      "ayahKey": "39:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawakkul-trust-0333",
+      "topicId": "tawakkul-trust",
+      "ayahKey": "3:159",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-tawakkul-trust-0334",
+      "topicId": "tawakkul-trust",
+      "ayahKey": "9:51",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ikhlas-sincerity-0339",
+      "topicId": "ikhlas-sincerity",
+      "ayahKey": "39:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ikhlas-sincerity-0340",
+      "topicId": "ikhlas-sincerity",
+      "ayahKey": "40:14",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ikhlas-sincerity-0342",
+      "topicId": "ikhlas-sincerity",
+      "ayahKey": "4:146",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-riya-showing-off-0343",
+      "topicId": "riya-showing-off",
+      "ayahKey": "107:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-riya-showing-off-0345",
+      "topicId": "riya-showing-off",
+      "ayahKey": "4:142",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-riya-showing-off-0346",
+      "topicId": "riya-showing-off",
+      "ayahKey": "18:110",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-anger-management-0349",
+      "topicId": "anger-management",
+      "ayahKey": "42:37",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-anger-management-0350",
+      "topicId": "anger-management",
+      "ayahKey": "3:133",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-envy-hasad-0351",
+      "topicId": "envy-hasad",
+      "ayahKey": "113:5",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-envy-hasad-0352",
+      "topicId": "envy-hasad",
+      "ayahKey": "4:54",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-envy-hasad-0353",
+      "topicId": "envy-hasad",
+      "ayahKey": "4:32",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-pride-kibr-0357",
+      "topicId": "pride-kibr",
+      "ayahKey": "28:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-pride-kibr-0358",
+      "topicId": "pride-kibr",
+      "ayahKey": "16:29",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-pride-kibr-0359",
+      "topicId": "pride-kibr",
+      "ayahKey": "7:13",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-slander-0363",
+      "topicId": "slander",
+      "ayahKey": "4:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-slander-0364",
+      "topicId": "slander",
+      "ayahKey": "24:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-slander-0365",
+      "topicId": "slander",
+      "ayahKey": "4:112",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-slander-0366",
+      "topicId": "slander",
+      "ayahKey": "33:58",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lying-0367",
+      "topicId": "lying",
+      "ayahKey": "16:105",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lying-0368",
+      "topicId": "lying",
+      "ayahKey": "22:30",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-lying-0370",
+      "topicId": "lying",
+      "ayahKey": "40:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hypocrisy-0372",
+      "topicId": "hypocrisy",
+      "ayahKey": "4:138",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-hypocrisy-0374",
+      "topicId": "hypocrisy",
+      "ayahKey": "9:68",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-character-0376",
+      "topicId": "prophetic-character",
+      "ayahKey": "68:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-character-0377",
+      "topicId": "prophetic-character",
+      "ayahKey": "33:21",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-character-0378",
+      "topicId": "prophetic-character",
+      "ayahKey": "3:159",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-character-0379",
+      "topicId": "prophetic-character",
+      "ayahKey": "9:128",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-prophetic-character-0380",
+      "topicId": "prophetic-character",
+      "ayahKey": "21:107",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-human-creation-0383",
+      "topicId": "human-creation",
+      "ayahKey": "32:7",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-human-creation-0384",
+      "topicId": "human-creation",
+      "ayahKey": "75:37",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-fitrah-nature-0387",
+      "topicId": "fitrah-nature",
+      "ayahKey": "30:30",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-fitrah-nature-0389",
+      "topicId": "fitrah-nature",
+      "ayahKey": "43:67",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-khalifah-vicegerent-0392",
+      "topicId": "khalifah-vicegerent",
+      "ayahKey": "27:62",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-khalifah-vicegerent-0393",
+      "topicId": "khalifah-vicegerent",
+      "ayahKey": "35:39",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-human-dignity-0395",
+      "topicId": "human-dignity",
+      "ayahKey": "95:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-life-purpose-0397",
+      "topicId": "life-purpose",
+      "ayahKey": "51:56",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-life-purpose-0400",
+      "topicId": "life-purpose",
+      "ayahKey": "11:61",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-birth-childhood-0402",
+      "topicId": "birth-childhood",
+      "ayahKey": "3:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-birth-childhood-0404",
+      "topicId": "birth-childhood",
+      "ayahKey": "46:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-birth-childhood-0405",
+      "topicId": "birth-childhood",
+      "ayahKey": "31:14",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-youth-adolescence-0406",
+      "topicId": "youth-adolescence",
+      "ayahKey": "18:13",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-youth-adolescence-0407",
+      "topicId": "youth-adolescence",
+      "ayahKey": "21:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-youth-adolescence-0408",
+      "topicId": "youth-adolescence",
+      "ayahKey": "12:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-youth-adolescence-0409",
+      "topicId": "youth-adolescence",
+      "ayahKey": "19:2",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-adulthood-responsibility-0411",
+      "topicId": "adulthood-responsibility",
+      "ayahKey": "17:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-old-age-wisdom-0414",
+      "topicId": "old-age-wisdom",
+      "ayahKey": "16:70",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-old-age-wisdom-0415",
+      "topicId": "old-age-wisdom",
+      "ayahKey": "22:5",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-old-age-wisdom-0416",
+      "topicId": "old-age-wisdom",
+      "ayahKey": "36:68",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-old-age-wisdom-0417",
+      "topicId": "old-age-wisdom",
+      "ayahKey": "46:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-intellect-importance-0420",
+      "topicId": "intellect-importance",
+      "ayahKey": "8:22",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-critical-thinking-0424",
+      "topicId": "critical-thinking",
+      "ayahKey": "47:24",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-critical-thinking-0425",
+      "topicId": "critical-thinking",
+      "ayahKey": "30:8",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-reflection-tafakkur-0431",
+      "topicId": "reflection-tafakkur",
+      "ayahKey": "45:3",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-reflection-tafakkur-0432",
+      "topicId": "reflection-tafakkur",
+      "ayahKey": "51:47",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-seeking-0433",
+      "topicId": "knowledge-seeking",
+      "ayahKey": "20:114",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-seeking-0435",
+      "topicId": "knowledge-seeking",
+      "ayahKey": "58:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-knowledge-seeking-0437",
+      "topicId": "knowledge-seeking",
+      "ayahKey": "12:76",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-emotional-intelligence-0438",
+      "topicId": "emotional-intelligence",
+      "ayahKey": "13:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-emotional-intelligence-0441",
+      "topicId": "emotional-intelligence",
+      "ayahKey": "41:34",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-stress-management-0442",
+      "topicId": "stress-management",
+      "ayahKey": "13:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-anxiety-relief-0447",
+      "topicId": "anxiety-relief",
+      "ayahKey": "13:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-anxiety-relief-0450",
+      "topicId": "anxiety-relief",
+      "ayahKey": "3:173",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-self-accountability-0455",
+      "topicId": "self-accountability",
+      "ayahKey": "82:10",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-self-accountability-0456",
+      "topicId": "self-accountability",
+      "ayahKey": "101:6",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-time-management-0459",
+      "topicId": "time-management",
+      "ayahKey": "73:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-marriage-importance-0463",
+      "topicId": "marriage-importance",
+      "ayahKey": "24:32",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-marriage-importance-0464",
+      "topicId": "marriage-importance",
+      "ayahKey": "4:25",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-spouse-selection-0465",
+      "topicId": "spouse-selection",
+      "ayahKey": "4:25",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mahr-dowry-0468",
+      "topicId": "mahr-dowry",
+      "ayahKey": "4:4",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mahr-dowry-0469",
+      "topicId": "mahr-dowry",
+      "ayahKey": "4:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mahr-dowry-0470",
+      "topicId": "mahr-dowry",
+      "ayahKey": "4:24",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-polygyny-conditions-0472",
+      "topicId": "polygyny-conditions",
+      "ayahKey": "4:3",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-spousal-love-mercy-0479",
+      "topicId": "spousal-love-mercy",
+      "ayahKey": "4:19",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-marital-rights-0481",
+      "topicId": "marital-rights",
+      "ayahKey": "4:19",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-marital-rights-0482",
+      "topicId": "marital-rights",
+      "ayahKey": "4:34",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-intimacy-ethics-0483",
+      "topicId": "intimacy-ethics",
+      "ayahKey": "2:222",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-intimacy-ethics-0484",
+      "topicId": "intimacy-ethics",
+      "ayahKey": "2:223",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-intimacy-ethics-0485",
+      "topicId": "intimacy-ethics",
+      "ayahKey": "24:58",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-child-development-0486",
+      "topicId": "child-development",
+      "ayahKey": "4:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-child-education-0490",
+      "topicId": "child-education",
+      "ayahKey": "66:6",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-child-education-0491",
+      "topicId": "child-education",
+      "ayahKey": "20:132",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-orphan-care-0492",
+      "topicId": "orphan-care",
+      "ayahKey": "2:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mother-rights-0498",
+      "topicId": "mother-rights",
+      "ayahKey": "46:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mother-rights-0499",
+      "topicId": "mother-rights",
+      "ayahKey": "31:14",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-mother-rights-0500",
+      "topicId": "mother-rights",
+      "ayahKey": "17:23",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-father-rights-0502",
+      "topicId": "father-rights",
+      "ayahKey": "17:23",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-father-rights-0503",
+      "topicId": "father-rights",
+      "ayahKey": "2:133",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-father-rights-0504",
+      "topicId": "father-rights",
+      "ayahKey": "19:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-elderly-care-0505",
+      "topicId": "elderly-care",
+      "ayahKey": "17:23",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-elderly-care-0506",
+      "topicId": "elderly-care",
+      "ayahKey": "17:23",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-elderly-care-0507",
+      "topicId": "elderly-care",
+      "ayahKey": "16:70",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-silat-al-rahim-0510",
+      "topicId": "silat-al-rahim",
+      "ayahKey": "2:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-silat-al-rahim-0511",
+      "topicId": "silat-al-rahim",
+      "ayahKey": "47:22",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-divorce-types-0512",
+      "topicId": "divorce-types",
+      "ayahKey": "2:227",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-khul-divorce-0517",
+      "topicId": "khul-divorce",
+      "ayahKey": "4:20",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-child-custody-hadanah-0519",
+      "topicId": "child-custody-hadanah",
+      "ayahKey": "65:6",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-child-custody-hadanah-0520",
+      "topicId": "child-custody-hadanah",
+      "ayahKey": "4:9",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ummah-wahidah-0523",
+      "topicId": "ummah-wahidah",
+      "ayahKey": "21:92",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-ummah-wahidah-0525",
+      "topicId": "ummah-wahidah",
+      "ayahKey": "8:46",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-brotherhood-islam-0528",
+      "topicId": "brotherhood-islam",
+      "ayahKey": "8:46",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-brotherhood-islam-0529",
+      "topicId": "brotherhood-islam",
+      "ayahKey": "9:71",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-diversity-divine-sign-0534",
+      "topicId": "diversity-divine-sign",
+      "ayahKey": "30:22",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-diversity-divine-sign-0538",
+      "topicId": "diversity-divine-sign",
+      "ayahKey": "16:93",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-right-to-life-0541",
+      "topicId": "right-to-life",
+      "ayahKey": "17:33",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-right-to-life-0542",
+      "topicId": "right-to-life",
+      "ayahKey": "4:93",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-right-to-life-0543",
+      "topicId": "right-to-life",
+      "ayahKey": "25:68",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-neighbor-rights-0545",
+      "topicId": "neighbor-rights",
+      "ayahKey": "2:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-poverty-causes-0546",
+      "topicId": "poverty-causes",
+      "ayahKey": "4:32",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-poverty-causes-0549",
+      "topicId": "poverty-causes",
+      "ayahKey": "9:28",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-poverty-solutions-0552",
+      "topicId": "poverty-solutions",
+      "ayahKey": "9:60",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-poverty-solutions-0553",
+      "topicId": "poverty-solutions",
+      "ayahKey": "51:19",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-poverty-solutions-0554",
+      "topicId": "poverty-solutions",
+      "ayahKey": "70:24",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-media-responsibility-0556",
+      "topicId": "media-responsibility",
+      "ayahKey": "4:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-media-responsibility-0557",
+      "topicId": "media-responsibility",
+      "ayahKey": "17:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-media-responsibility-0558",
+      "topicId": "media-responsibility",
+      "ayahKey": "24:11",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-rumor-verification-0560",
+      "topicId": "rumor-verification",
+      "ayahKey": "4:83",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-rumor-verification-0561",
+      "topicId": "rumor-verification",
+      "ayahKey": "17:36",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-rumor-verification-0562",
+      "topicId": "rumor-verification",
+      "ayahKey": "24:12",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-justice-oppression-0565",
+      "topicId": "justice-oppression",
+      "ayahKey": "16:90",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-justice-oppression-0567",
+      "topicId": "justice-oppression",
+      "ayahKey": "38:26",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-justice-oppression-0569",
+      "topicId": "justice-oppression",
+      "ayahKey": "42:15",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-riba-prohibition-0577",
+      "topicId": "riba-prohibition",
+      "ayahKey": "2:276",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-riba-prohibition-0578",
+      "topicId": "riba-prohibition",
+      "ayahKey": "2:278",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-sadaqah-jariyah-0582",
+      "topicId": "sadaqah-jariyah",
+      "ayahKey": "2:261",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "mappingId": "map-wealth-distribution-0590",
+      "topicId": "wealth-distribution",
+      "ayahKey": "4:32",
+      "status": "no-candidate-coverage",
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    }
+  ]
+}
