@@ -1,0 +1,403 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T09:00:00.000Z",
+  "sourceExtraction": "ext-006-p1,ext-006-p2,ext-006-p3,ext-006-p4",
+  "candidates": [
+    {
+      "candidateId": "cand-0267",
+      "label": "Creation-duality and sign-rejection: Allah created heavens earth made darkness light yet disbelievers equate others; no sign comes except they turn away; denied truth awaits news of ridicule",
+      "definition": "In 6:1-5: All praise to Allah who created the heavens and the earth and made the darkness and the light. Then those who disbelieve equate others with their Lord. No sign comes to them from the signs of their Lord except that they turn away. They denied the truth when it came to them so there will come to them news of what they used to ridicule.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:1",
+          "excerpt": "ٱلۡحَمۡدُ لِلَّهِ ٱلَّذِي خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ وَجَعَلَ ٱلظُّلُمَٰتِ وَٱلنُّورَۖ ثُمَّ ٱلَّذِينَ كَفَرُواْ بِرَبِّهِمۡ يَعۡدِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Alhamdu lillahi allathee khalaqa alssamawati waalarda wajaAAala alththulumati waalnnoora: creation-praise establishing Allah as sole originator of cosmos and epistemic duality. Thumma allatheena kafaroo birabbihim yaAAdiloona: despite creation evidence disbelievers equate others showing volitional rejection not evidential deficit."
+        },
+        {
+          "key": "6:4",
+          "excerpt": "وَمَا تَأۡتِيهِم مِّنۡ ءَايَةٖ مِّنۡ ءَايَٰتِ رَبِّهِمۡ إِلَّا كَانُواْ عَنۡهَا مُعۡرِضِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama tateehim min ayatin min ayati rabbihim illa kanoo AAanha muAArideena: systematic sign-aversion pattern using illa kanoo construction indicating habitual response regardless of sign type."
+        },
+        {
+          "key": "6:5",
+          "excerpt": "فَقَدۡ كَذَّبُواْ بِٱلۡحَقِّ لَمَّا جَآءَهُمۡ فَسَوۡفَ يَأۡتِيهِمۡ أَنۢبَـٰٓؤُاْ مَا كَانُواْ بِهِۦ يَسۡتَهۡزِءُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faqad kaththaboo bialhaqqi lamma jaahum: truth-denial temporally linked to its arrival. Fasawfa yateehim anbao ma kanoo bihi yastahzioona: future news-arrival as ironic reversal where ridiculed content becomes experienced reality."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Creation-based tawheed argument undermined by persistent sign-rejection"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "ثنائية الخلق ورفض الآيات: الله خلق السماوات والأرض وجعل الظلمات والنور ومع ذلك يعدل الكافرون؛ لا تأتيهم آية إلا أعرضوا؛ كذبوا بالحق ينتظرهم أنباء ما يستهزئون",
+      "notes": "Overlap with tawheed. Darkness-light duality frames entire epistemic landscape: creation itself is sign yet disbelievers choose darkness. YaAAdiloona (equate) implies active comparison not passive ignorance. Sign-rejection pattern uses absolute negation (ma...illa) showing no exception exists. Ridicule-news reversal establishes poetic justice principle operating in eschatological timeframe. Positioned as surah-opening thematic statement governing all subsequent argumentation."
+    },
+    {
+      "candidateId": "cand-0268",
+      "label": "Historical civilization cycle: previous generations established with superior resources rain rivers yet destroyed for sins replaced by others; empirical argument against complacency",
+      "definition": "In 6:6: Have they not seen how many generations We destroyed before them which We had established upon the earth as We have not established you? And We sent rain upon them in showers and made rivers flow beneath them; then We destroyed them for their sins and brought forth after them another generation.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:6",
+          "excerpt": "أَلَمۡ يَرَوۡاْ كَمۡ أَهۡلَكۡنَا مِن قَبۡلِهِم مِّن قَرۡنٖ مَّكَّنَّـٰهُمۡ فِي ٱلۡأَرۡضِ مَا لَمۡ نُمَكِّن لَّكُمۡ وَأَرۡسَلۡنَا ٱلسَّمَآءَ عَلَيۡهِم مِّدۡرَارٗا وَجَعَلۡنَا ٱلۡأَنۡهَٰرَ تَجۡرِي مِن تَحۡتِهِمۡ فَأَهۡلَكۡنَٰهُم بِذُنُوبِهِمۡ وَأَنشَأۡنَا مِنۢ بَعۡدِهِمۡ قَرۡنًا ءَاخَرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Alam yaraw kam ahlakna min qablihim min qarnin: rhetorical question demanding empirical observation of historical destruction. Makkannahum fee alardi ma lam numakkin lakum: comparative establishment showing predecessors had superior earthly power. Waarsalna alssamaa AAalayhim midraran wajaAAalna alanhara tajree min tahtihim: abundant provision demonstrating material success did not prevent destruction. Faahlaknahum bithunoobihim: sin-causation linking destruction to moral not material factors. Waanshana min baAAdihim qarnan akhareena: replacement principle showing civilizations are dispensable."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Historical demonstration of divine power through civilizational destruction and replacement"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "دورة الحضارات التاريخية: أمم سابقة مكنت بأفضل موارد وأمطار وأنهار ثم أهلكت بذنوبها وأبدلت بغيرها؛ حجة تجريبية ضد الاغترار",
+      "notes": "Overlap with divine-power. Empirical argument form (alam yaraw) demands observation not faith. Comparative superiority (ma lam numakkin lakum) eliminates resource-insufficiency excuse. Rain-river imagery represents peak agricultural prosperity making destruction more striking. Bithunoobihim specifies moral causation distinguishing from natural disaster. Replacement cycle (qarnan akhareena) shows divine governance continues beyond any single civilization. Functions as warning to Meccan audience enjoying similar prosperity."
+    },
+    {
+      "candidateId": "cand-0269",
+      "label": "Hypothetical scenarios proving obstinacy: even written scripture on page touched by hands called magic; angel demanded but sending would end respite; angel in human form causes same confusion; previous messengers ridiculed and mockers enveloped",
+      "definition": "In 6:7-10: Even if We sent down a written scripture on a page and they touched it with their hands the disbelievers would say this is obvious magic. They say why was an angel not sent down? If We sent an angel the matter would be decided then they would not be reprieved. If We made him an angel We would make him a man and cover them with confusion. Messengers were ridiculed before you and those who mocked were enveloped by what they ridiculed.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:7",
+          "excerpt": "وَلَوۡ نَزَّلۡنَا عَلَيۡكَ كِتَٰبٗا فِي قِرۡطَاسٖ فَلَمَسُوهُ بِأَيۡدِيهِمۡ لَقَالَ ٱلَّذِينَ كَفَرُوٓاْ إِنۡ هَٰذَآ إِلَّا سِحۡرٞ مُّبِينٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walaw nazzalna AAalayka kitaban fee qirtasin falamasoohu biaydeehim: maximum-evidence hypothetical combining written form with tactile verification. Laqala allatheena kafaroo in hatha illa sihrun mubeenun: predetermined rejection response proving objection is volitional not evidential."
+        },
+        {
+          "key": "6:8",
+          "excerpt": "وَقَالُواْ لَوۡلَآ أُنزِلَ عَلَيۡهِ مَلَكٞۖ وَلَوۡ أَنزَلۡنَا مَلَكٗا لَّقُضِيَ ٱلۡأَمۡرُ ثُمَّ لَا يُنظَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waqaloo lawla onzila AAalayhi malakun: angel-demand as recurring Meccan objection. Walaw anzalna malakan laqudiya alamru: angel-sending would terminate probationary period eliminating mercy-space. Thumma la yuntharoona: no-respite consequence showing current human-messenger format is itself mercy."
+        },
+        {
+          "key": "6:9",
+          "excerpt": "وَلَوۡ جَعَلۡنَٰهُ مَلَكٗا لَّجَعَلۡنَٰهُ رَجُلٗا وَلَلَبَسۡنَا عَلَيۡهِم مَّا يَلۡبِسُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walaw jaAAalnahu malakan lajaAAalnahu rajulan: angel in human appearance creates identical epistemic situation. Walalabasna AAalayhim ma yalbisoona: confusion would persist proving problem is perceptual-volitional not ontological."
+        },
+        {
+          "key": "6:10",
+          "excerpt": "وَلَقَدِ ٱسۡتُهۡزِئَ بِرُسُلٖ مِّن قَبۡلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُواْ مِنۡهُم مَّا كَانُواْ بِهِۦ يَسۡتَهۡزِءُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walaqadi istuhzia birusulin min qablika: historical precedent confirming ridicule pattern. Fahaqa biallatheena sakhiroo minhum ma kanoo bihi yastahzioona: ironic envelopment where mockery-content becomes mocker's fate."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Prophetic ridicule pattern and its consequences across messenger history"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "سيناريوهات افتراضية تثبت العناد: حتى كتاب مكتوب على قرطاس لمسوه بأيديهم سموه سحراً؛ طالبوا بملك لكن إنزاله ينهي الإمهال؛ ملك بصيغة بشر يسبب نفس اللبس؛ رسل سابقون سُخِر منهم فحاق بالمستهزئين",
+      "notes": "Overlap with prophets. Four-scenario progression escalates evidence-level while maintaining constant rejection-response. Written-touchable scripture represents maximum possible physical evidence yet still dismissed. Angel-demand rebuttal reframes absence as mercy not deficiency. Human-form-angel hypothetical shows form-change solves nothing. Historical envelopment (haqa) provides empirical confirmation of pattern. Collectively these scenarios function as meta-argument: no conceivable evidence satisfies volitional rejection."
+    },
+    {
+      "candidateId": "cand-0270",
+      "label": "Self-decreed mercy and certain gathering: Allah wrote mercy upon Himself as voluntary commitment; will surely assemble for Resurrection Day no doubt; self-losers do not believe",
+      "definition": "In 6:12: Say to whom belongs whatever is in the heavens and earth? Say to Allah. He has decreed upon Himself mercy. He will surely assemble you for the Day of Resurrection about which there is no doubt. Those who will lose themselves do not believe.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:12",
+          "excerpt": "قُل لِّمَن مَّا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ قُل لِّلَّهِۚ كَتَبَ عَلَىٰ نَفۡسِهِ ٱلرَّحۡمَةَۚ لَيَجۡمَعَنَّكُمۡ إِلَىٰ يَوۡمِ ٱلۡقِيَٰمَةِ لَا رَيۡبَ فِيهِۚ ٱلَّذِينَ خَسِرُوٓاْ أَنفُسَهُمۡ فَهُمۡ لَا يُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qul liman ma fee alssamawati waalardi qul lillahi: ownership declaration through rhetorical question-answer establishing exclusive divine dominion. Kataba AAala nafsihi alrrahmata: self-decreed mercy using kataba (wrote/decreed) implying binding self-commitment not contingent response. LayajmaAAannakum ila yawmi alqiyamati la rayba feehi: emphatic gathering certainty using la- prefix and la rayba double-affirmation. Allatheena khasiroo anfusahum fahum la yuminoona: self-loss identified as disbelief-consequence creating causal link between epistemic and existential loss."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Unique formulation of mercy as divine self-decree rather than contingent attribute"
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Resurrection gathering presented as certain outcome of divine self-commitment"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "الرحمة المكتوبة والتجمع المؤكد: الله كتب الرحمة على نفسه التزاماً طوعياً؛ ليجمعنكم إلى يوم القيامة لا ريب فيه؛ الذين خسروا أنفسهم لا يؤمنون",
+      "notes": "Overlap with divine-mercy and day-of-judgment. Kataba AAala nafsihi is unique Quranic formulation presenting rahmah as voluntary divine legislation binding upon Allah Himself. This transforms mercy from optional benevolence to structural feature of divine-human relationship. Gathering-certainty follows logically: self-decreed mercy necessitates fair adjudication through resurrection. Self-loss (khasiroo anfusahum) uses reflexive pronoun emphasizing self-inflicted nature of damnation. Positioned after ownership-declaration showing mercy operates within sovereignty not despite it."
+    },
+    {
+      "candidateId": "cand-0271",
+      "label": "Harm-good monopoly and attribute cluster: if Allah touches harm none removes except Him; if good He is Capable; He is Subduer above servants Wise Acquainted establishing tawheed through experiential dependency",
+      "definition": "In 6:17-18: If Allah touches you with harm there is no remover except Him. If He touches you with good He is over all things Capable. He is the Subduer above His servants and He is the Wise the Acquainted.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:17",
+          "excerpt": "وَإِن يَمۡسَسۡكَ ٱللَّهُ بِضُرّٖ فَلَا كَاشِفَ لَهُۥٓ إِلَّا هُوَۖ وَإِن يَمۡسَسۡكَ بِخَيۡرٖ فَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wain yamsaska Allahu bidurrin fala kashifa lahu illa huwa: harm-monopoly using illa huwa exclusion proving no other agent can remove divine affliction. Wain yamsaska bikhayrin fahuwa AAala kulli shayin qadeerun: good-attribution paired with universal capability establishing Allah as sole source of benefit."
+        },
+        {
+          "key": "6:18",
+          "excerpt": "وَهُوَ ٱلۡقَاهِرُ فَوۡقَ عِبَادِهِۦۚ وَهُوَ ٱلۡحَكِيمُ ٱلۡخَبِيرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wahuwa alqahiru fawqa AAibadihi: subjugation-above-servants establishing hierarchical sovereignty. Wahuwa alhakeemu alkhabeeru: wisdom-acquaintance pairing combining transcendent knowledge with intimate awareness preventing tyranny-concern."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Experiential tawheed through universal human dependency on divine harm-good agency"
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Qadir-Qahir attributes demonstrating comprehensive divine power"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "احتكار الضر والخير وعناقيد الصفات: إن يمسسك الله بضر فلا كاشف له إلا هو؛ وإن بخير فهو قدير؛ وهو القاهر فوق عباده الحكيم الخبير تأسيس التوحيد عبر التبعية التجريبية",
+      "notes": "Overlap with tawheed and divine-power. Harm-good monopoly provides experiential proof accessible to every human regardless of intellectual capacity. Illa huwa exclusion in harm-removal is absolute leaving no intermediary space. Qadeer after good-touch shows capability is activated not dormant. Qahir-fawqa-AAibadihi establishes servant-status as ontological fact not chosen identity. Hakeem-Khabeer pairing addresses potential objection: absolute power exercised with perfect wisdom and intimate knowledge. Together these verses compress complete tawheed argument into dependency-experience."
+    },
+    {
+      "candidateId": "cand-0272",
+      "label": "Witness-Quran-tawheed-barā'a complex: Allah greatest witness between Prophet and audience; Quran revealed to warn you and whomever reaches; He is one God; I am free from what you associate; Scripture-people recognize truth as sons",
+      "definition": "In 6:19-20: Say what thing is greatest in testimony? Say Allah is witness between me and you. This Quran was revealed to warn you and whomever it reaches. Do you testify that with Allah there are other deities? Say I will not testify. Say He is but one God and I am free from what you associate. Those given Scripture recognize it as they recognize their sons. Those who lose themselves do not believe.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:19",
+          "excerpt": "قُلۡ أَيُّ شَيۡءٍ أَكۡبَرُ شَهَٰدَةٗۖ قُلِ ٱللَّهُۖ شَهِيدُۢ بَيۡنِي وَبَيۡنَكُمۡۚ وَأُوحِيَ إِلَيَّ هَٰذَا ٱلۡقُرۡءَانُ لِأُنذِرَكُم بِهِۦ وَمَنۢ بَلَغَۚ أَئِنَّكُمۡ لَتَشۡهَدُونَ أَنَّ مَعَ ٱللَّهِ ءَالِهَةً أُخۡرَىٰۚ قُل لَّآ أَشۡهَدُۚ قُلۡ إِنَّمَا هُوَ إِلَٰهٞ وَٰحِدٞ وَإِنَّنِي بَرِيٓءٞ مِّمَّا تُشۡرِكُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qul ayyu shayin akbaru shahadatan quli Allahu shaheedun baynee wabaynakum: supreme-witness designation making Allah Himself evidentiary authority. Waoohiya ilayya hatha alquranu lionthirakum bihi waman balagha: revelation-purpose as warning with universal scope (waman balagha). Ainnakum latashhadoona anna maAAa Allahi alihatan okhra qul la ashhadu: counter-testimony refusing to validate polytheism. Qul innama huwa ilahun wahidun wainnanee bareeon mimma tushrikoona: tawheed-bara'a conjunction making disavowal necessary corollary of unity-affirmation."
+        },
+        {
+          "key": "6:20",
+          "excerpt": "ٱلَّذِينَ ءَاتَيۡنَٰهُمُ ٱلۡكِتَٰبَ يَعۡرِفُونَهُۥ كَمَا يَعۡرِفُونَ أَبۡنَآءَهُمُۘ ٱلَّذِينَ خَسِرُوٓاْ أَنفُسَهُمۡ فَهُمۡ لَا يُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Allatheena ataynahumu alkitaba yaAArifoonahu kama yaAArifoona abnaahum: son-recognition simile implying intuitive undeniable recognition by Scripture-people. Allatheena khasiroo anfusahum fahum la yuminoona: self-loss persists despite recognition-capacity showing volitional component."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Comprehensive tawheed declaration with prophetic barā'a and universal warning scope"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "مركب الشهادة والقرآن والتوحيد والبراءة: الله أكبر شهيد بين النبي والمخاطبين؛ القرآن أنذر به من بلغ؛ إنما هو إله واحد وأنا بريء مما تشركون؛ أهل الكتاب يعرفونه كما يعرفون أبناءهم",
+      "notes": "Overlap with tawheed. Greatest-testimony framing elevates divine witness above all human testimony. Waman balagha extends Quran's jurisdiction beyond immediate audience to all future recipients. La ashhadu refusal models proper response to polytheist pressure. Ilahun wahidun uses wahid (numerical one) excluding any plurality. Bareeon mimma tushrikoona establishes prophetic innocence from association as theological necessity. Son-recognition simile suggests Scripture-knowledge should produce automatic acceptance making rejection culpable. Self-loss repetition (cf. 6:12) creates thematic bracket around passage."
+    },
+    {
+      "candidateId": "cand-0273",
+      "label": "Supreme injustice and eschatological self-deception: who more unjust than fabricates against Allah or denies signs? wrongdoers fail; Day gather ask polytheists where partners? swear we were not polytheists; lied against selves lost fabricated deities",
+      "definition": "In 6:21-24: Who is more unjust than one who fabricates against Allah a lie or denies His signs? The wrongdoers will not succeed. Day We gather them all then say to those who associated where are your partners you claimed? Their examination-excuse is only saying by Allah our Lord we were not polytheists. See how they lied against themselves and lost from them what they fabricated.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:21",
+          "excerpt": "وَمَنۡ أَظۡلَمُ مِمَّنِ ٱفۡتَرَىٰ عَلَى ٱللَّهِ كَذِبًا أَوۡ كَذَّبَ بِـَٔايَٰتِهِۦٓۚ إِنَّهُۥ لَا يُفۡلِحُ ٱلظَّـٰلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waman athlamu mimmani iftara AAala Allahi kathiban aw kaththaba biayatihi: supreme-injustice definition combining two crimes fabrication and denial. Innahu la yuflihu alththalimoona: guaranteed non-success using la yuflihu negation of falah (success/salvation)."
+        },
+        {
+          "key": "6:22",
+          "excerpt": "وَيَوۡمَ نَحۡشُرُهُمۡ جَمِيعٗا ثُمَّ نَقُولُ لِلَّذِينَ أَشۡرَكُوٓاْ أَيۡنَ شُرَكَآؤُكُمُ ٱلَّذِينَ كُنتُمۡ تَزۡعُمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wayawma nahshuruhum jameeAAan: universal gathering. Thumma naqoolu lillatheena ashrakoo ayna shurakaokumu: partner-location demand exposing absence. Allatheena kuntum tazAAumoona: past-tense claim-highlighting showing former assertion now void."
+        },
+        {
+          "key": "6:23",
+          "excerpt": "ثُمَّ لَمۡ تَكُن فِتۡنَتُهُمۡ إِلَّآ أَن قَالُواْ وَٱللَّهِ رَبِّنَا مَا كُنَّا مُشۡرِكِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Thumma lam takun fitnatuhum illa an qaloo waAllahi rabbina ma kunna mushrikeena: sole defense is false oath using Allah's name demonstrating continued deception even at judgment."
+        },
+        {
+          "key": "6:24",
+          "excerpt": "ٱنظُرۡ كَيۡفَ كَذَبُواْ عَلَىٰٓ أَنفُسِهِمۡۚ وَضَلَّ عَنۡهُم مَّا كَانُواْ يَفۡتَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Onthur kayfa kathaboo AAala anfusihim: self-directed lying command to observe. Wadalla AAanhum ma kanoo yaftaroona: fabricated deities abandoning their inventors completing ironic reversal."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Eschatological interrogation scene exposing polytheist self-deception"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "أعلى درجات الظلم والخداع الذاتي الأخروي: من أظلم ممن افترى على الله كذباً أو كذب بآياته؟ الظالمون لا يفلحون؛ يوم الحشر نسأل المشركين أين شركاؤكم؟ يحلفون ما كنا مشركين؛ كذبوا على أنفسهم وضل عنهم ما كانوا يفترون",
+      "notes": "Overlap with day-of-judgment. Supreme-injustice definition provides moral taxonomy: fabrication and denial are worst possible acts. Guaranteed non-success functions as theological axiom. Partner-location question is rhetorical since partners are nonexistent. False-oath defense shows self-deception persists even before divine presence. Kathaboo AAala anfusihim (lied against themselves) identifies self as primary victim of polytheism. Dallah (lost/strayed) applied to fabricated deities shows invented gods have no independent existence. Scene functions as warning to living audience still capable of correction."
+    },
+    {
+      "candidateId": "cand-0274",
+      "label": "Cognitive barriers and irreversible regret: heart-coverings and ear-deafness prevent understanding even seeing every sign; legends-dismissal as tactic; self-destructive avoidance unrecognized; fire-standing regret wishing return; if returned would revert to forbidden confirmed liars",
+      "definition": "In 6:25-28: Among them are those who listen but We placed coverings on their hearts lest they understand and in their ears deafness. If they see every sign they will not believe. When they come arguing they say this is legends of former peoples. They prevent others and avoid it destroying only themselves unawares. If you could see when standing before Fire saying would we could return not deny signs be believers. But appeared to them what they concealed. If returned they would return to forbidden; they are liars.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:25",
+          "excerpt": "وَمِنۡهُم مَّن يَسۡتَمِعُ إِلَيۡكَۖ وَجَعَلۡنَا عَلَىٰ قُلُوبِهِمۡ أَكِنَّةً أَن يَفۡقَهُوهُ وَفِيٓ ءَاذَانِهِمۡ وَقۡرٗاۚ وَإِن يَرَوۡاْ كُلَّ ءَايَةٖ لَّا يُؤۡمِنُواْ بِهَاۖ حَتَّىٰٓ إِذَا جَآءُوكَ يُجَٰدِلُونَكَ يَقُولُ ٱلَّذِينَ كَفَرُوٓاْ إِنۡ هَٰذَآ إِلَّآ أَسَٰطِيرُ ٱلۡأَوَّلِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "WajaAAalna AAala quloobihim akinnatan an yafqahoohu wafee athanihim waqran: dual-barrier system heart-covering plus ear-deafness preventing comprehension. Wain yaraw kulla ayatin la yuminoo biha: sign-saturation insufficiency proving barrier is volitional-ontological not informational. In hatha illa asateeru alawwaleena: legends-dismissal as intellectual defense mechanism."
+        },
+        {
+          "key": "6:26",
+          "excerpt": "وَهُمۡ يَنۡهَوۡنَ عَنۡهُ وَيَنۡـَٔوۡنَ عَنۡهُۖ وَإِن يُهۡلِكُونَ إِلَّآ أَنفُسَهُمۡ وَمَا يَشۡعُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wahum yanhawna AAanhu wayanawna AAanhu: dual prohibition preventing others while avoiding themselves. Wain yuhlikoona illa anfusahum wama yashAAuroona: unrecognized self-destruction paradox."
+        },
+        {
+          "key": "6:27",
+          "excerpt": "وَلَوۡ تَرَىٰٓ إِذۡ وُقِفُواْ عَلَى ٱلنَّارِ فَقَالُواْ يَٰلَيۡتَنَا نُرَدُّ وَلَا نُكَذِّبَ بِـَٔايَٰتِ رَبِّنَا وَنَكُونَ مِنَ ٱلۡمُؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walaw tara ith wuqifoo AAala alnnari faqaloo ya laytana nuraddu: hypothetical fire-standing revealing post-hoc regret. Wala nukaththiba biayati rabbina wanakoona mina almumineena: desired correction includes both sign-acceptance and believer-identity."
+        },
+        {
+          "key": "6:28",
+          "excerpt": "بَلۡ بَدَا لَهُم مَّا كَانُواْ يُخۡفُونَ مِن قَبۡلُۖ وَلَوۡ رُدُّواْ لَعَادُواْ لِمَا نُهُواْ عَنۡهُ وَإِنَّهُمۡ لَكَٰذِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Bal bada lahum ma kanoo yukhfoona min qablu: concealed matters now exposed. Walaw ruddoo laAAadoo lima nuhoo AAanhu: inevitable reversion proving volitional nature. Wainnahum lakathiboona: confirmed liar-status invalidating regret-sincerity."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Post-mortem regret scene demonstrating irreversibility of missed opportunity"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "الحواجز المعرفية والندم اللاعكسي: أكننة على القلوب ووقر في الآذان تمنع الفقه حتى رؤية كل آية؛ أساطير الأولين كتكتيك؛ تدمير الذات غير المدرك؛ ندم عند النار متمنين العودة؛ لو ردوا لعادوا للمنهى عنه كاذبون",
+      "notes": "Overlap with day-of-judgment. Akinnatan-waqran barrier system explains persistent rejection without excusing it. Kulla ayatin (every sign) saturation shows problem is not evidence quantity. Asateeru al-awwaleena dismissal categorizes rejection as pre-packaged response. Yanhawna-yanawna duality shows active opposition combined with personal avoidance. Wama yashAAuroona (unaware) highlights tragic self-ignorance. Fire-regret scene uses walaw tara (if you could see) inviting audience to visualize. LaAAadoo lima nuhoo AAanhu confirms volitional persistence: even second chance produces same choice. Kathiboona verdict retroactively invalidates all prior claims including regret-expression."
+    },
+    {
+      "candidateId": "cand-0275",
+      "label": "Worldly-play characterization and prophetic consolation: worldly life is play and diversion Hereafter better for righteous; We know your sadness they reject not you but Allah's signs; previous messengers patient until unalterable victory",
+      "definition": "In 6:32-34: The worldly life is nothing but play and diversion but the home of the Hereafter is best for those who fear Allah so will you not reason? We know that what they say saddens you. They do not call you untruthful but the wrongdoers reject Allah's signs. Messengers were denied before you and were patient over denial and harm until Our victory came. None can alter Allah's words.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:32",
+          "excerpt": "وَمَا ٱلۡحَيَوٰةُ ٱلدُّنۡيَآ إِلَّا لَعِبٞ وَلَهۡوٞۖ وَلَلدَّارُ ٱلۡأٓخِرَةُ خَيۡرٞ لِّلَّذِينَ يَتَّقُونَۚ أَفَلَا تَعۡقِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama alhayatu alddunya illa laAAibun walahwun: ontological characterization reducing dunya to amusement-distraction. Walalddaru alakhirati khayrun lillatheena yattaqoona: Hereafter superiority conditional on taqwa. Afala taAAqiloona: reasoning appeal connecting ontological assessment to rational faculty."
+        },
+        {
+          "key": "6:33",
+          "excerpt": "قَدۡ نَعۡلَمُ إِنَّهُۥ لَيَحۡزُنُكَ ٱلَّذِي يَقُولُونَۖ فَإِنَّهُمۡ لَا يُكَذِّبُونَكَ وَلَٰكِنَّ ٱلظَّـٰلِمِينَ بِـَٔايَٰتِ ٱللَّهِ يَجۡحَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qad naAAlamu innahu layahzunuka allathee yaqooloona: divine acknowledgment of prophetic grief. Fainnahum la yukaththiboonaka walakinna alththalimeena biayati Allahi yajhadoona: redirection clarifying rejection target is signs not messenger personally."
+        },
+        {
+          "key": "6:34",
+          "excerpt": "وَلَقَدۡ كُذِّبَتۡ رُسُلٞ مِّن قَبۡلِكَ فَصَبَرُواْ عَلَىٰ مَا كُذِّبُواْ وَأُوذُواْ حَتَّىٰٓ أَتَىٰهُمۡ نَصۡرُنَاۚ وَلَا مُبَدِّلَ لِكَلِمَٰتِ ٱللَّهِۚ وَلَقَدۡ جَآءَكَ مِن نَّبَإِيْ ٱلۡمُرۡسَلِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walaqad kuththibat rusulun min qablika fasabaroo: historical precedent normalizing rejection experience. Hatta atahum nasruna: victory-certainly as divine promise. Wala mubaddila likalimati Allahi: unalterable-words principle guaranteeing prophetic vindication."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Prophetic consolation through historical precedent and unalterable divine promise"
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Divine empathy toward prophetic grief as expression of mercy"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "توصيف الدنيا واللعب وتعزية النبي: الحياة الدنيا لعب ولهو والدار الآخرة خير للمتقين؛ قد نعلم إنه ليحزنك الذي يقولون فإنهم لا يكذبونك ولكن الظالمين بآيات الله يجحدون؛ رسل سابقة صبرت حتى جاء نصرنا ولا مبدل لكلمات الله",
+      "notes": "Overlap with prophets and mercy-and-forgiveness. La'b-lahw characterization is ontological not merely moral: dunya's nature is triviality regardless of apparent seriousness. Khayrun comparative requires taqwa-condition preventing antinomian reading. Divine grief-acknowledgment (naAAlamu...layahzunuka) shows empathetic knowledge. Redirection (la yukaththiboonaka) protects prophetic dignity while accurately diagnosing problem. Sabaroo-patience model provides behavioral template. Nasruna-victory uses first-person plural emphasizing divine agency in vindication. La mubaddila likalimati Allahi functions as theological anchor: divine speech cannot be frustrated by human opposition."
+    },
+    {
+      "candidateId": "cand-0276",
+      "label": "Creature-communities and crisis-invocation test: every creature bird communities like you nothing neglected in Register gathered to Lord; deniers deaf dumb in darknesses Allah guides or misguides; if punishment or Hour comes invoke other than Allah if truthful",
+      "definition": "In 6:38-40: There is no creature on earth or bird flying with wings except communities like you. We have not neglected in the Register anything. Then to their Lord they will be gathered. Those who deny Our signs are deaf dumb in darknesses. Whomever Allah wills He misguides and whomever He wills He places on straight path. Say have you considered if punishment or Hour came would you invoke other than Allah if truthful?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "6:38",
+          "excerpt": "وَمَا مِن دَآبَّةٖ فِي ٱلۡأَرۡضِ وَلَا طَـٰٓئِرٖ يَطِيرُ بِجَنَاحَيۡهِ إِلَّآ أُمَمٌ أَمۡثَالُكُمۚ مَّا فَرَّطۡنَا فِي ٱلۡكِتَٰبِ مِن شَيۡءٖۚ ثُمَّ إِلَىٰ رَبِّهِمۡ يُحۡشَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama min dabbatin fee alardi wala tairin yateeru bijanahayhi illa omamun amthalukum: universal creature-community parallel extending moral consideration beyond humanity. Ma farratna fee alkitabi min shayin: comprehensive Register ensuring nothing omitted from divine record. Thumma ila rabbihim yuhsharoona: universal gathering including all creature-communities."
+        },
+        {
+          "key": "6:39",
+          "excerpt": "وَٱلَّذِينَ كَذَّبُواْ بِـَٔايَٰتِنَا صُمّٞ وَبُكۡمٞ فِي ٱلظُّلُمَٰتِۗ مَن يَشَإِ ٱللَّهُ يُضۡلِلۡهُ وَمَن يَشَأۡ يَجۡعَلۡهُ عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waallatheena kaththaboo biayatina summun wabukmun fee alththulumati: triple-sensory deprivation imagery for sign-deniers. Man yashai Allahu yudlilhu waman yasha yajAAalhu AAala siratin mustaqeemin: divine guidance-misguidance prerogative affirming sovereignty over spiritual outcomes."
+        },
+        {
+          "key": "6:40",
+          "excerpt": "قُلۡ أَرَءَيۡتَكُمۡ إِنۡ أَتَىٰكُمۡ عَذَابُ ٱللَّهِ أَوۡ أَتَتۡكُمُ ٱلسَّاعَةُ أَغَيۡرَ ٱللَّهِ تَدۡعُونَ إِن كُنتُمۡ صَٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qul araaytakum in atakum AAathabu Allahi aw atatkumu alssaAAatu: crisis-scenario positing punishment or Hour arrival. Aghayra Allahi tadAAoona in kuntum sadiqeena: sincerity-test through emergency invocation challenging polytheist consistency."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Comprehensive divine governance over all creature-communities and spiritual outcomes"
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Practical tawheed test through crisis-invocation challenge"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T09:00:00.000Z",
+      "urduLabel": "أمم المخلوقات وامتحان الدعاء في الأزمات: كل دابة وطائر أمم أمثالكم ما فرطنا في الكتاب من شيء إلى ربهم يحشرون؛ المكذبون صم بكم في ظلمات الله يضل أو يهدي؛ إن أتاكم عذاب الله أو الساعة أغَيْر الله تدعون إن كنتم صادقين",
+      "notes": "Overlap with divine-power and tawheed. Omamun amthalukum (communities like you) establishes creaturely solidarity challenging human exceptionalism. Kitab-register comprehensiveness ensures ecological accountability. Summun-bukmun-fee-alththulumati triple-deprivation contrasts with hearing-response principle (6:36). Guidance-misguidance prerogative prevents mechanical salvation-theology. Crisis-invocation test (6:40) functions as practical falsification: emergency reveals true object of reliance. In kuntum sadiqeena challenges sincerity: if polytheists truly believed in partners they would invoke them in crisis. Passage closes section with actionable tawheed test complementing preceding theoretical arguments."
+    }
+  ]
+}
