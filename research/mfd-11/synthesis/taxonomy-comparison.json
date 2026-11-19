@@ -1,0 +1,2047 @@
+{
+  "workstream": "MFD-11",
+  "pass": "B",
+  "phase": "taxonomy-comparison",
+  "generatedAt": "2026-11-19T12:16:49.373Z",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "summary": {
+    "totalExistingTopics": 184,
+    "coveredTopics": 70,
+    "uncoveredTopics": 114,
+    "coveragePercent": "38.0",
+    "candidatesWithNoOverlap": 2710,
+    "candidatesWithOverlap": 208
+  },
+  "domainCoverage": [
+    {
+      "domain": "human-experiences",
+      "totalTopics": 21,
+      "covered": 5,
+      "uncovered": 16,
+      "coveragePercent": "23.8"
+    },
+    {
+      "domain": "worship-practice",
+      "totalTopics": 18,
+      "covered": 5,
+      "uncovered": 13,
+      "coveragePercent": "27.8"
+    },
+    {
+      "domain": "belief-theology",
+      "totalTopics": 26,
+      "covered": 14,
+      "uncovered": 12,
+      "coveragePercent": "53.8"
+    },
+    {
+      "domain": "ethics-character",
+      "totalTopics": 22,
+      "covered": 11,
+      "uncovered": 11,
+      "coveragePercent": "50.0"
+    },
+    {
+      "domain": "revelation-guidance",
+      "totalTopics": 13,
+      "covered": 3,
+      "uncovered": 10,
+      "coveragePercent": "23.1"
+    },
+    {
+      "domain": "prophets-narratives",
+      "totalTopics": 15,
+      "covered": 5,
+      "uncovered": 10,
+      "coveragePercent": "33.3"
+    },
+    {
+      "domain": "family-relationships",
+      "totalTopics": 18,
+      "covered": 8,
+      "uncovered": 10,
+      "coveragePercent": "44.4"
+    },
+    {
+      "domain": "society-justice",
+      "totalTopics": 11,
+      "covered": 4,
+      "uncovered": 7,
+      "coveragePercent": "36.4"
+    },
+    {
+      "domain": "governance-political-authority",
+      "totalTopics": 4,
+      "covered": 0,
+      "uncovered": 4,
+      "coveragePercent": "0.0"
+    },
+    {
+      "domain": "war-peace-conflict",
+      "totalTopics": 4,
+      "covered": 0,
+      "uncovered": 4,
+      "coveragePercent": "0.0"
+    },
+    {
+      "domain": "economic-conduct",
+      "totalTopics": 6,
+      "covered": 3,
+      "uncovered": 3,
+      "coveragePercent": "50.0"
+    },
+    {
+      "domain": "eschatology-afterlife",
+      "totalTopics": 6,
+      "covered": 4,
+      "uncovered": 2,
+      "coveragePercent": "66.7"
+    },
+    {
+      "domain": "health-medicine",
+      "totalTopics": 2,
+      "covered": 0,
+      "uncovered": 2,
+      "coveragePercent": "0.0"
+    },
+    {
+      "domain": "environment-stewardship",
+      "totalTopics": 4,
+      "covered": 2,
+      "uncovered": 2,
+      "coveragePercent": "50.0"
+    },
+    {
+      "domain": "arts-beauty-aesthetics",
+      "totalTopics": 2,
+      "covered": 0,
+      "uncovered": 2,
+      "coveragePercent": "0.0"
+    },
+    {
+      "domain": "work-vocation",
+      "totalTopics": 2,
+      "covered": 0,
+      "uncovered": 2,
+      "coveragePercent": "0.0"
+    },
+    {
+      "domain": "law-obligations",
+      "totalTopics": 6,
+      "covered": 5,
+      "uncovered": 1,
+      "coveragePercent": "83.3"
+    },
+    {
+      "domain": "creation-signs",
+      "totalTopics": 2,
+      "covered": 1,
+      "uncovered": 1,
+      "coveragePercent": "50.0"
+    },
+    {
+      "domain": "interfaith-communities",
+      "totalTopics": 1,
+      "covered": 0,
+      "uncovered": 1,
+      "coveragePercent": "0.0"
+    },
+    {
+      "domain": "language-vocabulary",
+      "totalTopics": 1,
+      "covered": 0,
+      "uncovered": 1,
+      "coveragePercent": "0.0"
+    }
+  ],
+  "coveredTopics": [
+    {
+      "topicId": "isa-story",
+      "title": "Story of Isa",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 20,
+      "sampleCandidateIds": [
+        "cand-0058",
+        "cand-0135",
+        "cand-0136",
+        "cand-0137",
+        "cand-0138"
+      ]
+    },
+    {
+      "topicId": "divine-power",
+      "title": "Divine Power",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 15,
+      "sampleCandidateIds": [
+        "cand-0074",
+        "cand-0134",
+        "cand-0139",
+        "cand-0140",
+        "cand-0143"
+      ]
+    },
+    {
+      "topicId": "day-of-judgment",
+      "title": "Day of Judgment",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "resurrection-judgment",
+      "candidateCount": 15,
+      "sampleCandidateIds": [
+        "cand-0004",
+        "cand-0076",
+        "cand-0130",
+        "cand-0133",
+        "cand-0148"
+      ]
+    },
+    {
+      "topicId": "divine-mercy",
+      "title": "Divine Mercy",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 13,
+      "sampleCandidateIds": [
+        "cand-0003",
+        "cand-0035",
+        "cand-0041",
+        "cand-0056",
+        "cand-0089"
+      ]
+    },
+    {
+      "topicId": "covenants-ahd",
+      "title": "Covenants (Ahd)",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "oaths-vows-covenants",
+      "candidateCount": 12,
+      "sampleCandidateIds": [
+        "cand-0031",
+        "cand-0048",
+        "cand-0055",
+        "cand-0064",
+        "cand-0148"
+      ]
+    },
+    {
+      "topicId": "ibrahim-story",
+      "title": "Story of Ibrahim",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 10,
+      "sampleCandidateIds": [
+        "cand-0077",
+        "cand-0078",
+        "cand-0079",
+        "cand-0080",
+        "cand-0136"
+      ]
+    },
+    {
+      "topicId": "sabr-patience",
+      "title": "Sabr (Patience)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 7,
+      "sampleCandidateIds": [
+        "cand-0087",
+        "cand-0088",
+        "cand-0095",
+        "cand-0097",
+        "cand-0165"
+      ]
+    },
+    {
+      "topicId": "musa-story",
+      "title": "Story of Musa",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 6,
+      "sampleCandidateIds": [
+        "cand-0040",
+        "cand-0041",
+        "cand-0043",
+        "cand-0049",
+        "cand-0136"
+      ]
+    },
+    {
+      "topicId": "patience-haste",
+      "title": "Patience & Haste",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 6,
+      "sampleCandidateIds": [
+        "cand-0039",
+        "cand-0086",
+        "cand-0087",
+        "cand-0106",
+        "cand-0165"
+      ]
+    },
+    {
+      "topicId": "tawheed-fundamentals",
+      "title": "Tawheed Fundamentals",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 5,
+      "sampleCandidateIds": [
+        "cand-0117",
+        "cand-0119",
+        "cand-0124",
+        "cand-0129",
+        "cand-0241"
+      ]
+    },
+    {
+      "topicId": "tawheed-rububiyyah",
+      "title": "Tawheed ar-Rububiyyah",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 5,
+      "sampleCandidateIds": [
+        "cand-0002",
+        "cand-0071",
+        "cand-0073",
+        "cand-0118",
+        "cand-0134"
+      ]
+    },
+    {
+      "topicId": "shukr-gratitude",
+      "title": "Shukr (Gratitude)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 5,
+      "sampleCandidateIds": [
+        "cand-0001",
+        "cand-0085",
+        "cand-0092",
+        "cand-0095",
+        "cand-0101"
+      ]
+    },
+    {
+      "topicId": "halal-food",
+      "title": "Halal Food",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "food-dietary-laws",
+      "candidateCount": 5,
+      "sampleCandidateIds": [
+        "cand-0108",
+        "cand-0229",
+        "cand-0296",
+        "cand-0301",
+        "cand-0303"
+      ]
+    },
+    {
+      "topicId": "asma-ul-husna",
+      "title": "Asma ul Husna",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 4,
+      "sampleCandidateIds": [
+        "cand-0003",
+        "cand-0118",
+        "cand-0129",
+        "cand-0134"
+      ]
+    },
+    {
+      "topicId": "interest-free-finance",
+      "title": "Interest-Free Finance",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "finance-debt",
+      "candidateCount": 4,
+      "sampleCandidateIds": [
+        "cand-0121",
+        "cand-0122",
+        "cand-0162",
+        "cand-0220"
+      ]
+    },
+    {
+      "topicId": "divine-wrath",
+      "title": "Divine Wrath",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 3,
+      "sampleCandidateIds": [
+        "cand-0046",
+        "cand-0303",
+        "cand-0305"
+      ]
+    },
+    {
+      "topicId": "five-daily-prayers",
+      "title": "Five Daily Prayers",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 3,
+      "sampleCandidateIds": [
+        "cand-0011",
+        "cand-0070",
+        "cand-0114"
+      ]
+    },
+    {
+      "topicId": "self-accountability",
+      "title": "Self-Accountability",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "personal-development",
+      "candidateCount": 3,
+      "sampleCandidateIds": [
+        "cand-0132",
+        "cand-0246",
+        "cand-0308"
+      ]
+    },
+    {
+      "topicId": "brotherhood-islam",
+      "title": "Brotherhood in Islam",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "ummah-community",
+      "candidateCount": 3,
+      "sampleCandidateIds": [
+        "cand-0154",
+        "cand-0242",
+        "cand-0306"
+      ]
+    },
+    {
+      "topicId": "gratitude-ingratitude",
+      "title": "Gratitude & Ingratitude",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 3,
+      "sampleCandidateIds": [
+        "cand-0045",
+        "cand-0085",
+        "cand-0103"
+      ]
+    },
+    {
+      "topicId": "remembrance-forgetfulness",
+      "title": "Remembrance & Forgetfulness",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 3,
+      "sampleCandidateIds": [
+        "cand-0085",
+        "cand-0088",
+        "cand-0175"
+      ]
+    },
+    {
+      "topicId": "tawheed-uluhiyyah",
+      "title": "Tawheed al-Uluhiyyah",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0005",
+        "cand-0026"
+      ]
+    },
+    {
+      "topicId": "shirk-prohibition",
+      "title": "Shirk Prohibition",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0233",
+        "cand-0299"
+      ]
+    },
+    {
+      "topicId": "jibril-michael",
+      "title": "Jibril & Michael",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0062",
+        "cand-0063"
+      ]
+    },
+    {
+      "topicId": "quran-revelation-process",
+      "title": "Quran Revelation Process",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0127",
+        "cand-0305"
+      ]
+    },
+    {
+      "topicId": "tayammum",
+      "title": "Tayammum",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "purification-ritual",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0190",
+        "cand-0230"
+      ]
+    },
+    {
+      "topicId": "hypocrisy",
+      "title": "Hypocrisy (Nifaq)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0022",
+        "cand-0203"
+      ]
+    },
+    {
+      "topicId": "interfaith-marriage",
+      "title": "Interfaith Marriage",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0109",
+        "cand-0229"
+      ]
+    },
+    {
+      "topicId": "right-to-life",
+      "title": "Right to Life",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "human-rights",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0235",
+        "cand-0299"
+      ]
+    },
+    {
+      "topicId": "sadaqah-jariyah",
+      "title": "Sadaqah Jariyah",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "charity-giving",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0115",
+        "cand-0120"
+      ]
+    },
+    {
+      "topicId": "hudud-punishments",
+      "title": "Hudud Punishments",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "criminal-law",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0236",
+        "cand-0237"
+      ]
+    },
+    {
+      "topicId": "fasad-fil-ard",
+      "title": "Fasad fil-Ard (Corruption on Earth)",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "fasad-prohibition",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0020",
+        "cand-0116"
+      ]
+    },
+    {
+      "topicId": "trial-and-test",
+      "title": "Trial & Test (Bala'/Fitnah)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "personal-development",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0255",
+        "cand-0308"
+      ]
+    },
+    {
+      "topicId": "justice-oppression",
+      "title": "Justice & Oppression",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "human-rights",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0231",
+        "cand-0239"
+      ]
+    },
+    {
+      "topicId": "evidence-standards",
+      "title": "Evidence Standards",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "criminal-law",
+      "candidateCount": 2,
+      "sampleCandidateIds": [
+        "cand-0052",
+        "cand-0123"
+      ]
+    },
+    {
+      "topicId": "divine-knowledge",
+      "title": "Divine Knowledge",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0075"
+      ]
+    },
+    {
+      "topicId": "pillars-of-iman",
+      "title": "Pillars of Iman",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0010"
+      ]
+    },
+    {
+      "topicId": "certainty-yaqeen",
+      "title": "Certainty (Yaqeen)",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0013"
+      ]
+    },
+    {
+      "topicId": "unseen-belief",
+      "title": "Belief in Unseen",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0010"
+      ]
+    },
+    {
+      "topicId": "predestination-free-will",
+      "title": "Predestination & Free Will",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0304"
+      ]
+    },
+    {
+      "topicId": "quran-preservation",
+      "title": "Quran Preservation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0062"
+      ]
+    },
+    {
+      "topicId": "torah-psalms-gospel",
+      "title": "Torah, Psalms & Gospel",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "divine-scriptures",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0036"
+      ]
+    },
+    {
+      "topicId": "prophet-definition",
+      "title": "Prophet Definition",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "prophethood-messengership",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0132"
+      ]
+    },
+    {
+      "topicId": "muhammad-story",
+      "title": "Story of Muhammad",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0244"
+      ]
+    },
+    {
+      "topicId": "zakat-calculation",
+      "title": "Zakat Calculation",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "zakat-obligatory-charity",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0070"
+      ]
+    },
+    {
+      "topicId": "wudu-procedure",
+      "title": "Wudu Procedure",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "purification-ritual",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0230"
+      ]
+    },
+    {
+      "topicId": "taqwa-god-consciousness",
+      "title": "Taqwa (God-Consciousness)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0009"
+      ]
+    },
+    {
+      "topicId": "tawakkul-trust",
+      "title": "Tawakkul (Trust in Allah)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0087"
+      ]
+    },
+    {
+      "topicId": "anger-management",
+      "title": "Anger Management",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0161"
+      ]
+    },
+    {
+      "topicId": "envy-hasad",
+      "title": "Envy (Hasad)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0057"
+      ]
+    },
+    {
+      "topicId": "pride-kibr",
+      "title": "Pride (Kibr)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0021"
+      ]
+    },
+    {
+      "topicId": "reflection-tafakkur",
+      "title": "Reflection (Tafakkur)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0175"
+      ]
+    },
+    {
+      "topicId": "spouse-selection",
+      "title": "Spouse Selection",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0109"
+      ]
+    },
+    {
+      "topicId": "marital-rights",
+      "title": "Marital Rights",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "spousal-relations",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0113"
+      ]
+    },
+    {
+      "topicId": "child-development",
+      "title": "Child Development",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parenting-child-development",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0111"
+      ]
+    },
+    {
+      "topicId": "orphan-care",
+      "title": "Orphan Care",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parenting-child-development",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0178"
+      ]
+    },
+    {
+      "topicId": "mother-rights",
+      "title": "Mother's Rights",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parents-elderly-care",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0111"
+      ]
+    },
+    {
+      "topicId": "divorce-types",
+      "title": "Types of Divorce",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "divorce-separation",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0110"
+      ]
+    },
+    {
+      "topicId": "khul-divorce",
+      "title": "Khul' Divorce",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "divorce-separation",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0110"
+      ]
+    },
+    {
+      "topicId": "poverty-solutions",
+      "title": "Solutions to Poverty",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "poverty-welfare",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0107"
+      ]
+    },
+    {
+      "topicId": "wealth-distribution",
+      "title": "Wealth Distribution",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "economic-justice",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0151"
+      ]
+    },
+    {
+      "topicId": "mizan-balance",
+      "title": "Mizan (Balance)",
+      "parentDomainId": "creation-signs",
+      "parentDimensionId": "environment-balance",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0116"
+      ]
+    },
+    {
+      "topicId": "resurrection-process",
+      "title": "Resurrection Process",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "resurrection-judgment",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0032"
+      ]
+    },
+    {
+      "topicId": "jannah-description",
+      "title": "Description of Jannah",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "paradise-jannah",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0028"
+      ]
+    },
+    {
+      "topicId": "jahannam-description",
+      "title": "Description of Jahannam",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "hell-jahannam",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0029"
+      ]
+    },
+    {
+      "topicId": "khalifah-concept",
+      "title": "Khalifah Concept",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "khalifah-stewardship",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0308"
+      ]
+    },
+    {
+      "topicId": "balance-moderation",
+      "title": "Balance & Moderation (Wasat)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0300"
+      ]
+    },
+    {
+      "topicId": "signs-and-reflection",
+      "title": "Signs & Reflection (Ayat/Tafakkur)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0175"
+      ]
+    },
+    {
+      "topicId": "knowledge-ignorance",
+      "title": "Knowledge & Ignorance",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0304"
+      ]
+    },
+    {
+      "topicId": "covenant-breach",
+      "title": "Covenant & Breach",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "oaths-vows-covenants",
+      "candidateCount": 1,
+      "sampleCandidateIds": [
+        "cand-0232"
+      ]
+    }
+  ],
+  "uncoveredTopics": [
+    {
+      "topicId": "divine-unity",
+      "title": "Divine Unity",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes"
+    },
+    {
+      "topicId": "tawheed-asma-wa-sifat",
+      "title": "Tawheed al-Asma wa as-Sifat",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness"
+    },
+    {
+      "topicId": "tawheed-evidence",
+      "title": "Evidence for Tawheed",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness"
+    },
+    {
+      "topicId": "faith-increase-decrease",
+      "title": "Faith Increase & Decrease",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars"
+    },
+    {
+      "topicId": "iman-and-amal",
+      "title": "Iman & Amal Relationship",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars"
+    },
+    {
+      "topicId": "angels-creation",
+      "title": "Angels Creation",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world"
+    },
+    {
+      "topicId": "angelic-duties",
+      "title": "Angelic Duties",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world"
+    },
+    {
+      "topicId": "jinn-creation",
+      "title": "Jinn Creation",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world"
+    },
+    {
+      "topicId": "shaytan-enemy",
+      "title": "Shaytan as Enemy",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world"
+    },
+    {
+      "topicId": "qadr-four-levels",
+      "title": "Four Levels of Qadr",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr"
+    },
+    {
+      "topicId": "divine-wisdom",
+      "title": "Divine Wisdom",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr"
+    },
+    {
+      "topicId": "qadr-and-dua",
+      "title": "Qadr & Dua",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr"
+    },
+    {
+      "topicId": "quran-compilation",
+      "title": "Quran Compilation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science"
+    },
+    {
+      "topicId": "tafsir-methodology",
+      "title": "Tafsir Methodology",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science"
+    },
+    {
+      "topicId": "quran-abrogation",
+      "title": "Quran Abrogation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science"
+    },
+    {
+      "topicId": "sunnah-definition",
+      "title": "Sunnah Definition",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition"
+    },
+    {
+      "topicId": "hadith-authentication",
+      "title": "Hadith Authentication",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition"
+    },
+    {
+      "topicId": "hadith-collections",
+      "title": "Hadith Collections",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition"
+    },
+    {
+      "topicId": "sunnah-vs-bidah",
+      "title": "Sunnah vs Bidah",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition"
+    },
+    {
+      "topicId": "quran-final-revelation",
+      "title": "Quran as Final Revelation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "divine-scriptures"
+    },
+    {
+      "topicId": "prophetic-methodology",
+      "title": "Prophetic Methodology",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "prophetic-guidance"
+    },
+    {
+      "topicId": "prophetic-wisdom",
+      "title": "Prophetic Wisdom",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "prophetic-guidance"
+    },
+    {
+      "topicId": "prophet-vs-messenger",
+      "title": "Prophet vs Messenger",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "prophethood-messengership"
+    },
+    {
+      "topicId": "seal-of-prophethood",
+      "title": "Seal of Prophethood",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "prophethood-messengership"
+    },
+    {
+      "topicId": "adam-story",
+      "title": "Story of Adam",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories"
+    },
+    {
+      "topicId": "nuh-story",
+      "title": "Story of Nuh",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories"
+    },
+    {
+      "topicId": "yunus-story",
+      "title": "Story of Yunus",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories"
+    },
+    {
+      "topicId": "hud-story",
+      "title": "Story of Hud",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "minor-prophets"
+    },
+    {
+      "topicId": "salih-story",
+      "title": "Story of Salih",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "minor-prophets"
+    },
+    {
+      "topicId": "lut-story",
+      "title": "Story of Lut",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "minor-prophets"
+    },
+    {
+      "topicId": "dream-interpretation",
+      "title": "Dream Interpretation",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "dreams-visions"
+    },
+    {
+      "topicId": "yusuf-dreams",
+      "title": "Yusuf's Dreams",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "dreams-visions"
+    },
+    {
+      "topicId": "prayer-conditions",
+      "title": "Prayer Conditions",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer"
+    },
+    {
+      "topicId": "prayer-acceptance",
+      "title": "Prayer Acceptance",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer"
+    },
+    {
+      "topicId": "sunnah-prayers",
+      "title": "Sunnah Prayers",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer"
+    },
+    {
+      "topicId": "night-prayer",
+      "title": "Night Prayer",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer"
+    },
+    {
+      "topicId": "dua-etiquette",
+      "title": "Dua Etiquette",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer"
+    },
+    {
+      "topicId": "dua-answers",
+      "title": "Answers to Dua",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer"
+    },
+    {
+      "topicId": "zakat-recipients",
+      "title": "Zakat Recipients",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "zakat-obligatory-charity"
+    },
+    {
+      "topicId": "ramadan-fasting",
+      "title": "Ramadan Fasting",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "sawm-fasting"
+    },
+    {
+      "topicId": "laylatul-qadr",
+      "title": "Laylatul Qadr",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "sawm-fasting"
+    },
+    {
+      "topicId": "hajj-rites",
+      "title": "Hajj Rites",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "hajj-umrah-pilgrimage"
+    },
+    {
+      "topicId": "ghusl-requirements",
+      "title": "Ghusl Requirements",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "purification-ritual"
+    },
+    {
+      "topicId": "congregational-prayer",
+      "title": "Congregational Prayer",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "congregational-worship"
+    },
+    {
+      "topicId": "jumuah-friday-prayer",
+      "title": "Jumuah Friday Prayer",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "congregational-worship"
+    },
+    {
+      "topicId": "nafs-ammara",
+      "title": "Nafs al-Ammara",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs"
+    },
+    {
+      "topicId": "nafs-lawwama",
+      "title": "Nafs al-Lawwama",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs"
+    },
+    {
+      "topicId": "nafs-mutmainna",
+      "title": "Nafs al-Mutma'inna",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs"
+    },
+    {
+      "topicId": "qalb-purification",
+      "title": "Qalb Purification",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs"
+    },
+    {
+      "topicId": "ikhlas-sincerity",
+      "title": "Ikhlas (Sincerity)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "sincerity-ikhlas"
+    },
+    {
+      "topicId": "riya-showing-off",
+      "title": "Riya (Showing Off)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "sincerity-ikhlas"
+    },
+    {
+      "topicId": "backbiting",
+      "title": "Backbiting (Ghibah)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice"
+    },
+    {
+      "topicId": "slander",
+      "title": "Slander (Buhtan)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice"
+    },
+    {
+      "topicId": "lying",
+      "title": "Lying",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice"
+    },
+    {
+      "topicId": "prophetic-character",
+      "title": "Prophetic Character",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "character-development"
+    },
+    {
+      "topicId": "human-creation",
+      "title": "Human Creation",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose"
+    },
+    {
+      "topicId": "fitrah-nature",
+      "title": "Fitrah (Natural Disposition)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose"
+    },
+    {
+      "topicId": "khalifah-vicegerent",
+      "title": "Khalifah (Vicegerent)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose"
+    },
+    {
+      "topicId": "human-dignity",
+      "title": "Human Dignity",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose"
+    },
+    {
+      "topicId": "life-purpose",
+      "title": "Purpose of Life",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose"
+    },
+    {
+      "topicId": "birth-childhood",
+      "title": "Birth & Childhood",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages"
+    },
+    {
+      "topicId": "youth-adolescence",
+      "title": "Youth & Adolescence",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages"
+    },
+    {
+      "topicId": "adulthood-responsibility",
+      "title": "Adulthood & Responsibility",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages"
+    },
+    {
+      "topicId": "old-age-wisdom",
+      "title": "Old Age & Wisdom",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages"
+    },
+    {
+      "topicId": "intellect-importance",
+      "title": "Importance of Intellect",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason"
+    },
+    {
+      "topicId": "critical-thinking",
+      "title": "Critical Thinking",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason"
+    },
+    {
+      "topicId": "knowledge-seeking",
+      "title": "Seeking Knowledge",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason"
+    },
+    {
+      "topicId": "emotional-intelligence",
+      "title": "Emotional Intelligence",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "psychology-emotions"
+    },
+    {
+      "topicId": "stress-management",
+      "title": "Stress Management",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "psychology-emotions"
+    },
+    {
+      "topicId": "anxiety-relief",
+      "title": "Anxiety Relief",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "psychology-emotions"
+    },
+    {
+      "topicId": "time-management",
+      "title": "Time Management",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "personal-development"
+    },
+    {
+      "topicId": "marriage-importance",
+      "title": "Importance of Marriage",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah"
+    },
+    {
+      "topicId": "mahr-dowry",
+      "title": "Mahr (Dowry)",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah"
+    },
+    {
+      "topicId": "polygyny-conditions",
+      "title": "Polygyny Conditions",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah"
+    },
+    {
+      "topicId": "spousal-love-mercy",
+      "title": "Spousal Love & Mercy",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "spousal-relations"
+    },
+    {
+      "topicId": "intimacy-ethics",
+      "title": "Intimacy Ethics",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "spousal-relations"
+    },
+    {
+      "topicId": "child-education",
+      "title": "Child Education",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parenting-child-development"
+    },
+    {
+      "topicId": "father-rights",
+      "title": "Father's Rights",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parents-elderly-care"
+    },
+    {
+      "topicId": "elderly-care",
+      "title": "Elderly Care",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parents-elderly-care"
+    },
+    {
+      "topicId": "silat-al-rahim",
+      "title": "Silat al-Rahim (Kinship Ties)",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "kinship-extended-family"
+    },
+    {
+      "topicId": "child-custody-hadanah",
+      "title": "Child Custody (Hadanah)",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "divorce-separation"
+    },
+    {
+      "topicId": "ummah-wahidah",
+      "title": "Ummah Wahidah (One Nation)",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "ummah-community"
+    },
+    {
+      "topicId": "human-equality",
+      "title": "Human Equality",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "equality-diversity"
+    },
+    {
+      "topicId": "diversity-divine-sign",
+      "title": "Diversity as Divine Sign",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "equality-diversity"
+    },
+    {
+      "topicId": "neighbor-rights",
+      "title": "Neighbor Rights",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "social-responsibility"
+    },
+    {
+      "topicId": "poverty-causes",
+      "title": "Causes of Poverty",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "poverty-welfare"
+    },
+    {
+      "topicId": "media-responsibility",
+      "title": "Media Responsibility",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "urban-rural-media-ethics"
+    },
+    {
+      "topicId": "rumor-verification",
+      "title": "Rumor Verification (Tabayyun)",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "urban-rural-media-ethics"
+    },
+    {
+      "topicId": "business-ethics",
+      "title": "Business Ethics",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "trade-commerce"
+    },
+    {
+      "topicId": "riba-prohibition",
+      "title": "Riba (Usury) Prohibition",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "finance-debt"
+    },
+    {
+      "topicId": "haram-food",
+      "title": "Haram Food",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "food-dietary-laws"
+    },
+    {
+      "topicId": "shura-principle",
+      "title": "Shura (Consultation) Principle",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "shura-consultation"
+    },
+    {
+      "topicId": "corruption-prohibition",
+      "title": "Corruption Prohibition",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "accountability"
+    },
+    {
+      "topicId": "animals-as-communities",
+      "title": "Animals as Communities",
+      "parentDomainId": "creation-signs",
+      "parentDimensionId": "animals-creation"
+    },
+    {
+      "topicId": "minor-signs",
+      "title": "Minor Signs of the Hour",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "signs-of-hour"
+    },
+    {
+      "topicId": "major-signs",
+      "title": "Major Signs of the Hour",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "signs-of-hour"
+    },
+    {
+      "topicId": "dialogue-principles",
+      "title": "Interfaith Dialogue Principles",
+      "parentDomainId": "interfaith-communities",
+      "parentDimensionId": "interfaith-dialogue"
+    },
+    {
+      "topicId": "quranic-vocabulary",
+      "title": "Quranic Vocabulary",
+      "parentDomainId": "language-vocabulary",
+      "parentDimensionId": "quranic-vocabulary"
+    },
+    {
+      "topicId": "prophetic-medicine",
+      "title": "Prophetic Medicine",
+      "parentDomainId": "health-medicine",
+      "parentDimensionId": "healing-medicine"
+    },
+    {
+      "topicId": "mental-health",
+      "title": "Mental Health in Islam",
+      "parentDomainId": "health-medicine",
+      "parentDimensionId": "mental-wellbeing"
+    },
+    {
+      "topicId": "water-conservation",
+      "title": "Water Conservation",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "environmental-protection"
+    },
+    {
+      "topicId": "leadership-qualities",
+      "title": "Leadership Qualities",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "leadership-authority"
+    },
+    {
+      "topicId": "jihad-definition",
+      "title": "Jihad Definition",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "jihad-concept"
+    },
+    {
+      "topicId": "rules-of-engagement",
+      "title": "Rules of Engagement",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "warfare-ethics"
+    },
+    {
+      "topicId": "peace-agreements",
+      "title": "Peace Agreements",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "peace-treaties"
+    },
+    {
+      "topicId": "husn-concept",
+      "title": "Husn (Beauty) Concept",
+      "parentDomainId": "arts-beauty-aesthetics",
+      "parentDimensionId": "husn-beauty"
+    },
+    {
+      "topicId": "art-boundaries",
+      "title": "Art Boundaries",
+      "parentDomainId": "arts-beauty-aesthetics",
+      "parentDimensionId": "artistic-expression"
+    },
+    {
+      "topicId": "work-honor",
+      "title": "Honor of Work",
+      "parentDomainId": "work-vocation",
+      "parentDimensionId": "work-dignity"
+    },
+    {
+      "topicId": "worker-rights",
+      "title": "Worker Rights",
+      "parentDomainId": "work-vocation",
+      "parentDimensionId": "labor-rights"
+    },
+    {
+      "topicId": "trust-responsibility",
+      "title": "Trust & Responsibility (Amanah)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues"
+    },
+    {
+      "topicId": "wealth-ownership",
+      "title": "Wealth Ownership",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "wealth-property"
+    },
+    {
+      "topicId": "public-accountability",
+      "title": "Public Accountability",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "accountability"
+    },
+    {
+      "topicId": "environmental-corruption",
+      "title": "Environmental Corruption",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "fasad-prohibition"
+    },
+    {
+      "topicId": "non-combatant-protection",
+      "title": "Non-Combatant Protection",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "warfare-ethics"
+    }
+  ],
+  "noOverlapCandidateSample": [
+    {
+      "id": "cand-0007",
+      "label": "The three groups: favored, anger-earned, astray",
+      "evidenceKeys": [
+        "1:7"
+      ],
+      "sourceFile": "candidates-001.json"
+    },
+    {
+      "id": "cand-0008",
+      "label": "The doubtless Book as guidance",
+      "evidenceKeys": [
+        "2:2"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0014",
+      "label": "Success (falah) as outcome of divine guidance",
+      "evidenceKeys": [
+        "2:5"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0015",
+      "label": "Disbelief (kufr) and ineffectiveness of warning",
+      "evidenceKeys": [
+        "2:6"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0016",
+      "label": "Sealing of hearts, hearing, and veiling of sight",
+      "evidenceKeys": [
+        "2:7"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0017",
+      "label": "False profession of faith without possessing it",
+      "evidenceKeys": [
+        "2:8"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0018",
+      "label": "Self-deception (attempting to deceive Allah but deceiving only oneself)",
+      "evidenceKeys": [
+        "2:9"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0019",
+      "label": "Disease in the heart (marad fil-qulub) and its increase",
+      "evidenceKeys": [
+        "2:10"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0023",
+      "label": "Trading guidance for misguidance — the profitless transaction",
+      "evidenceKeys": [
+        "2:16"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0024",
+      "label": "Parable of the kindled fire — light given then withdrawn",
+      "evidenceKeys": [
+        "2:17"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0025",
+      "label": "Parable of the rainstorm — darkness, thunder, lightning, fear of death",
+      "evidenceKeys": [
+        "2:19",
+        "2:20"
+      ],
+      "sourceFile": "candidates-002.json"
+    },
+    {
+      "id": "cand-0027",
+      "label": "Challenge to produce a surah like the Quran (tahaddi)",
+      "evidenceKeys": [
+        "2:23"
+      ],
+      "sourceFile": "candidates-003.json"
+    },
+    {
+      "id": "cand-0030",
+      "label": "Divine parables (amthal): purpose and divergent reception",
+      "evidenceKeys": [
+        "2:26"
+      ],
+      "sourceFile": "candidates-003.json"
+    },
+    {
+      "id": "cand-0033",
+      "label": "Human vicegerency (khilafah) on earth",
+      "evidenceKeys": [
+        "2:30"
+      ],
+      "sourceFile": "candidates-003.json"
+    },
+    {
+      "id": "cand-0034",
+      "label": "Knowledge (ilm) as distinguishing human capacity",
+      "evidenceKeys": [
+        "2:31",
+        "2:33"
+      ],
+      "sourceFile": "candidates-003.json"
+    },
+    {
+      "id": "cand-0037",
+      "label": "Selling divine signs for a small price",
+      "evidenceKeys": [
+        "2:41"
+      ],
+      "sourceFile": "candidates-004.json"
+    },
+    {
+      "id": "cand-0038",
+      "label": "Mixing truth with falsehood and concealing truth knowingly",
+      "evidenceKeys": [
+        "2:42"
+      ],
+      "sourceFile": "candidates-004.json"
+    },
+    {
+      "id": "cand-0042",
+      "label": "Giving of the Book (Kitab) and Criterion (Furqan) to Musa",
+      "evidenceKeys": [
+        "2:53"
+      ],
+      "sourceFile": "candidates-004.json"
+    },
+    {
+      "id": "cand-0044",
+      "label": "Substituting the commanded word and receiving punishment",
+      "evidenceKeys": [
+        "2:58",
+        "2:59"
+      ],
+      "sourceFile": "candidates-004.json"
+    },
+    {
+      "id": "cand-0047",
+      "label": "Universal salvation criteria: faith in Allah, Last Day, and righteous deeds across communities",
+      "evidenceKeys": [
+        "2:62"
+      ],
+      "sourceFile": "candidates-005.json"
+    },
+    {
+      "id": "cand-0050",
+      "label": "Excessive questioning making divine commands burdensome: the cow narrative",
+      "evidenceKeys": [
+        "2:67",
+        "2:71"
+      ],
+      "sourceFile": "candidates-005.json"
+    },
+    {
+      "id": "cand-0051",
+      "label": "Hardening of hearts (qaswat al-quloob) after witnessing divine signs",
+      "evidenceKeys": [
+        "2:74"
+      ],
+      "sourceFile": "candidates-005.json"
+    },
+    {
+      "id": "cand-0053",
+      "label": "Writing false scripture with own hands and attributing it to Allah for worldly gain",
+      "evidenceKeys": [
+        "2:79"
+      ],
+      "sourceFile": "candidates-005.json"
+    },
+    {
+      "id": "cand-0054",
+      "label": "Believing in part of scripture while disbelieving in part",
+      "evidenceKeys": [
+        "2:85"
+      ],
+      "sourceFile": "candidates-005.json"
+    },
+    {
+      "id": "cand-0059",
+      "label": "Systematic rejection pattern: denying some prophets and killing others",
+      "evidenceKeys": [
+        "2:87",
+        "2:91"
+      ],
+      "sourceFile": "candidates-006.json"
+    },
+    {
+      "id": "cand-0060",
+      "label": "Verbal compliance masking disobedience: samiAAana wa-AAasayna",
+      "evidenceKeys": [
+        "2:93"
+      ],
+      "sourceFile": "candidates-006.json"
+    },
+    {
+      "id": "cand-0061",
+      "label": "Greed for life exceeding even polytheists: wishing thousand-year lifespan",
+      "evidenceKeys": [
+        "2:96"
+      ],
+      "sourceFile": "candidates-006.json"
+    },
+    {
+      "id": "cand-0065",
+      "label": "Magic (sihr) narrative: Sulayman exonerated, devils and Harut-Marut trial",
+      "evidenceKeys": [
+        "2:102"
+      ],
+      "sourceFile": "candidates-006.json"
+    },
+    {
+      "id": "cand-0066",
+      "label": "Throwing scripture behind backs: willful ignorance of known revelation",
+      "evidenceKeys": [
+        "2:101"
+      ],
+      "sourceFile": "candidates-006.json"
+    },
+    {
+      "id": "cand-0067",
+      "label": "Abrogation (naskh): replacing verses with better or similar",
+      "evidenceKeys": [
+        "2:106"
+      ],
+      "sourceFile": "candidates-007.json"
+    },
+    {
+      "id": "cand-0068",
+      "label": "Speech etiquette: replacing ambiguous ra'ina with respectful unzurna",
+      "evidenceKeys": [
+        "2:104"
+      ],
+      "sourceFile": "candidates-007.json"
+    },
+    {
+      "id": "cand-0069",
+      "label": "Post-truth envy: wishing to revert believers after truth became clear",
+      "evidenceKeys": [
+        "2:109"
+      ],
+      "sourceFile": "candidates-007.json"
+    },
+    {
+      "id": "cand-0072",
+      "label": "Masjid sanctity: preventing Allah's remembrance as gravest injustice",
+      "evidenceKeys": [
+        "2:114"
+      ],
+      "sourceFile": "candidates-007.json"
+    },
+    {
+      "id": "cand-0081",
+      "label": "Individual accountability: each nation earns its own; no cross-generational burden",
+      "evidenceKeys": [
+        "2:134",
+        "2:141"
+      ],
+      "sourceFile": "candidates-008.json"
+    },
+    {
+      "id": "cand-0082",
+      "label": "Universal faith declaration: believing in all revelations without distinction",
+      "evidenceKeys": [
+        "2:136"
+      ],
+      "sourceFile": "candidates-008.json"
+    },
+    {
+      "id": "cand-0083",
+      "label": "Sibghat Allah: divine coloring as the best religion",
+      "evidenceKeys": [
+        "2:138"
+      ],
+      "sourceFile": "candidates-008.json"
+    },
+    {
+      "id": "cand-0084",
+      "label": "Qibla change: divine test establishing ummatan wasatan as witnesses",
+      "evidenceKeys": [
+        "2:143"
+      ],
+      "sourceFile": "candidates-008.json"
+    },
+    {
+      "id": "cand-0090",
+      "label": "Cosmic signs in creation: heavens, earth, night/day, ships, rain, creatures, winds, clouds",
+      "evidenceKeys": [
+        "2:164"
+      ],
+      "sourceFile": "candidates-009.json"
+    },
+    {
+      "id": "cand-0091",
+      "label": "Misplaced love: taking rivals beside Allah and loving them as love of Allah",
+      "evidenceKeys": [
+        "2:165"
+      ],
+      "sourceFile": "candidates-009.json"
+    },
+    {
+      "id": "cand-0093",
+      "label": "Blind ancestral following: rejecting revelation for inherited tradition without understanding",
+      "evidenceKeys": [
+        "2:170",
+        "2:171"
+      ],
+      "sourceFile": "candidates-009.json"
+    },
+    {
+      "id": "cand-0094",
+      "label": "Concealment of scripture for worldly gain: eating Fire and divine silence",
+      "evidenceKeys": [
+        "2:174",
+        "2:175"
+      ],
+      "sourceFile": "candidates-009.json"
+    },
+    {
+      "id": "cand-0100",
+      "label": "Unjust wealth consumption: prohibition of batil acquisition and bribery of authorities",
+      "evidenceKeys": [
+        "2:188"
+      ],
+      "sourceFile": "candidates-010.json"
+    },
+    {
+      "id": "cand-0102",
+      "label": "Hajj and Umrah: completion, prevention protocols, tamattu', and post-rite remembrance",
+      "evidenceKeys": [
+        "2:196",
+        "2:198",
+        "2:200"
+      ],
+      "sourceFile": "candidates-010.json"
+    },
+    {
+      "id": "cand-0104",
+      "label": "Hypocrisy archetype: eloquent speech concealing quarrelsomeness and corruption",
+      "evidenceKeys": [
+        "2:204",
+        "2:205",
+        "2:206"
+      ],
+      "sourceFile": "candidates-010.json"
+    },
+    {
+      "id": "cand-0105",
+      "label": "Entering peace/submission (silm) completely: total commitment to divine order",
+      "evidenceKeys": [
+        "2:208"
+      ],
+      "sourceFile": "candidates-010.json"
+    },
+    {
+      "id": "cand-0147",
+      "label": "Truth-concealment and talbis: mixing haqq with batil as deliberate deception strategy",
+      "evidenceKeys": [
+        "3:71",
+        "3:78"
+      ],
+      "sourceFile": "candidates-015.json"
+    },
+    {
+      "id": "cand-0155",
+      "label": "Amr bi-ma'ruf wa nahy an munkar: enjoining right and forbidding wrong as defining characteristic of the best nation",
+      "evidenceKeys": [
+        "3:104",
+        "3:110"
+      ],
+      "sourceFile": "candidates-015.json"
+    },
+    {
+      "id": "cand-0156",
+      "label": "Khayra ummah: Muslim community declared best nation produced for mankind based on moral activism and faith",
+      "evidenceKeys": [
+        "3:110"
+      ],
+      "sourceFile": "candidates-015.json"
+    },
+    {
+      "id": "cand-0158",
+      "label": "Ummah qaimah: upright community among People of the Book practicing night devotion, amr/nahy, and hastening to good",
+      "evidenceKeys": [
+        "3:113",
+        "3:114"
+      ],
+      "sourceFile": "candidates-016.json"
+    },
+    {
+      "id": "cand-0159",
+      "label": "Frost-wind parable: worldly spending without faith likened to frost-laden wind destroying harvest of self-wrongers",
+      "evidenceKeys": [
+        "3:117"
+      ],
+      "sourceFile": "candidates-016.json"
+    }
+  ]
+}

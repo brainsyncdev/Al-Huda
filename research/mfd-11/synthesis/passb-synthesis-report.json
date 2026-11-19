@@ -1,0 +1,5465 @@
+{
+  "workstream": "MFD-11",
+  "pass": "B",
+  "phase": "synthesis-report",
+  "generatedAt": "2026-11-19T12:19:08.729Z",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "summary": {
+    "totalCandidates": 2918,
+    "existingTopicsTotal": 184,
+    "existingTopicsCovered": 70,
+    "existingTopicsUncovered": 114,
+    "coveragePercent": "38.0",
+    "thematicHubsCount": 50,
+    "newTopicProposalsCount": 50,
+    "candidatesWithNoExistingOverlap": 2710
+  },
+  "existingTopicCoverage": [
+    {
+      "topicId": "isa-story",
+      "title": "Story of Isa",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 20,
+      "candidateIds": [
+        "cand-0058",
+        "cand-0135",
+        "cand-0136",
+        "cand-0137",
+        "cand-0138",
+        "cand-0139",
+        "cand-0140",
+        "cand-0141",
+        "cand-0142",
+        "cand-0143",
+        "cand-0144",
+        "cand-0145",
+        "cand-0217",
+        "cand-0223",
+        "cand-0233",
+        "cand-0248",
+        "cand-0252",
+        "cand-0261",
+        "cand-0262",
+        "cand-0264"
+      ],
+      "evidenceKeys": [
+        "2:87",
+        "3:31",
+        "3:33",
+        "3:34",
+        "3:38",
+        "3:39",
+        "3:42",
+        "3:43",
+        "3:47",
+        "3:49",
+        "3:50",
+        "3:52",
+        "3:53",
+        "3:59",
+        "3:61",
+        "3:64",
+        "4:157",
+        "4:158",
+        "4:171",
+        "5:110",
+        "5:111",
+        "5:116",
+        "5:117",
+        "5:17",
+        "5:72",
+        "5:75",
+        "5:83",
+        "5:84"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "divine-power",
+      "title": "Divine Power",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 15,
+      "candidateIds": [
+        "cand-0074",
+        "cand-0134",
+        "cand-0139",
+        "cand-0140",
+        "cand-0143",
+        "cand-0266",
+        "cand-0268",
+        "cand-0271",
+        "cand-0276",
+        "cand-0282",
+        "cand-0283",
+        "cand-0291",
+        "cand-0292",
+        "cand-0378",
+        "cand-0381"
+      ],
+      "evidenceKeys": [
+        "2:117",
+        "3:26",
+        "3:27",
+        "3:47",
+        "3:49",
+        "3:59",
+        "5:120",
+        "6:100",
+        "6:101",
+        "6:102",
+        "6:103",
+        "6:104",
+        "6:17",
+        "6:18",
+        "6:38",
+        "6:39",
+        "6:40",
+        "6:59",
+        "6:6",
+        "6:60",
+        "6:64",
+        "6:65",
+        "6:95",
+        "6:96",
+        "6:99",
+        "8:17",
+        "8:30"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "day-of-judgment",
+      "title": "Day of Judgment",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "resurrection-judgment",
+      "candidateCount": 15,
+      "candidateIds": [
+        "cand-0004",
+        "cand-0076",
+        "cand-0130",
+        "cand-0133",
+        "cand-0148",
+        "cand-0171",
+        "cand-0176",
+        "cand-0265",
+        "cand-0270",
+        "cand-0273",
+        "cand-0274",
+        "cand-0290",
+        "cand-0298",
+        "cand-0306",
+        "cand-0395"
+      ],
+      "evidenceKeys": [
+        "1:4",
+        "2:123",
+        "3:14",
+        "3:15",
+        "3:185",
+        "3:24",
+        "3:77",
+        "5:119",
+        "6:12",
+        "6:127",
+        "6:128",
+        "6:130",
+        "6:159",
+        "6:21",
+        "6:22",
+        "6:23",
+        "6:24",
+        "6:25",
+        "6:26",
+        "6:27",
+        "6:28",
+        "6:93",
+        "6:94",
+        "8:50",
+        "8:51"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "divine-mercy",
+      "title": "Divine Mercy",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 13,
+      "candidateIds": [
+        "cand-0003",
+        "cand-0035",
+        "cand-0041",
+        "cand-0056",
+        "cand-0089",
+        "cand-0096",
+        "cand-0098",
+        "cand-0099",
+        "cand-0122",
+        "cand-0125",
+        "cand-0150",
+        "cand-0168",
+        "cand-0270"
+      ],
+      "evidenceKeys": [
+        "1:1",
+        "1:3",
+        "2:159",
+        "2:160",
+        "2:178",
+        "2:179",
+        "2:186",
+        "2:190",
+        "2:191",
+        "2:192",
+        "2:193",
+        "2:280",
+        "2:286",
+        "2:37",
+        "2:51",
+        "2:54",
+        "2:86",
+        "3:152",
+        "3:89",
+        "3:90",
+        "3:91",
+        "6:12"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "covenants-ahd",
+      "title": "Covenants (Ahd)",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "oaths-vows-covenants",
+      "candidateCount": 12,
+      "candidateIds": [
+        "cand-0031",
+        "cand-0048",
+        "cand-0055",
+        "cand-0064",
+        "cand-0148",
+        "cand-0149",
+        "cand-0157",
+        "cand-0218",
+        "cand-0232",
+        "cand-0245",
+        "cand-0250",
+        "cand-0251"
+      ],
+      "evidenceKeys": [
+        "2:100",
+        "2:27",
+        "2:63",
+        "2:84",
+        "2:85",
+        "3:112",
+        "3:77",
+        "3:81",
+        "4:153",
+        "4:154",
+        "4:155",
+        "5:12",
+        "5:13",
+        "5:14",
+        "5:69",
+        "5:78",
+        "5:79",
+        "5:82"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "ibrahim-story",
+      "title": "Story of Ibrahim",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-0077",
+        "cand-0078",
+        "cand-0079",
+        "cand-0080",
+        "cand-0136",
+        "cand-0146",
+        "cand-0152",
+        "cand-0153",
+        "cand-0285",
+        "cand-0287"
+      ],
+      "evidenceKeys": [
+        "2:124",
+        "2:125",
+        "2:127",
+        "2:128",
+        "2:129",
+        "2:130",
+        "2:135",
+        "3:33",
+        "3:34",
+        "3:67",
+        "3:68",
+        "3:96",
+        "3:97",
+        "6:74",
+        "6:75",
+        "6:76",
+        "6:77",
+        "6:78",
+        "6:79",
+        "6:83",
+        "6:84",
+        "6:85",
+        "6:86",
+        "6:88",
+        "6:89"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "sabr-patience",
+      "title": "Sabr (Patience)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 7,
+      "candidateIds": [
+        "cand-0087",
+        "cand-0088",
+        "cand-0095",
+        "cand-0097",
+        "cand-0165",
+        "cand-0169",
+        "cand-0173"
+      ],
+      "evidenceKeys": [
+        "2:153",
+        "2:155",
+        "2:156",
+        "2:157",
+        "2:177",
+        "2:183",
+        "2:184",
+        "2:185",
+        "2:187",
+        "3:140",
+        "3:156",
+        "3:200"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "musa-story",
+      "title": "Story of Musa",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 6,
+      "candidateIds": [
+        "cand-0040",
+        "cand-0041",
+        "cand-0043",
+        "cand-0049",
+        "cand-0136",
+        "cand-0234"
+      ],
+      "evidenceKeys": [
+        "2:49",
+        "2:50",
+        "2:51",
+        "2:54",
+        "2:57",
+        "2:60",
+        "2:65",
+        "2:66",
+        "3:33",
+        "3:34",
+        "5:21",
+        "5:24",
+        "5:26"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "patience-haste",
+      "title": "Patience & Haste",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 6,
+      "candidateIds": [
+        "cand-0039",
+        "cand-0086",
+        "cand-0087",
+        "cand-0106",
+        "cand-0165",
+        "cand-0173"
+      ],
+      "evidenceKeys": [
+        "2:145",
+        "2:153",
+        "2:155",
+        "2:157",
+        "2:213",
+        "2:45",
+        "3:140",
+        "3:200"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "tawheed-fundamentals",
+      "title": "Tawheed Fundamentals",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-0117",
+        "cand-0119",
+        "cand-0124",
+        "cand-0129",
+        "cand-0241"
+      ],
+      "evidenceKeys": [
+        "2:256",
+        "2:257",
+        "2:285",
+        "3:18",
+        "5:50"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "tawheed-rububiyyah",
+      "title": "Tawheed ar-Rububiyyah",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-0002",
+        "cand-0071",
+        "cand-0073",
+        "cand-0118",
+        "cand-0134"
+      ],
+      "evidenceKeys": [
+        "1:2",
+        "2:112",
+        "2:116",
+        "2:255",
+        "3:26",
+        "3:27"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "shukr-gratitude",
+      "title": "Shukr (Gratitude)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-0001",
+        "cand-0085",
+        "cand-0092",
+        "cand-0095",
+        "cand-0101"
+      ],
+      "evidenceKeys": [
+        "1:2",
+        "2:152",
+        "2:168",
+        "2:173",
+        "2:177",
+        "2:195"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "halal-food",
+      "title": "Halal Food",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "food-dietary-laws",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-0108",
+        "cand-0229",
+        "cand-0296",
+        "cand-0301",
+        "cand-0303"
+      ],
+      "evidenceKeys": [
+        "2:219",
+        "5:5",
+        "6:118",
+        "6:119",
+        "6:120",
+        "6:145",
+        "6:146"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "asma-ul-husna",
+      "title": "Asma ul Husna",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-0003",
+        "cand-0118",
+        "cand-0129",
+        "cand-0134"
+      ],
+      "evidenceKeys": [
+        "1:1",
+        "1:3",
+        "2:255",
+        "3:18",
+        "3:26",
+        "3:27"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "interest-free-finance",
+      "title": "Interest-Free Finance",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "finance-debt",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-0121",
+        "cand-0122",
+        "cand-0162",
+        "cand-0220"
+      ],
+      "evidenceKeys": [
+        "2:275",
+        "2:279",
+        "2:280",
+        "3:130",
+        "4:160",
+        "4:161"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "divine-wrath",
+      "title": "Divine Wrath",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0046",
+        "cand-0303",
+        "cand-0305"
+      ],
+      "evidenceKeys": [
+        "2:61",
+        "6:146",
+        "6:156",
+        "6:157"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "five-daily-prayers",
+      "title": "Five Daily Prayers",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0011",
+        "cand-0070",
+        "cand-0114"
+      ],
+      "evidenceKeys": [
+        "2:110",
+        "2:238",
+        "2:3"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "self-accountability",
+      "title": "Self-Accountability",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "personal-development",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0132",
+        "cand-0246",
+        "cand-0308"
+      ],
+      "evidenceKeys": [
+        "3:21",
+        "3:22",
+        "5:63",
+        "6:164",
+        "6:165"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "brotherhood-islam",
+      "title": "Brotherhood in Islam",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "ummah-community",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0154",
+        "cand-0242",
+        "cand-0306"
+      ],
+      "evidenceKeys": [
+        "3:103",
+        "5:51",
+        "5:55",
+        "5:56",
+        "6:159"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "gratitude-ingratitude",
+      "title": "Gratitude & Ingratitude",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0045",
+        "cand-0085",
+        "cand-0103"
+      ],
+      "evidenceKeys": [
+        "2:152",
+        "2:200",
+        "2:201",
+        "2:61"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "remembrance-forgetfulness",
+      "title": "Remembrance & Forgetfulness",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0085",
+        "cand-0088",
+        "cand-0175"
+      ],
+      "evidenceKeys": [
+        "2:152",
+        "2:156",
+        "3:190",
+        "3:191"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "tawheed-uluhiyyah",
+      "title": "Tawheed al-Uluhiyyah",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0005",
+        "cand-0026"
+      ],
+      "evidenceKeys": [
+        "1:5",
+        "2:21"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "shirk-prohibition",
+      "title": "Shirk Prohibition",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0233",
+        "cand-0299"
+      ],
+      "evidenceKeys": [
+        "5:17",
+        "6:137",
+        "6:138",
+        "6:140"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "jibril-michael",
+      "title": "Jibril & Michael",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0062",
+        "cand-0063"
+      ],
+      "evidenceKeys": [
+        "2:97",
+        "2:98"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "quran-revelation-process",
+      "title": "Quran Revelation Process",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0127",
+        "cand-0305"
+      ],
+      "evidenceKeys": [
+        "3:7",
+        "6:156",
+        "6:157"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "tayammum",
+      "title": "Tayammum",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "purification-ritual",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0190",
+        "cand-0230"
+      ],
+      "evidenceKeys": [
+        "4:43",
+        "5:6"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "hypocrisy",
+      "title": "Hypocrisy (Nifaq)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0022",
+        "cand-0203"
+      ],
+      "evidenceKeys": [
+        "2:14",
+        "4:98",
+        "4:99"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "interfaith-marriage",
+      "title": "Interfaith Marriage",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0109",
+        "cand-0229"
+      ],
+      "evidenceKeys": [
+        "2:221",
+        "5:5"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "right-to-life",
+      "title": "Right to Life",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "human-rights",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0235",
+        "cand-0299"
+      ],
+      "evidenceKeys": [
+        "5:32",
+        "6:137",
+        "6:138",
+        "6:140"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "sadaqah-jariyah",
+      "title": "Sadaqah Jariyah",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "charity-giving",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0115",
+        "cand-0120"
+      ],
+      "evidenceKeys": [
+        "2:245",
+        "2:263",
+        "2:264",
+        "2:267"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "hudud-punishments",
+      "title": "Hudud Punishments",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "criminal-law",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0236",
+        "cand-0237"
+      ],
+      "evidenceKeys": [
+        "5:33",
+        "5:34",
+        "5:38",
+        "5:39"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "fasad-fil-ard",
+      "title": "Fasad fil-Ard (Corruption on Earth)",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "fasad-prohibition",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0020",
+        "cand-0116"
+      ],
+      "evidenceKeys": [
+        "2:11",
+        "2:12",
+        "2:251"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "trial-and-test",
+      "title": "Trial & Test (Bala'/Fitnah)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "personal-development",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0255",
+        "cand-0308"
+      ],
+      "evidenceKeys": [
+        "5:94",
+        "5:95",
+        "6:164",
+        "6:165"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "justice-oppression",
+      "title": "Justice & Oppression",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "human-rights",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0231",
+        "cand-0239"
+      ],
+      "evidenceKeys": [
+        "5:44",
+        "5:45",
+        "5:47",
+        "5:8"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "evidence-standards",
+      "title": "Evidence Standards",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "criminal-law",
+      "candidateCount": 2,
+      "candidateIds": [
+        "cand-0052",
+        "cand-0123"
+      ],
+      "evidenceKeys": [
+        "2:282",
+        "2:75"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "divine-knowledge",
+      "title": "Divine Knowledge",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0075"
+      ],
+      "evidenceKeys": [
+        "2:120"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "pillars-of-iman",
+      "title": "Pillars of Iman",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0010"
+      ],
+      "evidenceKeys": [
+        "2:3"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "certainty-yaqeen",
+      "title": "Certainty (Yaqeen)",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0013"
+      ],
+      "evidenceKeys": [
+        "2:4"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "unseen-belief",
+      "title": "Belief in Unseen",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0010"
+      ],
+      "evidenceKeys": [
+        "2:3"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "predestination-free-will",
+      "title": "Predestination & Free Will",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0304"
+      ],
+      "evidenceKeys": [
+        "6:148",
+        "6:149"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "quran-preservation",
+      "title": "Quran Preservation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0062"
+      ],
+      "evidenceKeys": [
+        "2:97"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "torah-psalms-gospel",
+      "title": "Torah, Psalms & Gospel",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "divine-scriptures",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0036"
+      ],
+      "evidenceKeys": [
+        "2:40"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "prophet-definition",
+      "title": "Prophet Definition",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "prophethood-messengership",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0132"
+      ],
+      "evidenceKeys": [
+        "3:21",
+        "3:22"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "muhammad-story",
+      "title": "Story of Muhammad",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0244"
+      ],
+      "evidenceKeys": [
+        "5:67"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "zakat-calculation",
+      "title": "Zakat Calculation",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "zakat-obligatory-charity",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0070"
+      ],
+      "evidenceKeys": [
+        "2:110"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "wudu-procedure",
+      "title": "Wudu Procedure",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "purification-ritual",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0230"
+      ],
+      "evidenceKeys": [
+        "5:6"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "taqwa-god-consciousness",
+      "title": "Taqwa (God-Consciousness)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0009"
+      ],
+      "evidenceKeys": [
+        "2:2"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "tawakkul-trust",
+      "title": "Tawakkul (Trust in Allah)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0087"
+      ],
+      "evidenceKeys": [
+        "2:153",
+        "2:155",
+        "2:157"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "anger-management",
+      "title": "Anger Management",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0161"
+      ],
+      "evidenceKeys": [
+        "3:134"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "envy-hasad",
+      "title": "Envy (Hasad)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0057"
+      ],
+      "evidenceKeys": [
+        "2:90"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "pride-kibr",
+      "title": "Pride (Kibr)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0021"
+      ],
+      "evidenceKeys": [
+        "2:13"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "reflection-tafakkur",
+      "title": "Reflection (Tafakkur)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0175"
+      ],
+      "evidenceKeys": [
+        "3:190",
+        "3:191"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "spouse-selection",
+      "title": "Spouse Selection",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0109"
+      ],
+      "evidenceKeys": [
+        "2:221"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "marital-rights",
+      "title": "Marital Rights",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "spousal-relations",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0113"
+      ],
+      "evidenceKeys": [
+        "2:234",
+        "2:235",
+        "2:240"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "child-development",
+      "title": "Child Development",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parenting-child-development",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0111"
+      ],
+      "evidenceKeys": [
+        "2:233"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "orphan-care",
+      "title": "Orphan Care",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parenting-child-development",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0178"
+      ],
+      "evidenceKeys": [
+        "4:2",
+        "4:6"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "mother-rights",
+      "title": "Mother's Rights",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parents-elderly-care",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0111"
+      ],
+      "evidenceKeys": [
+        "2:233"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "divorce-types",
+      "title": "Types of Divorce",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "divorce-separation",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0110"
+      ],
+      "evidenceKeys": [
+        "2:228",
+        "2:229",
+        "2:230"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "khul-divorce",
+      "title": "Khul' Divorce",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "divorce-separation",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0110"
+      ],
+      "evidenceKeys": [
+        "2:228",
+        "2:229",
+        "2:230"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "poverty-solutions",
+      "title": "Solutions to Poverty",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "poverty-welfare",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0107"
+      ],
+      "evidenceKeys": [
+        "2:215"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "wealth-distribution",
+      "title": "Wealth Distribution",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "economic-justice",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0151"
+      ],
+      "evidenceKeys": [
+        "3:92"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "mizan-balance",
+      "title": "Mizan (Balance)",
+      "parentDomainId": "creation-signs",
+      "parentDimensionId": "environment-balance",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0116"
+      ],
+      "evidenceKeys": [
+        "2:251"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "resurrection-process",
+      "title": "Resurrection Process",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "resurrection-judgment",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0032"
+      ],
+      "evidenceKeys": [
+        "2:28"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "jannah-description",
+      "title": "Description of Jannah",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "paradise-jannah",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0028"
+      ],
+      "evidenceKeys": [
+        "2:25"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "jahannam-description",
+      "title": "Description of Jahannam",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "hell-jahannam",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0029"
+      ],
+      "evidenceKeys": [
+        "2:24"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "khalifah-concept",
+      "title": "Khalifah Concept",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "khalifah-stewardship",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0308"
+      ],
+      "evidenceKeys": [
+        "6:164",
+        "6:165"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "balance-moderation",
+      "title": "Balance & Moderation (Wasat)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0300"
+      ],
+      "evidenceKeys": [
+        "6:141",
+        "6:142"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "signs-and-reflection",
+      "title": "Signs & Reflection (Ayat/Tafakkur)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0175"
+      ],
+      "evidenceKeys": [
+        "3:190",
+        "3:191"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "knowledge-ignorance",
+      "title": "Knowledge & Ignorance",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0304"
+      ],
+      "evidenceKeys": [
+        "6:148",
+        "6:149"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "covenant-breach",
+      "title": "Covenant & Breach",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "oaths-vows-covenants",
+      "candidateCount": 1,
+      "candidateIds": [
+        "cand-0232"
+      ],
+      "evidenceKeys": [
+        "5:12",
+        "5:13",
+        "5:14"
+      ],
+      "status": "covered"
+    },
+    {
+      "topicId": "divine-unity",
+      "title": "Divine Unity",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "allah-divine-attributes",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "tawheed-asma-wa-sifat",
+      "title": "Tawheed al-Asma wa as-Sifat",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "tawheed-evidence",
+      "title": "Evidence for Tawheed",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "tawheed-oneness",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "faith-increase-decrease",
+      "title": "Faith Increase & Decrease",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "iman-and-amal",
+      "title": "Iman & Amal Relationship",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "iman-faith-pillars",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "angels-creation",
+      "title": "Angels Creation",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "angelic-duties",
+      "title": "Angelic Duties",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "jinn-creation",
+      "title": "Jinn Creation",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "shaytan-enemy",
+      "title": "Shaytan as Enemy",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "angels-unseen-world",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "qadr-four-levels",
+      "title": "Four Levels of Qadr",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "divine-wisdom",
+      "title": "Divine Wisdom",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "qadr-and-dua",
+      "title": "Qadr & Dua",
+      "parentDomainId": "belief-theology",
+      "parentDimensionId": "divine-decree-qadr",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "quran-compilation",
+      "title": "Quran Compilation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "tafsir-methodology",
+      "title": "Tafsir Methodology",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "quran-abrogation",
+      "title": "Quran Abrogation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "quran-science",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "sunnah-definition",
+      "title": "Sunnah Definition",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "hadith-authentication",
+      "title": "Hadith Authentication",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "hadith-collections",
+      "title": "Hadith Collections",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "sunnah-vs-bidah",
+      "title": "Sunnah vs Bidah",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "sunnah-prophetic-tradition",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "quran-final-revelation",
+      "title": "Quran as Final Revelation",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "divine-scriptures",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prophetic-methodology",
+      "title": "Prophetic Methodology",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "prophetic-guidance",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prophetic-wisdom",
+      "title": "Prophetic Wisdom",
+      "parentDomainId": "revelation-guidance",
+      "parentDimensionId": "prophetic-guidance",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prophet-vs-messenger",
+      "title": "Prophet vs Messenger",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "prophethood-messengership",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "seal-of-prophethood",
+      "title": "Seal of Prophethood",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "prophethood-messengership",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "adam-story",
+      "title": "Story of Adam",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "nuh-story",
+      "title": "Story of Nuh",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "yunus-story",
+      "title": "Story of Yunus",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "major-prophets-stories",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "hud-story",
+      "title": "Story of Hud",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "minor-prophets",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "salih-story",
+      "title": "Story of Salih",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "minor-prophets",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "lut-story",
+      "title": "Story of Lut",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "minor-prophets",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "dream-interpretation",
+      "title": "Dream Interpretation",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "dreams-visions",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "yusuf-dreams",
+      "title": "Yusuf's Dreams",
+      "parentDomainId": "prophets-narratives",
+      "parentDimensionId": "dreams-visions",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prayer-conditions",
+      "title": "Prayer Conditions",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prayer-acceptance",
+      "title": "Prayer Acceptance",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "sunnah-prayers",
+      "title": "Sunnah Prayers",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "night-prayer",
+      "title": "Night Prayer",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "dua-etiquette",
+      "title": "Dua Etiquette",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "dua-answers",
+      "title": "Answers to Dua",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "salah-prayer",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "zakat-recipients",
+      "title": "Zakat Recipients",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "zakat-obligatory-charity",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "ramadan-fasting",
+      "title": "Ramadan Fasting",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "sawm-fasting",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "laylatul-qadr",
+      "title": "Laylatul Qadr",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "sawm-fasting",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "hajj-rites",
+      "title": "Hajj Rites",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "hajj-umrah-pilgrimage",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "ghusl-requirements",
+      "title": "Ghusl Requirements",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "purification-ritual",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "congregational-prayer",
+      "title": "Congregational Prayer",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "congregational-worship",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "jumuah-friday-prayer",
+      "title": "Jumuah Friday Prayer",
+      "parentDomainId": "worship-practice",
+      "parentDimensionId": "congregational-worship",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "nafs-ammara",
+      "title": "Nafs al-Ammara",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "nafs-lawwama",
+      "title": "Nafs al-Lawwama",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "nafs-mutmainna",
+      "title": "Nafs al-Mutma'inna",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "qalb-purification",
+      "title": "Qalb Purification",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "spiritual-states-nafs",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "ikhlas-sincerity",
+      "title": "Ikhlas (Sincerity)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "sincerity-ikhlas",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "riya-showing-off",
+      "title": "Riya (Showing Off)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "sincerity-ikhlas",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "backbiting",
+      "title": "Backbiting (Ghibah)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "slander",
+      "title": "Slander (Buhtan)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "lying",
+      "title": "Lying",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-vice",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prophetic-character",
+      "title": "Prophetic Character",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "character-development",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "human-creation",
+      "title": "Human Creation",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "fitrah-nature",
+      "title": "Fitrah (Natural Disposition)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "khalifah-vicegerent",
+      "title": "Khalifah (Vicegerent)",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "human-dignity",
+      "title": "Human Dignity",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "life-purpose",
+      "title": "Purpose of Life",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "human-creation-purpose",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "birth-childhood",
+      "title": "Birth & Childhood",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "youth-adolescence",
+      "title": "Youth & Adolescence",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "adulthood-responsibility",
+      "title": "Adulthood & Responsibility",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "old-age-wisdom",
+      "title": "Old Age & Wisdom",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "life-stages",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "intellect-importance",
+      "title": "Importance of Intellect",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "critical-thinking",
+      "title": "Critical Thinking",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "knowledge-seeking",
+      "title": "Seeking Knowledge",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "intellect-reason",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "emotional-intelligence",
+      "title": "Emotional Intelligence",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "psychology-emotions",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "stress-management",
+      "title": "Stress Management",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "psychology-emotions",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "anxiety-relief",
+      "title": "Anxiety Relief",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "psychology-emotions",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "time-management",
+      "title": "Time Management",
+      "parentDomainId": "human-experiences",
+      "parentDimensionId": "personal-development",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "marriage-importance",
+      "title": "Importance of Marriage",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "mahr-dowry",
+      "title": "Mahr (Dowry)",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "polygyny-conditions",
+      "title": "Polygyny Conditions",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "marriage-nikah",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "spousal-love-mercy",
+      "title": "Spousal Love & Mercy",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "spousal-relations",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "intimacy-ethics",
+      "title": "Intimacy Ethics",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "spousal-relations",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "child-education",
+      "title": "Child Education",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parenting-child-development",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "father-rights",
+      "title": "Father's Rights",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parents-elderly-care",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "elderly-care",
+      "title": "Elderly Care",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "parents-elderly-care",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "silat-al-rahim",
+      "title": "Silat al-Rahim (Kinship Ties)",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "kinship-extended-family",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "child-custody-hadanah",
+      "title": "Child Custody (Hadanah)",
+      "parentDomainId": "family-relationships",
+      "parentDimensionId": "divorce-separation",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "ummah-wahidah",
+      "title": "Ummah Wahidah (One Nation)",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "ummah-community",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "human-equality",
+      "title": "Human Equality",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "equality-diversity",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "diversity-divine-sign",
+      "title": "Diversity as Divine Sign",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "equality-diversity",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "neighbor-rights",
+      "title": "Neighbor Rights",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "social-responsibility",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "poverty-causes",
+      "title": "Causes of Poverty",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "poverty-welfare",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "media-responsibility",
+      "title": "Media Responsibility",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "urban-rural-media-ethics",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "rumor-verification",
+      "title": "Rumor Verification (Tabayyun)",
+      "parentDomainId": "society-justice",
+      "parentDimensionId": "urban-rural-media-ethics",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "business-ethics",
+      "title": "Business Ethics",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "trade-commerce",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "riba-prohibition",
+      "title": "Riba (Usury) Prohibition",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "finance-debt",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "haram-food",
+      "title": "Haram Food",
+      "parentDomainId": "law-obligations",
+      "parentDimensionId": "food-dietary-laws",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "shura-principle",
+      "title": "Shura (Consultation) Principle",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "shura-consultation",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "corruption-prohibition",
+      "title": "Corruption Prohibition",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "accountability",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "animals-as-communities",
+      "title": "Animals as Communities",
+      "parentDomainId": "creation-signs",
+      "parentDimensionId": "animals-creation",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "minor-signs",
+      "title": "Minor Signs of the Hour",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "signs-of-hour",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "major-signs",
+      "title": "Major Signs of the Hour",
+      "parentDomainId": "eschatology-afterlife",
+      "parentDimensionId": "signs-of-hour",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "dialogue-principles",
+      "title": "Interfaith Dialogue Principles",
+      "parentDomainId": "interfaith-communities",
+      "parentDimensionId": "interfaith-dialogue",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "quranic-vocabulary",
+      "title": "Quranic Vocabulary",
+      "parentDomainId": "language-vocabulary",
+      "parentDimensionId": "quranic-vocabulary",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "prophetic-medicine",
+      "title": "Prophetic Medicine",
+      "parentDomainId": "health-medicine",
+      "parentDimensionId": "healing-medicine",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "mental-health",
+      "title": "Mental Health in Islam",
+      "parentDomainId": "health-medicine",
+      "parentDimensionId": "mental-wellbeing",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "water-conservation",
+      "title": "Water Conservation",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "environmental-protection",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "leadership-qualities",
+      "title": "Leadership Qualities",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "leadership-authority",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "jihad-definition",
+      "title": "Jihad Definition",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "jihad-concept",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "rules-of-engagement",
+      "title": "Rules of Engagement",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "warfare-ethics",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "peace-agreements",
+      "title": "Peace Agreements",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "peace-treaties",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "husn-concept",
+      "title": "Husn (Beauty) Concept",
+      "parentDomainId": "arts-beauty-aesthetics",
+      "parentDimensionId": "husn-beauty",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "art-boundaries",
+      "title": "Art Boundaries",
+      "parentDomainId": "arts-beauty-aesthetics",
+      "parentDimensionId": "artistic-expression",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "work-honor",
+      "title": "Honor of Work",
+      "parentDomainId": "work-vocation",
+      "parentDimensionId": "work-dignity",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "worker-rights",
+      "title": "Worker Rights",
+      "parentDomainId": "work-vocation",
+      "parentDimensionId": "labor-rights",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "trust-responsibility",
+      "title": "Trust & Responsibility (Amanah)",
+      "parentDomainId": "ethics-character",
+      "parentDimensionId": "moral-virtues",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "wealth-ownership",
+      "title": "Wealth Ownership",
+      "parentDomainId": "economic-conduct",
+      "parentDimensionId": "wealth-property",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "public-accountability",
+      "title": "Public Accountability",
+      "parentDomainId": "governance-political-authority",
+      "parentDimensionId": "accountability",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "environmental-corruption",
+      "title": "Environmental Corruption",
+      "parentDomainId": "environment-stewardship",
+      "parentDimensionId": "fasad-prohibition",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    },
+    {
+      "topicId": "non-combatant-protection",
+      "title": "Non-Combatant Protection",
+      "parentDomainId": "war-peace-conflict",
+      "parentDimensionId": "warfare-ethics",
+      "candidateCount": 0,
+      "candidateIds": [],
+      "evidenceKeys": [],
+      "status": "uncovered"
+    }
+  ],
+  "thematicHubs": [
+    {
+      "ayahKey": "97:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2587",
+        "cand-2588",
+        "cand-2589",
+        "cand-2590",
+        "cand-2591",
+        "cand-2592",
+        "cand-2593",
+        "cand-2594",
+        "cand-2595",
+        "cand-2596"
+      ],
+      "sampleLabels": [
+        "cand-2587: Topic from 97:4",
+        "cand-2588: Topic from 97:4",
+        "cand-2589: Topic from 97:4",
+        "cand-2590: Topic from 97:4",
+        "cand-2591: Topic from 97:4"
+      ]
+    },
+    {
+      "ayahKey": "103:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2697",
+        "cand-2698",
+        "cand-2699",
+        "cand-2700",
+        "cand-2701",
+        "cand-2702",
+        "cand-2703",
+        "cand-2704",
+        "cand-2705",
+        "cand-2706"
+      ],
+      "sampleLabels": [
+        "cand-2697: Topic from 103:1",
+        "cand-2698: Topic from 103:1",
+        "cand-2699: Topic from 103:1",
+        "cand-2700: Topic from 103:1",
+        "cand-2701: Topic from 103:1"
+      ]
+    },
+    {
+      "ayahKey": "103:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2707",
+        "cand-2708",
+        "cand-2709",
+        "cand-2710",
+        "cand-2711",
+        "cand-2712",
+        "cand-2713",
+        "cand-2714",
+        "cand-2715",
+        "cand-2716"
+      ],
+      "sampleLabels": [
+        "cand-2707: Topic from 103:3",
+        "cand-2708: Topic from 103:3",
+        "cand-2709: Topic from 103:3",
+        "cand-2710: Topic from 103:3",
+        "cand-2711: Topic from 103:3"
+      ]
+    },
+    {
+      "ayahKey": "105:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2747",
+        "cand-2748",
+        "cand-2749",
+        "cand-2750",
+        "cand-2751",
+        "cand-2752",
+        "cand-2753",
+        "cand-2754",
+        "cand-2755",
+        "cand-2756"
+      ],
+      "sampleLabels": [
+        "cand-2747: Topic from 105:4",
+        "cand-2748: Topic from 105:4",
+        "cand-2749: Topic from 105:4",
+        "cand-2750: Topic from 105:4",
+        "cand-2751: Topic from 105:4"
+      ]
+    },
+    {
+      "ayahKey": "106:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2757",
+        "cand-2758",
+        "cand-2759",
+        "cand-2760",
+        "cand-2761",
+        "cand-2762",
+        "cand-2763",
+        "cand-2764",
+        "cand-2765",
+        "cand-2766"
+      ],
+      "sampleLabels": [
+        "cand-2757: Topic from 106:1",
+        "cand-2758: Topic from 106:1",
+        "cand-2759: Topic from 106:1",
+        "cand-2760: Topic from 106:1",
+        "cand-2761: Topic from 106:1"
+      ]
+    },
+    {
+      "ayahKey": "106:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2767",
+        "cand-2768",
+        "cand-2769",
+        "cand-2770",
+        "cand-2771",
+        "cand-2772",
+        "cand-2773",
+        "cand-2774",
+        "cand-2775",
+        "cand-2776"
+      ],
+      "sampleLabels": [
+        "cand-2767: Topic from 106:3",
+        "cand-2768: Topic from 106:3",
+        "cand-2769: Topic from 106:3",
+        "cand-2770: Topic from 106:3",
+        "cand-2771: Topic from 106:3"
+      ]
+    },
+    {
+      "ayahKey": "108:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2797",
+        "cand-2798",
+        "cand-2799",
+        "cand-2800",
+        "cand-2801",
+        "cand-2802",
+        "cand-2803",
+        "cand-2804",
+        "cand-2805",
+        "cand-2806"
+      ],
+      "sampleLabels": [
+        "cand-2797: Topic from 108:1",
+        "cand-2798: Topic from 108:1",
+        "cand-2799: Topic from 108:1",
+        "cand-2800: Topic from 108:1",
+        "cand-2801: Topic from 108:1"
+      ]
+    },
+    {
+      "ayahKey": "108:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2807",
+        "cand-2808",
+        "cand-2809",
+        "cand-2810",
+        "cand-2811",
+        "cand-2812",
+        "cand-2813",
+        "cand-2814",
+        "cand-2815",
+        "cand-2816"
+      ],
+      "sampleLabels": [
+        "cand-2807: Topic from 108:3",
+        "cand-2808: Topic from 108:3",
+        "cand-2809: Topic from 108:3",
+        "cand-2810: Topic from 108:3",
+        "cand-2811: Topic from 108:3"
+      ]
+    },
+    {
+      "ayahKey": "110:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2837",
+        "cand-2838",
+        "cand-2839",
+        "cand-2840",
+        "cand-2841",
+        "cand-2842",
+        "cand-2843",
+        "cand-2844",
+        "cand-2845",
+        "cand-2846"
+      ],
+      "sampleLabels": [
+        "cand-2837: Topic from 110:1",
+        "cand-2838: Topic from 110:1",
+        "cand-2839: Topic from 110:1",
+        "cand-2840: Topic from 110:1",
+        "cand-2841: Topic from 110:1"
+      ]
+    },
+    {
+      "ayahKey": "110:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2847",
+        "cand-2848",
+        "cand-2849",
+        "cand-2850",
+        "cand-2851",
+        "cand-2852",
+        "cand-2853",
+        "cand-2854",
+        "cand-2855",
+        "cand-2856"
+      ],
+      "sampleLabels": [
+        "cand-2847: Topic from 110:3",
+        "cand-2848: Topic from 110:3",
+        "cand-2849: Topic from 110:3",
+        "cand-2850: Topic from 110:3",
+        "cand-2851: Topic from 110:3"
+      ]
+    },
+    {
+      "ayahKey": "111:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2867",
+        "cand-2868",
+        "cand-2869",
+        "cand-2870",
+        "cand-2871",
+        "cand-2872",
+        "cand-2873",
+        "cand-2874",
+        "cand-2875",
+        "cand-2876"
+      ],
+      "sampleLabels": [
+        "cand-2867: Topic from 111:4",
+        "cand-2868: Topic from 111:4",
+        "cand-2869: Topic from 111:4",
+        "cand-2870: Topic from 111:4",
+        "cand-2871: Topic from 111:4"
+      ]
+    },
+    {
+      "ayahKey": "112:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2877",
+        "cand-2878",
+        "cand-2879",
+        "cand-2880",
+        "cand-2881",
+        "cand-2882",
+        "cand-2883",
+        "cand-2884",
+        "cand-2885",
+        "cand-2886"
+      ],
+      "sampleLabels": [
+        "cand-2877: Topic from 112:1",
+        "cand-2878: Topic from 112:1",
+        "cand-2879: Topic from 112:1",
+        "cand-2880: Topic from 112:1",
+        "cand-2881: Topic from 112:1"
+      ]
+    },
+    {
+      "ayahKey": "112:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2887",
+        "cand-2888",
+        "cand-2889",
+        "cand-2890",
+        "cand-2891",
+        "cand-2892",
+        "cand-2893",
+        "cand-2894",
+        "cand-2895",
+        "cand-2896"
+      ],
+      "sampleLabels": [
+        "cand-2887: Topic from 112:3",
+        "cand-2888: Topic from 112:3",
+        "cand-2889: Topic from 112:3",
+        "cand-2890: Topic from 112:3",
+        "cand-2891: Topic from 112:3"
+      ]
+    },
+    {
+      "ayahKey": "113:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2907",
+        "cand-2908",
+        "cand-2909",
+        "cand-2910",
+        "cand-2911",
+        "cand-2912",
+        "cand-2913",
+        "cand-2914",
+        "cand-2915",
+        "cand-2916"
+      ],
+      "sampleLabels": [
+        "cand-2907: Topic from 113:4",
+        "cand-2908: Topic from 113:4",
+        "cand-2909: Topic from 113:4",
+        "cand-2910: Topic from 113:4",
+        "cand-2911: Topic from 113:4"
+      ]
+    },
+    {
+      "ayahKey": "97:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2577",
+        "cand-2578",
+        "cand-2579",
+        "cand-2580",
+        "cand-2581"
+      ],
+      "sampleLabels": [
+        "cand-2577: Topic from 97:1",
+        "cand-2578: Topic from 97:1",
+        "cand-2579: Topic from 97:1",
+        "cand-2580: Topic from 97:1",
+        "cand-2581: Topic from 97:1"
+      ]
+    },
+    {
+      "ayahKey": "97:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2582",
+        "cand-2583",
+        "cand-2584",
+        "cand-2585",
+        "cand-2586"
+      ],
+      "sampleLabels": [
+        "cand-2582: Topic from 97:2",
+        "cand-2583: Topic from 97:2",
+        "cand-2584: Topic from 97:2",
+        "cand-2585: Topic from 97:2",
+        "cand-2586: Topic from 97:2"
+      ]
+    },
+    {
+      "ayahKey": "105:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2737",
+        "cand-2738",
+        "cand-2739",
+        "cand-2740",
+        "cand-2741"
+      ],
+      "sampleLabels": [
+        "cand-2737: Topic from 105:1",
+        "cand-2738: Topic from 105:1",
+        "cand-2739: Topic from 105:1",
+        "cand-2740: Topic from 105:1",
+        "cand-2741: Topic from 105:1"
+      ]
+    },
+    {
+      "ayahKey": "105:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2742",
+        "cand-2743",
+        "cand-2744",
+        "cand-2745",
+        "cand-2746"
+      ],
+      "sampleLabels": [
+        "cand-2742: Topic from 105:2",
+        "cand-2743: Topic from 105:2",
+        "cand-2744: Topic from 105:2",
+        "cand-2745: Topic from 105:2",
+        "cand-2746: Topic from 105:2"
+      ]
+    },
+    {
+      "ayahKey": "107:5",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2787",
+        "cand-2788",
+        "cand-2789",
+        "cand-2790",
+        "cand-2791"
+      ],
+      "sampleLabels": [
+        "cand-2787: Topic from 107:5",
+        "cand-2788: Topic from 107:5",
+        "cand-2789: Topic from 107:5",
+        "cand-2790: Topic from 107:5",
+        "cand-2791: Topic from 107:5"
+      ]
+    },
+    {
+      "ayahKey": "107:6",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2792",
+        "cand-2793",
+        "cand-2794",
+        "cand-2795",
+        "cand-2796"
+      ],
+      "sampleLabels": [
+        "cand-2792: Topic from 107:6",
+        "cand-2793: Topic from 107:6",
+        "cand-2794: Topic from 107:6",
+        "cand-2795: Topic from 107:6",
+        "cand-2796: Topic from 107:6"
+      ]
+    },
+    {
+      "ayahKey": "109:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2817",
+        "cand-2818",
+        "cand-2819",
+        "cand-2820",
+        "cand-2821"
+      ],
+      "sampleLabels": [
+        "cand-2817: Topic from 109:1",
+        "cand-2818: Topic from 109:1",
+        "cand-2819: Topic from 109:1",
+        "cand-2820: Topic from 109:1",
+        "cand-2821: Topic from 109:1"
+      ]
+    },
+    {
+      "ayahKey": "109:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2822",
+        "cand-2823",
+        "cand-2824",
+        "cand-2825",
+        "cand-2826"
+      ],
+      "sampleLabels": [
+        "cand-2822: Topic from 109:2",
+        "cand-2823: Topic from 109:2",
+        "cand-2824: Topic from 109:2",
+        "cand-2825: Topic from 109:2",
+        "cand-2826: Topic from 109:2"
+      ]
+    },
+    {
+      "ayahKey": "109:4",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2827",
+        "cand-2828",
+        "cand-2829",
+        "cand-2830",
+        "cand-2831"
+      ],
+      "sampleLabels": [
+        "cand-2827: Topic from 109:4",
+        "cand-2828: Topic from 109:4",
+        "cand-2829: Topic from 109:4",
+        "cand-2830: Topic from 109:4",
+        "cand-2831: Topic from 109:4"
+      ]
+    },
+    {
+      "ayahKey": "109:5",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2832",
+        "cand-2833",
+        "cand-2834",
+        "cand-2835",
+        "cand-2836"
+      ],
+      "sampleLabels": [
+        "cand-2832: Topic from 109:5",
+        "cand-2833: Topic from 109:5",
+        "cand-2834: Topic from 109:5",
+        "cand-2835: Topic from 109:5",
+        "cand-2836: Topic from 109:5"
+      ]
+    },
+    {
+      "ayahKey": "111:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2857",
+        "cand-2858",
+        "cand-2859",
+        "cand-2860",
+        "cand-2861"
+      ],
+      "sampleLabels": [
+        "cand-2857: Topic from 111:1",
+        "cand-2858: Topic from 111:1",
+        "cand-2859: Topic from 111:1",
+        "cand-2860: Topic from 111:1",
+        "cand-2861: Topic from 111:1"
+      ]
+    },
+    {
+      "ayahKey": "111:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2862",
+        "cand-2863",
+        "cand-2864",
+        "cand-2865",
+        "cand-2866"
+      ],
+      "sampleLabels": [
+        "cand-2862: Topic from 111:2",
+        "cand-2863: Topic from 111:2",
+        "cand-2864: Topic from 111:2",
+        "cand-2865: Topic from 111:2",
+        "cand-2866: Topic from 111:2"
+      ]
+    },
+    {
+      "ayahKey": "113:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2897",
+        "cand-2898",
+        "cand-2899",
+        "cand-2900",
+        "cand-2901"
+      ],
+      "sampleLabels": [
+        "cand-2897: Topic from 113:1",
+        "cand-2898: Topic from 113:1",
+        "cand-2899: Topic from 113:1",
+        "cand-2900: Topic from 113:1",
+        "cand-2901: Topic from 113:1"
+      ]
+    },
+    {
+      "ayahKey": "113:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2902",
+        "cand-2903",
+        "cand-2904",
+        "cand-2905",
+        "cand-2906"
+      ],
+      "sampleLabels": [
+        "cand-2902: Topic from 113:2",
+        "cand-2903: Topic from 113:2",
+        "cand-2904: Topic from 113:2",
+        "cand-2905: Topic from 113:2",
+        "cand-2906: Topic from 113:2"
+      ]
+    },
+    {
+      "ayahKey": "114:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2917",
+        "cand-2918",
+        "cand-2919",
+        "cand-2920",
+        "cand-2921"
+      ],
+      "sampleLabels": [
+        "cand-2917: Topic from 114:1",
+        "cand-2918: Topic from 114:1",
+        "cand-2919: Topic from 114:1",
+        "cand-2920: Topic from 114:1",
+        "cand-2921: Topic from 114:1"
+      ]
+    },
+    {
+      "ayahKey": "114:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2922",
+        "cand-2923",
+        "cand-2924",
+        "cand-2925",
+        "cand-2926"
+      ],
+      "sampleLabels": [
+        "cand-2922: Topic from 114:2",
+        "cand-2923: Topic from 114:2",
+        "cand-2924: Topic from 114:2",
+        "cand-2925: Topic from 114:2",
+        "cand-2926: Topic from 114:2"
+      ]
+    },
+    {
+      "ayahKey": "114:4",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2927",
+        "cand-2928",
+        "cand-2929",
+        "cand-2930",
+        "cand-2931"
+      ],
+      "sampleLabels": [
+        "cand-2927: Topic from 114:4",
+        "cand-2928: Topic from 114:4",
+        "cand-2929: Topic from 114:4",
+        "cand-2930: Topic from 114:4",
+        "cand-2931: Topic from 114:4"
+      ]
+    },
+    {
+      "ayahKey": "114:5",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2932",
+        "cand-2933",
+        "cand-2934",
+        "cand-2935",
+        "cand-2936"
+      ],
+      "sampleLabels": [
+        "cand-2932: Topic from 114:5",
+        "cand-2933: Topic from 114:5",
+        "cand-2934: Topic from 114:5",
+        "cand-2935: Topic from 114:5",
+        "cand-2936: Topic from 114:5"
+      ]
+    },
+    {
+      "ayahKey": "94:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2517",
+        "cand-2518",
+        "cand-2519",
+        "cand-2520"
+      ],
+      "sampleLabels": [
+        "cand-2517: Topic from 94:1",
+        "cand-2518: Topic from 94:1",
+        "cand-2519: Topic from 94:1",
+        "cand-2520: Topic from 94:1"
+      ]
+    },
+    {
+      "ayahKey": "94:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2527",
+        "cand-2528",
+        "cand-2529",
+        "cand-2530"
+      ],
+      "sampleLabels": [
+        "cand-2527: Topic from 94:5",
+        "cand-2528: Topic from 94:5",
+        "cand-2529: Topic from 94:5",
+        "cand-2530: Topic from 94:5"
+      ]
+    },
+    {
+      "ayahKey": "95:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2537",
+        "cand-2538",
+        "cand-2539",
+        "cand-2540"
+      ],
+      "sampleLabels": [
+        "cand-2537: Topic from 95:1",
+        "cand-2538: Topic from 95:1",
+        "cand-2539: Topic from 95:1",
+        "cand-2540: Topic from 95:1"
+      ]
+    },
+    {
+      "ayahKey": "95:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2547",
+        "cand-2548",
+        "cand-2549",
+        "cand-2550"
+      ],
+      "sampleLabels": [
+        "cand-2547: Topic from 95:5",
+        "cand-2548: Topic from 95:5",
+        "cand-2549: Topic from 95:5",
+        "cand-2550: Topic from 95:5"
+      ]
+    },
+    {
+      "ayahKey": "98:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2597",
+        "cand-2598",
+        "cand-2599",
+        "cand-2600"
+      ],
+      "sampleLabels": [
+        "cand-2597: Topic from 98:1",
+        "cand-2598: Topic from 98:1",
+        "cand-2599: Topic from 98:1",
+        "cand-2600: Topic from 98:1"
+      ]
+    },
+    {
+      "ayahKey": "98:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2607",
+        "cand-2608",
+        "cand-2609",
+        "cand-2610"
+      ],
+      "sampleLabels": [
+        "cand-2607: Topic from 98:5",
+        "cand-2608: Topic from 98:5",
+        "cand-2609: Topic from 98:5",
+        "cand-2610: Topic from 98:5"
+      ]
+    },
+    {
+      "ayahKey": "99:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2617",
+        "cand-2618",
+        "cand-2619",
+        "cand-2620"
+      ],
+      "sampleLabels": [
+        "cand-2617: Topic from 99:1",
+        "cand-2618: Topic from 99:1",
+        "cand-2619: Topic from 99:1",
+        "cand-2620: Topic from 99:1"
+      ]
+    },
+    {
+      "ayahKey": "99:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2627",
+        "cand-2628",
+        "cand-2629",
+        "cand-2630"
+      ],
+      "sampleLabels": [
+        "cand-2627: Topic from 99:5",
+        "cand-2628: Topic from 99:5",
+        "cand-2629: Topic from 99:5",
+        "cand-2630: Topic from 99:5"
+      ]
+    },
+    {
+      "ayahKey": "102:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2677",
+        "cand-2678",
+        "cand-2679",
+        "cand-2680"
+      ],
+      "sampleLabels": [
+        "cand-2677: Topic from 102:1",
+        "cand-2678: Topic from 102:1",
+        "cand-2679: Topic from 102:1",
+        "cand-2680: Topic from 102:1"
+      ]
+    },
+    {
+      "ayahKey": "102:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2687",
+        "cand-2688",
+        "cand-2689",
+        "cand-2690"
+      ],
+      "sampleLabels": [
+        "cand-2687: Topic from 102:5",
+        "cand-2688: Topic from 102:5",
+        "cand-2689: Topic from 102:5",
+        "cand-2690: Topic from 102:5"
+      ]
+    },
+    {
+      "ayahKey": "104:6",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2727",
+        "cand-2728",
+        "cand-2729",
+        "cand-2730"
+      ],
+      "sampleLabels": [
+        "cand-2727: Topic from 104:6",
+        "cand-2728: Topic from 104:6",
+        "cand-2729: Topic from 104:6",
+        "cand-2730: Topic from 104:6"
+      ]
+    },
+    {
+      "ayahKey": "107:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2777",
+        "cand-2778",
+        "cand-2779",
+        "cand-2780"
+      ],
+      "sampleLabels": [
+        "cand-2777: Topic from 107:1",
+        "cand-2778: Topic from 107:1",
+        "cand-2779: Topic from 107:1",
+        "cand-2780: Topic from 107:1"
+      ]
+    },
+    {
+      "ayahKey": "2:3",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-0010",
+        "cand-0011",
+        "cand-0012"
+      ],
+      "sampleLabels": [
+        "Belief in the unseen (iman bil-ghayb)",
+        "Establishing prayer (iqamat as-salah)",
+        "Spending from divine provision (infaq mimma razaqna)"
+      ]
+    },
+    {
+      "ayahKey": "62:7",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1887",
+        "cand-1888",
+        "cand-1889"
+      ],
+      "sampleLabels": [
+        "cand-1887: Topic from 62:7",
+        "cand-1888: Topic from 62:7",
+        "cand-1889: Topic from 62:7"
+      ]
+    },
+    {
+      "ayahKey": "62:9",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1892",
+        "cand-1893",
+        "cand-1894"
+      ],
+      "sampleLabels": [
+        "cand-1892: Topic from 62:9",
+        "cand-1893: Topic from 62:9",
+        "cand-1894: Topic from 62:9"
+      ]
+    },
+    {
+      "ayahKey": "63:7",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1907",
+        "cand-1908",
+        "cand-1909"
+      ],
+      "sampleLabels": [
+        "cand-1907: Topic from 63:7",
+        "cand-1908: Topic from 63:7",
+        "cand-1909: Topic from 63:7"
+      ]
+    },
+    {
+      "ayahKey": "63:9",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1912",
+        "cand-1913",
+        "cand-1914"
+      ],
+      "sampleLabels": [
+        "cand-1912: Topic from 63:9",
+        "cand-1913: Topic from 63:9",
+        "cand-1914: Topic from 63:9"
+      ]
+    },
+    {
+      "ayahKey": "93:7",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-2507",
+        "cand-2508",
+        "cand-2509"
+      ],
+      "sampleLabels": [
+        "cand-2507: Topic from 93:7",
+        "cand-2508: Topic from 93:7",
+        "cand-2509: Topic from 93:7"
+      ]
+    }
+  ],
+  "surahThematics": [
+    {
+      "surah": 1,
+      "candidateCount": 7,
+      "evidenceKeyCount": 7,
+      "existingTopicOverlaps": [
+        "shukr-gratitude",
+        "gratitude",
+        "tawheed-rububiyyah",
+        "asma-ul-husna",
+        "divine-mercy",
+        "mercy-and-forgiveness",
+        "day-of-judgment",
+        "the-hereafter",
+        "tawheed-uluhiyyah",
+        "tawheed",
+        "supplication"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 2,
+      "candidateCount": 119,
+      "evidenceKeyCount": 152,
+      "existingTopicOverlaps": [
+        "taqwa-god-consciousness",
+        "god-consciousness",
+        "unseen-belief",
+        "pillars-of-iman",
+        "five-daily-prayers",
+        "prayer",
+        "giving",
+        "the-hereafter",
+        "certainty-yaqeen",
+        "fasad-fil-ard",
+        "pride-kibr",
+        "hypocrisy",
+        "tawheed-uluhiyyah",
+        "jannah-description",
+        "jahannam-description",
+        "covenants-ahd",
+        "resurrection-process",
+        "divine-mercy",
+        "torah-psalms-gospel",
+        "patience-haste",
+        "musa-story",
+        "gratitude-ingratitude",
+        "divine-wrath",
+        "evidence-standards",
+        "envy-hasad",
+        "isa-story",
+        "jibril-michael",
+        "quran-preservation",
+        "zakat-calculation",
+        "tawheed-rububiyyah",
+        "tawheed",
+        "divine-power",
+        "divine-knowledge",
+        "day-of-judgment",
+        "ibrahim-story",
+        "remembrance-forgetfulness",
+        "shukr-gratitude",
+        "sabr-patience",
+        "tawakkul-trust",
+        "poverty-solutions",
+        "parents-and-family",
+        "halal-food",
+        "interfaith-marriage",
+        "spouse-selection",
+        "divorce-types",
+        "khul-divorce",
+        "child-development",
+        "mother-rights",
+        "good-character",
+        "marital-rights",
+        "sadaqah-jariyah",
+        "mizan-balance",
+        "tawheed-fundamentals",
+        "asma-ul-husna",
+        "interest-free-finance",
+        "prophets",
+        "hardship-and-ease",
+        "supplication",
+        "mercy-and-forgiveness",
+        "repentance"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 3,
+      "candidateCount": 50,
+      "evidenceKeyCount": 63,
+      "existingTopicOverlaps": [
+        "quran-revelation-process",
+        "good-character",
+        "tawheed-fundamentals",
+        "asma-ul-husna",
+        "day-of-judgment",
+        "prayer",
+        "prophet-definition",
+        "self-accountability",
+        "tawheed-rububiyyah",
+        "divine-power",
+        "isa-story",
+        "musa-story",
+        "ibrahim-story",
+        "covenants-ahd",
+        "repentance",
+        "divine-mercy",
+        "wealth-distribution",
+        "brotherhood-islam",
+        "anger-management",
+        "interest-free-finance",
+        "sabr-patience",
+        "patience-haste",
+        "reflection-tafakkur",
+        "remembrance-forgetfulness",
+        "signs-and-reflection"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 4,
+      "candidateCount": 50,
+      "evidenceKeyCount": 66,
+      "existingTopicOverlaps": [
+        "orphan-care",
+        "repentance",
+        "justice",
+        "parents-and-family",
+        "tawheed",
+        "tayammum",
+        "hypocrisy",
+        "prayer",
+        "isa-story",
+        "covenants-ahd",
+        "interest-free-finance",
+        "prophets"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 5,
+      "candidateCount": 40,
+      "evidenceKeyCount": 60,
+      "existingTopicOverlaps": [
+        "interfaith-marriage",
+        "halal-food",
+        "tayammum",
+        "wudu-procedure",
+        "justice-oppression",
+        "covenants-ahd",
+        "covenant-breach",
+        "isa-story",
+        "shirk-prohibition",
+        "musa-story",
+        "right-to-life",
+        "hudud-punishments",
+        "tawheed-fundamentals",
+        "brotherhood-islam",
+        "muhammad-story",
+        "self-accountability",
+        "trial-and-test",
+        "justice",
+        "supplication",
+        "tawheed",
+        "day-of-judgment",
+        "the-hereafter",
+        "divine-power"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 6,
+      "candidateCount": 42,
+      "evidenceKeyCount": 104,
+      "existingTopicOverlaps": [
+        "tawheed",
+        "divine-power",
+        "prophets",
+        "divine-mercy",
+        "day-of-judgment",
+        "mercy-and-forgiveness",
+        "hardship-and-ease",
+        "god-consciousness",
+        "repentance",
+        "the-hereafter",
+        "ibrahim-story",
+        "halal-food",
+        "shirk-prohibition",
+        "right-to-life",
+        "giving",
+        "balance-moderation",
+        "good-character",
+        "justice",
+        "parents-and-family",
+        "divine-wrath",
+        "predestination-free-will",
+        "knowledge-ignorance",
+        "quran-revelation-process",
+        "brotherhood-islam",
+        "khalifah-concept",
+        "trial-and-test",
+        "self-accountability"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 7,
+      "candidateCount": 60,
+      "evidenceKeyCount": 60,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 8,
+      "candidateCount": 20,
+      "evidenceKeyCount": 33,
+      "existingTopicOverlaps": [
+        "divine-power",
+        "justice",
+        "patience",
+        "day-of-judgment"
+      ],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 9,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 10,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 11,
+      "candidateCount": 40,
+      "evidenceKeyCount": 56,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": true
+    },
+    {
+      "surah": 12,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 13,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 14,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 15,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 16,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 17,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 18,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 19,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 20,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 21,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 22,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 23,
+      "candidateCount": 40,
+      "evidenceKeyCount": 40,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 24,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 25,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 26,
+      "candidateCount": 70,
+      "evidenceKeyCount": 70,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 27,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 28,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 29,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 30,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 31,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 32,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 33,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 34,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 35,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 36,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 37,
+      "candidateCount": 50,
+      "evidenceKeyCount": 50,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 38,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 39,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 40,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 41,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 42,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 43,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 44,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 45,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 46,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 47,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 48,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 49,
+      "candidateCount": 20,
+      "evidenceKeyCount": 16,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 50,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 51,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 52,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 53,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 54,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 55,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 56,
+      "candidateCount": 30,
+      "evidenceKeyCount": 30,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 57,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 58,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 59,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 60,
+      "candidateCount": 20,
+      "evidenceKeyCount": 11,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 61,
+      "candidateCount": 20,
+      "evidenceKeyCount": 12,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 62,
+      "candidateCount": 20,
+      "evidenceKeyCount": 9,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 63,
+      "candidateCount": 20,
+      "evidenceKeyCount": 9,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 64,
+      "candidateCount": 20,
+      "evidenceKeyCount": 16,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 65,
+      "candidateCount": 20,
+      "evidenceKeyCount": 10,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 66,
+      "candidateCount": 20,
+      "evidenceKeyCount": 10,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 67,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 68,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 69,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 70,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 71,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 72,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 73,
+      "candidateCount": 20,
+      "evidenceKeyCount": 18,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 74,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 75,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 76,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 77,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 78,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 79,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 80,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 81,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 82,
+      "candidateCount": 20,
+      "evidenceKeyCount": 17,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 83,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 84,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 85,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 86,
+      "candidateCount": 20,
+      "evidenceKeyCount": 15,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 87,
+      "candidateCount": 20,
+      "evidenceKeyCount": 17,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 88,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 89,
+      "candidateCount": 20,
+      "evidenceKeyCount": 20,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 90,
+      "candidateCount": 20,
+      "evidenceKeyCount": 18,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 91,
+      "candidateCount": 20,
+      "evidenceKeyCount": 13,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 92,
+      "candidateCount": 20,
+      "evidenceKeyCount": 19,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 93,
+      "candidateCount": 20,
+      "evidenceKeyCount": 9,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 94,
+      "candidateCount": 20,
+      "evidenceKeyCount": 6,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 95,
+      "candidateCount": 20,
+      "evidenceKeyCount": 6,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 96,
+      "candidateCount": 20,
+      "evidenceKeyCount": 17,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 97,
+      "candidateCount": 20,
+      "evidenceKeyCount": 3,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 98,
+      "candidateCount": 20,
+      "evidenceKeyCount": 6,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 99,
+      "candidateCount": 20,
+      "evidenceKeyCount": 6,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 100,
+      "candidateCount": 20,
+      "evidenceKeyCount": 9,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 101,
+      "candidateCount": 20,
+      "evidenceKeyCount": 9,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 102,
+      "candidateCount": 20,
+      "evidenceKeyCount": 6,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 103,
+      "candidateCount": 20,
+      "evidenceKeyCount": 2,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 104,
+      "candidateCount": 20,
+      "evidenceKeyCount": 7,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 105,
+      "candidateCount": 20,
+      "evidenceKeyCount": 3,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 106,
+      "candidateCount": 20,
+      "evidenceKeyCount": 2,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 107,
+      "candidateCount": 20,
+      "evidenceKeyCount": 5,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 108,
+      "candidateCount": 20,
+      "evidenceKeyCount": 2,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 109,
+      "candidateCount": 20,
+      "evidenceKeyCount": 4,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 110,
+      "candidateCount": 20,
+      "evidenceKeyCount": 2,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 111,
+      "candidateCount": 20,
+      "evidenceKeyCount": 3,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 112,
+      "candidateCount": 20,
+      "evidenceKeyCount": 2,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 113,
+      "candidateCount": 20,
+      "evidenceKeyCount": 3,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    },
+    {
+      "surah": 114,
+      "candidateCount": 20,
+      "evidenceKeyCount": 4,
+      "existingTopicOverlaps": [],
+      "hasRealLabels": false
+    }
+  ],
+  "newTopicProposals": [
+    {
+      "hubAyah": "97:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2587",
+        "cand-2588",
+        "cand-2589",
+        "cand-2590",
+        "cand-2591",
+        "cand-2592",
+        "cand-2593",
+        "cand-2594",
+        "cand-2595",
+        "cand-2596"
+      ],
+      "sampleLabels": [
+        "cand-2587: Topic from 97:4",
+        "cand-2588: Topic from 97:4",
+        "cand-2589: Topic from 97:4",
+        "cand-2590: Topic from 97:4",
+        "cand-2591: Topic from 97:4"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "103:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2697",
+        "cand-2698",
+        "cand-2699",
+        "cand-2700",
+        "cand-2701",
+        "cand-2702",
+        "cand-2703",
+        "cand-2704",
+        "cand-2705",
+        "cand-2706"
+      ],
+      "sampleLabels": [
+        "cand-2697: Topic from 103:1",
+        "cand-2698: Topic from 103:1",
+        "cand-2699: Topic from 103:1",
+        "cand-2700: Topic from 103:1",
+        "cand-2701: Topic from 103:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "103:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2707",
+        "cand-2708",
+        "cand-2709",
+        "cand-2710",
+        "cand-2711",
+        "cand-2712",
+        "cand-2713",
+        "cand-2714",
+        "cand-2715",
+        "cand-2716"
+      ],
+      "sampleLabels": [
+        "cand-2707: Topic from 103:3",
+        "cand-2708: Topic from 103:3",
+        "cand-2709: Topic from 103:3",
+        "cand-2710: Topic from 103:3",
+        "cand-2711: Topic from 103:3"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "105:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2747",
+        "cand-2748",
+        "cand-2749",
+        "cand-2750",
+        "cand-2751",
+        "cand-2752",
+        "cand-2753",
+        "cand-2754",
+        "cand-2755",
+        "cand-2756"
+      ],
+      "sampleLabels": [
+        "cand-2747: Topic from 105:4",
+        "cand-2748: Topic from 105:4",
+        "cand-2749: Topic from 105:4",
+        "cand-2750: Topic from 105:4",
+        "cand-2751: Topic from 105:4"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "106:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2757",
+        "cand-2758",
+        "cand-2759",
+        "cand-2760",
+        "cand-2761",
+        "cand-2762",
+        "cand-2763",
+        "cand-2764",
+        "cand-2765",
+        "cand-2766"
+      ],
+      "sampleLabels": [
+        "cand-2757: Topic from 106:1",
+        "cand-2758: Topic from 106:1",
+        "cand-2759: Topic from 106:1",
+        "cand-2760: Topic from 106:1",
+        "cand-2761: Topic from 106:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "106:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2767",
+        "cand-2768",
+        "cand-2769",
+        "cand-2770",
+        "cand-2771",
+        "cand-2772",
+        "cand-2773",
+        "cand-2774",
+        "cand-2775",
+        "cand-2776"
+      ],
+      "sampleLabels": [
+        "cand-2767: Topic from 106:3",
+        "cand-2768: Topic from 106:3",
+        "cand-2769: Topic from 106:3",
+        "cand-2770: Topic from 106:3",
+        "cand-2771: Topic from 106:3"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "108:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2797",
+        "cand-2798",
+        "cand-2799",
+        "cand-2800",
+        "cand-2801",
+        "cand-2802",
+        "cand-2803",
+        "cand-2804",
+        "cand-2805",
+        "cand-2806"
+      ],
+      "sampleLabels": [
+        "cand-2797: Topic from 108:1",
+        "cand-2798: Topic from 108:1",
+        "cand-2799: Topic from 108:1",
+        "cand-2800: Topic from 108:1",
+        "cand-2801: Topic from 108:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "108:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2807",
+        "cand-2808",
+        "cand-2809",
+        "cand-2810",
+        "cand-2811",
+        "cand-2812",
+        "cand-2813",
+        "cand-2814",
+        "cand-2815",
+        "cand-2816"
+      ],
+      "sampleLabels": [
+        "cand-2807: Topic from 108:3",
+        "cand-2808: Topic from 108:3",
+        "cand-2809: Topic from 108:3",
+        "cand-2810: Topic from 108:3",
+        "cand-2811: Topic from 108:3"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "110:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2837",
+        "cand-2838",
+        "cand-2839",
+        "cand-2840",
+        "cand-2841",
+        "cand-2842",
+        "cand-2843",
+        "cand-2844",
+        "cand-2845",
+        "cand-2846"
+      ],
+      "sampleLabels": [
+        "cand-2837: Topic from 110:1",
+        "cand-2838: Topic from 110:1",
+        "cand-2839: Topic from 110:1",
+        "cand-2840: Topic from 110:1",
+        "cand-2841: Topic from 110:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "110:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2847",
+        "cand-2848",
+        "cand-2849",
+        "cand-2850",
+        "cand-2851",
+        "cand-2852",
+        "cand-2853",
+        "cand-2854",
+        "cand-2855",
+        "cand-2856"
+      ],
+      "sampleLabels": [
+        "cand-2847: Topic from 110:3",
+        "cand-2848: Topic from 110:3",
+        "cand-2849: Topic from 110:3",
+        "cand-2850: Topic from 110:3",
+        "cand-2851: Topic from 110:3"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "111:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2867",
+        "cand-2868",
+        "cand-2869",
+        "cand-2870",
+        "cand-2871",
+        "cand-2872",
+        "cand-2873",
+        "cand-2874",
+        "cand-2875",
+        "cand-2876"
+      ],
+      "sampleLabels": [
+        "cand-2867: Topic from 111:4",
+        "cand-2868: Topic from 111:4",
+        "cand-2869: Topic from 111:4",
+        "cand-2870: Topic from 111:4",
+        "cand-2871: Topic from 111:4"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "112:1",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2877",
+        "cand-2878",
+        "cand-2879",
+        "cand-2880",
+        "cand-2881",
+        "cand-2882",
+        "cand-2883",
+        "cand-2884",
+        "cand-2885",
+        "cand-2886"
+      ],
+      "sampleLabels": [
+        "cand-2877: Topic from 112:1",
+        "cand-2878: Topic from 112:1",
+        "cand-2879: Topic from 112:1",
+        "cand-2880: Topic from 112:1",
+        "cand-2881: Topic from 112:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "112:3",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2887",
+        "cand-2888",
+        "cand-2889",
+        "cand-2890",
+        "cand-2891",
+        "cand-2892",
+        "cand-2893",
+        "cand-2894",
+        "cand-2895",
+        "cand-2896"
+      ],
+      "sampleLabels": [
+        "cand-2887: Topic from 112:3",
+        "cand-2888: Topic from 112:3",
+        "cand-2889: Topic from 112:3",
+        "cand-2890: Topic from 112:3",
+        "cand-2891: Topic from 112:3"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "113:4",
+      "candidateCount": 10,
+      "candidateIds": [
+        "cand-2907",
+        "cand-2908",
+        "cand-2909",
+        "cand-2910",
+        "cand-2911",
+        "cand-2912",
+        "cand-2913",
+        "cand-2914",
+        "cand-2915",
+        "cand-2916"
+      ],
+      "sampleLabels": [
+        "cand-2907: Topic from 113:4",
+        "cand-2908: Topic from 113:4",
+        "cand-2909: Topic from 113:4",
+        "cand-2910: Topic from 113:4",
+        "cand-2911: Topic from 113:4"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "97:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2577",
+        "cand-2578",
+        "cand-2579",
+        "cand-2580",
+        "cand-2581"
+      ],
+      "sampleLabels": [
+        "cand-2577: Topic from 97:1",
+        "cand-2578: Topic from 97:1",
+        "cand-2579: Topic from 97:1",
+        "cand-2580: Topic from 97:1",
+        "cand-2581: Topic from 97:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "97:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2582",
+        "cand-2583",
+        "cand-2584",
+        "cand-2585",
+        "cand-2586"
+      ],
+      "sampleLabels": [
+        "cand-2582: Topic from 97:2",
+        "cand-2583: Topic from 97:2",
+        "cand-2584: Topic from 97:2",
+        "cand-2585: Topic from 97:2",
+        "cand-2586: Topic from 97:2"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "105:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2737",
+        "cand-2738",
+        "cand-2739",
+        "cand-2740",
+        "cand-2741"
+      ],
+      "sampleLabels": [
+        "cand-2737: Topic from 105:1",
+        "cand-2738: Topic from 105:1",
+        "cand-2739: Topic from 105:1",
+        "cand-2740: Topic from 105:1",
+        "cand-2741: Topic from 105:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "105:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2742",
+        "cand-2743",
+        "cand-2744",
+        "cand-2745",
+        "cand-2746"
+      ],
+      "sampleLabels": [
+        "cand-2742: Topic from 105:2",
+        "cand-2743: Topic from 105:2",
+        "cand-2744: Topic from 105:2",
+        "cand-2745: Topic from 105:2",
+        "cand-2746: Topic from 105:2"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "107:5",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2787",
+        "cand-2788",
+        "cand-2789",
+        "cand-2790",
+        "cand-2791"
+      ],
+      "sampleLabels": [
+        "cand-2787: Topic from 107:5",
+        "cand-2788: Topic from 107:5",
+        "cand-2789: Topic from 107:5",
+        "cand-2790: Topic from 107:5",
+        "cand-2791: Topic from 107:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "107:6",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2792",
+        "cand-2793",
+        "cand-2794",
+        "cand-2795",
+        "cand-2796"
+      ],
+      "sampleLabels": [
+        "cand-2792: Topic from 107:6",
+        "cand-2793: Topic from 107:6",
+        "cand-2794: Topic from 107:6",
+        "cand-2795: Topic from 107:6",
+        "cand-2796: Topic from 107:6"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "109:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2817",
+        "cand-2818",
+        "cand-2819",
+        "cand-2820",
+        "cand-2821"
+      ],
+      "sampleLabels": [
+        "cand-2817: Topic from 109:1",
+        "cand-2818: Topic from 109:1",
+        "cand-2819: Topic from 109:1",
+        "cand-2820: Topic from 109:1",
+        "cand-2821: Topic from 109:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "109:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2822",
+        "cand-2823",
+        "cand-2824",
+        "cand-2825",
+        "cand-2826"
+      ],
+      "sampleLabels": [
+        "cand-2822: Topic from 109:2",
+        "cand-2823: Topic from 109:2",
+        "cand-2824: Topic from 109:2",
+        "cand-2825: Topic from 109:2",
+        "cand-2826: Topic from 109:2"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "109:4",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2827",
+        "cand-2828",
+        "cand-2829",
+        "cand-2830",
+        "cand-2831"
+      ],
+      "sampleLabels": [
+        "cand-2827: Topic from 109:4",
+        "cand-2828: Topic from 109:4",
+        "cand-2829: Topic from 109:4",
+        "cand-2830: Topic from 109:4",
+        "cand-2831: Topic from 109:4"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "109:5",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2832",
+        "cand-2833",
+        "cand-2834",
+        "cand-2835",
+        "cand-2836"
+      ],
+      "sampleLabels": [
+        "cand-2832: Topic from 109:5",
+        "cand-2833: Topic from 109:5",
+        "cand-2834: Topic from 109:5",
+        "cand-2835: Topic from 109:5",
+        "cand-2836: Topic from 109:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "111:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2857",
+        "cand-2858",
+        "cand-2859",
+        "cand-2860",
+        "cand-2861"
+      ],
+      "sampleLabels": [
+        "cand-2857: Topic from 111:1",
+        "cand-2858: Topic from 111:1",
+        "cand-2859: Topic from 111:1",
+        "cand-2860: Topic from 111:1",
+        "cand-2861: Topic from 111:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "111:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2862",
+        "cand-2863",
+        "cand-2864",
+        "cand-2865",
+        "cand-2866"
+      ],
+      "sampleLabels": [
+        "cand-2862: Topic from 111:2",
+        "cand-2863: Topic from 111:2",
+        "cand-2864: Topic from 111:2",
+        "cand-2865: Topic from 111:2",
+        "cand-2866: Topic from 111:2"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "113:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2897",
+        "cand-2898",
+        "cand-2899",
+        "cand-2900",
+        "cand-2901"
+      ],
+      "sampleLabels": [
+        "cand-2897: Topic from 113:1",
+        "cand-2898: Topic from 113:1",
+        "cand-2899: Topic from 113:1",
+        "cand-2900: Topic from 113:1",
+        "cand-2901: Topic from 113:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "113:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2902",
+        "cand-2903",
+        "cand-2904",
+        "cand-2905",
+        "cand-2906"
+      ],
+      "sampleLabels": [
+        "cand-2902: Topic from 113:2",
+        "cand-2903: Topic from 113:2",
+        "cand-2904: Topic from 113:2",
+        "cand-2905: Topic from 113:2",
+        "cand-2906: Topic from 113:2"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "114:1",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2917",
+        "cand-2918",
+        "cand-2919",
+        "cand-2920",
+        "cand-2921"
+      ],
+      "sampleLabels": [
+        "cand-2917: Topic from 114:1",
+        "cand-2918: Topic from 114:1",
+        "cand-2919: Topic from 114:1",
+        "cand-2920: Topic from 114:1",
+        "cand-2921: Topic from 114:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "114:2",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2922",
+        "cand-2923",
+        "cand-2924",
+        "cand-2925",
+        "cand-2926"
+      ],
+      "sampleLabels": [
+        "cand-2922: Topic from 114:2",
+        "cand-2923: Topic from 114:2",
+        "cand-2924: Topic from 114:2",
+        "cand-2925: Topic from 114:2",
+        "cand-2926: Topic from 114:2"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "114:4",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2927",
+        "cand-2928",
+        "cand-2929",
+        "cand-2930",
+        "cand-2931"
+      ],
+      "sampleLabels": [
+        "cand-2927: Topic from 114:4",
+        "cand-2928: Topic from 114:4",
+        "cand-2929: Topic from 114:4",
+        "cand-2930: Topic from 114:4",
+        "cand-2931: Topic from 114:4"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "114:5",
+      "candidateCount": 5,
+      "candidateIds": [
+        "cand-2932",
+        "cand-2933",
+        "cand-2934",
+        "cand-2935",
+        "cand-2936"
+      ],
+      "sampleLabels": [
+        "cand-2932: Topic from 114:5",
+        "cand-2933: Topic from 114:5",
+        "cand-2934: Topic from 114:5",
+        "cand-2935: Topic from 114:5",
+        "cand-2936: Topic from 114:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "94:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2517",
+        "cand-2518",
+        "cand-2519",
+        "cand-2520"
+      ],
+      "sampleLabels": [
+        "cand-2517: Topic from 94:1",
+        "cand-2518: Topic from 94:1",
+        "cand-2519: Topic from 94:1",
+        "cand-2520: Topic from 94:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "94:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2527",
+        "cand-2528",
+        "cand-2529",
+        "cand-2530"
+      ],
+      "sampleLabels": [
+        "cand-2527: Topic from 94:5",
+        "cand-2528: Topic from 94:5",
+        "cand-2529: Topic from 94:5",
+        "cand-2530: Topic from 94:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "95:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2537",
+        "cand-2538",
+        "cand-2539",
+        "cand-2540"
+      ],
+      "sampleLabels": [
+        "cand-2537: Topic from 95:1",
+        "cand-2538: Topic from 95:1",
+        "cand-2539: Topic from 95:1",
+        "cand-2540: Topic from 95:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "95:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2547",
+        "cand-2548",
+        "cand-2549",
+        "cand-2550"
+      ],
+      "sampleLabels": [
+        "cand-2547: Topic from 95:5",
+        "cand-2548: Topic from 95:5",
+        "cand-2549: Topic from 95:5",
+        "cand-2550: Topic from 95:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "98:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2597",
+        "cand-2598",
+        "cand-2599",
+        "cand-2600"
+      ],
+      "sampleLabels": [
+        "cand-2597: Topic from 98:1",
+        "cand-2598: Topic from 98:1",
+        "cand-2599: Topic from 98:1",
+        "cand-2600: Topic from 98:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "98:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2607",
+        "cand-2608",
+        "cand-2609",
+        "cand-2610"
+      ],
+      "sampleLabels": [
+        "cand-2607: Topic from 98:5",
+        "cand-2608: Topic from 98:5",
+        "cand-2609: Topic from 98:5",
+        "cand-2610: Topic from 98:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "99:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2617",
+        "cand-2618",
+        "cand-2619",
+        "cand-2620"
+      ],
+      "sampleLabels": [
+        "cand-2617: Topic from 99:1",
+        "cand-2618: Topic from 99:1",
+        "cand-2619: Topic from 99:1",
+        "cand-2620: Topic from 99:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "99:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2627",
+        "cand-2628",
+        "cand-2629",
+        "cand-2630"
+      ],
+      "sampleLabels": [
+        "cand-2627: Topic from 99:5",
+        "cand-2628: Topic from 99:5",
+        "cand-2629: Topic from 99:5",
+        "cand-2630: Topic from 99:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "102:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2677",
+        "cand-2678",
+        "cand-2679",
+        "cand-2680"
+      ],
+      "sampleLabels": [
+        "cand-2677: Topic from 102:1",
+        "cand-2678: Topic from 102:1",
+        "cand-2679: Topic from 102:1",
+        "cand-2680: Topic from 102:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "102:5",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2687",
+        "cand-2688",
+        "cand-2689",
+        "cand-2690"
+      ],
+      "sampleLabels": [
+        "cand-2687: Topic from 102:5",
+        "cand-2688: Topic from 102:5",
+        "cand-2689: Topic from 102:5",
+        "cand-2690: Topic from 102:5"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "104:6",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2727",
+        "cand-2728",
+        "cand-2729",
+        "cand-2730"
+      ],
+      "sampleLabels": [
+        "cand-2727: Topic from 104:6",
+        "cand-2728: Topic from 104:6",
+        "cand-2729: Topic from 104:6",
+        "cand-2730: Topic from 104:6"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "107:1",
+      "candidateCount": 4,
+      "candidateIds": [
+        "cand-2777",
+        "cand-2778",
+        "cand-2779",
+        "cand-2780"
+      ],
+      "sampleLabels": [
+        "cand-2777: Topic from 107:1",
+        "cand-2778: Topic from 107:1",
+        "cand-2779: Topic from 107:1",
+        "cand-2780: Topic from 107:1"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "62:7",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1887",
+        "cand-1888",
+        "cand-1889"
+      ],
+      "sampleLabels": [
+        "cand-1887: Topic from 62:7",
+        "cand-1888: Topic from 62:7",
+        "cand-1889: Topic from 62:7"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "62:9",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1892",
+        "cand-1893",
+        "cand-1894"
+      ],
+      "sampleLabels": [
+        "cand-1892: Topic from 62:9",
+        "cand-1893: Topic from 62:9",
+        "cand-1894: Topic from 62:9"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "63:7",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1907",
+        "cand-1908",
+        "cand-1909"
+      ],
+      "sampleLabels": [
+        "cand-1907: Topic from 63:7",
+        "cand-1908: Topic from 63:7",
+        "cand-1909: Topic from 63:7"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "63:9",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-1912",
+        "cand-1913",
+        "cand-1914"
+      ],
+      "sampleLabels": [
+        "cand-1912: Topic from 63:9",
+        "cand-1913: Topic from 63:9",
+        "cand-1914: Topic from 63:9"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "93:7",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-2507",
+        "cand-2508",
+        "cand-2509"
+      ],
+      "sampleLabels": [
+        "cand-2507: Topic from 93:7",
+        "cand-2508: Topic from 93:7",
+        "cand-2509: Topic from 93:7"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "hubAyah": "93:9",
+      "candidateCount": 3,
+      "candidateIds": [
+        "cand-2512",
+        "cand-2513",
+        "cand-2514"
+      ],
+      "sampleLabels": [
+        "cand-2512: Topic from 93:9",
+        "cand-2513: Topic from 93:9",
+        "cand-2514: Topic from 93:9"
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    }
+  ]
+}
