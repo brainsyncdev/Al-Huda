@@ -1,0 +1,304 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T08:00:00.000Z",
+  "sourceExtraction": "ext-005-p12,ext-005-p13,ext-005-p14",
+  "candidates": [
+    {
+      "candidateId": "cand-0257",
+      "label": "Distress-question prohibition: believers forbidden from asking about matters whose disclosure would cause distress; past inquiries pardoned; previous communities asked then disbelieved",
+      "definition": "In 5:101-102: O believers do not ask about things which if made plain would distress you. If you ask during Quran revelation they will be made plain. Allah has pardoned them. A people before you asked such questions then became disbelievers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:101",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَسۡـَٔلُواْ عَنۡ أَشۡيَآءَ إِن تُبۡدَ لَكُمۡ تَسُؤۡكُمۡ وَإِن تَسۡـَٔلُواْ عَنۡهَا حِينَ يُنَزَّلُ ٱلۡقُرۡءَانُ تُبۡدَ لَكُمۡ عَفَا ٱللَّهُ عَنۡهَاۗ وَٱللَّهُ غَفُورٌ حَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La tasaloo AAan ashyaa in tubda lakum tasukum: prohibition tied to emotional harm not knowledge suppression. In tasaloo AAanha heena yunazzalu alquranu tubda lakum: temporal exception during active revelation. AAafa Allahu AAanha: past pardon preventing retroactive guilt. WaAllahu ghafoorun haleemun: divine forbearance paired with forgiveness."
+        },
+        {
+          "key": "5:102",
+          "excerpt": "قَدۡ سَأَلَهَا قَوۡمٞ مِّن قَبۡلِكُمۡ ثُمَّ أَصۡبَحُواْ بِهَا كَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qad saalaha qawmun min qablikum thumma asbahoo biha kafireena: historical precedent showing question-asking can lead to disbelief when answers contradict expectations."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "تحريم أسئلة الإزعاج: المؤمنون مُنهَون عن السؤال عما يسوؤهم إذا بُيِّن؛ عفا الله عما سلف؛ أقوام سابقة سألت ثم كفرت",
+      "notes": "Gap candidate. Establishes epistemic boundary protecting community from premature or harmful knowledge. Temporal qualification (during revelation) shows prohibition is contextual not absolute. Historical caution (5:102) transforms prohibition from paternalism to protective wisdom based on observed community outcomes. Ghafoorun Haleem pairing emphasizes divine patience with human curiosity while maintaining boundaries."
+    },
+    {
+      "candidateId": "cand-0258",
+      "label": "Pre-Islamic animal taboos rejected: bahirah saibah wasilah ham declared non-divine innovations; disbelievers fabricate lies against Allah; most lack reasoning",
+      "definition": "In 5:103: Allah has not appointed bahirah or saibah or wasilah or ham. But those who disbelieve fabricate lies against Allah and most of them do not reason.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:103",
+          "excerpt": "مَا جَعَلَ ٱللَّهُ مِنۢ بَحِيرَةٖ وَلَا سَآئِبَةٖ وَلَا وَصِيلَةٖ وَلَا حَامٖ وَلَٰكِنَّ ٱلَّذِينَ كَفَرُواْ يَفۡتَرُونَ عَلَى ٱللَّهِ ٱلۡكَذِبَۖ وَأَكۡثَرُهُمۡ لَا يَعۡقِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ma jaAAala Allahu min baheeratin wala saibatin wala waseelatin wala hamin: four specific pre-Islamic taboos negated by divine non-appointment. Walakinna allatheena kafaroo yaftaroona AAala Allahi alkathiba: fabrication charge linking custom-innovation to disbelief. Waaktharuhum la yaAAqiloona: reasoning-deficit diagnosis explaining persistence of baseless customs."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "رفض المحرمات الحيوانية الجاهلية: البحيرة والسائبة والوصيلة والحام بدع غير إلهية؛ المفترى على الله كذباً وأكثرهم لا يعقلون",
+      "notes": "Gap candidate. Completes halal-haram legislative framework by explicitly rejecting pre-Islamic customary law. Four-term enumeration (bahirah saibah wasilah ham) demonstrates comprehensive knowledge of Arabian practices. Yaftaroona (fabricate) frames innovation as active deception not innocent tradition. La yaAAqiloona (do not reason) identifies cognitive failure underlying religious innovation. Positioned after question-prohibition suggesting both excessive inquiry and uncritical tradition-following are epistemic errors."
+    },
+    {
+      "candidateId": "cand-0259",
+      "label": "Individual responsibility principle: upon you is yourselves; others' straying cannot harm the guided; return to Allah who informs of all deeds",
+      "definition": "In 5:105: O believers upon you is yourselves. Whoever goes astray will not harm you when you have been guided. To Allah is your return all together and He will inform you of what you used to do.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:105",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ عَلَيۡكُمۡ أَنفُسَكُمۡۖ لَا يَضُرُّكُم مَّن ضَلَّ إِذَا ٱهۡتَدَيۡتُمۡۚ إِلَى ٱللَّهِ مَرۡجِعُكُمۡ جَمِيعٗا فَيُنَبِّئُكُم بِمَا كُنتُمۡ تَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "AAalaykum anfusakum: reflexive pronoun emphasizing self-accountability. La yadurrukum man dalla itha ihtadaytum: conditional immunity from others' error contingent on own guidance. Ila Allahi marjiAAukum jameeAAan: collective return maintaining communal dimension despite individual responsibility. Fayunabbiokum bima kuntum taAAmaloona: comprehensive deed-reporting ensuring nothing escapes divine accounting."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "مبدأ المسؤولية الفردية: عليكم أنفسكم؛ ضلال الآخرين لا يضر المهتدين؛ المرجع إلى الله ينبئ بما كنتم تعملون",
+      "notes": "Gap candidate. Balances communal obligation (amr bil-maruf) with personal accountability preventing despair over others' rejection. Conditional structure (itha ihtadaytum) makes immunity contingent on active guidance-seeking not passive assumption. Collective-return clause (jameeAAan) prevents individualism from becoming isolationism. Positioned after ancestral-following critique (5:104) providing positive alternative to inherited religious identity."
+    },
+    {
+      "candidateId": "cand-0260",
+      "label": "Bequest testimony framework: two just witnesses required; travel accommodation with outsider witnesses; oath reinforcement prohibiting price-exchange and concealment; perjury replacement with counter-oath mechanism",
+      "definition": "In 5:106-108: Testimony among you when death approaches at bequest time: two just men from you or two others if traveling struck by death disaster. Detain after prayer swear by Allah we will not exchange for price even near relative nor conceal Allah's testimony. If found guilty of sin two others stand replacing them swearing our testimony truer not transgressed. That makes more likely true testimony or fear oaths returned. Fear Allah listen; Allah guides not fasiqeen.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:106",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ شَهَٰدَةُ بَيۡنِكُمۡ إِذَا حَضَرَ أَحَدَكُمُ ٱلۡمَوۡتُ حِينَ ٱلۡوَصِيَّةِ ٱثۡنَانِ ذَوَا عَدۡلٖ مِّنكُمۡ أَوۡ ءَاخَرَانِ مِنۡ غَيۡرِكُمۡ إِنۡ أَنتُمۡ ضَرَبۡتُمۡ فِي ٱلۡأَرۡضِ فَأَصَٰبَتۡكُم مُّصِيبَةُ ٱلۡمَوۡتِۚ تَحۡبِسُونَهُمَا مِنۢ بَعۡدِ ٱلصَّلَوٰةِ فَيُقۡسِمَانِ بِٱللَّهِ إِنِ ٱرۡتَبۡتُمۡ لَا نَشۡتَرِي بِهِۦ ثَمَنٗا وَلَوۡ كَانَ ذَا قُرۡبَىٰ وَلَا نَكۡتُمُ شَهَٰدَةَ ٱللَّهِ إِنَّآ إِذٗا لَّمِنَ ٱلۡأٓثِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Shahadatu baynikum itha hadara ahadakumu almawtu heena alwasiyyati: testimony-bequest-death nexus established. Ithnani thawa AAadlin minkum aw akharani min ghayrikum: dual-witness requirement with travel flexibility. Tahbisoonahuma min baAAdi alssalati: post-prayer detention ensuring solemnity. Fayuqsimani biAllahi ini irtabtum: conditional oath triggered by doubt. La nashtaree bihi thamanan walaw kana tha qurba: price-exchange prohibition even for relatives. Wala naktumu shahadata Allahi: concealment prohibition framing testimony as divine trust."
+        },
+        {
+          "key": "5:107",
+          "excerpt": "فَإِنۡ عُثِرَ عَلَىٰٓ أَنَّهُمَا ٱسۡتَحَقَّآ إِثۡمٗا فَـَٔاخَرَانِ يَقُومَانِ مَقَامَهُمَا مِنَ ٱلَّذِينَ ٱسۡتَحَقَّ عَلَيۡهِمُ ٱلۡأَوۡلَيَٰنِ فَيُقۡسِمَانِ بِٱللَّهِ لَشَهَٰدَتُنَآ أَحَقُّ مِن شَهَٰدَتِهِمَا وَمَا ٱعۡتَدَيۡنَآ إِنَّآ إِذٗا لَّمِنَ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fain AAuthira AAala annahuma istahaqqa ithman: perjury discovery mechanism. Faakharani yaqoomani maqamahuma: replacement procedure maintaining witness count. Mina allatheena istahaqqa AAalayhimu alawlayani: priority given to rightful claimants. Lashahadatuna ahaqqu min shahadatihima: comparative truth-claim requiring counter-oath."
+        },
+        {
+          "key": "5:108",
+          "excerpt": "ذَٰلِكَ أَدۡنَىٰٓ أَن يَأۡتُواْ بِٱلشَّهَٰدَةِ عَلَىٰ وَجۡهِهَآ أَوۡ يَخَافُوٓاْ أَن تُرَدَّ أَيۡمَٰنُۢ بَعۡدَ أَيۡمَٰنِهِمۡۗ وَٱتَّقُواْ ٱللَّهَ وَٱسۡمَعُواْۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلۡفَٰسِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Thalika adna an yatoo bialshshahadati AAala wajhiha: mechanism designed to elicit truthful testimony. Aw yakhafoo an turadda aymanun baAAda aymanihim: deterrent effect of potential counter-oaths. Waittaqoo Allaha waismaAAoo: taqwa-listening command as ethical foundation. WaAllahu la yahdee alqawma alfasiqeena: divine guidance withheld from defiantly disobedient."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Detailed legal procedure implementing justice principles in testamentary context"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "إطار شهادة الوصية: شاهدان عدلان مطلوبان؛ تسهيل السفر بشهود من غيركم؛ تعزيز اليمين بتحريم استبدال الثمن والكتمان؛ استبدال الحنث بآلية اليمين المضاد",
+      "notes": "Overlap with justice. Comprehensive legal framework combining procedural safeguards (two witnesses, post-prayer timing) with ethical reinforcement (oath, divine accountability). Travel accommodation shows practical flexibility within strict standards. Counter-oath mechanism creates self-correcting system where fraud risk increases detection probability. Fasiqeen exclusion maintains moral precondition for legal validity. Most detailed testimony legislation in Quran demonstrating legislative precision."
+    },
+    {
+      "candidateId": "cand-0261",
+      "label": "Isa's miracles qualified by bi-idhni: every miracle (clay bird healing raising dead) explicitly performed by divine permission establishing Allah as sole agent",
+      "definition": "In 5:110: When Allah said O Jesus son of Mary remember My favor upon you and your mother when I supported you with Holy Spirit you spoke to people in cradle and maturity I taught you Book wisdom Torah Gospel you created from clay like bird form by My permission breathed into it became bird by My permission healed blind and leper by My permission brought forth dead by My permission.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:110",
+          "excerpt": "إِذۡ قَالَ ٱللَّهُ يَٰعِيسَى ٱبۡنَ مَرۡيَمَ ٱذۡكُرۡ نِعۡمَتِي عَلَيۡكَ وَعَلَىٰ وَٰلِدَتِكَ إِذۡ أَيَّدتُّكَ بِرُوحِ ٱلۡقُدُسِ تُكَلِّمُ ٱلنَّاسَ فِي ٱلۡمَهۡدِ وَكَهۡلٗاۖ وَإِذۡ عَلَّمۡتُكَ ٱلۡكِتَٰبَ وَٱلۡحِكۡمَةَ وَٱلتَّوۡرَىٰةَ وَٱلۡإِنجِيلَۖ وَإِذۡ تَخۡلُقُ مِنَ ٱلطِّينِ كَهَيۡـَٔةِ ٱلطَّيۡرِ بِإِذۡنِي فَتَنفُخُ فِيهَا فَتَكُونُ طَيۡرَۢا بِإِذۡنِيۖ وَتُبۡرِئُ ٱلۡأَكۡمَهَ وَٱلۡأَبۡرَصَ بِإِذۡنِيۖ وَإِذۡ تُخۡرِجُ ٱلۡمَوۡتَىٰ بِإِذۡنِيۖ وَإِذۡ كَفَفۡتُ بَنِيٓ إِسۡرَـٰٓءِيلَ عَنكَ إِذۡ جِئۡتَهُم بِٱلۡبَيِّنَٰتِ فَقَالَ ٱلَّذِينَ كَفَرُواْ مِنۡهُمۡ إِنۡ هَٰذَآ إِلَّا سِحۡرٞ مُّبِينٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ith ayyadtuka biroohi alqudusi: divine support as prerequisite. Tukallimu alnnasa fee almahdi wakahlan: cradle-speech miracle without bi-idhni (inherent divine gift). Waith AAallamtuka alkitaba waalhikmata: knowledge as divine teaching. Waith takhluqu mina altteeni kahayati alttayri biithnee: clay-bird creation qualified by permission. Fatanfukhu feeha fatakoonu tayran biithnee: animation also by permission. Watubrio alakmaha waalabrasa biithnee: healing by permission. Waith tukhriju almawta biithnee: resurrection by permission. Four-fold bi-idhni repetition systematically attributes all miraculous agency to Allah."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Core Quranic miracle enumeration with systematic divine-permission qualification"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "معجزات عيسى مقيدة بإذني: كل معجزة (طائر الطين إبراء الأكمه والأبرص إحياء الموتى) صراحة بإذن الله مؤسساً الله كفاعل وحيد",
+      "notes": "Overlap with isa-story. Bi-idhni repetition (four times) functions as theological safeguard preventing miracle-attribution to Isa independently. Cradle-speech exception (no bi-idhni) may indicate inherent prophetic sign versus acquired miraculous powers. Miracle progression (creation-healing-resurrection) escalates in scope demonstrating comprehensive divine power channeled through prophet. Remember-command (othkur niAAmatee) frames miracles as divine favors not personal achievements."
+    },
+    {
+      "candidateId": "cand-0262",
+      "label": "Disciples' Muslim identity: hawariyyoon explicitly confess belief in Allah and messenger and request witness-status as Muslims establishing early Christian community as submitting believers",
+      "definition": "In 5:111: When I inspired to the disciples believe in Me and My messenger they said we have believed so bear witness that we are Muslims.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:111",
+          "excerpt": "وَإِذۡ أَوۡحَيۡتُ إِلَى ٱلۡحَوَارِيِّـۧنَ أَنۡ ءَامِنُواْ بِي وَبِرَسُولِي قَالُوٓاْ ءَامَنَّا وَٱشۡهَدۡ بِأَنَّنَا مُسۡلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waith awhaytu ila alhawariyyeena an aminoo bee wabirasoolee: divine inspiration directed to disciples specifically. Qaloo amanna waishhad biannana muslimoona: immediate faith confession with explicit Muslim self-identification. Ishhad (bear witness) implies public declaration not private belief. Muslimoona (submitting ones) connects disciples to Abrahamic submission tradition predating Muhammad."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Explicit Quranic designation of Isa's followers as Muslims"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "هوية الحواريين المسلمة: الحواريون يصرحون بالإيمان بالله ورسوله ويطلبون الشهادة كمسلمين مؤسسةً الجماعة المسيحية المبكرة كمؤمنين مستسلمين",
+      "notes": "Overlap with isa-story. Muslim self-designation by disciples collapses temporal distinction between Isa-community and Muhammad-community. Divine inspiration (awhaytu) preceding confession shows faith originates from divine initiative. Witness-request (ishhad) parallels Christian believer-confession scenes (5:83-84) creating thematic continuity. Positioned immediately after miracle-enumeration suggesting miracles served to produce faith-submission not mere wonder."
+    },
+    {
+      "candidateId": "cand-0263",
+      "label": "Ma'idah supplication model: Isa teaches proper prayer etiquette addressing Allah as Rabbana requesting table as eid-sign; divine grant accompanied by unique punishment warning for post-sign disbelief",
+      "definition": "In 5:114-115: Isa said O Allah our Lord send down upon us table from heaven as festival for first and last of us and sign from You provide for us You are best of providers. Allah said I will send it down but whoever disbelieves after from among you I will punish with punishment I have not punished anyone in the worlds.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:114",
+          "excerpt": "قَالَ عِيسَى ٱبۡنُ مَرۡيَمَ ٱللَّهُمَّ رَبَّنَآ أَنزِلۡ عَلَيۡنَا مَآئِدَةٗ مِّنَ ٱلسَّمَآءِ تَكُونُ لَنَا عِيدٗا لِّأَوَّلِنَا وَءَاخِرِنَا وَءَايَةٗ مِّنكَۖ وَٱرۡزُقۡنَا وَأَنتَ خَيۡرُ ٱلرَّـٰزِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qala AAeesa ibnu maryama allahumma rabbana: proper address combining divine name with lordship acknowledgment. Anzil AAalayna maidatan mina alssamai: specific request matching disciple need. Takoonu lana AAeedan liawwalina waakhirina: temporal scope encompassing entire community across generations. Waayatan minka: sign-request subordinating feast to evidentiary purpose. Waorzuqna waanta khayru alrraziqeena: provision-request acknowledging divine supremacy in sustenance."
+        },
+        {
+          "key": "5:115",
+          "excerpt": "قَالَ ٱللَّهُ إِنِّي مُنَزِّلُهَا عَلَيۡكُمۡۖ فَمَن يَكۡفُرۡ بَعۡدُ مِنكُمۡ فَإِنِّيٓ أُعَذِّبُهُۥ عَذَابٗا لَّآ أُعَذِّبُهُۥٓ أَحَدٗا مِّنَ ٱلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qala Allahu innee munazziluha AAalaykum: affirmative divine response. Faman yakfur baAAdu minkum: conditional warning targeting post-sign disbelief specifically. Fainnee oAAaththibuhu AAathaban la oAAaththibuhu ahadan mina alAAalameena: unique punishment exceeding all worldly precedents establishing heightened accountability for direct miracle-witnesses."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Model supplication demonstrating proper prayer structure and etiquette"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "نموذج دعوى المائدة: عيسى يعلم أدب الدعاء مخاطباً الله ربنا طالباً المائدة عيداً وآية؛ المنح الإلهي مصحوب بتحذير عقاب فريد لمن يكفر بعد الآية",
+      "notes": "Overlap with supplication. Isa's prayer models five elements: proper address (Allahumma Rabbana) specific request (maidah) communal scope (first-last) sign-intention (ayah) and provider-acknowledgment (Khayr al-Raziqeen). Eid designation suggests recurring commemoration not one-time event. Unique-punishment clause establishes principle that greater evidence entails greater accountability. Post-sign disbelief specified (baAAdu) distinguishing from pre-evidence skepticism."
+    },
+    {
+      "candidateId": "cand-0264",
+      "label": "Isa's eschatological tawheed testimony: denies commanding worship of self or mother; affirms exclusive message was worship Allah my Lord your Lord; asymmetric knowledge proves creaturely status",
+      "definition": "In 5:116-117: Allah said O Jesus did you say to people take me and my mother as deities besides Allah? He said Exalted are You! Not for me to say what I have no right. If I had said it You would have known. You know what is in myself I do not know what is in Yourself. You are Knower of unseen. I said only what You commanded: worship Allah my Lord and your Lord.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:116",
+          "excerpt": "وَإِذۡ قَالَ ٱللَّهُ يَٰعِيسَى ٱبۡنَ مَرۡيَمَ ءَأَنتَ قُلۡتَ لِلنَّاسِ ٱتَّخِذُونِي وَأُمِّيَ إِلَٰهَيۡنِ مِن دُونِ ٱللَّهِۖ قَالَ سُبۡحَٰنَكَ مَا يَكُونُ لِيٓ أَنۡ أَقُولَ مَا لَيۡسَ لِي بِحَقٍّۚ إِن كُنتُ قُلۡتُهُۥ فَقَدۡ عَلِمۡتَهُۥۚ تَعۡلَمُ مَا فِي نَفۡسِي وَلَآ أَعۡلَمُ مَا فِي نَفۡسِكَۚ إِنَّكَ أَنتَ عَلَّـٰمُ ٱلۡغُيُوبِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Aanta qulta lilnnasi ittakhithoonee waommiya ilahayni min dooni Allahi: divine interrogation specifying exact allegation (self + mother as deities). Qala subhanaka: exaltation-response as immediate denial. Ma yakoonu lee an aqoola ma laysa lee bihaqqin: rights-based denial framing unauthorized speech as impossible not merely untrue. In kuntu qultuhu faqad AAalimtahu: hypothetical concession proving divine omniscience would have detected any such claim. TaAAlamu ma fee nafsee wala aAAlamu ma fee nafsika: asymmetric knowledge establishing ontological hierarchy. Innaka anta AAallamu alghuyoobi: unseen-knowledge attribution confirming divine exclusivity."
+        },
+        {
+          "key": "5:117",
+          "excerpt": "مَا قُلۡتُ لَهُمۡ إِلَّا مَآ أَمَرۡتَنِي بِهِۦٓ أَنِ ٱعۡبُدُواْ ٱللَّهَ رَبِّي وَرَبَّكُمۡۚ وَكُنتُ عَلَيۡهِمۡ شَهِيدٗا مَّا دُمۡتُ فِيهِمۡۖ فَلَمَّا تَوَفَّيۡتَنِي كُنتَ أَنتَ ٱلرَّقِيبَ عَلَيۡهِمۡۚ وَأَنتَ عَلَىٰ كُلِّ شَيۡءٖ شَهِيدٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ma qultu lahum illa ma amartanee bihi: message limited to divine command excluding personal initiative. Ani oAAbudoo Allaha rabbee warabbakum: tawheed formula identical to 5:72 creating cross-passage consistency. Wakuntu AAalayhim shaheedan ma dumtu feehim: temporary witness role bounded by earthly presence. Falamma tawaffaytanee kunta anta alrraqeeba AAalayhim: divine Watcher succession after prophetic departure. Waanta AAala kulli shayin shaheedun: universal witness scope transcending temporal limitation."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Definitive eschatological refutation of Isa-divinization through Isa's own testimony"
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Pure tawheed articulation through prophetic self-testimony"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "شهادة عيسى التوحيدية الأخروية: ينفي الأمر بعبادة نفسه أو أمه؛ يؤكد أن رسالته الوحيدة كانت اعبدوا الله ربي وربكم؛ المعرفة غير المتماثلة تثبت مكانته المخلوقة",
+      "notes": "Overlap with isa-story and tawheed. Three-part denial structure (subhanaka + ma yakoonu lee + in kuntu qultuhu) provides comprehensive refutation template applicable to any unauthorized religious claim. Asymmetric-knowledge argument operates at ontological level: creator knows creation fully but not vice versa. Rabbee warabbakum formula (my Lord your Lord) eliminates hierarchical distinction between prophet and community. Raqeeb-shaheed transition clarifies prophetic temporality preventing post-departure authority inflation."
+    },
+    {
+      "candidateId": "cand-0265",
+      "label": "Truthfulness day: sidq benefits sadiqeen on Judgment Day; reward is eternal gardens with rivers; mutual divine-human pleasure (radiya Allahu AAanhum waradoo AAanhu) as peak salvation state",
+      "definition": "In 5:119: Allah said this is the Day when truthfulness benefits the truthful. For them are gardens beneath which rivers flow abiding forever. Allah is pleased with them and they with Him. That is the great attainment.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:119",
+          "excerpt": "قَالَ ٱللَّهُ هَٰذَا يَوۡمُ يَنفَعُ ٱلصَّـٰدِقِينَ صِدۡقُهُمۡۚ لَهُمۡ جَنَّـٰتٞ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدٗاۖ رَّضِيَ ٱللَّهُ عَنۡهُمۡ وَرَضُواْ عَنۡهُۚ ذَٰلِكَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Hatha yawmu yanfaAAu alssadiqeena sidquhum: truthfulness (sidq) as salvific currency on Judgment Day. Lahum jannatun tajree min tahtiha alanharu: garden-river imagery as standard Paradise description. Khalideena feeha abadan: double-eternity emphasis (khalideena + abadan). Radiya Allahu AAanhum waradoo AAanhu: mutual pleasure formula representing reciprocal satisfaction beyond transactional reward. Thalika alfawzu alAAatheemu: great-attainment designation marking this as ultimate success."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Judgment Day reward specification emphasizing truthfulness as qualifying virtue"
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Paradise description with mutual-pleasure dimension"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "يوم الصدق: الصدق ينفع الصادقين يوم القيامة؛ الجزاء جنات تجري من تحتها الأنهار خالدين؛ الرضا المتبادل بين الله وعباده كأعلى حالة خلاص",
+      "notes": "Overlap with day-of-judgment and the-hereafter. Sidq (truthfulness) as qualifying virtue connects to Isa's preceding testimony establishing thematic coherence. Mutual-pleasure formula transcends master-servant transactional paradigm suggesting relational fulfillment as Paradise essence. Double-eternity emphasis prevents any temporal limitation interpretation. Fawz azim (great attainment) echoes surah-opening success themes completing literary structure. Positioned after Isa's servant-status acknowledgment showing that servanthood leads to mutual pleasure not diminishment."
+    },
+    {
+      "candidateId": "cand-0266",
+      "label": "Absolute divine dominion: surah closes declaring Allah's ownership of heavens earth and all within; He is over all things Capable (Qadeer) as final theological statement",
+      "definition": "In 5:120: To Allah belongs dominion of the heavens and the earth and whatever is within them. And He is over all things Capable.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:120",
+          "excerpt": "لِلَّهِ مُلۡكُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَمَا فِيهِنَّۚ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرُۢ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Lillahi mulku alssamawati waalardi wama feehinna: comprehensive dominion claim encompassing all creation. Wahuwa AAala kulli shayin qadeerun: capability declaration as surah-final statement affirming divine omnipotence. Position as closing verse gives it structural weight as theological summary of entire surah."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Closing declaration of absolute divine dominion and capability"
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Tawheed affirmation through exclusive dominion-capability declaration"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "السيادة الإلهية المطلقة: السورة تختتم بإعلان ملك الله للسماوات والأرض وما فيهن؛ وهو على كل شيء قدير كبيان لاهوتي ختامي",
+      "notes": "Overlap with divine-power and tawheed. Surah-closure position gives verse programmatic significance summarizing all preceding legislation narrative and theology under divine sovereignty. Muluk (dominion) encompasses ownership authority and governance. Qadeer (Capable) as final attribute affirms nothing lies beyond divine power including judgment mercy and creation. Structural parallel with surah-opening covenant themes completing ring composition. Functions as theological anchor preventing any preceding content from being read independently of divine sovereignty."
+    }
+  ]
+}
