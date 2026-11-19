@@ -1,0 +1,286 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T08:00:00.000Z",
+  "sourceExtraction": "ext-005-p5,ext-005-p6,ext-005-p7,ext-005-p8",
+  "candidates": [
+    {
+      "candidateId": "cand-0237",
+      "label": "Theft penalty and repentance: hand amputation as divine deterrent paired with repentance acceptance for reforming offenders",
+      "definition": "In 5:38-39: The thief male and female cut off their hands as recompense for what they earned as deterrent from Allah; Allah Exalted Wise. But whoever repents after wrongdoing and reforms indeed Allah turns to him; Allah Forgiving Merciful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:38",
+          "excerpt": "وَٱلسَّارِقُ وَٱلسَّارِقَةُ فَٱقۡطَعُوٓاْ أَيۡدِيَهُمَا جَزَآءَۢ بِمَا كَسَبَا نَكَٰلٗا مِّنَ ٱللَّهِۗ وَٱللَّهُ عَزِيزٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waalsariqu waalssariqatu faiqtaAAoo aydiyahuma jazaan bima kasaba nakalan mina Allahi: gender-inclusive penalty specified. Nakalan mina Allahi frames punishment as divine exemplar not merely social utility. AAazeezun Hakeem pairs might with wisdom justifying severity."
+        },
+        {
+          "key": "5:39",
+          "excerpt": "فَمَن تَابَ مِنۢ بَعۡدِ ظُلۡمِهِۦ وَأَصۡلَحَ فَإِنَّ ٱللَّهَ يَتُوبُ عَلَيۡهِۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faman taba min baAAdi thulmihi waaslaha fainna Allaha yatoobu AAalayhi: repentance condition includes both cessation (taba) and positive reform (aslaha). Ghafoorun Raheem assures divine response."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hudud-punishments",
+          "layer": "scholarly",
+          "relationship": "narrower",
+          "note": "Theft hadd as specific category within hudud framework"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "عقوبة السرقة والتوبة: قطع اليد ردعاً إلهياً مقترناً بقبول توبة المصلحين",
+      "notes": "Overlap with hudud-punishments. Gender symmetry (sariq/sariqah) ensures equal application. Nakal concept emphasizes deterrent function over retributive justice alone. Repentance clause prevents permanent stigmatization linking penal law to mercy theology. Positioned immediately after hirabah (5:33-34) creating graduated penal sequence."
+    },
+    {
+      "candidateId": "cand-0238",
+      "label": "Divine sovereignty over punishment and forgiveness: Allah exclusively determines whom to punish and forgive grounded in universal dominion and capability",
+      "definition": "In 5:40: Do you not know that to Allah belongs dominion of heavens and earth? He punishes whom He wills and forgives whom He wills. And Allah is over all things Capable.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:40",
+          "excerpt": "أَلَمۡ تَعۡلَمۡ أَنَّ ٱللَّهَ لَهُۥ مُلۡكُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ يُعَذِّبُ مَن يَشَآءُ وَيَغۡفِرُ لِمَن يَشَآءُۗ وَٱللَّهُ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Alam taAAlam anna Allaha lahu mulku alssamawati waalardi: rhetorical question asserting known truth. YuAAaththibu man yashao wayaghfiru liman yashao: symmetric formulation placing punishment and forgiveness under identical divine prerogative. AAala kulli shayin qadeerun: comprehensive capability grounds both actions."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "السيادة الإلهية في العقاب والمغفرة: الله وحده يقرر من يعاقب ومن يغفر استناداً إلى ملكه وقدرته الشاملة",
+      "notes": "Gap candidate. Establishes theological foundation for all preceding penal legislation. Prevents both despair (forgiveness always possible) and presumption (punishment always possible). Dominion-capability pairing provides ontological basis for legislative authority. Rhetorical question format invites acknowledgment rather than argument."
+    },
+    {
+      "candidateId": "cand-0239",
+      "label": "Judging by divine revelation: three-tiered condemnation equating failure to judge by Allah's revelation with disbelief wrongdoing and defiant disobedience",
+      "definition": "In 5:44-47: Whoever does not judge by what Allah revealed those are disbelievers (5:44). Whoever does not judge by what Allah revealed those are wrongdoers (5:45). Whoever does not judge by what Allah revealed those are defiantly disobedient (5:47). Applied respectively to Torah judges retribution law and Gospel judges.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:44",
+          "excerpt": "إِنَّآ أَنزَلۡنَا ٱلتَّوۡرَىٰةَ فِيهَا هُدٗى وَنُورٞۚ يَحۡكُمُ بِهَا ٱلنَّبِيُّونَ ٱلَّذِينَ أَسۡلَمُواْ لِلَّذِينَ هَادُواْ وَٱلرَّبَّـٰنِيُّونَ وَٱلۡأَحۡبَارُ بِمَا ٱسۡتُحۡفِظُواْ مِن كِتَٰبِ ٱللَّهِ وَكَانُواْ عَلَيۡهِ شُهَدَآءَۚ فَلَا تَخۡشَوُاْ ٱلنَّاسَ وَٱخۡشَوۡنِ وَلَا تَشۡتَرُواْ بِـَٔايَٰتِي ثَمَنٗا قَلِيلٗاۚ وَمَن لَّمۡ يَحۡكُم بِمَآ أَنزَلَ ٱللَّهُ فَأُوْلَـٰٓئِكَ هُمُ ٱلۡكَٰفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waman lam yahkum bima anzala Allahu faolaika humu alkafiroona: first tier addressing Torah context. La takhshawoo alnnasa waikhshawni: fear displacement as root cause."
+        },
+        {
+          "key": "5:45",
+          "excerpt": "وَكَتَبۡنَا عَلَيۡهِمۡ فِيهَآ أَنَّ ٱلنَّفۡسَ بِٱلنَّفۡسِ وَٱلۡعَيۡنَ بِٱلۡعَيۡنِ وَٱلۡأَنفَ بِٱلۡأَنفِ وَٱلۡأُذُنَ بِٱلۡأُذُنِ وَٱلسِّنَّ بِٱلسِّنِّ وَٱلۡجُرُوحَ قِصَاصٞۚ فَمَن تَصَدَّقَ بِهِۦ فَهُوَ كَفَّارَةٞ لَّهُۥۚ وَمَن لَّمۡ يَحۡكُم بِمَآ أَنزَلَ ٱللَّهُ فَأُوْلَـٰٓئِكَ هُمُ ٱلظَّـٰلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waman lam yahkum bima anzala Allahu faolaika humu alththalimoona: second tier in retribution context. Thulm implies rights violation beyond mere disbelief."
+        },
+        {
+          "key": "5:47",
+          "excerpt": "وَلۡيَحۡكُمۡ أَهۡلُ ٱلۡإِنجِيلِ بِمَآ أَنزَلَ ٱللَّهُ فِيهِۚ وَمَن لَّمۡ يَحۡكُم بِمَآ أَنزَلَ ٱللَّهُ فَأُوْلَـٰٓئِكَ هُمُ ٱلۡفَٰسِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waman lam yahkum bima anzala Allahu faolaika humu alfasiqoona: third tier addressing Gospel community. Fisq implies willful deviation from known truth."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Primary textual basis for divine legislation as justice foundation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "الحكم بما أنزل الله: إدانة ثلاثية الدرجات تجعل عدم الحكم بوحي الله كفراً وظلماً وفسوقاً",
+      "notes": "Overlap with divine-law. Triple repetition across three scriptural communities universalizes principle beyond Islam. Graduated labels suggest contextual nuance rather than identical condemnation. Each instance follows specific legislative content showing application not abstraction. Scholarly debate centers on whether labels indicate major kufr or lesser degrees."
+    },
+    {
+      "candidateId": "cand-0240",
+      "label": "Legal pluralism as divine design: distinct shir'ah and minhaj for each community serving as test; competitive goodness replacing uniformity",
+      "definition": "In 5:48: To each of you We prescribed a law and method. Had Allah willed He would have made you one nation but to test you in what He gave you. So race to good deeds. To Allah is your return all together and He will inform you about what you differed.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:48",
+          "excerpt": "وَأَنزَلۡنَآ إِلَيۡكَ ٱلۡكِتَٰبَ بِٱلۡحَقِّ مُصَدِّقٗا لِّمَا بَيۡنَ يَدَيۡهِ مِنَ ٱلۡكِتَٰبِ وَمُهَيۡمِنًا عَلَيۡهِۖ فَٱحۡكُم بَيۡنَهُم بِمَآ أَنزَلَ ٱللَّهُۖ وَلَا تَتَّبِعۡ أَهۡوَآءَهُمۡ عَمَّا جَآءَكَ مِنَ ٱلۡحَقِّۚ لِكُلّٖ جَعَلۡنَا مِنكُمۡ شِرۡعَةٗ وَمِنۡهَاجٗاۚ وَلَوۡ شَآءَ ٱللَّهُ لَجَعَلَكُمۡ أُمَّةٗ وَٰحِدَةٗ وَلَٰكِن لِّيَبۡلُوَكُمۡ فِي مَآ ءَاتَىٰكُمۡۖ فَٱسۡتَبِقُواْ ٱلۡخَيۡرَٰتِۚ إِلَى ٱللَّهِ مَرۡجِعُكُمۡ جَمِيعٗا فَيُنَبِّئُكُم بِمَا كُنتُمۡ فِيهِ تَخۡتَلِفُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Likullin jaAAalna minkum shirAAatan waminhajan: dual terminology suggests both legal code and broader way. Walaw shaa Allahu lajaAAalakum ommatan wahidatan: counterfactual affirms intentional diversity. Liyabluwakum fee ma atakum: test framing gives diversity purpose. Faistabiqoo alkhayrati: positive competition replaces conflict."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "التعددية القانونية كتصميم إلهي: شريعة ومنهاج لكل أمة كابتلاء؛ التنافس في الخيرات بدل التوحيد",
+      "notes": "Gap candidate. Most explicit Quranic articulation of normative legal pluralism. Shir'ah-minhaj distinction allows both shared principles and varied implementations. Test framework transforms difference from problem to opportunity. Istibaq (racing) metaphor channels competitive energy toward constructive ends. Eschatological resolution defers final adjudication to Allah."
+    },
+    {
+      "candidateId": "cand-0241",
+      "label": "Rejection of pre-Islamic judgment: jahiliyyah standards explicitly inferior to divine judgment for people of certainty",
+      "definition": "In 5:50: Is it the judgment of ignorance they desire? Who is better than Allah in judgment for a people who are certain?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:50",
+          "excerpt": "أَفَحُكۡمَ ٱلۡجَٰهِلِيَّةِ يَبۡغُونَۚ وَمَنۡ أَحۡسَنُ مِنَ ٱللَّهِ حُكۡمٗا لِّقَوۡمٖ يُوقِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Afahukma aljahiliyyati yabghoona: rhetorical question framing jahiliyyah judgment as absurd desire. Waman ahsanu mina Allahu hukman: comparative superlative excludes alternatives. Liqawmin yooqinoona: certainty as prerequisite for recognizing divine judgment superiority."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-fundamentals",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jahiliyyah judgment rejection affirms divine legislative tawheed"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "رفض معايير الجاهلية: أحكام الجاهلية أدنى صراحة من حكم الله لأهل اليقين",
+      "notes": "Overlap with jahiliyyah. Positions divine revelation as sole legitimate legal epistemology. Yooqinoona links legal recognition to spiritual certainty suggesting cognitive-affective integration. Rhetorical structure expects negative answer making affirmation self-evident. Contrasts with preceding pluralism (5:48) showing tolerance of inter-scriptural diversity but not extra-scriptural standards."
+    },
+    {
+      "candidateId": "cand-0242",
+      "label": "Walayah theology: exclusive loyalty to Allah Messenger and believing community; alliance with opponents constitutes identity transfer",
+      "definition": "In 5:51-56: O believers do not take Jews and Christians as allies; they are allies of one another; whoever takes them as ally is of them. Your ally is only Allah His Messenger and those who believe who establish prayer give zakah while bowing. Whoever takes Allah Messenger and believers as allies — party of Allah are victorious.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:51",
+          "excerpt": "۞يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَتَّخِذُواْ ٱلۡيَهُودَ وَٱلنَّصَٰرَىٰٓ أَوۡلِيَآءَۘ بَعۡضُهُمۡ أَوۡلِيَآءُ بَعۡضٖۚ وَمَن يَتَوَلَّهُم مِّنكُمۡ فَإِنَّهُۥ مِنۡهُمۡۗ إِنَّ ٱللَّهَ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La tattakhithoo alyahooda waalnnasara awliyaa: explicit prohibition naming specific groups. BaAAduhum awliyao baAAdin: mutual solidarity of excluded groups noted. Fainnahu minhum: identity absorption warning."
+        },
+        {
+          "key": "5:55",
+          "excerpt": "إِنَّمَا وَلِيُّكُمُ ٱللَّهُ وَرَسُولُهُۥ وَٱلَّذِينَ ءَامَنُواْ ٱلَّذِينَ يُقِيمُونَ ٱلصَّلَوٰةَ وَيُؤۡتُونَ ٱلزَّكَوٰةَ وَهُمۡ رَٰكِعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama waliyyukumu Allahu warasooluhu waallatheena amanoo: exclusive positive definition. Allatheena yuqeemoona alssalata wayutoona alzzakata wahum rakiAAoona: behavioral markers of true allies."
+        },
+        {
+          "key": "5:56",
+          "excerpt": "وَمَن يَتَوَلَّ ٱللَّهَ وَرَسُولَهُۥ وَٱلَّذِينَ ءَامَنُواْ فَإِنَّ حِزۡبَ ٱللَّهِ هُمُ ٱلۡغَٰلِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fainna hizba Allahi humu alghaliboona: victory promise tied to correct walayah."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Walayah theology defines communal loyalty boundaries"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "لاهوت الولاء: الولاء الحصري لله والرسول والمؤمنين؛ التحالف مع الخصوم يعني انتقال الهوية",
+      "notes": "Overlap with walayah. Identity-transfer mechanism (minhum) shows alliance as constitutive not merely strategic. Prayer-zakah-bowing triad defines believer-allies through observable practice. Hizbullah concept collectivizes individual loyalty into victorious community. Prohibition scope debated: political-military alliance versus all friendly relations."
+    },
+    {
+      "candidateId": "cand-0243",
+      "label": "Apostasy replacement: divine guarantee to replace defectors with people characterized by mutual love humility toward believers and firmness against disbelievers",
+      "definition": "In 5:54: O believers whoever turns back from his religion Allah will bring a people He loves and who love Him humble toward believers firm against disbelievers striving in Allah's way not fearing blame of a critic. That is Allah's favor He gives to whom He wills; Allah All-Encompassing Knowing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:54",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ مَن يَرۡتَدَّ مِنكُمۡ عَن دِينِهِۦ فَسَوۡفَ يَأۡتِي ٱللَّهُ بِقَوۡمٖ يُحِبُّهُمۡ وَيُحِبُّونَهُۥٓ أَذِلَّةٍ عَلَى ٱلۡمُؤۡمِنِينَ أَعِزَّةٍ عَلَى ٱلۡكَٰفِرِينَ يُجَٰهِدُونَ فِي سَبِيلِ ٱللَّهِ وَلَا يَخَافُونَ لَوۡمَةَ لَآئِمٖۚ ذَٰلِكَ فَضۡلُ ٱللَّهِ يُؤۡتِيهِ مَن يَشَآءُۚ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Man yartadda minkum AAan deenihi: apostasy acknowledged as possibility. Fasawfa yatee Allahu biqawmin: divine initiative in replacement. Yuhibbuhum wayuhibboonahu: reciprocal love as defining characteristic. Athillatin AAala almumineena aAAizzatin AAala alkafireena: contrasting postures toward in-group and out-group. Yujahidoona fee sabeeli Allahi wala yakhafoona lawmata laimin: activism and courage as marks."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "استبدال المرتدين: ضمان إلهي بإبدال المنشقين بقوم يتبادلون المحبة مع المؤمنين ويتواضعون لهم ويعزون على الكافرين",
+      "notes": "Gap candidate. Affirms divine preservation of faithful community independent of individual fidelity. Mutual love (yuhibbuhum wayuhibboonahu) unprecedented in Quranic community descriptions. Dual posture (humble-firm) balances internal compassion with external resolve. Lawmah laim immunity suggests inevitable criticism of principled stands. Fadl attribution prevents merit-based claims to replacement status."
+    },
+    {
+      "candidateId": "cand-0244",
+      "label": "Balligh imperative: absolute obligation to convey entire revelation with failure equating to non-conveyance; divine protection guaranteed against human opposition",
+      "definition": "In 5:67: O Messenger convey what has been revealed to you from your Lord. If you do not then you have not conveyed His message. And Allah will protect you from the people. Indeed Allah does not guide the disbelieving people.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:67",
+          "excerpt": "۞يَـٰٓأَيُّهَا ٱلرَّسُولُ بَلِّغۡ مَآ أُنزِلَ إِلَيۡكَ مِن رَّبِّكَۖ وَإِن لَّمۡ تَفۡعَلۡ فَمَا بَلَّغۡتَ رِسَالَتَهُۥۚ وَٱللَّهُ يَعۡصِمُكَ مِنَ ٱلنَّاسِۗ إِنَّ ٱللَّهَ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Balligh ma onzila ilayka min rabbika: imperative with comprehensive object (ma). Wain lam tafAAal fama ballaghta risalatahu: conditional negation makes partial conveyance equivalent to total failure. WaAllahu yaAAsimuka mina alnnasi: protection promise enabling fearless proclamation. La yahdee alqawma alkafireena: divine guidance limitation explains resistance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "muhammad-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Most emphatic single-verse statement of prophetic conveyance obligation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "أمر التبليغ: وجوب مطلق لإبلاغ الوحي كاملاً وعدم الفعل يعني عدم التبليغ؛ الحماية الإلهية مضمونة",
+      "notes": "Overlap with prophetic-mission. Equivalence formula (lam taf'al = ma ballaghta) eliminates selective preaching option. Ismah guarantee addresses personal safety concerns that might inhibit full disclosure. Historical context suggests specific occasion but wording universalizes principle. Disbeliever-guidance limitation manages prophetic expectations regarding reception."
+    },
+    {
+      "candidateId": "cand-0245",
+      "label": "Universal salvation criterion: believers Jews Sabeans and Christians who believe in Allah and Last Day and do righteous deeds assured freedom from fear and grief",
+      "definition": "In 5:69: Indeed those who believed and those who were Jews and Sabeans and Christians — whoever believed in Allah and the Last Day and did righteousness — no fear upon them nor do they grieve.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:69",
+          "excerpt": "إِنَّ ٱلَّذِينَ ءَامَنُواْ وَٱلَّذِينَ هَادُواْ وَٱلصَّـٰبِـُٔونَ وَٱلنَّصَٰرَىٰ مَنۡ ءَامَنَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَعَمِلَ صَٰلِحٗا فَلَا خَوۡفٌ عَلَيۡهِمۡ وَلَا هُمۡ يَحۡزَنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Inna allatheena amanoo waallatheena hadoo waalssabioona waalnnasara: four communities enumerated inclusively. Man amana biAllahi waalyawmi alakhiri waAAamila salihan: three conditions (Allah-belief Last-Day-belief righteous-action) transcend communal labels. Fala khawfun AAalayhim wala hum yahzanoona: dual assurance mirroring 2:62 formula."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Universal salvation criterion extends covenant framework beyond single community"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "معيار الخلاص الشامل: المؤمنون واليهود والصابئون والنصارى الذين آمنوا بالله واليوم الآخر وعملوا صالحاً لا خوف عليهم ولا يحزنون",
+      "notes": "Overlap with salvation-pluralism. Sabians included alongside Abrahamic communities expanding scope. Triple criterion (faith-eschatology-action) prevents nominal affiliation sufficiency. Identical reassurance formula across multiple Quranic instances suggests stable doctrine. Tension with exclusivist readings resolved variously by scholars through abrogation contextualization or qualification theories."
+    },
+    {
+      "candidateId": "cand-0246",
+      "label": "Religious leadership accountability: rabbis and scholars condemned for failing to forbid sinful speech and illicit consumption among their communities",
+      "definition": "In 5:63: Why do the rabbis and religious scholars not forbid them from saying what is sinful and devouring what is unlawful? How wretched is what they have been practicing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "5:63",
+          "excerpt": "لَوۡلَا يَنۡهَىٰهُمُ ٱلرَّبَّـٰنِيُّونَ وَٱلۡأَحۡبَارُ عَن قَوۡلِهِمُ ٱلۡإِثۡمَ وَأَكۡلِهِمُ ٱلسُّحۡتَۚ لَبِئۡسَ مَا كَانُواْ يَصۡنَعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Lawla yanhahumu alrrabbaniyyoona waalahbaru AAan qawlihimu alithma waaklihimu alssuhta: rhetorical question indicting scholarly silence. Labisa ma kanoo yasnaAAoona: double condemnation of both action and fabrication."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Religious leadership accountability as moral enforcement duty"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T08:00:00.000Z",
+      "urduLabel": "مسؤولية القيادة الدينية: إدانة الربانيين والأحبار لعدم نهيهم عن قول الإثم وأكل السحت",
+      "notes": "Overlap with religious-authority. Establishes that religious knowledge carries active moral enforcement obligation not merely personal piety. Silence equated with complicity through rhetorical indictment. Suht consumption linked to verbal sin showing comprehensive corruption. Fabraication (yasnaAAoona) suggests active production of false norms not merely passive tolerance."
+    }
+  ]
+}
