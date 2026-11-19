@@ -1,0 +1,520 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T10:00:00.000Z",
+  "sourceExtraction": "ext-008-p1,ext-008-p2,ext-008-p3",
+  "candidates": [
+    {
+      "candidateId": "cand-0377",
+      "label": "True believer definition: hearts tremble at Allah mention; verses increase faith; reliance on Lord; establish prayer; spend from provision; these are believers truly with degrees forgiveness noble provision",
+      "definition": "In 8:2-4: The believers are only those whose hearts tremble when Allah is mentioned and when His verses are recited it increases them in faith and upon their Lord they rely. Those who establish prayer and from what We provided them they spend. Those are the believers truly for them are degrees with their Lord and forgiveness and noble provision.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:2",
+          "excerpt": "إِنَّمَا ٱلۡمُؤۡمِنُونَ ٱلَّذِينَ إِذَا ذُكِرَ ٱللَّهُ وَجِلَتۡ قُلُوبُهُمۡ وَإِذَا تُلِيَتۡ عَلَيۡهِمۡ ءَايَٰتُهُۥ زَادَتۡهُمۡ إِيمَٰنٗا وَعَلَىٰ رَبِّهِمۡ يَتَوَكَّلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama almuminoona allatheena itha thukira Allahu wajilat quloobuhum: heart-trembling as primary authenticating marker. Waitha tuliyat AAalayhim ayatuhu zadathum eemanan: faith as dynamic quantity responsive to revelation. WaAAala rabbihim yatawakkaloona: tawakkul as structural dependence."
+        },
+        {
+          "key": "8:3",
+          "excerpt": "ٱلَّذِينَ يُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Allatheena yuqeemoona alssalata: prayer-establishment as external practice. Wamimma razaqnahum yunfiqoona: spending as material expression of faith."
+        },
+        {
+          "key": "8:4",
+          "excerpt": "أُوْلَـٰٓئِكَ هُمُ ٱلۡمُؤۡمِنُونَ حَقّٗاۚ لَّهُمۡ دَرَجَٰتٌ عِندَ رَبِّهِمۡ وَمَغۡفِرَةٞ وَرِزۡقٞ كَرِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Olaika humu almuminoona haqqan: emphatic confirmation of true-believer status. Lahum darajatun: hierarchical reward acknowledging varying degrees. Wamaghfiratun warizqun kareemun: dual reward combining pardon with dignified sustenance."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تعريف المؤمن الحقيقي: قلوبهم ترتعد عند ذكر الله؛ آياته تزيد إيماناً؛ يتوكلون على ربهم؛ يقيمون الصلاة؛ ينفقون مما رزقوا؛ أولئك هم المؤمنون حقاً لهم درجات ومغفرة ورزق كريم",
+      "notes": "Gap candidate. Four-component definition linking affective (heart-trembling) cognitive (faith-increase) relational (tawakkul) and behavioral (prayer-spending) dimensions. Haqqan (truly) distinguishes nominal from authentic belief. Darajat implies merit-based differentiation within Paradise challenging egalitarian assumptions. Refined across multiple Quranic contexts but this formulation uniquely combines all four elements."
+    },
+    {
+      "candidateId": "cand-0378",
+      "label": "Divine agency in combat: you did not kill them Allah killed them; you threw not when threw Allah threw; good test for believers; SameeAA Aleem",
+      "definition": "In 8:17: You did not kill them but Allah killed them. You threw not when you threw but Allah threw that He might test the believers with a good test. Indeed Allah is Hearing Knowing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:17",
+          "excerpt": "فَلَمۡ تَقۡتُلُوهُمۡ وَلَٰكِنَّ ٱللَّهَ قَتَلَهُمۡۚ وَمَا رَمَيۡتَ إِذۡ رَمَيۡتَ وَلَٰكِنَّ ٱللَّهَ رَمَىٰ وَلِيُبۡلِيَ ٱلۡمُؤۡمِنِينَ مِنۡهُ بَلَآءً حَسَنًاۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Falam taqtuloohum walakinna Allaha qatalahum: explicit negation of human lethal agency. Wama ramayta ith ramayta walakinna Allaha rama: parallel negation of prophetic projectile-agency. Waliyubliya almumineena minhu balaan hasanan: combat reframed as divine testing not human achievement. Inna Allaha sameeAAun AAaleemun: divine awareness encompassing both human effort and ultimate causation."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Definitive statement of divine causal primacy in warfare"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "الوكالة الإلهية في القتال: لم تقتلوهم بل الله قتلهم؛ ما رميت إذ رميت ولكن الله رمى؛ ابتلاء حسن للمؤمنين؛ سميع عليم",
+      "notes": "Overlap with divine-power. Double-negation structure (lam taqtuloo + ma ramayta) systematically strips human actors of independent causal efficacy. Balaan hasanan reframes violence as pedagogical instrument. Positioned after angel-reinforcement (8:9-12) completing attribution chain from visible (angels) to invisible (divine killing). Prevents military triumphalism by grounding victory in divine will not human prowess."
+    },
+    {
+      "candidateId": "cand-0379",
+      "label": "Fitnah warning: trial will not exclusively strike wrongdoers; collective responsibility principle; severe penalty reminder",
+      "definition": "In 8:25: Fear a trial which will not strike those who have wronged among you exclusively and know that Allah is severe in penalty.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:25",
+          "excerpt": "وَٱتَّقُواْ فِتۡنَةٗ لَّا تُصِيبَنَّ ٱلَّذِينَ ظَلَمُواْ مِنكُمۡ خَآصَّةٗۖ وَٱعۡلَمُوٓاْ أَنَّ ٱللَّهَ شَدِيدُ ٱلۡعِقَابِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waittaqoo fitnatan la tuseebanna allatheena thalamoo minkum khassatan: khassatan (exclusively) negates targeted-punishment assumption implying communal contagion. WaiAAlamoo anna Allaha shadeedu alAAiqabi: severity-reminder motivating preventive vigilance."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تحذير الفتنة: المحنة لا تصيب الظالمين خاصة؛ مبدأ المسؤولية الجماعية؛ تذكير بالعقاب الشديد",
+      "notes": "Gap candidate. Establishes social-contagion model of divine punishment where communal tolerance of wrongdoing expands liability beyond perpetrators. Khassatan functions as critical qualifier preventing individualistic reading. Positioned between response-command (8:24) and gratitude-reminder (8:26) suggesting fitnah-prevention requires both active obedience and historical memory. Foundation for later enjoining-good-forbidding-evil doctrines."
+    },
+    {
+      "candidateId": "cand-0380",
+      "label": "Furqan through taqwa: fearing Allah produces criterion removing misdeeds granting forgiveness; Allah possessor of great bounty",
+      "definition": "In 8:29: O believers if you fear Allah He will grant you a criterion and remove from you your misdeeds and forgive you. And Allah is possessor of great bounty.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:29",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ إِن تَتَّقُواْ ٱللَّهَ يَجۡعَل لَّكُمۡ فُرۡقَانٗا وَيُكَفِّرۡ عَنكُمۡ سَيِّـَٔاتِكُمۡ وَيَغۡفِرۡ لَكُمۡۗ وَٱللَّهُ ذُو ٱلۡفَضۡلِ ٱلۡعَظِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "In tattaqoo Allaha yajAAal lakum furqanan: conditional promise linking ethical commitment to epistemological gift. Wayukaffir AAankum sayyiatikum: kafara as covering/removing misdeeds. Wayaghfir lakum: additional forgiveness layer. WaAllahu thoo alfadli alAAatheemi: bounty-attribution preventing furqan from appearing earned rather than granted."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "الفرقان بالتقوى: تقوى الله تنتج فرقاناً وتمحو السيئات وتمنح المغفرة؛ الله ذو الفضل العظيم",
+      "notes": "Gap candidate. Furqan (criterion/distinction) as cognitive-spiritual capacity emerging from ethical discipline not intellectual study alone. Triple-reward structure (furqan + takfeer + maghfirah) escalates from guidance to cleansing to pardon. Conditional form (in tattaqoo) makes divine gifts responsive to human initiative. Positioned after betrayal-prohibition (8:27-28) suggesting furqan specifically enables trustworthiness discernment."
+    },
+    {
+      "candidateId": "cand-0381",
+      "label": "Divine makr superiority: disbelievers plot restrain kill evict; they plan Allah plans; Allah best of planners",
+      "definition": "In 8:30: When those who disbelieved plotted against you to restrain or kill or evict you. They plan and Allah plans and Allah is best of planners.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:30",
+          "excerpt": "وَإِذۡ يَمۡكُرُ بِكَ ٱلَّذِينَ كَفَرُواْ لِيُثۡبِتُوكَ أَوۡ يَقۡتُلُوكَ أَوۡ يُخۡرِجُوكَۚ وَيَمۡكُرُونَ وَيَمۡكُرُ ٱللَّهُۖ وَٱللَّهُ خَيۡرُ ٱلۡمَٰكِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waith yamkuru bika allatheena kafaroo liyuthbitooka aw yaqtulooka aw yukhrijooka: three-option plot enumeration showing comprehensive threat assessment. Wayamkuroona wayamkuru Allahu: parallel verb structure asserting simultaneous counter-planning. WaAllahu khayru almakireena: superlative declaration establishing permanent asymmetry."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Divine planning superiority expressed through makr vocabulary"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تفوق المكر الإلهي: الكافرون يمكرون ليثبتوك أو يقتلوك أو يخرجوك؛ ويمكرون ويمكر الله؛ والله خير الماكرين",
+      "notes": "Overlap with divine-power. Makr (planning/plotting) applied to both humans and Allah but with qualitative asymmetry (khayr). Three-threat enumeration mirrors Hijrah narrative context. Present-tense parallelism (yamkuroona/yamkuru) suggests ongoing dynamic not past event. Functions as reassurance to Prophet facing existential threats while establishing theological principle of divine strategic supremacy."
+    },
+    {
+      "candidateId": "cand-0382",
+      "label": "Masjid al-Haram guardianship restricted to muttaqoon: obstruction justifies punishment; Qurayshi custodianship invalidated; most do not know",
+      "definition": "In 8:34: Why should Allah not punish them while they obstruct from al-Masjid al-Haram and they were not its guardians? Its guardians are only the muttaqoon but most of them do not know.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:34",
+          "excerpt": "وَمَا لَهُمۡ أَلَّا يُعَذِّبَهُمُ ٱللَّهُ وَهُمۡ يَصُدُّونَ عَنِ ٱلۡمَسۡجِدِ ٱلۡحَرَامِ وَمَا كَانُوٓاْ أَوۡلِيَآءَهُۥٓۚ إِنۡ أَوۡلِيَآؤُهُۥٓ إِلَّا ٱلۡمُتَّقُونَ وَلَٰكِنَّ أَكۡثَرَهُمۡ لَا يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama lahum alla yuAAaththibahumu Allahu wahum yasuddoona AAani almasjidi alharami: rhetorical question justifying punishment based on obstruction. Wama kanoo awliyaahu: past-tense negation of custodianship claim. In awliyaohu illa almuttaqoona: exclusive restriction to righteous. Walakinna aktharahum la yaAAlamoona: knowledge-deficit explaining false claims."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "ولاية المسجد الحرام مقصورة على المتقين: الصد عنه يبرر العقاب؛ ولاية قريش مبطلّة؛ وأكثرهم لا يعلمون",
+      "notes": "Gap candidate. Radical delegitimization of hereditary-tribal custodianship replacing it with piety-based qualification. Yasuddoona (obstruct) identifies active prevention of access as disqualifying offense. Illa almuttaqoona creates binary: either righteous guardian or illegitimate occupier. La yaAAlamoona diagnoses epistemological failure underlying political pretension. Foundational text for Islamic sacred-space governance principles."
+    },
+    {
+      "candidateId": "cand-0383",
+      "label": "Khums five-way distribution: one-fifth of booty for Allah Messenger relatives orphans needy traveler; conditioned on belief in Allah and Furqan-day revelation",
+      "definition": "In 8:41: Know that whatever booty you obtain then for Allah is one-fifth and for the Messenger and near relatives and orphans and needy and traveler if you have believed in Allah and what We sent down to Our Servant on day of Furqan day two armies met. And Allah over all things is Capable.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:41",
+          "excerpt": "۞وَٱعۡلَمُوٓاْ أَنَّمَا غَنِمۡتُم مِّن شَيۡءٖ فَأَنَّ لِلَّهِ خُمُسَهُۥ وَلِلرَّسُولِ وَلِذِي ٱلۡقُرۡبَىٰ وَٱلۡيَتَٰمَىٰ وَٱلۡمَسَٰكِينِ وَٱبۡنِ ٱلسَّبِيلِ إِن كُنتُمۡ ءَامَنتُم بِٱللَّهِ وَمَآ أَنزَلۡنَا عَلَىٰ عَبۡدِنَا يَوۡمَ ٱلۡفُرۡقَانِ يَوۡمَ ٱلۡتَقَى ٱلۡجَمۡعَانِۗ وَٱللَّهُ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "WaiAAlamoo annama ghanimtum min shayin faanna lillahi khumusahu: khums as divine prerogative not human discretion. Walilrrasooli walithee alqurba waalyatama waalmasakeeni waibni alssabeeli: six named beneficiaries (Allah+Messenger counted together as first share). In kuntum amantum biAllahi wama anzalna AAala AAabdina yawma alfurqani: faith-condition tying economic law to theological confession. Yawma iltaqa aljamAAani: historical anchoring in Badr encounter. WaAllahu AAala kulli shayin qadeerun: capability-declaration enforcing compliance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Economic redistribution mechanism implementing social justice through war-spoils allocation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "توزيع الخمس خمسة أسهم: خمس الغنيمة لله والرسول وذوي القربى واليتامى والمساكين وابن السبيل؛ مشروط بالإيمان بالله ويوم الفرقان",
+      "notes": "Overlap with justice. Five-category distribution addresses structural vulnerabilities (orphans needy travelers) alongside institutional needs (Allah-Messenger-relatives). Faith-condition prevents mechanical application requiring theological commitment. Yawm al-Furqan designation sacralizes economic law connecting it to revelatory moment. Qadeer closure reminds that enforcement ultimately divine. Most detailed booty-legislation in Quran establishing template for Islamic fiscal policy."
+    },
+    {
+      "candidateId": "cand-0384",
+      "label": "Blessing-change principle: Allah does not alter favor bestowed on people until they alter what is within themselves; SameeAA Aleem",
+      "definition": "In 8:53: That is because Allah would not change a favor He bestowed upon a people until they change what is within themselves. And indeed Allah is Hearing Knowing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:53",
+          "excerpt": "ذَٰلِكَ بِأَنَّ ٱللَّهَ لَمۡ يَكُ مُغَيِّرٗا نِّعۡمَةً أَنۡعَمَهَا عَلَىٰ قَوۡمٍ حَتَّىٰ يُغَيِّرُواْ مَا بِأَنفُسِهِمۡ وَأَنَّ ٱللَّهَ سَمِيعٌ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Thalika bianna Allaha lam yaku mughayyiran niAAmatan anAAamaha AAala qawmin: negative formulation emphasizing divine consistency. Hatta yughayyiroo ma bianfusihim: internal moral change as necessary condition for external blessing-revocation. Waanna Allaha sameeAAun AAaleemun: divine awareness ensuring change-detection is perfect."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "مبدأ تغيير النعمة: الله لا يغير نعمة أنعمها على قوم حتى يغيروا ما بأنفسهم؛ سميع عليم",
+      "notes": "Gap candidate. Foundational historical-theological axiom making divine favor contingent on sustained moral integrity. Ma bianfusihim locates causality in internal states not external circumstances. Negative formulation (lam yaku mughayyiran) emphasizes divine reluctance to withdraw favor placing burden on human moral deterioration. Positioned between Pharaoh-doublets (8:52 8:54) providing explanatory principle for historical patterns. Applicable to communities individuals and civilizations universally."
+    },
+    {
+      "candidateId": "cand-0385",
+      "label": "Heart unification as exclusive divine act: spent all earth could not unite hearts; Allah united them; Azeez Hakeem",
+      "definition": "In 8:63: And He brought together their hearts. If you had spent all that is in the earth you could not have brought their hearts together but Allah brought them together. Indeed He is Exalted Mighty Wise.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:63",
+          "excerpt": "وَأَلَّفَ بَيۡنَ قُلُوبِهِمۡۚ لَوۡ أَنفَقۡتَ مَا فِي ٱلۡأَرۡضِ جَمِيعٗا مَّآ أَلَّفۡتَ بَيۡنَ قُلُوبِهِمۡ وَلَٰكِنَّ ٱللَّهَ أَلَّفَ بَيۡنَهُمۡۚ إِنَّهُۥ عَزِيزٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waallafa bayna quloobihim: divine subject performing heart-unification. Law anfaqta ma fee alardi jameeAAan ma allafta bayna quloobihim: hypothetical impossibility demonstrating material insufficiency. Walakinna Allaha allafa baynahum: affirmative divine action as sole sufficient cause. Innahu AAazeezun hakeemun: power-wisdom pairing explaining both capacity and appropriateness."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تأليف القلوب كفعل إلهي حصري: لو أنفقت ما في الأرض جميعاً ما ألفت بين قلوبهم؛ لكن الله ألف بينهم؛ عزيز حكيم",
+      "notes": "Gap candidate. Definitive statement of social-cohesion theology declaring interpersonal bonds beyond human engineering. JameeAAan (all together) eliminates any quantitative threshold suggesting even unlimited resources fail. Hearts (quloob) specifies affective dimension not merely political alliance. Azeez-Hakeem pairing suggests unification requires both power to effect and wisdom to orchestrate. Addresses Ansar-Muhajirun reconciliation historically while establishing universal principle for community formation."
+    },
+    {
+      "candidateId": "cand-0386",
+      "label": "Combat ratio adjustment: initial 1:10 for twenty steadfast; lightened to 1:2 recognizing weakness; bi-idhni Allah; Allah with sabireen",
+      "definition": "In 8:65-66: O Prophet urge believers to battle. If twenty steadfast overcome two hundred if hundred overcome thousand of disbelievers because they do not understand. Now Allah lightened for you knowing weakness in you so hundred steadfast overcome two hundred thousand overcome two thousand by Allah's permission. Allah is with the patient.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:65",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّبِيُّ حَرِّضِ ٱلۡمُؤۡمِنِينَ عَلَى ٱلۡقِتَالِۚ إِن يَكُن مِّنكُمۡ عِشۡرُونَ صَٰبِرُونَ يَغۡلِبُواْ مِاْئَتَيۡنِۚ وَإِن يَكُن مِّنكُم مِّاْئَةٞ يَغۡلِبُوٓاْ أَلۡفٗا مِّنَ ٱلَّذِينَ كَفَرُواْ بِأَنَّهُمۡ قَوۡمٞ لَّا يَفۡقَهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "In yakun minkum AAishroona sabiroona yaghliboo miatayni: 1:10 ratio predicated on sabr quality. Biannahum qawmun la yafqahoona: disbeliever cognitive-deficit as enabling factor."
+        },
+        {
+          "key": "8:66",
+          "excerpt": "ٱلۡـَٰٔنَ خَفَّفَ ٱللَّهُ عَنكُمۡ وَعَلِمَ أَنَّ فِيكُمۡ ضَعۡفٗاۚ فَإِن يَكُن مِّنكُم مِّاْئَةٞ صَابِرَةٞ يَغۡلِبُواْ مِاْئَتَيۡنِۚ وَإِن يَكُن مِّنكُمۡ أَلۡفٞ يَغۡلِبُوٓاْ أَلۡفَيۡنِ بِإِذۡنِ ٱللَّهِۗ وَٱللَّهُ مَعَ ٱلصَّـٰبِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Alana khaffafa Allahu AAankum waAAalima anna feekum daAAfan: divine recognition of human limitation prompting legislative adjustment. Fain yakun minkum miatun sabiratun yaghliboo miatayni: revised 1:2 ratio maintaining sabr requirement. Biithni Allahi: permission-qualifier preventing ratio from becoming mechanical formula. WaAllahu maAAa alssabireena: divine accompaniment as ultimate force-multiplier."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تعديل نسبة القتال: أولية ١:١٠ لعشرين صابراً؛ خُفِّفت إلى ١:٢ اعترافاً بالضعف؛ بإذن الله؛ الله مع الصابرين",
+      "notes": "Gap candidate. Unique legislative flexibility demonstrating divine responsiveness to community capacity. Da'f acknowledgment prevents unrealistic expectations while maintaining combat obligation. Sabr as consistent variable across both ratios identifying steadfastness not numbers as decisive factor. Bi-idhni qualifier maintains divine sovereignty even in adjusted standards. MaAAa al-sabireen provides theological assurance complementing numerical reduction. Historical context suggests post-Badr reassessment preparing for Uhud challenges."
+    },
+    {
+      "candidateId": "cand-0387",
+      "label": "Prisoner ethics: prophet should not take captives before ithkhan; worldly desire critiqued; preceding kitab prevented punishment; booty halal tayyib with taqwa",
+      "definition": "In 8:67-69: Not for a prophet to have captives until he inflicts massacre in land. You desire world commodities Allah desires Hereafter. If not for preceding book from Allah great punishment would have touched you for what you took. So consume what you obtained lawful good and fear Allah. Indeed Allah is Forgiving Merciful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:67",
+          "excerpt": "مَا كَانَ لِنَبِيٍّ أَن يَكُونَ لَهُۥٓ أَسۡرَىٰ حَتَّىٰ يُثۡخِنَ فِي ٱلۡأَرۡضِۚ تُرِيدُونَ عَرَضَ ٱلدُّنۡيَا وَٱللَّهُ يُرِيدُ ٱلۡأٓخِرَةَۗ وَٱللَّهُ عَزِيزٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ma kana linabiyyin an yakoona lahu asra hatta yuthkhina fee alardi: ithkhan as precondition for legitimate captivity. Tureedoona AAarada alddunya waAllahu yureedu alakhirata: explicit desire-contrast diagnosing motivational error. WaAllahu AAazeezun hakeemun: power-wisdom framing correction."
+        },
+        {
+          "key": "8:68",
+          "excerpt": "لَّوۡلَا كِتَٰبٞ مِّنَ ٱللَّهِ سَبَقَ لَمَسَّكُمۡ فِيمَآ أَخَذۡتُمۡ عَذَابٌ عَظِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Lawla kitabun mina Allahi sabaqa lamassakum feema akhathtum AAathabun AAatheemun: preceding decree as mercy-mechanism preventing punishment for premature captive-taking."
+        },
+        {
+          "key": "8:69",
+          "excerpt": "فَكُلُواْ مِمَّا غَنِمۡتُمۡ حَلَٰلٗا طَيِّبٗاۚ وَٱتَّقُواْ ٱللَّهَۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fakuloo mimma ghanimtum halalan tayyiban: retroactive legitimization of booty consumption. Waittaqoo Allaha: taqwa as ongoing condition. Inna Allaha ghafoorun raheemun: forgiveness-mercy pairing closing corrective passage."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "أخلاق الأسرى: لا ينبغي للنبي أسر قبل الإثخان؛ نقد الرغبة الدنيوية؛ كتاب سابق منع العقاب؛ الغنيمة حلال طيب مع التقوى",
+      "notes": "Gap candidate. Complex ethical navigation between strategic necessity and moral aspiration. Ithkhan requirement ensures military objectives prioritized over economic gain. Desire-diagnosis (tureedoona/yureedu) exposes motivational misalignment without condemning actors. Kitab-sabaq introduces concept of pre-ordained legislative mercy preventing retrospective guilt. Halalan tayyiban dual-qualification demands both legal validity and moral wholesomeness. Ghafoor-Raheem closure signals divine accommodation of human imperfection within corrective framework."
+    },
+    {
+      "candidateId": "cand-0388",
+      "label": "Walayah-migration framework: believer solidarity defined by iman-hijrah-jihad plus shelter-aid; non-emigrants excluded until migration; religious aid obligation except treaty-partners; blood kinship priority in Kitab Allah",
+      "definition": "In 8:72-75: Those who believed emigrated fought with wealth and selves and those who sheltered aided are allies of one another. Those who believed but did not emigrate you have no walayah with them until they emigrate. If they seek help in religion you must help except against treaty-people. Disbelievers are allies of one another unless you do so fitnah and great corruption. Those who believed emigrated fought sheltered aided are truly believers with forgiveness noble provision. Those who believed after emigrated fought with you are of you. Blood relatives are more entitled in Book of Allah. Indeed Allah is Knowing of all things.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:72",
+          "excerpt": "إِنَّ ٱلَّذِينَ ءَامَنُواْ وَهَاجَرُواْ وَجَٰهَدُواْ بِأَمۡوَٰلِهِمۡ وَأَنفُسِهِمۡ فِي سَبِيلِ ٱللَّهِ وَٱلَّذِينَ ءَاوَواْ وَّنَصَرُوٓاْ أُوْلَـٰٓئِكَ بَعۡضُهُمۡ أَوۡلِيَآءُ بَعۡضٖۚ وَٱلَّذِينَ ءَامَنُواْ وَلَمۡ يُهَاجِرُواْ مَا لَكُم مِّن وَلَٰيَتِهِم مِّن شَيۡءٍ حَتَّىٰ يُهَاجِرُواْۚ وَإِنِ ٱسۡتَنصَرُوكُمۡ فِي ٱلدِّينِ فَعَلَيۡكُمُ ٱلنَّصۡرُ إِلَّا عَلَىٰ قَوۡمِۭ بَيۡنَكُمۡ وَبَيۡنَهُم مِّيثَٰقٞۗ وَٱللَّهُ بِمَا تَعۡمَلُونَ بَصِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Inna allatheena amanoo wahajaroo wajahadoo biamwalihim waanfusihim: four-component criteria for full walayah. Waallatheena awaw wanasaroo: shelter-aid as complementary qualification. Olaika baAAduhum awliyao baAAdin: mutual alliance declaration. Waallatheena amanoo walam yuhajiroo ma lakum min walayatihim min shayin hatta yuhajiroo: explicit exclusion of non-emigrants. Waini istansarookum fee alddeeni faAAalaykumu alnnasru illa AAala qawmin baynakum wabaynahum meethaqun: conditional aid obligation with treaty exception."
+        },
+        {
+          "key": "8:73",
+          "excerpt": "وَٱلَّذِينَ كَفَرُواْ بَعۡضُهُمۡ أَوۡلِيَآءُ بَعۡضٍۚ إِلَّا تَفۡعَلُوهُ تَكُن فِتۡنَةٞ فِي ٱلۡأَرۡضِ وَفَسَادٞ كَبِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waallatheena kafaroo baAAduhum awliyao baAAdin: disbeliever counter-alliance. Illa tafAAaloohu takun fitnatun fee alardi wafasadun kabeerun: failure-consequence as communal catastrophe."
+        },
+        {
+          "key": "8:74",
+          "excerpt": "وَٱلَّذِينَ ءَامَنُواْ وَهَاجَرُواْ وَجَٰهَدُواْ فِي سَبِيلِ ٱللَّهِ وَٱلَّذِينَ ءَاوَواْ وَّنَصَرُوٓاْ أُوْلَـٰٓئِكَ هُمُ ٱلۡمُؤۡمِنُونَ حَقّٗاۚ لَّهُم مَّغۡفِرَةٞ وَرِزۡقٞ كَرِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Olaika humu almuminoona haqqan: true-believer confirmation echoing 8:4. Lahum maghfiratun warizqun kareemun: identical reward formula."
+        },
+        {
+          "key": "8:75",
+          "excerpt": "وَٱلَّذِينَ ءَامَنُواْ مِنۢ بَعۡدُ وَهَاجَرُواْ وَجَٰهَدُواْ مَعَكُمۡ فَأُوْلَـٰٓئِكَ مِنكُمۡۚ وَأُوْلُواْ ٱلۡأَرۡحَامِ بَعۡضُهُمۡ أَوۡلَىٰ بِبَعۡضٖ فِي كِتَٰبِ ٱللَّهِۚ إِنَّ ٱللَّهَ بِكُلِّ شَيۡءٍ عَلِيمُۢ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waallatheena amanoo min baAAdu wahajaroo wajahadoo maAAakum faolaika minkum: inclusion of later joiners. Waoloo alarhami baAAduhum awla bibaAAdin fee kitabi Allahi: kinship-priority superseding faith-alliance in inheritance. Inna Allaha bikulli shayin AAaleemun: comprehensive divine knowledge closing framework."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "إطار الولاية والهجرة: تضامن المؤمنين يُعرَّف بالإيمان والهجرة والجهاد والإيواء والنصر؛ غير المهاجرين مستبعدون حتى الهجرة؛ واجب النصرة الدينية إلا على قوم معاهدين؛ أولوية قرابة الدم في كتاب الله",
+      "notes": "Gap candidate. Comprehensive polity-definition establishing hijrah as boundary-marker for full communal membership. Four-tier classification: full members (emigrant-fighters) partial members (non-emigrant believers) potential members (later joiners) excluded (disbelievers). Treaty-exception prevents religious solidarity from violating diplomatic commitments. Fitnah-fasad consequence motivates compliance through catastrophe-avoidance. Kinship-priority clause preserves pre-Islamic family obligations within new faith-framework preventing total social rupture. Kitab Allah reference grounds inheritance rules in divine decree not communal consensus."
+    },
+    {
+      "candidateId": "cand-0389",
+      "label": "Satan's false protection abandoned: adorned deeds claimed invincibility and guardianship; fled at confrontation disassociated citing fear of Allah; severe penalty",
+      "definition": "In 8:48: When Satan adorned their deeds and said no one overcomes you today I am your protector. When two armies sighted each other he turned on heels said I am disassociated from you I see what you do not see I fear Allah and Allah is severe in penalty.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:48",
+          "excerpt": "وَإِذۡ زَيَّنَ لَهُمُ ٱلشَّيۡطَٰنُ أَعۡمَٰلَهُمۡ وَقَالَ لَا غَالِبَ لَكُمُ ٱلۡيَوۡمَ مِنَ ٱلنَّاسِ وَإِنِّي جَارٞ لَّكُمۡۖ فَلَمَّا تَرَآءَتِ ٱلۡفِئَتَانِ نَكَصَ عَلَىٰ عَقِبَيۡهِ وَقَالَ إِنِّي بَرِيٓءٞ مِّنكُمۡ إِنِّيٓ أَرَىٰ مَا لَا تَرَوۡنَ إِنِّيٓ أَخَافُ ٱللَّهَۚ وَٱللَّهُ شَدِيدُ ٱلۡعِقَابِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waith zayyana lahumu alshshaytanu aAAmalahum: tazeen as deceptive beautification. Waqala la ghaliba lakumu alyawma mina alnnasi: false invincibility claim. Wainnee jarun lakum: false protection claim. Falamma taraati alfiatani nakasa AAala AAaqibayhi: heel-turning as cowardice-image. Waqala innee bareeon minkum: disassociation reversing earlier claim. Innee ara ma la tarawna: superior-perception claim explaining retreat. Innee akhafu Allaha: fear-profession ironically validating divine authority. WaAllahu shadeedu alAAiqabi: severity-declaration confirming Satan's fear was justified."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تخلي الشيطان عن الحماية الزائفة: زيّن الأعمال ادعى عدم الغلبة والجوار؛ فرّ عند المواجهة متبرئاً معلناً خوفه من الله؛ عقاب شديد",
+      "notes": "Gap candidate. Dramatic exposure of supernatural ally as unreliable demonstrating tawakkul necessity. Zayyana-a'mal identifies deception mechanism as aesthetic not rational. Jar-claim directly contradicted by baree-disassociation showing satanic promises inherently unstable. Ara ma la tarawna paradoxically acknowledges divine reality while fleeing it. Akhafu Allah from Satan's mouth serves as unintended testimony. Shadeed al-iqab closure confirms that Satan's fear was accurate diagnosis. Functions as cautionary tale against relying on any protection besides Allah."
+    },
+    {
+      "candidateId": "cand-0390",
+      "label": "Peace inclination reciprocity: if enemy inclines peace incline to it; rely on Allah; SameeAA Aleem",
+      "definition": "In 8:61: If they incline to peace then incline to it and rely upon Allah. Indeed He is the Hearing the Knowing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:61",
+          "excerpt": "۞وَإِن جَنَحُواْ لِلسَّلۡمِ فَٱجۡنَحۡ لَهَا وَتَوَكَّلۡ عَلَى ٱللَّهِۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wain janahoo lilssalmi faijnah laha: reciprocal peace-obligation using same root (janaha) for both parties. Watawakkal AAala Allahi: tawakkul as safeguard against peace-as-trap. Innahu huwa alssameeAAu alAAaleemu: hearing-knowing pair ensuring divine awareness of both overt proposals and hidden intentions."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Peace-seeking as expression of disciplined restraint balanced with vigilance"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "تبادل الميل للسلم: إن جنحوا للسلم فاجنح لها؛ توكل على الله؛ إنه هو السميع العليم",
+      "notes": "Overlap with patience. Reciprocal structure (janahoo/fajnaha) makes peace-response obligatory not optional when initiated by opponent. Tawakkul requirement prevents naive pacifism maintaining defensive readiness. SameeAA-Aleem pairing addresses information-asymmetry problem in negotiations: Allah hears proposals and knows intentions. Positioned after military-preparedness command (8:60) showing peace and preparedness as complementary not contradictory. Establishes Islamic diplomatic ethics balancing openness with caution."
+    },
+    {
+      "candidateId": "cand-0391",
+      "label": "Treaty betrayal management: chronic breakers identified as worst creatures; war dominance as deterrent dispersal; anticipated betrayal met with equal notification; Allah loves not traitors",
+      "definition": "In 8:55-58: Worst creatures at Allah are those who disbelieved they will not believe. Those you made treaty with then break pledge every time not fearing. If you dominate them in war disperse by them those behind perhaps they remember. If you fear betrayal throw back to them equally. Indeed Allah does not love traitors.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:55",
+          "excerpt": "إِنَّ شَرَّ ٱلدَّوَآبِّ عِندَ ٱللَّهِ ٱلَّذِينَ كَفَرُواْ فَهُمۡ لَا يُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Inna sharra alddawabbi AAinda Allahi allatheena kafaroo fahum la yuminoona: persistent disbelief as defining characteristic of worst creatures."
+        },
+        {
+          "key": "8:56",
+          "excerpt": "ٱلَّذِينَ عَٰهَدتَّ مِنۡهُمۡ ثُمَّ يَنقُضُونَ عَهۡدَهُمۡ فِي كُلِّ مَرَّةٖ وَهُمۡ لَا يَتَّقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Allatheena AAahadta minhum thumma yanqudoona AAahdahum fee kulli marratin: kulli marratin (every time) establishes pattern not incident. Wahum la yattaqoona: taqwa-absence as root cause."
+        },
+        {
+          "key": "8:57",
+          "excerpt": "فَإِمَّا تَثۡقَفَنَّهُمۡ فِي ٱلۡحَرۡبِ فَشَرِّدۡ بِهِم مَّنۡ خَلۡفَهُمۡ لَعَلَّهُمۡ يَذَّكَّرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faimma tathqafannahum fee alharbi fasharrid bihim man khalfahum: tashrid as deterrent communication. LaAAallahum yaththakkaroona: remembrance as desired outcome not destruction."
+        },
+        {
+          "key": "8:58",
+          "excerpt": "وَإِمَّا تَخَافَنَّ مِن قَوۡمٍ خِيَانَةٗ فَٱنۢبِذۡ إِلَيۡهِمۡ عَلَىٰ سَوَآءٍۚ إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلۡخَآئِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waimma takhafanna min qawmin khiyanatan fainbith ilayhim AAala sawain: nabdh (throwing back) as transparent notification. AAala sawain: equality-condition preventing treacherous advantage. Inna Allaha la yuhibbu alkhaineena: divine disapproval of treachery applying to both sides."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "إدارة خيانة العهد: ناقضو العهد المزمنون شر الدواب؛ الهيمنة الحربية ردع وتشريد؛ الخيانة المتوقعة تواجه بإنبذاذ على سواء؛ الله لا يحب الخائنين",
+      "notes": "Gap candidate. Graduated treaty-management protocol distinguishing chronic violators from uncertain parties. Kulli marratin identifies behavioral pattern requiring escalated response. Tashrid purpose explicitly pedagogical (yaththakkaroona) not punitive. Nabdh-AAala-sawa ensures procedural fairness even when suspecting betrayal. La yuhibbu al-khaineena universalizes prohibition preventing Muslim exemption from anti-treachery norms. Comprehensive framework balancing security concerns with ethical constraints."
+    },
+    {
+      "candidateId": "cand-0392",
+      "label": "Military preparedness doctrine: prepare power and war-steeds to terrify Allah's enemy your enemy unknown others; spending fully repaid without injustice",
+      "definition": "In 8:60: Prepare against them whatever power and war-steeds you can to terrify enemy of Allah and your enemy and others besides them you do not know Allah knows them. Whatever you spend in Allah's way will be fully repaid and you will not be wronged.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:60",
+          "excerpt": "وَأَعِدُّواْ لَهُم مَّا ٱسۡتَطَعۡتُم مِّن قُوَّةٖ وَمِن رِّبَاطِ ٱلۡخَيۡلِ تُرۡهِبُونَ بِهِۦ عَدُوَّ ٱللَّهِ وَعَدُوَّكُمۡ وَءَاخَرِينَ مِن دُونِهِمۡ لَا تَعۡلَمُونَهُمُ ٱللَّهُ يَعۡلَمُهُمۡۚ وَمَا تُنفِقُواْ مِن شَيۡءٖ فِي سَبِيلِ ٱللَّهِ يُوَفَّ إِلَيۡكُمۡ وَأَنتُمۡ لَا تُظۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "WaaAAiddoo lahum ma istataAAtum min quwwatin wamin ribati alkhayli: istataAAtum (whatever you can) sets capacity-relative standard. Turhiboona bihi AAaduwwa Allahi waAAaduwwakum: deterrence as stated purpose not conquest. Waakhareena min doonihim la taAAlamoonahumu Allahu yaAAlamuhum: unknown-enemy category expanding strategic horizon. Wama tunfiqoo min shayin fee sabeeli Allahi yuwaffa ilaykum: full-repayment guarantee. Waantum la tuthlamoona: injustice-negation ensuring divine accounting accuracy."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "عقيدة الاستعداد العسكري: أعدوا القوة ورباط الخيل ترهبون به عدو الله وعدوكم وآخرين لا تعلمونهم؛ الإنفاق مُوفّى بلا ظلم",
+      "notes": "Gap candidate. Deterrence-based military doctrine framing armament as prevention not aggression. IstataAAtum makes obligation proportional to capacity preventing impossible burdens. Triple-enemy scope (Allah's enemy + your enemy + unknown others) requires comprehensive readiness. Unknown-enemy clause acknowledges intelligence limitations while affirming divine omniscience. Repayment-guarantee transforms military spending from loss to investment. La tuthlamoona assures precise accounting preventing anxiety about wasted resources. Foundation for Islamic defense ethics balancing preparedness with proportionality."
+    },
+    {
+      "candidateId": "cand-0393",
+      "label": "Captive rehabilitation pathway: address prisoners promising better replacement for taken wealth plus forgiveness if hearts contain good; Ghafoor Raheem",
+      "definition": "In 8:70: O Prophet say to captives in your hands if Allah knows good in your hearts He will give you better than what was taken and forgive you. And Allah is Forgiving Merciful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:70",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّبِيُّ قُل لِّمَن فِيٓ أَيۡدِيكُم مِّنَ ٱلۡأَسۡرَىٰٓ إِن يَعۡلَمِ ٱللَّهُ فِي قُلُوبِكُمۡ خَيۡرٗا يُؤۡتِكُمۡ خَيۡرٗا مِّمَّآ أُخِذَ مِنكُمۡ وَيَغۡفِرۡ لَكُمۡۚ وَٱللَّهُ غَفُورٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ya ayyuha alnnabiyyu qul liman fee aydeekum mina alasra: direct prophetic address to captives personalizing message. In yaAAlami Allahu fee quloobikum khayran: divine heart-knowledge as basis for evaluation. Yutikum khayran mimma okhitha minkum: material replacement exceeding loss. Wayaghfir lakum: spiritual restoration added to material compensation. WaAllahu ghafoorun raheemun: divine attributes modeling expected treatment."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "مسار تأهيل الأسرى: مخاطبة الأسرى بوعد تعويض أفضل مما أُخذ ومغفرة إن في قلوبهم خيراً؛ غفور رحيم",
+      "notes": "Gap candidate. Rehabilitation-oriented prisoner treatment contrasting with purely punitive approaches. Fee quloobikum khayran makes sincerity not mere compliance the criterion. Khayran mimma okhitha promises net gain incentivizing genuine transformation. Maghfirah addition elevates offer from transaction to redemption. Ghafoor-Raheem divine modeling suggests captors should embody these attributes. Addresses Badr prisoners historically while establishing timeless principle for post-conflict reconciliation."
+    },
+    {
+      "candidateId": "cand-0394",
+      "label": "Pagan prayer at Kaaba characterized as whistling and hand-clapping: ritual reduced to noise-performance; taste punishment for disbelief",
+      "definition": "In 8:35: Their prayer at the House was nothing but whistling and hand-clapping. So taste punishment for what you disbelieved.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:35",
+          "excerpt": "وَمَا كَانَ صَلَاتُهُمۡ عِندَ ٱلۡبَيۡتِ إِلَّا مُكَآءٗ وَتَصۡدِيَةٗۚ فَذُوقُواْ ٱلۡعَذَابَ بِمَا كُنتُمۡ تَكۡفُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama kana salatuhum AAinda albayti illa mukaan watasdiyatan: illa (nothing but) reduces entire ritual to two sounds. Fathooqoo alAAathaba bima kuntum takfuroona: punishment framed as consequence of kufr not merely ritual impropriety."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "وصف صلاة المشركين عند الكعبة بالمكاء والتصدية: الشعيرة مختزلة إلى أداء ضوضائي؛ ذوقوا العذاب بما كنتم تكفرون",
+      "notes": "Gap candidate. Radical desacralization of pagan worship reducing it to meaningless performance. Mukaa-tasdiyah pairing strips prayer of semantic content leaving only acoustic phenomena. Illa construction excludes any redeeming element. Taste-command (fathooqoo) makes punishment experiential matching sensory nature of criticized ritual. Bima kuntum takfuroona identifies root offense as disbelief not ritual form. Functions as theological justification for Kaaba purification while documenting pre-Islamic practices."
+    },
+    {
+      "candidateId": "cand-0395",
+      "label": "Angelic soul-taking violence: angels strike faces and backs of dying disbelievers; taste burning fire; justified by hands' deeds; Allah not unjust",
+      "definition": "In 8:50-51: If you could see when angels take souls of disbelievers striking their faces and backs: taste punishment of burning fire. That is for what your hands sent forth and Allah is not ever unjust to servants.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:50",
+          "excerpt": "وَلَوۡ تَرَىٰٓ إِذۡ يَتَوَفَّى ٱلَّذِينَ كَفَرُواْ ٱلۡمَلَـٰٓئِكَةُ يَضۡرِبُونَ وُجُوهَهُمۡ وَأَدۡبَٰرَهُمۡ وَذُوقُواْ عَذَابَ ٱلۡحَرِيقِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walaw tara ith yatawaffa allatheena kafaroo almalaikatu: hypothetical vision inviting imaginative participation. Yadriboona wujoohahum waadbarahum: face-back striking as comprehensive humiliation. Wathooqoo AAathaba alhareeqi: taste-command paralleling 8:35 creating thematic link."
+        },
+        {
+          "key": "8:51",
+          "excerpt": "ذَٰلِكَ بِمَا قَدَّمَتۡ أَيۡدِيكُمۡ وَأَنَّ ٱللَّهَ لَيۡسَ بِظَلَّـٰمٖ لِّلۡعَبِيدِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Thalika bima qaddamat aydeekum: hands-forward metaphor identifying personal responsibility. Waanna Allaha laysa bithallamin lilAAabeedi: injustice-negation defending divine justice even in violent punishment."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Death-moment punishment as microcosm of eschatological justice"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "عنف الملائكة عند قبض الأرواح: الملائكة تضرب وجوه وأدبار الكافرين الموتى؛ ذوقوا عذاب الحريق؛ مبرر بما قدمت الأيدي؛ الله ليس بظلام",
+      "notes": "Overlap with day-of-judgment. Hypothetical-vision format (walaw tara) makes unseen accessible to imagination. Face-back striking symbolizes total exposure no hiding place. Taste-command echoes 8:35 linking worldly ritual-critique to otherworldly consequence. Qaddamat aydeekum locates causality in accumulated actions not arbitrary divine wrath. Laysa bi-thallam provides theodicy-defense preempting injustice objections. Functions as eschatological counterpart to battlefield combat completing violence-attribution framework."
+    },
+    {
+      "candidateId": "cand-0396",
+      "label": "Challenge prayer for punishment: disbelievers demanded stones from sky or painful punishment; dual immunity through Prophet presence and istighfar",
+      "definition": "In 8:32-33: When they said O Allah if this is truth from You rain stones from sky or bring painful punishment. But Allah would not punish them while you are among them nor while they seek forgiveness.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "8:32",
+          "excerpt": "وَإِذۡ قَالُواْ ٱللَّهُمَّ إِن كَانَ هَٰذَا هُوَ ٱلۡحَقَّ مِنۡ عِندِكَ فَأَمۡطِرۡ عَلَيۡنَا حِجَارَةٗ مِّنَ ٱلسَّمَآءِ أَوِ ٱئۡتِنَا بِعَذَابٍ أَلِيمٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waith qaloo allahumma in kana hatha huwa alhaqqa min AAindika: conditional framing mimicking believer language. Faamtir AAalayna hijaratan mina alssamai: stone-demand echoing Lot-narrative. Awi itina biAAathabin aleemin: alternative punishment-request showing reckless confidence."
+        },
+        {
+          "key": "8:33",
+          "excerpt": "وَمَا كَانَ ٱللَّهُ لِيُعَذِّبَهُمۡ وَأَنتَ فِيهِمۡۚ وَمَا كَانَ ٱللَّهُ مُعَذِّبَهُمۡ وَهُمۡ يَسۡتَغۡفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama kana Allahu liyuAAaththibahum waanta feehim: Prophet-presence as first immunity-factor. Wama kana Allahu muAAaththibahum wahum yastaghfiroona: istighfar as second immunity-factor. Dual wama kana construction emphasizes divine restraint not inability."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T10:00:00.000Z",
+      "urduLabel": "دعاء التحدي بالعقاب: الكافرون طلبوا حجارة من السماء أو عذاباً أليماً؛ حصانة مزدوجة بحضور النبي والاستغفار",
+      "notes": "Gap candidate. Hostile challenge transformed into mercy-demonstration through dual-immunity explanation. Stone-demand shows familiarity with prophetic narratives weaponized as mockery. Dual wama kana structure presents two independent mercy-mechanisms either sufficient alone. Prophet-presence immunity establishes his role as communal shield. Istighfar-immunity provides enduring mechanism applicable after his departure. Transforms aggressive demand into educational moment about divine patience."
+    }
+  ]
+}
