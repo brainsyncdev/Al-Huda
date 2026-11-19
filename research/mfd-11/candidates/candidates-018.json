@@ -1,0 +1,243 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T06:24:00.000Z",
+  "sourceExtraction": "ext-004-p1,ext-004-p2,ext-004-p3,ext-004-p4",
+  "candidates": [
+    {
+      "candidateId": "cand-0177",
+      "label": "Single origin of humanity: creation from one soul and its mate as basis for taqwa and kinship obligations",
+      "definition": "In 4:1: O mankind, fear your Lord who created you from one soul and created from it its mate and dispersed from both of them many men and women. And fear Allah through whom you ask one another and the wombs.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:1",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُواْ رَبَّكُمُ ٱلَّذِي خَلَقَكُم مِّن نَّفۡسٖ وَٰحِدَةٖ وَخَلَقَ مِنۡهَا زَوۡجَهَا وَبَثَّ مِنۡهُمَا رِجَالٗا كَثِيرٗا وَنِسَآءٗۚ وَٱتَّقُواْ ٱللَّهَ ٱلَّذِي تَسَآءَلُونَ بِهِۦ وَٱلۡأَرۡحَامَۚ إِنَّ ٱللَّهَ كَانَ عَلَيۡكُمۡ رَقِيبٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Khalaqakum min nafsin wahidatin wa khalaqa minha zawjaha: establishes shared human origin as theological basis for mutual obligations. Paired with taqwa of Allah and arham."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "انسان کی واحد اصل: ایک نفس سے تخلیق",
+      "notes": "Gap candidate: no dedicated human-origin or nafsin-wahidah topic. Foundational anthropological verse opening Surah An-Nisa. Links creation narrative directly to ethical obligations (taqwa + arham). Distinctive pairing of divine consciousness with kinship consciousness."
+    },
+    {
+      "candidateId": "cand-0178",
+      "label": "Orphan wealth guardianship: prohibition of consumption, requirement of testing maturity, and witnessed handover",
+      "definition": "In 4:2,5-6: Give orphans their properties, do not substitute bad for good, do not consume their properties into yours. Do not give weak-minded your property. Test orphans until marriageable age; if sound judgement perceived, hand over their wealth with witnesses.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:2",
+          "excerpt": "وَءَاتُواْ ٱلۡيَتَٰمَىٰٓ أَمۡوَٰلَهُمۡۖ وَلَا تَتَبَدَّلُواْ ٱلۡخَبِيثَ بِٱلطَّيِّبِۖ وَلَا تَأۡكُلُوٓاْ أَمۡوَٰلَهُمۡ إِلَىٰٓ أَمۡوَٰلِكُمۡۚ إِنَّهُۥ كَانَ حُوبٗا كَبِيرٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Explicit triple command: give, don't substitute, don't consume. Huban kabiran frames violation as grave sin."
+        },
+        {
+          "key": "4:6",
+          "excerpt": "وَٱبۡتَلُواْ ٱلۡيَتَٰمَىٰ حَتَّىٰٓ إِذَا بَلَغُواْ ٱلنِّكَاحَ فَإِنۡ ءَانَسۡتُم مِّنۡهُمۡ رُشۡدٗا فَٱدۡفَعُوٓاْ إِلَيۡهِمۡ أَمۡوَٰلَهُمۡۖ وَلَا تَأۡكُلُوهَآ إِسۡرَافٗا وَبِدَارًا أَن يَكۡبَرُواْۚ وَمَن كَانَ غَنِيّٗا فَلۡيَسۡتَعۡفِفۡۖ وَمَن كَانَ فَقِيرٗا فَلۡيَأۡكُلۡ بِٱلۡمَعۡرُوفِۚ فَإِذَا دَفَعۡتُمۡ إِلَيۡهِمۡ أَمۡوَٰلَهُمۡ فَأَشۡهِدُواْ عَلَيۡهِمۡۚ وَكَفَىٰ بِٱللَّهِ حَسِيبٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ibtaloo al-yatama: testing for rushd before property transfer. Ashhidoo: witness requirement for accountability."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "orphan-care",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "یتیموں کے مال کی حفاظت: آزمائش اور حوالگی",
+      "notes": "Overlap with orphan-care confirmed. Most detailed Quranic treatment of orphan property management. Introduces developmental readiness concept (rushd at nikah age). Distinguishes wealthy vs poor guardian compensation. Witness requirement anticipates modern fiduciary accountability."
+    },
+    {
+      "candidateId": "cand-0179",
+      "label": "Fractional inheritance legislation: precise shares for children, parents, spouses, and siblings as hudud Allah",
+      "definition": "In 4:11-12: Allah instructs you concerning your children: for the male what is equal to share of two females... These are hudud Allah. Detailed fractions: half, quarter, eighth, two-thirds, third, sixth for various heirs after bequests and debts.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:11",
+          "excerpt": "يُوصِيكُمُ ٱللَّهُ فِيٓ أَوۡلَٰدِكُمۡۖ لِلذَّكَرِ مِثۡلُ حَظِّ ٱلۡأُنثَيَيۡنِۚ فَإِن كُنَّ نِسَآءٗ فَوۡقَ ٱثۡنَتَيۡنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَۖ وَإِن كَانَتۡ وَٰحِدَةٗ فَلَهَا ٱلنِّصۡفُۚ وَلِأَبَوَيۡهِ لِكُلِّ وَٰحِدٖ مِّنۡهُمَا ٱلسُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُۥ وَلَدٞۚ فَإِن لَّمۡ يَكُن لَّهُۥ وَلَدٞ وَوَرِثَهُۥٓ أَبَوَاهُ فَلِأُمِّهِ ٱلثُّلُثُۚ فَإِن كَانَ لَهُۥٓ إِخۡوَةٞ فَلِأُمِّهِ ٱلسُّدُسُۚ مِنۢ بَعۡدِ وَصِيَّةٖ يُوصِي بِهَآ أَوۡ دَيۡنٍۗ ءَابَآؤُكُمۡ وَأَبۡنَآؤُكُمۡ لَا تَدۡرُونَ أَيُّهُمۡ أَقۡرَبُ لَكُمۡ نَفۡعٗاۚ فَرِيضَةٗ مِّنَ ٱللَّهِۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا حَكِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yooseekumu Allahu fee awladikum: direct divine instruction with precise fractions. Fareedatan min Allah frames as divine obligation not cultural custom."
+        },
+        {
+          "key": "4:12",
+          "excerpt": "۞وَلَكُمۡ نِصۡفُ مَا تَرَكَ أَزۡوَٰجُكُمۡ إِن لَّمۡ يَكُن لَّهُنَّ وَلَدٞۚ فَإِن كَانَ لَهُنَّ وَلَدٞ فَلَكُمُ ٱلرُّبُعُ مِمَّا تَرَكۡنَۚ مِنۢ بَعۡدِ وَصِيَّةٖ يُوصِينَ بِهَآ أَوۡ دَيۡنٖۚ وَلَهُنَّ ٱلرُّبُعُ مِمَّا تَرَكۡتُمۡ إِن لَّمۡ يَكُن لَّكُمۡ وَلَدٞۚ فَإِن كَانَ لَكُمۡ وَلَدٞ فَلَهُنَّ ٱلثُّمُنُ مِمَّا تَرَكۡتُمۚ مِّنۢ بَعۡدِ وَصِيَّةٖ تُوصُونَ بِهَآ أَوۡ دَيۡنٖۗ وَإِن كَانَ رَجُلٞ يُورَثُ كَلَٰلَةً أَوِ ٱمۡرَأَةٞ وَلَهُۥٓ أَخٌ أَوۡ أُخۡتٞ فَلِكُلِّ وَٰحِدٖ مِّنۡهُمَا ٱلسُّدُسُۚ فَإِن كَانُوٓاْ أَكۡثَرَ مِن ذَٰلِكَ فَهُمۡ شُرَكَآءُ فِي ٱلثُّلُثِۚ مِنۢ بَعۡدِ وَصِيَّةٖ يُوصَىٰ بِهَآ أَوۡ دَيۡنٍ غَيۡرَ مُضَآرّٖۚ وَصِيَّةٗ مِّنَ ٱللَّهِۗ وَٱللَّهُ عَلِيمٌ حَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Spousal and kalalah shares. Wasiyyatan min Allah confirms divine ordinance status."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "وراثت کے حصص: تفصیلی قانون",
+      "notes": "Gap candidate: no dedicated inheritance-laws or fara'id topic despite being most detailed legal passage in Quran. Establishes women's inheritance rights explicitly (4:7). Consistent wasiyyah-dayn priority. Hudud framing (4:13) elevates to boundary-of-Allah status with eschatological consequences."
+    },
+    {
+      "candidateId": "cand-0180",
+      "label": "Women's inheritance right: explicit guarantee of obligatory share for women alongside men regardless of estate size",
+      "definition": "In 4:7: For men is a share of what parents and close relatives leave, and for women is a share of what parents and close relatives leave, be it little or much - an obligatory share (naseeban mafroodan).",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:7",
+          "excerpt": "لِّلرِّجَالِ نَصِيبٞ مِّمَّا تَرَكَ ٱلۡوَٰلِدَانِ وَٱلۡأَقۡرَبُونَ وَلِلنِّسَآءِ نَصِيبٞ مِّمَّا تَرَكَ ٱلۡوَٰلِدَانِ وَٱلۡأَقۡرَبُونَ مِمَّا قَلَّ مِنۡهُ أَوۡ كَثُرَۚ نَصِيبٗا مَّفۡرُوضٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Walilnnisai naseebun: parallel construction with men's share. Mimma qalla minhu aw kathura removes minimum threshold. Naseeban mafroodan makes it divinely mandated."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "عورتوں کا وراثت میں حق: فرض شدہ حصہ",
+      "notes": "Gap candidate: revolutionary legal declaration in Arabian context where women were inherited as property (addressed in 4:19). Mafroodan indicates non-negotiable divine mandate. Precedes detailed fractions (4:11-12) as principle statement."
+    },
+    {
+      "candidateId": "cand-0181",
+      "label": "Repentance conditions: accepted for ignorant sin followed by prompt reform, rejected for deathbed or persistent disbelief",
+      "definition": "In 4:17-18: The repentance accepted by Allah is only for those who do wrong in ignorance then repent soon after. But repentance is not accepted of those who do evil until death comes and one says 'I repent now,' nor of those who die as disbelievers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:17",
+          "excerpt": "إِنَّمَا ٱلتَّوۡبَةُ عَلَى ٱللَّهِ لِلَّذِينَ يَعۡمَلُونَ ٱلسُّوٓءَ بِجَهَٰلَةٖ ثُمَّ يَتُوبُونَ مِن قَرِيبٖ فَأُوْلَـٰٓئِكَ يَتُوبُ ٱللَّهُ عَلَيۡهِمۡۗ وَكَانَ ٱللَّهُ عَلِيمًا حَكِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Bijahalatin thumma yatooboona min qareebin: two conditions - ignorance and promptness. Yatoobu Allahu alayhim confirms acceptance."
+        },
+        {
+          "key": "4:18",
+          "excerpt": "وَلَيۡسَتِ ٱلتَّوۡبَةُ لِلَّذِينَ يَعۡمَلُونَ ٱلسَّيِّـَٔاتِ حَتَّىٰٓ إِذَا حَضَرَ أَحَدَهُمُ ٱلۡمَوۡتُ قَالَ إِنِّي تُبۡتُ ٱلۡـَٰٔنَ وَلَا ٱلَّذِينَ يَمُوتُونَ وَهُمۡ كُفَّارٌۚ أُوْلَـٰٓئِكَ أَعۡتَدۡنَا لَهُمۡ عَذَابًا أَلِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Negative cases: deathbed claim (tubtu al-aana) and dying in kufr. Both rejected. Painful punishment prepared."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "توبہ کی شرائط: جہالت میں فوری توبہ قبول، موت کے وقت رد",
+      "notes": "Overlap with repentance (curated) confirmed. Defines precise theological boundaries of tawbah acceptance. Jahalah doesn't mean stupidity but lack of full deliberation. Min qareeb requires temporal proximity. Contrasts with 3:135 pattern by adding explicit rejection criteria."
+    },
+    {
+      "candidateId": "cand-0182",
+      "label": "Solemn marriage covenant: mithaq ghaleeth as inviolable bond prohibiting reclamation of mahr upon divorce",
+      "definition": "In 4:21: And how could you take it while you have gone in unto each other and they have taken from you a solemn covenant (mithaqan ghaleethan)?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:21",
+          "excerpt": "وَكَيۡفَ تَأۡخُذُونَهُۥ وَقَدۡ أَفۡضَىٰ بَعۡضُكُمۡ إِلَىٰ بَعۡضٖ وَأَخَذۡنَ مِنكُم مِّيثَٰقًا غَلِيظٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Mithaqan ghaleethan: unique Quranic phrase elevating marriage to covenant status. Context: prohibition of reclaiming mahr after intimacy. Afda ba'dukum ila ba'd emphasizes physical union reinforcing covenant."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "مضبوط عہد: نکاح کا میثاق غلیظ",
+      "notes": "Gap candidate: no dedicated marriage-covenant or mithaq-ghaleeth topic. Only occurrence of this exact phrase in Quran. Used rhetorically to prohibit financial reclamation. Connects physical intimacy (afda) with contractual sanctity (mithaq)."
+    },
+    {
+      "candidateId": "cand-0183",
+      "label": "Maharim categories: comprehensive list of permanently prohibited marriage relations by blood, nursing, and marriage",
+      "definition": "In 4:23: Prohibited to you are your mothers, daughters, sisters, paternal aunts, maternal aunts, brother's daughters, sister's daughters, milk-mothers, milk-sisters, wives' mothers, step-daughters under guardianship, sons' wives, and two sisters simultaneously.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:23",
+          "excerpt": "حُرِّمَتۡ عَلَيۡكُمۡ أُمَّهَٰتُكُمۡ وَبَنَاتُكُمۡ وَأَخَوَٰتُكُمۡ وَعَمَّـٰتُكُمۡ وَخَٰلَٰتُكُمۡ وَبَنَاتُ ٱلۡأَخِ وَبَنَاتُ ٱلۡأُخۡتِ وَأُمَّهَٰتُكُمُ ٱلَّـٰتِيٓ أَرۡضَعۡنَكُمۡ وَأَخَوَٰتُكُم مِّنَ ٱلرَّضَٰعَةِ وَأُمَّهَٰتُ نِسَآئِكُمۡ وَرَبَـٰٓئِبُكُمُ ٱلَّـٰتِي فِي حُجُورِكُم مِّن نِّسَآئِكُمُ ٱلَّـٰتِي دَخَلۡتُم بِهِنَّ فَإِن لَّمۡ تَكُونُواْ دَخَلۡتُم بِهِنَّ فَلَا جُنَاحَ عَلَيۡكُمۡ وَحَلَـٰٓئِلُ أَبۡنَآئِكُمُ ٱلَّذِينَ مِنۡ أَصۡلَٰبِكُمۡ وَأَن تَجۡمَعُواْ بَيۡنَ ٱلۡأُخۡتَيۡنِ إِلَّا مَا قَدۡ سَلَفَۗ إِنَّ ٱللَّهَ كَانَ غَفُورٗا رَّحِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Hurrimat alaykum: exhaustive enumeration of seven blood relations, two milk relations, three marriage relations, and one combination prohibition. Illa ma qad salafa provides grandfather clause."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "محرمات: نکاح کی مستقل ممنوعہ رشتے داریاں",
+      "notes": "Gap candidate: no dedicated maharim or prohibited-marriage-categories topic. Most comprehensive single-verse listing in Quran. Three categories: nasabi (blood), rada'i (milk), sihr (marriage). Raba'ib exception (if not consummated) shows precision. Combining two sisters uniquely prohibited."
+    },
+    {
+      "candidateId": "cand-0184",
+      "label": "Trade by mutual consent: tijarah an taradin as the only permissible basis for wealth exchange among believers",
+      "definition": "In 4:29: O you who have believed, do not consume one another's wealth unjustly but only in lawful business by mutual consent from you. And do not kill yourselves.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:29",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَأۡكُلُوٓاْ أَمۡوَٰلَكُم بَيۡنَكُم بِٱلۡبَٰطِلِ إِلَّآ أَن تَكُونَ تِجَٰرَةً عَن تَرَاضٖ مِّنكُمۡۚ وَلَا تَقۡتُلُوٓاْ أَنفُسَكُمۡۚ إِنَّ ٱللَّهَ كَانَ بِكُمۡ رَحِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Illa an takoona tijaratan an taradin minkum: exception clause defining sole legitimate transfer mechanism. La takuloo amwalakum bil-batil: broad prohibition of unjust consumption."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "related-not-identical"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "باہمی رضامندی سے تجارت: مال کے تبادلے کا واحد جائز طریقہ",
+      "notes": "Overlap with justice (curated) via economic justice dimension. Foundational Islamic economics verse. Taradin (mutual consent) becomes basis for contract law. Pairing with la taqtuloo anfusakum links economic exploitation to self-destruction. Bikum raheeman frames as mercy not mere restriction."
+    },
+    {
+      "candidateId": "cand-0185",
+      "label": "Kaba'ir and sayyi'at: avoiding major sins causes expiation of minor sins and grants noble entry",
+      "definition": "In 4:31: If you avoid the major sins which you are forbidden, We will remove from you your lesser sins and admit you to a noble entrance.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:31",
+          "excerpt": "إِن تَجۡتَنِبُواْ كَبَآئِرَ مَا تُنۡهَوۡنَ عَنۡهُ نُكَفِّرۡ عَنكُمۡ سَيِّـَٔاتِكُمۡ وَنُدۡخِلۡكُم مُّدۡخَلٗا كَرِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "In tajtaniboo kaba'ira ma tunhawna anhu: conditional structure. Nukaffir sayyi'atikum: divine expiation of minors. Mudkhalan kareeman: noble entry as reward."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "کبیرہ گناہوں سے اجتناب: صغیرہ گناہوں کی معافی",
+      "notes": "Gap candidate: no dedicated kaba'ir or major-sins topic despite being primary Quranic locus for this distinction. Establishes theological principle: avoiding majors automatically expiates minors. Tajtaniboo implies active avoidance not mere non-commission. Mudkhal kareem contrasts with Fire warnings elsewhere."
+    },
+    {
+      "candidateId": "cand-0186",
+      "label": "Marital arbitration: sending hakam from each family to resolve spousal discord (shiqaq) with divine facilitation of reconciliation",
+      "definition": "In 4:35: And if you fear dissension between the two, send an arbitrator from his people and an arbitrator from her people. If they both desire reconciliation, Allah will cause it between them.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:35",
+          "excerpt": "وَإِنۡ خِفۡتُمۡ شِقَاقَ بَيۡنِهِمَا فَٱبۡعَثُواْ حَكَمٗا مِّنۡ أَهۡلِهِۦ وَحَكَمٗا مِّنۡ أَهۡلِهَآ إِن يُرِيدَآ إِصۡلَٰحٗا يُوَفِّقِ ٱللَّهُ بَيۡنَهُمَآۗ إِنَّ ٱللَّهَ كَانَ عَلِيمًا خَبِيرٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ib'athoo hakaman min ahlihi wa hakaman min ahliha: dual-arbitrator mechanism ensuring balanced representation. In yureeda islahan yuwaffiqi Allahu: divine facilitation conditional on genuine reform intent."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:24:00.000Z",
+      "urduLabel": "مییاں بیوی میں ثالثی: خاندانی حکم مقرر کرنا",
+      "notes": "Gap candidate: no dedicated marital-arbitration or shiqaq-resolution topic. Unique communal mechanism for private disputes. Dual-family representation ensures fairness. Yuwaffiqi implies divine agency in reconciliation beyond human effort. Aleeman Khabeeran closes with divine knowledge of inner states."
+    }
+  ]
+}
