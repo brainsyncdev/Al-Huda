@@ -124,12 +124,12 @@
       "reviewStatus": "pending-scholarly-review",
       "createdAt": "2026-11-18T18:18:00.000Z",
       "urduLabel": "متاع الغرور: دنیا کی حقیقت",
-      "notes": "Overlap with day-of-judgment via eschatological framing. Distinctive vocabulary: mata' (temporary provision/enjoyment) + ghurur (delusion/deception). Stronger than mere 'transient' characterization. Appears twice in this passage range (3:171, 3:185)."
+      "notes": "Overlap with day-of-judgment via eschatological framing. Distinctive vocabulary: mata' (temporary provision/enjoyment) + ghurur (delusion/deception). Stronger than mere 'transient' characterization. Appears once in this passage range at 3:185."
     },
     {
       "candidateId": "cand-0172",
       "label": "Hypocrite proximity to kufr: verbal profession of faith disconnected from heart conviction as closer to disbelief",
-      "definition": "In 3:167: They are the ones who said about their brothers while they sat at home, 'If they had obeyed us, they would not have been killed.' Say, 'Then prevent death from yourselves, if you should be truthful.' They were closer to disbelief that day than to faith, saying with their mouths what was not in their hearts.",
+      "definition": "In 3:167: And that He might make evident those who are hypocrites. For it was said to them, 'Come, fight in the way of Allah or defend.' They said, 'If we had known there would be fighting, we would have followed you.' They were nearer to disbelief that day than to faith, saying with their mouths what was not in their hearts. And Allah is most Knowing of what they conceal.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -199,20 +199,36 @@
     },
     {
       "candidateId": "cand-0175",
-      "label": "Steadfast prophetic precedent: rabbaniyyun and ahbar fighting alongside prophets without weakening or losing heart",
-      "definition": "In 3:188: And how many a prophet fought alongside whom were many devoted scholars and followers. They did not lose heart for what afflicted them in the way of Allah, nor did they weaken or submit. And Allah loves the steadfast.",
+      "label": "Ulu al-albab dhikr-tafakkur profile: fourfold remembrance posture combined with creation reflection yielding theological insight",
+      "definition": "In 3:190–191: Indeed, in the creation of the heavens and the earth and the alternation of the night and the day are signs for those of understanding, who remember Allah while standing or sitting or on their sides and give thought to the creation of the heavens and the earth, saying, 'Our Lord, You did not create this aimlessly; exalted are You; protect us from the punishment of the Fire.'",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "3:188",
-          "excerpt": "لَا تَحۡسَبَنَّ ٱلَّذِينَ يَفۡرَحُونَ بِمَآ أَتَواْ وَّيُحِبُّونَ أَن يُحۡمَدُواْ بِمَا لَمۡ يَفۡعَلُواْ فَلَا تَحۡسَبَنَّهُم بِمَفَازَةٖ مِّنَ ٱلۡعَذَابِۖ وَلَهُمۡ عَذَابٌ أَلِيمٞ",
+          "key": "3:190",
+          "excerpt": "إِنَّ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَٱخۡتِلَٰفِ ٱلَّيۡلِ وَٱلنَّهَارِ لَأٓيَٰتٖ لِّأُوْلِي ٱلۡأَلۡبَٰبِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Ka-ayyin min nabiyyin qatala ma'ahu rabbaniyyoon kathir: quantitative emphasis. Ma wahanoo wa ma da'ufoo wa ma istakanoo: triple negation of weakness. Yuhibbu al-sabirin: divine love for steadfast."
+          "rationale": "Inna fee khalqi al-samawat wa-al-ardi wa-ikhtilafi allayli wa-al-nahari la-ayatin li-uli al-albab: establishes creation and alternation as signs for people of understanding."
+        },
+        {
+          "key": "3:191",
+          "excerpt": "ٱلَّذِينَ يَذۡكُرُونَ ٱللَّهَ قِيَٰمٗا وَقُعُودٗا وَعَلَىٰ جُنُوبِهِمۡ وَيَتَفَكَّرُونَ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ رَبَّنَا مَا خَلَقۡتَ هَٰذَا بَٰطِلٗا سُبۡحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Allatheena yathkuroona Allaha qiyaman wa-qu'oodan wa-ala junoobihim wa-yatafakkaroon: fourfold posture (standing, sitting, lying) plus tafakkur. Rabbana ma khalaqta hatha batilan: theological conclusion from reflection. Subhanaka: recognition of divine transcendence. Faqina adhab al-nar: practical supplication flowing from reflection."
         }
       ],
       "existingTopicOverlap": [
         {
-          "topicId": "sabr-patience",
+          "topicId": "reflection-tafakkur",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        },
+        {
+          "topicId": "remembrance-forgetfulness",
+          "layer": "scholarly",
+          "relationship": "related-not-identical"
+        },
+        {
+          "topicId": "signs-and-reflection",
           "layer": "scholarly",
           "relationship": "same-concept"
         }
@@ -220,8 +236,8 @@
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
       "createdAt": "2026-11-18T18:18:00.000Z",
-      "urduLabel": "ثابت قدم پیشروان: ربانیین اور احبار",
-      "notes": "Overlap with sabr-patience confirmed. Variant of 3:146 ribbiyyun account with expanded vocabulary (rabbaniyyun + ahbar implied). Triple negation (wahan/da'f/istikanah) comprehensive resilience profile. Serves as historical encouragement for Uhud-weakened community."
+      "urduLabel": "اولو الالباب: ذکر اور تفکر کا نمونہ",
+      "notes": "Overlap with reflection-tafakkur, remembrance-forgetfulness, and signs-and-reflection confirmed. Unique combination: dhikr in all physical postures paired with active tafakkur on creation. Theological insight (not created in vain) emerges from reflection rather than revelation. Supplication naturally follows recognition. Defines ulu al-albab profile concretely."
     },
     {
       "candidateId": "cand-0176",

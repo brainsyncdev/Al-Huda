@@ -34,21 +34,21 @@ const p17 = {
   pass: "A",
   surah: 3,
   surahName: "Ali 'Imran",
-  passage: { fromAyah: 151, toAyah: 155, label: "Ali 'Imran — Terror cast into hearts of disbelievers for shirk; Fire their refuge wretched destination; Allah fulfilled promise when you slew them by His leave until weakened disputed disobeyed after He showed what you love; among you who desire world and among you who desire hereafter; turned away to test you; pardoned you; Allah Possessor of Bounty toward believers" },
+  passage: { fromAyah: 151, toAyah: 155, label: "Ali 'Imran — Terror for shirk; Fire refuge; fulfilled promise victory by His leave until weakness dispute disobedience; some desire world some hereafter; turned away to test; pardoned Dhu Fadl; flight uphill Messenger calling; grief upon grief; Khabeer; security drowsiness; jahiliyyah thought; counterfactual rebutted; testing breasts purifying hearts; Aleem; turned back at armies met Satan caused slip; forgiven Ghafoor Haleem" },
   verseKeys: ["3:151","3:152","3:153","3:154","3:155"],
   arabicExcerpts: Array.from({length:5}, (_,i) => ({ key: `3:${i+151}`, text: fv(i+151) })),
   mainSubject: {
-    label: "Divine terror cast into hearts of disbelievers as consequence of shirk; Fire as wretched destination; Allah's fulfilled promise during battle victory by His permission; breakdown of discipline: weakness, dispute, disobedience after being shown desired outcome; internal division between those desiring world and those desiring hereafter; divine turning away as test mechanism; divine pardon affirmed; Allah as Dhu Fadl (Possessor of Bounty) toward believers",
+    label: "Terror for shirk; Fire refuge; fulfilled promise victory by His leave; breakdown weakness dispute disobedience after seeing desired outcome; division world-desirers vs hereafter-desirers; turning away as test; pardon affirmed Dhu Fadl; flight uphill Messenger calling behind; grief upon grief mercy mechanism; Khabeer; security drowsiness post-distress; jahiliyyah assumptions; counterfactual death claims rebutted; breast-heart purification; Aleem; turned back at army encounter slipped by Satan for earned blame; forgiven Ghafoor Haleem",
     keys: ["3:151","3:152","3:153","3:154","3:155"],
     evidenceClass: "EXPLICIT_TEXT"
   },
   subordinateSubjects: [
     { label: "Ru'b (terror) cast into hearts of kafirin", keys: ["3:151"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Shirk as cause: ma ashraaku bi-Allah", keys: ["3:151"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Fire as refuge: ma'wahum jahannam", keys: ["3:151"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Bi'sa al-masir: wretched destination", keys: ["3:151"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fire as refuge: ma'wahum al-nar", keys: ["3:151"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Bi'sa mathwa al-zalimin: wretched residence", keys: ["3:151"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Allah fulfilled promise: sadaqa Allahu wa'dahu", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Victory by His leave: taqtuloonahum bi-idhnihi", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Victory by His leave: tahussoonahum bi-idhnihi", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Breakdown: fashiltum + tanaza'tum + 'asaytum", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "After seeing what you love: min ba'di ma arakum ma tuhibboona", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Internal division: minkum man yureedu al-dunya + minkum man yureedu al-akhirah", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
@@ -56,24 +56,26 @@ const p17 = {
     { label: "Li-yabtaliyakum: testing purpose", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Wa laqad 'afa 'ankum: divine pardon", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Dhu fadlin ala al-mu'minin: bounty toward believers", keys: ["3:152"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Flight without looking back: idh tas'adoona", keys: ["3:153"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Flight without looking back: idh tus'idoona", keys: ["3:153"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Messenger calling from behind: al-rasoolu yad'ookum fi ukhrakum", keys: ["3:153"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Grief upon grief: athabakum ghamman bi-ghammin", keys: ["3:153"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Purpose: not grieving for missed gains or struck losses", keys: ["3:153"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Khabeer bi-ma taf'aloon: Allah aware of actions", keys: ["3:153"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Security after distress: anzala 'alaykum amanatan nu'asan", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Slumber overcoming a party: taghasha ta'ifatan minkum", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Slumber overcoming a party: yaghsha ta'ifatan minkum", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Party worried about selves: ta'ifatun qad ahammathum anfusuhum", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Jahiliyyah thought: yazunnoon bi-Allah ghayr al-haqq zann al-jahiliyyah", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Question: hal lana min al-amri min shay'in", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Response: inn al-amra kullahu lillah", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Concealing in selves: yukhfuna fi anfusihim", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Counterfactual: law kana lakum min al-amri shay'un ma qutiltum hahuna", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Decreed killing: law kuntum fi buyootikum la-baraza allatheena kutiba 'alayhim al-qatlu", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Counterfactual: law kana lana min al-amri shay'un ma qutilna hahuna", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Decreed killing: law kuntum fi buyootikum labaraza allatheena kutiba 'alayhim al-qatlu", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Testing breasts and purifying hearts: li-yabtaliya ma fi sudoorikum wa li-yumahhisa ma fi quloobikum", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Aleem bi-dhat al-sudoor", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Those who responded after injury: allatheena istajaboo lillahi wa-al-rasooli min ba'di ma asabahum al-qarhu", keys: ["3:155"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Great reward for muhsinin and muttaqin", keys: ["3:155"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Aleem bi-dhat al-sudoor (3:154 battlefield context)", keys: ["3:154"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Those who turned back when two armies met: allatheena tawallaw minkum yawma iltaqa al-jam'an", keys: ["3:155"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Satan caused them to slip for what they earned: istazallahumu al-shaytanu biba'di ma kasaboo", keys: ["3:155"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah already forgiven them: laqad 'afa Allahu 'anhum", keys: ["3:155"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Ghafoor Haleem: Forgiving Forbearing", keys: ["3:155"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   commandsAndProhibitions: [],
   divineNamesAndAttributes: [],
@@ -88,7 +90,7 @@ const p17 = {
   relationships: [],
   terminology: [],
   topicCandidateIds: ["cand-0167","cand-0168"],
-  notes: "Pass A Imran passage 17/20. Opens Uhud aftermath proper. Triple failure diagnosis (fashil/tanazu'/asa) at 3:152. Jahiliyyah zann (3:154) identifies pre-Islamic fatalism. Dual purification (sudur/qulub) at 3:154. Istijabah after qarh (3:155) defines post-crisis faithfulness.",
+  notes: "Pass A Imran passage 17/20. Opens Uhud aftermath proper. Triple failure diagnosis (fashil/tanazu'/asa) at 3:152. Jahiliyyah zann (3:154) identifies pre-Islamic fatalism. Dual purification (sudur/qulub) at 3:154. Verse 3:155 addresses those who turned back at army encounter: Satan caused slip due to earned blame; Allah forgave them (Ghafoor Haleem).",
   proposedBy: "ai-assisted",
   reviewStatus: "pending-scholarly-review",
   createdAt: TS
@@ -108,6 +110,19 @@ const p17 = {
   const aleemIdx = t154.indexOf("\u0639\u064e\u0644\u0650\u064a\u0645\u064c");
   if (aleemIdx >= 0) {
     p17.divineNamesAndAttributes.push({ term: t154.slice(aleemIdx, aleemIdx + 6), transliteration: "Aleem", gloss: "All-Knowing (editorial gloss)", keys: ["3:154"] });
+  }
+
+  // Ghafoor from 3:155
+  const t155 = fv(155);
+  const ghafoorIdx = t155.indexOf("\u063a\u064e\u0641\u064f\u0648\u0631\u064c");
+  if (ghafoorIdx >= 0) {
+    p17.divineNamesAndAttributes.push({ term: t155.slice(ghafoorIdx, ghafoorIdx + 6), transliteration: "Ghafoor", gloss: "Forgiving (editorial gloss)", keys: ["3:155"] });
+  }
+
+  // Haleem from 3:155
+  const haleemIdx = t155.indexOf("\u062d\u064e\u0644\u0650\u064a\u0645\u064c");
+  if (haleemIdx >= 0) {
+    p17.divineNamesAndAttributes.push({ term: t155.slice(haleemIdx, haleemIdx + 6), transliteration: "Haleem", gloss: "Forbearing (editorial gloss)", keys: ["3:155"] });
   }
 }
 
@@ -138,48 +153,60 @@ const p18 = {
   pass: "A",
   surah: 3,
   surahName: "Ali 'Imran",
-  passage: { fromAyah: 156, toAyah: 165, label: "Ali 'Imran — Do not be like those who say about brothers traveling or raiding if they were with us would not have died or been killed; Allah makes that regret in hearts; Allah gives life and death; sees what you do; tested in wealth/lives hear hurtful words from People of Book and polytheists; patience and taqwa is determination; covenant of those given scripture to explain it not conceal; threw behind backs for small price wretched purchase; do not think those pleased with what brought and love praise for what did not do safe from punishment; painful punishment; dominion heavens earth; creates what wills; gives females/males/both/barren; Knowing Powerful" },
+  passage: { fromAyah: 156, toAyah: 165, label: "Ali 'Imran — Counterfactual grief prohibition hasrah; Allah gives life death Baseer; killed/die in Allah's way maghfirah rahmah better; gathered to Allah; Prophet lenient pardon consult shura rely Allah loves mutawakkileen; divine aid decisive believers rely; ghulul prohibition betrayer brings Qiyamah compensated; ridwan vs sakhat Jahannam; degrees Baseer; favor Messenger tazkiyah hikmah; disaster from yourselves Qadeer" },
   verseKeys: ["3:156","3:157","3:158","3:159","3:160","3:161","3:162","3:163","3:164","3:165"],
   arabicExcerpts: Array.from({length:10}, (_,i) => ({ key: `3:${i+156}`, text: fv(i+156) })),
   mainSubject: {
-    label: "Prohibition of counterfactual grief: do not emulate those who claim absent brothers would have survived; divine making of hasrah (regret) in hearts; Allah as giver of life and death; divine sight over all actions; testing through wealth and lives; hearing hurtful words from Ahl al-Kitab and mushrikeen; sabr and taqwa as azm al-umur (determination); covenant obligation on scripture-bearers to explain not conceal; throwing scripture behind backs for small price; warning against self-satisfaction with wrongdoing and love of unearned praise; painful punishment awaiting; universal divine dominion; creative sovereignty over gender and fertility; Aleem Qadeer",
+    label: "Counterfactual grief prohibition hasrah in hearts; Allah gives life death Baseer; killed/die in Allah's way maghfirah rahmah better than accumulation; gathered to Allah; Prophet lenient by mercy harshness causes disbandment; pardon seek forgiveness consult shura; decide then rely Allah loves mutawakkileen; divine aid decisive none overcomes if forsaken none aids; believers rely Allah; ghulul prohibition betrayer brings goods Qiyamah compensated not wronged; ridwan pursuer vs sakhat bearer Jahannam refuge; degrees Baseer; favor Messenger reciting purifying teaching Book hikmah prior manifest error; disaster from yourselves; Qadeer",
     keys: ["3:156","3:157","3:158","3:159","3:160","3:161","3:162","3:163","3:164","3:165"],
     evidenceClass: "EXPLICIT_TEXT"
   },
   subordinateSubjects: [
-    { label: "Counterfactual grief prohibition: la takoonoo ka-allatheena...", keys: ["3:156"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Counterfactual grief prohibition: la takoonoo ka-allatheena kafaroo", keys: ["3:156"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Hasrah (regret) made in hearts by Allah", keys: ["3:156"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Allah yuhyi wa yumitu: life and death sovereignty", keys: ["3:156"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Baseer bi-ma taf'aloon", keys: ["3:156"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Testing through amwal and anfus", keys: ["3:157"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Hurtful words from Ahl al-Kitab and mushrikeen", keys: ["3:157"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Sabr + taqwa = azm al-umur", keys: ["3:157"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Covenant of bayyanuhu li-al-nas wa la taktumuhu", keys: ["3:158"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Throwing scripture behind backs for small price", keys: ["3:158"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Bi'sa ma yashtaroon: wretched purchase", keys: ["3:158"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "La tahsabanna: do not assume safety from punishment", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Pleased with what they brought + love praise for unearned deeds", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Adhabun aleem: painful punishment", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Lillahi mulku al-samawat wa-al-ard", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Yakhluqu ma yasha'u: creative sovereignty", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Gender distribution: inath/dhukur/kalihima/aqeem", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Aleem Qadeer closing pair", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Killed or die in Allah's way: maghfirah and rahmah better than accumulation", keys: ["3:157"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Whether die or killed gathered to Allah", keys: ["3:158"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Prophet lenient by rahmah from Allah", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Harshness would cause disbandment: law kunta fazzan ghaleeza al-qalb lainfaddoo", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fa'fu 'anhum: pardon them", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Wastaghfir lahum: seek forgiveness for them", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Washawirhum fi al-amr: consult them in the matter (shura)", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fa-idha 'azamta fa-tawakkal: when decided rely on Allah", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah yuhibbu al-mutawakkileen", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "In yansurkum Allahu fala ghaliba lakum: divine aid decisive", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Wa-in yakhthulkum faman dha alladhee yansurukum: if forsaken who aids", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Wa-ala Allahi fal-yatawakkali al-mu'minoon", keys: ["3:160"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "No prophet commits ghulul (misappropriation of booty)", keys: ["3:161"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Whoever betrays brings what he took on Qiyamah", keys: ["3:161"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Every soul fully compensated not wronged: tuwaffa kullu nafsin ma kasabat wa hum la yuzlamoon", keys: ["3:161"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Ridwan follower vs sakhat bearer: afamani ittaba'a ridwana Allahi kaman ba'a bisakhatin", keys: ["3:162"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Jahannam refuge for sakhat bearer: ma'wahu jahannam", keys: ["3:162"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Hum darajatun 'inda Allah: varying degrees with Allah", keys: ["3:163"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Baseer bi-ma ya'maloon", keys: ["3:163"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah conferred favor: laqad manna Allahu ala al-mu'mineen", keys: ["3:164"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Messenger from themselves: rasoolan min anfusihim", keys: ["3:164"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Reciting ayat purifying (tazkiyah) teaching Book and hikmah", keys: ["3:164"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Before in manifest error: la-fee dalalin mubeenin", keys: ["3:164"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Disaster attribution: qul huwa min 'indi anfusikum", keys: ["3:165"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah ala kulli shay'in qadeer (3:165 self-attribution context)", keys: ["3:165"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   commandsAndProhibitions: [],
   divineNamesAndAttributes: [],
   propheticNarratives: [],
   humanConditionsAndSpiritualStates: [
     { label: "Counterfactual thinking as source of spiritual regret", keys: ["3:156"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Self-satisfaction with wrongdoing as moral blindness", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Love of unearned praise as character flaw", keys: ["3:159"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Reliance on Allah (tawakkul) as believer's posture", keys: ["3:159","3:160"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Prior manifest error before Messenger's mission", keys: ["3:164"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   socialEconomicCivilisational: [
-    { label: "Scripture commodification: selling ayat for small price", keys: ["3:158"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Ghulul prohibition: misappropriation of war booty", keys: ["3:161"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   relationships: [],
   terminology: [],
-  topicCandidateIds: ["cand-0169","cand-0170"],
-  notes: "Pass A Imran passage 18/20. Counterfactual grief psychology (3:156) unique diagnostic. Azm al-umur (3:157) defines resolve formula. Scripture-selling motif (3:158) echoes earlier Ahl al-Kitab critique. Gender/fertility sovereignty (3:160) closes with theological anchor.",
+  topicCandidateIds: ["cand-0169"],
+  notes: "Pass A Imran passage 18/20. Counterfactual grief psychology (3:156) unique diagnostic. Shura principle (3:159) explicit prophetic consultation mandate. Ghulul prohibition (3:161) addresses war-booty integrity. Ridwan/sakhat contrast (3:162) defines divergent spiritual trajectories. Tazkiyah/hikmah pairing (3:164) describes prophetic mission scope. Self-attribution of disaster (3:165) establishes moral causality.",
   proposedBy: "ai-assisted",
   reviewStatus: "pending-scholarly-review",
   createdAt: TS
@@ -187,8 +214,9 @@ const p18 = {
 
 // Extract commands from P18
 {
-  p18.commandsAndProhibitions.push({ kind: "PROHIBITION", keys: ["3:156"], excerpt: fv(156), description: "Prohibition: do not be like those who say about absent brothers 'if they were with us they would not have died or been killed'; Allah makes this a source of regret." });
-  p18.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:157"], excerpt: fv(157), description: "Command: be patient and fear Allah; that is the determination of affairs." });
+  p18.commandsAndProhibitions.push({ kind: "PROHIBITION", keys: ["3:156"], excerpt: fv(156), description: "Prohibition: do not be like those who disbelieved and said about absent brothers 'if they were with us they would not have died or been killed'; Allah makes this a source of regret." });
+  p18.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:159"], excerpt: fv(159), description: "Command: pardon them, seek forgiveness for them, and consult them in the matter; when you have decided, rely upon Allah." });
+  p18.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:160"], excerpt: fv(160), description: "Command: upon Allah let the believers rely." });
 }
 
 // Extract divine names from P18
@@ -199,25 +227,59 @@ const p18 = {
     p18.divineNamesAndAttributes.push({ term: t156.slice(baseerIdx, baseerIdx + 6), transliteration: "Baseer", gloss: "All-Seeing (editorial gloss)", keys: ["3:156"] });
   }
 
-  const t160 = fv(160);
-  const aqIdx = t160.indexOf("\u0639\u064e\u0644\u0650\u064a\u0645\u064c \u0642\u064e\u062f\u0650\u064a\u0631\u064c");
-  if (aqIdx >= 0) {
-    p18.divineNamesAndAttributes.push({ term: t160.slice(aqIdx, aqIdx + 13), transliteration: "Aleem Qadeer", gloss: "All-Knowing, All-Powerful (editorial gloss)", keys: ["3:160"] });
+  const t163 = fv(163);
+  const baseer2Idx = t163.indexOf("\u0628\u064e\u0635\u0650\u064a\u0631\u064c");
+  if (baseer2Idx >= 0) {
+    p18.divineNamesAndAttributes.push({ term: t163.slice(baseer2Idx, baseer2Idx + 6), transliteration: "Baseer", gloss: "All-Seeing (editorial gloss)", keys: ["3:163"] });
+  }
+
+  const t165 = fv(165);
+  const qadeerIdx = t165.indexOf("\u0642\u064e\u062f\u0650\u064a\u0631\u064c");
+  if (qadeerIdx >= 0) {
+    p18.divineNamesAndAttributes.push({ term: t165.slice(qadeerIdx, qadeerIdx + 6), transliteration: "Qadeer", gloss: "All-Powerful (editorial gloss)", keys: ["3:165"] });
   }
 }
 
 // Extract terminology from P18
 {
   const t156 = fv(156);
-  const hasrahIdx = t156.indexOf("\u062d\u064e\u0633ْ\u0631\u064e\u0629\u064b");
+  const hasrahIdx = t156.indexOf("\u062d\u064e\u0633\u0652\u0631\u064e\u0629\u064b");
   if (hasrahIdx >= 0) {
     p18.terminology.push({ term: t156.slice(hasrahIdx, hasrahIdx + 7), transliteration: "hasrah", gloss: "regret/remorse (editorial gloss)", keys: ["3:156"] });
   }
 
-  const t157 = fv(157);
-  const azmIdx = t157.indexOf("\u0639\u064e\u0632ْ\u0645\u0650 \u0671\u0644\u0652\u0623\u064f\u0645\u064f\u0648\u0631\u0650");
-  if (azmIdx >= 0) {
-    p18.terminology.push({ term: t157.slice(azmIdx, azmIdx + 16), transliteration: "azm al-umur", gloss: "determination of affairs (editorial gloss)", keys: ["3:157"] });
+  const t161 = fv(161);
+  const ghululIdx = t161.indexOf("\u064a\u064e\u063a\u064f\u0644\u0651\u064e");
+  if (ghululIdx >= 0) {
+    p18.terminology.push({ term: t161.slice(ghululIdx, ghululIdx + 6), transliteration: "yaghulla", gloss: "misappropriate/booty betrayal (editorial gloss)", keys: ["3:161"] });
+  }
+
+  const t162 = fv(162);
+  const ridwanIdx = t162.indexOf("\u0631\u0650\u0636\u0652\u0648\u064e\u0627\u0646\u0650");
+  if (ridwanIdx >= 0) {
+    p18.terminology.push({ term: t162.slice(ridwanIdx, ridwanIdx + 8), transliteration: "ridwan", gloss: "divine pleasure/approval (editorial gloss)", keys: ["3:162"] });
+  }
+
+  const sakhatIdx = t162.indexOf("\u0633\u064e\u062e\u064e\u0637\u064d");
+  if (sakhatIdx >= 0) {
+    p18.terminology.push({ term: t162.slice(sakhatIdx, sakhatIdx + 5), transliteration: "sakhat", gloss: "divine anger/displeasure (editorial gloss)", keys: ["3:162"] });
+  }
+
+  const t163 = fv(163);
+  const darajatIdx = t163.indexOf("\u062f\u064e\u0631\u064e\u062c\u064e\u0627\u062a\u064c");
+  if (darajatIdx >= 0) {
+    p18.terminology.push({ term: t163.slice(darajatIdx, darajatIdx + 7), transliteration: "darajat", gloss: "degrees/ranks (editorial gloss)", keys: ["3:163"] });
+  }
+
+  const t164 = fv(164);
+  const tazkiyahIdx = t164.indexOf("\u064a\u064f\u0632\u064e\u0643\u0651\u0650\u064a\u0647\u0650\u0645\u0652");
+  if (tazkiyahIdx >= 0) {
+    p18.terminology.push({ term: t164.slice(tazkiyahIdx, tazkiyahIdx + 10), transliteration: "yuzakkeehim", gloss: "purifying them (editorial gloss)", keys: ["3:164"] });
+  }
+
+  const hikmahIdx = t164.indexOf("\u0671\u0644\u0652\u062d\u0650\u0643\u0652\u0645\u064e\u0629\u064e");
+  if (hikmahIdx >= 0) {
+    p18.terminology.push({ term: t164.slice(hikmahIdx, hikmahIdx + 10), transliteration: "al-hikmah", gloss: "wisdom (editorial gloss)", keys: ["3:164"] });
   }
 }
 
@@ -231,50 +293,54 @@ const p19 = {
   pass: "A",
   surah: 3,
   surahName: "Ali 'Imran",
-  passage: { fromAyah: 166, toAyah: 180, label: "Ali 'Imran — What struck day two armies met was by Allah's leave to distinguish believers and know hypocrites; said come fight or defend said if knew fighting would follow; closer to disbelief than faith saying with mouths what not in hearts; Allah knows what conceal; stayed behind rejoiced hated striving with wealth/lives said do not go forth in heat say Fire hotter if understood; little enjoyment then Hell refuge wretched destination; every soul tastes death paid full Day Resurrection; drawn from Fire admitted Paradise attained success; worldly life enjoyment delusion; tested wealth/lives hear hurtful words patient fear Allah determination; covenant scripture explain not conceal threw behind backs small price wretched purchase; do not think pleased with brought love praise unearned safe punishment; painful punishment; dominion heavens earth creates wills gives females males both barren Knowing Powerful" },
+  passage: { fromAyah: 166, toAyah: 180, label: "Ali 'Imran — Armies met by Allah's permission distinguish believers hypocrites; nearer kufr than iman mouths not hearts Allah knows; stay-behinds rebutted; martyrs alive provisioned rejoicing glad tidings no fear grief; ni'mah fadl reward preserved; istajaboo after qarhu great reward; threat increased faith hasbuna Allah wakeel; returned ni'mah fadl ridwan Dhu Fadl Azeem; Shaytan frightens fear Me; hastening kufr no share great punishment; kufr purchased painful; respite increases sin humiliating; khabeeth tayyib separation messengers believe fear; withholding bounty worse necks encircled heritage Khabeer" },
   verseKeys: ["3:166","3:167","3:168","3:169","3:170","3:171","3:172","3:173","3:174","3:175","3:176","3:177","3:178","3:179","3:180"],
   arabicExcerpts: Array.from({length:15}, (_,i) => ({ key: `3:${i+166}`, text: fv(i+166) })),
   mainSubject: {
-    label: "Uhud encounter as divine permission to distinguish believers from hypocrites; hypocrite refusal: closer to kufr than iman; verbal profession without heart conviction; divine knowledge of concealed thoughts; those staying behind rejoicing and hating jihad with wealth/lives; heat excuse rebutted by Hell-fire comparison; brief worldly enjoyment followed by eternal Hell; universal death decree; full recompense on Resurrection Day; salvation defined as distance from Fire plus Jannah admission; worldly life as mata' al-ghurur (enjoyment of delusion); repeated testing motif; covenant violation by scripture-bearers; false sense of safety from punishment; divine dominion and creative sovereignty",
+    label: "Armies met by Allah's permission distinguish believers hypocrites; refusal closer kufr than iman mouths not hearts Allah knows concealed; stay-behinds counterfactual rebutted prevent death; martyrs alive provisioned rejoicing glad tidings no fear grief; ni'mah fadl reward preserved; istajaboo after qarhu great reward muhsinin muttaqin; threat increased faith hasbuna Allah wakeel; returned ni'mah fadl no harm ridwan Dhu Fadl Azeem; Shaytan frightens allies fear not them fear Me; hastening kufr cannot harm Allah no share hereafter great punishment; purchased kufr painful punishment; respite increases sin humiliating; khabeeth tayyib separation messenger selection believe fear great reward; withholding bounty worse necks encircled Qiyamah heritage Khabeer",
     keys: ["3:166","3:167","3:168","3:169","3:170","3:171","3:172","3:173","3:174","3:175","3:176","3:177","3:178","3:179","3:180"],
     evidenceClass: "EXPLICIT_TEXT"
   },
   subordinateSubjects: [
     { label: "Yawm al-taqa al-jam'an: day two armies met", keys: ["3:166"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Bi-idhnihi: by Allah's permission", keys: ["3:166"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Li-ya'lama allatheena amanoo: distinguishing believers", keys: ["3:166"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Wa ya'lama allatheena nafaqoo: knowing hypocrites", keys: ["3:166"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Bi-idhni Allah: by Allah's permission", keys: ["3:166"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Li-ya'lama al-mu'mineen: distinguishing believers", keys: ["3:166"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Wa-li-ya'lama allatheena nafaqoo: knowing hypocrites", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Hypocrite refusal: ta'alaw qatiloo fi sabil Allah aw idfa'oo", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Aqrab li-al-kufr min al-iman: closer to disbelief", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Law na'lamu qitalan la-ittaba'nakum: if we knew fighting we would follow", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Hum li-al-kufr yawma-idhin aqrabu minhum li-al-iman: closer to disbelief", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Yaquoloona bi-afwahihim ma laysa fi quloobihim", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Allah aleem bi-ma yaktumoon", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Farahoo bi-maq'adihim khilaf al-rasool", keys: ["3:168"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Karahoo an yujahidoo bi-amwalihim wa anfusihim", keys: ["3:168"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "La tanfiru fi al-harr: heat excuse", keys: ["3:169"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Qul nar jahannama ashaddu harran: rebuttal", keys: ["3:169"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Law kanoo yafqahoon: conditional understanding", keys: ["3:169"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Mata'un qaleel: brief enjoyment", keys: ["3:170"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Jahannam mathwahum: Hell their refuge", keys: ["3:170"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Kull nafsin dha'iqat al-mawt: universal death", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Tuwaffa ujoorakum yawm al-qiyamah: full recompense", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Zuhziha 'an al-nar wa udkhila al-jannah: salvation definition", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Fa-qad faza: attainment of success", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Al-hayat al-dunya mata' al-ghurur: delusion enjoyment", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "La-tublawunna fi amwalikum wa anfusikum: testing announcement", keys: ["3:172"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "La-tasma'unna min allatheena ootu al-kitab... adhan katheeran", keys: ["3:172"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "In tasbiroo wa tattaqoo fa-inna dhalika min azm al-umur", keys: ["3:172"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Mithaq: covenant to explain scripture", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Nabadhuhu waraa'a zuhoorihim: throwing behind backs", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ishtaraw bihi thamanan qaleelan: wretched purchase", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "La tahsabanna allatheena yafrahoona: false safety warning", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Yuhibboona an yuhmadoo bi-ma lam yaf'aloo: love unearned praise", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Adhabun aleem", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Lillahi mulku al-samawat wa-al-ard", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Yakhluqu ma yasha'u", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Yahabu liman yasha'u inathan wa yahabu liman yasha'u al-dhukoor", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Aw yuzawwijuhum dhukranan wa inathan", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Yaj'alu man yasha'u aqeeman", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Innahu aleemun qadeer", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Allah a'lam bi-ma yaktumoon", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Stay-behinds' counterfactual: law ata'oona ma qutiloo", keys: ["3:168"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Qul fa-idra'u 'an anfusikum al-mawt: rebuttal challenge", keys: ["3:168"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "La tahsabanna allatheena qutiloo fi sabil Allah amwatan: do not think martyrs dead", keys: ["3:169"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Bal ahya'un 'inda rabbihim yurzaqoon: alive with Lord receiving provision", keys: ["3:169"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fariheena bima atahumu Allahu min fadlihi: rejoicing in bounty", keys: ["3:170"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Yastabshiroona biallatheena lam yalhaqoo bihim: glad tidings for successors", keys: ["3:170"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Alla khawfun 'alayhim wa la hum yahzanoona: no fear no grief", keys: ["3:170"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Yastabshiroona bi-ni'matin min Allahi wa fadlin", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah la yudee'u ajra al-mu'mineen: reward preserved", keys: ["3:171"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allatheena istajaboo lillahi wa-al-rasooli min ba'di ma asabahum al-qarhu", keys: ["3:172"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Great reward for muhsinin and muttaqin among responders", keys: ["3:172"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Enemy gathering threat increased faith: fazadahum imanan", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Hasbuna Allah wa ni'ma al-wakeel: sufficient trust formula", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Returned with ni'mah and fadl no harm touched them", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Ittaba'oo ridwana Allah: pursued divine pleasure", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Dhu Fadl Azeem: Possessor of Great Bounty", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Shaytan yukhawwifu awliya'ahu: Satan frightens allies", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fala takhafoohum wa-khafoon: fear not them but Me", keys: ["3:175"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Do not grieve over hasteners into kufr", keys: ["3:176"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Cannot harm Allah; no share in hereafter; great punishment", keys: ["3:176"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Purchased kufr for iman: painful punishment", keys: ["3:177"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Respite extension increases sin: numlee lahum li-yazdadoo ithman", keys: ["3:178"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Adhabun muheen: humiliating punishment", keys: ["3:178"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Separation of khabeeth from tayyib", keys: ["3:179"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah yajtabee min rusulihi man yasha': messenger selection", keys: ["3:179"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fa-aminoo bi-Allahi wa-rusulihi: believe in Allah and messengers", keys: ["3:179"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Withholding bounty worse: yabkhaloona bima atahumu Allahu", keys: ["3:180"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Necks encircled by withheld goods on Qiyamah", keys: ["3:180"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Lillahi meerathu al-samawat wa-al-ard: divine heritage", keys: ["3:180"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Khabeer bi-ma taf'aloon", keys: ["3:180"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   commandsAndProhibitions: [],
   divineNamesAndAttributes: [],
@@ -282,16 +348,16 @@ const p19 = {
   humanConditionsAndSpiritualStates: [
     { label: "Hypocrisy as proximity to kufr", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Verbal profession disconnected from heart conviction", keys: ["3:167"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Rejoicing in absence from struggle", keys: ["3:168"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "False sense of safety from divine punishment", keys: ["3:174"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Martyr consciousness: alive rejoicing provisioned", keys: ["3:169","3:170"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Faith increase under threat", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   socialEconomicCivilisational: [
-    { label: "Scripture commodification: selling revelation for trivial gain", keys: ["3:173"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Bukhl (withholding divine bounty) as economic-spiritual transgression", keys: ["3:180"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   relationships: [],
   terminology: [],
-  topicCandidateIds: ["cand-0171","cand-0172"],
-  notes: "Pass A Imran passage 19/20. Hypocrite psychology most detailed here (3:167-168). Mata' al-ghurur (3:171) definitive worldly-life characterization. Salvation formula (zuhziha + udkhila) explicit. Gender/fertility sovereignty (3:175) mirrors 3:160 creating bracket.",
+  topicCandidateIds: ["cand-0172"],
+  notes: "Pass A Imran passage 19/20. Hypocrite psychology most detailed here (3:167). Martyr ontology explicit: alive provisioned rejoicing (3:169-170). Istijabah after qarh (3:172) defines post-injury faithfulness. Hasbuna Allah formula (3:173) canonical trust declaration. Khabeeth/tayyib separation (3:179) divine sorting principle. Bukhl consequences (3:180) eschatological economics.",
   proposedBy: "ai-assisted",
   reviewStatus: "pending-scholarly-review",
   createdAt: TS
@@ -299,25 +365,62 @@ const p19 = {
 
 // Extract commands from P19
 {
-  p19.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:169"], excerpt: fv(169), description: "Command: say 'The fire of Hell is more intense in heat' — rebuttal to heat excuse." });
-  p19.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:172"], excerpt: fv(172), description: "Command: be patient and fear Allah; that is from the determination of affairs." });
+  p19.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:168"], excerpt: fv(168), description: "Command: say 'Then prevent death from yourselves, if you should be truthful' — rebuttal to counterfactual claims." });
+  p19.commandsAndProhibitions.push({ kind: "PROHIBITION", keys: ["3:169"], excerpt: fv(169), description: "Prohibition: never think of those killed in Allah's way as dead; rather they are alive with their Lord receiving provision." });
+  p19.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:175"], excerpt: fv(175), description: "Command: fear not Satan's allies but fear Me, if you are believers." });
+  p19.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:179"], excerpt: fv(179), description: "Command: believe in Allah and His messengers; if you believe and fear Him, great reward awaits." });
 }
 
 // Extract divine names from P19
 {
-  const t175 = fv(175);
-  const aqIdx = t175.indexOf("\u0639\u064e\u0644\u0650\u064a\u0645\u064c \u0642\u064e\u062f\u0650\u064a\u0631\u064c");
-  if (aqIdx >= 0) {
-    p19.divineNamesAndAttributes.push({ term: t175.slice(aqIdx, aqIdx + 13), transliteration: "Aleem Qadeer", gloss: "All-Knowing, All-Powerful (editorial gloss)", keys: ["3:175"] });
+  const t174 = fv(174);
+  const dfIdx = t174.indexOf("\u0630\u064f\u0648 \u0641\u064e\u0636\u0652\u0644\u064d \u0639\u064e\u0638\u0650\u064a\u0645\u064d");
+  if (dfIdx >= 0) {
+    p19.divineNamesAndAttributes.push({ term: t174.slice(dfIdx, dfIdx + 17), transliteration: "Dhu Fadl Azeem", gloss: "Possessor of Great Bounty (editorial gloss)", keys: ["3:174"] });
+  }
+
+  const t180 = fv(180);
+  const khabeerIdx = t180.indexOf("\u062e\u064e\u0628\u0650\u064a\u0631\u064c");
+  if (khabeerIdx >= 0) {
+    p19.divineNamesAndAttributes.push({ term: t180.slice(khabeerIdx, khabeerIdx + 6), transliteration: "Khabeer", gloss: "All-Aware (editorial gloss)", keys: ["3:180"] });
   }
 }
 
 // Extract terminology from P19
 {
-  const t171 = fv(171);
-  const ghururIdx = t171.indexOf("\u0671\u0644\u0652\u063a\u064f\u0631\u064f\u0648\u0631\u0650");
-  if (ghururIdx >= 0) {
-    p19.terminology.push({ term: t171.slice(ghururIdx, ghururIdx + 10), transliteration: "al-ghurur", gloss: "delusion/deception (editorial gloss)", keys: ["3:171"] });
+  const t169 = fv(169);
+  const yurzaqoonIdx = t169.indexOf("\u064a\u064f\u0631\u0652\u0632\u064e\u0642\u064f\u0648\u0646\u064e");
+  if (yurzaqoonIdx >= 0) {
+    p19.terminology.push({ term: t169.slice(yurzaqoonIdx, yurzaqoonIdx + 10), transliteration: "yurzaqoon", gloss: "receiving provision (editorial gloss)", keys: ["3:169"] });
+  }
+
+  const t173 = fv(173);
+  const hasbunaIdx = t173.indexOf("\u062d\u064e\u0633\u0652\u0628\u064f\u0646\u064e");
+  if (hasbunaIdx >= 0) {
+    p173.terminology = p19.terminology;
+    p19.terminology.push({ term: t173.slice(hasbunaIdx, hasbunaIdx + 7), transliteration: "hasbuna", gloss: "sufficient for us (editorial gloss)", keys: ["3:173"] });
+  }
+
+  const wakeelIdx = t173.indexOf("\u0671\u0644\u0652\u0648\u064e\u0643\u0650\u064a\u0644\u064f");
+  if (wakeelIdx >= 0) {
+    p19.terminology.push({ term: t173.slice(wakeelIdx, wakeelIdx + 9), transliteration: "al-wakeel", gloss: "the Disposer of affairs (editorial gloss)", keys: ["3:173"] });
+  }
+
+  const t178 = fv(178);
+  const numleeIdx = t178.indexOf("\u0646\u064f\u0645\u0652\u0644\u0650\u064a");
+  if (numleeIdx >= 0) {
+    p19.terminology.push({ term: t178.slice(numleeIdx, numleeIdx + 6), transliteration: "numlee", gloss: "We extend/grant respite (editorial gloss)", keys: ["3:178"] });
+  }
+
+  const t179 = fv(179);
+  const khabeethIdx = t179.indexOf("\u0671\u0644\u0652\u062e\u064e\u0628\u0650\u064a\u062b\u064e");
+  if (khabeethIdx >= 0) {
+    p19.terminology.push({ term: t179.slice(khabeethIdx, khabeethIdx + 9), transliteration: "al-khabeeth", gloss: "the evil/bad (editorial gloss)", keys: ["3:179"] });
+  }
+
+  const tayyibIdx = t179.indexOf("\u0671\u0644\u0637\u064e\u064a\u0651\u0650\u0628\u0650");
+  if (tayyibIdx >= 0) {
+    p19.terminology.push({ term: t179.slice(tayyibIdx, tayyibIdx + 9), transliteration: "al-tayyib", gloss: "the good/pure (editorial gloss)", keys: ["3:179"] });
   }
 }
 
@@ -331,11 +434,11 @@ const p20 = {
   pass: "A",
   surah: 3,
   surahName: "Ali 'Imran",
-  passage: { fromAyah: 181, toAyah: 200, label: "Ali 'Imran — Allah heard saying Allah is poor we are rich; record what said and killing prophets without right; say taste burning punishment for what hands sent forward; Allah not unjust to servants; those said Allah commanded not believe messenger until brings offering consumed fire; say messengers before came clear signs and what described why kill if truthful; deny messengers before denied matters returned to Allah; every soul tastes death paid full Resurrection; drawn from Fire admitted Paradise succeeded; worldly life enjoyment delusion; race forgiveness Garden wide heavens earth prepared muttaqin; spend ease hardship restrain anger pardon people Allah loves muhsinin; commit indecency wrong self remember seek forgiveness who forgives except Allah persist knowingly; reward forgiveness Gardens rivers flowing abiding excellent reward workers; many prophets fought rabbaniyyun ahbar did not weaken lose heart Allah loves sabirin; saying rabbana forgive sins excesses firm feet victory disbelievers; Allah gave world good akhirah reward Allah loves muhsinin; obey disbelievers turn back heels losers; Allah mawla best helper; cast terror disbelievers because disbelieved; refuge Fire wretched destination; fulfilled promise slew by leave; weakened disputed disobeyed after showed love; desire world desire hereafter; turned away test; pardoned; Possessor Bounty; O believers patient endure guard frontiers fear Allah succeed" },
+  passage: { fromAyah: 181, toAyah: 200, label: "Ali 'Imran — Allah heard poverty claim recorded prophet-killing taste burning; not unjust; fire-offering demand refuted prior messengers bayyinat zubur kitab muneer denied; death full recompense salvation mata' al-ghurur; tested wealth selves abuse sabr taqwa azm al-umur; covenant thrown sold thaman qaleel; unearned praise warning; dominion Qadeer; creation signs ulu al-albab dhikr tafakkur; four rabbana supplications; gender-equal reward emigration fighting gardens; deception warning brief enjoyment Jahannam; muttaqin gardens abrar; believing Ahl al-Kitab humble Saree' al-Hisab; isbiroo sabiroo rabitoo ittaqoo" },
   verseKeys: ["3:181","3:182","3:183","3:184","3:185","3:186","3:187","3:188","3:189","3:190","3:191","3:192","3:193","3:194","3:195","3:196","3:197","3:198","3:199","3:200"],
   arabicExcerpts: Array.from({length:20}, (_,i) => ({ key: `3:${i+181}`, text: fv(i+181) })),
   mainSubject: {
-    label: "Divine hearing of blasphemous claim 'Allah is poor we are rich'; recording of speech and unjust prophet-killing; command to taste burning punishment as consequence of own deeds; divine non-injustice affirmed; refutation of demand for fire-consumed offering as sign; prior messengers came with clear signs yet were killed; denial pattern across generations; return of all matters to Allah; universal death and full recompense; salvation as distance from Fire plus Jannah admission; worldly life as mata' al-ghurur; racing toward maghfirah and vast Garden for muttaqin; defining traits repeated: spending in ease/hardship, restraining anger, pardoning; repentance pattern: fahishah/zulm -> dhikr -> istighfar -> non-persistence; exclusive divine forgiveness; reward: maghfirah + gardens + rivers + eternal; excellent worker reward; prophetic precedent: rabbaniyyun/ahbar steadfastness; rabbana supplication echoed; dual reward granted; Allah loves muhsinin/sabirin; obedience warning repeated; Allah as mawla/khayr al-nasirin; terror cast into disbelievers; Fire refuge; fulfilled promise; breakdown diagnosis repeated; pardon affirmed; closing exhortation: isbiruu wa sabiroo wa rabitoo wa ittaqoo Allah la'allakum tuflihun",
+    label: "Blasphemous poverty claim recorded prophet-killing taste burning; divine non-injustice; fire-offering demand refuted prior messengers bayyinat zubur kitab muneer denied; universal death full recompense salvation zuhziha udkhila faza; mata' al-ghurur; testing wealth selves abuse sabr taqwa azm al-umur; covenant thrown sold thaman qaleel; unearned praise warning painful punishment; dominion Qadeer; creation night-day signs ulu al-albab; fourfold dhikr tafakkur; rabbana supplications 3:191-194 protection disgrace forgiveness abrar promise; divine response gender-equal reward emigration expulsion harm fighting gardens best reward; deception warning brief enjoyment Jahannam; muttaqin gardens rivers abrar; believing Ahl al-Kitab humble not selling ayat Saree' al-Hisab; closing isbiruu sabiroo rabitoo ittaqoo",
     keys: ["3:181","3:182","3:183","3:184","3:185","3:186","3:187","3:188","3:189","3:190","3:191","3:192","3:193","3:194","3:195","3:196","3:197","3:198","3:199","3:200"],
     evidenceClass: "EXPLICIT_TEXT"
   },
@@ -345,62 +448,65 @@ const p20 = {
     { label: "Sanaktubu ma qaloo: recording of speech", keys: ["3:181"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Wa qatlahum al-anbiya'a bi-ghayri haqq: unjust prophet-killing", keys: ["3:181"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Dhooqoo adhab al-hareeq: taste burning punishment", keys: ["3:181"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Bima qaddamat aydeekum: consequence of own deeds", keys: ["3:181"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Anna Allaha laysa bi-zallamin li-al-abid", keys: ["3:182"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Bima qaddamat aydeekum: consequence of own deeds", keys: ["3:182"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Anna Allaha laysa bi-zallamin li-al-abid: divine non-injustice", keys: ["3:182"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Demand for fire-consumed offering as sign", keys: ["3:183"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Refutation: messengers came with bayyinat + same demand", keys: ["3:183"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Fa-lim qataltumohum in kuntum sadiqeen: challenge", keys: ["3:183"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Denial pattern: kadhdhaba allatheena min qablikum", keys: ["3:184"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ila Allah turja'u al-umur: return to Allah", keys: ["3:184"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Denial pattern: kadhdhaba rusulun min qablikum", keys: ["3:184"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Bayyinat zubur kitab muneer: clear proofs scriptures enlightening Book", keys: ["3:184"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Kull nafsin dha'iqat al-mawt: universal death", keys: ["3:185"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Full recompense on Day of Resurrection", keys: ["3:185"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Salvation: zuhziha + udkhila + faza", keys: ["3:185"], evidenceClass: "EXPLICIT_TEXT" },
     { label: "Mata' al-ghurur: worldly delusion", keys: ["3:185"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Sarri'oo ila maghfiratin min rabbikum: race to forgiveness", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Jannah ardhuha al-samawat wa-al-ard: vast Garden", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Spending in sarra' and darra'", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Kazimin al-ghayth: anger restraint", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Afeena an al-nas: pardoning people", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Allah yuhibbu al-muhsinin", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Repentance pattern: fahishah/zulm -> dhikr -> istighfar", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Man yaghfiru al-dhunuba illa Allah: exclusive forgiveness", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Walam yusirroo ala ma fa'aloo: non-persistence", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Reward: maghfirah + jannat + anhar + khalideen", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ni'ma ajr al-amilin: excellent worker reward", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ka-ayyin min nabiyyin qatala ma'ahu rabbaniyyoon: prophetic precedent", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ma wahanoo wa ma da'ufoo wa ma istakanoo: no weakening", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Allah yuhibbu al-sabirin", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Rabbana supplication echoed", keys: ["3:189"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Dual reward: thawab al-dunya + husn thawab al-akhirah", keys: ["3:190"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Allah yuhibbu al-muhsinin", keys: ["3:190"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Obedience warning: in tuti'oo allatheena kafaroo", keys: ["3:191"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Allah mawlakum wa huwa khayr al-nasirin", keys: ["3:192"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ru'b cast into hearts of kafirin", keys: ["3:193"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Fire refuge: bi'sa al-maseer", keys: ["3:193"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Fulfilled promise: sadaqa Allahu wa'dahu", keys: ["3:194"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Breakdown: fashil/tanazu'/asa repeated", keys: ["3:194"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Desire world vs desire hereafter", keys: ["3:194"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Divine pardon: laqad 'afa Allahu 'ankum", keys: ["3:194"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Dhu fadlin ala al-mu'minin", keys: ["3:194"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Closing: isbiruu wa sabiroo wa rabitoo", keys: ["3:200"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Ittaqoo Allah la'allakum tuflihun: final exhortation", keys: ["3:200"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "La-tublawunna fi amwalikum wa anfusikum: testing announcement", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Abuse from Ahl al-Kitab and mushrikeen", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "In tasbiroo wa tattaqoo fa-inna dhalika min azm al-umur", keys: ["3:186"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Covenant to explain scripture not conceal", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Nabadhuhu waraa'a zuhoorihim: throwing behind backs", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Ishtaraw bihi thamanan qaleelan: sold for small price", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "La tahsabanna allatheena yafrahoona: false safety warning", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Yuhibboona an yuhmadoo bi-ma lam yaf'aloo: love unearned praise", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Adhabun aleem: painful punishment", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Lillahi mulku al-samawat wa-al-ard: divine dominion", keys: ["3:189"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Allah ala kulli shay'in qadeer (3:189 dominion context)", keys: ["3:189"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Creation and night-day alternation as signs for ulu al-albab", keys: ["3:190"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Fourfold dhikr posture: qiyaman qu'oodan ala junoobihim", keys: ["3:191"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Yatafakkaroon fi khalq al-samawat wa-al-ard: creation reflection", keys: ["3:191"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Supplication: rabbana ma khalaqta hatha batilan subhanaka faqina adhab al-nar", keys: ["3:191"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Supplication: rabbana innaka man tudkhil al-nar faqad akhzaytahu", keys: ["3:192"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Supplication: rabbana faghfir lana dhunoobana wa kaffir anna sayyi'atina wa tawaffana ma'a al-abrar", keys: ["3:193"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Supplication: rabbana wa atina ma wa'adtana ala rusulika wa la tukhzina yawm al-qiyamah", keys: ["3:194"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Divine response: la odee'u amala amilin min thakarin aw ontha", keys: ["3:195"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Gender-equal reward: ba'dukum min ba'din", keys: ["3:195"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Emigration expulsion harm fighting killing rewarded", keys: ["3:195"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "La yaghurrannaka taqallubu allatheena kafaroo: deception warning", keys: ["3:196"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Mata'un qaleel thumma ma'wahum jahannam: brief enjoyment then Hell", keys: ["3:197"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Muttaqin gardens rivers eternal accommodation from Allah", keys: ["3:198"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Ma 'inda Allah khayrun li-al-abrar", keys: ["3:198"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Believing Ahl al-Kitab: humble not selling ayat for small price", keys: ["3:199"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Saree' al-hisab: swift in account", keys: ["3:199"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Closing: isbiruu wa sabiroo wa rabitoo wa ittaqoo Allah", keys: ["3:200"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "La'allakum tuflihun: success condition", keys: ["3:200"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   commandsAndProhibitions: [],
   divineNamesAndAttributes: [],
   propheticNarratives: [
-    { label: "Many prophets fought with rabbaniyyun/ahbar without weakening", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Prior messengers denied despite clear signs", keys: ["3:184"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Prior messengers denied despite bayyinat zubur kitab muneer", keys: ["3:184"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Prior messengers came with fire-consumed offering yet were killed", keys: ["3:183"], evidenceClass: "EXPLICIT_TEXT" }
   ],
   humanConditionsAndSpiritualStates: [
     { label: "Blasphemous arrogance as spiritual bankruptcy", keys: ["3:181"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Post-sin repentance as recurring ethical pattern", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" },
-    { label: "Steadfastness under prolonged trial", keys: ["3:188"], evidenceClass: "EXPLICIT_TEXT" }
+    { label: "Ulu al-albab: reflective believers combining dhikr and tafakkur", keys: ["3:190","3:191"], evidenceClass: "EXPLICIT_TEXT" },
+    { label: "Supplicant posture: comprehensive du'a sequence", keys: ["3:191","3:192","3:193","3:194"], evidenceClass: "EXPLICIT_TEXT" }
   ],
-  socialEconomicCivilisational: [],
+  socialEconomicCivilisational: [
+    { label: "Scripture commodification: selling ayat for thaman qaleel", keys: ["3:187"], evidenceClass: "EXPLICIT_TEXT" }
+  ],
   relationships: [],
   terminology: [],
-  topicCandidateIds: ["cand-0173","cand-0174","cand-0175","cand-0176"],
-  notes: "Pass A Imran passage 20/20. Final section synthesizes entire surah's themes. Repeats key formulas: kazimin/afeena (3:186 echoing 3:134), repentance (3:187 echoing 3:135), rabbana (3:189 echoing 3:147), obedience warning (3:191 echoing 3:149), ru'b/mawla/pardon (3:193-194 echoing 3:151-152). Closing quadruple imperative (3:200) unique in Quran: isbiruu/sabiroo/rabitoo/ittaqoo. Rabbaniyyun/ahbar (3:188) variant of ribbiyyun (3:146).",
+  topicCandidateIds: ["cand-0170","cand-0171","cand-0173","cand-0174","cand-0175","cand-0176"],
+  notes: "Pass A Imran passage 20/20. Final section synthesizes surah themes. Mata' al-ghurur (3:185) definitive worldly characterization. Azm al-umur (3:186) resolve formula. Scripture-selling motif (3:187) echoes earlier critique. Four rabbana supplications (3:191-194) unique concentration. Gender-equal reward (3:195) explicit. Ulu al-albab profile (3:190-191) combines dhikr and tafakkur. Closing quadruple imperative (3:200) unique: isbiruu/sabiroo/rabitoo/ittaqoo. Saree' al-Hisab (3:199) closes Ahl al-Kitab discussion.",
   proposedBy: "ai-assisted",
   reviewStatus: "pending-scholarly-review",
   createdAt: TS
@@ -409,43 +515,66 @@ const p20 = {
 // Extract commands from P20
 {
   p20.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:181"], excerpt: fv(181), description: "Command: say 'Taste the burning punishment' as consequence of what your hands have sent forward." });
-  p20.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:186"], excerpt: fv(186), description: "Command: race toward forgiveness from your Lord and a Garden as wide as heavens and earth." });
-  p20.commandsAndProhibitions.push({ kind: "TAUGHT_SUPPLICATION", keys: ["3:189"], excerpt: fv(189), description: "Supplication echoed: Our Lord, forgive us our sins and excesses, plant firmly our feet, grant victory over disbelievers." });
-  p20.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:200"], excerpt: fv(200), description: "Closing quadruple imperative: be patient, endure, guard frontiers, and fear Allah that you may succeed." });
+  p20.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:186"], excerpt: fv(186), description: "Conditional: if you are patient and fear Allah, that is from the matters of determination." });
+  p20.commandsAndProhibitions.push({ kind: "TAUGHT_SUPPLICATION", keys: ["3:191"], excerpt: fv(191), description: "Taught supplication: Our Lord, You did not create this aimlessly; exalted are You; protect us from the punishment of the Fire." });
+  p20.commandsAndProhibitions.push({ kind: "TAUGHT_SUPPLICATION", keys: ["3:192"], excerpt: fv(192), description: "Taught supplication: Our Lord, indeed whoever You admit to the Fire You have disgraced, and for the wrongdoers there are no helpers." });
+  p20.commandsAndProhibitions.push({ kind: "TAUGHT_SUPPLICATION", keys: ["3:193"], excerpt: fv(193), description: "Taught supplication: Our Lord, we heard a caller calling to faith and we believed; forgive us our sins, remove our misdeeds, and cause us to die with the righteous." });
+  p20.commandsAndProhibitions.push({ kind: "TAUGHT_SUPPLICATION", keys: ["3:194"], excerpt: fv(194), description: "Taught supplication: Our Lord, grant us what You promised through Your messengers and do not disgrace us on the Day of Resurrection; You do not fail in promise." });
+  p20.commandsAndProhibitions.push({ kind: "PROHIBITION", keys: ["3:196"], excerpt: fv(196), description: "Prohibition: let not the movement of disbelievers throughout the land deceive you." });
+  p20.commandsAndProhibitions.push({ kind: "COMMAND", keys: ["3:200"], excerpt: fv(200), description: "Closing quadruple imperative: persevere, endure, remain stationed, and fear Allah that you may be successful." });
 }
 
 // Extract divine names from P20
 {
-  const t182 = fv(182);
-  const zallamIdx = t182.indexOf("\u0638\u064e\u0644\u0651\u064e\u0627\u0645\u064c");
-  if (zallamIdx >= 0) {
-    // Extract "laysa bi-zallamin li-al-abid" concept — but term must be verbatim
-    // Let's find just the divine attribute negation
-    const laysaIdx = t182.indexOf("\u0644\u064e\u064aْ\u0633\u064e");
-    if (laysaIdx >= 0) {
-      // Skip — negative attribute not typically extracted as divine name
-    }
+  const t189 = fv(189);
+  const qadeerIdx = t189.indexOf("\u0642\u064e\u062f\u0650\u064a\u0631\u064c");
+  if (qadeerIdx >= 0) {
+    p20.divineNamesAndAttributes.push({ term: t189.slice(qadeerIdx, qadeerIdx + 6), transliteration: "Qadeer", gloss: "All-Powerful (editorial gloss)", keys: ["3:189"] });
   }
 
-  const t192 = fv(192);
-  const mawlaIdx = t192.indexOf("\u0645\u064e\u0648ْ\u0644\u064e\u0627\u0643\u064f\u0645\u064f");
-  if (mawlaIdx >= 0) {
-    p20.divineNamesAndAttributes.push({ term: t192.slice(mawlaIdx, mawlaIdx + 10), transliteration: "Mawlakum", gloss: "your Protector/Master (editorial gloss)", keys: ["3:192"] });
+  const t199 = fv(199);
+  const sareeIdx = t199.indexOf("\u0633\u064e\u0631\u0650\u064a\u0639\u064f \u0671\u0644\u0652\u062d\u0650\u0633\u064e\u0627\u0628\u0650");
+  if (sareeIdx >= 0) {
+    p20.divineNamesAndAttributes.push({ term: t199.slice(sareeIdx, sareeIdx + 16), transliteration: "Saree' al-Hisab", gloss: "Swift in Account (editorial gloss)", keys: ["3:199"] });
   }
 }
 
 // Extract terminology from P20
 {
-  const t188 = fv(188);
-  const rabbaniIdx = t188.indexOf("\u0631\u064e\u0628\u0651\u064e\u0627\u0646\u0650\u064a\u0651\u064f\u0648\u0646\u064e");
-  if (rabbaniIdx >= 0) {
-    p20.terminology.push({ term: t188.slice(rabbaniIdx, rabbaniIdx + 12), transliteration: "rabbaniyyoon", gloss: "devout scholars/Lord-devoted ones (editorial gloss)", keys: ["3:188"] });
+  const t185 = fv(185);
+  const ghururIdx = t185.indexOf("\u0671\u0644\u0652\u063a\u064f\u0631\u064f\u0648\u0631\u0650");
+  if (ghururIdx >= 0) {
+    p20.terminology.push({ term: t185.slice(ghururIdx, ghururIdx + 10), transliteration: "al-ghurur", gloss: "delusion/deception (editorial gloss)", keys: ["3:185"] });
+  }
+
+  const t186 = fv(186);
+  const azmIdx = t186.indexOf("\u0639\u064e\u0632\u0652\u0645\u0650 \u0671\u0644\u0652\u0623\u064f\u0645\u064f\u0648\u0631\u0650");
+  if (azmIdx >= 0) {
+    p20.terminology.push({ term: t186.slice(azmIdx, azmIdx + 16), transliteration: "azm al-umur", gloss: "determination of affairs (editorial gloss)", keys: ["3:186"] });
+  }
+
+  const t187 = fv(187);
+  const thamanIdx = t187.indexOf("\u062b\u064e\u0645\u064e\u0646\u064b\u0627 \u0642\u064e\u0644\u0650\u064a\u0644\u064b\u0627");
+  if (thamanIdx >= 0) {
+    p20.terminology.push({ term: t187.slice(thamanIdx, thamanIdx + 14), transliteration: "thamanan qaleelan", gloss: "small/trivial price (editorial gloss)", keys: ["3:187"] });
+  }
+
+  const t190 = fv(190);
+  const uluIdx = t190.indexOf("\u0623\u064f\u0648\u0644\u0650\u064a \u0671\u0644\u0652\u0623\u064e\u0644\u0652\u0628\u064e\u0627\u0628\u0650");
+  if (uluIdx >= 0) {
+    p20.terminology.push({ term: t190.slice(uluIdx, uluIdx + 16), transliteration: "ulu al-albab", gloss: "people of understanding/intellect (editorial gloss)", keys: ["3:190"] });
+  }
+
+  const t193 = fv(193);
+  const abrarIdx = t193.indexOf("\u0671\u0644\u0652\u0623\u064e\u0628\u0652\u0631\u064e\u0627\u0631\u0650");
+  if (abrarIdx >= 0) {
+    p20.terminology.push({ term: t193.slice(abrarIdx, abrarIdx + 10), transliteration: "al-abrar", gloss: "the righteous/devout (editorial gloss)", keys: ["3:193"] });
   }
 
   const t200 = fv(200);
   const rabitooIdx = t200.indexOf("\u0631\u064e\u0627\u0628\u0650\u0637\u064f\u0648\u0627");
   if (rabitooIdx >= 0) {
-    p20.terminology.push({ term: t200.slice(rabitooIdx, rabitooIdx + 8), transliteration: "rabitoo", gloss: "guard frontiers/steadfast perseverance (editorial gloss)", keys: ["3:200"] });
+    p20.terminology.push({ term: t200.slice(rabitooIdx, rabitooIdx + 8), transliteration: "rabitoo", gloss: "remain stationed/guard frontiers (editorial gloss)", keys: ["3:200"] });
   }
 }
 
@@ -526,14 +655,14 @@ candidates.candidates.push(makeCand("cand-0171",
   "In 3:185: And what is the worldly life except the enjoyment of delusion.",
   [{ key: "3:185", excerpt: fv(185), evidenceClass: "EXPLICIT_TEXT", rationale: "Wa ma al-hayat al-dunya illa mata' al-ghurur: definitive equation using illa (nothing except). Ghurur implies active deception, not mere transience." }],
   [{ topicId: "day-of-judgment", layer: "scholarly", relationship: "related-not-identical" }],
-  "Overlap with day-of-judgment via eschatological framing. Distinctive vocabulary: mata' (temporary provision/enjoyment) + ghurur (delusion/deception). Stronger than mere 'transient' characterization. Appears twice in this passage range (3:171, 3:185)."
+  "Overlap with day-of-judgment via eschatological framing. Distinctive vocabulary: mata' (temporary provision/enjoyment) + ghurur (delusion/deception). Stronger than mere 'transient' characterization. Appears once in this passage range at 3:185."
 ));
 
 // cand-0172: Hypocrite proximity to kufr — verbal profession without heart conviction
 candidates.candidates.push(makeCand("cand-0172",
   "Hypocrite proximity to kufr: verbal profession of faith disconnected from heart conviction as closer to disbelief",
   undefined, "\u0645\u0646\u0627\u0641\u0642\u06cc\u0646 \u06a9\u0627 \u06a9\u0641\u0631 \u0633\u06d2 \u0642\u0631\u0628: \u0632\u0628\u0627\u0646\u06cc \u0627\u0642\u0631\u0627\u0631 \u0628\u063a\u06cc\u0631 \u062f\u0644\u06cc \u06cc\u0642\u06cc\u0646",
-  "In 3:167: They are the ones who said about their brothers while they sat at home, 'If they had obeyed us, they would not have been killed.' Say, 'Then prevent death from yourselves, if you should be truthful.' They were closer to disbelief that day than to faith, saying with their mouths what was not in their hearts.",
+  "In 3:167: And that He might make evident those who are hypocrites. For it was said to them, 'Come, fight in the way of Allah or defend.' They said, 'If we had known there would be fighting, we would have followed you.' They were nearer to disbelief that day than to faith, saying with their mouths what was not in their hearts. And Allah is most Knowing of what they conceal.",
   [{ key: "3:167", excerpt: fv(167), evidenceClass: "EXPLICIT_TEXT", rationale: "Hum li-al-kufr yawma-idhin aqrabu minhum li-al-iman: explicit proximity measurement. Yaquoloona bi-afwahihim ma laysa fi quloobihim defines the disconnect." }],
   [],
   "Gap candidate: no dedicated hypocrisy-psychology or nifaq-inner-state topic. Distinctive as quantified spiritual assessment (aqrab). Mouth-heart disconnect formula appears uniquely here. Battlefield context makes hypocrisy concrete rather than abstract."
@@ -560,14 +689,17 @@ candidates.candidates.push(makeCand("cand-0174",
   "Gap candidate: no dedicated blasphemy-types or divine-poverty-claim topic. Unique explicit quotation of anti-theological speech. Recording (sanaktubu) emphasizes accountability for speech. Paired with prophet-killing as dual transgression."
 ));
 
-// cand-0175: Steadfast prophetic precedent — rabbaniyyun/ahbar fighting without weakening
+// cand-0175: Ulu al-albab dhikr-tafakkur profile — fourfold remembrance combined with creation reflection
 candidates.candidates.push(makeCand("cand-0175",
-  "Steadfast prophetic precedent: rabbaniyyun and ahbar fighting alongside prophets without weakening or losing heart",
-  undefined, "\u062b\u0627\u0628\u062a \u0642\u062f\u0645 \u067e\u06cc\u0634\u0631\u0648\u0627\u0646: \u0631\u0628\u0627\u0646\u06cc\u06cc\u0646 \u0627\u0648\u0631 \u0627\u062d\u0628\u0627\u0631",
-  "In 3:188: And how many a prophet fought alongside whom were many devoted scholars and followers. They did not lose heart for what afflicted them in the way of Allah, nor did they weaken or submit. And Allah loves the steadfast.",
-  [{ key: "3:188", excerpt: fv(188), evidenceClass: "EXPLICIT_TEXT", rationale: "Ka-ayyin min nabiyyin qatala ma'ahu rabbaniyyoon kathir: quantitative emphasis. Ma wahanoo wa ma da'ufoo wa ma istakanoo: triple negation of weakness. Yuhibbu al-sabirin: divine love for steadfast." }],
-  [{ topicId: "sabr-patience", layer: "scholarly", relationship: "same-concept" }],
-  "Overlap with sabr-patience confirmed. Variant of 3:146 ribbiyyun account with expanded vocabulary (rabbaniyyun + ahbar implied). Triple negation (wahan/da'f/istikanah) comprehensive resilience profile. Serves as historical encouragement for Uhud-weakened community."
+  "Ulu al-albab dhikr-tafakkur profile: fourfold remembrance posture combined with creation reflection yielding theological insight",
+  undefined, "\u0627\u0648\u0644\u0648 \u0627\u0644\u0627\u0644\u0628\u0627\u0628: \u0630\u06a9\u0631 \u0627\u0648\u0631 \u062a\u0641\u06a9\u0631 \u06a9\u0627 \u0646\u0645\u0648\u0646\u06c1",
+  "In 3:190–191: Indeed, in the creation of the heavens and the earth and the alternation of the night and the day are signs for those of understanding, who remember Allah while standing or sitting or on their sides and give thought to the creation of the heavens and the earth, saying, 'Our Lord, You did not create this aimlessly; exalted are You; protect us from the punishment of the Fire.'",
+  [{ key: "3:190", excerpt: fv(190), evidenceClass: "EXPLICIT_TEXT", rationale: "Inna fee khalqi al-samawat wa-al-ardi wa-ikhtilafi allayli wa-al-nahari la-ayatin li-uli al-albab: establishes creation and alternation as signs for people of understanding." },
+   { key: "3:191", excerpt: fv(191), evidenceClass: "EXPLICIT_TEXT", rationale: "Allatheena yathkuroona Allaha qiyaman wa-qu'oodan wa-ala junoobihim wa-yatafakkaroon: fourfold posture (standing, sitting, lying) plus tafakkur. Rabbana ma khalaqta hatha batilan: theological conclusion from reflection. Subhanaka: recognition of divine transcendence. Faqina adhab al-nar: practical supplication flowing from reflection." }],
+  [{ topicId: "reflection-tafakkur", layer: "scholarly", relationship: "same-concept" },
+   { topicId: "remembrance-forgetfulness", layer: "scholarly", relationship: "related-not-identical" },
+   { topicId: "signs-and-reflection", layer: "scholarly", relationship: "same-concept" }],
+  "Overlap with reflection-tafakkur, remembrance-forgetfulness, and signs-and-reflection confirmed. Unique combination: dhikr in all physical postures paired with active tafakkur on creation. Theological insight (not created in vain) emerges from reflection rather than revelation. Supplication naturally follows recognition. Defines ulu al-albab profile concretely."
 ));
 
 // cand-0176: Salvation formula — distance from Fire plus Jannah admission as true success
