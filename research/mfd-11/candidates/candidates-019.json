@@ -1,0 +1,243 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T06:30:00.000Z",
+  "sourceExtraction": "ext-004-p5,ext-004-p6,ext-004-p7,ext-004-p8",
+  "candidates": [
+    {
+      "candidateId": "cand-0187",
+      "label": "Comprehensive social ethics: worship Allah alone paired with ihsan to ten categories including parents, neighbors, travelers, and those under care",
+      "definition": "In 4:36: Worship Allah and associate nothing with Him, and to parents do good, and to relatives, orphans, the needy, the near neighbor, the neighbor farther away, the companion at your side, the traveler, and those whom your right hands possess. Indeed, Allah does not like those who are self-deluding and boastful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:36",
+          "excerpt": "۞وَٱعۡبُدُواْ ٱللَّهَ وَلَا تُشۡرِكُواْ بِهِۦ شَيۡـٔٗاۖ وَبِٱلۡوَٰلِدَيۡنِ إِحۡسَٰنٗا وَبِذِي ٱلۡقُرۡبَىٰ وَٱلۡيَتَٰمَىٰ وَٱلۡمَسَٰكِينِ وَٱلۡجَارِ ذِي ٱلۡقُرۡبَىٰ وَٱلۡجَارِ ٱلۡجُنُبِ وَٱلصَّاحِبِ بِٱلۡجَنۢبِ وَٱبۡنِ ٱلسَّبِيلِ وَمَا مَلَكَتۡ أَيۡمَٰنُكُمۡۗ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخۡتَالٗا فَخُورًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wa'budoo Allaha... wabil-walidayni ihsanan: pairs tawheed directly with social ethics. Ten categories enumerated from closest kin to servants. Mukhtalan fakhuran closes by prohibiting arrogance that undermines social bonds."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "broader"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "احسان کا جامع حکم: والدین، ہمسایوں اور ماتحتوں سے حسن سلوک",
+      "notes": "Overlap with parents-and-family (curated) confirmed but broader: extends to neighbors, travelers, servants. Unique pairing of tawheed command with comprehensive social obligation list. Ten categories form concentric circles from intimate to societal. Right-hand possessions included shows universal scope of ihsan."
+    },
+    {
+      "candidateId": "cand-0188",
+      "label": "Three forms of condemned miserliness: personal stinginess, commanding others to be stingy, and spending for ostentation",
+      "definition": "In 4:37-38: Those who are stingy and enjoin upon people stinginess and conceal what Allah gave them of His bounty. And those who spend their wealth to be seen by people and do not believe in Allah nor the Last Day.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:37",
+          "excerpt": "ٱلَّذِينَ يَبۡخَلُونَ وَيَأۡمُرُونَ ٱلنَّاسَ بِٱلۡبُخۡلِ وَيَكۡتُمُونَ مَآ ءَاتَىٰهُمُ ٱللَّهُ مِن فَضۡلِهِۦۗ وَأَعۡتَدۡنَا لِلۡكَٰفِرِينَ عَذَابٗا مُّهِينٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yabkhaloona wa ya'muroona al-nasa bil-bukhli wa yaktumoona: triple condemnation - personal stinginess, social enforcement of stinginess, concealment of divine bounty."
+        },
+        {
+          "key": "4:38",
+          "excerpt": "وَٱلَّذِينَ يُنفِقُونَ أَمۡوَٰلَهُمۡ رِئَآءَ ٱلنَّاسِ وَلَا يُؤۡمِنُونَ بِٱللَّهِ وَلَا بِٱلۡيَوۡمِ ٱلۡأٓخِرِۗ وَمَن يَكُنِ ٱلشَّيۡطَٰنُ لَهُۥ قَرِينٗا فَسَآءَ قَرِينٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yunfiqoona amwalahum ri'a'a al-nasi: spending exists but corrupted by ostentation. Paired with disbelief showing hypocrisy."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "کنجوسی کی تین مذموم صورتیں: ذاتی، دوسروں کو حکم، اور دکھاوا",
+      "notes": "Gap candidate: no dedicated bukhl/miserliness-types topic. Identifies three distinct economic sins: hoarding (4:37a), normalizing hoarding socially (4:37b), and counterfeit generosity for reputation (4:38). Together they define Islamic economic ethics by negative boundary. Ri'a (ostentation) corrupts otherwise valid spending."
+    },
+    {
+      "candidateId": "cand-0189",
+      "label": "Shirk as uniquely unforgivable sin: association with Allah never forgiven while all lesser sins remain within divine mercy",
+      "definition": "In 4:48: Indeed, Allah does not forgive association with Him, but He forgives what is less than that for whom He wills. And he who associates others with Allah has certainly fabricated a tremendous sin.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:48",
+          "excerpt": "إِنَّ ٱللَّهَ لَا يَغۡفِرُ أَن يُشۡرَكَ بِهِۦ وَيَغۡفِرُ مَا دُونَ ذَٰلِكَ لِمَن يَشَآءُۚ وَمَن يُشۡرِكۡ بِٱللَّهِ فَقَدِ ٱفۡتَرَىٰٓ إِثۡمًا عَظِيمًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La yaghfiru an yushraka bihi wa yaghfiru ma doona dhalika: absolute exclusion of shirk from forgiveness. Ma doona dhalika opens mercy for everything else. Iftara ithman atheeman frames shirk as fabrication/invention not mere error."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "شرک: واحد ناقابل معافی گناہ",
+      "notes": "Overlap with tawheed (curated) via inverse definition. Most explicit Quranic statement on shirk's unique status. Iftara (fabricated) implies deliberate invention rather than ignorance. Repeated almost identically in 4:116 suggesting supreme importance. Atheeman (tremendous) intensifies beyond ordinary sin language."
+    },
+    {
+      "candidateId": "cand-0190",
+      "label": "Tayammum: dry ablution with clean earth as divine concession when water unavailable due to illness, travel, or other impediments",
+      "definition": "In 4:43: And if you are ill or on a journey or one of you comes from the place of relieving himself or you have contacted women and find no water, then seek clean earth and wipe over your faces and your hands. Indeed, Allah is ever Pardoning and Forgiving.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:43",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَقۡرَبُواْ ٱلصَّلَوٰةَ وَأَنتُمۡ سُكَٰرَىٰ حَتَّىٰ تَعۡلَمُواْ مَا تَقُولُونَ وَلَا جُنُبًا إِلَّا عَابِرِي سَبِيلٍ حَتَّىٰ تَغۡتَسِلُواْۚ وَإِن كُنتُم مَّرۡضَىٰٓ أَوۡ عَلَىٰ سَفَرٍ أَوۡ جَآءَ أَحَدٞ مِّنكُم مِّنَ ٱلۡغَآئِطِ أَوۡ لَٰمَسۡتُمُ ٱلنِّسَآءَ فَلَمۡ تَجِدُواْ مَآءٗ فَتَيَمَّمُواْ صَعِيدٗا طَيِّبٗا فَٱمۡسَحُواْ بِوُجُوهِكُمۡ وَأَيۡدِيكُمۡۗ إِنَّ ٱللَّهَ كَانَ عَفُوًّا غَفُورًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Falam tajidoo ma'an fatayammamoo sa'eedan tayyiban: conditional structure - absence of water triggers earth alternative. Fa'msa'hoo biwujoohikum wa aydeekum: specifies face and hands. Afuwwan Ghafura closes emphasizing divine leniency."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tayammum",
+          "layer": "scholarly",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "تیمم: پانی نہ ملنے پر پاک مٹی سے وضو کی رعایت",
+      "notes": "Overlap with tayammum (scholarly) confirmed. Four conditions trigger concession: illness, travel, natural needs, sexual contact. Sa'eedan tayyiban (clean earth/pure surface) qualifies the medium. One of two primary Quranic tayammum verses (cf. 5:6). Closing divine names emphasize pardoning nature of the concession."
+    },
+    {
+      "candidateId": "cand-0191",
+      "label": "Scriptural distortion: People of the Book twisting words from their places, defaming religion, and believing in jibt and taghut",
+      "definition": "In 4:46,51: Among the Jews are those who distort words from their places and say 'We hear and disobey' twisting their tongues and defaming the religion. Have you not seen those given a portion of the Scripture believing in jibt and taghut and saying about disbelievers these are better guided than believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:46",
+          "excerpt": "مِّنَ ٱلَّذِينَ هَادُواْ يُحَرِّفُونَ ٱلۡكَلِمَ عَن مَّوَاضِعِهِۦ وَيَقُولُونَ سَمِعۡنَا وَعَصَيۡنَا وَٱسۡمَعۡ غَيۡرَ مُسۡمَعٖ وَرَٰعِنَا لَيَّۢا بِأَلۡسِنَتِهِمۡ وَطَعۡنٗا فِي ٱلدِّينِۚ وَلَوۡ أَنَّهُمۡ قَالُواْ سَمِعۡنَا وَأَطَعۡنَا وَٱسۡمَعۡ وَٱنظُرۡنَا لَكَانَ خَيۡرٗا لَّهُمۡ وَأَقۡوَمَ وَلَٰكِن لَّعَنَهُمُ ٱللَّهُ بِكُفۡرِهِمۡ فَلَا يُؤۡمِنُونَ إِلَّا قَلِيلٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yuharrifoona al-kalima an mawadi'ihi: verbal distortion. Sami'na wa 'asayna: defiant inversion of obedience formula. Layyan bi'alsinatihim wa ta'nan fee al-deen: physical tongue-twisting and religious defamation."
+        },
+        {
+          "key": "4:51",
+          "excerpt": "أَلَمۡ تَرَ إِلَى ٱلَّذِينَ أُوتُواْ نَصِيبٗا مِّنَ ٱلۡكِتَٰبِ يُؤۡمِنُونَ بِٱلۡجِبۡتِ وَٱلطَّـٰغُوتِ وَيَقُولُونَ لِلَّذِينَ كَفَرُواْ هَـٰٓؤُلَآءِ أَهۡدَىٰ مِنَ ٱلَّذِينَ ءَامَنُواْ سَبِيلًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yu'minoona bil-jibti wal-taghoote: paradox of scriptural community believing in false deities. Claiming disbelievers better guided than believers represents ultimate inversion."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "تحریف لفظ: اہل کتاب کا کلمات کو ان کی جگہوں سے بدلنا",
+      "notes": "Gap candidate: no dedicated tahrif/scriptural-distortion topic. Two modes identified: verbal manipulation (4:46) and theological deviation (4:51). Sami'na wa 'asayna deliberately inverts proper response (sami'na wa ata'na). Jibt and taghut represent pre-Islamic Arabian idolatry adopted by scriptural communities."
+    },
+    {
+      "candidateId": "cand-0192",
+      "label": "Rendering trusts and judging with justice: dual foundation of legitimate governance and social order",
+      "definition": "In 4:58: Indeed, Allah commands you to render trusts to whom they are due and when you judge between people to judge with justice. Excellent is that which Allah instructs you. Indeed, Allah is ever Hearing and Seeing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:58",
+          "excerpt": "۞إِنَّ ٱللَّهَ يَأۡمُرُكُمۡ أَن تُؤَدُّواْ ٱلۡأَمَٰنَٰتِ إِلَىٰٓ أَهۡلِهَا وَإِذَا حَكَمۡتُم بَيۡنَ ٱلنَّاسِ أَن تَحۡكُمُواْ بِٱلۡعَدۡلِۚ إِنَّ ٱللَّهَ نِعِمَّا يَعِظُكُم بِهِۦٓۗ إِنَّ ٱللَّهَ كَانَ سَمِيعَۢا بَصِيرٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ya'murukum an tu'addoo al-amanati ila ahliha: trust-rendering as divine command. Wa idha hakamtum bayna al-nasi an tahkumoo bil-adl: justice in adjudication. Ni'imma ya'ithukum bihi: framing as excellent instruction/admonition."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "امانت اور عدل: حکومت اور معاشرتی نظم کی بنیاد",
+      "notes": "Overlap with justice (curated) confirmed. Two pillars: amanat (trusts/fiduciary duty) and adl (justice/impartiality). Applies universally - not limited to rulers. Ni'imma ya'ithukum frames as counsel not mere law. Sameea Baseera closing emphasizes divine surveillance of governance."
+    },
+    {
+      "candidateId": "cand-0193",
+      "label": "Divine obedience hierarchy: Allah, Messenger, and those in authority; disputes referred back to Allah and Messenger as faith condition",
+      "definition": "In 4:59: O you who have believed, obey Allah and obey the Messenger and those in authority among you. And if you disagree over anything, refer it to Allah and the Messenger, if you should believe in Allah and the Last Day. That is the best and best in result.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:59",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ أَطِيعُواْ ٱللَّهَ وَأَطِيعُواْ ٱلرَّسُولَ وَأُوْلِي ٱلۡأَمۡرِ مِنكُمۡۖ فَإِن تَنَٰزَعۡتُمۡ فِي شَيۡءٖ فَرُدُّوهُ إِلَى ٱللَّهِ وَٱلرَّسُولِ إِن كُنتُمۡ تُؤۡمِنُونَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِۚ ذَٰلِكَ خَيۡرٞ وَأَحۡسَنُ تَأۡوِيلًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Atee'oo Allaha wa atee'oo al-rasoola wa ulee al-amri minkum: triple obedience command. Uli al-amri lacks independent 'obey' verb suggesting derivative authority. Fain tanaza'tum... faruddoohu ila Allahi wa al-rasooli: disputes revert to top two levels only. In kuntum tu'minoona: makes referral a faith condition."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "اطاعت کا نظام: اللہ، رسول اور اولی الامر کی فرمانبرداری",
+      "notes": "Gap candidate: no dedicated uli-al-amr or obedience-hierarchy topic. Structural asymmetry: 'obey' repeated for Allah and Messenger but not for uli al-amr. Dispute resolution bypasses uli al-amr returning to Allah/Messenger. Khayran wa ahsanu ta'weelan: epistemological claim about optimal outcomes."
+    },
+    {
+      "candidateId": "cand-0194",
+      "label": "True faith defined: no belief until accepting prophetic judgment in disputes without inner resistance and submitting completely",
+      "definition": "In 4:65: But no, by your Lord, they will not believe until they make you judge concerning that over which they dispute among themselves and then find within themselves no discomfort from what you have judged and submit in full submission.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:65",
+          "excerpt": "فَلَا وَرَبِّكَ لَا يُؤۡمِنُونَ حَتَّىٰ يُحَكِّمُوكَ فِيمَا شَجَرَ بَيۡنَهُمۡ ثُمَّ لَا يَجِدُواْ فِيٓ أَنفُسِهِمۡ حَرَجٗا مِّمَّا قَضَيۡتَ وَيُسَلِّمُواْ تَسۡلِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fala wa rabbika la yu'minoona: divine oath negating faith absent this condition. Hatta yuhakkimooka: Prophet as mandatory arbiter. Thumma la yajidoo fee anfusihim harajan: psychological criterion - no inner resistance. Wa yusallimoo tasleeman: external submission matching internal acceptance."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "ایمان کی تعریف: رسول کے فیصلے پر مکمل تسلیم",
+      "notes": "Gap candidate: no dedicated iman-definition or tasleem topic. Most precise Quranic definition of faith as behavioral-psychological state. Divine oath (wa rabbika) elevates to absolute principle. Haraj (inner constriction) addresses emotional dimension beyond mere compliance. Tasleeman (intensified submission) demands totality."
+    },
+    {
+      "candidateId": "cand-0195",
+      "label": "Four ranks of divine favor: prophets, truthful affirmers, martyrs, and righteous as companions for the obedient",
+      "definition": "In 4:69: And whoever obeys Allah and the Messenger - those will be with the ones upon whom Allah has bestowed favor of the prophets, the steadfast affirmers of truth, the martyrs and the righteous. And excellent are those as companions.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:69",
+          "excerpt": "وَمَن يُطِعِ ٱللَّهَ وَٱلرَّسُولَ فَأُوْلَـٰٓئِكَ مَعَ ٱلَّذِينَ أَنۡعَمَ ٱللَّهُ عَلَيۡهِم مِّنَ ٱلنَّبِيِّـۧنَ وَٱلصِّدِّيقِينَ وَٱلشُّهَدَآءِ وَٱلصَّـٰلِحِينَۚ وَحَسُنَ أُوْلَـٰٓئِكَ رَفِيقٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waman yuti'i Allaha wa al-rasoola: obedience as entry criterion. Fa'ula'ika ma'a allatheena an'ama Allahu alayhim: companionship with favored ones. Four categories in descending hierarchy: nabiyyeen, siddeeqeen, shuhada', saliheen. Hasuna ula'ika rafeeqan: aesthetic/spiritual evaluation of companionship."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "چار درجات: نبی، صدیق، شہید اور صالح",
+      "notes": "Gap candidate: no dedicated maraatib/spiritual-ranks topic. Four-tier hierarchy of spiritual excellence. Siddeeqeen (truthful affirmers) distinct from ordinary believers. Shuhada' carries dual meaning: martyrs and witnesses. Obedience to Allah AND Messenger as sole entry requirement. Rafeeqan implies intimate companionship not distant proximity."
+    },
+    {
+      "candidateId": "cand-0196",
+      "label": "Fighting for the oppressed: defense of weakened men, women, and children crying for deliverance from oppressive cities",
+      "definition": "In 4:75: And what is the matter with you that you fight not in the cause of Allah and for the oppressed among men, women, and children who say, 'Our Lord, take us out of this city of oppressive people and appoint for us from Yourself a protector and appoint for us from Yourself a helper.'",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:75",
+          "excerpt": "وَمَا لَكُمۡ لَا تُقَٰتِلُونَ فِي سَبِيلِ ٱللَّهِ وَٱلۡمُسۡتَضۡعَفِينَ مِنَ ٱلرِّجَالِ وَٱلنِّسَآءِ وَٱلۡوِلۡدَٰنِ ٱلَّذِينَ يَقُولُونَ رَبَّنَآ أَخۡرِجۡنَا مِنۡ هَٰذِهِ ٱلۡقَرۡيَةِ ٱلظَّالِمِ أَهۡلُهَا وَٱجۡعَل لَّنَا مِن لَّدُنكَ وَلِيّٗا وَٱجۡعَل لَّنَا مِن لَّدُنكَ نَصِيرًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama lakum la tuqatiloona fee sabeeli Allahi wa al-mustad'afeena: rhetorical question equating fighting for Allah with fighting for oppressed. Min al-rijali wa al-nisa'i wa al-wildani: three demographic categories explicitly named. Rabbana akhrijna: direct supplication quoted showing urgency. Waliyyan wa naseeran: request for both protecting authority and practical help."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T06:30:00.000Z",
+      "urduLabel": "مظلوموں کے لیے قتال: کمزور مردوں، عورتوں اور بچوں کی مدد",
+      "notes": "Gap candidate: no dedicated mustad'afeen/oppression-defense topic. Uniquely frames qital as liberation theology rather than territorial conquest. Women and children explicitly named as beneficiaries. Quoted supplication gives voice to victims rather than describing them abstractly. City-level oppression (qaryati al-thalimi ahluha) suggests systemic injustice. Dual request for wali (authority) and naseer (helper) shows comprehensive need."
+    }
+  ]
+}
