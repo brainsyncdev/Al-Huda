@@ -1,0 +1,284 @@
+{
+  "workstream": "MFD-11",
+  "generatedAt": "2026-11-19T07:48:00.000Z",
+  "sourceExtraction": "ext-004-p17,ext-004-p18,ext-004-p19",
+  "candidates": [
+    {
+      "candidateId": "cand-0217",
+      "label": "Isa non-crucifixion and divine raising: definitive Quranic correction denying killing or crucifixion affirming elevation to Allah",
+      "definition": "In 4:157-158: They said we killed the Messiah Isa son of Maryam messenger of Allah but they did not kill him nor crucify him but it was made to appear so to them. Those who differ are in doubt with no knowledge except assumption. They did not kill him for certain. Rather Allah raised him to Himself and Allah is Exalted in Might Wise.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:157",
+          "excerpt": "وَقَوۡلِهِمۡ إِنَّا قَتَلۡنَا ٱلۡمَسِيحَ عِيسَى ٱبۡنَ مَرۡيَمَ رَسُولَ ٱللَّهِ وَمَا قَتَلُوهُ وَمَا صَلَبُوهُ وَلَٰكِن شُبِّهَ لَهُمۡۚ وَإِنَّ ٱلَّذِينَ ٱخۡتَلَفُواْ فِيهِ لَفِي شَكّٖ مِّنۡهُۚ مَا لَهُم بِهِۦ مِنۡ عِلۡمٍ إِلَّا ٱتِّبَاعَ ٱلظَّنِّۚ وَمَا قَتَلُوهُ يَقِينَۢا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama qataloohu wama salaboohu walakin shubbiha lahum: triple negation (did not kill, did not crucify, but appeared so). Ma lahum bihi min AAilmin illa ittibaAAa alththanni: epistemological diagnosis - doubt based on assumption not knowledge. Wama qataloohu yaqeenan: emphatic certainty of non-killing."
+        },
+        {
+          "key": "4:158",
+          "excerpt": "بَل رَّفَعَهُ ٱللَّهُ إِلَيۡهِۚ وَكَانَ ٱللَّهُ عَزِيزًا حَكِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Bal rafaAAahu Allahu ilayhi: divine raising as counter-narrative to crucifixion claim. AAazeezan Hakeema: might and wisdom frame the act."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Core Quranic Isa narrative correcting crucifixion claim"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "عدم صلب عيسى ورفعه إلى الله: تصحيح قرآني قاطع ينفي القتل والصلب ويؤكد الرفع",
+      "notes": "Overlap with isa-story (scholarly) confirmed. Most definitive Quranic statement on Isa's fate. Shubbiha lahum (made to appear so) leaves mechanism unspecified creating interpretive space. Yaqeenan (for certain) provides epistemic certainty contrasting with opponents' zann (assumption). Raising to Allah implies continued existence not death."
+    },
+    {
+      "candidateId": "cand-0218",
+      "label": "Covenant-breaking cycle: Bani Israel's repeated violations including calf worship Sabbath transgression prophet-killing and heart-sealing",
+      "definition": "In 4:153-155: They asked Musa to show Allah openly so thunderbolt seized them; then took calf after clear proofs; raised Mount for covenant enter gate bowing do not transgress Sabbath took solemn covenant; because breaking covenant rejecting signs killing prophets unjustly saying hearts wrapped Allah sealed them for disbelief so believe not except few.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:153",
+          "excerpt": "يَسۡـَٔلُكَ أَهۡلُ ٱلۡكِتَٰبِ أَن تُنَزِّلَ عَلَيۡهِمۡ كِتَٰبٗا مِّنَ ٱلسَّمَآءِۚ فَقَدۡ سَأَلُواْ مُوسَىٰٓ أَكۡبَرَ مِن ذَٰلِكَ فَقَالُوٓاْ أَرِنَا ٱللَّهَ جَهۡرَةٗ فَأَخَذَتۡهُمُ ٱلصَّـٰعِقَةُ بِظُلۡمِهِمۡۚ ثُمَّ ٱتَّخَذُواْ ٱلۡعِجۡلَ مِنۢ بَعۡدِ مَا جَآءَتۡهُمُ ٱلۡبَيِّنَٰتُ فَعَفَوۡنَا عَن ذَٰلِكَۚ وَءَاتَيۡنَا مُوسَىٰ سُلۡطَٰنٗا مُّبِينٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faqad saaloo moosa akbara min thalika faqaloo arina Allaha jahratan: audacious demand for physical manifestation. Faakhathathumu alssaAAiqatu bithulmihim: thunderbolt as consequence. Thumma ittakhathoo alAAijla: calf worship immediately after clear proofs."
+        },
+        {
+          "key": "4:154",
+          "excerpt": "وَرَفَعۡنَا فَوۡقَهُمُ ٱلطُّورَ بِمِيثَٰقِهِمۡ وَقُلۡنَا لَهُمُ ٱدۡخُلُواْ ٱلۡبَابَ سُجَّدٗا وَقُلۡنَا لَهُمۡ لَا تَعۡدُواْ فِي ٱلسَّبۡتِ وَأَخَذۡنَا مِنۡهُم مِّيثَٰقًا غَلِيظٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "WarafaAAna fawqahumu alttoora bimeethaqihim: Mount raised as covenant enforcement. La taAAdoo fee alssabti: Sabbath prohibition. Waakhathna minhum meethaqan ghaleethan: solemn covenant emphasized."
+        },
+        {
+          "key": "4:155",
+          "excerpt": "فَبِمَا نَقۡضِهِم مِّيثَٰقَهُمۡ وَكُفۡرِهِم بِـَٔايَٰتِ ٱللَّهِ وَقَتۡلِهِمُ ٱلۡأَنۢبِيَآءَ بِغَيۡرِ حَقّٖ وَقَوۡلِهِمۡ قُلُوبُنَا غُلۡفُۢۚ بَلۡ طَبَعَ ٱللَّهُ عَلَيۡهَا بِكُفۡرِهِمۡ فَلَا يُؤۡمِنُونَ إِلَّا قَلِيلٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fabima naqdihim meethaqahum: covenant-breaking as primary cause. Waqatlihimu alanbiyaa bighayri haqqin: prophet-killing without right. TabaAAa Allahu AAalayha bikufrihim: divine sealing as consequence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Detailed enumeration of covenant violations"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "دورة نقض العهد: انتهاكات بني إسرائيل المتكررة من عبادة العجل وتجاوز السبت وقتل الأنبياء وختم القلوب",
+      "notes": "Overlap with covenants-ahd (scholarly) confirmed. Five enumerated violations: demanding physical manifestation, calf worship, refusing gate entry, Sabbath transgression, prophet-killing. Heart-sealing presented as divine response to persistent kufr not arbitrary predestination. Ghaleethan (solemn/heavy) emphasizes covenant gravity."
+    },
+    {
+      "candidateId": "cand-0219",
+      "label": "Slander against Maryam: great fabrication cited as distinct transgression alongside covenant-breaking and disbelief",
+      "definition": "In 4:156: And for their disbelief and their saying against Mary a great slander.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:156",
+          "excerpt": "وَبِكُفۡرِهِمۡ وَقَوۡلِهِمۡ عَلَىٰ مَرۡيَمَ بُهۡتَٰنًا عَظِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wabikufrihim waqawlihim AAala maryama buhtanan AAatheeman: buhtan (slander/fabrication) qualified as AAatheem (great/enormous). Positioned between covenant violations and Isa-denial suggesting independent gravity."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "الافتراء على مريم: بهتان عظيم مذكور كمخالفة مستقلة مع نقض العهد والكفر",
+      "notes": "Gap candidate. Only Quranic verse explicitly naming the slander against Maryam without specifying its content. Buhtan AAatheem (great fabrication) suggests severity exceeding ordinary falsehood. Placement in sequence implies slander against Maryam is distinct category of transgression not merely subset of general disbelief."
+    },
+    {
+      "candidateId": "cand-0220",
+      "label": "Riba and unjust wealth consumption: financial transgressions cited as grounds for punitive dietary restrictions and painful punishment",
+      "definition": "In 4:160-161: For wrongdoing of those who were Jews We made unlawful good things previously lawful and for their averting from Allah's way many; and their taking riba while forbidden and consuming people's wealth unjustly. We prepared for disbelievers among them painful punishment.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:160",
+          "excerpt": "فَبِظُلۡمٖ مِّنَ ٱلَّذِينَ هَادُواْ حَرَّمۡنَا عَلَيۡهِمۡ طَيِّبَٰتٍ أُحِلَّتۡ لَهُمۡ وَبِصَدِّهِمۡ عَن سَبِيلِ ٱللَّهِ كَثِيرٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fabithulmin mina allatheena hadoo harramna AAalayhim tayyibatin ohillat lahum: punitive prohibition as consequence of zulm. Wabisaddihim AAan sabeeli Allahi katheeran: systemic hindering quantified as katheer."
+        },
+        {
+          "key": "4:161",
+          "excerpt": "وَأَخۡذِهِمُ ٱلرِّبَوٰاْ وَقَدۡ نُهُواْ عَنۡهُ وَأَكۡلِهِمۡ أَمۡوَٰلَ ٱلنَّاسِ بِٱلۡبَٰطِلِۚ وَأَعۡتَدۡنَا لِلۡكَٰفِرِينَ مِنۡهُمۡ عَذَابًا أَلِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waakhthihimu alrriba waqad nuhoo AAanhu: riba taken despite explicit prior prohibition. Waaklihim amwala alnnasi bialbatili: unjust wealth consumption paired with riba. AAathaban aleeman: painful punishment specified."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "interest-free-finance",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Historical precedent for riba prohibition in earlier community"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "الربا وأكل أموال الناس بالباطل: مخالفات مالية سببت تحريم الطيبات وعذاب أليم",
+      "notes": "Overlap with interest-free-finance (scholarly) as related concept. Historical framing: riba prohibition existed before Islam (waqad nuhoo AAanhu). Pairing riba with batil wealth consumption suggests systemic economic injustice not isolated practice. Punitive dietary restriction (tahreem tayyibat) as temporal consequence distinguishes from eternal punishment."
+    },
+    {
+      "candidateId": "cand-0221",
+      "label": "Prophetic revelation continuity: Muhammad's inspiration identical in kind to Nuh Ibrahim and thirteen named prophets establishing unified message",
+      "definition": "In 4:163-164: Indeed We revealed to you as We revealed to Nuh and prophets after him. We revealed to Ibrahim Ismail Ishaq Yaqub tribes Isa Ayyub Yunus Harun Sulayman and gave Dawud Zabur. Messengers We mentioned before and messengers We did not mention. Allah spoke directly to Musa.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:163",
+          "excerpt": "۞إِنَّآ أَوۡحَيۡنَآ إِلَيۡكَ كَمَآ أَوۡحَيۡنَآ إِلَىٰ نُوحٖ وَٱلنَّبِيِّـۧنَ مِنۢ بَعۡدِهِۦۚ وَأَوۡحَيۡنَآ إِلَىٰٓ إِبۡرَٰهِيمَ وَإِسۡمَٰعِيلَ وَإِسۡحَٰقَ وَيَعۡقُوبَ وَٱلۡأَسۡبَاطِ وَعِيسَىٰ وَأَيُّوبَ وَيُونُسَ وَهَٰرُونَ وَسُلَيۡمَٰنَۚ وَءَاتَيۡنَا دَاوُۥدَ زَبُورٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Inna awhayna ilayka kama awhayna ila noohin: kama (as/like) establishes equivalence of revelation mode. Thirteen named prophets plus asbat (tribes) create comprehensive chain. Waatayna dawooda zabooran: specific scripture gift noted."
+        },
+        {
+          "key": "4:164",
+          "excerpt": "وَرُسُلٗا قَدۡ قَصَصۡنَٰهُمۡ عَلَيۡكَ مِن قَبۡلُ وَرُسُلٗا لَّمۡ نَقۡصُصۡهُمۡ عَلَيۡكَۚ وَكَلَّمَ ٱللَّهُ مُوسَىٰ تَكۡلِيمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Warusulan lam naqsushum AAalayka: acknowledgment of unnamed prophets prevents exhaustive enumeration. Wakallama Allahu moosa takleeman: direct speech distinguished as unique modality."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Comprehensive prophetic chain establishing message unity"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "استمرارية الوحي النبوي: وحي محمد مطابق لوحي نوح وإبراهيم وثلاثة عشر نبياً مؤكداً وحدة الرسالة",
+      "notes": "Overlap with prophets (curated) confirmed. Kama awhayna (as We revealed) establishes qualitative identity of revelation across prophets. Named list spans patriarchal (Ibrahim Ismail Ishaq Yaqub), Levitical (Harun Sulayman Dawud), and universal (Nuh Isa Ayyub Yunus) traditions. Takleem to Musa noted as exception proving rule of mediated revelation."
+    },
+    {
+      "candidateId": "cand-0222",
+      "label": "Triple witness to revelation: Allah His knowledge and angels jointly attest to divine origin of Quranic revelation",
+      "definition": "In 4:166: But Allah bears witness to what He sent down to you. He sent it down with His knowledge and the angels bear witness. And sufficient is Allah as Witness.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:166",
+          "excerpt": "لَّـٰكِنِ ٱللَّهُ يَشۡهَدُ بِمَآ أَنزَلَ إِلَيۡكَۖ أَنزَلَهُۥ بِعِلۡمِهِۦۖ وَٱلۡمَلَـٰٓئِكَةُ يَشۡهَدُونَۚ وَكَفَىٰ بِٱللَّهِ شَهِيدًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Lakini Allahu yashhadu bima anzala ilayka: divine self-testimony as primary witness. Anzalahu biAAilmihi: knowledge as second attestation linking content to divine omniscience. Waalmalaikatu yashhadoona: angelic corroboration as third witness. Wakafa biAllahi shaheedan: sufficiency clause emphasizing divine testimony alone is adequate."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "الشهادة الثلاثية على الوحي: الله وعلمه والملائكة يشهدون على المصدر الإلهي للقرآن",
+      "notes": "Gap candidate. Unique epistemological formula providing three-tier verification of revelation. Divine self-witness (primary), knowledge-based attestation (content verification), angelic witness (cosmic corroboration). Sufficiency clause (wakafa) paradoxically renders additional witnesses unnecessary while listing them. Addresses potential skepticism about revelation source."
+    },
+    {
+      "candidateId": "cand-0223",
+      "label": "Isa ontological precision: defined as messenger of Allah His Word cast to Maryam and spirit from Him explicitly excluding divinity",
+      "definition": "In 4:171: O People of Scripture do not exceed limits in religion nor say about Allah except truth. The Messiah Isa son of Maryam was only a messenger of Allah and His Word which He cast to Maryam and a spirit from Him. So believe in Allah and His messengers. Do not say Three desist it is better for you. Allah is only one God exalted above having a son.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:171",
+          "excerpt": "يَـٰٓأَهۡلَ ٱلۡكِتَٰبِ لَا تَغۡلُواْ فِي دِينِكُمۡ وَلَا تَقُولُواْ عَلَى ٱللَّهِ إِلَّا ٱلۡحَقَّۚ إِنَّمَا ٱلۡمَسِيحُ عِيسَى ٱبۡنُ مَرۡيَمَ رَسُولُ ٱللَّهِ وَكَلِمَتُهُۥٓ أَلۡقَىٰهَآ إِلَىٰ مَرۡيَمَ وَرُوحٞ مِّنۡهُۖ فَـَٔامِنُواْ بِٱللَّهِ وَرُسُلِهِۦۖ وَلَا تَقُولُواْ ثَلَٰثَةٌۚ ٱنتَهُواْ خَيۡرٗا لَّكُمۡۚ إِنَّمَا ٱللَّهُ إِلَٰهٞ وَٰحِدٞۖ سُبۡحَٰنَهُۥٓ أَن يَكُونَ لَهُۥ وَلَدٞۘ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ وَكَفَىٰ بِٱللَّهِ وَكِيلٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama almaseehu AAeesa ibnu maryama rasoolu Allahi: innama (only/but) restricts status to messenger. Wakalimatuhu alqaha ila maryama: Word as created entity cast/directed not co-eternal. Waroohun minhu: spirit from Him indicating origin not essence. Wala taqooloo thalathatun intahoo: explicit Trinity rejection. Innama Allahu ilahun wahidun subhanahu an yakoona lahu waladun: tawheed affirmation with sonship negation."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Definitive Christological correction"
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Tawheed applied to correct Isa doctrine"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "التحديد الأنطولوجي لعيسى: رسول الله وكلمته ألقاها إلى مريم وروح منه نافياً الألوهية صراحة",
+      "notes": "Overlap with isa-story (scholarly) and tawheed (curated) confirmed. Four-part definition: rasool (messenger), kalimatuhu (His Word), alqaha (cast - implying creation), roohun minhu (spirit from). Each term carefully chosen to affirm honored status while denying divinity. Innama (restrictive particle) appears twice framing both Isa's status and Allah's oneness. Subhanahu (exalted/glory to Him) expresses transcendence over sonship concept."
+    },
+    {
+      "candidateId": "cand-0224",
+      "label": "Religious excess prohibition: ghuluww (exceeding proper bounds) identified as root error addressed to People of Scripture",
+      "definition": "In 4:171: O People of Scripture do not exceed limits in your religion and do not say about Allah except the truth.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:171",
+          "excerpt": "يَـٰٓأَهۡلَ ٱلۡكِتَٰبِ لَا تَغۡلُواْ فِي دِينِكُمۡ وَلَا تَقُولُواْ عَلَى ٱللَّهِ إِلَّا ٱلۡحَقَّۚ إِنَّمَا ٱلۡمَسِيحُ عِيسَى ٱبۡنُ مَرۡيَمَ رَسُولُ ٱللَّهِ وَكَلِمَتُهُۥٓ أَلۡقَىٰهَآ إِلَىٰ مَرۡيَمَ وَرُوحٞ مِّنۡهُۖ فَـَٔامِنُواْ بِٱللَّهِ وَرُسُلِهِۦۖ وَلَا تَقُولُواْ ثَلَٰثَةٌۚ ٱنتَهُواْ خَيۡرٗا لَّكُمۡۚ إِنَّمَا ٱللَّهُ إِلَٰهٞ وَٰحِدٞۖ سُبۡحَٰنَهُۥٓ أَن يَكُونَ لَهُۥ وَلَدٞۘ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ وَكَفَىٰ بِٱللَّهِ وَكِيلٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ya ahla alkitabi la taghloo fee deenikum: taghloo (exceed/transgress) from gh-l-w root meaning excess/extremism. Fee deenikum specifies domain as religion not secular matters. Wala taqooloo AAala Allahi illa alhaqqa: truth constraint paired with excess prohibition suggesting ghuluww manifests as false theological claims."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "تحريم الغلو في الدين: تجاوز الحدود الشرعية كخطأ جذري موجّه لأهل الكتاب",
+      "notes": "Gap candidate. Ghuluww (excess) identified as fundamental error pattern applicable beyond Trinity doctrine. Addressed specifically to People of Scripture but principle extends universally. Pairing with truth-speech constraint suggests excess manifests primarily through doctrinal innovation. Intahoo khayran lakum (desist it is better) frames moderation as beneficial not merely obligatory."
+    },
+    {
+      "candidateId": "cand-0225",
+      "label": "Servitude theology: Isa and angels as paradigmatic servants who would never disdain worship contrasting with human arrogance",
+      "definition": "In 4:172-173: Never would the Messiah disdain to be a servant of Allah nor the angels near to Him. Whoever disdains His worship and is arrogant He will gather them all to Himself. As for those who believed and did righteous deeds He gives full rewards and increases from His bounty. As for those who disdained and were arrogant He punishes with painful punishment and they find no protector or helper besides Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:172",
+          "excerpt": "لَّن يَسۡتَنكِفَ ٱلۡمَسِيحُ أَن يَكُونَ عَبۡدٗا لِّلَّهِ وَلَا ٱلۡمَلَـٰٓئِكَةُ ٱلۡمُقَرَّبُونَۚ وَمَن يَسۡتَنكِفۡ عَنۡ عِبَادَتِهِۦ وَيَسۡتَكۡبِرۡ فَسَيَحۡشُرُهُمۡ إِلَيۡهِ جَمِيعٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Lan yastankifa almaseehu an yakoona AAabdan lillahi: lan (never) categorical negation of disdain. AAabdan lillahi: servitude framed as honorable status. Wala almalaikatu almuqarraboona: angels included as parallel exemplars. Fayahshuruhum ilayhi jameeAAan: gathering implies accountability."
+        },
+        {
+          "key": "4:173",
+          "excerpt": "فَأَمَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ فَيُوَفِّيهِمۡ أُجُورَهُمۡ وَيَزِيدُهُم مِّن فَضۡلِهِۦۖ وَأَمَّا ٱلَّذِينَ ٱسۡتَنكَفُواْ وَٱسۡتَكۡبَرُواْ فَيُعَذِّبُهُمۡ عَذَابًا أَلِيمٗا وَلَا يَجِدُونَ لَهُم مِّن دُونِ ٱللَّهِ وَلِيّٗا وَلَا نَصِيرٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faamma allatheena amanoo...fayuwaffeehim ojoorahum wayazeeduhum min fadlihi: believers receive full reward plus increase. Waamma allatheena istankafoo waistakbaroo: istinkaf (disdain) paired with istikbar (arrogance) as twin sins. Wala yajidoona lahum min dooni Allahi waliyyan wala naseeran: absolute isolation in punishment."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "لاهوت العبودية: عيسى والملائكة عباد نموذجيون لا يستنكفون عن العبادة مقابل تكبر الإنسان",
+      "notes": "Gap candidate. Establishes servitude (ubudiyyah) as highest ontological status. Isa and muqarraboon angels serve as cosmic proof that proximity to Allah correlates with willingness to serve not claims of equality. Istinkaf (disdain) identified as specific sin distinct from mere disbelief. Binary outcome structure (faamma...waamma) mirrors earlier salvation formulas. Fadl (bounty) beyond earned reward signals divine generosity."
+    },
+    {
+      "candidateId": "cand-0226",
+      "label": "Kalalah inheritance ruling: sibling inheritance shares when deceased leaves neither descendants nor ascendants with gender-differentiated portions",
+      "definition": "In 4:176: They request ruling. Say Allah gives ruling concerning kalalah: if man dies leaving no child but has sister she gets half what he left; he inherits from her if she has no child; if two sisters they get two-thirds; if siblings male and female male gets share of two females. Allah makes clear for you lest you go astray. Allah is Knower of all things.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "4:176",
+          "excerpt": "يَسۡتَفۡتُونَكَ قُلِ ٱللَّهُ يُفۡتِيكُمۡ فِي ٱلۡكَلَٰلَةِۚ إِنِ ٱمۡرُؤٌاْ هَلَكَ لَيۡسَ لَهُۥ وَلَدٞ وَلَهُۥٓ أُخۡتٞ فَلَهَا نِصۡفُ مَا تَرَكَۚ وَهُوَ يَرِثُهَآ إِن لَّمۡ يَكُن لَّهَا وَلَدٞۚ فَإِن كَانَتَا ٱثۡنَتَيۡنِ فَلَهُمَا ٱلثُّلُثَانِ مِمَّا تَرَكَۚ وَإِن كَانُوٓاْ إِخۡوَةٗ رِّجَالٗا وَنِسَآءٗ فَلِلذَّكَرِ مِثۡلُ حَظِّ ٱلۡأُنثَيَيۡنِۗ يُبَيِّنُ ٱللَّهُ لَكُمۡ أَن تَضِلُّواْۗ وَٱللَّهُ بِكُلِّ شَيۡءٍ عَلِيمُۢ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yastaftoonaka quli Allahu yufteekum fee alkalalati: kalalah defined contextually as lacking walad (child/descendant). Falaha nisfu ma taraka: single sister receives half. Wahuwa yarithuha in lam yakun laha waladun: reciprocal inheritance. Fain kanata ithnatayni falahuma alththuluthani: two sisters receive two-thirds. Falilththakari mithlu haththi alonthayayni: 2:1 male-female ratio. Yubayyinu Allahu lakum an tadilloo: clarification purpose stated."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-19T07:48:00.000Z",
+      "urduLabel": "حكم ميراث الكلالة: أنصبة الإخوة عند عدم وجود أصول أو فروع مع تفاوت الأنصبة حسب الجنس",
+      "notes": "Gap candidate. Completes surah's inheritance legislation block. Kalalah etymology debated but context defines as lacking direct descendants/ascendants. Reciprocal inheritance (brother inherits from childless sister) unique to this verse. Two-thirds cap for multiple sisters prevents estate exhaustion. 2:1 ratio consistent with 4:11 but applied to collateral rather than direct heirs. Closing yubayyinu...an tadilloo frames legislation as protective guidance. Final bikulli shayin AAaleemun seals surah with divine omniscience."
+    }
+  ]
+}
