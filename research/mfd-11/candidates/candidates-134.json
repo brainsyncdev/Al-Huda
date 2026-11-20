@@ -1,387 +1,77 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:20:00.000Z",
+  "generatedAt": "2026-11-21T02:25:00.000Z",
   "sourceExtraction": "ext-110-p1,ext-110-p2",
   "candidates": [
     {
-      "candidateId": "cand-2837",
-      "label": "cand-2837: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
+      "candidateId": "cand-2008",
+      "label": "Divine help and victory producing mass conversion to Allah's religion",
+      "definition": "In 110:1-2: When the help of Allah and victory come and you see the people entering into the religion of Allah in multitudes.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "110:1",
           "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2838",
-      "label": "cand-2838: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
+          "key": "110:2",
+          "excerpt": "وَرَأَيۡتَ ٱلنَّاسَ يَدۡخُلُونَ فِي دِينِ ٱللَّهِ أَفۡوَاجٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2839",
-      "label": "cand-2839: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2840",
-      "label": "cand-2840: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nasr and fath as divine gifts."
+        },
         {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Afwaj conversion as collective iman."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T02:25:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2841",
-      "label": "cand-2841: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2842",
-      "label": "cand-2842: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2843",
-      "label": "cand-2843: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2844",
-      "label": "cand-2844: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2845",
-      "label": "cand-2845: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2846",
-      "label": "cand-2846: Topic from 110:1",
-      "definition": "In 110:1: When the victory of Allah has come and the conquest",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:1",
-          "excerpt": "إِذَا جَآءَ نَصۡرُ ٱللَّهِ وَٱلۡفَتۡحُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2847",
-      "label": "cand-2847: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
+      "candidateId": "cand-2009",
+      "label": "Victory answered with praise, forgiveness-seeking and Tawwab affirmation",
+      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "110:3",
           "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2848",
-      "label": "cand-2848: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2849",
-      "label": "cand-2849: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Istighfar at the moment of triumph."
+        },
         {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tawwab as closing divine name."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2850",
-      "label": "cand-2850: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2851",
-      "label": "cand-2851: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2852",
-      "label": "cand-2852: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2853",
-      "label": "cand-2853: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2854",
-      "label": "cand-2854: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2855",
-      "label": "cand-2855: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2856",
-      "label": "cand-2856: Topic from 110:3",
-      "definition": "In 110:3: Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "110:3",
-          "excerpt": "فَسَبِّحۡ بِحَمۡدِ رَبِّكَ وَٱسۡتَغۡفِرۡهُۚ إِنَّهُۥ كَانَ تَوَّابَۢا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T02:25:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     }
   ]
 }
