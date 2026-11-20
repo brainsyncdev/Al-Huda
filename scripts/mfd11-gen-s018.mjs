@@ -48,19 +48,142 @@ const PASSAGES = [
     mainLabel: "Dhul-Qarnayn empowered with comprehensive means traversing east-west; western expedition encountering people at murky spring exercising just governance option; eastern expedition finding unprotected people demonstrating solar geography knowledge; northern expedition encountering linguistically isolated community requesting barrier against Yajuj-Majuj corruption; barrier construction using iron-copper metallurgy as engineering feat enabled by divine empowerment; barrier impermanence linked to eschatological promise fulfillment; Yajuj-Majuj release as end-times sign with wave-like surging; Hell displayed plainly for disbelievers with veiled-servant imagery; greatest losers defined as those whose worldly effort appeared productive but lacked faith foundation; deeds rendered void through disbelief in divine meeting; sea-ink metaphor establishing infinite divine knowledge finitude; closing prophetic identity affirmation: human receiving revelation commanding tawheed and righteous action without association" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-018-p1": [
+    "Hamd to Allah who sent down the Book upon His Servant without any deviance",
+    "Book made straight to warn of severe punishment and give good tidings to believers doing righteous deeds",
+    "Believers promised eternal residence in reward as outcome of righteous deeds",
+    "Warning directed at those who claim Allah has taken a son",
+    "Divine sonship claim refuted through absence of knowledge among claimants and their fathers with grave word exposed as lie",
+    "Prophetic consolation addressing grief over disbelievers rejection of the message",
+    "Earthly adornment established as test mechanism determining best in deed",
+    "Eventual reduction of earthly adornment to barren ground affirming temporal finitude",
+    "Rhetorical question on whether Cave companions and inscription are considered a wonder among divine signs",
+    "Youths retreating to cave supplicating for mercy and right guidance from their Lord",
+    "Divine sealing of ears in cave for a numbered span of years inducing supernatural sleep",
+    "Awakening orchestrated to determine which faction better calculated the duration stayed",
+    "Truthful narration of youths who believed in their Lord and received increased guidance",
+    "Hearts bound firm when they stood proclaiming Lord of heavens and earth rejecting all other deities",
+    "People criticized for taking deities besides Allah without clear authority exposing invented lie",
+    "Withdrawal from polytheists and retreat to cave promising divine mercy and facility",
+    "Solar deflection away from cave entrance as divine sign distinguishing guided from astray",
+    "Sleepers appearing awake while turned right and left with dog stretching paws inspiring terror in observer",
+    "Awakened sleepers questioning duration stayed and dispatching envoy to city for pure food with caution",
+    "Fear of discovery by townspeople who would stone or forcibly return them to former religion",
+    "Discovery of sleepers arranged so people would know divine promise is truth and Hour is certain",
+    "Speculation about number of sleepers dismissed with command to defer to divine knowledge and avoid argument",
+    "Prohibition against declaring future action without qualifying with divine will",
+    "Command to remember Lord when forgetting and hope for nearer guidance",
+    "Precise duration stated as three hundred years plus nine establishing chronological marker",
+    "Allah affirmed as sole knower of unseen with no partner in legislation or protector besides Him",
+    "Recitation command of revealed Book with guarantee that none can alter divine words",
+    "Patience commanded with fellow worshippers seeking divine countenance over worldly attraction",
+    "Truth declared from Lord with free choice to believe or disbelieve and fire prepared for wrongdoers",
+    "Assurance that reward of those who believed and did righteous deeds will not be lost",
+    "Gardens of perpetual residence with rivers gold bracelets silk garments and adorned couches as excellent reward"
+  ],
+  "ext-018-p2": [
+    "Parable introduced of two men one granted two gardens of grapevines bordered with palms and crops between",
+    "Both gardens producing full fruit without shortfall with river gushing through midst",
+    "Wealth-owner boasting to companion of superior wealth and greater following in numbers",
+    "Owner entering garden unjust to self claiming it will never perish",
+    "Owner denying Hour occurrence and assuming better return even if resurrected",
+    "Companion challenging disbelief by citing creation from dust then sperm-drop then proportioned man",
+    "Companion affirming tawheed declaring Allah as his Lord with no association",
+    "Taught formula Ma sha Allahu la quwwata illa billah as proper response when entering garden acknowledging divine will",
+    "Companion suggesting possible better garden for himself and thunderbolt calamity destroying owners garden",
+    "Alternative destruction scenario where water sinks deep becoming unreachable",
+    "Fruits encompassed by ruin with owner wringing hands in regret wishing he had not associated anyone with Lord",
+    "No company able to aid owner besides Allah and no self-defense possible against divine decree",
+    "Authority belonging entirely to Allah the Truth who is best in reward and outcome",
+    "Worldly life parable as rain-produced vegetation mingling then drying into scattered remnants demonstrating divine capability",
+    "Wealth and children identified as worldly adornment contrasted with enduring good deeds superior for reward and hope",
+    "Day of mountain removal with earth laid bare and total gathering leaving none behind",
+    "Presentation before Lord in rows confirming original creation form and refuting denial of appointed meeting",
+    "Record placed open causing criminals dread with complete enumeration of all deeds small and great",
+    "Iblis refusing prostration to Adam identified as jinn departing divine command with descendants taken as false allies",
+    "False deities not witnessing creation of heavens earth or selves nor taken as divine assistants",
+    "Day when claimed partners called but fail to respond with barrier of destruction placed between them",
+    "Criminals seeing Fire certain of falling in with no escape route available",
+    "Quran diversifying every kind of example yet man remaining most contentious of creatures",
+    "Nothing preventing belief when guidance arrived except expectation of historical precedent or immediate punishment",
+    "Messengers sent only as bearers of good tidings and warners while disbelievers dispute with falsehood ridiculing signs",
+    "Greatest injustice defined as turning away from reminded verses forgetting what hands sent forth with sealed hearts and deafened ears",
+    "Lord described as Forgiving and Merciful deferring punishment to appointed term with no escape possible",
+    "Destroyed cities cited with appointed time of destruction as consequence of wrongdoing"
+  ],
+  "ext-018-p3": [
+    "Musa declaring determination to travel until reaching junction of two seas or continuing for a long period",
+    "Fish forgotten at junction taking its course into the sea through a tunnel",
+    "Musa requesting morning meal after journey fatigue having passed beyond the meeting point",
+    "Youth recalling forgetfulness of fish at rock attributed to Satan making him not mention it",
+    "Recognition that forgotten fish was the sought sign prompting return retracing footsteps",
+    "Finding servant granted mercy and taught special knowledge directly from divine presence",
+    "Musa requesting permission to follow in order to learn right judgment from what was taught",
+    "Khidr warning Musa that patience with him will be impossible",
+    "Khidr questioning how patience is possible for what lies beyond comprehension",
+    "Musa pledging patience by divine will and promising no disobedience to commands",
+    "Condition set that Musa must not ask about anything until voluntary explanation is given",
+    "First enigmatic act: boat scuttled after embarking provoking Musa objection about drowning crew",
+    "Khidr reminding Musa of prior warning about inability to maintain patience",
+    "Musa requesting forgiveness for forgetfulness and asking not to be burdened with difficulty",
+    "Second enigmatic act: boy killed provoking Musa condemnation of killing innocent soul",
+    "Khidr repeating reminder that Musa cannot endure patience with him",
+    "Musa setting final condition that any further question terminates companionship with excuse granted",
+    "Third enigmatic act: collapsing wall repaired in town that refused hospitality with Musa suggesting payment",
+    "Khidr announcing separation and offering interpretation of acts Musa could not endure",
+    "Boat interpretation: belonged to poor sea workers damaged to prevent royal seizure by force",
+    "Boy interpretation: parents were believers feared he would oppress them with transgression and disbelief",
+    "Divine intention to replace boy with child better in purity and nearer to mercy",
+    "Wall interpretation: belonged to two orphan boys with treasure beneath righteous father preserved until maturity as divine mercy",
+    "Transition verse: people asking about Dhul-Qarnayn with command to recite report about him"
+  ],
+  "ext-018-p4": [
+    "Dhul-Qarnayn established on earth and granted means to everything as comprehensive empowerment",
+    "Following a cause beginning the series of expeditions",
+    "Western expedition reaching murky spring finding people there with divine governance option presented",
+    "Justice policy declared: wrongdoer punished then returned to Lord for severe punishment",
+    "Believer doing righteousness promised best reward and ease in command",
+    "Following another cause continuing the expedition sequence",
+    "Eastern expedition finding sun rising on people with no shelter against it",
+    "Divine affirmation that knowledge encompassed all circumstances of Dhul-Qarnayn fully",
+    "Following yet another cause toward northern region",
+    "Reaching pass between two barriers finding people who could hardly understand speech",
+    "People requesting barrier against Yajuj-Majuj corruption offering tribute in exchange",
+    "Dhul-Qarnayn declining tribute stating divine empowerment is better and requesting strength assistance instead",
+    "Construction process: iron blocks leveled between mountains blown with bellows then molten copper poured",
+    "Barrier rendered impassable: Yajuj-Majuj unable to scale or pierce through it",
+    "Barrier declared mercy from Lord with impermanence linked to eschatological promise fulfillment",
+    "Yajuj-Majuj release on Day of surging waves followed by trumpet blast and total gathering",
+    "Hell presented plainly to disbelievers on display as visual confrontation",
+    "Disbelievers identified as those whose eyes were veiled from divine remembrance unable to hear",
+    "Rhetorical challenge to disbelievers thinking they can take divine servants as allies instead of Allah",
+    "Introduction of greatest losers concept regarding deeds",
+    "Greatest losers defined as those whose worldly effort appeared productive while actually misguided",
+    "Deeds rendered void through disbelief in divine verses and meeting with Lord weighing nothing on Resurrection Day",
+    "Hell assigned as recompense for denial and ridicule of signs and messengers",
+    "Believers doing righteous deeds promised Gardens of Paradise as eternal lodging",
+    "Eternal abode in Paradise with no desire for transfer expressing permanent contentment",
+    "Sea-ink metaphor establishing infinite extent of divine words beyond finite creation capacity",
+    "Closing prophetic identity: human receiving revelation commanding tawheed and righteous worship without association"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`18:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`18:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`18:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 18, surahName: "Al-Kahf",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
