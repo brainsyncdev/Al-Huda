@@ -53,19 +53,105 @@ const PASSAGES = [
     mainLabel: "Amanah (trust) offered to heavens-earth-mountains refused but borne by man as zalum-jahul; repentance-belief-obedience-truthfulness-patience-humility-charity-fasting-modesty-dhikr as ten-fold virtue catalog repeated; divine choice in affairs negating personal preference; Ibrahim-Ismail-Ishaq-Yaqub guidance lineage; universal ownership-return; paired creation; measured rain provision; creation in truth with Hour-forgiveness balance; Ibrahim-Lot narratives recapitulated; destroyed towns as highway signs; individual burden-bearing principle; Hayy-Qayyum submission" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-033-p1": [
+    "Command to Prophet to fear Allah and not obey disbelievers or hypocrites with affirmation of divine knowledge and wisdom",
+    "Command to follow revelation from Lord with affirmation that Allah is Acquainted with all actions",
+    "Command to rely upon Allah with declaration of divine sufficiency as Trustee",
+    "Negation of dual-heart anatomy and adopted-son legal fiction affirming Allah speaks truth and guides to right way",
+    "Command to call adopted sons by biological fathers names as more just with fallback to brotherhood-in-religion when father unknown",
+    "Prophet closer to believers than their own selves and his wives as their mothers with blood-relation inheritance priority over migration ties",
+    "Solemn covenant taken from prophets including Noah Abraham Moses Jesus and Muhammad requiring accountability for truthfulness",
+    "Purpose of covenant to question truthful about their truth with painful punishment prepared for disbelievers",
+    "Command to remember divine favor during Ahzab siege when unseen wind and angelic armies were sent against confederates",
+    "Description of siege terror with enemies attacking from above and below while hearts reached throats and assumptions multiplied",
+    "Believers tested and shaken severely during the confederate siege as trial of faith",
+    "Hypocrites and those with heart-disease declaring divine promise was nothing but delusion during siege crisis",
+    "Faction requesting permission to leave claiming houses unprotected while actually intending only to flee battle",
+    "Hypocrite readiness to commit fitnah if enemy entered from every direction showing commitment was never genuine",
+    "Reminder of prior pledge to Allah not to flee with affirmation that divine covenant will be questioned",
+    "Declaration that fleeing from death or killing brings no benefit and worldly enjoyment would be brief regardless",
+    "Rhetorical challenge on who can protect from divine ill or mercy with negation of any protector besides Allah",
+    "Divine knowledge of hinderers and those calling others away from battle while themselves avoiding combat",
+    "Hypocrite cowardice during fear contrasted with sharp-tongued abuse after safety returns resulting in nullified deeds",
+    "Hypocrite wish to be among bedouins asking news from afar rather than fighting alongside believers"
+  ],
+  "ext-033-p2": [
+    "Prophet established as excellent example for those hoping in Allah and Last Day who remember Allah abundantly",
+    "Believer response to seeing confederates confirming divine promise and increasing in faith and submission",
+    "Men among believers who fulfilled their covenant with Allah either dying in fulfillment or awaiting their turn without alteration",
+    "Divine reward for truthful ones and punishment or accepted repentance for hypocrites with forgiveness-mercy affirmation",
+    "Allah repelling disbelievers in rage without gain and sufficing believers in battle as Powerful and Mighty",
+    "People of Scripture who supported confederates brought down from fortresses with terror cast into hearts enabling capture and killing",
+    "Inheritance of land homes and properties of defeated People of Scripture plus lands not yet trodden as sign of divine competence",
+    "Option presented to Prophet wives between worldly life with gracious release versus Allah-Messenger-Hereafter with great reward",
+    "Great reward prepared for doers of good among Prophet wives who choose Allah and Messenger and Hereafter",
+    "Double punishment warning for Prophet wife committing clear immorality as elevated accountability standard",
+    "Double reward and noble provision for Prophet wife who devoutly obeys Allah and Messenger and does righteousness",
+    "Prophet wives distinguished from other women with command against soft speech to prevent coveting by diseased hearts",
+    "Command for Prophet wives to remain in homes avoid jahiliyyah display establish prayer give zakah and obey Allah-Messenger",
+    "Command for Prophet wives to remember verses and wisdom recited in their homes with Latif-Khabir affirmation",
+    "Ten-fold virtue catalog for believing men and women covering submission belief devotion truthfulness patience humility charity fasting modesty and dhikr",
+    "Negation of personal choice when Allah and Messenger decide a matter with clear-error warning for disobedience",
+    "Zayd-Zaynab marriage narrative establishing removal of adopted-son divorce restriction on prophetic marriage as divine decree",
+    "No discomfort upon Prophet regarding what Allah imposed as established sunnah of prior prophets with destined decree",
+    "Praise for those conveying divine messages fearing none but Allah with sufficiency of Allah as Reckoner",
+    "Muhammad declared not father of any man but Messenger of Allah and seal of prophets with comprehensive divine knowledge"
+  ],
+  "ext-033-p3": [
+    "Command for believers to remember Allah with abundant remembrance",
+    "Command to glorify Allah morning and evening as temporal dhikr structure",
+    "Divine and angelic salawat bringing believers from darknesses into light as expression of mercy toward believers",
+    "Greeting of peace on Day of meeting Allah with noble reward prepared for believers",
+    "Prophet sent as witness bearer-of-good-tidings and warner establishing threefold prophetic function",
+    "Prophet as caller to Allah by divine permission and illuminating lamp completing fivefold role description",
+    "Good tidings to believers of great bounty from Allah as encouragement amid adversity",
+    "Command not to obey disbelievers and hypocrites disregard their harm and trust Allah as sufficient Trustee",
+    "Pre-consummation divorce ruling waiving waiting period with command to provide and release graciously",
+    "Special marriage permissions for Prophet including dowered wives captives migrant female relatives and self-gifted believing woman",
+    "Prophet permitted to defer or receive any wife without blame ensuring contentment and preventing grief among co-wives",
+    "Prohibition on additional wives or substitution after current set except right-hand possessions with divine observation affirmed",
+    "Household etiquette limiting entry for meals prohibiting lingering conversation and mandating screen-based requests for purity of hearts",
+    "Affirmation that Allah knows everything whether revealed or concealed as omniscience reminder",
+    "Exemption for women regarding male relatives sons brothers nephews and female servants with taqwa command and witness affirmation",
+    "Divine and angelic blessings upon Prophet with command for believers to send salawat and salam",
+    "Curse upon those abusing Allah and Messenger in this world and Hereafter with humiliating punishment prepared",
+    "Slander and manifest sin upon those harming believing men and women without cause establishing false accusation prohibition",
+    "Jilbab command for wives daughters and believing women enabling recognition and preventing harm with forgiveness-mercy closure"
+  ],
+  "ext-033-p4": [
+    "Ultimatum to hypocrites heart-diseased and rumor-spreaders in Madinah threatening expulsion if they do not cease",
+    "Accursed status for agitators with seizure and execution wherever found as enforcement measure",
+    "Established divine pattern with prior communities affirmed as unchanging sunnah of Allah",
+    "Hour knowledge exclusively with Allah with suggestion it may be near as eschatological uncertainty",
+    "Divine curse upon disbelievers with Blaze prepared as eternal punishment",
+    "Eternal abiding in Fire without protector or helper as absolute abandonment consequence",
+    "Face-overturning in Fire expressing belated wish to have obeyed Allah and Messenger as regret archetype",
+    "Blaming masters and dignitaries for misguidance exposing the social chain of misdirected obedience",
+    "Request for double punishment and great curse upon misleading leaders expressing communal accountability demand",
+    "Warning against being like those who abused Musa whom Allah cleared establishing prophetic innocence precedent",
+    "Command to fear Allah and speak appropriate speech establishing qawl-sadid as foundational ethical principle",
+    "Qawl sadid producing deed rectification and sin forgiveness with obedience-success equation as great attainment",
+    "Amanah offered to heavens earth and mountains which refused out of fear but borne by man characterized as unjust and ignorant",
+    "Divine punishment for hypocrites and mushriks contrasted with accepted repentance for believing men and women closing with Ghafur-Rahim"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`33:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`33:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`33:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 33, surahName: "Al-Ahzab",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
