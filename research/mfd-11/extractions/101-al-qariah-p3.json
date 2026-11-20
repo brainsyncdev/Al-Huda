@@ -1,0 +1,82 @@
+{
+  "extractionId": "ext-101-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 101,
+  "surahName": "Al-Qari'ah",
+  "passage": {
+    "fromAyah": 10,
+    "toAyah": 11,
+    "label": "what make you know what that is; Fire intensely hot"
+  },
+  "verseKeys": [
+    "101:10",
+    "101:11"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "101:10",
+      "text": "وَمَآ أَدۡرَىٰكَ مَا هِيَهۡ"
+    },
+    {
+      "key": "101:11",
+      "text": "نَارٌ حَامِيَةُۢ"
+    }
+  ],
+  "mainSubject": {
+    "label": "The abyss's nature questioned rhetorically and answered as an intensely hot Fire",
+    "keys": [
+      "101:10",
+      "101:11"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "And what can make you know what that abyss is",
+      "keys": [
+        "101:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "It is a Fire, intensely hot",
+      "keys": [
+        "101:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Abyss identified as an intensely hot Fire through rhetorical questioning",
+      "keys": [
+        "101:10",
+        "101:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [],
+  "terminology": [
+    {
+      "term": "حَامِيَةُۢ",
+      "transliteration": "nar hamiyah",
+      "gloss": "intensely hot Fire (editorial gloss)",
+      "keys": [
+        "101:11"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1990"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the mountain-as-wool simile (5) before the scales-weight binary opens (6); P2 ends with the abyss-naming (9) before the rhetorical question about the abyss begins (10); P3 covers the two-verse closing identification of the abyss as intensely hot Fire (10-11).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-21T00:55:00.000Z"
+}
