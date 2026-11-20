@@ -1,387 +1,89 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:20:00.000Z",
+  "generatedAt": "2026-11-21T01:35:00.000Z",
   "sourceExtraction": "ext-105-p1,ext-105-p2",
   "candidates": [
     {
-      "candidateId": "cand-2737",
-      "label": "cand-2737: Topic from 105:1",
-      "definition": "In 105:1: Have you not considered, [O Muhammad], how your Lord dealt with the companions of the elephant",
+      "candidateId": "cand-1998",
+      "label": "Elephant companions' plan frustrated by divine intervention",
+      "definition": "In 105:1-2: Have you not considered O Muhammad how your Lord dealt with the companions of the elephant; did He not make their plan into misguidance.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "105:1",
           "excerpt": "أَلَمۡ تَرَ كَيۡفَ فَعَلَ رَبُّكَ بِأَصۡحَٰبِ ٱلۡفِيلِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2738",
-      "label": "cand-2738: Topic from 105:1",
-      "definition": "In 105:1: Have you not considered, [O Muhammad], how your Lord dealt with the companions of the elephant",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:1",
-          "excerpt": "أَلَمۡ تَرَ كَيۡفَ فَعَلَ رَبُّكَ بِأَصۡحَٰبِ ٱلۡفِيلِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2739",
-      "label": "cand-2739: Topic from 105:1",
-      "definition": "In 105:1: Have you not considered, [O Muhammad], how your Lord dealt with the companions of the elephant",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:1",
-          "excerpt": "أَلَمۡ تَرَ كَيۡفَ فَعَلَ رَبُّكَ بِأَصۡحَٰبِ ٱلۡفِيلِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2740",
-      "label": "cand-2740: Topic from 105:1",
-      "definition": "In 105:1: Have you not considered, [O Muhammad], how your Lord dealt with the companions of the elephant",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:1",
-          "excerpt": "أَلَمۡ تَرَ كَيۡفَ فَعَلَ رَبُّكَ بِأَصۡحَٰبِ ٱلۡفِيلِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2741",
-      "label": "cand-2741: Topic from 105:1",
-      "definition": "In 105:1: Have you not considered, [O Muhammad], how your Lord dealt with the companions of the elephant",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:1",
-          "excerpt": "أَلَمۡ تَرَ كَيۡفَ فَعَلَ رَبُّكَ بِأَصۡحَٰبِ ٱلۡفِيلِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2742",
-      "label": "cand-2742: Topic from 105:2",
-      "definition": "In 105:2: Did He not make their plan into misguidance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "105:2",
           "excerpt": "أَلَمۡ يَجۡعَلۡ كَيۡدَهُمۡ فِي تَضۡلِيلٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kayd rendered tadlil."
+        },
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Pre-hijrah miracle protecting the Ka'bah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T01:35:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2743",
-      "label": "cand-2743: Topic from 105:2",
-      "definition": "In 105:2: Did He not make their plan into misguidance",
+      "candidateId": "cand-1999",
+      "label": "Ababil birds with sijjil stones reducing army to eaten straw",
+      "definition": "In 105:3-5: And He sent against them birds in flocks striking them with stones of hard clay and He made them like eaten straw.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "105:2",
-          "excerpt": "أَلَمۡ يَجۡعَلۡ كَيۡدَهُمۡ فِي تَضۡلِيلٖ",
+          "key": "105:3",
+          "excerpt": "وَأَرۡسَلَ عَلَيۡهِمۡ طَيۡرًا أَبَابِيلَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2744",
-      "label": "cand-2744: Topic from 105:2",
-      "definition": "In 105:2: Did He not make their plan into misguidance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:2",
-          "excerpt": "أَلَمۡ يَجۡعَلۡ كَيۡدَهُمۡ فِي تَضۡلِيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2745",
-      "label": "cand-2745: Topic from 105:2",
-      "definition": "In 105:2: Did He not make their plan into misguidance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:2",
-          "excerpt": "أَلَمۡ يَجۡعَلۡ كَيۡدَهُمۡ فِي تَضۡلِيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2746",
-      "label": "cand-2746: Topic from 105:2",
-      "definition": "In 105:2: Did He not make their plan into misguidance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:2",
-          "excerpt": "أَلَمۡ يَجۡعَلۡ كَيۡدَهُمۡ فِي تَضۡلِيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2747",
-      "label": "cand-2747: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "105:4",
           "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2748",
-      "label": "cand-2748: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
+          "key": "105:5",
+          "excerpt": "فَجَعَلَهُمۡ كَعَصۡفٖ مَّأۡكُولِۭ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2749",
-      "label": "cand-2749: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2750",
-      "label": "cand-2750: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Tayr ababil and hijarah min sijjil."
+        },
         {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ka-asf ma'kul total destruction simile."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2751",
-      "label": "cand-2751: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2752",
-      "label": "cand-2752: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2753",
-      "label": "cand-2753: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2754",
-      "label": "cand-2754: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2755",
-      "label": "cand-2755: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2756",
-      "label": "cand-2756: Topic from 105:4",
-      "definition": "In 105:4: Striking them with stones of hard clay",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "105:4",
-          "excerpt": "تَرۡمِيهِم بِحِجَارَةٖ مِّن سِجِّيلٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T01:35:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     }
   ]
 }

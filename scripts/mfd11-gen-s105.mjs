@@ -106,7 +106,7 @@ for (const p of PASSAGES) {
   if (ababil) e.terminology.push({ term: ababil, transliteration: "ababil", gloss: "flocks/successive groups (editorial gloss)", keys: ["105:3"] });
   const sijjil = findWord(4, ["\u0633","\u062c","\u064a","\u0644"]);
   if (sijjil) e.terminology.push({ term: sijjil, transliteration: "hijarah min sijjil", gloss: "stones of hard/baked clay (editorial gloss)", keys: ["105:4"] });
-  const ma'kul = findWord(5, ["\u0645","\u0623","\u0643","\u0648","\u0644"]);
+  const makul = findWord(5, ["\u0645","\u0623","\u0643","\u0648","\u0644"]);
   // Using 'eaten' reference
   const asf = findWord(5, ["\u0639","\u0635","\u0641"]);
   if (asf) e.terminology.push({ term: asf, transliteration: "ka-'asf ma'kul", gloss: "like eaten straw/stubble (editorial gloss)", keys: ["105:5"] });
