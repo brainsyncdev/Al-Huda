@@ -1,0 +1,155 @@
+{
+  "extractionId": "ext-069-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 69,
+  "surahName": "Al-Haqqah",
+  "passage": {
+    "fromAyah": 48,
+    "toAyah": 52,
+    "label": "indeed Quran reminder righteous; indeed We know among deniers; indeed cause regret upon disbelievers; indeed truth certainty; exalt name Lord Most Great"
+  },
+  "verseKeys": [
+    "69:48",
+    "69:49",
+    "69:50",
+    "69:51",
+    "69:52"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "69:48",
+      "text": "وَإِنَّهُۥ لَتَذۡكِرَةٞ لِّلۡمُتَّقِينَ"
+    },
+    {
+      "key": "69:49",
+      "text": "وَإِنَّا لَنَعۡلَمُ أَنَّ مِنكُم مُّكَذِّبِينَ"
+    },
+    {
+      "key": "69:50",
+      "text": "وَإِنَّهُۥ لَحَسۡرَةٌ عَلَى ٱلۡكَٰفِرِينَ"
+    },
+    {
+      "key": "69:51",
+      "text": "وَإِنَّهُۥ لَحَقُّ ٱلۡيَقِينِ"
+    },
+    {
+      "key": "69:52",
+      "text": "فَسَبِّحۡ بِٱسۡمِ رَبِّكَ ٱلۡعَظِيمِ"
+    }
+  ],
+  "mainSubject": {
+    "label": "The Quran affirmed as a reminder for the righteous, with divine knowledge of deniers among them acknowledged; it will become a cause of regret upon disbelievers and is named the truth of certainty, closing with the command to exalt the name of the Lord, the Most Great",
+    "keys": [
+      "69:48",
+      "69:49",
+      "69:50",
+      "69:51",
+      "69:52"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The Quran affirmed as a reminder for the righteous",
+      "keys": [
+        "69:48"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Divine knowledge that deniers exist among them acknowledged",
+      "keys": [
+        "69:49"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "It will become a cause of regret upon the disbelievers",
+      "keys": [
+        "69:50"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "It is named the truth of certainty",
+      "keys": [
+        "69:51"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Al-Haqqah closes with the command to exalt the name of the Lord, the Most Great",
+      "keys": [
+        "69:52"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "69:52"
+      ],
+      "excerpt": "فَسَبِّحۡ بِٱسۡمِ رَبِّكَ ٱلۡعَظِيمِ",
+      "description": "So exalt the name of your Lord, the Most Great."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱلۡعَظِيمِ",
+      "transliteration": "Azeem",
+      "gloss": "Most Great (editorial gloss)",
+      "keys": [
+        "69:52"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "The Quran becoming a cause of regret upon the disbelievers",
+      "keys": [
+        "69:50"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Reminder for the righteous set against acknowledged deniers among the audience",
+      "keys": [
+        "69:48",
+        "69:49"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The truth of certainty affirmed immediately before the exaltation command",
+      "keys": [
+        "69:51",
+        "69:52"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلۡيَقِينِ",
+      "transliteration": "haqq al-yaqin",
+      "gloss": "the truth of certainty (editorial gloss)",
+      "keys": [
+        "69:51"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1818"
+  ],
+  "notes": "Wave 10 genuine re-extraction. Boundaries follow the text: P1 closes with the flood-reminder and conscious-ear statement (12) before the Horn blast opens (13); P2 ends with the wound-discharge food verdict (37) before the seen-unseen oath begins (38); P3 runs through the Messenger-word affirmation, the poet-soothsayer denials and the fabrication counterfactual (38-47); P4 covers the reminder-for-the-righteous, the regret declaration, the truth-of-certainty and the closing exaltation (48-52).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T19:35:00.000Z"
+}
