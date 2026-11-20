@@ -38,6 +38,106 @@ const TS = "2026-11-20T14:00:00.000Z";
 // P3: 28:51–75 — Prior scripture believers; resurrection proof; divine sovereignty
 // P4: 28:76–88 — Qarun destruction; abode of Hereafter; closing tawheed
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-028-p1": [
+    "Disjointed letters Ta-Sin-Mim opening the surah",
+    "Declaration that these verses belong to the clear manifest Book",
+    "Truthful recitation of Musa and Firawn narrative for believers",
+    "Firawn exalting himself dividing people into factions oppressing one group by slaughtering sons sparing daughters",
+    "Divine intent to favor the oppressed making them leaders and inheritors",
+    "Promise to establish the oppressed in the land showing Firawn Haman and their armies what they feared",
+    "Inspiration to Musa mother to nurse him then cast into river without fear or grief with promise of return as messenger",
+    "Firawn family picking up infant Musa becoming an enemy and grief source while they remained unaware sinners",
+    "Firawn wife requesting preservation of the child as comfort possibly beneficial or adoptable while they perceived not",
+    "Musa mother heart becoming empty nearly disclosing the secret had Allah not bound her heart to remain believing",
+    "Musa sister instructed to follow him watching from a distance while they remained unaware",
+    "Divine prohibition of all wet-nurses enabling sister to suggest a sincere household for his care",
+    "Restoration of Musa to his mother fulfilling divine promise so she would be content and know Allah truth",
+    "Musa reaching full strength and maturity receiving judgment and knowledge as reward for doers of good",
+    "Entering city during heedlessness finding two men fighting striking the enemy faction member fatally recognizing it as satanic",
+    "Immediate repentance seeking forgiveness after the killing and Allah forgiving as Forgiving Merciful",
+    "Pledge never to assist criminals again acknowledging divine favor received",
+    "Morning fear in the city when the same man sought help again and Musa rebuked him as evident deviator",
+    "Enemy faction member exposing yesterday killing accusing Musa of wanting tyranny not reform",
+    "Man from farthest city running to warn Musa of elite conspiracy to kill him advising departure as sincere advisor",
+    "Departure in fear praying for salvation from the wrongdoing people",
+    "Direction toward Madyan expressing hope that Lord will guide to the sound path",
+    "Arrival at Madyan well finding crowd watering and two women holding back due to aged father",
+    "Watering for the two women then withdrawing to shade declaring absolute neediness for any divine good",
+    "One woman approaching shyly inviting Musa to father for reward relating the story receiving assurance of escape from wrongdoers",
+    "Daughter recommending hiring Musa identifying him as strong and trustworthy",
+    "Father offering marriage to one daughter on condition of eight years service extendable to ten without hardship promising righteousness",
+    "Musa accepting terms establishing mutual agreement with Allah as witness over what they say"
+  ],
+  "ext-028-p2": [
+    "Completion of term and travel with family perceiving fire from direction of Tur hoping for news or ember",
+    "Divine call from right side of blessed valley Tuwa from the tree declaring Allah as Lord of worlds",
+    "Command to throw staff which writhed like a snake causing flight then reassurance of security",
+    "Command to insert hand emerging white without disease and draw arm close as two proofs for Firawn defiant people",
+    "Musa expressing fear of retribution for having killed someone among them",
+    "Request for brother Harun as eloquent support verifying him fearing denial",
+    "Divine promise to strengthen arm through brother granting supremacy so followers will predominate through signs",
+    "Firawn people dismissing clear signs as invented magic unheard of among forefathers",
+    "Musa affirming Lord knows best who brings guidance and who receives final home outcome noting wrongdoers fail",
+    "Firawn claiming sole divinity commanding Haman to build clay tower to look at Musa God considering him a liar",
+    "Arrogance of Firawn and soldiers in land without right assuming no return to Allah",
+    "Seizure and drowning of Firawn and soldiers in sea as end of wrongdoers",
+    "Making them leaders inviting to Fire with no help on Resurrection Day",
+    "Curse following them in this world and despised status on Resurrection Day",
+    "Giving Musa Scripture after destroying prior generations as enlightenment guidance and mercy for remembrance",
+    "Prophet Muhammad not present at western side when command was revealed to Musa nor among witnesses",
+    "Generations produced after Musa with prolonged lifespans while Prophet was not resident in Madyan reciting verses",
+    "Prophet not present at side of Tur when Allah called Musa but sent as mercy to warn unwarmed people",
+    "Sending messengers prevents disaster excuse where people would claim no warner came to them",
+    "When truth came they demanded like what Musa received despite disbelieving both scriptures calling them supporting magic",
+    "Challenge to bring a more guiding scripture from Allah if they are truthful",
+    "Non-response proving they follow mere desires with none more astray than desire-follower without divine guidance"
+  ],
+  "ext-028-p3": [
+    "Repeated conveyance of the Quranic word so that people might remember",
+    "Prior scripture recipients believing in the Quran before its revelation",
+    "Upon hearing recitation they declare belief recognizing truth from Lord having been Muslims beforehand",
+    "Double reward for patient endurance repelling evil with good and spending from provision",
+    "Turning away from ill speech declaring separation of deeds greeting with peace rejecting ignorance",
+    "Prophet cannot guide whom he loves but Allah guides whom He wills knowing best the rightly guided",
+    "Claim that following guidance risks expulsion countered by established secure sanctuary receiving all fruits as provision",
+    "Destroyed cities insolent in living now uninhabited dwellings with Allah as ultimate inheritor",
+    "Lord never destroys cities until sending messenger to mother city reciting signs only destroying wrongful populations",
+    "Worldly possessions being mere temporary enjoyment while what is with Allah is better and lasting challenging reason",
+    "Contrast between one promised good meeting it versus one given worldly enjoyment then presented for punishment",
+    "Day of calling asking where claimed partners are",
+    "Those upon whom decree fell admitting they misled others just as they were misled declaring disassociation",
+    "Command to invoke partners who fail to respond while punishment becomes visible wishing they had followed guidance",
+    "Second calling asking what answer they gave to the messengers",
+    "Information becoming obscured that day leaving them unable to question one another",
+    "Repentant believers doing righteous deeds having hope of being among successful ones",
+    "Lord creates and chooses whatever He wills with no choice belonging to them exalted above association",
+    "Lord knowing what breasts conceal and what they declare",
+    "Allah alone deserving worship with praise in first life and hereafter His decision and return to Him",
+    "Rhetorical challenge if night were made perpetual until resurrection what deity besides Allah could bring light",
+    "Rhetorical challenge if day were made perpetual until resurrection what deity besides Allah could bring restful night",
+    "Mercy in creating alternation of night and day for rest seeking bounty and gratitude",
+    "Repeated calling asking where claimed partners are",
+    "Extraction of witness from every nation demanding proof establishing truth belongs to Allah and inventions are lost"
+  ],
+  "ext-028-p4": [
+    "Qarun from Musa people tyrannizing them given immense treasures whose keys burdened strong men warned against exultation",
+    "Command to seek hereafter through divine gifts without forgetting worldly share doing good avoiding corruption",
+    "Qarun attributing wealth to personal knowledge ignoring prior destroyed generations stronger in power and accumulation",
+    "Public display of adornment causing worldly-desiring people to wish for similar fortune",
+    "Knowledgeable response that divine reward for believers doing righteous deeds is superior granted only to patient ones",
+    "Earth swallowing Qarun and home with no group to aid him unable to defend himself",
+    "Yesterday envious realizing Allah expands and restricts provision acknowledging divine favor prevented their destruction",
+    "Abode of Hereafter assigned to those not desiring exaltation or corruption on earth with best outcome for righteous",
+    "Good deed rewarded with better while evil deed recompensed only with equivalent of what was done",
+    "He who imposed Quran will return Prophet to place of return Lord knowing best who brings guidance and who errs",
+    "Prophet not expecting Book conveyance except as mercy from Lord therefore never assisting disbelievers",
+    "Never letting anyone avert from divine verses after revelation inviting to Lord never being among associators",
+    "Never invoking another deity with Allah no deity except Him everything perishing except His Face judgment and return to Him"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-028-p1", from: 1, to: 28,
     label: "Ta-Sin-Mim; verses clear Book; recite truthfully story Musa Firawn Pharaoh exalted land made people factions oppressing one group slaughtering sons sparing women indeed corruptors; intended bestow favor oppressed make imams inheritors; establish them land show Firawn Haman armies what feared; inspired mother Musa nurse him fear cast river fear grieve obeyed returned sister follow watched distance perceived not; refused wet-nurses said shall I direct family nurture him rejoicing; restored mother eye cool grieve know promise Allah true most unaware; reached full strength maturity gave wisdom knowledge thus reward doers-good; entered city time heedlessness found two men fighting one party other enemy called aid struck blow killed said Satan deed evil Lord forgive repented forgiven; morning fearful watchful came running said O Musa elite conspire kill you depart advised sincere; departed fearful vigilant said Lord save unjust people; directed Madyan said perhaps Lord guide right way; arrived water Madyan found crowd watering held back two women waiting said matter said cannot water until shepherds leave father old man; watered flock withdrew shade said Lord need whatever good send down; came walking shyly said father invites reward watered us came told story said fear escaped unjust people",
@@ -58,14 +158,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`28:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`28:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`28:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 28, surahName: "Al-Qasas",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
