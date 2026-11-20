@@ -49,19 +49,99 @@ const PASSAGES = [
     mainLabel: "Scriptural dialogue protocol: dispute only in best way; shared belief in One God as common ground; Quran as tibyan-huda-rahmah for believers; injustice defined as fabrication-denial combination; salah as fahisha-munkar prohibition mechanism; dhikr Allah akbar as supreme devotional act; creature provision dependency demonstrating divine sustenance; rhetorical tawheed questions producing unanimous Allah-response; provision expansion-restriction as divine prerogative; rain-revival as resurrection microcosm; worldly life as lahw-la'b versus eternal hereafter; maritime sincerity versus land-based polytheism as situational faith pattern; Makkah sanctuary as tangible divine favor; striving-for-Allah producing divine guidance as reciprocal promise" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-029-p1": [
+    "Opening disjointed letters Alif-Lam-Mim marking the revealed character of the surah",
+    "Rhetorical rebuke of assuming a verbal claim of faith exempts one from being tested",
+    "Testing of earlier communities establishing divine discrimination between truthful and lying claimants",
+    "Evildoers deluded into thinking they can outstrip divine reckoning with their judgment condemned as evil",
+    "Hope of meeting Allah anchored to an inevitably arriving appointed term under His hearing and knowledge",
+    "Striving returns benefit to the striver alone since Allah is free of need of all worlds",
+    "Believers doing righteous deeds promised expiation of misdeeds and recompense by their best actions",
+    "Goodness to parents enjoined yet obedience refused when they press for shirk with return and accounting reserved to Allah",
+    "Believers doing righteous deeds admitted into the company of the righteous",
+    "Opportunistic claimants equating human persecution with divine punishment and claiming solidarity only when victory arrives",
+    "Divine disclosure separating genuine believers from hypocrites through the outcome of trial",
+    "Disbelievers inviting believers to their path with a false pledge to absorb their sins exposed as liars",
+    "Misleaders bearing their own loads plus additional loads and questioned about their fabrications on Resurrection Day",
+    "Nuh mission lasting nine hundred fifty years ending in the flood seizing his wrongdoing people",
+    "Rescue of Nuh and the ship companions with the vessel made a lasting sign for all worlds",
+    "Ibrahim calling his people to worship Allah and observe taqwa as the better course if they knew",
+    "Idols exposed as invented falsehood powerless over provision with worship gratitude and return directed to Allah alone",
+    "Denial framed as an inherited pattern of earlier nations while messenger duty is limited to clear conveyance",
+    "Reflection on origination and repetition of creation as an easy matter establishing resurrection plausibility",
+    "Command to travel and observe how creation began as evidence for the final bringing-forth under absolute power",
+    "Punishment and mercy distributed by divine will with all creatures turned back to Him",
+    "No escape possible on earth or in heaven and no protector or helper besides Allah",
+    "Deniers of divine signs and of the meeting declared despairing of mercy and destined for painful punishment",
+    "People answering Ibrahim with a kill-or-burn verdict while divine rescue from the fire becomes signs for believers",
+    "Idol bonds reduced to worldly affection dissolving into mutual denial and cursing on Judgment Day with the Fire as refuge"
+  ],
+  "ext-029-p2": [
+    "Lut accepting Ibrahim faith followed by Ibrahim emigration to his Lord described as Mighty and Wise",
+    "Grant of Ishaq and Yaqub with prophethood and scripture placed in the lineage and reward in both abodes",
+    "Lut confronting his people with an unprecedented immorality never before committed among the worlds",
+    "Catalog of approaching men highway obstruction and public indecency met with a defiant challenge to summon punishment",
+    "Lut supplication seeking divine support against a corrupting community",
+    "Messengers bringing Ibrahim glad tidings while announcing destruction of the wrongdoing town",
+    "Ibrahim intercession for Lut answered with precise knowledge of residents and the wife excluded from rescue",
+    "Lut distress at the visitors relieved by reassurance of family rescue with the wife destined to remain behind",
+    "Sky-sent scourge decreed upon the townspeople as recompense for defiant disobedience",
+    "Enduring visible trace of the destroyed town left as clear evidence for people who reason",
+    "Shuayb sent to Madyan commanding worship expectation of the Last Day and abstention from spreading corruption",
+    "Madyan denial answered by the earthquake leaving them prone corpses in their own dwellings",
+    "Aad and Thamud ruins as observable testimony with satanic beautification diverting people who possessed perception",
+    "Qarun Firawn and Haman receiving Musa clear proofs yet acting arrogantly without escaping divine reach",
+    "Differentiated punishments of stone-storm blast earth-swallowing and drowning assigned per sin with self-wronging affirmed",
+    "Spider-house parable exposing the fragility of patronage sought besides Allah",
+    "Divine knowledge of every object invoked besides Him affirmed with might and wisdom",
+    "Parables presented to all people yet grasped only by those possessing knowledge",
+    "Heavens and earth created in truth as a sign for believers",
+    "Recitation of revelation and establishment of prayer with prayer restraining indecency and wrong and remembrance ranked greater"
+  ],
+  "ext-029-p3": [
+    "Dialogue with the People of Scripture restricted to the best manner except toward their wrongdoers with shared deity and submission professed",
+    "Revelation sent in the same manner believed by earlier scripture recipients and some among the present audience while only disbelievers reject it",
+    "Prophet prior inability to recite or write any scripture cited as removing grounds for falsifier suspicion",
+    "Quran described as distinct verses lodged in the breasts of the knowledgeable with rejection confined to wrongdoers",
+    "Demand for additional signs answered by reserving signs to Allah and limiting the Prophet role to clear warning",
+    "Sufficiency of the recited Book asserted as mercy and reminder for a believing people",
+    "Allah invoked as sufficient witness knowing all in heavens and earth with believers in falsehood declared the losers",
+    "Hastening of punishment deferred by a named term yet arriving suddenly while unperceived",
+    "Repeated demand to hasten punishment answered with Hell encompassing the disbelievers",
+    "Punishment enveloping from above and beneath the feet with the command to taste the consequence of past deeds",
+    "Address to believing servants that the divine earth is spacious so worship must be directed to Him alone",
+    "Universal tasting of death followed by return to Allah",
+    "Believing doers of good settled in elevated Paradise chambers with rivers beneath as eternal recompense",
+    "Patient reliance upon the Lord identified as the character of those rewarded workers",
+    "Countless creatures unable to carry their own provision sustained by Allah together with mankind under His hearing and knowledge",
+    "Questioning about creation of heavens and earth and subjection of sun and moon eliciting an Allah admission despite delusion",
+    "Expansion and restriction of provision assigned by divine will among servants with complete knowledge affirmed",
+    "Questioning about rain reviving dead earth eliciting an Allah admission capped by praise and a rebuke of unreasoning majorities",
+    "Worldly life reduced to diversion and play against the Hereafter as the true living abode",
+    "Sincere supplication aboard ships reverting to association once deliverance to land is granted",
+    "Ingratitude for granted rescue pursued as temporary enjoyment with a coming realization warned",
+    "Secure sanctuary established while surrounding people are snatched away contrasted with belief in falsehood and denial of favor",
+    "Fabricating lies about Allah or denying arriving truth named supreme injustice with Hell as the disbeliever residence",
+    "Striving in the divine cause answered with guidance to His paths and companionship for the doers of good"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`29:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`29:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`29:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 29, surahName: "Al-Ankabut",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
