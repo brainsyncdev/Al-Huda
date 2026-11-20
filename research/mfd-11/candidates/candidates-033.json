@@ -1,767 +1,1428 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:10:00.000Z",
+  "generatedAt": "2026-11-20T10:30:00.000Z",
   "sourceExtraction": "ext-009-p1,ext-009-p2,ext-009-p3,ext-009-p4",
   "candidates": [
     {
       "candidateId": "cand-0407",
-      "label": "cand-0407: Topic from 9:1",
-      "definition": "In 9:1: [This is a declaration of] disassociation, from Allah and His Messenger, to those with whom you had made a treaty among the polytheists",
+      "label": "Bara'ah disassociation proclamation: Allah and His Messenger publicly dissolve treaty relations with polytheists through a four-month grace period announced at the greater pilgrimage",
+      "definition": "In 9:1-3 a declaration of disassociation from Allah and His Messenger is issued to treaty-holding polytheists, granting four months of free travel while warning they cannot thwart Allah, and an announcement on the day of the greater pilgrimage confirms the rupture while offering repentance as the better course.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:1",
           "excerpt": "بَرَآءَةٞ مِّنَ ٱللَّهِ وَرَسُولِهِۦٓ إِلَى ٱلَّذِينَ عَٰهَدتُّم مِّنَ ٱلۡمُشۡرِكِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Baraatun mina Allahi warasoolihi ila allatheena AAahadtum mina almushrikeena: the dissolution is attributed jointly to Allah and the Messenger and addressed specifically to existing treaty partners, not to polytheists in general."
+        },
+        {
+          "key": "9:2",
+          "excerpt": "فَسِيحُواْ فِي ٱلۡأَرۡضِ أَرۡبَعَةَ أَشۡهُرٖ وَٱعۡلَمُوٓاْ أَنَّكُمۡ غَيۡرُ مُعۡجِزِي ٱللَّهِ وَأَنَّ ٱللَّهَ مُخۡزِي ٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faseehoo fee alardi arbaAAata ashhurin: a defined four-month window of safe movement precedes any hostilities; ghayru muAAjizee Allahi frames the grace as strength, not weakness."
+        },
+        {
+          "key": "9:3",
+          "excerpt": "وَأَذَٰنٞ مِّنَ ٱللَّهِ وَرَسُولِهِۦٓ إِلَى ٱلنَّاسِ يَوۡمَ ٱلۡحَجِّ ٱلۡأَكۡبَرِ أَنَّ ٱللَّهَ بَرِيٓءٞ مِّنَ ٱلۡمُشۡرِكِينَ وَرَسُولُهُۥۚ فَإِن تُبۡتُمۡ فَهُوَ خَيۡرٞ لَّكُمۡۖ وَإِن تَوَلَّيۡتُمۡ فَٱعۡلَمُوٓاْ أَنَّكُمۡ غَيۡرُ مُعۡجِزِي ٱللَّهِۗ وَبَشِّرِ ٱلَّذِينَ كَفَرُواْ بِعَذَابٍ أَلِيمٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waathanun ... yawma alhajji alakbari: the announcement is timed to the mass gathering of pilgrimage so the whole community hears it; fain tubtum fahuwa khayrun lakum keeps repentance open even within the proclamation."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. The text names no existing topic for treaty dissolution or public diplomatic proclamation. Deferred to scholarly review: which historical treaties are meant and how the four months relate to the sacred months of 9:5 — the verses themselves do not specify."
     },
     {
       "candidateId": "cand-0408",
-      "label": "cand-0408: Topic from 9:4",
-      "definition": "In 9:4: Excepted are those with whom you made a treaty among the polytheists and then they have not been deficient toward you in anything or supported anyone against you; so complete for them their treaty until their term [has ended]. Indeed, Allah loves the righteous [who fear Him]",
+      "label": "Treaty fidelity obligation: agreements with parties who neither breached terms nor aided enemies must be completed to their full term, grounded in Allah's love of the muttaqeen",
+      "definition": "In 9:4 and 9:7 polytheist treaty partners who have not been deficient in anything nor supported anyone against the believers are explicitly excepted from dissolution; their treaties must be honored to the agreed term, and uprightness toward them is required as long as they remain upright.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:4",
           "excerpt": "إِلَّا ٱلَّذِينَ عَٰهَدتُّم مِّنَ ٱلۡمُشۡرِكِينَ ثُمَّ لَمۡ يَنقُصُوكُمۡ شَيۡـٔٗا وَلَمۡ يُظَٰهِرُواْ عَلَيۡكُمۡ أَحَدٗا فَأَتِمُّوٓاْ إِلَيۡهِمۡ عَهۡدَهُمۡ إِلَىٰ مُدَّتِهِمۡۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلۡمُتَّقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0409",
-      "label": "cand-0409: Topic from 9:7",
-      "definition": "In 9:7: How can there be for the polytheists a treaty in the sight of Allah and with His Messenger, except for those with whom you made a treaty at al-Masjid al-Haram? So as long as they are upright toward you, be upright toward them. Indeed, Allah loves the righteous [who fear Him]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Illa allatheena AAahadtum ... thumma lam yanqusookum shayan walam yuthahiroo AAalaykum ahadan: two concrete breach tests (deficiency and aiding enemies) define the exception; faatimmoo ilayhim AAahdahum ila muddatihim commands full-term completion; inna Allaha yuhibbu almuttaqeena grounds fidelity in taqwa."
+        },
         {
           "key": "9:7",
           "excerpt": "كَيۡفَ يَكُونُ لِلۡمُشۡرِكِينَ عَهۡدٌ عِندَ ٱللَّهِ وَعِندَ رَسُولِهِۦٓ إِلَّا ٱلَّذِينَ عَٰهَدتُّمۡ عِندَ ٱلۡمَسۡجِدِ ٱلۡحَرَامِۖ فَمَا ٱسۡتَقَٰمُواْ لَكُمۡ فَٱسۡتَقِيمُواْ لَهُمۡۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلۡمُتَّقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Fama istaqamoo lakum faistaqeemoo lahum: reciprocity clause making continued honoring conditional on the other party's continued uprightness, again closed with Allah's love of the muttaqeen."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Keeping covenants to their term with non-breaching parties is a concrete application of justice, but the curated topic does not cover treaty law specifically"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with justice. The exception structure shows the dissolution is breach-triggered rather than blanket; the same taqwa refrain closes both verses, tying international fidelity to God-consciousness."
     },
     {
-      "candidateId": "cand-0410",
-      "label": "cand-0410: Topic from 9:10",
-      "definition": "In 9:10: They do not observe toward a believer any pact of kinship or covenant of protection. And it is they who are the transgressors",
+      "candidateId": "cand-0409",
+      "label": "Conditional combat directive with repentance exit: after the sacred months, hostilities against the treaty-breaking polytheists are commanded, but repentance with prayer and zakah immediately opens a safe path",
+      "definition": "In 9:5, once the sacred months have passed, killing, capturing, besieging and ambushing the polytheists is commanded; yet if they repent, establish prayer and give zakah their way must be freed, for Allah is Forgiving and Merciful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "9:10",
-          "excerpt": "لَا يَرۡقُبُونَ فِي مُؤۡمِنٍ إِلّٗا وَلَا ذِمَّةٗۚ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡمُعۡتَدُونَ",
+          "key": "9:5",
+          "excerpt": "فَإِذَا ٱنسَلَخَ ٱلۡأَشۡهُرُ ٱلۡحُرُمُ فَٱقۡتُلُواْ ٱلۡمُشۡرِكِينَ حَيۡثُ وَجَدتُّمُوهُمۡ وَخُذُوهُمۡ وَٱحۡصُرُوهُمۡ وَٱقۡعُدُواْ لَهُمۡ كُلَّ مَرۡصَدٖۚ فَإِن تَابُواْ وَأَقَامُواْ ٱلصَّلَوٰةَ وَءَاتَوُاْ ٱلزَّكَوٰةَ فَخَلُّواْ سَبِيلَهُمۡۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Faitha insalakha alashhuru alhurumu: the directive is time-gated by the sacred months. Faoqtuloo ... wakhuthoohum waohsuroohum waoqAAudoo lahum kulla marsadin enumerates the military measures. Fain taboo waaqamoo alssalata waatawoo alzzakata fakhalloo sabeelahum makes cessation mandatory upon repentance-prayer-zakat; inna Allaha ghafoorun raheemun seals the exit clause."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Repentance here functions as a legal trigger terminating hostilities, a dimension beyond personal repentance"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with repentance. The verse pairs maximal severity with an unconditional amnesty mechanism. Deferred to scholarly review: the scope of 'the polytheists' here (all, or the treaty-breakers of the surrounding verses) is disputed in tafsir and is not settled by the verse alone."
+    },
+    {
+      "candidateId": "cand-0410",
+      "label": "Asylum right for the seeking polytheist: protection must be granted so he can hear Allah's word, then he must be delivered to his place of safety because his people do not know",
+      "definition": "In 9:6, if any polytheist seeks protection, it must be granted until he hears the speech of Allah, and he must then be conveyed to his secure place; the stated reason is that they are a people who do not know.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:6",
+          "excerpt": "وَإِنۡ أَحَدٞ مِّنَ ٱلۡمُشۡرِكِينَ ٱسۡتَجَارَكَ فَأَجِرۡهُ حَتَّىٰ يَسۡمَعَ كَلَٰمَ ٱللَّهِ ثُمَّ أَبۡلِغۡهُ مَأۡمَنَهُۥۚ ذَٰلِكَ بِأَنَّهُمۡ قَوۡمٞ لَّا يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wain ahadun mina almushrikeena istajaraka faajirhu: individual initiative (istajara, seeking refuge) triggers a binding grant. Hatta yasmaAAa kalama Allahi defines the purpose as exposure to revelation, not coercion. Thumma ablighhu mamanahu guarantees safe return even if he does not accept. Thalika biannahum qawmun la yaAAlamoona grounds the duty in their ignorance rather than hostility."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. No verified topic covers asylum, safe conduct, or the right to hear revelation without compulsion. This verse sits inside the combat passage and constrains it: even during authorized hostilities, an individual seeker gains protected hearing and guaranteed delivery."
     },
     {
       "candidateId": "cand-0411",
-      "label": "cand-0411: Topic from 9:13",
-      "definition": "In 9:13: Would you not fight a people who broke their oaths and determined to expel the Messenger, and they had begun [the attack upon] you the first time? Do you fear them? But Allah has more right that you should fear Him, if you are [truly] believers",
+      "label": "Repentance brotherhood clause: former enemies who repent, establish prayer and give zakah become brothers in religion, with the signs detailed for a people who know",
+      "definition": "In 9:11, if the polytheists repent, establish prayer and give zakah they are declared the believers' brothers in religion; the verse closes by noting that the signs are made distinct for a people who know.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:11",
+          "excerpt": "فَإِن تَابُواْ وَأَقَامُواْ ٱلصَّلَوٰةَ وَءَاتَوُاْ ٱلزَّكَوٰةَ فَإِخۡوَٰنُكُمۡ فِي ٱلدِّينِۗ وَنُفَصِّلُ ٱلۡأٓيَٰتِ لِقَوۡمٖ يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fain taboo waaqamoo alssalata waatawoo alzzakata faikhwanukum fee alddeeni: the same three conditions as 9:5 now yield not merely safe passage but full fraternal membership. Wanufassilu alayati liqawmin yaAAlamoona ties comprehension of the detailed signs to knowledge rather than lineage."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Repentance here produces social incorporation into the believing community, beyond the personal turning covered by the curated topic"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with repentance. The progression from 9:5 (free their way) to 9:11 (they are your brothers) shows repentance escalating from ceasefire to kinship. Deferred to scholarly review: whether the three conditions are exhaustive legal criteria or representative markers of sincere conversion."
+    },
+    {
+      "candidateId": "cand-0412",
+      "label": "Oath-breaking and religious defamation as combat triggers: fight the leaders of disbelief whose oaths are void so that they may cease",
+      "definition": "In 9:12-13, breaking oaths after a treaty combined with defaming the religion triggers fighting the leaders of disbelief because no oaths bind them; the following verse asks why one would not fight a people who broke oaths, plotted to expel the Messenger and attacked first, and rebukes fearing them instead of Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:12",
+          "excerpt": "وَإِن نَّكَثُوٓاْ أَيۡمَٰنَهُم مِّنۢ بَعۡدِ عَهۡدِهِمۡ وَطَعَنُواْ فِي دِينِكُمۡ فَقَٰتِلُوٓاْ أَئِمَّةَ ٱلۡكُفۡرِ إِنَّهُمۡ لَآ أَيۡمَٰنَ لَهُمۡ لَعَلَّهُمۡ يَنتَهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wain nakathoo aymanahum min baAAdi AAahdihim wataAAanoo fee deenikum: two cumulative triggers, oath-breach and religious defamation. Faqatiloo aimmata alkufri targets leadership rather than the general population. Innahum la aymana lahum declares their oaths void. LaAAallahum yantahoona states the purpose as cessation, not extermination."
+        },
         {
           "key": "9:13",
           "excerpt": "أَلَا تُقَٰتِلُونَ قَوۡمٗا نَّكَثُوٓاْ أَيۡمَٰنَهُمۡ وَهَمُّواْ بِإِخۡرَاجِ ٱلرَّسُولِ وَهُم بَدَءُوكُمۡ أَوَّلَ مَرَّةٍۚ أَتَخۡشَوۡنَهُمۡۚ فَٱللَّهُ أَحَقُّ أَن تَخۡشَوۡهُ إِن كُنتُم مُّؤۡمِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Nakathoo aymanahum wahammoo biikhraji alrrasooli wahum badaookum awwala marratin: three concrete grievances establish the casus belli, including prior aggression. Atakhshawnahum faAllahu ahaqqu an takhshawhu redirects fear from the enemy to Allah as a test of belief."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. No verified topic covers just-war triggers or the voiding of oaths by repeated breach. The stated aim (that they may cease) frames the fighting as coercive deterrence rather than annihilation."
     },
     {
-      "candidateId": "cand-0412",
-      "label": "cand-0412: Topic from 9:17",
-      "definition": "In 9:17: It is not for the polytheists to maintain the mosques of Allah [while] witnessing against themselves with disbelief. [For] those, their deeds have become worthless, and in the Fire they will abide eternally",
+      "candidateId": "cand-0413",
+      "label": "Mosque maintenance qualification: only those who believe in Allah and the Last Day, establish prayer, give zakah and fear none but Allah may maintain Allah's mosques",
+      "definition": "In 9:17-18, polytheists witnessing disbelief against themselves are barred from maintaining Allah's mosques and their deeds are worthless; maintenance belongs only to those who believe in Allah and the Last Day, establish prayer, give zakah and fear none but Allah, who may be among the guided.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:17",
           "excerpt": "مَا كَانَ لِلۡمُشۡرِكِينَ أَن يَعۡمُرُواْ مَسَٰجِدَ ٱللَّهِ شَٰهِدِينَ عَلَىٰٓ أَنفُسِهِم بِٱلۡكُفۡرِۚ أُوْلَـٰٓئِكَ حَبِطَتۡ أَعۡمَٰلُهُمۡ وَفِي ٱلنَّارِ هُمۡ خَٰلِدُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Ma kana lilmushrikeena an yaAAmuroo masajida Allahi shahideena AAala anfusihim bialkufri: self-witnessed disbelief disqualifies custodianship. Habitat aAAmaluhum nullifies their works despite outward service."
+        },
+        {
+          "key": "9:18",
+          "excerpt": "إِنَّمَا يَعۡمُرُ مَسَٰجِدَ ٱللَّهِ مَنۡ ءَامَنَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَأَقَامَ ٱلصَّلَوٰةَ وَءَاتَى ٱلزَّكَوٰةَ وَلَمۡ يَخۡشَ إِلَّا ٱللَّهَۖ فَعَسَىٰٓ أُوْلَـٰٓئِكَ أَن يَكُونُواْ مِنَ ٱلۡمُهۡتَدِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama yaAAmuru masajida Allahi man amana biAllahi waalyawmi alakhiri waaqama alssalata waata alzzakata walam yakhsha illa Allaha: four positive qualifications plus exclusive fear define legitimate custodianship; faAAasa olaika an yakoonoo mina almuhtadeena keeps the outcome hopeful rather than guaranteed."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Exclusive fear of Allah is one qualification among several for mosque custodianship, not the whole topic"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with god-consciousness. Custodianship is defined by creed and practice rather than wealth or tribal prestige, directly preparing the ranking argument of 9:19."
     },
     {
-      "candidateId": "cand-0413",
-      "label": "cand-0413: Topic from 9:20",
-      "definition": "In 9:20: The ones who have believed, emigrated and striven in the cause of Allah with their wealth and their lives are greater in rank in the sight of Allah. And it is those who are the attainers [of success]",
+      "candidateId": "cand-0414",
+      "label": "Rank of deeds: providing pilgrim water and maintaining the Sacred Mosque are not equal to belief and striving; believers who emigrated and strove with wealth and lives hold greater rank",
+      "definition": "In 9:19-22, supplying water to pilgrims and maintaining al-Masjid al-Haram are declared unequal in Allah's sight to believing in Allah and the Last Day and striving in His cause; those who believed, emigrated and strove with their wealth and lives are greater in rank and are the attainers, given tidings of mercy, approval and gardens of enduring pleasure.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:19",
+          "excerpt": "۞أَجَعَلۡتُمۡ سِقَايَةَ ٱلۡحَآجِّ وَعِمَارَةَ ٱلۡمَسۡجِدِ ٱلۡحَرَامِ كَمَنۡ ءَامَنَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَجَٰهَدَ فِي سَبِيلِ ٱللَّهِۚ لَا يَسۡتَوُۥنَ عِندَ ٱللَّهِۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "AjaAAaltum siqayata alhajji waAAimarata almasjidi alharami kaman amana ... wajahada fee sabeeli Allahi: the rhetorical question sets ritual-prestige services against faith and striving. La yastawoona AAinda Allahi settles the comparison by divine standard."
+        },
         {
           "key": "9:20",
           "excerpt": "ٱلَّذِينَ ءَامَنُواْ وَهَاجَرُواْ وَجَٰهَدُواْ فِي سَبِيلِ ٱللَّهِ بِأَمۡوَٰلِهِمۡ وَأَنفُسِهِمۡ أَعۡظَمُ دَرَجَةً عِندَ ٱللَّهِۚ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡفَآئِزُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Amanoo wahajaroo wajahadoo ... biamwalihim waanfusihim aAAthamu darajatan AAinda Allahi: the triad of belief, emigration and striving with both property and persons defines the higher rank; humu alfaizoona names them the successful."
+        },
+        {
+          "key": "9:21",
+          "excerpt": "يُبَشِّرُهُمۡ رَبُّهُم بِرَحۡمَةٖ مِّنۡهُ وَرِضۡوَٰنٖ وَجَنَّـٰتٖ لَّهُمۡ فِيهَا نَعِيمٞ مُّقِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Birahmatin minhu waridwanin wajannatin ... naAAeemun muqeemun: three rewards, mercy, approval and lasting delight."
+        },
+        {
+          "key": "9:22",
+          "excerpt": "خَٰلِدِينَ فِيهَآ أَبَدًاۚ إِنَّ ٱللَّهَ عِندَهُۥٓ أَجۡرٌ عَظِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Khalideena feeha abadan inna Allaha AAindahu ajrun AAatheemun: permanence doubled by khalideena and abadan, with a great reward held with Allah."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "The reward description serves a ranking argument about present deeds rather than describing the Hereafter as such"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with the-hereafter. The passage dismantles a prestige economy built on sanctuary service by subordinating it to faith and costly commitment."
     },
     {
-      "candidateId": "cand-0414",
-      "label": "cand-0414: Topic from 9:23",
-      "definition": "In 9:23: O you who have believed, do not take your fathers or your brothers as allies if they have preferred disbelief over belief. And whoever does so among you - then it is those who are the wrongdoers",
+      "candidateId": "cand-0415",
+      "label": "Loyalty over kinship: fathers and brothers who prefer disbelief are not to be taken as allies, and family, wealth, commerce and dwellings must not be dearer than Allah, His Messenger and striving",
+      "definition": "In 9:23-24, believers are forbidden to take fathers or brothers as allies when they prefer disbelief over belief, and are warned that if fathers, sons, brothers, wives, clan, acquired wealth, feared-declining commerce and pleasing dwellings are dearer than Allah, His Messenger and striving in His cause, they should await Allah's command.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:23",
           "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَتَّخِذُوٓاْ ءَابَآءَكُمۡ وَإِخۡوَٰنَكُمۡ أَوۡلِيَآءَ إِنِ ٱسۡتَحَبُّواْ ٱلۡكُفۡرَ عَلَى ٱلۡإِيمَٰنِۚ وَمَن يَتَوَلَّهُم مِّنكُمۡ فَأُوْلَـٰٓئِكَ هُمُ ٱلظَّـٰلِمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "La tattakhithoo abaakum waikhwanakum awliyaa ini istahabboo alkufra AAala aleemani: the prohibition is conditional on the relatives' preference of kufr, not on kinship itself; waman yatawallahum minkum faolaika humu alththalimoona marks violation as wrongdoing."
+        },
+        {
+          "key": "9:24",
+          "excerpt": "قُلۡ إِن كَانَ ءَابَآؤُكُمۡ وَأَبۡنَآؤُكُمۡ وَإِخۡوَٰنُكُمۡ وَأَزۡوَٰجُكُمۡ وَعَشِيرَتُكُمۡ وَأَمۡوَٰلٌ ٱقۡتَرَفۡتُمُوهَا وَتِجَٰرَةٞ تَخۡشَوۡنَ كَسَادَهَا وَمَسَٰكِنُ تَرۡضَوۡنَهَآ أَحَبَّ إِلَيۡكُم مِّنَ ٱللَّهِ وَرَسُولِهِۦ وَجِهَادٖ فِي سَبِيلِهِۦ فَتَرَبَّصُواْ حَتَّىٰ يَأۡتِيَ ٱللَّهُ بِأَمۡرِهِۦۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلۡفَٰسِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Eight enumerated attachments (fathers, sons, brothers, wives, clan, wealth, commerce, dwellings) are weighed against three loyalties (Allah, Messenger, jihad); fatarabbasoo hatta yatiya Allahu biamrihi issues a waiting-threat rather than an immediate penalty; the fasiqeen refrain closes it."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "The verse limits family allegiance under a specific condition rather than teaching family duties generally"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with parents-and-family. The eight-item inventory covers the full range of ordinary human attachments including economic ones (commerce whose decline is feared), making this a comprehensive loyalty-ordering test rather than a narrow family rule."
     },
     {
-      "candidateId": "cand-0415",
-      "label": "cand-0415: Topic from 9:26",
-      "definition": "In 9:26: Then Allah sent down His tranquillity upon His Messenger and upon the believers and sent down soldiers angels whom you did not see and punished those who disbelieved. And that is the recompense of the disbelievers",
+      "candidateId": "cand-0416",
+      "label": "Hunayn lesson and sanctuary exclusion: numbers availed nothing until divine tranquillity and unseen forces arrived; polytheists are barred from the Sacred Mosque with economic loss answered by divine enrichment",
+      "definition": "In 9:25-28, victory is recalled at many places and at Hunayn where great numbers pleased the believers but availed nothing and the earth narrowed despite its vastness; then Allah sent down His tranquillity upon the Messenger and believers and unseen forces; afterwards repentance is accepted for whom He wills, and the polytheists are declared najas and barred from the Sacred Mosque after that year, with fear of poverty answered by promised enrichment from His bounty.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:25",
+          "excerpt": "لَقَدۡ نَصَرَكُمُ ٱللَّهُ فِي مَوَاطِنَ كَثِيرَةٖ وَيَوۡمَ حُنَيۡنٍ إِذۡ أَعۡجَبَتۡكُمۡ كَثۡرَتُكُمۡ فَلَمۡ تُغۡنِ عَنكُمۡ شَيۡـٔٗا وَضَاقَتۡ عَلَيۡكُمُ ٱلۡأَرۡضُ بِمَا رَحُبَتۡ ثُمَّ وَلَّيۡتُم مُّدۡبِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ith aAAjabatkum kathratukum falam tughni AAankum shayan: self-admiration at numerical strength is named as the failure point; wadaqat AAalaykumu alardu bima rahubat describes spatial constriction despite vastness; thumma wallaytum mudbireena records the flight."
+        },
         {
           "key": "9:26",
           "excerpt": "ثُمَّ أَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَىٰ رَسُولِهِۦ وَعَلَى ٱلۡمُؤۡمِنِينَ وَأَنزَلَ جُنُودٗا لَّمۡ تَرَوۡهَا وَعَذَّبَ ٱلَّذِينَ كَفَرُواْۚ وَذَٰلِكَ جَزَآءُ ٱلۡكَٰفِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0416",
-      "label": "cand-0416: Topic from 9:29",
-      "definition": "In 9:29: Fight those who do not believe in Allah or in the Last Day and who do not consider unlawful what Allah and His Messenger have made unlawful and who do not adopt the religion of truth from those who were given the Scripture - [fight] until they give the jizyah willingly while they are humbled",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Thumma anzala Allahu sakeenatahu AAala rasoolihi waAAala almumineena waanzala junoodan lam tarawha: reversal comes through sent-down tranquillity and unseen forces, not recovered numbers."
+        },
         {
-          "key": "9:29",
-          "excerpt": "قَٰتِلُواْ ٱلَّذِينَ لَا يُؤۡمِنُونَ بِٱللَّهِ وَلَا بِٱلۡيَوۡمِ ٱلۡأٓخِرِ وَلَا يُحَرِّمُونَ مَا حَرَّمَ ٱللَّهُ وَرَسُولُهُۥ وَلَا يَدِينُونَ دِينَ ٱلۡحَقِّ مِنَ ٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ حَتَّىٰ يُعۡطُواْ ٱلۡجِزۡيَةَ عَن يَدٖ وَهُمۡ صَٰغِرُونَ",
+          "key": "9:27",
+          "excerpt": "ثُمَّ يَتُوبُ ٱللَّهُ مِنۢ بَعۡدِ ذَٰلِكَ عَلَىٰ مَن يَشَآءُۗ وَٱللَّهُ غَفُورٞ رَّحِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Thumma yatoobu Allahu min baAAdi thalika AAala man yashao: even after defeat of the enemy, repentance remains open by divine will."
+        },
+        {
+          "key": "9:28",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ إِنَّمَا ٱلۡمُشۡرِكُونَ نَجَسٞ فَلَا يَقۡرَبُواْ ٱلۡمَسۡجِدَ ٱلۡحَرَامَ بَعۡدَ عَامِهِمۡ هَٰذَاۚ وَإِنۡ خِفۡتُمۡ عَيۡلَةٗ فَسَوۡفَ يُغۡنِيكُمُ ٱللَّهُ مِن فَضۡلِهِۦٓ إِن شَآءَۚ إِنَّ ٱللَّهَ عَلِيمٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama almushrikoona najasun fala yaqraboo almasjida alharama baAAda AAamihim hatha: the exclusion is dated from that year; wain khiftum AAaylatan fasawfa yughneekumu Allahu min fadlihi in shaa answers the concrete economic fear with a conditional promise."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Reliance is demonstrated through a battle narrative and an economic reassurance rather than taught abstractly"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with trust-in-god. Deferred to scholarly review: whether najas here denotes ritual impurity or moral filth, and the precise scope of the Haram exclusion — the verse states the ruling without defining its terms."
     },
     {
       "candidateId": "cand-0417",
-      "label": "cand-0417: Topic from 9:34",
-      "definition": "In 9:34: O you who have believed, indeed many of the scholars and the monks devour the wealth of people unjustly and avert [them] from the way of Allah. And those who hoard gold and silver and spend it not in the way of Allah - give them tidings of a painful punishment",
+      "label": "Sonship claims as oral imitation: Jewish assertion about Uzayr and Christian assertion about the Messiah are spoken fabrications imitating earlier disbelievers, met with divine curse and delusion diagnosis",
+      "definition": "In 9:30, the Jews say Uzayr is Allah's son and the Christians say the Messiah is Allah's son; these are statements from their mouths imitating the saying of those who disbelieved before them; may Allah destroy them, how they are turned away.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:30",
+          "excerpt": "وَقَالَتِ ٱلۡيَهُودُ عُزَيۡرٌ ٱبۡنُ ٱللَّهِ وَقَالَتِ ٱلنَّصَٰرَى ٱلۡمَسِيحُ ٱبۡنُ ٱللَّهِۖ ذَٰلِكَ قَوۡلُهُم بِأَفۡوَٰهِهِمۡۖ يُضَٰهِـُٔونَ قَوۡلَ ٱلَّذِينَ كَفَرُواْ مِن قَبۡلُۚ قَٰتَلَهُمُ ٱللَّهُۖ أَنَّىٰ يُؤۡفَكُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Thalika qawluhum biafwahihim: restricts the claims to oral utterance without scriptural basis. Yudhioona qawla allatheena kafaroo min qablu frames both claims as derivative imitation rather than independent theology. Qatalahumu Allahu anna yufakoona pairs a curse formula with a rhetorical question diagnosing delusion."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "The refutation serves tawheed by denying progeny attribution, but focuses on the mechanism (oral imitation) rather than theological argument"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with tawheed. The parallel structure treats two distinct community claims identically, suggesting the critique targets the pattern of attributing sons to Allah rather than the specific figures."
+    },
+    {
+      "candidateId": "cand-0418",
+      "label": "Scholarly lordship usurpation: rabbis and monks taken as lords besides Allah while the command was to worship one God alone, followed by divine exaltation above what they associate",
+      "definition": "In 9:31, they took their scholars and monks as lords besides Allah and the Messiah son of Mary, though they were commanded only to worship one God; there is no deity except Him; He is exalted above what they associate.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:31",
+          "excerpt": "ٱتَّخَذُوٓاْ أَحۡبَارَهُمۡ وَرُهۡبَٰنَهُمۡ أَرۡبَابٗا مِّن دُونِ ٱللَّهِ وَٱلۡمَسِيحَ ٱبۡنَ مَرۡيَمَ وَمَآ أُمِرُوٓاْ إِلَّا لِيَعۡبُدُوٓاْ إِلَٰهٗا وَٰحِدٗاۖ لَّآ إِلَٰهَ إِلَّا هُوَۚ سُبۡحَٰنَهُۥ عَمَّا يُشۡرِكُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ittakhathoo ahbarahum waruhbanahum arbaban min dooni Allahi: ittakhathoo implies active adoption of human authorities into a lordship role. Wama omiroo illa liyaAAbudoo ilahan wahidan contrasts the adopted practice with the original singular command. La ilaha illa huwa subhanahu AAamma yushrikoona closes with tawheed declaration and transcendence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Direct articulation of shirk through elevating religious authorities to lordship status"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with tawheed. The verse identifies the mechanism of shirk not as idol-worship but as granting legislative or devotional authority to scholars and monks that belongs to Allah alone."
+    },
+    {
+      "candidateId": "cand-0419",
+      "label": "Light-extinguishing attempt and divine perfection: they want to extinguish Allah's light with their mouths but Allah refuses except to perfect His light even if disbelievers dislike it; Messenger sent with guidance and true religion to manifest over all religion",
+      "definition": "In 9:32-33, disbelievers try to extinguish Allah's light orally but Allah insists on perfecting it despite their aversion; He sent His Messenger with guidance and the religion of truth to make it prevail over all religion despite polytheist aversion.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:32",
+          "excerpt": "يُرِيدُونَ أَن يُطۡفِـُٔواْ نُورَ ٱللَّهِ بِأَفۡوَٰهِهِمۡ وَيَأۡبَى ٱللَّهُ إِلَّآ أَن يُتِمَّ نُورَهُۥ وَلَوۡ كَرِهَ ٱلۡكَٰفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yureedoona an yutfioo noora Allahi biafwahihim: metaphor of oral extinguishing shows futility. Wayaba Allahu illa an yutimma noorahu walaw kariha alkafiroona: divine refusal guarantees completion regardless of opposition."
+        },
+        {
+          "key": "9:33",
+          "excerpt": "هُوَ ٱلَّذِيٓ أَرۡسَلَ رَسُولَهُۥ بِٱلۡهُدَىٰ وَدِينِ ٱلۡحَقِّ لِيُظۡهِرَهُۥ عَلَى ٱلدِّينِ كُلِّهِۦ وَلَوۡ كَرِهَ ٱلۡمُشۡرِكُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Huwa allathee arsala rasoolahu bialhuda wadeeni alhaqqi liyuthhirahu AAala alddeeni kullihi: universal manifestation claim for the religion of truth; walaw kariha almushrikoona repeats the aversion refrain from 9:32 creating structural parallelism."
+        }
+      ],
+      "existingTopicOverlap": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. No verified topic covers the light metaphor or the universal manifestation claim. The doubled 'walaw kariha' refrain across both verses creates a literary insistence on divine inevitability despite human resistance."
+    },
+    {
+      "candidateId": "cand-0420",
+      "label": "Clerical wealth-devouring and hoarding condemnation: many scholars and monks consume people's wealth unjustly and bar the way; gold and silver hoarders who do not spend in Allah's way face branding punishment on the Day heated in Hellfire",
+      "definition": "In 9:34-35, many ahbar and ruhban eat people's wealth falsely and obstruct Allah's way; those who hoard gold and silver without spending in Allah's cause receive tidings of painful punishment; on the Day the metal is heated in Jahannam fire their foreheads, flanks and backs are branded with 'this is what you hoarded for yourselves'.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:34",
           "excerpt": "۞يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ إِنَّ كَثِيرٗا مِّنَ ٱلۡأَحۡبَارِ وَٱلرُّهۡبَانِ لَيَأۡكُلُونَ أَمۡوَٰلَ ٱلنَّاسِ بِٱلۡبَٰطِلِ وَيَصُدُّونَ عَن سَبِيلِ ٱللَّهِۗ وَٱلَّذِينَ يَكۡنِزُونَ ٱلذَّهَبَ وَٱلۡفِضَّةَ وَلَا يُنفِقُونَهَا فِي سَبِيلِ ٱللَّهِ فَبَشِّرۡهُم بِعَذَابٍ أَلِيمٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Inna katheeran mina alahbari waalrruhbani layakuloona amwala alnnasi bialbatili: quantifier katheeran avoids blanket condemnation. Wayasuddoona AAan sabeeli Allahi links economic exploitation to spiritual obstruction. Waallatheena yaknizoona alththahaba waalfiddata wala yunfiqoonaha fee sabeeli Allahi defines hoarding as non-spending in the divine cause specifically."
+        },
+        {
+          "key": "9:35",
+          "excerpt": "يَوۡمَ يُحۡمَىٰ عَلَيۡهَا فِي نَارِ جَهَنَّمَ فَتُكۡوَىٰ بِهَا جِبَاهُهُمۡ وَجُنُوبُهُمۡ وَظُهُورُهُمۡۖ هَٰذَا مَا كَنَزۡتُمۡ لِأَنفُسِكُمۡ فَذُوقُواْ مَا كُنتُمۡ تَكۡنِزُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yawma yuhma AAalayha fee nari jahannama fatukwa biha jibahuhum wajunoobuhum wathuhooruhum: three body surfaces branded. Hath ma kanaztum lianfusikum fathooqoo ma kuntum taknizoona: the punishment uses the hoarded material itself as the instrument, and the taunt echoes their own accumulation."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Condemnation of hoarding is the negative mirror of the giving obligation, targeting wealth withheld from Allah's cause"
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Consuming wealth bi-al-batil is framed as injustice against people"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with giving and justice. The clerical critique and the hoarding critique share the same passage because both involve wealth misappropriation blocking access to Allah's way."
     },
     {
-      "candidateId": "cand-0418",
-      "label": "cand-0418: Topic from 9:37",
-      "definition": "In 9:37: Indeed, the postponing [of restriction within sacred months] is an increase in disbelief by which those who have disbelieved are led [further] astray. They make it lawful one year and unlawful another year to correspond to the number made unlawful by Allah and [thus] make lawful what Allah has made unlawful. Made pleasing to them is the evil of their deeds; and Allah does not guide the disbelieving people",
+      "candidateId": "cand-0421",
+      "label": "Sacred calendar sovereignty: twelve months ordained since creation day, four sacred, constituting the correct religion; self-wronging prohibition during them; collective fighting reciprocity; nasi postponement condemned as kufr increase that manipulates lawful-unlawful boundaries",
+      "definition": "In 9:36-37, the number of months with Allah is twelve since the day He created heavens and earth, four of them sacred, which is the upright religion; believers must not wrong themselves during them and must fight polytheists collectively; the postponement (nasi) is declared an increase in disbelief by which disbelievers alternate lawful and unlawful to match Allah's prohibited count, their evil deeds made pleasing to them.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:36",
+          "excerpt": "إِنَّ عِدَّةَ ٱلشُّهُورِ عِندَ ٱللَّهِ ٱثۡنَا عَشَرَ شَهۡرٗا فِي كِتَٰبِ ٱللَّهِ يَوۡمَ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ مِنۡهَآ أَرۡبَعَةٌ حُرُمٞۚ ذَٰلِكَ ٱلدِّينُ ٱلۡقَيِّمُۚ فَلَا تَظۡلِمُواْ فِيهِنَّ أَنفُسَكُمۡۚ وَقَٰتِلُواْ ٱلۡمُشۡرِكِينَ كَآفَّةٗ كَمَا يُقَٰتِلُونَكُمۡ كَآفَّةٗۚ وَٱعۡلَمُوٓاْ أَنَّ ٱللَّهَ مَعَ ٱلۡمُتَّقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Inna AAiddata alshshuhoori AAinda Allahi ithna AAashara shahran fee kitabi Allahi yawma khalaqa alssamawati waalarda: calendar grounded in creation act and divine register. Minha arbaAAatun hurumun specifies four sacred. Thalika alddeenu alqayyimu equates calendar observance with correct religion. Fala tathlimoo feehinna anfusakum prohibits self-harm during sacred months."
+        },
         {
           "key": "9:37",
           "excerpt": "إِنَّمَا ٱلنَّسِيٓءُ زِيَادَةٞ فِي ٱلۡكُفۡرِۖ يُضَلُّ بِهِ ٱلَّذِينَ كَفَرُواْ يُحِلُّونَهُۥ عَامٗا وَيُحَرِّمُونَهُۥ عَامٗا لِّيُوَاطِـُٔواْ عِدَّةَ مَا حَرَّمَ ٱللَّهُ فَيُحِلُّواْ مَا حَرَّمَ ٱللَّهُۚ زُيِّنَ لَهُمۡ سُوٓءُ أَعۡمَٰلِهِمۡۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلۡكَٰفِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Innama alnnaseeo ziyadatun fee alkufri: postponement defined as additive disbelief. Yuhilloonahu AAaman wayuharrimoonahu AAaman liyuwatioo AAiddata ma harrama Allahu fayuhilloo ma harrama Allahu describes the manipulation mechanism precisely. Zuyyina lahum sooo aAAmalihim diagnoses aesthetic deception."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Self-wronging prohibition during sacred months requires heightened awareness of divine temporal boundaries"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with god-consciousness. Nasi represents institutionalized calendar manipulation to evade sacred constraints, treated as epistemological corruption (ziyada fi al-kufr) not mere administrative error."
     },
     {
-      "candidateId": "cand-0419",
-      "label": "cand-0419: Topic from 9:40",
-      "definition": "In 9:40: If you do not aid the Prophet - Allah has already aided him when those who disbelieved had driven him out [of Makkah] as one of two, when they were in the cave and he said to his companion, \"Do not grieve; indeed Allah is with us.\" And Allah sent down his tranquillity upon him and supported him with angels you did not see and made the word of those who disbelieved the lowest, while the word of Allah - that is the highest. And Allah is Exalted in Might and Wise",
+      "candidateId": "cand-0422",
+      "label": "Mobilization heaviness and Hijrah reassurance: believers criticized for clinging to earth when called to go forth, preferring worldly life whose enjoyment is little compared to Hereafter; threat of replacement by another people; Hijrah cave narrative where Allah sent tranquillity and unseen forces making disbelievers' word lowest and Allah's highest",
+      "definition": "In 9:38-40, believers are rebuked for heaviness toward earth when told to mobilize, having preferred dunya over akhira whose enjoyment is little; refusal brings painful punishment and replacement; then the Prophet's expulsion is recalled: second of two in the cave telling his companion not to grieve for Allah is with us, Allah sent down sakina and supported him with unseen soldiers, making the disbelievers' word lowest and Allah's word highest.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:38",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ مَا لَكُمۡ إِذَا قِيلَ لَكُمُ ٱنفِرُواْ فِي سَبِيلِ ٱللَّهِ ٱثَّاقَلۡتُمۡ إِلَى ٱلۡأَرۡضِۚ أَرَضِيتُم بِٱلۡحَيَوٰةِ ٱلدُّنۡيَا مِنَ ٱلۡأٓخِرَةِۚ فَمَا مَتَٰعُ ٱلۡحَيَوٰةِ ٱلدُّنۡيَا فِي ٱلۡأٓخِرَةِ إِلَّا قَلِيلٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Iththaqaltum ila alardi: physical metaphor for spiritual reluctance. Aradeetum bialhayati alddunya mina alakhirati identifies preference as root cause. Fama mataAAu alhayati alddunya fee alakhirati illa qaleelun relativizes worldly enjoyment."
+        },
+        {
+          "key": "9:39",
+          "excerpt": "إِلَّا تَنفِرُواْ يُعَذِّبۡكُمۡ عَذَابًا أَلِيمٗا وَيَسۡتَبۡدِلۡ قَوۡمًا غَيۡرَكُمۡ وَلَا تَضُرُّوهُ شَيۡـٔٗاۗ وَٱللَّهُ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Illa tanfiroo yuAAaththibkum AAathaban aleeman wayastabdil qawman ghayrakum: dual consequence, punishment and replacement showing dispensability of reluctant community. Wala tadurroohu shayan affirms divine independence."
+        },
         {
           "key": "9:40",
           "excerpt": "إِلَّا تَنصُرُوهُ فَقَدۡ نَصَرَهُ ٱللَّهُ إِذۡ أَخۡرَجَهُ ٱلَّذِينَ كَفَرُواْ ثَانِيَ ٱثۡنَيۡنِ إِذۡ هُمَا فِي ٱلۡغَارِ إِذۡ يَقُولُ لِصَٰحِبِهِۦ لَا تَحۡزَنۡ إِنَّ ٱللَّهَ مَعَنَاۖ فَأَنزَلَ ٱللَّهُ سَكِينَتَهُۥ عَلَيۡهِ وَأَيَّدَهُۥ بِجُنُودٖ لَّمۡ تَرَوۡهَا وَجَعَلَ كَلِمَةَ ٱلَّذِينَ كَفَرُواْ ٱلسُّفۡلَىٰۗ وَكَلِمَةُ ٱللَّهِ هِيَ ٱلۡعُلۡيَاۗ وَٱللَّهُ عَزِيزٌ حَكِيمٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Thaniya ithnayni ith huma fee alghari: historical anchor in the cave. La tahzan inna Allaha maAAana: direct prophetic speech providing reassurance. Faanzala Allahu sakeenatahu AAalayhi waayyadahu bijunoodin lam tarawha: divine intervention via tranquillity and invisible forces. WajaAAala kalimata allatheena kafaroo alssufla wakalimatu Allahi hiya alAAulya: cosmic word-ranking establishing permanent hierarchy."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "La tahzan inna Allaha ma'ana is a paradigmatic trust-in-God statement in extremis"
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "The cave scene represents ultimate hardship resolved by divine ease"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with trust-in-god and hardship-and-ease. The Hijrah narrative functions as proof-text for the mobilization command: if Allah preserved His Messenger at maximum vulnerability, the community has no grounds for reluctance."
     },
     {
-      "candidateId": "cand-0420",
-      "label": "cand-0420: Topic from 9:43",
-      "definition": "In 9:43: May Allah pardon you, [O Muhammad]; why did you give them permission [to remain behind]? [You should not have] until it was evident to you who were truthful and you knew [who were] the liars",
+      "candidateId": "cand-0423",
+      "label": "Hypocrite mobilization psychology: conditional loyalty based on proximity of gain, false oaths of willingness, excuse-seeking rooted in doubt-hearts, divine prevention of their departure, fitna-seeking behavior, trial-avoidance pretext masking actual fall into trial, emotional volatility between distress at good and joy at disaster, and tawakkul response affirming divine decree",
+      "definition": "In 9:42-52, hypocrites would follow only for easy near gain but the journey seemed far so they swear falsely; only those doubting Allah and Last Day seek excuses while believers do not; Allah disliked their going and held them back; they would add confusion seeking fitna; they ask permission claiming trial-fear but have already fallen into trial; good news distresses them while disaster makes them rejoice claiming prior precaution; the response affirms nothing strikes except by Allah's decree and believers should rely on Him; both sides await outcomes but believers await one of two goods while awaiting punishment for hypocrites.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "9:43",
-          "excerpt": "عَفَا ٱللَّهُ عَنكَ لِمَ أَذِنتَ لَهُمۡ حَتَّىٰ يَتَبَيَّنَ لَكَ ٱلَّذِينَ صَدَقُواْ وَتَعۡلَمَ ٱلۡكَٰذِبِينَ",
+          "key": "9:42",
+          "excerpt": "لَوۡ كَانَ عَرَضٗا قَرِيبٗا وَسَفَرٗا قَاصِدٗا لَّٱتَّبَعُوكَ وَلَٰكِنۢ بَعُدَتۡ عَلَيۡهِمُ ٱلشُّقَّةُۚ وَسَيَحۡلِفُونَ بِٱللَّهِ لَوِ ٱسۡتَطَعۡنَا لَخَرَجۡنَا مَعَكُمۡ يُهۡلِكُونَ أَنفُسَهُمۡ وَٱللَّهُ يَعۡلَمُ إِنَّهُمۡ لَكَٰذِبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0421",
-      "label": "cand-0421: Topic from 9:46",
-      "definition": "In 9:46: And if they had intended to go forth, they would have prepared for it [some] preparation. But Allah disliked their being sent, so He kept them back, and they were told, \"Remain [behind] with those who remain",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Law kana AAaradan qareeban wasafaran qasidan laittabaAAooka walakin baAAudat AAalayhimu alshshuqqatu: cost-benefit analysis revealing transactional faith. Wasayahlifoona biAllahi lawi istataAAna lakharajna maAAakum: preemptive oath-swearing identified as characteristic behavior."
+        },
         {
-          "key": "9:46",
-          "excerpt": "۞وَلَوۡ أَرَادُواْ ٱلۡخُرُوجَ لَأَعَدُّواْ لَهُۥ عُدَّةٗ وَلَٰكِن كَرِهَ ٱللَّهُ ٱنۢبِعَاثَهُمۡ فَثَبَّطَهُمۡ وَقِيلَ ٱقۡعُدُواْ مَعَ ٱلۡقَٰعِدِينَ",
+          "key": "9:44",
+          "excerpt": "لَا يَسۡتَـٔۡذِنُكَ ٱلَّذِينَ يُؤۡمِنُونَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ أَن يُجَٰهِدُواْ بِأَمۡوَٰلِهِمۡ وَأَنفُسِهِمۡۗ وَٱللَّهُ عَلِيمُۢ بِٱلۡمُتَّقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0422",
-      "label": "cand-0422: Topic from 9:50",
-      "definition": "In 9:50: If good befalls you, it distresses them; but if disaster strikes you, they say, \"We took our matter [in hand] before,\" and turn away while they are rejoicing",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "La yastathinuka allatheena yuminoona biAllahi waalyawmi alakhiri: negative criterion, true believers simply do not ask permission to avoid striving."
+        },
+        {
+          "key": "9:45",
+          "excerpt": "إِنَّمَا يَسۡتَـٔۡذِنُكَ ٱلَّذِينَ لَا يُؤۡمِنُونَ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَٱرۡتَابَتۡ قُلُوبُهُمۡ فَهُمۡ فِي رَيۡبِهِمۡ يَتَرَدَّدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wairtabat quloobuhum fahum fee raybihim yataraddadoona: doubt-heart oscillation as diagnostic marker."
+        },
+        {
+          "key": "9:49",
+          "excerpt": "وَمِنۡهُم مَّن يَقُولُ ٱئۡذَن لِّي وَلَا تَفۡتِنِّيٓۚ أَلَا فِي ٱلۡفِتۡنَةِ سَقَطُواْۗ وَإِنَّ جَهَنَّمَ لَمُحِيطَةُۢ بِٱلۡكَٰفِرِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ala fee alfitnati saqatoo: ironic reversal, the trial they sought to avoid is the one they entered by staying."
+        },
         {
           "key": "9:50",
           "excerpt": "إِن تُصِبۡكَ حَسَنَةٞ تَسُؤۡهُمۡۖ وَإِن تُصِبۡكَ مُصِيبَةٞ يَقُولُواْ قَدۡ أَخَذۡنَآ أَمۡرَنَا مِن قَبۡلُ وَيَتَوَلَّواْ وَّهُمۡ فَرِحُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "In tusibka hasanatun tasuhum wain tusibka museebatun yaqooloo qad akhathna amrana min qablu: emotional asymmetry proving internal hostility. Wayatawallaw wahum farihoona: visible gloating."
+        },
+        {
+          "key": "9:51",
+          "excerpt": "قُل لَّن يُصِيبَنَآ إِلَّا مَا كَتَبَ ٱللَّهُ لَنَا هُوَ مَوۡلَىٰنَاۚ وَعَلَى ٱللَّهِ فَلۡيَتَوَكَّلِ ٱلۡمُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Qul lan yuseebana illa ma kataba Allahu lana huwa mawlana waAAala Allahi falyatawakkali almuminoona: qadar-affirmation as antidote to emotional volatility; mawlana-tawakkul pairing."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Verse 9:51 directly commands tawakkul as the believer's response to hypocrite psychological warfare"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with trust-in-god. This extended passage provides the most detailed behavioral profile of hypocrisy in the Quran, covering seven distinct symptoms from cost-benefit faith to emotional inversion."
     },
     {
-      "candidateId": "cand-0423",
-      "label": "cand-0423: Topic from 9:53",
-      "definition": "In 9:53: Say, \"Spend willingly or unwillingly; never will it be accepted from you. Indeed, you have been a defiantly disobedient people",
+      "candidateId": "cand-0424",
+      "label": "Expenditure rejection and wealth-as-punishment: spending from hypocrites never accepted whether willing or unwilling because they disbelieve, pray lazily and spend reluctantly; their wealth and children are not impressive but intended as worldly punishment until souls depart in disbelief; they swear belonging out of fear and would flee to any refuge",
+      "definition": "In 9:53-57, neither willing nor unwilling spending is accepted from them because they are fasiqeen who disbelieve in Allah and His Messenger, come to prayer lazy and spend reluctantly; believers should not be impressed by their wealth or children which serve only as instruments of worldly punishment until death in disbelief; they swear membership out of fear and would flee to any shelter if found.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:53",
           "excerpt": "قُلۡ أَنفِقُواْ طَوۡعًا أَوۡ كَرۡهٗا لَّن يُتَقَبَّلَ مِنكُمۡ إِنَّكُمۡ كُنتُمۡ قَوۡمٗا فَٰسِقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0424",
-      "label": "cand-0424: Topic from 9:56",
-      "definition": "In 9:56: And they swear by Allah that they are from among you while they are not from among you; but they are a people who are afraid",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Qul anfiqoo tawAAan aw karhan lan yutaqabbala minkum innakum kuntum qawman fasiqeena: binary rejection covering both modes of giving. Innakum kuntum qawman fasiqeena assigns collective character label."
+        },
+        {
+          "key": "9:54",
+          "excerpt": "وَمَا مَنَعَهُمۡ أَن تُقۡبَلَ مِنۡهُمۡ نَفَقَٰتُهُمۡ إِلَّآ أَنَّهُمۡ كَفَرُواْ بِٱللَّهِ وَبِرَسُولِهِۦ وَلَا يَأۡتُونَ ٱلصَّلَوٰةَ إِلَّا وَهُمۡ كُسَالَىٰ وَلَا يُنفِقُونَ إِلَّا وَهُمۡ كَٰرِهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama manaAAahum an tuqbala minhum nafaqatuhum illa annahum kafaroo biAllahi wabirasoolihi: disbelief as root cause. Wala yatoona alssalata illa wahum kusala wala yunfiqoona illa wahum karihoona: two behavioral proofs, lazy prayer and reluctant spending."
+        },
+        {
+          "key": "9:55",
+          "excerpt": "فَلَا تُعۡجِبۡكَ أَمۡوَٰلُهُمۡ وَلَآ أَوۡلَٰدُهُمۡۚ إِنَّمَا يُرِيدُ ٱللَّهُ لِيُعَذِّبَهُم بِهَا فِي ٱلۡحَيَوٰةِ ٱلدُّنۡيَا وَتَزۡهَقَ أَنفُسُهُمۡ وَهُمۡ كَٰفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fala tuAAjibka amwaluhum wala awladuhum: prohibition against admiration. Innama yureedu Allahu liyuAAaththibahum biha fee alhayati alddunya: reframe of apparent blessing as punishment instrument. Watazhaqa anfusuhum wahum kafiroona: death-state specification."
+        },
         {
           "key": "9:56",
           "excerpt": "وَيَحۡلِفُونَ بِٱللَّهِ إِنَّهُمۡ لَمِنكُمۡ وَمَا هُم مِّنكُمۡ وَلَٰكِنَّهُمۡ قَوۡمٞ يَفۡرَقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Wayahlifoona biAllahi innahum laminkum wama hum minkum walakinnahum qawmun yafraqoona: fear-driven false belonging."
+        },
+        {
+          "key": "9:57",
+          "excerpt": "لَوۡ يَجِدُونَ مَلۡجَـًٔا أَوۡ مَغَٰرَٰتٍ أَوۡ مُدَّخَلٗا لَّوَلَّوۡاْ إِلَيۡهِ وَهُمۡ يَجۡمَحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Law yajidoona maljaan aw magharatin aw muddakhalan lawallaw ilayhi wahum yajmahoona: desperate flight imagery confirming absence of genuine commitment."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. The concept of wealth and children functioning as divine punishment instruments rather than blessings has no exact match in verified topics. This inverts ordinary assumptions about prosperity."
     },
     {
       "candidateId": "cand-0425",
-      "label": "cand-0425: Topic from 9:59",
-      "definition": "In 9:59: If only they had been satisfied with what Allah and His Messenger gave them and said, \"Sufficient for us is Allah; Allah will give us of His bounty, and [so will] His Messenger; indeed, we are desirous toward Allah,\" [it would have been better for them]",
+      "label": "Zakah distribution framework: eight recipient categories ordained as a divine obligation, with Allah Knowing and Wise",
+      "definition": "In 9:60, zakah expenditures are restricted to the poor, needy, those employed to collect it, those whose hearts are to be reconciled, freeing captives, debtors, Allah's cause, and the stranded traveler — an obligation from Allah who is Knowing and Wise.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "9:59",
-          "excerpt": "وَلَوۡ أَنَّهُمۡ رَضُواْ مَآ ءَاتَىٰهُمُ ٱللَّهُ وَرَسُولُهُۥ وَقَالُواْ حَسۡبُنَا ٱللَّهُ سَيُؤۡتِينَا ٱللَّهُ مِن فَضۡلِهِۦ وَرَسُولُهُۥٓ إِنَّآ إِلَى ٱللَّهِ رَٰغِبُونَ",
+          "key": "9:60",
+          "excerpt": "۞إِنَّمَا ٱلصَّدَقَٰتُ لِلۡفُقَرَآءِ وَٱلۡمَسَٰكِينِ وَٱلۡعَٰمِلِينَ عَلَيۡهَا وَٱلۡمُؤَلَّفَةِ قُلُوبُهُمۡ وَفِي ٱلرِّقَابِ وَٱلۡغَٰرِمِينَ وَفِي سَبِيلِ ٱللَّهِ وَٱبۡنِ ٱلسَّبِيلِۖ فَرِيضَةٗ مِّنَ ٱللَّهِۗ وَٱللَّهُ عَلِيمٌ حَكِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Innama alssadaqatu lilfuqarai waalmasakeeni waalAAamileena AAalayha waalmuallafati quloobuhum wafee alrriqabi waalgharimeena wafee sabeeli Allahi waibni alssabeeli: exhaustive eight-category enumeration introduced by innama (only). Fareedatan mina Allahi designates it as divine ordinance not prophetic discretion. WaAllahu AAaleemun hakeemun grounds the allocation in divine knowledge and wisdom."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Definitive Quranic legislation on obligatory charity distribution"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with giving. The innama restriction makes this an exclusive list. Mu'allafah quloobuhum introduces a socio-political category absent from voluntary sadaqah discussions. Gharimeen addresses systemic debt relief. Ibn al-sabeel covers displacement. Deferred to scholarly review: whether fi sabeeli Allah here means military expenditure specifically or any righteous cause."
     },
     {
       "candidateId": "cand-0426",
-      "label": "cand-0426: Topic from 9:62",
-      "definition": "In 9:62: They swear by Allah to you [Muslims] to satisfy you. But Allah and His Messenger are more worthy for them to satisfy, if they should be believers",
+      "label": "Mockery exposure and post-belief disbelief verdict: hypocrites fear revelation exposing their hearts; when confronted they claim mere conversation and play; challenged whether they mock Allah, His verses and Messenger; told no excuse remains as disbelief occurred after professed belief; pardon for one faction, punishment for criminal faction",
+      "definition": "In 9:64-66, hypocrites fear a surah revealing their hearts and are told to mock freely for Allah will expose what they dread; when questioned they claim idle conversation and play, and are challenged whether they mocked Allah, His verses and His Messenger; told not to excuse themselves for they disbelieved after belief; if one group is pardoned another will be punished because they were criminals.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "9:62",
-          "excerpt": "يَحۡلِفُونَ بِٱللَّهِ لَكُمۡ لِيُرۡضُوكُمۡ وَٱللَّهُ وَرَسُولُهُۥٓ أَحَقُّ أَن يُرۡضُوهُ إِن كَانُواْ مُؤۡمِنِينَ",
+          "key": "9:64",
+          "excerpt": "يَحۡذَرُ ٱلۡمُنَٰفِقُونَ أَن تُنَزَّلَ عَلَيۡهِمۡ سُورَةٞ تُنَبِّئُهُم بِمَا فِي قُلُوبِهِمۡۚ قُلِ ٱسۡتَهۡزِءُوٓاْ إِنَّ ٱللَّهَ مُخۡرِجٞ مَّا تَحۡذَرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Yahtharu almunafiqoona an tunazzala AAalayhim sooratun tunabbiohum bima fee quloobihim: revelation feared as diagnostic tool. Quli istahzioo inna Allaha mukhrijun ma tahtharoona: permission to mock paired with guarantee of exposure."
+        },
+        {
+          "key": "9:65",
+          "excerpt": "وَلَئِن سَأَلۡتَهُمۡ لَيَقُولُنَّ إِنَّمَا كُنَّا نَخُوضُ وَنَلۡعَبُۚ قُلۡ أَبِٱللَّهِ وَءَايَٰتِهِۦ وَرَسُولِهِۦ كُنتُمۡ تَسۡتَهۡزِءُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama kunna nakhoodu wanalAAabu: minimization defense framing religious mockery as social banter. Qul abiAllahi waayatihi warasoolihi kuntum tastahzioona: triple-object challenge elevating the target from social to sacred."
+        },
+        {
+          "key": "9:66",
+          "excerpt": "لَا تَعۡتَذِرُواْ قَدۡ كَفَرۡتُم بَعۡدَ إِيمَٰنِكُمۡۚ إِن نَّعۡفُ عَن طَآئِفَةٖ مِّنكُمۡ نُعَذِّبۡ طَآئِفَةَۢ بِأَنَّهُمۡ كَانُواْ مُجۡرِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La taAAtathiroo qad kafartum baAAda eemanikum: verdict pronounced without further hearing. In naAAfu AAan taifatin minkum nuAAaththib taifatan biannahum kanoo mujrimeena: split outcome showing both mercy and justice operating within the same community."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. No verified topic covers the epistemological function of revelation as heart-exposing diagnostic, nor the specific legal status of mockery directed at Allah and His verses. The pardon-punishment split within one community is deferred to scholarly review regarding criteria for faction assignment."
     },
     {
       "candidateId": "cand-0427",
-      "label": "cand-0427: Topic from 9:67",
-      "definition": "In 9:67: The hypocrite men and hypocrite women are of one another. They enjoin what is wrong and forbid what is right and close their hands. They have forgotten Allah, so He has forgotten them [accordingly]. Indeed, the hypocrites - it is they who are the defiantly disobedient",
+      "label": "Inverted moral architecture: hypocrite men and women reinforce each other in enjoining wrong and forbidding right while closing their hands, forgotten by Allah as they forgot Him; contrasted with believing men and women allied in enjoining right, forbidding wrong, establishing prayer, giving zakah and obeying Allah and His Messenger",
+      "definition": "In 9:67 and 9:71, the hypocrite community is described as structurally unified in inverted morality (enjoining munkar, forbidding maruf, withholding spending) resulting in reciprocal divine forgetting; the believer community mirrors this structure with correct moral orientation producing divine mercy.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:67",
           "excerpt": "ٱلۡمُنَٰفِقُونَ وَٱلۡمُنَٰفِقَٰتُ بَعۡضُهُم مِّنۢ بَعۡضٖۚ يَأۡمُرُونَ بِٱلۡمُنكَرِ وَيَنۡهَوۡنَ عَنِ ٱلۡمَعۡرُوفِ وَيَقۡبِضُونَ أَيۡدِيَهُمۡۚ نَسُواْ ٱللَّهَ فَنَسِيَهُمۡۚ إِنَّ ٱلۡمُنَٰفِقِينَ هُمُ ٱلۡفَٰسِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Almunafiqoona waalmunafiqatu baAAduhum min baAAdin yamuroona bialmunkari wayanhawna AAani almaAAroofi wayaqbidoona aydiyahum nasoo Allaha fanasiyahum: six-part description showing communal reinforcement of inversion. Nasoo-fanasiyahum reciprocity establishes theological consequence."
+        },
+        {
+          "key": "9:71",
+          "excerpt": "وَٱلۡمُؤۡمِنُونَ وَٱلۡمُؤۡمِنَٰتُ بَعۡضُهُمۡ أَوۡلِيَآءُ بَعۡضٖۚ يَأۡمُرُونَ بِٱلۡمَعۡرُوفِ وَيَنۡهَوۡنَ عَنِ ٱلۡمُنكَرِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَيُؤۡتُونَ ٱلزَّكَوٰةَ وَيُطِيعُونَ ٱللَّهَ وَرَسُولَهُۥٓۚ أُوْلَـٰٓئِكَ سَيَرۡحَمُهُمُ ٱللَّهُۗ إِنَّ ٱللَّهَ عَزِيزٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waalmuminoona waalmuminatu baAAduhum awliyao baAAdin yamuroona bialmaAAroofi wayanhawna AAani almunkari wayuqeemoona alssalata wayutoona alzzakata wayuteeAAoona Allaha warasoolahu: seven-part mirror with correct polarity. Olaika sayarhamuhumu Allahu replaces the forgetting curse with promised mercy."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Forgetting Allah and being forgotten is the ultimate failure of God-consciousness; remembering through obedience produces mercy"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with god-consciousness. The structural parallelism between 9:67 and 9:71 demonstrates that community formation follows moral orientation: inverted values produce inverted solidarity. Closed hands (yaqbidoona aydiyahum) symbolizes economic withdrawal from communal obligation."
     },
     {
       "candidateId": "cand-0428",
-      "label": "cand-0428: Topic from 9:70",
-      "definition": "In 9:70: Has there not reached them the news of those before them - the people of Noah and [the tribes of] 'Aad and Thamud and the people of Abraham and the companions of Madyan and the towns overturned? Their messengers came to them with clear proofs. And Allah would never have wronged them, but they were wronging themselves",
+      "label": "Historical precedent chain: predecessors stronger in power and richer enjoyed their portion then engaged in vanities like those before them; news of destroyed nations (Nuh, Aad, Thamud, Ibrahim's people, Madyan, overturned towns) confirms messengers brought clear proofs and self-wronging caused destruction",
+      "definition": "In 9:69-70, contemporary disbelievers are compared to predecessors who were stronger and wealthier yet perished after enjoying their portion and engaging in vanities; the catalog of destroyed peoples confirms messengers came with clear proofs and destruction resulted from self-inflicted wrong, not divine injustice.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:69",
+          "excerpt": "كَٱلَّذِينَ مِن قَبۡلِكُمۡ كَانُوٓاْ أَشَدَّ مِنكُمۡ قُوَّةٗ وَأَكۡثَرَ أَمۡوَٰلٗا وَأَوۡلَٰدٗا فَٱسۡتَمۡتَعُواْ بِخَلَٰقِهِمۡ فَٱسۡتَمۡتَعۡتُم بِخَلَٰقِكُمۡ كَمَا ٱسۡتَمۡتَعَ ٱلَّذِينَ مِن قَبۡلِكُم بِخَلَٰقِهِمۡ وَخُضۡتُمۡ كَٱلَّذِي خَاضُوٓاْۚ أُوْلَـٰٓئِكَ حَبِطَتۡ أَعۡمَٰلُهُمۡ فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِۖ وَأُوْلَـٰٓئِكَ هُمُ ٱلۡخَٰسِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Kanoo ashadda minkum quwwatan waakthara amwalan waawladan faistamtaAAoo bikhalaqihim: four comparisons (strength, wealth, children, enjoyment) all exceeded yet availed nothing. Wakhudtum kaallathee khadoo: direct behavioral parallel making historical warning personally applicable."
+        },
         {
           "key": "9:70",
           "excerpt": "أَلَمۡ يَأۡتِهِمۡ نَبَأُ ٱلَّذِينَ مِن قَبۡلِهِمۡ قَوۡمِ نُوحٖ وَعَادٖ وَثَمُودَ وَقَوۡمِ إِبۡرَٰهِيمَ وَأَصۡحَٰبِ مَدۡيَنَ وَٱلۡمُؤۡتَفِكَٰتِۚ أَتَتۡهُمۡ رُسُلُهُم بِٱلۡبَيِّنَٰتِۖ فَمَا كَانَ ٱللَّهُ لِيَظۡلِمَهُمۡ وَلَٰكِن كَانُوٓاْ أَنفُسَهُمۡ يَظۡلِمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Qawmi noohin waAAadin wathamooda waqawmi ibraheema waashabi madyana waalmutafikati: six named precedents spanning different eras and geographies. Atathum rusuluhum bialbayyinati: universal messenger-proof pattern. Fama kana Allahu liyathlimahum walakin kanoo anfusahum yathlimoona: explicit exoneration of divine justice placing blame entirely on self-wronging."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Worldly destruction serves as precursor warning for eschatological accountability"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with the-hereafter. The six-nation catalog functions as empirical evidence against the assumption that material superiority guarantees survival. Self-wronging (anfusahum yathlimoona) recurs as the mechanism of destruction across all cases."
     },
     {
       "candidateId": "cand-0429",
-      "label": "cand-0429: Topic from 9:73",
-      "definition": "In 9:73: O Prophet, fight against the disbelievers and the hypocrites and be harsh upon them. And their refuge is Hell, and wretched is the destination",
+      "label": "Prophetic harshness command and false-oath exposure: Prophet commanded to strive against disbelievers and hypocrites with harshness; hypocrites swear they said nothing while having spoken the word of disbelief after professing Islam, resenting only the enrichment Allah gave them; repentance offered but turning away brings punishment with no earthly protector",
+      "definition": "In 9:73-74, the Prophet receives a dual command to strive against kuffar and munafiqeen with harshness; the following verse exposes hypocrites who swear they did not speak while having uttered disbelief-words after Islam, harboring resentment only because Allah enriched them, with repentance available but rejection bringing worldly-otherworldly punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:73",
           "excerpt": "يَـٰٓأَيُّهَا ٱلنَّبِيُّ جَٰهِدِ ٱلۡكُفَّارَ وَٱلۡمُنَٰفِقِينَ وَٱغۡلُظۡ عَلَيۡهِمۡۚ وَمَأۡوَىٰهُمۡ جَهَنَّمُۖ وَبِئۡسَ ٱلۡمَصِيرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Ya ayyuha alnnabiyyu jahidi alkuffara waalmunafiqeena waoghluth AAalayhim: unique combined address targeting both external and internal enemies simultaneously. Waoghluth demands harshness breaking diplomatic norms. Wamawahum jahannamu wabisa almaseeru: shared destination despite different categories."
+        },
+        {
+          "key": "9:74",
+          "excerpt": "يَحۡلِفُونَ بِٱللَّهِ مَا قَالُواْ وَلَقَدۡ قَالُواْ كَلِمَةَ ٱلۡكُفۡرِ وَكَفَرُواْ بَعۡدَ إِسۡلَٰمِهِمۡ وَهَمُّواْ بِمَا لَمۡ يَنَالُواْۚ وَمَا نَقَمُوٓاْ إِلَّآ أَنۡ أَغۡنَىٰهُمُ ٱللَّهُ وَرَسُولُهُۥ مِن فَضۡلِهِۦۚ فَإِن يَتُوبُواْ يَكُ خَيۡرٗا لَّهُمۡۖ وَإِن يَتَوَلَّوۡاْ يُعَذِّبۡهُمُ ٱللَّهُ عَذَابًا أَلِيمٗا فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِۚ وَمَا لَهُمۡ فِي ٱلۡأَرۡضِ مِن وَلِيّٖ وَلَا نَصِيرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yahlifoona biAllahi ma qaloo walaqad qaloo kalimata alkufri wakafaroo baAAda islamihim: oath-denial immediately contradicted by divine assertion. Wahammoo bima lam yanaloo: unachieved plot suggesting assassination or rebellion. Wama naqamoo illa an aghnahumu Allahu warasooluhu min fadlihi: resentment rooted in divine favor rather than grievance."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. No verified topic covers the combined jihad against kuffar and munafiqeen or the psychology of resenting divine enrichment. The transition from external warfare to internal community discipline marks a structural shift in the surah."
     },
     {
       "candidateId": "cand-0430",
-      "label": "cand-0430: Topic from 9:76",
-      "definition": "In 9:76: But when he gave them from His bounty, they were stingy with it and turned away while they refused",
+      "label": "Broken covenant producing permanent nifaq: those who covenanted with Allah that if given bounty they would spend and be righteous became stingy upon receiving it and turned away; penalized with hypocrisy implanted in hearts until Judgment Day for breaking promise and habitual lying",
+      "definition": "In 9:75-77, individuals made conditional covenants promising charity and righteousness if enriched by Allah's bounty; upon receiving it they became stingy and turned away refusing; Allah penalized them by implanting nifaq in their hearts permanently until meeting Him, because they broke their promise and habitually lied.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:75",
+          "excerpt": "۞وَمِنۡهُم مَّنۡ عَٰهَدَ ٱللَّهَ لَئِنۡ ءَاتَىٰنَا مِن فَضۡلِهِۦ لَنَصَّدَّقَنَّ وَلَنَكُونَنَّ مِنَ ٱلصَّـٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waminhum man AAahada Allaha lain atana min fadlihi lanassaddaqanna walanakoonanna mina alssaliheena: conditional vow using emphatic future forms (lanassaddaqanna, walanakoonanna) expressing strong commitment."
+        },
         {
           "key": "9:76",
           "excerpt": "فَلَمَّآ ءَاتَىٰهُم مِّن فَضۡلِهِۦ بَخِلُواْ بِهِۦ وَتَوَلَّواْ وَّهُم مُّعۡرِضُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Falamma atahum min fadlihi bakhiloo bihi watawallaw wahum muAAridoona: immediate reversal upon fulfillment of condition. Bakhiloo (stinginess) contrasts lanassaddaqanna (we will surely give charity). MuAAridoona (turning away) contrasts saliheena (righteous)."
+        },
+        {
+          "key": "9:77",
+          "excerpt": "فَأَعۡقَبَهُمۡ نِفَاقٗا فِي قُلُوبِهِمۡ إِلَىٰ يَوۡمِ يَلۡقَوۡنَهُۥ بِمَآ أَخۡلَفُواْ ٱللَّهَ مَا وَعَدُوهُ وَبِمَا كَانُواْ يَكۡذِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "FaaAAqabahum nifaqan fee quloobihim ila yawmi yalqawnahu: penalty is nifaq itself, not merely punishment for it. Ila yawmi yalqawnahu suggests permanence until death/judgment. Bima akhlafoo Allaha ma waAAadoohu wabima kanoo yakthiboona: two causes, broken promise and habitual lying."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Demonstrates the consequence of failed repentance-vows, where transactional faith produces permanent spiritual damage"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with repentance. This passage reveals transactional faith as spiritually destructive: treating divine bounty as a trigger for conditional promises rather than unconditional gratitude produces nifaq as organic consequence, not arbitrary punishment."
     },
     {
       "candidateId": "cand-0431",
-      "label": "cand-0431: Topic from 9:79",
-      "definition": "In 9:79: Those who criticize the contributors among the believers concerning [their] charities and [criticize] the ones who find nothing [to spend] except their effort, so they ridicule them - Allah will ridicule them, and they will have a painful punishment",
+      "label": "Intercession limit and contributor-mockery: seventy-times forgiveness seeking cannot benefit those who disbelieve in Allah and His Messenger; those who criticize voluntary contributors and effort-only givers face divine ridicule reciprocation and painful punishment",
+      "definition": "In 9:79-80, those who mock believers contributing voluntarily to charity and those who find nothing except their effort are warned that Allah ridicules them and they face painful punishment; asking forgiveness for them seventy times will never result in Allah forgiving them because they disbelieved in Allah and His Messenger.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:79",
           "excerpt": "ٱلَّذِينَ يَلۡمِزُونَ ٱلۡمُطَّوِّعِينَ مِنَ ٱلۡمُؤۡمِنِينَ فِي ٱلصَّدَقَٰتِ وَٱلَّذِينَ لَا يَجِدُونَ إِلَّا جُهۡدَهُمۡ فَيَسۡخَرُونَ مِنۡهُمۡ سَخِرَ ٱللَّهُ مِنۡهُمۡ وَلَهُمۡ عَذَابٌ أَلِيمٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Allatheena yalmizoona almuttawwiAAeena mina almumineena fee alssadaqati waallatheena la yajidoona illa juhdahum: two victim categories, willing givers and effort-only givers. Fayaskharoona minhum sakhira Allahu minhum: ridicule reciprocated by divine ridicule creating perfect symmetry. Walahum AAathabun aleemun: punishment beyond ridicule."
+        },
+        {
+          "key": "9:80",
+          "excerpt": "ٱسۡتَغۡفِرۡ لَهُمۡ أَوۡ لَا تَسۡتَغۡفِرۡ لَهُمۡ إِن تَسۡتَغۡفِرۡ لَهُمۡ سَبۡعِينَ مَرَّةٗ فَلَن يَغۡفِرَ ٱللَّهُ لَهُمۡۚ ذَٰلِكَ بِأَنَّهُمۡ كَفَرُواْ بِٱللَّهِ وَرَسُولِهِۦۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلۡفَٰسِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Istaghfir lahum aw la tastaghfir lahum in tastaghfir lahum sabAAeena marratan falan yaghfira Allahu lahum: quantitative limit (seventy) establishing intercession boundary. Thalika biannahum kafaroo biAllahi warasoolihi: root cause identified as disbelief not insufficient intercession. WaAllahu la yahdee alqawma alfasiqeena: guidance withheld from defiant disobedience."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Establishes a boundary condition where forgiveness-seeking becomes ineffective due to rooted disbelief"
+        },
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Protects voluntary charity from public criticism and mockery"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with mercy-and-forgiveness and giving. The seventy-times figure may reference hyperbole or specific cultural practice; either way it establishes that quantity of intercession cannot overcome quality of disbelief. Mockery of effort-only givers targets the most vulnerable contributors."
     },
     {
       "candidateId": "cand-0432",
-      "label": "cand-0432: Topic from 9:83",
-      "definition": "In 9:83: If Allah should return you to a faction of them [after the expedition] and then they ask your permission to go out [to battle], say, \"You will not go out with me, ever, and you will never fight with me an enemy. Indeed, you were satisfied with sitting [at home] the first time, so sit [now] with those who stay behind",
+      "label": "Expedition abandonment consequences: remaining behind rejoicing in sitting produces permanent exclusion from future campaigns; funeral prayer prohibition and grave-standing ban for deceased hypocrites; wealth and children reframed as worldly punishment instruments rather than blessings",
+      "definition": "In 9:81-85, those who remained behind rejoiced in their sitting and disliked striving with wealth and lives in heat are told Hell-fire is hotter; commanded to laugh little and weep much as recompense; upon return told they will never go out again or fight enemies, ordered to sit with remainders; forbidden to pray over their dead or stand at graves; reminded wealth and children are intended as punishment until death in disbelief.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:81",
+          "excerpt": "فَرِحَ ٱلۡمُخَلَّفُونَ بِمَقۡعَدِهِمۡ خِلَٰفَ رَسُولِ ٱللَّهِ وَكَرِهُوٓاْ أَن يُجَٰهِدُواْ بِأَمۡوَٰلِهِمۡ وَأَنفُسِهِمۡ فِي سَبِيلِ ٱللَّهِ وَقَالُواْ لَا تَنفِرُواْ فِي ٱلۡحَرِّۗ قُلۡ نَارُ جَهَنَّمَ أَشَدُّ حَرّٗاۚ لَّوۡ كَانُواْ يَفۡقَهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fariha almukhallafoona bimaqAAadihim khilafa rasooli Allahi: joy in absence defined as opposition to the Messenger. Wakarihoo an yujahidoo ... waqaloo la tanfiroo fee alharri: heat-avoidance as stated motive. Qul naru jahannama ashaddu harran law kanoo yafqahoona: proportional counter-argument requiring understanding."
+        },
+        {
+          "key": "9:82",
+          "excerpt": "فَلۡيَضۡحَكُواْ قَلِيلٗا وَلۡيَبۡكُواْ كَثِيرٗا جَزَآءَۢ بِمَا كَانُواْ يَكۡسِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Falyadhakoo qaleelan walyabkoo katheeran jazaan bima kanoo yaksiboona: eschatological emotional reversal framed as earned recompense."
+        },
         {
           "key": "9:83",
           "excerpt": "فَإِن رَّجَعَكَ ٱللَّهُ إِلَىٰ طَآئِفَةٖ مِّنۡهُمۡ فَٱسۡتَـٔۡذَنُوكَ لِلۡخُرُوجِ فَقُل لَّن تَخۡرُجُواْ مَعِيَ أَبَدٗا وَلَن تُقَٰتِلُواْ مَعِيَ عَدُوًّاۖ إِنَّكُمۡ رَضِيتُم بِٱلۡقُعُودِ أَوَّلَ مَرَّةٖ فَٱقۡعُدُواْ مَعَ ٱلۡخَٰلِفِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Lan takhrujoo maAAiya abadan walan tuqatiloo maAAiya AAaduwwan: double-abada (never) establishing permanent exclusion. Innakum radeetum bialquAAoodi awwala marratin faoqAAudoo maAAa alkhalifeena: first-choice satisfaction determines permanent status."
+        },
+        {
+          "key": "9:84",
+          "excerpt": "وَلَا تُصَلِّ عَلَىٰٓ أَحَدٖ مِّنۡهُم مَّاتَ أَبَدٗا وَلَا تَقُمۡ عَلَىٰ قَبۡرِهِۦٓۖ إِنَّهُمۡ كَفَرُواْ بِٱللَّهِ وَرَسُولِهِۦ وَمَاتُواْ وَهُمۡ فَٰسِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wala tusalli AAala ahadin minhum mata abadan wala taqum AAala qabrihi: funeral rites prohibition creating visible communal boundary. Innahum kafaroo biAllahi warasoolihi wamatoo wahum fasiqoona: three-fold indictment justifying exclusion."
+        },
+        {
+          "key": "9:85",
+          "excerpt": "وَلَا تُعۡجِبۡكَ أَمۡوَٰلُهُمۡ وَأَوۡلَٰدُهُمۡۚ إِنَّمَا يُرِيدُ ٱللَّهُ أَن يُعَذِّبَهُم بِهَا فِي ٱلدُّنۡيَا وَتَزۡهَقَ أَنفُسُهُمۡ وَهُمۡ كَٰفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wala tuAAjibka amwaluhum waawladuhum innama yureedu Allahu an yuAAaththibahum biha fee alddunya: repeated from 9:55 reinforcing the inversion theme. Watazhaqa anfusuhum wahum kafiroona: death-state specification."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Eschatological reversal (laugh-weep) and permanent exclusion demonstrate Hereafter consequences manifesting in worldly communal discipline"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with the-hereafter. The funeral prayer prohibition represents one of the strongest communal boundary mechanisms in the Quran, transforming invisible hypocrisy into visible social exclusion. Permanent expedition ban converts temporal choice into lasting identity."
     },
     {
       "candidateId": "cand-0433",
-      "label": "cand-0433: Topic from 9:86",
-      "definition": "In 9:86: And when a surah was revealed [enjoining them] to believe in Allah and to fight with His Messenger, those of wealth among them asked your permission [to stay back] and said, \"Leave us to be with them who sit [at home]",
+      "label": "Bedouin sincerity spectrum: some consider spending as loss awaiting misfortune while others believe in Allah and Last Day treating spending as nearness and seeking prophetic invocation; Bedouins generally stronger in kufr and nifaq less likely to know revealed limits",
+      "definition": "In 9:97-99, Bedouins are assessed as stronger in disbelief and hypocrisy and less likely to know revealed limits; among them some treat spending as maghram (loss/fine) and await misfortunes for believers while others believe in Allah and Last Day considering spending as qurbat (nearness) seeking the Messenger's prayers which become genuine nearness for them.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "9:86",
-          "excerpt": "وَإِذَآ أُنزِلَتۡ سُورَةٌ أَنۡ ءَامِنُواْ بِٱللَّهِ وَجَٰهِدُواْ مَعَ رَسُولِهِ ٱسۡتَـٔۡذَنَكَ أُوْلُواْ ٱلطَّوۡلِ مِنۡهُمۡ وَقَالُواْ ذَرۡنَا نَكُن مَّعَ ٱلۡقَٰعِدِينَ",
+          "key": "9:97",
+          "excerpt": "ٱلۡأَعۡرَابُ أَشَدُّ كُفۡرٗا وَنِفَاقٗا وَأَجۡدَرُ أَلَّا يَعۡلَمُواْ حُدُودَ مَآ أَنزَلَ ٱللَّهُ عَلَىٰ رَسُولِهِۦۗ وَٱللَّهُ عَلِيمٌ حَكِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "AlaAArabu ashaddu kufran wanifaqan waajdaru alla yaAAlamoo hudooda ma anzala Allahu AAala rasoolihi: comparative assessment (ashadd, ajdar) avoiding absolute condemnation. Hudood (limits/boundaries) refers to legal-moral parameters of revelation."
+        },
+        {
+          "key": "9:98",
+          "excerpt": "وَمِنَ ٱلۡأَعۡرَابِ مَن يَتَّخِذُ مَا يُنفِقُ مَغۡرَمٗا وَيَتَرَبَّصُ بِكُمُ ٱلدَّوَآئِرَۚ عَلَيۡهِمۡ دَآئِرَةُ ٱلسَّوۡءِۗ وَٱللَّهُ سَمِيعٌ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wamina alaAArabi man yattakhithu ma yunfiqu maghraman: spending conceptualized as financial loss. Wayatarabbasu bikumu alddawaira: awaiting cyclical misfortune. AAalayhim dairatu alssawi: evil cycle redirected upon them. WaAllahu sameeAAun AAaleemun: divine awareness of hidden intentions."
+        },
+        {
+          "key": "9:99",
+          "excerpt": "وَمِنَ ٱلۡأَعۡرَابِ مَن يُؤۡمِنُ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَيَتَّخِذُ مَا يُنفِقُ قُرُبَٰتٍ عِندَ ٱللَّهِ وَصَلَوَٰتِ ٱلرَّسُولِۚ أَلَآ إِنَّهَا قُرۡبَةٞ لَّهُمۡۚ سَيُدۡخِلُهُمُ ٱللَّهُ فِي رَحۡمَتِهِۦٓۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wamina alaAArabi man yuminu biAllahi waalyawmi alakhiri: sincere minority exists within same ethnic group. Wayattakhithu ma yunfiqu qurubatin AAinda Allahi wasalawati alrrasooli: spending reconceptualized as nearness plus prophetic blessing. Ala innaha qurbatun lahum: divine confirmation of their intention. Sayudkhiluhumu Allahu fee rahmatihi: mercy-admission promised."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Contrasts two orientations toward the same act of spending based on underlying faith"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with giving. The passage avoids ethnic essentialism by distinguishing sincere from insincere within the same Bedouin population. Maghram vs qurbat represents fundamentally different economic theologies. Prophetic salah functioning as sought-after blessing demonstrates intercessory practice."
     },
     {
       "candidateId": "cand-0434",
-      "label": "cand-0434: Topic from 9:89",
-      "definition": "In 9:89: Allah has prepared for them gardens beneath which rivers flow, wherein they will abide eternally. That is the great attainment",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "9:89",
-          "excerpt": "أَعَدَّ ٱللَّهُ لَهُمۡ جَنَّـٰتٖ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَاۚ ذَٰلِكَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0435",
-      "label": "cand-0435: Topic from 9:92",
-      "definition": "In 9:92: Nor [is there blame] upon those who, when they came to you that you might give them mounts, you said, \"I can find nothing for you to ride upon.\" They turned back while their eyes overflowed with tears out of grief that they could not find something to spend [for the cause of Allah]",
+      "label": "Tearful volunteers and wealthy evaders: those who came seeking mounts finding none returned with eyes overflowing tears from grief at inability to spend; blame falls only on rich excuse-seekers satisfied with remaining behind whose hearts Allah sealed",
+      "definition": "In 9:92-93, those who came requesting transport and were told nothing was available turned away with eyes overflowing tears from grief at inability to contribute; the path of blame is only upon those who ask permission while being wealthy, satisfied to remain with those who stay behind, whose hearts Allah sealed so they do not know.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:92",
           "excerpt": "وَلَا عَلَى ٱلَّذِينَ إِذَا مَآ أَتَوۡكَ لِتَحۡمِلَهُمۡ قُلۡتَ لَآ أَجِدُ مَآ أَحۡمِلُكُمۡ عَلَيۡهِ تَوَلَّواْ وَّأَعۡيُنُهُمۡ تَفِيضُ مِنَ ٱلدَّمۡعِ حَزَنًا أَلَّا يَجِدُواْ مَا يُنفِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Wala AAala allatheena itha ma atawka litahmilahum qulta la ajidu ma ahmilukum AAalayhi tawallaw waaAAyunuhum tafeedu mina alddamAAi hazanan alla yajidoo ma yunfiqoona: physical-emotional description of sincere inability. Tafeedu (overflow) indicates uncontrollable weeping. Hazanan specifies grief-motivation not anger."
+        },
+        {
+          "key": "9:93",
+          "excerpt": "۞إِنَّمَا ٱلسَّبِيلُ عَلَى ٱلَّذِينَ يَسۡتَـٔۡذِنُونَكَ وَهُمۡ أَغۡنِيَآءُۚ رَضُواْ بِأَن يَكُونُواْ مَعَ ٱلۡخَوَالِفِ وَطَبَعَ ٱللَّهُ عَلَىٰ قُلُوبِهِمۡ فَهُمۡ لَا يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Innama alssabeelu AAala allatheena yastathinoonaka wahum aghniyao: blame restricted to wealthy excuse-seekers. Radoo bian yakoonoo maAAa alkhawalifi: satisfaction with staying defines their choice. WatibaAAa Allahu AAala quloobihim fahum la yaAAlamoona: divine sealing as consequence of chosen preference producing cognitive incapacity."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Emotional hardship of unable volunteers contrasted with ease-preference of wealthy evaders"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with hardship-and-ease. The tearful volunteers provide an emotional authenticity criterion that distinguishes genuine inability from comfortable evasion. Heart-sealing (taba'a) appears as consequence rather than precondition of their choice."
     },
     {
-      "candidateId": "cand-0436",
-      "label": "cand-0436: Topic from 9:95",
-      "definition": "In 9:95: They will swear by Allah to you when you return to them that you would leave them alone. So leave them alone; indeed they are evil; and their refuge is Hell as recompense for what they had been earning",
+      "candidateId": "cand-0435",
+      "label": "Return-excuse rejection and divine observation: returning hypocrites make excuses but are told never to excuse for Allah has already informed of their news; Allah and Messenger will observe their deeds; returned to Knower of unseen and witnessed who will inform them of what they did; they swear to be left alone but are rijs destined for Jahannam",
+      "definition": "In 9:94-96, upon return hypocrites offer excuses but are told not to bother for Allah has already informed of their affairs; Allah and Messenger will observe their actions; they will be returned to the Knower of unseen and witnessed who will report their deeds; they swear oaths to be left alone but are declared filth with Hell as refuge; their attempts to satisfy believers fail because Allah is not satisfied with fasiqeen.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:94",
+          "excerpt": "يَعۡتَذِرُونَ إِلَيۡكُمۡ إِذَا رَجَعۡتُمۡ إِلَيۡهِمۡۚ قُل لَّا تَعۡتَذِرُواْ لَن نُّؤۡمِنَ لَكُمۡ قَدۡ نَبَّأَنَا ٱللَّهُ مِنۡ أَخۡبَارِكُمۡۚ وَسَيَرَى ٱللَّهُ عَمَلَكُمۡ وَرَسُولُهُۥ ثُمَّ تُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمۡ تَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "YaAAtathiroona ilaykum itha rajaAAtum ilayhim qul la taAAtathiroo lan numina lakum: preemptive rejection of excuse-making. Qad nabbaana Allahu min akhbarikum: divine intelligence preceding human explanation. Wasayara Allahu AAamalukum warasooluhu: dual observation system. Thumma turaddoona ila AAalimi alghaybi waalshshahadati fayunabbiokum bima kuntum taAAmaloona: eschatological reporting guaranteed."
+        },
         {
           "key": "9:95",
           "excerpt": "سَيَحۡلِفُونَ بِٱللَّهِ لَكُمۡ إِذَا ٱنقَلَبۡتُمۡ إِلَيۡهِمۡ لِتُعۡرِضُواْ عَنۡهُمۡۖ فَأَعۡرِضُواْ عَنۡهُمۡۖ إِنَّهُمۡ رِجۡسٞۖ وَمَأۡوَىٰهُمۡ جَهَنَّمُ جَزَآءَۢ بِمَا كَانُواْ يَكۡسِبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Sayahlifoona biAllahi lakum itha inqalabtum ilayhim lituAAridoo AAanhum faaAAridoo AAanhum: commanded avoidance matching their request. Innahum rijsun: ontological designation as impurity. Wamawahum jahannamu jazaan bima kanoo yaksiboona: earned destination."
+        },
+        {
+          "key": "9:96",
+          "excerpt": "يَحۡلِفُونَ لَكُمۡ لِتَرۡضَوۡاْ عَنۡهُمۡۖ فَإِن تَرۡضَوۡاْ عَنۡهُمۡ فَإِنَّ ٱللَّهَ لَا يَرۡضَىٰ عَنِ ٱلۡقَوۡمِ ٱلۡفَٰسِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Yahlifoona lakum litardaw AAanhum fain tardaw AAanhum fainna Allaha la yarda AAani alqawmi alfasiqeena: human satisfaction cannot substitute for divine displeasure. Establishes independence of divine judgment from communal acceptance."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. The tripartite observation system (Allah, Messenger, believers seeing deeds followed by eschatological reporting by Knower of unseen/witnessed) has no single verified topic match. The rijs designation parallels 9:28 najas creating thematic bookends."
+    },
+    {
+      "candidateId": "cand-0436",
+      "label": "Reciprocal divine forgetting and heart-sealing: those who forgot Allah are forgotten by Him in return; those satisfied with remaining behind have their hearts sealed preventing comprehension; laughing little and weeping much as earned eschatological reversal",
+      "definition": "In 9:67 and 9:82-87, the hypocrite condition is diagnosed through reciprocal forgetting (they forgot Allah so He forgot them) and heart-sealing (those satisfied with sitting had hearts sealed so they do not understand); the eschatological consequence reverses their worldly comfort into little laughter and much weeping as earned recompense.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:67",
+          "excerpt": "ٱلۡمُنَٰفِقُونَ وَٱلۡمُنَٰفِقَٰتُ بَعۡضُهُم مِّنۢ بَعۡضٖۚ يَأۡمُرُونَ بِٱلۡمُنكَرِ وَيَنۡهَوۡنَ عَنِ ٱلۡمَعۡرُوفِ وَيَقۡبِضُونَ أَيۡدِيَهُمۡۚ نَسُواْ ٱللَّهَ فَنَسِيَهُمۡۚ إِنَّ ٱلۡمُنَٰفِقِينَ هُمُ ٱلۡفَٰسِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Nasoo Allaha fanasiyahum inna almunafiqeena humu alfasiqoona: symmetrical verb pairing (nasoo-fanasiyahum) shows divine response mirrors human action. Humu alfasiqoona assigns definitive categorization."
+        },
+        {
+          "key": "9:82",
+          "excerpt": "فَلۡيَضۡحَكُواْ قَلِيلٗا وَلۡيَبۡكُواْ كَثِيرٗا جَزَآءَۢ بِمَا كَانُواْ يَكۡسِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Falyadhakoo qaleelan walyabkoo katheeran jazaan bima kanoo yaksiboona: imperative reversal of their worldly behavior. Jazaan frames it as earned consequence not arbitrary punishment."
+        },
+        {
+          "key": "9:87",
+          "excerpt": "رَضُواْ بِأَن يَكُونُواْ مَعَ ٱلۡخَوَالِفِ وَطُبِعَ عَلَىٰ قُلُوبِهِمۡ فَهُمۡ لَا يَفۡقَهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Radoo bian yakoonoo maAAa alkhawalifi watubiAAa AAala quloobihim fahum la yaAAlamoona: satisfaction (radoo) precedes sealing (tubi'a) establishing volitional basis. La yaAAlamoona describes resulting cognitive state."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Forgetting Allah represents the ultimate failure of God-consciousness; heart-sealing is its permanent consequence"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with god-consciousness. The causal sequence (forgetting → forgotten; satisfaction → sealing → non-comprehension) demonstrates that spiritual states have progressive consequences. Reciprocal forgetting differs from punitive punishment: it is relational withdrawal mirroring the human initiative."
     },
     {
       "candidateId": "cand-0437",
-      "label": "cand-0437: Topic from 9:100",
-      "definition": "In 9:100: And the first forerunners [in the faith] among the Muhajireen and the Ansar and those who followed them with good conduct - Allah is pleased with them and they are pleased with Him, and He has prepared for them gardens beneath which rivers flow, wherein they will abide forever. That is the great attainment",
+      "label": "Bedouin sincerity spectrum and forerunner reward: Bedouins range from treating spending as loss awaiting misfortune to believing and seeking nearness through prophetic invocation; forerunners among Muhajireen and Ansar and their ihsan-followers attain mutual divine pleasure and eternal gardens",
+      "definition": "In 9:97-100, Bedouins are assessed as stronger in disbelief and hypocrisy yet containing sincere believers who treat spending as nearness; then the forerunners (sabiqoon awwaloon) among Muhajireen and Ansar and those who followed them with excellence receive Allah's pleasure and their pleasure in Him, with prepared gardens of eternal rivers as the great attainment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:97",
+          "excerpt": "ٱلۡأَعۡرَابُ أَشَدُّ كُفۡرٗا وَنِفَاقٗا وَأَجۡدَرُ أَلَّا يَعۡلَمُواْ حُدُودَ مَآ أَنزَلَ ٱللَّهُ عَلَىٰ رَسُولِهِۦۗ وَٱللَّهُ عَلِيمٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "AlaAArabu ashaddu kufran wanifaqan waajdaru alla yaAAlamoo hudooda ma anzala Allahu AAala rasoolihi: comparative assessment avoiding absolute condemnation while noting knowledge deficit."
+        },
+        {
+          "key": "9:98",
+          "excerpt": "وَمِنَ ٱلۡأَعۡرَابِ مَن يَتَّخِذُ مَا يُنفِقُ مَغۡرَمٗا وَيَتَرَبَّصُ بِكُمُ ٱلدَّوَآئِرَۚ عَلَيۡهِمۡ دَآئِرَةُ ٱلسَّوۡءِۗ وَٱللَّهُ سَمِيعٌ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wamina alaAArabi man yattakhithu ma yunfiqu maghraman wayatarabbasu bikumu alddawaira: spending conceptualized as financial loss; awaiting cyclical misfortune for believers."
+        },
+        {
+          "key": "9:99",
+          "excerpt": "وَمِنَ ٱلۡأَعۡرَابِ مَن يُؤۡمِنُ بِٱللَّهِ وَٱلۡيَوۡمِ ٱلۡأٓخِرِ وَيَتَّخِذُ مَا يُنفِقُ قُرُبَٰتٍ عِندَ ٱللَّهِ وَصَلَوَٰتِ ٱلرَّسُولِۚ أَلَآ إِنَّهَا قُرۡبَةٞ لَّهُمۡۚ سَيُدۡخِلُهُمُ ٱللَّهُ فِي رَحۡمَتِهِۦٓۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wamina alaAArabi man yuminu biAllahi waalyawmi alakhiri wayattakhithu ma yunfiqu qurubatin AAinda Allahi wasalawati alrrasooli ala innaha qurbatun lahum sayudkhiluhumu Allahu fee rahmatihi: sincere minority reconceptualizes spending as nearness; divine confirmation and mercy-admission promised."
+        },
         {
           "key": "9:100",
           "excerpt": "وَٱلسَّـٰبِقُونَ ٱلۡأَوَّلُونَ مِنَ ٱلۡمُهَٰجِرِينَ وَٱلۡأَنصَارِ وَٱلَّذِينَ ٱتَّبَعُوهُم بِإِحۡسَٰنٖ رَّضِيَ ٱللَّهُ عَنۡهُمۡ وَرَضُواْ عَنۡهُ وَأَعَدَّ لَهُمۡ جَنَّـٰتٖ تَجۡرِي تَحۡتَهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدٗاۚ ذَٰلِكَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Waalssabiqoona alawwaloona mina almuhajireena waalansari waallatheena ittabaAAoohum biihsanin radiya Allahu AAanhum waradoo AAanhu waaAAadda lahum jannatin tajree tahtaha alanharu khalideena feeha abadan thalika alfawzu alAAatheemu: three-tier vanguard (Muhajireen, Ansar, ihsan-followers); mutual pleasure formula (radiya-waradoo); double-eternity emphasis; fawz azim designation."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Contrasts two orientations toward spending based on underlying faith"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with giving. Maghram vs qurbat represents fundamentally different economic theologies within the same ethnic group. The forerunner verse establishes historical precedence as salvific category. Deferred to scholarly review: precise identity boundaries of sabiqoon awwaloon."
     },
     {
       "candidateId": "cand-0438",
-      "label": "cand-0438: Topic from 9:102",
-      "definition": "In 9:102: And [there are] others who have acknowledged their sins. They had mixed a righteous deed with another that was bad. Perhaps Allah will turn to them in forgiveness. Indeed, Allah is Forgiving and Merciful",
+      "label": "Graded repentance pathways: entrenched hypocrites unknown to Prophet but known to Allah punished twice; confessors of mixed deeds may receive divine turning; deferred cases await Allah's command; sadaqah taken purifies and grows with prophetic invocation providing reassurance; Allah alone accepts tawbah and receives charities",
+      "definition": "In 9:101-106, three categories of post-expedition individuals emerge: hardened hypocrites around Madinah unknown to the Prophet but known to Allah facing double punishment then great punishment; others who confessed sins having mixed righteous and bad deeds hoping for Allah's turning; and deferred cases left to Allah's command whether to punish or forgive. Between these, the sadaqah mechanism is prescribed: take from their wealth charity that purifies and causes growth, invoke blessings upon them for prophetic salah provides reassurance, knowing Allah alone accepts repentance and receives charities as al-Tawwab al-Raheem.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:101",
+          "excerpt": "وَمِمَّنۡ حَوۡلَكُم مِّنَ ٱلۡأَعۡرَابِ مُنَٰفِقُونَۖ وَمِنۡ أَهۡلِ ٱلۡمَدِينَةِ مَرَدُواْ عَلَى ٱلنِّفَاقِ لَا تَعۡلَمُهُمۡۖ نَحۡنُ نَعۡلَمُهُمۡۚ سَنُعَذِّبُهُم مَّرَّتَيۡنِ ثُمَّ يُرَدُّونَ إِلَىٰ عَذَابٍ عَظِيمٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wamimman hawlakum mina alaAArabi munafiqoona wamin ahli almadeenati maradoo AAala alnnifaqi la taAAlamuhum nahnu naAAlamuhum sanuAAaththibuhum marratayni thumma yuraddoona ila AAathabin AAatheemin: epistemological gap between prophetic and divine knowledge; double punishment then ultimate punishment; maradoo indicates habituation."
+        },
         {
           "key": "9:102",
           "excerpt": "وَءَاخَرُونَ ٱعۡتَرَفُواْ بِذُنُوبِهِمۡ خَلَطُواْ عَمَلٗا صَٰلِحٗا وَءَاخَرَ سَيِّئًا عَسَى ٱللَّهُ أَن يَتُوبَ عَلَيۡهِمۡۚ إِنَّ ٱللَّهَ غَفُورٞ رَّحِيمٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0439",
-      "label": "cand-0439: Topic from 9:105",
-      "definition": "In 9:105: And say, \"Do [as you will], for Allah will see your deeds, and [so, will] His Messenger and the believers. And you will be returned to the Knower of the unseen and the witnessed, and He will inform you of what you used to do",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Waakharoona iAAtarafoo bithunoobihim khalatoo AAamalan salihan waakhara sayyian AAasa Allahu an yatooba AAalayhim: confession plus mixed-deed acknowledgment opens possibility of divine turning; AAasa expresses hope not guarantee."
+        },
+        {
+          "key": "9:103",
+          "excerpt": "خُذۡ مِنۡ أَمۡوَٰلِهِمۡ صَدَقَةٗ تُطَهِّرُهُمۡ وَتُزَكِّيهِم بِهَا وَصَلِّ عَلَيۡهِمۡۖ إِنَّ صَلَوٰتَكَ سَكَنٞ لَّهُمۡۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Khuth min amwalihim sadaqatan tutahhiruhum watuzakkeehim biha wasalli AAalayhim inna salataka sakanun lahum: four-fold mechanism: taking, purifying, growing, invoking. Salah-sakan link establishes prophetic blessing as psychological reassurance."
+        },
+        {
+          "key": "9:104",
+          "excerpt": "أَلَمۡ يَعۡلَمُوٓاْ أَنَّ ٱللَّهَ هُوَ يَقۡبَلُ ٱلتَّوۡبَةَ عَنۡ عِبَادِهِۦ وَيَأۡخُذُ ٱلصَّدَقَٰتِ وَأَنَّ ٱللَّهَ هُوَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Alam yaAAlamoo anna Allaha huwa yaqbalu alttawbata AAan AAibadihi wayakhuthu alssadaqati waanna Allaha huwa alttawwabu alrraheemu: rhetorical question affirming exclusive divine acceptance of both repentance and charity."
+        },
         {
           "key": "9:105",
           "excerpt": "وَقُلِ ٱعۡمَلُواْ فَسَيَرَى ٱللَّهُ عَمَلَكُمۡ وَرَسُولُهُۥ وَٱلۡمُؤۡمِنُونَۖ وَسَتُرَدُّونَ إِلَىٰ عَٰلِمِ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمۡ تَعۡمَلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Waquli iAAmaloo fasayara Allahu AAamalukum warasooluhu waalmuminoona wasaturaddoona ila AAalimi alghaybi waalshshahadati fayunabbiokum bima kuntum taAAmaloona: work-command with threefold observation then eschatological reporting."
+        },
+        {
+          "key": "9:106",
+          "excerpt": "وَءَاخَرُونَ مُرۡجَوۡنَ لِأَمۡرِ ٱللَّهِ إِمَّا يُعَذِّبُهُمۡ وَإِمَّا يَتُوبُ عَلَيۡهِمۡۗ وَٱللَّهُ عَلِيمٌ حَكِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waakharoona murjawna liamri Allahi imma yuAAaththibuhum waimma yatoobu AAalayhim: suspension state neither condemned nor absolved; entirely dependent on divine command."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Comprehensive treatment of graded repentance pathways including confession, purification, and deferred judgment"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with repentance. The three-case gradient (hardened, confessing, deferred) structures the entire passage. Sadaqah functions simultaneously as legal obligation and spiritual medicine. Prophetic salah as sakan bridges institutional and personal dimensions. Deferred to scholarly review: identification of the three deferred individuals and the specific double punishment referenced."
     },
     {
-      "candidateId": "cand-0440",
-      "label": "cand-0440: Topic from 9:108",
-      "definition": "In 9:108: Do not stand [for prayer] within it - ever. A mosque founded on righteousness from the first day is more worthy for you to stand in. Within it are men who love to purify themselves; and Allah loves those who purify themselves",
+      "candidateId": "cand-0439",
+      "label": "Masjid dirar exposure versus taqwa-founded mosque: building erected for harm, disbelief, division and ambush-station exposed despite false good-intention oaths; commanded never to stand in it; contrasted with mosque founded on taqwa from first day whose men love purification; foundation parable of secure taqwa versus collapsing bank edge falling into Jahannam; doubt remains until hearts stop",
+      "definition": "In 9:107-110, those who built a mosque for harm, disbelief, dividing believers and as station for one who warred against Allah and Messenger are exposed; they swear they intended only good but Allah testifies they are liars; the Prophet is forbidden to ever stand in it; a mosque founded on taqwa from the first day is declared worthier, containing men who love purification whom Allah loves; a parable contrasts one founding on taqwa and ridwan with one founding on crumbling bank edge collapsing into Hellfire; the dirar building remains doubt in their hearts until hearts are torn apart.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:107",
+          "excerpt": "وَٱلَّذِينَ ٱتَّخَذُواْ مَسۡجِدٗا ضِرَارٗا وَكُفۡرٗا وَتَفۡرِيقَۢا بَيۡنَ ٱلۡمُؤۡمِنِينَ وَإِرۡصَادٗا لِّمَنۡ حَارَبَ ٱللَّهَ وَرَسُولَهُۥ مِن قَبۡلُۚ وَلَيَحۡلِفُنَّ إِنۡ أَرَدۡنَآ إِلَّا ٱلۡحُسۡنَىٰۖ وَٱللَّهُ يَشۡهَدُ إِنَّهُمۡ لَكَٰذِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waallatheena ittakhathoo masjidan diraran wakufran watafreeqan bayna almumineena wairsadan liman haraba Allaha warasoolahu min qablu: four purposes enumerated: harm, disbelief, division, ambush-station. Walayahlifunna in aradna illa alhusna waAllahu yashhadu innahum lakathiboona: oath of good intention directly contradicted by divine testimony."
+        },
         {
           "key": "9:108",
           "excerpt": "لَا تَقُمۡ فِيهِ أَبَدٗاۚ لَّمَسۡجِدٌ أُسِّسَ عَلَى ٱلتَّقۡوَىٰ مِنۡ أَوَّلِ يَوۡمٍ أَحَقُّ أَن تَقُومَ فِيهِۚ فِيهِ رِجَالٞ يُحِبُّونَ أَن يَتَطَهَّرُواْۚ وَٱللَّهُ يُحِبُّ ٱلۡمُطَّهِّرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "La taqum feehi abadan lamasjidun ossisa AAala alttaqwa min awwali yawmin ahaqqu an taqooma feehi feehi rijalun yuhibboona an yatatahharoo waAllahu yuhibbu almuttahhireena: permanent prohibition; taqwa-foundation criterion; purification-loving men; divine love for the purified."
+        },
+        {
+          "key": "9:109",
+          "excerpt": "أَفَمَنۡ أَسَّسَ بُنۡيَٰنَهُۥ عَلَىٰ تَقۡوَىٰ مِنَ ٱللَّهِ وَرِضۡوَٰنٍ خَيۡرٌ أَم مَّنۡ أَسَّسَ بُنۡيَٰنَهُۥ عَلَىٰ شَفَا جُرُفٍ هَارٖ فَٱنۡهَارَ بِهِۦ فِي نَارِ جَهَنَّمَۗ وَٱللَّهُ لَا يَهۡدِي ٱلۡقَوۡمَ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Afaman assasa bunyanahu AAala taqwa mina Allahi waridwanin khayrun am man assasa bunyanahu AAala shafa jurufin harin fainhara bihi fee nari jahannama: architectural parable contrasting stable divine foundation with unstable natural edge; collapse into fire."
+        },
+        {
+          "key": "9:110",
+          "excerpt": "لَا يَزَالُ بُنۡيَٰنُهُمُ ٱلَّذِي بَنَوۡاْ رِيبَةٗ فِي قُلُوبِهِمۡ إِلَّآ أَن تَقَطَّعَ قُلُوبُهُمۡۗ وَٱللَّهُ عَلِيمٌ حَكِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "La yazalu bunyanuhumu allathee banaw reebatan fee quloobihim illa an taqattaAAa quloobuhum: persistent psychological effect of the building; doubt lodged permanently until cardiac death."
         }
       ],
       "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Gap candidate. No verified topic covers religious architecture assessed by founding intent, nor the concept of buildings producing lasting psychological doubt. Deferred to scholarly review: specific historical referents of the masjid dirar and the taqwa-founded mosque — the text names neither."
     },
     {
-      "candidateId": "cand-0441",
-      "label": "cand-0441: Topic from 9:111",
-      "definition": "In 9:111: Indeed, Allah has purchased from the believers their lives and their properties [in exchange] for that they will have Paradise. They fight in the cause of Allah, so they kill and are killed. [It is] a true promise [binding] upon Him in the Torah and the Gospel and the Qur'an. And who is truer to his covenant than Allah? So rejoice in your transaction which you have contracted. And it is that which is the great attainment",
+      "candidateId": "cand-0440",
+      "label": "Divine purchase covenant: Allah bought believers' selves and wealth in exchange for Paradise; they fight kill and are killed; binding promise confirmed across Torah Injeel and Quran; none fulfills covenant better than Allah; commanded to rejoice in the transaction as the great attainment",
+      "definition": "In 9:111, Allah has purchased from the believers their lives and properties in exchange for Paradise; they fight in His cause killing and being killed; this is a binding promise upon Him in the Torah, Gospel and Quran; no one fulfills covenant better than Allah; believers are commanded to rejoice in the transaction they contracted, which is the great attainment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:111",
           "excerpt": "۞إِنَّ ٱللَّهَ ٱشۡتَرَىٰ مِنَ ٱلۡمُؤۡمِنِينَ أَنفُسَهُمۡ وَأَمۡوَٰلَهُم بِأَنَّ لَهُمُ ٱلۡجَنَّةَۚ يُقَٰتِلُونَ فِي سَبِيلِ ٱللَّهِ فَيَقۡتُلُونَ وَيُقۡتَلُونَۖ وَعۡدًا عَلَيۡهِ حَقّٗا فِي ٱلتَّوۡرَىٰةِ وَٱلۡإِنجِيلِ وَٱلۡقُرۡءَانِۚ وَمَنۡ أَوۡفَىٰ بِعَهۡدِهِۦ مِنَ ٱللَّهِۚ فَٱسۡتَبۡشِرُواْ بِبَيۡعِكُمُ ٱلَّذِي بَايَعۡتُم بِهِۦۚ وَذَٰلِكَ هُوَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Inna Allaha ishtara mina almumineena anfusahum waamwalahum bianna lahumu aljannata yuqatiloona fee sabeeli Allahi fayaqtuloona wayuqtaloona waAAdan AAalayhi haqqan fee alttawrati waalinjeeli waalqurani waman awfa biAAahdihi mina Allahi faistabshiroo bibayAAikumu allathee bayaAAtum bihi wathalika huwa alfawzu alAAatheemu: commercial metaphor (ishtara-bayAAikumu) applied to ultimate sacrifice; triple-scripture attestation; superlative covenant-fulfillment claim; rejoicing commanded; fawz azim closure."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "The covenant framework demands absolute trust in Allah's promise-keeping capacity"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with trust-in-god. The purchase metaphor transforms military sacrifice from loss into profitable transaction. Triple-scripture attestation grounds the covenant in continuous revelation history rather than single-source claim. Rejoicing-command reframes martyrdom anxiety as celebration."
+    },
+    {
+      "candidateId": "cand-0441",
+      "label": "Nine attributes of covenant believers: repentant, worshipping, praising, journeying, bowing, prostrating, enjoining right, forbidding wrong, guarding Allah's limits — given glad tidings",
+      "definition": "In 9:112, the participants in the divine purchase covenant are characterized by nine active participles: the repentant, worshippers, praisers, travelers/journeyers, those who bow, those who prostrate, those who enjoin right, those who forbid wrong, and those who guard Allah's limits; the Prophet is commanded to give glad tidings to the believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:112",
+          "excerpt": "ٱلتَّـٰٓئِبُونَ ٱلۡعَٰبِدُونَ ٱلۡحَٰمِدُونَ ٱلسَّـٰٓئِحُونَ ٱلرَّـٰكِعُونَ ٱلسَّـٰجِدُونَ ٱلۡأٓمِرُونَ بِٱلۡمَعۡرُوفِ وَٱلنَّاهُونَ عَنِ ٱلۡمُنكَرِ وَٱلۡحَٰفِظُونَ لِحُدُودِ ٱللَّهِۗ وَبَشِّرِ ٱلۡمُؤۡمِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Alttaiboona alAAabidoona alhamidoona alssaihoona alrrakiAAoona alssajidoona alamiroona bialmaAAroofi waalnnahoona AAani almunkari waalhafithoona lihudoodi Allahi wabashshiri almumineena: nine plural active participles forming comprehensive believer portrait spanning internal states (tawbah, worship, praise), physical devotion (bowing, prostrating, journeying), social ethics (enjoining, forbidding), and legal observance (guarding limits). Wabashshiri almumineena imperative closing."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Comprehensive character portrait combining devotional, ethical and legal dimensions"
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Tawbah leads the attribute list as foundational quality"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with good-character and repentance. Saihoon is debated among scholars (travelers for knowledge, fasting persons, or ascetics) — deferred to scholarly review. The list moves from individual spiritual states through ritual practice to communal responsibility ending with boundary-guarding, creating a complete progression from inner to outer."
     },
     {
       "candidateId": "cand-0442",
-      "label": "cand-0442: Topic from 9:114",
-      "definition": "In 9:114: And the request of forgiveness of Abraham for his father was only because of a promise he had made to him. But when it became apparent to Abraham that his father was an enemy to Allah, he disassociated himself from him. Indeed was Abraham compassionate and patient",
+      "label": "Istighfar prohibition for polytheists and Ibrahim precedent: Prophet and believers barred from seeking forgiveness for polytheists even relatives once Hellfire status is clear; Ibrahim's istighfar for his father was only due to a prior promise; when enmity to Allah became apparent he disassociated; Ibrahim described as compassionate and forbearing",
+      "definition": "In 9:113-114, it is not for the Prophet or believers to seek forgiveness for polytheists even if relatives after it becomes clear they are companions of Hellfire; Ibrahim's istighfar for his father was only because of a promise he made to him; when it became clear his father was an enemy to Allah he disassociated himself; Ibrahim is described as awwah (compassionate/supplicating) and haleem (forbearing/patient).",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:113",
+          "excerpt": "مَا كَانَ لِلنَّبِيِّ وَٱلَّذِينَ ءَامَنُوٓاْ أَن يَسۡتَغۡفِرُواْ لِلۡمُشۡرِكِينَ وَلَوۡ كَانُوٓاْ أُوْلِي قُرۡبَىٰ مِنۢ بَعۡدِ مَا تَبَيَّنَ لَهُمۡ أَنَّهُمۡ أَصۡحَٰبُ ٱلۡجَحِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ma kana lilnnabiyyi waallatheena amanoo an yastaghfiroo lilmushrikeena walaw kanoo olee qurba min baAAdi ma tabayyana lahum annahum ashabu aljaheemi: negation formula (ma kana) establishing impossibility not mere prohibition; even kinship cannot override; clarity condition (tabayyana) prevents premature judgment."
+        },
         {
           "key": "9:114",
           "excerpt": "وَمَا كَانَ ٱسۡتِغۡفَارُ إِبۡرَٰهِيمَ لِأَبِيهِ إِلَّا عَن مَّوۡعِدَةٖ وَعَدَهَآ إِيَّاهُ فَلَمَّا تَبَيَّنَ لَهُۥٓ أَنَّهُۥ عَدُوّٞ لِّلَّهِ تَبَرَّأَ مِنۡهُۚ إِنَّ إِبۡرَٰهِيمَ لَأَوَّـٰهٌ حَلِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Wama kana istighfaru ibraheema liabeehi illa AAan mawAAidatin waAAadaha iyyahu falamma tabayyana lahu annahu AAaduwwun lillahi tabarraa minhu inna ibraheema laawwahun haleemun: exception explained as promise-bound not approval-based; same tabayyana verb links to 9:113; tabarraa (disassociation) echoes surah-opening bara'ah theme; awwah-haleem pairing preserves Ibrahim's tenderness while confirming his obedience."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Ibrahim's precedent governs contemporary intercession boundaries"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with prophets. The tabarraa-tabayyana pairing shows disassociation triggered by clarity not hostility. Awwah-haleem prevents the ruling from appearing cold: Ibrahim's compassion was real but subordinate to divine alignment. This creates thematic bookend with surah's opening bara'ah."
     },
     {
       "candidateId": "cand-0443",
-      "label": "cand-0443: Topic from 9:117",
-      "definition": "In 9:117: Allah has already forgiven the Prophet and the Muhajireen and the Ansar who followed him in the hour of difficulty after the hearts of a party of them had almost inclined [to doubt], and then He forgave them. Indeed, He was to them Kind and Merciful",
+      "label": "Guidance clarification principle and absolute dominion: Allah does not misguide a people after guiding them until He clarifies what they should avoid; Allah possesses dominion of heavens and earth, gives life and causes death, and no protector or helper exists besides Him",
+      "definition": "In 9:115-116, a theological principle is established that Allah would not let a people stray after guidance until He makes clear what they must guard against, for He knows all things; then absolute divine dominion is declared over heavens and earth with power over life and death, leaving no protector or helper besides Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "9:115",
+          "excerpt": "وَمَا كَانَ ٱللَّهُ لِيُضِلَّ قَوۡمَۢا بَعۡدَ إِذۡ هَدَىٰهُمۡ حَتَّىٰ يُبَيِّنَ لَهُم مَّا يَتَّقُونَۚ إِنَّ ٱللَّهَ بِكُلِّ شَيۡءٍ عَلِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama kana Allahu liyudilla qawman baAAda ith hadahum hatta yubayyina lahum ma yattaqoona inna Allaha bikulli shayin AAaleemun: negative capability formula (ma kana ... liyudilla) protecting divine justice; hatta yubayyina establishes clarification as prerequisite for accountability; bikulli shayin AAaleemun grounds the principle in comprehensive knowledge."
+        },
+        {
+          "key": "9:116",
+          "excerpt": "إِنَّ ٱللَّهَ لَهُۥ مُلۡكُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ يُحۡيِۦ وَيُمِيتُۚ وَمَا لَكُم مِّن دُونِ ٱللَّهِ مِن وَلِيّٖ وَلَا نَصِيرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Inna Allaha lahu mulku alssamawati waalardi yuhyee wayumeetu wama lakum min dooni Allahi min waliyyin wala naseerin: mulk (dominion) + ihya-imata (life-death) + nafi wali-naseer (negation of protectors) = comprehensive sovereignty declaration closing any space for alternative reliance."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Clarification before accountability requires knowledge transmission"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with knowledge-and-reflection. The guidance-clarification principle protects divine justice: misguidance cannot be attributed to Allah when clarification preceded deviation. Positioned after Ibrahim precedent showing that prophetic knowledge triggers disassociation obligations."
+    },
+    {
+      "candidateId": "cand-0444",
+      "label": "Hour-of-difficulty forgiveness and the three left behind: Allah turned in forgiveness to the Prophet, Muhajireen and Ansar who followed him in the hour of difficulty after hearts nearly swerved; also forgave three left behind whose earth narrowed despite vastness and souls confined until certain no refuge from Allah except in Him, then He turned so they could repent",
+      "definition": "In 9:117-118, Allah's forgiveness extends to the Prophet and the emigrant-helper community who accompanied him during extreme hardship after some hearts almost deviated; then specifically to three individuals left behind who experienced such intense constriction that earth felt narrow despite its vastness and their own souls pressed upon them until they realized there is no refuge from Allah except toward Him, at which point He turned to them so they could repent.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "9:117",
           "excerpt": "لَّقَد تَّابَ ٱللَّهُ عَلَى ٱلنَّبِيِّ وَٱلۡمُهَٰجِرِينَ وَٱلۡأَنصَارِ ٱلَّذِينَ ٱتَّبَعُوهُ فِي سَاعَةِ ٱلۡعُسۡرَةِ مِنۢ بَعۡدِ مَا كَادَ يَزِيغُ قُلُوبُ فَرِيقٖ مِّنۡهُمۡ ثُمَّ تَابَ عَلَيۡهِمۡۚ إِنَّهُۥ بِهِمۡ رَءُوفٞ رَّحِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Laqad taba Allahu AAala alnnabiyyi waalmuhajireena waalansari allatheena ittabaAAoohu fee saAAati alAAusrati min baAAdi ma kada yazeeghu quloobu fareeqin minhum thumma taba AAalayhim innahu bihim raoofun raheemun: laqad taba emphasizes accomplished forgiveness; saAAati alAAusrati names the crisis without specifying it; kada yazeeghu acknowledges near-deviation without condemning; raoof-raheem pairing closes with tenderness."
+        },
+        {
+          "key": "9:118",
+          "excerpt": "وَعَلَى ٱلثَّلَٰثَةِ ٱلَّذِينَ خُلِّفُواْ حَتَّىٰٓ إِذَا ضَاقَتۡ عَلَيۡهِمُ ٱلۡأَرۡضُ بِمَا رَحُبَتۡ وَضَاقَتۡ عَلَيۡهِمۡ أَنفُسُهُمۡ وَظَنُّوٓاْ أَن لَّا مَلۡجَأَ مِنَ ٱللَّهِ إِلَّآ إِلَيۡهِ ثُمَّ تَابَ عَلَيۡهِمۡ لِيَتُوبُوٓاْۚ إِنَّ ٱللَّهَ هُوَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "WaAAala alththalathati allatheena khullifoo hatta itha daqat AAalayhimu alardu bima rahubat wadaqat AAalayhim anfusuhum wathannoo an la maljaa mina Allahi illa ilayhi thumma taba AAalayhim liyatooboo inna Allaha huwa alttawwabu alrraheemu: khullifoo indicates deliberate leaving-behind; dual constriction (earth + self); certainty of no refuge except in Allah produces the turning point; liyatooboo shows divine forgiveness enables human repentance not vice versa; alttawwab alrraheem as closing divine names."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Paradigmatic demonstration of divine forgiveness encompassing both communal near-deviation and individual abandonment"
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Earth-narrowing and soul-constriction represent maximum hardship resolved by divine turning"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with mercy-and-forgiveness and hardship-and-ease. The three-left-behind narrative provides the most detailed phenomenology of repentance-psychology in the Quran: external pressure (earth narrowing) plus internal pressure (soul confining) plus cognitive breakthrough (no refuge except in Him) produces the condition for divine turning. Liyatooboo reverses expected causality: Allah turns first enabling their repentance."
     },
     {
-      "candidateId": "cand-0444",
-      "label": "cand-0444: Topic from 9:120",
-      "definition": "In 9:120: It was not [proper] for the people of Madinah and those surrounding them of the bedouins that they remain behind after [the departure of] the Messenger of Allah or that they prefer themselves over his self. That is because they are not afflicted by thirst or fatigue or hunger in the cause of Allah, nor do they tread on any ground that enrages the disbelievers, nor do they inflict upon an enemy any infliction but that is registered for them as a righteous deed. Indeed, Allah does not allow to be lost the reward of the doers of good",
+      "candidateId": "cand-0445",
+      "label": "Truthfulness companionship and comprehensive deed-registration: believers commanded to fear Allah and be with the truthful; Madinah people and surrounding Bedouins must not remain behind the Messenger or prefer themselves over him; every thirst, fatigue, hunger, ground-treading that enrages disbelievers, enemy-infliction, and expenditure small or large registered as righteous deed; Allah does not waste muhsineen reward",
+      "definition": "In 9:119-121, after the repentance narratives, believers are commanded to maintain taqwa and keep company with the truthful; the community around Madinah is told not to stay behind the Messenger or value themselves above him; then an exhaustive registration system is described where every hardship endured and expenditure made in Allah's cause is recorded as righteous deed, for Allah does not allow the reward of those who do good to be lost.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:119",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱتَّقُواْ ٱللَّهَ وَكُونُواْ مَعَ ٱلصَّـٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Ya ayyuha allatheena amanoo ittaqoo Allaha wakoonoo maAAa alssadiqeena: dual command pairing taqwa with truthful companionship; maAAa implies sustained proximity not mere agreement."
+        },
         {
           "key": "9:120",
           "excerpt": "مَا كَانَ لِأَهۡلِ ٱلۡمَدِينَةِ وَمَنۡ حَوۡلَهُم مِّنَ ٱلۡأَعۡرَابِ أَن يَتَخَلَّفُواْ عَن رَّسُولِ ٱللَّهِ وَلَا يَرۡغَبُواْ بِأَنفُسِهِمۡ عَن نَّفۡسِهِۦۚ ذَٰلِكَ بِأَنَّهُمۡ لَا يُصِيبُهُمۡ ظَمَأٞ وَلَا نَصَبٞ وَلَا مَخۡمَصَةٞ فِي سَبِيلِ ٱللَّهِ وَلَا يَطَـُٔونَ مَوۡطِئٗا يَغِيظُ ٱلۡكُفَّارَ وَلَا يَنَالُونَ مِنۡ عَدُوّٖ نَّيۡلًا إِلَّا كُتِبَ لَهُم بِهِۦ عَمَلٞ صَٰلِحٌۚ إِنَّ ٱللَّهَ لَا يُضِيعُ أَجۡرَ ٱلۡمُحۡسِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Ma kana liahli almadeenati waman hawlahum mina alaAArabi an yatakhallafoo AAan rasooli Allahi wala yarghaboo bianfusihim AAan nafsihi: negative framing (ma kana) establishing behavioral impossibility for true community. Thalika biannahum la yuseebuhum thamaon wala nasabun wala makhmasatun fee sabeeli Allahi wala yataoona mawtian yagheethu alkuffara wala yanaloona min AAaduwwin naylan illa kutiba lahum bihi AAamalun salihun: six hardship types each individually registered. Illa kutiba lahum bihi AAamalun salihun universalizes the registration mechanism."
+        },
+        {
+          "key": "9:121",
+          "excerpt": "وَلَا يُنفِقُونَ نَفَقَةٗ صَغِيرَةٗ وَلَا كَبِيرَةٗ وَلَا يَقۡطَعُونَ وَادِيًا إِلَّا كُتِبَ لَهُمۡ لِيَجۡزِيَهُمُ ٱللَّهُ أَحۡسَنَ مَا كَانُواْ يَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wala yunfiqoona nafaqatan sagheeratan wala kabeeratan wala yaqtaAAoona wadiyan illa kutiba lahum liyajziyahumu Allahu ahsana ma kanoo yaAAmaloona: extends registration to financial contributions and terrain crossings. Liyajziyahumu Allahu ahsana ma kanoo yaAAmaloona promises optimal reward matching."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Truthfulness companionship as character-forming environment"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with good-character. The registration system removes any anxiety about unnoticed sacrifice: every micro-hardship achieves cosmic significance through divine record-keeping. Truthfulness-companionship command follows repentance narratives suggesting that truthfulness is both the lesson learned and the ongoing requirement."
     },
     {
-      "candidateId": "cand-0445",
-      "label": "cand-0445: Topic from 9:123",
-      "definition": "In 9:123: O you who have believed, fight those adjacent to you of the disbelievers and let them find in you harshness. And know that Allah is with the righteous",
+      "candidateId": "cand-0446",
+      "label": "Knowledge-mobilization balance and divergent revelation effects: believers need not mobilize entirely; a group from each division must remain for deep religious understanding to warn returning people; adjacent disbelievers fought with visible harshness; each revealed surah increases believers in faith with rejoicing while adding filth to diseased hearts who die disbelieving; annual trials unmet by repentance or remembrance; hypocrites glance for observers then slip away with hearts turned; Messenger from among yourselves grieved by your suffering concerned for you kind merciful to believers; closing tawakkul confession",
+      "definition": "In 9:122-129, the surah transitions from total mobilization to balanced knowledge preservation: a group from each division stays for tafaqqah fi al-din to warn their people on return; adjacent disbelievers are to be fought with visible harshness; the effect of revelation is shown to bifurcate communities: believers gain faith and rejoice while diseased hearts gain filth upon filth dying in disbelief; hypocrites face annual trials without repentance, glancing for observers before slipping away with divinely-turned hearts; the surah closes with the Prophet's characterization as one from among them for whom their suffering is grievous, concerned over them, kind and merciful to believers; final verse teaches the tawakkul confession when they turn away.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "9:122",
+          "excerpt": "۞وَمَا كَانَ ٱلۡمُؤۡمِنُونَ لِيَنفِرُواْ كَآفَّةٗۚ فَلَوۡلَا نَفَرَ مِن كُلِّ فِرۡقَةٖ مِّنۡهُمۡ طَآئِفَةٞ لِّيَتَفَقَّهُواْ فِي ٱلدِّينِ وَلِيُنذِرُواْ قَوۡمَهُمۡ إِذَا رَجَعُوٓاْ إِلَيۡهِمۡ لَعَلَّهُمۡ يَحۡذَرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Wama kana almuminoona liyanfiroo kaffatan falawla nafara min kulli firqatin minhum taifatun liyatafaqqahoo fee alddeeni waliyunthiroo qawmahum itha rajaAAoo ilayhim laAAallahum yahtharoona: kaffatan negation prevents total militarization; tafaqqah establishes scholarly class function; warning-return cycle creates sustainable knowledge infrastructure."
+        },
         {
           "key": "9:123",
           "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ قَٰتِلُواْ ٱلَّذِينَ يَلُونَكُم مِّنَ ٱلۡكُفَّارِ وَلۡيَجِدُواْ فِيكُمۡ غِلۡظَةٗۚ وَٱعۡلَمُوٓاْ أَنَّ ٱللَّهَ مَعَ ٱلۡمُتَّقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0446",
-      "label": "cand-0446: Topic from 9:126",
-      "definition": "In 9:126: Do they not see that they are tried every year once or twice but then they do not repent nor do they remember",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Qatiloo allatheena yaloonakum mina alkuffari walyajidoo feekum ghilthatan: proximity-based engagement priority; ghiltha demands visible deterrence."
+        },
+        {
+          "key": "9:124",
+          "excerpt": "وَإِذَا مَآ أُنزِلَتۡ سُورَةٞ فَمِنۡهُم مَّن يَقُولُ أَيُّكُمۡ زَادَتۡهُ هَٰذِهِۦٓ إِيمَٰنٗاۚ فَأَمَّا ٱلَّذِينَ ءَامَنُواْ فَزَادَتۡهُمۡ إِيمَٰنٗا وَهُمۡ يَسۡتَبۡشِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Faamma allatheena amanoo fazadathum eemanan wahum yastabshiroona: revelation as faith-amplifier for healthy hearts."
+        },
+        {
+          "key": "9:125",
+          "excerpt": "وَأَمَّا ٱلَّذِينَ فِي قُلُوبِهِم مَّرَضٞ فَزَادَتۡهُمۡ رِجۡسًا إِلَىٰ رِجۡسِهِمۡ وَمَاتُواْ وَهُمۡ كَٰفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Waamma allatheena fee quloobihim maradun fazadathum rijsan ila rijsihim wamatoo wahum kafiroona: revelation as filth-amplifier for diseased hearts; death-state specification."
+        },
         {
           "key": "9:126",
           "excerpt": "أَوَلَا يَرَوۡنَ أَنَّهُمۡ يُفۡتَنُونَ فِي كُلِّ عَامٖ مَّرَّةً أَوۡ مَرَّتَيۡنِ ثُمَّ لَا يَتُوبُونَ وَلَا هُمۡ يَذَّكَّرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Awala yarawna annahum yuftanoona fee kulli AAamin marratan aw marratayni thumma la yatooboona wala hum yaththakkaroona: annual trial frequency met with zero response."
+        },
+        {
+          "key": "9:127",
+          "excerpt": "وَإِذَا مَآ أُنزِلَتۡ سُورَةٞ نَّظَرَ بَعۡضُهُمۡ إِلَىٰ بَعۡضٍ هَلۡ يَرَىٰكُم مِّنۡ أَحَدٖ ثُمَّ ٱنصَرَفُواْۚ صَرَفَ ٱللَّهُ قُلُوبَهُم بِأَنَّهُمۡ قَوۡمٞ لَّا يَفۡقَهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Nathara baAAduhum ila baAAdin hal yarakum min ahadin thumma insarafoo sarafa Allahu quloobahum biannahum qawmun la yafqahoona: surveillance behavior exposing cowardice; heart-turning as consequence of non-understanding."
+        },
+        {
+          "key": "9:128",
+          "excerpt": "لَقَدۡ جَآءَكُمۡ رَسُولٞ مِّنۡ أَنفُسِكُمۡ عَزِيزٌ عَلَيۡهِ مَا عَنِتُّمۡ حَرِيصٌ عَلَيۡكُم بِٱلۡمُؤۡمِنِينَ رَءُوفٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Laqad jaakum rasoolun min anfusikum AAazeezun AAalayhi ma AAanittum hareesun AAalaykum bialmumineena raoofun raheemun: shared origin (min anfusikum); grief at community suffering; eagerness for their welfare; kindness-mercy pairing directed specifically at believers."
+        },
+        {
+          "key": "9:129",
+          "excerpt": "فَإِن تَوَلَّوۡاْ فَقُلۡ حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Fain tawallaw faqul hasbiya Allahu la ilaha illa huwa AAalayhi tawakkaltu wahuwa rabbu alAAarshi alAAatheemi: conditional turning-away triggers tawakkul confession; hasbiya-la ilaha-tawakkaltu-rabbu al-arsh four-part formula establishing complete reliance; Great Throne reference as cosmic authority anchor."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tafaqqah fi al-din establishes institutional knowledge preservation as communal obligation equal to mobilization"
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Closing hasbiya Allah tawakkaltu formula is paradigmatic trust-in-God declaration"
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T10:30:00.000Z",
+      "notes": "Overlap with knowledge-and-reflection and trust-in-god. Tafaqqah-fi-al-din verse prevents jihad from consuming the community's intellectual infrastructure. Revelation bifurcation (faith-increase vs filth-increase) demonstrates that the same text produces opposite effects based on heart-condition. Closing Messenger portrait humanizes prophetic authority through shared origin and emotional investment. Final tawakkul confession provides the individual believer's response when communal efforts fail."
     }
   ]
 }
