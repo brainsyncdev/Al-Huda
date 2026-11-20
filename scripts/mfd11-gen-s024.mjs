@@ -49,19 +49,94 @@ const PASSAGES = [
     mainLabel: "Disbeliever deeds as mirage producing nothing at reckoning; layered darkness metaphor for compounded ignorance; universal creature glorification including birds with wing-spreading; rain-wind-ship provision system demonstrating divine management; prior messenger success followed by town destruction as dual precedent; obedience formula: Allah-Messenger dual compliance with individual responsibility; battle reluctance exposed through oath-breaking; salah-zakah-obedience triad as mercy condition; disbeliever failure impossibility affirmed; privacy protocol: three exempted times requiring permission for dependents and prepubescent children; puberty-triggered permanent permission requirement; elderly women's clothing relaxation with modesty preference; disability accommodations removing constraint for blind lame ill communal meals; greeting obligation as blessed social practice; believer definition through collective decision-making consent; prophetic address etiquette distinguishing from ordinary speech; divine omniscience over concealed intentions; closing sovereignty affirmation encompassing all creation" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-024-p1": [
+    "Surah declared sent down and made obligatory with clear evidentiary verses for remembrance",
+    "Zina hadd punishment: hundred lashes for unmarried offenders with public witnessing requirement and compassion prohibition",
+    "Fornicator marriage restriction limiting partners to same moral category or polytheists forbidden to believers",
+    "Qadhf punishment: eighty lashes plus permanent testimony rejection for false accusers without four witnesses",
+    "Repentance-reform exception restoring eligibility after qadhf conviction through divine forgiveness and mercy",
+    "Li'an procedure initiation: husband accusing wife with no witnesses except himself must swear four oaths by Allah",
+    "Li'an fifth oath: husband invokes Allah's curse upon himself if he is among the liars",
+    "Li'an wife defense: four counter-oaths swearing husband is lying prevent punishment from her",
+    "Li'an wife fifth oath: invoking Allah's wrath upon herself if husband was truthful",
+    "Divine favor and mercy acknowledged as restraint preventing immediate punishment with Allah as Accepting of repentance and Wise",
+    "Slander incident (ifk) introduced as group affair with individual sin accounting and greater punishment for principal instigator",
+    "Believers should have assumed good of themselves and declared the accusation an obvious falsehood upon hearing it",
+    "Four-witness requirement reiterated: failure to produce witnesses renders accusers liars in Allah's sight",
+    "Divine favor and mercy in this world and Hereafter prevented great punishment for involvement in slander",
+    "Tongue-transmission of baseless speech deemed insignificant by speakers but tremendous in Allah's sight",
+    "Proper response to hearing slander: declaring it not fitting to speak of and glorifying Allah against great fabrication",
+    "Divine admonition never to return to such conduct if truly believers",
+    "Allah makes clear the verses and is Knowing and Wise",
+    "Warning against loving immorality spread among believers with painful punishment in both worlds and divine knowledge contrast",
+    "Divine favor and mercy reaffirmed with Allah as Kind and Merciful"
+  ],
+  "ext-024-p2": [
+    "Prohibition against following Satan's footsteps which command immorality and wrongdoing with divine purification as selective grace",
+    "Oath-breaking regarding charity to relatives overridden by pardon preference linked to desire for divine forgiveness",
+    "Curse upon those who falsely accuse chaste unaware believing women in this world and Hereafter with great punishment",
+    "Judgment Day bodily testimony: tongues hands and feet bearing witness against what people used to do",
+    "Allah paying full just recompense on that Day with recognition of Allah as manifest Truth",
+    "Gender-matched moral pairing principle: evil words for evil people good words for good people with innocence declaration forgiveness and noble provision",
+    "Entry etiquette for houses other than own: ascertain welcome and greet inhabitants as best practice for remembrance",
+    "Permission protocol for unoccupied houses: do not enter until permitted and return if told to go back as purer conduct",
+    "Exemption for entering uninhabited houses containing convenience with divine knowledge of revealed and concealed matters",
+    "Gaze lowering and private-part guarding command for believing men as purer conduct with divine awareness",
+    "Gaze lowering adornment concealment khumur-drawing and mahram exception list for believing women with foot-stamping prohibition and collective repentance command",
+    "Marriage facilitation command for unmarried and righteous enslaved persons with divine enrichment promise for the poor",
+    "Chastity abstinence for those unable to marry mukataba contract provision for enslaved persons coercion prohibition protecting maidens and divine forgiveness for the compelled",
+    "Distinct verses examples from predecessors and admonition for the God-conscious sent down as guidance",
+    "Light Verse: Allah as Light of heavens and earth with niche-lamp-glass-star-blessed olive tree metaphor producing light upon light and divine guidance sovereignty",
+    "Mosques as houses Allah ordered raised for name-mentioning with morning-evening tasbih",
+    "Men undistracted by commerce or sale from dhikr salah and zakah fearing the Day of heart-eye overturning",
+    "Divine reward for best deeds plus bounty increase with provision without account",
+    "Disbeliever deeds as mirage in lowland: thirsty one finds nothing but Allah paying full swift account",
+    "Layered darkness metaphor: unfathomable sea waves upon waves clouds compounding visual impossibility representing absence of divine light",
+    "Universal creature glorification including birds with wings spread each knowing its prayer and exaltation with divine knowledge",
+    "Dominion of heavens and earth belonging to Allah with all returning to Him as destination",
+    "Cloud formation cycle: driving gathering massing rain emergence hail mountains lightning flash as divine control signs",
+    "Night-day alternation as lesson for those with vision",
+    "All creatures created from water with diverse locomotion modes demonstrating divine creative competence"
+  ],
+  "ext-024-p3": [
+    "Distinct verses sent down with Allah guiding whom He wills to a straight path",
+    "Hypocrites professing belief and obedience then turning away afterward declared not true believers",
+    "Refusal when called to Allah and Messenger for judgment exposing selective compliance",
+    "Prompt obedience only when right belongs to them revealing conditional submission",
+    "Heart disease doubt or fear of divine injustice diagnosed as wrongdoing rather than legitimate concern",
+    "True believer response to divine-Messenger judgment call: hearing and obeying as mark of success",
+    "Obedience to Allah and Messenger combined with fear and consciousness identified as attainment criterion",
+    "False oaths of battle willingness rejected with command for known obedience instead of empty swearing",
+    "Dual obedience formula: obey Allah and Messenger with individual responsibility allocation and clear notification as Messenger's sole duty",
+    "Succession-establishment promise for believers doing righteous deeds with religion establishment fear-to-security transition and pure worship condition",
+    "Salah-zakah-obedience triad commanded as condition for receiving mercy",
+    "Disbelievers not causing failure on earth with Fire as wretched refuge",
+    "Privacy protocol: dependents and prepubescent children must ask permission at three specified times of undress privacy",
+    "Puberty-triggered permanent permission requirement matching adult protocol with divine clarification",
+    "Post-menstrual women clothing relaxation permitting outer garment removal without adornment display with modesty preference retained",
+    "Disability accommodations removing constraint for blind lame and ill in communal meals across extended household network with greeting obligation",
+    "Believer definition through collective decision-making consent: not departing from common-interest gathering without prophetic permission",
+    "Prophetic address etiquette distinguishing from ordinary interpersonal speech with warning against stealthy departure and dissent consequences",
+    "Closing sovereignty affirmation: all in heavens and earth belongs to Allah who knows current state and will inform of deeds on return Day"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`24:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`24:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`24:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 24, surahName: "An-Nur",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
