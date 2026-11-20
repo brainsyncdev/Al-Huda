@@ -49,19 +49,90 @@ const PASSAGES = [
     mainLabel: "Wind-ship-bounty-gratitude cycle as integrated provision system; messenger precedent establishing dual warning-tidings function; destruction observation commanded; upright religion establishment before irreversible Day; individual accountability for disbelief or righteousness; rain-revival as ba'th proof; six-day creation with Throne establishment; Hayy-Qayyum submission on Judgment Day; individual burden-bearing principle; closing hamd with sign-recognition promise affirming divine awareness of all actions" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-030-p1": [
+    "Disjointed letters Alif-Lam-Mim as Quranic opening marker",
+    "Roman defeat in the nearest land stated as historical fact",
+    "Roman victory after defeat promised within a specified timeframe",
+    "Believer rejoicing tied to divine aid within the bid-i sinin period",
+    "Divine victory granted to whom Allah wills as Aziz and Rahim",
+    "Allah promise declared unfailing despite majority ignorance of it",
+    "Worldly knowledge limited to outward appearance while Hereafter neglected",
+    "Self-reflection commanded through observation of creation in truth with appointed term",
+    "Travel-observation methodology for studying prior community outcomes and self-inflicted wrong",
+    "Evil-doers receiving worst consequence for denying and ridiculing divine signs",
+    "Allah initiating and repeating creation with return to Him as resurrection basis",
+    "Criminals falling into despair on the Day the Hour appears",
+    "Alleged partners unable to intercede and becoming objects of disbelief on Judgment Day",
+    "Humanity separated into distinct groups on the Day of Judgment",
+    "Believers doing righteous deeds delighted in a garden of Paradise",
+    "Disbelievers denying signs and Hereafter meeting brought into punishment",
+    "Tasbih of Allah at evening and morning as temporal devotion command",
+    "Hamd belonging to Allah across heavens earth night and noon as universal praise",
+    "Living brought from dead and dead from living with earth revival as resurrection analogy",
+    "Human creation from dust then dispersing as population sign",
+    "Spousal creation from selves providing tranquility affection and mercy as relational sign",
+    "Heavens-earth creation and language-color diversity as signs for those with knowledge",
+    "Sleep by night and day plus bounty-seeking as signs for people who listen",
+    "Lightning causing fear and hope plus rain reviving earth as signs for reasoning people",
+    "Heavens and earth standing by divine command with single-call resurrection emergence",
+    "Universal ownership of all in heavens and earth with total devout obedience",
+    "Creation initiation and repetition being easy for Allah with highest attribute as Aziz Hakim"
+  ],
+  "ext-030-p2": [
+    "Slave-master partnership parable exposing shirk irrationality through equal-sharing challenge",
+    "Wrongdoers following desires without knowledge with no guide or helper available",
+    "Face directed toward hanif religion upon fitrah with no alteration in divine creation",
+    "Repentance taqwa salah-establishment and shirk-prohibition as integrated devotional command",
+    "Sectarian division producing factions each rejoicing in their own partisan position",
+    "Adversity-driven sincere supplication versus prosperity-driven association of others",
+    "Ingratitude for divine grants followed by temporary enjoyment before knowing consequences",
+    "Rhetorical challenge on any revealed authority justifying shirk associations",
+    "Mercy-producing joy versus self-caused evil producing immediate despair as emotional contrast",
+    "Provision extension and restriction as signs for believing people",
+    "Relative needy and traveler rights as path to success for those seeking divine countenance",
+    "Riba failing to increase with Allah versus zakah multiplying for those seeking His face",
+    "Creation provision death and life cycle challenging partners to replicate any part of it",
+    "Land-sea corruption appearing from human earnings as partial consequence prompting return",
+    "Travel command to observe prior community ends noting most were associators",
+    "Face directed toward upright religion before irreversible Day causing division",
+    "Individual disbelief or righteousness borne solely by the self as accountability principle",
+    "Believer reward from divine bounty with disbelievers excluded from divine love"
+  ],
+  "ext-030-p3": [
+    "Winds sent as mercy heralds enabling ships bounty-seeking and gratitude obligation",
+    "Prior messengers sent with clear proofs followed by retribution against criminals and believer support",
+    "Wind-cloud-rain cycle described in detail producing servant rejoicing upon arrival",
+    "Pre-rain despair contrasting with post-rain joy as mercy-recognition pattern",
+    "Earth revival after death observed as proof of resurrection competence over all things",
+    "Yellow wind producing crop destruction leading to persistent disbelief despite prior blessings",
+    "Dead and deaf unable to hear call when retreating as prophetic limitation metaphor",
+    "Blind unable to be guided from error with only believers in signs becoming Muslims",
+    "Human weakness-strength-weakness-old-age cycle demonstrating divine creative sovereignty",
+    "Criminals swearing they remained only an hour on Judgment Day as temporal delusion",
+    "Knowledge-faith recipients confirming resurrection day arrival per divine decree",
+    "Wrongdoers excuses failing on Judgment Day with no opportunity for appeasement",
+    "Quran containing every example yet disbelievers rejecting any new sign as falsification claim",
+    "Divine sealing of hearts of those who do not know as epistemic consequence",
+    "Patience command anchored in divine promise truth against uncertainty of non-believers"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`30:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`30:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`30:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 30, surahName: "Ar-Rum",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
