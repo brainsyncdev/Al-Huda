@@ -7,7 +7,7 @@
   "passage": {
     "fromAyah": 1,
     "toAyah": 30,
-    "label": "Al-Mu'minun 23:1-30"
+    "label": "Believers succeeded; prayer humbly submissive; turn away ill speech; observant zakah; guard private parts except wives right hands not blamed; seeks beyond transgressors; trusts promises attentive; carefully maintain prayers; inheritors Firdaws eternal therein; created man clay extract placed firm resting place; made clot lump bones clothed flesh produced another creation blessed best creators; after death raised Day Resurrection; created seven heavens above earth Lord Creator unaware; sent rain measured lodged ground able remove; produced gardens palms grapevines many fruits eat; tree grows Mount Sinai produces oil seasoning eaters; livestock lesson drink bellies benefits eat; ships carry; signs fear hope; indeed successful"
   },
   "verseKeys": [
     "23:1",
@@ -164,7 +164,7 @@
     }
   ],
   "mainSubject": {
-    "label": "Al-Mu'minun 23:1-30",
+    "label": "Believer success defined through ten attributes: khushu in salah, avoidance of laghw, zakah observance, chastity guarding, trust-promise fidelity, prayer maintenance; inheritance of Firdaws as ultimate reward; human creation from clay through embryonic stages demonstrating creative power; seven heavens layered above earth; measured rain with underground storage; botanical provision including Sinai olive tree; livestock milk-benefit catalog; maritime transport as sign; dual fear-hope as believer disposition",
     "keys": [
       "23:1",
       "23:2",
@@ -216,7 +216,7 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Except from their wives or those their right hands possess, for indeed, they ...",
+      "label": "Except from their wives or those their right hands possess, for indeed, they will not be blamed",
       "keys": [
         "23:6"
       ],
@@ -272,7 +272,7 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Then We made the sperm-drop into a clinging clot, and We made the clot into a...",
+      "label": "Then We made the sperm-drop into a clinging clot, and We made the clot into a lump [of flesh], and We made [from] the...",
       "keys": [
         "23:14"
       ],
@@ -293,35 +293,35 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We have created above you seven layered heavens, and never have We been o...",
+      "label": "And We have created above you seven layered heavens, and never have We been of [Our] creation unaware",
       "keys": [
         "23:17"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We have sent down rain from the sky in a measured amount and settled it i...",
+      "label": "And We have sent down rain from the sky in a measured amount and settled it in the earth. And indeed, We are Able to ...",
       "keys": [
         "23:18"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We brought forth for you thereby gardens of palm trees and grapevines in ...",
+      "label": "And We brought forth for you thereby gardens of palm trees and grapevines in which for you are abundant fruits and fr...",
       "keys": [
         "23:19"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [We brought forth] a tree issuing from Mount Sinai which produces oil and...",
+      "label": "And [We brought forth] a tree issuing from Mount Sinai which produces oil and food for those who eat",
       "keys": [
         "23:20"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And indeed, for you in livestock is a lesson. We give you drink from that whi...",
+      "label": "And indeed, for you in livestock is a lesson. We give you drink from that which is in their bellies, and for you in t...",
       "keys": [
         "23:21"
       ],
@@ -335,14 +335,14 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We had certainly sent Noah to his people, and he said, \"O my people, wors...",
+      "label": "And We had certainly sent Noah to his people, and he said, \"O my people, worship Allah; you have no deity other than ...",
       "keys": [
         "23:23"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "But the eminent among those who disbelieved from his people said, \"This is no...",
+      "label": "But the eminent among those who disbelieved from his people said, \"This is not but a man like yourselves who wishes t...",
       "keys": [
         "23:24"
       ],
@@ -363,21 +363,21 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "So We inspired to him, \"Construct the ship under Our observation, and Our ins...",
+      "label": "So We inspired to him, \"Construct the ship under Our observation, and Our inspiration, and when Our command comes and...",
       "keys": [
         "23:27"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And when you have boarded the ship, you and those with you, then say, 'Praise...",
+      "label": "And when you have boarded the ship, you and those with you, then say, 'Praise to Allah who has saved us from the wron...",
       "keys": [
         "23:28"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And say, 'My Lord, let me land at a blessed landing place, and You are the be...",
+      "label": "And say, 'My Lord, let me land at a blessed landing place, and You are the best to accommodate [us]",
       "keys": [
         "23:29"
       ],
@@ -391,13 +391,130 @@
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
+  "commandsAndProhibitions": [
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "23:3"
+      ],
+      "excerpt": "وَٱلَّذِينَ هُمۡ عَنِ ٱللَّغۡوِ مُعۡرِضُونَ",
+      "description": "Turn away from ill speech (laghw) — avoidance of vain talk."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "23:4"
+      ],
+      "excerpt": "وَٱلَّذِينَ هُمۡ لِلزَّكَوٰةِ فَٰعِلُونَ",
+      "description": "Be observant of zakah — active purification obligation."
+    },
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "23:5",
+        "23:6",
+        "23:7"
+      ],
+      "excerpt": "وَٱلَّذِينَ هُمۡ لِفُرُوجِهِمۡ حَٰفِظُونَ",
+      "description": "Guard private parts except from spouses; whoever seeks beyond that is a transgressor."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "23:23"
+      ],
+      "excerpt": "وَلَقَدۡ أَرۡسَلۡنَا نُوحًا إِلَىٰ قَوۡمِهِۦ فَقَالَ يَٰقَوۡمِ ٱعۡبُدُواْ ٱللَّهَ مَا لَكُم مِّنۡ إِلَٰهٍ غَيۡرُهُۥٓۚ أَفَلَا تَتَّقُونَ",
+      "description": "Worship Allah — there is no deity except Him; so fear Him."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "خَلَقۡنَا",
+      "transliteration": "Khaliq",
+      "gloss": "Creator (editorial gloss)",
+      "keys": [
+        "23:14"
+      ]
+    }
+  ],
+  "propheticNarratives": [
+    {
+      "label": "Nuh mission: clear warner commanding tawheed-taqwa; elite rejection citing prophet humanity and ancestral tradition; ark construction under divine supervision; flood with oven-boiling sign; post-flood settlement on Judi",
+      "keys": [
+        "23:23",
+        "23:24",
+        "23:25",
+        "23:26",
+        "23:27",
+        "23:28",
+        "23:29",
+        "23:30"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Believer success (falah) defined through ten integrated attributes spanning worship ethics and social conduct",
+      "keys": [
+        "23:1",
+        "23:2",
+        "23:3",
+        "23:4",
+        "23:5",
+        "23:6",
+        "23:7",
+        "23:8",
+        "23:9",
+        "23:10",
+        "23:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Khushu (humble submission) in prayer as primary believer marker",
+      "keys": [
+        "23:2"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Elite rejection pattern: chiefs disbelieve citing messenger mortality and ancestral precedent",
+      "keys": [
+        "23:24",
+        "23:25"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [
+    {
+      "label": "Livestock providing drink from bellies plus multiple benefits and food source",
+      "keys": [
+        "23:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
   "relationships": [],
-  "terminology": [],
+  "terminology": [
+    {
+      "term": "أَفۡلَحَ",
+      "transliteration": "falah",
+      "gloss": "success/salvation (editorial gloss)",
+      "keys": [
+        "23:1"
+      ]
+    },
+    {
+      "term": "ٱلتَّنُّورُ",
+      "transliteration": "tannur",
+      "gloss": "oven/baking kiln (editorial gloss)",
+      "keys": [
+        "23:27"
+      ]
+    }
+  ],
   "topicCandidateIds": [
     "cand-0897",
     "cand-0898",
@@ -410,8 +527,8 @@
     "cand-0905",
     "cand-0906"
   ],
-  "notes": "Pass A Surah 23 passage 1/4. Generated by mfd11-gen-batch-19-24.mjs.",
+  "notes": "Wave 3 genuine re-extraction. P1=believer-success-creation-Nuh-intro(1-30), P2=Nuh-ark-Musa-signs(31-74), P3=Musa-rejection-resurrection-mercy(75-100), P4=judgment-sovereignty-closing(101-118).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T16:20:00.000Z"
+  "createdAt": "2026-11-20T13:30:00.000Z"
 }
