@@ -1,0 +1,165 @@
+{
+  "extractionId": "ext-053-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 53,
+  "surahName": "An-Najm",
+  "passage": {
+    "fromAyah": 56,
+    "toAyah": 62,
+    "label": "This warner like former warners; Approaching Day approached; besides Allah no remover; this statement wonder; laugh not weep; proudly sporting; prostrate Allah worship Him"
+  },
+  "verseKeys": [
+    "53:56",
+    "53:57",
+    "53:58",
+    "53:59",
+    "53:60",
+    "53:61",
+    "53:62"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "53:56",
+      "text": "هَٰذَا نَذِيرٞ مِّنَ ٱلنُّذُرِ ٱلۡأُولَىٰٓ"
+    },
+    {
+      "key": "53:57",
+      "text": "أَزِفَتِ ٱلۡأٓزِفَةُ"
+    },
+    {
+      "key": "53:58",
+      "text": "لَيۡسَ لَهَا مِن دُونِ ٱللَّهِ كَاشِفَةٌ"
+    },
+    {
+      "key": "53:59",
+      "text": "أَفَمِنۡ هَٰذَا ٱلۡحَدِيثِ تَعۡجَبُونَ"
+    },
+    {
+      "key": "53:60",
+      "text": "وَتَضۡحَكُونَ وَلَا تَبۡكُونَ"
+    },
+    {
+      "key": "53:61",
+      "text": "وَأَنتُمۡ سَٰمِدُونَ"
+    },
+    {
+      "key": "53:62",
+      "text": "فَٱسۡجُدُواْۤ لِلَّهِۤ وَٱعۡبُدُواْ۩"
+    }
+  ],
+  "mainSubject": {
+    "label": "This Prophet identified as a warner like the former warners; the Approaching Day declared imminent with no remover besides Allah; their wonder at this statement, laughter without tears and proud sportiveness condemned; closing command to prostrate to Allah and worship Him",
+    "keys": [
+      "53:56",
+      "53:57",
+      "53:58",
+      "53:59",
+      "53:60",
+      "53:61",
+      "53:62"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "This Prophet is a warner like the former warners",
+      "keys": [
+        "53:56"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Approaching Day has approached",
+      "keys": [
+        "53:57"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Of it there is no remover besides Allah",
+      "keys": [
+        "53:58"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Then at this statement do you wonder",
+      "keys": [
+        "53:59"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And you laugh and do not weep",
+      "keys": [
+        "53:60"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "While you are proudly sporting",
+      "keys": [
+        "53:61"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "So prostrate to Allah and worship Him",
+      "keys": [
+        "53:62"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "53:62"
+      ],
+      "excerpt": "فَٱسۡجُدُواْۤ لِلَّهِۤ وَٱعۡبُدُواْ۩",
+      "description": "So prostrate to Allah and worship Him."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Wonder at the Quranic message accompanied by laughter without tears and proud sportiveness",
+      "keys": [
+        "53:59",
+        "53:60",
+        "53:61"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "This Prophet identified as a warner like the former warners",
+      "keys": [
+        "53:56"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Approaching Day declared imminent with no remover besides Allah",
+      "keys": [
+        "53:57",
+        "53:58"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [],
+  "topicCandidateIds": [
+    "cand-1652",
+    "cand-1653"
+  ],
+  "notes": "Wave 8 genuine re-extraction. Boundaries follow the text: P1 closes with the greatest-signs affirmation (18) before the idol-challenge block opens (19); P2 ends with the self-purification prohibition (32) before the Musa-Ibrahim scripture reminders begin (33); P3 runs through the ethical axioms, divine attributes and destruction catalogue closing with the favors question (33-55); P4 covers the warner-identity, Approaching Day, their misplaced wonder and the closing prostration command (56-62).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T17:00:00.000Z"
+}

@@ -1,387 +1,509 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:45:00.000Z",
-  "sourceExtraction": "ext-053-p1,ext-053-p2",
+  "generatedAt": "2026-11-20T17:00:00.000Z",
+  "sourceExtraction": "ext-053-p1,ext-053-p2,ext-053-p3,ext-053-p4",
   "candidates": [
     {
-      "candidateId": "cand-1687",
-      "label": "cand-1687: Topic from 53:1",
-      "definition": "In 53:1: By the star when it descends",
+      "candidateId": "cand-1643",
+      "label": "Revelation affirmed against inclination; taught by one intense in strength",
+      "definition": "In 53:3-5: Nor does he speak from his own inclination; it is not but a revelation revealed, taught to him by one intense in strength.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "53:1",
-          "excerpt": "وَٱلنَّجۡمِ إِذَا هَوَىٰ",
+          "key": "53:3",
+          "excerpt": "وَمَا يَنطِقُ عَنِ ٱلۡهَوَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1688",
-      "label": "cand-1688: Topic from 53:4",
-      "definition": "In 53:4: It is not but a revelation revealed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "53:4",
           "excerpt": "إِنۡ هُوَ إِلَّا وَحۡيٞ يُوحَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1689",
-      "label": "cand-1689: Topic from 53:7",
-      "definition": "In 53:7: While he was in the higher [part of the] horizon",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "53:7",
-          "excerpt": "وَهُوَ بِٱلۡأُفُقِ ٱلۡأَعۡلَىٰ",
+          "key": "53:5",
+          "excerpt": "عَلَّمَهُۥ شَدِيدُ ٱلۡقُوَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1690",
-      "label": "cand-1690: Topic from 53:10",
-      "definition": "In 53:10: And he revealed to His Servant what he revealed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "53:10",
-          "excerpt": "فَأَوۡحَىٰٓ إِلَىٰ عَبۡدِهِۦ مَآ أَوۡحَىٰ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wahy versus hawa distinction."
+        },
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shadid al-quwa teacher."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1691",
-      "label": "cand-1691: Topic from 53:13",
-      "definition": "In 53:13: And he certainly saw him in another descent",
+      "candidateId": "cand-1644",
+      "label": "Two descents and the Lote Tree vision confirming greatest signs",
+      "definition": "In 53:13-18: And he certainly saw him in another descent at the Lote Tree of the Utmost Boundary near which is the Garden of Refuge; when there covered the Lote Tree that which covered it; the sight did not swerve nor transgress its limit; he certainly saw the greatest signs of his Lord.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "53:13",
           "excerpt": "وَلَقَدۡ رَءَاهُ نَزۡلَةً أُخۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1692",
-      "label": "cand-1692: Topic from 53:16",
-      "definition": "In 53:16: When there covered the Lote Tree that which covered [it]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:14",
+          "excerpt": "عِندَ سِدۡرَةِ ٱلۡمُنتَهَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:15",
+          "excerpt": "عِندَهَا جَنَّةُ ٱلۡمَأۡوَىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "53:16",
           "excerpt": "إِذۡ يَغۡشَى ٱلسِّدۡرَةَ مَا يَغۡشَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:17",
+          "excerpt": "مَا زَاغَ ٱلۡبَصَرُ وَمَا طَغَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:18",
+          "excerpt": "لَقَدۡ رَأَىٰ مِنۡ ءَايَٰتِ رَبِّهِ ٱلۡكُبۡرَىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ru'yah affirmed twice."
+        },
+        {
+          "topicId": "unseen-belief",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kubra ayat witnessed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1693",
-      "label": "cand-1693: Topic from 53:19",
-      "definition": "In 53:19: So have you considered al-Lat and al-'Uzza",
+      "candidateId": "cand-1645",
+      "label": "Idol-names as baseless invention without divine authority",
+      "definition": "In 53:23: They are not but names you have named them, you and your forefathers, for which Allah has sent down no authority; they follow not except assumption and what their souls desire.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "53:19",
-          "excerpt": "أَفَرَءَيۡتُمُ ٱللَّـٰتَ وَٱلۡعُزَّىٰ",
+          "key": "53:23",
+          "excerpt": "إِنۡ هِيَ إِلَّآ أَسۡمَآءٞ سَمَّيۡتُمُوهَآ أَنتُمۡ وَءَابَآؤُكُم مَّآ أَنزَلَ ٱللَّهُ بِهَا مِن سُلۡطَٰنٍۚ إِن يَتَّبِعُونَ إِلَّا ٱلظَّنَّ وَمَا تَهۡوَى ٱلۡأَنفُسُۖ وَلَقَدۡ جَآءَهُم مِّن رَّبِّهِمُ ٱلۡهُدَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Asma' sammaytumuha exposed."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zann and hawa diagnosed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1694",
-      "label": "cand-1694: Topic from 53:22",
-      "definition": "In 53:22: That, then, is an unjust division",
+      "candidateId": "cand-1646",
+      "label": "Angelic intercession restricted to divine permission and approval",
+      "definition": "In 53:26: And how many angels there are in the heavens whose intercession will not avail at all except only after Allah has permitted it to whom He wills and approves.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "53:22",
-          "excerpt": "تِلۡكَ إِذٗا قِسۡمَةٞ ضِيزَىٰٓ",
+          "key": "53:26",
+          "excerpt": "۞وَكَم مِّن مَّلَكٖ فِي ٱلسَّمَٰوَٰتِ لَا تُغۡنِي شَفَٰعَتُهُمۡ شَيۡـًٔا إِلَّا مِنۢ بَعۡدِ أَن يَأۡذَنَ ٱللَّهُ لِمَن يَشَآءُ وَيَرۡضَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1695",
-      "label": "cand-1695: Topic from 53:25",
-      "definition": "In 53:25: Rather, to Allah belongs the Hereafter and the first [life]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "53:25",
-          "excerpt": "فَلِلَّهِ ٱلۡأٓخِرَةُ وَٱلۡأُولَىٰ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1696",
-      "label": "cand-1696: Topic from 53:28",
-      "definition": "In 53:28: And they have thereof no knowledge. They follow not except assumption, and indeed, assumption avails not against the truth at all",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shafa'ah conditional."
+        },
         {
-          "key": "53:28",
-          "excerpt": "وَمَا لَهُم بِهِۦ مِنۡ عِلۡمٍۖ إِن يَتَّبِعُونَ إِلَّا ٱلظَّنَّۖ وَإِنَّ ٱلظَّنَّ لَا يُغۡنِي مِنَ ٱلۡحَقِّ شَيۡـٔٗا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Permission-based mediation."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1697",
-      "label": "cand-1697: Topic from 53:32",
-      "definition": "In 53:32: Those who avoid the major sins and immoralities, only [committing] slight ones. Indeed, your Lord is vast in forgiveness. He was most knowing of you when He produced you from the earth and when you were fetuses in the wombs of your mothers. So do not claim yourselves to be pure; He is most knowing of who fears Him",
+      "candidateId": "cand-1647",
+      "label": "Avoiders of major sins granted vast forgiveness; self-purification claims rejected",
+      "definition": "In 53:32: Those who avoid the major sins and immoralities, only committing slight ones; indeed your Lord is vast in forgiveness; He was most knowing of you when He produced you from the earth and when you were fetuses in the wombs of your mothers; so do not claim yourselves to be pure; He is most knowing of who fears Him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "53:32",
           "excerpt": "ٱلَّذِينَ يَجۡتَنِبُونَ كَبَـٰٓئِرَ ٱلۡإِثۡمِ وَٱلۡفَوَٰحِشَ إِلَّا ٱللَّمَمَۚ إِنَّ رَبَّكَ وَٰسِعُ ٱلۡمَغۡفِرَةِۚ هُوَ أَعۡلَمُ بِكُمۡ إِذۡ أَنشَأَكُم مِّنَ ٱلۡأَرۡضِ وَإِذۡ أَنتُمۡ أَجِنَّةٞ فِي بُطُونِ أُمَّهَٰتِكُمۡۖ فَلَا تُزَكُّوٓاْ أَنفُسَكُمۡۖ هُوَ أَعۡلَمُ بِمَنِ ٱتَّقَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1698",
-      "label": "cand-1698: Topic from 53:35",
-      "definition": "In 53:35: Does he have knowledge of the unseen, so he sees",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "53:35",
-          "excerpt": "أَعِندَهُۥ عِلۡمُ ٱلۡغَيۡبِ فَهُوَ يَرَىٰٓ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Wasi' al-maghfirah scope."
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tazkiyah prohibition."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1699",
-      "label": "cand-1699: Topic from 53:38",
-      "definition": "In 53:38: That no bearer of burdens will bear the burden of another",
+      "candidateId": "cand-1648",
+      "label": "No bearer of burdens bearing another's; man has only what he strives for",
+      "definition": "In 53:38-39: That no bearer of burdens will bear the burden of another; and that there is not for man except that for which he strives.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "53:38",
           "excerpt": "أَلَّا تَزِرُ وَازِرَةٞ وِزۡرَ أُخۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:39",
+          "excerpt": "وَأَن لَّيۡسَ لِلۡإِنسَٰنِ إِلَّا مَا سَعَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La taziru waziratun principle."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Individual striving basis."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1700",
-      "label": "cand-1700: Topic from 53:41",
-      "definition": "In 53:41: Then he will be recompensed for it with the fullest recompense",
+      "candidateId": "cand-1649",
+      "label": "Effort seen and fully recompensed with finality to the Lord",
+      "definition": "In 53:40-42: And that his effort is going to be seen; then he will be recompensed for it with the fullest recompense; and that to your Lord is the finality.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "53:40",
+          "excerpt": "وَأَنَّ سَعۡيَهُۥ سَوۡفَ يُرَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "53:41",
           "excerpt": "ثُمَّ يُجۡزَىٰهُ ٱلۡجَزَآءَ ٱلۡأَوۡفَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:42",
+          "excerpt": "وَأَنَّ إِلَىٰ رَبِّكَ ٱلۡمُنتَهَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sa'y manifested and judged."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ila rabbika al-muntaha."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1701",
-      "label": "cand-1701: Topic from 53:44",
-      "definition": "In 53:44: And that it is He who causes death and gives life",
+      "candidateId": "cand-1650",
+      "label": "Divine attributes chain: laugh-weep, death-life, pairs, creation, provision, Sirius",
+      "definition": "In 53:43-49: And that it is He who makes one laugh and weep and causes death and gives life and creates the two mates male and female from a sperm-drop when emitted and that incumbent upon Him is the next creation and that it is He who enriches and suffices and that it is He who is the Lord of Sirius.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "53:43",
+          "excerpt": "وَأَنَّهُۥ هُوَ أَضۡحَكَ وَأَبۡكَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "53:44",
           "excerpt": "وَأَنَّهُۥ هُوَ أَمَاتَ وَأَحۡيَا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1702",
-      "label": "cand-1702: Topic from 53:47",
-      "definition": "In 53:47: And that [incumbent] upon Him is the next creation",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:45",
+          "excerpt": "وَأَنَّهُۥ خَلَقَ ٱلزَّوۡجَيۡنِ ٱلذَّكَرَ وَٱلۡأُنثَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:46",
+          "excerpt": "مِن نُّطۡفَةٍ إِذَا تُمۡنَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "53:47",
           "excerpt": "وَأَنَّ عَلَيۡهِ ٱلنَّشۡأَةَ ٱلۡأُخۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:48",
+          "excerpt": "وَأَنَّهُۥ هُوَ أَغۡنَىٰ وَأَقۡنَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:49",
+          "excerpt": "وَأَنَّهُۥ هُوَ رَبُّ ٱلشِّعۡرَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Attribute catena."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Comprehensive sovereignty."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1703",
-      "label": "cand-1703: Topic from 53:50",
-      "definition": "In 53:50: And that He destroyed the first [people of] 'Aad",
+      "candidateId": "cand-1651",
+      "label": "Five destroyed communities recalled as undeniable favors-signs",
+      "definition": "In 53:50-55: And that He destroyed the first Aad and Thamud and did not spare them and the people of Noah before, indeed they were more unjust and oppressing; and the overturned towns He hurled down and covered them by that which He covered; then which of the favors of your Lord do you doubt?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "53:50",
           "excerpt": "وَأَنَّهُۥٓ أَهۡلَكَ عَادًا ٱلۡأُولَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1704",
-      "label": "cand-1704: Topic from 53:53",
-      "definition": "In 53:53: And the overturned towns He hurled down",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:51",
+          "excerpt": "وَثَمُودَاْ فَمَآ أَبۡقَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:52",
+          "excerpt": "وَقَوۡمَ نُوحٖ مِّن قَبۡلُۖ إِنَّهُمۡ كَانُواْ هُمۡ أَظۡلَمَ وَأَطۡغَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "53:53",
           "excerpt": "وَٱلۡمُؤۡتَفِكَةَ أَهۡوَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:54",
+          "excerpt": "فَغَشَّىٰهَا مَا غَشَّىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:55",
+          "excerpt": "فَبِأَيِّ ءَالَآءِ رَبِّكَ تَتَمَارَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Destruction catalogue."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ni'mah as warning sign."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1705",
-      "label": "cand-1705: Topic from 53:56",
-      "definition": "In 53:56: This [Prophet] is a warner like the former warners",
+      "candidateId": "cand-1652",
+      "label": "Approaching Day imminent with no remover besides Allah",
+      "definition": "In 53:57-58: The Approaching Day has approached; of it from those besides Allah there is no remover.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "53:56",
-          "excerpt": "هَٰذَا نَذِيرٞ مِّنَ ٱلنُّذُرِ ٱلۡأُولَىٰٓ",
+          "key": "53:57",
+          "excerpt": "أَزِفَتِ ٱلۡأٓزِفَةُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:58",
+          "excerpt": "لَيۡسَ لَهَا مِن دُونِ ٱللَّهِ كَاشِفَةٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Azifah proximity."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "No dafi' besides Allah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1706",
-      "label": "cand-1706: Topic from 53:59",
-      "definition": "In 53:59: Then at this statement do you wonder",
+      "candidateId": "cand-1653",
+      "label": "Closing prostration command after condemning laughter and proud sportiveness",
+      "definition": "In 53:59-62: Then at this statement do you wonder and you laugh and do not weep while you are proudly sporting; so prostrate to Allah and worship Him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "53:59",
           "excerpt": "أَفَمِنۡ هَٰذَا ٱلۡحَدِيثِ تَعۡجَبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:60",
+          "excerpt": "وَتَضۡحَكُونَ وَلَا تَبۡكُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:61",
+          "excerpt": "وَأَنتُمۡ سَٰمِدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "53:62",
+          "excerpt": "فَٱسۡجُدُواْۤ لِلَّهِۤ وَٱعۡبُدُواْ۩",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sujud as corrective response."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Worship replacing lahw."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:00:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     }
   ]
 }
