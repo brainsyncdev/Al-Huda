@@ -1,12 +1,12 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:20:00.000Z",
+  "generatedAt": "2026-11-20T13:25:00.000Z",
   "sourceExtraction": "ext-021-p1,ext-021-p2,ext-021-p3,ext-021-p4",
   "candidates": [
     {
       "candidateId": "cand-0827",
-      "label": "cand-0827: Topic from 21:1",
-      "definition": "In 21:1: [The time of] their account has approached for the people, while they are in heedlessness turning away",
+      "label": "Reckoning imminence met with heedless playfulness",
+      "definition": "In 21:1-2: Their account has approached while they are in heedlessness turning away; no mention comes anew except they listen at play.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -16,16 +16,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hisab approaching."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Ghaflah as reception barrier."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0828",
-      "label": "cand-0828: Topic from 21:3",
-      "definition": "In 21:3: With their hearts distracted. And those who do wrong conceal their private conversation, [saying], \"Is this [Prophet] except a human being like you? So would you approach magic while you are aware [of it]",
+      "label": "Prophet humanity affirmed against supernatural expectations",
+      "definition": "In 21:3,8: Is this except human like yourselves; We did not make prophets forms not eating food nor immortal.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -35,16 +48,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Bashar mithlukum affirmed."
+        },
+        {
+          "topicId": "human-dignity",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Shared mortality."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0829",
-      "label": "cand-0829: Topic from 21:6",
-      "definition": "In 21:6: Not a [single] city which We destroyed believed before them, so will they believe",
+      "label": "Creation not play but purposeful negating divine amusement",
+      "definition": "In 21:16-17: We did not create heavens earth and between in play; had We intended amusement taken it from Ourselves.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:16",
+          "excerpt": "وَمَا خَلَقۡنَا ٱلسَّمَآءَ وَٱلۡأَرۡضَ وَمَا بَيۡنَهُمَا لَٰعِبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "life-purpose",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La'b negated."
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Purposeful creation as rububiyyah."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0830",
+      "label": "Book as dhikr demanding intellectual engagement",
+      "definition": "In 21:10: We sent down Book containing your mention; will you not reason (afala ta'qilun)?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:10",
+          "excerpt": "لَقَدۡ أَنزَلۡنَآ إِلَيۡكُمۡ كِتَٰبٗا فِيهِ ذِكۡرُكُمۡۚ أَفَلَا تَعۡقِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dhikr fihi function."
+        },
+        {
+          "topicId": "intellect-importance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Aql as reception faculty."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0831",
+      "label": "Prior destruction pattern establishing historical precedent",
+      "definition": "In 21:6: Not a city We destroyed believed before them; so will they believe?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -54,73 +144,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0830",
-      "label": "cand-0830: Topic from 21:9",
-      "definition": "In 21:9: Then We fulfilled for them the promise, and We saved them and whom We willed and destroyed the transgressors",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "21:9",
-          "excerpt": "ثُمَّ صَدَقۡنَٰهُمُ ٱلۡوَعۡدَ فَأَنجَيۡنَٰهُمۡ وَمَن نَّشَآءُ وَأَهۡلَكۡنَا ٱلۡمُسۡرِفِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Repeated pattern."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Historical evidence."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0831",
-      "label": "cand-0831: Topic from 21:11",
-      "definition": "In 21:11: And how many a city which was unjust have We shattered and produced after it another people",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:11",
-          "excerpt": "وَكَمۡ قَصَمۡنَا مِن قَرۡيَةٖ كَانَتۡ ظَالِمَةٗ وَأَنشَأۡنَا بَعۡدَهَا قَوۡمًا ءَاخَرِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0832",
-      "label": "cand-0832: Topic from 21:14",
-      "definition": "In 21:14: They said, \"O woe to us! Indeed, we were wrongdoers",
+      "label": "Fleeing punishment futility demonstrating divine omnipresence",
+      "definition": "In 21:12-15: When perceived punishment fled; do not flee return to luxury; said woe us wrongdoers; ceased not until made stubble.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "21:14",
-          "excerpt": "قَالُواْ يَٰوَيۡلَنَآ إِنَّا كُنَّا ظَٰلِمِينَ",
+          "key": "21:12",
+          "excerpt": "فَلَمَّآ أَحَسُّواْ بَأۡسَنَآ إِذَا هُم مِّنۡهَا يَرۡكُضُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "No escape from divine reach."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Belated recognition."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0833",
-      "label": "cand-0833: Topic from 21:17",
-      "definition": "In 21:17: Had We intended to take a diversion, We could have taken it from [what is] with Us - if [indeed] We were to do so",
+      "label": "Universal mortality and trial-return cycle",
+      "definition": "In 21:35: Every soul tastes death; We test you with evil and good as trial; to Us you are returned.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:35",
+          "excerpt": "كُلُّ نَفۡسٖ ذَآئِقَةُ ٱلۡمَوۡتِۗ وَنَبۡلُوكُم بِٱلشَّرِّ وَٱلۡخَيۡرِ فِتۡنَةٗۖ وَإِلَيۡنَا تُرۡجَعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Khayr-sharr as ibtila'."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Return to divine reckoning."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0834",
+      "label": "Divine self-sufficiency negating need for partners",
+      "definition": "In 21:17: Had We intended amusement We would have taken it from Ourselves if We were doing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -130,92 +240,125 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0834",
-      "label": "cand-0834: Topic from 21:19",
-      "definition": "In 21:19: To Him belongs whoever is in the heavens and the earth. And those near Him are not prevented by arrogance from His worship, nor do they tire",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "21:19",
-          "excerpt": "وَلَهُۥ مَن فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۚ وَمَنۡ عِندَهُۥ لَا يَسۡتَكۡبِرُونَ عَنۡ عِبَادَتِهِۦ وَلَا يَسۡتَحۡسِرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Self-sufficiency excluding partners."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "No external dependency."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0835",
-      "label": "cand-0835: Topic from 21:22",
-      "definition": "In 21:22: Had there been within the heavens and earth gods besides Allah, they both would have been ruined. So exalted is Allah, Lord of the Throne, above what they describe",
+      "label": "Truth hurling upon falsehood causing its perishing",
+      "definition": "In 21:18: Rather We hurl truth upon falsehood so it destroys it; behold it perishes.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "21:22",
-          "excerpt": "لَوۡ كَانَ فِيهِمَآ ءَالِهَةٌ إِلَّا ٱللَّهُ لَفَسَدَتَاۚ فَسُبۡحَٰنَ ٱللَّهِ رَبِّ ٱلۡعَرۡشِ عَمَّا يَصِفُونَ",
+          "key": "21:18",
+          "excerpt": "بَلۡ نَقۡذِفُ بِٱلۡحَقِّ عَلَى ٱلۡبَٰطِلِ فَيَدۡمَغُهُۥ فَإِذَا هُوَ زَاهِقٞۚ وَلَكُمُ ٱلۡوَيۡلُ مِمَّا تَصِفُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Haqq-batil dynamic."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Truth's destructive power over falsehood."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0836",
-      "label": "cand-0836: Topic from 21:25",
-      "definition": "In 21:25: And We sent not before you any messenger except that We revealed to him that, \"There is no deity except Me, so worship Me",
+      "label": "Angelic perpetual worship without fatigue as model devotion",
+      "definition": "In 21:20: They glorify night and day never flagging.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "21:25",
-          "excerpt": "وَمَآ أَرۡسَلۡنَا مِن قَبۡلِكَ مِن رَّسُولٍ إِلَّا نُوحِيٓ إِلَيۡهِ أَنَّهُۥ لَآ إِلَٰهَ إِلَّآ أَنَا۠ فَٱعۡبُدُونِ",
+          "key": "21:20",
+          "excerpt": "يُسَبِّحُونَ ٱلَّيۡلَ وَٱلنَّهَارَ لَا يَفۡتُرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Continuous tasbih."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Uninterrupted dhikr."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0837",
-      "label": "cand-0837: Topic from 21:29",
-      "definition": "In 21:29: And whoever of them should say, \"Indeed, I am a god besides Him\"- that one We would recompense with Hell. Thus do We recompense the wrongdoers",
+      "label": "Heavens-earth separation and water-life origin as creation signs",
+      "definition": "In 21:30: Have disbelievers not seen heavens earth were joined We clove apart; made from water everything living.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "21:29",
-          "excerpt": "۞وَمَن يَقُلۡ مِنۡهُمۡ إِنِّيٓ إِلَٰهٞ مِّن دُونِهِۦ فَذَٰلِكَ نَجۡزِيهِ جَهَنَّمَۚ كَذَٰلِكَ نَجۡزِي ٱلظَّـٰلِمِينَ",
+          "key": "21:30",
+          "excerpt": "أَوَلَمۡ يَرَ ٱلَّذِينَ كَفَرُوٓاْ أَنَّ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ كَانَتَا رَتۡقٗا فَفَتَقۡنَٰهُمَاۖ وَجَعَلۡنَا مِنَ ٱلۡمَآءِ كُلَّ شَيۡءٍ حَيٍّۚ أَفَلَا يُؤۡمِنُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Cosmic-biological dual sign."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Separation as creative act."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0838",
-      "label": "cand-0838: Topic from 21:31",
-      "definition": "In 21:31: And We placed within the earth firmly set mountains, lest it should shift with them, and We made therein [mountain] passes [as] roads that they might be guided",
+      "label": "Geological stabilization through firmly-set mountains",
+      "definition": "In 21:31: Placed firmly set mountains on earth lest it shake with you; made broad paths perhaps guided.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -225,35 +368,61 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rawasi as stability sign."
+        },
+        {
+          "topicId": "environmental-corruption",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Prevention of chaos."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0839",
-      "label": "cand-0839: Topic from 21:34",
-      "definition": "In 21:34: And We did not grant to any man before you eternity [on earth]; so if you die - would they be eternal",
+      "label": "Celestial protection and orbital precision as cosmic order",
+      "definition": "In 21:33: Made sky protected ceiling yet turn away; each in orbit swimming.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "21:34",
-          "excerpt": "وَمَا جَعَلۡنَا لِبَشَرٖ مِّن قَبۡلِكَ ٱلۡخُلۡدَۖ أَفَإِيْن مِّتَّ فَهُمُ ٱلۡخَٰلِدُونَ",
+          "key": "21:33",
+          "excerpt": "وَهُوَ ٱلَّذِي خَلَقَ ٱلَّيۡلَ وَٱلنَّهَارَ وَٱلشَّمۡسَ وَٱلۡقَمَرَۖ كُلّٞ فِي فَلَكٖ يَسۡبَحُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Saqf mahfuz and falak."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Orbital maintenance."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0840",
-      "label": "cand-0840: Topic from 21:37",
-      "definition": "In 21:37: Man was created of haste. I will show you My signs, so do not impatiently urge Me",
+      "label": "Human hastiness in demanding immediate punishment",
+      "definition": "In 21:37: Man was created of haste; I will show you My signs so do not urge Me.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -263,35 +432,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience-haste",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ajul as inherent trait."
+        },
+        {
+          "topicId": "divine-wisdom",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Divine timing vs human urgency."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0841",
-      "label": "cand-0841: Topic from 21:39",
-      "definition": "In 21:39: If those who disbelieved but knew the time when they will not avert the Fire from their faces or from their backs and they will not be aided",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:39",
-          "excerpt": "لَوۡ يَعۡلَمُ ٱلَّذِينَ كَفَرُواْ حِينَ لَا يَكُفُّونَ عَن وُجُوهِهِمُ ٱلنَّارَ وَلَا عَن ظُهُورِهِمۡ وَلَا هُمۡ يُنصَرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0842",
-      "label": "cand-0842: Topic from 21:42",
-      "definition": "In 21:42: Say, \"Who can protect you at night or by day from the Most Merciful?\" But they are, from the remembrance of their Lord, turning away",
+      "label": "Rahman as sole protector negating false guardians",
+      "definition": "In 21:42: Say who protects you night day from Rahman; yet turn away from remembrance.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -301,35 +464,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0843",
-      "label": "cand-0843: Topic from 21:45",
-      "definition": "In 21:45: Say, \"I only warn you by revelation.\" But the deaf do not hear the call when they are warned",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "21:45",
-          "excerpt": "قُلۡ إِنَّمَآ أُنذِرُكُم بِٱلۡوَحۡيِۚ وَلَا يَسۡمَعُ ٱلصُّمُّ ٱلدُّعَآءَ إِذَا مَا يُنذَرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Exclusive divine protection."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Protection linked to dhikr."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0844",
-      "label": "cand-0844: Topic from 21:47",
-      "definition": "In 21:47: And We place the scales of justice for the Day of Resurrection, so no soul will be treated unjustly at all. And if there is [even] the weight of a mustard seed, We will bring it forth. And sufficient are We as accountant",
+      "candidateId": "cand-0842",
+      "label": "Eschatological scales ensuring exact individual justice",
+      "definition": "In 21:47: Set scales of justice Day Resurrection; no soul wronged anything even mustard seed suffice reckoner.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -339,320 +496,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mawazin al-qist."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Exact reckoning."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0843",
+      "label": "Musa-Harun receiving furqan-dhaw-dhikr triad for muttaqin",
+      "definition": "In 21:48: Gave Musa and Harun the criterion and light and reminder for the God-conscious.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:48",
+          "excerpt": "وَلَقَدۡ ءَاتَيۡنَا مُوسَىٰ وَهَٰرُونَ ٱلۡفُرۡقَانَ وَضِيَآءٗ وَذِكۡرٗا لِّلۡمُتَّقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Triple revelation gift."
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Muttaqin as beneficiaries."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0844",
+      "label": "Prior messenger ridicule pattern preceding divine response",
+      "definition": "In 21:41: Already ridiculed messengers before you; descended upon scoffers what they used to mock.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:41",
+          "excerpt": "وَلَقَدِ ٱسۡتُهۡزِئَ بِرُسُلٖ مِّن قَبۡلِكَ فَحَاقَ بِٱلَّذِينَ سَخِرُواْ مِنۡهُم مَّا كَانُواْ بِهِۦ يَسۡتَهۡزِءُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Recurring istihza'."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mockery returning upon mockers."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0845",
-      "label": "cand-0845: Topic from 21:50",
-      "definition": "In 21:50: And this [Qur'an] is a blessed message which We have sent down. Then are you with it unacquainted",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:50",
-          "excerpt": "وَهَٰذَا ذِكۡرٞ مُّبَارَكٌ أَنزَلۡنَٰهُۚ أَفَأَنتُمۡ لَهُۥ مُنكِرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0846",
-      "label": "cand-0846: Topic from 21:53",
-      "definition": "In 21:53: They said, \"We found our fathers worshippers of them",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:53",
-          "excerpt": "قَالُواْ وَجَدۡنَآ ءَابَآءَنَا لَهَا عَٰبِدِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0847",
-      "label": "cand-0847: Topic from 21:57",
-      "definition": "In 21:57: And [I swear] by Allah, I will surely plan against your idols after you have turned and gone away",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:57",
-          "excerpt": "وَتَٱللَّهِ لَأَكِيدَنَّ أَصۡنَٰمَكُم بَعۡدَ أَن تُوَلُّواْ مُدۡبِرِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0848",
-      "label": "cand-0848: Topic from 21:59",
-      "definition": "In 21:59: They said, \"Who has done this to our gods? Indeed, he is of the wrongdoers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:59",
-          "excerpt": "قَالُواْ مَن فَعَلَ هَٰذَا بِـَٔالِهَتِنَآ إِنَّهُۥ لَمِنَ ٱلظَّـٰلِمِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0849",
-      "label": "cand-0849: Topic from 21:62",
-      "definition": "In 21:62: They said, \"Have you done this to our gods, O Abraham",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:62",
-          "excerpt": "قَالُوٓاْ ءَأَنتَ فَعَلۡتَ هَٰذَا بِـَٔالِهَتِنَا يَـٰٓإِبۡرَٰهِيمُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0850",
-      "label": "cand-0850: Topic from 21:65",
-      "definition": "In 21:65: Then they reversed themselves, [saying], \"You have already known that these do not speak",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:65",
-          "excerpt": "ثُمَّ نُكِسُواْ عَلَىٰ رُءُوسِهِمۡ لَقَدۡ عَلِمۡتَ مَا هَـٰٓؤُلَآءِ يَنطِقُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0851",
-      "label": "cand-0851: Topic from 21:67",
-      "definition": "In 21:67: Uff to you and to what you worship instead of Allah. Then will you not use reason",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:67",
-          "excerpt": "أُفّٖ لَّكُمۡ وَلِمَا تَعۡبُدُونَ مِن دُونِ ٱللَّهِۚ أَفَلَا تَعۡقِلُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0852",
-      "label": "cand-0852: Topic from 21:70",
-      "definition": "In 21:70: And they intended for him harm, but We made them the greatest losers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:70",
-          "excerpt": "وَأَرَادُواْ بِهِۦ كَيۡدٗا فَجَعَلۡنَٰهُمُ ٱلۡأَخۡسَرِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0853",
-      "label": "cand-0853: Topic from 21:73",
-      "definition": "In 21:73: And We made them leaders guiding by Our command. And We inspired to them the doing of good deeds, establishment of prayer, and giving of zakah; and they were worshippers of Us",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:73",
-          "excerpt": "وَجَعَلۡنَٰهُمۡ أَئِمَّةٗ يَهۡدُونَ بِأَمۡرِنَا وَأَوۡحَيۡنَآ إِلَيۡهِمۡ فِعۡلَ ٱلۡخَيۡرَٰتِ وَإِقَامَ ٱلصَّلَوٰةِ وَإِيتَآءَ ٱلزَّكَوٰةِۖ وَكَانُواْ لَنَا عَٰبِدِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0854",
-      "label": "cand-0854: Topic from 21:75",
-      "definition": "In 21:75: And We admitted him into Our mercy. Indeed, he was of the righteous",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:75",
-          "excerpt": "وَأَدۡخَلۡنَٰهُ فِي رَحۡمَتِنَآۖ إِنَّهُۥ مِنَ ٱلصَّـٰلِحِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0855",
-      "label": "cand-0855: Topic from 21:78",
-      "definition": "In 21:78: And [mention] David and Solomon, when they judged concerning the field - when the sheep of a people overran it [at night], and We were witness to their judgement",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:78",
-          "excerpt": "وَدَاوُۥدَ وَسُلَيۡمَٰنَ إِذۡ يَحۡكُمَانِ فِي ٱلۡحَرۡثِ إِذۡ نَفَشَتۡ فِيهِ غَنَمُ ٱلۡقَوۡمِ وَكُنَّا لِحُكۡمِهِمۡ شَٰهِدِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0856",
-      "label": "cand-0856: Topic from 21:81",
-      "definition": "In 21:81: And to Solomon [We subjected] the wind, blowing forcefully, proceeding by his command toward the land which We had blessed. And We are ever, of all things, Knowing",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:81",
-          "excerpt": "وَلِسُلَيۡمَٰنَ ٱلرِّيحَ عَاصِفَةٗ تَجۡرِي بِأَمۡرِهِۦٓ إِلَى ٱلۡأَرۡضِ ٱلَّتِي بَٰرَكۡنَا فِيهَاۚ وَكُنَّا بِكُلِّ شَيۡءٍ عَٰلِمِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0857",
-      "label": "cand-0857: Topic from 21:85",
-      "definition": "In 21:85: And [mention] Ishmael and Idrees and Dhul-Kifl; all were of the patient",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:85",
-          "excerpt": "وَإِسۡمَٰعِيلَ وَإِدۡرِيسَ وَذَا ٱلۡكِفۡلِۖ كُلّٞ مِّنَ ٱلصَّـٰبِرِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0858",
-      "label": "cand-0858: Topic from 21:87",
-      "definition": "In 21:87: And [mention] the man of the fish, when he went off in anger and thought that We would not decree [anything] upon him. And he called out within the darknesses, \"There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:87",
-          "excerpt": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبٗا فَظَنَّ أَن لَّن نَّقۡدِرَ عَلَيۡهِ فَنَادَىٰ فِي ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0859",
-      "label": "cand-0859: Topic from 21:90",
-      "definition": "In 21:90: So We responded to him, and We gave to him John, and amended for him his wife. Indeed, they used to hasten to good deeds and supplicate Us in hope and fear, and they were to Us humbly submissive",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:90",
-          "excerpt": "فَٱسۡتَجَبۡنَا لَهُۥ وَوَهَبۡنَا لَهُۥ يَحۡيَىٰ وَأَصۡلَحۡنَا لَهُۥ زَوۡجَهُۥٓۚ إِنَّهُمۡ كَانُواْ يُسَٰرِعُونَ فِي ٱلۡخَيۡرَٰتِ وَيَدۡعُونَنَا رَغَبٗا وَرَهَبٗاۖ وَكَانُواْ لَنَا خَٰشِعِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0860",
-      "label": "cand-0860: Topic from 21:93",
-      "definition": "In 21:93: And [yet] they divided their affair among themselves, [but] all to Us will return",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:93",
-          "excerpt": "وَتَقَطَّعُوٓاْ أَمۡرَهُم بَيۡنَهُمۡۖ كُلٌّ إِلَيۡنَا رَٰجِعُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0861",
-      "label": "cand-0861: Topic from 21:95",
-      "definition": "In 21:95: And there is prohibition upon [the people of] a city which We have destroyed that they will [ever] return",
+      "label": "Destroyed-city return impossibility establishing finality",
+      "definition": "In 21:95: Prohibited to any city We destroyed that they return.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -662,73 +592,541 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Irreversible destruction."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Absence as permanent sign."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0846",
+      "label": "Divine majesty-honor as closing attributes",
+      "definition": "In 21:50: Blessed is the name of your Lord Possessor of Majesty and Honor.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:50",
+          "excerpt": "وَهَٰذَا ذِكۡرٞ مُّبَارَكٌ أَنزَلۡنَٰهُۚ أَفَأَنتُمۡ لَهُۥ مُنكِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dhu al-jalal wa'l-ikram."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Name blessing through invocation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0847",
+      "label": "Ibrahim sound judgement demonstrated through idol-destruction rhetoric",
+      "definition": "In 21:51-67: Gave Ibrahim rushd; asked about statues; said fathers worshippers; said manifest error; broke idols left largest; asked it speak; admitted shame.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:51",
+          "excerpt": "۞وَلَقَدۡ ءَاتَيۡنَآ إِبۡرَٰهِيمَ رُشۡدَهُۥ مِن قَبۡلُ وَكُنَّا بِهِۦ عَٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rushd as rational capacity."
+        },
+        {
+          "topicId": "intellect-importance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Logic exposing shirk."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0848",
+      "label": "Fire miracle as divine protection reversing oppressor intent",
+      "definition": "In 21:69: Said O fire be cool and safe for Ibrahim; wanted harm made them greatest losers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:69",
+          "excerpt": "قُلۡنَا يَٰنَارُ كُونِي بَرۡدٗا وَسَلَٰمًا عَلَىٰٓ إِبۡرَٰهِيمَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nar barid salam."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Element subjugation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0849",
+      "label": "Yunus darkness supplication as universal rescue formula",
+      "definition": "In 21:87-88: Dhu al-Nun went angry thought We powerless; called la ilaha illa Anta subhanaka inni kuntu min al-zalimin; responded saved; thus save believers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:87",
+          "excerpt": "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبٗا فَظَنَّ أَن لَّن نَّقۡدِرَ عَلَيۡهِ فَنَادَىٰ فِي ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "yunus-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dua dhu al-nun."
+        },
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Universal rescue template."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0850",
+      "label": "Zakariyya-Yahya grant responding to faithful petition",
+      "definition": "In 21:89-90: Zakariyya called Lord leave not alone best inheritors; responded gave Yahya made wife suitable; hastened good deeds hoping fearing humble.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:89",
+          "excerpt": "وَزَكَرِيَّآ إِذۡ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرۡنِي فَرۡدٗا وَأَنتَ خَيۡرُ ٱلۡوَٰرِثِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Faithful petition answered."
+        },
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Righteous progeny as divine gift."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0851",
+      "label": "Maryam chastity and Isa as unified sign for all worlds",
+      "definition": "In 21:91: She who guarded chastity; breathed into her Our spirit; made her and son a sign for the worlds.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:91",
+          "excerpt": "وَٱلَّتِيٓ أَحۡصَنَتۡ فَرۡجَهَا فَنَفَخۡنَا فِيهَا مِن رُّوحِنَا وَجَعَلۡنَٰهَا وَٱبۡنَهَآ ءَايَةٗ لِّلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "isa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ayah lil-alamin."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dual sign: mother and son."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0852",
+      "label": "Ummah wahidah principle before sectarian division",
+      "definition": "In 21:92: Indeed this community of yours is one community and I am your Lord so worship Me.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:92",
+          "excerpt": "إِنَّ هَٰذِهِۦٓ أُمَّتُكُمۡ أُمَّةٗ وَٰحِدَةٗ وَأَنَا۠ رَبُّكُمۡ فَٱعۡبُدُونِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ummah wahidah as ideal."
+        },
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Unity grounded in exclusive worship."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0853",
+      "label": "Lut deliverance from abomination-community with family exception",
+      "definition": "In 21:71-74: Delivered Lut to blessed land; gave Isaac Yaqub; made righteous leaders; wife destined remain behind.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:71",
+          "excerpt": "وَنَجَّيۡنَٰهُ وَلُوطًا إِلَى ٱلۡأَرۡضِ ٱلَّتِي بَٰرَكۡنَا فِيهَا لِلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "lut-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Najat from fahishah."
+        },
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Spousal exception to salvation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0854",
+      "label": "Nuh salvation paired with collective drowning as dual outcome",
+      "definition": "In 21:76-77: Nuh called We responded saved family great distress; helped against people who denied signs; drowned all.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:76",
+          "excerpt": "وَنُوحًا إِذۡ نَادَىٰ مِن قَبۡلُ فَٱسۡتَجَبۡنَا لَهُۥ فَنَجَّيۡنَٰهُ وَأَهۡلَهُۥ مِنَ ٱلۡكَرۡبِ ٱلۡعَظِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "nuh-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Salvation-destruction duality."
+        },
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nasr as divine aid."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0855",
+      "label": "Ayyub patience rewarded with restored family and mercy",
+      "definition": "In 21:83-84: Ayyub called harm touched me Most Merciful of merciful; responded removed harm restored family plus like as mercy.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:83",
+          "excerpt": "۞وَأَيُّوبَ إِذۡ نَادَىٰ رَبَّهُۥٓ أَنِّي مَسَّنِيَ ٱلضُّرُّ وَأَنتَ أَرۡحَمُ ٱلرَّـٰحِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabr rewarded."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Rahmah as restoration."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0856",
+      "label": "Ibrahim-Ishaq-Yaqub lineage as righteous leadership model",
+      "definition": "In 21:72-73: Gave Isaac Yaqub additional gift; made all righteous; appointed leaders guiding by command; inspired prayer zakah; worshippers.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:72",
+          "excerpt": "وَوَهَبۡنَا لَهُۥٓ إِسۡحَٰقَ وَيَعۡقُوبَ نَافِلَةٗۖ وَكُلّٗا جَعَلۡنَا صَٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Multi-generational righteousness."
+        },
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Imams yahduna bi-amrina."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0857",
+      "label": "Righteous effort guaranteed recognition without denial",
+      "definition": "In 21:94: Whoever does righteous deeds as believer no denial of effort nor are We forgetful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:94",
+          "excerpt": "فَمَن يَعۡمَلۡ مِنَ ٱلصَّـٰلِحَٰتِ وَهُوَ مُؤۡمِنٞ فَلَا كُفۡرَانَ لِسَعۡيِهِۦ وَإِنَّا لَهُۥ كَٰتِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La kufr li-sa'yih."
+        },
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Non-forgetfulness as guarantee."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0858",
+      "label": "Yajuj-Majuj release from every elevation as eschatological sign",
+      "definition": "In 21:96: Until Gog and Magog are let loose from every elevation rushing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:96",
+          "excerpt": "حَتَّىٰٓ إِذَا فُتِحَتۡ يَأۡجُوجُ وَمَأۡجُوجُ وَهُم مِّن كُلِّ حَدَبٖ يَنسِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ya'juj-Ma'juj emergence."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Pre-judgment chaos."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0859",
+      "label": "True promise proximity causing disbeliever visual shock",
+      "definition": "In 21:97: True promise draws near; stares of disbelievers glazed; woe to us we were heedless.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:97",
+          "excerpt": "وَٱقۡتَرَبَ ٱلۡوَعۡدُ ٱلۡحَقُّ فَإِذَا هِيَ شَٰخِصَةٌ أَبۡصَٰرُ ٱلَّذِينَ كَفَرُواْ يَٰوَيۡلَنَا قَدۡ كُنَّا فِي غَفۡلَةٖ مِّنۡ هَٰذَا بَلۡ كُنَّا ظَٰلِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wa'd haqq approaching."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Belated awareness."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0860",
+      "label": "Cosmic folding mirroring initial creation as resurrection proof",
+      "definition": "In 21:104: Day We fold heaven like folding scroll for records; as began first creation repeat it; promise binding.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:104",
+          "excerpt": "يَوۡمَ نَطۡوِي ٱلسَّمَآءَ كَطَيِّ ٱلسِّجِلِّ لِلۡكُتُبِۚ كَمَا بَدَأۡنَآ أَوَّلَ خَلۡقٖ نُّعِيدُهُۥۚ وَعۡدًا عَلَيۡنَآۚ إِنَّا كُنَّا فَٰعِلِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Tayy al-sama' as reversal."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Re-creation as repeated act."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0861",
+      "label": "Zabur confirmation of righteous inheritance of earth",
+      "definition": "In 21:105: Written in Zabur after dhikr that land inherited by righteous servants.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:105",
+          "excerpt": "وَلَقَدۡ كَتَبۡنَا فِي ٱلزَّبُورِ مِنۢ بَعۡدِ ٱلذِّكۡرِ أَنَّ ٱلۡأَرۡضَ يَرِثُهَا عِبَادِيَ ٱلصَّـٰلِحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ard yarithuha."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Salihun as inheritors."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0862",
-      "label": "cand-0862: Topic from 21:98",
-      "definition": "In 21:98: Indeed, you [disbelievers] and what you worship other than Allah are the firewood of Hell. You will be coming to [enter] it",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:98",
-          "excerpt": "إِنَّكُمۡ وَمَا تَعۡبُدُونَ مِن دُونِ ٱللَّهِ حَصَبُ جَهَنَّمَ أَنتُمۡ لَهَا وَٰرِدُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0863",
-      "label": "cand-0863: Topic from 21:101",
-      "definition": "In 21:101: Indeed, those for whom the best [reward] has preceded from Us - they are from it far removed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:101",
-          "excerpt": "إِنَّ ٱلَّذِينَ سَبَقَتۡ لَهُم مِّنَّا ٱلۡحُسۡنَىٰٓ أُوْلَـٰٓئِكَ عَنۡهَا مُبۡعَدُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0864",
-      "label": "cand-0864: Topic from 21:103",
-      "definition": "In 21:103: They will not be grieved by the greatest terror, and the angels will meet them, [saying], \"This is your Day which you have been promised",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "21:103",
-          "excerpt": "لَا يَحۡزُنُهُمُ ٱلۡفَزَعُ ٱلۡأَكۡبَرُ وَتَتَلَقَّىٰهُمُ ٱلۡمَلَـٰٓئِكَةُ هَٰذَا يَوۡمُكُمُ ٱلَّذِي كُنتُمۡ تُوعَدُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0865",
-      "label": "cand-0865: Topic from 21:106",
-      "definition": "In 21:106: Indeed, in this [Qur'an] is notification for a worshipping people",
+      "label": "Quran as balagh for worshipping community",
+      "definition": "In 21:106: Indeed in this is notification (balagh) for a worshipping people (qaum 'abidin).",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -738,16 +1136,125 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Balagh as communicative function."
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Abidin as target audience."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0863",
+      "label": "Rahmatan lil-alamin as universal prophetic mission definition",
+      "definition": "In 21:107: We sent you not except as mercy to the worlds (rahmatan lil-alamin).",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:107",
+          "excerpt": "وَمَآ أَرۡسَلۡنَٰكَ إِلَّا رَحۡمَةٗ لِّلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Universal mercy mandate."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Rahmah as mission essence."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0864",
+      "label": "Flexible divine naming with asma al-husna closure",
+      "definition": "In 21:112: Our Lord is Most Merciful whose help is sought against what you describe.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:112",
+          "excerpt": "قَٰلَ رَبِّ ٱحۡكُم بِٱلۡحَقِّۗ وَرَبُّنَا ٱلرَّحۡمَٰنُ ٱلۡمُسۡتَعَانُ عَلَىٰ مَا تَصِفُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rahman musta'an."
+        },
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Closing dua format."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0865",
+      "label": "Mutual waiting challenge distinguishing guided from misguided",
+      "definition": "In 21:112: My Lord judge in truth — mutual waiting for divine verdict.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "21:112",
+          "excerpt": "قَٰلَ رَبِّ ٱحۡكُم بِٱلۡحَقِّۗ وَرَبُّنَا ٱلرَّحۡمَٰنُ ٱلۡمُسۡتَعَانُ عَلَىٰ مَا تَصِفُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Temporal delay as discriminator."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Divine hukm as resolution."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0866",
-      "label": "cand-0866: Topic from 21:109",
-      "definition": "In 21:109: But if they turn away, then say, \"I have announced to [all of] you equally. And I know not whether near or far is that which you are promised",
+      "label": "Declaration of equal announcement removing prophetic responsibility",
+      "definition": "In 21:109: If they turn away say I announced equally; know not near or far what you are promised.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -757,11 +1264,24 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Balagh removing liability."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Equal notification ensuring fairness."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     }
   ]
 }
