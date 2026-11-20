@@ -1,0 +1,151 @@
+{
+  "extractionId": "ext-092-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 92,
+  "surahName": "Al-Layl",
+  "passage": {
+    "fromAyah": 18,
+    "toAyah": 21,
+    "label": "gives wealth purify himself; not anyone favor rewarded; only seeking countenance Lord Most High; going satisfied"
+  },
+  "verseKeys": [
+    "92:18",
+    "92:19",
+    "92:20",
+    "92:21"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "92:18",
+      "text": "ٱلَّذِي يُؤۡتِي مَالَهُۥ يَتَزَكَّىٰ"
+    },
+    {
+      "key": "92:19",
+      "text": "وَمَا لِأَحَدٍ عِندَهُۥ مِن نِّعۡمَةٖ تُجۡزَىٰٓ"
+    },
+    {
+      "key": "92:20",
+      "text": "إِلَّا ٱبۡتِغَآءَ وَجۡهِ رَبِّهِ ٱلۡأَعۡلَىٰ"
+    },
+    {
+      "key": "92:21",
+      "text": "وَلَسَوۡفَ يَرۡضَىٰ"
+    }
+  ],
+  "mainSubject": {
+    "label": "The righteous one identified as giving wealth to purify himself, not repaying a favour owed to anyone but seeking only the countenance of his Lord, the Most High — and he is going to be satisfied",
+    "keys": [
+      "92:18",
+      "92:19",
+      "92:20",
+      "92:21"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Giving wealth to purify himself",
+      "keys": [
+        "92:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Not giving to repay anyone's favour",
+      "keys": [
+        "92:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Seeking only the countenance of his Lord, the Most High",
+      "keys": [
+        "92:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "He is going to be satisfied",
+      "keys": [
+        "92:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "92:18"
+      ],
+      "excerpt": "ٱلَّذِي يُؤۡتِي مَالَهُۥ يَتَزَكَّىٰ",
+      "description": "Giving wealth to purify oneself."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱلۡأَعۡلَىٰ",
+      "transliteration": "al-A'la",
+      "gloss": "Most High (editorial gloss)",
+      "keys": [
+        "92:20"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Wealth given purely for self-purification without expectation of reciprocal favour",
+      "keys": [
+        "92:18",
+        "92:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Satisfaction promised as the outcome of seeking the Lord's countenance alone",
+      "keys": [
+        "92:20",
+        "92:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Seeking the countenance of the Most High as the sole motive excluding all social debt",
+      "keys": [
+        "92:19",
+        "92:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "يَتَزَكَّىٰ",
+      "transliteration": "yatazakka",
+      "gloss": "purifies himself (editorial gloss)",
+      "keys": [
+        "92:18"
+      ]
+    },
+    {
+      "term": "وَجۡهِ",
+      "transliteration": "wajh rabbih",
+      "gloss": "countenance of his Lord (editorial gloss)",
+      "keys": [
+        "92:20"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1963"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the wealth-futility question at the point of falling (11) before the guidance-incumbency declaration opens (12); P2 ends with the righteous avoidance statement (17) before the purification-giving description begins (18); P3 runs through the four-verse portrait of sincere giving culminating in satisfaction (18-21).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T23:25:00.000Z"
+}
