@@ -55,6 +55,127 @@ const PASSAGES = [
     mainLabel: "Nuh narrative establishing trust-in-Allah and flood-as-sign paradigm; Musa-Firawn confrontation with magician conversion and delayed-belief futility; maternal protection narrative demonstrating divine providence; Yunus exception proving timely belief efficacy; universal compulsion impossibility preserving free will; closing tawakkul with divine judgment supremacy; individual responsibility principle; final patience command awaiting divine verdict" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-010-p1": [
+    "Opening declaration identifying the revealed verses as belonging to the wise Book",
+    "Objection to revelation through a human messenger and the accusation of sorcery against his warning and glad tidings",
+    "Divine lordship grounded in creation, Throne establishment, cosmic administration, and worship owed to Allah alone",
+    "Universal return and renewed creation for just recompense of believers and punishment of disbelievers",
+    "Solar radiance, lunar light, and appointed lunar phases enabling knowledge of years and calculation",
+    "Alternation of night and day together with created things as signs for people who possess taqwa",
+    "Worldly satisfaction and heedlessness characterizing those who do not expect the divine meeting",
+    "Fire assigned as the abode earned by worldly complacency and neglect of divine signs",
+    "Faith-guided believers entering gardens of delight with rivers flowing beneath them",
+    "Paradisal glorification, peace greeting, and concluding praise of the Lord of the worlds",
+    "Divine restraint from answering evil invocations immediately so that transgressors remain within their allotted term",
+    "Supplication during affliction followed by forgetfulness after relief, exposing the transgressor's inconsistent conduct",
+    "Earlier generations destroyed after wrongdoing despite messengers bringing clear proofs",
+    "Successive communities placed on earth as a test of how they will act",
+    "Demand to replace or alter the Quran answered by the Prophet's exclusive submission to revelation",
+    "The Prophet's prior lifetime among his people used as evidence that revelation depends on divine will rather than personal invention",
+    "Fabricating falsehood about Allah or denying His signs identified as unsurpassed injustice leading to failure",
+    "Powerless objects worshipped as intercessors and the claim exposed as attributing unknown partners to Allah",
+    "Original human unity followed by religious divergence, with immediate judgment deferred by a prior divine decree",
+    "Demand for a requested sign answered by assigning the unseen to Allah and awaiting His decision"
+  ],
+  "ext-010-p2": [
+    "Mercy after hardship met with plotting against divine verses while angelic scribes record the scheme",
+    "Land and sea travel turning from favorable winds to encircling waves and sincere vows of gratitude",
+    "Rescue followed by unjust aggression, with wrongdoing shown to harm its perpetrators before their return to Allah",
+    "Worldly life compared to flourishing vegetation suddenly stripped bare after its owners presume control",
+    "Invitation to the Home of Peace joined with guidance to a straight path for whom Allah wills",
+    "Excellence rewarded with the best outcome and an increase, free from facial darkness or humiliation",
+    "Evil recompensed only by its equivalent while humiliation and darkness mark the companions of the Fire",
+    "Associators and their supposed partners separated at the gathering, with the partners disowning the worship directed toward them",
+    "Allah invoked as sufficient witness to the alleged partners' unawareness of their worshippers' devotion",
+    "Each soul confronting its prior deeds upon return to Allah while invented supports disappear",
+    "Questions about provision, sensory faculties, life from death, and cosmic management eliciting acknowledgement of Allah",
+    "Acknowledged divine lordship pressed into the conclusion that turning from truth leads only into error",
+    "The divine word taking effect upon defiant disobedients who persist in unbelief",
+    "Challenge asking whether alleged partners can originate and repeat creation, answered by Allah's exclusive power",
+    "Guidance to truth distinguished from dependence on being guided, establishing who deserves to be followed",
+    "Mere conjecture rejected as a substitute for truth while Allah knows what people do",
+    "Quranic origin defended as confirmation and detailed explanation of earlier Scripture from the Lord of the worlds",
+    "Accusation of prophetic fabrication answered by a challenge to produce one comparable surah with any available helpers",
+    "Denial without encompassing knowledge or awaiting interpretation linked to the ruin of earlier wrongdoers",
+    "Divided response to the Quran with Allah described as most knowing of the corrupters",
+    "Persistent denial answered by mutual disassociation of deeds and responsibility",
+    "Physical listening without rational receptivity compared to deafness that the Prophet cannot overcome",
+    "Physical looking without insight compared to blindness that the Prophet cannot guide",
+    "Divine justice affirmed by locating wrongful harm in human self-injury rather than in Allah's treatment of people",
+    "Worldly duration reduced to a brief hour at the gathering, exposing the loss of those who denied the meeting"
+  ],
+  "ext-010-p3": [
+    "Whether the Prophet sees part of the threatened outcome or dies first, accountability remains with Allah as witness",
+    "Every nation receiving a messenger before judgment is passed with justice and without wrong",
+    "Skeptical demand for the timing of the promised punishment",
+    "Prophetic inability to control personal harm or benefit joined to the fixed term of every nation",
+    "Rhetorical exposure of criminals who hasten a punishment that may arrive unexpectedly by night or day",
+    "Belief offered only after punishment occurs rebuked as belated acceptance of what was previously mocked",
+    "Wrongdoers commanded to taste lasting punishment as recompense for their own earnings",
+    "Question about the promise's truth answered by an oath affirming its certainty and human inability to frustrate it",
+    "Earthly possessions imagined as ransom while concealed regret and just judgment accompany the sight of punishment",
+    "Universal ownership and the truth of Allah's promise contrasted with widespread ignorance",
+    "Life-giving and death-causing power paired with the return of all people to Allah",
+    "Revelation addressed to humanity as admonition, inward healing, guidance, and mercy for believers",
+    "Divine bounty and mercy presented as the proper object of rejoicing above accumulated wealth",
+    "Human classification of provision as lawful or unlawful challenged for lacking divine authorization",
+    "Inventors of religious falsehood confronted about Resurrection Day while divine bounty meets general ingratitude",
+    "Every activity and recitation witnessed by Allah with even subatomic details recorded in a clear register",
+    "Allies of Allah declared secure from fear and grief",
+    "Faith and sustained taqwa defining the allies who receive divine security",
+    "Good tidings in this life and the Hereafter guaranteed by unchanging divine words as the great attainment",
+    "Consolation against hostile speech through Allah's complete ownership of honor and His hearing and knowledge",
+    "Ownership of all beings refutes supposed partners whose invocation rests on conjecture and fabrication",
+    "Night made for rest and daylight for visibility as signs for people who listen",
+    "Claim that Allah has a son rejected through His self-sufficiency, universal ownership, and the claimants' lack of authority",
+    "Those who fabricate falsehood about Allah declared unable to attain success",
+    "Brief worldly enjoyment followed by return and severe punishment for persistent disbelief"
+  ],
+  "ext-010-p4": [
+    "Nuh declaring reliance on Allah and challenging his opponents to execute their united plan without respite",
+    "Nuh disclaiming any demanded payment and affirming that his reward rests with Allah under the command to submit",
+    "Nuh and his companions saved in the ship and made successors while the deniers are drowned",
+    "Later messengers rejected because of prior denial, with transgressors' hearts sealed against clear proofs",
+    "Musa and Harun sent to Pharaoh and his elite with divine signs met by arrogance and criminality",
+    "Truth arriving from Allah dismissed by Pharaoh's circle as obvious magic",
+    "Musa rebuking the magic accusation and declaring that magicians will not succeed",
+    "Pharaoh's circle accusing Musa and Harun of overturning ancestral tradition to gain authority in the land",
+    "Pharaoh summoning every learned magician to confront Musa",
+    "Musa inviting the assembled magicians to cast whatever they intend to cast",
+    "Musa identifying the magicians' display as mere sorcery that Allah will nullify because He does not prosper corrupters",
+    "Allah establishing truth by His words despite the criminals' aversion",
+    "Only a vulnerable youth group believing Musa under fear of Pharaoh's persecution and elite tyranny",
+    "Musa calling believers who submit to place their reliance upon Allah",
+    "Believers professing reliance and praying not to become a trial for wrongdoing people",
+    "Continuation of the believers' plea for merciful deliverance from the disbelieving people",
+    "Musa and his brother instructed to settle their people in Egyptian houses oriented for worship, establish prayer, and give glad tidings",
+    "Musa praying against Pharaoh's misleading splendor and wealth, asking for their obliteration and hardened hearts until painful punishment",
+    "Divine acceptance of the supplication accompanied by commands to remain upright and avoid the path of the ignorant",
+    "Israel's sea crossing and Pharaoh's pursuit ending in a drowning confession of faith",
+    "Pharaoh's last-moment belief rebuked because of his prior disobedience and corruption",
+    "Pharaoh's body preserved as a sign for later generations despite widespread heedlessness",
+    "Israel settled honorably and provided good things yet dividing after knowledge arrives, with final judgment deferred to Resurrection",
+    "Any doubt about revelation directed toward readers of earlier Scripture and prohibited membership among doubters",
+    "Prohibition against joining those who deny divine signs and thereby become losers",
+    "Those against whom the divine word has taken effect declared unwilling to believe",
+    "Even every possible sign failing to produce belief before the painful punishment is seen",
+    "People of Yunus uniquely benefiting from timely communal faith through removal of disgrace and continued worldly provision",
+    "Universal belief left to divine will rather than prophetic compulsion of people",
+    "Faith conditioned on divine permission while defilement is placed upon those who refuse reasoning",
+    "Observation of heavens and earth commanded while signs and warnings remain ineffective for determined unbelievers",
+    "Rejecters warned to expect days like those of earlier destroyed peoples and told to wait alongside the Prophet",
+    "Deliverance of messengers and believers established as a binding divine commitment",
+    "Prophet declaring exclusive worship of Allah who causes death and refusing the objects of popular worship",
+    "Command to direct oneself sincerely toward the religion and never join the associators",
+    "Prohibition against invoking powerless beings besides Allah, with such invocation classified as wrongdoing",
+    "Exclusive divine control over removal of harm and delivery of bounty, joined to forgiveness and mercy",
+    "Truth's arrival making guidance beneficial to the guided soul and error harmful to the erring soul, with the Prophet disclaiming guardianship",
+    "Final command to follow revelation and remain patient until Allah judges as the best of judges"
+  ]
+};
+
 // Build extractions
 const extractions = [];
 for (const p of PASSAGES) {
@@ -63,15 +184,16 @@ for (const p of PASSAGES) {
 
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
 
-  // Subordinate subjects from actual verse content
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`10:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  // Subordinate subjects use per-ayah editorial descriptions, never translation text.
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`10:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
 
   const ext = {
     extractionId: p.id,
