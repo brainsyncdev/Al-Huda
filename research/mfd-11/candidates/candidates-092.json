@@ -1,387 +1,439 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:00:00.000Z",
-  "sourceExtraction": "ext-068-p1,ext-068-p2",
+  "generatedAt": "2026-11-20T19:25:00.000Z",
+  "sourceExtraction": "ext-068-p1,ext-068-p2,ext-068-p3,ext-068-p4",
   "candidates": [
     {
-      "candidateId": "cand-1997",
-      "label": "cand-1997: Topic from 68:1",
-      "definition": "In 68:1: Nun. By the pen and what they inscribe",
+      "candidateId": "cand-1801",
+      "label": "Pen-oath grounding prophetic sanity and great moral character",
+      "definition": "In 68:1-4: Nun; by the pen and what they inscribe; you are not O Muhammad by the favor of your Lord a madman; and indeed for you is a reward uninterrupted; and indeed you are of a great moral character.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "68:1",
           "excerpt": "نٓۚ وَٱلۡقَلَمِ وَمَا يَسۡطُرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1998",
-      "label": "cand-1998: Topic from 68:3",
-      "definition": "In 68:3: And indeed, for you is a reward uninterrupted",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:2",
+          "excerpt": "مَآ أَنتَ بِنِعۡمَةِ رَبِّكَ بِمَجۡنُونٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:3",
           "excerpt": "وَإِنَّ لَكَ لَأَجۡرًا غَيۡرَ مَمۡنُونٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:4",
+          "excerpt": "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qalam oath vindicating rasul."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khuluq azim affirmed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1999",
-      "label": "cand-1999: Topic from 68:6",
-      "definition": "In 68:6: Which of you is the afflicted [by a devil]",
+      "candidateId": "cand-1802",
+      "label": "Detailed denier profile: swearer, scorner, gossip, preventer of good, cruel pretender",
+      "definition": "In 68:10-15: And do not obey every worthless habitual swearer, scorner going about with malicious gossip, a preventer of good transgressing and sinful, cruel moreover and an illegitimate pretender, because he is a possessor of wealth and children; when Our verses are recited to him he says legends of the former peoples.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "68:6",
-          "excerpt": "بِأَييِّكُمُ ٱلۡمَفۡتُونُ",
+          "key": "68:10",
+          "excerpt": "وَلَا تُطِعۡ كُلَّ حَلَّافٖ مَّهِينٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2000",
-      "label": "cand-2000: Topic from 68:8",
-      "definition": "In 68:8: Then do not obey the deniers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "68:8",
-          "excerpt": "فَلَا تُطِعِ ٱلۡمُكَذِّبِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2001",
-      "label": "cand-2001: Topic from 68:11",
-      "definition": "In 68:11: [And] scorner, going about with malicious gossip",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:11",
           "excerpt": "هَمَّازٖ مَّشَّآءِۭ بِنَمِيمٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2002",
-      "label": "cand-2002: Topic from 68:13",
-      "definition": "In 68:13: Cruel, moreover, and an illegitimate pretender",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:12",
+          "excerpt": "مَّنَّاعٖ لِّلۡخَيۡرِ مُعۡتَدٍ أَثِيمٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:13",
           "excerpt": "عُتُلِّۭ بَعۡدَ ذَٰلِكَ زَنِيمٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:14",
+          "excerpt": "أَن كَانَ ذَا مَالٖ وَبَنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:15",
+          "excerpt": "إِذَا تُتۡلَىٰ عَلَيۡهِ ءَايَٰتُنَا قَالَ أَسَٰطِيرُ ٱلۡأَوَّلِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Anti-virtue catalogue."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wealth enabling denial."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2003",
-      "label": "cand-2003: Topic from 68:16",
-      "definition": "In 68:16: We will brand him upon the snout",
+      "candidateId": "cand-1803",
+      "label": "Snout-branding as divine answer to arrogant dismissal of revelation",
+      "definition": "In 68:16: We will brand him upon the snout.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "68:16",
           "excerpt": "سَنَسِمُهُۥ عَلَى ٱلۡخُرۡطُومِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sasm as humiliation mark."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Physical consequence for verbal arrogance."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2004",
-      "label": "cand-2004: Topic from 68:18",
-      "definition": "In 68:18: Without making exception",
+      "candidateId": "cand-1804",
+      "label": "Garden-companions trial: oath without exception producing overnight destruction",
+      "definition": "In 68:17-20: Indeed We have tried them as We tried the companions of the garden when they swore to cut its fruit in the early morning without making exception; so there came upon the garden an affliction from your Lord while they were asleep and it became as though reaped.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "68:17",
+          "excerpt": "إِنَّا بَلَوۡنَٰهُمۡ كَمَا بَلَوۡنَآ أَصۡحَٰبَ ٱلۡجَنَّةِ إِذۡ أَقۡسَمُواْ لَيَصۡرِمُنَّهَا مُصۡبِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:18",
           "excerpt": "وَلَا يَسۡتَثۡنُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:19",
+          "excerpt": "فَطَافَ عَلَيۡهَا طَآئِفٞ مِّن رَّبِّكَ وَهُمۡ نَآئِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:20",
+          "excerpt": "فَأَصۡبَحَتۡ كَٱلصَّرِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Bala' as agricultural trial."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Istithna' omission punished."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2005",
-      "label": "cand-2005: Topic from 68:21",
-      "definition": "In 68:21: And they called one another at morning",
+      "candidateId": "cand-1805",
+      "label": "Exclusion of the poor answered by total deprivation and collective repentance",
+      "definition": "In 68:24-32: Saying there will surely not enter it today upon you any poor person; and they went early in determination assuming themselves able; but when they saw it they said indeed we are lost, rather we have been deprived; the most moderate said did I not say to you why do you not exalt Allah; they said exalted is our Lord indeed we were wrongdoers; then they approached one another blaming each other; they said O woe to us indeed we were transgressors; perhaps our Lord will substitute for us one better than it indeed we are toward our Lord desirous.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "68:21",
-          "excerpt": "فَتَنَادَوۡاْ مُصۡبِحِينَ",
+          "key": "68:24",
+          "excerpt": "أَن لَّا يَدۡخُلَنَّهَا ٱلۡيَوۡمَ عَلَيۡكُم مِّسۡكِينٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2006",
-      "label": "cand-2006: Topic from 68:23",
-      "definition": "In 68:23: So they set out, while lowering their voices",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "68:23",
-          "excerpt": "فَٱنطَلَقُواْ وَهُمۡ يَتَخَٰفَتُونَ",
+          "key": "68:25",
+          "excerpt": "وَغَدَوۡاْ عَلَىٰ حَرۡدٖ قَٰدِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2007",
-      "label": "cand-2007: Topic from 68:27",
-      "definition": "In 68:27: Rather, we have been deprived",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:26",
+          "excerpt": "فَلَمَّا رَأَوۡهَا قَالُوٓاْ إِنَّا لَضَآلُّونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:27",
           "excerpt": "بَلۡ نَحۡنُ مَحۡرُومُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2008",
-      "label": "cand-2008: Topic from 68:29",
-      "definition": "In 68:29: They said, \"Exalted is our Lord! Indeed, we were wrongdoers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:28",
+          "excerpt": "قَالَ أَوۡسَطُهُمۡ أَلَمۡ أَقُل لَّكُمۡ لَوۡلَا تُسَبِّحُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:29",
           "excerpt": "قَالُواْ سُبۡحَٰنَ رَبِّنَآ إِنَّا كُنَّا ظَٰلِمِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2009",
-      "label": "cand-2009: Topic from 68:32",
-      "definition": "In 68:32: Perhaps our Lord will substitute for us [one] better than it. Indeed, we are toward our Lord desirous",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:30",
+          "excerpt": "فَأَقۡبَلَ بَعۡضُهُمۡ عَلَىٰ بَعۡضٖ يَتَلَٰوَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:31",
+          "excerpt": "قَالُواْ يَٰوَيۡلَنَآ إِنَّا كُنَّا طَٰغِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:32",
           "excerpt": "عَسَىٰ رَبُّنَآ أَن يُبۡدِلَنَا خَيۡرٗا مِّنۡهَآ إِنَّآ إِلَىٰ رَبِّنَا رَٰغِبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2010",
-      "label": "cand-2010: Topic from 68:34",
-      "definition": "In 68:34: Indeed, for the righteous with their Lord are the Gardens of Pleasure",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "68:34",
-          "excerpt": "إِنَّ لِلۡمُتَّقِينَ عِندَ رَبِّهِمۡ جَنَّـٰتِ ٱلنَّعِيمِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2011",
-      "label": "cand-2011: Topic from 68:37",
-      "definition": "In 68:37: Or do you have a scripture in which you learn",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Poor excluded then all lost."
+        },
         {
-          "key": "68:37",
-          "excerpt": "أَمۡ لَكُمۡ كِتَٰبٞ فِيهِ تَدۡرُسُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Collective tawbah pattern."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2012",
-      "label": "cand-2012: Topic from 68:39",
-      "definition": "In 68:39: Or do you have oaths [binding] upon Us, extending until the Day of Resurrection, that indeed for you is whatever you judge",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "68:39",
-          "excerpt": "أَمۡ لَكُمۡ أَيۡمَٰنٌ عَلَيۡنَا بَٰلِغَةٌ إِلَىٰ يَوۡمِ ٱلۡقِيَٰمَةِ إِنَّ لَكُمۡ لَمَا تَحۡكُمُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2013",
-      "label": "cand-2013: Topic from 68:42",
-      "definition": "In 68:42: The Day the shin will be uncovered and they are invited to prostration but the disbelievers will not be able",
+      "candidateId": "cand-1806",
+      "label": "Shin uncovered with impossible prostation for those who refused when sound",
+      "definition": "In 68:42-43: The Day the shin will be uncovered and they are invited to prostration but the disbelievers will not be able; their eyes humbled humiliation will cover them and they used to be invited to prostration while they were sound.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "68:42",
           "excerpt": "يَوۡمَ يُكۡشَفُ عَن سَاقٖ وَيُدۡعَوۡنَ إِلَى ٱلسُّجُودِ فَلَا يَسۡتَطِيعُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:43",
+          "excerpt": "خَٰشِعَةً أَبۡصَٰرُهُمۡ تَرۡهَقُهُمۡ ذِلَّةٞۖ وَقَدۡ كَانُواْ يُدۡعَوۡنَ إِلَى ٱلسُّجُودِ وَهُمۡ سَٰلِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kashf an saq imagery."
+        },
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sujud refused then impossible."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2014",
-      "label": "cand-2014: Topic from 68:44",
-      "definition": "In 68:44: So leave Me, [O Muhammad], with [the matter of] whoever denies the Qur'an. We will progressively lead them [to punishment] from where they do not know",
+      "candidateId": "cand-1807",
+      "label": "Progressive divine leading from unknown directions during granted respite",
+      "definition": "In 68:44-45: So leave Me O Muhammad with whoever denies the Quran; We will progressively lead them to punishment from where they do not know; and I will give them time indeed My plan is firm.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "68:44",
           "excerpt": "فَذَرۡنِي وَمَن يُكَذِّبُ بِهَٰذَا ٱلۡحَدِيثِۖ سَنَسۡتَدۡرِجُهُم مِّنۡ حَيۡثُ لَا يَعۡلَمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:45",
+          "excerpt": "وَأُمۡلِي لَهُمۡۚ إِنَّ كَيۡدِي مَتِينٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Istidraj as gradual punishment."
+        },
+        {
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kayd Allah confirmed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2015",
-      "label": "cand-2015: Topic from 68:47",
-      "definition": "In 68:47: Or have they [knowledge of] the unseen, so they write [it] down",
+      "candidateId": "cand-1808",
+      "label": "Yunus's distress and rescue as patience model for the Prophet",
+      "definition": "In 68:48-50: Then be patient for the decision of your Lord O Muhammad and be not like the companion of the fish when he called out while he was distressed; if not that a favor from his Lord overtook him he would have been thrown onto the naked shore while he was censured; and his Lord chose him and made him of the righteous.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "68:47",
-          "excerpt": "أَمۡ عِندَهُمُ ٱلۡغَيۡبُ فَهُمۡ يَكۡتُبُونَ",
+          "key": "68:48",
+          "excerpt": "فَٱصۡبِرۡ لِحُكۡمِ رَبِّكَ وَلَا تَكُن كَصَاحِبِ ٱلۡحُوتِ إِذۡ نَادَىٰ وَهُوَ مَكۡظُومٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2016",
-      "label": "cand-2016: Topic from 68:49",
-      "definition": "In 68:49: If not that a favor from his Lord overtook him, he would have been thrown onto the naked shore while he was censured",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "68:49",
           "excerpt": "لَّوۡلَآ أَن تَدَٰرَكَهُۥ نِعۡمَةٞ مِّن رَّبِّهِۦ لَنُبِذَ بِٱلۡعَرَآءِ وَهُوَ مَذۡمُومٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:50",
+          "excerpt": "فَٱجۡتَبَٰهُ رَبُّهُۥ فَجَعَلَهُۥ مِنَ ٱلصَّـٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "yunus-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dhu'l-nun as sabr precedent."
+        },
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabr li-hukm rabbika commanded."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:00:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1809",
+      "label": "Quran named a reminder to the worlds against charges of madness",
+      "definition": "In 68:51-52: And indeed those who disbelieve would almost make you slip with their eyes when they hear the message and they say indeed he is mad; but it is not except a reminder to the worlds.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "68:51",
+          "excerpt": "وَإِن يَكَادُ ٱلَّذِينَ كَفَرُواْ لَيُزۡلِقُونَكَ بِأَبۡصَٰرِهِمۡ لَمَّا سَمِعُواْ ٱلذِّكۡرَ وَيَقُولُونَ إِنَّهُۥ لَمَجۡنُونٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "68:52",
+          "excerpt": "وَمَا هُوَ إِلَّا ذِكۡرٞ لِّلۡعَٰلَمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dhikr li'l-alamin defined."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Lamz bi'l-ayn exposed."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T19:25:00.000Z",
+      "notes": "Wave 10 genuine re-extraction candidate."
     }
   ]
 }
