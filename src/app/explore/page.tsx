@@ -1,7 +1,11 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { AlertTriangle, BookMarked, Compass, GraduationCap, Search } from "lucide-react";
-import { getAllDimensions } from "@/lib/explore/dimensions";
+import {
+  getCanonicalDimensions,
+  getCanonicalDomains,
+  getDimensionsForDomain,
+} from "@/lib/taxonomy/canonical-adapter";
 import { TOPICS } from "@/lib/topics/data";
 import { DOMAINS } from "@/lib/taxonomy/domains";
 import {
@@ -15,16 +19,21 @@ import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/seo/json-ld";
 
 export const metadata: Metadata = {
-  title: "Explore — 15 Dimensions of the Quran",
+  title: "Explore — Dimensions of the Quran",
   description:
-    "Discover the Quran through 15 life dimensions. Each dimension connects to curated topics and search.",
+    "Discover the Quran through life dimensions organized by domain. Each dimension connects to curated topics and search.",
   alternates: { canonical: absoluteUrl("/explore") },
 };
 
 export default function ExplorePage() {
-  const dimensions = getAllDimensions();
-  const withTopics = dimensions.filter((d) => d.topicSlugs.length > 0);
-  const withoutTopics = dimensions.filter((d) => d.topicSlugs.length === 0);
+  const allDimensions = getCanonicalDimensions();
+  const domains = getCanonicalDomains();
+
+  // Group dimensions by their parent domain
+  const dimensionsByDomain = domains.map((domain) => ({
+    domain,
+    dimensions: getDimensionsForDomain(domain.id),
+  })).filter((group) => group.dimensions.length > 0);
 
   return (
     <div className="space-y-10 pb-8">
@@ -33,9 +42,9 @@ export default function ExplorePage() {
           {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            name: "Explore — 15 Dimensions of the Quran",
+            name: "Explore — Dimensions of the Quran",
             description:
-              "Discover the Quran through 15 life dimensions, each connecting to curated topics and search.",
+              "Discover the Quran through life dimensions organized by domain, each connecting to curated topics and search.",
             url: absoluteUrl("/explore"),
             inLanguage: ["en", "ar"],
           },
@@ -50,9 +59,9 @@ export default function ExplorePage() {
           </h1>
         </div>
         <p className="max-w-2xl text-lg text-muted-foreground">
-          Discover the Quran through 15 life dimensions. Each dimension connects
-          to curated topics and search, offering entry points for reflection and
-          study.
+          Discover the Quran through {allDimensions.length} dimensions across{" "}
+          {domains.length} domains. Each dimension connects to curated topics
+          and search, offering entry points for reflection and study.
         </p>
 
         <div className="rounded-2xl border border-gold/30 bg-gold-soft/60 p-4 text-sm text-accent-foreground">
@@ -146,61 +155,84 @@ export default function ExplorePage() {
         </div>
       </section>
 
-      <section aria-labelledby="dimensions-heading" className="space-y-6">
-        <h2
-          id="dimensions-heading"
-          className="font-display text-2xl font-semibold tracking-tight"
-        >
-          15 Dimensions
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {dimensions.map((dim) => (
-            <Link
-              key={dim.id}
-              href={`/explore/dimension/${dim.id}`}
-              className="group rounded-2xl border border-border/80 bg-card p-5 transition-colors hover:border-primary/30 hover:bg-secondary/40"
-            >
-              <div className="flex items-start justify-between gap-3">
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-primary text-xs font-semibold">
-                      {dim.number}
-                    </span>
-                    <h3 className="font-display text-lg font-semibold tracking-tight group-hover:text-primary transition-colors">
-                      {dim.title}
-                    </h3>
-                  </div>
-                  <p
-                    className="arabic-display text-xl text-gold mb-2"
-                    lang="ar"
-                    dir="rtl"
+      {/* Dimensions grouped by domain */}
+      <section aria-labelledby="dimensions-heading" className="space-y-8">
+        <div>
+          <h2
+            id="dimensions-heading"
+            className="font-display text-2xl font-semibold tracking-tight"
+          >
+            {allDimensions.length} Dimensions
+          </h2>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Organized across {domains.length} domains. Select a dimension to explore its topics and subdimensions.
+          </p>
+        </div>
+
+        <div className="space-y-10">
+          {dimensionsByDomain.map(({ domain, dimensions }) => (
+            <div key={domain.id} className="space-y-4">
+              <div className="flex items-center gap-3 border-b border-border/50 pb-2">
+                <BookMarked className="h-5 w-5 text-primary" aria-hidden />
+                <h3 className="font-display text-xl font-semibold tracking-tight">
+                  {domain.title}
+                </h3>
+                <span className="rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground">
+                  {dimensions.length} dimension{dimensions.length === 1 ? "" : "s"}
+                </span>
+              </div>
+              {domain.description && (
+                <p className="text-sm text-muted-foreground max-w-3xl">
+                  {domain.description}
+                </p>
+              )}
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {dimensions.map((dim) => (
+                  <Link
+                    key={dim.id}
+                    href={`/explore/dimensions/${dim.id}`}
+                    className="group rounded-2xl border border-border/80 bg-card p-5 transition-colors hover:border-primary/30 hover:bg-secondary/40"
                   >
-                    {dim.arabicTitle}
-                  </p>
-                  <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground mb-1">
-                    Covers
-                  </p>
-                  <p className="text-sm text-muted-foreground line-clamp-2">
-                    {dim.covers}
-                  </p>
-                </div>
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex-1 min-w-0">
+                        <h4 className="font-display text-lg font-semibold tracking-tight group-hover:text-primary transition-colors">
+                          {dim.title}
+                        </h4>
+                        {dim.arabicTitle && (
+                          <p
+                            className="arabic-display text-xl text-gold mt-1 mb-2"
+                            lang="ar"
+                            dir="rtl"
+                          >
+                            {dim.arabicTitle}
+                          </p>
+                        )}
+                        <p className="text-sm text-muted-foreground line-clamp-2">
+                          {dim.description}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mt-4 flex items-center justify-between text-xs">
+                      <span className="text-muted-foreground">
+                        {dim.topicIds.length > 0
+                          ? `${dim.topicIds.length} topic${dim.topicIds.length === 1 ? "" : "s"}`
+                          : dim.subdimensionIds.length > 0
+                            ? `${dim.subdimensionIds.length} subdimension${dim.subdimensionIds.length === 1 ? "" : "s"}`
+                            : "No mapped topics yet"}
+                      </span>
+                      <span className="text-primary font-medium group-hover:underline">
+                        Explore →
+                      </span>
+                    </div>
+                  </Link>
+                ))}
               </div>
-              <div className="mt-4 flex items-center justify-between text-xs">
-                <span className="text-muted-foreground">
-                  {dim.topicSlugs.length > 0
-                    ? `${dim.topicSlugs.length} curated topic${dim.topicSlugs.length === 1 ? "" : "s"}`
-                    : "No curated topics yet"}
-                </span>
-                <span className="text-primary font-medium group-hover:underline">
-                  Explore →
-                </span>
-              </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
 
-      {withTopics.length > 0 && (
+      {TOPICS.length > 0 && (
         <section
           aria-labelledby="curated-start-heading"
           className="space-y-4"
@@ -259,8 +291,7 @@ export default function ExplorePage() {
           creation, revelation, human experience, interfaith, language,
           law, and eschatology. This is an organizational catalog, not an
           approved taxonomy; no topic or passage has been assigned yet.
-          Domains are different from dimensions: domains organize broad
-          subject areas for future work, while the 15 dimensions above
+          Domains organize broad subject areas, while the {allDimensions.length} dimensions above
           are the active navigation system.
         </p>
         <Link
@@ -286,7 +317,7 @@ export default function ExplorePage() {
           </h2>
         </div>
         <p className="text-sm text-muted-foreground mb-4">
-          See how the fifteen dimensions connect to curated topics, and how topics
+          See how the {allDimensions.length} dimensions connect to curated topics, and how topics
           relate to each other. Every node and edge carries its editorial
           review status.
         </p>
@@ -324,16 +355,6 @@ export default function ExplorePage() {
           Open search
         </Link>
       </section>
-
-      {withoutTopics.length > 0 && (
-        <aside className="rounded-2xl border border-border/80 bg-muted/30 p-5 text-sm text-muted-foreground">
-          <p>
-            Some dimensions ({withoutTopics.map((d) => d.title).join(", ")}) do
-            not yet have curated topic mappings. You can still explore them
-            through search using the suggested terms on each dimension page.
-          </p>
-        </aside>
-      )}
     </div>
   );
 }
