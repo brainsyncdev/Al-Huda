@@ -1,0 +1,147 @@
+{
+  "extractionId": "ext-051-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 51,
+  "surahName": "Adh-Dhariyat",
+  "passage": {
+    "fromAyah": 56,
+    "toAyah": 60,
+    "label": "Did not create jinn mankind except worship Me; do not want provision nor want feed Me; indeed Allah continual Provider firm possessor strength; indeed wronged portion punishment like portion predecessors let not impatiently urge Me; woe disbelieved Day promised"
+  },
+  "verseKeys": [
+    "51:56",
+    "51:57",
+    "51:58",
+    "51:59",
+    "51:60"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "51:56",
+      "text": "وَمَا خَلَقۡتُ ٱلۡجِنَّ وَٱلۡإِنسَ إِلَّا لِيَعۡبُدُونِ"
+    },
+    {
+      "key": "51:57",
+      "text": "مَآ أُرِيدُ مِنۡهُم مِّن رِّزۡقٖ وَمَآ أُرِيدُ أَن يُطۡعِمُونِ"
+    },
+    {
+      "key": "51:58",
+      "text": "إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلۡقُوَّةِ ٱلۡمَتِينُ"
+    },
+    {
+      "key": "51:59",
+      "text": "فَإِنَّ لِلَّذِينَ ظَلَمُواْ ذَنُوبٗا مِّثۡلَ ذَنُوبِ أَصۡحَٰبِهِمۡ فَلَا يَسۡتَعۡجِلُونِ"
+    },
+    {
+      "key": "51:60",
+      "text": "فَوَيۡلٞ لِّلَّذِينَ كَفَرُواْ مِن يَوۡمِهِمُ ٱلَّذِي يُوعَدُونَ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Jinn and mankind created solely to worship Allah, who needs no provision from them nor feeding; He alone is the continual Provider and firm possessor of strength; wrongdoers assured a portion of punishment like their predecessors', told not to impatiently urge its arrival; woe pronounced on disbelievers from the Day they are promised",
+    "keys": [
+      "51:56",
+      "51:57",
+      "51:58",
+      "51:59",
+      "51:60"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Jinn and mankind created solely to worship Allah",
+      "keys": [
+        "51:56"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "He needs no provision from them nor does He want them to feed Him",
+      "keys": [
+        "51:57"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Allah alone is the continual Provider and firm possessor of strength",
+      "keys": [
+        "51:58"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Wrongdoers assured a portion like their predecessors' and told not to impatiently urge its arrival",
+      "keys": [
+        "51:59"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Woe pronounced on disbelievers from the Day they are promised",
+      "keys": [
+        "51:60"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱلرَّزَّاقُ",
+      "transliteration": "Razzaq",
+      "gloss": "Continual Provider (editorial gloss)",
+      "keys": [
+        "51:58"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Woe pronounced on disbelievers from the Day they are promised",
+      "keys": [
+        "51:60"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Jinn and mankind created solely for worship, with Allah needing no provision or feeding from them",
+      "keys": [
+        "51:56",
+        "51:57"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Wrongdoers assured a portion like their predecessors' and told not to impatiently urge it",
+      "keys": [
+        "51:59"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "لِيَعۡبُدُونِ",
+      "transliteration": "li-ya'budun",
+      "gloss": "to worship Me (editorial gloss)",
+      "keys": [
+        "51:56"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1629",
+    "cand-1630",
+    "cand-1631"
+  ],
+  "notes": "Wave 8 genuine re-extraction. Boundaries follow the text: P1 closes with the Lord-of-heaven-and-earth oath (23) before the Abraham-guests narrative opens (24); P2 ends with Noah's people as defiantly disobedient (46) before the cosmic-signs block begins (47); P3 runs from heaven-construction through the reminder-benefits-believers close (47-55); P4 covers the worship-purpose declaration through the closing woe (56-60).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T16:40:00.000Z"
+}
