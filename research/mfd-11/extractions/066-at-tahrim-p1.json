@@ -6,16 +6,15 @@
   "surahName": "At-Tahrim",
   "passage": {
     "fromAyah": 1,
-    "toAyah": 6,
-    "label": "At-Tahrim 66:1-6"
+    "toAyah": 5,
+    "label": "O Prophet why prohibit what Allah made lawful seeking approval wives Allah Forgiving Merciful; Allah ordained dissolution oaths Allah protector Knowing Wise; when Prophet confided wife statement she informed another Allah showed him made known part ignored part informed her said who told you said informed Knowing Acquainted; if two repent Allah best hearts deviated cooperate against him indeed Allah protector Gabriel righteous believers angels assistants; perhaps Lord if divorced substitute wives better submitting believing devoutly obedient repentant worshipping traveling previously married virgins"
   },
   "verseKeys": [
     "66:1",
     "66:2",
     "66:3",
     "66:4",
-    "66:5",
-    "66:6"
+    "66:5"
   ],
   "arabicExcerpts": [
     {
@@ -37,89 +36,183 @@
     {
       "key": "66:5",
       "text": "عَسَىٰ رَبُّهُۥٓ إِن طَلَّقَكُنَّ أَن يُبۡدِلَهُۥٓ أَزۡوَٰجًا خَيۡرٗا مِّنكُنَّ مُسۡلِمَٰتٖ مُّؤۡمِنَٰتٖ قَٰنِتَٰتٖ تَـٰٓئِبَٰتٍ عَٰبِدَٰتٖ سَـٰٓئِحَٰتٖ ثَيِّبَٰتٖ وَأَبۡكَارٗا"
-    },
-    {
-      "key": "66:6",
-      "text": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ قُوٓاْ أَنفُسَكُمۡ وَأَهۡلِيكُمۡ نَارٗا وَقُودُهَا ٱلنَّاسُ وَٱلۡحِجَارَةُ عَلَيۡهَا مَلَـٰٓئِكَةٌ غِلَاظٞ شِدَادٞ لَّا يَعۡصُونَ ٱللَّهَ مَآ أَمَرَهُمۡ وَيَفۡعَلُونَ مَا يُؤۡمَرُونَ"
     }
   ],
   "mainSubject": {
-    "label": "At-Tahrim 66:1-6",
+    "label": "The Prophet questioned for prohibiting what Allah made lawful in seeking his wives' approval, under forgiveness and mercy; oath-dissolution already ordained by Allah as protector, Knowing and Wise; the confidential statement disclosed by one wife to another, shown to him by Allah so he made part known and ignored part, identifying the source as the Knowing and Acquainted; both wives called to repentance since their hearts had deviated, warned that cooperating against him would meet Allah as protector alongside Gabriel, righteous believers and angels as assistants; the possibility raised that divorce would bring better wives — submissive, believing, obedient, repentant, worshipping, travelling, previously married or virgins",
     "keys": [
       "66:1",
       "66:2",
       "66:3",
       "66:4",
-      "66:5",
-      "66:6"
+      "66:5"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "O Prophet, why do you prohibit [yourself from] what Allah has made lawful for...",
+      "label": "The Prophet questioned for prohibiting what Allah made lawful in seeking his wives' approval, under forgiveness and mercy",
       "keys": [
         "66:1"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Allah has already ordained for you [Muslims] the dissolution of your oaths. A...",
+      "label": "Oath-dissolution already ordained by Allah as protector, Knowing and Wise",
       "keys": [
         "66:2"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [remember] when the Prophet confided to one of his wives a statement; and...",
+      "label": "The confidential statement disclosed by one wife to another, shown to him by Allah so he made part known and ignored part, identifying the source as the Knowing and Acquainted",
       "keys": [
         "66:3"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "If you two [wives] repent to Allah, [it is best], for your hearts have deviat...",
+      "label": "Both wives called to repentance since their hearts had deviated, warned that cooperating against him would meet Allah, Gabriel, righteous believers and angels as his assistants",
       "keys": [
         "66:4"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Perhaps his Lord, if he divorced you [all], would substitute for him wives be...",
+      "label": "The possibility raised that divorce would bring better wives — submissive, believing, obedient, repentant, worshipping, travelling, previously married or virgins",
       "keys": [
         "66:5"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "66:1"
+      ],
+      "excerpt": "يَـٰٓأَيُّهَا ٱلنَّبِيُّ لِمَ تُحَرِّمُ مَآ أَحَلَّ ٱللَّهُ لَكَۖ تَبۡتَغِي مَرۡضَاتَ أَزۡوَٰجِكَۚ وَٱللَّهُ غَفُورٞ رَّحِيمٞ",
+      "description": "Why do you prohibit yourself from what Allah has made lawful for you, seeking the approval of your wives?"
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "غَفُورٞ",
+      "transliteration": "Ghafoor",
+      "gloss": "Forgiving (editorial gloss)",
+      "keys": [
+        "66:1"
+      ]
     },
     {
-      "label": "O you who have believed, protect yourselves and your families from a Fire who...",
+      "term": "رَّحِيمٞ",
+      "transliteration": "Raheem",
+      "gloss": "Merciful (editorial gloss)",
       "keys": [
-        "66:6"
+        "66:1"
+      ]
+    },
+    {
+      "term": "ٱلۡعَلِيمُ",
+      "transliteration": "Aleem",
+      "gloss": "Knowing (editorial gloss)",
+      "keys": [
+        "66:2"
+      ]
+    },
+    {
+      "term": "ٱلۡحَكِيمُ",
+      "transliteration": "Hakeem",
+      "gloss": "Wise (editorial gloss)",
+      "keys": [
+        "66:2"
+      ]
+    },
+    {
+      "term": "ٱلۡخَبِيرُ",
+      "transliteration": "Khabir",
+      "gloss": "Acquainted (editorial gloss)",
+      "keys": [
+        "66:3"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Prophetic self-prohibition of a lawful matter in pursuit of spousal approval",
+      "keys": [
+        "66:1"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Hearts of two wives having deviated, requiring joint repentance",
+      "keys": [
+        "66:4"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-1957",
-    "cand-1958",
-    "cand-1959",
-    "cand-1960",
-    "cand-1961",
-    "cand-1962",
-    "cand-1963",
-    "cand-1964",
-    "cand-1965",
-    "cand-1966"
+  "socialEconomicCivilisational": [
+    {
+      "label": "Oath-dissolution mechanism ordained by Allah as legal relief",
+      "keys": [
+        "66:2"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Better-wife profile enumerated: submissive, believing, obedient, repentant, worshipping, travelling, previously married or virgin",
+      "keys": [
+        "66:5"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 66 passage 1/2. Generated by mfd11-gen-batch-61-66.mjs.",
+  "relationships": [
+    {
+      "label": "Confidential disclosure breached and divinely revealed, with partial confrontation and partial overlooking",
+      "keys": [
+        "66:3"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Divine protection network: Allah, Gabriel, righteous believers and angels backing the Prophet against domestic opposition",
+      "keys": [
+        "66:4"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "تُحَرِّمُ",
+      "transliteration": "tuharrim",
+      "gloss": "prohibiting (editorial gloss)",
+      "keys": [
+        "66:1"
+      ]
+    },
+    {
+      "term": "أَيۡمَٰنِكُمۡۚ",
+      "transliteration": "tahlil al-ayman",
+      "gloss": "dissolution of oaths (editorial gloss)",
+      "keys": [
+        "66:2"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1781",
+    "cand-1782",
+    "cand-1783",
+    "cand-1784"
+  ],
+  "notes": "Wave 9 genuine re-extraction. Boundaries follow the text: P1 closes with the better-wives substitution scenario (5) before the fire-protection command opens (6); P2 ends with the jihad-harshness command and Hell-refuge verdict (9) before the four-women exempla block begins (10); P3 covers the two disbelieving and two believing women exemplars (10-12).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T16:55:00.000Z"
+  "createdAt": "2026-11-20T19:05:00.000Z"
 }
