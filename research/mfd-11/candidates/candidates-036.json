@@ -1,767 +1,1131 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:10:00.000Z",
+  "generatedAt": "2026-11-20T12:00:00.000Z",
   "sourceExtraction": "ext-012-p1,ext-012-p2,ext-012-p3,ext-012-p4",
   "candidates": [
     {
       "candidateId": "cand-0527",
-      "label": "cand-0527: Topic from 12:1",
-      "definition": "In 12:1: Alif, Lam, Ra. These are the verses of the clear Book",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "12:1",
-          "excerpt": "الٓرۚ تِلۡكَ ءَايَٰتُ ٱلۡكِتَٰبِ ٱلۡمُبِينِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0528",
-      "label": "cand-0528: Topic from 12:3",
-      "definition": "In 12:3: We relate to you, [O Muhammad], the best of stories in what We have revealed to you of this Qur'an although you were, before it, among the unaware",
+      "label": "Quran as ahsan al-qasas establishing prophetic storytelling paradigm",
+      "definition": "In 12:3: We relate to you the best of narratives through Our revelation of this Quran.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:3",
           "excerpt": "نَحۡنُ نَقُصُّ عَلَيۡكَ أَحۡسَنَ ٱلۡقَصَصِ بِمَآ أَوۡحَيۡنَآ إِلَيۡكَ هَٰذَا ٱلۡقُرۡءَانَ وَإِن كُنتَ مِن قَبۡلِهِۦ لَمِنَ ٱلۡغَٰفِلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Quran self-described as best narrative."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0528",
+      "label": "Cosmic dream foreshadowing future familial authority",
+      "definition": "In 12:4: Yusuf saw eleven stars and sun and moon prostrating to him.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:4",
+          "excerpt": "إِذۡ قَالَ يُوسُفُ لِأَبِيهِ يَـٰٓأَبَتِ إِنِّي رَأَيۡتُ أَحَدَ عَشَرَ كَوۡكَبٗا وَٱلشَّمۡسَ وَٱلۡقَمَرَ رَأَيۡتُهُمۡ لِي سَٰجِدِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "dream-interpretation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Foundational dream initiating narrative."
+        },
+        {
+          "topicId": "yusuf-dreams",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yusuf's first dream."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0529",
-      "label": "cand-0529: Topic from 12:6",
-      "definition": "In 12:6: And thus will your Lord choose you and teach you the interpretation of narratives and complete His favor upon you and upon the family of Jacob, as He completed it upon your fathers before, Abraham and Isaac. Indeed, your Lord is Knowing and Wise",
+      "label": "Paternal warning against sibling jealousy and shaytan exploitation",
+      "definition": "In 12:5: Do not relate your vision to your brothers lest they devise a plan against you — shaytan is an open enemy.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:6",
-          "excerpt": "وَكَذَٰلِكَ يَجۡتَبِيكَ رَبُّكَ وَيُعَلِّمُكَ مِن تَأۡوِيلِ ٱلۡأَحَادِيثِ وَيُتِمُّ نِعۡمَتَهُۥ عَلَيۡكَ وَعَلَىٰٓ ءَالِ يَعۡقُوبَ كَمَآ أَتَمَّهَا عَلَىٰٓ أَبَوَيۡكَ مِن قَبۡلُ إِبۡرَٰهِيمَ وَإِسۡحَٰقَۚ إِنَّ رَبَّكَ عَلِيمٌ حَكِيمٞ",
+          "key": "12:5",
+          "excerpt": "قَالَ يَٰبُنَيَّ لَا تَقۡصُصۡ رُءۡيَاكَ عَلَىٰٓ إِخۡوَتِكَ فَيَكِيدُواْ لَكَ كَيۡدًاۖ إِنَّ ٱلشَّيۡطَٰنَ لِلۡإِنسَٰنِ عَدُوّٞ مُّبِينٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Father's protective counsel."
+        },
+        {
+          "topicId": "shaytan-enemy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shaytan named as explicit enemy."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0530",
-      "label": "cand-0530: Topic from 12:9",
-      "definition": "In 12:9: Kill Joseph or cast him out to [another] land; the countenance of your father will [then] be only for you, and you will be after that a righteous people",
+      "label": "Fratricidal conspiracy driven by perceived paternal favoritism",
+      "definition": "In 12:8-9: Brothers say Yusuf and his brother more beloved to father than us though we are stronger group — kill Yusuf or exile him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:9",
-          "excerpt": "ٱقۡتُلُواْ يُوسُفَ أَوِ ٱطۡرَحُوهُ أَرۡضٗا يَخۡلُ لَكُمۡ وَجۡهُ أَبِيكُمۡ وَتَكُونُواْ مِنۢ بَعۡدِهِۦ قَوۡمٗا صَٰلِحِينَ",
+          "key": "12:8",
+          "excerpt": "إِذۡ قَالُواْ لَيُوسُفُ وَأَخُوهُ أَحَبُّ إِلَىٰٓ أَبِينَا مِنَّا وَنَحۡنُ عُصۡبَةٌ إِنَّ أَبَانَا لَفِي ضَلَٰلٖ مُّبِينٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "envy-hasad",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Envy as motive for fratricide."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0531",
-      "label": "cand-0531: Topic from 12:11",
-      "definition": "In 12:11: They said, \"O our father, why do you not entrust us with Joseph while indeed, we are to him sincere counselors",
+      "label": "Well-as-transition motif from family to foreign providence",
+      "definition": "In 12:10: Cast him into bottom of well — some travelers will pick him up. Well functions as liminal space between abandonment and divine rescue.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:11",
-          "excerpt": "قَالُواْ يَـٰٓأَبَانَا مَا لَكَ لَا تَأۡمَ۬نَّا عَلَىٰ يُوسُفَ وَإِنَّا لَهُۥ لَنَٰصِحُونَ",
+          "key": "12:10",
+          "excerpt": "قَالَ قَآئِلٞ مِّنۡهُمۡ لَا تَقۡتُلُواْ يُوسُفَ وَأَلۡقُوهُ فِي غَيَٰبَتِ ٱلۡجُبِّ يَلۡتَقِطۡهُ بَعۡضُ ٱلسَّيَّارَةِ إِن كُنتُمۡ فَٰعِلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Well as trial mechanism."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0532",
-      "label": "cand-0532: Topic from 12:14",
-      "definition": "In 12:14: They said, \"If a wolf should eat him while we are a [strong] clan, indeed, we would then be losers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "12:14",
-          "excerpt": "قَالُواْ لَئِنۡ أَكَلَهُ ٱلذِّئۡبُ وَنَحۡنُ عُصۡبَةٌ إِنَّآ إِذٗا لَّخَٰسِرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0533",
-      "label": "cand-0533: Topic from 12:17",
-      "definition": "In 12:17: They said, \"O our father, indeed we went racing each other and left Joseph with our possessions, and a wolf ate him. But you would not believe us, even if we were truthful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "12:17",
-          "excerpt": "قَالُواْ يَـٰٓأَبَانَآ إِنَّا ذَهَبۡنَا نَسۡتَبِقُ وَتَرَكۡنَا يُوسُفَ عِندَ مَتَٰعِنَا فَأَكَلَهُ ٱلذِّئۡبُۖ وَمَآ أَنتَ بِمُؤۡمِنٖ لَّنَا وَلَوۡ كُنَّا صَٰدِقِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0534",
-      "label": "cand-0534: Topic from 12:19",
-      "definition": "In 12:19: And there came a company of travelers; then they sent their water drawer, and he let down his bucket. He said, \"Good news! Here is a boy.\" And they concealed him, [taking him] as merchandise; and Allah was knowing of what they did",
+      "label": "Divine providence through commercial transaction",
+      "definition": "In 12:19-20: Caravan water-scout finds Yusuf at well; sold for few dirhams counted out — divine plan operating through mundane commerce.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:19",
           "excerpt": "وَجَآءَتۡ سَيَّارَةٞ فَأَرۡسَلُواْ وَارِدَهُمۡ فَأَدۡلَىٰ دَلۡوَهُۥۖ قَالَ يَٰبُشۡرَىٰ هَٰذَا غُلَٰمٞۚ وَأَسَرُّوهُ بِضَٰعَةٗۚ وَٱللَّهُ عَلِيمُۢ بِمَا يَعۡمَلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Providence hidden in human transactions."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0535",
-      "label": "cand-0535: Topic from 12:22",
-      "definition": "In 12:22: And when Joseph reached maturity, We gave him judgment and knowledge. And thus We reward the doers of good",
+      "candidateId": "cand-0533",
+      "label": "Sexual temptation resisted through isti'adha (divine refuge)",
+      "definition": "In 12:23: She said come to me; he said ma'adh Allah — my lord has made my residence good. Seeking refuge in Allah from sin.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:22",
-          "excerpt": "وَلَمَّا بَلَغَ أَشُدَّهُۥٓ ءَاتَيۡنَٰهُ حُكۡمٗا وَعِلۡمٗاۚ وَكَذَٰلِكَ نَجۡزِي ٱلۡمُحۡسِنِينَ",
+          "key": "12:23",
+          "excerpt": "وَرَٰوَدَتۡهُ ٱلَّتِي هُوَ فِي بَيۡتِهَا عَن نَّفۡسِهِۦ وَغَلَّقَتِ ٱلۡأَبۡوَٰبَ وَقَالَتۡ هَيۡتَ لَكَۚ قَالَ مَعَاذَ ٱللَّهِۖ إِنَّهُۥ رَبِّيٓ أَحۡسَنَ مَثۡوَايَۖ إِنَّهُۥ لَا يُفۡلِحُ ٱلظَّـٰلِمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Taqwa expressed as isti'adha."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Chastity under pressure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0536",
-      "label": "cand-0536: Topic from 12:25",
-      "definition": "In 12:25: And they both raced to the door, and she tore his shirt from the back, and they found her husband at the door. She said, \"What is the recompense of one who intended evil for your wife but that he be imprisoned or a painful punishment",
+      "candidateId": "cand-0534",
+      "label": "Garment-tearing as forensic evidence of innocence",
+      "definition": "In 12:25-28: Garment torn from behind proves Yusuf fled rather than pursued; witness from her family testifies to directional evidence.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:25",
           "excerpt": "وَٱسۡتَبَقَا ٱلۡبَابَ وَقَدَّتۡ قَمِيصَهُۥ مِن دُبُرٖ وَأَلۡفَيَا سَيِّدَهَا لَدَا ٱلۡبَابِۚ قَالَتۡ مَا جَزَآءُ مَنۡ أَرَادَ بِأَهۡلِكَ سُوٓءًا إِلَّآ أَن يُسۡجَنَ أَوۡ عَذَابٌ أَلِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0537",
-      "label": "cand-0537: Topic from 12:29",
-      "definition": "In 12:29: Joseph, ignore this. And, [my wife], ask forgiveness for your sin. Indeed, you were of the sinful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "12:29",
-          "excerpt": "يُوسُفُ أَعۡرِضۡ عَنۡ هَٰذَاۚ وَٱسۡتَغۡفِرِي لِذَنۢبِكِۖ إِنَّكِ كُنتِ مِنَ ٱلۡخَاطِـِٔينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Physical evidence determining truth."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0538",
-      "label": "cand-0538: Topic from 12:31",
-      "definition": "In 12:31: So when she heard of their scheming, she sent for them and prepared for them a banquet and gave each one of them a knife and said [to Joseph], \"Come out before them.\" And when they saw him, they greatly admired him and cut their hands and said, \"Perfect is Allah! This is not a man; this is none but a noble angel",
+      "candidateId": "cand-0535",
+      "label": "Collective female recognition of Yusuf's extraordinary nature",
+      "definition": "In 12:31: Women of city invited, given knives, amazed at Yusuf's beauty cutting their hands saying hash lil-lah this is no human but noble angel.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:31",
           "excerpt": "فَلَمَّا سَمِعَتۡ بِمَكۡرِهِنَّ أَرۡسَلَتۡ إِلَيۡهِنَّ وَأَعۡتَدَتۡ لَهُنَّ مُتَّكَـٔٗا وَءَاتَتۡ كُلَّ وَٰحِدَةٖ مِّنۡهُنَّ سِكِّينٗا وَقَالَتِ ٱخۡرُجۡ عَلَيۡهِنَّۖ فَلَمَّا رَأَيۡنَهُۥٓ أَكۡبَرۡنَهُۥ وَقَطَّعۡنَ أَيۡدِيَهُنَّ وَقُلۡنَ حَٰشَ لِلَّهِ مَا هَٰذَا بَشَرًا إِنۡ هَٰذَآ إِلَّا مَلَكٞ كَرِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophetic-character",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Beauty as sign of prophetic distinction."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0539",
-      "label": "cand-0539: Topic from 12:34",
-      "definition": "In 12:34: So his Lord responded to him and averted from him their plan. Indeed, He is the Hearing, the Knowing",
+      "candidateId": "cand-0536",
+      "label": "Voluntary imprisonment chosen over moral compromise",
+      "definition": "In 12:33: Yusuf says Lord prison is dearer to me than what they invite me to — choosing confinement over sin.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:34",
-          "excerpt": "فَٱسۡتَجَابَ لَهُۥ رَبُّهُۥ فَصَرَفَ عَنۡهُ كَيۡدَهُنَّۚ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
+          "key": "12:33",
+          "excerpt": "قَالَ رَبِّ ٱلسِّجۡنُ أَحَبُّ إِلَيَّ مِمَّا يَدۡعُونَنِيٓ إِلَيۡهِۖ وَإِلَّا تَصۡرِفۡ عَنِّي كَيۡدَهُنَّ أَصۡبُ إِلَيۡهِنَّ وَأَكُن مِّنَ ٱلۡجَٰهِلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabr expressed as willing endurance."
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Taqwa prioritized over freedom."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0540",
-      "label": "cand-0540: Topic from 12:37",
-      "definition": "In 12:37: He said, \"You will not receive food that is provided to you except that I will inform you of its interpretation before it comes to you. That is from what my Lord has taught me. Indeed, I have left the religion of a people who do not believe in Allah, and they, in the Hereafter, are disbelievers",
+      "candidateId": "cand-0537",
+      "label": "Dream interpretation preceded by tawheed instruction",
+      "definition": "In 12:37-40: Before interpreting dreams Yusuf teaches monotheism rejecting multiple lords affirming judgment belongs to Allah alone.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:37",
           "excerpt": "قَالَ لَا يَأۡتِيكُمَا طَعَامٞ تُرۡزَقَانِهِۦٓ إِلَّا نَبَّأۡتُكُمَا بِتَأۡوِيلِهِۦ قَبۡلَ أَن يَأۡتِيَكُمَاۚ ذَٰلِكُمَا مِمَّا عَلَّمَنِي رَبِّيٓۚ إِنِّي تَرَكۡتُ مِلَّةَ قَوۡمٖ لَّا يُؤۡمِنُونَ بِٱللَّهِ وَهُم بِٱلۡأٓخِرَةِ هُمۡ كَٰفِرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Theological instruction precedes practical service."
+        },
+        {
+          "topicId": "dream-interpretation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Tawheed frames interpretive authority."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0541",
-      "label": "cand-0541: Topic from 12:39",
-      "definition": "In 12:39: O [my] two companions of prison, are separate lords better or Allah, the One, the Prevailing",
+      "candidateId": "cand-0538",
+      "label": "Dual prisoner dreams demonstrating interpretive accuracy",
+      "definition": "In 12:36-41: Wine-presser will serve king again; baker will be crucified and birds eat from head — both fulfilled exactly.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:39",
-          "excerpt": "يَٰصَٰحِبَيِ ٱلسِّجۡنِ ءَأَرۡبَابٞ مُّتَفَرِّقُونَ خَيۡرٌ أَمِ ٱللَّهُ ٱلۡوَٰحِدُ ٱلۡقَهَّارُ",
+          "key": "12:36",
+          "excerpt": "وَدَخَلَ مَعَهُ ٱلسِّجۡنَ فَتَيَانِۖ قَالَ أَحَدُهُمَآ إِنِّيٓ أَرَىٰنِيٓ أَعۡصِرُ خَمۡرٗاۖ وَقَالَ ٱلۡأٓخَرُ إِنِّيٓ أَرَىٰنِيٓ أَحۡمِلُ فَوۡقَ رَأۡسِي خُبۡزٗا تَأۡكُلُ ٱلطَّيۡرُ مِنۡهُۖ نَبِّئۡنَا بِتَأۡوِيلِهِۦٓۖ إِنَّا نَرَىٰكَ مِنَ ٱلۡمُحۡسِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "dream-interpretation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Verified predictions establish credibility."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0542",
-      "label": "cand-0542: Topic from 12:42",
-      "definition": "In 12:42: And he said to the one whom he knew would go free, \"Mention me before your master.\" But Satan made him forget the mention [to] his master, and Joseph remained in prison several years",
+      "candidateId": "cand-0539",
+      "label": "Royal dream crisis enabling emergence from obscurity",
+      "definition": "In 12:43-49: King dreams seven fat cows eaten by seven lean seven green ears dry; nobles confused; released prisoner remembers Yusuf.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:43",
+          "excerpt": "وَقَالَ ٱلۡمَلِكُ إِنِّيٓ أَرَىٰ سَبۡعَ بَقَرَٰتٖ سِمَانٖ يَأۡكُلُهُنَّ سَبۡعٌ عِجَافٞ وَسَبۡعَ سُنۢبُلَٰتٍ خُضۡرٖ وَأُخَرَ يَابِسَٰتٖۖ يَـٰٓأَيُّهَا ٱلۡمَلَأُ أَفۡتُونِي فِي رُءۡيَٰيَ إِن كُنتُمۡ لِلرُّءۡيَا تَعۡبُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wisdom",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Crisis as divinely timed opportunity."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0540",
+      "label": "Delayed remembrance as divine timing mechanism",
+      "definition": "In 12:42: Shaytan made him forget mentioning Yusuf to his lord — so Yusuf remained in prison several more years.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:42",
           "excerpt": "وَقَالَ لِلَّذِي ظَنَّ أَنَّهُۥ نَاجٖ مِّنۡهُمَا ٱذۡكُرۡنِي عِندَ رَبِّكَ فَأَنسَىٰهُ ٱلشَّيۡطَٰنُ ذِكۡرَ رَبِّهِۦ فَلَبِثَ فِي ٱلسِّجۡنِ بِضۡعَ سِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0543",
-      "label": "cand-0543: Topic from 12:45",
-      "definition": "In 12:45: But the one who was freed and remembered after a time said, \"I will inform you of its interpretation, so send me forth",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "12:45",
-          "excerpt": "وَقَالَ ٱلَّذِي نَجَا مِنۡهُمَا وَٱدَّكَرَ بَعۡدَ أُمَّةٍ أَنَا۠ أُنَبِّئُكُم بِتَأۡوِيلِهِۦ فَأَرۡسِلُونِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0544",
-      "label": "cand-0544: Topic from 12:47",
-      "definition": "In 12:47: [Joseph] said, \"You will plant for seven years consecutively; and what you harvest leave in its spikes, except a little from which you will eat",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Divine delay serving larger purpose."
+        },
         {
-          "key": "12:47",
-          "excerpt": "قَالَ تَزۡرَعُونَ سَبۡعَ سِنِينَ دَأَبٗا فَمَا حَصَدتُّمۡ فَذَرُوهُ فِي سُنۢبُلِهِۦٓ إِلَّا قَلِيلٗا مِّمَّا تَأۡكُلُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Extended waiting as test."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0545",
-      "label": "cand-0545: Topic from 12:50",
-      "definition": "In 12:50: And the king said, \"Bring him to me.\" But when the messenger came to him, [Joseph] said, \"Return to your master and ask him what is the case of the women who cut their hands. Indeed, my Lord is Knowing of their plan",
+      "candidateId": "cand-0541",
+      "label": "Conditional release requiring prior public exoneration",
+      "definition": "In 12:50-51: King says bring him; Yusuf says return to your lord ask about women who cut hands — refuses freedom without cleared name.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:50",
           "excerpt": "وَقَالَ ٱلۡمَلِكُ ٱئۡتُونِي بِهِۦۖ فَلَمَّا جَآءَهُ ٱلرَّسُولُ قَالَ ٱرۡجِعۡ إِلَىٰ رَبِّكَ فَسۡـَٔلۡهُ مَا بَالُ ٱلنِّسۡوَةِ ٱلَّـٰتِي قَطَّعۡنَ أَيۡدِيَهُنَّۚ إِنَّ رَبِّي بِكَيۡدِهِنَّ عَلِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Public vindication before elevation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0542",
+      "label": "Institutional appointment based on proven trustworthiness and knowledge",
+      "definition": "In 12:55: Yusuf says appoint me over storehouses inni hafizun aleem — I am a knowing guardian.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:55",
+          "excerpt": "قَالَ ٱجۡعَلۡنِي عَلَىٰ خَزَآئِنِ ٱلۡأَرۡضِۖ إِنِّي حَفِيظٌ عَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hifz and ilm as qualification criteria."
+        },
+        {
+          "topicId": "work-honor",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Merit-based appointment."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0543",
+      "label": "Forensic testimony establishing innocence through garment direction",
+      "definition": "In 12:26-28: Witness from her family testifies if torn from front she truthful if from behind he truthful — garment torn from behind confirms Yusuf.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:26",
+          "excerpt": "قَالَ هِيَ رَٰوَدَتۡنِي عَن نَّفۡسِيۚ وَشَهِدَ شَاهِدٞ مِّنۡ أَهۡلِهَآ إِن كَانَ قَمِيصُهُۥ قُدَّ مِن قُبُلٖ فَصَدَقَتۡ وَهُوَ مِنَ ٱلۡكَٰذِبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Directional evidence as legal standard."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0544",
+      "label": "Public female confession confirming Yusuf's virtue",
+      "definition": "In 12:51: King asks women what was your affair when you seduced Yusuf; they say hash lil-lah we know no evil of him.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:51",
+          "excerpt": "قَالَ مَا خَطۡبُكُنَّ إِذۡ رَٰوَدتُّنَّ يُوسُفَ عَن نَّفۡسِهِۦۚ قُلۡنَ حَٰشَ لِلَّهِ مَا عَلِمۡنَا عَلَيۡهِ مِن سُوٓءٖۚ قَالَتِ ٱمۡرَأَتُ ٱلۡعَزِيزِ ٱلۡـَٰٔنَ حَصۡحَصَ ٱلۡحَقُّ أَنَا۠ رَٰوَدتُّهُۥ عَن نَّفۡسِهِۦ وَإِنَّهُۥ لَمِنَ ٱلصَّـٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Collective testimony clearing reputation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0545",
+      "label": "Aziz wife's admission of guilt completing exoneration",
+      "definition": "In 12:51: Aziz's wife says now truth has become manifest — I seduced him and he is among the truthful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:51",
+          "excerpt": "قَالَ مَا خَطۡبُكُنَّ إِذۡ رَٰوَدتُّنَّ يُوسُفَ عَن نَّفۡسِهِۦۚ قُلۡنَ حَٰشَ لِلَّهِ مَا عَلِمۡنَا عَلَيۡهِ مِن سُوٓءٖۚ قَالَتِ ٱمۡرَأَتُ ٱلۡعَزِيزِ ٱلۡـَٰٔنَ حَصۡحَصَ ٱلۡحَقُّ أَنَا۠ رَٰوَدتُّهُۥ عَن نَّفۡسِهِۦ وَإِنَّهُۥ لَمِنَ ٱلصَّـٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Confession as form of acknowledgment."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0546",
-      "label": "cand-0546: Topic from 12:53",
-      "definition": "In 12:53: And I do not acquit myself. Indeed, the soul is a persistent enjoiner of evil, except those upon which my Lord has mercy. Indeed, my Lord is Forgiving and Merciful",
+      "label": "Seven-year agricultural cycle as divine sign and administrative framework",
+      "definition": "In 12:47-49: Seven years of abundance followed by seven years of drought consuming stored grain except little preserved.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:53",
-          "excerpt": "۞وَمَآ أُبَرِّئُ نَفۡسِيٓۚ إِنَّ ٱلنَّفۡسَ لَأَمَّارَةُۢ بِٱلسُّوٓءِ إِلَّا مَا رَحِمَ رَبِّيٓۚ إِنَّ رَبِّي غَفُورٞ رَّحِيمٞ",
+          "key": "12:47",
+          "excerpt": "قَالَ تَزۡرَعُونَ سَبۡعَ سِنِينَ دَأَبٗا فَمَا حَصَدتُّمۡ فَذَرُوهُ فِي سُنۢبُلِهِۦٓ إِلَّا قَلِيلٗا مِّمَّا تَأۡكُلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Natural cycles as divine communication."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0547",
-      "label": "cand-0547: Topic from 12:57",
-      "definition": "In 12:57: And the reward of the Hereafter is better for those who believed and were fearing Allah",
+      "label": "Administrative foresight in agricultural surplus management",
+      "definition": "In 12:47-48: Yusuf instructs storing harvest during abundant years leaving only what is eaten preparing for seven drought years.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:57",
-          "excerpt": "وَلَأَجۡرُ ٱلۡأٓخِرَةِ خَيۡرٞ لِّلَّذِينَ ءَامَنُواْ وَكَانُواْ يَتَّقُونَ",
+          "key": "12:47",
+          "excerpt": "قَالَ تَزۡرَعُونَ سَبۡعَ سِنِينَ دَأَبٗا فَمَا حَصَدتُّمۡ فَذَرُوهُ فِي سُنۢبُلِهِۦٓ إِلَّا قَلِيلٗا مِّمَّا تَأۡكُلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "balance-moderation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Prudent resource management."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0548",
-      "label": "cand-0548: Topic from 12:59",
-      "definition": "In 12:59: And when he had furnished them with their supplies, he said, \"Bring me a brother of yours from your father. Do not you see that I give full measure and that I am the best of accommodators",
+      "label": "Unrecognized encounter enabling character testing",
+      "definition": "In 12:58: Brothers came entered upon Yusuf he recognized them but they did not recognize him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:59",
-          "excerpt": "وَلَمَّا جَهَّزَهُم بِجَهَازِهِمۡ قَالَ ٱئۡتُونِي بِأَخٖ لَّكُم مِّنۡ أَبِيكُمۡۚ أَلَا تَرَوۡنَ أَنِّيٓ أُوفِي ٱلۡكَيۡلَ وَأَنَا۠ خَيۡرُ ٱلۡمُنزِلِينَ",
+          "key": "12:58",
+          "excerpt": "وَجَآءَ إِخۡوَةُ يُوسُفَ فَدَخَلُواْ عَلَيۡهِ فَعَرَفَهُمۡ وَهُمۡ لَهُۥ مُنكِرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Asymmetric recognition enables testing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0549",
-      "label": "cand-0549: Topic from 12:62",
-      "definition": "In 12:62: And [Joseph] said to his servants, \"Put their merchandise into their saddlebags so they might recognize it when they have gone back to their people that perhaps they will [again] return",
+      "label": "Returned silver demonstrating integrity despite power",
+      "definition": "In 12:62: Yusuf tells servants put their merchandise back in their sacks so they recognize it when returning to family.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:62",
           "excerpt": "وَقَالَ لِفِتۡيَٰنِهِ ٱجۡعَلُواْ بِضَٰعَتَهُمۡ فِي رِحَالِهِمۡ لَعَلَّهُمۡ يَعۡرِفُونَهَآ إِذَا ٱنقَلَبُوٓاْ إِلَىٰٓ أَهۡلِهِمۡ لَعَلَّهُمۡ يَرۡجِعُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Honesty when advantage could be taken."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0550",
-      "label": "cand-0550: Topic from 12:65",
-      "definition": "In 12:65: And when they opened their baggage, they found their merchandise returned to them. They said, \"O our father, what [more] could we desire? This is our merchandise returned to us. And we will obtain supplies for our family and protect our brother and obtain an increase of a camel's load; that is an easy measurement",
+      "label": "Jacob's protective reluctance rooted in unresolved trauma",
+      "definition": "In 12:64: Shall I entrust you with him as I entrusted you with his brother before? Allah is best guardian most merciful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:65",
-          "excerpt": "وَلَمَّا فَتَحُواْ مَتَٰعَهُمۡ وَجَدُواْ بِضَٰعَتَهُمۡ رُدَّتۡ إِلَيۡهِمۡۖ قَالُواْ يَـٰٓأَبَانَا مَا نَبۡغِيۖ هَٰذِهِۦ بِضَٰعَتُنَا رُدَّتۡ إِلَيۡنَاۖ وَنَمِيرُ أَهۡلَنَا وَنَحۡفَظُ أَخَانَا وَنَزۡدَادُ كَيۡلَ بَعِيرٖۖ ذَٰلِكَ كَيۡلٞ يَسِيرٞ",
+          "key": "12:64",
+          "excerpt": "قَالَ هَلۡ ءَامَنُكُمۡ عَلَيۡهِ إِلَّا كَمَآ أَمِنتُكُمۡ عَلَىٰٓ أَخِيهِ مِن قَبۡلُ فَٱللَّهُ خَيۡرٌ حَٰفِظٗاۖ وَهُوَ أَرۡحَمُ ٱلرَّـٰحِمِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Parental anxiety from prior loss."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Tawakkul despite fear."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0551",
-      "label": "cand-0551: Topic from 12:67",
-      "definition": "In 12:67: And he said, \"O my sons, do not enter from one gate but enter from different gates; and I cannot avail you against [the decree of] Allah at all. The decision is only for Allah; upon Him I have relied, and upon Him let those who would rely [indeed] rely",
+      "label": "Judah's guarantee marking moral growth from original conspirator",
+      "definition": "In 12:66: Judah says I will not send him until you give firm covenant before Allah that you will bring him back.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:67",
-          "excerpt": "وَقَالَ يَٰبَنِيَّ لَا تَدۡخُلُواْ مِنۢ بَابٖ وَٰحِدٖ وَٱدۡخُلُواْ مِنۡ أَبۡوَٰبٖ مُّتَفَرِّقَةٖۖ وَمَآ أُغۡنِي عَنكُم مِّنَ ٱللَّهِ مِن شَيۡءٍۖ إِنِ ٱلۡحُكۡمُ إِلَّا لِلَّهِۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَعَلَيۡهِ فَلۡيَتَوَكَّلِ ٱلۡمُتَوَكِّلُونَ",
+          "key": "12:66",
+          "excerpt": "قَالَ لَنۡ أُرۡسِلَهُۥ مَعَكُمۡ حَتَّىٰ تُؤۡتُونِ مَوۡثِقٗا مِّنَ ٱللَّهِ لَتَأۡتُنَّنِي بِهِۦٓ إِلَّآ أَن يُحَاطَ بِكُمۡۖ فَلَمَّآ ءَاتَوۡهُ مَوۡثِقَهُمۡ قَالَ ٱللَّهُ عَلَىٰ مَا نَقُولُ وَكِيلٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Former conspirator now guarantor."
+        },
+        {
+          "topicId": "covenants-ahd",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Solemn oath as commitment mechanism."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0552",
-      "label": "cand-0552: Topic from 12:70",
-      "definition": "In 12:70: So when he had furnished them with their supplies, he put the [gold measuring] bowl into the bag of his brother. Then an announcer called out, \"O caravan, indeed you are thieves",
+      "label": "Cup-test revealing brothers' willingness to sacrifice for sibling",
+      "definition": "In 12:70-76: Cup placed in Benjamin's sack; brothers accused of theft; they respond whoever took it should be held — offering themselves.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:70",
           "excerpt": "فَلَمَّا جَهَّزَهُم بِجَهَازِهِمۡ جَعَلَ ٱلسِّقَايَةَ فِي رَحۡلِ أَخِيهِ ثُمَّ أَذَّنَ مُؤَذِّنٌ أَيَّتُهَا ٱلۡعِيرُ إِنَّكُمۡ لَسَٰرِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Sibling loyalty tested and proven."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0553",
-      "label": "cand-0553: Topic from 12:73",
-      "definition": "In 12:73: They said, \"By Allah, you have certainly known that we did not come to cause corruption in the land, and we have not been thieves",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "12:73",
-          "excerpt": "قَالُواْ تَٱللَّهِ لَقَدۡ عَلِمۡتُم مَّا جِئۡنَا لِنُفۡسِدَ فِي ٱلۡأَرۡضِ وَمَا كُنَّا سَٰرِقِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0554",
-      "label": "cand-0554: Topic from 12:75",
-      "definition": "In 12:75: [The brothers] said, \"Its recompense is that he in whose bag it is found - he [himself] will be its recompense. Thus do we recompense the wrongdoers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "12:75",
-          "excerpt": "قَالُواْ جَزَـٰٓؤُهُۥ مَن وُجِدَ فِي رَحۡلِهِۦ فَهُوَ جَزَـٰٓؤُهُۥۚ كَذَٰلِكَ نَجۡزِي ٱلظَّـٰلِمِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0555",
-      "label": "cand-0555: Topic from 12:78",
-      "definition": "In 12:78: They said, \"O 'Azeez, indeed he has a father [who is] an old man, so take one of us in place of him. Indeed, we see you as a doer of good",
+      "label": "Judah's eloquent plea demonstrating complete character reformation",
+      "definition": "In 12:78-85: Judah appeals citing father's grief previous loss of Yusuf offers himself as substitute showing transformation from original plotter.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:78",
           "excerpt": "قَالُواْ يَـٰٓأَيُّهَا ٱلۡعَزِيزُ إِنَّ لَهُۥٓ أَبٗا شَيۡخٗا كَبِيرٗا فَخُذۡ أَحَدَنَا مَكَانَهُۥٓۖ إِنَّا نَرَىٰكَ مِنَ ٱلۡمُحۡسِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0556",
-      "label": "cand-0556: Topic from 12:81",
-      "definition": "In 12:81: Return to your father and say, \"O our father, indeed your son has stolen, and we did not testify except to what we knew. And we were not witnesses of the unseen",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "12:81",
-          "excerpt": "ٱرۡجِعُوٓاْ إِلَىٰٓ أَبِيكُمۡ فَقُولُواْ يَـٰٓأَبَانَآ إِنَّ ٱبۡنَكَ سَرَقَ وَمَا شَهِدۡنَآ إِلَّا بِمَا عَلِمۡنَا وَمَا كُنَّا لِلۡغَيۡبِ حَٰفِظِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0557",
-      "label": "cand-0557: Topic from 12:85",
-      "definition": "In 12:85: They said, \"By Allah, you will not cease remembering Joseph until you become fatally ill or become of those who perish",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Complete moral reversal demonstrated."
+        },
         {
-          "key": "12:85",
-          "excerpt": "قَالُواْ تَٱللَّهِ تَفۡتَؤُاْ تَذۡكُرُ يُوسُفَ حَتَّىٰ تَكُونَ حَرَضًا أَوۡ تَكُونَ مِنَ ٱلۡهَٰلِكِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Filial concern motivating sacrifice."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0558",
-      "label": "cand-0558: Topic from 12:87",
-      "definition": "In 12:87: O my sons, go and find out about Joseph and his brother and despair not of relief from Allah. Indeed, no one despairs of relief from Allah except the disbelieving people",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "12:87",
-          "excerpt": "يَٰبَنِيَّ ٱذۡهَبُواْ فَتَحَسَّسُواْ مِن يُوسُفَ وَأَخِيهِ وَلَا تَاْيۡـَٔسُواْ مِن رَّوۡحِ ٱللَّهِۖ إِنَّهُۥ لَا يَاْيۡـَٔسُ مِن رَّوۡحِ ٱللَّهِ إِلَّا ٱلۡقَوۡمُ ٱلۡكَٰفِرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0559",
-      "label": "cand-0559: Topic from 12:90",
-      "definition": "In 12:90: They said, \"Are you indeed Joseph?\" He said \"I am Joseph, and this is my brother. Allah has certainly favored us. Indeed, he who fears Allah and is patient, then indeed, Allah does not allow to be lost the reward of those who do good",
+      "candidateId": "cand-0554",
+      "label": "Emotional disclosure as narrative climax",
+      "definition": "In 12:90: I am Yusuf and this is my brother — Allah has truly favored us. Identity revelation resolves dramatic tension.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:90",
           "excerpt": "قَالُوٓاْ أَءِنَّكَ لَأَنتَ يُوسُفُۖ قَالَ أَنَا۠ يُوسُفُ وَهَٰذَآ أَخِيۖ قَدۡ مَنَّ ٱللَّهُ عَلَيۡنَآۖ إِنَّهُۥ مَن يَتَّقِ وَيَصۡبِرۡ فَإِنَّ ٱللَّهَ لَا يُضِيعُ أَجۡرَ ٱلۡمُحۡسِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Revelation paired with favor attribution."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0560",
-      "label": "cand-0560: Topic from 12:92",
-      "definition": "In 12:92: He said, \"No blame will there be upon you today. Allah will forgive you; and He is the most merciful of the merciful",
+      "candidateId": "cand-0555",
+      "label": "Famine as catalyst for family reunion and dream fulfillment",
+      "definition": "In 12:58: Famine drives brothers to Egypt where Yusuf governs — adversity becomes vehicle of divine plan.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:58",
+          "excerpt": "وَجَآءَ إِخۡوَةُ يُوسُفَ فَدَخَلُواْ عَلَيۡهِ فَعَرَفَهُمۡ وَهُمۡ لَهُۥ مُنكِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Hardship serving hidden purpose."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0556",
+      "label": "Simeon detention as leverage ensuring Benjamin's return",
+      "definition": "In 12:69: Yusuf keeps one brother (Simeon) as hostage demanding younger brother as proof of honesty.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:69",
+          "excerpt": "وَلَمَّا دَخَلُواْ عَلَىٰ يُوسُفَ ءَاوَىٰٓ إِلَيۡهِ أَخَاهُۖ قَالَ إِنِّيٓ أَنَا۠ أَخُوكَ فَلَا تَبۡتَئِسۡ بِمَا كَانُواْ يَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Strategic detention testing family bonds."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0557",
+      "label": "Unconditional forgiveness mirroring divine mercy",
+      "definition": "In 12:92: No blame upon you today — may Allah forgive you and He is most merciful of the merciful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:92",
           "excerpt": "قَالَ لَا تَثۡرِيبَ عَلَيۡكُمُ ٱلۡيَوۡمَۖ يَغۡفِرُ ٱللَّهُ لَكُمۡۖ وَهُوَ أَرۡحَمُ ٱلرَّـٰحِمِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Human forgiveness reflecting divine attribute."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Magnanimity toward former persecutors."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0561",
-      "label": "cand-0561: Topic from 12:95",
-      "definition": "In 12:95: They said, \"By Allah, indeed you are in your [same] old error",
+      "candidateId": "cand-0558",
+      "label": "Brothers' acknowledgment of Yusuf's election and their culpability",
+      "definition": "In 12:91: By Allah certainly has Allah preferred you over us and we were indeed sinners.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:95",
-          "excerpt": "قَالُواْ تَٱللَّهِ إِنَّكَ لَفِي ضَلَٰلِكَ ٱلۡقَدِيمِ",
+          "key": "12:91",
+          "excerpt": "قَالُواْ تَٱللَّهِ لَقَدۡ ءَاثَرَكَ ٱللَّهُ عَلَيۡنَا وَإِن كُنَّا لَخَٰطِـِٔينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Admission of wrongdoing and divine preference."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0562",
-      "label": "cand-0562: Topic from 12:98",
-      "definition": "In 12:98: He said, \"I will ask forgiveness for you from my Lord. Indeed, it is He who is the Forgiving, the Merciful",
+      "candidateId": "cand-0559",
+      "label": "Shirt-as-healing-motif connecting physical and relational restoration",
+      "definition": "In 12:93-96: Go with this shirt cast it on father's face he will regain sight; shirt arrives scent detected before arrival sight restored.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:98",
-          "excerpt": "قَالَ سَوۡفَ أَسۡتَغۡفِرُ لَكُمۡ رَبِّيٓۖ إِنَّهُۥ هُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ",
+          "key": "12:93",
+          "excerpt": "ٱذۡهَبُواْ بِقَمِيصِي هَٰذَا فَأَلۡقُوهُ عَلَىٰ وَجۡهِ أَبِي يَأۡتِ بَصِيرٗا وَأۡتُونِي بِأَهۡلِكُمۡ أَجۡمَعِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Material object as vehicle of divine healing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0563",
-      "label": "cand-0563: Topic from 12:100",
-      "definition": "In 12:100: And he raised his parents upon the throne, and they bowed to him in prostration. And he said, \"O my father, this is the explanation of my vision of before. My Lord has made it reality. And He was certainly good to me when He took me out of prison and brought you [here] from bedouin life after Satan had induced [estrangement] between me and my brothers. Indeed, my Lord is Subtle in what He wills. Indeed, it is He who is the Knowing, the Wise",
+      "candidateId": "cand-0560",
+      "label": "Throne-prostration fulfilling cosmic dream completing narrative arc",
+      "definition": "In 12:100: He raised his parents upon the throne and they fell prostrate before him; he said this is the interpretation of my vision of old.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "12:100",
           "excerpt": "وَرَفَعَ أَبَوَيۡهِ عَلَى ٱلۡعَرۡشِ وَخَرُّواْ لَهُۥ سُجَّدٗاۖ وَقَالَ يَـٰٓأَبَتِ هَٰذَا تَأۡوِيلُ رُءۡيَٰيَ مِن قَبۡلُ قَدۡ جَعَلَهَا رَبِّي حَقّٗاۖ وَقَدۡ أَحۡسَنَ بِيٓ إِذۡ أَخۡرَجَنِي مِنَ ٱلسِّجۡنِ وَجَآءَ بِكُم مِّنَ ٱلۡبَدۡوِ مِنۢ بَعۡدِ أَن نَّزَغَ ٱلشَّيۡطَٰنُ بَيۡنِي وَبَيۡنَ إِخۡوَتِيٓۚ إِنَّ رَبِّي لَطِيفٞ لِّمَا يَشَآءُۚ إِنَّهُۥ هُوَ ٱلۡعَلِيمُ ٱلۡحَكِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "yusuf-dreams",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dream fulfillment closes narrative circle."
+        },
+        {
+          "topicId": "dream-interpretation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ta'wil realized after decades."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0561",
+      "label": "Divine subtlety (lutf) recognized retrospectively across suffering",
+      "definition": "In 12:100: Indeed my Lord is Subtle (Latif) in what He wills — He is Knowing Wise. Recognition of hidden divine plan.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:100",
+          "excerpt": "وَرَفَعَ أَبَوَيۡهِ عَلَى ٱلۡعَرۡشِ وَخَرُّواْ لَهُۥ سُجَّدٗاۖ وَقَالَ يَـٰٓأَبَتِ هَٰذَا تَأۡوِيلُ رُءۡيَٰيَ مِن قَبۡلُ قَدۡ جَعَلَهَا رَبِّي حَقّٗاۖ وَقَدۡ أَحۡسَنَ بِيٓ إِذۡ أَخۡرَجَنِي مِنَ ٱلسِّجۡنِ وَجَآءَ بِكُم مِّنَ ٱلۡبَدۡوِ مِنۢ بَعۡدِ أَن نَّزَغَ ٱلشَّيۡطَٰنُ بَيۡنِي وَبَيۡنَ إِخۡوَتِيٓۚ إِنَّ رَبِّي لَطِيفٞ لِّمَا يَشَآءُۚ إِنَّهُۥ هُوَ ٱلۡعَلِيمُ ٱلۡحَكِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wisdom",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Latif as key divine attribute in narrative."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Retrospective trust validated."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0562",
+      "label": "Closing dua integrating personal gratitude with universal submission",
+      "definition": "In 12:101: Lord You have given me sovereignty and taught interpretation — cause me to die as Muslim join me with righteous.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:101",
+          "excerpt": "۞رَبِّ قَدۡ ءَاتَيۡتَنِي مِنَ ٱلۡمُلۡكِ وَعَلَّمۡتَنِي مِن تَأۡوِيلِ ٱلۡأَحَادِيثِۚ فَاطِرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ أَنتَ وَلِيِّۦ فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِۖ تَوَفَّنِي مُسۡلِمٗا وَأَلۡحِقۡنِي بِٱلصَّـٰلِحِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Model dua combining gratitude and eschatological hope."
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Submission as culmination of prophetic journey."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0563",
+      "label": "Meta-narrative framing as Quranic confirmation of prior revelation",
+      "definition": "In 12:111: This is not fabricated hadith but confirmation of what came before and detailed explanation of everything.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "12:111",
+          "excerpt": "لَقَدۡ كَانَ فِي قَصَصِهِمۡ عِبۡرَةٞ لِّأُوْلِي ٱلۡأَلۡبَٰبِۗ مَا كَانَ حَدِيثٗا يُفۡتَرَىٰ وَلَٰكِن تَصۡدِيقَ ٱلَّذِي بَيۡنَ يَدَيۡهِ وَتَفۡصِيلَ كُلِّ شَيۡءٖ وَهُدٗى وَرَحۡمَةٗ لِّقَوۡمٖ يُؤۡمِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yusuf story as musaddiq and tafsil."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0564",
-      "label": "cand-0564: Topic from 12:103",
-      "definition": "In 12:103: And most of the people, although you strive [for it], are not believers",
+      "label": "Yusuf narrative as guidance and mercy for believing community",
+      "definition": "In 12:111: Guidance and mercy for people who believe — narrative serves communal spiritual function.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:103",
-          "excerpt": "وَمَآ أَكۡثَرُ ٱلنَّاسِ وَلَوۡ حَرَصۡتَ بِمُؤۡمِنِينَ",
+          "key": "12:111",
+          "excerpt": "لَقَدۡ كَانَ فِي قَصَصِهِمۡ عِبۡرَةٞ لِّأُوْلِي ٱلۡأَلۡبَٰبِۗ مَا كَانَ حَدِيثٗا يُفۡتَرَىٰ وَلَٰكِن تَصۡدِيقَ ٱلَّذِي بَيۡنَ يَدَيۡهِ وَتَفۡصِيلَ كُلِّ شَيۡءٖ وَهُدٗى وَرَحۡمَةٗ لِّقَوۡمٖ يُؤۡمِنُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Story as rahmah for mu'mineen."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0565",
-      "label": "cand-0565: Topic from 12:105",
-      "definition": "In 12:105: And how many a sign within the heavens and earth do they pass over while they, therefrom, are turning away",
+      "label": "Death as Muslim as ultimate aspiration of prophetic life",
+      "definition": "In 12:101: Cause me to die as Muslim (mutawaffini musliman) — submission as desired end-state.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:105",
-          "excerpt": "وَكَأَيِّن مِّنۡ ءَايَةٖ فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ يَمُرُّونَ عَلَيۡهَا وَهُمۡ عَنۡهَا مُعۡرِضُونَ",
+          "key": "12:101",
+          "excerpt": "۞رَبِّ قَدۡ ءَاتَيۡتَنِي مِنَ ٱلۡمُلۡكِ وَعَلَّمۡتَنِي مِن تَأۡوِيلِ ٱلۡأَحَادِيثِۚ فَاطِرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ أَنتَ وَلِيِّۦ فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِۖ تَوَفَّنِي مُسۡلِمٗا وَأَلۡحِقۡنِي بِٱلصَّـٰلِحِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Islam as life's culmination."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0566",
-      "label": "cand-0566: Topic from 12:108",
-      "definition": "In 12:108: Say, \"This is my way; I invite to Allah with insight, I and those who follow me. And exalted is Allah; and I am not of those who associate others with Him",
+      "label": "Family reunion as eschatological preview of righteous gathering",
+      "definition": "In 12:101: Join me with the righteous (al-salihin) — earthly reunion prefiguring heavenly assembly.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "12:108",
-          "excerpt": "قُلۡ هَٰذِهِۦ سَبِيلِيٓ أَدۡعُوٓاْ إِلَى ٱللَّهِۚ عَلَىٰ بَصِيرَةٍ أَنَا۠ وَمَنِ ٱتَّبَعَنِيۖ وَسُبۡحَٰنَ ٱللَّهِ وَمَآ أَنَا۠ مِنَ ٱلۡمُشۡرِكِينَ",
+          "key": "12:101",
+          "excerpt": "۞رَبِّ قَدۡ ءَاتَيۡتَنِي مِنَ ٱلۡمُلۡكِ وَعَلَّمۡتَنِي مِن تَأۡوِيلِ ٱلۡأَحَادِيثِۚ فَاطِرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ أَنتَ وَلِيِّۦ فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِۖ تَوَفَّنِي مُسۡلِمٗا وَأَلۡحِقۡنِي بِٱلصَّـٰلِحِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence for this candidate topic."
+          "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Earthly fulfillment pointing to ultimate gathering."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T12:00:00.000Z",
+      "notes": "Wave 1 genuine re-extraction candidate."
     }
   ]
 }
