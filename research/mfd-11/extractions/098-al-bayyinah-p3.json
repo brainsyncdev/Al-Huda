@@ -1,0 +1,125 @@
+{
+  "extractionId": "ext-098-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 98,
+  "surahName": "Al-Bayyinah",
+  "passage": {
+    "fromAyah": 6,
+    "toAyah": 8,
+    "label": "disbelieved People Scripture polytheists fire Hell abiding eternally worst creatures; believed righteous deeds best creatures; reward Allah gardens perpetual residence rivers flow abide forever Allah pleased them they Him whoever feared Lord"
+  },
+  "verseKeys": [
+    "98:6",
+    "98:7",
+    "98:8"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "98:6",
+      "text": "إِنَّ ٱلَّذِينَ كَفَرُواْ مِنۡ أَهۡلِ ٱلۡكِتَٰبِ وَٱلۡمُشۡرِكِينَ فِي نَارِ جَهَنَّمَ خَٰلِدِينَ فِيهَآۚ أُوْلَـٰٓئِكَ هُمۡ شَرُّ ٱلۡبَرِيَّةِ"
+    },
+    {
+      "key": "98:7",
+      "text": "إِنَّ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ أُوْلَـٰٓئِكَ هُمۡ خَيۡرُ ٱلۡبَرِيَّةِ"
+    },
+    {
+      "key": "98:8",
+      "text": "جَزَآؤُهُمۡ عِندَ رَبِّهِمۡ جَنَّـٰتُ عَدۡنٖ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَآ أَبَدٗاۖ رَّضِيَ ٱللَّهُ عَنۡهُمۡ وَرَضُواْ عَنۡهُۚ ذَٰلِكَ لِمَنۡ خَشِيَ رَبَّهُۥ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Those who disbelieved among the People of the Scripture and the polytheists will be in Hell's fire abiding eternally as the worst of creatures, while those who believed and did righteous deeds are the best of creatures whose reward with Allah is gardens of perpetual residence beneath which rivers flow where they abide forever, Allah pleased with them and they with Him — that is for whoever feared his Lord",
+    "keys": [
+      "98:6",
+      "98:7",
+      "98:8"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Disbelievers among the People of the Scripture and polytheists in Hell's fire abiding eternally as the worst of creatures",
+      "keys": [
+        "98:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Believers doing righteous deeds named the best of creatures",
+      "keys": [
+        "98:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Their reward: gardens of perpetual residence with rivers flowing beneath, abiding forever, mutual pleasure between Allah and them — for whoever feared his Lord",
+      "keys": [
+        "98:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Worst of creatures: disbelievers among People of Scripture and polytheists in eternal Hellfire",
+      "keys": [
+        "98:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Best of creatures: believers doing righteous deeds rewarded with perpetual gardens",
+      "keys": [
+        "98:7",
+        "98:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Mutual pleasure between Allah and the righteous as the ultimate reward dimension",
+      "keys": [
+        "98:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Fear of the Lord identified as the qualifying condition for the mutual-pleasure reward",
+      "keys": [
+        "98:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "وَٱلۡمُشۡرِكِينَ",
+      "transliteration": "sharr al-bariyyah",
+      "gloss": "worst of creatures (editorial gloss)",
+      "keys": [
+        "98:6"
+      ]
+    },
+    {
+      "term": "خَيۡرُ",
+      "transliteration": "khayr al-bariyyah",
+      "gloss": "best of creatures (editorial gloss)",
+      "keys": [
+        "98:7"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1982"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the division-after-evidence statement (4) before the pure-worship command opens (5); P2 is the single-verse definition of correct religion (5); P3 runs through the worst-versus-best binary and the closing mutual-pleasure reward (6-8).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-21T00:25:00.000Z"
+}
