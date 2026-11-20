@@ -36,6 +36,57 @@ const TS = "2026-11-20T12:25:00.000Z";
 // P1: 13:1–24 — Divine sovereignty in creation/nature, covenant ethics, believer reward
 // P2: 13:25–43 — Consequences of covenant-breaking, prophetic consolation, divine decree
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-013-p1": [
+    "Mysterious letters introducing verses of the Book affirmed as truth despite majority disbelief",
+    "Cosmic architecture: heavens raised without visible pillars, Throne established, sun and moon subjected to appointed terms",
+    "Earth spread with mountains and rivers; paired fruits and night-day cycle as signs for reflective people",
+    "Neighboring plots and diverse vegetation watered by one source yet distinguished in taste as signs for reasoning people",
+    "Astonishment at resurrection denial: dust-to-new-creation rejection earning shackles and eternal fire",
+    "Impatient demand for punishment before mercy despite prior exemplary punishments; Lord as forgiving yet severe",
+    "Disbelievers demand a sign; Prophet identified as warner only while every people has a guide",
+    "Divine omniscience over what wombs carry, what is lost or exceeded; everything by precise measure",
+    "Knower of unseen and witnessed, the Grand, the Exalted",
+    "Equality of concealed and publicized speech, hidden night traveler and conspicuous day mover before divine knowledge",
+    "Successive guardian angels protecting by divine decree; conditional principle that Allah changes a people only when they change themselves",
+    "Lightning shown as cause of fear and hope; generation of heavy clouds",
+    "Thunder glorifying with praise; angels in awe; thunderbolts striking whom Allah wills amid human dispute about Him",
+    "Supplication of truth belonging to Allah alone; futility of calling upon others illustrated by outstretched hands reaching for distant water",
+    "Universal prostration of all in heavens and earth, willingly or compelled, including shadows at morning and evening",
+    "Rhetorical tawheed interrogation: Lord of heavens and earth identified as Allah; blind versus seeing; darkness versus light; partners unable to create",
+    "Rain parable: torrent bearing foam and smelted ore producing scum; truth endures while falsehood vanishes",
+    "Best reward for those who respond to their Lord; worst account and Hell for those who refuse even with earthly ransom",
+    "One who knows revelation is truth contrasted with the blind; only people of understanding take heed",
+    "Those who fulfill Allah's covenant and do not break the contract",
+    "Those who join what Allah ordered joined, fear their Lord, and dread evil account",
+    "Patient seekers of divine countenance establishing prayer, spending secretly and publicly, repelling evil with good",
+    "Gardens of perpetual residence entered with righteous ancestors, spouses, and descendants; angels greeting from every gate",
+    "Salutation of peace bestowed for patient endurance; excellent final home"
+  ],
+  "ext-013-p2": [
+    "Covenant-breakers severing divine bonds and spreading corruption earn curse and evil abode",
+    "Allah extends and restricts provision; worldly rejoicing contrasted with brief enjoyment versus hereafter",
+    "Disbelievers demand a sign; divine misguidance of whom He wills and guidance of whoever turns back",
+    "Believers whose hearts find assurance through remembrance of Allah; dhikr as unique tranquillity mechanism",
+    "Believers performing righteous deeds receive blessed state and good return",
+    "Prophet sent to a community preceded by past nations; recitation of revelation met with Rahman-denial; declaration of reliance on Lord alone",
+    "Hypothetical Quran moving mountains, splitting earth, or speaking to the dead; affair belongs entirely to Allah; persistent calamities until divine promise arrives",
+    "Messengers ridiculed before; respite granted then seizure enacted; severity of divine penalty recalled",
+    "Maintainer of every soul knowing what it earns; challenge to name alleged partners; human plotting beautified for disbelievers leaving them without guide",
+    "Worldly punishment compounded by severer hereafter punishment; no protector against Allah",
+    "Paradise description for the righteous: flowing rivers, lasting fruit and shade; Fire as consequence for disbelievers",
+    "Scripture recipients rejoicing at revelation while factions deny portions; command to worship Allah alone without association",
+    "Arabic legislation revealed; warning against following inclinations after knowledge arrives lest one lose all divine protection",
+    "Prior messengers given wives and children; signs arrive only by divine permission; every term has a decree",
+    "Allah eliminates or confirms what He wills; Mother of the Book as master record",
+    "Whether Prophet sees part of promised punishment or dies first, his duty is notification while accountability rests with Allah",
+    "Territorial reduction from borders as visible sign; Allah judges without adjustment and is swift in reckoning",
+    "Prior plotting surpassed by divine planning; Allah knows every soul's earnings; disbelievers will learn whose final home prevails",
+    "Disbelievers denying prophethood met with sufficiency of Allah and Scripture-knowledge holders as witnesses"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-013-p1", from: 1, to: 24,
     label: "Ra'd — Verses of Book truth from Lord but most disbelieve; Allah erected heavens without pillars established Throne subjected sun moon stars; spread earth mountains rivers fruits two mates; neighboring plots gardens vines crops palms single root diverse taste water same; astonished at resurrection denial; urge evil before good similar punishments passed; why no sign sent you only warner every people guide; Allah knows female carries wombs lose exceed everything due measure; Knower unseen witnessed Grand Exalted; same conceal speech publicize hidden night conspicuous day; successive angels protect by decree Allah does not change condition people until change themselves; lightning fear hope heavy clouds; thunder exalts praise angels fear sends thunderbolts strikes whom wills; supplication truth belongs Him alone others respond nothing like one extends hands water reach mouth not reaching; prostrates whoever heavens earth willingly compulsion shadows morning evening; say who Lord heavens earth say Allah; taken allies besides Him possess benefit harm themselves; blind equal seeing darkness light assigned partners creation say Allah Creator everything One Prevailing; rain valleys flow capacity torrent foam ornaments vessels melt away foam vanishes thus Allah presents truth falsehood",
@@ -50,14 +101,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`13:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`13:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`13:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 13, surahName: "Ar-Ra'd",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
