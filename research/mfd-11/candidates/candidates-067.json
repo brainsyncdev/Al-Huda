@@ -1,577 +1,937 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:40:00.000Z",
-  "sourceExtraction": "ext-043-p1,ext-043-p2,ext-043-p3",
+  "generatedAt": "2026-11-20T15:45:00.000Z",
+  "sourceExtraction": "ext-043-p1,ext-043-p2,ext-043-p3,ext-043-p4,ext-043-p5",
   "candidates": [
     {
-      "candidateId": "cand-1477",
-      "label": "cand-1477: Topic from 43:1",
-      "definition": "In 43:1: Ha, Meem",
+      "candidateId": "cand-1497",
+      "label": "Arabic Quran grounded in the Mother of the Book as exalted and wise",
+      "definition": "In 43:2-4: By the clear Book; indeed We made it an Arabic Quran that you might understand; and indeed it is in the Mother of the Book with Us, exalted and full of wisdom.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "43:1",
-          "excerpt": "حمٓ",
+          "key": "43:2",
+          "excerpt": "وَٱلۡكِتَٰبِ ٱلۡمُبِينِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1478",
-      "label": "cand-1478: Topic from 43:3",
-      "definition": "In 43:3: Indeed, We have made it an Arabic Qur'an that you might understand",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "43:3",
           "excerpt": "إِنَّا جَعَلۡنَٰهُ قُرۡءَٰنًا عَرَبِيّٗا لَّعَلَّكُمۡ تَعۡقِلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:4",
+          "excerpt": "وَإِنَّهُۥ فِيٓ أُمِّ ٱلۡكِتَٰبِ لَدَيۡنَا لَعَلِيٌّ حَكِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Umm al-kitab anchoring."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Understanding as purpose."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1479",
-      "label": "cand-1479: Topic from 43:6",
-      "definition": "In 43:6: And how many a prophet We sent among the former peoples",
+      "candidateId": "cand-1498",
+      "label": "Universal ridicule of every prophet sent to former peoples",
+      "definition": "In 43:6-7: How many a prophet We sent among the former peoples, but there would not come to them a prophet except that they used to ridicule him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:6",
           "excerpt": "وَكَمۡ أَرۡسَلۡنَا مِن نَّبِيّٖ فِي ٱلۡأَوَّلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:7",
+          "excerpt": "وَمَا يَأۡتِيهِم مِّن نَّبِيٍّ إِلَّا كَانُواْ بِهِۦ يَسۡتَهۡزِءُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Recurring rejection pattern."
+        },
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Ridicule as prophetic trial."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1480",
-      "label": "cand-1480: Topic from 43:9",
-      "definition": "In 43:9: And if you should ask them, \"Who has created the heavens and the earth?\" they would surely say, \"They were created by the Exalted in Might, the Knowing",
+      "candidateId": "cand-1499",
+      "label": "Creator-question conceded while daughter-attribution persists",
+      "definition": "In 43:9-16: If you ask who created heavens and earth they say the Mighty Knowing; yet they attribute to Him from His servants a portion; indeed man is clearly ungrateful; or has He taken daughters from what He created and chosen you for sons?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:9",
           "excerpt": "وَلَئِن سَأَلۡتَهُم مَّنۡ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ لَيَقُولُنَّ خَلَقَهُنَّ ٱلۡعَزِيزُ ٱلۡعَلِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:10",
+          "excerpt": "ٱلَّذِي جَعَلَ لَكُمُ ٱلۡأَرۡضَ مَهۡدٗا وَجَعَلَ لَكُمۡ فِيهَا سُبُلٗا لَّعَلَّكُمۡ تَهۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:11",
+          "excerpt": "وَٱلَّذِي نَزَّلَ مِنَ ٱلسَّمَآءِ مَآءَۢ بِقَدَرٖ فَأَنشَرۡنَا بِهِۦ بَلۡدَةٗ مَّيۡتٗاۚ كَذَٰلِكَ تُخۡرَجُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:12",
+          "excerpt": "وَٱلَّذِي خَلَقَ ٱلۡأَزۡوَٰجَ كُلَّهَا وَجَعَلَ لَكُم مِّنَ ٱلۡفُلۡكِ وَٱلۡأَنۡعَٰمِ مَا تَرۡكَبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:13",
+          "excerpt": "لِتَسۡتَوُۥاْ عَلَىٰ ظُهُورِهِۦ ثُمَّ تَذۡكُرُواْ نِعۡمَةَ رَبِّكُمۡ إِذَا ٱسۡتَوَيۡتُمۡ عَلَيۡهِ وَتَقُولُواْ سُبۡحَٰنَ ٱلَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقۡرِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:14",
+          "excerpt": "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:15",
+          "excerpt": "وَجَعَلُواْ لَهُۥ مِنۡ عِبَادِهِۦ جُزۡءًاۚ إِنَّ ٱلۡإِنسَٰنَ لَكَفُورٞ مُّبِينٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:16",
+          "excerpt": "أَمِ ٱتَّخَذَ مِمَّا يَخۡلُقُ بَنَاتٖ وَأَصۡفَىٰكُم بِٱلۡبَنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Concession without submission."
+        },
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Gender projection onto the divine."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1481",
-      "label": "cand-1481: Topic from 43:12",
-      "definition": "In 43:12: And who created the species, all of them, and has made for you of ships and animals those which you mount",
+      "candidateId": "cand-1500",
+      "label": "Mounts prompting glorification of the Subduer and acknowledgment of return",
+      "definition": "In 43:12-14: Who created the species and made ships and animals you mount, that you may settle on their backs and remember the favour of your Lord when settled and say exalted is He who subjected this to us and we could not have subdued it, and indeed to our Lord we will return.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:12",
           "excerpt": "وَٱلَّذِي خَلَقَ ٱلۡأَزۡوَٰجَ كُلَّهَا وَجَعَلَ لَكُم مِّنَ ٱلۡفُلۡكِ وَٱلۡأَنۡعَٰمِ مَا تَرۡكَبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:13",
+          "excerpt": "لِتَسۡتَوُۥاْ عَلَىٰ ظُهُورِهِۦ ثُمَّ تَذۡكُرُواْ نِعۡمَةَ رَبِّكُمۡ إِذَا ٱسۡتَوَيۡتُمۡ عَلَيۡهِ وَتَقُولُواْ سُبۡحَٰنَ ٱلَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقۡرِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:14",
+          "excerpt": "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dhikr triggered by taskhir."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Transport as ayah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1482",
-      "label": "cand-1482: Topic from 43:15",
-      "definition": "In 43:15: But they have attributed to Him from His servants a portion. Indeed, man is clearly ungrateful",
+      "candidateId": "cand-1501",
+      "label": "Angels named female without witnessed creation, testimony deferred",
+      "definition": "In 43:19: And they have made the angels, who are servants of the Most Merciful, females; did they witness their creation? Their testimony will be recorded and they will be questioned.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "43:15",
-          "excerpt": "وَجَعَلُواْ لَهُۥ مِنۡ عِبَادِهِۦ جُزۡءًاۚ إِنَّ ٱلۡإِنسَٰنَ لَكَفُورٞ مُّبِينٌ",
+          "key": "43:19",
+          "excerpt": "وَجَعَلُواْ ٱلۡمَلَـٰٓئِكَةَ ٱلَّذِينَ هُمۡ عِبَٰدُ ٱلرَّحۡمَٰنِ إِنَٰثًاۚ أَشَهِدُواْ خَلۡقَهُمۡۚ سَتُكۡتَبُ شَهَٰدَتُهُمۡ وَيُسۡـَٔلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Servants of the Rahman gendered."
+        },
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shahada requirement for attribution."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1483",
-      "label": "cand-1483: Topic from 43:18",
-      "definition": "In 43:18: So is one brought up in ornaments while being during conflict unevident [attributed to Allah]",
+      "candidateId": "cand-1502",
+      "label": "Ancestral religion invoked to reject better guidance from every warner",
+      "definition": "In 43:22-24: Rather they say we found our fathers upon a religion and we follow their footsteps; similarly We sent no warner to a city except its affluent said we found our fathers upon a religion; even if I brought you better guidance? They said we disbelieve in what you were sent with.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "43:18",
-          "excerpt": "أَوَمَن يُنَشَّؤُاْ فِي ٱلۡحِلۡيَةِ وَهُوَ فِي ٱلۡخِصَامِ غَيۡرُ مُبِينٖ",
+          "key": "43:22",
+          "excerpt": "بَلۡ قَالُوٓاْ إِنَّا وَجَدۡنَآ ءَابَآءَنَا عَلَىٰٓ أُمَّةٖ وَإِنَّا عَلَىٰٓ ءَاثَٰرِهِم مُّهۡتَدُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1484",
-      "label": "cand-1484: Topic from 43:21",
-      "definition": "In 43:21: Or have We given them a book before the Qur'an to which they are adhering",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "43:21",
-          "excerpt": "أَمۡ ءَاتَيۡنَٰهُمۡ كِتَٰبٗا مِّن قَبۡلِهِۦ فَهُم بِهِۦ مُسۡتَمۡسِكُونَ",
+          "key": "43:23",
+          "excerpt": "وَكَذَٰلِكَ مَآ أَرۡسَلۡنَا مِن قَبۡلِكَ فِي قَرۡيَةٖ مِّن نَّذِيرٍ إِلَّا قَالَ مُتۡرَفُوهَآ إِنَّا وَجَدۡنَآ ءَابَآءَنَا عَلَىٰٓ أُمَّةٖ وَإِنَّا عَلَىٰٓ ءَاثَٰرِهِم مُّقۡتَدُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1485",
-      "label": "cand-1485: Topic from 43:24",
-      "definition": "In 43:24: [Each warner] said, \"Even if I brought you better guidance than that [religion] upon which you found your fathers?\" They said, \"Indeed we, in that with which you were sent, are disbelievers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "43:24",
           "excerpt": "۞قَٰلَ أَوَلَوۡ جِئۡتُكُم بِأَهۡدَىٰ مِمَّا وَجَدتُّمۡ عَلَيۡهِ ءَابَآءَكُمۡۖ قَالُوٓاْ إِنَّا بِمَآ أُرۡسِلۡتُم بِهِۦ كَٰفِرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Taqlid overriding bayyinah."
+        },
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Pattern across every city."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1486",
-      "label": "cand-1486: Topic from 43:27",
-      "definition": "In 43:27: Except for He who created me; and indeed, He will guide me",
+      "candidateId": "cand-1503",
+      "label": "Ibrahim's lasting word among descendants for their return",
+      "definition": "In 43:26-28: Ibrahim said I am disassociated from what you worship except He who created me; and he made it a word remaining among his descendants that they might return.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "43:26",
+          "excerpt": "وَإِذۡ قَالَ إِبۡرَٰهِيمُ لِأَبِيهِ وَقَوۡمِهِۦٓ إِنَّنِي بَرَآءٞ مِّمَّا تَعۡبُدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "43:27",
           "excerpt": "إِلَّا ٱلَّذِي فَطَرَنِي فَإِنَّهُۥ سَيَهۡدِينِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:28",
+          "excerpt": "وَجَعَلَهَا كَلِمَةَۢ بَاقِيَةٗ فِي عَقِبِهِۦ لَعَلَّهُمۡ يَرۡجِعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kalimah baqiyah legacy."
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Return enabled by the word."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1487",
-      "label": "cand-1487: Topic from 43:31",
-      "definition": "In 43:31: And they said, \"Why was this Qur'an not sent down upon a great man from [one of] the two cities",
+      "candidateId": "cand-1504",
+      "label": "Demand for revelation to descend upon a socially prominent figure",
+      "definition": "In 43:31: And they said why was this Quran not sent down upon a great man from one of the two cities?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:31",
           "excerpt": "وَقَالُواْ لَوۡلَا نُزِّلَ هَٰذَا ٱلۡقُرۡءَانُ عَلَىٰ رَجُلٖ مِّنَ ٱلۡقَرۡيَتَيۡنِ عَظِيمٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Social status as criterion."
+        },
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Recipient contested."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1488",
-      "label": "cand-1488: Topic from 43:33",
-      "definition": "In 43:33: And if it were not that the people would become one community [of disbelievers], We would have made for those who disbelieve in the Most Merciful - for their houses - ceilings and stairways of silver upon which to mount",
+      "candidateId": "cand-1505",
+      "label": "Differentiated livelihoods enabling mutual service, mercy exceeding accumulation",
+      "definition": "In 43:32: Do they distribute the mercy of your Lord? It is We who apportioned their livelihood and raised some above others in degrees that they may use one another for service; but the mercy of your Lord is better than whatever they accumulate.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "43:32",
+          "excerpt": "أَهُمۡ يَقۡسِمُونَ رَحۡمَتَ رَبِّكَۚ نَحۡنُ قَسَمۡنَا بَيۡنَهُم مَّعِيشَتَهُمۡ فِي ٱلۡحَيَوٰةِ ٱلدُّنۡيَاۚ وَرَفَعۡنَا بَعۡضَهُمۡ فَوۡقَ بَعۡضٖ دَرَجَٰتٖ لِّيَتَّخِذَ بَعۡضُهُم بَعۡضٗا سُخۡرِيّٗاۗ وَرَحۡمَتُ رَبِّكَ خَيۡرٞ مِّمَّا يَجۡمَعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rizq distribution as rahmah."
+        },
+        {
+          "topicId": "work-honor",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mutual service structure."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1506",
+      "label": "Material wealth withheld to prevent unified disbelief",
+      "definition": "In 43:33-35: If it were not that people would become one community of disbelievers We would have made for those who disbelieve in the Rahman ceilings and stairways of silver, doors and couches of silver, and gold ornament; but all that is not but the enjoyment of worldly life, and the Hereafter with your Lord is for the righteous.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:33",
           "excerpt": "وَلَوۡلَآ أَن يَكُونَ ٱلنَّاسُ أُمَّةٗ وَٰحِدَةٗ لَّجَعَلۡنَا لِمَن يَكۡفُرُ بِٱلرَّحۡمَٰنِ لِبُيُوتِهِمۡ سُقُفٗا مِّن فِضَّةٖ وَمَعَارِجَ عَلَيۡهَا يَظۡهَرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:34",
+          "excerpt": "وَلِبُيُوتِهِمۡ أَبۡوَٰبٗا وَسُرُرًا عَلَيۡهَا يَتَّكِـُٔونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:35",
+          "excerpt": "وَزُخۡرُفٗاۚ وَإِن كُلُّ ذَٰلِكَ لَمَّا مَتَٰعُ ٱلۡحَيَوٰةِ ٱلدُّنۡيَاۚ وَٱلۡأٓخِرَةُ عِندَ رَبِّكَ لِلۡمُتَّقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Withholding as protective measure."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dunya versus akhirah valuation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1489",
-      "label": "cand-1489: Topic from 43:36",
-      "definition": "In 43:36: And whoever is blinded from remembrance of the Most Merciful - We appoint for him a devil, and he is to him a companion",
+      "candidateId": "cand-1507",
+      "label": "Blindness to the Rahman's remembrance earning a devil-companion",
+      "definition": "In 43:36-37: Whoever is blinded from remembrance of the Most Merciful, We appoint for him a devil and he is to him a companion; and indeed the devils avert them from the way while they think they are rightly guided.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:36",
           "excerpt": "وَمَن يَعۡشُ عَن ذِكۡرِ ٱلرَّحۡمَٰنِ نُقَيِّضۡ لَهُۥ شَيۡطَٰنٗا فَهُوَ لَهُۥ قَرِينٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:37",
+          "excerpt": "وَإِنَّهُمۡ لَيَصُدُّونَهُمۡ عَنِ ٱلسَّبِيلِ وَيَحۡسَبُونَ أَنَّهُم مُّهۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dhikr neglect consequences."
+        },
+        {
+          "topicId": "shaytan-enemy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qarin appointment."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1490",
-      "label": "cand-1490: Topic from 43:39",
-      "definition": "In 43:39: And never will it benefit you that Day, when you have wronged, that you are [all] sharing in the punishment",
+      "candidateId": "cand-1508",
+      "label": "East-west regret toward the companion upon meeting the Lord",
+      "definition": "In 43:38-39: Until when he comes to Us he says oh I wish there was between me and you the distance between east and west, how wretched a companion; and never will it benefit you that Day when you have wronged that you are sharing in the punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "43:38",
+          "excerpt": "حَتَّىٰٓ إِذَا جَآءَنَا قَالَ يَٰلَيۡتَ بَيۡنِي وَبَيۡنَكَ بُعۡدَ ٱلۡمَشۡرِقَيۡنِ فَبِئۡسَ ٱلۡقَرِينُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "43:39",
           "excerpt": "وَلَن يَنفَعَكُمُ ٱلۡيَوۡمَ إِذ ظَّلَمۡتُمۡ أَنَّكُمۡ فِي ٱلۡعَذَابِ مُشۡتَرِكُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1491",
-      "label": "cand-1491: Topic from 43:42",
-      "definition": "In 43:42: Or whether [or not] We show you that which We have promised them, indeed, We are Perfect in Ability",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "43:42",
-          "excerpt": "أَوۡ نُرِيَنَّكَ ٱلَّذِي وَعَدۡنَٰهُمۡ فَإِنَّا عَلَيۡهِم مُّقۡتَدِرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1492",
-      "label": "cand-1492: Topic from 43:45",
-      "definition": "In 43:45: And ask those We sent before you of Our messengers; have We made besides the Most Merciful deities to be worshipped",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Companion regret at meeting."
+        },
         {
-          "key": "43:45",
-          "excerpt": "وَسۡـَٔلۡ مَنۡ أَرۡسَلۡنَا مِن قَبۡلِكَ مِن رُّسُلِنَآ أَجَعَلۡنَا مِن دُونِ ٱلرَّحۡمَٰنِ ءَالِهَةٗ يُعۡبَدُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shared punishment avails nothing."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1493",
-      "label": "cand-1493: Topic from 43:48",
-      "definition": "In 43:48: And We showed them not a sign except that it was greater than its sister, and We seized them with affliction that perhaps they might return [to faith]",
+      "candidateId": "cand-1509",
+      "label": "Each sign greater than its sister with affliction applied for return",
+      "definition": "In 43:48: And We showed them not a sign except that it was greater than its sister, and We seized them with affliction that perhaps they might return to faith.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:48",
           "excerpt": "وَمَا نُرِيهِم مِّنۡ ءَايَةٍ إِلَّا هِيَ أَكۡبَرُ مِنۡ أُخۡتِهَاۖ وَأَخَذۡنَٰهُم بِٱلۡعَذَابِ لَعَلَّهُمۡ يَرۡجِعُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Escalating ayat sequence."
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Affliction aimed at return."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1494",
-      "label": "cand-1494: Topic from 43:51",
-      "definition": "In 43:51: And Pharaoh called out among his people; he said, \"O my people, does not the kingdom of Egypt belong to me, and these rivers flowing beneath me; then do you not see",
+      "candidateId": "cand-1510",
+      "label": "Promise of guidance given then immediately broken upon relief",
+      "definition": "In 43:49-50: They said O magician invoke for us your Lord by what He promised you, indeed we will be guided; but when We removed the affliction from them, at once they broke their word.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "43:49",
+          "excerpt": "وَقَالُواْ يَـٰٓأَيُّهَ ٱلسَّاحِرُ ٱدۡعُ لَنَا رَبَّكَ بِمَا عَهِدَ عِندَكَ إِنَّنَا لَمُهۡتَدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:50",
+          "excerpt": "فَلَمَّا كَشَفۡنَا عَنۡهُمُ ٱلۡعَذَابَ إِذَا هُمۡ يَنكُثُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Conditional pledge broken."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Nakth al-wa'd."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1511",
+      "label": "Pharaoh's boast of kingdom and rivers dismissing Musa as insignificant",
+      "definition": "In 43:51-52: Pharaoh called out among his people saying does not the kingdom of Egypt belong to me and these rivers flowing beneath me, do you not see? Or am I not better than this one who is insignificant and hardly makes himself clear?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:51",
           "excerpt": "وَنَادَىٰ فِرۡعَوۡنُ فِي قَوۡمِهِۦ قَالَ يَٰقَوۡمِ أَلَيۡسَ لِي مُلۡكُ مِصۡرَ وَهَٰذِهِ ٱلۡأَنۡهَٰرُ تَجۡرِي مِن تَحۡتِيٓۚ أَفَلَا تُبۡصِرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:52",
+          "excerpt": "أَمۡ أَنَا۠ خَيۡرٞ مِّنۡ هَٰذَا ٱلَّذِي هُوَ مَهِينٞ وَلَا يَكَادُ يُبِينُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wealth-based superiority claim."
+        },
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Political authority vs prophethood."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1495",
-      "label": "cand-1495: Topic from 43:54",
-      "definition": "In 43:54: So he bluffed his people, and they obeyed him. Indeed, they were [themselves] a people defiantly disobedient [of Allah]",
+      "candidateId": "cand-1512",
+      "label": "Gold bracelets and angelic escort demanded as prophetic credentials",
+      "definition": "In 43:53: Then why have there not been placed upon him bracelets of gold or come with him the angels in conjunction?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "43:53",
+          "excerpt": "فَلَوۡلَآ أُلۡقِيَ عَلَيۡهِ أَسۡوِرَةٞ مِّن ذَهَبٍ أَوۡ جَآءَ مَعَهُ ٱلۡمَلَـٰٓئِكَةُ مُقۡتَرِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Material criteria for truth."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Misplaced evidentiary standard."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1513",
+      "label": "People bluffed into obedience while already defiantly disobedient",
+      "definition": "In 43:54: So he bluffed his people and they obeyed him; indeed they were themselves a people defiantly disobedient of Allah.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:54",
           "excerpt": "فَٱسۡتَخَفَّ قَوۡمَهُۥ فَأَطَاعُوهُۚ إِنَّهُمۡ كَانُواْ قَوۡمٗا فَٰسِقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Istakhaffa leadership."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qawm fasiqin complicity."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1496",
-      "label": "cand-1496: Topic from 43:57",
-      "definition": "In 43:57: And when the son of Mary was presented as an example, immediately your people laughed aloud",
+      "candidateId": "cand-1514",
+      "label": "Isa as servant granted favour and example, not object of dispute",
+      "definition": "In 43:57-59: When the son of Mary was presented as an example your people laughed aloud and said are your gods better or is he? They presented the comparison only for argument, they are a people prone to dispute; Jesus was not but a servant upon whom We bestowed favour and We made him an example for the Children of Israel.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:57",
           "excerpt": "۞وَلَمَّا ضُرِبَ ٱبۡنُ مَرۡيَمَ مَثَلًا إِذَا قَوۡمُكَ مِنۡهُ يَصِدُّونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:58",
+          "excerpt": "وَقَالُوٓاْ ءَأَٰلِهَتُنَا خَيۡرٌ أَمۡ هُوَۚ مَا ضَرَبُوهُ لَكَ إِلَّا جَدَلَۢاۚ بَلۡ هُمۡ قَوۡمٌ خَصِمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:59",
+          "excerpt": "إِنۡ هُوَ إِلَّا عَبۡدٌ أَنۡعَمۡنَا عَلَيۡهِ وَجَعَلۡنَٰهُ مَثَلٗا لِّبَنِيٓ إِسۡرَـٰٓءِيلَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophetic-character",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Abd and ni'mah definition."
+        },
+        {
+          "topicId": "dialogue-principles",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jadal versus inquiry."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1497",
-      "label": "cand-1497: Topic from 43:61",
-      "definition": "In 43:61: And indeed, Jesus will be [a sign for] knowledge of the Hour, so be not in doubt of it, and follow Me. This is a straight path",
+      "candidateId": "cand-1515",
+      "label": "Paradise inherited through deeds with gold vessels and fulfilled desires",
+      "definition": "In 43:71-73: Circulated among them will be plates and vessels of gold, and therein is whatever the souls desire and what delights the eyes, and you will abide therein eternally; and that is Paradise which you are made to inherit for what you used to do; for you therein is much fruit from which you will eat.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "43:61",
-          "excerpt": "وَإِنَّهُۥ لَعِلۡمٞ لِّلسَّاعَةِ فَلَا تَمۡتَرُنَّ بِهَا وَٱتَّبِعُونِۚ هَٰذَا صِرَٰطٞ مُّسۡتَقِيمٞ",
+          "key": "43:71",
+          "excerpt": "يُطَافُ عَلَيۡهِم بِصِحَافٖ مِّن ذَهَبٖ وَأَكۡوَابٖۖ وَفِيهَا مَا تَشۡتَهِيهِ ٱلۡأَنفُسُ وَتَلَذُّ ٱلۡأَعۡيُنُۖ وَأَنتُمۡ فِيهَا خَٰلِدُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1498",
-      "label": "cand-1498: Topic from 43:63",
-      "definition": "In 43:63: And when Jesus brought clear proofs, he said, \"I have come to you with wisdom and to make clear to you some of that over which you differ, so fear Allah and obey me",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "43:63",
-          "excerpt": "وَلَمَّا جَآءَ عِيسَىٰ بِٱلۡبَيِّنَٰتِ قَالَ قَدۡ جِئۡتُكُم بِٱلۡحِكۡمَةِ وَلِأُبَيِّنَ لَكُم بَعۡضَ ٱلَّذِي تَخۡتَلِفُونَ فِيهِۖ فَٱتَّقُواْ ٱللَّهَ وَأَطِيعُونِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1499",
-      "label": "cand-1499: Topic from 43:66",
-      "definition": "In 43:66: Are they waiting except for the Hour to come upon them suddenly while they perceive not",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "43:66",
-          "excerpt": "هَلۡ يَنظُرُونَ إِلَّا ٱلسَّاعَةَ أَن تَأۡتِيَهُم بَغۡتَةٗ وَهُمۡ لَا يَشۡعُرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1500",
-      "label": "cand-1500: Topic from 43:69",
-      "definition": "In 43:69: [You] who believed in Our verses and were Muslims",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "43:69",
-          "excerpt": "ٱلَّذِينَ ءَامَنُواْ بِـَٔايَٰتِنَا وَكَانُواْ مُسۡلِمِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1501",
-      "label": "cand-1501: Topic from 43:72",
-      "definition": "In 43:72: And that is Paradise which you are made to inherit for what you used to do",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "43:72",
           "excerpt": "وَتِلۡكَ ٱلۡجَنَّةُ ٱلَّتِيٓ أُورِثۡتُمُوهَا بِمَا كُنتُمۡ تَعۡمَلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1502",
-      "label": "cand-1502: Topic from 43:75",
-      "definition": "In 43:75: It will not be allowed to subside for them, and they, therein, are in despair",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "43:75",
-          "excerpt": "لَا يُفَتَّرُ عَنۡهُمۡ وَهُمۡ فِيهِ مُبۡلِسُونَ",
+          "key": "43:73",
+          "excerpt": "لَكُمۡ فِيهَا فَٰكِهَةٞ كَثِيرَةٞ مِّنۡهَا تَأۡكُلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Irth linked to amal."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Deeds as inheritance basis."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1503",
-      "label": "cand-1503: Topic from 43:77",
-      "definition": "In 43:77: And they will call, \"O Malik, let your Lord put an end to us!\" He will say, \"Indeed, you will remain",
+      "candidateId": "cand-1516",
+      "label": "Plea to Malik for termination refused with the command to remain",
+      "definition": "In 43:77: And they will call O Malik let your Lord put an end to us; he will say indeed you will remain.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:77",
           "excerpt": "وَنَادَوۡاْ يَٰمَٰلِكُ لِيَقۡضِ عَلَيۡنَا رَبُّكَۖ قَالَ إِنَّكُم مَّـٰكِثُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Malik's refusal."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Permanence of punishment."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1504",
-      "label": "cand-1504: Topic from 43:80",
-      "definition": "In 43:80: Or do they think that We hear not their secrets and their private conversations? Yes, [We do], and Our messengers are with them recording",
+      "candidateId": "cand-1517",
+      "label": "Secrets and private conversations heard and recorded despite assumptions",
+      "definition": "In 43:80: Or do they think that We hear not their secrets and their private conversations? Yes, and Our messengers are with them recording.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:80",
           "excerpt": "أَمۡ يَحۡسَبُونَ أَنَّا لَا نَسۡمَعُ سِرَّهُمۡ وَنَجۡوَىٰهُمۚ بَلَىٰ وَرُسُلُنَا لَدَيۡهِمۡ يَكۡتُبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sirr and najwa encompassed."
+        },
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Recording messengers."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1505",
-      "label": "cand-1505: Topic from 43:83",
-      "definition": "In 43:83: So leave them to converse vainly and amuse themselves until they meet their Day which they are promised",
+      "candidateId": "cand-1518",
+      "label": "Hypothetical sonship negated by transcendence above description",
+      "definition": "In 43:81-82: Say if the Most Merciful had a son then I would be the first of his worshippers; exalted is the Lord of the heavens and the earth, Lord of the Throne, above what they describe.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "43:83",
-          "excerpt": "فَذَرۡهُمۡ يَخُوضُواْ وَيَلۡعَبُواْ حَتَّىٰ يُلَٰقُواْ يَوۡمَهُمُ ٱلَّذِي يُوعَدُونَ",
+          "key": "43:81",
+          "excerpt": "قُلۡ إِن كَانَ لِلرَّحۡمَٰنِ وَلَدٞ فَأَنَا۠ أَوَّلُ ٱلۡعَٰبِدِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "43:82",
+          "excerpt": "سُبۡحَٰنَ رَبِّ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ رَبِّ ٱلۡعَرۡشِ عَمَّا يَصِفُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-asma-wa-sifat",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Walad hypothetically entertained then negated."
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rabb al-arsh transcendence."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1506",
-      "label": "cand-1506: Topic from 43:86",
-      "definition": "In 43:86: And those they invoke besides Him do not possess [power of] intercession; but only those who testify to the truth [can benefit], and they know",
+      "candidateId": "cand-1519",
+      "label": "Intercession denied to invoked rivals, restricted to truthful witnesses",
+      "definition": "In 43:86: And those they invoke besides Him do not possess power of intercession; but only those who testify to the truth can benefit, and they know.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "43:86",
           "excerpt": "وَلَا يَمۡلِكُ ٱلَّذِينَ يَدۡعُونَ مِن دُونِهِ ٱلشَّفَٰعَةَ إِلَّا مَن شَهِدَ بِٱلۡحَقِّ وَهُمۡ يَعۡلَمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "No shafa'ah for rivals."
+        },
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shahada bi'l-haqq condition."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:40:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1520",
+      "label": "Turn aside with peace while they will come to know",
+      "definition": "In 43:89: So turn aside from them and say Peace; but they are going to know.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "43:89",
+          "excerpt": "فَٱصۡفَحۡ عَنۡهُمۡ وَقُلۡ سَلَٰمٞۚ فَسَوۡفَ يَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "I'rad as prophetic response."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Salam as parting word."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:45:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     }
   ]
 }
