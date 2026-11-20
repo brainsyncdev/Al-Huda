@@ -1,387 +1,77 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:20:00.000Z",
+  "generatedAt": "2026-11-21T02:05:00.000Z",
   "sourceExtraction": "ext-108-p1,ext-108-p2",
   "candidates": [
     {
-      "candidateId": "cand-2797",
-      "label": "cand-2797: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
+      "candidateId": "cand-2004",
+      "label": "Kawthar granted with prayer and sacrifice commanded",
+      "definition": "In 108:1-2: Indeed We have granted you Al-Kawthar; so pray to your Lord and offer sacrifice.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "108:1",
           "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2798",
-      "label": "cand-2798: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
+          "key": "108:2",
+          "excerpt": "فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2799",
-      "label": "cand-2799: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2800",
-      "label": "cand-2800: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Kawthar as divine gift."
+        },
         {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Salah and nahr as gratitude response."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T02:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2801",
-      "label": "cand-2801: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2802",
-      "label": "cand-2802: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2803",
-      "label": "cand-2803: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2804",
-      "label": "cand-2804: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2805",
-      "label": "cand-2805: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2806",
-      "label": "cand-2806: Topic from 108:1",
-      "definition": "In 108:1: Indeed, We have granted you, [O Muhammad], al-Kawthar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:1",
-          "excerpt": "إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2807",
-      "label": "cand-2807: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
+      "candidateId": "cand-2005",
+      "label": "Hater of the Prophet declared cut off from all good",
+      "definition": "In 108:3: Indeed your enemy is the one cut off.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "108:3",
           "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2808",
-      "label": "cand-2808: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2809",
-      "label": "cand-2809: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shani'aka huwa al-abtar reversal."
+        },
         {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Prophetic vindication against mockery."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2810",
-      "label": "cand-2810: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2811",
-      "label": "cand-2811: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2812",
-      "label": "cand-2812: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2813",
-      "label": "cand-2813: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2814",
-      "label": "cand-2814: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2815",
-      "label": "cand-2815: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2816",
-      "label": "cand-2816: Topic from 108:3",
-      "definition": "In 108:3: Indeed, your enemy is the one cut off",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "108:3",
-          "excerpt": "إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T02:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     }
   ]
 }
