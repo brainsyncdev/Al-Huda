@@ -1,387 +1,313 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:10:00.000Z",
-  "sourceExtraction": "ext-084-p1,ext-084-p2",
+  "generatedAt": "2026-11-20T22:05:00.000Z",
+  "sourceExtraction": "ext-084-p1,ext-084-p2,ext-084-p3",
   "candidates": [
     {
-      "candidateId": "cand-2317",
-      "label": "cand-2317: Topic from 84:1",
-      "definition": "In 84:1: When the sky has split [open]",
+      "candidateId": "cand-1920",
+      "label": "Sky and earth responding to their Lord as obligated at dissolution",
+      "definition": "In 84:1-5: When the sky has split open and has responded to its Lord and was obligated to do so; and when the earth has been extended and has cast out that within it and relinquished it and has responded to its Lord and was obligated to do so.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "84:1",
           "excerpt": "إِذَا ٱلسَّمَآءُ ٱنشَقَّتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2318",
-      "label": "cand-2318: Topic from 84:2",
-      "definition": "In 84:2: And has responded to its Lord and was obligated [to do so]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:2",
           "excerpt": "وَأَذِنَتۡ لِرَبِّهَا وَحُقَّتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2319",
-      "label": "cand-2319: Topic from 84:3",
-      "definition": "In 84:3: And when the earth has been extended",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:3",
           "excerpt": "وَإِذَا ٱلۡأَرۡضُ مُدَّتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2320",
-      "label": "cand-2320: Topic from 84:4",
-      "definition": "In 84:4: And has cast out that within it and relinquished [it]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:4",
           "excerpt": "وَأَلۡقَتۡ مَا فِيهَا وَتَخَلَّتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2321",
-      "label": "cand-2321: Topic from 84:5",
-      "definition": "In 84:5: And has responded to its Lord and was obligated [to do so]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:5",
           "excerpt": "وَأَذِنَتۡ لِرَبِّهَا وَحُقَّتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Inshiqaq and madd sequence."
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Adhinat li-rabbiha wa-huqqat."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:05:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2322",
-      "label": "cand-2322: Topic from 84:7",
-      "definition": "In 84:7: Then as for he who is given his record in his right hand",
+      "candidateId": "cand-1921",
+      "label": "Human life as exerted labour toward the Lord that will be met",
+      "definition": "In 84:6: O mankind indeed you are laboring toward your Lord with great exertion and will meet it.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "84:6",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلۡإِنسَٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدۡحٗا فَمُلَٰقِيهِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kadh ila rabbika fa-mulaqih."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Meeting the labour itself."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T22:05:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1922",
+      "label": "Record position determining easy account or cry for destruction",
+      "definition": "In 84:7-12: Then as for he who is given his record in his right hand he will be judged with an easy account and return to his people in happiness; but as for he who is given his record behind his back he will cry out for destruction and enter to burn in a Blaze.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "84:7",
           "excerpt": "فَأَمَّا مَنۡ أُوتِيَ كِتَٰبَهُۥ بِيَمِينِهِۦ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2323",
-      "label": "cand-2323: Topic from 84:8",
-      "definition": "In 84:8: He will be judged with an easy account",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:8",
           "excerpt": "فَسَوۡفَ يُحَاسَبُ حِسَابٗا يَسِيرٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2324",
-      "label": "cand-2324: Topic from 84:9",
-      "definition": "In 84:9: And return to his people in happiness",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:9",
           "excerpt": "وَيَنقَلِبُ إِلَىٰٓ أَهۡلِهِۦ مَسۡرُورٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2325",
-      "label": "cand-2325: Topic from 84:10",
-      "definition": "In 84:10: But as for he who is given his record behind his back",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:10",
           "excerpt": "وَأَمَّا مَنۡ أُوتِيَ كِتَٰبَهُۥ وَرَآءَ ظَهۡرِهِۦ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2326",
-      "label": "cand-2326: Topic from 84:11",
-      "definition": "In 84:11: He will cry out for destruction",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:11",
           "excerpt": "فَسَوۡفَ يَدۡعُواْ ثُبُورٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "84:12",
+          "excerpt": "وَيَصۡلَىٰ سَعِيرًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hisab yasir versus thubur."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Two emotional outcomes."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:05:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2327",
-      "label": "cand-2327: Topic from 84:14",
-      "definition": "In 84:14: Indeed, he had thought he would never return [to Allah]",
+      "candidateId": "cand-1923",
+      "label": "Assumption of no return corrected by the Lord's constant sight",
+      "definition": "In 84:13-15: Indeed he had once been among his people in happiness; indeed he had thought he would never return to Allah; but yes indeed his Lord was ever of him Seeing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "84:13",
+          "excerpt": "إِنَّهُۥ كَانَ فِيٓ أَهۡلِهِۦ مَسۡرُورًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:14",
           "excerpt": "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2328",
-      "label": "cand-2328: Topic from 84:15",
-      "definition": "In 84:15: But yes! Indeed, his Lord was ever of him, Seeing",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:15",
           "excerpt": "بَلَىٰٓۚ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kana bihi basira."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zanna an lan yahur refuted."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:05:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2329",
-      "label": "cand-2329: Topic from 84:16",
-      "definition": "In 84:16: So I swear by the twilight glow",
+      "candidateId": "cand-1924",
+      "label": "Twilight-night-moon oaths establishing successive states",
+      "definition": "In 84:16-19: So I swear by the twilight glow and by the night and what it envelops and by the moon when it becomes full; that you will surely experience state after state.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "84:16",
           "excerpt": "فَلَآ أُقۡسِمُ بِٱلشَّفَقِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2330",
-      "label": "cand-2330: Topic from 84:17",
-      "definition": "In 84:17: And [by] the night and what it envelops",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:17",
           "excerpt": "وَٱلَّيۡلِ وَمَا وَسَقَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2331",
-      "label": "cand-2331: Topic from 84:18",
-      "definition": "In 84:18: And [by] the moon when it becomes full",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:18",
           "excerpt": "وَٱلۡقَمَرِ إِذَا ٱتَّسَقَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2332",
-      "label": "cand-2332: Topic from 84:19",
-      "definition": "In 84:19: [That] you will surely experience state after state",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:19",
           "excerpt": "لَتَرۡكَبُنَّ طَبَقًا عَن طَبَقٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shafaq layl qamar triad."
+        },
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Tabaqan 'an tabaq as staged existence."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:05:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2333",
-      "label": "cand-2333: Topic from 84:20",
-      "definition": "In 84:20: So what is [the matter] with them [that] they do not believe",
+      "candidateId": "cand-1925",
+      "label": "Prostration refusal at recitation with uninterrupted reward for believers",
+      "definition": "In 84:20-25: So what is the matter with them that they do not believe and when the Quran is recited to them they do not prostrate; but those who have disbelieved deny and Allah is most knowing of what they keep within themselves; so give them tidings of a painful punishment except for those who believe and do righteous deeds for them is a reward uninterrupted.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "84:20",
           "excerpt": "فَمَا لَهُمۡ لَا يُؤۡمِنُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2334",
-      "label": "cand-2334: Topic from 84:21",
-      "definition": "In 84:21: And when the Qur'an is recited to them, they do not prostrate [to Allah]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:21",
           "excerpt": "وَإِذَا قُرِئَ عَلَيۡهِمُ ٱلۡقُرۡءَانُ لَا يَسۡجُدُونَۤ۩",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2335",
-      "label": "cand-2335: Topic from 84:22",
-      "definition": "In 84:22: But those who have disbelieved deny",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:22",
           "excerpt": "بَلِ ٱلَّذِينَ كَفَرُواْ يُكَذِّبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2336",
-      "label": "cand-2336: Topic from 84:23",
-      "definition": "In 84:23: And Allah is most knowing of what they keep within themselves",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "84:23",
           "excerpt": "وَٱللَّهُ أَعۡلَمُ بِمَا يُوعُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "84:24",
+          "excerpt": "فَبَشِّرۡهُم بِعَذَابٍ أَلِيمٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "84:25",
+          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ لَهُمۡ أَجۡرٌ غَيۡرُ مَمۡنُونِۭ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sujud al-tilawah implied."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ajr ghayr mamnun exception."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:05:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     }
   ]
 }
