@@ -93,19 +93,167 @@ const FINAL_PASSAGES = [
 while (PASSAGES.length > 0) PASSAGES.pop();
 for (const p of FINAL_PASSAGES) PASSAGES.push(p);
 
+// Per-ayah editorial subject descriptions, ordered from each passage first ayah.
+const SUB_LABELS = {
+  "ext-020-p1": [
+    "Disjointed letters Ta-Ha opening the surah as a Quranic initial",
+    "Negation of the Quran as a source of distress for the Prophet",
+    "Affirmation of the Quran as a reminder exclusively for those who possess khashyah",
+    "Identification of the revelation source as Creator of earth and highest heavens",
+    "Rahman established above the Throne affirming divine transcendence",
+    "Comprehensive divine ownership spanning heavens earth between them and subterranean realm",
+    "Divine knowledge encompassing spoken words secrets and what is even more hidden",
+    "Declaration of tawheed and exclusive possession of the best names by Allah",
+    "Rhetorical question introducing the narrative of Musa as prophetic precedent",
+    "Musa perceiving fire and instructing his family to stay while seeking guidance or a torch",
+    "Divine calling of Musa upon reaching the fire establishing direct communication",
+    "Self-disclosure as Lord of Musa with command to remove sandals in the sacred valley Tuwa",
+    "Declaration of divine election of Musa with instruction to listen to revelation",
+    "Tawheed affirmation commanding worship and establishment of prayer for divine remembrance",
+    "Announcement of the approaching Hour nearly concealed so each soul is recompensed for its striving",
+    "Warning against allowing disbelievers following desire to avert from belief in the Hour",
+    "Divine inquiry about what is in Musa right hand initiating the staff miracle sequence",
+    "Musa describing his staff practical uses for leaning herding and other needs",
+    "Command to throw down the staff initiating the first miraculous sign",
+    "Staff transforming into a swiftly moving serpent causing Musa to flee",
+    "Reassurance to seize the serpent without fear with promise of restoration to original form",
+    "Second sign of drawing hand to side producing whiteness without disease",
+    "Purpose of both signs stated as showing Musa some of the greatest divine signs",
+    "Commissioning to go to Firawn who has transgressed beyond bounds",
+    "Musa supplicating for expansion of his breast to face the daunting mission",
+    "Request for easing of his task enabling effective prophetic delivery",
+    "Request to untie the knot from his tongue ensuring clear communication",
+    "Purpose of eloquence so that listeners may understand his speech",
+    "Request for appointment of a minister from his family to share the burden",
+    "Specification of Harun his brother as the requested ministerial support",
+    "Prayer for strengthened resolve through Harun partnership in the mission",
+    "Desire for Harun to participate fully in carrying out the prophetic task",
+    "Goal of abundant tasbih enabled through shared prophetic responsibility",
+    "Goal of abundant dhikr flowing from collaborative ministry",
+    "Acknowledgment that Allah is ever Seeing of their condition and needs",
+    "Divine confirmation that Musa request has been fully granted",
+    "Reference to a prior occasion of divine favor bestowed upon Musa",
+    "Inspiration given to Musa mother directing her course of action",
+    "Command to cast infant Musa into the river with divine guarantee of recovery and love placed upon him",
+    "Musa sister suggesting a caretaker resulting in return to his mother plus recounting of trials and arrival at appointed time"
+  ],
+  "ext-020-p2": [
+    "Declaration of Allah having specially fashioned Musa for Himself",
+    "Command to proceed with his brother carrying divine signs without slackening in remembrance",
+    "Joint commissioning of both brothers to approach Firawn who has transgressed",
+    "Instruction to address Firawn with gentle speech aiming to provoke remembrance or fear",
+    "Both brothers expressing apprehension that Firawn might hasten punishment or further transgress",
+    "Divine reassurance of presence hearing and seeing removing their fear",
+    "Directive to present themselves as messengers demanding release of Bani Israel with peace greeting for the guided",
+    "Warning revealed to them that punishment awaits whoever denies and turns away",
+    "Firawn interrogating them about the identity of their Lord",
+    "Musa defining their Lord as the One who gave everything its creation then guided it",
+    "Firawn questioning the fate of former generations challenging divine justice",
+    "Musa responding that their knowledge rests with his Lord in a record free from error or forgetfulness",
+    "Description of Allah making earth habitable laying pathways sending rain and producing diverse plant pairs",
+    "Invitation to eat and pasture livestock with these provisions identified as signs for people of understanding",
+    "Cycle of human origin from earth return to it and re-emergence for resurrection",
+    "Statement that Firawn was shown all divine signs yet he denied and refused",
+    "Firawn accusing Musa of intending to expel them from their land through magic",
+    "Firawn proposing a mutual appointment for magical confrontation at an agreed place",
+    "Musa setting the day of festival at mid-morning as the time for public contest",
+    "Firawn withdrawing to assemble his stratagem then returning for the confrontation",
+    "Musa warning the magicians against fabricating lies about Allah lest punishment destroy them",
+    "Magicians disputing privately among themselves concealing their deliberation",
+    "Magicians concluding that Musa and Harun are sorcerers seeking to displace them from their land and tradition",
+    "Magicians resolving to unite their plan and advance in formation declaring success belongs to the one who prevails",
+    "Magicians offering Musa the choice of throwing first or letting them begin",
+    "Musa deferring to them whereupon their ropes and staffs appeared through magic to be slithering",
+    "Musa experiencing internal apprehension at the spectacle of their illusion",
+    "Divine reassurance that Musa holds the superior position eliminating his fear",
+    "Command to throw what is in his right hand which will swallow their fabrication exposing magic as futile trickery",
+    "Magicians falling in prostration immediately declaring belief in the Lord of Harun and Musa",
+    "Firawn threatening amputation of alternate limbs and crucifixion on palm trunks for believing without permission",
+    "Magicians rejecting Firawn authority limiting his jurisdiction to worldly life alone while choosing clear proofs",
+    "Magicians affirming belief seeking forgiveness for sins and coerced magic declaring Allah better and more enduring",
+    "Statement that criminals meeting their Lord face Hellfire where they neither die nor live",
+    "Believers arriving with righteous deeds granted the highest ranks",
+    "Gardens of Eden beneath flowing rivers as eternal reward for those who purified themselves",
+    "Divine inspiration to Musa to travel by night striking a dry path through the sea without fear of pursuit or drowning",
+    "Firawn pursuing with soldiers and the sea overwhelming them completely",
+    "Firawn leading his people astray providing no true guidance",
+    "Address to Bani Israel recalling deliverance from enemy appointment at mount right side and provision of manna and quails",
+    "Command to eat good provisions without transgression lest divine anger descend causing ruin",
+    "Declaration of perpetual forgiveness for those who repent believe act righteously and remain guided"
+  ],
+  "ext-020-p3": [
+    "Divine inquiry asking Musa what caused him to hasten ahead of his people",
+    "Musa explaining he came early seeking divine pleasure while his people followed behind",
+    "Allah revealing that the people have been tested after Musa departure and Samiri led them astray",
+    "Musa returning angry and grieved reproaching his people for breaking their covenant and risking divine wrath",
+    "People excusing themselves claiming they were burdened with ornaments which they cast in as Samiri did",
+    "Samiri producing a calf body emitting a lowing sound which they declared their god and Musa god",
+    "Rhetorical challenge noting the calf inability to respond speak or control harm or benefit",
+    "Harun prior plea reminding them this was a test and their true Lord is Rahman urging obedience",
+    "People stubbornly refusing to abandon devotion to the calf until Musa returned",
+    "Musa interrogating Harun about what prevented him from following when he saw them go astray",
+    "Musa asking whether Harun deliberately disobeyed his instruction",
+    "Harun pleading not to be seized by beard or head explaining he feared causing division among Bani Israel",
+    "Musa turning to confront Samiri directly about his actions",
+    "Samiri confessing he perceived what others missed taking a handful from the messenger track prompted by his own soul",
+    "Musa decreeing Samiri earthly isolation and unbreakable hereafter appointment with burning and scattering of the calf into the sea",
+    "Affirmation that their only deity is Allah whose knowledge encompasses everything",
+    "Explanation that such accounts of past events are related to the Prophet along with the Quranic reminder granted to him",
+    "Warning that whoever turns away from the Quran will bear a heavy burden on Resurrection Day",
+    "Eternal duration of that burden described as an evil load on Resurrection Day",
+    "Horn blast gathering criminals blue-eyed on that Day",
+    "Criminals whispering among themselves estimating worldly life lasted merely ten days",
+    "Allah most knowing of their whispers with the most moderate among them estimating only a single day",
+    "Inquiry about mountains answered with declaration that the Lord will blast them away entirely",
+    "Earth left as a barren level plain",
+    "No depression or elevation remaining on the flattened terrain",
+    "All creation following the Caller without deviation while voices are hushed before Rahman leaving only whispers",
+    "Intercession benefiting none except whom Rahman permitted and whose word He accepted",
+    "Divine knowledge encompassing what is before and behind them while they cannot encompass Him in knowledge"
+  ],
+  "ext-020-p4": [
+    "All faces humbled before Hayy Qayyum with failure for whoever carried injustice",
+    "Believer doing righteous deeds fearing neither injustice nor diminution of reward",
+    "Quran sent down in Arabic with diversified warnings to provoke taqwa or remembrance",
+    "Exaltation of Allah the Sovereign Truth with instruction not to hasten Quran recitation before revelation completes plus prayer for increased knowledge",
+    "Prior covenant taken from Adam who forgot it and lacked firm resolve",
+    "Angels commanded to prostrate to Adam with Iblis alone refusing",
+    "Warning to Adam that Iblis is an enemy to him and his wife lest he expel them from Paradise into hardship",
+    "Guarantee of freedom from hunger and nakedness within Paradise",
+    "Guarantee of freedom from thirst and sun exposure within Paradise",
+    "Shaytan whispering to Adam offering direction to the tree of eternity and undecaying dominion",
+    "Both eating from the tree exposing their nakedness covering themselves with leaves while Adam disobeyed and erred",
+    "Lord selecting Adam thereafter accepting his repentance and guiding him",
+    "Command to descend from Paradise with mutual enmity among descendants while divine guidance protects followers from straying or suffering",
+    "Whoever turns away from divine remembrance condemned to a constricted life and resurrected blind",
+    "Blind person questioning why gathered sightless despite having once seen",
+    "Response that just as signs were forgotten so too will he be forgotten on that Day",
+    "Recompense pattern for those who transgressed and rejected their Lord signs with Hereafter punishment more severe and lasting",
+    "Destroyed generations walking among ruins serving as signs for people of understanding",
+    "Prior divine word and specified term preventing immediate obligatory punishment",
+    "Command for patience over their words combined with tasbih at dawn dusk night hours and day ends seeking satisfaction",
+    "Prohibition against coveting worldly splendor given to various groups as a test since divine provision is better and enduring",
+    "Command to enjoin prayer upon family with steadfastness while Allah provides sustenance with ultimate outcome for taqwa",
+    "Demand for a new sign answered by pointing to existing evidence in former scriptures",
+    "Argument that prior destruction would have produced complaints about absence of a messenger to follow before humiliation",
+    "Closing declaration that everyone is waiting so wait and you will learn who follows the sound path and who is guided"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`20:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`20:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`20:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 20, surahName: "Ta-Ha",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
