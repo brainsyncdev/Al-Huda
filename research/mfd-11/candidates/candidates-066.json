@@ -1,387 +1,665 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:35:00.000Z",
-  "sourceExtraction": "ext-042-p1,ext-042-p2",
+  "generatedAt": "2026-11-20T15:40:00.000Z",
+  "sourceExtraction": "ext-042-p1,ext-042-p2,ext-042-p3,ext-042-p4",
   "candidates": [
     {
-      "candidateId": "cand-1457",
-      "label": "cand-1457: Topic from 42:1",
-      "definition": "In 42:1: Ha, Meem",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "42:1",
-          "excerpt": "حمٓ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1458",
-      "label": "cand-1458: Topic from 42:3",
-      "definition": "In 42:3: Thus has He revealed to you, [O Muhammad], and to those before you - Allah, the Exalted in Might, the Wise",
+      "candidateId": "cand-1477",
+      "label": "One revelation-mode shared by Muhammad and the messengers before him",
+      "definition": "In 42:3: Thus has He revealed to you and to those before you, Allah the Exalted in Might, the Wise.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:3",
           "excerpt": "كَذَٰلِكَ يُوحِيٓ إِلَيۡكَ وَإِلَى ٱلَّذِينَ مِن قَبۡلِكَ ٱللَّهُ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kadhalika yuhi continuity."
+        },
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Shared channel across messengers."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1459",
-      "label": "cand-1459: Topic from 42:6",
-      "definition": "In 42:6: And those who take as allies other than Him - Allah is [yet] Guardian over them; and you, [O Muhammad], are not over them a manager",
+      "candidateId": "cand-1478",
+      "label": "Angelic praise and forgiveness-seeking for earth-dwellers beneath straining heavens",
+      "definition": "In 42:5: The heavens almost break from above them and the angels exalt with praise of their Lord and ask forgiveness for those on earth; unquestionably it is Allah who is the Forgiving, the Merciful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:6",
-          "excerpt": "وَٱلَّذِينَ ٱتَّخَذُواْ مِن دُونِهِۦٓ أَوۡلِيَآءَ ٱللَّهُ حَفِيظٌ عَلَيۡهِمۡ وَمَآ أَنتَ عَلَيۡهِم بِوَكِيلٖ",
+          "key": "42:5",
+          "excerpt": "تَكَادُ ٱلسَّمَٰوَٰتُ يَتَفَطَّرۡنَ مِن فَوۡقِهِنَّۚ وَٱلۡمَلَـٰٓئِكَةُ يُسَبِّحُونَ بِحَمۡدِ رَبِّهِمۡ وَيَسۡتَغۡفِرُونَ لِمَن فِي ٱلۡأَرۡضِۗ أَلَآ إِنَّ ٱللَّهَ هُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Istighfar for those on earth."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ghafoor Raheem framing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1460",
-      "label": "cand-1460: Topic from 42:8",
-      "definition": "In 42:8: And if Allah willed, He could have made them [of] one religion, but He admits whom He wills into His mercy. And the wrongdoers have not any protector or helper",
+      "candidateId": "cand-1479",
+      "label": "Warning addressed to the Mother of Cities and its surroundings",
+      "definition": "In 42:7: Thus We revealed to you an Arabic Quran that you may warn the Mother of Cities and those around it and warn of the Day of Assembly about which there is no doubt; a party in Paradise and a party in the Blaze.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:8",
-          "excerpt": "وَلَوۡ شَآءَ ٱللَّهُ لَجَعَلَهُمۡ أُمَّةٗ وَٰحِدَةٗ وَلَٰكِن يُدۡخِلُ مَن يَشَآءُ فِي رَحۡمَتِهِۦۚ وَٱلظَّـٰلِمُونَ مَا لَهُم مِّن وَلِيّٖ وَلَا نَصِيرٍ",
+          "key": "42:7",
+          "excerpt": "وَكَذَٰلِكَ أَوۡحَيۡنَآ إِلَيۡكَ قُرۡءَانًا عَرَبِيّٗا لِّتُنذِرَ أُمَّ ٱلۡقُرَىٰ وَمَنۡ حَوۡلَهَا وَتُنذِرَ يَوۡمَ ٱلۡجَمۡعِ لَا رَيۡبَ فِيهِۚ فَرِيقٞ فِي ٱلۡجَنَّةِ وَفَرِيقٞ فِي ٱلسَّعِيرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Umm al-qura as warning centre."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yawm al-jam' division."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1461",
-      "label": "cand-1461: Topic from 42:11",
-      "definition": "In 42:11: [He is] Creator of the heavens and the earth. He has made for you from yourselves, mates, and among the cattle, mates; He multiplies you thereby. There is nothing like unto Him, and He is the Hearing, the Seeing",
+      "candidateId": "cand-1480",
+      "label": "Referral of every disputed matter to divine ruling with reliance and return",
+      "definition": "In 42:10: And in anything over which you disagree its ruling is to be referred to Allah; that is Allah my Lord, upon Him I have relied and to Him I turn back.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "42:10",
+          "excerpt": "وَمَا ٱخۡتَلَفۡتُمۡ فِيهِ مِن شَيۡءٖ فَحُكۡمُهُۥٓ إِلَى ٱللَّهِۚ ذَٰلِكُمُ ٱللَّهُ رَبِّي عَلَيۡهِ تَوَكَّلۡتُ وَإِلَيۡهِ أُنِيبُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Hukm referred upward."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tawakkul with inabah."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1481",
+      "label": "Negation of any likeness to Him following the making of mates",
+      "definition": "In 42:11: Creator of the heavens and the earth; He made for you from yourselves mates and among the cattle mates, multiplying you thereby; there is nothing like unto Him and He is the Hearing, the Seeing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:11",
           "excerpt": "فَاطِرُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۚ جَعَلَ لَكُم مِّنۡ أَنفُسِكُمۡ أَزۡوَٰجٗا وَمِنَ ٱلۡأَنۡعَٰمِ أَزۡوَٰجٗا يَذۡرَؤُكُمۡ فِيهِۚ لَيۡسَ كَمِثۡلِهِۦ شَيۡءٞۖ وَهُوَ ٱلسَّمِيعُ ٱلۡبَصِيرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-asma-wa-sifat",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Laysa ka-mithlihi shay'."
+        },
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Azwaj as multiplication mechanism."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1462",
-      "label": "cand-1462: Topic from 42:14",
-      "definition": "In 42:14: And they did not become divided until after knowledge had come to them - out of jealous animosity between themselves. And if not for a word that preceded from your Lord [postponing the penalty] until a specified time, it would have been concluded between them. And indeed, those who were granted inheritance of the Scripture after them are, concerning it, in disquieting doubt",
+      "candidateId": "cand-1482",
+      "label": "One religion ordained across five named prophets with the charge to establish and not divide",
+      "definition": "In 42:13: He has ordained for you of religion what He enjoined upon Noah and what We revealed to you and what We enjoined upon Abraham and Moses and Jesus, to establish the religion and not be divided therein; difficult for the associators is that to which you invite them; Allah chooses for Himself whom He wills and guides to Himself whoever turns back.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "42:13",
+          "excerpt": "۞شَرَعَ لَكُم مِّنَ ٱلدِّينِ مَا وَصَّىٰ بِهِۦ نُوحٗا وَٱلَّذِيٓ أَوۡحَيۡنَآ إِلَيۡكَ وَمَا وَصَّيۡنَا بِهِۦٓ إِبۡرَٰهِيمَ وَمُوسَىٰ وَعِيسَىٰٓۖ أَنۡ أَقِيمُواْ ٱلدِّينَ وَلَا تَتَفَرَّقُواْ فِيهِۚ كَبُرَ عَلَى ٱلۡمُشۡرِكِينَ مَا تَدۡعُوهُمۡ إِلَيۡهِۚ ٱللَّهُ يَجۡتَبِيٓ إِلَيۡهِ مَن يَشَآءُ وَيَهۡدِيٓ إِلَيۡهِ مَن يُنِيبُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Shared shar' across named prophets."
+        },
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Iqamat al-din without tafarruq."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1483",
+      "label": "Division arising after knowledge out of jealous animosity",
+      "definition": "In 42:14: They did not become divided until after knowledge had come to them, out of jealous animosity between themselves; and if not for a word that preceded from your Lord until a specified time it would have been concluded between them.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:14",
           "excerpt": "وَمَا تَفَرَّقُوٓاْ إِلَّا مِنۢ بَعۡدِ مَا جَآءَهُمُ ٱلۡعِلۡمُ بَغۡيَۢا بَيۡنَهُمۡۚ وَلَوۡلَا كَلِمَةٞ سَبَقَتۡ مِن رَّبِّكَ إِلَىٰٓ أَجَلٖ مُّسَمّٗى لَّقُضِيَ بَيۡنَهُمۡۚ وَإِنَّ ٱلَّذِينَ أُورِثُواْ ٱلۡكِتَٰبَ مِنۢ بَعۡدِهِمۡ لَفِي شَكّٖ مِّنۡهُ مُرِيبٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Baghy after ilm."
+        },
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sectarian split diagnosed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1463",
-      "label": "cand-1463: Topic from 42:16",
-      "definition": "In 42:16: And those who argue concerning Allah after He has been responded to - their argument is invalid with their Lord, and upon them is [His] wrath, and for them is a severe punishment",
+      "candidateId": "cand-1484",
+      "label": "Commanded straight course with justice, shared lordship and separated deeds",
+      "definition": "In 42:15: So to that invite and remain on a right course as you are commanded and do not follow their inclinations but say I have believed in what Allah revealed and I have been commanded to do justice among you; Allah is our Lord and your Lord, for us our deeds and for you your deeds, there is no argument between us and you, Allah will bring us together and to Him is the destination.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:16",
-          "excerpt": "وَٱلَّذِينَ يُحَآجُّونَ فِي ٱللَّهِ مِنۢ بَعۡدِ مَا ٱسۡتُجِيبَ لَهُۥ حُجَّتُهُمۡ دَاحِضَةٌ عِندَ رَبِّهِمۡ وَعَلَيۡهِمۡ غَضَبٞ وَلَهُمۡ عَذَابٞ شَدِيدٌ",
+          "key": "42:15",
+          "excerpt": "فَلِذَٰلِكَ فَٱدۡعُۖ وَٱسۡتَقِمۡ كَمَآ أُمِرۡتَۖ وَلَا تَتَّبِعۡ أَهۡوَآءَهُمۡۖ وَقُلۡ ءَامَنتُ بِمَآ أَنزَلَ ٱللَّهُ مِن كِتَٰبٖۖ وَأُمِرۡتُ لِأَعۡدِلَ بَيۡنَكُمُۖ ٱللَّهُ رَبُّنَا وَرَبُّكُمۡۖ لَنَآ أَعۡمَٰلُنَا وَلَكُمۡ أَعۡمَٰلُكُمۡۖ لَا حُجَّةَ بَيۡنَنَا وَبَيۡنَكُمُۖ ٱللَّهُ يَجۡمَعُ بَيۡنَنَاۖ وَإِلَيۡهِ ٱلۡمَصِيرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "dialogue-principles",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La hujjah baynana wa-baynakum."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Umirtu li-a'dila baynakum."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1464",
-      "label": "cand-1464: Topic from 42:19",
-      "definition": "In 42:19: Allah is Subtle with His servants; He gives provisions to whom He wills. And He is the Powerful, the Exalted in Might",
+      "candidateId": "cand-1485",
+      "label": "The Book sent in truth together with the balance",
+      "definition": "In 42:17: It is Allah who has sent down the Book in truth and also the balance; and what will make you perceive, perhaps the Hour is near.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:19",
-          "excerpt": "ٱللَّهُ لَطِيفُۢ بِعِبَادِهِۦ يَرۡزُقُ مَن يَشَآءُۖ وَهُوَ ٱلۡقَوِيُّ ٱلۡعَزِيزُ",
+          "key": "42:17",
+          "excerpt": "ٱللَّهُ ٱلَّذِيٓ أَنزَلَ ٱلۡكِتَٰبَ بِٱلۡحَقِّ وَٱلۡمِيزَانَۗ وَمَا يُدۡرِيكَ لَعَلَّ ٱلسَّاعَةَ قَرِيبٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kitab with mizan."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Balance as revealed measure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1465",
-      "label": "cand-1465: Topic from 42:21",
-      "definition": "In 42:21: Or have they other deities who have ordained for them a religion to which Allah has not consented? But if not for the decisive word, it would have been concluded between them. And indeed, the wrongdoers will have a painful punishment",
+      "candidateId": "cand-1486",
+      "label": "Two harvests contrasted with increase reserved for the Hereafter-seeker",
+      "definition": "In 42:20: Whoever desires the harvest of the Hereafter, We increase for him in his harvest; and whoever desires the harvest of this world, We give him thereof but there is not for him in the Hereafter any share.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:21",
-          "excerpt": "أَمۡ لَهُمۡ شُرَكَـٰٓؤُاْ شَرَعُواْ لَهُم مِّنَ ٱلدِّينِ مَا لَمۡ يَأۡذَنۢ بِهِ ٱللَّهُۚ وَلَوۡلَا كَلِمَةُ ٱلۡفَصۡلِ لَقُضِيَ بَيۡنَهُمۡۗ وَإِنَّ ٱلظَّـٰلِمِينَ لَهُمۡ عَذَابٌ أَلِيمٞ",
+          "key": "42:20",
+          "excerpt": "مَن كَانَ يُرِيدُ حَرۡثَ ٱلۡأٓخِرَةِ نَزِدۡ لَهُۥ فِي حَرۡثِهِۦۖ وَمَن كَانَ يُرِيدُ حَرۡثَ ٱلدُّنۡيَا نُؤۡتِهِۦ مِنۡهَا وَمَا لَهُۥ فِي ٱلۡأٓخِرَةِ مِن نَّصِيبٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Harth al-akhirah prioritised."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Worldly portion without share."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1466",
-      "label": "cand-1466: Topic from 42:24",
-      "definition": "In 42:24: Or do they say, \"He has invented about Allah a lie\"? But if Allah willed, He could seal over your heart. And Allah eliminates falsehood and establishes the truth by His words. Indeed, He is Knowing of that within the breasts",
+      "candidateId": "cand-1487",
+      "label": "Repentance accepted and misdeeds pardoned with answered supplication and added bounty",
+      "definition": "In 42:25-26: It is He who accepts repentance from His servants and pardons misdeeds and knows what you do; and He answers those who have believed and done righteous deeds and increases for them from His bounty.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:24",
-          "excerpt": "أَمۡ يَقُولُونَ ٱفۡتَرَىٰ عَلَى ٱللَّهِ كَذِبٗاۖ فَإِن يَشَإِ ٱللَّهُ يَخۡتِمۡ عَلَىٰ قَلۡبِكَۗ وَيَمۡحُ ٱللَّهُ ٱلۡبَٰطِلَ وَيُحِقُّ ٱلۡحَقَّ بِكَلِمَٰتِهِۦٓۚ إِنَّهُۥ عَلِيمُۢ بِذَاتِ ٱلصُّدُورِ",
+          "key": "42:25",
+          "excerpt": "وَهُوَ ٱلَّذِي يَقۡبَلُ ٱلتَّوۡبَةَ عَنۡ عِبَادِهِۦ وَيَعۡفُواْ عَنِ ٱلسَّيِّـَٔاتِ وَيَعۡلَمُ مَا تَفۡعَلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "42:26",
+          "excerpt": "وَيَسۡتَجِيبُ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَيَزِيدُهُم مِّن فَضۡلِهِۦۚ وَٱلۡكَٰفِرُونَ لَهُمۡ عَذَابٞ شَدِيدٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Yaqbalu al-tawbah wa-ya'fu."
+        },
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Yastajibu with ziyadah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1467",
-      "label": "cand-1467: Topic from 42:28",
-      "definition": "In 42:28: And it is He who sends down the rain after they had despaired and spreads His mercy. And He is the Protector, the Praiseworthy",
+      "candidateId": "cand-1488",
+      "label": "Provision measured because excess would produce tyranny across the earth",
+      "definition": "In 42:27: And if Allah had extended provision excessively for His servants they would have committed tyranny throughout the earth, but He sends it down in an amount which He wills; indeed He is of His servants Acquainted and Seeing.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "42:27",
+          "excerpt": "۞وَلَوۡ بَسَطَ ٱللَّهُ ٱلرِّزۡقَ لِعِبَادِهِۦ لَبَغَوۡاْ فِي ٱلۡأَرۡضِ وَلَٰكِن يُنَزِّلُ بِقَدَرٖ مَّا يَشَآءُۚ إِنَّهُۥ بِعِبَادِهِۦ خَبِيرُۢ بَصِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wisdom",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Measured rizq preventing baghy."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Restriction as protective wisdom."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1489",
+      "label": "Rain arriving after despair as the spreading of mercy",
+      "definition": "In 42:28: And it is He who sends down the rain after they had despaired and spreads His mercy, and He is the Protector, the Praiseworthy.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:28",
           "excerpt": "وَهُوَ ٱلَّذِي يُنَزِّلُ ٱلۡغَيۡثَ مِنۢ بَعۡدِ مَا قَنَطُواْ وَيَنشُرُ رَحۡمَتَهُۥۚ وَهُوَ ٱلۡوَلِيُّ ٱلۡحَمِيدُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yanshuru rahmatahu after qunut."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Relief following despair."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1468",
-      "label": "cand-1468: Topic from 42:30",
-      "definition": "In 42:30: And whatever strikes you of disaster - it is for what your hands have earned; but He pardons much",
+      "candidateId": "cand-1490",
+      "label": "Disaster traced to earned deeds while much is pardoned",
+      "definition": "In 42:30: And whatever strikes you of disaster, it is for what your hands have earned, but He pardons much.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:30",
           "excerpt": "وَمَآ أَصَٰبَكُم مِّن مُّصِيبَةٖ فَبِمَا كَسَبَتۡ أَيۡدِيكُمۡ وَيَعۡفُواْ عَن كَثِيرٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Bima kasabat aydikum."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ya'fu an kathir."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1469",
-      "label": "cand-1469: Topic from 42:33",
-      "definition": "In 42:33: If He willed, He could still the wind, and they would remain motionless on its surface. Indeed in that are signs for everyone patient and grateful",
+      "candidateId": "cand-1491",
+      "label": "Mountain-like ships and stillable wind as signs for the patient and grateful",
+      "definition": "In 42:32-33: And of His signs are the ships in the sea like mountains; if He willed He could still the wind and they would remain motionless on its surface; indeed in that are signs for everyone patient and grateful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "42:32",
+          "excerpt": "وَمِنۡ ءَايَٰتِهِ ٱلۡجَوَارِ فِي ٱلۡبَحۡرِ كَٱلۡأَعۡلَٰمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "42:33",
           "excerpt": "إِن يَشَأۡ يُسۡكِنِ ٱلرِّيحَ فَيَظۡلَلۡنَ رَوَاكِدَ عَلَىٰ ظَهۡرِهِۦٓۚ إِنَّ فِي ذَٰلِكَ لَأٓيَٰتٖ لِّكُلِّ صَبَّارٖ شَكُورٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Fulk kal-a'lam as ayah."
+        },
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabbar shakur pairing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1470",
-      "label": "cand-1470: Topic from 42:35",
-      "definition": "In 42:35: And [that is so] those who dispute concerning Our signs may know that for them there is no place of escape",
+      "candidateId": "cand-1492",
+      "label": "Lasting divine portion set against temporary worldly enjoyment",
+      "definition": "In 42:36: So whatever thing you have been given, it is but enjoyment of the worldly life, but what is with Allah is better and more lasting for those who have believed and upon their Lord rely.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:35",
-          "excerpt": "وَيَعۡلَمَ ٱلَّذِينَ يُجَٰدِلُونَ فِيٓ ءَايَٰتِنَا مَا لَهُم مِّن مَّحِيصٖ",
+          "key": "42:36",
+          "excerpt": "فَمَآ أُوتِيتُم مِّن شَيۡءٖ فَمَتَٰعُ ٱلۡحَيَوٰةِ ٱلدُّنۡيَاۚ وَمَا عِندَ ٱللَّهِ خَيۡرٞ وَأَبۡقَىٰ لِلَّذِينَ ءَامَنُواْ وَعَلَىٰ رَبِّهِمۡ يَتَوَكَّلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khayrun wa-abqa."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Yatawakkalun as recipient trait."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1471",
-      "label": "cand-1471: Topic from 42:38",
-      "definition": "In 42:38: And those who have responded to their lord and established prayer and whose affair is [determined by] consultation among themselves, and from what We have provided them, they spend",
+      "candidateId": "cand-1493",
+      "label": "Consultation as the community's decision method alongside prayer and spending",
+      "definition": "In 42:38: And those who have responded to their Lord and established prayer and whose affair is determined by consultation among themselves, and from what We have provided them they spend.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:38",
           "excerpt": "وَٱلَّذِينَ ٱسۡتَجَابُواْ لِرَبِّهِمۡ وَأَقَامُواْ ٱلصَّلَوٰةَ وَأَمۡرُهُمۡ شُورَىٰ بَيۡنَهُمۡ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Amruhum shura baynahum."
+        },
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Infaq within the same profile."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1472",
-      "label": "cand-1472: Topic from 42:40",
-      "definition": "In 42:40: And the retribution for an evil act is an evil one like it, but whoever pardons and makes reconciliation - his reward is [due] from Allah. Indeed, He does not like wrongdoers",
+      "candidateId": "cand-1494",
+      "label": "Proportionate retribution permitted while pardon and reconciliation carry divine reward",
+      "definition": "In 42:40: And the retribution for an evil act is an evil one like it, but whoever pardons and makes reconciliation, his reward is due from Allah; indeed He does not like wrongdoers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "42:40",
           "excerpt": "وَجَزَـٰٓؤُاْ سَيِّئَةٖ سَيِّئَةٞ مِّثۡلُهَاۖ فَمَنۡ عَفَا وَأَصۡلَحَ فَأَجۡرُهُۥ عَلَى ٱللَّهِۚ إِنَّهُۥ لَا يُحِبُّ ٱلظَّـٰلِمِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Jaza' sayyi'ah mithluha."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Afw and islah preferred."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1473",
-      "label": "cand-1473: Topic from 42:43",
-      "definition": "In 42:43: And whoever is patient and forgives - indeed, that is of the matters [requiring] determination",
+      "candidateId": "cand-1495",
+      "label": "Blame confined to those who wrong people and tyrannise without right",
+      "definition": "In 42:41-42: And whoever avenges himself after having been wronged, those have not upon them any cause for blame; the cause is only against the ones who wrong the people and tyrannise upon the earth without right.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:43",
-          "excerpt": "وَلَمَن صَبَرَ وَغَفَرَ إِنَّ ذَٰلِكَ لَمِنۡ عَزۡمِ ٱلۡأُمُورِ",
+          "key": "42:41",
+          "excerpt": "وَلَمَنِ ٱنتَصَرَ بَعۡدَ ظُلۡمِهِۦ فَأُوْلَـٰٓئِكَ مَا عَلَيۡهِم مِّن سَبِيلٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "42:42",
+          "excerpt": "إِنَّمَا ٱلسَّبِيلُ عَلَى ٱلَّذِينَ يَظۡلِمُونَ ٱلنَّاسَ وَيَبۡغُونَ فِي ٱلۡأَرۡضِ بِغَيۡرِ ٱلۡحَقِّۚ أُوْلَـٰٓئِكَ لَهُمۡ عَذَابٌ أَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sabil only on the zalimun."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Legitimate redress distinguished."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1474",
-      "label": "cand-1474: Topic from 42:45",
-      "definition": "In 42:45: And you will see them being exposed to the Fire, humbled from humiliation, looking from [behind] a covert glance. And those who had believed will say, \"Indeed, the [true] losers are the ones who lost themselves and their families on the Day of Resurrection. Unquestionably, the wrongdoers are in an enduring punishment",
+      "candidateId": "cand-1496",
+      "label": "Three exclusive modes of divine address to a human being",
+      "definition": "In 42:51: And it is not for any human being that Allah should speak to him except by revelation or from behind a partition or that He sends a messenger to reveal by His permission what He wills; indeed He is Most High and Wise.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "42:45",
-          "excerpt": "وَتَرَىٰهُمۡ يُعۡرَضُونَ عَلَيۡهَا خَٰشِعِينَ مِنَ ٱلذُّلِّ يَنظُرُونَ مِن طَرۡفٍ خَفِيّٖۗ وَقَالَ ٱلَّذِينَ ءَامَنُوٓاْ إِنَّ ٱلۡخَٰسِرِينَ ٱلَّذِينَ خَسِرُوٓاْ أَنفُسَهُمۡ وَأَهۡلِيهِمۡ يَوۡمَ ٱلۡقِيَٰمَةِۗ أَلَآ إِنَّ ٱلظَّـٰلِمِينَ فِي عَذَابٖ مُّقِيمٖ",
+          "key": "42:51",
+          "excerpt": "۞وَمَا كَانَ لِبَشَرٍ أَن يُكَلِّمَهُ ٱللَّهُ إِلَّا وَحۡيًا أَوۡ مِن وَرَآيِٕ حِجَابٍ أَوۡ يُرۡسِلَ رَسُولٗا فَيُوحِيَ بِإِذۡنِهِۦ مَا يَشَآءُۚ إِنَّهُۥ عَلِيٌّ حَكِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1475",
-      "label": "cand-1475: Topic from 42:48",
-      "definition": "In 42:48: But if they turn away - then We have not sent you, [O Muhammad], over them as a guardian; upon you is only [the duty of] notification. And indeed, when We let man taste mercy from us, he rejoices in it; but if evil afflicts him for what his hands have put forth, then indeed, man is ungrateful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "42:48",
-          "excerpt": "فَإِنۡ أَعۡرَضُواْ فَمَآ أَرۡسَلۡنَٰكَ عَلَيۡهِمۡ حَفِيظًاۖ إِنۡ عَلَيۡكَ إِلَّا ٱلۡبَلَٰغُۗ وَإِنَّآ إِذَآ أَذَقۡنَا ٱلۡإِنسَٰنَ مِنَّا رَحۡمَةٗ فَرِحَ بِهَاۖ وَإِن تُصِبۡهُمۡ سَيِّئَةُۢ بِمَا قَدَّمَتۡ أَيۡدِيهِمۡ فَإِنَّ ٱلۡإِنسَٰنَ كَفُورٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1476",
-      "label": "cand-1476: Topic from 42:50",
-      "definition": "In 42:50: Or He makes them [both] males and females, and He renders whom He wills barren. Indeed, He is Knowing and Competent",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wahy, hijab and rasul modes."
+        },
         {
-          "key": "42:50",
-          "excerpt": "أَوۡ يُزَوِّجُهُمۡ ذُكۡرَانٗا وَإِنَٰثٗاۖ وَيَجۡعَلُ مَن يَشَآءُ عَقِيمًاۚ إِنَّهُۥ عَلِيمٞ قَدِيرٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Limits of human reception."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:40:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     }
   ]
 }
