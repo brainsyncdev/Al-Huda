@@ -1,0 +1,190 @@
+{
+  "extractionId": "ext-086-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 86,
+  "surahName": "At-Tariq",
+  "passage": {
+    "fromAyah": 11,
+    "toAyah": 17,
+    "label": "By sky returns rain; earth cracks open; Indeed Quran decisive statement; not amusement; they planning plan; I planning plan; allow time disbelievers leave awhile"
+  },
+  "verseKeys": [
+    "86:11",
+    "86:12",
+    "86:13",
+    "86:14",
+    "86:15",
+    "86:16",
+    "86:17"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "86:11",
+      "text": "وَٱلسَّمَآءِ ذَاتِ ٱلرَّجۡعِ"
+    },
+    {
+      "key": "86:12",
+      "text": "وَٱلۡأَرۡضِ ذَاتِ ٱلصَّدۡعِ"
+    },
+    {
+      "key": "86:13",
+      "text": "إِنَّهُۥ لَقَوۡلٞ فَصۡلٞ"
+    },
+    {
+      "key": "86:14",
+      "text": "وَمَا هُوَ بِٱلۡهَزۡلِ"
+    },
+    {
+      "key": "86:15",
+      "text": "إِنَّهُمۡ يَكِيدُونَ كَيۡدٗا"
+    },
+    {
+      "key": "86:16",
+      "text": "وَأَكِيدُ كَيۡدٗا"
+    },
+    {
+      "key": "86:17",
+      "text": "فَمَهِّلِ ٱلۡكَٰفِرِينَ أَمۡهِلۡهُمۡ رُوَيۡدَۢا"
+    }
+  ],
+  "mainSubject": {
+    "label": "Oaths by the rain-returning sky and the cracking earth establishing the Quran as a decisive statement rather than amusement; their plotting answered by divine plotting, closing with the instruction to grant the disbelievers respite and leave them awhile",
+    "keys": [
+      "86:11",
+      "86:12",
+      "86:13",
+      "86:14",
+      "86:15",
+      "86:16",
+      "86:17"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Oath sworn by the sky which returns rain",
+      "keys": [
+        "86:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And by the earth which cracks open",
+      "keys": [
+        "86:12"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Quran established as a decisive statement",
+      "keys": [
+        "86:13"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Explicitly declared not to be amusement",
+      "keys": [
+        "86:14"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Their plotting against the message acknowledged",
+      "keys": [
+        "86:15"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Answered by divine plotting of His own",
+      "keys": [
+        "86:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Respite granted to the disbelievers — leave them awhile",
+      "keys": [
+        "86:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "86:17"
+      ],
+      "excerpt": "فَمَهِّلِ ٱلۡكَٰفِرِينَ أَمۡهِلۡهُمۡ رُوَيۡدَۢا",
+      "description": "So allow time for the disbelievers. Leave them awhile."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Human plotting met by divine plotting",
+      "keys": [
+        "86:15",
+        "86:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Rain-returning sky and cracking earth sworn by to establish the Quran's decisiveness",
+      "keys": [
+        "86:11",
+        "86:12",
+        "86:13"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Quran explicitly excluded from being amusement",
+      "keys": [
+        "86:14"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلرَّجۡعِ",
+      "transliteration": "dhat al-raj'",
+      "gloss": "that which returns rain (editorial gloss)",
+      "keys": [
+        "86:11"
+      ]
+    },
+    {
+      "term": "ٱلصَّدۡعِ",
+      "transliteration": "dhat al-sad'",
+      "gloss": "that which cracks open (editorial gloss)",
+      "keys": [
+        "86:12"
+      ]
+    },
+    {
+      "term": "فَصۡلٞ",
+      "transliteration": "qawl fasl",
+      "gloss": "decisive statement (editorial gloss)",
+      "keys": [
+        "86:13"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1935",
+    "cand-1936"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the universal-protector declaration (4) before the creation-observation command opens (5); P2 ends with the no-power-no-helper verdict (10) before the second oath pair begins (11); P3 runs through the decisive-statement affirmation, the mutual plotting and the closing respite instruction (11-17).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:25:00.000Z"
+}
