@@ -37,6 +37,115 @@ const TS = "2026-11-20T12:45:00.000Z";
 // P2: 15:31–60 — Iblis refusal and Adam creation, Lot narrative, destruction pattern
 // P3: 15:61–99 — Creation signs, seven oft-repeated verses, prophetic consolation, closing worship
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-015-p1": [
+    "Alif Lam Ra opening letters identifying these as verses of the Book and a clear Quran",
+    "Disbelievers anticipated future wish that they had been Muslims when facing consequences",
+    "Command to leave disbelievers to eat and enjoy while diverted by false hope with future knowledge awaiting them",
+    "Every destroyed city had a known written decree specifying its appointed term of existence",
+    "No nation can precede or delay its appointed term establishing fixed collective lifespan principle",
+    "Disbelievers accuse the Prophet of madness questioning the revelation recipient sanity",
+    "Demand for angelic visitation as proof of truthfulness challenging prophetic credibility",
+    "Angels descend only with truth and their arrival would remove any possibility of reprieve for disbelievers",
+    "Divine guarantee of Quran preservation: We sent down the Reminder and We are its Guardian",
+    "Messengers sent before among sectarian divisions of earlier peoples establishing historical precedent",
+    "Universal pattern of prophetic ridicule: no messenger arrived except they mocked him",
+    "Denial inserted into hearts of criminals as divine consequence of persistent rejection",
+    "Refusal to believe despite established precedent of former peoples serving as warning",
+    "Hypothetical heavenly gate opening would not produce belief even if disbelievers ascended through it",
+    "Disbelievers would attribute heavenly vision to dazzled eyes or mass enchantment rather than accept truth",
+    "Stars placed as constellations beautifying the sky for observers as cosmic sign",
+    "Heaven protected from every expelled rebellious devil preventing unauthorized access",
+    "Any devil stealing hearing is pursued by a clearly visible burning flame as deterrent",
+    "Earth spread out with firmly set mountains and balanced vegetation growth as terrestrial design",
+    "Livelihood provisions placed in earth for humans and creatures they cannot provide for",
+    "All things have depositories with Allah and nothing descends except in known measured quantity",
+    "Fertilizing winds sent driving rain from sky providing drink humans cannot store themselves",
+    "Allah gives life causes death and remains the ultimate Inheritor of all existence",
+    "Divine knowledge encompasses preceding generations and those yet to come across all time",
+    "Lord will gather all humanity for judgment described as Wise and All-Knowing",
+    "Human creation from sounding clay derived from black mud altered as material origin",
+    "Jinn created before humanity from scorching smokeless fire establishing prior sentient creation",
+    "Divine announcement to angels of creating a human being from clay of altered black mud",
+    "Proportioning completed and spirit breathed in commanding angels to prostrate establishing human dignity",
+    "All angels prostrated entirely in unified obedience to divine command regarding Adam"
+  ],
+  "ext-015-p2": [
+    "Iblis alone refused to join the prostrating angels breaking from unanimous obedience",
+    "Allah questions Iblis about his absence from the prostrators demanding accountability",
+    "Iblis declares refusal based on material superiority rejecting prostration to clay-created being",
+    "Divine expulsion pronounced: get out from here for you are now rejected and driven away",
+    "Curse placed upon Iblis extending continuously until the Day of Recompense",
+    "Iblis requests respite until the Day of Resurrection seeking extended operational timeframe",
+    "Allah grants respite confirming Iblis is among those given temporary extension",
+    "Respite specified until the Day of the well-known appointed time limiting satanic activity",
+    "Iblis vows to beautify disobedience on earth and mislead all humanity in retaliation for divine misguidance",
+    "Exception carved out: sincere chosen servants of Allah remain beyond satanic reach",
+    "Allah declares a straight path leading back to Him as protected return route",
+    "No authority granted to Iblis over divine servants except those who voluntarily follow him in deviation",
+    "Hell designated as the promised destination for Iblis and all his followers collectively",
+    "Hell has seven gates each assigned a designated portion of the condemned",
+    "Righteous promised gardens and springs as reward contrasting with hellfire punishment",
+    "Peaceful secure entry into paradise announced to the righteous as welcoming greeting",
+    "Resentment removed from hearts of paradise inhabitants making them brothers on facing thrones",
+    "No fatigue touches paradise dwellers and they will never be expelled establishing eternal security",
+    "Command to inform servants that Allah is the Forgiving and the Merciful balancing hope",
+    "Simultaneous warning that divine punishment is the truly painful punishment balancing fear",
+    "Narrative introduction directing attention to the guests of Abraham as instructive account",
+    "Angelic guests enter Abraham home offering peace but he expresses fear of unknown visitors",
+    "Guests reassure Abraham and deliver glad tidings of a knowledgeable son to be born",
+    "Abraham questions how glad tidings are possible given his advanced old age expressing astonishment",
+    "Guests affirm tidings are given in truth and warn Abraham against despairing of divine power",
+    "Abraham rhetorically asks who despairs of Lord mercy except the truly astray affirming hope",
+    "Abraham inquires about the broader mission of these dispatched messengers beyond personal tidings",
+    "Messengers reveal they are sent to a criminal people indicating impending punitive mission",
+    "Lot family explicitly exempted from destruction with promise of complete salvation for all members",
+    "Lot wife excluded from salvation decreed to remain among those destroyed as consequence of disbelief"
+  ],
+  "ext-015-p3": [
+    "Messengers arrive at Lot household initiating the confrontation phase of the narrative",
+    "Lot addresses messengers as unknown people expressing caution toward unfamiliar visitors",
+    "Messengers declare they bring the very matter the townspeople were disputing confirming divine intervention",
+    "Messengers affirm arrival with truth and confirm their own truthfulness establishing authority",
+    "Night departure commanded for Lot family with strict instructions not to look back during escape",
+    "Decree conveyed to Lot that the sinners would be completely eliminated by early morning",
+    "Townspeople arrive at Lot house rejoicing at presence of handsome guests revealing transgressive intent",
+    "Lot appeals to hospitality honor declaring guests under his protection requesting no shame",
+    "Lot urges townspeople to fear Allah and avoid disgracing him through violation of guest rights",
+    "Townspeople remind Lot they previously forbade him from hosting or protecting any outsiders",
+    "Lot offers daughters in lawful marriage as alternative to transgression appealing to permissible conduct",
+    "Divine oath by Prophet life affirming townspeople wandered blindly in their intoxication of desire",
+    "The shriek seized the transgressors at sunrise marking precise moment of collective punishment",
+    "City inverted high becoming low and rained upon with stones of layered baked clay as geological sign",
+    "Destruction contains signs for those who discern and reflect upon divine justice patterns",
+    "Destroyed cities situated on an established road ensuring visibility for traveling observers",
+    "Destruction specifically identified as a sign for believers confirming faith-based recognition",
+    "Companions of the Thicket also identified as wrongdoers linking multiple punished communities",
+    "Retribution executed against Thicket people with both sites remaining on a clear highway as evidence",
+    "Companions of Hijr (Thamud) denied the messengers continuing rejection pattern across nations",
+    "Signs were given to Thamud but they deliberately turned away from them in willful rejection",
+    "Thamud carved secure houses from mountains demonstrating technological achievement without faith",
+    "The shriek seized Thamud at early morning paralleling Lot people destruction timing",
+    "Nothing of their accumulated earnings availed Thamud against divine punishment negating material security",
+    "Heavens earth and all between created only in truth with Hour coming and command for gracious forgiveness",
+    "Lord identified as the Knowing Creator pairing creative power with comprehensive knowledge",
+    "Seven oft-repeated verses and the great Quran bestowed upon the Prophet as spiritual equipment",
+    "Command not to covet worldly enjoyments given to disbeliever categories nor grieve over them lowering wing to believers",
+    "Prophet commanded to declare himself as the clear warner defining public prophetic identity",
+    "Reference to scriptures revealed to those who divided them connecting to earlier fragmented communities",
+    "Those who made the Quran into portions identified as violators of scriptural integrity",
+    "Oath by Lord affirming all who fragmented scripture will be questioned collectively",
+    "Questioning will concern everything they used to do establishing comprehensive individual accountability",
+    "Command to proclaim openly what has been commanded and turn away from polytheists",
+    "Allah declared sufficient against the mockers providing divine protection for the Prophet",
+    "Those who set up another deity alongside Allah warned they will come to know consequences",
+    "Divine acknowledgment that Prophet breast is constricted by what disbelievers say validating emotional burden",
+    "Prescribed remedy of glorifying Lord with praise and joining those who prostrate as relief from distress",
+    "Worship commanded to continue until certainty (death) arrives establishing lifelong devotion mandate"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-015-p1", from: 1, to: 30,
     label: "Hijr — Verses Book clear Quran; disbelievers wish were Muslims; eat enjoy diverted false hope going know; destroyed city known decree no nation precedes term remain thereafter; say O sent message mad why not bring angels truthful; send angels only truth disbelievers not reprieved; We sent down Quran We its guardian; sent messengers before among sects former peoples no messenger came except ridiculed; insert denial hearts criminals not believe precedent former peoples; opened gate heaven continued ascend say eyes dazzled people affected magic; made stars beautification heaven guarded every rebellious devil eavesdrop pursued visible flame; earth spread placed mountains springs determined provision grower; made paths traverse rejoice; sends winds heralds mercy clouds drive dead land revive produce fruits thus resurrection; made two seas sweet palatable salty bitter barrier partition; created man clay black mud altered fashioned proportioned breathed spirit angels prostrated",
@@ -54,14 +163,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`15:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`15:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`15:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 15, surahName: "Al-Hijr",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
