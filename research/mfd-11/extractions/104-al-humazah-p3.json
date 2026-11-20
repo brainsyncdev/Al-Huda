@@ -1,0 +1,90 @@
+{
+  "extractionId": "ext-104-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 104,
+  "surahName": "Al-Humazah",
+  "passage": {
+    "fromAyah": 8,
+    "toAyah": 9,
+    "label": "Indeed Hellfire closed down upon them; extended columns"
+  },
+  "verseKeys": [
+    "104:8",
+    "104:9"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "104:8",
+      "text": "إِنَّهَا عَلَيۡهِم مُّؤۡصَدَةٞ"
+    },
+    {
+      "key": "104:9",
+      "text": "فِي عَمَدٖ مُّمَدَّدَةِۭ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Hellfire closed down upon them in extended columns",
+    "keys": [
+      "104:8",
+      "104:9"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Hellfire closed down upon them",
+      "keys": [
+        "104:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "In extended columns",
+      "keys": [
+        "104:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Hellfire sealed over the offenders in extended columns as total enclosure",
+      "keys": [
+        "104:8",
+        "104:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [],
+  "terminology": [
+    {
+      "term": "مُّؤۡصَدَةٞ",
+      "transliteration": "mu'sadah",
+      "gloss": "closed down/sealed over (editorial gloss)",
+      "keys": [
+        "104:8"
+      ]
+    },
+    {
+      "term": "عَمَدٖ",
+      "transliteration": "'amad mumaddadah",
+      "gloss": "extended columns (editorial gloss)",
+      "keys": [
+        "104:9"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1997"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the immortality-delusion diagnosis (3) before the Crusher-threat opens (4); P2 ends with the heart-directed fire description (7) before the closing sealed-columns image (8-9); P3 covers the two-verse final enclosure depiction.",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-21T01:25:00.000Z"
+}
