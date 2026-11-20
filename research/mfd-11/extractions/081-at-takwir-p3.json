@@ -1,0 +1,123 @@
+{
+  "extractionId": "ext-081-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 81,
+  "surahName": "At-Takwir",
+  "passage": {
+    "fromAyah": 26,
+    "toAyah": 29,
+    "label": "where going; not except reminder worlds; whoever wills among take right course; not will except Allah wills Lord worlds"
+  },
+  "verseKeys": [
+    "81:26",
+    "81:27",
+    "81:28",
+    "81:29"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "81:26",
+      "text": "فَأَيۡنَ تَذۡهَبُونَ"
+    },
+    {
+      "key": "81:27",
+      "text": "إِنۡ هُوَ إِلَّا ذِكۡرٞ لِّلۡعَٰلَمِينَ"
+    },
+    {
+      "key": "81:28",
+      "text": "لِمَن شَآءَ مِنكُمۡ أَن يَسۡتَقِيمَ"
+    },
+    {
+      "key": "81:29",
+      "text": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلۡعَٰلَمِينَ"
+    }
+  ],
+  "mainSubject": {
+    "label": "The direction question posed — where are you going — answered by naming the Quran nothing but a reminder to the worlds for whoever wills to take a right course, with human willing nested under the will of Allah, Lord of the worlds",
+    "keys": [
+      "81:26",
+      "81:27",
+      "81:28",
+      "81:29"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The direction question: so where are you going",
+      "keys": [
+        "81:26"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "At-Takwir names it a reminder addressed to all the worlds",
+      "keys": [
+        "81:27"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "For whoever among you wills to take a right course",
+      "keys": [
+        "81:28"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Yet you do not will except that Allah wills, Lord of the worlds",
+      "keys": [
+        "81:29"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Direction questioned: where are you going after rejecting the reminder",
+      "keys": [
+        "81:26"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Reminder to the worlds available to whoever wills a right course",
+      "keys": [
+        "81:27",
+        "81:28"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Human willing nested under the will of Allah, Lord of the worlds",
+      "keys": [
+        "81:29"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "يَسۡتَقِيمَ",
+      "transliteration": "an yastaqim",
+      "gloss": "to take a right course (editorial gloss)",
+      "keys": [
+        "81:28"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1909"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the soul-knowing-what-it-brought verdict (14) before the star-night-dawn oaths open (15); P2 ends with the expelled-devil denial (25) before the direction question begins (26); P3 covers the where-going challenge, the reminder-to-the-worlds function and the divine-will nesting (26-29).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T21:35:00.000Z"
+}

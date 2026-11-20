@@ -5,11 +5,12 @@
   "surah": 81,
   "surahName": "At-Takwir",
   "passage": {
-    "fromAyah": 16,
-    "toAyah": 29,
-    "label": "At-Takwir 81:16-29"
+    "fromAyah": 15,
+    "toAyah": 25,
+    "label": "swear retreating stars; run courses disappear; night closes in; dawn breathes; indeed Quran word conveyed noble messenger; possessed power Owner Throne secure position; obeyed heavens trustworthy; companion not mad; seen Gabriel clear horizon; Muhammad not withholder knowledge unseen; Quran not word devil expelled heavens"
   },
   "verseKeys": [
+    "81:15",
     "81:16",
     "81:17",
     "81:18",
@@ -19,13 +20,13 @@
     "81:22",
     "81:23",
     "81:24",
-    "81:25",
-    "81:26",
-    "81:27",
-    "81:28",
-    "81:29"
+    "81:25"
   ],
   "arabicExcerpts": [
+    {
+      "key": "81:15",
+      "text": "فَلَآ أُقۡسِمُ بِٱلۡخُنَّسِ"
+    },
     {
       "key": "81:16",
       "text": "ٱلۡجَوَارِ ٱلۡكُنَّسِ"
@@ -65,27 +66,12 @@
     {
       "key": "81:25",
       "text": "وَمَا هُوَ بِقَوۡلِ شَيۡطَٰنٖ رَّجِيمٖ"
-    },
-    {
-      "key": "81:26",
-      "text": "فَأَيۡنَ تَذۡهَبُونَ"
-    },
-    {
-      "key": "81:27",
-      "text": "إِنۡ هُوَ إِلَّا ذِكۡرٞ لِّلۡعَٰلَمِينَ"
-    },
-    {
-      "key": "81:28",
-      "text": "لِمَن شَآءَ مِنكُمۡ أَن يَسۡتَقِيمَ"
-    },
-    {
-      "key": "81:29",
-      "text": "وَمَا تَشَآءُونَ إِلَّآ أَن يَشَآءَ ٱللَّهُ رَبُّ ٱلۡعَٰلَمِينَ"
     }
   ],
   "mainSubject": {
-    "label": "At-Takwir 81:16-29",
+    "label": "Oaths by retreating stars that run their courses and disappear, by the closing night and the breathing dawn, establishing the Quran as a word conveyed by a noble messenger possessed of power and secure in position with the Owner of the Throne, obeyed in the heavens and trustworthy; the Prophet affirmed not mad, having seen Gabriel on the clear horizon and not withholding knowledge of the unseen; the Quran declared not the word of an expelled devil",
     "keys": [
+      "81:15",
       "81:16",
       "81:17",
       "81:18",
@@ -94,14 +80,20 @@
       "81:21",
       "81:22",
       "81:23",
-      "81:24",
-      "81:25"
+      "81:24"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "Those that run [their courses] and disappear",
+      "label": "Oath sworn by the retreating stars",
+      "keys": [
+        "81:15"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Those that run their courses and disappear",
       "keys": [
         "81:16"
       ],
@@ -122,79 +114,51 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[That] indeed, the Qur'an is a word [conveyed by] a noble messenger",
+      "label": "The Quran established as a word conveyed by a noble messenger",
       "keys": [
         "81:19"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[Who is] possessed of power and with the Owner of the Throne, secure [in posi...",
+      "label": "That messenger possessed of power and secure in position with the Owner of the Throne",
       "keys": [
         "81:20"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Obeyed there [in the heavens] and trustworthy",
+      "label": "Obeyed in the heavens and trustworthy",
       "keys": [
         "81:21"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And your companion is not [at all] mad",
+      "label": "The Prophet's companion affirmed not mad",
       "keys": [
         "81:22"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And he has already seen Gabriel in the clear horizon",
+      "label": "He has already seen Gabriel on the clear horizon",
       "keys": [
         "81:23"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And Muhammad is not a withholder of [knowledge of] the unseen",
+      "label": "Muhammad declared not a withholder of knowledge of the unseen",
       "keys": [
         "81:24"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And the Qur'an is not the word of a devil, expelled [from the heavens]",
+      "label": "The Quran declared not the word of an expelled devil",
       "keys": [
         "81:25"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "So where are you going",
-      "keys": [
-        "81:26"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "It is not except a reminder to the worlds",
-      "keys": [
-        "81:27"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "For whoever wills among you to take a right course",
-      "keys": [
-        "81:28"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And you do not will except that Allah wills - Lord of the worlds",
-      "keys": [
-        "81:29"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
@@ -202,24 +166,84 @@
   "commandsAndProhibitions": [],
   "divineNamesAndAttributes": [],
   "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2267",
-    "cand-2268",
-    "cand-2269",
-    "cand-2270",
-    "cand-2271",
-    "cand-2272",
-    "cand-2273",
-    "cand-2274",
-    "cand-2275",
-    "cand-2276"
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Prophetic sanity affirmed against madness charges",
+      "keys": [
+        "81:22"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Direct vision of Gabriel on the clear horizon as revelatory credential",
+      "keys": [
+        "81:23"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 81 passage 2/2. Generated by mfd11-gen-batch-79-84.mjs.",
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Four-fold oath by retreating stars, running courses, closing night and breathing dawn",
+      "keys": [
+        "81:15",
+        "81:16",
+        "81:17",
+        "81:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Noble messenger possessing power, secure position with the Throne's Owner, obeyed and trustworthy",
+      "keys": [
+        "81:19",
+        "81:20",
+        "81:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "No withholding of unseen knowledge and no satanic authorship",
+      "keys": [
+        "81:24",
+        "81:25"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "بِٱلۡخُنَّسِ",
+      "transliteration": "al-khunnas",
+      "gloss": "the retreating stars (editorial gloss)",
+      "keys": [
+        "81:15"
+      ]
+    },
+    {
+      "term": "ٱلۡعَرۡشِ",
+      "transliteration": "dhi al-arsh",
+      "gloss": "Owner of the Throne (editorial gloss)",
+      "keys": [
+        "81:20"
+      ]
+    },
+    {
+      "term": "مَكِينٖ",
+      "transliteration": "makin",
+      "gloss": "secure in position (editorial gloss)",
+      "keys": [
+        "81:20"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1907",
+    "cand-1908"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the soul-knowing-what-it-brought verdict (14) before the star-night-dawn oaths open (15); P2 ends with the expelled-devil denial (25) before the direction question begins (26); P3 covers the where-going challenge, the reminder-to-the-worlds function and the divine-will nesting (26-29).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:10:00.000Z"
+  "createdAt": "2026-11-20T21:35:00.000Z"
 }
