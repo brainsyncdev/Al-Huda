@@ -50,19 +50,75 @@ const PASSAGES = [
   }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-035-p1": [
+    "Hamd to Allah as Fatir of heavens and earth with angels made messengers having two three or four wings",
+    "Exclusive divine control over mercy opening and withholding with none able to reverse it",
+    "Command to remember divine favor and rhetorical challenge on any creator besides Allah providing from heaven and earth",
+    "Consolation that prior messengers were also denied and all matters return to Allah",
+    "Warning against worldly life delusion and deception by the Deceiver regarding Allah",
+    "Satan declared an enemy who invites his party to become companions of the Blaze",
+    "Severe punishment for disbelievers contrasted with forgiveness and great reward for believers doing righteous deeds",
+    "One whose evil deed is made attractive seeing it as good contrasted with divine guidance and misguidance sovereignty",
+    "Winds stirring clouds driven to dead land reviving earth as resurrection analogy",
+    "All honor belonging to Allah with good speech ascending and righteous work raising it while evil plotting perishes",
+    "Human creation from dust then sperm-drop then pairing with all conception birth and lifespan recorded",
+    "Two seas unequal yet both yielding tender meat ornaments and ships seeking bounty as gratitude signs",
+    "Night entering day and sun moon subjected for specified terms affirming divine sovereignty and false deity impotence",
+    "False deities unable to hear supplication or respond and denying association on Resurrection Day",
+    "Mankind declared poor and needy toward Allah who is Self-Sufficient and Praiseworthy",
+    "Divine power to remove current humanity and bring a new creation",
+    "Affirmation that replacement creation is not difficult for Allah",
+    "No bearer bearing another burden with warning only reaching those fearing Lord unseen and establishing prayer"
+  ],
+  "ext-035-p2": [
+    "Blind and seeing declared unequal as spiritual perception metaphor",
+    "Darknesses and light declared unequal continuing the perceptual hierarchy",
+    "Shade and heat declared unequal completing the sensory contrast series",
+    "Living and dead declared unequal with Allah causing whom He wills to hear while the Prophet cannot reach those in graves",
+    "Prophet identified as nothing but a warner",
+    "Sent with truth as bearer of good tidings and warner with every nation having had a warner",
+    "Prior nations denying messengers who came with clear proofs scriptures and enlightening Book",
+    "Divine seizure of disbelievers and the terrible nature of that reproach",
+    "Rain producing fruits of varying colors and mountain tracts white red and black as chromatic signs",
+    "People animals and livestock diverse in color with only knowledgeable servants truly fearing Allah",
+    "Reciters of the Book establishing prayer and spending secretly and publicly hoping for unfailing commerce",
+    "Full wage payment plus bounty increase from the Forgiving and Appreciative",
+    "Revealed Book confirmed as truth verifying what preceded it with Allah Acquainted and Seeing of His servants",
+    "Scripture inherited by chosen servants divided into self-wrongers moderates and foremost in good deeds",
+    "Gardens of Eden with gold bracelets pearls and silk garments as reward description",
+    "Inhabitants praising Allah for removing sorrow and affirming Lord as Forgiving and Appreciative",
+    "Settlement in home of duration free from fatigue and weariness by divine bounty",
+    "Disbelievers assigned Hellfire with no death decree or torment reduction as recompense for ingratitude",
+    "Hellfire inhabitants crying out for return to do righteousness reminded of granted lifespan and warner arrival"
+  ],
+  "ext-035-p3": [
+    "Allah as Knower of unseen aspects of heavens and earth and Knowing of what lies within breasts",
+    "Humanity made successors on earth with disbelief increasing only hatred and loss for disbelievers",
+    "Challenge to show what supposed partners created or whether they received a book as evidence with wrongdoers promising only delusion",
+    "Allah holding heavens and earth lest they cease with none able to hold them after Him described as Forbearing and Forgiving",
+    "Strongest oaths sworn that a warner would produce greater guidance yet its arrival increased only aversion",
+    "Arrogance and evil plotting in the land with evil plots encompassing only their own people and divine way unchanging",
+    "Travel command to observe ends of stronger predecessors affirming nothing can frustrate Allah who is Knowing and Competent",
+    "If Allah imposed blame for earnings no creature would remain yet He defers to a specified term as Seeing of His servants"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`35:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`35:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`35:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 35, surahName: "Fatir",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
