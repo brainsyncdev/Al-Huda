@@ -1,387 +1,413 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:05:00.000Z",
-  "sourceExtraction": "ext-075-p1,ext-075-p2",
+  "generatedAt": "2026-11-20T20:35:00.000Z",
+  "sourceExtraction": "ext-075-p1,ext-075-p2,ext-075-p3,ext-075-p4",
   "candidates": [
     {
-      "candidateId": "cand-2137",
-      "label": "cand-2137: Topic from 75:1",
-      "definition": "In 75:1: I swear by the Day of Resurrection",
+      "candidateId": "cand-1859",
+      "label": "Bone reassembly and fingertip proportioning proving resurrection power",
+      "definition": "In 75:3-4: Does man think that We will not assemble his bones? Yes We are able even to proportion his fingertips.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "75:3",
+          "excerpt": "أَيَحۡسَبُ ٱلۡإِنسَٰنُ أَلَّن نَّجۡمَعَ عِظَامَهُۥ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:4",
+          "excerpt": "بَلَىٰ قَٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّيَ بَنَانَهُۥ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jam' al-izam wa-taswiyat al-banan."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Precision beyond mere reassembly."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1860",
+      "label": "Reproaching soul sworn by alongside the Day of Resurrection",
+      "definition": "In 75:1-2: I swear by the Day of Resurrection and I swear by the reproaching soul to the certainty of resurrection.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "75:1",
           "excerpt": "لَآ أُقۡسِمُ بِيَوۡمِ ٱلۡقِيَٰمَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2138",
-      "label": "cand-2138: Topic from 75:2",
-      "definition": "In 75:2: And I swear by the reproaching soul [to the certainty of resurrection]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:2",
           "excerpt": "وَلَآ أُقۡسِمُ بِٱلنَّفۡسِ ٱللَّوَّامَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nafs lawwamah as inner witness."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dual oath structure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2139",
-      "label": "cand-2139: Topic from 75:4",
-      "definition": "In 75:4: Yes. [We are] Able [even] to proportion his fingertips",
+      "candidateId": "cand-1861",
+      "label": "Cosmic dissolution producing the futile escape question",
+      "definition": "In 75:7-12: So when vision is dazzled and the moon darkens and the sun and the moon are joined; man will say on that Day where is the place of escape; no there is no refuge; to your Lord that Day is the place of permanence.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "75:4",
-          "excerpt": "بَلَىٰ قَٰدِرِينَ عَلَىٰٓ أَن نُّسَوِّيَ بَنَانَهُۥ",
+          "key": "75:7",
+          "excerpt": "فَإِذَا بَرِقَ ٱلۡبَصَرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2140",
-      "label": "cand-2140: Topic from 75:6",
-      "definition": "In 75:6: He asks, \"When is the Day of Resurrection",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "75:6",
-          "excerpt": "يَسۡـَٔلُ أَيَّانَ يَوۡمُ ٱلۡقِيَٰمَةِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2141",
-      "label": "cand-2141: Topic from 75:8",
-      "definition": "In 75:8: And the moon darkens",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:8",
           "excerpt": "وَخَسَفَ ٱلۡقَمَرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2142",
-      "label": "cand-2142: Topic from 75:10",
-      "definition": "In 75:10: Man will say on that Day, \"Where is the [place of] escape",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:9",
+          "excerpt": "وَجُمِعَ ٱلشَّمۡسُ وَٱلۡقَمَرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:10",
           "excerpt": "يَقُولُ ٱلۡإِنسَٰنُ يَوۡمَئِذٍ أَيۡنَ ٱلۡمَفَرُّ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2143",
-      "label": "cand-2143: Topic from 75:12",
-      "definition": "In 75:12: To your Lord, that Day, is the [place of] permanence",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:11",
+          "excerpt": "كَلَّا لَا وَزَرَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:12",
           "excerpt": "إِلَىٰ رَبِّكَ يَوۡمَئِذٍ ٱلۡمُسۡتَقَرُّ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2144",
-      "label": "cand-2144: Topic from 75:14",
-      "definition": "In 75:14: Rather, man, against himself, will be a witness",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "75:14",
-          "excerpt": "بَلِ ٱلۡإِنسَٰنُ عَلَىٰ نَفۡسِهِۦ بَصِيرَةٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Baraq basar and jama' shams wa-qamar."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "La malja' illa ilayhi."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2145",
-      "label": "cand-2145: Topic from 75:16",
-      "definition": "In 75:16: Move not your tongue with it, [O Muhammad], to hasten with recitation of the Qur'an",
+      "candidateId": "cand-1862",
+      "label": "Quran collection, recitation and clarification guaranteed by Allah",
+      "definition": "In 75:16-19: Move not your tongue with it to hasten with recitation of the Quran; indeed upon Us is its collection in your heart and to make possible its recitation; so when We have recited it through Gabriel then follow its recitation; then upon Us is its clarification to you.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "75:16",
           "excerpt": "لَا تُحَرِّكۡ بِهِۦ لِسَانَكَ لِتَعۡجَلَ بِهِۦٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2146",
-      "label": "cand-2146: Topic from 75:18",
-      "definition": "In 75:18: So when We have recited it [through Gabriel], then follow its recitation",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:17",
+          "excerpt": "إِنَّ عَلَيۡنَا جَمۡعَهُۥ وَقُرۡءَانَهُۥ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:18",
           "excerpt": "فَإِذَا قَرَأۡنَٰهُ فَٱتَّبِعۡ قُرۡءَانَهُۥ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2147",
-      "label": "cand-2147: Topic from 75:21",
-      "definition": "In 75:21: And leave the Hereafter",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "75:21",
-          "excerpt": "وَتَذَرُونَ ٱلۡأٓخِرَةَ",
+          "key": "75:19",
+          "excerpt": "ثُمَّ إِنَّ عَلَيۡنَا بَيَانَهُۥ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-preservation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jam' and bayan both ala Allah."
+        },
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Gabriel-mediated tartil."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2148",
-      "label": "cand-2148: Topic from 75:22",
-      "definition": "In 75:22: [Some] faces, that Day, will be radiant",
+      "candidateId": "cand-1863",
+      "label": "Radiant faces looking at their Lord versus contorted faces expecting backbreaking",
+      "definition": "In 75:22-25: Some faces that Day will be radiant looking at their Lord; and some faces that Day will be contorted expecting that there will be done to them something backbreaking.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "75:22",
           "excerpt": "وُجُوهٞ يَوۡمَئِذٖ نَّاضِرَةٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2149",
-      "label": "cand-2149: Topic from 75:24",
-      "definition": "In 75:24: And [some] faces, that Day, will be contorted",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:23",
+          "excerpt": "إِلَىٰ رَبِّهَا نَاظِرَةٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:24",
           "excerpt": "وَوُجُوهٞ يَوۡمَئِذِۭ بَاسِرَةٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:25",
+          "excerpt": "تَظُنُّ أَن يُفۡعَلَ بِهَا فَاقِرَةٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Wujuh nadirah nazirah."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Basirah 'aqilah contrasted."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2150",
-      "label": "cand-2150: Topic from 75:26",
-      "definition": "In 75:26: No! When the soul has reached the collar bones",
+      "candidateId": "cand-1864",
+      "label": "Deathbed sequence: collar bones, no cure, separation certainty, leg-wound",
+      "definition": "In 75:26-30: No when the soul has reached the collar bones and it is said who will cure him; and the dying one is certain that it is the time of separation; and the leg is wound about the leg; to your Lord that Day will be the procession.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "75:26",
           "excerpt": "كَلَّآ إِذَا بَلَغَتِ ٱلتَّرَاقِيَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2151",
-      "label": "cand-2151: Topic from 75:28",
-      "definition": "In 75:28: And the dying one is certain that it is the [time of] separation",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:27",
+          "excerpt": "وَقِيلَ مَنۡۜ رَاقٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:28",
           "excerpt": "وَظَنَّ أَنَّهُ ٱلۡفِرَاقُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2152",
-      "label": "cand-2152: Topic from 75:30",
-      "definition": "In 75:30: To your Lord, that Day, will be the procession",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:29",
+          "excerpt": "وَٱلۡتَفَّتِ ٱلسَّاقُ بِٱلسَّاقِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:30",
           "excerpt": "إِلَىٰ رَبِّكَ يَوۡمَئِذٍ ٱلۡمَسَاقُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Taraqi and saq bi-saq imagery."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yaqin al-firaq at death."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2153",
-      "label": "cand-2153: Topic from 75:32",
-      "definition": "In 75:32: But [instead], he denied and turned away",
+      "candidateId": "cand-1865",
+      "label": "Denial, prayer neglect and swaggering pride earning repeated woe",
+      "definition": "In 75:31-35: And the disbeliever had not believed nor had he prayed; but instead he denied and turned away; and then he went to his people swaggering in pride; woe to you and woe; then woe to you and woe.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "75:31",
+          "excerpt": "فَلَا صَدَّقَ وَلَا صَلَّىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:32",
           "excerpt": "وَلَٰكِن كَذَّبَ وَتَوَلَّىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2154",
-      "label": "cand-2154: Topic from 75:34",
-      "definition": "In 75:34: Woe to you, and woe",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:33",
+          "excerpt": "ثُمَّ ذَهَبَ إِلَىٰٓ أَهۡلِهِۦ يَتَمَطَّىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:34",
           "excerpt": "أَوۡلَىٰ لَكَ فَأَوۡلَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:35",
+          "excerpt": "ثُمَّ أَوۡلَىٰ لَكَ فَأَوۡلَىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Lam yusalli as primary indictment."
+        },
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Khila ila ahlihi yatrukku."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2155",
-      "label": "cand-2155: Topic from 75:36",
-      "definition": "In 75:36: Does man think that he will be left neglected",
+      "candidateId": "cand-1866",
+      "label": "Embryological progression arguing resurrection ability",
+      "definition": "In 75:36-40: Does man think that he will be left neglected; had he not been a sperm from semen emitted; then he was a clinging clot and Allah created his form and proportioned him; and made of him two mates the male and the female; is not that Creator able to give life to the dead.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "75:36",
           "excerpt": "أَيَحۡسَبُ ٱلۡإِنسَٰنُ أَن يُتۡرَكَ سُدًى",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2156",
-      "label": "cand-2156: Topic from 75:38",
-      "definition": "In 75:38: Then he was a clinging clot, and [Allah] created [his form] and proportioned [him]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:37",
+          "excerpt": "أَلَمۡ يَكُ نُطۡفَةٗ مِّن مَّنِيّٖ يُمۡنَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "75:38",
           "excerpt": "ثُمَّ كَانَ عَلَقَةٗ فَخَلَقَ فَسَوَّىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:39",
+          "excerpt": "فَجَعَلَ مِنۡهُ ٱلزَّوۡجَيۡنِ ٱلذَّكَرَ وَٱلۡأُنثَىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "75:40",
+          "excerpt": "أَلَيۡسَ ذَٰلِكَ بِقَٰدِرٍ عَلَىٰٓ أَن يُحۡـِۧيَ ٱلۡمَوۡتَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nutfah-alaqah-taswiyah sequence."
+        },
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qadir ala ihyā' al-mawta concluded."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:35:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     }
   ]
 }
