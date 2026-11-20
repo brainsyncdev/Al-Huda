@@ -1,0 +1,138 @@
+{
+  "extractionId": "ext-093-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 93,
+  "surahName": "Ad-Duha",
+  "passage": {
+    "fromAyah": 9,
+    "toAyah": 11,
+    "label": "as for orphan do not oppress; as for petitioner do not repel; as for favor Lord report"
+  },
+  "verseKeys": [
+    "93:9",
+    "93:10",
+    "93:11"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "93:9",
+      "text": "فَأَمَّا ٱلۡيَتِيمَ فَلَا تَقۡهَرۡ"
+    },
+    {
+      "key": "93:10",
+      "text": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنۡهَرۡ"
+    },
+    {
+      "key": "93:11",
+      "text": "وَأَمَّا بِنِعۡمَةِ رَبِّكَ فَحَدِّثۡ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Three ethical imperatives flowing from those favours: do not oppress the orphan, do not repel the petitioner, and report the favour of your Lord",
+    "keys": [
+      "93:9",
+      "93:10",
+      "93:11"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The orphan must not be oppressed",
+      "keys": [
+        "93:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The petitioner must not be repelled",
+      "keys": [
+        "93:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The favour of the Lord must be reported",
+      "keys": [
+        "93:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "93:9"
+      ],
+      "excerpt": "فَأَمَّا ٱلۡيَتِيمَ فَلَا تَقۡهَرۡ",
+      "description": "Do not oppress the orphan."
+    },
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "93:10"
+      ],
+      "excerpt": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنۡهَرۡ",
+      "description": "Do not repel the petitioner."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "93:11"
+      ],
+      "excerpt": "وَأَمَّا بِنِعۡمَةِ رَبِّكَ فَحَدِّثۡ",
+      "description": "Report the favour of your Lord."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [],
+  "socialEconomicCivilisational": [
+    {
+      "label": "Orphan protection and petitioner reception as social obligations derived from personal divine favour",
+      "keys": [
+        "93:9",
+        "93:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "relationships": [
+    {
+      "label": "Divine favour received translated into ethical duty toward the vulnerable",
+      "keys": [
+        "93:9",
+        "93:10",
+        "93:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلسَّآئِلَ",
+      "transliteration": "al-sa'il",
+      "gloss": "the petitioner/asker (editorial gloss)",
+      "keys": [
+        "93:10"
+      ]
+    },
+    {
+      "term": "فَحَدِّثۡ",
+      "transliteration": "fa-haddith",
+      "gloss": "report/speak about (editorial gloss)",
+      "keys": [
+        "93:11"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1966"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the satisfaction promise (5) before the three past-favour reminders open (6); P2 ends with the self-sufficiency gift (8) before the three resulting ethical commands begin (9); P3 covers the orphan-petitioner-favour-report triad (9-11).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T23:35:00.000Z"
+}

@@ -1,0 +1,122 @@
+{
+  "extractionId": "ext-093-p2",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 93,
+  "surahName": "Ad-Duha",
+  "passage": {
+    "fromAyah": 6,
+    "toAyah": 8,
+    "label": "Did He not find orphan give refuge; found lost guided; found poor made self-sufficient"
+  },
+  "verseKeys": [
+    "93:6",
+    "93:7",
+    "93:8"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "93:6",
+      "text": "أَلَمۡ يَجِدۡكَ يَتِيمٗا فَـَٔاوَىٰ"
+    },
+    {
+      "key": "93:7",
+      "text": "وَوَجَدَكَ ضَآلّٗا فَهَدَىٰ"
+    },
+    {
+      "key": "93:8",
+      "text": "وَوَجَدَكَ عَآئِلٗا فَأَغۡنَىٰ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Three past divine favours recalled: finding the Prophet an orphan and giving him refuge, finding him lost and guiding him, and finding him poor and making him self-sufficient",
+    "keys": [
+      "93:6",
+      "93:7",
+      "93:8"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Found an orphan and given refuge",
+      "keys": [
+        "93:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Found lost and guided",
+      "keys": [
+        "93:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Found poor and made self-sufficient",
+      "keys": [
+        "93:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [
+    {
+      "label": "The Prophet's personal history of divine favour recalled as proof of ongoing care",
+      "keys": [
+        "93:6",
+        "93:7",
+        "93:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Three stages of divine care: orphanhood-to-refuge, lostness-to-guidance, poverty-to-self-sufficiency",
+      "keys": [
+        "93:6",
+        "93:7",
+        "93:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [],
+  "terminology": [
+    {
+      "term": "يَتِيمٗا",
+      "transliteration": "yatim",
+      "gloss": "orphan (editorial gloss)",
+      "keys": [
+        "93:6"
+      ]
+    },
+    {
+      "term": "ضَآلّٗا",
+      "transliteration": "dallan fa-hada",
+      "gloss": "lost then guided (editorial gloss)",
+      "keys": [
+        "93:7"
+      ]
+    },
+    {
+      "term": "عَآئِلٗا",
+      "transliteration": "a'ilan fa-aghna",
+      "gloss": "poor then enriched (editorial gloss)",
+      "keys": [
+        "93:8"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1965"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the satisfaction promise (5) before the three past-favour reminders open (6); P2 ends with the self-sufficiency gift (8) before the three resulting ethical commands begin (9); P3 covers the orphan-petitioner-favour-report triad (9-11).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T23:35:00.000Z"
+}

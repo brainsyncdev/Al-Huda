@@ -1,0 +1,151 @@
+{
+  "extractionId": "ext-093-p1",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 93,
+  "surahName": "Ad-Duha",
+  "passage": {
+    "fromAyah": 1,
+    "toAyah": 5,
+    "label": "By morning brightness; night covers darkness; Lord not taken leave nor detested; Hereafter better first life; Lord going give satisfied"
+  },
+  "verseKeys": [
+    "93:1",
+    "93:2",
+    "93:3",
+    "93:4",
+    "93:5"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "93:1",
+      "text": "وَٱلضُّحَىٰ"
+    },
+    {
+      "key": "93:2",
+      "text": "وَٱلَّيۡلِ إِذَا سَجَىٰ"
+    },
+    {
+      "key": "93:3",
+      "text": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ"
+    },
+    {
+      "key": "93:4",
+      "text": "وَلَلۡأٓخِرَةُ خَيۡرٞ لَّكَ مِنَ ٱلۡأُولَىٰ"
+    },
+    {
+      "key": "93:5",
+      "text": "وَلَسَوۡفَ يُعۡطِيكَ رَبُّكَ فَتَرۡضَىٰٓ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Oaths by the morning brightness and the night when it covers with darkness affirming that the Lord has neither taken leave nor detested the Prophet; the Hereafter declared better for him than the first life, with his Lord promising to give until he is satisfied",
+    "keys": [
+      "93:1",
+      "93:2",
+      "93:3",
+      "93:4",
+      "93:5"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Oath sworn by the morning brightness",
+      "keys": [
+        "93:1"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And by the night when it covers with darkness",
+      "keys": [
+        "93:2"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Lord has not taken leave of the Prophet nor detested him",
+      "keys": [
+        "93:3"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Hereafter affirmed better for him than the first life",
+      "keys": [
+        "93:4"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "His Lord will give to him until he is satisfied",
+      "keys": [
+        "93:5"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Divine reassurance against abandonment or detestation",
+      "keys": [
+        "93:3"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Future satisfaction promised through divine giving",
+      "keys": [
+        "93:5"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Morning brightness and darkening night sworn by to ground the reassurance",
+      "keys": [
+        "93:1",
+        "93:2"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Hereafter named superior to the first life as part of the consolation",
+      "keys": [
+        "93:4"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "وَٱلضُّحَىٰ",
+      "transliteration": "al-duha",
+      "gloss": "the morning brightness (editorial gloss)",
+      "keys": [
+        "93:1"
+      ]
+    },
+    {
+      "term": "سَجَىٰ",
+      "transliteration": "saja",
+      "gloss": "covers with darkness/stillness (editorial gloss)",
+      "keys": [
+        "93:2"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1964"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the satisfaction promise (5) before the three past-favour reminders open (6); P2 ends with the self-sufficiency gift (8) before the three resulting ethical commands begin (9); P3 covers the orphan-petitioner-favour-report triad (9-11).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T23:35:00.000Z"
+}
