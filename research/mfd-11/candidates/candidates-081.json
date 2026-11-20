@@ -1,387 +1,435 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:50:00.000Z",
-  "sourceExtraction": "ext-057-p1,ext-057-p2",
+  "generatedAt": "2026-11-20T17:35:00.000Z",
+  "sourceExtraction": "ext-057-p1,ext-057-p2,ext-057-p3,ext-057-p4",
   "candidates": [
     {
-      "candidateId": "cand-1777",
-      "label": "cand-1777: Topic from 57:1",
-      "definition": "In 57:1: Whatever is in the heavens and earth exalts Allah, and He is the Exalted in Might, the Wise",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "57:1",
-          "excerpt": "سَبَّحَ لِلَّهِ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَهُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1778",
-      "label": "cand-1778: Topic from 57:2",
-      "definition": "In 57:2: His is the dominion of the heavens and earth. He gives life and causes death, and He is over all things competent",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "57:2",
-          "excerpt": "لَهُۥ مُلۡكُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ يُحۡيِۦ وَيُمِيتُۖ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1779",
-      "label": "cand-1779: Topic from 57:3",
-      "definition": "In 57:3: He is the First and the Last, the Ascendant and the Intimate, and He is, of all things, Knowing",
+      "candidateId": "cand-1690",
+      "label": "The four paired names: First, Last, Ascendant, Intimate",
+      "definition": "In 57:3: He is the First and the Last, the Ascendant and the Intimate, and He is of all things Knowing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:3",
           "excerpt": "هُوَ ٱلۡأَوَّلُ وَٱلۡأٓخِرُ وَٱلظَّـٰهِرُ وَٱلۡبَاطِنُۖ وَهُوَ بِكُلِّ شَيۡءٍ عَلِيمٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Awwal Akhir Zahir Batin quartet."
+        },
+        {
+          "topicId": "tawheed-asma-wa-sifat",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Paired attribute structure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1780",
-      "label": "cand-1780: Topic from 57:5",
-      "definition": "In 57:5: His is the dominion of the heavens and earth. And to Allah are returned [all] matters",
+      "candidateId": "cand-1691",
+      "label": "Throne establishment with comprehensive knowledge and presence wherever they are",
+      "definition": "In 57:4: It is He who created the heavens and earth in six days and then established Himself above the Throne; He knows what penetrates into the earth and what emerges from it and what descends from the heaven and what ascends therein; and He is with you wherever you are.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "57:5",
-          "excerpt": "لَّهُۥ مُلۡكُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۚ وَإِلَى ٱللَّهِ تُرۡجَعُ ٱلۡأُمُورُ",
+          "key": "57:4",
+          "excerpt": "هُوَ ٱلَّذِي خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ فِي سِتَّةِ أَيَّامٖ ثُمَّ ٱسۡتَوَىٰ عَلَى ٱلۡعَرۡشِۖ يَعۡلَمُ مَا يَلِجُ فِي ٱلۡأَرۡضِ وَمَا يَخۡرُجُ مِنۡهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعۡرُجُ فِيهَاۖ وَهُوَ مَعَكُمۡ أَيۡنَ مَا كُنتُمۡۚ وَٱللَّهُ بِمَا تَعۡمَلُونَ بَصِيرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-asma-wa-sifat",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Istiwa and ma'iyyah together."
+        },
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Four-directional knowledge."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1781",
-      "label": "cand-1781: Topic from 57:6",
-      "definition": "In 57:6: He causes the night to enter the day and causes the day to enter the night, and he is Knowing of that within the breasts",
+      "candidateId": "cand-1692",
+      "label": "Spending as stewardship over what Allah made them successors in",
+      "definition": "In 57:7: Believe in Allah and His Messenger and spend out of that in which He has made you successors; for those who have believed among you and spent there will be a great reward.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "57:6",
-          "excerpt": "يُولِجُ ٱلَّيۡلَ فِي ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِي ٱلَّيۡلِۚ وَهُوَ عَلِيمُۢ بِذَاتِ ٱلصُّدُورِ",
+          "key": "57:7",
+          "excerpt": "ءَامِنُواْ بِٱللَّهِ وَرَسُولِهِۦ وَأَنفِقُواْ مِمَّا جَعَلَكُم مُّسۡتَخۡلَفِينَ فِيهِۖ فَٱلَّذِينَ ءَامَنُواْ مِنكُمۡ وَأَنفَقُواْ لَهُمۡ أَجۡرٞ كَبِيرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1782",
-      "label": "cand-1782: Topic from 57:8",
-      "definition": "In 57:8: And why do you not believe in Allah while the Messenger invites you to believe in your Lord and He has taken your covenant, if you should [truly] be believers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "57:8",
-          "excerpt": "وَمَا لَكُمۡ لَا تُؤۡمِنُونَ بِٱللَّهِ وَٱلرَّسُولُ يَدۡعُوكُمۡ لِتُؤۡمِنُواْ بِرَبِّكُمۡ وَقَدۡ أَخَذَ مِيثَٰقَكُمۡ إِن كُنتُم مُّؤۡمِنِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1783",
-      "label": "cand-1783: Topic from 57:9",
-      "definition": "In 57:9: It is He who sends down upon His Servant [Muhammad] verses of clear evidence that He may bring you out from darknesses into the light. And indeed, Allah is to you Kind and Merciful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Istikhlaf framing of wealth."
+        },
         {
-          "key": "57:9",
-          "excerpt": "هُوَ ٱلَّذِي يُنَزِّلُ عَلَىٰ عَبۡدِهِۦٓ ءَايَٰتِۭ بَيِّنَٰتٖ لِّيُخۡرِجَكُم مِّنَ ٱلظُّلُمَٰتِ إِلَى ٱلنُّورِۚ وَإِنَّ ٱللَّهَ بِكُمۡ لَرَءُوفٞ رَّحِيمٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Iman joined to infaq."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1784",
-      "label": "cand-1784: Topic from 57:10",
-      "definition": "In 57:10: And why do you not spend in the cause of Allah while to Allah belongs the heritage of the heavens and the earth? Not equal among you are those who spent before the conquest [of Makkah] and fought [and those who did so after it]. Those are greater in degree than they who spent afterwards and fought. But to all Allah has promised the best [reward]. And Allah, with what you do, is Acquainted",
+      "candidateId": "cand-1693",
+      "label": "Pre-conquest spenders and fighters ranked above later ones",
+      "definition": "In 57:10: Not equal among you are those who spent before the conquest and fought and those who did so after it; those are greater in degree than they who spent afterwards and fought, but to all Allah has promised the best.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:10",
           "excerpt": "وَمَا لَكُمۡ أَلَّا تُنفِقُواْ فِي سَبِيلِ ٱللَّهِ وَلِلَّهِ مِيرَٰثُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۚ لَا يَسۡتَوِي مِنكُم مَّنۡ أَنفَقَ مِن قَبۡلِ ٱلۡفَتۡحِ وَقَٰتَلَۚ أُوْلَـٰٓئِكَ أَعۡظَمُ دَرَجَةٗ مِّنَ ٱلَّذِينَ أَنفَقُواْ مِنۢ بَعۡدُ وَقَٰتَلُواْۚ وَكُلّٗا وَعَدَ ٱللَّهُ ٱلۡحُسۡنَىٰۚ وَٱللَّهُ بِمَا تَعۡمَلُونَ خَبِيرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Graduated merit by timing."
+        },
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sacrifice under hardship valued."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1785",
-      "label": "cand-1785: Topic from 57:12",
-      "definition": "In 57:12: On the Day you see the believing men and believing women, their light proceeding before them and on their right, [it will be said], \"Your good tidings today are [of] gardens beneath which rivers flow, wherein you will abide eternally.\" That is what is the great attainment",
+      "candidateId": "cand-1694",
+      "label": "The goodly loan multiplied into a noble reward",
+      "definition": "In 57:11: Who is it that would loan Allah a goodly loan so He will multiply it for him and he will have a noble reward?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "57:11",
+          "excerpt": "مَّن ذَا ٱلَّذِي يُقۡرِضُ ٱللَّهَ قَرۡضًا حَسَنٗا فَيُضَٰعِفَهُۥ لَهُۥ وَلَهُۥٓ أَجۡرٞ كَرِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Qard hasan metaphor."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Multiplication as grace."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1695",
+      "label": "Believers' light proceeding before them while hypocrites are walled off",
+      "definition": "In 57:12-13: On the Day you see the believing men and believing women their light proceeding before them and on their right; the hypocrite men and women will say wait for us that we may acquire some of your light; it will be said go back behind you and seek light; and a wall will be placed between them with a door, its interior containing mercy but on the outside torment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:12",
           "excerpt": "يَوۡمَ تَرَى ٱلۡمُؤۡمِنِينَ وَٱلۡمُؤۡمِنَٰتِ يَسۡعَىٰ نُورُهُم بَيۡنَ أَيۡدِيهِمۡ وَبِأَيۡمَٰنِهِمۖ بُشۡرَىٰكُمُ ٱلۡيَوۡمَ جَنَّـٰتٞ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَاۚ ذَٰلِكَ هُوَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1786",
-      "label": "cand-1786: Topic from 57:13",
-      "definition": "In 57:13: On the [same] Day the hypocrite men and hypocrite women will say to those who believed, \"Wait for us that we may acquire some of your light.\" It will be said, \"Go back behind you and seek light.\" And a wall will be placed between them with a door, its interior containing mercy, but on the outside of it is torment",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "57:13",
           "excerpt": "يَوۡمَ يَقُولُ ٱلۡمُنَٰفِقُونَ وَٱلۡمُنَٰفِقَٰتُ لِلَّذِينَ ءَامَنُواْ ٱنظُرُونَا نَقۡتَبِسۡ مِن نُّورِكُمۡ قِيلَ ٱرۡجِعُواْ وَرَآءَكُمۡ فَٱلۡتَمِسُواْ نُورٗاۖ فَضُرِبَ بَيۡنَهُم بِسُورٖ لَّهُۥ بَابُۢ بَاطِنُهُۥ فِيهِ ٱلرَّحۡمَةُ وَظَٰهِرُهُۥ مِن قِبَلِهِ ٱلۡعَذَابُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nur and the separating wall."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Light as salvific marker."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1787",
-      "label": "cand-1787: Topic from 57:16",
-      "definition": "In 57:16: Has the time not come for those who have believed that their hearts should become humbly submissive at the remembrance of Allah and what has come down of the truth? And let them not be like those who were given the Scripture before, and a long period passed over them, so their hearts hardened; and many of them are defiantly disobedient",
+      "candidateId": "cand-1696",
+      "label": "Hypocrisy diagnosed as self-affliction, doubt and deluding wishful thinking",
+      "definition": "In 57:14: They will say yes but you afflicted yourselves and awaited misfortune and doubted and wishful thinking deluded you until there came the command of Allah, and the Deceiver deceived you concerning Allah.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "57:14",
+          "excerpt": "يُنَادُونَهُمۡ أَلَمۡ نَكُن مَّعَكُمۡۖ قَالُواْ بَلَىٰ وَلَٰكِنَّكُمۡ فَتَنتُمۡ أَنفُسَكُمۡ وَتَرَبَّصۡتُمۡ وَٱرۡتَبۡتُمۡ وَغَرَّتۡكُمُ ٱلۡأَمَانِيُّ حَتَّىٰ جَآءَ أَمۡرُ ٱللَّهِ وَغَرَّكُم بِٱللَّهِ ٱلۡغَرُورُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rayb and tamanni diagnosed."
+        },
+        {
+          "topicId": "shaytan-enemy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Al-gharur deception."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1697",
+      "label": "Heart-humbling at remembrance against the hardening of earlier communities",
+      "definition": "In 57:16: Has the time not come for those who have believed that their hearts should become humbly submissive at the remembrance of Allah and what has come down of the truth; and let them not be like those who were given the Scripture before and a long period passed over them so their hearts hardened.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:16",
           "excerpt": "۞أَلَمۡ يَأۡنِ لِلَّذِينَ ءَامَنُوٓاْ أَن تَخۡشَعَ قُلُوبُهُمۡ لِذِكۡرِ ٱللَّهِ وَمَا نَزَلَ مِنَ ٱلۡحَقِّ وَلَا يَكُونُواْ كَٱلَّذِينَ أُوتُواْ ٱلۡكِتَٰبَ مِن قَبۡلُ فَطَالَ عَلَيۡهِمُ ٱلۡأَمَدُ فَقَسَتۡ قُلُوبُهُمۡۖ وَكَثِيرٞ مِّنۡهُمۡ فَٰسِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khushu' at dhikr."
+        },
+        {
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qaswah over time warned."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1788",
-      "label": "cand-1788: Topic from 57:17",
-      "definition": "In 57:17: Know that Allah gives life to the earth after its lifelessness. We have made clear to you the signs; perhaps you will understand",
+      "candidateId": "cand-1698",
+      "label": "Worldly life as boasting and competition likened to yellowing crops",
+      "definition": "In 57:20: Know that the life of this world is but amusement and diversion and adornment and boasting to one another and competition in increase of wealth and children, like the example of a rain whose plant growth pleases the tillers then it dries and you see it turned yellow then it becomes scattered debris.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "57:17",
-          "excerpt": "ٱعۡلَمُوٓاْ أَنَّ ٱللَّهَ يُحۡيِ ٱلۡأَرۡضَ بَعۡدَ مَوۡتِهَاۚ قَدۡ بَيَّنَّا لَكُمُ ٱلۡأٓيَٰتِ لَعَلَّكُمۡ تَعۡقِلُونَ",
+          "key": "57:20",
+          "excerpt": "ٱعۡلَمُوٓاْ أَنَّمَا ٱلۡحَيَوٰةُ ٱلدُّنۡيَا لَعِبٞ وَلَهۡوٞ وَزِينَةٞ وَتَفَاخُرُۢ بَيۡنَكُمۡ وَتَكَاثُرٞ فِي ٱلۡأَمۡوَٰلِ وَٱلۡأَوۡلَٰدِۖ كَمَثَلِ غَيۡثٍ أَعۡجَبَ ٱلۡكُفَّارَ نَبَاتُهُۥ ثُمَّ يَهِيجُ فَتَرَىٰهُ مُصۡفَرّٗا ثُمَّ يَكُونُ حُطَٰمٗاۖ وَفِي ٱلۡأٓخِرَةِ عَذَابٞ شَدِيدٞ وَمَغۡفِرَةٞ مِّنَ ٱللَّهِ وَرِضۡوَٰنٞۚ وَمَا ٱلۡحَيَوٰةُ ٱلدُّنۡيَآ إِلَّا مَتَٰعُ ٱلۡغُرُورِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1789",
-      "label": "cand-1789: Topic from 57:18",
-      "definition": "In 57:18: Indeed, the men who practice charity and the women who practice charity and [they who] have loaned Allah a goodly loan - it will be multiplied for them, and they will have a noble reward",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "57:18",
-          "excerpt": "إِنَّ ٱلۡمُصَّدِّقِينَ وَٱلۡمُصَّدِّقَٰتِ وَأَقۡرَضُواْ ٱللَّهَ قَرۡضًا حَسَنٗا يُضَٰعَفُ لَهُمۡ وَلَهُمۡ أَجۡرٞ كَرِيمٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1790",
-      "label": "cand-1790: Topic from 57:19",
-      "definition": "In 57:19: And those who have believed in Allah and His messengers - those are [in the ranks of] the supporters of truth and the martyrs, with their Lord. For them is their reward and their light. But those who have disbelieved and denied Our verses - those are the companions of Hellfire",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mata' al-ghurur critique."
+        },
         {
-          "key": "57:19",
-          "excerpt": "وَٱلَّذِينَ ءَامَنُواْ بِٱللَّهِ وَرُسُلِهِۦٓ أُوْلَـٰٓئِكَ هُمُ ٱلصِّدِّيقُونَۖ وَٱلشُّهَدَآءُ عِندَ رَبِّهِمۡ لَهُمۡ أَجۡرُهُمۡ وَنُورُهُمۡۖ وَٱلَّذِينَ كَفَرُواْ وَكَذَّبُواْ بِـَٔايَٰتِنَآ أُوْلَـٰٓئِكَ أَصۡحَٰبُ ٱلۡجَحِيمِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Agricultural parable of transience."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1791",
-      "label": "cand-1791: Topic from 57:21",
-      "definition": "In 57:21: Race toward forgiveness from your Lord and a Garden whose width is like the width of the heavens and earth, prepared for those who believed in Allah and His messengers. That is the bounty of Allah which He gives to whom He wills, and Allah is the possessor of great bounty",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "57:21",
-          "excerpt": "سَابِقُوٓاْ إِلَىٰ مَغۡفِرَةٖ مِّن رَّبِّكُمۡ وَجَنَّةٍ عَرۡضُهَا كَعَرۡضِ ٱلسَّمَآءِ وَٱلۡأَرۡضِ أُعِدَّتۡ لِلَّذِينَ ءَامَنُواْ بِٱللَّهِ وَرُسُلِهِۦۚ ذَٰلِكَ فَضۡلُ ٱللَّهِ يُؤۡتِيهِ مَن يَشَآءُۚ وَٱللَّهُ ذُو ٱلۡفَضۡلِ ٱلۡعَظِيمِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1792",
-      "label": "cand-1792: Topic from 57:22",
-      "definition": "In 57:22: No disaster strikes upon the earth or among yourselves except that it is in a register before We bring it into being - indeed that, for Allah, is easy",
+      "candidateId": "cand-1699",
+      "label": "Disaster pre-written in a register so believers neither despair nor exult",
+      "definition": "In 57:22-23: No disaster strikes upon the earth or among yourselves except that it is in a register before We bring it into being, indeed that for Allah is easy, in order that you not despair over what has eluded you and not exult over what He has given you.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:22",
           "excerpt": "مَآ أَصَابَ مِن مُّصِيبَةٖ فِي ٱلۡأَرۡضِ وَلَا فِيٓ أَنفُسِكُمۡ إِلَّا فِي كِتَٰبٖ مِّن قَبۡلِ أَن نَّبۡرَأَهَآۚ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1793",
-      "label": "cand-1793: Topic from 57:23",
-      "definition": "In 57:23: In order that you not despair over what has eluded you and not exult [in pride] over what He has given you. And Allah does not like everyone self-deluded and boastful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "57:23",
           "excerpt": "لِّكَيۡلَا تَأۡسَوۡاْ عَلَىٰ مَا فَاتَكُمۡ وَلَا تَفۡرَحُواْ بِمَآ ءَاتَىٰكُمۡۗ وَٱللَّهُ لَا يُحِبُّ كُلَّ مُخۡتَالٖ فَخُورٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kitab preceding occurrence."
+        },
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Equanimity as the stated purpose."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1794",
-      "label": "cand-1794: Topic from 57:25",
-      "definition": "In 57:25: We have already sent Our messengers with clear evidences and sent down with them the Scripture and the balance that the people may maintain [their affairs] in justice. And We sent down iron, wherein is great military might and benefits for the people, and so that Allah may make evident those who support Him and His messengers unseen. Indeed, Allah is Powerful and Exalted in Might",
+      "candidateId": "cand-1700",
+      "label": "Scripture, balance and iron sent so people maintain justice",
+      "definition": "In 57:25: We have already sent Our messengers with clear evidences and sent down with them the Scripture and the balance that the people may maintain their affairs in justice; and We sent down iron wherein is great military might and benefits for the people.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:25",
           "excerpt": "لَقَدۡ أَرۡسَلۡنَا رُسُلَنَا بِٱلۡبَيِّنَٰتِ وَأَنزَلۡنَا مَعَهُمُ ٱلۡكِتَٰبَ وَٱلۡمِيزَانَ لِيَقُومَ ٱلنَّاسُ بِٱلۡقِسۡطِۖ وَأَنزَلۡنَا ٱلۡحَدِيدَ فِيهِ بَأۡسٞ شَدِيدٞ وَمَنَٰفِعُ لِلنَّاسِ وَلِيَعۡلَمَ ٱللَّهُ مَن يَنصُرُهُۥ وَرُسُلَهُۥ بِٱلۡغَيۡبِۚ إِنَّ ٱللَّهَ قَوِيٌّ عَزِيزٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1795",
-      "label": "cand-1795: Topic from 57:26",
-      "definition": "In 57:26: And We have already sent Noah and Abraham and placed in their descendants prophethood and scripture; and among them is he who is guided, but many of them are defiantly disobedient",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "57:26",
-          "excerpt": "وَلَقَدۡ أَرۡسَلۡنَا نُوحٗا وَإِبۡرَٰهِيمَ وَجَعَلۡنَا فِي ذُرِّيَّتِهِمَا ٱلنُّبُوَّةَ وَٱلۡكِتَٰبَۖ فَمِنۡهُم مُّهۡتَدٖۖ وَكَثِيرٞ مِّنۡهُمۡ فَٰسِقُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Li-yaquma al-nas bi'l-qist."
+        },
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kitab mizan hadid triad."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1796",
-      "label": "cand-1796: Topic from 57:27",
-      "definition": "In 57:27: Then We sent following their footsteps Our messengers and followed [them] with Jesus, the son of Mary, and gave him the Gospel. And We placed in the hearts of those who followed him compassion and mercy and monasticism, which they innovated; We did not prescribe it for them except [that they did so] seeking the approval of Allah. But they did not observe it with due observance. So We gave the ones who believed among them their reward, but many of them are defiantly disobedient",
+      "candidateId": "cand-1701",
+      "label": "Monasticism innovated rather than prescribed and improperly observed",
+      "definition": "In 57:27: And We placed in the hearts of those who followed him compassion and mercy and monasticism which they innovated; We did not prescribe it for them except that they did so seeking the approval of Allah, but they did not observe it with due observance.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "57:27",
           "excerpt": "ثُمَّ قَفَّيۡنَا عَلَىٰٓ ءَاثَٰرِهِم بِرُسُلِنَا وَقَفَّيۡنَا بِعِيسَى ٱبۡنِ مَرۡيَمَ وَءَاتَيۡنَٰهُ ٱلۡإِنجِيلَۖ وَجَعَلۡنَا فِي قُلُوبِ ٱلَّذِينَ ٱتَّبَعُوهُ رَأۡفَةٗ وَرَحۡمَةٗۚ وَرَهۡبَانِيَّةً ٱبۡتَدَعُوهَا مَا كَتَبۡنَٰهَا عَلَيۡهِمۡ إِلَّا ٱبۡتِغَآءَ رِضۡوَٰنِ ٱللَّهِ فَمَا رَعَوۡهَا حَقَّ رِعَايَتِهَاۖ فَـَٔاتَيۡنَا ٱلَّذِينَ ءَامَنُواْ مِنۡهُمۡ أَجۡرَهُمۡۖ وَكَثِيرٞ مِّنۡهُمۡ فَٰسِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ra'fah and rahmah implanted."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Bid'ah versus prescription."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1702",
+      "label": "Double mercy, walking light and forgiveness for taqwa and belief",
+      "definition": "In 57:28: O you who have believed fear Allah and believe in His Messenger; He will then give you a double portion of His mercy and make for you a light by which you will walk and forgive you.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "57:28",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱتَّقُواْ ٱللَّهَ وَءَامِنُواْ بِرَسُولِهِۦ يُؤۡتِكُمۡ كِفۡلَيۡنِ مِن رَّحۡمَتِهِۦ وَيَجۡعَل لَّكُمۡ نُورٗا تَمۡشُونَ بِهِۦ وَيَغۡفِرۡ لَكُمۡۚ وَٱللَّهُ غَفُورٞ رَّحِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Taqwa with iman."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Kiflayn min rahmatihi."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T17:35:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     }
   ]
 }
