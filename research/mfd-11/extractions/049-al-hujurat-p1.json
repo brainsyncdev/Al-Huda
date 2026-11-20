@@ -6,8 +6,8 @@
   "surahName": "Al-Hujurat",
   "passage": {
     "fromAyah": 1,
-    "toAyah": 9,
-    "label": "Al-Hujurat 49:1-9"
+    "toAyah": 8,
+    "label": "O believed do not put yourselves before Allah Messenger fear Allah Hearing Knowing; do not raise voices above voice Prophet loud speech like loudness some others lest deeds become worthless perceive not; lower voices before Messenger hearts tested righteousness forgiveness great reward; call you behind chambers most not use reason; patient until come out better Forgiving Merciful; disobedient one information investigate lest harm people ignorance become regretful; know among you Messenger Allah obey much matter difficulty; endeared faith made pleasing hearts made hateful disbelief defiance disobedience rightly guided; bounty favour Allah Knowing Wise"
   },
   "verseKeys": [
     "49:1",
@@ -17,8 +17,7 @@
     "49:5",
     "49:6",
     "49:7",
-    "49:8",
-    "49:9"
+    "49:8"
   ],
   "arabicExcerpts": [
     {
@@ -52,14 +51,10 @@
     {
       "key": "49:8",
       "text": "فَضۡلٗا مِّنَ ٱللَّهِ وَنِعۡمَةٗۚ وَٱللَّهُ عَلِيمٌ حَكِيمٞ"
-    },
-    {
-      "key": "49:9",
-      "text": "وَإِن طَآئِفَتَانِ مِنَ ٱلۡمُؤۡمِنِينَ ٱقۡتَتَلُواْ فَأَصۡلِحُواْ بَيۡنَهُمَاۖ فَإِنۢ بَغَتۡ إِحۡدَىٰهُمَا عَلَى ٱلۡأُخۡرَىٰ فَقَٰتِلُواْ ٱلَّتِي تَبۡغِي حَتَّىٰ تَفِيٓءَ إِلَىٰٓ أَمۡرِ ٱللَّهِۚ فَإِن فَآءَتۡ فَأَصۡلِحُواْ بَيۡنَهُمَا بِٱلۡعَدۡلِ وَأَقۡسِطُوٓاْۖ إِنَّ ٱللَّهَ يُحِبُّ ٱلۡمُقۡسِطِينَ"
     }
   ],
   "mainSubject": {
-    "label": "Al-Hujurat 49:1-9",
+    "label": "Believers commanded not to precede Allah and His Messenger but to fear Him, the Hearing Knowing; prohibition against raising voices above the Prophet's or being loud as with peers, lest deeds become worthless unperceived; those lowering their voices identified as having hearts tested for righteousness earning forgiveness and great reward; callers from behind the chambers named as mostly lacking reason, patience noted as better under divine forgiveness and mercy; the fasiq-information rule requiring investigation to prevent ignorant harm and subsequent regret; the Prophet's presence among them affirmed with obedience-warning that excessive compliance would cause difficulty, countered by Allah endearing faith and making it pleasing while rendering disbelief, defiance and disobedience hateful — those being the guided; this framed as bounty and favour from the Knowing Wise",
     "keys": [
       "49:1",
       "49:2",
@@ -68,97 +63,211 @@
       "49:5",
       "49:6",
       "49:7",
-      "49:8",
-      "49:9"
+      "49:8"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "O you who have believed, do not put [yourselves] before Allah and His Messeng...",
+      "label": "Believers commanded not to precede Allah and His Messenger but to fear Him, the Hearing and Knowing",
       "keys": [
         "49:1"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "O you who have believed, do not raise your voices above the voice of the Prop...",
+      "label": "Prohibition against raising voices above the Prophet's or being loud as with peers, lest deeds become worthless unperceived",
       "keys": [
         "49:2"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed, those who lower their voices before the Messenger of Allah - they are...",
+      "label": "Those lowering their voices identified as having hearts tested for righteousness, earning forgiveness and great reward",
       "keys": [
         "49:3"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed, those who call you, [O Muhammad], from behind the chambers - most of ...",
+      "label": "Callers from behind the chambers named as mostly lacking reason",
       "keys": [
         "49:4"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And if they had been patient until you [could] come out to them, it would hav...",
+      "label": "Patience until the Prophet comes out noted as better, under divine forgiveness and mercy",
       "keys": [
         "49:5"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "O you who have believed, if there comes to you a disobedient one with informa...",
+      "label": "The fasiq-information rule requiring investigation to prevent ignorant harm and subsequent regret",
       "keys": [
         "49:6"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And know that among you is the Messenger of Allah. If he were to obey you in ...",
+      "label": "The Prophet's presence affirmed with warning that excessive obedience would cause difficulty, countered by Allah endearing faith and making disbelief hateful",
       "keys": [
         "49:7"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[It is] as bounty from Allah and favor. And Allah is Knowing and Wise",
+      "label": "This guidance framed as bounty and favour from the Knowing and Wise",
       "keys": [
         "49:8"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "49:1"
+      ],
+      "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تُقَدِّمُواْ بَيۡنَ يَدَيِ ٱللَّهِ وَرَسُولِهِۦۖ وَٱتَّقُواْ ٱللَّهَۚ إِنَّ ٱللَّهَ سَمِيعٌ عَلِيمٞ",
+      "description": "Do not put yourselves before Allah and His Messenger; fear Allah."
     },
     {
-      "label": "And if two factions among the believers should fight, then make settlement be...",
+      "kind": "PROHIBITION",
       "keys": [
-        "49:9"
+        "49:2"
+      ],
+      "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ لَا تَرۡفَعُوٓاْ أَصۡوَٰتَكُمۡ فَوۡقَ صَوۡتِ ٱلنَّبِيِّ وَلَا تَجۡهَرُواْ لَهُۥ بِٱلۡقَوۡلِ كَجَهۡرِ بَعۡضِكُمۡ لِبَعۡضٍ أَن تَحۡبَطَ أَعۡمَٰلُكُمۡ وَأَنتُمۡ لَا تَشۡعُرُونَ",
+      "description": "Do not raise your voices above the voice of the Prophet or be loud to him in speech."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "49:6"
+      ],
+      "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓاْ إِن جَآءَكُمۡ فَاسِقُۢ بِنَبَإٖ فَتَبَيَّنُوٓاْ أَن تُصِيبُواْ قَوۡمَۢا بِجَهَٰلَةٖ فَتُصۡبِحُواْ عَلَىٰ مَا فَعَلۡتُمۡ نَٰدِمِينَ",
+      "description": "If there comes to you a disobedient one with information, investigate."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "سَمِيعٌ",
+      "transliteration": "Samee'",
+      "gloss": "Hearing (editorial gloss)",
+      "keys": [
+        "49:1"
+      ]
+    },
+    {
+      "term": "عَلِيمٞ",
+      "transliteration": "Aleem",
+      "gloss": "Knowing (editorial gloss)",
+      "keys": [
+        "49:1"
+      ]
+    },
+    {
+      "term": "غَفُورٞ",
+      "transliteration": "Ghafoor",
+      "gloss": "Forgiving (editorial gloss)",
+      "keys": [
+        "49:5"
+      ]
+    },
+    {
+      "term": "رَّحِيمٞ",
+      "transliteration": "Raheem",
+      "gloss": "Merciful (editorial gloss)",
+      "keys": [
+        "49:5"
+      ]
+    },
+    {
+      "term": "عَلِيمٌ",
+      "transliteration": "Aleem",
+      "gloss": "Knowing (editorial gloss)",
+      "keys": [
+        "49:8"
+      ]
+    },
+    {
+      "term": "حَكِيمٞ",
+      "transliteration": "Hakeem",
+      "gloss": "Wise (editorial gloss)",
+      "keys": [
+        "49:8"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Hearts tested for righteousness through lowering voices before the Messenger",
+      "keys": [
+        "49:3"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Calling from behind the chambers indicating lack of reason",
+      "keys": [
+        "49:4"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Faith endeared and made pleasing while disbelief, defiance and disobedience rendered hateful",
+      "keys": [
+        "49:7"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
   "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-1607",
-    "cand-1608",
-    "cand-1609",
-    "cand-1610",
-    "cand-1611",
-    "cand-1612",
-    "cand-1613",
-    "cand-1614",
-    "cand-1615",
-    "cand-1616"
+  "relationships": [
+    {
+      "label": "Deeds becoming worthless through loudness to the Prophet while the doer perceives nothing",
+      "keys": [
+        "49:2"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Fasiq information requiring investigation to prevent ignorant harm and regret",
+      "keys": [
+        "49:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 49 passage 1/2. Generated by mfd11-gen-batch-49-54.mjs.",
+  "terminology": [
+    {
+      "term": "ٱلۡحُجُرَٰتِ",
+      "transliteration": "hujurat",
+      "gloss": "chambers/private rooms (editorial gloss)",
+      "keys": [
+        "49:4"
+      ]
+    },
+    {
+      "term": "فَاسِقُۢ",
+      "transliteration": "fasiq",
+      "gloss": "disobedient/unreliable person (editorial gloss)",
+      "keys": [
+        "49:6"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1596",
+    "cand-1597",
+    "cand-1598",
+    "cand-1599"
+  ],
+  "notes": "Wave 8 genuine re-extraction. Boundaries follow the text: P1 closes with the bounty-and-favour framing (8) before the inter-believer conflict rules open (9); P2 ends with the universal nobility-by-righteousness declaration (13) before the bedouin iman-submission distinction begins (14); P3 runs from that distinction through the true-believer definition, the favour reversal and the closing unseen-knowledge affirmation (14-18).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T16:45:00.000Z"
+  "createdAt": "2026-11-20T16:25:00.000Z"
 }
