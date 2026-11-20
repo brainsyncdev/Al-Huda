@@ -1,577 +1,787 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:50:00.000Z",
-  "sourceExtraction": "ext-056-p1,ext-056-p2,ext-056-p3",
+  "generatedAt": "2026-11-20T17:25:00.000Z",
+  "sourceExtraction": "ext-056-p1,ext-056-p2,ext-056-p3,ext-056-p4",
   "candidates": [
     {
-      "candidateId": "cand-1747",
-      "label": "cand-1747: Topic from 56:1",
-      "definition": "In 56:1: When the Occurrence occurs",
+      "candidateId": "cand-1678",
+      "label": "The Occurrence levelling and elevating while cosmos dissolves",
+      "definition": "In 56:1-6: When the Occurrence occurs there is at its occurrence no denial; it will bring down some and raise up others; when the earth is shaken with convulsion and the mountains are broken down crumbling and become dust dispersing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "56:1",
           "excerpt": "إِذَا وَقَعَتِ ٱلۡوَاقِعَةُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1748",
-      "label": "cand-1748: Topic from 56:4",
-      "definition": "In 56:4: When the earth is shaken with convulsion",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:2",
+          "excerpt": "لَيۡسَ لِوَقۡعَتِهَا كَاذِبَةٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:3",
+          "excerpt": "خَافِضَةٞ رَّافِعَةٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:4",
           "excerpt": "إِذَا رُجَّتِ ٱلۡأَرۡضُ رَجّٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:5",
+          "excerpt": "وَبُسَّتِ ٱلۡجِبَالُ بَسّٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:6",
+          "excerpt": "فَكَانَتۡ هَبَآءٗ مُّنۢبَثّٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Waqi'ah as reversal event."
+        },
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Cosmic dissolution sequence."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1749",
-      "label": "cand-1749: Topic from 56:7",
-      "definition": "In 56:7: And you become [of] three kinds",
+      "candidateId": "cand-1679",
+      "label": "Threefold division of humanity with forerunners brought near",
+      "definition": "In 56:7-12: And you become of three kinds; then the companions of the right, what are the companions of the right; and the companions of the left, what are the companions of the left; and the forerunners, the forerunners, those are the ones brought near in the Gardens of Pleasure.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "56:7",
           "excerpt": "وَكُنتُمۡ أَزۡوَٰجٗا ثَلَٰثَةٗ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1750",
-      "label": "cand-1750: Topic from 56:10",
-      "definition": "In 56:10: And the forerunners, the forerunners",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:8",
+          "excerpt": "فَأَصۡحَٰبُ ٱلۡمَيۡمَنَةِ مَآ أَصۡحَٰبُ ٱلۡمَيۡمَنَةِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:9",
+          "excerpt": "وَأَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ مَآ أَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:10",
           "excerpt": "وَٱلسَّـٰبِقُونَ ٱلسَّـٰبِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:11",
+          "excerpt": "أُوْلَـٰٓئِكَ ٱلۡمُقَرَّبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:12",
+          "excerpt": "فِي جَنَّـٰتِ ٱلنَّعِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Thalathah azwaj classification."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Muqarrabun rank."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1751",
-      "label": "cand-1751: Topic from 56:13",
-      "definition": "In 56:13: A [large] company of the former peoples",
+      "candidateId": "cand-1680",
+      "label": "Forerunners' reward: thrones, eternal servants, pure drink and peace-only speech",
+      "definition": "In 56:15-26: On thrones woven reclining facing each other; there circulate among them young boys made eternal with vessels pitchers and a cup from a flowing spring, no headache nor intoxication; fruit of what they select and meat of fowl; fair women like protected pearls as reward for what they used to do; they will not hear ill speech or sin, only a saying peace peace.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "56:13",
-          "excerpt": "ثُلَّةٞ مِّنَ ٱلۡأَوَّلِينَ",
+          "key": "56:15",
+          "excerpt": "عَلَىٰ سُرُرٖ مَّوۡضُونَةٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1752",
-      "label": "cand-1752: Topic from 56:16",
-      "definition": "In 56:16: Reclining on them, facing each other",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:16",
           "excerpt": "مُّتَّكِـِٔينَ عَلَيۡهَا مُتَقَٰبِلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1753",
-      "label": "cand-1753: Topic from 56:19",
-      "definition": "In 56:19: No headache will they have therefrom, nor will they be intoxicated",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:17",
+          "excerpt": "يَطُوفُ عَلَيۡهِمۡ وِلۡدَٰنٞ مُّخَلَّدُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:18",
+          "excerpt": "بِأَكۡوَابٖ وَأَبَارِيقَ وَكَأۡسٖ مِّن مَّعِينٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:19",
           "excerpt": "لَّا يُصَدَّعُونَ عَنۡهَا وَلَا يُنزِفُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1754",
-      "label": "cand-1754: Topic from 56:22",
-      "definition": "In 56:22: And [for them are] fair women with large, [beautiful] eyes",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:20",
+          "excerpt": "وَفَٰكِهَةٖ مِّمَّا يَتَخَيَّرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:21",
+          "excerpt": "وَلَحۡمِ طَيۡرٖ مِّمَّا يَشۡتَهُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:22",
           "excerpt": "وَحُورٌ عِينٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1755",
-      "label": "cand-1755: Topic from 56:25",
-      "definition": "In 56:25: They will not hear therein ill speech or commission of sin",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:23",
+          "excerpt": "كَأَمۡثَٰلِ ٱللُّؤۡلُوِٕ ٱلۡمَكۡنُونِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:24",
+          "excerpt": "جَزَآءَۢ بِمَا كَانُواْ يَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:25",
           "excerpt": "لَا يَسۡمَعُونَ فِيهَا لَغۡوٗا وَلَا تَأۡثِيمًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:26",
+          "excerpt": "إِلَّا قِيلٗا سَلَٰمٗا سَلَٰمٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Comprehensive muqarrabun reward."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Speech purified of laghw."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1756",
-      "label": "cand-1756: Topic from 56:28",
-      "definition": "In 56:28: [They will be] among lote trees with thorns removed",
+      "candidateId": "cand-1681",
+      "label": "Companions of the right amid thornless trees, shade and unrestricted fruit",
+      "definition": "In 56:28-34: Among lote trees with thorns removed and trees layered with fruit and shade extended and water poured out and fruit abundant neither limited to season nor forbidden and upon beds raised high.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "56:28",
           "excerpt": "فِي سِدۡرٖ مَّخۡضُودٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1757",
-      "label": "cand-1757: Topic from 56:33",
-      "definition": "In 56:33: Neither limited [to season] nor forbidden",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:29",
+          "excerpt": "وَطَلۡحٖ مَّنضُودٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:30",
+          "excerpt": "وَظِلّٖ مَّمۡدُودٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:31",
+          "excerpt": "وَمَآءٖ مَّسۡكُوبٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:32",
+          "excerpt": "وَفَٰكِهَةٖ كَثِيرَةٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:33",
           "excerpt": "لَّا مَقۡطُوعَةٖ وَلَا مَمۡنُوعَةٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1758",
-      "label": "cand-1758: Topic from 56:36",
-      "definition": "In 56:36: And made them virgins",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "56:36",
-          "excerpt": "فَجَعَلۡنَٰهُنَّ أَبۡكَارًا",
+          "key": "56:34",
+          "excerpt": "وَفُرُشٖ مَّرۡفُوعَةٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1759",
-      "label": "cand-1759: Topic from 56:39",
-      "definition": "In 56:39: A company of the former peoples",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "56:39",
-          "excerpt": "ثُلَّةٞ مِّنَ ٱلۡأَوَّلِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ashab al-yamin environment."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Removal of thorns and restriction."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1760",
-      "label": "cand-1760: Topic from 56:42",
-      "definition": "In 56:42: [They will be] in scorching fire and scalding water",
+      "candidateId": "cand-1682",
+      "label": "Affluence-indulgence and great violation cited as causes of the left's punishment",
+      "definition": "In 56:42-46: In scorching fire and scalding water and a shade of black smoke neither cool nor beneficial; indeed they were before that indulging in affluence and they used to persist in the great violation.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "56:42",
           "excerpt": "فِي سَمُومٖ وَحَمِيمٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1761",
-      "label": "cand-1761: Topic from 56:45",
-      "definition": "In 56:45: Indeed they were, before that, indulging in affluence",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:43",
+          "excerpt": "وَظِلّٖ مِّن يَحۡمُومٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:44",
+          "excerpt": "لَّا بَارِدٖ وَلَا كَرِيمٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:45",
           "excerpt": "إِنَّهُمۡ كَانُواْ قَبۡلَ ذَٰلِكَ مُتۡرَفِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:46",
+          "excerpt": "وَكَانُواْ يُصِرُّونَ عَلَى ٱلۡحِنثِ ٱلۡعَظِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Samum hamim yahmum triad."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ithm azim persistence."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1762",
-      "label": "cand-1762: Topic from 56:48",
-      "definition": "In 56:48: And our forefathers [as well]",
+      "candidateId": "cand-1683",
+      "label": "Former and later peoples gathered for a known Day's appointment",
+      "definition": "In 56:49-50: Say indeed the former and the later peoples are to be gathered together for the appointment of a known Day.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "56:48",
-          "excerpt": "أَوَءَابَآؤُنَا ٱلۡأَوَّلُونَ",
+          "key": "56:49",
+          "excerpt": "قُلۡ إِنَّ ٱلۡأَوَّلِينَ وَٱلۡأٓخِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:50",
+          "excerpt": "لَمَجۡمُوعُونَ إِلَىٰ مِيقَٰتِ يَوۡمٖ مَّعۡلُومٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Awwalun wa-akhirun universality."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Miqat yawm ma'lum."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1763",
-      "label": "cand-1763: Topic from 56:51",
-      "definition": "In 56:51: Then indeed you, O those astray [who are] deniers",
+      "candidateId": "cand-1684",
+      "label": "Zaqqum diet and camel-like drinking as the deniers' accommodation",
+      "definition": "In 56:52-56: Will be eating from trees of zaqqum and filling with it your bellies and drinking on top of it from scalding water and will drink as the drinking of thirsty camels; that is their accommodation on the Day of Recompense.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "56:51",
-          "excerpt": "ثُمَّ إِنَّكُمۡ أَيُّهَا ٱلضَّآلُّونَ ٱلۡمُكَذِّبُونَ",
+          "key": "56:52",
+          "excerpt": "لَأٓكِلُونَ مِن شَجَرٖ مِّن زَقُّومٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1764",
-      "label": "cand-1764: Topic from 56:54",
-      "definition": "In 56:54: And drinking on top of it from scalding water",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:53",
+          "excerpt": "فَمَالِـُٔونَ مِنۡهَا ٱلۡبُطُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:54",
           "excerpt": "فَشَٰرِبُونَ عَلَيۡهِ مِنَ ٱلۡحَمِيمِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:55",
+          "excerpt": "فَشَٰرِبُونَ شُرۡبَ ٱلۡهِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:56",
+          "excerpt": "هَٰذَا نُزُلُهُمۡ يَوۡمَ ٱلدِّينِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nuzul on yawm al-din."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shurb al-him imagery."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1765",
-      "label": "cand-1765: Topic from 56:57",
-      "definition": "In 56:57: We have created you, so why do you not believe",
+      "candidateId": "cand-1685",
+      "label": "Emitted seed and decreed death as creation-and-replacement evidence",
+      "definition": "In 56:58-62: Have you seen that which you emit; is it you who creates it or are We the Creator; We have decreed death among you and We are not to be outdone in that We will change your likenesses and produce you in that form which you do not know; and you have already known the first creation so will you not remember.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "56:57",
-          "excerpt": "نَحۡنُ خَلَقۡنَٰكُمۡ فَلَوۡلَا تُصَدِّقُونَ",
+          "key": "56:58",
+          "excerpt": "أَفَرَءَيۡتُم مَّا تُمۡنُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1766",
-      "label": "cand-1766: Topic from 56:60",
-      "definition": "In 56:60: We have decreed death among you, and We are not to be outdone",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:59",
+          "excerpt": "ءَأَنتُمۡ تَخۡلُقُونَهُۥٓ أَمۡ نَحۡنُ ٱلۡخَٰلِقُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:60",
           "excerpt": "نَحۡنُ قَدَّرۡنَا بَيۡنَكُمُ ٱلۡمَوۡتَ وَمَا نَحۡنُ بِمَسۡبُوقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:61",
+          "excerpt": "عَلَىٰٓ أَن نُّبَدِّلَ أَمۡثَٰلَكُمۡ وَنُنشِئَكُمۡ فِي مَا لَا تَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:62",
+          "excerpt": "وَلَقَدۡ عَلِمۡتُمُ ٱلنَّشۡأَةَ ٱلۡأُولَىٰ فَلَوۡلَا تَذَكَّرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nutfah as evidence."
+        },
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Tabdil al-amthal argument."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1767",
-      "label": "cand-1767: Topic from 56:65",
-      "definition": "In 56:65: If We willed, We could make it [dry] debris, and you would remain in wonder",
+      "candidateId": "cand-1686",
+      "label": "Sown seed, cloud-water and fire-tree as four providential challenges",
+      "definition": "In 56:63-73: Have you seen that seed which you sow, is it you who makes it grow or are We the grower; have you seen the water that you drink, is it you who brought it down from the clouds or is it We; if We willed We could make it bitter so why are you not grateful; and have you seen the fire that you ignite, is it you who produced its tree or are We the producer; We have made it a reminder and provision for the travelers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "56:63",
+          "excerpt": "أَفَرَءَيۡتُم مَّا تَحۡرُثُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:64",
+          "excerpt": "ءَأَنتُمۡ تَزۡرَعُونَهُۥٓ أَمۡ نَحۡنُ ٱلزَّـٰرِعُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:65",
           "excerpt": "لَوۡ نَشَآءُ لَجَعَلۡنَٰهُ حُطَٰمٗا فَظَلۡتُمۡ تَفَكَّهُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1768",
-      "label": "cand-1768: Topic from 56:68",
-      "definition": "In 56:68: And have you seen the water that you drink",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:66",
+          "excerpt": "إِنَّا لَمُغۡرَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:67",
+          "excerpt": "بَلۡ نَحۡنُ مَحۡرُومُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:68",
           "excerpt": "أَفَرَءَيۡتُمُ ٱلۡمَآءَ ٱلَّذِي تَشۡرَبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1769",
-      "label": "cand-1769: Topic from 56:71",
-      "definition": "In 56:71: And have you seen the fire that you ignite",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:69",
+          "excerpt": "ءَأَنتُمۡ أَنزَلۡتُمُوهُ مِنَ ٱلۡمُزۡنِ أَمۡ نَحۡنُ ٱلۡمُنزِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:70",
+          "excerpt": "لَوۡ نَشَآءُ جَعَلۡنَٰهُ أُجَاجٗا فَلَوۡلَا تَشۡكُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:71",
           "excerpt": "أَفَرَءَيۡتُمُ ٱلنَّارَ ٱلَّتِي تُورُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:72",
+          "excerpt": "ءَأَنتُمۡ أَنشَأۡتُمۡ شَجَرَتَهَآ أَمۡ نَحۡنُ ٱلۡمُنشِـُٔونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:73",
+          "excerpt": "نَحۡنُ جَعَلۡنَٰهَا تَذۡكِرَةٗ وَمَتَٰعٗا لِّلۡمُقۡوِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Agriculture water fire catena."
+        },
+        {
+          "topicId": "gratitude",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Law-la tashkurun challenge."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1770",
-      "label": "cand-1770: Topic from 56:74",
-      "definition": "In 56:74: So exalt the name of your Lord, the Most Great",
+      "candidateId": "cand-1687",
+      "label": "Star-setting oath grounding a noble Quran in a protected Register",
+      "definition": "In 56:75-80: Then I swear by the setting of the stars and indeed it is an oath if you could know most great; indeed it is a noble Quran in a Register well-protected, none touch it except the purified, a revelation from the Lord of the worlds.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "56:74",
-          "excerpt": "فَسَبِّحۡ بِٱسۡمِ رَبِّكَ ٱلۡعَظِيمِ",
+          "key": "56:75",
+          "excerpt": "۞فَلَآ أُقۡسِمُ بِمَوَٰقِعِ ٱلنُّجُومِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1771",
-      "label": "cand-1771: Topic from 56:77",
-      "definition": "In 56:77: Indeed, it is a noble Qur'an",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:76",
+          "excerpt": "وَإِنَّهُۥ لَقَسَمٞ لَّوۡ تَعۡلَمُونَ عَظِيمٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:77",
           "excerpt": "إِنَّهُۥ لَقُرۡءَانٞ كَرِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1772",
-      "label": "cand-1772: Topic from 56:80",
-      "definition": "In 56:80: [It is] a revelation from the Lord of the worlds",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:78",
+          "excerpt": "فِي كِتَٰبٖ مَّكۡنُونٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:79",
+          "excerpt": "لَّا يَمَسُّهُۥٓ إِلَّا ٱلۡمُطَهَّرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:80",
           "excerpt": "تَنزِيلٞ مِّن رَّبِّ ٱلۡعَٰلَمِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-preservation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kitab maknun protection."
+        },
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Tanzil min rabb al-alamin."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1773",
-      "label": "cand-1773: Topic from 56:83",
-      "definition": "In 56:83: Then why, when the soul at death reaches the throat",
+      "candidateId": "cand-1688",
+      "label": "Deathbed helplessness with unseen angels nearer than onlookers",
+      "definition": "In 56:83-87: Then why when the soul at death reaches the throat and you are at that time looking on and Our angels are nearer to him than you but you do not see; then why do you not if you are not to be recompensed bring it back if you should be truthful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "56:83",
           "excerpt": "فَلَوۡلَآ إِذَا بَلَغَتِ ٱلۡحُلۡقُومَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1774",
-      "label": "cand-1774: Topic from 56:86",
-      "definition": "In 56:86: Then why do you not, if you are not to be recompensed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:84",
+          "excerpt": "وَأَنتُمۡ حِينَئِذٖ تَنظُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:85",
+          "excerpt": "وَنَحۡنُ أَقۡرَبُ إِلَيۡهِ مِنكُمۡ وَلَٰكِن لَّا تُبۡصِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:86",
           "excerpt": "فَلَوۡلَآ إِن كُنتُمۡ غَيۡرَ مَدِينِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:87",
+          "excerpt": "تَرۡجِعُونَهَآ إِن كُنتُمۡ صَٰدِقِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Angels at the moment of death."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Irja' challenge unanswerable."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1775",
-      "label": "cand-1775: Topic from 56:89",
-      "definition": "In 56:89: Then [for him is] rest and bounty and a garden of pleasure",
+      "candidateId": "cand-1689",
+      "label": "Threefold deathbed outcome matched to the three kinds",
+      "definition": "In 56:88-95: And if the deceased was of those brought near then rest and bounty and a garden of pleasure; and if he was of the companions of the right then peace for you from the companions of the right; but if he was of the deniers astray then accommodation of scalding water and burning in Hellfire; indeed this is the true certainty.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "56:88",
+          "excerpt": "فَأَمَّآ إِن كَانَ مِنَ ٱلۡمُقَرَّبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:89",
           "excerpt": "فَرَوۡحٞ وَرَيۡحَانٞ وَجَنَّتُ نَعِيمٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1776",
-      "label": "cand-1776: Topic from 56:92",
-      "definition": "In 56:92: But if he was of the deniers [who were] astray",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:90",
+          "excerpt": "وَأَمَّآ إِن كَانَ مِنۡ أَصۡحَٰبِ ٱلۡيَمِينِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:91",
+          "excerpt": "فَسَلَٰمٞ لَّكَ مِنۡ أَصۡحَٰبِ ٱلۡيَمِينِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "56:92",
           "excerpt": "وَأَمَّآ إِن كَانَ مِنَ ٱلۡمُكَذِّبِينَ ٱلضَّآلِّينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:93",
+          "excerpt": "فَنُزُلٞ مِّنۡ حَمِيمٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:94",
+          "excerpt": "وَتَصۡلِيَةُ جَحِيمٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "56:95",
+          "excerpt": "إِنَّ هَٰذَا لَهُوَ حَقُّ ٱلۡيَقِينِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Rawh rayhan salam nawm."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Haqq al-yaqin closure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:50:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:25:00.000Z",
+      "notes": "Wave 9 genuine re-extraction candidate."
     }
   ]
 }
