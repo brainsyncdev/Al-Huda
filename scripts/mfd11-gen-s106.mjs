@@ -132,7 +132,7 @@ const candidates = {
 };
 
 const CAND_DEFS = [
-  { id: "cand-2000", label: "Quraysh familiarisation through seasonal trade journeys", def: "In 106:1-2: For the familiarisation of Quraysh, their accustomed winter and summer journeys.", key: "106:1", overlap: [{topicId:"signs-and-reflection",layer:"scholarly",relationship":"same-concept",note:"Ilaf as divine favour enabling commerce."},{topicId:"gratitude",layer:"curated",relationship:"same-concept",note:"Security and provision as ni'mah."}] },
+  { id: "cand-2000", label: "Quraysh familiarisation through seasonal trade journeys", def: "In 106:1-2: For the familiarisation of Quraysh, their accustomed winter and summer journeys.", key: "106:1", overlap: [{topicId:"signs-and-reflection",layer:"scholarly",relationship:"same-concept",note:"Ilaf as divine favour enabling commerce."},{topicId:"gratitude",layer:"curated",relationship:"same-concept",note:"Security and provision as ni'mah."}] },
   { id: "cand-2001", label: "Worship of the House's Lord grounded in provision and security", def: "In 106:3-4: So let them worship the Lord of this House who fed them against hunger and secured them against fear.", key: "106:3", overlap: [{topicId:"tawheed-uluhiyyah",layer:"scholarly",relationship:"same-concept",note:"Rabb hadha al-bayt as object of ibadah."},{topicId:"gratitude",layer:"curated",relationship:"same-concept",note:"It'am min ju' and aman min khawf as grounds for worship."}] }
 ];
 
