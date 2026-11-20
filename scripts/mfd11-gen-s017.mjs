@@ -48,19 +48,143 @@ const PASSAGES = [
     mainLabel: "Nine evident signs given to Musa establishing prophetic authentication; Firawn's dismissal as sorcery leading to collective drowning; post-destruction Israelite territorial settlement with eschatological gathering promise; Quranic truthfulness in both sending and descending; knowledge-bearers' prostrate-weeping response demonstrating epistemic humility; flexible naming (Allah/Rahman) with asma al-husna principle; closing tasbih affirming absolute divine uniqueness: no son no sharik no wali from weakness; takbir as final affirmation" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-017-p1": [
+    "Isra night journey from Masjid Haram to Masjid Aqsa as supreme divine sign demonstrating Hearing-Seeing attributes",
+    "Musa scripture given as guidance for Bani Israel commanding exclusive reliance on Allah as Disposer of affairs",
+    "Address to descendants of those carried with Nuh who was a grateful servant establishing ancestral covenant link",
+    "Divine decree in Scripture that Bani Israel will cause corruption twice and reach great haughtiness",
+    "First promise fulfilled by sending mighty servants who probed through homes as inevitable divine warning",
+    "Return victory granted with reinforcement of wealth sons and manpower as temporary restoration",
+    "Conditional principle: good benefits self evil harms self; final promise brings enemies to enter Masjid destructively",
+    "Mercy conditional on repentance with return-to-sin triggering return-to-punishment and Hell as prison for disbelievers",
+    "Quran guides to what is most suitable and gives glad tidings of great reward to believers doing righteous deeds",
+    "Painful punishment prepared for those who disbelieve in the Hereafter as dual-outcome counterpart",
+    "Human hastiness in supplication: praying for evil as readily as for good reflecting inherent impatience",
+    "Night and day made as two signs with erasure of night-sign enabling bounty-seeking and time-reckoning",
+    "Every person's fate fastened to neck with open record produced on Resurrection Day as individual accountability",
+    "Command to read one's own book with self as sufficient reckoner establishing personal responsibility",
+    "Guidance benefits only the guided soul and error harms only the erring with no burden-bearing across persons",
+    "Destruction pattern: affluent commanded then defiantly disobey triggering inevitable word and total destruction",
+    "Generations destroyed after Nuh as historical precedent with Lord as Acquainted-Seeing of servant sins",
+    "Worldly-desire seekers given hastened portion then assigned Hell censured and banished as ultimate outcome",
+    "Hereafter-desiring believers whose striving is appreciated as rewarded counterpart to worldly pursuers",
+    "Divine gift extended to both categories without restriction demonstrating unrestricted providence",
+    "Worldly preference disparities observable yet Hereafter greater in degrees and distinction",
+    "Prohibition of setting up another deity alongside Allah resulting in disgrace and abandonment",
+    "Decree of exclusive worship combined with parental kindness including speech-nobility and non-repulsion in old age",
+    "Wing-of-humility lowering command with mercy-supplication recalling parental upbringing in childhood",
+    "Lord most knowing of inner selves with forgiveness for the often-returning when intentions are righteous",
+    "Rights of relatives poor and traveler commanded with prohibition of wasteful spending",
+    "Wasteful spenders identified as brothers of devils with Satan characterized as ungrateful to his Lord",
+    "Gentle word commanded when turning away from needy while awaiting expected mercy from Lord",
+    "Balance between stinginess and extravagance prohibited to avoid blame and insolvency",
+    "Provision extension and restriction as divine prerogative with Lord as Acquainted-Seeing of servants"
+  ],
+  "ext-017-p2": [
+    "Infanticide prohibition grounded in divine provision guarantee for children and parents with killing as great sin",
+    "Zina prohibited as fahisha and evil path establishing sexual morality boundary",
+    "Murder prohibition with just-cause exception and heir authority bounded by non-excess in retribution",
+    "Orphan property approach restricted to best manner until maturity with covenant fulfillment as accountable obligation",
+    "Full measure and just weighing commanded as better practice and best in outcome",
+    "Epistemic restraint: do not pursue what you lack knowledge of with hearing sight heart all questioned",
+    "Anti-arrogance: walking exultantly prohibited with physical impossibility of tearing earth or reaching mountain-heights",
+    "All preceding evils declared detested in sight of Lord as comprehensive moral summary",
+    "Wisdom revealed from Lord with repeated shirk-prohibition warning of Hell blamed and banished",
+    "Rhetorical challenge on divine son-daughter attribution exposing absurdity of gendered angelology",
+    "Quran diversification for reminder yet increasing disbelievers only in aversion",
+    "Logical refutation: if other gods existed they would seek access to Throne-owner proving monotheism",
+    "Tanzih declaration: Exalted above their sayings by great sublimity",
+    "Universal tasbih of seven heavens earth and all things with human incomprehension of their glorification",
+    "Concealed partition placed between Prophet and Hereafter-deniers during Quran recitation",
+    "Heart-coverings and ear-deafness placed preventing comprehension with aversion when Lord mentioned alone",
+    "Divine knowledge of their listening and private conversations accusing Prophet of being bewitched",
+    "False comparisons struck for Prophet resulting in straying and inability to find a way",
+    "Resurrection denial: bones-and-dust questioned as new creation possibility",
+    "Challenge to become stones or iron as harder substances yet still resurrectable",
+    "Any conceivable creation affirmed as restorable by original Creator with dismissive head-nodding response",
+    "Response to resurrection-timing question: perhaps it will be soon indicating proximity",
+    "Day of calling with praise-response and perception of brief worldly stay",
+    "Servants commanded to speak best words with Satan as clear enemy sowing dissension",
+    "Lord most knowing of servants with mercy-punishment duality and Prophet not sent as guardian",
+    "Lord most knowing of all in heavens-earth with prophets differentiated and Dawud given Zabur",
+    "False deities unable to remove adversity or transfer it exposing their impotence",
+    "Invoked beings themselves seeking nearness hoping mercy fearing punishment proving their creaturehood",
+    "Every city destined for destruction or severe punishment before Resurrection as inscribed decree",
+    "Signs withheld only due to prior denial pattern with Thamud she-camel as visible warning example"
+  ],
+  "ext-017-p3": [
+    "Iblis refusal to prostrate to Adam based on clay-origin contempt establishing satanic pride archetype",
+    "Iblis request for respite until Resurrection Day vowing to destroy Adam's descendants except few",
+    "Divine sentence: Hell as ample recompense for Iblis and all who follow him",
+    "Satanic strategy detailed: voice-incitement cavalry-infantry assault wealth-offspring partnership false promises producing only delusion",
+    "Divine protection declared: no authority over believing servants with Lord sufficient as Disposer",
+    "Maritime bounty-seeking enabled by Lord driving ships through sea as mercy sign",
+    "Sea-distress sincerity: all false deities abandoned except Allah followed by ingratitude upon landfall",
+    "Land-security challenge: can you feel safe from land-swallowing or stone-storm with no advocate",
+    "Return-to-sea security challenge: hurricane-drowning possible for disbelief with no avenger against Us",
+    "Human dignity affirmation: Bani Adam honored transported on land-sea provided good things preferred over much creation",
+    "Judgment Day gathering by record with right-hand recipients reading without slightest injustice",
+    "Blindness in this life producing blindness and greater astrayness in Hereafter",
+    "Near-temptation of Prophet to fabricate other than revelation which would have secured their friendship",
+    "Divine strengthening preventing slight inclination toward compromisers",
+    "Double punishment in life and death threatened had compromise occurred with no helper available",
+    "Near-expulsion plot acknowledged with perpetrators' own short survival afterward",
+    "Unchanging sunnah of prior messengers confirmed as immutable divine pattern",
+    "Prayer establishment from sun-decline to night-darkness plus dawn recitation as witnessed act",
+    "Night vigil as supererogatory devotion with hoped-for praised station (maqam mahmud)",
+    "Entrance-exit soundness supplication with supporting authority requested from Lord",
+    "Truth-arrival falsehood-departure proclamation affirming batil as ever-perishing",
+    "Quran descent as healing-mercy for believers increasing wrongdoers only in loss",
+    "Human ingratitude pattern: favor produces turning-away while adversity produces despair",
+    "Each person works according to own manner with Lord most knowing of best-guided",
+    "Soul-question answered as Lord's affair with human knowledge acknowledged as limited",
+    "Revelation removal hypothetical: no advocate would exist against Us if willed",
+    "Revelation retention attributed solely to Lord's mercy with great favor upon Prophet affirmed",
+    "Inimitability challenge: mankind-jinn cooperation unable to produce Quran-like even as mutual assistants",
+    "Quran diversification with every example yet majority refusing except disbelief"
+  ],
+  "ext-017-p4": [
+    "Spring-from-ground demanded as condition for belief initiating miracle-catalogue",
+    "Garden of palms-grapes with gushing rivers demanded as second material sign",
+    "Sky-fragment-fall or bringing Allah and angels face-to-face demanded as third sign",
+    "Gold-house or sky-ascension with readable book demanded; Prophet responds as merely human messenger",
+    "Human-messenger objection identified as sole barrier to belief when guidance arrived",
+    "Counterfactual: angels walking on earth would receive angel-messenger confirming human-appropriateness",
+    "Allah sufficient as Witness between Prophet and deniers as Acquainted-Seeing of servants",
+    "Guidance-misguidance duality: guided ones rightly guided; astray ones gathered blind-dumb-deaf into Hellfire",
+    "Hellfire recompense justified by verse-disbelief and resurrection-denial based on bone-dust argument",
+    "Creator of heavens-earth able to recreate their like with appointed doubtless term yet wrongdoers refuse except disbelief",
+    "Mercy-treasury hypothetical: humans would withhold from spending-fear proving inherent stinginess",
+    "Musa given nine evident signs with Firawn accusing him of being bewitched",
+    "Musa response: Firawn already knows signs sent only by Lord of heavens-earth as evidences predicting Firawn destruction",
+    "Firawn intended expulsion but drowned with all followers collectively as divine retribution",
+    "Post-Firawn Israelite settlement commanded with Hereafter-promise gathering foretold",
+    "Quran sent and descended in truth with Prophet sent only as bearer-of-glad-tidings and warner",
+    "Gradual Quran separation enabling paced recitation over prolonged period as progressive revelation",
+    "Belief choice offered freely with prior-knowledge bearers prostrating upon recitation",
+    "Knowledge-bearers proclaim Lord-exaltation confirming fulfilled divine promise",
+    "Weeping prostration increasing humble submission as emotional-intellectual integration",
+    "Flexible naming: Allah or Rahman interchangeable with best names belonging to Him plus prayer-volume moderation",
+    "Closing hamd affirming no son no partner no protector-from-weakness with great takbir"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`17:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`17:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`17:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 17, surahName: "Al-Isra",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
