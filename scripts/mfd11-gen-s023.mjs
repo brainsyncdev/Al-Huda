@@ -38,6 +38,136 @@ const TS = "2026-11-20T13:30:00.000Z";
 // P3: 23:75–100 — Resurrection denial refuted, punishment suddenness, mercy-fear balance
 // P4: 23:101–118 — Judgment Day scenes, divine sovereignty, closing forgiveness supplication
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-023-p1": [
+    "Declaration of believer success (falah) as certain outcome",
+    "Khushu (humble submission) during prayer as primary believer attribute",
+    "Active turning away from laghw (vain or ill speech) as ethical discipline",
+    "Observance of zakah as active purification obligation",
+    "Guarding private parts as chastity commitment",
+    "Exception for spouses and right-hand possessions with no blame attached",
+    "Seeking beyond permitted boundaries defined as transgression",
+    "Attentiveness to trusts and promises as fidelity marker",
+    "Careful maintenance of prayers as consistent devotional practice",
+    "Inheritors identified as those possessing preceding attributes",
+    "Inheritance of Firdaws with eternal abode as ultimate reward",
+    "Human creation initiated from clay extract as origin point",
+    "Sperm-drop placed in firm lodging as second developmental stage",
+    "Sequential embryonic stages from clot to bones to flesh culminating in another creation with divine praise",
+    "Death declared as inevitable post-creation phase",
+    "Resurrection on Day of Judgment affirmed as certain return",
+    "Seven layered heavens created above humanity with divine awareness of creation",
+    "Measured rain sent from sky and lodged in earth with divine ability to withdraw it",
+    "Gardens of palms and grapevines produced with abundant fruit for consumption",
+    "Tree from Mount Sinai yielding oil and seasoning as specific botanical sign",
+    "Livestock providing drink from bellies plus multiple benefits and food as biological lesson",
+    "Maritime and animal transport as divine subjection enabling mobility",
+    "Nuh sent to his people commanding worship of Allah alone with taqwa",
+    "Elite rejection citing messenger mortality and ancestral tradition as grounds for disbelief",
+    "Accusation of madness and recommendation to wait as dismissal tactic",
+    "Nuh supplicating for divine support against denial",
+    "Ark construction under divine observation with oven-boiling as flood signal and loading instructions",
+    "Boarding instruction with praise formula for salvation from wrongdoing people",
+    "Supplication for blessed landing place acknowledging Allah as best accommodator",
+    "Signs in Nuh narrative and declaration of perpetual divine testing"
+  ],
+  "ext-023-p2": [
+    "New generation raised after destruction of preceding people",
+    "Messenger sent from among new generation repeating tawheed-taqwa command",
+    "Elite rejection citing shared human consumption and denial of Hereafter meeting",
+    "Obedience to mortal messenger framed as guaranteed loss",
+    "Resurrection promise mocked as impossible after becoming dust and bones",
+    "Dismissal of resurrection as distant impossibility",
+    "Materialist creed asserting only worldly life with no resurrection",
+    "Prophet accused of fabricating lies about Allah with refusal to believe",
+    "Messenger supplicating for divine support against denial",
+    "Divine response promising imminent regret for deniers",
+    "Shriek seizing wrongdoers reducing them to stubble with condemnation",
+    "Successive generations raised after prior destruction",
+    "Fixed term for every nation neither preceded nor delayed",
+    "Sequential messenger dispatch with uniform denial pattern leading to destruction and narrativization",
+    "Musa and Harun sent with signs and clear authority",
+    "Firawn and nobles showing arrogance as haughty people",
+    "Rejection based on messenger mortality and servile status of their followers",
+    "Denial resulting in destruction",
+    "Musa given Scripture as potential guidance",
+    "Isa and Maryam made a sign with shelter on elevated ground with flowing spring",
+    "Messengers commanded to eat good foods and work righteousness with divine knowledge affirmed",
+    "Ummah wahidah principle declaring religious unity under single Lord with taqwa command",
+    "Sectarian fragmentation into rejoicing factions",
+    "Command to leave confused factions in their state temporarily",
+    "Rhetorical question on whether wealth and children indicate divine favor",
+    "Correction that material extension is not hastening toward good but imperceptible trial",
+    "Apprehension from fear of Lord as believer disposition",
+    "Belief in signs of Lord as believer attribute",
+    "Non-association with Lord as believer commitment",
+    "Giving accompanied by fearful hearts anticipating return to Lord",
+    "Hastening to good deeds and outstripping others as competitive virtue",
+    "No soul charged beyond capacity with truthful record ensuring no injustice",
+    "Hearts covered in confusion performing evil deeds alongside disbelief",
+    "Affluent seized with punishment producing immediate cries for help",
+    "Cries rejected permanently with no divine assistance forthcoming",
+    "Prior verse recitation recalled with audience turning back on heels",
+    "Arrogant nighttime conversation speaking evil about revelation",
+    "Failure to reflect on Quran or recognize unprecedented message",
+    "Failure to recognize messenger leading to disacknowledgment",
+    "Madness accusation rebutted with truth aversion identified as real cause",
+    "Cosmic corruption hypothetical if truth followed desires with reminder brought yet rejected",
+    "Prophet not seeking payment with divine reward superior and Allah best provider",
+    "Prophet inviting to straight path affirmed",
+    "Non-believers in Hereafter deviating from path as inevitable consequence"
+  ],
+  "ext-023-p3": [
+    "Hypothetical mercy and affliction removal would only increase blind transgression",
+    "Prior punitive grip failing to produce submission or humble supplication",
+    "Severe punishment door opening producing sudden despair",
+    "Hearing vision and hearts granted by Allah with minimal gratitude shown",
+    "Human multiplication across earth with gathering to Allah affirmed",
+    "Life-death alternation and night-day cycle as reasoning prompts",
+    "Repetition of ancestral denial formulas",
+    "Resurrection after dust-and-bones state questioned as implausible",
+    "Promise dismissed as recycled legends of former peoples",
+    "Rhetorical challenge on earth ownership demanding knowledge",
+    "Acknowledgment of Allah ownership followed by remembrance prompt",
+    "Lordship of seven heavens and Great Throne posed as recognition test",
+    "Acknowledgment followed by taqwa prompt",
+    "Sovereignty over all things with exclusive protection capacity posed",
+    "Acknowledgment followed by delusion challenge",
+    "Truth brought yet labeled as liars",
+    "Divine sonship and co-deity negated with polytheistic chaos hypothetical and tanzih declaration",
+    "Knower of unseen and witnessed exalted above association",
+    "Prophet supplicating to witness promised punishment",
+    "Prophet seeking exclusion from wrongdoing people",
+    "Divine capability to show promised punishment affirmed",
+    "Repelling evil with best response and divine knowledge of descriptions",
+    "Seeking refuge from devil incitements",
+    "Seeking refuge from devil presence",
+    "Death arriving with belated request for return to do righteousness",
+    "Return request rejected as mere words with barzakh barrier until resurrection"
+  ],
+  "ext-023-p4": [
+    "Horn blast severing all familial relations and mutual inquiry on Judgment Day",
+    "Heavy scales equating to success",
+    "Light scales equating to self-loss with eternal Hellfire abode",
+    "Fire searing faces with grimacing expression as sensory punishment",
+    "Verse recitation recalled with prior denial confronted",
+    "Wretchedness acknowledged and astray state confessed",
+    "Removal from Hell requested with admission of wrongdoing upon return",
+    "Despised permanence decreed with speech prohibition",
+    "Believing servants remembered for faith forgiveness and mercy supplication",
+    "Mockery of believers causing divine remembrance forgetfulness and laughter",
+    "Patient endurance rewarded with attainment of success",
+    "Duration on earth questioned in years",
+    "Response estimating day or part of day with referral to enumerators",
+    "Divine correction stating brief stay with knowledge lament",
+    "Creation-purpose challenge negating uselessness and non-return assumption",
+    "Allah exalted as Sovereign Truth sole deity and Lord of Noble Throne",
+    "Baseless invocation of other deities producing individual accountability without success",
+    "Closing supplication for forgiveness and mercy acknowledging Allah as best merciful"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-023-p1", from: 1, to: 30,
     label: "Believers succeeded; prayer humbly submissive; turn away ill speech; observant zakah; guard private parts except wives right hands not blamed; seeks beyond transgressors; trusts promises attentive; carefully maintain prayers; inheritors Firdaws eternal therein; created man clay extract placed firm resting place; made clot lump bones clothed flesh produced another creation blessed best creators; after death raised Day Resurrection; created seven heavens above earth Lord Creator unaware; sent rain measured lodged ground able remove; produced gardens palms grapevines many fruits eat; tree grows Mount Sinai produces oil seasoning eaters; livestock lesson drink bellies benefits eat; ships carry; signs fear hope; indeed successful",
@@ -58,14 +188,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`23:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`23:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`23:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 23, surahName: "Al-Mu'minun",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
