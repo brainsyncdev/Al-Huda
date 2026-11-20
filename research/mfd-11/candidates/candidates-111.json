@@ -1,387 +1,277 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:15:00.000Z",
-  "sourceExtraction": "ext-087-p1,ext-087-p2",
+  "generatedAt": "2026-11-20T22:35:00.000Z",
+  "sourceExtraction": "ext-087-p1,ext-087-p2,ext-087-p3",
   "candidates": [
     {
-      "candidateId": "cand-2377",
-      "label": "cand-2377: Topic from 87:1",
-      "definition": "In 87:1: Exalt the name of your Lord, the Most High",
+      "candidateId": "cand-1937",
+      "label": "Most High exalted as creator, proportioner, destiner and guide",
+      "definition": "In 87:1-3: Exalt the name of your Lord the Most High who created and proportioned and who destined and then guided.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "87:1",
           "excerpt": "سَبِّحِ ٱسۡمَ رَبِّكَ ٱلۡأَعۡلَى",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2378",
-      "label": "cand-2378: Topic from 87:1",
-      "definition": "In 87:1: Exalt the name of your Lord, the Most High",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "87:1",
-          "excerpt": "سَبِّحِ ٱسۡمَ رَبِّكَ ٱلۡأَعۡلَى",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2379",
-      "label": "cand-2379: Topic from 87:2",
-      "definition": "In 87:2: Who created and proportioned",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:2",
           "excerpt": "ٱلَّذِي خَلَقَ فَسَوَّىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2380",
-      "label": "cand-2380: Topic from 87:3",
-      "definition": "In 87:3: And who destined and [then] guided",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:3",
           "excerpt": "وَٱلَّذِي قَدَّرَ فَهَدَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Al-A'la named in the tasbih command."
+        },
+        {
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qaddara fa-hada pairing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:35:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2381",
-      "label": "cand-2381: Topic from 87:4",
-      "definition": "In 87:4: And who brings out the pasture",
+      "candidateId": "cand-1938",
+      "label": "Pasture reduced to black stubble as a sign of transience",
+      "definition": "In 87:4-5: And who brings out the pasture and then makes it black stubble.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "87:4",
           "excerpt": "وَٱلَّذِيٓ أَخۡرَجَ ٱلۡمَرۡعَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2382",
-      "label": "cand-2382: Topic from 87:5",
-      "definition": "In 87:5: And [then] makes it black stubble",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:5",
           "excerpt": "فَجَعَلَهُۥ غُثَآءً أَحۡوَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mar'a to ghutha' ahwa cycle."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Vegetative decay mirroring human finitude."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:35:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2383",
-      "label": "cand-2383: Topic from 87:6",
-      "definition": "In 87:6: We will make you recite, [O Muhammad], and you will not forget",
+      "candidateId": "cand-1939",
+      "label": "Recitation preserved against forgetting with easing toward ease",
+      "definition": "In 87:6-8: We will make you recite O Muhammad and you will not forget except what Allah should will; indeed He knows what is declared and what is hidden; and We will ease you toward ease.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "87:6",
           "excerpt": "سَنُقۡرِئُكَ فَلَا تَنسَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2384",
-      "label": "cand-2384: Topic from 87:7",
-      "definition": "In 87:7: Except what Allah should will. Indeed, He knows what is declared and what is hidden",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:7",
           "excerpt": "إِلَّا مَا شَآءَ ٱللَّهُۚ إِنَّهُۥ يَعۡلَمُ ٱلۡجَهۡرَ وَمَا يَخۡفَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2385",
-      "label": "cand-2385: Topic from 87:8",
-      "definition": "In 87:8: And We will ease you toward ease",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:8",
           "excerpt": "وَنُيَسِّرُكَ لِلۡيُسۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-preservation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La tansa guarantee."
+        },
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Taysir li'l-yusra promised."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:35:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2386",
-      "label": "cand-2386: Topic from 87:9",
-      "definition": "In 87:9: So remind, if the reminder should benefit",
+      "candidateId": "cand-1940",
+      "label": "Reminder benefiting the God-fearing while the wretched burns without death or life",
+      "definition": "In 87:9-13: So remind if the reminder should benefit; he who fears Allah will be reminded but the wretched one will avoid it, he who will enter and burn in the greatest Fire neither dying therein nor living.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "87:9",
           "excerpt": "فَذَكِّرۡ إِن نَّفَعَتِ ٱلذِّكۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2387",
-      "label": "cand-2387: Topic from 87:11",
-      "definition": "In 87:11: But the wretched one will avoid it",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "87:10",
+          "excerpt": "سَيَذَّكَّرُ مَن يَخۡشَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:11",
           "excerpt": "وَيَتَجَنَّبُهَا ٱلۡأَشۡقَى",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2388",
-      "label": "cand-2388: Topic from 87:11",
-      "definition": "In 87:11: But the wretched one will avoid it",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "87:11",
-          "excerpt": "وَيَتَجَنَّبُهَا ٱلۡأَشۡقَى",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2389",
-      "label": "cand-2389: Topic from 87:12",
-      "definition": "In 87:12: [He] who will [enter and] burn in the greatest Fire",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:12",
           "excerpt": "ٱلَّذِي يَصۡلَى ٱلنَّارَ ٱلۡكُبۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2390",
-      "label": "cand-2390: Topic from 87:13",
-      "definition": "In 87:13: Neither dying therein nor living",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:13",
           "excerpt": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحۡيَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dhikra conditional on benefit."
+        },
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Al-nar al-kubra with la yamut wa-la yahya."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:35:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2391",
-      "label": "cand-2391: Topic from 87:14",
-      "definition": "In 87:14: He has certainly succeeded who purifies himself",
+      "candidateId": "cand-1941",
+      "label": "Success through purification, dhikr and prayer against worldly preference",
+      "definition": "In 87:14-17: He has certainly succeeded who purifies himself and mentions the name of his Lord and prays; but you prefer the worldly life while the Hereafter is better and more enduring.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "87:14",
           "excerpt": "قَدۡ أَفۡلَحَ مَن تَزَكَّىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2392",
-      "label": "cand-2392: Topic from 87:15",
-      "definition": "In 87:15: And mentions the name of his Lord and prays",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:15",
           "excerpt": "وَذَكَرَ ٱسۡمَ رَبِّهِۦ فَصَلَّىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2393",
-      "label": "cand-2393: Topic from 87:15",
-      "definition": "In 87:15: And mentions the name of his Lord and prays",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "87:15",
-          "excerpt": "وَذَكَرَ ٱسۡمَ رَبِّهِۦ فَصَلَّىٰ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2394",
-      "label": "cand-2394: Topic from 87:16",
-      "definition": "In 87:16: But you prefer the worldly life",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:16",
           "excerpt": "بَلۡ تُؤۡثِرُونَ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2395",
-      "label": "cand-2395: Topic from 87:17",
-      "definition": "In 87:17: While the Hereafter is better and more enduring",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "87:17",
           "excerpt": "وَٱلۡأٓخِرَةُ خَيۡرٞ وَأَبۡقَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dhikr plus salah as falah path."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khayr wa-abqa comparison."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:35:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2396",
-      "label": "cand-2396: Topic from 87:18",
-      "definition": "In 87:18: Indeed, this is in the former scriptures",
+      "candidateId": "cand-1942",
+      "label": "Teaching traced to the scriptures of Abraham and Moses",
+      "definition": "In 87:18-19: Indeed this is in the former scriptures, the scriptures of Abraham and Moses.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "87:18",
           "excerpt": "إِنَّ هَٰذَا لَفِي ٱلصُّحُفِ ٱلۡأُولَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "87:19",
+          "excerpt": "صُحُفِ إِبۡرَٰهِيمَ وَمُوسَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ibrahim and Musa scripture continuity."
+        },
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Suhuf ula referenced."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T22:35:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     }
   ]
 }

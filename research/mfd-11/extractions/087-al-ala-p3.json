@@ -1,0 +1,161 @@
+{
+  "extractionId": "ext-087-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 87,
+  "surahName": "Al-Ala",
+  "passage": {
+    "fromAyah": 14,
+    "toAyah": 19,
+    "label": "certainly succeeded purifies himself; mentions name Lord prays; prefer worldly life; Hereafter better more enduring; Indeed former scriptures; scriptures Abraham Moses"
+  },
+  "verseKeys": [
+    "87:14",
+    "87:15",
+    "87:16",
+    "87:17",
+    "87:18",
+    "87:19"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "87:14",
+      "text": "قَدۡ أَفۡلَحَ مَن تَزَكَّىٰ"
+    },
+    {
+      "key": "87:15",
+      "text": "وَذَكَرَ ٱسۡمَ رَبِّهِۦ فَصَلَّىٰ"
+    },
+    {
+      "key": "87:16",
+      "text": "بَلۡ تُؤۡثِرُونَ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا"
+    },
+    {
+      "key": "87:17",
+      "text": "وَٱلۡأٓخِرَةُ خَيۡرٞ وَأَبۡقَىٰٓ"
+    },
+    {
+      "key": "87:18",
+      "text": "إِنَّ هَٰذَا لَفِي ٱلصُّحُفِ ٱلۡأُولَىٰ"
+    },
+    {
+      "key": "87:19",
+      "text": "صُحُفِ إِبۡرَٰهِيمَ وَمُوسَىٰ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Success declared for whoever purifies himself, mentions his Lord's name and prays; their preference for worldly life rebuked since the Hereafter is better and more enduring; this teaching affirmed as already present in the former scriptures — those of Abraham and Moses",
+    "keys": [
+      "87:14",
+      "87:15",
+      "87:16",
+      "87:17",
+      "87:18",
+      "87:19"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Success declared for whoever purifies himself",
+      "keys": [
+        "87:14"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Mentioning his Lord's name and praying",
+      "keys": [
+        "87:15"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Their preference for worldly life rebuked",
+      "keys": [
+        "87:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Hereafter affirmed better and more enduring",
+      "keys": [
+        "87:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "This teaching located in the former scriptures",
+      "keys": [
+        "87:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Specifically the scriptures of Abraham and Moses",
+      "keys": [
+        "87:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [
+    {
+      "label": "The teaching traced to the former scriptures of Abraham and Moses",
+      "keys": [
+        "87:18",
+        "87:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Success tied to self-purification, dhikr and prayer",
+      "keys": [
+        "87:14",
+        "87:15"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Worldly preference rebuked against the better and more enduring Hereafter",
+      "keys": [
+        "87:16",
+        "87:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Continuity of revelation asserted across Abrahamic and Mosaic scripture",
+      "keys": [
+        "87:18",
+        "87:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "تَزَكَّىٰ",
+      "transliteration": "tazakka",
+      "gloss": "purifies himself (editorial gloss)",
+      "keys": [
+        "87:14"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1941",
+    "cand-1942"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the pasture-to-stubble cycle (5) before the recitation-and-forgetting assurance opens (6); P2 ends with the neither-dying-nor-living verdict (13) before the purification-success block begins (14); P3 runs through dhikr-prayer success, the worldly-preference rebuke and the Abrahamic-Mosaic scriptural continuity (14-19).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:35:00.000Z"
+}

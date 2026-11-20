@@ -3,24 +3,43 @@
   "workstream": "MFD-11",
   "pass": "A",
   "surah": 87,
-  "surahName": "Al-A'la",
+  "surahName": "Al-Ala",
   "passage": {
-    "fromAyah": 11,
-    "toAyah": 19,
-    "label": "Al-A'la 87:11-19"
+    "fromAyah": 6,
+    "toAyah": 13,
+    "label": "make you recite Muhammad not forget; except Allah will Indeed knows declared hidden; ease you toward ease; remind if reminder benefit; fears Allah reminded; wretched avoid it; enter burn greatest Fire; neither dying therein nor living"
   },
   "verseKeys": [
+    "87:6",
+    "87:7",
+    "87:8",
+    "87:9",
+    "87:10",
     "87:11",
     "87:12",
-    "87:13",
-    "87:14",
-    "87:15",
-    "87:16",
-    "87:17",
-    "87:18",
-    "87:19"
+    "87:13"
   ],
   "arabicExcerpts": [
+    {
+      "key": "87:6",
+      "text": "سَنُقۡرِئُكَ فَلَا تَنسَىٰٓ"
+    },
+    {
+      "key": "87:7",
+      "text": "إِلَّا مَا شَآءَ ٱللَّهُۚ إِنَّهُۥ يَعۡلَمُ ٱلۡجَهۡرَ وَمَا يَخۡفَىٰ"
+    },
+    {
+      "key": "87:8",
+      "text": "وَنُيَسِّرُكَ لِلۡيُسۡرَىٰ"
+    },
+    {
+      "key": "87:9",
+      "text": "فَذَكِّرۡ إِن نَّفَعَتِ ٱلذِّكۡرَىٰ"
+    },
+    {
+      "key": "87:10",
+      "text": "سَيَذَّكَّرُ مَن يَخۡشَىٰ"
+    },
     {
       "key": "87:11",
       "text": "وَيَتَجَنَّبُهَا ٱلۡأَشۡقَى"
@@ -32,57 +51,67 @@
     {
       "key": "87:13",
       "text": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحۡيَىٰ"
-    },
-    {
-      "key": "87:14",
-      "text": "قَدۡ أَفۡلَحَ مَن تَزَكَّىٰ"
-    },
-    {
-      "key": "87:15",
-      "text": "وَذَكَرَ ٱسۡمَ رَبِّهِۦ فَصَلَّىٰ"
-    },
-    {
-      "key": "87:16",
-      "text": "بَلۡ تُؤۡثِرُونَ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا"
-    },
-    {
-      "key": "87:17",
-      "text": "وَٱلۡأٓخِرَةُ خَيۡرٞ وَأَبۡقَىٰٓ"
-    },
-    {
-      "key": "87:18",
-      "text": "إِنَّ هَٰذَا لَفِي ٱلصُّحُفِ ٱلۡأُولَىٰ"
-    },
-    {
-      "key": "87:19",
-      "text": "صُحُفِ إِبۡرَٰهِيمَ وَمُوسَىٰ"
     }
   ],
   "mainSubject": {
-    "label": "Al-A'la 87:11-19",
+    "label": "The Prophet assured he will be made to recite without forgetting except what Allah wills, since He knows both the declared and the hidden; easing promised toward ease; the reminder commanded where it benefits, received by the God-fearing but avoided by the wretched one who will burn in the greatest Fire, neither dying therein nor living",
     "keys": [
+      "87:6",
+      "87:7",
+      "87:8",
+      "87:9",
+      "87:10",
       "87:11",
       "87:12",
-      "87:13",
-      "87:14",
-      "87:15",
-      "87:16",
-      "87:17",
-      "87:18",
-      "87:19"
+      "87:13"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "But the wretched one will avoid it",
+      "label": "The Prophet assured he will be made to recite without forgetting",
+      "keys": [
+        "87:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Except what Allah wills, since He knows the declared and the hidden",
+      "keys": [
+        "87:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Easing promised toward ease",
+      "keys": [
+        "87:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The reminder commanded wherever it benefits",
+      "keys": [
+        "87:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The God-fearing one receiving the reminder",
+      "keys": [
+        "87:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The wretched one avoiding it",
       "keys": [
         "87:11"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[He] who will [enter and] burn in the greatest Fire",
+      "label": "Destined to burn in the greatest Fire",
       "keys": [
         "87:12"
       ],
@@ -94,71 +123,87 @@
         "87:13"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
-    },
+    }
+  ],
+  "commandsAndProhibitions": [
     {
-      "label": "He has certainly succeeded who purifies himself",
+      "kind": "COMMAND",
       "keys": [
-        "87:14"
+        "87:9"
+      ],
+      "excerpt": "فَذَكِّرۡ إِن نَّفَعَتِ ٱلذِّكۡرَىٰ",
+      "description": "So remind, if the reminder should benefit."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Recitation preserved against forgetting except by divine will",
+      "keys": [
+        "87:6",
+        "87:7"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And mentions the name of his Lord and prays",
+      "label": "Easing toward ease promised to the Prophet",
       "keys": [
-        "87:15"
+        "87:8"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "But you prefer the worldly life",
+      "label": "God-fearer receptive to reminder while the wretched avoids it",
       "keys": [
-        "87:16"
+        "87:10",
+        "87:11"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "While the Hereafter is better and more enduring",
+      "label": "Burning in the greatest Fire without death or life as relief",
       "keys": [
-        "87:17"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Indeed, this is in the former scriptures",
-      "keys": [
-        "87:18"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "The scriptures of Abraham and Moses",
-      "keys": [
-        "87:19"
+        "87:12",
+        "87:13"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
   "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2387",
-    "cand-2388",
-    "cand-2389",
-    "cand-2390",
-    "cand-2391",
-    "cand-2392",
-    "cand-2393",
-    "cand-2394",
-    "cand-2395",
-    "cand-2396"
+  "relationships": [
+    {
+      "label": "Divine knowledge covering both the declared and the hidden",
+      "keys": [
+        "87:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 87 passage 2/2. Generated by mfd11-gen-batch-85-96.mjs.",
+  "terminology": [
+    {
+      "term": "لِلۡيُسۡرَىٰ",
+      "transliteration": "al-yusra",
+      "gloss": "ease (editorial gloss)",
+      "keys": [
+        "87:8"
+      ]
+    },
+    {
+      "term": "ٱلۡأَشۡقَى",
+      "transliteration": "al-ashqa",
+      "gloss": "the wretched one (editorial gloss)",
+      "keys": [
+        "87:11"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1939",
+    "cand-1940"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the pasture-to-stubble cycle (5) before the recitation-and-forgetting assurance opens (6); P2 ends with the neither-dying-nor-living verdict (13) before the purification-success block begins (14); P3 runs through dhikr-prayer success, the worldly-preference rebuke and the Abrahamic-Mosaic scriptural continuity (14-19).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:15:00.000Z"
+  "createdAt": "2026-11-20T22:35:00.000Z"
 }

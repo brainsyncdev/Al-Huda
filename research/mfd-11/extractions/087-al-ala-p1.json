@@ -3,23 +3,18 @@
   "workstream": "MFD-11",
   "pass": "A",
   "surah": 87,
-  "surahName": "Al-A'la",
+  "surahName": "Al-Ala",
   "passage": {
     "fromAyah": 1,
-    "toAyah": 10,
-    "label": "Al-A'la 87:1-10"
+    "toAyah": 5,
+    "label": "Exalt name Lord Most High; created proportioned; destined then guided; brings out pasture; then makes black stubble"
   },
   "verseKeys": [
     "87:1",
     "87:2",
     "87:3",
     "87:4",
-    "87:5",
-    "87:6",
-    "87:7",
-    "87:8",
-    "87:9",
-    "87:10"
+    "87:5"
   ],
   "arabicExcerpts": [
     {
@@ -41,137 +36,121 @@
     {
       "key": "87:5",
       "text": "فَجَعَلَهُۥ غُثَآءً أَحۡوَىٰ"
-    },
-    {
-      "key": "87:6",
-      "text": "سَنُقۡرِئُكَ فَلَا تَنسَىٰٓ"
-    },
-    {
-      "key": "87:7",
-      "text": "إِلَّا مَا شَآءَ ٱللَّهُۚ إِنَّهُۥ يَعۡلَمُ ٱلۡجَهۡرَ وَمَا يَخۡفَىٰ"
-    },
-    {
-      "key": "87:8",
-      "text": "وَنُيَسِّرُكَ لِلۡيُسۡرَىٰ"
-    },
-    {
-      "key": "87:9",
-      "text": "فَذَكِّرۡ إِن نَّفَعَتِ ٱلذِّكۡرَىٰ"
-    },
-    {
-      "key": "87:10",
-      "text": "سَيَذَّكَّرُ مَن يَخۡشَىٰ"
     }
   ],
   "mainSubject": {
-    "label": "Al-A'la 87:1-10",
+    "label": "The command to exalt the name of the Lord, the Most High, who created and proportioned, destined and then guided, bringing out the pasture before reducing it to black stubble — the full cycle of creation, guidance and decay attributed to Him",
     "keys": [
       "87:1",
       "87:2",
       "87:3",
       "87:4",
-      "87:5",
-      "87:6",
-      "87:7",
-      "87:8",
-      "87:9",
-      "87:10"
+      "87:5"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "Exalt the name of your Lord, the Most High",
+      "label": "Command to exalt the name of the Lord, the Most High",
       "keys": [
         "87:1"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Who created and proportioned",
+      "label": "He created and proportioned",
       "keys": [
         "87:2"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And who destined and [then] guided",
+      "label": "He destined and then guided",
       "keys": [
         "87:3"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And who brings out the pasture",
+      "label": "He brings out the pasture",
       "keys": [
         "87:4"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [then] makes it black stubble",
+      "label": "Then reduces it to black stubble",
       "keys": [
         "87:5"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
-    },
+    }
+  ],
+  "commandsAndProhibitions": [
     {
-      "label": "We will make you recite, [O Muhammad], and you will not forget",
+      "kind": "COMMAND",
       "keys": [
-        "87:6"
+        "87:1"
+      ],
+      "excerpt": "سَبِّحِ ٱسۡمَ رَبِّكَ ٱلۡأَعۡلَى",
+      "description": "Exalt the name of your Lord, the Most High."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱلۡأَعۡلَى",
+      "transliteration": "al-A'la",
+      "gloss": "the Most High (editorial gloss)",
+      "keys": [
+        "87:1"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Creation, proportioning, destining and guiding attributed to the Most High",
+      "keys": [
+        "87:2",
+        "87:3"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Except what Allah should will. Indeed, He knows what is declared and what is ...",
+      "label": "Pasture brought forth then reduced to black stubble as a natural sign of transience",
       "keys": [
-        "87:7"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And We will ease you toward ease",
-      "keys": [
-        "87:8"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "So remind, if the reminder should benefit",
-      "keys": [
-        "87:9"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "He who fears [Allah] will be reminded",
-      "keys": [
-        "87:10"
+        "87:4",
+        "87:5"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2377",
-    "cand-2378",
-    "cand-2379",
-    "cand-2380",
-    "cand-2381",
-    "cand-2382",
-    "cand-2383",
-    "cand-2384",
-    "cand-2385",
-    "cand-2386"
+  "terminology": [
+    {
+      "term": "قَدَّرَ",
+      "transliteration": "qaddara fa-hada",
+      "gloss": "destined then guided (editorial gloss)",
+      "keys": [
+        "87:3"
+      ]
+    },
+    {
+      "term": "غُثَآءً",
+      "transliteration": "ghutha' ahwa",
+      "gloss": "black stubble (editorial gloss)",
+      "keys": [
+        "87:5"
+      ]
+    }
   ],
-  "notes": "Pass A Surah 87 passage 1/2. Generated by mfd11-gen-batch-85-96.mjs.",
+  "topicCandidateIds": [
+    "cand-1937",
+    "cand-1938"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the pasture-to-stubble cycle (5) before the recitation-and-forgetting assurance opens (6); P2 ends with the neither-dying-nor-living verdict (13) before the purification-success block begins (14); P3 runs through dhikr-prayer success, the worldly-preference rebuke and the Abrahamic-Mosaic scriptural continuity (14-19).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:15:00.000Z"
+  "createdAt": "2026-11-20T22:35:00.000Z"
 }
