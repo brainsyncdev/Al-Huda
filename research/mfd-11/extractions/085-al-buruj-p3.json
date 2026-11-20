@@ -1,0 +1,153 @@
+{
+  "extractionId": "ext-085-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 85,
+  "surahName": "Al-Buruj",
+  "passage": {
+    "fromAyah": 17,
+    "toAyah": 22,
+    "label": "Has reached you story soldiers; Pharaoh Thamud; disbelieve persistent denial; Allah encompasses behind; honored Quran; Preserved Slate"
+  },
+  "verseKeys": [
+    "85:17",
+    "85:18",
+    "85:19",
+    "85:20",
+    "85:21",
+    "85:22"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "85:17",
+      "text": "هَلۡ أَتَىٰكَ حَدِيثُ ٱلۡجُنُودِ"
+    },
+    {
+      "key": "85:18",
+      "text": "فِرۡعَوۡنَ وَثَمُودَ"
+    },
+    {
+      "key": "85:19",
+      "text": "بَلِ ٱلَّذِينَ كَفَرُواْ فِي تَكۡذِيبٖ"
+    },
+    {
+      "key": "85:20",
+      "text": "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطُۢ"
+    },
+    {
+      "key": "85:21",
+      "text": "بَلۡ هُوَ قُرۡءَانٞ مَّجِيدٞ"
+    },
+    {
+      "key": "85:22",
+      "text": "فِي لَوۡحٖ مَّحۡفُوظِۭ"
+    }
+  ],
+  "mainSubject": {
+    "label": "The story of the soldiers — those of Pharaoh and Thamud — recalled as precedent; disbelievers persisting in denial while Allah encompasses them from behind; the whole closed by affirming an honoured Quran inscribed in a Preserved Slate",
+    "keys": [
+      "85:17",
+      "85:18",
+      "85:19",
+      "85:20",
+      "85:21",
+      "85:22"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The story of the soldiers introduced rhetorically",
+      "keys": [
+        "85:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Identified as those of Pharaoh and Thamud",
+      "keys": [
+        "85:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Disbelievers persisting in denial despite the precedent",
+      "keys": [
+        "85:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Allah encompassing them from behind",
+      "keys": [
+        "85:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The revelation affirmed as an honoured Quran",
+      "keys": [
+        "85:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Inscribed in a Preserved Slate",
+      "keys": [
+        "85:22"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [
+    {
+      "label": "The soldiers of Pharaoh and Thamud cited as precedent for persecuting powers",
+      "keys": [
+        "85:17",
+        "85:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Persistent denial maintained while Allah encompasses the deniers from behind",
+      "keys": [
+        "85:19",
+        "85:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Honoured Quran inscribed in a Preserved Slate as the closing authentication",
+      "keys": [
+        "85:21",
+        "85:22"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "لَوۡحٖ",
+      "transliteration": "lawh mahfuz",
+      "gloss": "Preserved Slate (editorial gloss)",
+      "keys": [
+        "85:22"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1930",
+    "cand-1931"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the dominion-and-Witness affirmation (9) before the torturer-versus-believer verdict opens (10); P2 ends with the Effecter-of-what-He-intends attribute (16) before the soldiers' precedent begins (17); P3 runs through Pharaoh and Thamud, the encompassment statement and the closing Preserved-Slate affirmation (17-22).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:15:00.000Z"
+}
