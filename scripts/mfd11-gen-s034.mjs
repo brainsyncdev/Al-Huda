@@ -49,19 +49,84 @@ const PASSAGES = [
     mainLabel: "Individual standing before Allah in pairs-singles for reflection; companion-not-jinn clarification establishing prophetic sanity; warner function preceding severe punishment; reward separation between prophet and audience; Fattah-Rahim encompassing mercy with transgressor punishment; jinn-human assembly at gathering with eternal fire abode; self-testimony against disbelief acknowledging worldly delusion; prior scripture rejection pattern with wealth-children distraction; respite request rejected; provision extension-restriction as divine prerogative unknown to majority; wealth-children as dunya adornment versus baqiyat salihat as superior reward-hope; mountain movement exposing earth as barren plain; total gathering without exception; presentation before Lord with false-partner claimants silenced; truth-falsehood dynamic: truth arrives falsehood cannot originate-repeat; error-consequence borne individually while guidance comes through revelation; terror at punishment realization with no escape; belated belief rejected as conjecture-assumption following" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-034-p1": [
+    "Universal hamd to Allah as owner of heavens and earth with praise extending into the Hereafter under Hakim-Khabir attributes",
+    "Divine knowledge encompassing what penetrates and emerges from earth plus what descends and ascends in heaven under Rahim-Ghafur attributes",
+    "Hour certainty affirmed by oath against disbeliever denial with atom-weight accountability across heavens and earth recorded in clear Book",
+    "Believer reward specified as forgiveness and noble provision for faith combined with righteous deeds",
+    "Disbeliever sign-frustration producing painful foul-natured punishment as consequence of opposing divine ayat",
+    "Knowledge-bearers recognizing revelation as truth guiding to path of Aziz-Hameed",
+    "Disbeliever mockery quoting resurrection claim as absurdity after complete bodily disintegration",
+    "Madness-or-lie dichotomy rejected with unbelievers in Hereafter assigned to punishment and extreme error",
+    "Cosmic observation command regarding heaven-earth surroundings with potential earth-swallowing or sky-fragment signs for every returning servant",
+    "Dawud granted divine bounty with mountains and birds echoing praises and iron made pliable for him",
+    "Armor-making command to craft full coats of mail with precisely measured links plus collective righteousness command under divine Seeing",
+    "Sulayman granted wind with month-long morning and evening journeys plus copper spring flow and jinn labor force under divine permission with Blaze penalty for deviation",
+    "Jinn craftsmanship producing elevated chambers statues reservoir-bowls and stationary kettles with gratitude command to David family noting few servants are grateful",
+    "Sulayman death concealed from jinn until earth-creature ate his staff proving jinn ignorance of unseen and their humiliating punishment continuation",
+    "Saba people given two gardens right and left as sign with command to eat provision and be grateful in good land under forgiving Lord",
+    "Saba ingratitude triggering Arim flood replacing gardens with bitter fruit tamarisk and sparse lote trees",
+    "Ingratitude repayment declared as exclusive recompense for kafur denying divine favor",
+    "Visible towns placed between Saba and blessed cities with determined journey stages enabling safe night-day travel",
+    "Saba insolent request for longer journey distances leading to self-wronging dispersion into narrations as signs for patient-grateful",
+    "Iblees assumption confirmed through Saba followers except believing party demonstrating satanic influence scope",
+    "Satan authority limited to distinguishing Hereafter believers from doubters with Lord as Guardian over all things"
+  ],
+  "ext-034-p2": [
+    "False deity invocation challenge showing they possess not even atom weight in heavens or earth with no partnership and no assistant",
+    "Intercession restricted to divine permission only with terrified hearts questioning what Lord said receiving truth answer under Aliy-Kabeer attributes",
+    "Provision attribution test asking who provides from heavens and earth with Allah answer establishing guidance-or-error dichotomy",
+    "Mutual non-accountability declared between prophet community and disbelievers regarding respective actions",
+    "Gathering-judgment proclamation with Fattah-Aleem attributes establishing divine arbitration between communities",
+    "Partner-showing challenge rejected with affirmation that He alone is Allah Aziz-Hakeem",
+    "Universal messenger mission declared as comprehensive bearer-of-tidings and warner to all mankind despite majority ignorance",
+    "Promise timing demand from disbelievers questioning truthfulness of warning",
+    "Fixed appointment day declared with no delay or advancement possible",
+    "Disbeliever Quran rejection with wrongdoers standing before Lord refuting each other as oppressed blame arrogant leaders",
+    "Arrogant leaders rebutting oppressed claiming they were criminals not misled victims",
+    "Oppressed blaming arrogant for night-day conspiracy ordering disbelief and equal-attribution with hidden regret and shackles on disbeliever necks",
+    "Universal warner pattern with affluent rejecting message in every city as consistent elite disbelief response",
+    "Affluent wealth-children boast claiming immunity from punishment as material-delusion indicator",
+    "Provision extension-restriction declared as divine prerogative unknown to majority correcting wealth-as-favor assumption",
+    "Wealth-children rejected as proximity means with faith-righteousness as sole criterion for double reward and upper-chamber security",
+    "Sign-frustrators destined for punishment presentation as inevitable consequence of opposing ayat",
+    "Provision extension-restriction reiterated with spending compensation promise and Khayr-al-Raziqin attribute",
+    "Gathering day with angels questioned about human worship of them establishing angelic innocence",
+    "Angels declaring tasbih affirming Allah as sole protector and identifying jinn as actual objects of human worship",
+    "Judgment day mutual powerlessness declared with wrongdoers commanded to taste Fire punishment they denied",
+    "Clear verse recitation met with ancestral-tradition defense plus invented-lie accusation plus obvious-magic dismissal as triple rejection pattern",
+    "No prior scripture or warner sent to disbelieving community establishing fresh revelation context",
+    "Prior nations denied messengers despite receiving tenfold more than Makkah with terrible reproach as historical warning"
+  ],
+  "ext-034-p3": [
+    "Single exhortation to stand before Allah in pairs and individuals for reflection with companion sanity affirmed as warner before severe punishment",
+    "Prophet wage refusal declaring any asked payment belongs to audience while his reward is from Allah alone as Witness over everything",
+    "Lord projecting truth as Allam-al-Ghuyub affirming divine unseen-knowledge and truth-casting power",
+    "Truth arrival declared with falsehood unable to originate or repeat anything establishing haqq supremacy over batil",
+    "Error-consequence borne individually while guidance comes through lordly revelation with Sami-Qareeb attributes",
+    "Terror visualization at punishment moment with no escape and seizure from nearby place",
+    "Belated belief declaration rejected as impossible faith-acquisition from distant place after prior denial",
+    "Prior disbelief confirmed with unseen-assault from far place as speculative conjecture pattern",
+    "Prevention placed between disbelievers and desires as done with predecessors confirming they were in disquieting doubt"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`34:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`34:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`34:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 34, surahName: "Saba",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
