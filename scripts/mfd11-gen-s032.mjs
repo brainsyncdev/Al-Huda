@@ -36,6 +36,44 @@ const TS = "2026-11-20T14:20:00.000Z";
 // P1: 32:1–15 — Quran revelation; creation signs; sajdah verse; believer vs disbeliever contrast
 // P2: 32:16–30 — Night devotion; resurrection denial; prior destruction; closing patience
 
+// Per-ayah editorial subject descriptions, ordered from the passage's first ayah.
+const SUB_LABELS = {
+  "ext-032-p1": [
+    "Disjointed letters Alif-Lam-Mim opening Surah As-Sajdah",
+    "Declaration of the Book as a revelation from the Lord of the worlds without doubt",
+    "Rejection of the forgery claim and affirmation of truth from the Lord to warn a people without prior warner",
+    "Six-day creation of heavens and earth followed by Throne establishment and arrangement of affairs",
+    "Angels and the Spirit ascending in a Day whose measure is fifty thousand years",
+    "Divine attributes as Knower of unseen and witnessed, Exalted in Might and Merciful",
+    "Perfection of all creation and the beginning of human creation from clay",
+    "Human posterity derived from an extract of disdained liquid",
+    "Proportioning of the human form, breathing of the spirit, and bestowal of hearing vision and hearts",
+    "Denial of resurrection after decomposition in the earth and disbelief in meeting the Lord",
+    "The angel of death entrusted with taking souls and the return to the Lord",
+    "Criminals hanging their heads before their Lord pleading for return to work righteousness",
+    "Divine will could have guided every soul but the word decrees filling Hell with jinn and humans",
+    "Command to taste eternal punishment as recompense for forgetting the meeting of this Day",
+    "True believers prostrate and glorify with praise when reminded of divine signs without arrogance"
+  ],
+  "ext-032-p2": [
+    "Believers forsaking their beds to supplicate in fear and hope while spending from provision",
+    "Hidden comfort of eyes reserved as reward unknown to any soul for past deeds",
+    "Rhetorical distinction between the believer and the defiantly disobedient as unequal",
+    "Gardens of Refuge as accommodation for those who believed and did righteous deeds",
+    "Fire as refuge for the defiantly disobedient with cyclical return upon attempted escape",
+    "Tasting the nearer punishment before the greater punishment so they may repent",
+    "Supreme injustice of turning away from divine signs and retribution against criminals",
+    "Musa given the Scripture as guidance for the Children of Israel without doubt of meeting",
+    "Leaders appointed from among them guiding by divine command due to patience and certainty",
+    "Lord judging between them on Resurrection Day concerning their differences",
+    "Destroyed generations before them as signs evident in their dwellings yet they do not hear",
+    "Water driven to barren land producing crops for livestock and humans yet they do not see",
+    "Demand for the timing of the conquest challenging the truthfulness of the warning",
+    "Belief on the Day of Conquest benefiting neither the disbelievers nor granting respite",
+    "Turning away from the disbelievers and mutual waiting as closing directive"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-032-p1", from: 1, to: 15,
     label: "Alif-Lam-Mim; revelation Book Lord worlds no doubt; say invented nay truth Lord warn people before them none warner; Allah created heavens earth six days established Throne manages affair intercessor except permission Lord God everything; ascend angels Spirit Day measure fifty thousand years; so be patient good patience; see far what promised; indeed they will know who inheritors; only warned those believe revealed Lord fear hearts tremble; recite signs believed fell prostration glorify praise Lord not arrogant; sides forsake beds supplicate Lord fear hope spend provided; knows souls conceal eyes reward used do; taste punishment eternal recompense earned",
@@ -50,14 +88,11 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`32:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`32:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
-  }
+  const subs = SUB_LABELS[p.id].map((label, idx) => ({
+    label,
+    keys: [`32:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 32, surahName: "As-Sajdah",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
