@@ -1,0 +1,162 @@
+{
+  "extractionId": "ext-096-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 96,
+  "surahName": "Al-Alaq",
+  "passage": {
+    "fromAyah": 15,
+    "toAyah": 19,
+    "label": "No if not desist drag forelock; lying sinning forelock; let call associates; call angels Hell; No do not obey him prostrate draw near"
+  },
+  "verseKeys": [
+    "96:15",
+    "96:16",
+    "96:17",
+    "96:18",
+    "96:19"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "96:15",
+      "text": "كَلَّا لَئِن لَّمۡ يَنتَهِ لَنَسۡفَعَۢا بِٱلنَّاصِيَةِ"
+    },
+    {
+      "key": "96:16",
+      "text": "نَاصِيَةٖ كَٰذِبَةٍ خَاطِئَةٖ"
+    },
+    {
+      "key": "96:17",
+      "text": "فَلۡيَدۡعُ نَادِيَهُۥ"
+    },
+    {
+      "key": "96:18",
+      "text": "سَنَدۡعُ ٱلزَّبَانِيَةَ"
+    },
+    {
+      "key": "96:19",
+      "text": "كَلَّا لَا تُطِعۡهُ وَٱسۡجُدۡۤ وَٱقۡتَرِب۩"
+    }
+  ],
+  "mainSubject": {
+    "label": "If the transgressor does not desist he will be dragged by his lying sinful forelock; let him call his associates while the angels of Hell are summoned; the believer instructed not to obey him but to prostrate and draw near to Allah",
+    "keys": [
+      "96:15",
+      "96:16",
+      "96:17",
+      "96:18",
+      "96:19"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "If he does not desist he will be dragged by the forelock",
+      "keys": [
+        "96:15"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "A lying, sinning forelock specified",
+      "keys": [
+        "96:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Let him call his associates challenged",
+      "keys": [
+        "96:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The angels of Hell summoned in response",
+      "keys": [
+        "96:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Do not obey him commanded; prostrate and draw near instead",
+      "keys": [
+        "96:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "96:19"
+      ],
+      "excerpt": "كَلَّا لَا تُطِعۡهُ وَٱسۡجُدۡۤ وَٱقۡتَرِب۩",
+      "description": "Do not obey him."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "96:19"
+      ],
+      "excerpt": "كَلَّا لَا تُطِعۡهُ وَٱسۡجُدۡۤ وَٱقۡتَرِب۩",
+      "description": "Prostrate and draw near to Allah."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Lying sinful forelock identified as the locus of transgression",
+      "keys": [
+        "96:15",
+        "96:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Associate-summoning met by Hell-angel summoning as divine counter",
+      "keys": [
+        "96:17",
+        "96:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Prostration and drawing near prescribed as the believer's response to opposition",
+      "keys": [
+        "96:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "بِٱلنَّاصِيَةِ",
+      "transliteration": "al-nasiyah",
+      "gloss": "the forelock (editorial gloss)",
+      "keys": [
+        "96:15"
+      ]
+    },
+    {
+      "term": "ٱلزَّبَانِيَةَ",
+      "transliteration": "zabaniyah",
+      "gloss": "angels of Hell/guards (editorial gloss)",
+      "keys": [
+        "96:18"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1977"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the teaching-by-the-pen declaration (5) before the transgression diagnosis opens (6); P2 ends with the divine-sight question (14) before the forelock-dragging threat begins (15); P3 runs through the lying forelock, the associate-challenge, the Hell-angels summons and the closing prostration command (15-19).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-21T00:05:00.000Z"
+}

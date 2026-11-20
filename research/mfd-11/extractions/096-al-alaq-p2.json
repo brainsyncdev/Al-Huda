@@ -5,22 +5,42 @@
   "surah": 96,
   "surahName": "Al-Alaq",
   "passage": {
-    "fromAyah": 11,
-    "toAyah": 19,
-    "label": "Al-Alaq 96:11-19"
+    "fromAyah": 6,
+    "toAyah": 14,
+    "label": "No indeed man transgresses; sees himself self-sufficient; Indeed Lord return; seen one forbids; servant prays; seen if upon guidance; enjoins righteousness; seen if denies turns away; not know Allah sees"
   },
   "verseKeys": [
+    "96:6",
+    "96:7",
+    "96:8",
+    "96:9",
+    "96:10",
     "96:11",
     "96:12",
     "96:13",
-    "96:14",
-    "96:15",
-    "96:16",
-    "96:17",
-    "96:18",
-    "96:19"
+    "96:14"
   ],
   "arabicExcerpts": [
+    {
+      "key": "96:6",
+      "text": "كَلَّآ إِنَّ ٱلۡإِنسَٰنَ لَيَطۡغَىٰٓ"
+    },
+    {
+      "key": "96:7",
+      "text": "أَن رَّءَاهُ ٱسۡتَغۡنَىٰٓ"
+    },
+    {
+      "key": "96:8",
+      "text": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجۡعَىٰٓ"
+    },
+    {
+      "key": "96:9",
+      "text": "أَرَءَيۡتَ ٱلَّذِي يَنۡهَىٰ"
+    },
+    {
+      "key": "96:10",
+      "text": "عَبۡدًا إِذَا صَلَّىٰٓ"
+    },
     {
       "key": "96:11",
       "text": "أَرَءَيۡتَ إِن كَانَ عَلَى ٱلۡهُدَىٰٓ"
@@ -36,60 +56,75 @@
     {
       "key": "96:14",
       "text": "أَلَمۡ يَعۡلَم بِأَنَّ ٱللَّهَ يَرَىٰ"
-    },
-    {
-      "key": "96:15",
-      "text": "كَلَّا لَئِن لَّمۡ يَنتَهِ لَنَسۡفَعَۢا بِٱلنَّاصِيَةِ"
-    },
-    {
-      "key": "96:16",
-      "text": "نَاصِيَةٖ كَٰذِبَةٍ خَاطِئَةٖ"
-    },
-    {
-      "key": "96:17",
-      "text": "فَلۡيَدۡعُ نَادِيَهُۥ"
-    },
-    {
-      "key": "96:18",
-      "text": "سَنَدۡعُ ٱلزَّبَانِيَةَ"
-    },
-    {
-      "key": "96:19",
-      "text": "كَلَّا لَا تُطِعۡهُ وَٱسۡجُدۡۤ وَٱقۡتَرِب۩"
     }
   ],
   "mainSubject": {
-    "label": "Al-Alaq 96:11-19",
+    "label": "Man's transgression rooted in seeing himself self-sufficient despite his return being to his Lord; the one who forbids a praying servant questioned whether he is upon guidance or enjoins righteousness, or rather denies and turns away — does he not know that Allah sees",
     "keys": [
+      "96:6",
+      "96:7",
+      "96:8",
+      "96:9",
+      "96:10",
       "96:11",
       "96:12",
       "96:13",
-      "96:14",
-      "96:15",
-      "96:16",
-      "96:17",
-      "96:18",
-      "96:19"
+      "96:14"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "Have you seen if he is upon guidance",
+      "label": "Man declared to transgress",
+      "keys": [
+        "96:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Because he sees himself self-sufficient",
+      "keys": [
+        "96:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "His return affirmed to be to his Lord",
+      "keys": [
+        "96:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The one who forbids questioned rhetorically",
+      "keys": [
+        "96:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "A servant specifically when he prays identified as the forbidden act",
+      "keys": [
+        "96:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Whether he is upon guidance asked",
       "keys": [
         "96:11"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Or enjoins righteousness",
+      "label": "Or enjoins righteousness asked",
       "keys": [
         "96:12"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Have you seen if he denies and turns away",
+      "label": "Whether he denies and turns away asked",
       "keys": [
         "96:13"
       ],
@@ -101,64 +136,65 @@
         "96:14"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "No! If he does not desist, We will surely drag him by the forelock",
-      "keys": [
-        "96:15"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "A lying, sinning forelock",
-      "keys": [
-        "96:16"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Then let him call his associates",
-      "keys": [
-        "96:17"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "We will call the angels of Hell",
-      "keys": [
-        "96:18"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "No! Do not obey him. But prostrate and draw near [to Allah]",
-      "keys": [
-        "96:19"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
   "commandsAndProhibitions": [],
   "divineNamesAndAttributes": [],
   "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2567",
-    "cand-2568",
-    "cand-2569",
-    "cand-2570",
-    "cand-2571",
-    "cand-2572",
-    "cand-2573",
-    "cand-2574",
-    "cand-2575",
-    "cand-2576"
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Transgression arising from perceived self-sufficiency",
+      "keys": [
+        "96:6",
+        "96:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Prayer-forbidding opponent questioned about guidance versus denial",
+      "keys": [
+        "96:9",
+        "96:10",
+        "96:11",
+        "96:12",
+        "96:13"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 96 passage 2/2. Generated by mfd11-gen-batch-85-96.mjs.",
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Return to the Lord stated as corrective to self-sufficiency illusion",
+      "keys": [
+        "96:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Divine sight invoked as the ultimate accountability check",
+      "keys": [
+        "96:14"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "لَيَطۡغَىٰٓ",
+      "transliteration": "tagha",
+      "gloss": "transgresses (editorial gloss)",
+      "keys": [
+        "96:6"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1975",
+    "cand-1976"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the teaching-by-the-pen declaration (5) before the transgression diagnosis opens (6); P2 ends with the divine-sight question (14) before the forelock-dragging threat begins (15); P3 runs through the lying forelock, the associate-challenge, the Hell-angels summons and the closing prostration command (15-19).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:15:00.000Z"
+  "createdAt": "2026-11-21T00:05:00.000Z"
 }

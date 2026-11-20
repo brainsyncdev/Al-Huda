@@ -1,387 +1,275 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:15:00.000Z",
-  "sourceExtraction": "ext-096-p1,ext-096-p2",
+  "generatedAt": "2026-11-21T00:05:00.000Z",
+  "sourceExtraction": "ext-096-p1,ext-096-p2,ext-096-p3",
   "candidates": [
     {
-      "candidateId": "cand-2557",
-      "label": "cand-2557: Topic from 96:1",
-      "definition": "In 96:1: Recite in the name of your Lord who created",
+      "candidateId": "cand-1973",
+      "label": "First revelation: recitation commanded in the Creator-Most Generous's name",
+      "definition": "In 96:1-5: Recite in the name of your Lord who created; created man from a clinging substance; recite and your Lord is the most Generous; who taught by the pen; taught man that which he knew not.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "96:1",
           "excerpt": "ٱقۡرَأۡ بِٱسۡمِ رَبِّكَ ٱلَّذِي خَلَقَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2558",
-      "label": "cand-2558: Topic from 96:1",
-      "definition": "In 96:1: Recite in the name of your Lord who created",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "96:1",
-          "excerpt": "ٱقۡرَأۡ بِٱسۡمِ رَبِّكَ ٱلَّذِي خَلَقَ",
+          "key": "96:2",
+          "excerpt": "خَلَقَ ٱلۡإِنسَٰنَ مِنۡ عَلَقٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "96:3",
+          "excerpt": "ٱقۡرَأۡ وَرَبُّكَ ٱلۡأَكۡرَمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "96:4",
+          "excerpt": "ٱلَّذِي عَلَّمَ بِٱلۡقَلَمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "96:5",
+          "excerpt": "عَلَّمَ ٱلۡإِنسَٰنَ مَا لَمۡ يَعۡلَمۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "First wahy iqra' bi-smi rabbika."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Qalam and ta'lim as divine gift."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T00:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2559",
-      "label": "cand-2559: Topic from 96:2",
-      "definition": "In 96:2: Created man from a clinging substance",
+      "candidateId": "cand-1974",
+      "label": "Human creation from alaq paired with pen-teaching as foundational gifts",
+      "definition": "In 96:2-5: Created man from a clinging substance; recite and your Lord is the most Generous who taught by the pen taught man that which he knew not.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "96:2",
           "excerpt": "خَلَقَ ٱلۡإِنسَٰنَ مِنۡ عَلَقٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2560",
-      "label": "cand-2560: Topic from 96:3",
-      "definition": "In 96:3: Recite, and your Lord is the most Generous",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:3",
           "excerpt": "ٱقۡرَأۡ وَرَبُّكَ ٱلۡأَكۡرَمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2561",
-      "label": "cand-2561: Topic from 96:4",
-      "definition": "In 96:4: Who taught by the pen",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:4",
           "excerpt": "ٱلَّذِي عَلَّمَ بِٱلۡقَلَمِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2562",
-      "label": "cand-2562: Topic from 96:5",
-      "definition": "In 96:5: Taught man that which he knew not",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:5",
           "excerpt": "عَلَّمَ ٱلۡإِنسَٰنَ مَا لَمۡ يَعۡلَمۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Alaq as origin stage."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Khalq plus ta'lim pairing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T00:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2563",
-      "label": "cand-2563: Topic from 96:6",
-      "definition": "In 96:6: No! [But] indeed, man transgresses",
+      "candidateId": "cand-1975",
+      "label": "Transgression from self-sufficiency corrected by return-to-Lord reminder",
+      "definition": "In 96:6-8: No indeed man transgresses because he sees himself self-sufficient; indeed to your Lord is the return.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "96:6",
           "excerpt": "كَلَّآ إِنَّ ٱلۡإِنسَٰنَ لَيَطۡغَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2564",
-      "label": "cand-2564: Topic from 96:7",
-      "definition": "In 96:7: Because he sees himself self-sufficient",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:7",
           "excerpt": "أَن رَّءَاهُ ٱسۡتَغۡنَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2565",
-      "label": "cand-2565: Topic from 96:8",
-      "definition": "In 96:8: Indeed, to your Lord is the return",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:8",
           "excerpt": "إِنَّ إِلَىٰ رَبِّكَ ٱلرُّجۡعَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Istighna as spiritual danger."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ruj'a ila rabbika corrective."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T00:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2566",
-      "label": "cand-2566: Topic from 96:9",
-      "definition": "In 96:9: Have you seen the one who forbids",
+      "candidateId": "cand-1976",
+      "label": "Prayer-forbidding opponent exposed: guidance denied, Allah sees",
+      "definition": "In 96:9-14: Have you seen the one who forbids a servant when he prays; have you seen if he is upon guidance or enjoins righteousness; have you seen if he denies and turns away; does he not know that Allah sees.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "96:9",
           "excerpt": "أَرَءَيۡتَ ٱلَّذِي يَنۡهَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2567",
-      "label": "cand-2567: Topic from 96:11",
-      "definition": "In 96:11: Have you seen if he is upon guidance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "96:10",
+          "excerpt": "عَبۡدًا إِذَا صَلَّىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:11",
           "excerpt": "أَرَءَيۡتَ إِن كَانَ عَلَى ٱلۡهُدَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2568",
-      "label": "cand-2568: Topic from 96:11",
-      "definition": "In 96:11: Have you seen if he is upon guidance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "96:11",
-          "excerpt": "أَرَءَيۡتَ إِن كَانَ عَلَى ٱلۡهُدَىٰٓ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2569",
-      "label": "cand-2569: Topic from 96:12",
-      "definition": "In 96:12: Or enjoins righteousness",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:12",
           "excerpt": "أَوۡ أَمَرَ بِٱلتَّقۡوَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2570",
-      "label": "cand-2570: Topic from 96:13",
-      "definition": "In 96:13: Have you seen if he denies and turns away",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:13",
           "excerpt": "أَرَءَيۡتَ إِن كَذَّبَ وَتَوَلَّىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2571",
-      "label": "cand-2571: Topic from 96:14",
-      "definition": "In 96:14: Does he not know that Allah sees",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:14",
           "excerpt": "أَلَمۡ يَعۡلَم بِأَنَّ ٱللَّهَ يَرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Salah prohibition as kufr marker."
+        },
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Allah yara as surveillance."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T00:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2572",
-      "label": "cand-2572: Topic from 96:15",
-      "definition": "In 96:15: No! If he does not desist, We will surely drag him by the forelock",
+      "candidateId": "cand-1977",
+      "label": "Lying forelock dragged, associates outmatched by Hell angels, prostration commanded",
+      "definition": "In 96:15-19: No if he does not desist We will surely drag him by the forelock a lying sinning forelock; then let him call his associates; We will call the angels of Hell; no do not obey him but prostrate and draw near to Allah.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "96:15",
           "excerpt": "كَلَّا لَئِن لَّمۡ يَنتَهِ لَنَسۡفَعَۢا بِٱلنَّاصِيَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2573",
-      "label": "cand-2573: Topic from 96:15",
-      "definition": "In 96:15: No! If he does not desist, We will surely drag him by the forelock",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "96:15",
-          "excerpt": "كَلَّا لَئِن لَّمۡ يَنتَهِ لَنَسۡفَعَۢا بِٱلنَّاصِيَةِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2574",
-      "label": "cand-2574: Topic from 96:16",
-      "definition": "In 96:16: A lying, sinning forelock",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:16",
           "excerpt": "نَاصِيَةٖ كَٰذِبَةٍ خَاطِئَةٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2575",
-      "label": "cand-2575: Topic from 96:17",
-      "definition": "In 96:17: Then let him call his associates",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:17",
           "excerpt": "فَلۡيَدۡعُ نَادِيَهُۥ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2576",
-      "label": "cand-2576: Topic from 96:18",
-      "definition": "In 96:18: We will call the angels of Hell",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "96:18",
           "excerpt": "سَنَدۡعُ ٱلزَّبَانِيَةَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "96:19",
+          "excerpt": "كَلَّا لَا تُطِعۡهُ وَٱسۡجُدۡۤ وَٱقۡتَرِب۩",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nasiyah kadhibah khata'ah seized."
+        },
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sujud wa-iqtirab as defiance response."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T00:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     }
   ]
 }
