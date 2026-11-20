@@ -1,12 +1,12 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:20:00.000Z",
+  "generatedAt": "2026-11-20T13:25:00.000Z",
   "sourceExtraction": "ext-022-p1,ext-022-p2,ext-022-p3",
   "candidates": [
     {
       "candidateId": "cand-0867",
-      "label": "cand-0867: Topic from 22:1",
-      "definition": "In 22:1: O mankind, fear your Lord. Indeed, the convulsion of the [final] Hour is a terrible thing",
+      "label": "Hour convulsion causing maternal abandonment as supreme terror",
+      "definition": "In 22:1-2: Fear your Lord; convulsion of Hour is terrible; nursing mother distracted from child; pregnant woman aborts.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -16,16 +16,61 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zalzalah al-sa'ah."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Maternal bond severed by terror."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0868",
-      "label": "cand-0868: Topic from 22:3",
-      "definition": "In 22:3: And of the people is he who disputes about Allah without knowledge and follows every rebellious devil",
+      "label": "Resurrection proven through embryonic development stages",
+      "definition": "In 22:5: Created from dust then sperm-drop then clot then lump bones clothed flesh produced another creation.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:5",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّاسُ إِن كُنتُمۡ فِي رَيۡبٖ مِّنَ ٱلۡبَعۡثِ فَإِنَّا خَلَقۡنَٰكُم مِّن تُرَابٖ ثُمَّ مِن نُّطۡفَةٖ ثُمَّ مِنۡ عَلَقَةٖ ثُمَّ مِن مُّضۡغَةٖ مُّخَلَّقَةٖ وَغَيۡرِ مُخَلَّقَةٖ لِّنُبَيِّنَ لَكُمۡۚ وَنُقِرُّ فِي ٱلۡأَرۡحَامِ مَا نَشَآءُ إِلَىٰٓ أَجَلٖ مُّسَمّٗى ثُمَّ نُخۡرِجُكُمۡ طِفۡلٗا ثُمَّ لِتَبۡلُغُوٓاْ أَشُدَّكُمۡۖ وَمِنكُم مَّن يُتَوَفَّىٰ وَمِنكُم مَّن يُرَدُّ إِلَىٰٓ أَرۡذَلِ ٱلۡعُمُرِ لِكَيۡلَا يَعۡلَمَ مِنۢ بَعۡدِ عِلۡمٖ شَيۡـٔٗاۚ وَتَرَى ٱلۡأَرۡضَ هَامِدَةٗ فَإِذَآ أَنزَلۡنَا عَلَيۡهَا ٱلۡمَآءَ ٱهۡتَزَّتۡ وَرَبَتۡ وَأَنۢبَتَتۡ مِن كُلِّ زَوۡجِۭ بَهِيجٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Embryology as ba'th proof."
+        },
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Multi-stage creation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0869",
+      "label": "Dispute about Allah without knowledge-guidance-scripture as epistemological failure",
+      "definition": "In 22:3,8: Disputes about Allah without knowledge follows rebellious devil; without knowledge guidance enlightening book.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -35,244 +80,189 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0869",
-      "label": "cand-0869: Topic from 22:6",
-      "definition": "In 22:6: That is because Allah is the Truth and because He gives life to the dead and because He is over all things competent",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "22:6",
-          "excerpt": "ذَٰلِكَ بِأَنَّ ٱللَّهَ هُوَ ٱلۡحَقُّ وَأَنَّهُۥ يُحۡيِ ٱلۡمَوۡتَىٰ وَأَنَّهُۥ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jidal bi-ghayri ilm."
+        },
+        {
+          "topicId": "knowledge-seeking",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Triple deficit: ilm-huda-kitab."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0870",
-      "label": "cand-0870: Topic from 22:8",
-      "definition": "In 22:8: And of the people is he who disputes about Allah without knowledge or guidance or an enlightening book [from Him]",
+      "label": "Arrogant neck-twisting producing worldly disgrace and hellfire",
+      "definition": "In 22:9: Twisting his neck in arrogance to mislead from way of Allah; worldly disgrace and Hell punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:8",
-          "excerpt": "وَمِنَ ٱلنَّاسِ مَن يُجَٰدِلُ فِي ٱللَّهِ بِغَيۡرِ عِلۡمٖ وَلَا هُدٗى وَلَا كِتَٰبٖ مُّنِيرٖ",
+          "key": "22:9",
+          "excerpt": "ثَانِيَ عِطۡفِهِۦ لِيُضِلَّ عَن سَبِيلِ ٱللَّهِۖ لَهُۥ فِي ٱلدُّنۡيَا خِزۡيٞۖ وَنُذِيقُهُۥ يَوۡمَ ٱلۡقِيَٰمَةِ عَذَابَ ٱلۡحَرِيقِ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Thaniya 'itfihi as physical arrogance."
+        },
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Misleading others compounding guilt."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0871",
-      "label": "cand-0871: Topic from 22:11",
-      "definition": "In 22:11: And of the people is he who worships Allah on an edge. If he is touched by good, he is reassured by it; but if he is struck by trial, he turns on his face [to the other direction]. He has lost [this] world and the Hereafter. That is what is the manifest loss",
+      "label": "Idol incapacity demonstrated through benefit-harm inability",
+      "definition": "In 22:12-13: Invoke besides Allah neither benefits nor harms; turn back heels lost world and Hereafter.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:11",
-          "excerpt": "وَمِنَ ٱلنَّاسِ مَن يَعۡبُدُ ٱللَّهَ عَلَىٰ حَرۡفٖۖ فَإِنۡ أَصَابَهُۥ خَيۡرٌ ٱطۡمَأَنَّ بِهِۦۖ وَإِنۡ أَصَابَتۡهُ فِتۡنَةٌ ٱنقَلَبَ عَلَىٰ وَجۡهِهِۦ خَسِرَ ٱلدُّنۡيَا وَٱلۡأٓخِرَةَۚ ذَٰلِكَ هُوَ ٱلۡخُسۡرَانُ ٱلۡمُبِينُ",
+          "key": "22:12",
+          "excerpt": "يَدۡعُواْ مِن دُونِ ٱللَّهِ مَا لَا يَضُرُّهُۥ وَمَا لَا يَنفَعُهُۥۚ ذَٰلِكَ هُوَ ٱلضَّلَٰلُ ٱلۡبَعِيدُ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Functional impotence."
+        },
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Benefit-harm as divinity criterion."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0872",
-      "label": "cand-0872: Topic from 22:13",
-      "definition": "In 22:13: He invokes one whose harm is closer than his benefit - how wretched the protector and how wretched the associate",
+      "label": "Destroyed cities as archaeological warning signs for travelers",
+      "definition": "In 22:45-46: How many city destroyed committing wrong fallen ruin; abandoned well towering palace; traveled earth observe.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:13",
-          "excerpt": "يَدۡعُواْ لَمَن ضَرُّهُۥٓ أَقۡرَبُ مِن نَّفۡعِهِۦۚ لَبِئۡسَ ٱلۡمَوۡلَىٰ وَلَبِئۡسَ ٱلۡعَشِيرُ",
+          "key": "22:45",
+          "excerpt": "فَكَأَيِّن مِّن قَرۡيَةٍ أَهۡلَكۡنَٰهَا وَهِيَ ظَالِمَةٞ فَهِيَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا وَبِئۡرٖ مُّعَطَّلَةٖ وَقَصۡرٖ مَّشِيدٍ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ruins as ayat."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Observational learning commanded."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0873",
-      "label": "cand-0873: Topic from 22:16",
-      "definition": "In 22:16: And thus have We sent the Qur'an down as verses of clear evidence and because Allah guides whom He intends",
+      "label": "Sealed hearts preventing post-evidence guidance reception",
+      "definition": "In 22:46: Hearts sealed hearing sight covered seals never guided.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:16",
-          "excerpt": "وَكَذَٰلِكَ أَنزَلۡنَٰهُ ءَايَٰتِۭ بَيِّنَٰتٖ وَأَنَّ ٱللَّهَ يَهۡدِي مَن يُرِيدُ",
+          "key": "22:46",
+          "excerpt": "أَفَلَمۡ يَسِيرُواْ فِي ٱلۡأَرۡضِ فَتَكُونَ لَهُمۡ قُلُوبٞ يَعۡقِلُونَ بِهَآ أَوۡ ءَاذَانٞ يَسۡمَعُونَ بِهَاۖ فَإِنَّهَا لَا تَعۡمَى ٱلۡأَبۡصَٰرُ وَلَٰكِن تَعۡمَى ٱلۡقُلُوبُ ٱلَّتِي فِي ٱلصُّدُورِ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Khatm as divine consequence."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Faculty closure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0874",
-      "label": "cand-0874: Topic from 22:18",
-      "definition": "In 22:18: Do you not see that to Allah prostrates whoever is in the heavens and whoever is on the earth and the sun, the moon, the stars, the mountains, the trees, the moving creatures and many of the people? But upon many the punishment has been justified. And he whom Allah humiliates - for him there is no bestower of honor. Indeed, Allah does what He wills",
+      "label": "Hajj sacrifice as sha'air Allah providing communal benefit",
+      "definition": "In 22:36: Camels cattle appointed as symbols of Allah; mention His name over them lined up; eat feed needy.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:18",
-          "excerpt": "أَلَمۡ تَرَ أَنَّ ٱللَّهَ يَسۡجُدُۤ لَهُۥۤ مَن فِي ٱلسَّمَٰوَٰتِ وَمَن فِي ٱلۡأَرۡضِ وَٱلشَّمۡسُ وَٱلۡقَمَرُ وَٱلنُّجُومُ وَٱلۡجِبَالُ وَٱلشَّجَرُ وَٱلدَّوَآبُّ وَكَثِيرٞ مِّنَ ٱلنَّاسِۖ وَكَثِيرٌ حَقَّ عَلَيۡهِ ٱلۡعَذَابُۗ وَمَن يُهِنِ ٱللَّهُ فَمَا لَهُۥ مِن مُّكۡرِمٍۚ إِنَّ ٱللَّهَ يَفۡعَلُ مَا يَشَآءُ۩",
+          "key": "22:36",
+          "excerpt": "وَٱلۡبُدۡنَ جَعَلۡنَٰهَا لَكُم مِّن شَعَـٰٓئِرِ ٱللَّهِ لَكُمۡ فِيهَا خَيۡرٞۖ فَٱذۡكُرُواْ ٱسۡمَ ٱللَّهِ عَلَيۡهَا صَوَآفَّۖ فَإِذَا وَجَبَتۡ جُنُوبُهَا فَكُلُواْ مِنۡهَا وَأَطۡعِمُواْ ٱلۡقَانِعَ وَٱلۡمُعۡتَرَّۚ كَذَٰلِكَ سَخَّرۡنَٰهَا لَكُمۡ لَعَلَّكُمۡ تَشۡكُرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sha'air as visible rites."
+        },
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Distribution to poor."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0875",
-      "label": "cand-0875: Topic from 22:21",
-      "definition": "In 22:21: And for [striking] them are maces of iron",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:21",
-          "excerpt": "وَلَهُم مَّقَٰمِعُ مِنۡ حَدِيدٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0876",
-      "label": "cand-0876: Topic from 22:23",
-      "definition": "In 22:23: Indeed, Allah will admit those who believe and do righteous deeds to gardens beneath which rivers flow. They will be adorned therein with bracelets of gold and pearl, and their garments therein will be silk",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:23",
-          "excerpt": "إِنَّ ٱللَّهَ يُدۡخِلُ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ جَنَّـٰتٖ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ يُحَلَّوۡنَ فِيهَا مِنۡ أَسَاوِرَ مِن ذَهَبٖ وَلُؤۡلُؤٗاۖ وَلِبَاسُهُمۡ فِيهَا حَرِيرٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0877",
-      "label": "cand-0877: Topic from 22:27",
-      "definition": "In 22:27: And proclaim to the people the Hajj [pilgrimage]; they will come to you on foot and on every lean camel; they will come from every distant pass",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:27",
-          "excerpt": "وَأَذِّن فِي ٱلنَّاسِ بِٱلۡحَجِّ يَأۡتُوكَ رِجَالٗا وَعَلَىٰ كُلِّ ضَامِرٖ يَأۡتِينَ مِن كُلِّ فَجٍّ عَمِيقٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0878",
-      "label": "cand-0878: Topic from 22:29",
-      "definition": "In 22:29: Then let them end their untidiness and fulfill their vows and perform Tawaf around the ancient House",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:29",
-          "excerpt": "ثُمَّ لۡيَقۡضُواْ تَفَثَهُمۡ وَلۡيُوفُواْ نُذُورَهُمۡ وَلۡيَطَّوَّفُواْ بِٱلۡبَيۡتِ ٱلۡعَتِيقِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0879",
-      "label": "cand-0879: Topic from 22:32",
-      "definition": "In 22:32: That [is so]. And whoever honors the symbols of Allah - indeed, it is from the piety of hearts",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:32",
-          "excerpt": "ذَٰلِكَۖ وَمَن يُعَظِّمۡ شَعَـٰٓئِرَ ٱللَّهِ فَإِنَّهَا مِن تَقۡوَى ٱلۡقُلُوبِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0880",
-      "label": "cand-0880: Topic from 22:34",
-      "definition": "In 22:34: And for all religion We have appointed a rite [of sacrifice] that they may mention the name of Allah over what He has provided for them of [sacrificial] animals. For your god is one God, so to Him submit. And, [O Muhammad], give good tidings to the humble [before their Lord]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:34",
-          "excerpt": "وَلِكُلِّ أُمَّةٖ جَعَلۡنَا مَنسَكٗا لِّيَذۡكُرُواْ ٱسۡمَ ٱللَّهِ عَلَىٰ مَا رَزَقَهُم مِّنۢ بَهِيمَةِ ٱلۡأَنۡعَٰمِۗ فَإِلَٰهُكُمۡ إِلَٰهٞ وَٰحِدٞ فَلَهُۥٓ أَسۡلِمُواْۗ وَبَشِّرِ ٱلۡمُخۡبِتِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0881",
-      "label": "cand-0881: Topic from 22:37",
-      "definition": "In 22:37: Their meat will not reach Allah, nor will their blood, but what reaches Him is piety from you. Thus have We subjected them to you that you may glorify Allah for that [to] which He has guided you; and give good tidings to the doers of good",
+      "label": "Piety not meat-blood reaching Allah in sacrifice",
+      "definition": "In 22:37: Their meat will not reach Allah nor blood but piety from you reaches Him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -282,16 +272,61 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Taqwa as sacrifice essence."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Intention over material form."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0882",
-      "label": "cand-0882: Topic from 22:39",
-      "definition": "In 22:39: Permission [to fight] has been given to those who are being fought, because they were wronged. And indeed, Allah is competent to give them victory",
+      "candidateId": "cand-0876",
+      "label": "Universal taqwa command opening surah addressing all mankind",
+      "definition": "In 22:1: O mankind fear your Lord — address to nas not mu'minin specifically.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:1",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُواْ رَبَّكُمۡۚ إِنَّ زَلۡزَلَةَ ٱلسَّاعَةِ شَيۡءٌ عَظِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Universal takhwa."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Fear motivated by Hour."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0877",
+      "label": "Fighting permission grounded in wrongful eviction and religious persecution",
+      "definition": "In 22:39-40: Permission given to those fought because wronged; evicted from homes without right only because they say Our Lord is Allah.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -301,16 +336,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zulm as fighting justification."
+        },
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Religious persecution as casus belli."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0883",
-      "label": "cand-0883: Topic from 22:42",
-      "definition": "In 22:42: And if they deny you, [O Muhammad] - so, before them, did the people of Noah and 'Aad and Thamud deny [their prophets]",
+      "candidateId": "cand-0878",
+      "label": "Establishment criteria: prayer zakah commanding-right forbidding-wrong",
+      "definition": "In 22:41: Those who if established in land establish prayer give zakah enjoin right forbid wrong.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:41",
+          "excerpt": "ٱلَّذِينَ إِن مَّكَّنَّـٰهُمۡ فِي ٱلۡأَرۡضِ أَقَامُواْ ٱلصَّلَوٰةَ وَءَاتَوُاْ ٱلزَّكَوٰةَ وَأَمَرُواْ بِٱلۡمَعۡرُوفِ وَنَهَوۡاْ عَنِ ٱلۡمُنكَرِۗ وَلِلَّهِ عَٰقِبَةُ ٱلۡأُمُورِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Governance pillars."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Amr-nahy as state function."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0879",
+      "label": "Divine defense obligation toward believers",
+      "definition": "In 22:38: Indeed Allah defends those who have believed; Allah does not like treacherous ungrateful.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:38",
+          "excerpt": "۞إِنَّ ٱللَّهَ يُدَٰفِعُ عَنِ ٱلَّذِينَ ءَامَنُوٓاْۗ إِنَّ ٱللَّهَ لَا يُحِبُّ كُلَّ خَوَّانٖ كَفُورٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Difa' ilahi."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Defense as rahmah manifestation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0880",
+      "label": "Prior denial pattern spanning seven prophetic communities",
+      "definition": "In 22:42-44: Denied before them people of Nuh Aad Thamud Ibrahim Lut Madyan Musa; prolonged enjoyment then seized.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -320,16 +432,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Recurring rejection pattern."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Delayed punishment certainty."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0884",
-      "label": "cand-0884: Topic from 22:44",
-      "definition": "In 22:44: And the inhabitants of Madyan. And Moses was denied, so I prolonged enjoyment for the disbelievers; then I seized them, and how [terrible] was My reproach",
+      "candidateId": "cand-0881",
+      "label": "Prolonged enjoyment preceding seizure as divine patience-justice balance",
+      "definition": "In 22:44: Moses was denied so I prolonged enjoyment for disbelievers then seized them; how terrible was My penalty.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -339,206 +464,189 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Imla' as respite."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ease preceding destruction."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0882",
+      "label": "Protection of places of worship as fighting justification",
+      "definition": "In 22:40: Were it not for Allah repelling people some others monasteries churches synagogues mosques would have been destroyed.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:40",
+          "excerpt": "ٱلَّذِينَ أُخۡرِجُواْ مِن دِيَٰرِهِم بِغَيۡرِ حَقٍّ إِلَّآ أَن يَقُولُواْ رَبُّنَا ٱللَّهُۗ وَلَوۡلَا دَفۡعُ ٱللَّهِ ٱلنَّاسَ بَعۡضَهُم بِبَعۡضٖ لَّهُدِّمَتۡ صَوَٰمِعُ وَبِيَعٞ وَصَلَوَٰتٞ وَمَسَٰجِدُ يُذۡكَرُ فِيهَا ٱسۡمُ ٱللَّهِ كَثِيرٗاۗ وَلَيَنصُرَنَّ ٱللَّهُ مَن يَنصُرُهُۥٓۚ إِنَّ ٱللَّهَ لَقَوِيٌّ عَزِيزٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Religious freedom protection."
+        },
+        {
+          "topicId": "brotherhood-islam",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Interfaith sanctuary preservation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0883",
+      "label": "Muslim governance defined by four pillars",
+      "definition": "In 22:41: Establish prayer give zakah enjoin ma'ruf forbid munkar — quadruple governance mandate.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:41",
+          "excerpt": "ٱلَّذِينَ إِن مَّكَّنَّـٰهُمۡ فِي ٱلۡأَرۡضِ أَقَامُواْ ٱلصَّلَوٰةَ وَءَاتَوُاْ ٱلزَّكَوٰةَ وَأَمَرُواْ بِٱلۡمَعۡرُوفِ وَنَهَوۡاْ عَنِ ٱلۡمُنكَرِۗ وَلِلَّهِ عَٰقِبَةُ ٱلۡأُمُورِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Comprehensive governance."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ma'ruf-munkar framework."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0884",
+      "label": "Treacherous ingratitude as divine displeasure markers",
+      "definition": "In 22:38: Allah does not like everyone treacherous (khawwan) and ungrateful (kafur).",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:38",
+          "excerpt": "۞إِنَّ ٱللَّهَ يُدَٰفِعُ عَنِ ٱلَّذِينَ ءَامَنُوٓاْۗ إِنَّ ٱللَّهَ لَا يُحِبُّ كُلَّ خَوَّانٖ كَفُورٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khayanah-kufr pairing."
+        },
+        {
+          "topicId": "gratitude-ingratitude",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ingratitude as character flaw."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0885",
-      "label": "cand-0885: Topic from 22:47",
-      "definition": "In 22:47: And they urge you to hasten the punishment. But Allah will never fail in His promise. And indeed, a day with your Lord is like a thousand years of those which you count",
+      "label": "Destroyed cities as observable warning evidence for travelers",
+      "definition": "In 22:45: How many city destroyed committing wrong fallen into ruin; ka'bi'in khawiyah 'ala 'urushiha.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:47",
-          "excerpt": "وَيَسۡتَعۡجِلُونَكَ بِٱلۡعَذَابِ وَلَن يُخۡلِفَ ٱللَّهُ وَعۡدَهُۥۚ وَإِنَّ يَوۡمًا عِندَ رَبِّكَ كَأَلۡفِ سَنَةٖ مِّمَّا تَعُدُّونَ",
+          "key": "22:45",
+          "excerpt": "فَكَأَيِّن مِّن قَرۡيَةٍ أَهۡلَكۡنَٰهَا وَهِيَ ظَالِمَةٞ فَهِيَ خَاوِيَةٌ عَلَىٰ عُرُوشِهَا وَبِئۡرٖ مُّعَطَّلَةٖ وَقَصۡرٖ مَّشِيدٍ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Physical ruins as ayat."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Visible punishment remains."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0886",
-      "label": "cand-0886: Topic from 22:49",
-      "definition": "In 22:49: Say, \"O people, I am only to you a clear warner",
+      "label": "Divine competence guaranteeing victory for wronged believers",
+      "definition": "In 22:39: Indeed Allah is competent to give them victory (la-qadirun ala nasrihim).",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "22:49",
-          "excerpt": "قُلۡ يَـٰٓأَيُّهَا ٱلنَّاسُ إِنَّمَآ أَنَا۠ لَكُمۡ نَذِيرٞ مُّبِينٞ",
+          "key": "22:39",
+          "excerpt": "أُذِنَ لِلَّذِينَ يُقَٰتَلُونَ بِأَنَّهُمۡ ظُلِمُواْۚ وَإِنَّ ٱللَّهَ عَلَىٰ نَصۡرِهِمۡ لَقَدِيرٌ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qudra ala al-nasr."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Victory assurance."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
       "candidateId": "cand-0887",
-      "label": "cand-0887: Topic from 22:53",
-      "definition": "In 22:53: [That is] so He may make what Satan throws in a trial for those within whose hearts is disease and those hard of heart. And indeed, the wrongdoers are in extreme dissension",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:53",
-          "excerpt": "لِّيَجۡعَلَ مَا يُلۡقِي ٱلشَّيۡطَٰنُ فِتۡنَةٗ لِّلَّذِينَ فِي قُلُوبِهِم مَّرَضٞ وَٱلۡقَاسِيَةِ قُلُوبُهُمۡۗ وَإِنَّ ٱلظَّـٰلِمِينَ لَفِي شِقَاقِۭ بَعِيدٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0888",
-      "label": "cand-0888: Topic from 22:55",
-      "definition": "In 22:55: But those who disbelieve will not cease to be in doubt of it until the Hour comes upon them unexpectedly or there comes to them the punishment of a barren Day",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:55",
-          "excerpt": "وَلَا يَزَالُ ٱلَّذِينَ كَفَرُواْ فِي مِرۡيَةٖ مِّنۡهُ حَتَّىٰ تَأۡتِيَهُمُ ٱلسَّاعَةُ بَغۡتَةً أَوۡ يَأۡتِيَهُمۡ عَذَابُ يَوۡمٍ عَقِيمٍ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0889",
-      "label": "cand-0889: Topic from 22:58",
-      "definition": "In 22:58: And those who emigrated for the cause of Allah and then were killed or died - Allah will surely provide for them a good provision. And indeed, it is Allah who is the best of providers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:58",
-          "excerpt": "وَٱلَّذِينَ هَاجَرُواْ فِي سَبِيلِ ٱللَّهِ ثُمَّ قُتِلُوٓاْ أَوۡ مَاتُواْ لَيَرۡزُقَنَّهُمُ ٱللَّهُ رِزۡقًا حَسَنٗاۚ وَإِنَّ ٱللَّهَ لَهُوَ خَيۡرُ ٱلرَّـٰزِقِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0890",
-      "label": "cand-0890: Topic from 22:60",
-      "definition": "In 22:60: That [is so]. And whoever responds [to injustice] with the equivalent of that with which he was harmed and then is tyrannized - Allah will surely aid him. Indeed, Allah is Pardoning and Forgiving",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:60",
-          "excerpt": "۞ذَٰلِكَۖ وَمَنۡ عَاقَبَ بِمِثۡلِ مَا عُوقِبَ بِهِۦ ثُمَّ بُغِيَ عَلَيۡهِ لَيَنصُرَنَّهُ ٱللَّهُۚ إِنَّ ٱللَّهَ لَعَفُوٌّ غَفُورٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0891",
-      "label": "cand-0891: Topic from 22:63",
-      "definition": "In 22:63: Do you not see that Allah has sent down rain from the sky and the earth becomes green? Indeed, Allah is Subtle and Acquainted",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:63",
-          "excerpt": "أَلَمۡ تَرَ أَنَّ ٱللَّهَ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءٗ فَتُصۡبِحُ ٱلۡأَرۡضُ مُخۡضَرَّةًۚ إِنَّ ٱللَّهَ لَطِيفٌ خَبِيرٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0892",
-      "label": "cand-0892: Topic from 22:65",
-      "definition": "In 22:65: Do you not see that Allah has subjected to you whatever is on the earth and the ships which run through the sea by His command? And He restrains the sky from falling upon the earth, unless by His permission. Indeed Allah, to the people, is Kind and Merciful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:65",
-          "excerpt": "أَلَمۡ تَرَ أَنَّ ٱللَّهَ سَخَّرَ لَكُم مَّا فِي ٱلۡأَرۡضِ وَٱلۡفُلۡكَ تَجۡرِي فِي ٱلۡبَحۡرِ بِأَمۡرِهِۦ وَيُمۡسِكُ ٱلسَّمَآءَ أَن تَقَعَ عَلَى ٱلۡأَرۡضِ إِلَّا بِإِذۡنِهِۦٓۚ إِنَّ ٱللَّهَ بِٱلنَّاسِ لَرَءُوفٞ رَّحِيمٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0893",
-      "label": "cand-0893: Topic from 22:68",
-      "definition": "In 22:68: And if they dispute with you, then say, \"Allah is most knowing of what you do",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:68",
-          "excerpt": "وَإِن جَٰدَلُوكَ فَقُلِ ٱللَّهُ أَعۡلَمُ بِمَا تَعۡمَلُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0894",
-      "label": "cand-0894: Topic from 22:70",
-      "definition": "In 22:70: Do you not know that Allah knows what is in the heaven and earth? Indeed, that is in a Record. Indeed that, for Allah, is easy",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "22:70",
-          "excerpt": "أَلَمۡ تَعۡلَمۡ أَنَّ ٱللَّهَ يَعۡلَمُ مَا فِي ٱلسَّمَآءِ وَٱلۡأَرۡضِۚ إِنَّ ذَٰلِكَ فِي كِتَٰبٍۚ إِنَّ ذَٰلِكَ عَلَى ٱللَّهِ يَسِيرٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-0895",
-      "label": "cand-0895: Topic from 22:73",
-      "definition": "In 22:73: O people, an example is presented, so listen to it. Indeed, those you invoke besides Allah will never create [as much as] a fly, even if they gathered together for that purpose. And if the fly should steal away from them a [tiny] thing, they could not recover it from him. Weak are the pursuer and pursued",
+      "label": "Fly parable demonstrating idol creative impotence",
+      "definition": "In 22:73: Those invoked besides Allah never create fly even if gathered together; if fly steals cannot retrieve.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -548,16 +656,61 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Creative incapacity proof."
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Creation as exclusive divine attribute."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-0896",
-      "label": "cand-0896: Topic from 22:75",
-      "definition": "In 22:75: Allah chooses from the angels messengers and from the people. Indeed, Allah is Hearing and Seeing",
+      "candidateId": "cand-0888",
+      "label": "True divine appraisal requiring recognition of Power and Might",
+      "definition": "In 22:74: They have not appraised Allah with true appraisal (haqqa tuqatihi); Allah is Powerful Exalted in Might.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:74",
+          "excerpt": "مَا قَدَرُواْ ٱللَّهَ حَقَّ قَدۡرِهِۦٓۚ إِنَّ ٱللَّهَ لَقَوِيٌّ عَزِيزٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Aziz Qawiyy pairing."
+        },
+        {
+          "topicId": "tawheed-asma-wa-sifat",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Proper estimation required."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0889",
+      "label": "Angel-human messenger selection as divine prerogative",
+      "definition": "In 22:75: Allah chooses from angels messengers and from people; Allah is Hearing Seeing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -567,11 +720,248 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dual messenger source."
+        },
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Human rasul alongside malak."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0890",
+      "label": "Closing sujud-ibadah-ihsan-falah sequence as comprehensive worship formula",
+      "definition": "In 22:77: Bow prostrate worship your Lord do good that you may succeed.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:77",
+          "excerpt": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱرۡكَعُواْ وَٱسۡجُدُواْۤ وَٱعۡبُدُواْ رَبَّكُمۡ وَٱفۡعَلُواْ ٱلۡخَيۡرَ لَعَلَّكُمۡ تُفۡلِحُونَ۩",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ruku'-sujud sequence."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ihsan linked to falah."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0891",
+      "label": "Jihad bi-haqqihi as proportional striving matching divine claim",
+      "definition": "In 22:78: Strive for Allah with striving due to Him (haqqa jihadihi); He chose you no difficulty in religion.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:78",
+          "excerpt": "وَجَٰهِدُواْ فِي ٱللَّهِ حَقَّ جِهَادِهِۦۚ هُوَ ٱجۡتَبَىٰكُمۡ وَمَا جَعَلَ عَلَيۡكُمۡ فِي ٱلدِّينِ مِنۡ حَرَجٖۚ مِّلَّةَ أَبِيكُمۡ إِبۡرَٰهِيمَۚ هُوَ سَمَّىٰكُمُ ٱلۡمُسۡلِمِينَ مِن قَبۡلُ وَفِي هَٰذَا لِيَكُونَ ٱلرَّسُولُ شَهِيدًا عَلَيۡكُمۡ وَتَكُونُواْ شُهَدَآءَ عَلَى ٱلنَّاسِۚ فَأَقِيمُواْ ٱلصَّلَوٰةَ وَءَاتُواْ ٱلزَّكَوٰةَ وَٱعۡتَصِمُواْ بِٱللَّهِ هُوَ مَوۡلَىٰكُمۡۖ فَنِعۡمَ ٱلۡمَوۡلَىٰ وَنِعۡمَ ٱلنَّصِيرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Proportional devotion."
+        },
+        {
+          "topicId": "balance-moderation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "No haraj principle."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0892",
+      "label": "Millat Ibrahim as ancestral creed predating Quranic revelation",
+      "definition": "In 22:78: Creed of your father Ibrahim; He named you Muslims before in this Quran.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:78",
+          "excerpt": "وَجَٰهِدُواْ فِي ٱللَّهِ حَقَّ جِهَادِهِۦۚ هُوَ ٱجۡتَبَىٰكُمۡ وَمَا جَعَلَ عَلَيۡكُمۡ فِي ٱلدِّينِ مِنۡ حَرَجٖۚ مِّلَّةَ أَبِيكُمۡ إِبۡرَٰهِيمَۚ هُوَ سَمَّىٰكُمُ ٱلۡمُسۡلِمِينَ مِن قَبۡلُ وَفِي هَٰذَا لِيَكُونَ ٱلرَّسُولُ شَهِيدًا عَلَيۡكُمۡ وَتَكُونُواْ شُهَدَآءَ عَلَى ٱلنَّاسِۚ فَأَقِيمُواْ ٱلصَّلَوٰةَ وَءَاتُواْ ٱلزَّكَوٰةَ وَٱعۡتَصِمُواْ بِٱللَّهِ هُوَ مَوۡلَىٰكُمۡۖ فَنِعۡمَ ٱلۡمَوۡلَىٰ وَنِعۡمَ ٱلنَّصِيرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ancestral continuity."
+        },
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Islam as primordial identity."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0893",
+      "label": "Night-day alternation and celestial subjection as continuous divine management",
+      "definition": "In 22:61: Allah causes night enter day day enter night; subjected sun moon each running specified term.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:61",
+          "excerpt": "ذَٰلِكَ بِأَنَّ ٱللَّهَ يُولِجُ ٱلَّيۡلَ فِي ٱلنَّهَارِ وَيُولِجُ ٱلنَّهَارَ فِي ٱلَّيۡلِ وَأَنَّ ٱللَّهَ سَمِيعُۢ بَصِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Cosmic regularity as sign."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Taskhir as ongoing management."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0894",
+      "label": "Rain-vegetation cycle as provision sign demonstrating divine kindness",
+      "definition": "In 22:63: Allah sends rain sky earth becomes green; Allah is Kind Aware.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:63",
+          "excerpt": "أَلَمۡ تَرَ أَنَّ ٱللَّهَ أَنزَلَ مِنَ ٱلسَّمَآءِ مَآءٗ فَتُصۡبِحُ ٱلۡأَرۡضُ مُخۡضَرَّةًۚ إِنَّ ٱللَّهَ لَطِيفٌ خَبِيرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Botanical revival as ni'mah."
+        },
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Latif Khabir pairing."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0895",
+      "label": "Individual burden-bearing principle negating vicarious liability",
+      "definition": "In 22:76: Each soul earns its own; no bearer bears burden of another.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:76",
+          "excerpt": "يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۚ وَإِلَى ٱللَّهِ تُرۡجَعُ ٱلۡأُمُورُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La taziru waziratun wizra ukhra."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Exact individual reckoning."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-0896",
+      "label": "Triple closing formula: salah-zakah-tawakkul as believer identity",
+      "definition": "In 22:78: Establish prayer give zakah hold fast to Allah; He is your protector excellent protector excellent helper.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "22:78",
+          "excerpt": "وَجَٰهِدُواْ فِي ٱللَّهِ حَقَّ جِهَادِهِۦۚ هُوَ ٱجۡتَبَىٰكُمۡ وَمَا جَعَلَ عَلَيۡكُمۡ فِي ٱلدِّينِ مِنۡ حَرَجٖۚ مِّلَّةَ أَبِيكُمۡ إِبۡرَٰهِيمَۚ هُوَ سَمَّىٰكُمُ ٱلۡمُسۡلِمِينَ مِن قَبۡلُ وَفِي هَٰذَا لِيَكُونَ ٱلرَّسُولُ شَهِيدًا عَلَيۡكُمۡ وَتَكُونُواْ شُهَدَآءَ عَلَى ٱلنَّاسِۚ فَأَقِيمُواْ ٱلصَّلَوٰةَ وَءَاتُواْ ٱلزَّكَوٰةَ وَٱعۡتَصِمُواْ بِٱللَّهِ هُوَ مَوۡلَىٰكُمۡۖ فَنِعۡمَ ٱلۡمَوۡلَىٰ وَنِعۡمَ ٱلنَّصِيرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prayer",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Salah as first pillar."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tawakkul as closing anchor."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T13:25:00.000Z",
+      "notes": "Wave 3 genuine re-extraction candidate."
     }
   ]
 }
