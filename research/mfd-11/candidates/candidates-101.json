@@ -1,387 +1,487 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:05:00.000Z",
-  "sourceExtraction": "ext-077-p1,ext-077-p2",
+  "generatedAt": "2026-11-20T20:55:00.000Z",
+  "sourceExtraction": "ext-077-p1,ext-077-p2,ext-077-p3,ext-077-p4",
   "candidates": [
     {
-      "candidateId": "cand-2177",
-      "label": "cand-2177: Topic from 77:1",
-      "definition": "In 77:1: By those [winds] sent forth in gusts",
+      "candidateId": "cand-1874",
+      "label": "Five-fold oath by winds and angels guaranteeing the promised Day",
+      "definition": "In 77:1-7: By those winds sent forth in gusts and the winds that blow violently and the winds that spread clouds and those angels who bring criterion and those angels who deliver a message as justification or warning; indeed what you are promised is to occur.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "77:1",
           "excerpt": "وَٱلۡمُرۡسَلَٰتِ عُرۡفٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2178",
-      "label": "cand-2178: Topic from 77:3",
-      "definition": "In 77:3: And [by] the winds that spread [clouds]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:2",
+          "excerpt": "فَٱلۡعَٰصِفَٰتِ عَصۡفٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:3",
           "excerpt": "وَٱلنَّـٰشِرَٰتِ نَشۡرٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2179",
-      "label": "cand-2179: Topic from 77:5",
-      "definition": "In 77:5: And those [angels] who deliver a message",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:4",
+          "excerpt": "فَٱلۡفَٰرِقَٰتِ فَرۡقٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:5",
           "excerpt": "فَٱلۡمُلۡقِيَٰتِ ذِكۡرًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:6",
+          "excerpt": "عُذۡرًا أَوۡ نُذۡرًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:7",
+          "excerpt": "إِنَّمَا تُوعَدُونَ لَوَٰقِعٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qasam quintuple structure."
+        },
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Farq and ilqa' functions."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2180",
-      "label": "cand-2180: Topic from 77:8",
-      "definition": "In 77:8: So when the stars are obliterated",
+      "candidateId": "cand-1875",
+      "label": "Cosmic dissolution sequence preceding the Day of Judgement",
+      "definition": "In 77:8-14: So when the stars are obliterated and when the heaven is opened and when the mountains are blown away and when the messengers' time has come; for what Day was it postponed; for the Day of Judgement; and what can make you know what is the Day of Judgement.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "77:8",
           "excerpt": "فَإِذَا ٱلنُّجُومُ طُمِسَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2181",
-      "label": "cand-2181: Topic from 77:10",
-      "definition": "In 77:10: And when the mountains are blown away",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:9",
+          "excerpt": "وَإِذَا ٱلسَّمَآءُ فُرِجَتۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:10",
           "excerpt": "وَإِذَا ٱلۡجِبَالُ نُسِفَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2182",
-      "label": "cand-2182: Topic from 77:13",
-      "definition": "In 77:13: For the Day of Judgement",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:11",
+          "excerpt": "وَإِذَا ٱلرُّسُلُ أُقِّتَتۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:12",
+          "excerpt": "لِأَيِّ يَوۡمٍ أُجِّلَتۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:13",
           "excerpt": "لِيَوۡمِ ٱلۡفَصۡلِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:14",
+          "excerpt": "وَمَآ أَدۡرَىٰكَ مَا يَوۡمُ ٱلۡفَصۡلِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Tams al-nujum wa-tafattuh al-sama'."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yawm al-fasl defined."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2183",
-      "label": "cand-2183: Topic from 77:15",
-      "definition": "In 77:15: Woe, that Day, to the deniers",
+      "candidateId": "cand-1876",
+      "label": "Destruction of former and later peoples as the criminal-dealing pattern",
+      "definition": "In 77:16-19: Did We not destroy the former peoples; then We will follow them with the later ones; thus do We deal with the criminals; woe that Day to the deniers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "77:15",
-          "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
+          "key": "77:16",
+          "excerpt": "أَلَمۡ نُهۡلِكِ ٱلۡأَوَّلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2184",
-      "label": "cand-2184: Topic from 77:17",
-      "definition": "In 77:17: Then We will follow them with the later ones",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:17",
           "excerpt": "ثُمَّ نُتۡبِعُهُمُ ٱلۡأٓخِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:18",
+          "excerpt": "كَذَٰلِكَ نَفۡعَلُ بِٱلۡمُجۡرِمِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:19",
+          "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ihlak al-awwalin wa'l-akhirin."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Pattern applied universally."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2185",
-      "label": "cand-2185: Topic from 77:20",
-      "definition": "In 77:20: Did We not create you from a liquid disdained",
+      "candidateId": "cand-1877",
+      "label": "Embryological creation from disdained liquid in firm lodging for known extent",
+      "definition": "In 77:20-24: Did We not create you from a liquid disdained; and We placed it in a firm lodging; for a known extent; and We determined it and excellent are We to determine.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "77:20",
           "excerpt": "أَلَمۡ نَخۡلُقكُّم مِّن مَّآءٖ مَّهِينٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2186",
-      "label": "cand-2186: Topic from 77:22",
-      "definition": "In 77:22: For a known extent",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:21",
+          "excerpt": "فَجَعَلۡنَٰهُ فِي قَرَارٖ مَّكِينٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:22",
           "excerpt": "إِلَىٰ قَدَرٖ مَّعۡلُومٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:23",
+          "excerpt": "فَقَدَرۡنَا فَنِعۡمَ ٱلۡقَٰدِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:24",
+          "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ma' mahin fi qarar makin."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ni'm al-qadirun affirmed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2187",
-      "label": "cand-2187: Topic from 77:26",
-      "definition": "In 77:26: Of the living and the dead",
+      "candidateId": "cand-1878",
+      "label": "Earth as container for living and dead with mountains and sweet water",
+      "definition": "In 77:25-28: Have We not made the earth a container of the living and the dead; and We placed therein lofty firmly set mountains and have given you to drink sweet water; woe that Day to the deniers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "77:25",
+          "excerpt": "أَلَمۡ نَجۡعَلِ ٱلۡأَرۡضَ كِفَاتًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:26",
           "excerpt": "أَحۡيَآءٗ وَأَمۡوَٰتٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2188",
-      "label": "cand-2188: Topic from 77:28",
-      "definition": "In 77:28: Woe, that Day, to the deniers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:27",
+          "excerpt": "وَجَعَلۡنَا فِيهَا رَوَٰسِيَ شَٰمِخَٰتٖ وَأَسۡقَيۡنَٰكُم مَّآءٗ فُرَاتٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:28",
           "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ardu kifatan and rawasiya."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ma' furat as provision."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2189",
-      "label": "cand-2189: Topic from 77:30",
-      "definition": "In 77:30: Proceed to a shadow [of smoke] having three columns",
+      "candidateId": "cand-1879",
+      "label": "Three-columned smoke-shadow with fortress-sized sparks as punishment environment",
+      "definition": "In 77:29-34: Proceed to that which you used to deny; proceed to a shadow of smoke having three columns; no cool shade and availing not against the flame; indeed it throws sparks as huge as a fortress as if they were yellowish black camels.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "77:29",
+          "excerpt": "ٱنطَلِقُوٓاْ إِلَىٰ مَا كُنتُم بِهِۦ تُكَذِّبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:30",
           "excerpt": "ٱنطَلِقُوٓاْ إِلَىٰ ظِلّٖ ذِي ثَلَٰثِ شُعَبٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2190",
-      "label": "cand-2190: Topic from 77:33",
-      "definition": "In 77:33: As if they were yellowish [black] camels",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:31",
+          "excerpt": "لَّا ظَلِيلٖ وَلَا يُغۡنِي مِنَ ٱللَّهَبِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:32",
+          "excerpt": "إِنَّهَا تَرۡمِي بِشَرَرٖ كَٱلۡقَصۡرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:33",
           "excerpt": "كَأَنَّهُۥ جِمَٰلَتٞ صُفۡرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:34",
+          "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zill thalath shu'ab imagery."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sharar ka'l-qasr scale."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2191",
-      "label": "cand-2191: Topic from 77:35",
-      "definition": "In 77:35: This is a Day they will not speak",
+      "candidateId": "cand-1880",
+      "label": "Speechlessness and excuse-prohibition on the assembly Day",
+      "definition": "In 77:35-37: This is a Day they will not speak; nor will it be permitted for them to make an excuse; woe that Day to the deniers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "77:35",
           "excerpt": "هَٰذَا يَوۡمُ لَا يَنطِقُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2192",
-      "label": "cand-2192: Topic from 77:38",
-      "definition": "In 77:38: This is the Day of Judgement; We will have assembled you and the former peoples",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "77:38",
-          "excerpt": "هَٰذَا يَوۡمُ ٱلۡفَصۡلِۖ جَمَعۡنَٰكُمۡ وَٱلۡأَوَّلِينَ",
+          "key": "77:36",
+          "excerpt": "وَلَا يُؤۡذَنُ لَهُمۡ فَيَعۡتَذِرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2193",
-      "label": "cand-2193: Topic from 77:40",
-      "definition": "In 77:40: Woe, that Day, to the deniers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "77:40",
+          "key": "77:37",
           "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La yantiqun wa-la yu'dhan lahum."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Silence as verdict."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2194",
-      "label": "cand-2194: Topic from 77:42",
-      "definition": "In 77:42: And fruits from whatever they desire",
+      "candidateId": "cand-1881",
+      "label": "Righteous rewarded with shades, springs and desired fruits for their deeds",
+      "definition": "In 77:41-44: Indeed the righteous will be among shades and springs and fruits from whatever they desire; being told eat and drink in satisfaction for what you used to do; indeed We thus reward the doers of good.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "77:41",
+          "excerpt": "إِنَّ ٱلۡمُتَّقِينَ فِي ظِلَٰلٖ وَعُيُونٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "77:42",
           "excerpt": "وَفَوَٰكِهَ مِمَّا يَشۡتَهُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:43",
+          "excerpt": "كُلُواْ وَٱشۡرَبُواْ هَنِيٓـَٔۢا بِمَا كُنتُمۡ تَعۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "77:44",
+          "excerpt": "إِنَّا كَذَٰلِكَ نَجۡزِي ٱلۡمُحۡسِنِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Zilal wa-'uyun wa-fakihah."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Jaza' linked to amal."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2195",
-      "label": "cand-2195: Topic from 77:45",
-      "definition": "In 77:45: Woe, that Day, to the deniers",
+      "candidateId": "cand-1882",
+      "label": "Closing challenge: no statement after the Quran warrants belief",
+      "definition": "In 77:50: Then in what statement after the Quran will they believe.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "77:45",
-          "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
+          "key": "77:50",
+          "excerpt": "فَبِأَيِّ حَدِيثِۭ بَعۡدَهُۥ يُؤۡمِنُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2196",
-      "label": "cand-2196: Topic from 77:47",
-      "definition": "In 77:47: Woe, that Day, to the deniers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "77:47",
-          "excerpt": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Finality of Quran as hujjah."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rejection exhausts alternatives."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T20:55:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     }
   ]
 }
