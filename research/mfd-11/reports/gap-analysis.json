@@ -2,71 +2,17 @@
   "workstream": "MFD-11",
   "pass": "B",
   "phase": "gap-analysis",
-  "generatedAt": "2026-11-19T12:21:01.916Z",
+  "generatedAt": "2026-11-20T17:06:44.848Z",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
   "methodology": "Keyword matching against full corpus translations (Saheeh International). Threshold: >=2 keyword hits per verse. Classification: extraction-gap (>=5 matching verses), partial-evidence (1-4 matches), editorial-or-no-evidence (0 matches).",
   "summary": {
-    "totalUncoveredTopics": 114,
-    "extractionGaps": 45,
-    "partialEvidence": 34,
-    "editorialOrNoEvidence": 35
+    "totalUncoveredTopics": 72,
+    "extractionGaps": 22,
+    "partialEvidence": 22,
+    "editorialOrNoEvidence": 28
   },
   "extractionGaps": [
-    {
-      "topicId": "khalifah-vicegerent",
-      "title": "Khalifah (Vicegerent)",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "human-creation-purpose",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 218,
-      "topMatchingVerses": [
-        "5:18",
-        "2:22",
-        "2:27",
-        "2:30",
-        "2:60"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "diversity-divine-sign",
-      "title": "Diversity as Divine Sign",
-      "parentDomainId": "society-justice",
-      "parentDimensionId": "equality-diversity",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 182,
-      "topMatchingVerses": [
-        "30:22",
-        "2:61",
-        "2:73",
-        "2:118",
-        "2:164"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "angelic-duties",
-      "title": "Angelic Duties",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "angels-unseen-world",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 106,
-      "topMatchingVerses": [
-        "6:61",
-        "2:30",
-        "2:31",
-        "2:34",
-        "2:98"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
     {
       "topicId": "ikhlas-sincerity",
       "title": "Ikhlas (Sincerity)",
@@ -122,24 +68,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "wealth-ownership",
-      "title": "Wealth Ownership",
-      "parentDomainId": "economic-conduct",
-      "parentDimensionId": "wealth-property",
-      "classification": "extraction-gap",
-      "keywordCount": 10,
-      "matchingVerseCount": 69,
-      "topMatchingVerses": [
-        "3:75",
-        "2:112",
-        "2:177",
-        "2:247",
-        "2:256"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "father-rights",
       "title": "Father's Rights",
       "parentDomainId": "family-relationships",
@@ -153,24 +81,6 @@
         "2:170",
         "2:200",
         "4:22"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "faith-increase-decrease",
-      "title": "Faith Increase & Decrease",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "iman-faith-pillars",
-      "classification": "extraction-gap",
-      "keywordCount": 9,
-      "matchingVerseCount": 54,
-      "topMatchingVerses": [
-        "2:247",
-        "5:64",
-        "8:2",
-        "17:60",
-        "49:7"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -207,132 +117,6 @@
         "2:164",
         "2:259",
         "3:190"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "environmental-corruption",
-      "title": "Environmental Corruption",
-      "parentDomainId": "environment-stewardship",
-      "parentDimensionId": "fasad-prohibition",
-      "classification": "extraction-gap",
-      "keywordCount": 11,
-      "matchingVerseCount": 49,
-      "topMatchingVerses": [
-        "7:85",
-        "39:74",
-        "2:11",
-        "2:27",
-        "2:30"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "divine-wisdom",
-      "title": "Divine Wisdom",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "divine-decree-qadr",
-      "classification": "extraction-gap",
-      "keywordCount": 9,
-      "matchingVerseCount": 42,
-      "topMatchingVerses": [
-        "4:77",
-        "15:60",
-        "34:21",
-        "2:183",
-        "2:187"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "shaytan-enemy",
-      "title": "Shaytan as Enemy",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "angels-unseen-world",
-      "classification": "extraction-gap",
-      "keywordCount": 10,
-      "matchingVerseCount": 38,
-      "topMatchingVerses": [
-        "7:27",
-        "17:27",
-        "28:15",
-        "35:6",
-        "2:98"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "tawheed-asma-wa-sifat",
-      "title": "Tawheed al-Asma wa as-Sifat",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "tawheed-oneness",
-      "classification": "extraction-gap",
-      "keywordCount": 11,
-      "matchingVerseCount": 37,
-      "topMatchingVerses": [
-        "2:61",
-        "2:212",
-        "2:240",
-        "3:21",
-        "3:37"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "human-creation",
-      "title": "Human Creation",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "human-creation-purpose",
-      "classification": "extraction-gap",
-      "keywordCount": 7,
-      "matchingVerseCount": 37,
-      "topMatchingVerses": [
-        "5:18",
-        "7:11",
-        "15:28",
-        "15:33",
-        "25:54"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "hud-story",
-      "title": "Story of Hud",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "minor-prophets",
-      "classification": "extraction-gap",
-      "keywordCount": 5,
-      "matchingVerseCount": 36,
-      "topMatchingVerses": [
-        "3:68",
-        "2:213",
-        "2:251",
-        "3:21",
-        "3:79"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "salih-story",
-      "title": "Story of Salih",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "minor-prophets",
-      "classification": "extraction-gap",
-      "keywordCount": 6,
-      "matchingVerseCount": 33,
-      "topMatchingVerses": [
-        "7:73",
-        "11:61",
-        "17:59",
-        "22:42",
-        "2:213"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -410,24 +194,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "jinn-creation",
-      "title": "Jinn Creation",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "angels-unseen-world",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 29,
-      "topMatchingVerses": [
-        "55:15",
-        "15:27",
-        "2:29",
-        "3:191",
-        "6:100"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "seal-of-prophethood",
       "title": "Seal of Prophethood",
       "parentDomainId": "prophets-narratives",
@@ -464,24 +230,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "animals-as-communities",
-      "title": "Animals as Communities",
-      "parentDomainId": "creation-signs",
-      "parentDimensionId": "animals-creation",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 23,
-      "topMatchingVerses": [
-        "2:205",
-        "2:173",
-        "2:196",
-        "5:1",
-        "5:2"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "iman-and-amal",
       "title": "Iman & Amal Relationship",
       "parentDomainId": "belief-theology",
@@ -495,78 +243,6 @@
         "2:217",
         "3:167",
         "3:177"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "prophet-vs-messenger",
-      "title": "Prophet vs Messenger",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "prophethood-messengership",
-      "classification": "extraction-gap",
-      "keywordCount": 6,
-      "matchingVerseCount": 19,
-      "topMatchingVerses": [
-        "2:136",
-        "2:285",
-        "3:81",
-        "3:84",
-        "4:69"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "nuh-story",
-      "title": "Story of Nuh",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "major-prophets-stories",
-      "classification": "extraction-gap",
-      "keywordCount": 7,
-      "matchingVerseCount": 12,
-      "topMatchingVerses": [
-        "4:163",
-        "11:41",
-        "11:48",
-        "19:41",
-        "19:58"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "adam-story",
-      "title": "Story of Adam",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "major-prophets-stories",
-      "classification": "extraction-gap",
-      "keywordCount": 7,
-      "matchingVerseCount": 11,
-      "topMatchingVerses": [
-        "2:37",
-        "5:27",
-        "17:51",
-        "19:41",
-        "19:58"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "old-age-wisdom",
-      "title": "Old Age & Wisdom",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "life-stages",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 11,
-      "topMatchingVerses": [
-        "2:90",
-        "2:266",
-        "3:40",
-        "3:180",
-        "14:39"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -662,60 +338,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "qadr-four-levels",
-      "title": "Four Levels of Qadr",
-      "parentDomainId": "belief-theology",
-      "parentDimensionId": "divine-decree-qadr",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 7,
-      "topMatchingVerses": [
-        "3:18",
-        "30:22",
-        "30:56",
-        "35:1",
-        "38:69"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "lut-story",
-      "title": "Story of Lut",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "minor-prophets",
-      "classification": "extraction-gap",
-      "keywordCount": 7,
-      "matchingVerseCount": 7,
-      "topMatchingVerses": [
-        "7:80",
-        "19:41",
-        "27:54",
-        "29:28",
-        "33:30"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "yusuf-dreams",
-      "title": "Yusuf's Dreams",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "dreams-visions",
-      "classification": "extraction-gap",
-      "keywordCount": 7,
-      "matchingVerseCount": 7,
-      "topMatchingVerses": [
-        "12:44",
-        "12:101",
-        "12:4",
-        "12:21",
-        "12:36"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "media-responsibility",
       "title": "Media Responsibility",
       "parentDomainId": "society-justice",
@@ -729,24 +351,6 @@
         "6:34",
         "10:53",
         "33:53"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "marriage-importance",
-      "title": "Importance of Marriage",
-      "parentDomainId": "family-relationships",
-      "parentDimensionId": "marriage-nikah",
-      "classification": "extraction-gap",
-      "keywordCount": 8,
-      "matchingVerseCount": 5,
-      "topMatchingVerses": [
-        "4:25",
-        "2:237",
-        "5:5",
-        "49:17",
-        "60:10"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -783,24 +387,6 @@
         "11:85",
         "26:183",
         "29:36"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "work-honor",
-      "title": "Honor of Work",
-      "parentDomainId": "work-vocation",
-      "parentDimensionId": "work-dignity",
-      "classification": "extraction-gap",
-      "keywordCount": 5,
-      "matchingVerseCount": 5,
-      "topMatchingVerses": [
-        "3:39",
-        "11:73",
-        "26:58",
-        "35:10",
-        "85:15"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -860,23 +446,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "dream-interpretation",
-      "title": "Dream Interpretation",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "dreams-visions",
-      "classification": "partial-evidence",
-      "keywordCount": 7,
-      "matchingVerseCount": 4,
-      "topMatchingVerses": [
-        "12:36",
-        "12:44",
-        "12:101",
-        "21:5"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "hajj-rites",
       "title": "Hajj Rites",
       "parentDomainId": "worship-practice",
@@ -889,57 +458,6 @@
         "2:125",
         "2:198",
         "5:2"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "prophetic-character",
-      "title": "Prophetic Character",
-      "parentDomainId": "ethics-character",
-      "parentDimensionId": "character-development",
-      "classification": "partial-evidence",
-      "keywordCount": 5,
-      "matchingVerseCount": 4,
-      "topMatchingVerses": [
-        "33:30",
-        "65:1",
-        "66:10",
-        "68:4"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "human-dignity",
-      "title": "Human Dignity",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "human-creation-purpose",
-      "classification": "partial-evidence",
-      "keywordCount": 6,
-      "matchingVerseCount": 4,
-      "topMatchingVerses": [
-        "5:18",
-        "30:20",
-        "36:15",
-        "64:6"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "life-purpose",
-      "title": "Purpose of Life",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "human-creation-purpose",
-      "classification": "partial-evidence",
-      "keywordCount": 9,
-      "matchingVerseCount": 4,
-      "topMatchingVerses": [
-        "7:29",
-        "7:152",
-        "20:131",
-        "67:2"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -978,22 +496,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "yunus-story",
-      "title": "Story of Yunus",
-      "parentDomainId": "prophets-narratives",
-      "parentDimensionId": "major-prophets-stories",
-      "classification": "partial-evidence",
-      "keywordCount": 7,
-      "matchingVerseCount": 3,
-      "topMatchingVerses": [
-        "4:163",
-        "19:41",
-        "66:8"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "spousal-love-mercy",
       "title": "Spousal Love & Mercy",
       "parentDomainId": "family-relationships",
@@ -1021,22 +523,6 @@
         "4:127",
         "9:69",
         "22:5"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "water-conservation",
-      "title": "Water Conservation",
-      "parentDomainId": "environment-stewardship",
-      "parentDimensionId": "environmental-protection",
-      "classification": "partial-evidence",
-      "keywordCount": 8,
-      "matchingVerseCount": 3,
-      "topMatchingVerses": [
-        "2:74",
-        "47:15",
-        "58:22"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -1174,48 +660,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "lying",
-      "title": "Lying",
-      "parentDomainId": "ethics-character",
-      "parentDimensionId": "moral-vice",
-      "classification": "partial-evidence",
-      "keywordCount": 7,
-      "matchingVerseCount": 1,
-      "topMatchingVerses": [
-        "4:103"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "fitrah-nature",
-      "title": "Fitrah (Natural Disposition)",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "human-creation-purpose",
-      "classification": "partial-evidence",
-      "keywordCount": 8,
-      "matchingVerseCount": 1,
-      "topMatchingVerses": [
-        "30:30"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "knowledge-seeking",
-      "title": "Seeking Knowledge",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "intellect-reason",
-      "classification": "partial-evidence",
-      "keywordCount": 8,
-      "matchingVerseCount": 1,
-      "topMatchingVerses": [
-        "3:7"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "polygyny-conditions",
       "title": "Polygyny Conditions",
       "parentDomainId": "family-relationships",
@@ -1253,48 +697,6 @@
       "matchingVerseCount": 1,
       "topMatchingVerses": [
         "2:275"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "haram-food",
-      "title": "Haram Food",
-      "parentDomainId": "law-obligations",
-      "parentDimensionId": "food-dietary-laws",
-      "classification": "partial-evidence",
-      "keywordCount": 8,
-      "matchingVerseCount": 1,
-      "topMatchingVerses": [
-        "5:3"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "prophetic-medicine",
-      "title": "Prophetic Medicine",
-      "parentDomainId": "health-medicine",
-      "parentDimensionId": "healing-medicine",
-      "classification": "partial-evidence",
-      "keywordCount": 12,
-      "matchingVerseCount": 1,
-      "topMatchingVerses": [
-        "5:44"
-      ],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "leadership-qualities",
-      "title": "Leadership Qualities",
-      "parentDomainId": "governance-political-authority",
-      "parentDimensionId": "leadership-authority",
-      "classification": "partial-evidence",
-      "keywordCount": 6,
-      "matchingVerseCount": 1,
-      "topMatchingVerses": [
-        "3:18"
       ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review"
@@ -1368,18 +770,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "quran-abrogation",
-      "title": "Quran Abrogation",
-      "parentDomainId": "revelation-guidance",
-      "parentDimensionId": "quran-science",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 6,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "sunnah-definition",
       "title": "Sunnah Definition",
       "parentDomainId": "revelation-guidance",
@@ -1430,18 +820,6 @@
     {
       "topicId": "sunnah-prayers",
       "title": "Sunnah Prayers",
-      "parentDomainId": "worship-practice",
-      "parentDimensionId": "salah-prayer",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 6,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "dua-etiquette",
-      "title": "Dua Etiquette",
       "parentDomainId": "worship-practice",
       "parentDimensionId": "salah-prayer",
       "classification": "editorial-or-no-evidence",
@@ -1572,18 +950,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "intellect-importance",
-      "title": "Importance of Intellect",
-      "parentDomainId": "human-experiences",
-      "parentDimensionId": "intellect-reason",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 8,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "critical-thinking",
       "title": "Critical Thinking",
       "parentDomainId": "human-experiences",
@@ -1632,18 +998,6 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "intimacy-ethics",
-      "title": "Intimacy Ethics",
-      "parentDomainId": "family-relationships",
-      "parentDimensionId": "spousal-relations",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 7,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "poverty-causes",
       "title": "Causes of Poverty",
       "parentDomainId": "society-justice",
@@ -1668,48 +1022,12 @@
       "reviewStatus": "pending-scholarly-review"
     },
     {
-      "topicId": "business-ethics",
-      "title": "Business Ethics",
-      "parentDomainId": "economic-conduct",
-      "parentDimensionId": "trade-commerce",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 8,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
       "topicId": "shura-principle",
       "title": "Shura (Consultation) Principle",
       "parentDomainId": "governance-political-authority",
       "parentDimensionId": "shura-consultation",
       "classification": "editorial-or-no-evidence",
       "keywordCount": 6,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "dialogue-principles",
-      "title": "Interfaith Dialogue Principles",
-      "parentDomainId": "interfaith-communities",
-      "parentDimensionId": "interfaith-dialogue",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 7,
-      "matchingVerseCount": 0,
-      "topMatchingVerses": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review"
-    },
-    {
-      "topicId": "quranic-vocabulary",
-      "title": "Quranic Vocabulary",
-      "parentDomainId": "language-vocabulary",
-      "parentDimensionId": "quranic-vocabulary",
-      "classification": "editorial-or-no-evidence",
-      "keywordCount": 7,
       "matchingVerseCount": 0,
       "topMatchingVerses": [],
       "proposedBy": "ai-assisted",

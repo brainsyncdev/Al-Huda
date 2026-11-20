@@ -2,7 +2,7 @@
   "workstream": "MFD-11",
   "pass": "B",
   "phase": "proposed-hierarchy",
-  "generatedAt": "2026-11-19T12:21:52.624Z",
+  "generatedAt": "2026-11-20T17:06:44.913Z",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
   "summary": {
@@ -10,16 +10,16 @@
     "totalDimensions": 72,
     "totalTopics": 184,
     "dispositionBreakdown": {
-      "needs-re-extraction": 45,
-      "validated-by-extraction": 70,
-      "scholarly-review-required": 35,
-      "partial-coverage-review": 34
+      "needs-re-extraction": 22,
+      "validated-by-extraction": 112,
+      "scholarly-review-required": 28,
+      "partial-coverage-review": 22
     },
-    "totalCandidatesReferenced": 2918,
-    "existingTopicsCovered": 70,
-    "extractionGapsFlagged": 45,
-    "partialCoverage": 34,
-    "scholarlyReviewRequired": 35
+    "totalCandidatesReferenced": 1999,
+    "existingTopicsCovered": 112,
+    "extractionGapsFlagged": 22,
+    "partialCoverage": 22,
+    "scholarlyReviewRequired": 28
   },
   "hierarchy": [
     {
@@ -52,8 +52,8 @@
               "topicId": "asma-ul-husna",
               "title": "Asma ul Husna",
               "disposition": "validated-by-extraction",
-              "candidateCount": 4,
-              "evidenceKeyCount": 6,
+              "candidateCount": 42,
+              "evidenceKeyCount": 71,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -62,8 +62,8 @@
               "topicId": "divine-mercy",
               "title": "Divine Mercy",
               "disposition": "validated-by-extraction",
-              "candidateCount": 13,
-              "evidenceKeyCount": 22,
+              "candidateCount": 49,
+              "evidenceKeyCount": 59,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -72,8 +72,8 @@
               "topicId": "divine-wrath",
               "title": "Divine Wrath",
               "disposition": "validated-by-extraction",
-              "candidateCount": 3,
-              "evidenceKeyCount": 4,
+              "candidateCount": 78,
+              "evidenceKeyCount": 148,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -82,8 +82,8 @@
               "topicId": "divine-knowledge",
               "title": "Divine Knowledge",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 50,
+              "evidenceKeyCount": 76,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -92,8 +92,8 @@
               "topicId": "divine-power",
               "title": "Divine Power",
               "disposition": "validated-by-extraction",
-              "candidateCount": 15,
-              "evidenceKeyCount": 27,
+              "candidateCount": 106,
+              "evidenceKeyCount": 171,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -103,16 +103,6 @@
         {
           "dimensionId": "tawheed-oneness",
           "topics": [
-            {
-              "topicId": "tawheed-asma-wa-sifat",
-              "title": "Tawheed al-Asma wa as-Sifat",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 37,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
             {
               "topicId": "tawheed-evidence",
               "title": "Evidence for Tawheed",
@@ -127,8 +117,8 @@
               "topicId": "tawheed-rububiyyah",
               "title": "Tawheed ar-Rububiyyah",
               "disposition": "validated-by-extraction",
-              "candidateCount": 5,
-              "evidenceKeyCount": 6,
+              "candidateCount": 49,
+              "evidenceKeyCount": 73,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -137,8 +127,18 @@
               "topicId": "tawheed-uluhiyyah",
               "title": "Tawheed al-Uluhiyyah",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 2,
+              "candidateCount": 35,
+              "evidenceKeyCount": 53,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "tawheed-asma-wa-sifat",
+              "title": "Tawheed al-Asma wa as-Sifat",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 12,
+              "evidenceKeyCount": 17,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -147,8 +147,8 @@
               "topicId": "shirk-prohibition",
               "title": "Shirk Prohibition",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 4,
+              "candidateCount": 48,
+              "evidenceKeyCount": 69,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -158,16 +158,6 @@
         {
           "dimensionId": "iman-faith-pillars",
           "topics": [
-            {
-              "topicId": "faith-increase-decrease",
-              "title": "Faith Increase & Decrease",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 54,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
             {
               "topicId": "iman-and-amal",
               "title": "Iman & Amal Relationship",
@@ -184,6 +174,16 @@
               "disposition": "validated-by-extraction",
               "candidateCount": 1,
               "evidenceKeyCount": 1,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "faith-increase-decrease",
+              "title": "Faith Increase & Decrease",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 70,
+              "evidenceKeyCount": 88,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -216,30 +216,10 @@
             {
               "topicId": "angelic-duties",
               "title": "Angelic Duties",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 106,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "jinn-creation",
-              "title": "Jinn Creation",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 29,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "shaytan-enemy",
-              "title": "Shaytan as Enemy",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 38,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 34,
+              "evidenceKeyCount": 98,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
@@ -254,11 +234,31 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
+              "topicId": "jinn-creation",
+              "title": "Jinn Creation",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 8,
+              "evidenceKeyCount": 11,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "shaytan-enemy",
+              "title": "Shaytan as Enemy",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 34,
+              "evidenceKeyCount": 49,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
               "topicId": "unseen-belief",
               "title": "Belief in Unseen",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 20,
+              "evidenceKeyCount": 32,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -268,26 +268,6 @@
         {
           "dimensionId": "divine-decree-qadr",
           "topics": [
-            {
-              "topicId": "qadr-four-levels",
-              "title": "Four Levels of Qadr",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 7,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "divine-wisdom",
-              "title": "Divine Wisdom",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 42,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
             {
               "topicId": "qadr-and-dua",
               "title": "Qadr & Dua",
@@ -299,11 +279,31 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
+              "topicId": "qadr-four-levels",
+              "title": "Four Levels of Qadr",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "divine-wisdom",
+              "title": "Divine Wisdom",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 12,
+              "evidenceKeyCount": 12,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
               "topicId": "predestination-free-will",
               "title": "Predestination & Free Will",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 2,
+              "candidateCount": 38,
+              "evidenceKeyCount": 60,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -339,21 +339,11 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "quran-abrogation",
-              "title": "Quran Abrogation",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 0,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
               "topicId": "quran-revelation-process",
               "title": "Quran Revelation Process",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 3,
+              "candidateCount": 105,
+              "evidenceKeyCount": 166,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -361,6 +351,16 @@
             {
               "topicId": "quran-preservation",
               "title": "Quran Preservation",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 15,
+              "evidenceKeyCount": 32,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "quran-abrogation",
+              "title": "Quran Abrogation",
               "disposition": "validated-by-extraction",
               "candidateCount": 1,
               "evidenceKeyCount": 1,
@@ -474,16 +474,6 @@
           "dimensionId": "prophethood-messengership",
           "topics": [
             {
-              "topicId": "prophet-vs-messenger",
-              "title": "Prophet vs Messenger",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 19,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
               "topicId": "seal-of-prophethood",
               "title": "Seal of Prophethood",
               "disposition": "needs-re-extraction",
@@ -497,8 +487,18 @@
               "topicId": "prophet-definition",
               "title": "Prophet Definition",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 2,
+              "candidateCount": 56,
+              "evidenceKeyCount": 120,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "prophet-vs-messenger",
+              "title": "Prophet vs Messenger",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 3,
+              "evidenceKeyCount": 3,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -511,30 +511,10 @@
             {
               "topicId": "adam-story",
               "title": "Story of Adam",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 11,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "nuh-story",
-              "title": "Story of Nuh",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 12,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "yunus-story",
-              "title": "Story of Yunus",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 3,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 3,
+              "evidenceKeyCount": 3,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
@@ -542,8 +522,8 @@
               "topicId": "ibrahim-story",
               "title": "Story of Ibrahim",
               "disposition": "validated-by-extraction",
-              "candidateCount": 10,
-              "evidenceKeyCount": 25,
+              "candidateCount": 32,
+              "evidenceKeyCount": 63,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -552,8 +532,8 @@
               "topicId": "musa-story",
               "title": "Story of Musa",
               "disposition": "validated-by-extraction",
-              "candidateCount": 6,
-              "evidenceKeyCount": 13,
+              "candidateCount": 48,
+              "evidenceKeyCount": 66,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -562,8 +542,8 @@
               "topicId": "isa-story",
               "title": "Story of Isa",
               "disposition": "validated-by-extraction",
-              "candidateCount": 20,
-              "evidenceKeyCount": 28,
+              "candidateCount": 23,
+              "evidenceKeyCount": 31,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -572,8 +552,28 @@
               "topicId": "muhammad-story",
               "title": "Story of Muhammad",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "nuh-story",
+              "title": "Story of Nuh",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 9,
+              "evidenceKeyCount": 15,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "yunus-story",
+              "title": "Story of Yunus",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 4,
+              "evidenceKeyCount": 9,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -586,30 +586,30 @@
             {
               "topicId": "hud-story",
               "title": "Story of Hud",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 36,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
               "topicId": "salih-story",
               "title": "Story of Salih",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 33,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
               "topicId": "lut-story",
               "title": "Story of Lut",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 7,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 6,
+              "evidenceKeyCount": 9,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -619,22 +619,22 @@
           "dimensionId": "dreams-visions",
           "topics": [
             {
-              "topicId": "yusuf-dreams",
-              "title": "Yusuf's Dreams",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 7,
+              "topicId": "dream-interpretation",
+              "title": "Dream Interpretation",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 4,
+              "evidenceKeyCount": 4,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "dream-interpretation",
-              "title": "Dream Interpretation",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 4,
+              "topicId": "yusuf-dreams",
+              "title": "Yusuf's Dreams",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -689,16 +689,6 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "dua-etiquette",
-              "title": "Dua Etiquette",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 0,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
               "topicId": "dua-answers",
               "title": "Answers to Dua",
               "disposition": "scholarly-review-required",
@@ -714,6 +704,16 @@
               "disposition": "validated-by-extraction",
               "candidateCount": 3,
               "evidenceKeyCount": 3,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "dua-etiquette",
+              "title": "Dua Etiquette",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -942,8 +942,8 @@
               "topicId": "shukr-gratitude",
               "title": "Shukr (Gratitude)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 5,
-              "evidenceKeyCount": 6,
+              "candidateCount": 8,
+              "evidenceKeyCount": 9,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -962,8 +962,8 @@
               "topicId": "balance-moderation",
               "title": "Balance & Moderation (Wasat)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 2,
+              "candidateCount": 12,
+              "evidenceKeyCount": 15,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -972,8 +972,8 @@
               "topicId": "gratitude-ingratitude",
               "title": "Gratitude & Ingratitude",
               "disposition": "validated-by-extraction",
-              "candidateCount": 3,
-              "evidenceKeyCount": 4,
+              "candidateCount": 21,
+              "evidenceKeyCount": 22,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -982,8 +982,8 @@
               "topicId": "patience-haste",
               "title": "Patience & Haste",
               "disposition": "validated-by-extraction",
-              "candidateCount": 6,
-              "evidenceKeyCount": 8,
+              "candidateCount": 10,
+              "evidenceKeyCount": 12,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1019,16 +1019,6 @@
           "dimensionId": "moral-vice",
           "topics": [
             {
-              "topicId": "lying",
-              "title": "Lying",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 1,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
               "topicId": "backbiting",
               "title": "Backbiting (Ghibah)",
               "disposition": "scholarly-review-required",
@@ -1062,8 +1052,8 @@
               "topicId": "envy-hasad",
               "title": "Envy (Hasad)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1072,8 +1062,18 @@
               "topicId": "pride-kibr",
               "title": "Pride (Kibr)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 38,
+              "evidenceKeyCount": 66,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "lying",
+              "title": "Lying",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 4,
+              "evidenceKeyCount": 10,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1096,10 +1096,10 @@
             {
               "topicId": "prophetic-character",
               "title": "Prophetic Character",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 4,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 29,
+              "evidenceKeyCount": 31,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -1116,50 +1116,50 @@
             {
               "topicId": "human-creation",
               "title": "Human Creation",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 37,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "khalifah-vicegerent",
-              "title": "Khalifah (Vicegerent)",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 218,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 40,
+              "evidenceKeyCount": 96,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
               "topicId": "fitrah-nature",
               "title": "Fitrah (Natural Disposition)",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 1,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 3,
+              "evidenceKeyCount": 3,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "khalifah-vicegerent",
+              "title": "Khalifah (Vicegerent)",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
               "topicId": "human-dignity",
               "title": "Human Dignity",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 4,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 5,
+              "evidenceKeyCount": 5,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
               "topicId": "life-purpose",
               "title": "Purpose of Life",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 4,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 10,
+              "evidenceKeyCount": 10,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -1168,16 +1168,6 @@
         {
           "dimensionId": "life-stages",
           "topics": [
-            {
-              "topicId": "old-age-wisdom",
-              "title": "Old Age & Wisdom",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 11,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
             {
               "topicId": "youth-adolescence",
               "title": "Youth & Adolescence",
@@ -1207,6 +1197,16 @@
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "old-age-wisdom",
+              "title": "Old Age & Wisdom",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
             }
           ]
         },
@@ -1214,18 +1214,8 @@
           "dimensionId": "intellect-reason",
           "topics": [
             {
-              "topicId": "knowledge-seeking",
-              "title": "Seeking Knowledge",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 1,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
-              "topicId": "intellect-importance",
-              "title": "Importance of Intellect",
+              "topicId": "critical-thinking",
+              "title": "Critical Thinking",
               "disposition": "scholarly-review-required",
               "candidateCount": 0,
               "evidenceKeyCount": 0,
@@ -1234,11 +1224,11 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "critical-thinking",
-              "title": "Critical Thinking",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
+              "topicId": "intellect-importance",
+              "title": "Importance of Intellect",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 11,
+              "evidenceKeyCount": 11,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1254,11 +1244,21 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
+              "topicId": "knowledge-seeking",
+              "title": "Seeking Knowledge",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 14,
+              "evidenceKeyCount": 14,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
               "topicId": "signs-and-reflection",
               "title": "Signs & Reflection (Ayat/Tafakkur)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 2,
+              "candidateCount": 215,
+              "evidenceKeyCount": 378,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1267,8 +1267,8 @@
               "topicId": "knowledge-ignorance",
               "title": "Knowledge & Ignorance",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 2,
+              "candidateCount": 105,
+              "evidenceKeyCount": 146,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1327,8 +1327,8 @@
               "topicId": "self-accountability",
               "title": "Self-Accountability",
               "disposition": "validated-by-extraction",
-              "candidateCount": 3,
-              "evidenceKeyCount": 5,
+              "candidateCount": 131,
+              "evidenceKeyCount": 240,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1337,8 +1337,8 @@
               "topicId": "trial-and-test",
               "title": "Trial & Test (Bala'/Fitnah)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 4,
+              "candidateCount": 46,
+              "evidenceKeyCount": 60,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1353,16 +1353,6 @@
         {
           "dimensionId": "marriage-nikah",
           "topics": [
-            {
-              "topicId": "marriage-importance",
-              "title": "Importance of Marriage",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 5,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
             {
               "topicId": "mahr-dowry",
               "title": "Mahr (Dowry)",
@@ -1380,6 +1370,16 @@
               "candidateCount": 0,
               "evidenceKeyCount": 0,
               "matchingVerseCount": 1,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "marriage-importance",
+              "title": "Importance of Marriage",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 6,
+              "evidenceKeyCount": 7,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
@@ -1419,21 +1419,21 @@
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "intimacy-ethics",
-              "title": "Intimacy Ethics",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 0,
-              "proposedBy": "ai-assisted",
-              "reviewStatus": "pending-scholarly-review"
-            },
-            {
               "topicId": "marital-rights",
               "title": "Marital Rights",
               "disposition": "validated-by-extraction",
               "candidateCount": 1,
               "evidenceKeyCount": 3,
+              "matchingVerseCount": 0,
+              "proposedBy": "ai-assisted",
+              "reviewStatus": "pending-scholarly-review"
+            },
+            {
+              "topicId": "intimacy-ethics",
+              "title": "Intimacy Ethics",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 15,
+              "evidenceKeyCount": 16,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1467,8 +1467,8 @@
               "topicId": "orphan-care",
               "title": "Orphan Care",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 2,
+              "candidateCount": 3,
+              "evidenceKeyCount": 4,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1582,8 +1582,8 @@
               "topicId": "brotherhood-islam",
               "title": "Brotherhood in Islam",
               "disposition": "validated-by-extraction",
-              "candidateCount": 3,
-              "evidenceKeyCount": 5,
+              "candidateCount": 30,
+              "evidenceKeyCount": 33,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1606,10 +1606,10 @@
             {
               "topicId": "diversity-divine-sign",
               "title": "Diversity as Divine Sign",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 182,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -1622,8 +1622,8 @@
               "topicId": "right-to-life",
               "title": "Right to Life",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 4,
+              "candidateCount": 5,
+              "evidenceKeyCount": 7,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1632,8 +1632,8 @@
               "topicId": "justice-oppression",
               "title": "Justice & Oppression",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 4,
+              "candidateCount": 38,
+              "evidenceKeyCount": 46,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1716,9 +1716,9 @@
             {
               "topicId": "business-ethics",
               "title": "Business Ethics",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1786,10 +1786,10 @@
             {
               "topicId": "wealth-ownership",
               "title": "Wealth Ownership",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 69,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 2,
+              "evidenceKeyCount": 2,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -1804,21 +1804,21 @@
           "dimensionId": "food-dietary-laws",
           "topics": [
             {
-              "topicId": "haram-food",
-              "title": "Haram Food",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 1,
+              "topicId": "halal-food",
+              "title": "Halal Food",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 8,
+              "evidenceKeyCount": 10,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "halal-food",
-              "title": "Halal Food",
+              "topicId": "haram-food",
+              "title": "Haram Food",
               "disposition": "validated-by-extraction",
-              "candidateCount": 5,
-              "evidenceKeyCount": 7,
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1842,8 +1842,8 @@
               "topicId": "evidence-standards",
               "title": "Evidence Standards",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
-              "evidenceKeyCount": 2,
+              "candidateCount": 18,
+              "evidenceKeyCount": 29,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1857,8 +1857,8 @@
               "topicId": "covenant-breach",
               "title": "Covenant & Breach",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 3,
+              "candidateCount": 2,
+              "evidenceKeyCount": 4,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1867,8 +1867,8 @@
               "topicId": "covenants-ahd",
               "title": "Covenants (Ahd)",
               "disposition": "validated-by-extraction",
-              "candidateCount": 12,
-              "evidenceKeyCount": 18,
+              "candidateCount": 18,
+              "evidenceKeyCount": 24,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1926,10 +1926,10 @@
             {
               "topicId": "leadership-qualities",
               "title": "Leadership Qualities",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 1,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 19,
+              "evidenceKeyCount": 21,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -1946,10 +1946,10 @@
             {
               "topicId": "animals-as-communities",
               "title": "Animals as Communities",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 23,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 9,
+              "evidenceKeyCount": 10,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -1982,8 +1982,8 @@
               "topicId": "resurrection-process",
               "title": "Resurrection Process",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 49,
+              "evidenceKeyCount": 120,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -1992,8 +1992,8 @@
               "topicId": "day-of-judgment",
               "title": "Day of Judgment",
               "disposition": "validated-by-extraction",
-              "candidateCount": 15,
-              "evidenceKeyCount": 25,
+              "candidateCount": 150,
+              "evidenceKeyCount": 342,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -2022,8 +2022,8 @@
               "topicId": "jahannam-description",
               "title": "Description of Jahannam",
               "disposition": "validated-by-extraction",
-              "candidateCount": 1,
-              "evidenceKeyCount": 1,
+              "candidateCount": 38,
+              "evidenceKeyCount": 110,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -2066,9 +2066,9 @@
             {
               "topicId": "dialogue-principles",
               "title": "Interfaith Dialogue Principles",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 8,
+              "evidenceKeyCount": 11,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -2086,9 +2086,9 @@
             {
               "topicId": "quranic-vocabulary",
               "title": "Quranic Vocabulary",
-              "disposition": "scholarly-review-required",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 5,
+              "evidenceKeyCount": 5,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
@@ -2106,10 +2106,10 @@
             {
               "topicId": "prophetic-medicine",
               "title": "Prophetic Medicine",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 1,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -2154,20 +2154,20 @@
           "dimensionId": "fasad-prohibition",
           "topics": [
             {
-              "topicId": "environmental-corruption",
-              "title": "Environmental Corruption",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 49,
+              "topicId": "fasad-fil-ard",
+              "title": "Fasad fil-Ard (Corruption on Earth)",
+              "disposition": "validated-by-extraction",
+              "candidateCount": 5,
+              "evidenceKeyCount": 6,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             },
             {
-              "topicId": "fasad-fil-ard",
-              "title": "Fasad fil-Ard (Corruption on Earth)",
+              "topicId": "environmental-corruption",
+              "title": "Environmental Corruption",
               "disposition": "validated-by-extraction",
-              "candidateCount": 2,
+              "candidateCount": 3,
               "evidenceKeyCount": 3,
               "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
@@ -2181,10 +2181,10 @@
             {
               "topicId": "water-conservation",
               "title": "Water Conservation",
-              "disposition": "partial-coverage-review",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 3,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 1,
+              "evidenceKeyCount": 1,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
@@ -2296,10 +2296,10 @@
             {
               "topicId": "work-honor",
               "title": "Honor of Work",
-              "disposition": "needs-re-extraction",
-              "candidateCount": 0,
-              "evidenceKeyCount": 0,
-              "matchingVerseCount": 5,
+              "disposition": "validated-by-extraction",
+              "candidateCount": 8,
+              "evidenceKeyCount": 11,
+              "matchingVerseCount": 0,
               "proposedBy": "ai-assisted",
               "reviewStatus": "pending-scholarly-review"
             }
