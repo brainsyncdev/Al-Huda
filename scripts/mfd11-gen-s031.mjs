@@ -45,19 +45,62 @@ const PASSAGES = [
     mainLabel: "Universal subjection of heavens-earth with apparent-hidden blessings; dispute without knowledge-guidance-scripture as epistemological failure; ancestral tradition following despite satanic misdirection; islam (face-submission) producing good action grasping urwat al-wuthqa; disbeliever grief negated with return-information promise; travel-observation methodology confirming historical destruction pattern; universal ownership with Ghani-Hamid attributes; creation-resurrection ease comparison; night-day alternation and maritime signs for sabir-shakur; Hour sealing mouths with bodily testimony; divine guidance-misguidance sovereignty; human pairing-progeny-affinity system; closing hamd with sign-recognition and divine awareness affirmation" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-031-p1": [
+    "Disjointed letters Alif-Lam-Mim opening Surah Luqman",
+    "Identification of these verses as belonging to the wise Book",
+    "The Book characterized as guidance and mercy for the doers of good",
+    "Muhsinin defined as those who establish prayer, give zakah, and are certain of the Hereafter",
+    "Those described as being upon guidance from their Lord and as the successful ones",
+    "Purchase of idle talk to mislead from Allahs way without knowledge and in ridicule",
+    "Arrogant turning away from recited signs as if deaf, with tidings of painful punishment",
+    "Believers doing righteous deeds promised Gardens of Pleasure",
+    "Eternal abode therein affirmed as Allahs true promise, He being Mighty and Wise",
+    "Creation of heavens without visible pillars, mountains as stabilizers, scattered creatures, rain producing noble pairs",
+    "Challenge to show what others besides Allah have created, wrongdoers declared in clear error",
+    "Luqman granted hikmah with the command to be grateful, gratitude benefiting self, Allah Ghani Hameed",
+    "Luqmans counsel to his son prohibiting shirk as great injustice (zulm azim)",
+    "Divine injunction to kindness toward parents, maternal weakness upon weakness, weaning at two years, gratitude to Allah and parents",
+    "Prohibition of obeying parents in shirk while maintaining ma'ruf companionship and following the repentant path",
+    "Mustard-seed accountability within rock or heavens or earth brought forth by Latif Khabir",
+    "Five-fold paternal counsel: establish prayer, enjoin right, forbid wrong, endure patiently as determined matters",
+    "Prohibition of contemptuous cheek-turning and insolent walking, Allah not loving the arrogant boastful",
+    "Command to moderate pace and lower voice, harshest sound identified as donkeys voice"
+  ],
+  "ext-031-p2": [
+    "Universal subjection of heavens and earth with apparent and hidden blessings lavished upon humanity",
+    "Dispute about Allah without knowledge, guidance, or enlightening Book as triple epistemological deficit",
+    "Ancestral tradition preferred over revelation even when Satan invites to the Blaze",
+    "Face-submission to Allah combined with good action as grasping the firmest handhold",
+    "Disbelievers grief negated with return-to-Allah promise and divine knowledge of inner breasts",
+    "Brief worldly enjoyment followed by compulsion to massive punishment",
+    "Acknowledgment of Allah as Creator when questioned yet most lack knowledge, with universal ownership and Ghani-Hamid attributes affirmed",
+    "Trees-as-pens sea-as-ink metaphor establishing inexhaustibility of divine words, Aziz Hakim",
+    "Creation and resurrection of all likened to a single soul, Allah Hearing Seeing",
+    "Night-day alternation and sun-moon subjection as signs, Allah Acquainted with all deeds",
+    "Allah as Truth contrasted with false deities, He being Most High and Grand",
+    "Ships sailing through sea by divine favor as signs for every patient and grateful person",
+    "Sincere supplication during wave-canopy danger followed by moderation on land, rejection limited to treacherous ungrateful",
+    "Command to fear Lord and Day when no parent avails child, worldly life and Deceiver warned against",
+    "Exclusive divine knowledge of Hour, rain, wombs, future earnings, and place of death, Allah Alim Khabir"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`31:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`31:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS for ${p.id} must have exactly ${p.to - p.from + 1} entries, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`31:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 31, surahName: "Luqman",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
