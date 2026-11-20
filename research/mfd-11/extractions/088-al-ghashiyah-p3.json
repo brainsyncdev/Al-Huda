@@ -1,0 +1,119 @@
+{
+  "extractionId": "ext-088-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 88,
+  "surahName": "Al-Ghashiyah",
+  "passage": {
+    "fromAyah": 17,
+    "toAyah": 20,
+    "label": "Then do they not look camels how created; sky how raised; mountains how erected; earth how spread out"
+  },
+  "verseKeys": [
+    "88:17",
+    "88:18",
+    "88:19",
+    "88:20"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "88:17",
+      "text": "أَفَلَا يَنظُرُونَ إِلَى ٱلۡإِبِلِ كَيۡفَ خُلِقَتۡ"
+    },
+    {
+      "key": "88:18",
+      "text": "وَإِلَى ٱلسَّمَآءِ كَيۡفَ رُفِعَتۡ"
+    },
+    {
+      "key": "88:19",
+      "text": "وَإِلَى ٱلۡجِبَالِ كَيۡفَ نُصِبَتۡ"
+    },
+    {
+      "key": "88:20",
+      "text": "وَإِلَى ٱلۡأَرۡضِ كَيۡفَ سُطِحَتۡ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Four observational challenges directed at humanity: looking at the camels and how they are created, the sky and how it is raised, the mountains and how they are erected, and the earth and how it is spread out",
+    "keys": [
+      "88:17",
+      "88:18",
+      "88:19",
+      "88:20"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Do they not look at the camels and how they are created",
+      "keys": [
+        "88:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And at the sky and how it is raised",
+      "keys": [
+        "88:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And at the mountains and how they are erected",
+      "keys": [
+        "88:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And at the earth and how it is spread out",
+      "keys": [
+        "88:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "88:17"
+      ],
+      "excerpt": "أَفَلَا يَنظُرُونَ إِلَى ٱلۡإِبِلِ كَيۡفَ خُلِقَتۡ",
+      "description": "Do they not look at the camels — how they are created?"
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Four observational signs: camels created, sky raised, mountains erected, earth spread out",
+      "keys": [
+        "88:17",
+        "88:18",
+        "88:19",
+        "88:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلۡإِبِلِ",
+      "transliteration": "ibil",
+      "gloss": "camels (editorial gloss)",
+      "keys": [
+        "88:17"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1945"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the non-nourishing thorny plant verdict (7) before the pleased-faces block opens (8); P2 ends with the carpet-spreading furnishing detail (16) before the four-fold observational challenge begins (17); P3 covers the camel-sky-mountain-earth signs (17-20); P4 runs through the reminder-only role, the turning-away warning and the closing return-and-account declaration (21-26).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:45:00.000Z"
+}

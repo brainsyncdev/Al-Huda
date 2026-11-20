@@ -1,0 +1,160 @@
+{
+  "extractionId": "ext-088-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 88,
+  "surahName": "Al-Ghashiyah",
+  "passage": {
+    "fromAyah": 21,
+    "toAyah": 26,
+    "label": "So remind Muhammad only reminder; not over them controller; However turns away disbelieves; Then Allah punish greatest punishment; Indeed Us return; Then indeed upon Us account"
+  },
+  "verseKeys": [
+    "88:21",
+    "88:22",
+    "88:23",
+    "88:24",
+    "88:25",
+    "88:26"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "88:21",
+      "text": "فَذَكِّرۡ إِنَّمَآ أَنتَ مُذَكِّرٞ"
+    },
+    {
+      "key": "88:22",
+      "text": "لَّسۡتَ عَلَيۡهِم بِمُصَيۡطِرٍ"
+    },
+    {
+      "key": "88:23",
+      "text": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ"
+    },
+    {
+      "key": "88:24",
+      "text": "فَيُعَذِّبُهُ ٱللَّهُ ٱلۡعَذَابَ ٱلۡأَكۡبَرَ"
+    },
+    {
+      "key": "88:25",
+      "text": "إِنَّ إِلَيۡنَآ إِيَابَهُمۡ"
+    },
+    {
+      "key": "88:26",
+      "text": "ثُمَّ إِنَّ عَلَيۡنَا حِسَابَهُم"
+    }
+  ],
+  "mainSubject": {
+    "label": "The Prophet instructed to remind since he is only a reminder and not a controller over them; whoever turns away and disbelieves will be punished by Allah with the greatest punishment; their return is to Him and upon Him rests their account",
+    "keys": [
+      "88:21",
+      "88:22",
+      "88:23",
+      "88:24",
+      "88:25",
+      "88:26"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "So remind O Muhammad — you are only a reminder",
+      "keys": [
+        "88:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "You are not over them a controller",
+      "keys": [
+        "88:22"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "However whoever turns away and disbelieves",
+      "keys": [
+        "88:23"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Allah will punish him with the greatest punishment",
+      "keys": [
+        "88:24"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Indeed to Us is their return",
+      "keys": [
+        "88:25"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Then indeed upon Us is their account",
+      "keys": [
+        "88:26"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "88:21"
+      ],
+      "excerpt": "فَذَكِّرۡ إِنَّمَآ أَنتَ مُذَكِّرٞ",
+      "description": "So remind — you are only a reminder."
+    },
+    {
+      "kind": "PROHIBITION",
+      "keys": [
+        "88:22"
+      ],
+      "excerpt": "لَّسۡتَ عَلَيۡهِم بِمُصَيۡطِرٍ",
+      "description": "You are not over them a controller."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Turning away and disbelief answered by the greatest punishment",
+      "keys": [
+        "88:23",
+        "88:24"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Return to Allah and accounting by Him as the closing framework",
+      "keys": [
+        "88:25",
+        "88:26"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "بِمُصَيۡطِرٍ",
+      "transliteration": "musaytir",
+      "gloss": "controller/dominator (editorial gloss)",
+      "keys": [
+        "88:22"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1946"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the non-nourishing thorny plant verdict (7) before the pleased-faces block opens (8); P2 ends with the carpet-spreading furnishing detail (16) before the four-fold observational challenge begins (17); P3 covers the camel-sky-mountain-earth signs (17-20); P4 runs through the reminder-only role, the turning-away warning and the closing return-and-account declaration (21-26).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:45:00.000Z"
+}
