@@ -38,6 +38,146 @@ const TS = "2026-11-20T12:50:00.000Z";
 // P3: 16:65–97 — Natural signs (livestock, bee, fruits), gratitude, Ibrahim millat, halal/haram
 // P4: 16:98–128 — Quran recitation etiquette, justice commands, Abraham model, closing taqwa
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-016-p1": [
+    "Divine command imminence prohibiting impatience and declaring Allah exalted above associates",
+    "Angelic inspiration delivering tawheed warning through chosen servants",
+    "Creation of heavens and earth in truth affirming divine transcendence over shirk",
+    "Human origin from sperm-drop contrasting immediate adversarial posture toward Creator",
+    "Grazing livestock providing warmth benefits and food as comprehensive blessing",
+    "Livestock beauty appreciated during evening return and morning pasture departure",
+    "Beasts carrying heavy loads to distant lands demonstrating divine kindness and mercy",
+    "Horses mules and donkeys created for riding adornment plus unknown future creations",
+    "Right way direction belonging to Allah with deviating paths existing by divine will",
+    "Rain sent from sky producing drink and pasture foliage for animals",
+    "Agricultural produce including crops olives palms grapevines and fruits as sign for thinkers",
+    "Night day sun moon and stars subjected by divine command as signs for reasoning people",
+    "Earth multiplied in varying colors as sign for those who remember",
+    "Sea subjected for fresh meat ornaments shipping and bounty-seeking as gratitude occasion",
+    "Mountains cast as stabilizers plus rivers roads and landmarks for guidance",
+    "Star-based navigation completing terrestrial and celestial guidance systems",
+    "Rhetorical challenge contrasting Creator with non-creator demanding remembrance",
+    "Uncountable divine favors establishing human inability to enumerate blessings",
+    "Divine knowledge encompassing all concealed and declared human matters",
+    "False deities invoked besides Allah unable to create being themselves created",
+    "Idols characterized as dead not alive unaware of resurrection timing",
+    "One God declared with disbelieving hearts rejecting and showing arrogance",
+    "Allah knowing all secrets and declarations disliking the arrogant",
+    "Disbelievers dismissing revelation as legends of former peoples",
+    "Misleaders bearing full burdens plus burdens of those misled without knowledge",
+    "Prior plotters destroyed when punishment came from foundations unexpectedly",
+    "Resurrection Day disgrace for polytheists with knowledgeable witnesses testifying",
+    "Angels taking wrongdoers in death while they falsely claim innocence",
+    "Arrogant entering Hell gates eternally as wretched residence",
+    "Righteous asked what Lord sent down answering good with better Hereafter home",
+    "Gardens of Eden with flowing rivers as reward for the righteous",
+    "Angels greeting pure souls at death with peace and Paradise entry",
+    "Disbelievers awaiting only angelic arrival or divine command having wronged themselves",
+    "Evil consequences of deeds enveloping those who ridiculed the truth"
+  ],
+  "ext-016-p2": [
+    "Polytheist determinism excuse claiming divine will forced their worship refuted by messenger precedent",
+    "Universal messenger sent to every nation commanding tawheed and taghut avoidance with bifurcated outcomes",
+    "Prophetic eagerness for guidance tempered by divine sovereignty over misguidance",
+    "Solemn oaths denying resurrection answered by binding divine promise most do not know",
+    "Resurrection purpose clarifying disputed matters and exposing disbelievers as liars",
+    "Divine creative word Kun fayakoon demonstrating absolute power over existence",
+    "Emigrants wronged then settled well in this world with greater Hereafter reward",
+    "Patient emigrants relying on their Lord as model of steadfast faith",
+    "Prior messengers were only men receiving revelation commanding consultation with people of remembrance",
+    "Revealed message with clear proofs making things clear for people to reflect",
+    "Evil planners insecure against earth swallowing or unseen punishment arrival",
+    "Punishment seizing wrongdoers during daily activity with no escape possible",
+    "Gradual seizure in dread balanced by divine kindness and mercy",
+    "All created things casting shadows in prostration to Allah humbly",
+    "Heavenly and earthly creatures plus angels prostrating without arrogance",
+    "Angels fearing their Lord above them executing commanded duties",
+    "Prohibition against taking two deities affirming one God and commanding fear of Him alone",
+    "Universal ownership and constant worship owed to Allah alone questioning other fears",
+    "All favors from Allah yet humans cry to Him only when adversity strikes",
+    "Adversity removal triggering immediate shirk by a party of beneficiaries",
+    "Ingratitude for divine gifts followed by temporary enjoyment then inevitable knowledge",
+    "Assigning portion of provision to unknown entities provoking accountability question",
+    "Attributing daughters to Allah while desiring sons for themselves",
+    "Face darkening and grief suppression upon receiving female birth news",
+    "Hiding from community debating whether to keep daughter in humiliation or bury her",
+    "Evil description for those disbelieving in Hereafter contrasted with highest divine attribute",
+    "Divine forbearance deferring punishment to specified term preventing total destruction",
+    "Tongues asserting lie of best outcome while Fire and neglect await fabricators",
+    "Satan beautifying deeds for prior nations becoming their ally with painful punishment ahead",
+    "Book revealed solely to clarify differences and provide guidance mercy for believers"
+  ],
+  "ext-016-p3": [
+    "Rain reviving dead earth as observable sign for listening people",
+    "Livestock bellies producing pure milk between excretion and blood as biological lesson",
+    "Palm and grapevine fruits yielding intoxicant and good provision as sign for reasoners",
+    "Bee receiving divine inspiration to build houses in mountains trees and human structures",
+    "Bee eating fruits following divinely laid paths producing multi-colored healing drink",
+    "Human lifecycle from creation through death with senile reversal demonstrating divine knowledge-power",
+    "Provision disparity among humans contrasted with refusal to share equally with slaves",
+    "Spouses progeny and good provisions from Allah contrasted with belief in falsehood and favor denial",
+    "False deities possessing no provision power from heavens or earth being utterly unable",
+    "Prohibition against drawing similitudes for Allah who knows while humans do not",
+    "Slave-free parable contrasting powerless owned person with generous provider proving inequality",
+    "Dumb burden-bearing man contrasted with justice-commanding person on straight path",
+    "Unseen of heavens and earth belonging to Allah with Hour arriving instantaneously",
+    "Human extraction from maternal wombs knowing nothing then granted hearing sight intellect for gratitude",
+    "Birds suspended in sky atmosphere held only by Allah as sign for believers",
+    "Homes as resting place plus animal-hide tents wool fur hair furnishings as temporal blessings",
+    "Shadows mountain shelters heat-protective and battle-protective garments completing divine favor for submission",
+    "Turning away leaving only clear notification responsibility upon the messenger",
+    "Recognizing divine favor then denying it characterizing most as disbelievers",
+    "Witness resurrected from every nation with disbelievers denied permission to apologize",
+    "Wrongdoers seeing punishment with no lightening or reprieve granted",
+    "Polytheists identifying partners who reject them as liars on Judgment Day",
+    "Submission imparted to Allah on Judgment Day with invented fabrications lost",
+    "Double punishment for disbelievers who averted others from divine way due to corruption",
+    "Witness from every nation plus Prophet as witness with Book as clarification guidance mercy glad tidings",
+    "Comprehensive divine command ordering justice good conduct kin-giving forbidding immorality evil oppression",
+    "Covenant fulfillment and oath confirmation with Allah as guarantor knowing all actions",
+    "Untwisted-thread parable warning against oath deception for numerical advantage between communities",
+    "Divine will could have made single community but guides and misleads by choice with accountability",
+    "Oath deception causing foot-slipping after firmness tasting evil for diverting from divine way",
+    "Prohibition against trading divine covenant for small price since Allah has what is better lasting",
+    "Human possessions perishable while divine possessions lasting with patient rewarded by best deeds",
+    "Righteous male or female believer granted good life and rewarded by best deeds"
+  ],
+  "ext-016-p4": [
+    "Quran recitation preceded by seeking refuge from expelled Satan",
+    "Satan having no authority over believers who rely upon their Lord",
+    "Satanic authority limited to those taking him as ally and associating through him",
+    "Verse substitution acknowledged within divine knowledge with accusers called inventors",
+    "Pure Spirit bringing revelation in truth to strengthen believers as guidance and glad tidings",
+    "Foreign-language teacher objection answered by clear Arabic tongue of revelation",
+    "Non-believers in divine signs denied guidance receiving painful punishment",
+    "Falsehood invention limited to non-believers in signs identified as the liars",
+    "Post-belief disbelief exception for coerced person with heart secure versus willing apostates receiving wrath",
+    "Worldly life preference over Hereafter causing divine abandonment of disbelieving people",
+    "Sealed hearts hearing sight characterizing heedless people",
+    "Heedless confirmed as losers in the Hereafter",
+    "Post-persecution emigrants who fought patiently receiving divine forgiveness and mercy",
+    "Every soul disputing for itself fully compensated without injustice on Judgment Day",
+    "Secure abundant town becoming ungrateful tasting hunger-fear garment for wrongdoing",
+    "Messenger from among townspeople denied leading to punishment overtaking wrongdoers",
+    "Command to eat lawful good provision and show gratitude if truly worshipping Allah",
+    "Four dietary prohibitions with necessity exception under duress without transgression",
+    "Prohibition against declaring lawful-unlawful based on tongue assertions inventing lies against Allah",
+    "Brief enjoyment for fabricators followed by painful punishment",
+    "Jewish dietary restrictions as self-inflicted consequence of prior transgression not divine injustice",
+    "Ignorant wrongdoers repenting and reforming receiving divine forgiveness and mercy",
+    "Abraham as comprehensive leader devoutly obedient hanif not among polytheists",
+    "Abraham grateful for favors chosen and guided to straight path",
+    "Abraham given good in this world and assured among righteous in Hereafter",
+    "Revelation commanding following millat Ibrahim as hanif excluding polytheism",
+    "Sabbath appointed only for those who differed with divine judgment deferred to Resurrection Day",
+    "Da'wah methodology defined as wisdom good instruction and best argumentation with divine knowledge of guidance",
+    "Proportional retaliation permitted with patience declared better for the patient",
+    "Patience sourced exclusively through Allah with prohibition against grief-distress over opponents",
+    "Divine companionship promised to muttaqin and muhsinin as closing assurance"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-016-p1", from: 1, to: 34,
     label: "Nahl — Command Allah coming be not impatient Exalted above associates; sends angels inspiration command upon whom wills warn no deity except Me fear; created heavens earth truth High above associates; created man sperm-drop clear adversary; grazing livestock warmth benefits eat beauty bringing in sending out carry loads land could not reached difficulty Lord Kind Merciful; horses mules donkeys ride adornment creates what not know; upon Allah direction right way among paths deviating willed guided all; sends rain sky drink foliage pasture; grows crops olives palms grapevines fruits sign people reflect; subjected night day sun moon stars subjected command signs people reason; earth colored varied signs people remember; He who made sea subservient eat fresh meat extract ornaments wear ships plow through it seek bounty grateful; cast mountains earth stabilize lest shake rivers roads guide landmarks star guided; Creator equal one does not create knows count favors unjust ungrateful; brought punishment denied messengers seized suddenly perceived not; taste worldly life Hereafter punishment greater knew",
@@ -58,14 +198,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`16:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`16:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`16:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 16, surahName: "An-Nahl",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
