@@ -33,6 +33,111 @@ console.log(`Corpus loaded: ${Object.keys(verses).length} verses`);
 
 const TS = "2026-11-20T13:55:00.000Z";
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-027-p1": [
+    "Disjointed letters Ta-Sin introducing the verses of the Quran as a clear Book",
+    "Quran characterized as guidance and glad tidings specifically for believers",
+    "Believers defined by establishing prayer, giving zakah, and certainty in the Hereafter",
+    "Disbelievers in the Hereafter have their deeds made attractive causing aimless wandering",
+    "Those whose deeds are beautified face the worst punishment and ultimate loss in the Hereafter",
+    "Prophet Muhammad receiving the Quran from the Wise and Knowing source",
+    "Musa perceiving a distant fire and promising his family either news or a burning brand",
+    "Divine calling at the fire declaring those present blessed and glorifying Allah as Lord of all worlds",
+    "Self-disclosure to Musa identifying as Allah the Exalted in Might and the Wise",
+    "Staff-to-snake miracle causing Musa to flee followed by divine reassurance that messengers need not fear",
+    "Exception clause offering forgiveness to those who wrong then replace evil with good",
+    "Hand-in-bosom sign producing whiteness without blemish as one of nine signs for Firawn's defiant people",
+    "Firawn's people dismissing the visible signs as obvious magic despite their clarity",
+    "Inner conviction overridden by wrongful arrogance leading to rejection of signs and invitation to observe the corruptors' end",
+    "Dawud and Sulayman granted knowledge prompting their praise for divine favor over believing servants",
+    "Sulayman inheriting Dawud's legacy and announcing mastery of bird-language plus comprehensive provision as evident bounty",
+    "Military assembly of jinn, human, and avian troops marshaled in disciplined ranks under Sulayman's command",
+    "Ant queen warning her colony to retreat into dwellings lest Sulayman's army unknowingly crush them",
+    "Sulayman smiling at the ant's speech and supplicating for gratitude covering himself and his parents plus admission among the righteous",
+    "Sulayman inspecting the bird ranks and noticing the hoopoe's absence",
+    "Threat of severe punishment or slaughter for the hoopoe unless it returns with clear justification",
+    "Hoopoe returning swiftly claiming superior knowledge and bringing verified intelligence from Sheba",
+    "Hoopoe reporting a woman ruler possessing all things including a magnificent throne",
+    "Discovery of Sheba's queen and her people prostrating to the sun instead of Allah due to satanic beautification",
+    "Rhetorical challenge asking why they do not prostrate to Allah who reveals hidden things in heavens and earth",
+    "Affirmation of absolute monotheism declaring Allah Lord of the Great Throne with no other deity",
+    "Sulayman reserving judgment on the hoopoe's report pending verification of truthfulness",
+    "Dispatch of a written letter via the hoopoe instructing withdrawal to observe the recipients' response",
+    "Bilqis informing her council that a noble letter has been delivered to her",
+    "Letter content identified as originating from Sulayman and opening with the basmalah invoking the Entirely Merciful and Especially Merciful"
+  ],
+  "ext-027-p2": [
+    "Letter commanding non-arrogance and demanding arrival in a state of submission",
+    "Bilqis consulting her eminent council and deferring decision until they are present as witnesses",
+    "Council asserting military strength while acknowledging final authority rests with the queen",
+    "Bilqis articulating the pattern of kings corrupting cities and humiliating honored inhabitants upon entry",
+    "Decision to send a diplomatic gift to gauge Sulayman's intentions through the envoys' return message",
+    "Sulayman rejecting the material gift as inferior to divine provision and noting the senders' misplaced joy in their offering",
+    "Warning to return with an ultimatum of overwhelming military force that cannot be resisted resulting in humiliation",
+    "Sulayman challenging his assembly to determine who can transport Bilqis's throne before she arrives in submission",
+    "A powerful jinn volunteering to bring the throne before Sulayman rises from his seat citing strength and trustworthiness",
+    "One possessing scriptural knowledge accomplishing instant throne transport before a blink, prompting Sulayman's reflection on gratitude versus ingratitude and divine self-sufficiency",
+    "Command to alter the throne's appearance as a test of Bilqis's capacity for true guidance",
+    "Bilqis arriving and recognizing the disguised throne with cautious discernment while affirming prior submission",
+    "Observation that prior sun-worship had diverted Bilqis from the right path as she belonged to a disbelieving people",
+    "Glass palace floor mistaken for water causing Bilqis to uncover her shins, triggering her confession of self-wrong and declaration of submission alongside Sulayman",
+    "Salih sent to Thamud commanding worship of Allah but immediately encountering factional dispute",
+    "Salih questioning his people's impatience for punishment rather than seeking divine forgiveness for potential mercy",
+    "Thamud attributing bad omens to Salih and his followers while he redirects their omen-belief to Allah and identifies them as a tested people",
+    "Nine ringleaders in the city actively spreading corruption without any reform effort",
+    "Conspirators swearing mutual oaths by Allah to assassinate Salih and his family by night then feign ignorance to his guardian",
+    "Their secret plotting met by divine counter-planning beyond their perception",
+    "Invitation to observe how their scheme ended in total destruction of themselves and their entire people",
+    "Desolate ruins remaining as a sign for those who possess knowledge of divine justice",
+    "Rescue granted exclusively to those who believed and maintained taqwa",
+    "Lut confronting his people about committing flagrant immorality while fully aware of its nature",
+    "Explicit condemnation of approaching men with desire instead of women characterizing them as ignorant",
+    "Lut's people responding only by demanding expulsion of his family because they insisted on purity",
+    "Divine rescue of Lut and his family excluding his wife who was decreed among those left behind",
+    "Destructive rain unleashed upon them described as an evil consequence for those who had been warned"
+  ],
+  "ext-027-p3": [
+    "Command to declare praise for Allah and peace upon His chosen servants followed by the foundational tawheed challenge regarding associates",
+    "First domain challenge: creation of heavens and earth plus rain-driven garden growth that humans could never replicate independently",
+    "Second domain challenge: earth as stable habitat with rivers, mountains, and a barrier between two seas emphasizing most people's ignorance",
+    "Third domain challenge: answering the desperate caller, removing harm, and appointing earthly successors noting humanity's scarce remembrance",
+    "Fourth domain challenge: guiding through terrestrial and maritime darknesses plus sending winds as mercy heralds above any association",
+    "Fifth domain challenge: initiating creation and repeating it while providing from heaven and earth demanding production of proof for the truthful",
+    "Declaration that none in the heavens or earth possesses knowledge of the unseen except Allah and that creatures lack awareness of resurrection timing",
+    "Humanity's knowledge arrested regarding the Hereafter, trapped in doubt, and ultimately blind to its reality",
+    "Disbelievers expressing incredulity that they and their forefathers would be resurrected after becoming dust",
+    "Dismissal of resurrection promises as recycled legends of ancient peoples rather than genuine divine commitment",
+    "Command to travel the earth and observe the historical fate of criminals as empirical evidence",
+    "Consolation to the Prophet not to grieve over disbelievers nor feel constrained by their conspiracies",
+    "Skeptics demanding a timeline for the promised judgment as a challenge to prophetic truthfulness",
+    "Response indicating that some of what they impatiently demand may already be imminent",
+    "Affirmation of divine bounty toward humanity contrasted with widespread ingratitude",
+    "Declaration that the Lord knows both concealed inner states and outward declarations",
+    "Assertion that nothing hidden in the heavens or earth escapes the clear Register",
+    "Quran resolving for the Children of Israel the majority of their theological disagreements",
+    "Quran simultaneously functioning as guidance and mercy specifically for believers",
+    "Lord's ultimate judgment between disputants backed by His attributes of might and knowledge",
+    "Directive to place complete reliance on Allah grounded in standing upon manifest truth",
+    "Limitation of prophetic influence: the dead and retreating deaf cannot be made to hear the call",
+    "Inability to guide the blind away from error restricted to reaching only those who believe in the signs and thereby submit"
+  ],
+  "ext-027-p4": [
+    "Earth-emerging beast appearing when the divine decree falls, addressing humanity's lack of certainty in the signs",
+    "Judgment Day muster drawing a contingent from every nation composed specifically of those who denied the signs, organized in ranks",
+    "Divine interrogation confronting deniers about rejecting signs they never fully comprehended and questioning their worldly conduct",
+    "Decree falling upon wrongdoers rendering them speechless in the face of justified punishment",
+    "Night ordained for rest and day for visibility presented as signs requiring active belief",
+    "Horn blast terrifying all celestial and terrestrial beings except those divinely exempted, all arriving in humility",
+    "Mountains perceived as solid actually drifting like clouds demonstrating Allah's perfect craftsmanship and complete awareness of human actions",
+    "Bearer of good deeds receiving something better and enjoying security from the terror of that Day",
+    "Bearer of evil deeds cast face-down into the Fire repaid exactly according to prior actions",
+    "Prophetic mandate restricted to worshipping the Lord of the sacred city who owns everything and to being among those who submit",
+    "Additional mandate to recite the Quran coupled with the principle that guidance benefits the guided while the Prophet serves only as warner to the astray",
+    "Closing instruction to praise Allah with the promise that He will reveal signs recognizable to humanity while remaining fully aware of all deeds"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-027-p1", from: 1, to: 30,
     label: "Ta-Sin; Quran clear Book guidance glad tidings believers establish prayer zakah Hereafter certain; disbelieve Hereafter deeds pleasing wander blindly; worst punishment greatest losers; receive Quran Wise Knowing; Musa perceived fire bring news burning brand guided; came called blessed whoever fire around praised Allah Lord worlds; O Musa I am Allah Exalted Mighty Wise; throw staff saw writhing snake turned flight return; fear not messengers fear not Me except wronged replaced good after evil Forgiving Merciful; put hand bosom emerge white without harm nine signs Firawn people defiantly disobedient; recognized signs denied wrongfully arrogant convinced; see end corruptors",
@@ -53,14 +158,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`27:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`27:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`27:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 27, surahName: "An-Naml",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
