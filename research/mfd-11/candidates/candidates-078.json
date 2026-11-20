@@ -1,387 +1,533 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:45:00.000Z",
-  "sourceExtraction": "ext-054-p1,ext-054-p2",
+  "generatedAt": "2026-11-20T17:05:00.000Z",
+  "sourceExtraction": "ext-054-p1,ext-054-p2,ext-054-p3,ext-054-p4",
   "candidates": [
     {
-      "candidateId": "cand-1707",
-      "label": "cand-1707: Topic from 54:1",
-      "definition": "In 54:1: The Hour has come near, and the moon has split [in two]",
+      "candidateId": "cand-1654",
+      "label": "Moon-splitting as sign of the Hour's nearness",
+      "definition": "In 54:1: The Hour has come near and the moon has split.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "54:1",
           "excerpt": "ٱقۡتَرَبَتِ ٱلسَّاعَةُ وَٱنشَقَّ ٱلۡقَمَرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ishaqq al-qamar as eschatological sign."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Cosmic miracle grounding the surah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1708",
-      "label": "cand-1708: Topic from 54:3",
-      "definition": "In 54:3: And they denied and followed their inclinations. But for every matter is a [time of] settlement",
+      "candidateId": "cand-1655",
+      "label": "Miracles dismissed as magic while denial follows inclination",
+      "definition": "In 54:2-3: And if they see a miracle they turn away and say passing magic; and they denied and followed their inclinations but for every matter is a time of settlement.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "54:2",
+          "excerpt": "وَإِن يَرَوۡاْ ءَايَةٗ يُعۡرِضُواْ وَيَقُولُواْ سِحۡرٞ مُّسۡتَمِرّٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:3",
           "excerpt": "وَكَذَّبُواْ وَٱتَّبَعُوٓاْ أَهۡوَآءَهُمۡۚ وَكُلُّ أَمۡرٖ مُّسۡتَقِرّٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sihr dismissal pattern."
+        },
+        {
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mustaqarr appointment."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1709",
-      "label": "cand-1709: Topic from 54:6",
-      "definition": "In 54:6: So leave them, [O Muhammad]. The Day the Caller calls to something forbidding",
+      "candidateId": "cand-1656",
+      "label": "Resurrection emergence like spreading locusts racing to the Caller",
+      "definition": "In 54:7-8: Their eyes humbled they will emerge from the graves as if they were locusts spreading racing ahead toward the Caller; the disbelievers will say this is a difficult Day.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "54:6",
-          "excerpt": "فَتَوَلَّ عَنۡهُمۡۘ يَوۡمَ يَدۡعُ ٱلدَّاعِ إِلَىٰ شَيۡءٖ نُّكُرٍ",
+          "key": "54:7",
+          "excerpt": "خُشَّعًا أَبۡصَٰرُهُمۡ يَخۡرُجُونَ مِنَ ٱلۡأَجۡدَاثِ كَأَنَّهُمۡ جَرَادٞ مُّنتَشِرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:8",
+          "excerpt": "مُّهۡطِعِينَ إِلَى ٱلدَّاعِۖ يَقُولُ ٱلۡكَٰفِرُونَ هَٰذَا يَوۡمٌ عَسِرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jarad imagery."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yawm 'asir named."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1710",
-      "label": "cand-1710: Topic from 54:9",
-      "definition": "In 54:9: The people of Noah denied before them, and they denied Our servant and said, \"A madman,\" and he was repelled",
+      "candidateId": "cand-1657",
+      "label": "Noah's flood as predestined sign with ark sailing under observation",
+      "definition": "In 54:9-15: People of Noah denied Our servant called madman repelled; he invoked I am overpowered so help; We opened heaven's gates with rain and earth burst with springs; carried on planks and nails sailing under Our observation as reward for the denied; left as a sign.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "54:9",
           "excerpt": "۞كَذَّبَتۡ قَبۡلَهُمۡ قَوۡمُ نُوحٖ فَكَذَّبُواْ عَبۡدَنَا وَقَالُواْ مَجۡنُونٞ وَٱزۡدُجِرَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1711",
-      "label": "cand-1711: Topic from 54:11",
-      "definition": "In 54:11: Then We opened the gates of the heaven with rain pouring down",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:10",
+          "excerpt": "فَدَعَا رَبَّهُۥٓ أَنِّي مَغۡلُوبٞ فَٱنتَصِرۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:11",
           "excerpt": "فَفَتَحۡنَآ أَبۡوَٰبَ ٱلسَّمَآءِ بِمَآءٖ مُّنۡهَمِرٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1712",
-      "label": "cand-1712: Topic from 54:14",
-      "definition": "In 54:14: Sailing under Our observation as reward for he who had been denied",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:12",
+          "excerpt": "وَفَجَّرۡنَا ٱلۡأَرۡضَ عُيُونٗا فَٱلۡتَقَى ٱلۡمَآءُ عَلَىٰٓ أَمۡرٖ قَدۡ قُدِرَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:13",
+          "excerpt": "وَحَمَلۡنَٰهُ عَلَىٰ ذَاتِ أَلۡوَٰحٖ وَدُسُرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:14",
           "excerpt": "تَجۡرِي بِأَعۡيُنِنَا جَزَآءٗ لِّمَن كَانَ كُفِرَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:15",
+          "excerpt": "وَلَقَد تَّرَكۡنَٰهَآ ءَايَةٗ فَهَلۡ مِن مُّدَّكِرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Nuh narrative condensed."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Flood as ayah baqiyah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1713",
-      "label": "cand-1713: Topic from 54:17",
-      "definition": "In 54:17: And We have certainly made the Qur'an easy for remembrance, so is there any who will remember",
+      "candidateId": "cand-1658",
+      "label": "Aad destroyed by screaming wind extracting like uprooted palms",
+      "definition": "In 54:18-21: Aad denied; We sent upon them a screaming wind on a day of continuous misfortune extracting the people as if they were trunks of palm trees uprooted.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "54:17",
-          "excerpt": "وَلَقَدۡ يَسَّرۡنَا ٱلۡقُرۡءَانَ لِلذِّكۡرِ فَهَلۡ مِن مُّدَّكِرٖ",
+          "key": "54:18",
+          "excerpt": "كَذَّبَتۡ عَادٞ فَكَيۡفَ كَانَ عَذَابِي وَنُذُرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1714",
-      "label": "cand-1714: Topic from 54:19",
-      "definition": "In 54:19: Indeed, We sent upon them a screaming wind on a day of continuous misfortune",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:19",
           "excerpt": "إِنَّآ أَرۡسَلۡنَا عَلَيۡهِمۡ رِيحٗا صَرۡصَرٗا فِي يَوۡمِ نَحۡسٖ مُّسۡتَمِرّٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:20",
+          "excerpt": "تَنزِعُ ٱلنَّاسَ كَأَنَّهُمۡ أَعۡجَازُ نَخۡلٖ مُّنقَعِرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:21",
+          "excerpt": "فَكَيۡفَ كَانَ عَذَابِي وَنُذُرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rih sarsar punishment."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nakhl khawiyah imagery."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1715",
-      "label": "cand-1715: Topic from 54:22",
-      "definition": "In 54:22: And We have certainly made the Qur'an easy for remembrance, so is there any who will remember",
+      "candidateId": "cand-1659",
+      "label": "Thamud's she-camel trial and hamstringing answered by one blast",
+      "definition": "In 54:23-31: Thamud denied the warning saying is it one human among us; We sent the she-camel as trial; they hamstrung her; We sent one blast from the sky and they became like dry twig fragments.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "54:22",
-          "excerpt": "وَلَقَدۡ يَسَّرۡنَا ٱلۡقُرۡءَانَ لِلذِّكۡرِ فَهَلۡ مِن مُّدَّكِرٖ",
+          "key": "54:23",
+          "excerpt": "كَذَّبَتۡ ثَمُودُ بِٱلنُّذُرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1716",
-      "label": "cand-1716: Topic from 54:25",
-      "definition": "In 54:25: Has the message been sent down upon him from among us? Rather, he is an insolent liar",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:24",
+          "excerpt": "فَقَالُوٓاْ أَبَشَرٗا مِّنَّا وَٰحِدٗا نَّتَّبِعُهُۥٓ إِنَّآ إِذٗا لَّفِي ضَلَٰلٖ وَسُعُرٍ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:25",
           "excerpt": "أَءُلۡقِيَ ٱلذِّكۡرُ عَلَيۡهِ مِنۢ بَيۡنِنَا بَلۡ هُوَ كَذَّابٌ أَشِرٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1717",
-      "label": "cand-1717: Topic from 54:29",
-      "definition": "In 54:29: But they called their companion, and he dared and hamstrung [her]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:26",
+          "excerpt": "سَيَعۡلَمُونَ غَدٗا مَّنِ ٱلۡكَذَّابُ ٱلۡأَشِرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:27",
+          "excerpt": "إِنَّا مُرۡسِلُواْ ٱلنَّاقَةِ فِتۡنَةٗ لَّهُمۡ فَٱرۡتَقِبۡهُمۡ وَٱصۡطَبِرۡ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:28",
+          "excerpt": "وَنَبِّئۡهُمۡ أَنَّ ٱلۡمَآءَ قِسۡمَةُۢ بَيۡنَهُمۡۖ كُلُّ شِرۡبٖ مُّحۡتَضَرٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:29",
           "excerpt": "فَنَادَوۡاْ صَاحِبَهُمۡ فَتَعَاطَىٰ فَعَقَرَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1718",
-      "label": "cand-1718: Topic from 54:31",
-      "definition": "In 54:31: Indeed, We sent upon them one blast from the sky, and they became like the dry twig fragments of an [animal] pen",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:30",
+          "excerpt": "فَكَيۡفَ كَانَ عَذَابِي وَنُذُرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:31",
           "excerpt": "إِنَّآ أَرۡسَلۡنَا عَلَيۡهِمۡ صَيۡحَةٗ وَٰحِدَةٗ فَكَانُواْ كَهَشِيمِ ٱلۡمُحۡتَظِرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Salih narrative."
+        },
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Naqah as fitnah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1719",
-      "label": "cand-1719: Topic from 54:34",
-      "definition": "In 54:34: Indeed, We sent upon them a storm of stones, except the family of Lot - We saved them before dawn",
+      "candidateId": "cand-1660",
+      "label": "Lot's people struck by stone-storm with family saved before dawn",
+      "definition": "In 54:33-39: People of Lot denied warning; We sent storm of stones except family saved before dawn as favour; they disputed warning and demanded guests; We obliterated their eyes; morning brought abiding punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "54:33",
+          "excerpt": "كَذَّبَتۡ قَوۡمُ لُوطِۭ بِٱلنُّذُرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:34",
           "excerpt": "إِنَّآ أَرۡسَلۡنَا عَلَيۡهِمۡ حَاصِبًا إِلَّآ ءَالَ لُوطٖۖ نَّجَّيۡنَٰهُم بِسَحَرٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1720",
-      "label": "cand-1720: Topic from 54:36",
-      "definition": "In 54:36: And he had already warned them of Our assault, but they disputed the warning",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:35",
+          "excerpt": "نِّعۡمَةٗ مِّنۡ عِندِنَاۚ كَذَٰلِكَ نَجۡزِي مَن شَكَرَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:36",
           "excerpt": "وَلَقَدۡ أَنذَرَهُم بَطۡشَتَنَا فَتَمَارَوۡاْ بِٱلنُّذُرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1721",
-      "label": "cand-1721: Topic from 54:39",
-      "definition": "In 54:39: So taste My punishment and warning",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:37",
+          "excerpt": "وَلَقَدۡ رَٰوَدُوهُ عَن ضَيۡفِهِۦ فَطَمَسۡنَآ أَعۡيُنَهُمۡ فَذُوقُواْ عَذَابِي وَنُذُرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:38",
+          "excerpt": "وَلَقَدۡ صَبَّحَهُم بُكۡرَةً عَذَابٞ مُّسۡتَقِرّٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:39",
           "excerpt": "فَذُوقُواْ عَذَابِي وَنُذُرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Lut narrative."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Family rescue as ni'mah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1722",
-      "label": "cand-1722: Topic from 54:42",
-      "definition": "In 54:42: They denied Our signs, all of them, so We seized them with a seizure of one Exalted in Might and Perfect in Ability",
+      "candidateId": "cand-1661",
+      "label": "Pharaoh's people seized by the Exalted Mighty Perfect in Ability",
+      "definition": "In 54:41-42: There certainly came to Pharaoh's people warning; they denied Our signs all of them so We seized them with a seizure of One Exalted in Might Perfect in Ability.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "54:41",
+          "excerpt": "وَلَقَدۡ جَآءَ ءَالَ فِرۡعَوۡنَ ٱلنُّذُرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "54:42",
           "excerpt": "كَذَّبُواْ بِـَٔايَٰتِنَا كُلِّهَا فَأَخَذۡنَٰهُمۡ أَخۡذَ عَزِيزٖ مُّقۡتَدِرٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1723",
-      "label": "cand-1723: Topic from 54:44",
-      "definition": "In 54:44: Or do they say, \"We are an assembly supporting [each other]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "54:44",
-          "excerpt": "أَمۡ يَقُولُونَ نَحۡنُ جَمِيعٞ مُّنتَصِرٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1724",
-      "label": "cand-1724: Topic from 54:47",
-      "definition": "In 54:47: Indeed, the criminals are in error and madness",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Aziz Muqtadir pairing."
+        },
         {
-          "key": "54:47",
-          "excerpt": "إِنَّ ٱلۡمُجۡرِمِينَ فِي ضَلَٰلٖ وَسُعُرٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Fir'aun destruction."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1725",
-      "label": "cand-1725: Topic from 54:49",
-      "definition": "In 54:49: Indeed, all things We created with predestination",
+      "candidateId": "cand-1662",
+      "label": "All things created with predestination; command in a single glance",
+      "definition": "In 54:49-50: Indeed all things We created with predestination; and Our command is but one like a glance of the eye.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "54:49",
           "excerpt": "إِنَّا كُلَّ شَيۡءٍ خَلَقۡنَٰهُ بِقَدَرٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:50",
+          "excerpt": "وَمَآ أَمۡرُنَآ إِلَّا وَٰحِدَةٞ كَلَمۡحِۭ بِٱلۡبَصَرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qadar foundational ayah."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Amr wahid instantaneous."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1726",
-      "label": "cand-1726: Topic from 54:52",
-      "definition": "In 54:52: And everything they did is in written records",
+      "candidateId": "cand-1663",
+      "label": "Every deed inscribed in written records, small and great",
+      "definition": "In 54:52-53: And everything they did is in written records; and every small and great thing is inscribed.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "54:52",
           "excerpt": "وَكُلُّ شَيۡءٖ فَعَلُوهُ فِي ٱلزُّبُرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:53",
+          "excerpt": "وَكُلُّ صَغِيرٖ وَكَبِيرٖ مُّسۡتَطَرٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zubur recording."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Complete inscription."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1664",
+      "label": "Righteous in gardens and rivers at seat of honour near the Sovereign",
+      "definition": "In 54:54-55: Indeed the righteous will be among gardens and rivers in a seat of honour near a Sovereign Perfect in Ability.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "54:54",
+          "excerpt": "إِنَّ ٱلۡمُتَّقِينَ فِي جَنَّـٰتٖ وَنَهَرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "54:55",
+          "excerpt": "فِي مَقۡعَدِ صِدۡقٍ عِندَ مَلِيكٖ مُّقۡتَدِرِۭ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Maq'ad sidq reward."
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Malik Muqtadir closure."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T17:05:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     }
   ]
 }
