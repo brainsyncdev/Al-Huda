@@ -1,387 +1,251 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:10:00.000Z",
-  "sourceExtraction": "ext-082-p1,ext-082-p2",
+  "generatedAt": "2026-11-20T21:45:00.000Z",
+  "sourceExtraction": "ext-082-p1,ext-082-p2,ext-082-p3",
   "candidates": [
     {
-      "candidateId": "cand-2277",
-      "label": "cand-2277: Topic from 82:1",
-      "definition": "In 82:1: When the sky breaks apart",
+      "candidateId": "cand-1910",
+      "label": "Four-fold dissolution ending in soul-knowledge of forwarded and withheld deeds",
+      "definition": "In 82:1-5: When the sky breaks apart and when the stars fall scattering and when the seas are erupted and when the contents of graves are scattered; a soul will then know what it has put forth and kept back.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "82:1",
           "excerpt": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2278",
-      "label": "cand-2278: Topic from 82:1",
-      "definition": "In 82:1: When the sky breaks apart",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "82:1",
-          "excerpt": "إِذَا ٱلسَّمَآءُ ٱنفَطَرَتۡ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2279",
-      "label": "cand-2279: Topic from 82:2",
-      "definition": "In 82:2: And when the stars fall, scattering",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:2",
           "excerpt": "وَإِذَا ٱلۡكَوَاكِبُ ٱنتَثَرَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2280",
-      "label": "cand-2280: Topic from 82:3",
-      "definition": "In 82:3: And when the seas are erupted",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:3",
           "excerpt": "وَإِذَا ٱلۡبِحَارُ فُجِّرَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2281",
-      "label": "cand-2281: Topic from 82:4",
-      "definition": "In 82:4: And when the [contents of] graves are scattered",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:4",
           "excerpt": "وَإِذَا ٱلۡقُبُورُ بُعۡثِرَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2282",
-      "label": "cand-2282: Topic from 82:5",
-      "definition": "In 82:5: A soul will [then] know what it has put forth and kept back",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:5",
           "excerpt": "عَلِمَتۡ نَفۡسٞ مَّا قَدَّمَتۡ وَأَخَّرَتۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Infatarat intatharat buhhirat bu'thirat."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qaddamat wa-akhkharat disclosed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:45:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2283",
-      "label": "cand-2283: Topic from 82:6",
-      "definition": "In 82:6: O mankind, what has deceived you concerning your Lord, the Generous",
+      "candidateId": "cand-1911",
+      "label": "Deception concerning the Generous Lord who created, proportioned and balanced",
+      "definition": "In 82:6-8: O mankind what has deceived you concerning your Lord the Generous who created you proportioned you and balanced you; in whatever form He willed has He assembled you.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "82:6",
           "excerpt": "يَـٰٓأَيُّهَا ٱلۡإِنسَٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلۡكَرِيمِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2284",
-      "label": "cand-2284: Topic from 82:7",
-      "definition": "In 82:7: Who created you, proportioned you, and balanced you",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:7",
           "excerpt": "ٱلَّذِي خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2285",
-      "label": "cand-2285: Topic from 82:8",
-      "definition": "In 82:8: In whatever form He willed has He assembled you",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:8",
           "excerpt": "فِيٓ أَيِّ صُورَةٖ مَّا شَآءَ رَكَّبَكَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rabb al-Karim named."
+        },
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Khalaqa sawwa 'adala tarkib."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:45:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2286",
-      "label": "cand-2286: Topic from 82:9",
-      "definition": "In 82:9: No! But you deny the Recompense",
+      "candidateId": "cand-1912",
+      "label": "Noble recording keepers appointed despite denial of Recompense",
+      "definition": "In 82:9-12: No but you deny the Recompense; and indeed appointed over you are keepers noble and recording; they know whatever you do.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "82:9",
           "excerpt": "كَلَّا بَلۡ تُكَذِّبُونَ بِٱلدِّينِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2287",
-      "label": "cand-2287: Topic from 82:11",
-      "definition": "In 82:11: Noble and recording",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "82:10",
+          "excerpt": "وَإِنَّ عَلَيۡكُمۡ لَحَٰفِظِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:11",
           "excerpt": "كِرَامٗا كَٰتِبِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2288",
-      "label": "cand-2288: Topic from 82:11",
-      "definition": "In 82:11: Noble and recording",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "82:11",
-          "excerpt": "كِرَامٗا كَٰتِبِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2289",
-      "label": "cand-2289: Topic from 82:12",
-      "definition": "In 82:12: They know whatever you do",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:12",
           "excerpt": "يَعۡلَمُونَ مَا تَفۡعَلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hafazah kiraman katibin."
+        },
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ya'lamuna ma taf'alun."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:45:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2290",
-      "label": "cand-2290: Topic from 82:13",
-      "definition": "In 82:13: Indeed, the righteous will be in pleasure",
+      "candidateId": "cand-1913",
+      "label": "Righteous in pleasure versus wicked burning without absence",
+      "definition": "In 82:13-16: Indeed the righteous will be in pleasure and indeed the wicked will be in Hellfire; they will enter to burn therein on the Day of Recompense and never therefrom will they be absent.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "82:13",
           "excerpt": "إِنَّ ٱلۡأَبۡرَارَ لَفِي نَعِيمٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2291",
-      "label": "cand-2291: Topic from 82:14",
-      "definition": "In 82:14: And indeed, the wicked will be in Hellfire",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:14",
           "excerpt": "وَإِنَّ ٱلۡفُجَّارَ لَفِي جَحِيمٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2292",
-      "label": "cand-2292: Topic from 82:15",
-      "definition": "In 82:15: They will [enter to] burn therein on the Day of Recompense",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:15",
           "excerpt": "يَصۡلَوۡنَهَا يَوۡمَ ٱلدِّينِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2293",
-      "label": "cand-2293: Topic from 82:15",
-      "definition": "In 82:15: They will [enter to] burn therein on the Day of Recompense",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "82:15",
-          "excerpt": "يَصۡلَوۡنَهَا يَوۡمَ ٱلدِّينِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2294",
-      "label": "cand-2294: Topic from 82:16",
-      "definition": "In 82:16: And never therefrom will they be absent",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:16",
           "excerpt": "وَمَا هُمۡ عَنۡهَا بِغَآئِبِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Abrar fi na'im fujjar fi jahim."
+        },
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ma hum 'anha bi-gha'ibin permanence."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:45:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2295",
-      "label": "cand-2295: Topic from 82:17",
-      "definition": "In 82:17: And what can make you know what is the Day of Recompense",
+      "candidateId": "cand-1914",
+      "label": "No soul possessing power for another; command entirely with Allah",
+      "definition": "In 82:17-19: And what can make you know what is the Day of Recompense; then what can make you know what is the Day of Recompense; it is the Day when a soul will not possess for another soul power to do a thing and the command that Day is entirely with Allah.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "82:17",
           "excerpt": "وَمَآ أَدۡرَىٰكَ مَا يَوۡمُ ٱلدِّينِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2296",
-      "label": "cand-2296: Topic from 82:18",
-      "definition": "In 82:18: Then, what can make you know what is the Day of Recompense",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "82:18",
           "excerpt": "ثُمَّ مَآ أَدۡرَىٰكَ مَا يَوۡمُ ٱلدِّينِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "82:19",
+          "excerpt": "يَوۡمَ لَا تَمۡلِكُ نَفۡسٞ لِّنَفۡسٖ شَيۡـٔٗاۖ وَٱلۡأَمۡرُ يَوۡمَئِذٖ لِّلَّهِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La tamliku nafs li-nafs shay'an."
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Al-amr yawma'idhin lillah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:45:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     }
   ]
 }

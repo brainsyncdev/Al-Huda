@@ -5,22 +5,40 @@
   "surah": 82,
   "surahName": "Al-Infitar",
   "passage": {
-    "fromAyah": 11,
-    "toAyah": 19,
-    "label": "Al-Infitar 82:11-19"
+    "fromAyah": 6,
+    "toAyah": 12,
+    "label": "O mankind what deceived you concerning Lord Generous; created proportioned balanced you; whatever form willed assembled you; No deny Recompense; indeed appointed over keepers; noble recording; know whatever do"
   },
   "verseKeys": [
+    "82:6",
+    "82:7",
+    "82:8",
+    "82:9",
+    "82:10",
     "82:11",
-    "82:12",
-    "82:13",
-    "82:14",
-    "82:15",
-    "82:16",
-    "82:17",
-    "82:18",
-    "82:19"
+    "82:12"
   ],
   "arabicExcerpts": [
+    {
+      "key": "82:6",
+      "text": "يَـٰٓأَيُّهَا ٱلۡإِنسَٰنُ مَا غَرَّكَ بِرَبِّكَ ٱلۡكَرِيمِ"
+    },
+    {
+      "key": "82:7",
+      "text": "ٱلَّذِي خَلَقَكَ فَسَوَّىٰكَ فَعَدَلَكَ"
+    },
+    {
+      "key": "82:8",
+      "text": "فِيٓ أَيِّ صُورَةٖ مَّا شَآءَ رَكَّبَكَ"
+    },
+    {
+      "key": "82:9",
+      "text": "كَلَّا بَلۡ تُكَذِّبُونَ بِٱلدِّينِ"
+    },
+    {
+      "key": "82:10",
+      "text": "وَإِنَّ عَلَيۡكُمۡ لَحَٰفِظِينَ"
+    },
     {
       "key": "82:11",
       "text": "كِرَامٗا كَٰتِبِينَ"
@@ -28,137 +46,138 @@
     {
       "key": "82:12",
       "text": "يَعۡلَمُونَ مَا تَفۡعَلُونَ"
-    },
-    {
-      "key": "82:13",
-      "text": "إِنَّ ٱلۡأَبۡرَارَ لَفِي نَعِيمٖ"
-    },
-    {
-      "key": "82:14",
-      "text": "وَإِنَّ ٱلۡفُجَّارَ لَفِي جَحِيمٖ"
-    },
-    {
-      "key": "82:15",
-      "text": "يَصۡلَوۡنَهَا يَوۡمَ ٱلدِّينِ"
-    },
-    {
-      "key": "82:16",
-      "text": "وَمَا هُمۡ عَنۡهَا بِغَآئِبِينَ"
-    },
-    {
-      "key": "82:17",
-      "text": "وَمَآ أَدۡرَىٰكَ مَا يَوۡمُ ٱلدِّينِ"
-    },
-    {
-      "key": "82:18",
-      "text": "ثُمَّ مَآ أَدۡرَىٰكَ مَا يَوۡمُ ٱلدِّينِ"
-    },
-    {
-      "key": "82:19",
-      "text": "يَوۡمَ لَا تَمۡلِكُ نَفۡسٞ لِّنَفۡسٖ شَيۡـٔٗاۖ وَٱلۡأَمۡرُ يَوۡمَئِذٖ لِّلَّهِ"
     }
   ],
   "mainSubject": {
-    "label": "Al-Infitar 82:11-19",
+    "label": "Mankind questioned about what deceived them concerning their Generous Lord who created, proportioned and balanced them, assembling them in whatever form He willed; their denial of the Recompense answered by the appointment of noble recording keepers who know whatever they do",
     "keys": [
+      "82:6",
+      "82:7",
+      "82:8",
+      "82:9",
+      "82:10",
       "82:11",
-      "82:12",
-      "82:13",
-      "82:14",
-      "82:15",
-      "82:16",
-      "82:17",
-      "82:18",
-      "82:19"
+      "82:12"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "Noble and recording",
+      "label": "Mankind questioned about what deceived them concerning their Generous Lord",
+      "keys": [
+        "82:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "He created, proportioned and balanced them",
+      "keys": [
+        "82:7"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Assembled them in whatever form He willed",
+      "keys": [
+        "82:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Their denial of the Recompense rebuked",
+      "keys": [
+        "82:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Noble keepers appointed over them",
+      "keys": [
+        "82:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Those keepers described as noble and recording",
       "keys": [
         "82:11"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "They know whatever you do",
+      "label": "They know whatever people do",
       "keys": [
         "82:12"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Indeed, the righteous will be in pleasure",
-      "keys": [
-        "82:13"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And indeed, the wicked will be in Hellfire",
-      "keys": [
-        "82:14"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "They will [enter to] burn therein on the Day of Recompense",
-      "keys": [
-        "82:15"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And never therefrom will they be absent",
-      "keys": [
-        "82:16"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And what can make you know what is the Day of Recompense",
-      "keys": [
-        "82:17"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Then, what can make you know what is the Day of Recompense",
-      "keys": [
-        "82:18"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "It is the Day when a soul will not possess for another soul [power to do] a t...",
-      "keys": [
-        "82:19"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
   "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2287",
-    "cand-2288",
-    "cand-2289",
-    "cand-2290",
-    "cand-2291",
-    "cand-2292",
-    "cand-2293",
-    "cand-2294",
-    "cand-2295",
-    "cand-2296"
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱلۡكَرِيمِ",
+      "transliteration": "Kareem",
+      "gloss": "Generous (editorial gloss)",
+      "keys": [
+        "82:6"
+      ]
+    }
   ],
-  "notes": "Pass A Surah 82 passage 2/2. Generated by mfd11-gen-batch-79-84.mjs.",
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Deception concerning the Generous Lord despite creation, proportioning and balancing",
+      "keys": [
+        "82:6",
+        "82:7",
+        "82:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Denial of the Recompense despite appointed recording keepers",
+      "keys": [
+        "82:9",
+        "82:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Form assembled according to divine will rather than human choice",
+      "keys": [
+        "82:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Noble recording keepers knowing every deed",
+      "keys": [
+        "82:10",
+        "82:11",
+        "82:12"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "لَحَٰفِظِينَ",
+      "transliteration": "hafazah",
+      "gloss": "keepers/guardians (editorial gloss)",
+      "keys": [
+        "82:10"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1911",
+    "cand-1912"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the soul-knowing verdict (5) before the deception-question opens (6); P2 ends with the recording-keepers' knowledge (12) before the two-outcome block begins (13); P3 runs through pleasure-versus-Hellfire, the doubled Day-of-Recompense question and the closing absolute-sovereignty statement (13-19).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:10:00.000Z"
+  "createdAt": "2026-11-20T21:45:00.000Z"
 }
