@@ -6,8 +6,8 @@
   "surahName": "As-Saffat",
   "passage": {
     "fromAyah": 1,
-    "toAyah": 37,
-    "label": "As-Saffat 37:1-37"
+    "toAyah": 39,
+    "label": "Oath by those lined up in rows, those who drive, those who recite the message; indeed your God is One, Lord of heavens earth and between them and Lord of the sunrises; nearest heaven adorned with stars and guarded against every rebellious devil; devils cannot listen to the exalted assembly, pelted from every side, repelled with constant punishment, except one who snatches by theft pursued by a piercing burning flame; inquire are they a stronger creation or those We created, We created them from sticky clay; you wonder while they mock; reminded they remember not; see a sign they ridicule calling it obvious magic; when we are dust and bones are we resurrected and our forefathers; say yes and you will be contemptible; one shout and at once they observe; woe to us this is the Day of Recompense; this is the Day of Judgement you denied; gather the wrongdoers their kinds and what they worshipped besides Allah and guide them to the path of Hellfire; stop them they are to be questioned; why do you not help each other; that Day they are in surrender; they approach one another blaming; you used to come at us from the right; rather you yourselves were not believers; we had no authority over you, you were a transgressing people; the word of our Lord has come into effect upon us, we will taste; we led you to deviation, we were deviators; that Day they share the punishment; thus We deal with the criminals; when told there is no deity but Allah they were arrogant, saying shall we leave our gods for a mad poet; rather he came with the truth and confirmed the messengers; you will taste the painful punishment and be recompensed only for what you used to do"
   },
   "verseKeys": [
     "37:1",
@@ -46,7 +46,9 @@
     "37:34",
     "37:35",
     "37:36",
-    "37:37"
+    "37:37",
+    "37:38",
+    "37:39"
   ],
   "arabicExcerpts": [
     {
@@ -196,10 +198,18 @@
     {
       "key": "37:37",
       "text": "بَلۡ جَآءَ بِٱلۡحَقِّ وَصَدَّقَ ٱلۡمُرۡسَلِينَ"
+    },
+    {
+      "key": "37:38",
+      "text": "إِنَّكُمۡ لَذَآئِقُواْ ٱلۡعَذَابِ ٱلۡأَلِيمِ"
+    },
+    {
+      "key": "37:39",
+      "text": "وَمَا تُجۡزَوۡنَ إِلَّا مَا كُنتُمۡ تَعۡمَلُونَ"
     }
   ],
   "mainSubject": {
-    "label": "As-Saffat 37:1-37",
+    "label": "Opening oath triad (saffat, zajirat, taliyat) grounding the affirmation that God is One and Lord of the heavens, the earth and the sunrises; the nearest heaven's star-adornment serving both beauty and protection; rebellious devils barred from the exalted assembly and pelted, with the stolen-word exception pursued by a piercing flame; creation from sticky clay answering the claim of superior difficulty; mockery, non-remembrance and sign-ridicule as the disbeliever's response pattern; resurrection of dust and bones affirmed with a single shout; the Day of Judgement gathering wrongdoers with their objects of worship toward Hellfire; mutual blame between misleaders and followers resolved by the admission of no coercive authority; shared punishment as criminal treatment; arrogance at la ilaha illa Allah and the mad-poet accusation answered by truth and confirmation of prior messengers",
     "keys": [
       "37:1",
       "37:2",
@@ -265,7 +275,7 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[So] they may not listen to the exalted assembly [of angels] and are pelted f...",
+      "label": "[So] they may not listen to the exalted assembly [of angels] and are pelted from every side",
       "keys": [
         "37:8"
       ],
@@ -279,14 +289,14 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Except one who snatches [some words] by theft, but they are pursued by a burn...",
+      "label": "Except one who snatches [some words] by theft, but they are pursued by a burning flame, piercing [in brightness]",
       "keys": [
         "37:10"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Then inquire of them, [O Muhammad], \"Are they a stronger [or more difficult] ...",
+      "label": "Then inquire of them, [O Muhammad], \"Are they a stronger [or more difficult] creation or those [others] We have creat...",
       "keys": [
         "37:11"
       ],
@@ -363,7 +373,7 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[The angels will be ordered], \"Gather those who committed wrong, their kinds,...",
+      "label": "[The angels will be ordered], \"Gather those who committed wrong, their kinds, and what they used to worship",
       "keys": [
         "37:22"
       ],
@@ -426,7 +436,7 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "So the word of our Lord has come into effect upon us; indeed, we will taste [...",
+      "label": "So the word of our Lord has come into effect upon us; indeed, we will taste [punishment]",
       "keys": [
         "37:31"
       ],
@@ -454,7 +464,7 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed they, when it was said to them, \"There is no deity but Allah,\" were ar...",
+      "label": "Indeed they, when it was said to them, \"There is no deity but Allah,\" were arrogant",
       "keys": [
         "37:35"
       ],
@@ -468,34 +478,129 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Rather, the Prophet has come with the truth and confirmed the [previous] mess...",
+      "label": "Rather, the Prophet has come with the truth and confirmed the [previous] messengers",
       "keys": [
         "37:37"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Indeed, you [disbelievers] will be tasters of the painful punishment",
+      "keys": [
+        "37:38"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And you will not be recompensed except for what you used to do",
+      "keys": [
+        "37:39"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "37:11"
+      ],
+      "excerpt": "فَٱسۡتَفۡتِهِمۡ أَهُمۡ أَشَدُّ خَلۡقًا أَم مَّنۡ خَلَقۡنَآۚ إِنَّا خَلَقۡنَٰهُم مِّن طِينٖ لَّازِبِۭ",
+      "description": "Then inquire of them whether they are a stronger creation or those We created — interrogative challenge on created origin."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "37:18"
+      ],
+      "excerpt": "قُلۡ نَعَمۡ وَأَنتُمۡ دَٰخِرُونَ",
+      "description": "Say: Yes, and you will be rendered contemptible — affirmative answer to the resurrection question."
+    }
+  ],
   "divineNamesAndAttributes": [],
   "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-1297",
-    "cand-1298",
-    "cand-1299",
-    "cand-1300",
-    "cand-1301",
-    "cand-1302",
-    "cand-1303",
-    "cand-1304",
-    "cand-1305",
-    "cand-1306"
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Angelic orders sworn by: those lined up in rows, those who drive, those who recite the message",
+      "keys": [
+        "37:1",
+        "37:2",
+        "37:3"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Rebellious devils barred from the exalted assembly and pelted from every side, with the stolen-word exception pursued by a piercing flame",
+      "keys": [
+        "37:7",
+        "37:8",
+        "37:9",
+        "37:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Reminder without remembrance and sign-seeing met with ridicule labelled obvious magic",
+      "keys": [
+        "37:13",
+        "37:14",
+        "37:15"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Arrogance at the declaration of divine oneness and dismissal of the messenger as a mad poet",
+      "keys": [
+        "37:35",
+        "37:36"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 37 passage 1/5. Generated by mfd11-gen-batch-37-42.mjs.",
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Mutual blame between misleaders and followers resolved by the admission of no coercive authority and shared punishment",
+      "keys": [
+        "37:27",
+        "37:28",
+        "37:29",
+        "37:30",
+        "37:31",
+        "37:32",
+        "37:33"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "وَٱلصَّـٰٓفَّـٰتِ",
+      "transliteration": "saffat",
+      "gloss": "those lined up in rows (editorial gloss)",
+      "keys": [
+        "37:1"
+      ]
+    },
+    {
+      "term": "شِهَابٞ",
+      "transliteration": "shihab",
+      "gloss": "burning flame (editorial gloss)",
+      "keys": [
+        "37:10"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1337",
+    "cand-1338",
+    "cand-1339",
+    "cand-1340",
+    "cand-1341",
+    "cand-1342"
+  ],
+  "notes": "Wave 6 genuine re-extraction. P1=angelic-oaths-tawheed-guarded-heaven-resurrection-blame(1-39), P2=chosen-servants-reward-zaqqum-Nuh(40-82), P3=Ibrahim-idols-furnace-dream-sacrifice-ransom-Isaac(83-113), P4=Musa-Harun-Ilyas-Lut-Yunus(114-148), P5=daughter-attribution-jinn-lineage-angelic-stations-victory-closing(149-182).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T16:35:00.000Z"
+  "createdAt": "2026-11-20T15:00:00.000Z"
 }

@@ -1,12 +1,12 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:35:00.000Z",
+  "generatedAt": "2026-11-20T15:00:00.000Z",
   "sourceExtraction": "ext-037-p1,ext-037-p2,ext-037-p3,ext-037-p4,ext-037-p5",
   "candidates": [
     {
-      "candidateId": "cand-1297",
-      "label": "cand-1297: Topic from 37:1",
-      "definition": "In 37:1: By those [angels] lined up in rows",
+      "candidateId": "cand-1337",
+      "label": "Angelic oath triad grounding the affirmation that God is One",
+      "definition": "In 37:1-4: By those lined up in rows, those who drive, those who recite the message; indeed your God is One.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -16,35 +16,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Three functional orders sworn by."
+        },
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ilahukum la-wahid."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1298",
-      "label": "cand-1298: Topic from 37:4",
-      "definition": "In 37:4: Indeed, your God is One",
+      "candidateId": "cand-1338",
+      "label": "Lordship extending to the heavens, the earth and the sunrises",
+      "definition": "In 37:5: Lord of the heavens and the earth and what is between them and Lord of the sunrises.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:4",
-          "excerpt": "إِنَّ إِلَٰهَكُمۡ لَوَٰحِدٞ",
+          "key": "37:5",
+          "excerpt": "رَّبُّ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَمَا بَيۡنَهُمَا وَرَبُّ ٱلۡمَشَٰرِقِ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rabb al-mashariq."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Cosmic scope of lordship."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1299",
-      "label": "cand-1299: Topic from 37:8",
-      "definition": "In 37:8: [So] they may not listen to the exalted assembly [of angels] and are pelted from every side",
+      "candidateId": "cand-1339",
+      "label": "Star-adornment of the nearest heaven serving beauty and protection together",
+      "definition": "In 37:6-7: We adorned the nearest heaven with an adornment of stars and as protection against every rebellious devil.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "37:6",
+          "excerpt": "إِنَّا زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِزِينَةٍ ٱلۡكَوَاكِبِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zinat al-kawakib."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Guarded cosmic architecture."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1340",
+      "label": "Devils barred from the exalted assembly with the stolen word pursued by a piercing flame",
+      "definition": "In 37:8-10: They may not listen to the exalted assembly and are pelted from every side, repelled with constant punishment, except one who snatches by theft pursued by a piercing burning flame.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -54,16 +112,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shaytan-enemy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Expulsion and pursuit."
+        },
+        {
+          "topicId": "unseen-belief",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Celestial hearing restricted."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1300",
-      "label": "cand-1300: Topic from 37:11",
-      "definition": "In 37:11: Then inquire of them, [O Muhammad], \"Are they a stronger [or more difficult] creation or those [others] We have created?\" Indeed, We created men from sticky clay",
+      "candidateId": "cand-1341",
+      "label": "Creation from sticky clay answering the claim of superior difficulty",
+      "definition": "In 37:11: Are they a stronger creation or those We created? Indeed We created them from sticky clay.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -73,168 +144,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Tin lazib origin."
+        },
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Created origin implies recreatability."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1301",
-      "label": "cand-1301: Topic from 37:15",
-      "definition": "In 37:15: And say, \"This is not but obvious magic",
+      "candidateId": "cand-1342",
+      "label": "Misleaders admitting no coercive authority while sharing punishment with followers",
+      "definition": "In 37:28-33: You came at us from the right; rather you were not believers; we had no authority over you, you were a transgressing people; that Day they share the punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:15",
-          "excerpt": "وَقَالُوٓاْ إِنۡ هَٰذَآ إِلَّا سِحۡرٞ مُّبِينٌ",
+          "key": "37:30",
+          "excerpt": "وَمَا كَانَ لَنَا عَلَيۡكُم مِّن سُلۡطَٰنِۭۖ بَلۡ كُنتُمۡ قَوۡمٗا طَٰغِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "No sultan over the follower."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shared adhab."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1302",
-      "label": "cand-1302: Topic from 37:19",
-      "definition": "In 37:19: It will be only one shout, and at once they will be observing",
+      "candidateId": "cand-1343",
+      "label": "Chosen servants exempted with determined provision and honor in gardens of pleasure",
+      "definition": "In 37:40-44: But not the chosen servants of Allah; a provision determined, fruits, honored in gardens of pleasure on thrones facing one another.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:19",
-          "excerpt": "فَإِنَّمَا هِيَ زَجۡرَةٞ وَٰحِدَةٞ فَإِذَا هُمۡ يَنظُرُونَ",
+          "key": "37:40",
+          "excerpt": "إِلَّا عِبَادَ ٱللَّهِ ٱلۡمُخۡلَصِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1303",
-      "label": "cand-1303: Topic from 37:22",
-      "definition": "In 37:22: [The angels will be ordered], \"Gather those who committed wrong, their kinds, and what they used to worship",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "37:22",
-          "excerpt": "۞ٱحۡشُرُواْ ٱلَّذِينَ ظَلَمُواْ وَأَزۡوَٰجَهُمۡ وَمَا كَانُواْ يَعۡبُدُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Jannat al-na'im."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Ikhlas as exemption basis."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1304",
-      "label": "cand-1304: Topic from 37:26",
-      "definition": "In 37:26: But they, that Day, are in surrender",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:26",
-          "excerpt": "بَلۡ هُمُ ٱلۡيَوۡمَ مُسۡتَسۡلِمُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1305",
-      "label": "cand-1305: Topic from 37:29",
-      "definition": "In 37:29: The oppressors will say, \"Rather, you [yourselves] were not believers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:29",
-          "excerpt": "قَالُواْ بَل لَّمۡ تَكُونُواْ مُؤۡمِنِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1306",
-      "label": "cand-1306: Topic from 37:33",
-      "definition": "In 37:33: So indeed they, that Day, will be sharing in the punishment",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:33",
-          "excerpt": "فَإِنَّهُمۡ يَوۡمَئِذٖ فِي ٱلۡعَذَابِ مُشۡتَرِكُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1307",
-      "label": "cand-1307: Topic from 37:38",
-      "definition": "In 37:38: Indeed, you [disbelievers] will be tasters of the painful punishment",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:38",
-          "excerpt": "إِنَّكُمۡ لَذَآئِقُواْ ٱلۡعَذَابِ ٱلۡأَلِيمِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1308",
-      "label": "cand-1308: Topic from 37:41",
-      "definition": "In 37:41: Those will have a provision determined",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:41",
-          "excerpt": "أُوْلَـٰٓئِكَ لَهُمۡ رِزۡقٞ مَّعۡلُومٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1309",
-      "label": "cand-1309: Topic from 37:45",
-      "definition": "In 37:45: There will be circulated among them a cup [of wine] from a flowing spring",
+      "candidateId": "cand-1344",
+      "label": "Circulating cup free of bad effect and intoxication as perfected pleasure",
+      "definition": "In 37:45-47: Circulated among them a cup from a flowing spring, white and delicious to the drinkers; no bad effect in it nor will they be intoxicated.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -244,16 +240,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ka's min ma'in."
+        },
+        {
+          "topicId": "balance-moderation",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Pleasure without harm."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1310",
-      "label": "cand-1310: Topic from 37:48",
-      "definition": "In 37:48: And with them will be women limiting [their] glances, with large, [beautiful] eyes",
+      "candidateId": "cand-1345",
+      "label": "Glance-restricted companions described as well-protected eggs",
+      "definition": "In 37:48-49: With them women limiting their glances with large beautiful eyes, as if they were delicate well-protected eggs.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -263,130 +272,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "marriage-importance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qasirat al-tarf."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Bayd maknun imagery."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1311",
-      "label": "cand-1311: Topic from 37:52",
-      "definition": "In 37:52: Who would say, 'Are you indeed of those who believe",
+      "candidateId": "cand-1346",
+      "label": "Divine favor acknowledged as the sole cause of escaping a companion's ruin",
+      "definition": "In 37:56-57: By Allah you almost ruined me; if not for the favor of my Lord I would have been of those brought in.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:52",
-          "excerpt": "يَقُولُ أَءِنَّكَ لَمِنَ ٱلۡمُصَدِّقِينَ",
+          "key": "37:57",
+          "excerpt": "وَلَوۡلَا نِعۡمَةُ رَبِّي لَكُنتُ مِنَ ٱلۡمُحۡضَرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ni'mat rabb as rescue."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Attribution of salvation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1312",
-      "label": "cand-1312: Topic from 37:56",
-      "definition": "In 37:56: He will say, \"By Allah, you almost ruined me",
+      "candidateId": "cand-1347",
+      "label": "Zaqqum contrasted with Paradise as torment issuing from Hellfire's base",
+      "definition": "In 37:62-68: Is Paradise a better accommodation or the tree of zaqqum; a torment for wrongdoers issuing from the bottom of Hellfire, its fruit as heads of devils, eaten to fullness then mixed with scalding water.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:56",
-          "excerpt": "قَالَ تَٱللَّهِ إِن كِدتَّ لَتُرۡدِينِ",
+          "key": "37:62",
+          "excerpt": "أَذَٰلِكَ خَيۡرٞ نُّزُلًا أَمۡ شَجَرَةُ ٱلزَّقُّومِ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1313",
-      "label": "cand-1313: Topic from 37:59",
-      "definition": "In 37:59: Except for our first death, and we will not be punished",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "37:59",
-          "excerpt": "إِلَّا مَوۡتَتَنَا ٱلۡأُولَىٰ وَمَا نَحۡنُ بِمُعَذَّبِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zaqqum and hamim."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Accommodation contrast."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1314",
-      "label": "cand-1314: Topic from 37:63",
-      "definition": "In 37:63: Indeed, We have made it a torment for the wrongdoers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:63",
-          "excerpt": "إِنَّا جَعَلۡنَٰهَا فِتۡنَةٗ لِّلظَّـٰلِمِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1315",
-      "label": "cand-1315: Topic from 37:66",
-      "definition": "In 37:66: And indeed, they will eat from it and fill with it their bellies",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:66",
-          "excerpt": "فَإِنَّهُمۡ لَأٓكِلُونَ مِنۡهَا فَمَالِـُٔونَ مِنۡهَا ٱلۡبُطُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1316",
-      "label": "cand-1316: Topic from 37:70",
-      "definition": "In 37:70: So they hastened [to follow] in their footsteps",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:70",
-          "excerpt": "فَهُمۡ عَلَىٰٓ ءَاثَٰرِهِمۡ يُهۡرَعُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1317",
-      "label": "cand-1317: Topic from 37:75",
-      "definition": "In 37:75: And Noah had certainly called Us, and [We are] the best of responders",
+      "candidateId": "cand-1348",
+      "label": "Nuh's call answered with rescue, surviving descendants and peace among the worlds",
+      "definition": "In 37:75-82: Noah called Us and We are the best of responders; saved him and his family from great affliction; made his descendants those remaining; peace upon Noah among the worlds; then We drowned the disbelievers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -396,320 +368,317 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "nuh-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rescue and survival."
+        },
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khayr al-mujibin."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1318",
-      "label": "cand-1318: Topic from 37:78",
-      "definition": "In 37:78: And left for him [favorable mention] among later generations",
+      "candidateId": "cand-1349",
+      "label": "Sound heart as the manner of approaching the Lord",
+      "definition": "In 37:84: When he came to his Lord with a sound heart.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:78",
-          "excerpt": "وَتَرَكۡنَا عَلَيۡهِ فِي ٱلۡأٓخِرِينَ",
+          "key": "37:84",
+          "excerpt": "إِذۡ جَآءَ رَبَّهُۥ بِقَلۡبٖ سَلِيمٍ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Qalb salim."
+        },
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Approach disposition."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1319",
-      "label": "cand-1319: Topic from 37:82",
-      "definition": "In 37:82: Then We drowned the disbelievers",
+      "candidateId": "cand-1350",
+      "label": "Idol-worship exposed as desired falsehood before the Lord of the worlds",
+      "definition": "In 37:85-87: What do you worship? Is it falsehood as gods other than Allah you desire? Then what is your thought about the Lord of the worlds?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:82",
-          "excerpt": "ثُمَّ أَغۡرَقۡنَا ٱلۡأٓخَرِينَ",
+          "key": "37:86",
+          "excerpt": "أَئِفۡكًا ءَالِهَةٗ دُونَ ٱللَّهِ تُرِيدُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ifk as object of desire."
+        },
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Paternal interrogation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1320",
-      "label": "cand-1320: Topic from 37:85",
-      "definition": "In 37:85: [And] when he said to his father and his people, \"What do you worship",
+      "candidateId": "cand-1351",
+      "label": "Silent non-eating idols struck after the star-glance and illness statement",
+      "definition": "In 37:88-93: He cast a look at the stars and said I am about to be ill; they turned away; he said to their gods do you not eat, why do you not speak, and struck them with his right hand.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:85",
-          "excerpt": "إِذۡ قَالَ لِأَبِيهِ وَقَوۡمِهِۦ مَاذَا تَعۡبُدُونَ",
+          "key": "37:91",
+          "excerpt": "فَرَاغَ إِلَىٰٓ ءَالِهَتِهِمۡ فَقَالَ أَلَا تَأۡكُلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Iconoclastic demonstration."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Impotence made visible."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1321",
-      "label": "cand-1321: Topic from 37:89",
-      "definition": "In 37:89: And said, \"Indeed, I am [about to be] ill",
+      "candidateId": "cand-1352",
+      "label": "The carving argument: Allah created the worshippers and their works",
+      "definition": "In 37:95-96: Do you worship that which you yourselves carve, while Allah created you and that which you do?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:89",
-          "excerpt": "فَقَالَ إِنِّي سَقِيمٞ",
+          "key": "37:95",
+          "excerpt": "قَالَ أَتَعۡبُدُونَ مَا تَنۡحِتُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Maker-made reversal."
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Creator of acts and objects."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1322",
-      "label": "cand-1322: Topic from 37:93",
-      "definition": "In 37:93: And he turned upon them a blow with [his] right hand",
+      "candidateId": "cand-1353",
+      "label": "Furnace plot reversed into the debasement of the plotters",
+      "definition": "In 37:97-98: Construct for him a furnace and throw him into the burning fire; they intended a plan but We made them the most debased.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:93",
-          "excerpt": "فَرَاغَ عَلَيۡهِمۡ ضَرۡبَۢا بِٱلۡيَمِينِ",
+          "key": "37:98",
+          "excerpt": "فَأَرَادُواْ بِهِۦ كَيۡدٗا فَجَعَلۡنَٰهُمُ ٱلۡأَسۡفَلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "ibrahim-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kayd reversed."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Al-asfalun outcome."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1323",
-      "label": "cand-1323: Topic from 37:96",
-      "definition": "In 37:96: While Allah created you and that which you do",
+      "candidateId": "cand-1354",
+      "label": "Dream-sacrifice consultation answered by conditional filial steadfastness and ransom",
+      "definition": "In 37:102-107: O my son I have seen in a dream that I must sacrifice you; O my father do as you are commanded, you will find me if Allah wills of the steadfast; you have fulfilled the vision; this was the clear trial; We ransomed him with a great sacrifice.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:96",
-          "excerpt": "وَٱللَّهُ خَلَقَكُمۡ وَمَا تَعۡمَلُونَ",
+          "key": "37:102",
+          "excerpt": "فَلَمَّا بَلَغَ مَعَهُ ٱلسَّعۡيَ قَالَ يَٰبُنَيَّ إِنِّيٓ أَرَىٰ فِي ٱلۡمَنَامِ أَنِّيٓ أَذۡبَحُكَ فَٱنظُرۡ مَاذَا تَرَىٰۚ قَالَ يَـٰٓأَبَتِ ٱفۡعَلۡ مَا تُؤۡمَرُۖ سَتَجِدُنِيٓ إِن شَآءَ ٱللَّهُ مِنَ ٱلصَّـٰبِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "parents-and-family",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Consulted obedience."
+        },
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabirin conditioned on Allah's will."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1324",
-      "label": "cand-1324: Topic from 37:100",
-      "definition": "In 37:100: My Lord, grant me [a child] from among the righteous",
+      "candidateId": "cand-1355",
+      "label": "Musa and Harun granted support, explicit Scripture and straight-path guidance",
+      "definition": "In 37:114-118: We conferred favor upon Moses and Aaron, saved them and their people, supported them so they overcame, gave them the explicit Scripture and guided them on the straight path.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:100",
-          "excerpt": "رَبِّ هَبۡ لِي مِنَ ٱلصَّـٰلِحِينَ",
+          "key": "37:114",
+          "excerpt": "وَلَقَدۡ مَنَنَّا عَلَىٰ مُوسَىٰ وَهَٰرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Paired prophethood."
+        },
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Kitab mubin grant."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1325",
-      "label": "cand-1325: Topic from 37:103",
-      "definition": "In 37:103: And when they had both submitted and he put him down upon his forehead",
+      "candidateId": "cand-1356",
+      "label": "Ilyas confronting Ba'l worship with the best of creators and ancestral Lordship",
+      "definition": "In 37:124-126: Will you not fear Allah? Do you call upon Ba'l and leave the best of creators, Allah your Lord and the Lord of your first forefathers?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:103",
-          "excerpt": "فَلَمَّآ أَسۡلَمَا وَتَلَّهُۥ لِلۡجَبِينِ",
+          "key": "37:125",
+          "excerpt": "أَتَدۡعُونَ بَعۡلٗا وَتَذَرُونَ أَحۡسَنَ ٱلۡخَٰلِقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Named deity rejected."
+        },
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ahsan al-khaliqin."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1326",
-      "label": "cand-1326: Topic from 37:107",
-      "definition": "In 37:107: And We ransomed him with a great sacrifice",
+      "candidateId": "cand-1357",
+      "label": "Lut's household rescued with the wife counted among those remaining",
+      "definition": "In 37:133-136: Lot was among the messengers; We saved him and his family all except his wife among those who remained; then We destroyed the others.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:107",
-          "excerpt": "وَفَدَيۡنَٰهُ بِذِبۡحٍ عَظِيمٖ",
+          "key": "37:135",
+          "excerpt": "إِلَّا عَجُوزٗا فِي ٱلۡغَٰبِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1327",
-      "label": "cand-1327: Topic from 37:112",
-      "definition": "In 37:112: And We gave him good tidings of Isaac, a prophet from among the righteous",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "37:112",
-          "excerpt": "وَبَشَّرۡنَٰهُ بِإِسۡحَٰقَ نَبِيّٗا مِّنَ ٱلصَّـٰلِحِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "lut-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ghabirin exception."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kinship does not exempt."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1328",
-      "label": "cand-1328: Topic from 37:115",
-      "definition": "In 37:115: And We saved them and their people from the great affliction",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:115",
-          "excerpt": "وَنَجَّيۡنَٰهُمَا وَقَوۡمَهُمَا مِنَ ٱلۡكَرۡبِ ٱلۡعَظِيمِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1329",
-      "label": "cand-1329: Topic from 37:119",
-      "definition": "In 37:119: And We left for them [favorable mention] among later generations",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:119",
-          "excerpt": "وَتَرَكۡنَا عَلَيۡهِمَا فِي ٱلۡأٓخِرِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1330",
-      "label": "cand-1330: Topic from 37:122",
-      "definition": "In 37:122: Indeed, they were of Our believing servants",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:122",
-          "excerpt": "إِنَّهُمَا مِنۡ عِبَادِنَا ٱلۡمُؤۡمِنِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1331",
-      "label": "cand-1331: Topic from 37:126",
-      "definition": "In 37:126: Allah, your Lord and the Lord of your first forefathers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:126",
-          "excerpt": "ٱللَّهَ رَبَّكُمۡ وَرَبَّ ءَابَآئِكُمُ ٱلۡأَوَّلِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1332",
-      "label": "cand-1332: Topic from 37:130",
-      "definition": "In 37:130: Peace upon Elias",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:130",
-          "excerpt": "سَلَٰمٌ عَلَىٰٓ إِلۡ يَاسِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1333",
-      "label": "cand-1333: Topic from 37:133",
-      "definition": "In 37:133: And indeed, Lot was among the messengers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:133",
-          "excerpt": "وَإِنَّ لُوطٗا لَّمِنَ ٱلۡمُرۡسَلِينَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1334",
-      "label": "cand-1334: Topic from 37:137",
-      "definition": "In 37:137: And indeed, you pass by them in the morning",
+      "candidateId": "cand-1358",
+      "label": "Destroyed sites passed morning and night posed as a reasoning challenge",
+      "definition": "In 37:137-138: You pass by them in the morning and at night; then will you not use reason?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -719,54 +688,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Repeated spatial exposure."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Afa-la ta'qilun."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1335",
-      "label": "cand-1335: Topic from 37:140",
-      "definition": "In 37:140: [Mention] when he ran away to the laden ship",
+      "candidateId": "cand-1359",
+      "label": "Yunus swallowed while blameworthy after flight and the lost lot",
+      "definition": "In 37:139-142: He ran away to the laden ship, drew lots and was among the losers; the fish swallowed him while he was blameworthy.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:140",
-          "excerpt": "إِذۡ أَبَقَ إِلَى ٱلۡفُلۡكِ ٱلۡمَشۡحُونِ",
+          "key": "37:142",
+          "excerpt": "فَٱلۡتَقَمَهُ ٱلۡحُوتُ وَهُوَ مُلِيمٞ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "yunus-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Abaqa and mulam."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Consequence of departure."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1336",
-      "label": "cand-1336: Topic from 37:144",
-      "definition": "In 37:144: He would have remained inside its belly until the Day they are resurrected",
+      "candidateId": "cand-1360",
+      "label": "Prior glorification averting confinement until the Day of resurrection",
+      "definition": "In 37:143-144: Had he not been of those who exalt Allah, he would have remained inside its belly until the Day they are resurrected.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:144",
-          "excerpt": "لَلَبِثَ فِي بَطۡنِهِۦٓ إِلَىٰ يَوۡمِ يُبۡعَثُونَ",
+          "key": "37:143",
+          "excerpt": "فَلَوۡلَآ أَنَّهُۥ كَانَ مِنَ ٱلۡمُسَبِّحِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Musabbihin habit."
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Deliverance through tasbih."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1337",
-      "label": "cand-1337: Topic from 37:149",
-      "definition": "In 37:149: So inquire of them, [O Muhammad], \"Does your Lord have daughters while they have sons",
+      "candidateId": "cand-1361",
+      "label": "Daughter-attribution interrogated against their own preference for sons",
+      "definition": "In 37:149-150: Does your Lord have daughters while they have sons, or did We create the angels as females while they were witnesses?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -776,54 +784,61 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-asma-wa-sifat",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Gender projection refuted."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Absent witnessing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1338",
-      "label": "cand-1338: Topic from 37:152",
-      "definition": "In 37:152: Allah has begotten,\" and indeed, they are liars",
+      "candidateId": "cand-1362",
+      "label": "Begetting declared invented falsehood with an evidentiary demand for scripture",
+      "definition": "In 37:151-157: Out of their invented falsehood they say Allah has begotten; how do you make judgement; do you have a clear authority; then produce your scripture if you are truthful.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:152",
-          "excerpt": "وَلَدَ ٱللَّهُ وَإِنَّهُمۡ لَكَٰذِبُونَ",
+          "key": "37:157",
+          "excerpt": "فَأۡتُواْ بِكِتَٰبِكُمۡ إِن كُنتُمۡ صَٰدِقِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1339",
-      "label": "cand-1339: Topic from 37:155",
-      "definition": "In 37:155: Then will you not be reminded",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "37:155",
-          "excerpt": "أَفَلَا تَذَكَّرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "lying",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ifk and kadhibun."
+        },
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sultan mubin demanded."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1340",
-      "label": "cand-1340: Topic from 37:158",
-      "definition": "In 37:158: And they have claimed between Him and the jinn a lineage, but the jinn have already known that they [who made such claims] will be brought to [punishment]",
+      "candidateId": "cand-1363",
+      "label": "Claimed jinn-lineage refuted by the jinn's own knowledge of presentation",
+      "definition": "In 37:158: They claimed a lineage between Him and the jinn, but the jinn have already known that they will be brought to punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -833,125 +848,120 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jinn-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nasab claim denied."
+        },
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kinship attribution rejected."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1341",
-      "label": "cand-1341: Topic from 37:162",
-      "definition": "In 37:162: You cannot tempt [anyone] away from Him",
+      "candidateId": "cand-1364",
+      "label": "Angelic declaration of known station, ranked alignment and glorification",
+      "definition": "In 37:164-166: There is not among us any except that he has a known position; we are those who line up and we are those who exalt Allah.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:162",
-          "excerpt": "مَآ أَنتُمۡ عَلَيۡهِ بِفَٰتِنِينَ",
+          "key": "37:164",
+          "excerpt": "وَمَامِنَّآ إِلَّا لَهُۥ مَقَامٞ مَّعۡلُومٞ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Maqam ma'lum."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Musabbihun identity."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1342",
-      "label": "cand-1342: Topic from 37:165",
-      "definition": "In 37:165: And indeed, we are those who line up [for prayer]",
+      "candidateId": "cand-1365",
+      "label": "Prior word guaranteeing messenger victory and the overcoming of divine soldiers",
+      "definition": "In 37:171-173: Our word has already preceded for Our servants the messengers, that they would be given victory and that Our soldiers will be those who overcome.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:165",
-          "excerpt": "وَإِنَّا لَنَحۡنُ ٱلصَّآفُّونَ",
+          "key": "37:171",
+          "excerpt": "وَلَقَدۡ سَبَقَتۡ كَلِمَتُنَا لِعِبَادِنَا ٱلۡمُرۡسَلِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mansurun assurance."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Junduna ghalibun."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1343",
-      "label": "cand-1343: Topic from 37:168",
-      "definition": "In 37:168: If we had a message from [those of] the former peoples",
+      "candidateId": "cand-1366",
+      "label": "Leave-and-see patience against punishment-impatience closing in tasbih, salam and hamd",
+      "definition": "In 37:174-182: Leave them for a time and see; for Our punishment are they impatient; when it descends in their territory evil is the morning of those warned; exalted is your Lord the Lord of might; peace upon the messengers; praise to Allah Lord of the worlds.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "37:168",
-          "excerpt": "لَوۡ أَنَّ عِندَنَا ذِكۡرٗا مِّنَ ٱلۡأَوَّلِينَ",
+          "key": "37:180",
+          "excerpt": "سُبۡحَٰنَ رَبِّكَ رَبِّ ٱلۡعِزَّةِ عَمَّا يَصِفُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1344",
-      "label": "cand-1344: Topic from 37:172",
-      "definition": "In 37:172: [That] indeed, they would be those given victory",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "37:172",
-          "excerpt": "إِنَّهُمۡ لَهُمُ ٱلۡمَنصُورُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tawarru' temporizing."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tasbih-salam-hamd closure."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1345",
-      "label": "cand-1345: Topic from 37:175",
-      "definition": "In 37:175: And see [what will befall] them, for they are going to see",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:175",
-          "excerpt": "وَأَبۡصِرۡهُمۡ فَسَوۡفَ يُبۡصِرُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1346",
-      "label": "cand-1346: Topic from 37:178",
-      "definition": "In 37:178: And leave them for a time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "37:178",
-          "excerpt": "وَتَوَلَّ عَنۡهُمۡ حَتَّىٰ حِينٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:00:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     }
   ]
 }
