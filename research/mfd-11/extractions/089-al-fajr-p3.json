@@ -1,0 +1,158 @@
+{
+  "extractionId": "ext-089-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 89,
+  "surahName": "Al-Fajr",
+  "passage": {
+    "fromAyah": 21,
+    "toAyah": 26,
+    "label": "No When earth leveled pounded crushed; Lord come angels rank upon rank; brought within view Day Hell; Day man remember what good remembrance; say Oh wish sent ahead good life; Day none punish severely His punishment; none bind severely His binding evildoers"
+  },
+  "verseKeys": [
+    "89:21",
+    "89:22",
+    "89:23",
+    "89:24",
+    "89:25",
+    "89:26"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "89:21",
+      "text": "كَلَّآۖ إِذَا دُكَّتِ ٱلۡأَرۡضُ دَكّٗا دَكّٗا"
+    },
+    {
+      "key": "89:22",
+      "text": "وَجَآءَ رَبُّكَ وَٱلۡمَلَكُ صَفّٗا صَفّٗا"
+    },
+    {
+      "key": "89:23",
+      "text": "وَجِاْيٓءَ يَوۡمَئِذِۭ بِجَهَنَّمَۚ يَوۡمَئِذٖ يَتَذَكَّرُ ٱلۡإِنسَٰنُ وَأَنَّىٰ لَهُ ٱلذِّكۡرَىٰ"
+    },
+    {
+      "key": "89:24",
+      "text": "يَقُولُ يَٰلَيۡتَنِي قَدَّمۡتُ لِحَيَاتِي"
+    },
+    {
+      "key": "89:25",
+      "text": "فَيَوۡمَئِذٖ لَّا يُعَذِّبُ عَذَابَهُۥٓ أَحَدٞ"
+    },
+    {
+      "key": "89:26",
+      "text": "وَلَا يُوثِقُ وَثَاقَهُۥٓ أَحَدٞ"
+    }
+  ],
+  "mainSubject": {
+    "label": "When the earth is levelled, pounded and crushed, and the Lord comes with angels rank upon rank while Hell is brought into view, man will remember but his remembrance will avail him nothing; he will wish he had sent good ahead for his life; on that Day none punishes as severely as His punishment and none binds as severely as His binding",
+    "keys": [
+      "89:21",
+      "89:22",
+      "89:23",
+      "89:24",
+      "89:25",
+      "89:26"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The earth levelled, pounded and crushed",
+      "keys": [
+        "89:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Lord coming with angels standing rank upon rank",
+      "keys": [
+        "89:22"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Hell brought into view on that Day",
+      "keys": [
+        "89:23"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Man remembering but his remembrance availing him nothing",
+      "keys": [
+        "89:24"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Wishing he had sent good ahead for his life",
+      "keys": [
+        "89:25"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "None punishing or binding as severely as He does on that Day",
+      "keys": [
+        "89:26"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Earth levelled, pounded and crushed at the onset of the Day",
+      "keys": [
+        "89:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Late remembrance producing regret and wishing for sent-ahead good",
+      "keys": [
+        "89:23",
+        "89:24"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Lord arriving with angels rank upon rank and Hell brought into view",
+      "keys": [
+        "89:22",
+        "89:23"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Unmatched severity of divine punishment and binding on that Day",
+      "keys": [
+        "89:25",
+        "89:26"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "دَكّٗا",
+      "transliteration": "dakkatan dakka",
+      "gloss": "pounded and crushed (editorial gloss)",
+      "keys": [
+        "89:21"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1950"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the Lord-is-in-observation declaration (14) before the human-trial-response block opens (15); P2 ends with the immense-love-of-wealth diagnosis (20) before the eschatological earth-levelling begins (21); P3 covers the six-verse Day scene ending with the unmatched-punishment verdict (21-26); P4 runs through the four-verse address to the reassured soul (27-30).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:55:00.000Z"
+}

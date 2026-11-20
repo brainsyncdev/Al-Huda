@@ -1,0 +1,150 @@
+{
+  "extractionId": "ext-089-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 89,
+  "surahName": "Al-Fajr",
+  "passage": {
+    "fromAyah": 27,
+    "toAyah": 30,
+    "label": "To righteous said O reassured soul; Return Lord well-pleased pleasing Him; enter among My righteous servants; enter My Paradise"
+  },
+  "verseKeys": [
+    "89:27",
+    "89:28",
+    "89:29",
+    "89:30"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "89:27",
+      "text": "يَـٰٓأَيَّتُهَا ٱلنَّفۡسُ ٱلۡمُطۡمَئِنَّةُ"
+    },
+    {
+      "key": "89:28",
+      "text": "ٱرۡجِعِيٓ إِلَىٰ رَبِّكِ رَاضِيَةٗ مَّرۡضِيَّةٗ"
+    },
+    {
+      "key": "89:29",
+      "text": "فَٱدۡخُلِي فِي عِبَٰدِي"
+    },
+    {
+      "key": "89:30",
+      "text": "وَٱدۡخُلِي جَنَّتِي"
+    }
+  ],
+  "mainSubject": {
+    "label": "The reassured soul addressed directly: return to your Lord well-pleased and pleasing to Him, enter among His righteous servants and enter His Paradise",
+    "keys": [
+      "89:27",
+      "89:28",
+      "89:29",
+      "89:30"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The reassured soul addressed directly",
+      "keys": [
+        "89:27"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Commanded to return to its Lord well-pleased and pleasing to Him",
+      "keys": [
+        "89:28"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Invited to enter among His righteous servants",
+      "keys": [
+        "89:29"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And to enter His Paradise",
+      "keys": [
+        "89:30"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "89:28"
+      ],
+      "excerpt": "ٱرۡجِعِيٓ إِلَىٰ رَبِّكِ رَاضِيَةٗ مَّرۡضِيَّةٗ",
+      "description": "Return to your Lord, well-pleased and pleasing to Him."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "89:29"
+      ],
+      "excerpt": "فَٱدۡخُلِي فِي عِبَٰدِي",
+      "description": "Enter among My righteous servants."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "89:30"
+      ],
+      "excerpt": "وَٱدۡخُلِي جَنَّتِي",
+      "description": "Enter My Paradise."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "The reassured soul invited back to its Lord in mutual satisfaction",
+      "keys": [
+        "89:27",
+        "89:28"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Entry among righteous servants preceding entry into Paradise",
+      "keys": [
+        "89:29",
+        "89:30"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلۡمُطۡمَئِنَّةُ",
+      "transliteration": "al-nafs al-mutma'innah",
+      "gloss": "the reassured soul (editorial gloss)",
+      "keys": [
+        "89:27"
+      ]
+    },
+    {
+      "term": "رَاضِيَةٗ",
+      "transliteration": "radiyah mardiyyah",
+      "gloss": "well-pleased and pleasing (editorial gloss)",
+      "keys": [
+        "89:28"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1951"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the Lord-is-in-observation declaration (14) before the human-trial-response block opens (15); P2 ends with the immense-love-of-wealth diagnosis (20) before the eschatological earth-levelling begins (21); P3 covers the six-verse Day scene ending with the unmatched-punishment verdict (21-26); P4 runs through the four-verse address to the reassured soul (27-30).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T22:55:00.000Z"
+}
