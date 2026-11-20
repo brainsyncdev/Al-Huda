@@ -6,8 +6,8 @@
   "surahName": "Al-Muzzammil",
   "passage": {
     "fromAyah": 1,
-    "toAyah": 10,
-    "label": "Al-Muzzammil 73:1-10"
+    "toAyah": 9,
+    "label": "O wraps himself clothing; arise pray night except little; half subtract little; add recite Quran measured recitation; indeed cast upon you heavy word; indeed hours night more effective concurrence heart tongue more suitable words; indeed day prolonged occupation; remember name Lord devote yourself complete devotion; Lord East West no deity except Him take Him Disposer affairs"
   },
   "verseKeys": [
     "73:1",
@@ -18,8 +18,7 @@
     "73:6",
     "73:7",
     "73:8",
-    "73:9",
-    "73:10"
+    "73:9"
   ],
   "arabicExcerpts": [
     {
@@ -57,14 +56,10 @@
     {
       "key": "73:9",
       "text": "رَّبُّ ٱلۡمَشۡرِقِ وَٱلۡمَغۡرِبِ لَآ إِلَٰهَ إِلَّا هُوَ فَٱتَّخِذۡهُ وَكِيلٗا"
-    },
-    {
-      "key": "73:10",
-      "text": "وَٱصۡبِرۡ عَلَىٰ مَا يَقُولُونَ وَٱهۡجُرۡهُمۡ هَجۡرٗا جَمِيلٗا"
     }
   ],
   "mainSubject": {
-    "label": "Al-Muzzammil 73:1-10",
+    "label": "The wrapped one commanded to arise for night prayer except a little — half the night or slightly less or more — reciting the Quran with measured recitation since a heavy word is about to be cast upon him; night hours identified as more effective for heart-tongue concurrence and more suitable for speech while daytime holds prolonged occupation; remembrance of the Lord's name and complete devotion urged toward the Lord of east and west who alone is deity and should be taken as disposer of affairs",
     "keys": [
       "73:1",
       "73:2",
@@ -74,104 +69,171 @@
       "73:6",
       "73:7",
       "73:8",
-      "73:9",
-      "73:10"
+      "73:9"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "O you who wraps himself [in clothing]",
+      "label": "The wrapped one addressed by his state",
       "keys": [
         "73:1"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Arise [to pray] the night, except for a little",
+      "label": "Commanded to arise for night prayer except a little",
       "keys": [
         "73:2"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Half of it - or subtract from it a little",
+      "label": "Half the night specified, or slightly less",
       "keys": [
         "73:3"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Or add to it, and recite the Qur'an with measured recitation",
+      "label": "Or slightly more, with measured Quranic recitation",
       "keys": [
         "73:4"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed, We will cast upon you a heavy word",
+      "label": "A heavy word about to be cast upon him announced",
       "keys": [
         "73:5"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed, the hours of the night are more effective for concurrence [of heart a...",
+      "label": "Night hours identified as more effective for heart-tongue concurrence and more suitable for speech",
       "keys": [
         "73:6"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed, for you by day is prolonged occupation",
+      "label": "Daytime acknowledged as holding prolonged occupation",
       "keys": [
         "73:7"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And remember the name of your Lord and devote yourself to Him with [complete]...",
+      "label": "Remembrance of the Lord's name and complete devotion commanded",
       "keys": [
         "73:8"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[He is] the Lord of the East and the West; there is no deity except Him, so t...",
+      "label": "The Lord of east and west affirmed as sole deity and disposer of affairs",
       "keys": [
         "73:9"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "73:2"
+      ],
+      "excerpt": "قُمِ ٱلَّيۡلَ إِلَّا قَلِيلٗا",
+      "description": "Arise to pray the night, except for a little."
     },
     {
-      "label": "And be patient over what they say and avoid them with gracious avoidance",
+      "kind": "COMMAND",
       "keys": [
-        "73:10"
+        "73:4"
+      ],
+      "excerpt": "أَوۡ زِدۡ عَلَيۡهِ وَرَتِّلِ ٱلۡقُرۡءَانَ تَرۡتِيلًا",
+      "description": "Recite the Quran with measured recitation."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "73:8"
+      ],
+      "excerpt": "وَٱذۡكُرِ ٱسۡمَ رَبِّكَ وَتَبَتَّلۡ إِلَيۡهِ تَبۡتِيلٗا",
+      "description": "Remember the name of your Lord and devote yourself to Him with complete devotion."
+    },
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "73:9"
+      ],
+      "excerpt": "رَّبُّ ٱلۡمَشۡرِقِ وَٱلۡمَغۡرِبِ لَآ إِلَٰهَ إِلَّا هُوَ فَٱتَّخِذۡهُ وَكِيلٗا",
+      "description": "Take Him as Disposer of your affairs."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Heavy word about to be cast requiring preparatory night vigil",
+      "keys": [
+        "73:5"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Night hours more effective for heart-tongue concurrence than daytime occupation",
+      "keys": [
+        "73:6",
+        "73:7"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
   "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2097",
-    "cand-2098",
-    "cand-2099",
-    "cand-2100",
-    "cand-2101",
-    "cand-2102",
-    "cand-2103",
-    "cand-2104",
-    "cand-2105",
-    "cand-2106"
+  "relationships": [
+    {
+      "label": "Lord of east and west declared sole deity and disposer of affairs",
+      "keys": [
+        "73:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 73 passage 1/2. Generated by mfd11-gen-batch-73-78.mjs.",
+  "terminology": [
+    {
+      "term": "ٱلۡمُزَّمِّلُ",
+      "transliteration": "al-muzzammil",
+      "gloss": "the wrapped one (editorial gloss)",
+      "keys": [
+        "73:1"
+      ]
+    },
+    {
+      "term": "وَرَتِّلِ",
+      "transliteration": "tartil",
+      "gloss": "measured recitation (editorial gloss)",
+      "keys": [
+        "73:4"
+      ]
+    },
+    {
+      "term": "قَوۡلٗا",
+      "transliteration": "qawl thaqil",
+      "gloss": "heavy word (editorial gloss)",
+      "keys": [
+        "73:5"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1844",
+    "cand-1845",
+    "cand-1846"
+  ],
+  "notes": "Wave 11 genuine re-extraction. Boundaries follow the text: P1 closes with the Lord-of-east-and-west tawheed and disposal command (9) before the patience-and-denier-punishment block opens (10); P2 ends with the reminder-and-way declaration (19) before the single-verse concession and reaffirmation (20); P3 is the comprehensive v20 covering night-prayer observation, divine easing, illness-travel-fighting exemptions, standing obligations and closing istighfar.",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:05:00.000Z"
+  "createdAt": "2026-11-20T20:15:00.000Z"
 }
