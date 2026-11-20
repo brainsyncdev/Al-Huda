@@ -55,20 +55,144 @@ const PASSAGES = [
     mainLabel: "Identity revelation paired with divine favor attribution; brothers' acknowledgment of Yusuf's election and their culpability; unconditional forgiveness mirroring divine mercy; shirt-as-healing-motif connecting physical restoration to relational restoration; throne-prostration fulfilling cosmic dream completing narrative arc; retrospective recognition of divine subtlety (latif) across decades of suffering; closing dua integrating personal gratitude with universal submission; meta-narrative framing positioning Yusuf story as Quranic confirmation of prior revelation and guidance for believing community" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-012-p1": [
+    "Alif Lam Ra opening followed by declaration that these are verses of the clear Book",
+    "Revelation of an Arabic Quran so that people may understand through their own language",
+    "Divine narration of the best of stories through Quranic revelation addressing prior unawareness",
+    "Yusuf recounting his dream of eleven stars sun and moon prostrating to him",
+    "Father Yaqub prohibiting Yusuf from relating his vision to brothers warning of shaytan enmity",
+    "Divine election of Yusuf teaching interpretation of narratives completing favor upon family of Yaqub as with Ibrahim and Ishaq",
+    "Declaration that in Yusuf and his brothers are signs for those who ask",
+    "Brothers declaring Yusuf and his brother more beloved to father despite being a stronger clan calling father in clear error",
+    "Brothers conspiring to kill Yusuf or exile him so father would be only for them claiming righteousness afterward",
+    "One brother proposing not to kill Yusuf but cast him into well bottom for travelers to find",
+    "Brothers asking father why he does not entrust them with Yusuf claiming sincere counsel",
+    "Brothers requesting Yusuf be sent with them to graze and play pledging guardianship",
+    "Yaqub expressing sadness at their taking Yusuf and fear wolf would eat him while they are unaware",
+    "Brothers retorting that if wolf ate him while they are a strong clan they would truly be losers",
+    "Brothers taking Yusuf agreeing to put him in well bottom while Allah inspires him he will remind them of this deed unseen",
+    "Brothers returning to father at nightfall weeping falsely",
+    "Brothers fabricating story of racing leaving Yusuf with belongings and wolf eating him anticipating disbelief even if truthful",
+    "Brothers presenting shirt with false blood Yaqub responding souls enticed them choosing beautiful patience seeking Allah help",
+    "Caravan arriving sending water drawer lowering bucket discovering boy concealing him as merchandise Allah knowing their actions",
+    "Yusuf sold for reduced price few counted dirhams sellers content with little regarding his worth",
+    "Egyptian buyer instructing wife to honor Yusuf possibly benefiting or adopting him Allah establishing Yusuf teaching interpretation",
+    "Yusuf reaching maturity granted judgment and knowledge as reward for doers of good",
+    "Aziz wife seducing Yusuf closing doors inviting him he seeks refuge in Allah affirming master honored residence wrongdoers fail",
+    "She determined to seduce him he would have inclined had he not seen proof of Lord averting evil and immorality from chosen servant",
+    "Both racing to door she tearing shirt from behind finding husband at door she accuses Yusuf demanding imprisonment or punishment"
+  ],
+  "ext-012-p2": [
+    "Yusuf declaring she sought to seduce him witness from her family testifying torn-front means her truth torn-back means his truth",
+    "Witness continuing if shirt torn from back then she lied and he is among truthful",
+    "Husband seeing shirt torn from back recognizing it as women scheme calling their plan great",
+    "Husband telling Yusuf to ignore incident commanding wife to seek forgiveness acknowledging her sinfulness",
+    "Women in city gossiping Aziz wife seducing slave boy love impassioning her seeing her in clear error",
+    "Aziz wife hosting women preparing banquet giving knives summoning Yusuf they admire him cut hands declaring noble angel not human",
+    "Aziz wife vindicated before guests confirming she seduced him he refused threatening imprisonment and debasement if disobedient",
+    "Yusuf praying prison dearer than their invitation asking Allah avert their plan lest he incline and become ignorant",
+    "Lord responding to Yusuf averting women scheme affirming He is Hearing Knowing",
+    "Authorities deciding after seeing signs to imprison Yusuf for a time despite his innocence",
+    "Two young men entering prison with Yusuf one dreaming pressing wine other carrying bread birds eating from head requesting interpretation",
+    "Yusuf promising interpretation before food arrives attributing knowledge to Lord rejecting polytheist religion disbelieving in Hereafter",
+    "Yusuf affirming following religion of fathers Ibrahim Ishaq Yaqub denying association with Allah crediting divine favor noting ingratitude",
+    "Yusuf addressing prison companions rhetorically asking whether multiple lords better or Allah One Prevailing",
+    "Yusuf explaining worship of named idols without divine authority legislation belonging solely to Allah defining correct religion",
+    "Yusuf interpreting one prisoner serving king wine other crucified birds eating from head matter decreed",
+    "Yusuf asking freed prisoner to mention him to master shaytan causing forgetfulness extending imprisonment several years",
+    "King dreaming seven fat cows eaten by seven lean seven green ears and dry ones asking nobles for interpretation",
+    "Nobles dismissing kings dream as jumbled false dreams claiming ignorance of dream interpretation",
+    "Freed prisoner remembering Yusuf after long delay offering to inform king of interpretation requesting dispatch",
+    "Messenger addressing Yusuf as man of truth repeating kings dream hoping people learn about him",
+    "Yusuf interpreting seven consecutive planting years storing harvest in spikes except little eaten",
+    "Seven difficult years following consuming stored grain except small reserve preserved",
+    "Year after drought bringing rain enabling people to press olives and grapes restoring abundance",
+    "King ordering Yusuf brought messenger arriving Yusuf refusing return until women who cut hands investigated proving innocence",
+    "King questioning women about seduction attempt they deny any evil Aziz wife confessing truth now manifest Yusuf among truthful",
+    "Yusuf explaining investigation purpose proving no betrayal in absence Allah not guiding betrayers plans"
+  ],
+  "ext-012-p3": [
+    "Yusuf disclaiming self-acquittal soul commanding evil except where Lord shows mercy affirming Forgiving Merciful",
+    "King ordering Yusuf brought exclusively for himself declaring him established and trusted after private conversation",
+    "Yusuf volunteering appointment over storehouses declaring himself knowing guardian hafiz aleem",
+    "Allah establishing Yusuf in land settling wherever he wills touching mercy to whom He wills not wasting reward of good-doers",
+    "Reward of Hereafter better for those who believed and maintained taqwa",
+    "Yusuf brothers arriving entering upon him he recognizing them they unaware of his identity",
+    "Yusuf furnishing supplies demanding younger brother from father as proof of honesty citing fair measure and hospitality",
+    "Yusuf threatening no further measure and no approach unless younger brother brought",
+    "Brothers pledging to persuade father to release Benjamin affirming determination",
+    "Yusuf instructing servants return merchandise to saddlebags so brothers recognize it upon return encouraging second visit",
+    "Brothers returning to father reporting measure denied requesting Benjamin accompany them pledging guardianship",
+    "Yaqub questioning trustworthiness recalling prior loss of Yusuf placing trust in Allah as best guardian most merciful",
+    "Brothers opening baggage finding merchandise returned celebrating provision opportunity protecting brother gaining extra camel load",
+    "Yaqub demanding solemn covenant by Allah for Benjamins safe return unless surrounded accepting Allah as witness over agreement",
+    "Yaqub advising sons enter Egypt through separate gates acknowledging inability to avert divine decree relying on Allah alone",
+    "Entry through separate gates not availing against Allah fulfilling need in Yaqub soul possessing taught knowledge most people unaware",
+    "Yusuf taking brother aside privately revealing identity comforting him not to despair over past treatment",
+    "Yusuf furnishing supplies placing measuring cup in brothers bag announcer crying out caravan accused of theft",
+    "Brothers turning back asking what item is missing",
+    "Officials stating kings measuring bowl lost offering camel-load reward guarantor responsible",
+    "Brothers swearing by Allah they did not come to corrupt land nor were thieves",
+    "Accusers asking what recompense applies if brothers proven liars",
+    "Brothers proposing whoever found with stolen item becomes its recompense describing standard punishment for wrongdoers",
+    "Search beginning with other bags before brothers bag extracting cup from Benjamins bag Allah planning for Yusuf raising degrees above knowledgeable",
+    "Brothers accusing Yusuf of prior theft referencing earlier sibling Yusuf concealing pain internally declaring them worse Allah knowing",
+    "Brothers pleading Aziz has elderly father requesting one substitute themselves appealing to his goodness",
+    "Yusuf refusing to take anyone except one found with possession declaring otherwise unjust",
+    "Brothers despairing consulting privately eldest reminding oath to father and prior failure with Yusuf refusing departure until father permits or Allah judges",
+    "Eldest instructing return tell father son stole testimony limited to known facts not guardians of unseen",
+    "Eldest advising verify with city residents and caravan companions affirming truthfulness",
+    "Yaqub responding souls enticed them choosing beautiful patience hoping Allah brings all together affirming Knowing Wise",
+    "Yaqub turning away lamenting sorrow over Yusuf eyes whitened from grief suppressing anguish",
+    "Sons warning father incessant remembrance of Yusuf will cause fatal illness or death",
+    "Yaqub declaring complaint directed only to Allah knowing from Allah what others do not know"
+  ],
+  "ext-012-p4": [
+    "Yaqub commanding sons go search for Yusuf and brother forbidding despair of Allah relief only disbelievers despair",
+    "Brothers entering upon Yusuf reporting adversity poor merchandise requesting full measure charity Allah rewarding charitable",
+    "Yusuf confronting brothers asking whether they know what they did to Yusuf and brother when ignorant",
+    "Brothers asking are you Yusuf he confirming identity attributing favor to Allah rewarding taqwa and patience never wasting good-doers reward",
+    "Brothers acknowledging Allah preferred Yusuf admitting they were sinners",
+    "Yusuf declaring no blame today invoking Allah forgiveness most merciful of merciful",
+    "Yusuf sending shirt to cast on fathers face restoring sight commanding bring entire family",
+    "Caravan departing Yaqub detecting Yusuf scent despite family thinking him senile",
+    "Family dismissing Yaqub perception as old delusion",
+    "Bearer of good tidings arriving casting shirt on Yaqub face sight restored Yaqub reminding he knew from Allah what they did not",
+    "Brothers requesting father seek forgiveness for their sins admitting wrongdoing",
+    "Yaqub promising to seek forgiveness from Lord affirming Forgiving Merciful",
+    "Family entering upon Yusuf embracing parents inviting entry to Egypt in safety by Allah will",
+    "Parents raised on throne family prostrating fulfilling childhood dream Yusuf attributing realization to Lord Latif Aleem Hakeem",
+    "Yusuf supplicating gratitude for sovereignty and dream interpretation requesting death as Muslim joined with righteous",
+    "Narrative identified as news of unseen revealed to Prophet absent during original conspiracy",
+    "Most people not believers despite Prophets earnest desire for their guidance",
+    "Prophet asking no payment for message it being reminder to all worlds",
+    "Many signs in heavens and earth passed over by people turning away in heedlessness",
+    "Most believing in Allah only while associating partners with Him",
+    "Rhetorical challenge whether people feel secure from overwhelming punishment or sudden Hour unperceived",
+    "Prophet commanded declare path of inviting to Allah with insight followers glorifying Allah free from shirk",
+    "Prior messengers all men from towns receiving revelation travel command observing predecessors ends Hereafter home best for mutaqqin",
+    "Messengers despairing certain of denial then victory arrives saving whomever Allah wills punishment irrevocable for criminals",
+    "Stories containing lesson for people of understanding Quran confirming prior scripture detailing everything guidance mercy for believers"
+  ]
+};
+
 // Build extractions
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`12:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`12:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`12:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 12, surahName: "Yusuf",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
