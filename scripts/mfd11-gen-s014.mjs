@@ -36,6 +36,66 @@ const TS = "2026-11-20T12:35:00.000Z";
 // P1: 14:1–27 — Prophetic mission in native language, gratitude principle, messenger-humanity tension, good/bad word parables
 // P2: 14:28–52 — Ingratitude consequences, Abraham's Mecca supplications, eschatological justice, closing tawheed
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-014-p1": [
+    "Book revealed to bring mankind from darknesses into light by permission of their Lord to path of Exalted Praiseworthy",
+    "Divine ownership of heavens and earth with woe declared for disbelievers from severe punishment",
+    "Preference for worldly life over Hereafter and averting others from Allah's way as extreme error",
+    "Messenger sent only in language of his people for clarity while Allah guides and misleads whom He wills",
+    "Musa sent with signs to bring people from darknesses to light and remind them of days of Allah",
+    "Musa commanding remembrance of divine favor saving from Firawn's worst torment killing sons sparing women",
+    "Lord's proclamation that gratitude brings increase while denial brings severe punishment",
+    "Musa declaring Allah Free of Need and Praiseworthy even if all on earth disbelieve",
+    "News of prior peoples Nuh Aad Thamud and those after whose messengers brought clear proofs yet were rejected",
+    "Messengers asking can there be doubt about Creator of heavens earth who invites to forgiveness and delayed term",
+    "Messengers affirming human likeness but divine favor conferred upon whom He wills with authority only by His permission",
+    "Declaration of reliance upon Allah who guided to good ways and patience against harm inflicted",
+    "Disbelievers threatening expulsion or forced return to ancestral religion prompting divine destruction decree",
+    "Promise of settlement in land after destroyed peoples for those fearing divine station and threat",
+    "Request for victory resulting in disappointment for every obstinate tyrant",
+    "Hell awaiting the obstinate tyrant with drink of purulent water",
+    "Gulping purulent water without swallowing while death approaches from every direction yet no release",
+    "Disbelievers' deeds likened to ashes scattered by storm wind unable to retain anything earned",
+    "Creation of heavens and earth in truth with power to remove current humanity and produce new creation",
+    "Affirmation that replacing humanity with new creation is not difficult for Allah in Ibrahim context",
+    "Weak followers confronting arrogant leaders on Judgment Day finding no avail against divine punishment",
+    "Satan's post-judgment confession of having no authority except invitation and blaming those who responded",
+    "Believers doing righteous deeds admitted to gardens with rivers flowing greeted with peace",
+    "Good word likened to good tree with firm root and branches reaching sky producing perpetual fruit",
+    "Perpetual fruit production by divine permission with parables presented for remembrance",
+    "Bad word likened to bad tree uprooted from earth surface having no stability",
+    "Allah keeping believers firm with steadfast word in both worlds while sending wrongdoers astray"
+  ],
+  "ext-014-p2": [
+    "Those exchanging divine favor for disbelief settling their people in home of ruin",
+    "Hell as destination for those who exchanged favor described as wretched settlement",
+    "Attributing equals to Allah to mislead from His way with command to enjoy before Fire destination",
+    "Command to believing servants to establish prayer and spend secretly publicly before tradeless friendship-less Day",
+    "Allah creating heavens earth sending rain producing fruits and subjecting ships rivers as provision",
+    "Subjection of sun moon in continuous orbit and night day cycle as divine favors",
+    "All requested provisions granted yet counting divine favors impossible with mankind unjust ungrateful",
+    "Abraham supplicating for city security and protection of himself and sons from idol worship",
+    "Acknowledgment that idols led many astray with followers belonging to Abraham and disobedients under divine mercy",
+    "Settling descendants in uncultivated valley near sacred House to establish prayer with hearts inclined and fruit provision",
+    "Declaration that Allah knows what is concealed and declared with nothing hidden in earth or heaven",
+    "Praise for granting Ishmael and Isaac in old age affirming Lord as Hearer of supplication",
+    "Supplication to be made establisher of prayer along with descendants and acceptance of prayer",
+    "Supplication for forgiveness of self parents and believers on Day account is established",
+    "Warning not to consider Allah unaware of wrongdoers merely delaying them until staring-eyes Day",
+    "Eschatological scene of racing ahead heads raised glances not returning hearts void",
+    "Wrongdoers requesting brief delay on punishment Day reminded of prior oaths denying cessation",
+    "Living in dwellings of self-wrongers with clear examples of divine dealing presented",
+    "Human plotting recorded with Allah even if plot could move mountains",
+    "Affirmation Allah never fails promise to messengers described as Exalted Owner of Retribution",
+    "Earth replaced by another earth and heavens transformed with creatures appearing before One Prevailing",
+    "Criminals bound together in shackles on Judgment Day",
+    "Garments of liquid pitch with faces covered by Fire as punishment imagery",
+    "Recompense of every soul for what it earned with Allah swift in account",
+    "Quran as notification warning people establishing one God and reminding those of understanding"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-014-p1", from: 1, to: 27,
     label: "Ibrahim — Book revealed bring mankind darknesses into light by permission Mighty Praiseworthy; Allah owns heavens earth woe disbelievers severe punishment; prefer worldly life avert way Allah seeking deviation far astray; sent messenger only language his people state clearly Allah misleads guides wills He Exalted Wise; sent Musa signs bring people darknesses light remind days Allah; Moses told people remember favor saved Firawn people afflicting worst torment killing sons sparing women great trial Lord; Lord proclaimed grateful increase deny punishment severe; Moses said disbelieve you all earth Allah Free need Praiseworthy; news reached those before Nuh Aad Thamud after them none knows except Allah; messengers said doubt about Allah Creator heavens earth invites forgive sins delay term; messengers said only men like you Allah favors whom wills servants never brought authority except permission Allah; upon Allah rely guided ways patient harm done us; disbelievers said drive out land or return religion; Lord caused dwell land after them fears position threat; requested victory disappointed obstinate tyrant; Hell before given purulent water gulp hardly swallow death comes everywhere not die severe punishment ahead; example disbelievers deeds like ashes wind blows forcefully stormy day unable keep earned; created heavens earth truth wills remove produce new creation not difficult Allah; come out judgement together weak say arrogant followers could avail anything; Satan says matter concluded Allah promised truth I promised betrayed no authority called believed then disbelieved; believed righteous gardens rivers abide eternally greeting peace",
@@ -50,14 +110,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`14:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`14:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`14:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 14, surahName: "Ibrahim",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
