@@ -38,6 +38,101 @@ const TS = "2026-11-20T14:40:00.000Z";
 // P3: 36:51–68 — Resurrection blast; judgment assembly; limbs testify; divine command Kun
 // P4: 36:69–83 — Prophet not poet; Quran as reminder; creation from drop; sovereignty-knowledge closing
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-036-p1": [
+    "Disjointed letters Ya-Sin as surah-opening oath",
+    "Oath by the wise Quran affirming its revelatory authority",
+    "Confirmation of Muhammad as one of the sent messengers",
+    "Prophetic mission situated on a straight path",
+    "Revelation identified as descent from the Exalted Mighty Merciful",
+    "Warning directed at people whose forefathers were never warned leaving them heedless",
+    "Divine word justified against most who have confirmed disbelief",
+    "Shackles placed on necks up to chins forcing heads aloft as perceptual punishment",
+    "Barrier set before and behind with covering preventing sight",
+    "Warning equivalence for those sealed in disbelief whether warned or not",
+    "Warning effective only for followers of the Reminder who fear Rahman unseen with promise of forgiveness and noble reward",
+    "Revival of dead with recording of deeds sent ahead and traces left behind in clear register",
+    "Town parable introduced as example when messengers arrived",
+    "Two messengers sent then denied so reinforced with third declaring messenger status",
+    "Townspeople rejecting messengers as mere humans claiming Rahman revealed nothing",
+    "Messengers invoking divine omniscience as witness to their mission",
+    "Messenger duty limited to clear conveyance alone",
+    "Townspeople accusing messengers of bad omen threatening stoning and painful punishment",
+    "Messengers reversing omen back onto accusers identifying them as transgressors",
+    "Man running from farthest city urging his people to follow the messengers",
+    "Appeal to follow those asking no wage who are rightly guided",
+    "Rhetorical question on why he should not worship his Creator to whom all return",
+    "Rejection of false deities whose intercession cannot avail against Rahman adversity",
+    "Declaration that taking other gods would be manifest error",
+    "Public profession of faith in the Lord of the messengers urging audience to listen",
+    "Posthumous command to enter Paradise expressing wish his people could know",
+    "Lord forgiveness and placement among the honored as posthumous vindication",
+    "No heavenly soldiers sent down upon his people after him nor would any be sent",
+    "Single shout extinguishing the transgressors instantly",
+    "Regret over servants who ridicule every messenger that comes to them",
+    "Destroyed generations before them cited as evidence they will not return",
+    "All humanity gathered and brought present before Allah"
+  ],
+  "ext-036-p2": [
+    "Dead earth revived producing grain as observable resurrection sign",
+    "Gardens of palms and grapevines with springs gushing forth as provision system",
+    "Fruit produced for eating without human labor demanding gratitude",
+    "Glorification of Creator of all pairs from earth plants selves and unknown things",
+    "Night stripping away daylight leaving darkness as temporal sign",
+    "Sun running toward appointed resting place by decree of Exalted Knowing",
+    "Moon assigned phases returning to old palm-stalk appearance",
+    "Sun unable to overtake moon and night unable to outpace day each floating in orbit",
+    "Laden ship carrying descendants as maritime sign of divine favor",
+    "Similar vessels created for subsequent generations to ride",
+    "Drowning threat with no rescuer except divine mercy",
+    "Mercy and temporary provision granted for a time",
+    "Command to beware what is before and behind so mercy may be received",
+    "Every sign from their Lord met with turning away",
+    "Disbelievers mocking charity command saying Allah would feed whom He willed",
+    "Demand for timeline of promised judgment challenging truthfulness",
+    "Only one blast awaited seizing them mid-dispute",
+    "Inability to make any will or return to family after sudden seizure"
+  ],
+  "ext-036-p3": [
+    "Trumpet blown causing immediate emergence from graves hastening toward Lord",
+    "Regretful cry asking who raised them from sleeping place acknowledging Rahman promise fulfilled",
+    "Single blast gathering all humanity present before Allah",
+    "No soul wronged that Day recompensed only for what they used to do",
+    "Paradise companions preoccupied in joyful occupation",
+    "Spouses together in shade reclining on adorned couches",
+    "Fruit available plus whatever they request or wish for",
+    "Peace spoken as word from Merciful Lord",
+    "Criminals commanded to stand apart on Judgment Day",
+    "Adamic covenant recalled prohibiting satanic worship as clear enemy",
+    "Exclusive worship of Allah commanded as straight path",
+    "Satan having misled masses with rhetorical challenge on lack of reason",
+    "Hellfire presented as the promised destination",
+    "Entry into Hellfire commanded as recompense for denial",
+    "Mouths sealed while hands speak and feet testify to earnings as bodily accountability",
+    "Eye obliteration hypothetical showing power to blind those racing to find path",
+    "Deformation hypothetical paralyzing in place unable to proceed or return",
+    "Long life causing reversal in creation prompting reflection on decline"
+  ],
+  "ext-036-p4": [
+    "Prophet not taught poetry nor is it befitting him distinguishing revelation from verse",
+    "Quran identified as Reminder and clear recitation warning the living justifying word against disbelievers",
+    "Livestock created by divine hands making humans their owners",
+    "Animals tamed for riding and eating as subjection signs",
+    "Additional benefits and drinks from livestock demanding gratitude",
+    "False deities taken besides Allah in hope of help",
+    "False gods unable to help even themselves brought as gathered soldiers against worshippers",
+    "Prophet consoled that their speech should not grieve since Allah knows concealment and declaration",
+    "Human origin from sperm-drop producing open adversary disputing resurrection",
+    "Man presenting example to Allah forgetting own creation asking who revives decayed bones",
+    "Answer that initial Creator gives life again being All-Knowing of every creation",
+    "Fire produced from green tree as paradoxical creative sign enabling ignition",
+    "Creator of heavens and earth able to create their likes affirmed as Knowing Creator",
+    "Divine command instantaneous saying Be and it is establishing absolute creative sovereignty",
+    "Closing glorification of Him holding dominion of everything to whom all return"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-036-p1", from: 1, to: 32,
     label: "Ya-Sin; wise Quran; indeed messengers; straight path; revelation Exalted Mighty Merciful; warn people fathers not warned unaware; word fulfilled against most disbelieve; placed shackles necks chins heads raised; barrier before behind covered not see; same warn or not warn believe; warn follows reminder fears Rahman unseen forgiveness noble reward; revive dead record sent ahead traces everything clear Book; strike example companions town messengers came; sent two denied reinforced third said messengers to you; said not but human like us Rahman revealed nothing lying; said Lord knows indeed messengers to you; duty only clear conveyance; said bad omen you desist stone painful punishment; said omen yourselves reminded transgressors; came running man city end said O people follow messengers; ask no wage guided; followed religion Lord forgive enter generous; destroyed one shout became silent extinguished; alas servants never comes messenger except ridiculed; see destroyed generations before them not returning",
@@ -58,14 +153,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`36:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`36:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`36:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 36, surahName: "Ya-Sin",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
