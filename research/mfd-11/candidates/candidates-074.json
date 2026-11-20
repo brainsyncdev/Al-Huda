@@ -1,387 +1,451 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:45:00.000Z",
-  "sourceExtraction": "ext-050-p1,ext-050-p2",
+  "generatedAt": "2026-11-20T16:35:00.000Z",
+  "sourceExtraction": "ext-050-p1,ext-050-p2,ext-050-p3",
   "candidates": [
     {
-      "candidateId": "cand-1627",
-      "label": "cand-1627: Topic from 50:1",
-      "definition": "In 50:1: Qaf. By the honored Qur'an",
+      "candidateId": "cand-1608",
+      "label": "Oath by the honoured Quran framing the surah",
+      "definition": "In 50:1: Qaf; by the honoured Quran.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:1",
           "excerpt": "قٓۚ وَٱلۡقُرۡءَانِ ٱلۡمَجِيدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Quran majid oath."
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Majid as divine attribute."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1628",
-      "label": "cand-1628: Topic from 50:3",
-      "definition": "In 50:3: When we have died and have become dust, [we will return to life]? That is a distant return",
+      "candidateId": "cand-1609",
+      "label": "Resurrection denied as distant despite divine retaining record",
+      "definition": "In 50:3-4: When we have died and have become dust we will return to life? That is a distant return; We know what the earth diminishes of them and with Us is a retaining record.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:3",
           "excerpt": "أَءِذَا مِتۡنَا وَكُنَّا تُرَابٗاۖ ذَٰلِكَ رَجۡعُۢ بَعِيدٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "50:4",
+          "excerpt": "قَدۡ عَلِمۡنَا مَا تَنقُصُ ٱلۡأَرۡضُ مِنۡهُمۡۖ وَعِندَنَا كِتَٰبٌ حَفِيظُۢ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ba'id denial refuted."
+        },
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kitab hafiz preservation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1629",
-      "label": "cand-1629: Topic from 50:5",
-      "definition": "In 50:5: But they denied the truth when it came to them, so they are in a confused condition",
+      "candidateId": "cand-1610",
+      "label": "Cosmic signs of structured heaven and productive earth as insight and reminder",
+      "definition": "In 50:6-8: Have they not looked at the heaven above them how We structured it and adorned it and it has no rifts; and the earth We spread it out and cast therein firmly set mountains and made grow therein of every beautiful kind giving insight and a reminder for every servant who turns.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "50:5",
-          "excerpt": "بَلۡ كَذَّبُواْ بِٱلۡحَقِّ لَمَّا جَآءَهُمۡ فَهُمۡ فِيٓ أَمۡرٖ مَّرِيجٍ",
+          "key": "50:6",
+          "excerpt": "أَفَلَمۡ يَنظُرُوٓاْ إِلَى ٱلسَّمَآءِ فَوۡقَهُمۡ كَيۡفَ بَنَيۡنَٰهَا وَزَيَّنَّـٰهَا وَمَا لَهَا مِن فُرُوجٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1630",
-      "label": "cand-1630: Topic from 50:7",
-      "definition": "In 50:7: And the earth - We spread it out and cast therein firmly set mountains and made grow therein [something] of every beautiful kind",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "50:7",
           "excerpt": "وَٱلۡأَرۡضَ مَدَدۡنَٰهَا وَأَلۡقَيۡنَا فِيهَا رَوَٰسِيَ وَأَنۢبَتۡنَا فِيهَا مِن كُلِّ زَوۡجِۭ بَهِيجٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "50:8",
+          "excerpt": "تَبۡصِرَةٗ وَذِكۡرَىٰ لِكُلِّ عَبۡدٖ مُّنِيبٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Samā' and arḍ as āyāt."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tabṣirah wa-dhikrā function."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1631",
-      "label": "cand-1631: Topic from 50:9",
-      "definition": "In 50:9: And We have sent down blessed rain from the sky and made grow thereby gardens and grain from the harvest",
+      "candidateId": "cand-1611",
+      "label": "Blessed rain reviving dead land as resurrection parallel",
+      "definition": "In 50:9-11: And We have sent down blessed rain from the sky and made grow thereby gardens and grain from the harvest and lofty palm trees having fruit arranged in layers as provision for the servants and We have given life thereby to a dead land; thus is the resurrection.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:9",
           "excerpt": "وَنَزَّلۡنَا مِنَ ٱلسَّمَآءِ مَآءٗ مُّبَٰرَكٗا فَأَنۢبَتۡنَا بِهِۦ جَنَّـٰتٖ وَحَبَّ ٱلۡحَصِيدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "50:10",
+          "excerpt": "وَٱلنَّخۡلَ بَاسِقَٰتٖ لَّهَا طَلۡعٞ نَّضِيدٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "50:11",
+          "excerpt": "رِّزۡقٗا لِّلۡعِبَادِۖ وَأَحۡيَيۡنَا بِهِۦ بَلۡدَةٗ مَّيۡتٗاۚ كَذَٰلِكَ ٱلۡخُرُوجُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kadhalika al-khuruj analogy."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rain-revival as ayah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1632",
-      "label": "cand-1632: Topic from 50:12",
-      "definition": "In 50:12: The people of Noah denied before them, and the companions of the well and Thamud",
+      "candidateId": "cand-1612",
+      "label": "Nine prior communities named as deniers with justly fulfilled threat",
+      "definition": "In 50:12-14: The people of Noah denied before them and the companions of the well and Thamud and Aad and Pharaoh and the brothers of Lot and the companions of the thicket and the people of Tubba'; all denied the messengers so My threat was justly fulfilled.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:12",
           "excerpt": "كَذَّبَتۡ قَبۡلَهُمۡ قَوۡمُ نُوحٖ وَأَصۡحَٰبُ ٱلرَّسِّ وَثَمُودُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1633",
-      "label": "cand-1633: Topic from 50:14",
-      "definition": "In 50:14: And the companions of the thicket and the people of Tubba'. All denied the messengers, so My threat was justly fulfilled",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "50:13",
+          "excerpt": "وَعَادٞ وَفِرۡعَوۡنُ وَإِخۡوَٰنُ لُوطٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "50:14",
           "excerpt": "وَأَصۡحَٰبُ ٱلۡأَيۡكَةِ وَقَوۡمُ تُبَّعٖۚ كُلّٞ كَذَّبَ ٱلرُّسُلَ فَحَقَّ وَعِيدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Comprehensive denial catalogue."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Haqqa al-wa'id justice."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1634",
-      "label": "cand-1634: Topic from 50:16",
-      "definition": "In 50:16: And We have already created man and know what his soul whispers to him, and We are closer to him than [his] jugular vein",
+      "candidateId": "cand-1613",
+      "label": "Divine proximity closer than the jugular vein with soul-whispering known",
+      "definition": "In 50:16: And We have already created man and know what his soul whispers to him and We are closer to him than his jugular vein.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:16",
           "excerpt": "وَلَقَدۡ خَلَقۡنَا ٱلۡإِنسَٰنَ وَنَعۡلَمُ مَا تُوَسۡوِسُ بِهِۦ نَفۡسُهُۥۖ وَنَحۡنُ أَقۡرَبُ إِلَيۡهِ مِنۡ حَبۡلِ ٱلۡوَرِيدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Aqrab min habl al-warid."
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Intimacy grounding awareness."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1635",
-      "label": "cand-1635: Topic from 50:18",
-      "definition": "In 50:18: Man does not utter any word except that with him is an observer prepared [to record]",
+      "candidateId": "cand-1614",
+      "label": "Dual recording angels capturing every uttered word",
+      "definition": "In 50:17-18: When the two receivers receive seated on the right and on the left; man does not utter any word except that with him is an observer prepared.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "50:17",
+          "excerpt": "إِذۡ يَتَلَقَّى ٱلۡمُتَلَقِّيَانِ عَنِ ٱلۡيَمِينِ وَعَنِ ٱلشِّمَالِ قَعِيدٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "50:18",
           "excerpt": "مَّا يَلۡفِظُ مِن قَوۡلٍ إِلَّا لَدَيۡهِ رَقِيبٌ عَتِيدٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Al-mutaqabbilan recording."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Raqib 'atid surveillance."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1636",
-      "label": "cand-1636: Topic from 50:20",
-      "definition": "In 50:20: And the Horn will be blown. That is the Day of [carrying out] the threat",
+      "candidateId": "cand-1615",
+      "label": "Cover removed and sight sharpened on the Day of threat",
+      "definition": "In 50:22: You were certainly in unmindfulness of this and We have removed from you your cover so your sight this Day is sharp.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "50:20",
-          "excerpt": "وَنُفِخَ فِي ٱلصُّورِۚ ذَٰلِكَ يَوۡمُ ٱلۡوَعِيدِ",
+          "key": "50:22",
+          "excerpt": "لَّقَدۡ كُنتَ فِي غَفۡلَةٖ مِّنۡ هَٰذَا فَكَشَفۡنَا عَنكَ غِطَآءَكَ فَبَصَرُكَ ٱلۡيَوۡمَ حَدِيدٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1637",
-      "label": "cand-1637: Topic from 50:24",
-      "definition": "In 50:24: [Allah will say], \"Throw into Hell every obstinate disbeliever",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "50:24",
-          "excerpt": "أَلۡقِيَا فِي جَهَنَّمَ كُلَّ كَفَّارٍ عَنِيدٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1638",
-      "label": "cand-1638: Topic from 50:26",
-      "definition": "In 50:26: Who made [as equal] with Allah another deity; then throw him into the severe punishment",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kashf ghaṭā' revelation."
+        },
         {
-          "key": "50:26",
-          "excerpt": "ٱلَّذِي جَعَلَ مَعَ ٱللَّهِ إِلَٰهًا ءَاخَرَ فَأَلۡقِيَاهُ فِي ٱلۡعَذَابِ ٱلشَّدِيدِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ghaflah ended."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1639",
-      "label": "cand-1639: Topic from 50:28",
-      "definition": "In 50:28: [Allah] will say, \"Do not dispute before Me, while I had already presented to you the warning",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "50:28",
-          "excerpt": "قَالَ لَا تَخۡتَصِمُواْ لَدَيَّ وَقَدۡ قَدَّمۡتُ إِلَيۡكُم بِٱلۡوَعِيدِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1640",
-      "label": "cand-1640: Topic from 50:30",
-      "definition": "In 50:30: On the Day We will say to Hell, \"Have you been filled?\" and it will say, \"Are there some more",
+      "candidateId": "cand-1616",
+      "label": "Hell asking for more while Paradise brought near to the righteous",
+      "definition": "In 50:30-31: On the Day We will say to Hell have you been filled and it will say are there some more; and Paradise will be brought near to the righteous not far.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:30",
           "excerpt": "يَوۡمَ نَقُولُ لِجَهَنَّمَ هَلِ ٱمۡتَلَأۡتِ وَتَقُولُ هَلۡ مِن مَّزِيدٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1641",
-      "label": "cand-1641: Topic from 50:32",
-      "definition": "In 50:32: [It will be said], \"This is what you were promised - for every returner [to Allah] and keeper [of His covenant]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "50:32",
-          "excerpt": "هَٰذَا مَا تُوعَدُونَ لِكُلِّ أَوَّابٍ حَفِيظٖ",
+          "key": "50:31",
+          "excerpt": "وَأُزۡلِفَتِ ٱلۡجَنَّةُ لِلۡمُتَّقِينَ غَيۡرَ بَعِيدٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1642",
-      "label": "cand-1642: Topic from 50:34",
-      "definition": "In 50:34: Enter it in peace. This is the Day of Eternity",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "50:34",
-          "excerpt": "ٱدۡخُلُوهَا بِسَلَٰمٖۖ ذَٰلِكَ يَوۡمُ ٱلۡخُلُودِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1643",
-      "label": "cand-1643: Topic from 50:36",
-      "definition": "In 50:36: And how many a generation before them did We destroy who were greater than them in [striking] power and had explored throughout the lands. Is there any place of escape",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hal imtala't inquiry."
+        },
         {
-          "key": "50:36",
-          "excerpt": "وَكَمۡ أَهۡلَكۡنَا قَبۡلَهُم مِّن قَرۡنٍ هُمۡ أَشَدُّ مِنۡهُم بَطۡشٗا فَنَقَّبُواْ فِي ٱلۡبِلَٰدِ هَلۡ مِن مَّحِيصٍ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Jannah proximity for muttaqin."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1644",
-      "label": "cand-1644: Topic from 50:38",
-      "definition": "In 50:38: And We did certainly create the heavens and earth and what is between them in six days, and there touched Us no weariness",
+      "candidateId": "cand-1617",
+      "label": "Creation in six days without weariness affirming divine capacity",
+      "definition": "In 50:38: And We did certainly create the heavens and earth and what is between them in six days and there touched Us no weariness.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "50:38",
           "excerpt": "وَلَقَدۡ خَلَقۡنَا ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ وَمَا بَيۡنَهُمَا فِي سِتَّةِ أَيَّامٖ وَمَا مَسَّنَا مِن لُّغُوبٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Lā massanā nuṣūb negation."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Six-day creation as sign."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1645",
-      "label": "cand-1645: Topic from 50:40",
-      "definition": "In 50:40: And [in part] of the night exalt Him and after prostration",
+      "candidateId": "cand-1618",
+      "label": "Timed praise commanded alongside patience over their words",
+      "definition": "In 50:39-40: So be patient over what they say and exalt with praise of your Lord before the rising of the sun and before its setting and in part of the night exalt Him and after prostration.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "50:39",
+          "excerpt": "فَٱصۡبِرۡ عَلَىٰ مَا يَقُولُونَ وَسَبِّحۡ بِحَمۡدِ رَبِّكَ قَبۡلَ طُلُوعِ ٱلشَّمۡسِ وَقَبۡلَ ٱلۡغُرُوبِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "50:40",
           "excerpt": "وَمِنَ ٱلَّيۡلِ فَسَبِّحۡهُ وَأَدۡبَٰرَ ٱلسُّجُودِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabr paired with tasbih."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Four temporal stations of dhikr."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1646",
-      "label": "cand-1646: Topic from 50:42",
-      "definition": "In 50:42: The Day they will hear the blast [of the Horn] in truth. That is the Day of Emergence [from the graves]",
+      "candidateId": "cand-1619",
+      "label": "Reminder by Quran limited to whoever fears the divine threat",
+      "definition": "In 50:45: We are most knowing of what they say and you are not over them a tyrant; but remind by the Quran whoever fears My threat.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "50:42",
-          "excerpt": "يَوۡمَ يَسۡمَعُونَ ٱلصَّيۡحَةَ بِٱلۡحَقِّۚ ذَٰلِكَ يَوۡمُ ٱلۡخُرُوجِ",
+          "key": "50:45",
+          "excerpt": "نَّحۡنُ أَعۡلَمُ بِمَا يَقُولُونَۖ وَمَآ أَنتَ عَلَيۡهِم بِجَبَّارٖۖ فَذَكِّرۡ بِٱلۡقُرۡءَانِ مَن يَخَافُ وَعِيدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dhakkir bi'l-Quran function."
+        },
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Lasta 'alayhim bi-musaytir limitation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:45:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T16:35:00.000Z",
+      "notes": "Wave 8 genuine re-extraction candidate."
     }
   ]
 }

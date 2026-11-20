@@ -5,11 +5,19 @@
   "surah": 50,
   "surahName": "Qaf",
   "passage": {
-    "fromAyah": 24,
-    "toAyah": 45,
-    "label": "Qaf 50:24-45"
+    "fromAyah": 16,
+    "toAyah": 35,
+    "label": "created man know soul whispers closer jugular vein; two receivers receive seated right left; man utter word observer prepared; intoxication death bring truth trying avoid; Horn blown Day threat; every soul come driver witness; unmindfulness removed cover sight sharp; companion angel say record with me prepared; throw Hell every obstinate disbeliever; preventer good aggressor doubter; made equal Allah another deity throw severe punishment; devil companion say Lord not make transgress extreme error; say do not dispute before Me presented warning; word not changed unjust servants; say Hell filled some more; Paradise brought near righteous not far; promised every returner keeper; feared Most Merciful unseen came heart returning; enter peace Day Eternity; whatever wish therein Us more"
   },
   "verseKeys": [
+    "50:16",
+    "50:17",
+    "50:18",
+    "50:19",
+    "50:20",
+    "50:21",
+    "50:22",
+    "50:23",
     "50:24",
     "50:25",
     "50:26",
@@ -21,19 +29,41 @@
     "50:32",
     "50:33",
     "50:34",
-    "50:35",
-    "50:36",
-    "50:37",
-    "50:38",
-    "50:39",
-    "50:40",
-    "50:41",
-    "50:42",
-    "50:43",
-    "50:44",
-    "50:45"
+    "50:35"
   ],
   "arabicExcerpts": [
+    {
+      "key": "50:16",
+      "text": "وَلَقَدۡ خَلَقۡنَا ٱلۡإِنسَٰنَ وَنَعۡلَمُ مَا تُوَسۡوِسُ بِهِۦ نَفۡسُهُۥۖ وَنَحۡنُ أَقۡرَبُ إِلَيۡهِ مِنۡ حَبۡلِ ٱلۡوَرِيدِ"
+    },
+    {
+      "key": "50:17",
+      "text": "إِذۡ يَتَلَقَّى ٱلۡمُتَلَقِّيَانِ عَنِ ٱلۡيَمِينِ وَعَنِ ٱلشِّمَالِ قَعِيدٞ"
+    },
+    {
+      "key": "50:18",
+      "text": "مَّا يَلۡفِظُ مِن قَوۡلٍ إِلَّا لَدَيۡهِ رَقِيبٌ عَتِيدٞ"
+    },
+    {
+      "key": "50:19",
+      "text": "وَجَآءَتۡ سَكۡرَةُ ٱلۡمَوۡتِ بِٱلۡحَقِّۖ ذَٰلِكَ مَا كُنتَ مِنۡهُ تَحِيدُ"
+    },
+    {
+      "key": "50:20",
+      "text": "وَنُفِخَ فِي ٱلصُّورِۚ ذَٰلِكَ يَوۡمُ ٱلۡوَعِيدِ"
+    },
+    {
+      "key": "50:21",
+      "text": "وَجَآءَتۡ كُلُّ نَفۡسٖ مَّعَهَا سَآئِقٞ وَشَهِيدٞ"
+    },
+    {
+      "key": "50:22",
+      "text": "لَّقَدۡ كُنتَ فِي غَفۡلَةٖ مِّنۡ هَٰذَا فَكَشَفۡنَا عَنكَ غِطَآءَكَ فَبَصَرُكَ ٱلۡيَوۡمَ حَدِيدٞ"
+    },
+    {
+      "key": "50:23",
+      "text": "وَقَالَ قَرِينُهُۥ هَٰذَا مَا لَدَيَّ عَتِيدٌ"
+    },
     {
       "key": "50:24",
       "text": "أَلۡقِيَا فِي جَهَنَّمَ كُلَّ كَفَّارٍ عَنِيدٖ"
@@ -81,241 +111,278 @@
     {
       "key": "50:35",
       "text": "لَهُم مَّا يَشَآءُونَ فِيهَا وَلَدَيۡنَا مَزِيدٞ"
-    },
-    {
-      "key": "50:36",
-      "text": "وَكَمۡ أَهۡلَكۡنَا قَبۡلَهُم مِّن قَرۡنٍ هُمۡ أَشَدُّ مِنۡهُم بَطۡشٗا فَنَقَّبُواْ فِي ٱلۡبِلَٰدِ هَلۡ مِن مَّحِيصٍ"
-    },
-    {
-      "key": "50:37",
-      "text": "إِنَّ فِي ذَٰلِكَ لَذِكۡرَىٰ لِمَن كَانَ لَهُۥ قَلۡبٌ أَوۡ أَلۡقَى ٱلسَّمۡعَ وَهُوَ شَهِيدٞ"
-    },
-    {
-      "key": "50:38",
-      "text": "وَلَقَدۡ خَلَقۡنَا ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ وَمَا بَيۡنَهُمَا فِي سِتَّةِ أَيَّامٖ وَمَا مَسَّنَا مِن لُّغُوبٖ"
-    },
-    {
-      "key": "50:39",
-      "text": "فَٱصۡبِرۡ عَلَىٰ مَا يَقُولُونَ وَسَبِّحۡ بِحَمۡدِ رَبِّكَ قَبۡلَ طُلُوعِ ٱلشَّمۡسِ وَقَبۡلَ ٱلۡغُرُوبِ"
-    },
-    {
-      "key": "50:40",
-      "text": "وَمِنَ ٱلَّيۡلِ فَسَبِّحۡهُ وَأَدۡبَٰرَ ٱلسُّجُودِ"
-    },
-    {
-      "key": "50:41",
-      "text": "وَٱسۡتَمِعۡ يَوۡمَ يُنَادِ ٱلۡمُنَادِ مِن مَّكَانٖ قَرِيبٖ"
-    },
-    {
-      "key": "50:42",
-      "text": "يَوۡمَ يَسۡمَعُونَ ٱلصَّيۡحَةَ بِٱلۡحَقِّۚ ذَٰلِكَ يَوۡمُ ٱلۡخُرُوجِ"
-    },
-    {
-      "key": "50:43",
-      "text": "إِنَّا نَحۡنُ نُحۡيِۦ وَنُمِيتُ وَإِلَيۡنَا ٱلۡمَصِيرُ"
-    },
-    {
-      "key": "50:44",
-      "text": "يَوۡمَ تَشَقَّقُ ٱلۡأَرۡضُ عَنۡهُمۡ سِرَاعٗاۚ ذَٰلِكَ حَشۡرٌ عَلَيۡنَا يَسِيرٞ"
-    },
-    {
-      "key": "50:45",
-      "text": "نَّحۡنُ أَعۡلَمُ بِمَا يَقُولُونَۖ وَمَآ أَنتَ عَلَيۡهِم بِجَبَّارٖۖ فَذَكِّرۡ بِٱلۡقُرۡءَانِ مَن يَخَافُ وَعِيدِ"
     }
   ],
   "mainSubject": {
-    "label": "Qaf 50:24-45",
+    "label": "Man created with divine knowledge of his soul's whispering and proximity closer than the jugular vein; two recording receivers seated right and left capturing every uttered word; death's intoxication bringing the avoided truth; the Horn-blast Day of threat when every soul arrives with driver and witness; unmindfulness stripped away as the cover is removed and sight sharpened; the companion-angel presenting the prepared record; the command to cast into Hell every obstinate disbeliever — preventer of good, aggressor, doubter and associator — into severe punishment; the devil-companion disclaiming responsibility while Allah forbids dispute having already warned and His word remaining unchanged without injustice; Hell asked if full and asking for more; Paradise brought near to the righteous — every returning keeper who feared the Rahman unseen and came with a repentant heart — entering in peace on the Day of Eternity with whatever they wish and more from Us",
     "keys": [
+      "50:16",
+      "50:17",
+      "50:18",
+      "50:19",
+      "50:20",
+      "50:21",
+      "50:22",
+      "50:23",
       "50:24",
-      "50:25",
-      "50:26",
-      "50:27",
-      "50:28",
-      "50:29",
-      "50:30",
-      "50:31",
-      "50:32",
-      "50:33"
+      "50:25"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "[Allah will say], \"Throw into Hell every obstinate disbeliever",
+      "label": "Man created with divine knowledge of what his soul whispers",
+      "keys": [
+        "50:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Allah closer to him than his jugular vein",
+      "keys": [
+        "50:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Two recording receivers seated on the right and on the left",
+      "keys": [
+        "50:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Every uttered word captured by a prepared observer",
+      "keys": [
+        "50:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Death's intoxication bringing the truth they tried to avoid",
+      "keys": [
+        "50:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The Horn blown as the Day of the promised threat",
+      "keys": [
+        "50:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Every soul arriving with a driver and a witness",
+      "keys": [
+        "50:22"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Unmindfulness ended as the cover is removed and sight sharpened",
+      "keys": [
+        "50:23"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The companion-angel presenting the prepared record",
       "keys": [
         "50:24"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Preventer of good, aggressor, and doubter",
+      "label": "Command to throw into Hell every obstinate disbeliever",
       "keys": [
         "50:25"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Who made [as equal] with Allah another deity; then throw him into the severe ...",
+      "label": "Preventer of good, aggressor and doubter specified",
       "keys": [
         "50:26"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "His [devil] companion will say, \"Our Lord, I did not make him transgress, but...",
+      "label": "One who made another deity equal to Allah thrown into severe punishment",
       "keys": [
         "50:27"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[Allah] will say, \"Do not dispute before Me, while I had already presented to...",
+      "label": "Devil-companion disclaiming transgression-inducement before Allah",
       "keys": [
         "50:28"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "The word will not be changed with Me, and never will I be unjust to the servants",
+      "label": "Dispute forbidden since the warning was already presented and Allah's word is unchanged without injustice",
       "keys": [
         "50:29"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "On the Day We will say to Hell, \"Have you been filled?\" and it will say, \"Are...",
+      "label": "Hell asked if full and responding are there some more",
       "keys": [
         "50:30"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And Paradise will be brought near to the righteous, not far",
+      "label": "Paradise brought near to the righteous, not far",
       "keys": [
         "50:31"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "[It will be said], \"This is what you were promised - for every returner [to A...",
+      "label": "Promised to every returner and keeper who feared the Rahman unseen and came with a repentant heart",
       "keys": [
         "50:32"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Who feared the Most Merciful unseen and came with a heart returning [in repen...",
+      "label": "Enter it in peace as the Day of Eternity",
       "keys": [
         "50:33"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Enter it in peace. This is the Day of Eternity",
+      "label": "Whatever they wish therein provided",
       "keys": [
         "50:34"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "They will have whatever they wish therein, and with Us is more",
+      "label": "And with Us is more beyond their wishes",
       "keys": [
         "50:35"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
-    },
+    }
+  ],
+  "commandsAndProhibitions": [
     {
-      "label": "And how many a generation before them did We destroy who were greater than th...",
+      "kind": "COMMAND",
       "keys": [
-        "50:36"
+        "50:24"
+      ],
+      "excerpt": "أَلۡقِيَا فِي جَهَنَّمَ كُلَّ كَفَّارٍ عَنِيدٖ",
+      "description": "Throw into Hell every obstinate disbeliever."
+    }
+  ],
+  "divineNamesAndAttributes": [
+    {
+      "term": "ٱلرَّحۡمَٰنَ",
+      "transliteration": "Rahman",
+      "gloss": "Most Merciful (editorial gloss)",
+      "keys": [
+        "50:33"
+      ]
+    }
+  ],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Soul's whispering known to Allah who is closer than the jugular vein",
+      "keys": [
+        "50:16"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Indeed in that is a reminder for whoever has a heart or who listens while he ...",
+      "label": "Every uttered word recorded by a prepared observer",
       "keys": [
-        "50:37"
+        "50:17",
+        "50:18"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We did certainly create the heavens and earth and what is between them in...",
+      "label": "Death's intoxication bringing the truth they tried to avoid",
       "keys": [
-        "50:38"
+        "50:19"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "So be patient, [O Muhammad], over what they say and exalt [Allah] with praise...",
+      "label": "Cover removed and sight sharpened on the Day of threat",
       "keys": [
-        "50:39"
+        "50:22"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [in part] of the night exalt Him and after prostration",
+      "label": "Fear of the Rahman unseen combined with a repentant heart as entry criteria",
       "keys": [
-        "50:40"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And listen on the Day when the Caller will call out from a place that is near",
-      "keys": [
-        "50:41"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "The Day they will hear the blast [of the Horn] in truth. That is the Day of E...",
-      "keys": [
-        "50:42"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Indeed, it is We who give life and cause death, and to Us is the destination",
-      "keys": [
-        "50:43"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "On the Day the earth breaks away from them [and they emerge] rapidly; that is...",
-      "keys": [
-        "50:44"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "We are most knowing of what they say, and you are not over them a tyrant. But...",
-      "keys": [
-        "50:45"
+        "50:33"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
   "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-1637",
-    "cand-1638",
-    "cand-1639",
-    "cand-1640",
-    "cand-1641",
-    "cand-1642",
-    "cand-1643",
-    "cand-1644",
-    "cand-1645",
-    "cand-1646"
+  "relationships": [
+    {
+      "label": "Driver and witness accompanying every soul on the Day of threat",
+      "keys": [
+        "50:21"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Devil-companion disclaiming transgression-inducement while Allah's word remains unchanged",
+      "keys": [
+        "50:27",
+        "50:28",
+        "50:29"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Hell asking for more while Paradise is brought near to the righteous",
+      "keys": [
+        "50:30",
+        "50:31"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 50 passage 2/2. Generated by mfd11-gen-batch-49-54.mjs.",
+  "terminology": [
+    {
+      "term": "نَفۡسُهُۥۖ",
+      "transliteration": "nafs",
+      "gloss": "soul/self (editorial gloss)",
+      "keys": [
+        "50:16"
+      ]
+    },
+    {
+      "term": "حَبۡلِ",
+      "transliteration": "habl al-warid",
+      "gloss": "jugular vein (editorial gloss)",
+      "keys": [
+        "50:16"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1613",
+    "cand-1614",
+    "cand-1615",
+    "cand-1616"
+  ],
+  "notes": "Wave 8 genuine re-extraction. Boundaries follow the text: P1 closes with the first-creation argument (15) before the intimate-knowledge-and-recording block opens (16); P2 ends with the Paradise-entry promise (35) before the prior-destruction reminder begins (36); P3 runs from that reminder through creation-without-weariness, timed praise, the Day sequence and the closing reminder commission (36-45). Note: P1 spans 15 verses with 10 subordinate labels covering multi-verse thematic units; P2 spans 20 verses with 9 labels; P3 spans 10 verses with 5 labels.",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T16:45:00.000Z"
+  "createdAt": "2026-11-20T16:35:00.000Z"
 }
