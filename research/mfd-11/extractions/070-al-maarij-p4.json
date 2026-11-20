@@ -1,0 +1,118 @@
+{
+  "extractionId": "ext-070-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 70,
+  "surahName": "Al-Ma'arij",
+  "passage": {
+    "fromAyah": 42,
+    "toAyah": 44,
+    "label": "leave them converse vainly amuse until meet Day promised; Day emerge graves rapidly toward erected idol hastening; eyes humbled humiliation cover that Day had been promised"
+  },
+  "verseKeys": [
+    "70:42",
+    "70:43",
+    "70:44"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "70:42",
+      "text": "فَذَرۡهُمۡ يَخُوضُواْ وَيَلۡعَبُواْ حَتَّىٰ يُلَٰقُواْ يَوۡمَهُمُ ٱلَّذِي يُوعَدُونَ"
+    },
+    {
+      "key": "70:43",
+      "text": "يَوۡمَ يَخۡرُجُونَ مِنَ ٱلۡأَجۡدَاثِ سِرَاعٗا كَأَنَّهُمۡ إِلَىٰ نُصُبٖ يُوفِضُونَ"
+    },
+    {
+      "key": "70:44",
+      "text": "خَٰشِعَةً أَبۡصَٰرُهُمۡ تَرۡهَقُهُمۡ ذِلَّةٞۚ ذَٰلِكَ ٱلۡيَوۡمُ ٱلَّذِي كَانُواْ يُوعَدُونَ"
+    }
+  ],
+  "mainSubject": {
+    "label": "The Prophet told to leave them to vain conversation and amusement until they meet their promised Day; that Day they emerge from graves rapidly as though hastening toward an erected idol, their eyes humbled and humiliation covering them — the very Day they had been promised",
+    "keys": [
+      "70:42",
+      "70:43",
+      "70:44"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Leave them to converse vainly and amuse themselves until they meet their promised Day",
+      "keys": [
+        "70:42"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "That Day they emerge from graves rapidly as though hastening toward an erected idol",
+      "keys": [
+        "70:43"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Their eyes humbled and humiliation covering them — the Day they had been promised",
+      "keys": [
+        "70:44"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "70:42"
+      ],
+      "excerpt": "فَذَرۡهُمۡ يَخُوضُواْ وَيَلۡعَبُواْ حَتَّىٰ يُلَٰقُواْ يَوۡمَهُمُ ٱلَّذِي يُوعَدُونَ",
+      "description": "So leave them to converse vainly and amuse themselves until they meet their Day which they are promised."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Vain conversation and amusement permitted until the promised Day arrives",
+      "keys": [
+        "70:42"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Eyes humbled and humiliation covering them at the grave-emergence",
+      "keys": [
+        "70:44"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Rapid emergence from graves likened to hastening toward an erected idol",
+      "keys": [
+        "70:43"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "نُصُبٖ",
+      "transliteration": "nusub",
+      "gloss": "an erected idol or marker (editorial gloss)",
+      "keys": [
+        "70:43"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1828"
+  ],
+  "notes": "Wave 10 genuine re-extraction. Boundaries follow the text: P1 closes with the hoarding-and-turning-away indictment (18) before the human-nature diagnosis opens (19); P2 ends with the honoured-in-gardens verdict (35) before the disbeliever-hastening question begins (36); P3 runs through the garden-aspiration refusal and the replacement oath (36-41); P4 covers the leave-them instruction, the grave-emergence scene and the closing humiliation statement (42-44).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T19:45:00.000Z"
+}
