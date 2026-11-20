@@ -1,387 +1,77 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:20:00.000Z",
+  "generatedAt": "2026-11-21T01:15:00.000Z",
   "sourceExtraction": "ext-103-p1,ext-103-p2",
   "candidates": [
     {
-      "candidateId": "cand-2697",
-      "label": "cand-2697: Topic from 103:1",
-      "definition": "In 103:1: By time",
+      "candidateId": "cand-1993",
+      "label": "Time-oath declaring universal human loss",
+      "definition": "In 103:1-2: By time; indeed mankind is in loss.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "103:1",
           "excerpt": "وَٱلۡعَصۡرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2698",
-      "label": "cand-2698: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
+          "key": "103:2",
+          "excerpt": "إِنَّ ٱلۡإِنسَٰنَ لَفِي خُسۡرٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2699",
-      "label": "cand-2699: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2700",
-      "label": "cand-2700: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qasam bi'l-asr."
+        },
         {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Insan fi khusr as default state."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T01:15:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2701",
-      "label": "cand-2701: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2702",
-      "label": "cand-2702: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2703",
-      "label": "cand-2703: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2704",
-      "label": "cand-2704: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2705",
-      "label": "cand-2705: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2706",
-      "label": "cand-2706: Topic from 103:1",
-      "definition": "In 103:1: By time",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:1",
-          "excerpt": "وَٱلۡعَصۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2707",
-      "label": "cand-2707: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
+      "candidateId": "cand-1994",
+      "label": "Four-fold exception: belief, righteous deeds, mutual truth and patience counsel",
+      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "103:3",
           "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2708",
-      "label": "cand-2708: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2709",
-      "label": "cand-2709: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Iman plus amal salih plus tawasi."
+        },
         {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tawasi bisabr as communal obligation."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2710",
-      "label": "cand-2710: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2711",
-      "label": "cand-2711: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2712",
-      "label": "cand-2712: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2713",
-      "label": "cand-2713: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2714",
-      "label": "cand-2714: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2715",
-      "label": "cand-2715: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2716",
-      "label": "cand-2716: Topic from 103:3",
-      "definition": "In 103:3: Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "103:3",
-          "excerpt": "إِلَّا ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ وَتَوَاصَوۡاْ بِٱلۡحَقِّ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:20:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-21T01:15:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     }
   ]
 }
