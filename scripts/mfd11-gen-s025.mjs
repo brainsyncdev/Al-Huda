@@ -49,19 +49,107 @@ const PASSAGES = [
     mainLabel: "Repentance-belief-righteousness triad transforming evil deeds into good through divine replacement; accepted tawbah conditioned on behavioral reform; falsehood-testimony avoidance and dignified passage past laghw; verse reception with attentive engagement not deaf-blindness; family comfort supplication (qurrat a'yun) linking domestic blessing to righteous leadership; Chamber (al-Ghurfah) as elevated reward for patient endurance; eternal greeting-peace abode; closing rhetorical challenge: divine care contingent on supplication; denial producing inevitable consequence" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-025-p1": [
+    "Blessed sending down of Furqan upon Servant as universal warner",
+    "Divine dominion over heavens-earth without son or partner with precise creation-measure",
+    "Idol incapacity demonstrated through inability to create possess harm benefit death life resurrection",
+    "Forgery accusation claiming Quran invented with assistance from another people condemned as injustice-lie",
+    "Legends-of-former-peoples accusation alleging dictation morning-afternoon dismissed",
+    "Divine secret-knowledge authentication of revelation paired with Forgiving-Merciful attributes",
+    "Objection that messenger eats food walks markets demanding angel co-warner",
+    "Demand for treasure or garden plus accusation of following a bewitched man",
+    "Striking comparisons as marker of misguidance preventing finding the way",
+    "Blessed capacity to grant better gardens rivers palaces demonstrating divine power beyond objections",
+    "Hour denial met with prepared Blaze for deniers",
+    "Hellfire fury-roaring heard from distant place by its inhabitants",
+    "Chained-bound in narrow place crying out for destruction",
+    "Command to cry not for one destruction but for many destructions",
+    "Garden of Eternity promised to righteous presented as superior reward-destination",
+    "Eternal abode with whatever wished granted as fulfilled promise worthy of request",
+    "Gathering of false deities on Judgment Day questioned about misleading servants or self-straying",
+    "False deities declaring exaltation denying alliance blaming worldly comfort for forgotten remembrance",
+    "Mutual denial between worshippers and worshipped with no averting punishment or finding help",
+    "Prior messengers also ate food walked markets establishing human prophetic pattern with trial-patience test",
+    "Arrogant demand for angels or seeing Lord declared great insolence",
+    "Angels appearing on Judgment Day bringing no good tidings declaring prevention-inaccessibility",
+    "Deeds of disbelievers rendered as scattered dust",
+    "Paradise companions having better settlement and resting place that Day",
+    "Heaven splitting open with clouds and angels descending in succession",
+    "True sovereignty belonging to Rahman making Day difficult for disbelievers",
+    "Wrongdoer biting hands regretting not taking path with Messenger",
+    "Lamenting taking specific person as friend who caused misguidance",
+    "Acknowledgment that Satan led away from remembrance after it came being ever deserter",
+    "Messenger lamenting people taking Quran as abandoned thing",
+    "Every prophet given enemy from criminals with Lord sufficient as guide-helper",
+    "Gradual revelation explained as heart-strengthening mechanism with distinct recitation",
+    "Divine guarantee of bringing truth and best explanation against every argument",
+    "Those gathered dragged on faces to Hell declared worst in position farthest astray"
+  ],
+  "ext-025-p2": [
+    "Musa given Scripture with Harun appointed as assistant minister",
+    "Dual mission to deniers of signs ending in complete destruction",
+    "Nuh people drowned for denying messengers made sign for mankind with painful punishment prepared",
+    "Aad Thamud companions-of-well and many generations between destroyed",
+    "Each destroyed nation given examples yet each annihilated with total destruction",
+    "Passing by town showered with evil rain yet not expecting resurrection",
+    "Ridiculing Prophet asking if this is the one Allah sent as messenger",
+    "Claiming he almost misled them from gods had they not been steadfast promising future knowledge of who is astray",
+    "One taking desire as god questioned whether Prophet can be guardian over him",
+    "Most people compared to livestock or more astray lacking hearing-reasoning",
+    "Lord extending shadow could have made stationary using sun as indicator",
+    "Shadow withdrawn toward Himself in brief grasp",
+    "Night made as clothing sleep as rest day as resurrection",
+    "Winds sent as heralds of mercy with pure water sent from sky",
+    "Dead land revived and drink provided for livestock and numerous people",
+    "Distribution among people for remembrance yet most refuse except disbelief",
+    "Could have sent warner in every city if willed",
+    "Command not to obey disbelievers but strive against them with Quran in great striving",
+    "Two seas released fresh-sweet and salty-bitter with barrier-prohibiting partition between them",
+    "Human created from water establishing lineage-marriage bonds with Lord ever Powerful"
+  ],
+  "ext-025-p3": [
+    "Worshipping besides Allah what neither benefits nor harms with disbeliever assisting against Lord",
+    "Prophet sent only as bringer of good tidings and warner",
+    "No wage asked except whoever wills taking path to Lord",
+    "Reliance upon Ever-Living who does not die with praise-exaltation and sufficiency in knowing servant sins",
+    "Six-day creation of heavens-earth-between then Throne establishment as Rahman ask-Aware",
+    "Command to prostrate to Rahman rejected with question what-is-Rahman increasing aversion",
+    "Blessed placement of constellations lamp luminous moon in sky",
+    "Night-day alternation as succession enabling remembrance or gratitude",
+    "Servants of Rahman walking earth gently responding to ignorant with peace",
+    "Spending night before Lord prostrating and standing in devotion",
+    "Supplication to avert Hellfire punishment described as ever-adhering",
+    "Hell declared evil as settlement and residence",
+    "Spending neither excessive nor stingy but moderate between",
+    "Not invoking another deity with Allah nor killing forbidden soul nor committing zina",
+    "Multiplied punishment on Resurrection Day abiding humiliated for major sin violators",
+    "Repentance-belief-righteous work transforming evil deeds into good through Forgiving-Merciful replacement",
+    "Accepted repentance conditioned on turning to Allah with righteous action",
+    "Not testifying falsehood passing by ill speech with dignity",
+    "Not falling deaf-blind when reminded of Lord verses",
+    "Supplication for spouses-offspring as comfort-of-eyes and leadership example for righteous",
+    "Awarded Chamber for patient endurance received with greetings-peace",
+    "Eternal abode declared good settlement and residence",
+    "Rhetorical challenge what would Lord care without supplication since denial makes consequence inevitable"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`25:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`25:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`25:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 25, surahName: "Al-Furqan",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },

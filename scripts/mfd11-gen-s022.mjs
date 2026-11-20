@@ -49,19 +49,108 @@ const PASSAGES = [
     mainLabel: "Night-day alternation and celestial subjection as continuous divine management; Allah as Haqq versus batil of invoked partners; rain-vegetation cycle as provision sign; divine self-sufficiency and praiseworthiness; maritime-earthly subjection enabling human habitation; fly parable demonstrating idol creative impotence; true divine appraisal requiring recognition of Power-Might; angel-human messenger selection as divine prerogative; individual burden-bearing principle; closing commands: sujud-ibadah-ihsan-falah sequence; jihad bi-haqqihi as proportional striving; millat Ibrahim as ancestral creed; Muslim naming predating Quranic revelation; triple closing formula: salah-zakah-tawakkul" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-022-p1": [
+    "Universal taqwa command addressing all mankind with warning of the Hour convulsion as a tremendous event",
+    "Eschatological terror causing nursing mother distraction and pregnant woman abortion with people appearing intoxicated from divine punishment severity",
+    "Dispute about Allah without knowledge while following every rebellious devil as epistemological failure",
+    "Decreed consequence for devil-followers: misguidance leading to punishment of the Blaze",
+    "Resurrection proof through embryonic stages from dust to sperm-drop to clot to flesh with earth revival analogy",
+    "Allah identified as Haqq (Truth) who gives life to dead and is competent over all things",
+    "Hour arrival affirmed without doubt and Allah resurrecting those in graves",
+    "Dispute about Allah without knowledge or guidance or enlightening book as triple epistemic deficit",
+    "Arrogant neck-twisting to mislead from Allah path producing worldly disgrace and hellfire punishment",
+    "Punishment attributed to hands putting forth evil with Allah never unjust to servants",
+    "Edge-worshipper turning on face during trial losing both worlds as manifest loss",
+    "Invocation of entities that neither harm nor benefit constituting extreme error",
+    "Invocation of patron whose harm is closer than benefit as wretched protector and associate",
+    "Believers doing righteous deeds admitted to gardens beneath which rivers flow by divine will",
+    "Challenge to those doubting divine support to extend rope to ceiling and cut off breath testing their rage",
+    "Quran sent down as clear verses with Allah guiding whom He intends",
+    "Six faith communities judged on Resurrection Day with Allah as Witness over all things",
+    "Universal prostration of heavens earth celestial bodies mountains trees creatures and many people with justified punishment for others",
+    "Two adversaries disputing over their Lord with disbelievers receiving garments of fire and scalding water poured on heads",
+    "Scalding water melting contents of bellies and skins as hellfire torment detail",
+    "Iron maces as additional punishment instruments for hellfire inhabitants",
+    "Repeated return to hellfire whenever attempting escape from anguish with command to taste burning punishment",
+    "Believers doing righteous deeds admitted to gardens adorned with gold bracelets pearls and silk garments",
+    "Guidance to good speech and path of the Praiseworthy as believer reward in worldly life",
+    "Disbelievers averting from Allah path and Masjid al-Haram facing painful punishment for deviation and wrongdoing",
+    "Ibrahim designated site of House with tawheed command and purification for tawaf prayer and prostration",
+    "Hajj proclamation to mankind with pilgrims arriving on foot and lean camels from distant passes",
+    "Pilgrimage benefits witnessing and Allah name mention on known days over sacrificial animals with feeding poor",
+    "Ending untidiness fulfilling vows and performing tawaf around ancient House as hajj completion rites",
+    "Honoring Allah sacred ordinances as best with livestock permitted and avoidance of idols and false statement commanded",
+    "Pure monotheism inclination to Allah without shirk contrasted with falling from sky snatched by birds or wind",
+    "Honoring Allah symbols (shaair) stemming from piety of hearts",
+    "Sacrificial animals providing benefits for specified term with destination at ancient House",
+    "Rite appointed for every nation mentioning Allah name over provided livestock with one God submission command",
+    "Humble believers described as hearts fearful at Allah mention patient prayer-establishing and spending from provision",
+    "Camels and cattle appointed as Allah symbols with name mention during sacrifice and distribution to needy and beggar",
+    "Meat and blood not reaching Allah but piety reaching Him with glorification command and glad tidings to muhsinin"
+  ],
+  "ext-022-p2": [
+    "Allah defending believers with declaration of divine displeasure toward treacherous and ungrateful",
+    "Fighting permission granted to those wronged and fought with Allah competent to give victory",
+    "Wrongful eviction from homes solely for declaring Our Lord is Allah with protection of worship places through divine repelling",
+    "Establishment criteria for empowered community: prayer zakah enjoining right forbidding wrong with Allah owning outcomes",
+    "Prior denial by peoples of Nuh Aad and Thamud as consolation to Prophet",
+    "Peoples of Ibrahim and Lut added to prior denial pattern",
+    "Inhabitants of Madyan and Musa denial with prolonged enjoyment then seizure demonstrating terrible reproach",
+    "Destroyed cities fallen into ruin with abandoned wells and lofty palaces as observable warning evidence",
+    "Travel command to observe ruins with hearts blinded not eyes as spiritual perception failure",
+    "Urging hastening punishment with Allah never failing promise and divine day equaling thousand years",
+    "Many cities given prolonged enjoyment while wronging then seized with final destination to Allah",
+    "Prophet declared clear warner to mankind",
+    "Believers doing righteous deeds receiving forgiveness and noble provision",
+    "Those striving against verses seeking failure destined as companions of Hellfire",
+    "Satanic interpolation in prophetic recitation abolished by Allah who makes verses precise as Knowing Wise",
+    "Satanic insertion made trial for diseased and hard-hearted with wrongdoers in extreme dissension",
+    "Knowledge recipients recognizing truth from Lord with hearts submitting and Allah guiding believers to straight path",
+    "Disbelievers remaining in doubt until Hour comes suddenly or barren Day punishment arrives",
+    "Sovereignty belonging to Allah on Judgment Day with believers in Gardens of Pleasure",
+    "Disbelievers denying signs receiving humiliating punishment",
+    "Emigrants killed or died in Allah cause receiving good provision from best of providers",
+    "Emigrants entering pleasing entrance with Allah as Knowing and Forbearing",
+    "Proportional retaliation permitted with subsequent tyranny triggering divine aid as Pardoning Forgiving"
+  ],
+  "ext-022-p3": [
+    "Night entering day and day entering night with Allah as Hearing and Seeing as cosmic management sign",
+    "Allah as Haqq (Truth) versus invoked falsehood with Allah as Most High and Grand",
+    "Rain sent from sky producing green earth with Allah as Latif (Subtle) and Khabir (Acquainted)",
+    "Heavens and earth belonging to Allah who is Ghani (Free of Need) and Hamid (Praiseworthy)",
+    "Earth and ships subjected to humanity with sky restrained from falling as Rauf Rahim sign",
+    "Life-death-life cycle affirming resurrection with mankind declared ungrateful",
+    "Rites appointed for every nation with command to invite to Lord upon straight guidance without contention",
+    "Dispute response: Allah most knowing of what you do",
+    "Allah judging between communities on Resurrection Day concerning differences",
+    "Divine knowledge of heavens and earth recorded in Book as easy for Allah",
+    "Worship of entities without revealed authority or knowledge with no helper for wrongdoers",
+    "Disbeliever faces showing disapproval at verse recitation nearly assaulting reciters with Fire warned as worse destination",
+    "Fly parable demonstrating idol impotence: cannot create fly nor retrieve what fly steals with weak pursuer and pursued",
+    "Failure to appraise Allah with true appraisal affirmed with Allah as Qawiyy (Powerful) and Aziz (Exalted in Might)",
+    "Allah choosing messengers from angels and people with Allah as Samee (Hearing) and Baseer (Seeing)",
+    "Divine knowledge encompassing what is before and behind with all matters returned to Allah",
+    "Closing command sequence: bow prostrate worship Lord do good to succeed",
+    "Jihad bi-haqqihi as proportional striving with chosen community bearing no difficulty in religion of father Ibrahim named Muslims before Quran with salah-zakah-tawakkul closing formula"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`22:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`22:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`22:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 22, surahName: "Al-Hajj",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
