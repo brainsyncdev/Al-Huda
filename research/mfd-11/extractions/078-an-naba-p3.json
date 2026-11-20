@@ -1,0 +1,153 @@
+{
+  "extractionId": "ext-078-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 78,
+  "surahName": "An-Naba",
+  "passage": {
+    "fromAyah": 31,
+    "toAyah": 36,
+    "label": "Indeed righteous attainment; gardens grapevines; full-breasted companions equal age; full cup; no ill speech hear falsehood; reward Lord generous gift made due account"
+  },
+  "verseKeys": [
+    "78:31",
+    "78:32",
+    "78:33",
+    "78:34",
+    "78:35",
+    "78:36"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "78:31",
+      "text": "إِنَّ لِلۡمُتَّقِينَ مَفَازًا"
+    },
+    {
+      "key": "78:32",
+      "text": "حَدَآئِقَ وَأَعۡنَٰبٗا"
+    },
+    {
+      "key": "78:33",
+      "text": "وَكَوَاعِبَ أَتۡرَابٗا"
+    },
+    {
+      "key": "78:34",
+      "text": "وَكَأۡسٗا دِهَاقٗا"
+    },
+    {
+      "key": "78:35",
+      "text": "لَّا يَسۡمَعُونَ فِيهَا لَغۡوٗا وَلَا كِذَّـٰبٗا"
+    },
+    {
+      "key": "78:36",
+      "text": "جَزَآءٗ مِّن رَّبِّكَ عَطَآءً حِسَابٗا"
+    }
+  ],
+  "mainSubject": {
+    "label": "For the righteous there is attainment: gardens and grapevines, full-breasted companions of equal age and a full cup; no ill speech or falsehood heard therein; all as reward from their Lord, a generous gift made due by account",
+    "keys": [
+      "78:31",
+      "78:32",
+      "78:33",
+      "78:34",
+      "78:35",
+      "78:36"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Attainment promised for the righteous",
+      "keys": [
+        "78:31"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Gardens and grapevines as its setting",
+      "keys": [
+        "78:32"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Full-breasted companions of equal age",
+      "keys": [
+        "78:33"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "A full cup served",
+      "keys": [
+        "78:34"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "No ill speech or falsehood heard therein",
+      "keys": [
+        "78:35"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "All as reward from their Lord, a generous gift made due by account",
+      "keys": [
+        "78:36"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Attainment comprising gardens, grapevines, companions, full cup and pure speech",
+      "keys": [
+        "78:31",
+        "78:32",
+        "78:33",
+        "78:34",
+        "78:35"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [
+    {
+      "label": "Reward framed as a generous gift made due by divine accounting",
+      "keys": [
+        "78:36"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "relationships": [
+    {
+      "label": "Absence of ill speech and falsehood distinguishing the reward environment",
+      "keys": [
+        "78:35"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "عَطَآءً",
+      "transliteration": "ata' hisab",
+      "gloss": "gift made due by account (editorial gloss)",
+      "keys": [
+        "78:36"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1889"
+  ],
+  "notes": "Wave 11 genuine re-extraction. Boundaries follow the text: P1 closes with the agricultural-produce catalogue (16) before the Day-of-Judgement appointment opens (17); P2 ends with the no-increase-except-torment verdict (30) before the righteous-attainment block begins (31); P3 covers the six-verse reward description (31-36); P4 runs through divine sovereignty, angelic rows, the True Day and the closing dust-wish (37-40).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T21:05:00.000Z"
+}

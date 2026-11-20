@@ -1,387 +1,413 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:05:00.000Z",
-  "sourceExtraction": "ext-078-p1,ext-078-p2",
+  "generatedAt": "2026-11-20T21:05:00.000Z",
+  "sourceExtraction": "ext-078-p1,ext-078-p2,ext-078-p3,ext-078-p4",
   "candidates": [
     {
-      "candidateId": "cand-2197",
-      "label": "cand-2197: Topic from 78:1",
-      "definition": "In 78:1: About what are they asking one another",
+      "candidateId": "cand-1883",
+      "label": "Great news disputed but doubly certain to be known",
+      "definition": "In 78:1-5: About what are they asking one another; about the great news; that over which they are in disagreement; no they are going to know; then no they are going to know.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "78:1",
           "excerpt": "عَمَّ يَتَسَآءَلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2198",
-      "label": "cand-2198: Topic from 78:2",
-      "definition": "In 78:2: About the great news",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:2",
           "excerpt": "عَنِ ٱلنَّبَإِ ٱلۡعَظِيمِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2199",
-      "label": "cand-2199: Topic from 78:4",
-      "definition": "In 78:4: No! They are going to know",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:3",
+          "excerpt": "ٱلَّذِي هُمۡ فِيهِ مُخۡتَلِفُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:4",
           "excerpt": "كَلَّا سَيَعۡلَمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:5",
+          "excerpt": "ثُمَّ كَلَّا سَيَعۡلَمُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Naba' azim as eschatological subject."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Disagreement resolved by certainty."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2200",
-      "label": "cand-2200: Topic from 78:6",
-      "definition": "In 78:6: Have We not made the earth a resting place",
+      "candidateId": "cand-1884",
+      "label": "Cosmic provisions: resting earth, stake-mountains, paired creation, sleep-night-day cycle",
+      "definition": "In 78:6-11: Have We not made the earth a resting place and the mountains as stakes; and We created you in pairs; and We made your sleep a means for rest; and We made the night as clothing; and We made the day for livelihood.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "78:6",
           "excerpt": "أَلَمۡ نَجۡعَلِ ٱلۡأَرۡضَ مِهَٰدٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2201",
-      "label": "cand-2201: Topic from 78:8",
-      "definition": "In 78:8: And We created you in pairs",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:7",
+          "excerpt": "وَٱلۡجِبَالَ أَوۡتَادٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:8",
           "excerpt": "وَخَلَقۡنَٰكُمۡ أَزۡوَٰجٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2202",
-      "label": "cand-2202: Topic from 78:10",
-      "definition": "In 78:10: And made the night as clothing",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:9",
+          "excerpt": "وَجَعَلۡنَا نَوۡمَكُمۡ سُبَاتٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:10",
           "excerpt": "وَجَعَلۡنَا ٱلَّيۡلَ لِبَاسٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2203",
-      "label": "cand-2203: Topic from 78:12",
-      "definition": "In 78:12: And constructed above you seven strong [heavens]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "78:12",
-          "excerpt": "وَبَنَيۡنَا فَوۡقَكُمۡ سَبۡعٗا شِدَادٗا",
+          "key": "78:11",
+          "excerpt": "وَجَعَلۡنَا ٱلنَّهَارَ مَعَاشٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Earth-mountains-pairs-nocturnal-diurnal signs."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Rest-livelihood balance designed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2204",
-      "label": "cand-2204: Topic from 78:14",
-      "definition": "In 78:14: And sent down, from the rain clouds, pouring water",
+      "candidateId": "cand-1885",
+      "label": "Rain-driven agriculture producing grain, vegetation and entwined gardens",
+      "definition": "In 78:14-16: And We sent down from the rain clouds pouring water that We may bring forth thereby grain and vegetation and gardens of entwined growth.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "78:14",
           "excerpt": "وَأَنزَلۡنَا مِنَ ٱلۡمُعۡصِرَٰتِ مَآءٗ ثَجَّاجٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2205",
-      "label": "cand-2205: Topic from 78:16",
-      "definition": "In 78:16: And gardens of entwined growth",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:15",
+          "excerpt": "لِّنُخۡرِجَ بِهِۦ حَبّٗا وَنَبَاتٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:16",
           "excerpt": "وَجَنَّـٰتٍ أَلۡفَافًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2206",
-      "label": "cand-2206: Topic from 78:18",
-      "definition": "In 78:18: The Day the Horn is blown and you will come forth in multitudes",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "78:18",
-          "excerpt": "يَوۡمَ يُنفَخُ فِي ٱلصُّورِ فَتَأۡتُونَ أَفۡوَاجٗا",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ma' thajjaj as agricultural cause."
+        },
+        {
+          "topicId": "gratitude",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Provision preceding judgement."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2207",
-      "label": "cand-2207: Topic from 78:21",
-      "definition": "In 78:21: Indeed, Hell has been lying in wait",
+      "candidateId": "cand-1886",
+      "label": "Hell lying in wait as transgressors' unending return with scalding-purulence drink",
+      "definition": "In 78:21-26: Indeed Hell has been lying in wait for the transgressors a place of return; in which they will remain for ages unending; they will not taste therein any coolness or drink except scalding water and foul purulence; an appropriate recompense.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "78:21",
           "excerpt": "إِنَّ جَهَنَّمَ كَانَتۡ مِرۡصَادٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2208",
-      "label": "cand-2208: Topic from 78:22",
-      "definition": "In 78:22: For the transgressors, a place of return",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:22",
           "excerpt": "لِّلطَّـٰغِينَ مَـَٔابٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2209",
-      "label": "cand-2209: Topic from 78:24",
-      "definition": "In 78:24: They will not taste therein [any] coolness or drink",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:23",
+          "excerpt": "لَّـٰبِثِينَ فِيهَآ أَحۡقَابٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:24",
           "excerpt": "لَّا يَذُوقُونَ فِيهَا بَرۡدٗا وَلَا شَرَابًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2210",
-      "label": "cand-2210: Topic from 78:26",
-      "definition": "In 78:26: An appropriate recompense",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:25",
+          "excerpt": "إِلَّا حَمِيمٗا وَغَسَّاقٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:26",
           "excerpt": "جَزَآءٗ وِفَاقًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mirsad and mathwab."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jaza'an wifaqa proportionality."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2211",
-      "label": "cand-2211: Topic from 78:28",
-      "definition": "In 78:28: And denied Our verses with [emphatic] denial",
+      "candidateId": "cand-1887",
+      "label": "Emphatic denial and unexpecting account met with enumerated writing",
+      "definition": "In 78:27-30: Indeed they were not expecting an account and denied Our verses with emphatic denial; but We have enumerated everything in writing; so taste the penalty and never will We increase you except in torment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "78:27",
+          "excerpt": "إِنَّهُمۡ كَانُواْ لَا يَرۡجُونَ حِسَابٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:28",
           "excerpt": "وَكَذَّبُواْ بِـَٔايَٰتِنَا كِذَّابٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2212",
-      "label": "cand-2212: Topic from 78:30",
-      "definition": "In 78:30: So taste [the penalty], and never will We increase you except in torment",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:29",
+          "excerpt": "وَكُلَّ شَيۡءٍ أَحۡصَيۡنَٰهُ كِتَٰبٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:30",
           "excerpt": "فَذُوقُواْ فَلَن نَّزِيدَكُمۡ إِلَّا عَذَابًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "La yarjuna hisaban diagnosed."
+        },
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ahsayna kulla shay'in kitaba."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2213",
-      "label": "cand-2213: Topic from 78:32",
-      "definition": "In 78:32: Gardens and grapevines",
+      "candidateId": "cand-1888",
+      "label": "Righteous attainment: gardens, companions, full cup and pure speech as accounted gift",
+      "definition": "In 78:31-36: Indeed for the righteous is attainment; gardens and grapevines and full-breasted companions of equal age and a full cup; no ill speech will they hear therein or falsehood; reward from your Lord a generous gift made due by account.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "78:31",
+          "excerpt": "إِنَّ لِلۡمُتَّقِينَ مَفَازًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:32",
           "excerpt": "حَدَآئِقَ وَأَعۡنَٰبٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2214",
-      "label": "cand-2214: Topic from 78:34",
-      "definition": "In 78:34: And a full cup",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:33",
+          "excerpt": "وَكَوَاعِبَ أَتۡرَابٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:34",
           "excerpt": "وَكَأۡسٗا دِهَاقٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2215",
-      "label": "cand-2215: Topic from 78:36",
-      "definition": "In 78:36: [As] reward from your Lord, [a generous] gift [made due by] account",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:35",
+          "excerpt": "لَّا يَسۡمَعُونَ فِيهَا لَغۡوٗا وَلَا كِذَّـٰبٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "78:36",
           "excerpt": "جَزَآءٗ مِّن رَّبِّكَ عَطَآءً حِسَابٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mafaz detailed."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ata' hisab as earned gift."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2216",
-      "label": "cand-2216: Topic from 78:38",
-      "definition": "In 78:38: The Day that the Spirit and the angels will stand in rows, they will not speak except for one whom the Most Merciful permits, and he will say what is correct",
+      "candidateId": "cand-1889",
+      "label": "Spirit and angels in rows with restricted speech on the True Day",
+      "definition": "In 78:38-39: On the Day the Spirit and the angels will stand in row they will not speak except for one whom the Most Merciful permits and he has said what is correct; that is the True Day so whoever wills should take to his Lord a way of return.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "78:38",
           "excerpt": "يَوۡمَ يَقُومُ ٱلرُّوحُ وَٱلۡمَلَـٰٓئِكَةُ صَفّٗاۖ لَّا يَتَكَلَّمُونَ إِلَّا مَنۡ أَذِنَ لَهُ ٱلرَّحۡمَٰنُ وَقَالَ صَوَابٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "78:39",
+          "excerpt": "ذَٰلِكَ ٱلۡيَوۡمُ ٱلۡحَقُّۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ مَـَٔابًا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ruh wa-mala'ikah saffan."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yawm al-haqq defined."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:05:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1890",
+      "label": "Impending punishment producing self-observation and the dust-wish",
+      "definition": "In 78:40: Indeed We have warned you of an impending punishment on the Day when a man will observe what his hands have put forth and the disbeliever will say oh I wish that I were dust.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "78:40",
+          "excerpt": "إِنَّآ أَنذَرۡنَٰكُمۡ عَذَابٗا قَرِيبٗا يَوۡمَ يَنظُرُ ٱلۡمَرۡءُ مَا قَدَّمَتۡ يَدَاهُ وَيَقُولُ ٱلۡكَافِرُ يَٰلَيۡتَنِي كُنتُ تُرَٰبَۢا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yanzuru ma qaddamat yadah."
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Too-late wish pattern."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T21:05:00.000Z",
+      "notes": "Wave 11 genuine re-extraction candidate."
     }
   ]
 }
