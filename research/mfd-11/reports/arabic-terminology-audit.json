@@ -1,0 +1,1905 @@
+{
+  "workstream": "MFD-11.5",
+  "phase": "integrity-audit",
+  "generatedAt": "2026-11-20T19:08:36.491Z",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "methodology": "Exhaustive verification of all 649 terminology index entries against pinned quran-json@3.1.2 corpus and data/root-occurrences/ infrastructure. No sampling used.",
+  "summary": {
+    "totalTerms": 649,
+    "verifiedInCorpus": 649,
+    "notFoundInCorpus": 0,
+    "arabicMismatch": 0,
+    "rootVerified": 284,
+    "rootMismatch": 7,
+    "rootMissing": 358,
+    "duplicatesFound": 16,
+    "translitIssues": 1,
+    "glossIssues": 637,
+    "surahDistErrors": 0,
+    "totalRootOccFiles": 1576,
+    "priorityRootCoverage": {
+      "جهد": {
+        "corpusOccurrences": 41,
+        "indexedOccurrences": 10,
+        "coveragePercent": 24.39,
+        "lemmas": 5,
+        "reviewState": "auto-accepted"
+      },
+      "قتل": {
+        "corpusOccurrences": 170,
+        "indexedOccurrences": 28,
+        "coveragePercent": 16.47,
+        "lemmas": 8,
+        "reviewState": "auto-accepted"
+      },
+      "حسن": {
+        "corpusOccurrences": 194,
+        "indexedOccurrences": 30,
+        "coveragePercent": 15.46,
+        "lemmas": 12,
+        "reviewState": "auto-accepted"
+      },
+      "زين": {
+        "corpusOccurrences": 46,
+        "indexedOccurrences": 6,
+        "coveragePercent": 13.04,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      "جمل": {
+        "corpusOccurrences": 11,
+        "indexedOccurrences": 1,
+        "coveragePercent": 9.09,
+        "lemmas": 5,
+        "reviewState": "auto-accepted"
+      },
+      "عهد": {
+        "corpusOccurrences": 46,
+        "indexedOccurrences": 2,
+        "coveragePercent": 4.35,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      "وثق": {
+        "corpusOccurrences": 34,
+        "indexedOccurrences": 7,
+        "coveragePercent": 20.59,
+        "lemmas": 6,
+        "reviewState": "auto-accepted"
+      },
+      "سلم": {
+        "corpusOccurrences": 136,
+        "indexedOccurrences": 20,
+        "coveragePercent": 14.71,
+        "lemmas": 16,
+        "reviewState": "auto-accepted"
+      },
+      "صلح": {
+        "corpusOccurrences": 180,
+        "indexedOccurrences": 13,
+        "coveragePercent": 7.22,
+        "lemmas": 7,
+        "reviewState": "auto-accepted"
+      }
+    }
+  },
+  "errors": [
+    {
+      "term": "-ihn-manfush",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لمن flagged as incorrect by WS2 analysis",
+      "root": "لمن",
+      "arabic": "ٱلۡمَنفُوشِ"
+    },
+    {
+      "term": "-iqab",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لعق flagged as incorrect by WS2 analysis",
+      "root": "لعق",
+      "arabic": "ٱلۡعِقَابِ"
+    },
+    {
+      "term": "al-mujahidoona",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لمج flagged as incorrect by WS2 analysis",
+      "root": "لمج",
+      "arabic": "ٱلۡمُجَٰهِدُونَ"
+    },
+    {
+      "term": "al-munafiqeen",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لمن flagged as incorrect by WS2 analysis",
+      "root": "لمن",
+      "arabic": "ٱلۡمُنَٰفِقِينَ"
+    },
+    {
+      "term": "amanah",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لمن flagged as incorrect by WS2 analysis",
+      "root": "لمن",
+      "arabic": "ٱلۡأَمَانَةَ"
+    },
+    {
+      "term": "ashab-al-yamin",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لمن flagged as incorrect by WS2 analysis",
+      "root": "لمن",
+      "arabic": "ٱلۡيَمِينِ"
+    },
+    {
+      "term": "majalis",
+      "type": "WRONG_ROOT_KNOWN",
+      "severity": "CRITICAL",
+      "detail": "Root لمج flagged as incorrect by WS2 analysis",
+      "root": "لمج",
+      "arabic": "ٱلۡمَجَٰلِسِ"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "3 terms share normalized Arabic 'ليقين'",
+      "terms": [
+        "al-yaqin",
+        "haqq-al-yaqin",
+        "ilm-al-yaqin"
+      ],
+      "transliterations": [
+        "al-yaqin",
+        "haqq al-yaqin",
+        "ilm al-yaqin"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "3 terms share normalized Arabic 'لعرش'",
+      "terms": [
+        "arsh",
+        "dhi-al-arsh",
+        "dhu-al-arsh"
+      ],
+      "transliterations": [
+        "arsh",
+        "dhi al-arsh",
+        "dhu al-arsh"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'اسري'",
+      "terms": [
+        "asra",
+        "isra-"
+      ],
+      "transliterations": [
+        "asra",
+        "isra'"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'اولياء'",
+      "terms": [
+        "awliya",
+        "walayah"
+      ],
+      "transliterations": [
+        "awliya",
+        "walayah"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "3 terms share normalized Arabic 'بلقسط'",
+      "terms": [
+        "bil-qist",
+        "bil-qisti",
+        "qist"
+      ],
+      "transliterations": [
+        "bil-qist",
+        "bil-qisti",
+        "qist"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'تغلوا'",
+      "terms": [
+        "ghuluww",
+        "taghloo"
+      ],
+      "transliterations": [
+        "ghuluww",
+        "taghloo"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "3 terms share normalized Arabic 'حنيفا'",
+      "terms": [
+        "haneef",
+        "haneefan",
+        "hanif"
+      ],
+      "transliterations": [
+        "haneef",
+        "haneefan",
+        "hanif"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'سجيل'",
+      "terms": [
+        "hijarah-min-sijjil",
+        "sijjeel"
+      ],
+      "transliterations": [
+        "hijarah min sijjil",
+        "sijjeel"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'لحوت'",
+      "terms": [
+        "hut",
+        "sahib-al-hut"
+      ],
+      "transliterations": [
+        "hut",
+        "sahib al-hut"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'كلمة'",
+      "terms": [
+        "kalimah",
+        "kalimat-al-taqwa"
+      ],
+      "transliterations": [
+        "kalimah",
+        "kalimat al-taqwa"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'لمحسنين'",
+      "terms": [
+        "muhsin",
+        "muhsinin"
+      ],
+      "transliterations": [
+        "muhsin",
+        "muhsinin"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'ناقة'",
+      "terms": [
+        "naqah",
+        "naqat-allah"
+      ],
+      "transliterations": [
+        "naqah",
+        "naqat Allah"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'نطفة'",
+      "terms": [
+        "nutfah",
+        "nutfah-amshaj"
+      ],
+      "transliterations": [
+        "nutfah",
+        "nutfah amshaj"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'رسول'",
+      "terms": [
+        "rasul",
+        "rasul-karim"
+      ],
+      "transliterations": [
+        "rasul",
+        "rasul karim"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'سلطنا'",
+      "terms": [
+        "sultan",
+        "sultanan"
+      ],
+      "transliterations": [
+        "sultan",
+        "sultanan"
+      ]
+    },
+    {
+      "type": "DUPLICATE_GROUP",
+      "severity": "MAJOR",
+      "detail": "2 terms share normalized Arabic 'ام'",
+      "terms": [
+        "umm-al-kitab",
+        "umm-al-qura"
+      ],
+      "transliterations": [
+        "umm al-kitab",
+        "umm al-qura"
+      ]
+    },
+    {
+      "type": "TRANSLIT_PATTERN",
+      "severity": "MAJOR",
+      "detail": "inconsistentDh: 1 terms affected",
+      "count": 1
+    },
+    {
+      "term": "-abasa",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "he frowned (editorial gloss)"
+    },
+    {
+      "term": "-amad-mumaddadah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "extended columns (editorial gloss)"
+    },
+    {
+      "term": "-ihn-manfush",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "wool fluffed up (editorial gloss)"
+    },
+    {
+      "term": "-iqab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "penalty/retribution (editorial gloss)"
+    },
+    {
+      "term": "-ishah-radiyah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "pleasant life (editorial gloss)"
+    },
+    {
+      "term": "a-ilan-fa-aghna",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "poor then enriched (editorial gloss)"
+    },
+    {
+      "term": "ababil",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "flocks/successive groups (editorial gloss)"
+    },
+    {
+      "term": "abd-allah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "Servant of Allah (editorial gloss)"
+    },
+    {
+      "term": "abqari",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "fine carpets (editorial gloss)"
+    },
+    {
+      "term": "adhab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "punishment (editorial gloss)"
+    },
+    {
+      "term": "afil",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those that set/disappear (editorial gloss)"
+    },
+    {
+      "term": "afwajan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "in multitudes/groups (editorial gloss)"
+    },
+    {
+      "term": "ahl-al-taqwa",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "worthy of fear/taqwa (editorial gloss)"
+    },
+    {
+      "term": "ahmad",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the praised one (editorial gloss)"
+    },
+    {
+      "term": "ahzab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "confederates/parties (editorial gloss)"
+    },
+    {
+      "term": "ajal",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "term/decreed period (editorial gloss)"
+    },
+    {
+      "term": "ajal-allah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the time set by Allah (editorial gloss)"
+    },
+    {
+      "term": "akhbaraha",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "its news (editorial gloss)"
+    },
+    {
+      "term": "akinnah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "coverings/veils (editorial gloss)"
+    },
+    {
+      "term": "al--aqabah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the steep/difficult pass (editorial gloss)"
+    },
+    {
+      "term": "al--asr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "time/epoch (editorial gloss)"
+    },
+    {
+      "term": "al--usr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "hardship (editorial gloss)"
+    },
+    {
+      "term": "al--usra",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "difficulty (editorial gloss)"
+    },
+    {
+      "term": "al-abtar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "cut off/without posterity (editorial gloss)"
+    },
+    {
+      "term": "al-amanat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "trusts/deposits/responsibilities (editorial gloss)"
+    },
+    {
+      "term": "al-ashqa",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the wretched one (editorial gloss)"
+    },
+    {
+      "term": "al-asma-al-husna",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the best names (editorial gloss)"
+    },
+    {
+      "term": "al-ayah-al-kubra",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the greatest sign (editorial gloss)"
+    },
+    {
+      "term": "al-azifah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Approaching (Day) (editorial gloss)"
+    },
+    {
+      "term": "al-balad",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the city, Makkah (editorial gloss)"
+    },
+    {
+      "term": "al-bayt-al-ma-mur",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "frequented House (editorial gloss)"
+    },
+    {
+      "term": "al-bayyinah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "clear evidence (editorial gloss)"
+    },
+    {
+      "term": "al-birr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "righteousness/piety (editorial gloss)"
+    },
+    {
+      "term": "al-buruj",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "great stars/constellations (editorial gloss)"
+    },
+    {
+      "term": "al-darki",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "depth/lowest level (editorial gloss)"
+    },
+    {
+      "term": "al-din",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Recompense/Judgement (editorial gloss)"
+    },
+    {
+      "term": "al-duha",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the morning brightness (editorial gloss)"
+    },
+    {
+      "term": "al-fahishah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "indecency/unlawful sexual intercourse (editorial gloss)"
+    },
+    {
+      "term": "al-fajr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the dawn (editorial gloss)"
+    },
+    {
+      "term": "al-fath",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the victory/opening (editorial gloss)"
+    },
+    {
+      "term": "al-fil",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the elephant (editorial gloss)"
+    },
+    {
+      "term": "al-haqq",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "truth (editorial gloss)"
+    },
+    {
+      "term": "al-haqqah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Inevitable Reality (editorial gloss)"
+    },
+    {
+      "term": "al-humazah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the scorner/slanderer (editorial gloss)"
+    },
+    {
+      "term": "al-hutamah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Crusher (editorial gloss)"
+    },
+    {
+      "term": "al-jahim",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Hellfire (editorial gloss)"
+    },
+    {
+      "term": "al-judiyy",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "Mount Judi landing place (editorial gloss)"
+    },
+    {
+      "term": "al-kawthar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "abundance/the river in Paradise (editorial gloss)"
+    },
+    {
+      "term": "al-khannas",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the retreating/sneaking whisperer (editorial gloss)"
+    },
+    {
+      "term": "al-khunnas",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the retreating stars (editorial gloss)"
+    },
+    {
+      "term": "al-layl",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the night (editorial gloss)"
+    },
+    {
+      "term": "al-lumazah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the mocker/backbiter (editorial gloss)"
+    },
+    {
+      "term": "al-ma-un",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "small kindnesses/household goods (editorial gloss)"
+    },
+    {
+      "term": "al-maw-udah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the girl buried alive (editorial gloss)"
+    },
+    {
+      "term": "al-miskin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the poor/needy (editorial gloss)"
+    },
+    {
+      "term": "al-muddaththir",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the covered one (editorial gloss)"
+    },
+    {
+      "term": "al-mughirat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the chargers (editorial gloss)"
+    },
+    {
+      "term": "al-mujahidoona",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those who strive/fight (editorial gloss)"
+    },
+    {
+      "term": "al-munafiqeen",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the hypocrites (editorial gloss)"
+    },
+    {
+      "term": "al-muriyat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "spark-producers/strikers (editorial gloss)"
+    },
+    {
+      "term": "al-mursalat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those sent forth (editorial gloss)"
+    },
+    {
+      "term": "al-mustad-afeen",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the oppressed/weakened ones (editorial gloss)"
+    },
+    {
+      "term": "al-mustad-afeena",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the oppressed/weakened ones (editorial gloss)"
+    },
+    {
+      "term": "al-mutaffifin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those who give less than due (editorial gloss)"
+    },
+    {
+      "term": "al-muttaqeen",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the righteous who fear Allah (editorial gloss)"
+    },
+    {
+      "term": "al-muzzammil",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the wrapped one (editorial gloss)"
+    },
+    {
+      "term": "al-na-im",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "pleasure/blessing (editorial gloss)"
+    },
+    {
+      "term": "al-naffathat-fi-al--uqad",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those who blow on knots (editorial gloss)"
+    },
+    {
+      "term": "al-nafs-al-lawwamah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the reproaching soul (editorial gloss)"
+    },
+    {
+      "term": "al-nafs-al-mutma-innah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the reassured soul (editorial gloss)"
+    },
+    {
+      "term": "al-najm-al-thaqib",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the piercing star (editorial gloss)"
+    },
+    {
+      "term": "al-nashitat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those who remove gently (editorial gloss)"
+    },
+    {
+      "term": "al-nasiyah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the forelock (editorial gloss)"
+    },
+    {
+      "term": "al-nazi-at",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those who extract violently (editorial gloss)"
+    },
+    {
+      "term": "al-nusub",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "stone altars/idols (editorial gloss)"
+    },
+    {
+      "term": "al-qalam",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the pen (editorial gloss)"
+    },
+    {
+      "term": "al-qari-ah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Striking Calamity (editorial gloss)"
+    },
+    {
+      "term": "al-qaryatayn",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the two cities (editorial gloss)"
+    },
+    {
+      "term": "al-qubur",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the graves (editorial gloss)"
+    },
+    {
+      "term": "al-rajifah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the convulsing blast (editorial gloss)"
+    },
+    {
+      "term": "al-rriba",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "usury/interest (editorial gloss)"
+    },
+    {
+      "term": "al-ruh",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Spirit (editorial gloss)"
+    },
+    {
+      "term": "al-sa-il",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the petitioner/asker (editorial gloss)"
+    },
+    {
+      "term": "al-sabihat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "those who glide/swim (editorial gloss)"
+    },
+    {
+      "term": "al-sabr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "patience (editorial gloss)"
+    },
+    {
+      "term": "al-sakhkhah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the Deafening Blast (editorial gloss)"
+    },
+    {
+      "term": "al-shafaq",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the twilight glow (editorial gloss)"
+    },
+    {
+      "term": "al-shams",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the sun (editorial gloss)"
+    },
+    {
+      "term": "al-shuhha",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "greed/stinginess (editorial gloss)"
+    },
+    {
+      "term": "al-sulb",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the backbone (editorial gloss)"
+    },
+    {
+      "term": "al-takathur",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "competition in increase (editorial gloss)"
+    },
+    {
+      "term": "al-tara-ib",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the ribs (editorial gloss)"
+    },
+    {
+      "term": "al-tariq",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the night comer (editorial gloss)"
+    },
+    {
+      "term": "al-tin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the fig (editorial gloss)"
+    },
+    {
+      "term": "al-ukhdud",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the trench (editorial gloss)"
+    },
+    {
+      "term": "al-uqood",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "contracts/obligations (editorial gloss)"
+    },
+    {
+      "term": "al-uzza",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "pre-Islamic deity name (editorial gloss)"
+    },
+    {
+      "term": "al-wasilah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "means of nearness/approach to Allah (editorial gloss)"
+    },
+    {
+      "term": "al-watin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the aorta (editorial gloss)"
+    },
+    {
+      "term": "al-yaqin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "certainty/death (editorial gloss)"
+    },
+    {
+      "term": "al-yatim",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the orphan (editorial gloss)"
+    },
+    {
+      "term": "al-yusr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "ease (editorial gloss)"
+    },
+    {
+      "term": "al-yusra",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "ease (editorial gloss)"
+    },
+    {
+      "term": "al-zaytun",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the olive (editorial gloss)"
+    },
+    {
+      "term": "alaq",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "clinging substance (editorial gloss)"
+    },
+    {
+      "term": "alaqah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "clinging clot (editorial gloss)"
+    },
+    {
+      "term": "alwah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "tablets (editorial gloss)"
+    },
+    {
+      "term": "amanah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "trust/responsibility (editorial gloss)"
+    },
+    {
+      "term": "amaniyy",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "wishful thinking/unfounded hopes (editorial gloss)"
+    },
+    {
+      "term": "an-yastaqim",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "to take a right course (editorial gloss)"
+    },
+    {
+      "term": "anba-",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "news/tidings (editorial gloss)"
+    },
+    {
+      "term": "anfal",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "spoils of war/bounties (editorial gloss)"
+    },
+    {
+      "term": "ankabut",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "spider (editorial gloss)"
+    },
+    {
+      "term": "ansab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "stone altars/idols (editorial gloss)"
+    },
+    {
+      "term": "ansar-allah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "supporters of Allah (editorial gloss)"
+    },
+    {
+      "term": "ara-ik",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "adorned couches (editorial gloss)"
+    },
+    {
+      "term": "arsh",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "Throne (editorial gloss)"
+    },
+    {
+      "term": "asfar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "volumes/books (editorial gloss)"
+    },
+    {
+      "term": "ashab-al-yamin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "companions of the right (editorial gloss)"
+    },
+    {
+      "term": "ashqaha",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the most wretched of them (editorial gloss)"
+    },
+    {
+      "term": "ashtatan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "separated/dispersed (editorial gloss)"
+    },
+    {
+      "term": "asra",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "prisoners of war/captives (editorial gloss)"
+    },
+    {
+      "term": "ata--hisab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "gift made due by account (editorial gloss)"
+    },
+    {
+      "term": "athqalaha",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "its burdens (editorial gloss)"
+    },
+    {
+      "term": "atqa",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "most righteous (editorial gloss)"
+    },
+    {
+      "term": "awliya",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "allies/patrons/protectors (editorial gloss)"
+    },
+    {
+      "term": "awtad",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "stakes/pegs (editorial gloss)"
+    },
+    {
+      "term": "awwab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "one repeatedly turning back (editorial gloss)"
+    },
+    {
+      "term": "ayn-al-yaqin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "eye of certainty (editorial gloss)"
+    },
+    {
+      "term": "ba-l",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "name of the deity invoked by Ilyas's people (editorial gloss)"
+    },
+    {
+      "term": "baghtah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "suddenness (editorial gloss)"
+    },
+    {
+      "term": "baghy",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "transgression/injustice (editorial gloss)"
+    },
+    {
+      "term": "bahirah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "pre-Islamic camel taboo (editorial gloss)"
+    },
+    {
+      "term": "balighah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "far-reaching/conclusive (editorial gloss)"
+    },
+    {
+      "term": "balligh",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "convey/proclaim fully (editorial gloss)"
+    },
+    {
+      "term": "bana-a",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "constructed (editorial gloss)"
+    },
+    {
+      "term": "banan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "fingertips (editorial gloss)"
+    },
+    {
+      "term": "baqiyyah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "remainder/lawful provision from Allah (editorial gloss)"
+    },
+    {
+      "term": "basair",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "insights/enlightenment (editorial gloss)"
+    },
+    {
+      "term": "bashar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "human beings (editorial gloss)"
+    },
+    {
+      "term": "batar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "insolence/exultation (editorial gloss)"
+    },
+    {
+      "term": "batin",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "concealed/inward (editorial gloss)"
+    },
+    {
+      "term": "bay-",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "sale/transaction (editorial gloss)"
+    },
+    {
+      "term": "bay-ah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "pledge of allegiance (editorial gloss)"
+    },
+    {
+      "term": "bayan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "eloquence/expression (editorial gloss)"
+    },
+    {
+      "term": "bayyinah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "clear proof/evidence (editorial gloss)"
+    },
+    {
+      "term": "bi-yaminihi",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "in his right hand (editorial gloss)"
+    },
+    {
+      "term": "bil-adl",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "with justice (editorial gloss)"
+    },
+    {
+      "term": "bil-mirsad",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "in observation/ambush (editorial gloss)"
+    },
+    {
+      "term": "bil-qist",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "in justice/equity (editorial gloss)"
+    },
+    {
+      "term": "bil-qisti",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "in justice/equity (editorial gloss)"
+    },
+    {
+      "term": "bu-thirat",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "scattered/exhumed (editorial gloss)"
+    },
+    {
+      "term": "buhtanan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "great slander/fabrication (editorial gloss)"
+    },
+    {
+      "term": "dabbah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "beast/creature (editorial gloss)"
+    },
+    {
+      "term": "dabhan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "panting (editorial gloss)"
+    },
+    {
+      "term": "dabir",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "remnant/root (editorial gloss)"
+    },
+    {
+      "term": "dahr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "time/epoch (editorial gloss)"
+    },
+    {
+      "term": "dakkatan-dakka",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "pounded and crushed (editorial gloss)"
+    },
+    {
+      "term": "dallan-fa-hada",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "lost then guided (editorial gloss)"
+    },
+    {
+      "term": "damdama",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "destruction levelled upon them (editorial gloss)"
+    },
+    {
+      "term": "dar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "abode/home (editorial gloss)"
+    },
+    {
+      "term": "dar-al-qarar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "home of permanent settlement (editorial gloss)"
+    },
+    {
+      "term": "darasa",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "studied/learned (editorial gloss)"
+    },
+    {
+      "term": "dari-",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "poisonous thorny plant (editorial gloss)"
+    },
+    {
+      "term": "dhallul",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "tame/subservient (editorial gloss)"
+    },
+    {
+      "term": "dhat-al-raj-",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "that which returns rain (editorial gloss)"
+    },
+    {
+      "term": "dhat-al-sad-",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "that which cracks open (editorial gloss)"
+    },
+    {
+      "term": "dhi-al-arsh",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "Owner of the Throne (editorial gloss)"
+    },
+    {
+      "term": "dhibh",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "sacrifice/ransom offering (editorial gloss)"
+    },
+    {
+      "term": "dhikr",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "remembrance (editorial gloss)"
+    },
+    {
+      "term": "dhikr-allah",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "remembrance of Allah (editorial gloss)"
+    },
+    {
+      "term": "dhu-al-arsh",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "Owner of the Throne (editorial gloss)"
+    },
+    {
+      "term": "dhul-qarnayn",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "possessor of two horns/epochs (editorial gloss)"
+    },
+    {
+      "term": "din",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "religion/way (editorial gloss)"
+    },
+    {
+      "term": "din-al-qayyim",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "the correct religion (editorial gloss)"
+    },
+    {
+      "term": "dirar",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "harm/injury-causing (editorial gloss)"
+    },
+    {
+      "term": "diyatan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "blood money/compensation (editorial gloss)"
+    },
+    {
+      "term": "dukhan",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "visible smoke (editorial gloss)"
+    },
+    {
+      "term": "eid",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "festival/recurring celebration (editorial gloss)"
+    },
+    {
+      "term": "fa-al-lima-yurid",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "Effecter of what He intends (editorial gloss)"
+    },
+    {
+      "term": "fa-alhamaha",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "inspired it with discernment (editorial gloss)"
+    },
+    {
+      "term": "fa-haddith",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "report/speak about (editorial gloss)"
+    },
+    {
+      "term": "fa-idha-faraghta-fa-nsab",
+      "type": "GLOSS_QUALITY",
+      "severity": "MINOR",
+      "detail": "contains-editorial-marker",
+      "gloss": "stand up for worship after finishing duties (editorial gloss)"
+    }
+  ],
+  "coverageAnalysis": {
+    "methodology": "Compared terminology index verse-key references against data/root-occurrences/ verified corpus occurrences. Denominator = total corpus occurrences per root. Numerator = occurrences captured in terminology index. Roots with < 5 corpus occurrences excluded from percentage ranking.",
+    "worstCoverage": [
+      {
+        "root": "اسف",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "الو",
+        "corpusOccurrences": 37,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 4,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "امم",
+        "corpusOccurrences": 13,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بخس",
+        "corpusOccurrences": 7,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "برز",
+        "corpusOccurrences": 9,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 4,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "برق",
+        "corpusOccurrences": 7,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بضع",
+        "corpusOccurrences": 7,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بطش",
+        "corpusOccurrences": 10,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بكر",
+        "corpusOccurrences": 12,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بكم",
+        "corpusOccurrences": 6,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 1,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بور",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "بيض",
+        "corpusOccurrences": 12,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "ثبر",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "ثور",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 1,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جبر",
+        "corpusOccurrences": 10,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 1,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جثم",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 1,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جحد",
+        "corpusOccurrences": 12,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 1,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جدد",
+        "corpusOccurrences": 9,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جلد",
+        "corpusOccurrences": 13,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جلو",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "جوز",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حبر",
+        "corpusOccurrences": 6,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حرص",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حرف",
+        "corpusOccurrences": 6,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حرق",
+        "corpusOccurrences": 9,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حصب",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حصر",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 4,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حلل",
+        "corpusOccurrences": 14,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حلي",
+        "corpusOccurrences": 8,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 3,
+        "reviewState": "auto-accepted"
+      },
+      {
+        "root": "حيص",
+        "corpusOccurrences": 5,
+        "indexedOccurrences": 0,
+        "coveragePercent": 0,
+        "lemmas": 1,
+        "reviewState": "auto-accepted"
+      }
+    ],
+    "bestCoverage": [
+      {
+        "root": "صيد",
+        "corpusOccurrences": 6,
+        "indexedOccurrences": 5,
+        "coveragePercent": 83.33,
+        "lemmas": 2,
+        "reviewState": "auto-accepted"
+      }
+    ]
+  }
+}
