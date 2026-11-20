@@ -50,18 +50,218 @@ const PASSAGES = [
     mainLabel: "The daughter-attribution interrogated against their own preference for sons and the absent witness to angelic creation; begetting declared invented falsehood and the choice-of-daughters claim challenged as defective judgement; the demand for clear authority and a produced scripture; the asserted jinn-lineage refuted by the jinn's own knowledge of presentation for punishment; divine transcendence with the chosen-servant exemption; the limits of temptation excluding only the destined burner; the angelic declaration of known station, ranked alignment and glorification; the disbelievers' conditional claim of sincerity invalidated by their actual disbelief; the prior word guaranteeing messenger victory and the overcoming of divine soldiers; repeated leave-and-see patience commands against punishment-impatience and the evil morning of territorial descent; closing tasbih of the Lord of might, salam upon the messengers and hamd to the Lord of the worlds" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from the passage's first ayah.
+const SUB_LABELS = {
+  "ext-037-p1": [
+    "Oath sworn by the angels arranged in ranks",
+    "Oath sworn by those who drive onward",
+    "Oath sworn by those who recite the reminder",
+    "Affirmation that the God addressed is One",
+    "Lordship over heavens, earth, what lies between, and the places of sunrise",
+    "Nearest heaven adorned with the adornment of stars",
+    "That adornment doubling as a guard against every rebellious devil",
+    "Devils denied hearing of the exalted assembly and pelted from every side",
+    "Their repulsion accompanied by a lasting punishment",
+    "Exception of the one who snatches a word by theft and is pursued by a piercing flame",
+    "Challenge on whether they or other creatures are the harder creation, with their origin in sticky clay",
+    "The Prophet's wonder set against their mockery",
+    "Reminder received without any act of remembrance",
+    "A sign seen only to be ridiculed",
+    "Their dismissal of the sign as plain magic",
+    "Question whether dust and bones will be raised again",
+    "Extension of that question to their forefathers",
+    "Answer affirming resurrection while they are rendered contemptible",
+    "A single shout sufficing to bring them into observation",
+    "Their cry of woe naming the Day of Recompense",
+    "Identification of that Day as the Judgement they used to deny",
+    "Order to gather the wrongdoers, their kinds, and their objects of worship",
+    "Those objects named as what they worshipped besides Allah, with guidance to the path of Hellfire",
+    "Order to halt them because they must be questioned",
+    "Question why they no longer help one another",
+    "Their condition of surrender on that Day",
+    "Their turning toward one another in mutual blame",
+    "Followers complaining that the misleaders approached them from the right",
+    "Misleaders retorting that the followers were themselves not believers",
+    "Admission of no authority over them, only their own transgression",
+    "The Lord's word taking effect so that tasting punishment is certain",
+    "Confession of having led others astray while being astray themselves",
+    "Sharing in the punishment on that Day",
+    "Statement that this is how the criminals are dealt with",
+    "Their arrogance when told there is no deity but Allah",
+    "Their refusal to abandon their gods for one they call a mad poet",
+    "Correction that he brought the truth and confirmed earlier messengers",
+    "Notice that they will taste the painful punishment",
+    "Recompense limited strictly to what they used to do"
+  ],
+  "ext-037-p2": [
+    "Exemption of the chosen servants of Allah from that punishment",
+    "Their provision described as determined",
+    "Fruits named among that provision, with honor conferred",
+    "Their setting in gardens of pleasure",
+    "Seated on thrones facing one another",
+    "A cup circulated among them from a flowing spring",
+    "Its whiteness and delight to those who drink",
+    "Absence of any bad effect and of intoxication",
+    "Companions restricting their glances, large-eyed",
+    "Their likeness to delicate eggs kept well protected",
+    "The inhabitants approaching one another with questions",
+    "One speaker recalling a companion he had on earth",
+    "That companion's mocking question about being among believers",
+    "His doubt that dust and bones would be recompensed",
+    "Invitation to look upon his former companion's state",
+    "The look revealing him in the midst of Hellfire",
+    "Acknowledgment that the companion nearly ruined him",
+    "Attribution of his escape solely to his Lord's favor",
+    "Rhetorical question whether death now ends after the first death",
+    "Assurance of no further punishment",
+    "Naming this outcome the great attainment",
+    "Directive that workers should work for the like of this",
+    "Comparison of Paradise's accommodation with the tree of zaqqum",
+    "Zaqqum appointed as a torment for the wrongdoers",
+    "Its origin at the bottom of Hellfire",
+    "Its emerging fruit likened to the heads of devils",
+    "Their eating from it until their bellies are filled",
+    "A mixture of scalding water following that food",
+    "Their return thereafter to Hellfire",
+    "Their finding their fathers already astray",
+    "Their haste to follow in those footsteps",
+    "Most former peoples having strayed before them",
+    "Warners having been sent among those peoples",
+    "Command to observe the end of those who were warned",
+    "Renewed exemption of the chosen servants",
+    "Nuh's call to Allah and the claim of being the best of responders",
+    "Rescue of Nuh and his family from the great affliction",
+    "His descendants made the ones who remain",
+    "Favorable mention left for him among later generations",
+    "Peace declared upon Nuh among the worlds",
+    "Formula stating that the doers of good are thus rewarded",
+    "Affirmation that Nuh was among the believing servants",
+    "Drowning of the disbelievers"
+  ],
+  "ext-037-p3": [
+    "Ibrahim introduced as belonging to Nuh's kind",
+    "His approach to his Lord with a sound heart",
+    "His question to his father and people about what they worship",
+    "His framing of their worship as desired falsehood besides Allah",
+    "His pressing question about their conception of the Lord of the worlds",
+    "His glance cast toward the stars",
+    "His statement that he is about to be ill",
+    "Their turning away and departing from him",
+    "His address to their gods asking whether they eat",
+    "His question why they do not speak",
+    "His striking them with a blow of his right hand",
+    "The people hastening toward him",
+    "His argument against worshipping what they themselves carve",
+    "His assertion that Allah created them and what they make",
+    "Their call to build a furnace and cast him into the fire",
+    "Their plot answered by making them the most debased",
+    "His declaration of going to his Lord who will guide him",
+    "His supplication for a child from among the righteous",
+    "Tidings given of a forbearing boy",
+    "The dream-sacrifice consultation at the age of exertion and the son's conditional steadfastness",
+    "Their mutual submission and the placing of him upon his forehead",
+    "The divine call addressing Ibrahim",
+    "Declaration that the vision has been fulfilled, with the muhsin reward formula",
+    "Naming the episode the clear trial",
+    "Ransom of the son with a great sacrifice",
+    "Favorable mention left among later generations",
+    "Peace declared upon Ibrahim",
+    "Repeated formula of rewarding the doers of good",
+    "Affirmation that Ibrahim was among the believing servants",
+    "Tidings of Isaac as a prophet among the righteous",
+    "Blessing of Ibrahim and Isaac with descendants divided between the doer of good and the self-unjust"
+  ],
+  "ext-037-p4": [
+    "Favor conferred upon Musa and Harun",
+    "Their rescue together with their people from the great affliction",
+    "Support granted so that they were the ones who overcame",
+    "Grant of the explicit Scripture to them",
+    "Their guidance upon the straight path",
+    "Favorable mention left for them among later generations",
+    "Peace declared upon Musa and Harun",
+    "Reward formula applied to them as doers of good",
+    "Affirmation that both were among the believing servants",
+    "Ilyas named among the messengers",
+    "His question to his people whether they will fear Allah",
+    "His rebuke for invoking Ba'l while leaving the best of creators",
+    "Identification of that creator as their Lord and the Lord of their forefathers",
+    "Their denial and consequent presentation for punishment",
+    "Exemption of the chosen servants from that presentation",
+    "Favorable mention left for Ilyas among later generations",
+    "Peace declared upon Ilyas",
+    "Reward formula applied to him as a doer of good",
+    "Affirmation that Ilyas was among the believing servants",
+    "Lut named among the messengers",
+    "Rescue of him and his entire household",
+    "Exception of his wife among those who remained behind",
+    "Destruction of the remaining people",
+    "Passing by their ruins in the morning",
+    "Passing by them at night with the challenge to use reason",
+    "Yunus named among the messengers",
+    "His flight to the laden ship",
+    "His drawing of lots and being among the losers",
+    "The fish swallowing him while he was blameworthy",
+    "Condition that he had been among those who exalt Allah",
+    "Consequence avoided: remaining in its belly until the Day of resurrection",
+    "His casting onto the open shore while ill",
+    "A gourd vine caused to grow over him",
+    "His mission to a hundred thousand or more",
+    "Their belief and the enjoyment of life granted for a time"
+  ],
+  "ext-037-p5": [
+    "Interrogation whether their Lord has daughters while they have sons",
+    "Question whether they witnessed the angels being created female",
+    "Their claim identified as proceeding from invented falsehood",
+    "Their assertion that Allah has begotten, with their lying affirmed",
+    "Challenge on whether He preferred daughters over sons",
+    "Question about the defect in their manner of judgement",
+    "Call for them to accept reminder",
+    "Demand whether they possess a clear authority",
+    "Demand to produce their scripture if truthful",
+    "Their claimed lineage between Allah and the jinn, refuted by the jinn's knowledge of presentation",
+    "Allah declared exalted above their descriptions",
+    "Exemption of the chosen servants from that description",
+    "Address to the disbelievers and what they worship",
+    "Denial that they can tempt anyone away from Him",
+    "Exception only of the one destined to burn in Hellfire",
+    "Angelic statement that each has a known position",
+    "Angelic self-description as those who line up",
+    "Angelic self-description as those who exalt Allah",
+    "Report of what the disbelievers used to say",
+    "Their conditional claim about possessing a message from the former peoples",
+    "Their claim that they would then have been chosen servants",
+    "Their actual disbelief and the notice that they will come to know",
+    "Prior word already issued for the messenger servants",
+    "Content of that word: they would be given victory",
+    "Further content: His soldiers would be the ones who overcome",
+    "Command to leave them for a time",
+    "Command to observe them, since they too will observe",
+    "Question whether they are impatient for His punishment",
+    "Warning that its descent in their courtyard makes an evil morning for the warned",
+    "Repeated command to leave them for a time",
+    "Repeated command to observe, since they will observe",
+    "Tasbih of the Lord of might above their descriptions",
+    "Peace declared upon the messengers",
+    "Praise to Allah, Lord of the worlds"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`37:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`37:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  // Subordinate subjects must explain the actual subject of each ayah.
+  // Truncated translations are explicitly disallowed by the wave brief, and they
+  // also collide across records whenever the Qur'an repeats a refrain verbatim.
+  // Each entry below is an editorial description of that specific verse.
+  const subs = SUB_LABELS[p.id].map((label, idx) => ({
+    label,
+    keys: [`37:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
+  if (subs.length !== p.to - p.from + 1) {
+    throw new Error(`${p.id}: ${subs.length} subordinate labels for ${p.to - p.from + 1} verses`);
   }
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 37, surahName: "As-Saffat",
@@ -238,10 +438,33 @@ const CAND_DEFS = [
   { id: "cand-1366", label: "Leave-and-see patience against punishment-impatience closing in tasbih, salam and hamd", def: "In 37:174-182: Leave them for a time and see; for Our punishment are they impatient; when it descends in their territory evil is the morning of those warned; exalted is your Lord the Lord of might; peace upon the messengers; praise to Allah Lord of the worlds.", key: "37:180", overlap: [{topicId:"patience",layer:"curated",relationship:"same-concept",note:"Tawarru' temporizing."},{topicId:"remembrance",layer:"curated",relationship:"same-concept",note:"Tasbih-salam-hamd closure."}] }
 ];
 
+// Evidence must cover every ayah the definition actually cites.
+// Definitions open with "In S:A" or "In S:A-B"; expand that span into full-verse
+// evidence so the semantic audit's F check (definition citation vs evidence keys)
+// is satisfied by construction rather than by narrowing the prose.
+function citedKeys(def) {
+  const m = def.match(/\bIn\s+(\d+):(\d+)(?:\s*[-\u2013]\s*(\d+))?/i);
+  if (!m) return null;
+  const s = Number(m[1]);
+  const from = Number(m[2]);
+  const to = m[3] ? Number(m[3]) : from;
+  const out = [];
+  for (let a = from; a <= to; a++) out.push(`${s}:${a}`);
+  return out;
+}
+
 for (const cd of CAND_DEFS) {
+  const keys = citedKeys(cd.def) || [cd.key];
+  if (!keys.includes(cd.key)) keys.push(cd.key);
+  const evidence = keys.map(k => ({
+    key: k,
+    excerpt: fv(Number(k.split(":")[1])),
+    evidenceClass: "EXPLICIT_TEXT",
+    rationale: "Full verse text as evidence for the cited span."
+  }));
   candidates.candidates.push({
     candidateId: cd.id, label: cd.label, definition: cd.def, definitionStatus: "editorial-draft",
-    evidence: [{ key: cd.key, excerpt: fv(Number(cd.key.split(":")[1])), evidenceClass: "EXPLICIT_TEXT", rationale: "Full verse text as evidence." }],
+    evidence,
     existingTopicOverlap: cd.overlap || [],
     proposedBy: "ai-assisted", reviewStatus: "pending-scholarly-review", createdAt: TS,
     notes: "Wave 6 genuine re-extraction candidate."
