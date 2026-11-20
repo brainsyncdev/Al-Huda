@@ -1,387 +1,329 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:10:00.000Z",
-  "sourceExtraction": "ext-083-p1,ext-083-p2",
+  "generatedAt": "2026-11-20T21:55:00.000Z",
+  "sourceExtraction": "ext-083-p1,ext-083-p2,ext-083-p3,ext-083-p4",
   "candidates": [
     {
-      "candidateId": "cand-2297",
-      "label": "cand-2297: Topic from 83:1",
-      "definition": "In 83:1: Woe to those who give less [than due]",
+      "candidateId": "cand-1915",
+      "label": "Commercial fraud condemned: full measure taken, loss given",
+      "definition": "In 83:1-6: Woe to those who give less than due; who when they take a measure from people take in full but if they give by measure or by weight to them they cause loss; do they not think that they will be resurrected for a tremendous Day, the Day when mankind will stand before the Lord of the worlds.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "83:1",
           "excerpt": "وَيۡلٞ لِّلۡمُطَفِّفِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2298",
-      "label": "cand-2298: Topic from 83:2",
-      "definition": "In 83:2: Who, when they take a measure from people, take in full",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:2",
           "excerpt": "ٱلَّذِينَ إِذَا ٱكۡتَالُواْ عَلَى ٱلنَّاسِ يَسۡتَوۡفُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2299",
-      "label": "cand-2299: Topic from 83:4",
-      "definition": "In 83:4: Do they not think that they will be resurrected",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:3",
+          "excerpt": "وَإِذَا كَالُوهُمۡ أَو وَّزَنُوهُمۡ يُخۡسِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:4",
           "excerpt": "أَلَا يَظُنُّ أُوْلَـٰٓئِكَ أَنَّهُم مَّبۡعُوثُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2300",
-      "label": "cand-2300: Topic from 83:6",
-      "definition": "In 83:6: The Day when mankind will stand before the Lord of the worlds",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:5",
+          "excerpt": "لِيَوۡمٍ عَظِيمٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:6",
           "excerpt": "يَوۡمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلۡعَٰلَمِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tatfif as measurable zulm."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qiyam bayna yaday rabb al-alamin."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:55:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2301",
-      "label": "cand-2301: Topic from 83:7",
-      "definition": "In 83:7: No! Indeed, the record of the wicked is in sijjeen",
+      "candidateId": "cand-1916",
+      "label": "Sijjeen as the inscribed register of the wicked",
+      "definition": "In 83:7-9: No indeed the record of the wicked is in sijjeen; and what can make you know what is sijjeen; it is a register inscribed.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "83:7",
           "excerpt": "كَلَّآ إِنَّ كِتَٰبَ ٱلۡفُجَّارِ لَفِي سِجِّينٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2302",
-      "label": "cand-2302: Topic from 83:9",
-      "definition": "In 83:9: It is [their destination recorded in] a register inscribed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:8",
+          "excerpt": "وَمَآ أَدۡرَىٰكَ مَا سِجِّينٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:9",
           "excerpt": "كِتَٰبٞ مَّرۡقُومٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2303",
-      "label": "cand-2303: Topic from 83:11",
-      "definition": "In 83:11: Who deny the Day of Recompense",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "83:11",
-          "excerpt": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوۡمِ ٱلدِّينِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2304",
-      "label": "cand-2304: Topic from 83:12",
-      "definition": "In 83:12: And none deny it except every sinful transgressor",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kitab marqum for fujjar."
+        },
         {
-          "key": "83:12",
-          "excerpt": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعۡتَدٍ أَثِيمٍ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Deeds permanently registered."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:55:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2305",
-      "label": "cand-2305: Topic from 83:14",
-      "definition": "In 83:14: No! Rather, the stain has covered their hearts of that which they were earning",
+      "candidateId": "cand-1917",
+      "label": "Heart-stain from earnings producing partition from the Lord",
+      "definition": "In 83:14-17: No rather the stain has covered their hearts of that which they were earning; no indeed from their Lord that Day they will be partitioned; then indeed they will enter and burn in Hellfire; then it will be said this is what you used to deny.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "83:14",
           "excerpt": "كَلَّاۖ بَلۡۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُواْ يَكۡسِبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2306",
-      "label": "cand-2306: Topic from 83:16",
-      "definition": "In 83:16: Then indeed, they will [enter and] burn in Hellfire",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:15",
+          "excerpt": "كَلَّآ إِنَّهُمۡ عَن رَّبِّهِمۡ يَوۡمَئِذٖ لَّمَحۡجُوبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:16",
           "excerpt": "ثُمَّ إِنَّهُمۡ لَصَالُواْ ٱلۡجَحِيمِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:17",
+          "excerpt": "ثُمَّ يُقَالُ هَٰذَا ٱلَّذِي كُنتُم بِهِۦ تُكَذِّبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ran ala al-qulub from kasb."
+        },
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hijab preceding salli al-jahim."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:55:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2307",
-      "label": "cand-2307: Topic from 83:19",
-      "definition": "In 83:19: And what can make you know what is 'illiyyun",
+      "candidateId": "cand-1918",
+      "label": "Illiyyun witnessed by the near ones with sealed musk-finished wine",
+      "definition": "In 83:18-28: No indeed the record of the righteous is in illiyyun; and what can make you know what is illiyyun; it is a register inscribed which is witnessed by those brought near; indeed the righteous will be in pleasure on adorned couches observing; you will recognize in their faces the radiance of pleasure; they will be given to drink pure wine which was sealed, the last of it is musk so for this let the competitors compete; and its mixture is of Tasneem, a spring from which those near drink.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "83:18",
+          "excerpt": "كَلَّآ إِنَّ كِتَٰبَ ٱلۡأَبۡرَارِ لَفِي عِلِّيِّينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:19",
           "excerpt": "وَمَآ أَدۡرَىٰكَ مَا عِلِّيُّونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2308",
-      "label": "cand-2308: Topic from 83:20",
-      "definition": "In 83:20: It is [their destination recorded in] a register inscribed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:20",
           "excerpt": "كِتَٰبٞ مَّرۡقُومٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2309",
-      "label": "cand-2309: Topic from 83:22",
-      "definition": "In 83:22: Indeed, the righteous will be in pleasure",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:21",
+          "excerpt": "يَشۡهَدُهُ ٱلۡمُقَرَّبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:22",
           "excerpt": "إِنَّ ٱلۡأَبۡرَارَ لَفِي نَعِيمٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2310",
-      "label": "cand-2310: Topic from 83:24",
-      "definition": "In 83:24: You will recognize in their faces the radiance of pleasure",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:23",
+          "excerpt": "عَلَى ٱلۡأَرَآئِكِ يَنظُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:24",
           "excerpt": "تَعۡرِفُ فِي وُجُوهِهِمۡ نَضۡرَةَ ٱلنَّعِيمِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2311",
-      "label": "cand-2311: Topic from 83:25",
-      "definition": "In 83:25: They will be given to drink [pure] wine [which was] sealed",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:25",
           "excerpt": "يُسۡقَوۡنَ مِن رَّحِيقٖ مَّخۡتُومٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2312",
-      "label": "cand-2312: Topic from 83:27",
-      "definition": "In 83:27: And its mixture is of Tasneem",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:26",
+          "excerpt": "خِتَٰمُهُۥ مِسۡكٞۚ وَفِي ذَٰلِكَ فَلۡيَتَنَافَسِ ٱلۡمُتَنَٰفِسُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:27",
           "excerpt": "وَمِزَاجُهُۥ مِن تَسۡنِيمٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:28",
+          "excerpt": "عَيۡنٗا يَشۡرَبُ بِهَا ٱلۡمُقَرَّبُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Illiyyun and named drinks detailed."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Tanafus redirected to the hereafter."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:55:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2313",
-      "label": "cand-2313: Topic from 83:29",
-      "definition": "In 83:29: Indeed, those who committed crimes used to laugh at those who believed",
+      "candidateId": "cand-1919",
+      "label": "Criminal mockery of believers reversed on the Day",
+      "definition": "In 83:29-36: Indeed those who committed crimes used to laugh at those who believed and when they passed by them they would exchange derisive glances and when they returned to their people they would return jesting and when they saw them they would say indeed those are truly lost; but they had not been sent as guardians over them; so Today those who believed are laughing at the disbelievers on adorned couches observing; have the disbelievers not been rewarded this Day for what they used to do.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "83:29",
           "excerpt": "إِنَّ ٱلَّذِينَ أَجۡرَمُواْ كَانُواْ مِنَ ٱلَّذِينَ ءَامَنُواْ يَضۡحَكُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2314",
-      "label": "cand-2314: Topic from 83:30",
-      "definition": "In 83:30: And when they passed by them, they would exchange derisive glances",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:30",
           "excerpt": "وَإِذَا مَرُّواْ بِهِمۡ يَتَغَامَزُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2315",
-      "label": "cand-2315: Topic from 83:32",
-      "definition": "In 83:32: And when they saw them, they would say, \"Indeed, those are truly lost",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:31",
+          "excerpt": "وَإِذَا ٱنقَلَبُوٓاْ إِلَىٰٓ أَهۡلِهِمُ ٱنقَلَبُواْ فَكِهِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:32",
           "excerpt": "وَإِذَا رَأَوۡهُمۡ قَالُوٓاْ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2316",
-      "label": "cand-2316: Topic from 83:34",
-      "definition": "In 83:34: So Today those who believed are laughing at the disbelievers",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:33",
+          "excerpt": "وَمَآ أُرۡسِلُواْ عَلَيۡهِمۡ حَٰفِظِينَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "83:34",
           "excerpt": "فَٱلۡيَوۡمَ ٱلَّذِينَ ءَامَنُواْ مِنَ ٱلۡكُفَّارِ يَضۡحَكُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:35",
+          "excerpt": "عَلَى ٱلۡأَرَآئِكِ يَنظُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "83:36",
+          "excerpt": "هَلۡ ثُوِّبَ ٱلۡكُفَّارُ مَا كَانُواْ يَفۡعَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mockery requited proportionally."
+        },
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Believers' endurance vindicated."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:55:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     }
   ]
 }

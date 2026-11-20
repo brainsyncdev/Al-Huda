@@ -6,8 +6,8 @@
   "surahName": "Al-Mutaffifin",
   "passage": {
     "fromAyah": 1,
-    "toAyah": 18,
-    "label": "Al-Mutaffifin 83:1-18"
+    "toAyah": 6,
+    "label": "Woe those give less than due; when take measure people take full; if give measure weight cause loss; do they not think resurrected; tremendous Day; Day mankind stand before Lord worlds"
   },
   "verseKeys": [
     "83:1",
@@ -15,19 +15,7 @@
     "83:3",
     "83:4",
     "83:5",
-    "83:6",
-    "83:7",
-    "83:8",
-    "83:9",
-    "83:10",
-    "83:11",
-    "83:12",
-    "83:13",
-    "83:14",
-    "83:15",
-    "83:16",
-    "83:17",
-    "83:18"
+    "83:6"
   ],
   "arabicExcerpts": [
     {
@@ -53,96 +41,44 @@
     {
       "key": "83:6",
       "text": "يَوۡمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلۡعَٰلَمِينَ"
-    },
-    {
-      "key": "83:7",
-      "text": "كَلَّآ إِنَّ كِتَٰبَ ٱلۡفُجَّارِ لَفِي سِجِّينٖ"
-    },
-    {
-      "key": "83:8",
-      "text": "وَمَآ أَدۡرَىٰكَ مَا سِجِّينٞ"
-    },
-    {
-      "key": "83:9",
-      "text": "كِتَٰبٞ مَّرۡقُومٞ"
-    },
-    {
-      "key": "83:10",
-      "text": "وَيۡلٞ يَوۡمَئِذٖ لِّلۡمُكَذِّبِينَ"
-    },
-    {
-      "key": "83:11",
-      "text": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوۡمِ ٱلدِّينِ"
-    },
-    {
-      "key": "83:12",
-      "text": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعۡتَدٍ أَثِيمٍ"
-    },
-    {
-      "key": "83:13",
-      "text": "إِذَا تُتۡلَىٰ عَلَيۡهِ ءَايَٰتُنَا قَالَ أَسَٰطِيرُ ٱلۡأَوَّلِينَ"
-    },
-    {
-      "key": "83:14",
-      "text": "كَلَّاۖ بَلۡۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُواْ يَكۡسِبُونَ"
-    },
-    {
-      "key": "83:15",
-      "text": "كَلَّآ إِنَّهُمۡ عَن رَّبِّهِمۡ يَوۡمَئِذٖ لَّمَحۡجُوبُونَ"
-    },
-    {
-      "key": "83:16",
-      "text": "ثُمَّ إِنَّهُمۡ لَصَالُواْ ٱلۡجَحِيمِ"
-    },
-    {
-      "key": "83:17",
-      "text": "ثُمَّ يُقَالُ هَٰذَا ٱلَّذِي كُنتُم بِهِۦ تُكَذِّبُونَ"
-    },
-    {
-      "key": "83:18",
-      "text": "كَلَّآ إِنَّ كِتَٰبَ ٱلۡأَبۡرَارِ لَفِي عِلِّيِّينَ"
     }
   ],
   "mainSubject": {
-    "label": "Al-Mutaffifin 83:1-18",
+    "label": "Woe pronounced on those who give less than due — taking full measure from people yet causing loss when measuring or weighing for them; their failure to consider resurrection for a tremendous Day when all mankind will stand before the Lord of the worlds",
     "keys": [
       "83:1",
       "83:2",
       "83:3",
       "83:4",
       "83:5",
-      "83:6",
-      "83:7",
-      "83:8",
-      "83:9",
-      "83:10"
+      "83:6"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "Woe to those who give less [than due]",
+      "label": "Woe pronounced on those who give less than due",
       "keys": [
         "83:1"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Who, when they take a measure from people, take in full",
+      "label": "Taking full measure when receiving from people",
       "keys": [
         "83:2"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "But if they give by measure or by weight to them, they cause loss",
+      "label": "Yet causing loss when measuring or weighing for them",
       "keys": [
         "83:3"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Do they not think that they will be resurrected",
+      "label": "Their failure to consider that they will be resurrected",
       "keys": [
         "83:4"
       ],
@@ -156,118 +92,73 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "The Day when mankind will stand before the Lord of the worlds",
+      "label": "The Day mankind stands before the Lord of the worlds",
       "keys": [
         "83:6"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
-    },
+    }
+  ],
+  "commandsAndProhibitions": [
     {
-      "label": "No! Indeed, the record of the wicked is in sijjeen",
+      "kind": "PROHIBITION",
       "keys": [
-        "83:7"
+        "83:1",
+        "83:3"
       ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
+      "excerpt": "وَيۡلٞ لِّلۡمُطَفِّفِينَ",
+      "description": "Woe to those who give less than due — taking full measure from people while causing loss when giving."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
     {
-      "label": "And what can make you know what is sijjeen",
+      "label": "Commercial double standard rooted in failure to consider resurrection",
       "keys": [
-        "83:8"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "It is [their destination recorded in] a register inscribed",
-      "keys": [
-        "83:9"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Woe, that Day, to the deniers",
-      "keys": [
-        "83:10"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Who deny the Day of Recompense",
-      "keys": [
-        "83:11"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And none deny it except every sinful transgressor",
-      "keys": [
-        "83:12"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "When Our verses are recited to him, he says, \"Legends of the former peoples",
-      "keys": [
-        "83:13"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "No! Rather, the stain has covered their hearts of that which they were earning",
-      "keys": [
-        "83:14"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "No! Indeed, from their Lord, that Day, they will be partitioned",
-      "keys": [
-        "83:15"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Then indeed, they will [enter and] burn in Hellfire",
-      "keys": [
-        "83:16"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Then it will be said [to them], \"This is what you used to deny",
-      "keys": [
-        "83:17"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "No! Indeed, the record of the righteous is in 'illiyyun",
-      "keys": [
-        "83:18"
+        "83:2",
+        "83:3",
+        "83:4"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2297",
-    "cand-2298",
-    "cand-2299",
-    "cand-2300",
-    "cand-2301",
-    "cand-2302",
-    "cand-2303",
-    "cand-2304",
-    "cand-2305",
-    "cand-2306"
+  "socialEconomicCivilisational": [
+    {
+      "label": "Fraudulent measuring and weighing condemned as economic injustice",
+      "keys": [
+        "83:1",
+        "83:2",
+        "83:3"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 83 passage 1/2. Generated by mfd11-gen-batch-79-84.mjs.",
+  "relationships": [
+    {
+      "label": "All mankind standing before the Lord of the worlds on a tremendous Day",
+      "keys": [
+        "83:5",
+        "83:6"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "لِّلۡمُطَفِّفِينَ",
+      "transliteration": "al-mutaffifin",
+      "gloss": "those who give less than due (editorial gloss)",
+      "keys": [
+        "83:1"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1915"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the standing-before-the-Lord statement (6) before the Sijjeen record block opens (7); P2 ends with the this-is-what-you-denied declaration (17) before the Illiyyun record block begins (18); P3 runs through the inscribed register, couch-radiance, sealed wine and Tasneem spring (18-28); P4 covers the criminal-mockery catalogue and its eschatological reversal (29-36).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:10:00.000Z"
+  "createdAt": "2026-11-20T21:55:00.000Z"
 }
