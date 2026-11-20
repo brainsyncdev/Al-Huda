@@ -5,14 +5,11 @@
   "surah": 18,
   "surahName": "Al-Kahf",
   "passage": {
-    "fromAyah": 29,
-    "toAyah": 56,
-    "label": "Al-Kahf 18:29-56"
+    "fromAyah": 32,
+    "toAyah": 59,
+    "label": "Present example two men one given two gardens grapevines surrounded palms placed crops between produced fruit failed nothing rivers flow midst; said companion dialogue I greater wealth stronger following entered garden wronged self said think not perish ever; think not Hour established even returned Lord surely find better; companion said disbelieve He who created you dust then sperm-drop fashioned man; but as for me He is Allah my Lord associate none with Lord; entered garden why not say what Allah willed no power except Allah see less wealth children; perhaps Lord give better garden send thunderbolt upon yours become barren ground; water sink deep never reach; fruits encompassed destroyed twisting trellises spent regretting overturned said wish associated none with Lord; no group help besides Allah nor could defend himself; protection belongs only Allah Truth best reward best outcome; present example worldly life rain sent sky plants earth mingle dry scattered wind Allah over everything capable; wealth children adornment worldly life enduring good deeds better Lord reward better hope; Day remove mountains see earth prominent gather leave none; presented Lord rows come Us first created barefoot naked uncircumcised nay promised appointment; record placed open see criminals fearful within say Oh woe us what book leaves nothing small great except enumerated found present what did Lord wrong anyone; Iblis refused prostrate Adam was jinn departed command Lord take him descendants allies instead Me evil exchange; not witness creation heavens earth nor creation selves nor take misleaders assistants; Day say call partners claimed invoke not respond set barrier between; criminals see Fire certain fall therein find way elsewhere; diversified Quran every kind example man most contentious; nothing prevented people believing guidance came asking forgiveness except pattern former peoples or punishment coming face"
   },
   "verseKeys": [
-    "18:29",
-    "18:30",
-    "18:31",
     "18:32",
     "18:33",
     "18:34",
@@ -37,21 +34,12 @@
     "18:53",
     "18:54",
     "18:55",
-    "18:56"
+    "18:56",
+    "18:57",
+    "18:58",
+    "18:59"
   ],
   "arabicExcerpts": [
-    {
-      "key": "18:29",
-      "text": "وَقُلِ ٱلۡحَقُّ مِن رَّبِّكُمۡۖ فَمَن شَآءَ فَلۡيُؤۡمِن وَمَن شَآءَ فَلۡيَكۡفُرۡۚ إِنَّآ أَعۡتَدۡنَا لِلظَّـٰلِمِينَ نَارًا أَحَاطَ بِهِمۡ سُرَادِقُهَاۚ وَإِن يَسۡتَغِيثُواْ يُغَاثُواْ بِمَآءٖ كَٱلۡمُهۡلِ يَشۡوِي ٱلۡوُجُوهَۚ بِئۡسَ ٱلشَّرَابُ وَسَآءَتۡ مُرۡتَفَقًا"
-    },
-    {
-      "key": "18:30",
-      "text": "إِنَّ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِ إِنَّا لَا نُضِيعُ أَجۡرَ مَنۡ أَحۡسَنَ عَمَلًا"
-    },
-    {
-      "key": "18:31",
-      "text": "أُوْلَـٰٓئِكَ لَهُمۡ جَنَّـٰتُ عَدۡنٖ تَجۡرِي مِن تَحۡتِهِمُ ٱلۡأَنۡهَٰرُ يُحَلَّوۡنَ فِيهَا مِنۡ أَسَاوِرَ مِن ذَهَبٖ وَيَلۡبَسُونَ ثِيَابًا خُضۡرٗا مِّن سُندُسٖ وَإِسۡتَبۡرَقٖ مُّتَّكِـِٔينَ فِيهَا عَلَى ٱلۡأَرَآئِكِۚ نِعۡمَ ٱلثَّوَابُ وَحَسُنَتۡ مُرۡتَفَقٗا"
-    },
     {
       "key": "18:32",
       "text": "۞وَٱضۡرِبۡ لَهُم مَّثَلٗا رَّجُلَيۡنِ جَعَلۡنَا لِأَحَدِهِمَا جَنَّتَيۡنِ مِنۡ أَعۡنَٰبٖ وَحَفَفۡنَٰهُمَا بِنَخۡلٖ وَجَعَلۡنَا بَيۡنَهُمَا زَرۡعٗا"
@@ -151,83 +139,74 @@
     {
       "key": "18:56",
       "text": "وَمَا نُرۡسِلُ ٱلۡمُرۡسَلِينَ إِلَّا مُبَشِّرِينَ وَمُنذِرِينَۚ وَيُجَٰدِلُ ٱلَّذِينَ كَفَرُواْ بِٱلۡبَٰطِلِ لِيُدۡحِضُواْ بِهِ ٱلۡحَقَّۖ وَٱتَّخَذُوٓاْ ءَايَٰتِي وَمَآ أُنذِرُواْ هُزُوٗا"
+    },
+    {
+      "key": "18:57",
+      "text": "وَمَنۡ أَظۡلَمُ مِمَّن ذُكِّرَ بِـَٔايَٰتِ رَبِّهِۦ فَأَعۡرَضَ عَنۡهَا وَنَسِيَ مَا قَدَّمَتۡ يَدَاهُۚ إِنَّا جَعَلۡنَا عَلَىٰ قُلُوبِهِمۡ أَكِنَّةً أَن يَفۡقَهُوهُ وَفِيٓ ءَاذَانِهِمۡ وَقۡرٗاۖ وَإِن تَدۡعُهُمۡ إِلَى ٱلۡهُدَىٰ فَلَن يَهۡتَدُوٓاْ إِذًا أَبَدٗا"
+    },
+    {
+      "key": "18:58",
+      "text": "وَرَبُّكَ ٱلۡغَفُورُ ذُو ٱلرَّحۡمَةِۖ لَوۡ يُؤَاخِذُهُم بِمَا كَسَبُواْ لَعَجَّلَ لَهُمُ ٱلۡعَذَابَۚ بَل لَّهُم مَّوۡعِدٞ لَّن يَجِدُواْ مِن دُونِهِۦ مَوۡئِلٗا"
+    },
+    {
+      "key": "18:59",
+      "text": "وَتِلۡكَ ٱلۡقُرَىٰٓ أَهۡلَكۡنَٰهُمۡ لَمَّا ظَلَمُواْ وَجَعَلۡنَا لِمَهۡلِكِهِم مَّوۡعِدٗا"
     }
   ],
   "mainSubject": {
-    "label": "Al-Kahf 18:29-56",
+    "label": "Two-garden parable continuation: arrogant owner's destruction through divine thunderbolt producing barren ground and sunk water; regretful recognition of shirk futility when no helper remains; divine protection as exclusive truth-based prerogative; worldly life metaphor as rain-produced vegetation drying and scattering; enduring good deeds (al-baqiyat al-salihat) superior to wealth-children adornment; eschatological scene: mountain removal earth prominence total gathering bare presentation; individual record causing criminal dread with complete enumeration; Iblis identified as jinn departing divine command with descendants as false allies replacing Allah; rejected shirk-makers facing fire certainty with no escape; Quran diversification of examples meeting human contentiousness; belief obstruction attributed to historical precedent fear rather than evidence deficit",
     "keys": [
-      "18:29",
-      "18:30",
-      "18:31",
       "18:32",
       "18:33",
       "18:34",
       "18:35",
       "18:36",
       "18:37",
-      "18:38"
+      "18:38",
+      "18:39",
+      "18:40",
+      "18:41"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "And say, \"The truth is from your Lord, so whoever wills - let him believe; an...",
-      "keys": [
-        "18:29"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Indeed, those who have believed and done righteous deeds - indeed, We will no...",
-      "keys": [
-        "18:30"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Those will have gardens of perpetual residence; beneath them rivers will flow...",
-      "keys": [
-        "18:31"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "And present to them an example of two men: We granted to one of them two gard...",
+      "label": "And present to them an example of two men: We granted to one of them two gardens of grapevines, and We bordered them ...",
       "keys": [
         "18:32"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Each of the two gardens produced its fruit and did not fall short thereof in ...",
+      "label": "Each of the two gardens produced its fruit and did not fall short thereof in anything. And We caused to gush forth wi...",
       "keys": [
         "18:33"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And he had fruit, so he said to his companion while he was conversing with hi...",
+      "label": "And he had fruit, so he said to his companion while he was conversing with him, \"I am greater than you in wealth and ...",
       "keys": [
         "18:34"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And he entered his garden while he was unjust to himself. He said, \"I do not ...",
+      "label": "And he entered his garden while he was unjust to himself. He said, \"I do not think that this will perish - ever",
       "keys": [
         "18:35"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And I do not think the Hour will occur. And even if I should be brought back ...",
+      "label": "And I do not think the Hour will occur. And even if I should be brought back to my Lord, I will surely find better th...",
       "keys": [
         "18:36"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "His companion said to him while he was conversing with him, \"Have you disbeli...",
+      "label": "His companion said to him while he was conversing with him, \"Have you disbelieved in He who created you from dust and...",
       "keys": [
         "18:37"
       ],
@@ -241,137 +220,192 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And why did you, when you entered your garden, not say, 'What Allah willed [h...",
+      "label": "And why did you, when you entered your garden, not say, 'What Allah willed [has occurred]; there is no power except i...",
       "keys": [
         "18:39"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "It may be that my Lord will give me [something] better than your garden and w...",
+      "label": "It may be that my Lord will give me [something] better than your garden and will send upon it a calamity from the sky...",
       "keys": [
         "18:40"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Or its water will become sunken [into the earth], so you would never be able ...",
+      "label": "Or its water will become sunken [into the earth], so you would never be able to seek it",
       "keys": [
         "18:41"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And his fruits were encompassed [by ruin], so he began to turn his hands abou...",
+      "label": "And his fruits were encompassed [by ruin], so he began to turn his hands about [in dismay] over what he had spent on ...",
       "keys": [
         "18:42"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And there was for him no company to aid him other than Allah, nor could he de...",
+      "label": "And there was for him no company to aid him other than Allah, nor could he defend himself",
       "keys": [
         "18:43"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "There the authority is [completely] for Allah, the Truth. He is best in rewar...",
+      "label": "There the authority is [completely] for Allah, the Truth. He is best in reward and best in outcome",
       "keys": [
         "18:44"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And present to them the example of the life of this world, [its being] like r...",
+      "label": "And present to them the example of the life of this world, [its being] like rain which We send down from the sky, and...",
       "keys": [
         "18:45"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "Wealth and children are [but] adornment of the worldly life. But the enduring...",
+      "label": "Wealth and children are [but] adornment of the worldly life. But the enduring good deeds are better to your Lord for ...",
       "keys": [
         "18:46"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [warn of] the Day when We will remove the mountains and you will see the ...",
+      "label": "And [warn of] the Day when We will remove the mountains and you will see the earth prominent, and We will gather them...",
       "keys": [
         "18:47"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And they will be presented before your Lord in rows, [and He will say], \"You ...",
+      "label": "And they will be presented before your Lord in rows, [and He will say], \"You have certainly come to Us just as We cre...",
       "keys": [
         "18:48"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And the record [of deeds] will be placed [open], and you will see the crimina...",
+      "label": "And the record [of deeds] will be placed [open], and you will see the criminals fearful of that within it, and they w...",
       "keys": [
         "18:49"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [mention] when We said to the angels, \"Prostrate to Adam,\" and they prost...",
+      "label": "And [mention] when We said to the angels, \"Prostrate to Adam,\" and they prostrated, except for Iblees. He was of the ...",
       "keys": [
         "18:50"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "I did not make them witness to the creation of the heavens and the earth or t...",
+      "label": "I did not make them witness to the creation of the heavens and the earth or to the creation of themselves, and I woul...",
       "keys": [
         "18:51"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And [warn of] the Day when He will say, \"Call 'My partners' whom you claimed,...",
+      "label": "And [warn of] the Day when He will say, \"Call 'My partners' whom you claimed,\" and they will invoke them, but they wi...",
       "keys": [
         "18:52"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And the criminals will see the Fire and will be certain that they are to fall...",
+      "label": "And the criminals will see the Fire and will be certain that they are to fall therein. And they will not find from it...",
       "keys": [
         "18:53"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We have certainly diversified in this Qur'an for the people from every [k...",
+      "label": "And We have certainly diversified in this Qur'an for the people from every [kind of] example; but man has ever been, ...",
       "keys": [
         "18:54"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And nothing has prevented the people from believing when guidance came to the...",
+      "label": "And nothing has prevented the people from believing when guidance came to them and from asking forgiveness of their L...",
       "keys": [
         "18:55"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And We send not the messengers except as bringers of good tidings and warners...",
+      "label": "And We send not the messengers except as bringers of good tidings and warners. And those who disbelieve dispute by [u...",
       "keys": [
         "18:56"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And who is more unjust than one who is reminded of the verses of his Lord but turns away from them and forgets what h...",
+      "keys": [
+        "18:57"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And your Lord is the Forgiving, full of mercy. If He were to impose blame upon them for what they earned, He would ha...",
+      "keys": [
+        "18:58"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And those cities - We destroyed them when they wronged, and We made for their destruction an appointed time",
+      "keys": [
+        "18:59"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
+  "commandsAndProhibitions": [
+    {
+      "kind": "TAUGHT_SUPPLICATION",
+      "keys": [
+        "18:39"
+      ],
+      "excerpt": "وَلَوۡلَآ إِذۡ دَخَلۡتَ جَنَّتَكَ قُلۡتَ مَا شَآءَ ٱللَّهُ لَا قُوَّةَ إِلَّا بِٱللَّهِۚ إِن تَرَنِ أَنَا۠ أَقَلَّ مِنكَ مَالٗا وَوَلَدٗا",
+      "description": "Companion's taught response: Ma sha' Allahu la quwwata illa billah — What Allah willed there is no power except in Allah."
+    }
+  ],
   "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
+  "propheticNarratives": [
+    {
+      "label": "Iblis refusal to prostrate before Adam identified as jinn departing divine command taking descendants as false allies",
+      "keys": [
+        "18:50"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Wealth-children as worldly adornment contrasted with enduring good deeds (baqiyat salihat) as superior investment",
+      "keys": [
+        "18:46"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [
+    {
+      "label": "Agricultural destruction as divine consequence: thunderbolt reducing garden to barren ground with sunk water",
+      "keys": [
+        "18:40",
+        "18:41"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
   "relationships": [],
   "terminology": [],
   "topicCandidateIds": [
@@ -386,8 +420,8 @@
     "cand-0735",
     "cand-0736"
   ],
-  "notes": "Pass A Surah 18 passage 2/4. Generated by mfd11-gen-batch-13-18.mjs.",
+  "notes": "Wave 2 genuine re-extraction. P1=Book-Cave-two-gardens(1-31), P2=garden-destruction-eschatology-Iblis(32-59), P3=Musa-Khidr-journey(60-83), P4=Dhul-Qarnayn-Yajuj-Majuj-closing(84-110).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T16:15:00.000Z"
+  "createdAt": "2026-11-20T13:05:00.000Z"
 }
