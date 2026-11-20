@@ -13,7 +13,9 @@ const SURAHS = [
   { num: 39, name: "Az-Zumar", prefix: "039-az-zumar", candStart: 1377, candBatch: "candidates-063.json", passages: 3 },
   { num: 40, name: "Ghafir", prefix: "040-ghafir", candStart: 1407, candBatch: "candidates-064.json", passages: 3 },
   { num: 41, name: "Fussilat", prefix: "041-fussilat", candStart: 1437, candBatch: "candidates-065.json", passages: 2 },
-  { num: 42, name: "Ash-Shuraa", prefix: "042-ash-shuraa", candStart: 1457, candBatch: "candidates-066.json", passages: 2 }
+  // NOTE: Surah 42 has been genuinely re-extracted by scripts/mfd11-gen-s042.mjs
+// with prefix 042-ash-shura and 4 passages. This batch entry is retained only
+// for historical record; do NOT re-run this batch generator for surah 42.
 ];
 
 for (const s of SURAHS) {
