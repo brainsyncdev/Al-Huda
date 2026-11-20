@@ -37,6 +37,114 @@ const TS = "2026-11-20T13:15:00.000Z";
 // P2: 19:41–75 — Ibrahim, Musa, Ismail, Idrees, successors, eschatology
 // P3: 19:76–98 — Sonship refutation, universal servitude, wudd, closing
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-019-p1": [
+    "Disjointed letters Kaf-Ha-Ya-Ayn-Sad as surah opening marker",
+    "Announcement of divine mercy shown to servant Zakariyya",
+    "Zakariyya calling his Lord with a private hidden supplication",
+    "Zakariyya describing physical decay and lifelong acceptance of supplication",
+    "Fear of successors after death and request for heir due to barren wife",
+    "Heir specified to inherit from him and from family of Yaqub and be pleasing",
+    "Divine glad tidings of a son named Yahya never previously assigned to anyone",
+    "Zakariyya questioning possibility of son given barren wife and extreme old age",
+    "Divine response affirming ease based on prior creation from nothingness",
+    "Sign of temporary muteness for three nights while remaining physically sound",
+    "Emerging from mihrab signaling people to glorify Allah morning and evening",
+    "Command to Yahya to hold Scripture firmly and grant of judgment in childhood",
+    "Bestowal of hanan affection and zakah purity upon Yahya with taqwa",
+    "Yahya characterized as dutiful to parents and neither tyrannical nor disobedient",
+    "Triple peace formula upon Yahya at birth death and resurrection",
+    "Command to mention Maryam in the Book and her withdrawal to an eastern place",
+    "Maryam taking a screen and receiving the Spirit appearing as a well-proportioned man",
+    "Maryam seeking refuge in Rahman from the visitor conditional on his piety",
+    "Angel identifying himself as messenger of her Lord bearing news of a pure boy",
+    "Maryam questioning conception without male contact or unchastity",
+    "Divine decree affirming ease and designating child as sign and mercy already decided",
+    "Conception occurring and withdrawal to a remote place",
+    "Childbirth pains driving Maryam to palm trunk and wish for prior oblivion",
+    "Voice from below commanding no grief and announcing a stream provided beneath her",
+    "Instruction to shake palm trunk so fresh ripe dates drop upon her",
+    "Command to eat drink and be comforted with silence vow explanation for any human encounter",
+    "Returning to her people carrying the infant and their accusation of unprecedented act",
+    "People invoking her noble lineage questioning how she could commit such deed",
+    "Maryam pointing to the infant and people objecting to speaking with a cradle child",
+    "Infant Isa declaring himself servant of Allah given Scripture and made prophet",
+    "Isa declaring blessed status wherever he is and lifelong prayer-zakah obligation",
+    "Isa declaring dutifulness to mother and absence of tyranny or wretchedness",
+    "Triple peace formula upon Isa at birth death and resurrection",
+    "Narrative closure identifying Isa ibn Maryam as word of truth about which factions dispute",
+    "Negation of divine sonship with kun-fayakoon creative command affirmation",
+    "Isa declaring shared Lordship and commanding worship as straight path",
+    "Factions differing concerning Isa with woe pronounced on disbelievers at tremendous Day",
+    "Rhetorical exclamation on clarity of hearing and seeing when they come to Allah",
+    "Warning of Day of Regret when matter concludes while people remain heedless",
+    "Declaration that Allah inherits earth and all upon it with universal return"
+  ],
+  "ext-019-p2": [
+    "Command to mention Ibrahim in the Book as siddiq and nabi",
+    "Ibrahim questioning father about worshipping what cannot hear see or benefit",
+    "Ibrahim claiming received knowledge unavailable to father and offering guidance to even path",
+    "Prohibition against worshipping Satan declared eternally disobedient to Rahman",
+    "Fear expressed that father will face Rahman punishment and become Satan companion",
+    "Father threatening stoning and demanding prolonged separation from Ibrahim",
+    "Ibrahim responding with salam and promising istighfar citing divine graciousness toward him",
+    "Ibrahim declaring withdrawal from father and false gods turning solely to his Lord",
+    "After separation Allah granting Ishaq and Yaqub making each a prophet",
+    "Bestowal of mercy and high reputation of truthfulness upon Ibrahim progeny",
+    "Command to mention Musa in the Book as mukhlas rasul nabi",
+    "Musa called from right side of mount and brought near in confidential communion",
+    "Harun granted to Musa as mercy from Allah and made prophet",
+    "Command to mention Ismail in the Book as true-to-promise rasul nabi",
+    "Ismail enjoining prayer and zakah on his people and being pleasing to his Lord",
+    "Command to mention Idrees in the Book as siddiq nabi",
+    "Idrees raised to a high station",
+    "Catalog of favored prophets from Adam Nuh Ibrahim Israel descendants who prostrated weeping at ayat",
+    "Successors after them neglecting prayer and pursuing desires destined to meet ghayy",
+    "Exception clause for those who repent believe and do righteous deeds entering Jannah unjust-free",
+    "Gardens of Adn promised by Rahman in unseen with ever-arriving promise",
+    "No idle speech heard therein only salam with provision morning and evening",
+    "Jannah described as inheritance for those servants who possessed taqwa",
+    "Angels declaring descent only by Lord command with comprehensive temporal ownership",
+    "Lord of heavens earth and between commanding worship and patience asking if any equal exists",
+    "Human questioning resurrection after death",
+    "Rhetorical reminder that Allah created humanity before from nothingness",
+    "Oath-affirmed gathering of humans and shayatin around Jahannam kneeling",
+    "Extraction from every sect of those most insolent against Rahman",
+    "Divine knowledge of who most deserves burning affirmed",
+    "Universal passing over Hell declared as decreed inevitability",
+    "Salvation of muttaqin and abandonment of zalimin kneeling within Hell",
+    "Disbelievers challenging believers on which party has better position and assembly",
+    "Prior destroyed generations cited as superior in possessions and appearance yet annihilated",
+    "Command to let misguided receive extension until punishment or Hour reveals worst position"
+  ],
+  "ext-019-p3": [
+    "Allah increasing the guided in guidance with enduring good deeds as best reward and recourse",
+    "Disbeliever denying ayat yet claiming certainty of receiving wealth and children in afterlife",
+    "Rhetorical challenge whether he perceived ghayb or obtained covenant from Rahman",
+    "Rejection of claim with recording of statement and extension of punishment",
+    "Allah inheriting what he claims and his arrival alone",
+    "Taking deities besides Allah seeking honor through them",
+    "False deities denying their worship and becoming opponents on Judgment Day",
+    "Shayatin sent upon kafirin inciting them persistently",
+    "Command not to hasten punishment as their numbered term is merely counted out",
+    "Day when muttaqin are gathered to Rahman as honored delegation",
+    "Criminals driven to Jahannam in thirst",
+    "Intercession owned only by those who took covenant from Rahman",
+    "Attribution of son to Rahman stated as their claim",
+    "Condemnation of sonship claim as atrocious monstrous thing",
+    "Cosmic devastation described heavens almost rupturing earth splitting mountains collapsing",
+    "Cause of cosmic reaction identified as attributing son to Rahman",
+    "Inappropriateness of Rahman taking a son declared",
+    "Universal servitude affirmed everyone in heavens and earth comes to Rahman as abd",
+    "Complete enumeration and counting of all creation",
+    "Individual arrival on Resurrection Day without tribal or familial protection",
+    "Believers doing righteous deeds receiving appointed wudd affection from Rahman",
+    "Quran facilitated in Arabic tongue for giving tidings to muttaqin and warning hostile people",
+    "Destroyed prior generations cited with rhetorical question on perceiving or hearing any remnant"
+  ]
+};
+
 const PASSAGES = [
   { id: "ext-019-p1", from: 1, to: 40,
     label: "Kaf-Ha-Ya-Ayn-Sad; Zakariyya private supplication bones weakened head white wife barren give heir inherit Yaqub pleasing; good tidings Yahya not assigned before; how boy wife barren extreme old age; easy Me created you before nothing; sign not speak three nights sound; emerged sanctuary signaled glorify morning evening; O Yahya hold Scripture firmly given judgment childhood hanan purity kind mother not domineering miserable; peace born die raised alive; mention Book Maryam withdrew eastern place screened veil sent spirit well-proportioned man; seek refuge Rahman from you if fear; messenger Lord give pure boy; easy Me make sign people mercy matter decreed; conceived withdrew remote place; pains childbirth drove palm trunk wish died forgotten; called beneath her grieve not Lord made stream shake trunk fresh dates fall; eat drink cool eyes see human say vowed Rahman fast not speak today; brought people carrying pointed how speak infant cradle; said servant Allah gave Scripture made prophet blessed wherever enjoined prayer zakah alive kind mother not domineering miserable; peace born die raised alive",
@@ -54,14 +162,15 @@ for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`19:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`19:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`19:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 19, surahName: "Maryam",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
