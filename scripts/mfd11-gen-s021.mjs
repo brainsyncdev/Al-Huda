@@ -53,19 +53,144 @@ const PASSAGES = [
     mainLabel: "Righteous effort guaranteed recognition without denial; destroyed-city return impossibility establishing finality; Yajuj-Majuj release from every elevation as eschatological sign; true promise proximity causing disbeliever visual shock; cosmic folding mirroring initial creation; Zabur confirmation of righteous inheritance; Quran as balagh for worshipping community; rahmatan lil-alamin as universal prophetic mission definition; flexible divine naming with asma al-husna closure; mutual waiting challenge with divine judgment appeal" }
 ];
 
+// Per-ayah editorial subject descriptions, ordered from each passage's first ayah.
+const SUB_LABELS = {
+  "ext-021-p1": [
+    "Reckoning time approaching while people remain in heedlessness turning away",
+    "New divine mention received only with playful distraction rather than reverence",
+    "Hearts preoccupied with amusement and wrongdoers concealing private doubts about prophetic humanity",
+    "Prophet declaring Lord as Hearing and Knowing of all speech in heavens and earth",
+    "Disbelievers dismissing revelation as confused dreams or poetry demanding a sign like earlier messengers",
+    "No destroyed city ever believed after seeing punishment so these will not believe either",
+    "Prior messengers were human recipients of revelation so ask people of knowledge if uncertain",
+    "Prophets not made as bodies that do not eat food nor granted earthly immortality",
+    "Divine promise fulfilled saving believers and destroying transgressors as historical pattern",
+    "Book sent down containing your mention as a call to intellectual reasoning",
+    "Many unjust cities shattered and replaced by subsequent generations as warning precedent",
+    "Inhabitants fleeing when they perceive divine punishment arriving",
+    "Angelic command to return to luxury and homes for accountability questioning",
+    "Belated confession of wrongdoing when facing inevitable punishment",
+    "Cry of woe continuing until they are reduced to silent stubble extinguished",
+    "Creation of heavens and earth not done in play or idle amusement",
+    "Divine self-sufficiency negating any need for diversion or external entertainment",
+    "Truth hurled upon falsehood causing its destruction and perishing",
+    "All in heavens and earth belong to Him and those near Him worship without arrogance or fatigue",
+    "Angels glorifying night and day without slackening as model of perpetual devotion",
+    "Rhetorical challenge on earth-bound gods who cannot resurrect the dead",
+    "Multiple gods would have caused cosmic ruin so Allah is exalted above their descriptions",
+    "Allah not questioned about His actions while humans will be questioned about theirs",
+    "Challenge to produce proof for gods besides Allah while most turn away from truth",
+    "Universal messenger message affirming no deity except Allah commanding exclusive worship",
+    "Refutation of claim that Rahman has taken a son clarifying angels are honored servants",
+    "Angels do not precede Allah in speech and act only by His command",
+    "Divine knowledge encompassing what is before and behind angels with intercession only by approval",
+    "Any angel claiming divinity besides Allah would be recompensed with Hellfire"
+  ],
+  "ext-021-p2": [
+    "Heavens and earth originally joined then separated and water made source of all life",
+    "Firmly set mountains placed to stabilize earth and broad paths made for guidance",
+    "Sky constructed as protected ceiling yet disbelievers turn away from its signs",
+    "Night day sun and moon created each swimming in precise orbital motion",
+    "No human before granted immortality so prophet death does not imply eternal life for others",
+    "Every soul tasting death as trial through good and evil with return to Allah",
+    "Disbelievers ridiculing prophet at mention of Rahman while rejecting remembrance",
+    "Human nature created from haste and divine signs will come so do not urge impatiently",
+    "Disbelievers demanding timeline for promised punishment challenging truthfulness",
+    "Fire unable to be averted from faces or backs when punishment arrives with no helper",
+    "Punishment coming suddenly bewildering disbelievers with no ability to repel or delay",
+    "Prior messengers ridiculed and mockery returning upon those who scoffed",
+    "Rahman as sole protector night and day while disbelievers turn from remembrance",
+    "False gods unable to help themselves or provide protection against divine decree",
+    "Disbelievers and ancestors granted enjoyment until life prolonged yet land reduced from borders as sign of divine encroachment",
+    "Warning delivered only through revelation yet the spiritually deaf cannot hear when cautioned",
+    "Even slight touch of punishment producing immediate confession of wrongdoing",
+    "Scales of justice established for Resurrection Day ensuring exact reckoning even mustard seed weight",
+    "Musa and Harun given furqan dhaw and dhikr as guidance for the muttaqin",
+    "Muttaqin defined as those fearing Lord unseen and apprehensive about the Hour",
+    "Blessed reminder sent down challenging denial and unfamiliarity with divine message"
+  ],
+  "ext-021-p3": [
+    "Ibrahim granted sound judgement before his people and Allah was well-knowing of him",
+    "Ibrahim questioning father and people about statues they are devoted to",
+    "People defending idol worship citing ancestral tradition as justification",
+    "Ibrahim declaring both current generation and ancestors in manifest error",
+    "People questioning whether Ibrahim brings truth or is merely jesting",
+    "Ibrahim affirming Lord of heavens and earth as Creator and testifying to that truth",
+    "Ibrahim swearing by Allah to plan against idols after people depart",
+    "Idols smashed into fragments except largest one left for rhetorical confrontation",
+    "People accusing perpetrator of wrongdoing against their gods",
+    "Witnesses recalling young man named Ibrahim speaking against idols",
+    "Demand to bring Ibrahim publicly before people for testimony",
+    "Direct interrogation asking Ibrahim if he destroyed their gods",
+    "Ibrahim attributing destruction to largest idol challenging them to ask it if it speaks",
+    "People momentarily returning to self-blame recognizing their own wrongdoing",
+    "Reversal to accusing Ibrahim since he already knows idols cannot speak",
+    "Ibrahim exposing futility of worshipping entities that neither benefit nor harm",
+    "Expression of contempt for false gods and appeal to use reason",
+    "People deciding to burn Ibrahim in defense of their gods",
+    "Divine command making fire cool and safe for Ibrahim reversing intended harm",
+    "Plotters rendered greatest losers as their scheme backfired completely",
+    "Ibrahim and Lut delivered to blessed land designated for all worlds",
+    "Ishaq and Yaqub granted as additional gift with all made righteous",
+    "Righteous lineage appointed as leaders guiding by divine command inspiring prayer and zakah",
+    "Lut given judgement and knowledge saved from town committing abominations",
+    "Lut admitted into divine mercy confirmed among the righteous",
+    "Nuh calling out earlier and Allah responding by saving family from great distress",
+    "Nuh aided against people denying signs who were drowned collectively",
+    "Dawud and Sulayman judging field dispute when sheep overran crops at night",
+    "Sulayman given understanding of case and both granted judgement knowledge with mountains birds glorifying",
+    "Dawud taught armor crafting for battle protection with gratitude demanded",
+    "Sulayman given control of storm wind proceeding by command toward blessed land",
+    "Devils diving and working for Sulayman under divine guardianship",
+    "Ayyub calling out in adversity acknowledging Allah as Most Merciful of merciful",
+    "Ayyub responded to with affliction removed and family restored plus like as mercy and reminder",
+    "Ismail Idris and Dhul-Kifl named together as exemplars of patience",
+    "Patient prophets admitted into divine mercy and counted among the righteous",
+    "Dhu al-Nun departing in anger thinking divine power limited then calling from darkness",
+    "Supplication of tawheed tasbih and confession answered with salvation extended to all believers",
+    "Zakariyya petitioning for heir despite old age acknowledging Allah as best inheritor",
+    "Zakariyya responded to with Yahya granted wife amended and family hastening in good deeds with hope fear humility",
+    "Maryam guarding chastity receiving spirit breath and being made with son a sign for worlds",
+    "Declaration of single community with Allah as Lord commanding exclusive worship",
+    "Community dividing affairs among themselves yet all returning to Allah"
+  ],
+  "ext-021-p4": [
+    "Righteous deeds by believer guaranteed recognition without denial and recorded by Allah",
+    "Destroyed city prohibited from return establishing irreversible finality of divine judgment",
+    "Yajuj and Majuj released from every elevation rushing down as eschatological sign",
+    "True promise approaching causing disbeliever eyes to stare in horror with belated regret",
+    "Disbelievers and false gods becoming fuel for Hellfire entering it together",
+    "False deities proven non-divine by entering Hell while all inhabitants remain eternally",
+    "Hellfire inhabitants sighing heavily unable to hear anything therein",
+    "Those with prior good reward far removed from Hellfire entirely",
+    "Righteous not hearing Hell sound while abiding eternally in desired bliss",
+    "Greatest terror not grieving the righteous greeted by angels announcing promised day",
+    "Heaven folded like scroll mirroring initial creation as binding promise of repetition",
+    "Zabur written after dhikr confirming righteous servants inherit the land",
+    "Quran as notification specifically addressing worshipping community",
+    "Prophet sent exclusively as mercy to all worlds defining universal mission",
+    "Declaration of divine unity revealed with challenge to submit as Muslims",
+    "Equal announcement made removing prophetic liability with timing unknown",
+    "Allah knowing declared speech and concealed thoughts ensuring complete awareness",
+    "Delay possibly serving as trial and temporary enjoyment for disbelievers",
+    "Closing supplication invoking divine judgment in truth and seeking Rahman help against false descriptions"
+  ]
+};
+
 const extractions = [];
 for (const p of PASSAGES) {
   const keys = [];
   for (let i = p.from; i <= p.to; i++) keys.push(`21:${i}`);
   const excerpts = keys.map(k => ({ key: k, text: fv(Number(k.split(":")[1])) }));
-  const subs = [];
-  for (let i = p.from; i <= p.to; i++) {
-    const v = corpus.verses.find(vv => vv.id === i);
-    if (v && v.translation) {
-      const shortLabel = v.translation.length > 120 ? v.translation.substring(0, 117) + "..." : v.translation;
-      subs.push({ label: shortLabel, keys: [`21:${i}`], evidenceClass: "EXPLICIT_TEXT" });
-    }
+  const labels = SUB_LABELS[p.id];
+  if (!labels || labels.length !== (p.to - p.from + 1)) {
+    throw new Error(`SUB_LABELS mismatch for ${p.id}: expected ${p.to - p.from + 1}, got ${labels ? labels.length : 0}`);
   }
+  const subs = labels.map((label, idx) => ({
+    label,
+    keys: [`21:${p.from + idx}`],
+    evidenceClass: "EXPLICIT_TEXT"
+  }));
   extractions.push({
     extractionId: p.id, workstream: "MFD-11", pass: "A", surah: 21, surahName: "Al-Anbiya",
     passage: { fromAyah: p.from, toAyah: p.to, label: p.label },
