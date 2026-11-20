@@ -1,387 +1,473 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:10:00.000Z",
-  "sourceExtraction": "ext-079-p1,ext-079-p2",
+  "generatedAt": "2026-11-20T21:15:00.000Z",
+  "sourceExtraction": "ext-079-p1,ext-079-p2,ext-079-p3,ext-079-p4",
   "candidates": [
     {
-      "candidateId": "cand-2217",
-      "label": "cand-2217: Topic from 79:1",
-      "definition": "In 79:1: By those [angels] who extract with violence",
+      "candidateId": "cand-1891",
+      "label": "Five-fold angelic oath grounding resurrection certainty",
+      "definition": "In 79:1-5: By those angels who extract with violence and those who remove with ease and those who glide as if swimming and those who race each other in a race and those who arrange each matter.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "79:1",
           "excerpt": "وَٱلنَّـٰزِعَٰتِ غَرۡقٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2218",
-      "label": "cand-2218: Topic from 79:3",
-      "definition": "In 79:3: And [by] those who glide [as if] swimming",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:2",
+          "excerpt": "وَٱلنَّـٰشِطَٰتِ نَشۡطٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:3",
           "excerpt": "وَٱلسَّـٰبِحَٰتِ سَبۡحٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2219",
-      "label": "cand-2219: Topic from 79:5",
-      "definition": "In 79:5: And those who arrange [each] matter",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:4",
+          "excerpt": "فَٱلسَّـٰبِقَٰتِ سَبۡقٗا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:5",
           "excerpt": "فَٱلۡمُدَبِّرَٰتِ أَمۡرٗا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Naziat nashitat sabihat sabiqat mudabbirat."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Qasam quintuple for yaum al-qiyamah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2220",
-      "label": "cand-2220: Topic from 79:7",
-      "definition": "In 79:7: There will follow it the subsequent [one]",
+      "candidateId": "cand-1892",
+      "label": "Twin blasts producing trembling hearts and humbled eyes",
+      "definition": "In 79:6-9: On the Day the blast of the Horn will convulse creation there will follow it the subsequent one; hearts that Day will tremble; their eyes humbled.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "79:6",
+          "excerpt": "يَوۡمَ تَرۡجُفُ ٱلرَّاجِفَةُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:7",
           "excerpt": "تَتۡبَعُهَا ٱلرَّادِفَةُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2221",
-      "label": "cand-2221: Topic from 79:9",
-      "definition": "In 79:9: Their eyes humbled",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:8",
+          "excerpt": "قُلُوبٞ يَوۡمَئِذٖ وَاجِفَةٌ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:9",
           "excerpt": "أَبۡصَٰرُهَا خَٰشِعَةٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rajifah and radifah sequence."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wa'ifah and khashi'ah states."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2222",
-      "label": "cand-2222: Topic from 79:12",
-      "definition": "In 79:12: They say, \"That, then, would be a losing return",
+      "candidateId": "cand-1893",
+      "label": "Denial of resurrection from decayed bones answered by one-shout emergence",
+      "definition": "In 79:10-14: They are presently saying will we indeed be returned to our former state of life even if we should be decayed bones; they say that then would be a losing return; indeed it will be but one shout and suddenly they will be alert upon the earth's surface.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "79:10",
+          "excerpt": "يَقُولُونَ أَءِنَّا لَمَرۡدُودُونَ فِي ٱلۡحَافِرَةِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:11",
+          "excerpt": "أَءِذَا كُنَّا عِظَٰمٗا نَّخِرَةٗ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:12",
           "excerpt": "قَالُواْ تِلۡكَ إِذٗا كَرَّةٌ خَاسِرَةٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2223",
-      "label": "cand-2223: Topic from 79:14",
-      "definition": "In 79:14: And suddenly they will be [alert] upon the earth's surface",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:13",
+          "excerpt": "فَإِنَّمَا هِيَ زَجۡرَةٞ وَٰحِدَةٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:14",
           "excerpt": "فَإِذَا هُم بِٱلسَّاهِرَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ajuz imatah dismissed."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Khusran claim refuted."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2224",
-      "label": "cand-2224: Topic from 79:16",
-      "definition": "In 79:16: When his Lord called to him in the sacred valley of Tuwa",
+      "candidateId": "cand-1894",
+      "label": "Moses commissioned in Tuwa with purification invitation and greatest sign",
+      "definition": "In 79:15-20: Has there reached you the story of Moses when his Lord called to him in the sacred valley of Tuwa; go to Pharaoh indeed he has transgressed; and say to him would you purify yourself and let me guide you to your Lord so you would fear Him; and he showed him the greatest sign.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "79:15",
+          "excerpt": "هَلۡ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:16",
           "excerpt": "إِذۡ نَادَىٰهُ رَبُّهُۥ بِٱلۡوَادِ ٱلۡمُقَدَّسِ طُوًى",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2225",
-      "label": "cand-2225: Topic from 79:18",
-      "definition": "In 79:18: And say to him, 'Would you [be willing to] purify yourself",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:17",
+          "excerpt": "ٱذۡهَبۡ إِلَىٰ فِرۡعَوۡنَ إِنَّهُۥ طَغَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:18",
           "excerpt": "فَقُلۡ هَل لَّكَ إِلَىٰٓ أَن تَزَكَّىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2226",
-      "label": "cand-2226: Topic from 79:20",
-      "definition": "In 79:20: And he showed him the greatest sign",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:19",
+          "excerpt": "وَأَهۡدِيَكَ إِلَىٰ رَبِّكَ فَتَخۡشَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:20",
           "excerpt": "فَأَرَىٰهُ ٱلۡأٓيَةَ ٱلۡكُبۡرَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wadi Muqaddas Tuwa commissioning."
+        },
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tazakki and khushyah invitation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2227",
-      "label": "cand-2227: Topic from 79:24",
-      "definition": "In 79:24: And said, \"I am your most exalted lord",
+      "candidateId": "cand-1895",
+      "label": "Pharaoh's false lordship claim answered by exemplary punishment",
+      "definition": "In 79:21-26: But Pharaoh denied and disobeyed then he turned his back striving and he gathered his people and called out and said I am your most exalted lord; so Allah seized him in exemplary punishment for the last and the first transgression; indeed in that is a warning for whoever would fear Allah.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "79:21",
+          "excerpt": "فَكَذَّبَ وَعَصَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:22",
+          "excerpt": "ثُمَّ أَدۡبَرَ يَسۡعَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:23",
+          "excerpt": "فَحَشَرَ فَنَادَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:24",
           "excerpt": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلۡأَعۡلَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2228",
-      "label": "cand-2228: Topic from 79:26",
-      "definition": "In 79:26: Indeed in that is a warning for whoever would fear [Allah]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:25",
+          "excerpt": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلۡأٓخِرَةِ وَٱلۡأُولَىٰٓ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:26",
           "excerpt": "إِنَّ فِي ذَٰلِكَ لَعِبۡرَةٗ لِّمَن يَخۡشَىٰٓ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nakal akhiri wa-ula."
+        },
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ana rabbukum al-a'la exposed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2229",
-      "label": "cand-2229: Topic from 79:28",
-      "definition": "In 79:28: He raised its ceiling and proportioned it",
+      "candidateId": "cand-1896",
+      "label": "Creation comparison: heaven-construction proving resurrection ability",
+      "definition": "In 79:27-33: Are you a more difficult creation or is the heaven? Allah constructed it; He raised its ceiling and proportioned it and He darkened its night and extracted its brightness; and after that He spread the earth; He extracted from it its water and its pasture and the mountains He set firmly as provision for you and your grazing livestock.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "79:27",
+          "excerpt": "ءَأَنتُمۡ أَشَدُّ خَلۡقًا أَمِ ٱلسَّمَآءُۚ بَنَىٰهَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:28",
           "excerpt": "رَفَعَ سَمۡكَهَا فَسَوَّىٰهَا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2230",
-      "label": "cand-2230: Topic from 79:30",
-      "definition": "In 79:30: And after that He spread the earth",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:29",
+          "excerpt": "وَأَغۡطَشَ لَيۡلَهَا وَأَخۡرَجَ ضُحَىٰهَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:30",
           "excerpt": "وَٱلۡأَرۡضَ بَعۡدَ ذَٰلِكَ دَحَىٰهَآ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2231",
-      "label": "cand-2231: Topic from 79:32",
-      "definition": "In 79:32: And the mountains He set firmly",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:31",
+          "excerpt": "أَخۡرَجَ مِنۡهَا مَآءَهَا وَمَرۡعَىٰهَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:32",
           "excerpt": "وَٱلۡجِبَالَ أَرۡسَىٰهَا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2232",
-      "label": "cand-2232: Topic from 79:35",
-      "definition": "In 79:35: The Day when man will remember that for which he strove",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
-          "key": "79:35",
-          "excerpt": "يَوۡمَ يَتَذَكَّرُ ٱلۡإِنسَٰنُ مَا سَعَىٰ",
+          "key": "79:33",
+          "excerpt": "مَتَٰعٗا لَّكُمۡ وَلِأَنۡعَٰمِكُمۡ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sama' bina' as a fortiori argument."
+        },
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ashadd khalq challenge."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2233",
-      "label": "cand-2233: Topic from 79:37",
-      "definition": "In 79:37: So as for he who transgressed",
+      "candidateId": "cand-1897",
+      "label": "Two refuges: Hellfire for transgressor, Paradise for self-restrainer",
+      "definition": "In 79:37-41: So as for he who transgressed and preferred the life of the world then indeed Hellfire will be his refuge; but as for he who feared the position of his Lord and prevented the soul from unlawful inclination then indeed Paradise will be his refuge.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "79:37",
           "excerpt": "فَأَمَّا مَن طَغَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2234",
-      "label": "cand-2234: Topic from 79:39",
-      "definition": "In 79:39: Then indeed, Hellfire will be [his] refuge",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:38",
+          "excerpt": "وَءَاثَرَ ٱلۡحَيَوٰةَ ٱلدُّنۡيَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:39",
           "excerpt": "فَإِنَّ ٱلۡجَحِيمَ هِيَ ٱلۡمَأۡوَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2235",
-      "label": "cand-2235: Topic from 79:41",
-      "definition": "In 79:41: Then indeed, Paradise will be [his] refuge",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:40",
+          "excerpt": "وَأَمَّا مَنۡ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفۡسَ عَنِ ٱلۡهَوَىٰ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:41",
           "excerpt": "فَإِنَّ ٱلۡجَنَّةَ هِيَ ٱلۡمَأۡوَىٰ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Jahannam vs Jannah binary."
+        },
+        {
+          "topicId": "god-consciousness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Khafa maqam rabbihi plus naha al-nafs."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2236",
-      "label": "cand-2236: Topic from 79:43",
-      "definition": "In 79:43: In what [position] are you that you should mention it",
+      "candidateId": "cand-1898",
+      "label": "Hour's timing with Allah alone; Prophet only a warner; time compression on arrival",
+      "definition": "In 79:42-46: They ask you O Muhammad about the Hour when is its arrival; in what position are you that you should mention it; to your Lord is its finality; you are only a warner for those who fear it; it will be on the Day they see it as though they had not remained except for an afternoon or a morning thereof.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "79:42",
+          "excerpt": "يَسۡـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرۡسَىٰهَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "79:43",
           "excerpt": "فِيمَ أَنتَ مِن ذِكۡرَىٰهَآ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:44",
+          "excerpt": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:45",
+          "excerpt": "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخۡشَىٰهَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "79:46",
+          "excerpt": "كَأَنَّهُمۡ يَوۡمَ يَرَوۡنَهَا لَمۡ يَلۡبَثُوٓاْ إِلَّا عَشِيَّةً أَوۡ ضُحَىٰهَا",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ilm al-sa'ah exclusive."
+        },
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nadhir-only role reiterated."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:10:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T21:15:00.000Z",
+      "notes": "Wave 12 genuine re-extraction candidate."
     }
   ]
 }
