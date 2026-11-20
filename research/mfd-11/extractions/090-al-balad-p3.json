@@ -1,0 +1,111 @@
+{
+  "extractionId": "ext-090-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 90,
+  "surahName": "Al-Balad",
+  "passage": {
+    "fromAyah": 18,
+    "toAyah": 20,
+    "label": "companions right; disbelieved signs companions left; over them fire closed in"
+  },
+  "verseKeys": [
+    "90:18",
+    "90:19",
+    "90:20"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "90:18",
+      "text": "أُوْلَـٰٓئِكَ أَصۡحَٰبُ ٱلۡمَيۡمَنَةِ"
+    },
+    {
+      "key": "90:19",
+      "text": "وَٱلَّذِينَ كَفَرُواْ بِـَٔايَٰتِنَا هُمۡ أَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ"
+    },
+    {
+      "key": "90:20",
+      "text": "عَلَيۡهِمۡ نَارٞ مُّؤۡصَدَةُۢ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Those who broke through identified as companions of the right, while those who disbelieved in the signs are companions of the left over whom fire will be closed in",
+    "keys": [
+      "90:18",
+      "90:19",
+      "90:20"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Those who broke through named companions of the right",
+      "keys": [
+        "90:18"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Those who disbelieved in the signs named companions of the left",
+      "keys": [
+        "90:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Over them fire will be closed in",
+      "keys": [
+        "90:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Companions of the right distinguished from companions of the left by sign-belief",
+      "keys": [
+        "90:18",
+        "90:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Fire closed in over the left companions as their sealed fate",
+      "keys": [
+        "90:20"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Binary outcome mapping directly onto the steep-pass choice",
+      "keys": [
+        "90:18",
+        "90:19"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "مُّؤۡصَدَةُۢ",
+      "transliteration": "mu'sadah",
+      "gloss": "closed in/sealed over (editorial gloss)",
+      "keys": [
+        "90:20"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1955"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the unseen-spending assumption (7) before the sensory-gifts enumeration opens (8); P2 ends with the faith-patience-compassion cluster (17) before the two-companionship verdict begins (18); P3 covers the three-verse closing binary of right-versus-left with sealed fire (18-20).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T23:05:00.000Z"
+}

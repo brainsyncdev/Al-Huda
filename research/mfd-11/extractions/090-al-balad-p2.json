@@ -5,23 +5,35 @@
   "surah": 90,
   "surahName": "Al-Balad",
   "passage": {
-    "fromAyah": 11,
-    "toAyah": 20,
-    "label": "Al-Balad 90:11-20"
+    "fromAyah": 8,
+    "toAyah": 17,
+    "label": "made two eyes; tongue two lips; shown two ways; not broken through difficult pass; what make know difficult pass; freeing slave; feeding day severe hunger; orphan near relationship; needy person misery; among believed advised patience advised compassion"
   },
   "verseKeys": [
+    "90:8",
+    "90:9",
+    "90:10",
     "90:11",
     "90:12",
     "90:13",
     "90:14",
     "90:15",
     "90:16",
-    "90:17",
-    "90:18",
-    "90:19",
-    "90:20"
+    "90:17"
   ],
   "arabicExcerpts": [
+    {
+      "key": "90:8",
+      "text": "أَلَمۡ نَجۡعَل لَّهُۥ عَيۡنَيۡنِ"
+    },
+    {
+      "key": "90:9",
+      "text": "وَلِسَانٗا وَشَفَتَيۡنِ"
+    },
+    {
+      "key": "90:10",
+      "text": "وَهَدَيۡنَٰهُ ٱلنَّجۡدَيۡنِ"
+    },
     {
       "key": "90:11",
       "text": "فَلَا ٱقۡتَحَمَ ٱلۡعَقَبَةَ"
@@ -49,46 +61,55 @@
     {
       "key": "90:17",
       "text": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُواْ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ وَتَوَاصَوۡاْ بِٱلۡمَرۡحَمَةِ"
-    },
-    {
-      "key": "90:18",
-      "text": "أُوْلَـٰٓئِكَ أَصۡحَٰبُ ٱلۡمَيۡمَنَةِ"
-    },
-    {
-      "key": "90:19",
-      "text": "وَٱلَّذِينَ كَفَرُواْ بِـَٔايَٰتِنَا هُمۡ أَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ"
-    },
-    {
-      "key": "90:20",
-      "text": "عَلَيۡهِمۡ نَارٞ مُّؤۡصَدَةُۢ"
     }
   ],
   "mainSubject": {
-    "label": "Al-Balad 90:11-20",
+    "label": "The gifts of two eyes, a tongue and two lips, and the guidance to the two ways recalled as proof that man was equipped but failed to break through the steep pass — whose meaning is questioned and answered as freeing a slave, feeding on a day of severe hunger an orphan of near relationship or a needy person in misery, then being among those who believe and advise one another to patience and compassion",
     "keys": [
+      "90:8",
+      "90:9",
+      "90:10",
       "90:11",
       "90:12",
       "90:13",
       "90:14",
       "90:15",
       "90:16",
-      "90:17",
-      "90:18",
-      "90:19",
-      "90:20"
+      "90:17"
     ],
     "evidenceClass": "EXPLICIT_TEXT"
   },
   "subordinateSubjects": [
     {
-      "label": "But he has not broken through the difficult pass",
+      "label": "Two eyes made for him",
+      "keys": [
+        "90:8"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "A tongue and two lips provided",
+      "keys": [
+        "90:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "The two ways shown to him clearly",
+      "keys": [
+        "90:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Yet he has not broken through the steep pass",
       "keys": [
         "90:11"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And what can make you know what is [breaking through] the difficult pass",
+      "label": "The nature of the steep pass questioned rhetorically",
       "keys": [
         "90:12"
       ],
@@ -123,55 +144,96 @@
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "And then being among those who believed and advised one another to patience a...",
+      "label": "Then being among believers who advise patience and compassion",
       "keys": [
         "90:17"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [
+    {
+      "kind": "COMMAND",
+      "keys": [
+        "90:13"
+      ],
+      "excerpt": "فَكُّ رَقَبَةٍ",
+      "description": "Freeing a slave identified as breaking through the steep pass."
     },
     {
-      "label": "Those are the companions of the right",
+      "kind": "COMMAND",
       "keys": [
-        "90:18"
+        "90:14"
+      ],
+      "excerpt": "أَوۡ إِطۡعَٰمٞ فِي يَوۡمٖ ذِي مَسۡغَبَةٖ",
+      "description": "Feeding on a day of severe hunger identified as breaking through the steep pass."
+    }
+  ],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Sensory gifts of eyes, tongue and lips paired with moral guidance to two ways",
+      "keys": [
+        "90:8",
+        "90:9",
+        "90:10"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     },
     {
-      "label": "But they who disbelieved in Our signs - those are the companions of the left",
+      "label": "Failure to attempt the steep pass despite being fully equipped",
       "keys": [
-        "90:19"
-      ],
-      "evidenceClass": "EXPLICIT_TEXT"
-    },
-    {
-      "label": "Over them will be fire closed in",
-      "keys": [
-        "90:20"
+        "90:11"
       ],
       "evidenceClass": "EXPLICIT_TEXT"
     }
   ],
-  "commandsAndProhibitions": [],
-  "divineNamesAndAttributes": [],
-  "propheticNarratives": [],
-  "humanConditionsAndSpiritualStates": [],
-  "socialEconomicCivilisational": [],
-  "relationships": [],
-  "terminology": [],
-  "topicCandidateIds": [
-    "cand-2447",
-    "cand-2448",
-    "cand-2449",
-    "cand-2450",
-    "cand-2451",
-    "cand-2452",
-    "cand-2453",
-    "cand-2454",
-    "cand-2455",
-    "cand-2456"
+  "socialEconomicCivilisational": [
+    {
+      "label": "Steep pass defined as emancipation, feeding the hungry orphan and relieving the destitute",
+      "keys": [
+        "90:13",
+        "90:14",
+        "90:15",
+        "90:16"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
   ],
-  "notes": "Pass A Surah 90 passage 2/2. Generated by mfd11-gen-batch-85-96.mjs.",
+  "relationships": [
+    {
+      "label": "Belief joined to mutual counsel toward patience and compassion as the completing act",
+      "keys": [
+        "90:17"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلۡعَقَبَةَ",
+      "transliteration": "al-'aqabah",
+      "gloss": "the steep/difficult pass (editorial gloss)",
+      "keys": [
+        "90:11"
+      ]
+    },
+    {
+      "term": "رَقَبَةٍ",
+      "transliteration": "raqabah",
+      "gloss": "a slave/neck to be freed (editorial gloss)",
+      "keys": [
+        "90:13"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1953",
+    "cand-1954"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the unseen-spending assumption (7) before the sensory-gifts enumeration opens (8); P2 ends with the faith-patience-compassion cluster (17) before the two-companionship verdict begins (18); P3 covers the three-verse closing binary of right-versus-left with sealed fire (18-20).",
   "proposedBy": "ai-assisted",
   "reviewStatus": "pending-scholarly-review",
-  "createdAt": "2026-11-19T17:15:00.000Z"
+  "createdAt": "2026-11-20T23:05:00.000Z"
 }

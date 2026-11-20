@@ -1,387 +1,231 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T17:15:00.000Z",
-  "sourceExtraction": "ext-090-p1,ext-090-p2",
+  "generatedAt": "2026-11-20T23:05:00.000Z",
+  "sourceExtraction": "ext-090-p1,ext-090-p2,ext-090-p3",
   "candidates": [
     {
-      "candidateId": "cand-2437",
-      "label": "cand-2437: Topic from 90:1",
-      "definition": "In 90:1: I swear by this city, Makkah",
+      "candidateId": "cand-1952",
+      "label": "Makkah-father oaths framing man's creation into hardship and arrogance",
+      "definition": "In 90:1-7: I swear by this city Makkah and you O Muhammad are free of restriction in this city and by the father and that which was born of him; We have certainly created man into hardship; does he think that never will anyone overcome him; he says I have spent wealth in abundance; does he think that no one has seen him.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "90:1",
           "excerpt": "لَآ أُقۡسِمُ بِهَٰذَا ٱلۡبَلَدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2438",
-      "label": "cand-2438: Topic from 90:1",
-      "definition": "In 90:1: I swear by this city, Makkah",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "90:1",
-          "excerpt": "لَآ أُقۡسِمُ بِهَٰذَا ٱلۡبَلَدِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2439",
-      "label": "cand-2439: Topic from 90:2",
-      "definition": "In 90:2: And you, [O Muhammad], are free of restriction in this city",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:2",
           "excerpt": "وَأَنتَ حِلُّۢ بِهَٰذَا ٱلۡبَلَدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2440",
-      "label": "cand-2440: Topic from 90:3",
-      "definition": "In 90:3: And [by] the father and that which was born [of him]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:3",
           "excerpt": "وَوَالِدٖ وَمَا وَلَدَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2441",
-      "label": "cand-2441: Topic from 90:4",
-      "definition": "In 90:4: We have certainly created man into hardship",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:4",
           "excerpt": "لَقَدۡ خَلَقۡنَا ٱلۡإِنسَٰنَ فِي كَبَدٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2442",
-      "label": "cand-2442: Topic from 90:5",
-      "definition": "In 90:5: Does he think that never will anyone overcome him",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:5",
           "excerpt": "أَيَحۡسَبُ أَن لَّن يَقۡدِرَ عَلَيۡهِ أَحَدٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2443",
-      "label": "cand-2443: Topic from 90:6",
-      "definition": "In 90:6: He says, \"I have spent wealth in abundance",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:6",
           "excerpt": "يَقُولُ أَهۡلَكۡتُ مَالٗا لُّبَدًا",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2444",
-      "label": "cand-2444: Topic from 90:7",
-      "definition": "In 90:7: Does he think that no one has seen him",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:7",
           "excerpt": "أَيَحۡسَبُ أَن لَّمۡ يَرَهُۥٓ أَحَدٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Balad-walad qasam pairing."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Kabad as inherent condition."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T23:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2445",
-      "label": "cand-2445: Topic from 90:8",
-      "definition": "In 90:8: Have We not made for him two eyes",
+      "candidateId": "cand-1953",
+      "label": "Sensory gifts and two-way guidance contrasted with failure at the steep pass",
+      "definition": "In 90:8-11: Have We not made for him two eyes and a tongue and two lips and have shown him the two ways; but he has not broken through the difficult pass.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "90:8",
           "excerpt": "أَلَمۡ نَجۡعَل لَّهُۥ عَيۡنَيۡنِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2446",
-      "label": "cand-2446: Topic from 90:9",
-      "definition": "In 90:9: And a tongue and two lips",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:9",
           "excerpt": "وَلِسَانٗا وَشَفَتَيۡنِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2447",
-      "label": "cand-2447: Topic from 90:11",
-      "definition": "In 90:11: But he has not broken through the difficult pass",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "90:10",
+          "excerpt": "وَهَدَيۡنَٰهُ ٱلنَّجۡدَيۡنِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:11",
           "excerpt": "فَلَا ٱقۡتَحَمَ ٱلۡعَقَبَةَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2448",
-      "label": "cand-2448: Topic from 90:11",
-      "definition": "In 90:11: But he has not broken through the difficult pass",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "90:11",
-          "excerpt": "فَلَا ٱقۡتَحَمَ ٱلۡعَقَبَةَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Aynayn lisan shafatah najdayn."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Equipment without action diagnosed."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T23:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2449",
-      "label": "cand-2449: Topic from 90:12",
-      "definition": "In 90:12: And what can make you know what is [breaking through] the difficult pass",
+      "candidateId": "cand-1954",
+      "label": "Steep pass defined as emancipation, famine-feeding and faith-patience-compassion",
+      "definition": "In 90:12-17: And what can make you know what is the difficult pass; it is the freeing of a slave or feeding on a day of severe hunger an orphan of near relationship or a needy person in misery; and then being among those who believed and advised one another to patience and advised one another to compassion.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "90:12",
           "excerpt": "وَمَآ أَدۡرَىٰكَ مَا ٱلۡعَقَبَةُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2450",
-      "label": "cand-2450: Topic from 90:13",
-      "definition": "In 90:13: It is the freeing of a slave",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:13",
           "excerpt": "فَكُّ رَقَبَةٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2451",
-      "label": "cand-2451: Topic from 90:14",
-      "definition": "In 90:14: Or feeding on a day of severe hunger",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:14",
           "excerpt": "أَوۡ إِطۡعَٰمٞ فِي يَوۡمٖ ذِي مَسۡغَبَةٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2452",
-      "label": "cand-2452: Topic from 90:15",
-      "definition": "In 90:15: An orphan of near relationship",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:15",
           "excerpt": "يَتِيمٗا ذَا مَقۡرَبَةٍ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2453",
-      "label": "cand-2453: Topic from 90:16",
-      "definition": "In 90:16: Or a needy person in misery",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:16",
           "excerpt": "أَوۡ مِسۡكِينٗا ذَا مَتۡرَبَةٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2454",
-      "label": "cand-2454: Topic from 90:17",
-      "definition": "In 90:17: And then being among those who believed and advised one another to patience and advised one another to compassion",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:17",
           "excerpt": "ثُمَّ كَانَ مِنَ ٱلَّذِينَ ءَامَنُواْ وَتَوَاصَوۡاْ بِٱلصَّبۡرِ وَتَوَاصَوۡاْ بِٱلۡمَرۡحَمَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "giving",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Fakk raqabah and it'am defined."
+        },
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tawasaw bisabr wa-tawasaw bilmarhamah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T23:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-2455",
-      "label": "cand-2455: Topic from 90:18",
-      "definition": "In 90:18: Those are the companions of the right",
+      "candidateId": "cand-1955",
+      "label": "Right and left companionship determined by response to divine signs",
+      "definition": "In 90:18-20: Those are the companions of the right; but they who disbelieved in Our signs those are the companions of the left; over them will be fire closed in.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "90:18",
           "excerpt": "أُوْلَـٰٓئِكَ أَصۡحَٰبُ ٱلۡمَيۡمَنَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-2456",
-      "label": "cand-2456: Topic from 90:19",
-      "definition": "In 90:19: But they who disbelieved in Our signs - those are the companions of the left",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "90:19",
           "excerpt": "وَٱلَّذِينَ كَفَرُواْ بِـَٔايَٰتِنَا هُمۡ أَصۡحَٰبُ ٱلۡمَشۡـَٔمَةِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "90:20",
+          "excerpt": "عَلَيۡهِمۡ نَارٞ مُّؤۡصَدَةُۢ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ashab maymanah vs mash'amah."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mu'sadah as sealed consequence."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T17:15:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T23:05:00.000Z",
+      "notes": "Wave 13 genuine re-extraction candidate."
     }
   ]
 }
