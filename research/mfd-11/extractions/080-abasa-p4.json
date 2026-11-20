@@ -1,0 +1,140 @@
+{
+  "extractionId": "ext-080-p4",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 80,
+  "surahName": "Abasa",
+  "passage": {
+    "fromAyah": 38,
+    "toAyah": 42,
+    "label": "faces Day bright; laughing rejoicing good news; faces Day upon dust; blackness cover them; disbelievers wicked ones"
+  },
+  "verseKeys": [
+    "80:38",
+    "80:39",
+    "80:40",
+    "80:41",
+    "80:42"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "80:38",
+      "text": "وُجُوهٞ يَوۡمَئِذٖ مُّسۡفِرَةٞ"
+    },
+    {
+      "key": "80:39",
+      "text": "ضَاحِكَةٞ مُّسۡتَبۡشِرَةٞ"
+    },
+    {
+      "key": "80:40",
+      "text": "وَوُجُوهٞ يَوۡمَئِذٍ عَلَيۡهَا غَبَرَةٞ"
+    },
+    {
+      "key": "80:41",
+      "text": "تَرۡهَقُهَا قَتَرَةٌ"
+    },
+    {
+      "key": "80:42",
+      "text": "أُوْلَـٰٓئِكَ هُمُ ٱلۡكَفَرَةُ ٱلۡفَجَرَةُ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Faces that Day either bright, laughing and rejoicing at good news, or covered with dust and darkness — the latter identified as the disbelievers and the wicked",
+    "keys": [
+      "80:38",
+      "80:39",
+      "80:40",
+      "80:41",
+      "80:42"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Faces that Day will be bright",
+      "keys": [
+        "80:38"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Laughing and rejoicing at good news",
+      "keys": [
+        "80:39"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Other faces that Day will have dust upon them",
+      "keys": [
+        "80:40"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Blackness covering them",
+      "keys": [
+        "80:41"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Those identified as the disbelievers and the wicked",
+      "keys": [
+        "80:42"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Bright faces laughing and rejoicing at good news versus dust-covered darkened faces",
+      "keys": [
+        "80:38",
+        "80:39",
+        "80:40",
+        "80:41"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Disbelievers and wicked ones identified by their darkened countenances",
+      "keys": [
+        "80:42"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Facial appearance as the visible marker of salvific status on the Day",
+      "keys": [
+        "80:38",
+        "80:40",
+        "80:42"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلۡكَفَرَةُ",
+      "transliteration": "kafarah fajarah",
+      "gloss": "disbelievers and wicked ones (editorial gloss)",
+      "keys": [
+        "80:42"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1904"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the angelic-carrier description (16) before the human-ingratitude and creation argument opens (17); P2 ends with the agricultural-provision catalogue (32) before the Deafening Blast scene begins (33); P3 covers the five-verse familial-flight sequence (33-37); P4 runs through the bright-versus-darkened faces dichotomy (38-42).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T21:25:00.000Z"
+}

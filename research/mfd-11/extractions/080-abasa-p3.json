@@ -1,0 +1,138 @@
+{
+  "extractionId": "ext-080-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 80,
+  "surahName": "Abasa",
+  "passage": {
+    "fromAyah": 33,
+    "toAyah": 37,
+    "label": "When comes Deafening Blast; Day man flee brother; mother father; wife children; every man Day matter adequate him"
+  },
+  "verseKeys": [
+    "80:33",
+    "80:34",
+    "80:35",
+    "80:36",
+    "80:37"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "80:33",
+      "text": "فَإِذَا جَآءَتِ ٱلصَّآخَّةُ"
+    },
+    {
+      "key": "80:34",
+      "text": "يَوۡمَ يَفِرُّ ٱلۡمَرۡءُ مِنۡ أَخِيهِ"
+    },
+    {
+      "key": "80:35",
+      "text": "وَأُمِّهِۦ وَأَبِيهِ"
+    },
+    {
+      "key": "80:36",
+      "text": "وَصَٰحِبَتِهِۦ وَبَنِيهِ"
+    },
+    {
+      "key": "80:37",
+      "text": "لِكُلِّ ٱمۡرِيٕٖ مِّنۡهُمۡ يَوۡمَئِذٖ شَأۡنٞ يُغۡنِيهِ"
+    }
+  ],
+  "mainSubject": {
+    "label": "When the Deafening Blast arrives, man will flee from brother, mother, father, wife and children; every person on that Day will have a matter sufficient to occupy him entirely",
+    "keys": [
+      "80:33",
+      "80:34",
+      "80:35",
+      "80:36",
+      "80:37"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "The Deafening Blast arriving",
+      "keys": [
+        "80:33"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "On that Day a man will flee from his brother",
+      "keys": [
+        "80:34"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And from his mother and his father",
+      "keys": [
+        "80:35"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And from his wife and his children",
+      "keys": [
+        "80:36"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Every person that Day having a matter adequate to occupy him",
+      "keys": [
+        "80:37"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Deafening Blast triggering total preoccupation overriding all familial bonds",
+      "keys": [
+        "80:33",
+        "80:37"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Flight from brother, parents, spouse and children on the Day of reckoning",
+      "keys": [
+        "80:34",
+        "80:35",
+        "80:36"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Each person's own matter becoming adequate to fully occupy him on that Day",
+      "keys": [
+        "80:37"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "ٱلصَّآخَّةُ",
+      "transliteration": "al-sakhkhah",
+      "gloss": "the Deafening Blast (editorial gloss)",
+      "keys": [
+        "80:33"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1903"
+  ],
+  "notes": "Wave 12 genuine re-extraction. Boundaries follow the text: P1 closes with the angelic-carrier description (16) before the human-ingratitude and creation argument opens (17); P2 ends with the agricultural-provision catalogue (32) before the Deafening Blast scene begins (33); P3 covers the five-verse familial-flight sequence (33-37); P4 runs through the bright-versus-darkened faces dichotomy (38-42).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-20T21:25:00.000Z"
+}
