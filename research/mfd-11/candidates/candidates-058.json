@@ -1,12 +1,12 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:30:00.000Z",
-  "sourceExtraction": "ext-034-p1,ext-034-p2",
+  "generatedAt": "2026-11-20T14:30:00.000Z",
+  "sourceExtraction": "ext-034-p1,ext-034-p2,ext-034-p3",
   "candidates": [
     {
-      "candidateId": "cand-1227",
-      "label": "cand-1227: Topic from 34:1",
-      "definition": "In 34:1: [All] praise is [due] to Allah, to whom belongs whatever is in the heavens and whatever is in the earth, and to Him belongs [all] praise in the Hereafter. And He is the Wise, the Acquainted",
+      "candidateId": "cand-1247",
+      "label": "Universal hamd spanning creation and Hereafter with Hakim-Khabir attributes",
+      "definition": "In 34:1: Praise to Allah who owns whatever in heavens and earth; praise in Hereafter too; He is Wise Aware.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -16,16 +16,29 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Cosmic-temporal hamd."
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hakim-Khabir pairing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1228",
-      "label": "cand-1228: Topic from 34:3",
-      "definition": "In 34:3: But those who disbelieve say, \"The Hour will not come to us.\" Say, \"Yes, by my Lord, it will surely come to you. [Allah is] the Knower of the unseen.\" Not absent from Him is an atom's weight within the heavens or within the earth or [what is] smaller than that or greater, except that it is in a clear register",
+      "candidateId": "cand-1248",
+      "label": "Atom-weight accountability across heavens-earth demonstrating exhaustive divine knowledge",
+      "definition": "In 34:3: Not even atom weight escapes Him in heavens or earth; smaller or larger in clear Book.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -35,130 +48,189 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-knowledge",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Micro-accountability."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nothing hidden."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1229",
-      "label": "cand-1229: Topic from 34:6",
-      "definition": "In 34:6: And those who have been given knowledge see that what is revealed to you from your Lord is the truth, and it guides to the path of the Exalted in Might, the Praiseworthy",
+      "candidateId": "cand-1249",
+      "label": "Dawud iron-softening as divinely granted technological capacity",
+      "definition": "In 34:10-11: We softened iron for Dawud; make coats of mail measure links precisely.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:6",
-          "excerpt": "وَيَرَى ٱلَّذِينَ أُوتُواْ ٱلۡعِلۡمَ ٱلَّذِيٓ أُنزِلَ إِلَيۡكَ مِن رَّبِّكَ هُوَ ٱلۡحَقَّ وَيَهۡدِيٓ إِلَىٰ صِرَٰطِ ٱلۡعَزِيزِ ٱلۡحَمِيدِ",
+          "key": "34:10",
+          "excerpt": "۞وَلَقَدۡ ءَاتَيۡنَا دَاوُۥدَ مِنَّا فَضۡلٗاۖ يَٰجِبَالُ أَوِّبِي مَعَهُۥ وَٱلطَّيۡرَۖ وَأَلَنَّا لَهُ ٱلۡحَدِيدَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophetic-character",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Unique material gift."
+        },
+        {
+          "topicId": "work-honor",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Precision craftsmanship."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1230",
-      "label": "cand-1230: Topic from 34:8",
-      "definition": "In 34:8: Has he invented about Allah a lie or is there in him madness?\" Rather, they who do not believe in the Hereafter will be in the punishment and [are in] extreme error",
+      "candidateId": "cand-1250",
+      "label": "Sulayman wind-copper-jinn subjection as comprehensive dominion grant",
+      "definition": "In 34:12: Wind morning-month evening-month; copper fountain flowed; jinn worked making statues basins pots.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:8",
-          "excerpt": "أَفۡتَرَىٰ عَلَى ٱللَّهِ كَذِبًا أَم بِهِۦ جِنَّةُۢۗ بَلِ ٱلَّذِينَ لَا يُؤۡمِنُونَ بِٱلۡأٓخِرَةِ فِي ٱلۡعَذَابِ وَٱلضَّلَٰلِ ٱلۡبَعِيدِ",
+          "key": "34:12",
+          "excerpt": "وَلِسُلَيۡمَٰنَ ٱلرِّيحَ غُدُوُّهَا شَهۡرٞ وَرَوَاحُهَا شَهۡرٞۖ وَأَسَلۡنَا لَهُۥ عَيۡنَ ٱلۡقِطۡرِۖ وَمِنَ ٱلۡجِنِّ مَن يَعۡمَلُ بَيۡنَ يَدَيۡهِ بِإِذۡنِ رَبِّهِۦۖ وَمَن يَزِغۡ مِنۡهُمۡ عَنۡ أَمۡرِنَا نُذِقۡهُ مِنۡ عَذَابِ ٱلسَّعِيرِ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Multi-domain taskhir."
+        },
+        {
+          "topicId": "jinn-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jinn labor force."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1231",
-      "label": "cand-1231: Topic from 34:11",
-      "definition": "In 34:11: [Commanding him], \"Make full coats of mail and calculate [precisely] the links, and work [all of you] righteousness. Indeed I, of what you do, am Seeing",
+      "candidateId": "cand-1251",
+      "label": "Gratitude as condition for sustained divine favor: few servants are grateful",
+      "definition": "In 34:13: Work righteousness O family of David; few of My servants are grateful (shakur).",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:11",
-          "excerpt": "أَنِ ٱعۡمَلۡ سَٰبِغَٰتٖ وَقَدِّرۡ فِي ٱلسَّرۡدِۖ وَٱعۡمَلُواْ صَٰلِحًاۖ إِنِّي بِمَا تَعۡمَلُونَ بَصِيرٞ",
+          "key": "34:13",
+          "excerpt": "يَعۡمَلُونَ لَهُۥ مَا يَشَآءُ مِن مَّحَٰرِيبَ وَتَمَٰثِيلَ وَجِفَانٖ كَٱلۡجَوَابِ وَقُدُورٖ رَّاسِيَٰتٍۚ ٱعۡمَلُوٓاْ ءَالَ دَاوُۥدَ شُكۡرٗاۚ وَقَلِيلٞ مِّنۡ عِبَادِيَ ٱلشَّكُورُ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "gratitude",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Qillah al-shakirin."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Amal linked to shukr."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1232",
-      "label": "cand-1232: Topic from 34:14",
-      "definition": "In 34:14: And when We decreed for Solomon death, nothing indicated to the jinn his death except a creature of the earth eating his staff. But when he fell, it became clear to the jinn that if they had known the unseen, they would not have remained in humiliating punishment",
+      "candidateId": "cand-1252",
+      "label": "Saba prosperity-to-destruction arc: gardens replaced by bitter fruit after ingratitude",
+      "definition": "In 34:15-17: Two gardens right-left; ate provision thanked; turned away sent Arim flood; replaced with bitter tamarisk lotus.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:14",
-          "excerpt": "فَلَمَّا قَضَيۡنَا عَلَيۡهِ ٱلۡمَوۡتَ مَا دَلَّهُمۡ عَلَىٰ مَوۡتِهِۦٓ إِلَّا دَآبَّةُ ٱلۡأَرۡضِ تَأۡكُلُ مِنسَأَتَهُۥۖ فَلَمَّا خَرَّ تَبَيَّنَتِ ٱلۡجِنُّ أَن لَّوۡ كَانُواْ يَعۡلَمُونَ ٱلۡغَيۡبَ مَا لَبِثُواْ فِي ٱلۡعَذَابِ ٱلۡمُهِينِ",
+          "key": "34:15",
+          "excerpt": "لَقَدۡ كَانَ لِسَبَإٖ فِي مَسۡكَنِهِمۡ ءَايَةٞۖ جَنَّتَانِ عَن يَمِينٖ وَشِمَالٖۖ كُلُواْ مِن رِّزۡقِ رَبِّكُمۡ وَٱشۡكُرُواْ لَهُۥۚ بَلۡدَةٞ طَيِّبَةٞ وَرَبٌّ غَفُورٞ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ni'mah withdrawal."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Environmental punishment."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1233",
-      "label": "cand-1233: Topic from 34:16",
-      "definition": "In 34:16: But they turned away [refusing], so We sent upon them the flood of the dam, and We replaced their two [fields of] gardens with gardens of bitter fruit, tamarisks and something of sparse lote trees",
+      "candidateId": "cand-1253",
+      "label": "Inter-town visible stages enabling safe travel as infrastructure blessing",
+      "definition": "In 34:18: Made between them visible towns determined stages; travel nights days in safety.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:16",
-          "excerpt": "فَأَعۡرَضُواْ فَأَرۡسَلۡنَا عَلَيۡهِمۡ سَيۡلَ ٱلۡعَرِمِ وَبَدَّلۡنَٰهُم بِجَنَّتَيۡهِمۡ جَنَّتَيۡنِ ذَوَاتَيۡ أُكُلٍ خَمۡطٖ وَأَثۡلٖ وَشَيۡءٖ مِّن سِدۡرٖ قَلِيلٖ",
+          "key": "34:18",
+          "excerpt": "وَجَعَلۡنَا بَيۡنَهُمۡ وَبَيۡنَ ٱلۡقُرَى ٱلَّتِي بَٰرَكۡنَا فِيهَا قُرٗى ظَٰهِرَةٗ وَقَدَّرۡنَا فِيهَا ٱلسَّيۡرَۖ سِيرُواْ فِيهَا لَيَالِيَ وَأَيَّامًا ءَامِنِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1234",
-      "label": "cand-1234: Topic from 34:19",
-      "definition": "In 34:19: But [insolently] they said, \"Our Lord, lengthen the distance between our journeys,\" and wronged themselves, so We made them narrations and dispersed them in total dispersion. Indeed in that are signs for everyone patient and grateful",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "34:19",
-          "excerpt": "فَقَالُواْ رَبَّنَا بَٰعِدۡ بَيۡنَ أَسۡفَارِنَا وَظَلَمُوٓاْ أَنفُسَهُمۡ فَجَعَلۡنَٰهُمۡ أَحَادِيثَ وَمَزَّقۡنَٰهُمۡ كُلَّ مُمَزَّقٍۚ إِنَّ فِي ذَٰلِكَ لَأٓيَٰتٖ لِّكُلِّ صَبَّارٖ شَكُورٖ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Geographic rahmah."
+        },
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Safe passage system."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1235",
-      "label": "cand-1235: Topic from 34:21",
-      "definition": "In 34:21: And he had over them no authority except [it was decreed] that We might make evident who believes in the Hereafter from who is thereof in doubt. And your Lord, over all things, is Guardian",
+      "candidateId": "cand-1254",
+      "label": "Self-inflicted wrong acknowledged at punishment moment as belated recognition",
+      "definition": "In 34:21: When they saw punishment said we wronged ourselves; how can we be returned?",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -168,16 +240,157 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Zalamu anfusahum."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Regret timing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1236",
-      "label": "cand-1236: Topic from 34:24",
-      "definition": "In 34:24: Say, \"Who provides for you from the heavens and the earth?\" Say, \"Allah. And indeed, we or you are either upon guidance or in clear error",
+      "candidateId": "cand-1255",
+      "label": "Believer reward as forgiveness plus noble provision",
+      "definition": "In 34:4: Those who believed and did righteous deeds have forgiveness and noble provision.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:4",
+          "excerpt": "لِّيَجۡزِيَ ٱلَّذِينَ ءَامَنُواْ وَعَمِلُواْ ٱلصَّـٰلِحَٰتِۚ أُوْلَـٰٓئِكَ لَهُم مَّغۡفِرَةٞ وَرِزۡقٞ كَرِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Maghfirah-rizq karim."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dual reward structure."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1256",
+      "label": "Disbeliever sign-frustration producing Fire punishment",
+      "definition": "In 34:5: Those who strive against Our signs to frustrate them have painful Fire punishment.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:5",
+          "excerpt": "وَٱلَّذِينَ سَعَوۡ فِيٓ ءَايَٰتِنَا مُعَٰجِزِينَ أُوْلَـٰٓئِكَ لَهُمۡ عَذَابٞ مِّن رِّجۡزٍ أَلِيمٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mu'ajizin penalty."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sign opposition."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1257",
+      "label": "False deity total impotence: no possession no partnership no intercession",
+      "definition": "In 34:22: Say call those besides Allah; they own nothing in heavens-earth; no share no partner no helper.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:22",
+          "excerpt": "قُلِ ٱدۡعُواْ ٱلَّذِينَ زَعَمۡتُم مِّن دُونِ ٱللَّهِ لَا يَمۡلِكُونَ مِثۡقَالَ ذَرَّةٖ فِي ٱلسَّمَٰوَٰتِ وَلَا فِي ٱلۡأَرۡضِ وَمَا لَهُمۡ فِيهِمَا مِن شِرۡكٖ وَمَا لَهُۥ مِنۡهُم مِّن ظَهِيرٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Triple negation."
+        },
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Exclusive divine agency."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1258",
+      "label": "Intercession exclusively by divine permission negating autonomous mediation",
+      "definition": "In 34:23: Intercession does not avail except for whom He permits.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:23",
+          "excerpt": "وَلَا تَنفَعُ ٱلشَّفَٰعَةُ عِندَهُۥٓ إِلَّا لِمَنۡ أَذِنَ لَهُۥۚ حَتَّىٰٓ إِذَا فُزِّعَ عَن قُلُوبِهِمۡ قَالُواْ مَاذَا قَالَ رَبُّكُمۡۖ قَالُواْ ٱلۡحَقَّۖ وَهُوَ ٱلۡعَلِيُّ ٱلۡكَبِيرُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Conditional shafa'ah."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Permission monopoly."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1259",
+      "label": "Dispute without knowledge-guidance-scripture as triple epistemological deficit",
+      "definition": "In 34:24: They dispute about Allah without knowledge without guidance without enlightening book.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -187,16 +400,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Triple absence."
+        },
+        {
+          "topicId": "knowledge-seeking",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Required foundations missing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1237",
-      "label": "cand-1237: Topic from 34:28",
-      "definition": "In 34:28: And We have not sent you except comprehensively to mankind as a bringer of good tidings and a warner. But most of the people do not know",
+      "candidateId": "cand-1260",
+      "label": "Ancestral tradition following despite satanic misdirection toward Blaze",
+      "definition": "In 34:21: When told follow what Allah revealed say follow fathers; even if Satan invites to Blaze?",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:21",
+          "excerpt": "وَمَا كَانَ لَهُۥ عَلَيۡهِم مِّن سُلۡطَٰنٍ إِلَّا لِنَعۡلَمَ مَن يُؤۡمِنُ بِٱلۡأٓخِرَةِ مِمَّنۡ هُوَ مِنۡهَا فِي شَكّٖۗ وَرَبُّكَ عَلَىٰ كُلِّ شَيۡءٍ حَفِيظٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shaytan-enemy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Taqlid as satanic path."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Blind imitation."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1261",
+      "label": "Creation-truth-term triad establishing purposeful finite cosmos",
+      "definition": "In 34:27: Created heavens earth in truth with appointed term; most disbelieve meeting Lord.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:27",
+          "excerpt": "قُلۡ أَرُونِيَ ٱلَّذِينَ أَلۡحَقۡتُم بِهِۦ شُرَكَآءَۖ كَلَّاۚ بَلۡ هُوَ ٱللَّهُ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "life-purpose",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Bi'l-haqq + ajal."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Term implying end."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1262",
+      "label": "Travel-observation methodology confirming historical destruction pattern",
+      "definition": "In 34:28: Travel earth observe end of those before; Allah destroyed them; not unjust they wronged selves.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -206,130 +496,157 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Empirical method."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Historical precedent."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1238",
-      "label": "cand-1238: Topic from 34:30",
-      "definition": "In 34:30: Say, \"For you is the appointment of a Day [when] you will not remain thereafter an hour, nor will you precede [it]",
+      "candidateId": "cand-1263",
+      "label": "Provision attribution test: who provides from heaven and earth? They say Allah",
+      "definition": "In 34:24: Say who provides you from heavens earth? Say Allah; indeed we or you are guided or in clear error.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:30",
-          "excerpt": "قُل لَّكُم مِّيعَادُ يَوۡمٖ لَّا تَسۡتَـٔۡخِرُونَ عَنۡهُ سَاعَةٗ وَلَا تَسۡتَقۡدِمُونَ",
+          "key": "34:24",
+          "excerpt": "۞قُلۡ مَن يَرۡزُقُكُم مِّنَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ قُلِ ٱللَّهُۖ وَإِنَّآ أَوۡ إِيَّاكُمۡ لَعَلَىٰ هُدًى أَوۡ فِي ضَلَٰلٖ مُّبِينٖ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed-rububiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rizq acknowledgment."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rhetorical confirmation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1239",
-      "label": "cand-1239: Topic from 34:33",
-      "definition": "In 34:33: Those who were oppressed will say to those who were arrogant, \"Rather, [it was your] conspiracy of night and day when you were ordering us to disbelieve in Allah and attribute to Him equals.\" But they will [all] confide regret when they see the punishment; and We will put shackles on the necks of those who disbelieved. Will they be recompensed except for what they used to do",
+      "candidateId": "cand-1264",
+      "label": "Gathering-judgment with Fattah-Alim attributes establishing divine arbitration",
+      "definition": "In 34:26: Say our Lord gathers us then judges between us in truth; He is Fattah Aleem.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:33",
-          "excerpt": "وَقَالَ ٱلَّذِينَ ٱسۡتُضۡعِفُواْ لِلَّذِينَ ٱسۡتَكۡبَرُواْ بَلۡ مَكۡرُ ٱلَّيۡلِ وَٱلنَّهَارِ إِذۡ تَأۡمُرُونَنَآ أَن نَّكۡفُرَ بِٱللَّهِ وَنَجۡعَلَ لَهُۥٓ أَندَادٗاۚ وَأَسَرُّواْ ٱلنَّدَامَةَ لَمَّا رَأَوُاْ ٱلۡعَذَابَۚ وَجَعَلۡنَا ٱلۡأَغۡلَٰلَ فِيٓ أَعۡنَاقِ ٱلَّذِينَ كَفَرُواْۖ هَلۡ يُجۡزَوۡنَ إِلَّا مَا كَانُواْ يَعۡمَلُونَ",
+          "key": "34:26",
+          "excerpt": "قُلۡ يَجۡمَعُ بَيۡنَنَا رَبُّنَا ثُمَّ يَفۡتَحُ بَيۡنَنَا بِٱلۡحَقِّ وَهُوَ ٱلۡفَتَّاحُ ٱلۡعَلِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Jam' + qada'."
+        },
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Fattah-Aleem pairing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1240",
-      "label": "cand-1240: Topic from 34:35",
-      "definition": "In 34:35: And they said, \"We are more [than the believers] in wealth and children, and we are not to be punished",
+      "candidateId": "cand-1265",
+      "label": "Desire-following producing sealed hearts as consequential misguidance",
+      "definition": "In 34:28: Whoever follows his desire without knowledge; Allah sealed his hearing heart.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:35",
-          "excerpt": "وَقَالُواْ نَحۡنُ أَكۡثَرُ أَمۡوَٰلٗا وَأَوۡلَٰدٗا وَمَا نَحۡنُ بِمُعَذَّبِينَ",
+          "key": "34:28",
+          "excerpt": "وَمَآ أَرۡسَلۡنَٰكَ إِلَّا كَآفَّةٗ لِّلنَّاسِ بَشِيرٗا وَنَذِيرٗا وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يَعۡلَمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hawa causing khatm."
+        },
+        {
+          "topicId": "predestination-free-will",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Post-deviation sealing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1241",
-      "label": "cand-1241: Topic from 34:38",
-      "definition": "In 34:38: And the ones who strive against Our verses to cause [them] failure - those will be brought into the punishment [to remain]",
+      "candidateId": "cand-1266",
+      "label": "Closing hamd with sign-recognition promise affirming divine awareness",
+      "definition": "In 34:28: Say praise to Allah; He will show you His signs and you will recognize them; Lord not unaware.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:38",
-          "excerpt": "وَٱلَّذِينَ يَسۡعَوۡنَ فِيٓ ءَايَٰتِنَا مُعَٰجِزِينَ أُوْلَـٰٓئِكَ فِي ٱلۡعَذَابِ مُحۡضَرُونَ",
+          "key": "34:28",
+          "excerpt": "وَمَآ أَرۡسَلۡنَٰكَ إِلَّا كَآفَّةٗ لِّلنَّاسِ بَشِيرٗا وَنَذِيرٗا وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يَعۡلَمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1242",
-      "label": "cand-1242: Topic from 34:41",
-      "definition": "In 34:41: They will say, \"Exalted are You! You, [O Allah], are our benefactor not them. Rather, they used to worship the jinn; most of them were believers in them",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "34:41",
-          "excerpt": "قَالُواْ سُبۡحَٰنَكَ أَنتَ وَلِيُّنَا مِن دُونِهِمۖ بَلۡ كَانُواْ يَعۡبُدُونَ ٱلۡجِنَّۖ أَكۡثَرُهُم بِهِم مُّؤۡمِنُونَ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Hamd closure."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Future recognition."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1243",
-      "label": "cand-1243: Topic from 34:43",
-      "definition": "In 34:43: And when our verses are recited to them as clear evidences, they say, \"This is not but a man who wishes to avert you from that which your fathers were worshipping.\" And they say, \"This is not except a lie invented.\" And those who disbelieve say of the truth when it has come to them, \"This is not but obvious magic",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "34:43",
-          "excerpt": "وَإِذَا تُتۡلَىٰ عَلَيۡهِمۡ ءَايَٰتُنَا بَيِّنَٰتٖ قَالُواْ مَا هَٰذَآ إِلَّا رَجُلٞ يُرِيدُ أَن يَصُدَّكُمۡ عَمَّا كَانَ يَعۡبُدُ ءَابَآؤُكُمۡ وَقَالُواْ مَا هَٰذَآ إِلَّآ إِفۡكٞ مُّفۡتَرٗىۚ وَقَالَ ٱلَّذِينَ كَفَرُواْ لِلۡحَقِّ لَمَّا جَآءَهُمۡ إِنۡ هَٰذَآ إِلَّا سِحۡرٞ مُّبِينٞ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1244",
-      "label": "cand-1244: Topic from 34:46",
-      "definition": "In 34:46: Say, \"I only advise you of one [thing] - that you stand for Allah, [seeking truth] in pairs and individually, and then give thought.\" There is not in your companion any madness. He is only a warner to you before a severe punishment",
+      "candidateId": "cand-1267",
+      "label": "Individual standing before Allah in pairs-singles for reflective accountability",
+      "definition": "In 34:46: Say I exhort you to one thing: stand before Allah in pairs and individuals then reflect.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -339,16 +656,93 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Individual reflection."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Tafakkur commanded."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1245",
-      "label": "cand-1245: Topic from 34:48",
-      "definition": "In 34:48: Say, \"Indeed, my Lord projects the truth. Knower of the unseen",
+      "candidateId": "cand-1268",
+      "label": "Companion-not-jinn clarification establishing prophetic mental soundness",
+      "definition": "In 34:46: Your companion is not possessed (majnun); he is warner before severe punishment.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:46",
+          "excerpt": "۞قُلۡ إِنَّمَآ أَعِظُكُم بِوَٰحِدَةٍۖ أَن تَقُومُواْ لِلَّهِ مَثۡنَىٰ وَفُرَٰدَىٰ ثُمَّ تَتَفَكَّرُواْۚ مَا بِصَاحِبِكُم مِّن جِنَّةٍۚ إِنۡ هُوَ إِلَّا نَذِيرٞ لَّكُم بَيۡنَ يَدَيۡ عَذَابٖ شَدِيدٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sanity affirmation."
+        },
+        {
+          "topicId": "prophetic-character",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Nadhir function."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1269",
+      "label": "Reward separation: prophet asks no wage; audience reward is their own",
+      "definition": "In 34:47: Say whatever reward I asked is for you; my reward is only from Allah; He is Witness over everything.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:47",
+          "excerpt": "قُلۡ مَا سَأَلۡتُكُم مِّنۡ أَجۡرٖ فَهُوَ لَكُمۡۖ إِنۡ أَجۡرِيَ إِلَّا عَلَى ٱللَّهِۖ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ شَهِيدٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Non-transactional mission."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Individual recompense."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1270",
+      "label": "Fattah-Rahim encompassing mercy with transgressor-specific punishment",
+      "definition": "In 34:48: Say indeed my Lord originates and returns; He inspired me with mercy encompassing everything; assign transgressors painful punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
@@ -358,30 +752,216 @@
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "divine-mercy",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Wasiah rahmah."
+        },
+        {
+          "topicId": "divine-wrath",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Transgressor exception."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1246",
-      "label": "cand-1246: Topic from 34:51",
-      "definition": "In 34:51: And if you could see when they are terrified but there is no escape, and they will be seized from a place nearby",
+      "candidateId": "cand-1271",
+      "label": "Jinn-human assembly at gathering with eternal fire abode",
+      "definition": "In 34:49: Day He gathers all; says O assembly of jinn and men; fire is your abode eternally except Allah wills.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "34:51",
-          "excerpt": "وَلَوۡ تَرَىٰٓ إِذۡ فَزِعُواْ فَلَا فَوۡتَ وَأُخِذُواْ مِن مَّكَانٖ قَرِيبٖ",
+          "key": "34:49",
+          "excerpt": "قُلۡ جَآءَ ٱلۡحَقُّ وَمَا يُبۡدِئُ ٱلۡبَٰطِلُ وَمَا يُعِيدُ",
           "evidenceClass": "EXPLICIT_TEXT",
           "rationale": "Full verse text as evidence."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Joint assembly."
+        },
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Eternal confinement."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:30:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1272",
+      "label": "Self-testimony against disbelief acknowledging worldly delusion",
+      "definition": "In 34:49: They testify against themselves that they were disbelievers; deluded by worldly life.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:49",
+          "excerpt": "قُلۡ جَآءَ ٱلۡحَقُّ وَمَا يُبۡدِئُ ٱلۡبَٰطِلُ وَمَا يُعِيدُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Shahadu ala anfusihim."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Dunya ghurur."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1273",
+      "label": "Wealth-children as dunya adornment versus enduring good deeds as superior",
+      "definition": "In 34:37: Wealth and children are adornment of worldly life; enduring good deeds better with Lord for reward-hope.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:37",
+          "excerpt": "وَمَآ أَمۡوَٰلُكُمۡ وَلَآ أَوۡلَٰدُكُم بِٱلَّتِي تُقَرِّبُكُمۡ عِندَنَا زُلۡفَىٰٓ إِلَّا مَنۡ ءَامَنَ وَعَمِلَ صَٰلِحٗا فَأُوْلَـٰٓئِكَ لَهُمۡ جَزَآءُ ٱلضِّعۡفِ بِمَا عَمِلُواْ وَهُمۡ فِي ٱلۡغُرُفَٰتِ ءَامِنُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Zinah vs baqiyat."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Superior investment."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1274",
+      "label": "Truth-falsehood dynamic: truth arrives falsehood cannot originate or repeat",
+      "definition": "In 34:49: Say truth has come; falsehood cannot originate (yubdi') nor repeat (yu'id).",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:49",
+          "excerpt": "قُلۡ جَآءَ ٱلۡحَقُّ وَمَا يُبۡدِئُ ٱلۡبَٰطِلُ وَمَا يُعِيدُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "tawheed",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Haqq supremacy."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Batil sterility."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1275",
+      "label": "Error-consequence borne individually while guidance comes through revelation",
+      "definition": "In 34:50: Say if I err I err against myself; if guided it is by what Lord revealed; He is Hearing Near.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:50",
+          "excerpt": "قُلۡ إِن ضَلَلۡتُ فَإِنَّمَآ أَضِلُّ عَلَىٰ نَفۡسِيۖ وَإِنِ ٱهۡتَدَيۡتُ فَبِمَا يُوحِيٓ إِلَيَّ رَبِّيٓۚ إِنَّهُۥ سَمِيعٞ قَرِيبٞ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Personal liability."
+        },
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Guidance source."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1276",
+      "label": "Belated belief rejected: faith does not benefit when punishment is seen",
+      "definition": "In 34:52: They said we believe in it; but how can faith reach them from distant place? Belated belief void.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "34:52",
+          "excerpt": "وَقَالُوٓاْ ءَامَنَّا بِهِۦ وَأَنَّىٰ لَهُمُ ٱلتَّنَاوُشُ مِن مَّكَانِۭ بَعِيدٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Iman timing."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Too-late threshold."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T14:30:00.000Z",
+      "notes": "Wave 5 genuine re-extraction candidate."
     }
   ]
 }
