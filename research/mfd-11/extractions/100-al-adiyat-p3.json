@@ -1,0 +1,119 @@
+{
+  "extractionId": "ext-100-p3",
+  "workstream": "MFD-11",
+  "pass": "A",
+  "surah": 100,
+  "surahName": "Al-Adiyat",
+  "passage": {
+    "fromAyah": 9,
+    "toAyah": 11,
+    "label": "not know contents graves scattered; within breasts obtained; Indeed Lord them Day fully Acquainted"
+  },
+  "verseKeys": [
+    "100:9",
+    "100:10",
+    "100:11"
+  ],
+  "arabicExcerpts": [
+    {
+      "key": "100:9",
+      "text": "۞أَفَلَا يَعۡلَمُ إِذَا بُعۡثِرَ مَا فِي ٱلۡقُبُورِ"
+    },
+    {
+      "key": "100:10",
+      "text": "وَحُصِّلَ مَا فِي ٱلصُّدُورِ"
+    },
+    {
+      "key": "100:11",
+      "text": "إِنَّ رَبَّهُم بِهِمۡ يَوۡمَئِذٖ لَّخَبِيرُۢ"
+    }
+  ],
+  "mainSubject": {
+    "label": "Does he not know that when the contents of the graves are scattered and what is within the breasts is obtained, their Lord will be fully Acquainted with them on that Day",
+    "keys": [
+      "100:9",
+      "100:10",
+      "100:11"
+    ],
+    "evidenceClass": "EXPLICIT_TEXT"
+  },
+  "subordinateSubjects": [
+    {
+      "label": "Does he not know when the contents of the graves are scattered",
+      "keys": [
+        "100:9"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "And what is within the breasts is obtained",
+      "keys": [
+        "100:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    },
+    {
+      "label": "Their Lord being fully Acquainted with them on that Day",
+      "keys": [
+        "100:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "commandsAndProhibitions": [],
+  "divineNamesAndAttributes": [],
+  "propheticNarratives": [],
+  "humanConditionsAndSpiritualStates": [
+    {
+      "label": "Grave-contents scattered and breast-secrets obtained exposing all hidden reality",
+      "keys": [
+        "100:9",
+        "100:10"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "socialEconomicCivilisational": [],
+  "relationships": [
+    {
+      "label": "Divine acquaintance with every person on that Day as the ultimate accountability",
+      "keys": [
+        "100:11"
+      ],
+      "evidenceClass": "EXPLICIT_TEXT"
+    }
+  ],
+  "terminology": [
+    {
+      "term": "بُعۡثِرَ",
+      "transliteration": "bu'thirat",
+      "gloss": "scattered/exhumed (editorial gloss)",
+      "keys": [
+        "100:9"
+      ]
+    },
+    {
+      "term": "وَحُصِّلَ",
+      "transliteration": "hussilat",
+      "gloss": "obtained/extracted (editorial gloss)",
+      "keys": [
+        "100:10"
+      ]
+    },
+    {
+      "term": "لَّخَبِيرُۢ",
+      "transliteration": "khabir",
+      "gloss": "fully Acquainted (editorial gloss)",
+      "keys": [
+        "100:11"
+      ]
+    }
+  ],
+  "topicCandidateIds": [
+    "cand-1987"
+  ],
+  "notes": "Wave 13 genuine re-extraction. Boundaries follow the text: P1 closes with the collective-centre arrival (5) before the ingratitude diagnosis opens (6); P2 ends with the intense-wealth-love statement (8) before the grave-scattering question begins (9); P3 runs through the three-verse closing eschatological disclosure ending with divine acquaintance (9-11).",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "createdAt": "2026-11-21T00:45:00.000Z"
+}
