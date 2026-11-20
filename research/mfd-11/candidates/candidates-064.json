@@ -1,577 +1,1039 @@
 {
   "workstream": "MFD-11",
-  "generatedAt": "2026-11-19T16:35:00.000Z",
-  "sourceExtraction": "ext-040-p1,ext-040-p2,ext-040-p3",
+  "generatedAt": "2026-11-20T15:30:00.000Z",
+  "sourceExtraction": "ext-040-p1,ext-040-p2,ext-040-p3,ext-040-p4,ext-040-p5",
   "candidates": [
     {
-      "candidateId": "cand-1407",
-      "label": "cand-1407: Topic from 40:1",
-      "definition": "In 40:1: Ha, Meem",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
-        {
-          "key": "40:1",
-          "excerpt": "حمٓ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1408",
-      "label": "cand-1408: Topic from 40:3",
-      "definition": "In 40:3: The forgiver of sin, acceptor of repentance, severe in punishment, owner of abundance. There is no deity except Him; to Him is the destination",
+      "candidateId": "cand-1427",
+      "label": "Forgiveness and acceptance of repentance joined to severity and abundance",
+      "definition": "In 40:3: The forgiver of sin, acceptor of repentance, severe in punishment, owner of abundance; there is no deity except Him and to Him is the destination.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:3",
           "excerpt": "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوۡبِ شَدِيدِ ٱلۡعِقَابِ ذِي ٱلطَّوۡلِۖ لَآ إِلَٰهَ إِلَّا هُوَۖ إِلَيۡهِ ٱلۡمَصِيرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "asma-ul-husna",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ghafir, Qabil al-tawb, Shadid al-iqab, Dhi al-tawl."
+        },
+        {
+          "topicId": "mercy-and-forgiveness",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mercy paired with severity."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1409",
-      "label": "cand-1409: Topic from 40:6",
-      "definition": "In 40:6: And thus has the word of your Lord come into effect upon those who disbelieved that they are companions of the Fire",
+      "candidateId": "cand-1428",
+      "label": "Freedom of movement in the land named as a deceptive appearance",
+      "definition": "In 40:4: No one disputes concerning the signs except those who disbelieve, so be not deceived by their uninhibited movement throughout the land.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:6",
-          "excerpt": "وَكَذَٰلِكَ حَقَّتۡ كَلِمَتُ رَبِّكَ عَلَى ٱلَّذِينَ كَفَرُوٓاْ أَنَّهُمۡ أَصۡحَٰبُ ٱلنَّارِ",
+          "key": "40:4",
+          "excerpt": "مَا يُجَٰدِلُ فِيٓ ءَايَٰتِ ٱللَّهِ إِلَّا ٱلَّذِينَ كَفَرُواْ فَلَا يَغۡرُرۡكَ تَقَلُّبُهُمۡ فِي ٱلۡبِلَٰدِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trial-and-test",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Prosperity as apparent success."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Disputation without standing."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1410",
-      "label": "cand-1410: Topic from 40:9",
-      "definition": "In 40:9: And protect them from the evil consequences [of their deeds]. And he whom You protect from evil consequences that Day - You will have given him mercy. And that is the great attainment",
+      "candidateId": "cand-1429",
+      "label": "Throne-bearing angels interceding for believers and their righteous kin",
+      "definition": "In 40:7-9: Those who carry the Throne and those around it exalt with praise, believe in Him and ask forgiveness for believers; our Lord, forgive those who repented and followed Your way, admit them to promised gardens with righteous fathers, spouses and offspring, and protect them from evil consequences, which is mercy and the great attainment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "40:7",
+          "excerpt": "ٱلَّذِينَ يَحۡمِلُونَ ٱلۡعَرۡشَ وَمَنۡ حَوۡلَهُۥ يُسَبِّحُونَ بِحَمۡدِ رَبِّهِمۡ وَيُؤۡمِنُونَ بِهِۦ وَيَسۡتَغۡفِرُونَ لِلَّذِينَ ءَامَنُواْۖ رَبَّنَا وَسِعۡتَ كُلَّ شَيۡءٖ رَّحۡمَةٗ وَعِلۡمٗا فَٱغۡفِرۡ لِلَّذِينَ تَابُواْ وَٱتَّبَعُواْ سَبِيلَكَ وَقِهِمۡ عَذَابَ ٱلۡجَحِيمِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:8",
+          "excerpt": "رَبَّنَا وَأَدۡخِلۡهُمۡ جَنَّـٰتِ عَدۡنٍ ٱلَّتِي وَعَدتَّهُمۡ وَمَن صَلَحَ مِنۡ ءَابَآئِهِمۡ وَأَزۡوَٰجِهِمۡ وَذُرِّيَّـٰتِهِمۡۚ إِنَّكَ أَنتَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "40:9",
           "excerpt": "وَقِهِمُ ٱلسَّيِّـَٔاتِۚ وَمَن تَقِ ٱلسَّيِّـَٔاتِ يَوۡمَئِذٖ فَقَدۡ رَحِمۡتَهُۥۚ وَذَٰلِكَ هُوَ ٱلۡفَوۡزُ ٱلۡعَظِيمُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "angelic-duties",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Hamalat al-arsh intercession."
+        },
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Taught angelic dua."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1411",
-      "label": "cand-1411: Topic from 40:12",
-      "definition": "In 40:12: [They will be told], \"That is because, when Allah was called upon alone, you disbelieved; but if others were associated with Him, you believed. So the judgement is with Allah, the Most High, the Grand",
+      "candidateId": "cand-1430",
+      "label": "Divine hatred exceeding self-hatred at the refused invitation to faith",
+      "definition": "In 40:10: Those who disbelieve will be addressed that the hatred of Allah for them was greater than their hatred of themselves when they were invited to faith but refused.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "40:10",
+          "excerpt": "إِنَّ ٱلَّذِينَ كَفَرُواْ يُنَادَوۡنَ لَمَقۡتُ ٱللَّهِ أَكۡبَرُ مِن مَّقۡتِكُمۡ أَنفُسَكُمۡ إِذۡ تُدۡعَوۡنَ إِلَى ٱلۡإِيمَٰنِ فَتَكۡفُرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Maqt Allah at the reckoning."
+        },
+        {
+          "topicId": "self-accountability",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Refusal recalled against them."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1431",
+      "label": "Two deaths and two lives confessed with the plea for an exit refused",
+      "definition": "In 40:11-12: They say our Lord, You made us lifeless twice and gave us life twice and we confess our sins, so is there any way to an exit; that is because when Allah alone was invoked you disbelieved, and judgement is with Allah the Most High Grand.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "40:11",
+          "excerpt": "قَالُواْ رَبَّنَآ أَمَتَّنَا ٱثۡنَتَيۡنِ وَأَحۡيَيۡتَنَا ٱثۡنَتَيۡنِ فَٱعۡتَرَفۡنَا بِذُنُوبِنَا فَهَلۡ إِلَىٰ خُرُوجٖ مِّن سَبِيلٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "40:12",
           "excerpt": "ذَٰلِكُم بِأَنَّهُۥٓ إِذَا دُعِيَ ٱللَّهُ وَحۡدَهُۥ كَفَرۡتُمۡ وَإِن يُشۡرَكۡ بِهِۦ تُؤۡمِنُواْۚ فَٱلۡحُكۡمُ لِلَّهِ ٱلۡعَلِيِّ ٱلۡكَبِيرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "I'tiraf after the deadline."
+        },
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rejection of exclusive invocation."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1412",
-      "label": "cand-1412: Topic from 40:15",
-      "definition": "In 40:15: [He is] the Exalted above [all] degrees, Owner of the Throne; He places the inspiration of His command upon whom He wills of His servants to warn of the Day of Meeting",
+      "candidateId": "cand-1432",
+      "label": "The Day of Meeting with exposed sovereignty and exact recompense",
+      "definition": "In 40:15-17: He places inspiration to warn of the Day of Meeting, the Day they come forth with nothing concealed; to whom belongs sovereignty this Day? To Allah the One the Prevailing; this Day every soul is recompensed for what it earned, no injustice today.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:15",
           "excerpt": "رَفِيعُ ٱلدَّرَجَٰتِ ذُو ٱلۡعَرۡشِ يُلۡقِي ٱلرُّوحَ مِنۡ أَمۡرِهِۦ عَلَىٰ مَن يَشَآءُ مِنۡ عِبَادِهِۦ لِيُنذِرَ يَوۡمَ ٱلتَّلَاقِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1413",
-      "label": "cand-1413: Topic from 40:17",
-      "definition": "In 40:17: This Day every soul will be recompensed for what it earned. No injustice today! Indeed, Allah is swift in account",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:16",
+          "excerpt": "يَوۡمَ هُم بَٰرِزُونَۖ لَا يَخۡفَىٰ عَلَى ٱللَّهِ مِنۡهُمۡ شَيۡءٞۚ لِّمَنِ ٱلۡمُلۡكُ ٱلۡيَوۡمَۖ لِلَّهِ ٱلۡوَٰحِدِ ٱلۡقَهَّارِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "40:17",
           "excerpt": "ٱلۡيَوۡمَ تُجۡزَىٰ كُلُّ نَفۡسِۭ بِمَا كَسَبَتۡۚ لَا ظُلۡمَ ٱلۡيَوۡمَۚ إِنَّ ٱللَّهَ سَرِيعُ ٱلۡحِسَابِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Yawm al-talaq and exposed mulk."
+        },
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "La zulm al-yawm."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1414",
-      "label": "cand-1414: Topic from 40:20",
-      "definition": "In 40:20: And Allah judges with truth, while those they invoke besides Him judge not with anything. Indeed, Allah - He is the Hearing, the Seeing",
+      "candidateId": "cand-1433",
+      "label": "State violence against believing sons while women are spared",
+      "definition": "In 40:25: When he brought them the truth they said kill the sons of those who believed with him and keep their women alive, but the plan of the disbelievers is only in error.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:20",
-          "excerpt": "وَٱللَّهُ يَقۡضِي بِٱلۡحَقِّۖ وَٱلَّذِينَ يَدۡعُونَ مِن دُونِهِۦ لَا يَقۡضُونَ بِشَيۡءٍۗ إِنَّ ٱللَّهَ هُوَ ٱلسَّمِيعُ ٱلۡبَصِيرُ",
+          "key": "40:25",
+          "excerpt": "فَلَمَّا جَآءَهُم بِٱلۡحَقِّ مِنۡ عِندِنَا قَالُواْ ٱقۡتُلُوٓاْ أَبۡنَآءَ ٱلَّذِينَ ءَامَنُواْ مَعَهُۥ وَٱسۡتَحۡيُواْ نِسَآءَهُمۡۚ وَمَا كَيۡدُ ٱلۡكَٰفِرِينَ إِلَّا فِي ضَلَٰلٖ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice-oppression",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Targeted demographic violence."
+        },
+        {
+          "topicId": "musa-story",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Repeat of the earlier decree."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1415",
-      "label": "cand-1415: Topic from 40:23",
-      "definition": "In 40:23: And We did certainly send Moses with Our signs and a clear authority",
+      "candidateId": "cand-1434",
+      "label": "Refuge sought in the shared Lord against arrogance denying the Day of Account",
+      "definition": "In 40:27: Moses said I have sought refuge in my Lord and your Lord from every arrogant one who does not believe in the Day of Account.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:23",
-          "excerpt": "وَلَقَدۡ أَرۡسَلۡنَا مُوسَىٰ بِـَٔايَٰتِنَا وَسُلۡطَٰنٖ مُّبِينٍ",
+          "key": "40:27",
+          "excerpt": "وَقَالَ مُوسَىٰٓ إِنِّي عُذۡتُ بِرَبِّي وَرَبِّكُم مِّن كُلِّ مُتَكَبِّرٖ لَّا يُؤۡمِنُ بِيَوۡمِ ٱلۡحِسَابِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "I'dha bi-rabbi."
+        },
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Mutakabbir defined by denial."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1416",
-      "label": "cand-1416: Topic from 40:26",
-      "definition": "In 40:26: And Pharaoh said, \"Let me kill Moses and let him call upon his Lord. Indeed, I fear that he will change your religion or that he will cause corruption in the land",
+      "candidateId": "cand-1435",
+      "label": "Concealed faith defending the messenger through evidentiary fairness",
+      "definition": "In 40:28: A believing man of Pharaoh's family who concealed his faith said do you kill a man because he says my Lord is Allah while bringing clear proofs; if he lies his lie is upon him, and if truthful some of what he promises will strike you.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:26",
-          "excerpt": "وَقَالَ فِرۡعَوۡنُ ذَرُونِيٓ أَقۡتُلۡ مُوسَىٰ وَلۡيَدۡعُ رَبَّهُۥٓۖ إِنِّيٓ أَخَافُ أَن يُبَدِّلَ دِينَكُمۡ أَوۡ أَن يُظۡهِرَ فِي ٱلۡأَرۡضِ ٱلۡفَسَادَ",
+          "key": "40:28",
+          "excerpt": "وَقَالَ رَجُلٞ مُّؤۡمِنٞ مِّنۡ ءَالِ فِرۡعَوۡنَ يَكۡتُمُ إِيمَٰنَهُۥٓ أَتَقۡتُلُونَ رَجُلًا أَن يَقُولَ رَبِّيَ ٱللَّهُ وَقَدۡ جَآءَكُم بِٱلۡبَيِّنَٰتِ مِن رَّبِّكُمۡۖ وَإِن يَكُ كَٰذِبٗا فَعَلَيۡهِ كَذِبُهُۥۖ وَإِن يَكُ صَادِقٗا يُصِبۡكُم بَعۡضُ ٱلَّذِي يَعِدُكُمۡۖ إِنَّ ٱللَّهَ لَا يَهۡدِي مَنۡ هُوَ مُسۡرِفٞ كَذَّابٞ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "evidence-standards",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Bayyinat weighed before violence."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Courageous counsel under risk."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1417",
-      "label": "cand-1417: Topic from 40:30",
-      "definition": "In 40:30: And he who believed said, \"O my people, indeed I fear for you [a fate] like the day of the companies",
+      "candidateId": "cand-1436",
+      "label": "Present political dominance unable to shield from divine punishment",
+      "definition": "In 40:29: O my people, sovereignty is yours today, dominant in the land, but who would protect us from the punishment of Allah if it came? Pharaoh said I show you only what I see and guide you only to right conduct.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:30",
-          "excerpt": "وَقَالَ ٱلَّذِيٓ ءَامَنَ يَٰقَوۡمِ إِنِّيٓ أَخَافُ عَلَيۡكُم مِّثۡلَ يَوۡمِ ٱلۡأَحۡزَابِ",
+          "key": "40:29",
+          "excerpt": "يَٰقَوۡمِ لَكُمُ ٱلۡمُلۡكُ ٱلۡيَوۡمَ ظَٰهِرِينَ فِي ٱلۡأَرۡضِ فَمَن يَنصُرُنَا مِنۢ بَأۡسِ ٱللَّهِ إِن جَآءَنَاۚ قَالَ فِرۡعَوۡنُ مَآ أُرِيكُمۡ إِلَّا مَآ أَرَىٰ وَمَآ أَهۡدِيكُمۡ إِلَّا سَبِيلَ ٱلرَّشَادِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "leadership-qualities",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Self-authorising rule exposed."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Power subordinate to decree."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1418",
-      "label": "cand-1418: Topic from 40:32",
-      "definition": "In 40:32: And O my people, indeed I fear for you the Day of Calling",
+      "candidateId": "cand-1437",
+      "label": "Doubt persisting after Yusuf's proofs and the claim that no messenger would follow",
+      "definition": "In 40:34: Joseph had come before with clear proofs but you remained in doubt until he died, then said never will Allah send a messenger after him; thus Allah leaves astray the transgressor and skeptic.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:32",
-          "excerpt": "وَيَٰقَوۡمِ إِنِّيٓ أَخَافُ عَلَيۡكُمۡ يَوۡمَ ٱلتَّنَادِ",
+          "key": "40:34",
+          "excerpt": "وَلَقَدۡ جَآءَكُمۡ يُوسُفُ مِن قَبۡلُ بِٱلۡبَيِّنَٰتِ فَمَا زِلۡتُمۡ فِي شَكّٖ مِّمَّا جَآءَكُم بِهِۦۖ حَتَّىٰٓ إِذَا هَلَكَ قُلۡتُمۡ لَن يَبۡعَثَ ٱللَّهُ مِنۢ بَعۡدِهِۦ رَسُولٗاۚ كَذَٰلِكَ يُضِلُّ ٱللَّهُ مَنۡ هُوَ مُسۡرِفٞ مُّرۡتَابٌ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Succession denied after a prophet."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Murtab disposition."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1419",
-      "label": "cand-1419: Topic from 40:35",
-      "definition": "In 40:35: Those who dispute concerning the signs of Allah without an authority having come to them - great is hatred [of them] in the sight of Allah and in the sight of those who have believed. Thus does Allah seal over every heart [belonging to] an arrogant tyrant",
+      "candidateId": "cand-1438",
+      "label": "Tower construction to inspect the deity, its evil made attractive and plan ruined",
+      "definition": "In 40:36-37: O Haman, construct for me a tower that I might reach the ways into the heavens so I may look at the deity of Moses, though I think he is a liar; thus the evil of his deed was made attractive and he was averted from the way, and his plan was only in ruin.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:35",
-          "excerpt": "ٱلَّذِينَ يُجَٰدِلُونَ فِيٓ ءَايَٰتِ ٱللَّهِ بِغَيۡرِ سُلۡطَٰنٍ أَتَىٰهُمۡۖ كَبُرَ مَقۡتًا عِندَ ٱللَّهِ وَعِندَ ٱلَّذِينَ ءَامَنُواْۚ كَذَٰلِكَ يَطۡبَعُ ٱللَّهُ عَلَىٰ كُلِّ قَلۡبِ مُتَكَبِّرٖ جَبَّارٖ",
+          "key": "40:36",
+          "excerpt": "وَقَالَ فِرۡعَوۡنُ يَٰهَٰمَٰنُ ٱبۡنِ لِي صَرۡحٗا لَّعَلِّيٓ أَبۡلُغُ ٱلۡأَسۡبَٰبَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:37",
+          "excerpt": "أَسۡبَٰبَ ٱلسَّمَٰوَٰتِ فَأَطَّلِعَ إِلَىٰٓ إِلَٰهِ مُوسَىٰ وَإِنِّي لَأَظُنُّهُۥ كَٰذِبٗاۚ وَكَذَٰلِكَ زُيِّنَ لِفِرۡعَوۡنَ سُوٓءُ عَمَلِهِۦ وَصُدَّ عَنِ ٱلسَّبِيلِۚ وَمَا كَيۡدُ فِرۡعَوۡنَ إِلَّا فِي تَبَابٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Architectural defiance."
+        },
+        {
+          "topicId": "shaytan-enemy",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Tazyin of the evil deed."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1420",
-      "label": "cand-1420: Topic from 40:38",
-      "definition": "In 40:38: And he who believed said, \"O my people, follow me, I will guide you to the way of right conduct",
+      "candidateId": "cand-1439",
+      "label": "Worldly enjoyment against the Hereafter as the home of settlement",
+      "definition": "In 40:39: O my people, this worldly life is only temporary enjoyment, and indeed the Hereafter is the home of permanent settlement.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:38",
-          "excerpt": "وَقَالَ ٱلَّذِيٓ ءَامَنَ يَٰقَوۡمِ ٱتَّبِعُونِ أَهۡدِكُمۡ سَبِيلَ ٱلرَّشَادِ",
+          "key": "40:39",
+          "excerpt": "يَٰقَوۡمِ إِنَّمَا هَٰذِهِ ٱلۡحَيَوٰةُ ٱلدُّنۡيَا مَتَٰعٞ وَإِنَّ ٱلۡأٓخِرَةَ هِيَ دَارُ ٱلۡقَرَارِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Dar al-qarar versus mata'."
+        },
+        {
+          "topicId": "hardship-and-ease",
+          "layer": "curated",
+          "relationship": "related-not-identical",
+          "note": "Temporality of worldly ease."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1421",
-      "label": "cand-1421: Topic from 40:41",
-      "definition": "In 40:41: And O my people, how is it that I invite you to salvation while you invite me to the Fire",
+      "candidateId": "cand-1440",
+      "label": "Exact recompense for evil with unaccounted provision for believing men and women",
+      "definition": "In 40:40: Whoever does an evil deed is recompensed only by its like, but whoever does righteousness, male or female, while a believer, enters Paradise given provision without account.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "40:40",
+          "excerpt": "مَنۡ عَمِلَ سَيِّئَةٗ فَلَا يُجۡزَىٰٓ إِلَّا مِثۡلَهَاۖ وَمَنۡ عَمِلَ صَٰلِحٗا مِّن ذَكَرٍ أَوۡ أُنثَىٰ وَهُوَ مُؤۡمِنٞ فَأُوْلَـٰٓئِكَ يَدۡخُلُونَ ٱلۡجَنَّةَ يُرۡزَقُونَ فِيهَا بِغَيۡرِ حِسَابٖ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "justice",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Mithl recompense for evil."
+        },
+        {
+          "topicId": "good-character",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Gender-explicit reward parity."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1441",
+      "label": "Mutual invitations contrasted between salvation and the Fire",
+      "definition": "In 40:41-42: How is it that I invite you to salvation while you invite me to the Fire? You invite me to disbelieve and associate without knowledge, and I invite you to the Exalted in Might, the Perpetual Forgiver.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:41",
           "excerpt": "۞وَيَٰقَوۡمِ مَا لِيٓ أَدۡعُوكُمۡ إِلَى ٱلنَّجَوٰةِ وَتَدۡعُونَنِيٓ إِلَى ٱلنَّارِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:42",
+          "excerpt": "تَدۡعُونَنِي لِأَكۡفُرَ بِٱللَّهِ وَأُشۡرِكَ بِهِۦ مَا لَيۡسَ لِي بِهِۦ عِلۡمٞ وَأَنَا۠ أَدۡعُوكُمۡ إِلَى ٱلۡعَزِيزِ ٱلۡغَفَّـٰرِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "dialogue-principles",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Competing invitations named."
+        },
+        {
+          "topicId": "tawheed-uluhiyyah",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Da'wah to Aziz Ghaffar."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1422",
-      "label": "cand-1422: Topic from 40:44",
-      "definition": "In 40:44: And you will remember what I [now] say to you, and I entrust my affair to Allah. Indeed, Allah is Seeing of [His] servants",
+      "candidateId": "cand-1442",
+      "label": "Invoked objects answering no supplication in either realm",
+      "definition": "In 40:43: Assuredly that to which you invite me has no response to supplication in this world or the Hereafter, and our return is to Allah, and the transgressors are companions of the Fire.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "40:43",
+          "excerpt": "لَا جَرَمَ أَنَّمَا تَدۡعُونَنِيٓ إِلَيۡهِ لَيۡسَ لَهُۥ دَعۡوَةٞ فِي ٱلدُّنۡيَا وَلَا فِي ٱلۡأٓخِرَةِ وَأَنَّ مَرَدَّنَآ إِلَى ٱللَّهِ وَأَنَّ ٱلۡمُسۡرِفِينَ هُمۡ أَصۡحَٰبُ ٱلنَّارِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "No da'wah capacity in rivals."
+        },
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Response as divine prerogative."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1443",
+      "label": "Entrustment of the affair to Allah answered by protection from plotted evils",
+      "definition": "In 40:44-45: You will remember what I say to you and I entrust my affair to Allah, indeed Allah is Seeing of His servants; so Allah protected him from the evils they plotted and Pharaoh's people were enveloped by the worst punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:44",
           "excerpt": "فَسَتَذۡكُرُونَ مَآ أَقُولُ لَكُمۡۚ وَأُفَوِّضُ أَمۡرِيٓ إِلَى ٱللَّهِۚ إِنَّ ٱللَّهَ بَصِيرُۢ بِٱلۡعِبَادِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:45",
+          "excerpt": "فَوَقَىٰهُ ٱللَّهُ سَيِّـَٔاتِ مَا مَكَرُواْۖ وَحَاقَ بِـَٔالِ فِرۡعَوۡنَ سُوٓءُ ٱلۡعَذَابِ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ufawwidu amri ila Allah."
+        },
+        {
+          "topicId": "divine-power",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Waqaya from kayd."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1423",
-      "label": "cand-1423: Topic from 40:46",
-      "definition": "In 40:46: The Fire, they are exposed to it morning and evening. And the Day the Hour appears [it will be said], \"Make the people of Pharaoh enter the severest punishment",
+      "candidateId": "cand-1444",
+      "label": "Morning-and-evening exposure to the Fire before the severest entry",
+      "definition": "In 40:46: The Fire, they are exposed to it morning and evening, and the Day the Hour appears it will be said make the people of Pharaoh enter the severest punishment.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:46",
           "excerpt": "ٱلنَّارُ يُعۡرَضُونَ عَلَيۡهَا غُدُوّٗا وَعَشِيّٗاۚ وَيَوۡمَ تَقُومُ ٱلسَّاعَةُ أَدۡخِلُوٓاْ ءَالَ فِرۡعَوۡنَ أَشَدَّ ٱلۡعَذَابِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Barzakh exposure preceding entry."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Ashadd al-adhab at the Hour."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1424",
-      "label": "cand-1424: Topic from 40:49",
-      "definition": "In 40:49: And those in the Fire will say to the keepers of Hell, \"Supplicate your Lord to lighten for us a day from the punishment",
+      "candidateId": "cand-1445",
+      "label": "Support guaranteed to messengers and believers in both realms",
+      "definition": "In 40:51: Indeed We will support Our messengers and those who believe during the life of this world and on the Day when the witnesses will stand.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:49",
-          "excerpt": "وَقَالَ ٱلَّذِينَ فِي ٱلنَّارِ لِخَزَنَةِ جَهَنَّمَ ٱدۡعُواْ رَبَّكُمۡ يُخَفِّفۡ عَنَّا يَوۡمٗا مِّنَ ٱلۡعَذَابِ",
+          "key": "40:51",
+          "excerpt": "إِنَّا لَنَنصُرُ رُسُلَنَا وَٱلَّذِينَ ءَامَنُواْ فِي ٱلۡحَيَوٰةِ ٱلدُّنۡيَا وَيَوۡمَ يَقُومُ ٱلۡأَشۡهَٰدُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1425",
-      "label": "cand-1425: Topic from 40:52",
-      "definition": "In 40:52: The Day their excuse will not benefit the wrongdoers, and they will have the curse, and they will have the worst home",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+      "existingTopicOverlap": [
         {
-          "key": "40:52",
-          "excerpt": "يَوۡمَ لَا يَنفَعُ ٱلظَّـٰلِمِينَ مَعۡذِرَتُهُمۡۖ وَلَهُمُ ٱللَّعۡنَةُ وَلَهُمۡ سُوٓءُ ٱلدَّارِ",
-          "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "topicId": "prophets",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Nasr extended to believers."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Assurance across both realms."
         }
       ],
-      "existingTopicOverlap": [],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1426",
-      "label": "cand-1426: Topic from 40:55",
-      "definition": "In 40:55: So be patient, [O Muhammad]. Indeed, the promise of Allah is truth. And ask forgiveness for your sin and exalt [Allah] with praise of your Lord in the evening and the morning",
+      "candidateId": "cand-1446",
+      "label": "Patience joined to forgiveness-seeking and timed praise",
+      "definition": "In 40:55: So be patient, indeed the promise of Allah is truth, and ask forgiveness for your sin and exalt with praise of your Lord in the evening and the morning.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:55",
           "excerpt": "فَٱصۡبِرۡ إِنَّ وَعۡدَ ٱللَّهِ حَقّٞ وَٱسۡتَغۡفِرۡ لِذَنۢبِكَ وَسَبِّحۡ بِحَمۡدِ رَبِّكَ بِٱلۡعَشِيِّ وَٱلۡإِبۡكَٰرِ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabr with wa'd haqq."
+        },
+        {
+          "topicId": "remembrance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ashi and ibkar tasbih."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1427",
-      "label": "cand-1427: Topic from 40:59",
-      "definition": "In 40:59: Indeed, the Hour is coming - no doubt about it - but most of the people do not believe",
+      "candidateId": "cand-1447",
+      "label": "Disputation traced to unreachable pride answered by refuge",
+      "definition": "In 40:56: Those who dispute concerning the signs without authority have within their breasts only pride the extent of which they cannot reach, so seek refuge in Allah, indeed He is the Hearing, the Seeing.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:59",
-          "excerpt": "إِنَّ ٱلسَّاعَةَ لَأٓتِيَةٞ لَّا رَيۡبَ فِيهَا وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يُؤۡمِنُونَ",
+          "key": "40:56",
+          "excerpt": "إِنَّ ٱلَّذِينَ يُجَٰدِلُونَ فِيٓ ءَايَٰتِ ٱللَّهِ بِغَيۡرِ سُلۡطَٰنٍ أَتَىٰهُمۡ إِن فِي صُدُورِهِمۡ إِلَّا كِبۡرٞ مَّا هُم بِبَٰلِغِيهِۚ فَٱسۡتَعِذۡ بِٱللَّهِۖ إِنَّهُۥ هُوَ ٱلسَّمِيعُ ٱلۡبَصِيرُ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Kibr as sole motive."
+        },
+        {
+          "topicId": "trust-in-god",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Isti'adha commanded."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1428",
-      "label": "cand-1428: Topic from 40:61",
-      "definition": "In 40:61: It is Allah who made for you the night that you may rest therein and the day giving sight. Indeed, Allah is full of bounty to the people, but most of the people are not grateful",
+      "candidateId": "cand-1448",
+      "label": "Cosmic creation greater than human creation as a resurrection argument",
+      "definition": "In 40:57: The creation of the heavens and earth is greater than the creation of mankind, but most of the people do not know.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:61",
-          "excerpt": "ٱللَّهُ ٱلَّذِي جَعَلَ لَكُمُ ٱلَّيۡلَ لِتَسۡكُنُواْ فِيهِ وَٱلنَّهَارَ مُبۡصِرًاۚ إِنَّ ٱللَّهَ لَذُو فَضۡلٍ عَلَى ٱلنَّاسِ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يَشۡكُرُونَ",
+          "key": "40:57",
+          "excerpt": "لَخَلۡقُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ أَكۡبَرُ مِنۡ خَلۡقِ ٱلنَّاسِ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يَعۡلَمُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "resurrection-process",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Greater-to-lesser argument."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Scale comparison as ayah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1429",
-      "label": "cand-1429: Topic from 40:64",
-      "definition": "In 40:64: It is Allah who made for you the earth a place of settlement and the sky a ceiling and formed you and perfected your forms and provided you with good things. That is Allah, your Lord; then blessed is Allah, Lord of the worlds",
+      "candidateId": "cand-1449",
+      "label": "Invocation answered by promise with contempt for those disdaining worship",
+      "definition": "In 40:60: And your Lord says call upon Me, I will respond to you; indeed those who disdain My worship will enter Hell rendered contemptible.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:64",
-          "excerpt": "ٱللَّهُ ٱلَّذِي جَعَلَ لَكُمُ ٱلۡأَرۡضَ قَرَارٗا وَٱلسَّمَآءَ بِنَآءٗ وَصَوَّرَكُمۡ فَأَحۡسَنَ صُوَرَكُمۡ وَرَزَقَكُم مِّنَ ٱلطَّيِّبَٰتِۚ ذَٰلِكُمُ ٱللَّهُ رَبُّكُمۡۖ فَتَبَارَكَ ٱللَّهُ رَبُّ ٱلۡعَٰلَمِينَ",
+          "key": "40:60",
+          "excerpt": "وَقَالَ رَبُّكُمُ ٱدۡعُونِيٓ أَسۡتَجِبۡ لَكُمۡۚ إِنَّ ٱلَّذِينَ يَسۡتَكۡبِرُونَ عَنۡ عِبَادَتِي سَيَدۡخُلُونَ جَهَنَّمَ دَاخِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "supplication",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Ud'uni astajib lakum."
+        },
+        {
+          "topicId": "pride-kibr",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Istikbar an ibadati."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1430",
-      "label": "cand-1430: Topic from 40:66",
-      "definition": "In 40:66: Say, [O Muhammad], \"Indeed, I have been forbidden to worship those you call upon besides Allah once the clear proofs have come to me from my Lord, and I have been commanded to submit to the Lord of the worlds",
+      "candidateId": "cand-1450",
+      "label": "Staged human creation to an appointed term inviting reasoning",
+      "definition": "In 40:67: It is He who created you from dust, then a sperm-drop, then a clinging clot, then brings you out as a child, then to maturity, then to old age, and among you is he taken before that, so that you reach a specified term and perhaps use reason.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:66",
-          "excerpt": "۞قُلۡ إِنِّي نُهِيتُ أَنۡ أَعۡبُدَ ٱلَّذِينَ تَدۡعُونَ مِن دُونِ ٱللَّهِ لَمَّا جَآءَنِيَ ٱلۡبَيِّنَٰتُ مِن رَّبِّي وَأُمِرۡتُ أَنۡ أُسۡلِمَ لِرَبِّ ٱلۡعَٰلَمِينَ",
+          "key": "40:67",
+          "excerpt": "هُوَ ٱلَّذِي خَلَقَكُم مِّن تُرَابٖ ثُمَّ مِن نُّطۡفَةٖ ثُمَّ مِنۡ عَلَقَةٖ ثُمَّ يُخۡرِجُكُمۡ طِفۡلٗا ثُمَّ لِتَبۡلُغُوٓاْ أَشُدَّكُمۡ ثُمَّ لِتَكُونُواْ شُيُوخٗاۚ وَمِنكُم مَّن يُتَوَفَّىٰ مِن قَبۡلُۖ وَلِتَبۡلُغُوٓاْ أَجَلٗا مُّسَمّٗى وَلَعَلَّكُمۡ تَعۡقِلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "human-creation",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Turab, nutfah, alaqah staging."
+        },
+        {
+          "topicId": "knowledge-and-reflection",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "La'allakum ta'qilun."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1431",
-      "label": "cand-1431: Topic from 40:69",
-      "definition": "In 40:69: Do you not consider those who dispute concerning the signs of Allah - how are they averted",
+      "candidateId": "cand-1451",
+      "label": "Dragging in shackles through boiling water into the Fire",
+      "definition": "In 40:71-72: When the shackles are around their necks and the chains they will be dragged, in boiling water, then in the Fire they will be filled with flame.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:69",
-          "excerpt": "أَلَمۡ تَرَ إِلَى ٱلَّذِينَ يُجَٰدِلُونَ فِيٓ ءَايَٰتِ ٱللَّهِ أَنَّىٰ يُصۡرَفُونَ",
+          "key": "40:71",
+          "excerpt": "إِذِ ٱلۡأَغۡلَٰلُ فِيٓ أَعۡنَٰقِهِمۡ وَٱلسَّلَٰسِلُ يُسۡحَبُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
-        }
-      ],
-      "existingTopicOverlap": [],
-      "proposedBy": "ai-assisted",
-      "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
-    },
-    {
-      "candidateId": "cand-1432",
-      "label": "cand-1432: Topic from 40:72",
-      "definition": "In 40:72: In boiling water; then in the Fire they will be filled [with flame]",
-      "definitionStatus": "editorial-draft",
-      "evidence": [
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "40:72",
           "excerpt": "فِي ٱلۡحَمِيمِ ثُمَّ فِي ٱلنَّارِ يُسۡجَرُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "jahannam-description",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Aghlal, salasil and hamim."
+        },
+        {
+          "topicId": "day-of-judgment",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sahb as punishment mode."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1433",
-      "label": "cand-1433: Topic from 40:74",
-      "definition": "In 40:74: Other than Allah?\" They will say, \"They have departed from us; rather, we did not used to invoke previously anything.\" Thus does Allah put astray the disbelievers",
+      "candidateId": "cand-1452",
+      "label": "Vanished associates and the admission of having invoked nothing",
+      "definition": "In 40:73-74: Then it will be said where is that which you used to associate other than Allah; they say they have departed from us, rather we did not used to invoke previously anything; thus Allah puts astray the disbelievers.",
       "definitionStatus": "editorial-draft",
       "evidence": [
+        {
+          "key": "40:73",
+          "excerpt": "ثُمَّ قِيلَ لَهُمۡ أَيۡنَ مَا كُنتُمۡ تُشۡرِكُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        },
         {
           "key": "40:74",
           "excerpt": "مِن دُونِ ٱللَّهِۖ قَالُواْ ضَلُّواْ عَنَّا بَل لَّمۡ نَكُن نَّدۡعُواْ مِن قَبۡلُ شَيۡـٔٗاۚ كَذَٰلِكَ يُضِلُّ ٱللَّهُ ٱلۡكَٰفِرِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "shirk-prohibition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Rivals absent at need."
+        },
+        {
+          "topicId": "knowledge-ignorance",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Retrospective admission."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1434",
-      "label": "cand-1434: Topic from 40:77",
-      "definition": "In 40:77: So be patient, [O Muhammad]; indeed, the promise of Allah is truth. And whether We show you some of what We have promised them or We take you in death, it is to Us they will be returned",
+      "candidateId": "cand-1453",
+      "label": "Patience held whether punishment is witnessed or death intervenes",
+      "definition": "In 40:77: So be patient, indeed the promise of Allah is truth, and whether We show you some of what We promised them or take you in death, it is to Us they will be returned.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:77",
           "excerpt": "فَٱصۡبِرۡ إِنَّ وَعۡدَ ٱللَّهِ حَقّٞۚ فَإِمَّا نُرِيَنَّكَ بَعۡضَ ٱلَّذِي نَعِدُهُمۡ أَوۡ نَتَوَفَّيَنَّكَ فَإِلَيۡنَا يُرۡجَعُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "patience",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Sabr independent of outcome timing."
+        },
+        {
+          "topicId": "the-hereafter",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Return regardless of witness."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1435",
-      "label": "cand-1435: Topic from 40:79",
-      "definition": "In 40:79: It is Allah who made for you the grazing animals upon which you ride, and some of them you eat",
+      "candidateId": "cand-1454",
+      "label": "Signs brought only by permission with truthful conclusion at the command",
+      "definition": "In 40:78: We sent messengers before you, some related and some not; it was not for any messenger to bring a sign except by permission of Allah, so when His command comes it is concluded in truth and the falsifiers lose.",
+      "definitionStatus": "editorial-draft",
+      "evidence": [
+        {
+          "key": "40:78",
+          "excerpt": "وَلَقَدۡ أَرۡسَلۡنَا رُسُلٗا مِّن قَبۡلِكَ مِنۡهُم مَّن قَصَصۡنَا عَلَيۡكَ وَمِنۡهُم مَّن لَّمۡ نَقۡصُصۡ عَلَيۡكَۗ وَمَا كَانَ لِرَسُولٍ أَن يَأۡتِيَ بِـَٔايَةٍ إِلَّا بِإِذۡنِ ٱللَّهِۚ فَإِذَا جَآءَ أَمۡرُ ٱللَّهِ قُضِيَ بِٱلۡحَقِّ وَخَسِرَ هُنَالِكَ ٱلۡمُبۡطِلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
+        }
+      ],
+      "existingTopicOverlap": [
+        {
+          "topicId": "prophet-definition",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Sign capacity by idhn."
+        },
+        {
+          "topicId": "quran-revelation-process",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "Related and unreported narratives."
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review",
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
+    },
+    {
+      "candidateId": "cand-1455",
+      "label": "Livestock and ships as combined carriage with further benefits",
+      "definition": "In 40:79-80: It is Allah who made for you grazing animals upon which you ride and some you eat, and for you therein are other benefits and that you may realise upon them a need in your breasts, and upon them and upon ships you are carried.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
           "key": "40:79",
           "excerpt": "ٱللَّهُ ٱلَّذِي جَعَلَ لَكُمُ ٱلۡأَنۡعَٰمَ لِتَرۡكَبُواْ مِنۡهَا وَمِنۡهَا تَأۡكُلُونَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:80",
+          "excerpt": "وَلَكُمۡ فِيهَا مَنَٰفِعُ وَلِتَبۡلُغُواْ عَلَيۡهَا حَاجَةٗ فِي صُدُورِكُمۡ وَعَلَيۡهَا وَعَلَى ٱلۡفُلۡكِ تُحۡمَلُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "animals-as-communities",
+          "layer": "scholarly",
+          "relationship": "related-not-identical",
+          "note": "An'am placed in service."
+        },
+        {
+          "topicId": "signs-and-reflection",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Land and sea transport as ayah."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     },
     {
-      "candidateId": "cand-1436",
-      "label": "cand-1436: Topic from 40:82",
-      "definition": "In 40:82: Have they not traveled through the land and observed how was the end of those before them? They were more numerous than themselves and greater in strength and in impression on the land, but they were not availed by what they used to earn",
+      "candidateId": "cand-1456",
+      "label": "Faith professed at the sight of punishment declared ineffective",
+      "definition": "In 40:84-85: When they saw Our punishment they said we believe in Allah alone and disbelieve in what we associated; but never did their faith benefit them once they saw Our punishment, the established way of Allah among His servants, and the disbelievers lost.",
       "definitionStatus": "editorial-draft",
       "evidence": [
         {
-          "key": "40:82",
-          "excerpt": "أَفَلَمۡ يَسِيرُواْ فِي ٱلۡأَرۡضِ فَيَنظُرُواْ كَيۡفَ كَانَ عَٰقِبَةُ ٱلَّذِينَ مِن قَبۡلِهِمۡۚ كَانُوٓاْ أَكۡثَرَ مِنۡهُمۡ وَأَشَدَّ قُوَّةٗ وَءَاثَارٗا فِي ٱلۡأَرۡضِ فَمَآ أَغۡنَىٰ عَنۡهُم مَّا كَانُواْ يَكۡسِبُونَ",
+          "key": "40:84",
+          "excerpt": "فَلَمَّا رَأَوۡاْ بَأۡسَنَا قَالُوٓاْ ءَامَنَّا بِٱللَّهِ وَحۡدَهُۥ وَكَفَرۡنَا بِمَا كُنَّا بِهِۦ مُشۡرِكِينَ",
           "evidenceClass": "EXPLICIT_TEXT",
-          "rationale": "Full verse text as evidence."
+          "rationale": "Full verse text as evidence for the cited span."
+        },
+        {
+          "key": "40:85",
+          "excerpt": "فَلَمۡ يَكُ يَنفَعُهُمۡ إِيمَٰنُهُمۡ لَمَّا رَأَوۡاْ بَأۡسَنَاۖ سُنَّتَ ٱللَّهِ ٱلَّتِي قَدۡ خَلَتۡ فِي عِبَادِهِۦۖ وَخَسِرَ هُنَالِكَ ٱلۡكَٰفِرُونَ",
+          "evidenceClass": "EXPLICIT_TEXT",
+          "rationale": "Full verse text as evidence for the cited span."
         }
       ],
-      "existingTopicOverlap": [],
+      "existingTopicOverlap": [
+        {
+          "topicId": "faith-increase-decrease",
+          "layer": "scholarly",
+          "relationship": "same-concept",
+          "note": "Iman timing invalidated."
+        },
+        {
+          "topicId": "repentance",
+          "layer": "curated",
+          "relationship": "same-concept",
+          "note": "Deadline for accepted return."
+        }
+      ],
       "proposedBy": "ai-assisted",
       "reviewStatus": "pending-scholarly-review",
-      "createdAt": "2026-11-19T16:35:00.000Z",
-      "notes": "Placeholder candidate — detailed topic analysis deferred to Pass B synthesis."
+      "createdAt": "2026-11-20T15:30:00.000Z",
+      "notes": "Wave 6 genuine re-extraction candidate."
     }
   ]
 }
