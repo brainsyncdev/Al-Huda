@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/root-analysis",
+  "title": "MFD-12 RootAnalysis",
+  "description": "One morphological/root analysis. Multiple may reference same LexicalEntry when scholars disagree.",
+  "type": "object",
+  "required": ["id", "lexicalEntryId", "rootArabic", "rootTransliterated", "sourceIds", "confidence", "assertedBy", "assertedAt", "reviewStatus", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid", "description": "UUID v4" },
+    "lexicalEntryId": { "type": "string", "pattern": "^lex-[a-z0-9-]+$", "description": "Reference to LexicalEntry.id" },
+    "rootArabic": { "type": "string", "minLength": 1, "description": "Hyphenated triliteral/quadriliteral root (e.g., ج-ه-د)" },
+    "rootTransliterated": { "type": "string", "minLength": 1, "description": "ISO 233-2 root transliteration" },
+    "verbForm": { "type": "string", "description": "e.g., Form I, Form III, N/A" },
+    "pattern": { "type": "string", "description": "Specific ṣīghah template (e.g., fāʿala, mafʿūl)" },
+    "derivationNotes": { "type": "string" },
+    "sourceIds": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^src-[a-z0-9-]+$" }, "description": "Lexicons consulted" },
+    "confidence": { "enum": ["HIGH", "MEDIUM", "LOW", "DISPUTED"] },
+    "assertedBy": { "type": "string", "minLength": 1, "description": "Agent or scholar that produced this analysis" },
+    "assertedAt": { "type": "string", "format": "date", "description": "Assertion date" },
+    "reviewStatus": { "enum": ["DRAFT", "PENDING_SCHOLARLY_REVIEW", "APPROVED", "REVISED", "DEPRECATED"] },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  }
+}

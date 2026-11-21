@@ -1,0 +1,187 @@
+{
+  "reportVersion": "1.0.0",
+  "workstream": "MFD-11.5 WS5",
+  "generatedAt": "2026-11-21T00:20:44+05:00",
+  "description": "Coverage analysis by domain and lexical category",
+  
+  "executiveSummary": {
+    "legacyIndexTerms": 649,
+    "legacyIndexOccurrences": 723,
+    "authoritativeRootFiles": 1576,
+    "coverageAssessment": "Legacy index captures a small fraction of corpus occurrences due to methodology flaws. Proposed methodology will achieve near-complete coverage for included terms.",
+    "recommendation": "Do NOT adopt a 50% coverage target until denominators and criteria are agreed. Report coverage separately for defined domains and lexical categories."
+  },
+  
+  "legacyIndexAnalysis": {
+    "source": "research/mfd-11/reports/arabic-terminology-index.json",
+    "methodology": "Whitespace-split extraction from candidate evidence excerpts",
+    "totalUniqueTerms": 649,
+    "totalOccurrences": 723,
+    "extractionFilesProcessed": 473,
+    "knownIssues": [
+      "Surface forms not normalized to lemmas",
+      "No root assignment",
+      "Occurrences reflect excerpt mentions, not corpus reality",
+      "Fragments from whitespace splitting",
+      "No corpus verification"
+    ]
+  },
+  
+  "authoritativeSourceAnalysis": {
+    "source": "data/root-occurrences/*.json",
+    "totalRootFiles": 1576,
+    "sampleRootMetrics": {
+      "جهد": {
+        "totalOccurrences": 41,
+        "distinctAyahs": 36,
+        "lemmas": 5,
+        "reviewState": "auto-accepted"
+      },
+      "سلم": {
+        "totalOccurrences": 136,
+        "distinctAyahs": 90,
+        "lemmas": 16,
+        "reviewState": "auto-accepted"
+      }
+    },
+    "note": "These two roots alone account for 177 verified occurrences, exceeding the legacy index's 723 total. This demonstrates the magnitude of the coverage gap."
+  },
+  
+  "coverageByDomain": {
+    "note": "Coverage percentages below are ESTIMATES based on legacy methodology. Actual coverage under proposed methodology requires extraction run.",
+    
+    "warPeace": {
+      "domainName": "War, Peace & Covenant",
+      "priorityRoots": ["جهد", "سلم", "قتل", "حرب", "صلح", "أمن"],
+      "legacyCoverageEstimate": {
+        "range": "4-24%",
+        "basis": "MFD-11.5 specification finding",
+        "reliability": "low (legacy methodology flaws)"
+      },
+      "proposedCoverageTarget": {
+        "target": "Near-100% for included terms",
+        "basis": "Proposed methodology reads all occurrences from root-occurrences files",
+        "condition": "Depends on inclusion criteria application"
+      },
+      "sampleData": {
+        "جهد": {"corpusOccurrences": 41, "legacyIndexOccurrences": "unknown (fragmented)"},
+        "سلم": {"corpusOccurrences": 136, "legacyIndexOccurrences": "unknown (fragmented)"}
+      }
+    },
+    
+    "artsBeauty": {
+      "domainName": "Arts, Beauty & Aesthetics",
+      "priorityRoots": ["حسن", "زين", "جمل", "نور", "بهج"],
+      "legacyCoverageEstimate": {
+        "range": "Unknown (not yet analyzed)",
+        "basis": "Requires extraction run",
+        "reliability": "none"
+      },
+      "proposedCoverageTarget": {
+        "target": "Near-100% for included terms",
+        "basis": "Proposed methodology"
+      }
+    },
+    
+    "covenantLaw": {
+      "domainName": "Covenant, Law & Justice",
+      "priorityRoots": ["عهد", "وعد", "حكم", "شرع", "قسط"],
+      "legacyCoverageEstimate": {
+        "range": "Unknown",
+        "basis": "Requires extraction run",
+        "reliability": "none"
+      },
+      "proposedCoverageTarget": {
+        "target": "Near-100% for included terms",
+        "basis": "Proposed methodology"
+      }
+    },
+    
+    "theology": {
+      "domainName": "Theology & Belief",
+      "priorityRoots": ["وحد", "ربب", "إله", "كفر", "أمن", "شرك"],
+      "legacyCoverageEstimate": {
+        "range": "Unknown",
+        "basis": "Requires extraction run",
+        "reliability": "none"
+      },
+      "proposedCoverageTarget": {
+        "target": "Near-100% for included terms",
+        "basis": "Proposed methodology"
+      }
+    }
+  },
+  
+  "coverageByLexicalCategory": {
+    "note": "Breakdown requires proposed extraction run. Categories below are planned.",
+    
+    "verbs": {
+      "category": "Verbs (all forms)",
+      "inclusionThreshold": "≥3 distinct āyāt OR ≥5 occurrences",
+      "estimatedCount": "Requires extraction",
+      "coverageMetric": "Indexed verb lemmas / total verb lemmas meeting threshold"
+    },
+    
+    "nouns": {
+      "category": "Nouns (including masdar, ism fa'il, ism maf'ul)",
+      "inclusionThreshold": "Same as verbs",
+      "estimatedCount": "Requires extraction",
+      "coverageMetric": "Indexed noun lemmas / total noun lemmas meeting threshold"
+    },
+    
+    "particles": {
+      "category": "Particles and prepositions",
+      "inclusionThreshold": "Only when carrying theological meaning",
+      "estimatedCount": "Small subset",
+      "coverageMetric": "Indexed particles / total theologically significant particles"
+    },
+    
+    "properNouns": {
+      "category": "Proper nouns functioning as conceptual terms",
+      "inclusionThreshold": "Must function conceptually beyond naming",
+      "estimatedCount": "Small subset",
+      "coverageMetric": "Indexed conceptual proper nouns / total qualifying proper nouns"
+    }
+  },
+  
+  "coverageGapAnalysis": {
+    "legacyVsAuthoritative": {
+      "metric": "Total occurrences",
+      "legacyIndex": 723,
+      "authoritativeSample": {
+        "جهد": 41,
+        "سلم": 136,
+        "subtotal": 177,
+        "note": "Two roots alone exceed 24% of legacy index total"
+      },
+      "implication": "Legacy index severely undercounts corpus occurrences due to methodology"
+    },
+    
+    "rootsWithoutIndexEntries": {
+      "totalRootFiles": 1576,
+      "legacyIndexUniqueTerms": 649,
+      "maximumPossibleMapping": "649 terms could map to at most 649 roots (likely far fewer due to multiple terms per root)",
+      "uncoveredRoots": "At minimum 927 roots have no representation in legacy index",
+      "note": "Many uncovered roots may not meet inclusion criteria, but the gap is substantial"
+    }
+  },
+  
+  "recommendations": {
+    "doNotAdopt50PercentTarget": {
+      "rationale": "Denominators are not yet agreed. Legacy coverage percentages are unreliable due to methodology flaws. Setting arbitrary targets before establishing valid denominators risks optimizing for the wrong metric.",
+      "alternative": "Report coverage separately by domain and lexical category using proposed methodology"
+    },
+    
+    "runProposedExtraction": {
+      "priority": "HIGH",
+      "rationale": "Accurate coverage metrics require running proposed extraction against data/root-occurrences/ with codified inclusion criteria",
+      "deliverable": "Updated coverage-report.json with actual metrics"
+    },
+    
+    "scholarlyReviewOfScope": {
+      "priority": "HIGH",
+      "rationale": "Inclusion/exclusion criteria determine denominators. Scholarly agreement on scope is prerequisite to meaningful coverage targets.",
+      "reference": "MFD-11.5-TERMINOLOGY-SPECIFICATION.md Section 11 (Scholarly Review Questions)"
+    }
+  }
+}

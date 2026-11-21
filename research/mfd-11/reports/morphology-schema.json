@@ -1,0 +1,151 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MFD-11.5 Morphological Annotation Schema",
+  "description": "Schema for Quranic Arabic morphological analysis entries. Computational suggestions are distinguished from human-verified results via analysisMethod and reviewStatus fields.",
+  "version": "1.0.0",
+  "workstream": "MFD-11.5",
+  "phase": "lemma-morphology-remediation",
+  "definitions": {
+    "morphEntry": {
+      "type": "object",
+      "required": ["surfaceForm", "lemma", "root", "partOfSpeech", "morphForm", "pattern", "gender", "number", "person", "caseOrMood", "features", "analysisMethod", "confidence", "reviewStatus"],
+      "properties": {
+        "termKey": {
+          "type": "string",
+          "description": "Original transliteration key from root-morphology-index.json"
+        },
+        "surfaceForm": {
+          "type": "string",
+          "description": "Arabic surface form as it appears in the Quranic text (with diacritics)"
+        },
+        "transliteration": {
+          "type": "string",
+          "description": "Romanized transliteration of the surface form"
+        },
+        "lemma": {
+          "type": ["string", "null"],
+          "description": "Arabic lemma (dictionary/citation form). null = insufficient evidence to assign"
+        },
+        "lemmaTranslit": {
+          "type": ["string", "null"],
+          "description": "Romanized transliteration of the lemma"
+        },
+        "root": {
+          "type": ["string", "null"],
+          "description": "Triliteral or quadriliteral root in hyphenated form (e.g., 'ع-ب-د')"
+        },
+        "rootConfidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"],
+          "description": "Confidence in root assignment from prior analysis"
+        },
+        "partOfSpeech": {
+          "type": "string",
+          "enum": ["noun", "verb", "adjective", "particle", "phrase", "pronoun", "preposition", "conjunction", "interjection", "unknown"],
+          "description": "Primary part of speech"
+        },
+        "morphForm": {
+          "type": ["string", "null"],
+          "description": "Verb form designation (e.g., 'Form I', 'Form II', 'Form X') or noun category (e.g., 'masdar', 'active participle', 'passive participle', 'noun of place', 'noun of instrument'). null if undetermined."
+        },
+        "pattern": {
+          "type": ["string", "null"],
+          "description": "Morphological pattern template (e.g., 'faʿala', 'faʿʿala', 'fāʿala', 'afʿala', 'tafaʿʿala', 'tafāʿala', 'infaʿala', 'iftaʿala', 'ifʿalla', 'istafʿala', 'faʿl', 'faʿil', 'faʿīl', 'fuʿl', 'mafʿūl', 'mifʿāl', 'tafʿīl', 'istifʿāl'). null if undetermined."
+        },
+        "gender": {
+          "type": ["string", "null"],
+          "enum": ["masculine", "feminine", "common", null],
+          "description": "Grammatical gender. null if not applicable or undetermined."
+        },
+        "number": {
+          "type": ["string", "null"],
+          "enum": ["singular", "dual", "plural", null],
+          "description": "Grammatical number. null if not applicable or undetermined."
+        },
+        "person": {
+          "type": ["string", "null"],
+          "enum": ["1st", "2nd", "3rd", null],
+          "description": "Grammatical person (verbs only). null for nouns/particles."
+        },
+        "caseOrMood": {
+          "type": ["string", "null"],
+          "description": "Case for nouns/adjectives (nominative, accusative, genitive) or mood for verbs (indicative, subjunctive, jussive, imperative). null if undetermined."
+        },
+        "features": {
+          "type": "object",
+          "description": "Additional morphological features",
+          "properties": {
+            "definite": { "type": ["boolean", "null"] },
+            "constructState": { "type": ["boolean", "null"] },
+            "hasPrefix": { "type": ["string", "null"], "description": "e.g., 'al-', 'wa-', 'bi-', 'li-'" },
+            "hasSuffix": { "type": ["string", "null"], "description": "e.g., pronoun suffix, case ending" },
+            "gemination": { "type": ["boolean", "null"], "description": "Shadda / doubled radical" },
+            "weakRoot": { "type": ["boolean", "null"], "description": "Contains hamza, waw, ya, or alif as root radical" },
+            "hamzatAlWasl": { "type": ["boolean", "null"] },
+            "voice": { "type": ["string", "null"], "enum": ["active", "passive", null] }
+          },
+          "additionalProperties": true
+        },
+        "alternativeAnalyses": {
+          "type": "array",
+          "description": "List of alternative morphological analyses when form is ambiguous",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lemma": { "type": ["string", "null"] },
+              "morphForm": { "type": ["string", "null"] },
+              "pattern": { "type": ["string", "null"] },
+              "partOfSpeech": { "type": "string" },
+              "reason": { "type": "string", "description": "Why this alternative is possible" }
+            }
+          }
+        },
+        "analysisMethod": {
+          "type": "string",
+          "enum": ["corpus-cross-reference", "computational", "manual", "mixed"],
+          "description": "How this analysis was derived. 'corpus-cross-reference' = matched against includedLemmas/occurrences in data/root-occurrences/. 'computational' = pattern-based inference without corpus match. 'manual' = human scholar verified. 'mixed' = computational suggestion with partial corpus support."
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low", "disputed"],
+          "description": "Overall confidence in this analysis. 'disputed' = multiple valid analyses exist and scholarly consensus is needed."
+        },
+        "reviewStatus": {
+          "type": "string",
+          "enum": ["pending-scholarly-review", "auto-validated", "scholarly-approved", "needs-revision"],
+          "description": "Current review state. All computational outputs start as 'pending-scholarly-review'. Only human verification changes this."
+        },
+        "sourceReferences": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "References to source files or ayah locations supporting this analysis"
+        },
+        "originalGloss": {
+          "type": ["string", "null"],
+          "description": "Editorial gloss from the original morphology index"
+        },
+        "grammaticalNotes": {
+          "type": ["string", "null"],
+          "description": "Any grammatical notes carried forward from prior analysis"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "generatedAt": { "type": "string", "format": "date-time" },
+        "workstream": { "type": "string" },
+        "phase": { "type": "string" },
+        "totalTerms": { "type": "integer" },
+        "methodology": { "type": "string" }
+      }
+    },
+    "entries": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/morphEntry" }
+    }
+  }
+}

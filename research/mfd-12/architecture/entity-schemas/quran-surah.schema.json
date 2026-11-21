@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/quran-surah",
+  "title": "MFD-12 QuranSurah (Immutable)",
+  "description": "Canonical metadata for a Quranic chapter. Immutable once created.",
+  "type": "object",
+  "required": ["id", "number", "nameArabic", "nameTransliterated", "nameEnglish", "revelationOrder", "revelationPlace", "totalVerses", "juzStart", "bismillahPresent", "corpusVersion", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^surah-[0-9]{3}$", "description": "Stable identifier: surah-{zero-padded number}" },
+    "number": { "type": "integer", "minimum": 1, "maximum": 114, "description": "Canonical surah position in muṣḥaf order" },
+    "nameArabic": { "type": "string", "minLength": 1, "description": "Arabic name with full tashkīl" },
+    "nameTransliterated": { "type": "string", "minLength": 1, "description": "ISO 233-2 scholarly transliteration" },
+    "nameEnglish": { "type": "string", "minLength": 1, "description": "Standard English rendering" },
+    "revelationOrder": { "type": "integer", "minimum": 1, "maximum": 114, "description": "Chronological revelation sequence" },
+    "revelationPlace": { "enum": ["MECCAN", "MEDINAN"], "description": "Place of primary revelation" },
+    "totalVerses": { "type": "integer", "minimum": 1, "description": "Verified against pinned corpus" },
+    "juzStart": { "type": "integer", "minimum": 1, "maximum": 30, "description": "Starting juz' number" },
+    "bismillahPresent": { "type": "boolean", "description": "Whether basmalah counts as verse 1" },
+    "corpusVersion": { "type": "string", "minLength": 1, "description": "Pinned corpus version (e.g., quran-json@3.1.2)" },
+    "schemaVersion": { "type": "string", "minLength": 1, "description": "Entity schema version (SemVer)" }
+  }
+}

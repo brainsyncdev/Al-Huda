@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/review-decision",
+  "title": "MFD-12 ReviewDecision (APPEND-ONLY)",
+  "description": "Immutable scholarly review action. NEVER modified or deleted. Corrections create new records with priorDecisionId.",
+  "type": "object",
+  "required": ["id", "targetEntityType", "targetEntityId", "decision", "rationale", "reviewerId", "reviewerRole", "decidedAt", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "targetEntityType": { "type": "string", "minLength": 1, "description": "Entity type being reviewed" },
+    "targetEntityId": { "type": "string", "minLength": 1 },
+    "decision": { "enum": ["APPROVE", "REQUEST_REVISION", "REJECT", "FLAG_FOR_DISCUSSION", "SUPERSEDE", "ENDORSE"] },
+    "rationale": { "type": "string", "minLength": 1, "description": "Detailed reasoning" },
+    "reviewerId": { "type": "string", "minLength": 1 },
+    "reviewerRole": { "enum": ["SCHOLAR", "EDITOR", "AUTOMATED", "PEER_REVIEWER"] },
+    "priorDecisionId": { "type": "string", "format": "uuid", "description": "If correcting/superseding, references prior ReviewDecision" },
+    "evidenceIds": { "type": "array", "items": { "type": "string", "format": "uuid" } },
+    "decidedAt": { "type": "string", "format": "date-time" },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  },
+  "if": { "properties": { "decision": { "const": "SUPERSEDE" } }, "required": ["decision"] },
+  "then": { "required": ["priorDecisionId"] }
+}

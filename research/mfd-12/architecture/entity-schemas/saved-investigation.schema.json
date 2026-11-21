@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/saved-investigation",
+  "title": "MFD-12 SavedInvestigation",
+  "description": "Persisted query or research state for later retrieval.",
+  "type": "object",
+  "required": ["id", "workspaceId", "title", "queryParameters", "createdBy", "createdAt", "updatedAt", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "workspaceId": { "type": "string", "pattern": "^ws-[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "queryParameters": { "type": "object", "description": "Serialized query/filter state" },
+    "resultSnapshot": { "type": "object", "description": "Cached results at save time" },
+    "notes": { "type": "string" },
+    "createdBy": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/scholarly-claim",
+  "title": "MFD-12 ScholarlyClaim",
+  "description": "Interpretive assertion about meaning, classification, or relationship. Always evidence-bearing.",
+  "type": "object",
+  "required": ["id", "claimType", "statement", "subjectEntityId", "evidenceIds", "confidence", "proposedBy", "reviewStatus", "createdAt", "updatedAt", "schemaVersion", "contentVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "claimType": { "enum": ["SEMANTIC", "TAXONOMIC", "MORPHOLOGICAL", "THEOLOGICAL", "LEGAL", "HISTORICAL", "LINGUISTIC"] },
+    "statement": { "type": "string", "minLength": 1, "description": "Precisely worded assertion" },
+    "subjectEntityId": { "type": "string", "minLength": 1, "description": "Entity this claim is about" },
+    "evidenceIds": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uuid" } },
+    "sourceIds": { "type": "array", "items": { "type": "string", "pattern": "^src-[a-z0-9-]+$" } },
+    "confidence": { "enum": ["HIGH", "MEDIUM", "LOW", "DISPUTED"] },
+    "alternativeViews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["statement", "sourceIds", "proponent"],
+        "additionalProperties": false,
+        "properties": {
+          "statement": { "type": "string", "minLength": 1 },
+          "sourceIds": { "type": "array", "items": { "type": "string" } },
+          "proponent": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "proposedBy": { "type": "string", "minLength": 1 },
+    "reviewStatus": { "enum": ["DRAFT", "PENDING_SCHOLARLY_REVIEW", "APPROVED", "REVISED", "DEPRECATED"] },
+    "supersededBy": { "type": "string", "format": "uuid" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "contentVersion": { "type": "integer", "minimum": 1 }
+  }
+}

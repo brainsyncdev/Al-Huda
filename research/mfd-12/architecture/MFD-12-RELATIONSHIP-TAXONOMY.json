@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "workstream": "MFD-12",
+  "generated_at": "2026-11-21T00:55:00+05:00[Asia/Karachi]",
+  "status": "draft-specification",
+  "relationship_types": [
+    {
+      "id": "DIRECT_QURANIC_REFERENCE",
+      "label": "Direct Quranic Reference",
+      "definition": "A relationship where a Topic or Dimension is explicitly grounded in one or more specific Quranic verses (ayahs). This is the primary evidentiary link between conceptual taxonomy and divine text.",
+      "semantic_scope": "Connects abstract knowledge nodes to their textual source. Must be verifiable via verse key.",
+      "allowed_source_types": ["topic", "dimension"],
+      "allowed_target_types": ["ayah_mapping", "verse_key"],
+      "directionality": "directed (source -> target)",
+      "cardinality": "one-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "quranic-explicit",
+        "required_fields": ["verse_key", "arabic_text_fragment", "translation_reference"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["quranic-explicit", "verified-extraction"]
+      },
+      "example": {
+        "source": "tawheed-fundamentals",
+        "target": "map-tawheed-fundamentals-0001",
+        "description": "Topic 'Tawheed Fundamentals' is directly referenced by this ayah mapping."
+      }
+    },
+    {
+      "id": "LEXICAL_RELATION",
+      "label": "Lexical Relation",
+      "definition": "A relationship based on shared Arabic root (jizr), morphological form, or semantic field within Quranic vocabulary. Captures etymological and linguistic connections.",
+      "semantic_scope": "Links concepts that share linguistic DNA (e.g., s-l-m linking salām, silm, islām). Critical for polysemy management.",
+      "allowed_source_types": ["topic", "dimension"],
+      "allowed_target_types": ["topic", "dimension"],
+      "directionality": "bidirectional (symmetric)",
+      "cardinality": "many-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "lexical-analysis",
+        "required_fields": ["root_letters", "morphological_form", "semantic_field"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["lexical-analysis", "quranic-arabic-study"]
+      },
+      "example": {
+        "source": "peace-treaties",
+        "target": "submission-islam",
+        "description": "Both derive from s-l-m root; polysemous relationship requires careful disambiguation."
+      }
+    },
+    {
+      "id": "MORPHOLOGICAL_RELATION",
+      "label": "Morphological Relation",
+      "definition": "A specialized lexical relationship indicating derivation through specific Arabic verb forms (awzan) or noun patterns. Distinguishes between Form I, II, III, IV, etc., nuances.",
+      "semantic_scope": "Captures causal, intensive, reciprocal, or reflexive nuances derived from form changes (e.g., ṣ-l-ḥ Form I vs Form IV).",
+      "allowed_source_types": ["topic"],
+      "allowed_target_types": ["topic"],
+      "directionality": "directed (derived -> base OR parallel)",
+      "cardinality": "one-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "morphological-analysis",
+        "required_fields": ["base_root", "derived_form", "grammatical_function"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["nahw-sarf-analysis", "scholarly-review"]
+      },
+      "example": {
+        "source": "reconciliation-sulh",
+        "target": "reform-islah",
+        "description": "Form IV (aṣlaḥa) derives from same root as Form I (ṣulḥ) but carries transitive/causative meaning."
+      }
+    },
+    {
+      "id": "THEMATIC_RELATION",
+      "label": "Thematic Relation",
+      "definition": "A conceptual relationship linking topics across different domains/dimensions based on shared thematic clusters or cross-cutting concerns (e.g., justice, mercy, covenant).",
+      "semantic_scope": "Enables horizontal traversal across vertical taxonomy silos. Represents 'SHARES_CONCEPT' semantics from existing data.",
+      "allowed_source_types": ["topic", "dimension"],
+      "allowed_target_types": ["topic", "dimension"],
+      "directionality": "bidirectional (symmetric)",
+      "cardinality": "many-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "editorial-classification",
+        "required_fields": ["theme_label", "thematic_rationale"]
+      },
+      "provenance_requirements": {
+        "must_cite": false,
+        "allowed_provenance_tags": ["editorial-classification", "cross-domain-analysis"]
+      },
+      "example": {
+        "source": "balance-moderation",
+        "target": "mizan-balance",
+        "description": "Cross-cutting theme of Mizan/Wasat spans ethics, worship, economics, and environment."
+      }
+    },
+    {
+      "id": "TAFSIR_SUPPORTED",
+      "label": "Tafsir Supported",
+      "definition": "A relationship validated or explained by classical/exegetical commentary. Indicates that the connection is not merely lexical or editorial but has scholarly interpretive backing.",
+      "semantic_scope": "Adds weight to non-obvious connections. Essential for resolving ambiguity in polysemous terms or establishing historical context.",
+      "allowed_source_types": ["topic", "dimension"],
+      "allowed_target_types": ["topic", "dimension", "ayah_mapping"],
+      "directionality": "directed (supported -> supporter)",
+      "cardinality": "many-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "tafsir-reference",
+        "required_fields": ["mufassir_name", "tafsir_work", "volume_page"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["classical-tafsir", "contemporary-tafsir", "scholarly-consensus"]
+      },
+      "example": {
+        "source": "quran-abrogation",
+        "target": "tafsir-methodology",
+        "description": "Concept of naskh is defined and bounded by tafsir literature; cannot be understood purely lexically."
+      }
+    },
+    {
+      "id": "EDITORIAL_CLASSIFICATION",
+      "label": "Editorial Classification",
+      "definition": "A structural relationship created by human curators or AI-assisted taxonomy builders to organize knowledge. Includes CONTAINS, PARENT_OF, and administrative groupings.",
+      "semantic_scope": "Provides hierarchical scaffolding. Distinct from semantic relationships; purely organizational.",
+      "allowed_source_types": ["domain", "dimension", "subdimension"],
+      "allowed_target_types": ["dimension", "subdimension", "topic"],
+      "directionality": "directed (parent -> child)",
+      "cardinality": "one-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "editorial-decision",
+        "required_fields": ["classification_rationale", "decision_date"]
+      },
+      "provenance_requirements": {
+        "must_cite": false,
+        "allowed_provenance_tags": ["editorial-classification", "ai-assisted", "pending-scholarly-review"]
+      },
+      "example": {
+        "source": "war-peace-conflict",
+        "target": "jihad-concept",
+        "description": "Domain contains dimension; structural containment, not semantic equivalence."
+      }
+    },
+    {
+      "id": "CONTRAST",
+      "label": "Contrast / Antonymy",
+      "definition": "A relationship defining opposition, negation, or complementary duality between concepts (e.g., Tawheed vs Shirk, Sabr vs Haste).",
+      "semantic_scope": "Critical for theological boundaries and ethical binaries. Helps define concepts via negation.",
+      "allowed_source_types": ["topic"],
+      "allowed_target_types": ["topic"],
+      "directionality": "bidirectional (symmetric)",
+      "cardinality": "one-to-one or one-to-few",
+      "evidence_requirements": {
+        "min_evidence_level": "quranic-explicit OR lexical-analysis",
+        "required_fields": ["contrast_type", "textual_basis"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["quranic-explicit", "lexical-analysis", "theological-doctrine"]
+      },
+      "example": {
+        "source": "tawheed-fundamentals",
+        "target": "shirk-prohibition",
+        "description": "Fundamental theological antithesis; defining one requires understanding the other."
+      }
+    },
+    {
+      "id": "CONTEMPORARY_APPLICATION",
+      "label": "Contemporary Application",
+      "definition": "Links foundational Quranic concepts to modern issues, technologies, or contexts. Bridges classical text with present-day relevance.",
+      "semantic_scope": "Enables practical guidance extraction. Must be clearly distinguished from eternal principles to avoid anachronism.",
+      "allowed_source_types": ["topic"],
+      "allowed_target_types": ["topic", "external_concept"],
+      "directionality": "directed (principle -> application)",
+      "cardinality": "one-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "fiqh-derived OR scholarly-review",
+        "required_fields": ["application_context", "derivation_methodology"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["fiqh-derived", "contemporary-fatwa", "scholarly-review"]
+      },
+      "example": {
+        "source": "riba-prohibition",
+        "target": "modern-banking",
+        "description": "Classical prohibition applied to contemporary financial instruments; requires fiqh methodology bridge."
+      }
+    },
+    {
+      "id": "NARRATIVE_RELATION",
+      "label": "Narrative Relation",
+      "definition": "Links entities within prophetic stories, historical events, or parables. Captures chronological, causal, or character-based connections.",
+      "semantic_scope": "Preserves story coherence separate from doctrinal extraction. Allows narrative traversal without conflating with legal/theological edges.",
+      "allowed_source_types": ["topic", "narrative_entity"],
+      "allowed_target_types": ["topic", "narrative_entity"],
+      "directionality": "directed (chronological/causal) or bidirectional (associative)",
+      "cardinality": "many-to-many",
+      "evidence_requirements": {
+        "min_evidence_level": "quranic-narrative",
+        "required_fields": ["narrative_context", "sequence_position"]
+      },
+      "provenance_requirements": {
+        "must_cite": true,
+        "allowed_provenance_tags": ["quranic-narrative", "israiliyyat-caution", "historical-context"]
+      },
+      "example": {
+        "source": "musa-story",
+        "target": "firawn-oppression",
+        "description": "Prophet Musa's narrative arc is causally linked to Firawn's tyranny; inseparable in Quranic telling."
+      }
+    }
+  ],
+  "metadata": {
+    "total_relationship_types": 9,
+    "version_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-11-21",
+        "author": "WS2-Agent-95",
+        "changes": "Initial taxonomy definition based on MFD-11 synthesis and existing relationships.json analysis."
+      }
+    ]
+  }
+}

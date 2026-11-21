@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/research-annotation",
+  "title": "MFD-12 ResearchAnnotation",
+  "description": "User note attached to any entity within a workspace.",
+  "type": "object",
+  "required": ["id", "workspaceId", "targetEntityType", "targetEntityId", "content", "annotationType", "createdBy", "createdAt", "updatedAt", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "workspaceId": { "type": "string", "pattern": "^ws-[a-z0-9-]+$" },
+    "targetEntityType": { "type": "string", "minLength": 1 },
+    "targetEntityId": { "type": "string", "minLength": 1 },
+    "content": { "type": "string", "minLength": 1, "description": "Markdown annotation text" },
+    "annotationType": { "enum": ["NOTE", "QUESTION", "INSIGHT", "TODO", "BOOKMARK"] },
+    "createdBy": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/relationship",
+  "title": "MFD-12 Relationship",
+  "description": "Typed edge between any two taxonomy or knowledge entities.",
+  "type": "object",
+  "required": ["id", "sourceEntityId", "targetEntityId", "relationshipType", "bidirectional", "provenance", "reviewStatus", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 1, "description": "Deterministic composite or UUID" },
+    "sourceEntityId": { "type": "string", "minLength": 1 },
+    "targetEntityId": { "type": "string", "minLength": 1 },
+    "relationshipType": { "enum": ["DIRECT_QURANIC_REFERENCE", "LEXICAL_RELATION", "MORPHOLOGICAL_RELATION", "THEMATIC_RELATION", "TAFSIR_SUPPORTED", "EDITORIAL_CLASSIFICATION", "CONTRAST", "CONTEMPORARY_APPLICATION", "NARRATIVE_RELATION", "CUSTOM"], "description": "Canonical types from MFD-12-RELATIONSHIP-TAXONOMY.json (WS2). Legacy MFD-11 types map as: CONTAINS→EDITORIAL_CLASSIFICATION, CROSS_REFERENCES→THEMATIC_RELATION, SHARES_CONCEPT→THEMATIC_RELATION." },
+    "customType": { "type": "string", "description": "Required when relationshipType is CUSTOM" },
+    "description": { "type": "string" },
+    "weight": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+    "bidirectional": { "type": "boolean" },
+    "provenance": {
+      "type": "object",
+      "required": ["origin", "method", "assertedAt", "assertedBy"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "type": "string", "minLength": 1 },
+        "method": { "type": "string", "minLength": 1 },
+        "corpusVersion": { "type": "string" },
+        "assertedAt": { "type": "string", "format": "date-time" },
+        "assertedBy": { "type": "string", "minLength": 1 }
+      }
+    },
+    "reviewStatus": { "enum": ["DRAFT", "PENDING_SCHOLARLY_REVIEW", "APPROVED", "REVISED", "DEPRECATED"] },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  },
+  "if": { "properties": { "relationshipType": { "const": "CUSTOM" } } },
+  "then": { "required": ["customType"] }
+}

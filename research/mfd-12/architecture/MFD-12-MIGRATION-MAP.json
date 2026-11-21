@@ -1,0 +1,240 @@
+{
+  "schemaVersion": "1.0.0",
+  "workstream": "MFD-12",
+  "workPackage": "WS7 — Migration & Compatibility",
+  "generatedAt": "2026-11-21T00:35:00+05:00[Asia/Karachi]",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "productionInventory": {
+    "dataDirectories": ["taxonomy", "root-occurrences", "audit"],
+    "entities": [
+      {
+        "legacySource": "data/taxonomy/topics.json",
+        "recordCount": 184,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["Topic", "Concept"],
+        "mappingType": "partial-split",
+        "notes": "Current topics conflate thematic subjects (Topic) with abstract semantic units (Concept). MFD-12 separates these into two entities."
+      },
+      {
+        "legacySource": "data/taxonomy/domains.json",
+        "recordCount": 20,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["Domain"],
+        "mappingType": "direct",
+        "notes": "Direct mapping. Missing required fields: provenance (object), reviewStatus (enum), schemaVersion, contentVersion."
+      },
+      {
+        "legacySource": "data/taxonomy/dimensions.json",
+        "recordCount": 103,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["Dimension"],
+        "mappingType": "direct",
+        "notes": "Direct mapping. Missing required fields: provenance, reviewStatus, schemaVersion, contentVersion."
+      },
+      {
+        "legacySource": "data/taxonomy/subdimensions.json",
+        "recordCount": 25,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["Dimension.subdimensionIds (embedded)"],
+        "mappingType": "embed-or-elevate",
+        "notes": "Unresolved question in CANONICAL-DATA-MODEL.md §7. Currently a separate file; proposed model embeds them in Dimension or leaves ambiguous."
+      },
+      {
+        "legacySource": "data/taxonomy/relationships.json",
+        "recordCount": 150,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["Relationship"],
+        "mappingType": "direct-with-transform",
+        "notes": "Legacy types CONTAINS, CROSS_REFERENCES, SHARES_CONCEPT map to canonical RelationshipTypeEnum. Shares_concept becomes RELATED or CUSTOM."
+      },
+      {
+        "legacySource": "data/taxonomy/topic-ayah-mappings.json",
+        "recordCount": 789,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["Topic.ayahMappings (embedded array)"],
+        "mappingType": "embed",
+        "notes": "Currently standalone records; canonical model embeds them as TopicAyahMappingObj inside Topic. Requires restructuring from flat array to nested per-topic."
+      },
+      {
+        "legacySource": "data/root-occurrences/*.json",
+        "recordCount": 1576,
+        "legacySchema": "adhoc-sprint48",
+        "canonicalTarget": ["LexicalEntry", "RootAnalysis", "Lemma"],
+        "mappingType": "decompose",
+        "notes": "Each root-occurrence file contains an entry object and occurrences array. Must be decomposed into LexicalEntry (per lemma), RootAnalysis (per root), and Lemma (per form occurrence set)."
+      },
+      {
+        "legacySource": "data/taxonomy/surahs-meta.json",
+        "recordCount": 114,
+        "legacySchema": "adhoc-v1",
+        "canonicalTarget": ["QuranSurah"],
+        "mappingType": "direct",
+        "notes": "Maps to QuranSurah. Needs field alignment and corpusVersion pinning."
+      },
+      {
+        "legacySource": "data/taxonomy/batch*.json",
+        "recordCount": 12,
+        "legacySchema": "build-artifacts",
+        "canonicalTarget": [],
+        "mappingType": "discard",
+        "notes": "Build artifacts used to generate topics.json. Not migrated; retained only for provenance audit."
+      },
+      {
+        "legacySource": "data/audit/*.json",
+        "recordCount": 11,
+        "legacySchema": "audit-reports",
+        "canonicalTarget": [],
+        "mappingType": "archive",
+        "notes": "Historical audit reports. Archived, not migrated into canonical entities."
+      }
+    ]
+  },
+  "phantomReferences": {
+    "totalRelatedTopicIdRefs": 370,
+    "phantomRelatedTopicIds": 154,
+    "phantomPercentage": 41.6,
+    "subdimensionTopicRefsTotal": 115,
+    "subdimensionPhantomTopicRefs": 89,
+    "subdimensionPhantomPercentage": 77.4,
+    "mappingPhantomTopicIds": 0,
+    "relationshipPhantomSources": 0,
+    "relationshipPhantomTargets": 0,
+    "summary": "High phantom rate in relatedTopicIds (41.6%) and subdimension->topic refs (77.4%). These are ghost references pointing to topics that exist conceptually but were never materialized in topics.json. Core structural refs (domain, dimension, relationship endpoints, mapping topicIds) have 0 phantoms."
+  },
+  "fieldMappings": {
+    "Topic": {
+      "id": {"source": "topics.id", "transform": "prefix 'topic-' if not already present"},
+      "titleEn": {"source": "topics.title", "transform": "direct"},
+      "titleAr": {"source": "topics.arabicTitle", "transform": "direct"},
+      "titleUr": {"source": "topics.urduTitle", "transform": "decode mojibake if present"},
+      "description": {"source": "topics.description", "transform": "direct"},
+      "conceptIds": {"source": "NONE", "transform": "empty array initially; populated during Concept extraction phase"},
+      "parentDomainId": {"source": "topics.parentDomainId", "transform": "prefix 'dom-'"},
+      "parentDimensionId": {"source": "topics.parentDimensionId", "transform": "prefix 'dim-'"},
+      "parentSubdimensionId": {"source": "topics.parentSubdimensionId", "transform": "direct string or null"},
+      "relatedTopicIds": {"source": "topics.relatedTopicIds", "transform": "filter out 154 phantom refs; prefix surviving IDs with 'topic-'"},
+      "searchAliases": {"source": "topics.searchAliases", "transform": "direct"},
+      "specialized": {"source": "topics.specialized", "transform": "direct boolean"},
+      "ayahMappings": {"source": "topic-ayah-mappings.json filtered by topicId", "transform": "nest matching mappings into this array; add evidenceClass default THEMATIC"},
+      "provenance": {"source": "topics.provenance", "transform": "convert string 'pending-scholarly-review' to ProvenanceObject with origin='legacy-taxonomy', method='batch-generation', assertedAt=file mtime, assertedBy='system'"},
+      "reviewStatus": {"source": "DEFAULT", "transform": "PENDING_SCHOLARLY_REVIEW"},
+      "createdAt": {"source": "DEFAULT", "transform": "ISO 8601 migration timestamp"},
+      "updatedAt": {"source": "DEFAULT", "transform": "ISO 8601 migration timestamp"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"},
+      "contentVersion": {"source": "DEFAULT", "transform": 1}
+    },
+    "Domain": {
+      "id": {"source": "domains.id", "transform": "prefix 'dom-'"},
+      "titleEn": {"source": "domains.title", "transform": "direct"},
+      "titleAr": {"source": "domains.arabicTitle", "transform": "direct"},
+      "titleUr": {"source": "domains.urduTitle", "transform": "direct"},
+      "description": {"source": "domains.description", "transform": "direct"},
+      "dimensionIds": {"source": "domains.dimensionIds", "transform": "prefix each with 'dim-'"},
+      "aliases": {"source": "NONE", "transform": "empty array"},
+      "provenance": {"source": "DEFAULT", "transform": "{origin:'legacy-taxonomy',method:'manual-curation',assertedAt:migration-timestamp,assertedBy:'ws7-migration'}"},
+      "reviewStatus": {"source": "DEFAULT", "transform": "PENDING_SCHOLARLY_REVIEW"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"},
+      "contentVersion": {"source": "DEFAULT", "transform": 1}
+    },
+    "Dimension": {
+      "id": {"source": "dimensions.id", "transform": "prefix 'dim-'"},
+      "titleEn": {"source": "dimensions.title", "transform": "direct"},
+      "titleAr": {"source": "dimensions.arabicTitle", "transform": "direct"},
+      "titleUr": {"source": "dimensions.urduTitle", "transform": "direct"},
+      "description": {"source": "dimensions.description", "transform": "direct"},
+      "parentDomainId": {"source": "dimensions.parentDomainId", "transform": "prefix 'dom-'"},
+      "subdimensionIds": {"source": "dimensions.subdimensionIds", "transform": "direct strings"},
+      "topicIds": {"source": "dimensions.topicIds", "transform": "prefix each with 'topic-'; filter 89 phantoms from subdimension cross-refs"},
+      "aliases": {"source": "dimensions.aliases", "transform": "direct"},
+      "provenance": {"source": "DEFAULT", "transform": "standard provenance object"},
+      "reviewStatus": {"source": "DEFAULT", "transform": "PENDING_SCHOLARLY_REVIEW"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"},
+      "contentVersion": {"source": "DEFAULT", "transform": 1}
+    },
+    "Relationship": {
+      "id": {"source": "relationships.id", "transform": "keep existing composite IDs; ensure format matches rel-{source}-{target}-{type}"},
+      "sourceEntityId": {"source": "relationships.sourceId", "transform": "prefix based on entity type resolution (dom-, dim-, topic-)"},
+      "targetEntityId": {"source": "relationships.targetId", "transform": "same as sourceEntityId"},
+      "relationshipType": {"source": "relationships.type", "transform": "CONTAINS->CONTAINS, CROSS_REFERENCES->CROSS_REFERENCES, SHARES_CONCEPT->RELATED (or CUSTOM with customType='SHARES_CONCEPT')"},
+      "customType": {"source": "CONDITIONAL", "transform": "set to 'SHARES_CONCEPT' when legacy type was SHARES_CONCEPT and mapped to CUSTOM"},
+      "description": {"source": "relationships.description", "transform": "direct"},
+      "weight": {"source": "DEFAULT", "transform": null},
+      "bidirectional": {"source": "DEFAULT", "transform": "true for CROSS_REFERENCES and SHARES_CONCEPT; false for CONTAINS"},
+      "provenance": {"source": "relationships.provenance", "transform": "convert string to ProvenanceObject"},
+      "reviewStatus": {"source": "DEFAULT", "transform": "PENDING_SCHOLARLY_REVIEW"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"}
+    },
+    "LexicalEntry": {
+      "id": {"source": "root-occurrences.entry.slug", "transform": "prefix 'lex-'"},
+      "lemmaArabic": {"source": "root-occurrences.entry.roots[0]", "transform": "direct Arabic root"},
+      "lemmaTransliterated": {"source": "DERIVED", "transform": "generate ISO 233-2 transliteration from Arabic root"},
+      "rootIds": {"source": "GENERATED", "transform": "create RootAnalysis entity for each root; reference its UUID"},
+      "primaryRootId": {"source": "GENERATED", "transform": "first generated RootAnalysis.id"},
+      "rootDisputed": {"source": "DEFAULT", "transform": "false unless multiple roots in entry.roots"},
+      "partOfSpeech": {"source": "DEFAULT", "transform": "OTHER (requires morphological analysis to determine)"},
+      "gloss": {"source": "root-occurrences.entry.title", "transform": "{lexical: entry.title, contextualSenses: [], editorialGloss: entry.title}"},
+      "contextualSenses": {"source": "DEFAULT", "transform": "empty array; populated during scholarly review"},
+      "morphConfidence": {"source": "root-occurrences.entry.reviewState", "transform": "auto-accepted -> MEDIUM; manual-reviewed -> HIGH"},
+      "provenance": {"source": "root-occurrences.entry", "transform": "{origin: entry.assertedBy, method: 'automated-morphology-extraction', assertedAt: entry.assertedAt, assertedBy: entry.assertedBy}"},
+      "reviewStatus": {"source": "DEFAULT", "transform": "PENDING_SCHOLARLY_REVIEW"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"},
+      "contentVersion": {"source": "DEFAULT", "transform": 1}
+    },
+    "RootAnalysis": {
+      "id": {"source": "GENERATED", "transform": "UUID v4 prefixed 'ra-'"},
+      "lexicalEntryId": {"source": "PARENT", "transform": "reference parent LexicalEntry.id"},
+      "rootArabic": {"source": "root-occurrences.entry.roots[n]", "transform": "hyphenate triliteral: ج-ه-د"},
+      "rootTransliterated": {"source": "DERIVED", "transform": "ISO 233-2 transliteration"},
+      "sourceIds": {"source": "DEFAULT", "transform": "empty array until Source entities created"},
+      "confidence": {"source": "root-occurrences.entry.reviewState", "transform": "auto-accepted -> MEDIUM"},
+      "assertedBy": {"source": "root-occurrences.entry.assertedBy", "transform": "direct"},
+      "assertedAt": {"source": "root-occurrences.entry.assertedAt", "transform": "ISO 8601"},
+      "reviewStatus": {"source": "DEFAULT", "transform": "PENDING_SCHOLARLY_REVIEW"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"}
+    },
+    "Lemma": {
+      "id": {"source": "GENERATED", "transform": "lem-{root}-{form-code} from includedLemmas index"},
+      "lexicalEntryId": {"source": "PARENT", "transform": "parent LexicalEntry.id"},
+      "rootAnalysisId": {"source": "PARENT", "transform": "parent RootAnalysis.id"},
+      "formArabic": {"source": "root-occurrences.entry.includedLemmas[n]", "transform": "direct"},
+      "occurrences": {"source": "root-occurrences.occurrences[]", "transform": "map {surah, ayah} to verseId '{surah}:{ayah}'; wordPosition defaults to 0 pending token-level analysis"},
+      "totalOccurrences": {"source": "COMPUTED", "transform": "occurrences.length"},
+      "distinctAyahCount": {"source": "COMPUTED", "transform": "unique verseIds count"},
+      "corpusVersion": {"source": "DEFAULT", "transform": "quran-json@3.1.2"},
+      "schemaVersion": {"source": "DEFAULT", "transform": "1.0.0"}
+    }
+  },
+  "newEntitiesWithoutLegacyData": [
+    "Concept",
+    "QuranVerse",
+    "Translation",
+    "MorphologicalAnalysis",
+    "Source",
+    "EvidenceRecord",
+    "ScholarlyClaim",
+    "ReviewDecision",
+    "LearningPath",
+    "LearningModule",
+    "ResearchWorkspace",
+    "ResearchAnnotation",
+    "SavedInvestigation"
+  ],
+  "conceptDerivationStrategy": {
+    "approach": "extract-from-topics",
+    "description": "Concepts do not exist in legacy data. They must be derived by analyzing existing topics and identifying the underlying abstract semantic units. For example, topic 'tawheed-fundamentals' expresses concept 'cpt-divine-unity'. Multiple topics may express the same concept.",
+    "steps": [
+      "1. Cluster existing topics by shared relatedTopicIds and overlapping ayahMappings",
+      "2. For each cluster, identify the abstract semantic kernel (e.g., 'mercy', 'justice', 'monotheism')",
+      "3. Create Concept entities with cpt-{slug} IDs",
+      "4. Link Topics to Concepts via Topic.conceptIds and Relationship(type=EXPRESSES)",
+      "5. Existing topic IDs remain unchanged (with 'topic-' prefix added); they do NOT become concepts"
+    ],
+    "riskNote": "This is a scholarly task, not a mechanical one. Automated extraction will produce candidate concepts requiring human review."
+  },
+  "relationshipTypeMapping": {
+    "CONTAINS": "CONTAINS (direct match)",
+    "CROSS_REFERENCES": "CROSS_REFERENCES (direct match, maps to canonical enum)",
+    "SHARES_CONCEPT": "RELATED or CUSTOM(customType='SHARES_CONCEPT') — canonical model uses RELATED for general association; SHARES_CONCEPT semantics better served by explicit Concept entities with EXPRESSES relationships"
+  }
+}

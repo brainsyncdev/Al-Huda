@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/concept",
+  "title": "MFD-12 Concept",
+  "description": "Abstract semantic unit. Distinct from Topic: language-independent meaning node.",
+  "type": "object",
+  "required": ["id", "labelEn", "definition", "provenance", "reviewStatus", "createdAt", "updatedAt", "schemaVersion", "contentVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^cpt-[a-z0-9-]+$" },
+    "labelEn": { "type": "string", "minLength": 1 },
+    "labelAr": { "type": "string" },
+    "labelUr": { "type": "string" },
+    "definition": { "type": "string", "minLength": 1, "description": "Precise semantic definition" },
+    "semanticField": { "type": "string" },
+    "relatedConceptIds": { "type": "array", "items": { "type": "string", "pattern": "^cpt-[a-z0-9-]+$" } },
+    "lexicalEntryIds": { "type": "array", "items": { "type": "string", "pattern": "^lex-[a-z0-9-]+$" } },
+    "provenance": {
+      "type": "object",
+      "required": ["origin", "method", "assertedAt", "assertedBy"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "type": "string", "minLength": 1 },
+        "method": { "type": "string", "minLength": 1 },
+        "corpusVersion": { "type": "string" },
+        "assertedAt": { "type": "string", "format": "date-time" },
+        "assertedBy": { "type": "string", "minLength": 1 }
+      }
+    },
+    "reviewStatus": { "enum": ["DRAFT", "PENDING_SCHOLARLY_REVIEW", "APPROVED", "REVISED", "DEPRECATED"] },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "schemaVersion": { "type": "string", "minLength": 1 },
+    "contentVersion": { "type": "integer", "minimum": 1 }
+  }
+}

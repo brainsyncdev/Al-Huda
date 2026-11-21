@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/source",
+  "title": "MFD-12 Source",
+  "description": "Bibliographic reference for tafsīr, lexicon, hadith collection, or scholarly work.",
+  "type": "object",
+  "required": ["id", "title", "author", "type", "language", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^src-[a-z0-9-]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "author": { "type": "string", "minLength": 1 },
+    "type": { "enum": ["TAFSIR", "LEXICON", "HADITH_COLLECTION", "GRAMMAR", "MODERN_SCHOLARSHIP", "CORPUS", "OTHER"] },
+    "language": { "type": "string", "minLength": 1, "description": "ISO 639-1 or ar/fa/ur" },
+    "edition": { "type": "string" },
+    "publicationYear": { "type": "integer", "minimum": 0 },
+    "url": { "type": "string", "format": "uri" },
+    "licenseType": { "type": "string" },
+    "reliabilityGrade": { "enum": ["AUTHENTIC", "GOOD", "WEAK", "CONTEMPORARY", "UNGRADED"] },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  }
+}

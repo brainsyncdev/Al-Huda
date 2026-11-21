@@ -1,0 +1,5098 @@
+{
+  "metadata": {
+    "totalTerms": 649,
+    "termsWithViolations": 245,
+    "termsCompliant": 404,
+    "complianceRate": "62.2%",
+    "generatedAt": "2026-11-20T19:37:10.776Z",
+    "standard": "ISO 233-2:1993"
+  },
+  "violationSummary": {
+    "apostrophe-hamza": 89,
+    "backtick-ayn": 0,
+    "doubled-al-lam": 0,
+    "dh-for-dhal": 17,
+    "th-for-tha": 30,
+    "sh-for-shin": 53,
+    "gh-for-ghayn": 29,
+    "kh-for-kha": 28,
+    "ascii-long-vowel": 41
+  },
+  "migrations": {
+    "-abasa": {
+      "arabic": "عَبَسَ",
+      "currentTransliteration": "'abasa",
+      "proposedTransliteration": "ʾabasa",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "-amad-mumaddadah": {
+      "arabic": "عَمَدٖ",
+      "currentTransliteration": "'amad mumaddadah",
+      "proposedTransliteration": "ʾamad mumaddadah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "-ihn-manfush": {
+      "arabic": "ٱلۡمَنفُوشِ",
+      "currentTransliteration": "'ihn manfush",
+      "proposedTransliteration": "ʾihn manfuš",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "-iqab": {
+      "arabic": "ٱلۡعِقَابِ",
+      "currentTransliteration": "'iqab",
+      "proposedTransliteration": "ʾiqab",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "-ishah-radiyah": {
+      "arabic": "عِيشَةٖ",
+      "currentTransliteration": "'ishah radiyah",
+      "proposedTransliteration": "ʾišah radiyah",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "a-ilan-fa-aghna": {
+      "arabic": "عَآئِلٗا",
+      "currentTransliteration": "a'ilan fa-aghna",
+      "proposedTransliteration": "aʾilan fa-aġna",
+      "issues": [
+        "apostrophe-hamza",
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ababil": {
+      "arabic": "أَبَابِيلَ",
+      "currentTransliteration": "ababil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "abd-allah": {
+      "arabic": "عَبۡدُ",
+      "currentTransliteration": "abd Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "abqari": {
+      "arabic": "وَعَبۡقَرِيٍّ",
+      "currentTransliteration": "abqari",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ad-dallin": {
+      "arabic": "ٱلضَّآلِّينَ",
+      "currentTransliteration": "ad-dallin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "adhab": {
+      "arabic": "ٱلۡعَذَابِ",
+      "currentTransliteration": "adhab",
+      "proposedTransliteration": "aḏab",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "afil": {
+      "arabic": "أَفَلَ",
+      "currentTransliteration": "afil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "afwajan": {
+      "arabic": "أَفۡوَاجٗا",
+      "currentTransliteration": "afwajan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ahl-al-taqwa": {
+      "arabic": "ٱلتَّقۡوَىٰ",
+      "currentTransliteration": "ahl al-taqwa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ahmad": {
+      "arabic": "أَحۡمَدُۖ",
+      "currentTransliteration": "Ahmad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ahzab": {
+      "arabic": "ٱلۡأَحۡزَابَ",
+      "currentTransliteration": "ahzab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ajal": {
+      "arabic": "أَجَلٗاۖ",
+      "currentTransliteration": "ajal",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ajal-allah": {
+      "arabic": "أَجَلٖ",
+      "currentTransliteration": "ajal Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "akhbaraha": {
+      "arabic": "أَخۡبَارَهَا",
+      "currentTransliteration": "akhbaraha",
+      "proposedTransliteration": "aḫbaraha",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "akinnah": {
+      "arabic": "أَكِنَّةً",
+      "currentTransliteration": "akinnah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al--alamin": {
+      "arabic": "ٱلۡعَٰلَمِينَ",
+      "currentTransliteration": "al-'alamin",
+      "proposedTransliteration": "al-ʾalamin",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al--aqabah": {
+      "arabic": "ٱلۡعَقَبَةَ",
+      "currentTransliteration": "al-'aqabah",
+      "proposedTransliteration": "al-ʾaqabah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al--asr": {
+      "arabic": "وَٱلۡعَصۡرِ",
+      "currentTransliteration": "al-'asr",
+      "proposedTransliteration": "al-ʾasr",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al--usr": {
+      "arabic": "ٱلۡعُسۡرِ",
+      "currentTransliteration": "al-'usr",
+      "proposedTransliteration": "al-ʾusr",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al--usra": {
+      "arabic": "لِلۡعُسۡرَىٰ",
+      "currentTransliteration": "al-'usra",
+      "proposedTransliteration": "al-ʾusra",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-abtar": {
+      "arabic": "ٱلۡأَبۡتَرُ",
+      "currentTransliteration": "al-abtar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-amanat": {
+      "arabic": "ٱلۡأَمَٰنَٰ",
+      "currentTransliteration": "al-amanat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-ashqa": {
+      "arabic": "ٱلۡأَشۡقَى",
+      "currentTransliteration": "al-ashqa",
+      "proposedTransliteration": "al-ašqa",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "al-asma-al-husna": {
+      "arabic": "ٱلۡحُسۡنَىٰۚ",
+      "currentTransliteration": "al-asma al-husna",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-ayah-al-kubra": {
+      "arabic": "ٱلۡكُبۡرَىٰ",
+      "currentTransliteration": "al-ayah al-kubra",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-azifah": {
+      "arabic": "ٱلۡأٓزِفَةِ",
+      "currentTransliteration": "al-azifah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-balad": {
+      "arabic": "ٱلۡبَلَدِ",
+      "currentTransliteration": "al-balad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-bayt-al-ma-mur": {
+      "arabic": "وَٱلۡبَيۡتِ",
+      "currentTransliteration": "al-bayt al-ma'mur",
+      "proposedTransliteration": "al-bayt al-maʾmur",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-bayyinah": {
+      "arabic": "ٱلۡبَيِّنَةُ",
+      "currentTransliteration": "al-bayyinah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-birr": {
+      "arabic": "رَّبِّهِمۡ",
+      "currentTransliteration": "al-birr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-buruj": {
+      "arabic": "ٱلۡبُرُوجِ",
+      "currentTransliteration": "al-buruj",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-darki": {
+      "arabic": "ٱلدَّرۡكِ",
+      "currentTransliteration": "al-darki",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-din": {
+      "arabic": "بِٱلدِّينِ",
+      "currentTransliteration": "al-din",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-duha": {
+      "arabic": "وَٱلضُّحَىٰ",
+      "currentTransliteration": "al-duha",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-fahishah": {
+      "arabic": "ٱلۡفَٰحِشَة",
+      "currentTransliteration": "al-fahishah",
+      "proposedTransliteration": "al-fahišah",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "al-fajr": {
+      "arabic": "وَٱلۡفَجۡرِ",
+      "currentTransliteration": "al-fajr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-fath": {
+      "arabic": "وَٱلۡفَتۡحُ",
+      "currentTransliteration": "al-fath",
+      "proposedTransliteration": "al-faṯ",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "al-fil": {
+      "arabic": "ٱلۡفِيلِ",
+      "currentTransliteration": "al-fil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-hamd": {
+      "arabic": "ٱلۡحَمۡدُ",
+      "currentTransliteration": "al-hamd",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-haqq": {
+      "arabic": "بِٱلۡحَقِّ",
+      "currentTransliteration": "al-haqq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-haqqah": {
+      "arabic": "ٱلۡحَآقَّةُ",
+      "currentTransliteration": "al-haqqah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-humazah": {
+      "arabic": "هُمَزَةٖ",
+      "currentTransliteration": "al-humazah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-hutamah": {
+      "arabic": "ٱلۡحُطَمَةِ",
+      "currentTransliteration": "al-hutamah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-jahim": {
+      "arabic": "ٱلۡجَحِيمَ",
+      "currentTransliteration": "al-jahim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-judiyy": {
+      "arabic": "ٱلۡجُودِيِّۖ",
+      "currentTransliteration": "al-Judiyy",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-kawthar": {
+      "arabic": "ٱلۡكَوۡثَرَ",
+      "currentTransliteration": "al-kawthar",
+      "proposedTransliteration": "al-kawṯar",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "al-khannas": {
+      "arabic": "ٱلۡخَنَّاسِ",
+      "currentTransliteration": "al-khannas",
+      "proposedTransliteration": "al-ḫannas",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "al-khunnas": {
+      "arabic": "بِٱلۡخُنَّسِ",
+      "currentTransliteration": "al-khunnas",
+      "proposedTransliteration": "al-ḫunnas",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "al-layl": {
+      "arabic": "وَٱلَّيۡلِ",
+      "currentTransliteration": "al-layl",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-lumazah": {
+      "arabic": "لُّمَزَةٍ",
+      "currentTransliteration": "al-lumazah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-ma-un": {
+      "arabic": "ٱلۡمَاعُونَ",
+      "currentTransliteration": "al-ma'un",
+      "proposedTransliteration": "al-maʾun",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-maghdub": {
+      "arabic": "ٱلۡمَغۡضُوبِ",
+      "currentTransliteration": "al-maghdub",
+      "proposedTransliteration": "al-maġdub",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "al-maw-udah": {
+      "arabic": "ٱلۡمَوۡءُۥدَةُ",
+      "currentTransliteration": "al-maw'udah",
+      "proposedTransliteration": "al-mawʾudah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-miskin": {
+      "arabic": "ٱلۡمِسۡكِينِ",
+      "currentTransliteration": "al-miskin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-muddaththir": {
+      "arabic": "ٱلۡمُدَّثِّرُ",
+      "currentTransliteration": "al-muddaththir",
+      "proposedTransliteration": "al-muddaṯṯir",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "al-mughirat": {
+      "arabic": "فَٱلۡمُغِيرَٰتِ",
+      "currentTransliteration": "al-mughirat",
+      "proposedTransliteration": "al-muġirat",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "al-mujahidoona": {
+      "arabic": "ٱلۡمُجَٰهِدُونَ",
+      "currentTransliteration": "al-mujahidoona",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "al-munafiqeen": {
+      "arabic": "ٱلۡمُنَٰفِقِينَ",
+      "currentTransliteration": "al-munafiqeen",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "al-muriyat": {
+      "arabic": "فَٱلۡمُورِيَٰتِ",
+      "currentTransliteration": "al-muriyat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-mursalat": {
+      "arabic": "وَٱلۡمُرۡسَلَٰتِ",
+      "currentTransliteration": "al-mursalat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-mustad-afeen": {
+      "arabic": "ٱلۡمُسۡتَضۡعَفِي",
+      "currentTransliteration": "al-mustad'afeen",
+      "proposedTransliteration": "al-mustadʾafeen",
+      "issues": [
+        "apostrophe-hamza",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "al-mustad-afeena": {
+      "arabic": "ٱلۡمُسۡتَضۡعَفِينَ",
+      "currentTransliteration": "al-mustad'afeena",
+      "proposedTransliteration": "al-mustadʾafeena",
+      "issues": [
+        "apostrophe-hamza",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "al-mutaffifin": {
+      "arabic": "لِّلۡمُطَفِّفِينَ",
+      "currentTransliteration": "al-mutaffifin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-muttaqeen": {
+      "arabic": "ٱلۡمُتَّقِينَ",
+      "currentTransliteration": "al-muttaqeen",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "al-muzzammil": {
+      "arabic": "ٱلۡمُزَّمِّلُ",
+      "currentTransliteration": "al-muzzammil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-na-im": {
+      "arabic": "ٱلنَّعِيمِ",
+      "currentTransliteration": "al-na'im",
+      "proposedTransliteration": "al-naʾim",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-naffathat-fi-al--uqad": {
+      "arabic": "ٱلنَّفَّـٰثَٰتِ",
+      "currentTransliteration": "al-naffathat fi al-'uqad",
+      "proposedTransliteration": "al-naffaṯat fi al-ʾuqad",
+      "issues": [
+        "apostrophe-hamza",
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "al-nafs-al-lawwamah": {
+      "arabic": "ٱللَّوَّامَةِ",
+      "currentTransliteration": "al-nafs al-lawwamah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-nafs-al-mutma-innah": {
+      "arabic": "ٱلۡمُطۡمَئِنَّةُ",
+      "currentTransliteration": "al-nafs al-mutma'innah",
+      "proposedTransliteration": "al-nafs al-mutmaʾinnah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-najm-al-thaqib": {
+      "arabic": "ٱلثَّاقِبُ",
+      "currentTransliteration": "al-najm al-thaqib",
+      "proposedTransliteration": "al-najm al-ṯaqib",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "al-nashitat": {
+      "arabic": "وَٱلنَّـٰشِطَٰتِ",
+      "currentTransliteration": "al-nashitat",
+      "proposedTransliteration": "al-našitat",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "al-nasiyah": {
+      "arabic": "بِٱلنَّاصِيَةِ",
+      "currentTransliteration": "al-nasiyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-nazi-at": {
+      "arabic": "وَٱلنَّـٰزِعَٰتِ",
+      "currentTransliteration": "al-nazi'at",
+      "proposedTransliteration": "al-naziʾat",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-nusub": {
+      "arabic": "ٱلنُّصُبِ",
+      "currentTransliteration": "al-nusub",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-qalam": {
+      "arabic": "بِٱلۡقَلَمِ",
+      "currentTransliteration": "al-qalam",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-qari-ah": {
+      "arabic": "بِٱلۡقَارِعَةِ",
+      "currentTransliteration": "al-qari'ah",
+      "proposedTransliteration": "al-qariʾah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-qaryatayn": {
+      "arabic": "ٱلۡقَرۡيَتَيۡنِ",
+      "currentTransliteration": "al-qaryatayn",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-qubur": {
+      "arabic": "ٱلۡقُبُورُ",
+      "currentTransliteration": "al-qubur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-rajifah": {
+      "arabic": "تَرۡجُفُ",
+      "currentTransliteration": "al-rajifah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-rriba": {
+      "arabic": "ٱلرِّبَوٰاْ",
+      "currentTransliteration": "al-rriba",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-ruh": {
+      "arabic": "وَٱلرُّوحُ",
+      "currentTransliteration": "al-ruh",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-sa-il": {
+      "arabic": "ٱلسَّآئِلَ",
+      "currentTransliteration": "al-sa'il",
+      "proposedTransliteration": "al-saʾil",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-sabihat": {
+      "arabic": "وَٱلسَّـٰبِحَٰتِ",
+      "currentTransliteration": "al-sabihat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-sabr": {
+      "arabic": "بِٱلصَّبۡرِ",
+      "currentTransliteration": "al-sabr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-sakhkhah": {
+      "arabic": "ٱلصَّآخَّةُ",
+      "currentTransliteration": "al-sakhkhah",
+      "proposedTransliteration": "al-saḫḫah",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "al-shafaq": {
+      "arabic": "بِٱلشَّفَقِ",
+      "currentTransliteration": "al-shafaq",
+      "proposedTransliteration": "al-šafaq",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "al-shams": {
+      "arabic": "وَٱلشَّمۡسِ",
+      "currentTransliteration": "al-shams",
+      "proposedTransliteration": "al-šams",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "al-shuhha": {
+      "arabic": "ٱلشُّحَّۚ",
+      "currentTransliteration": "al-shuhha",
+      "proposedTransliteration": "al-šuhha",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "al-sulb": {
+      "arabic": "ٱلصُّلۡبِ",
+      "currentTransliteration": "al-sulb",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-takathur": {
+      "arabic": "ٱلتَّكَاثُرُ",
+      "currentTransliteration": "al-takathur",
+      "proposedTransliteration": "al-takaṯur",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "al-tara-ib": {
+      "arabic": "وَٱلتَّرَآئِبِ",
+      "currentTransliteration": "al-tara'ib",
+      "proposedTransliteration": "al-taraʾib",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "al-tariq": {
+      "arabic": "وَٱلطَّارِقِ",
+      "currentTransliteration": "al-tariq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-tin": {
+      "arabic": "وَٱلتِّينِ",
+      "currentTransliteration": "al-tin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-ukhdud": {
+      "arabic": "ٱلۡأُخۡدُودِ",
+      "currentTransliteration": "al-ukhdud",
+      "proposedTransliteration": "al-uḫdud",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "al-uqood": {
+      "arabic": "بِٱلۡعُقُودِۚ",
+      "currentTransliteration": "al-uqood",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "al-uzza": {
+      "arabic": "وَٱلۡعُزَّىٰ",
+      "currentTransliteration": "al-Uzza",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-wasilah": {
+      "arabic": "ٱلۡوَسِيلَةَ",
+      "currentTransliteration": "al-wasilah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-watin": {
+      "arabic": "ٱلۡوَتِينَ",
+      "currentTransliteration": "al-watin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-yaqin": {
+      "arabic": "ٱلۡيَقِينُ",
+      "currentTransliteration": "al-yaqin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-yatim": {
+      "arabic": "ٱلۡيَتِيمَ",
+      "currentTransliteration": "al-yatim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-yusr": {
+      "arabic": "يُسۡرًا",
+      "currentTransliteration": "al-yusr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-yusra": {
+      "arabic": "لِلۡيُسۡرَىٰ",
+      "currentTransliteration": "al-yusra",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "al-zaytun": {
+      "arabic": "وَٱلزَّيۡتُونِ",
+      "currentTransliteration": "al-zaytun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "alaq": {
+      "arabic": "عَلَقٍ",
+      "currentTransliteration": "alaq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "alaqah": {
+      "arabic": "عَلَقَةٗ",
+      "currentTransliteration": "alaqah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "alif-lam-mim": {
+      "arabic": "الٓمٓ",
+      "currentTransliteration": "Alif-Lam-Mim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "alwah": {
+      "arabic": "ٱلۡأَلۡوَاحِ",
+      "currentTransliteration": "alwah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "amanah": {
+      "arabic": "ٱلۡأَمَانَةَ",
+      "currentTransliteration": "amanah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "amaniyy": {
+      "arabic": "أَمَان",
+      "currentTransliteration": "amaniyy",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "an-amta": {
+      "arabic": "أَنۡعَمۡتَ",
+      "currentTransliteration": "an'amta",
+      "proposedTransliteration": "anʾamta",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "an-yastaqim": {
+      "arabic": "يَسۡتَقِيمَ",
+      "currentTransliteration": "an yastaqim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "anba-": {
+      "arabic": "أَنۢبَـٰٓؤُاْ",
+      "currentTransliteration": "anba'",
+      "proposedTransliteration": "anbaʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "anfal": {
+      "arabic": "ٱلۡأَنفَالِۖ",
+      "currentTransliteration": "anfal",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ankabut": {
+      "arabic": "ٱلۡعَنكَبُوتِ",
+      "currentTransliteration": "ankabut",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ansab": {
+      "arabic": "وَٱلۡأَنصَابُ",
+      "currentTransliteration": "ansab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ansar-allah": {
+      "arabic": "أَنصَارَ",
+      "currentTransliteration": "ansar Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ara-ik": {
+      "arabic": "ٱلۡأَرَآئِكِ",
+      "currentTransliteration": "ara'ik",
+      "proposedTransliteration": "araʾik",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "arsh": {
+      "arabic": "ٱلۡعَرۡشِ",
+      "currentTransliteration": "arsh",
+      "proposedTransliteration": "arš",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "as-sirat-al-mustaqim": {
+      "arabic": "ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
+      "currentTransliteration": "as-sirat al-mustaqim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "asfar": {
+      "arabic": "أَسۡفَارَۢاۚ",
+      "currentTransliteration": "asfar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ashab-al-yamin": {
+      "arabic": "ٱلۡيَمِينِ",
+      "currentTransliteration": "ashab al-yamin",
+      "proposedTransliteration": "ašab al-yamin",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "ashqaha": {
+      "arabic": "أَشۡقَىٰهَا",
+      "currentTransliteration": "ashqaha",
+      "proposedTransliteration": "ašqaha",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "ashtatan": {
+      "arabic": "أَشۡتَاتٗا",
+      "currentTransliteration": "ashtatan",
+      "proposedTransliteration": "aštatan",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "asra": {
+      "arabic": "أَسۡرَىٰ",
+      "currentTransliteration": "asra",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ata--hisab": {
+      "arabic": "عَطَآءً",
+      "currentTransliteration": "ata' hisab",
+      "proposedTransliteration": "ataʾ hisab",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "athqalaha": {
+      "arabic": "أَثۡقَالَهَا",
+      "currentTransliteration": "athqalaha",
+      "proposedTransliteration": "aṯqalaha",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "atqa": {
+      "arabic": "أَتۡقَىٰكُمۡۚ",
+      "currentTransliteration": "atqa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "awliya": {
+      "arabic": "أَوۡلِيَآءَۘ",
+      "currentTransliteration": "awliya",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "awtad": {
+      "arabic": "أَوۡتَادٗا",
+      "currentTransliteration": "awtad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "awwab": {
+      "arabic": "أَوَّابٌ",
+      "currentTransliteration": "awwab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ayn-al-yaqin": {
+      "arabic": "عَيۡنَ",
+      "currentTransliteration": "ayn al-yaqin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ba-l": {
+      "arabic": "بَعۡلٗا",
+      "currentTransliteration": "Ba'l",
+      "proposedTransliteration": "Baʾl",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "baghtah": {
+      "arabic": "بَغۡتَةٗ",
+      "currentTransliteration": "baghtah",
+      "proposedTransliteration": "baġtah",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "baghy": {
+      "arabic": "بِبَغۡيِهِمۡۖ",
+      "currentTransliteration": "baghy",
+      "proposedTransliteration": "baġy",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "bahirah": {
+      "arabic": "بَحِيرَةٖ",
+      "currentTransliteration": "bahirah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "balighah": {
+      "arabic": "ٱلۡبَٰلِغَةُۖ",
+      "currentTransliteration": "balighah",
+      "proposedTransliteration": "baliġah",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "balligh": {
+      "arabic": "بَلِّغۡ",
+      "currentTransliteration": "balligh",
+      "proposedTransliteration": "balliġ",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "bana-a": {
+      "arabic": "بَنَىٰهَا",
+      "currentTransliteration": "bana'a",
+      "proposedTransliteration": "banaʾa",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "banan": {
+      "arabic": "بَنَانَهُۥ",
+      "currentTransliteration": "banan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "baqiyyah": {
+      "arabic": "بَقِيَّتُ",
+      "currentTransliteration": "baqiyyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "basair": {
+      "arabic": "بَصَآئِرُ",
+      "currentTransliteration": "basair",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "bashar": {
+      "arabic": "أَبَشَرٞ",
+      "currentTransliteration": "bashar",
+      "proposedTransliteration": "bašar",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "batar": {
+      "arabic": "بَطَرٗا",
+      "currentTransliteration": "batar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "batin": {
+      "arabic": "وَبَاطِنَهُۥٓۚ",
+      "currentTransliteration": "batin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bay-": {
+      "arabic": "بِبَيۡعِكُمُ",
+      "currentTransliteration": "bay'",
+      "proposedTransliteration": "bayʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "bay-ah": {
+      "arabic": "يُبَايِعُونَكَ",
+      "currentTransliteration": "bay'ah",
+      "proposedTransliteration": "bayʾah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "bayan": {
+      "arabic": "ٱلۡبَيَانَ",
+      "currentTransliteration": "bayan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bayyinah": {
+      "arabic": "بَيِّنَةٞ",
+      "currentTransliteration": "bayyinah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bi-yaminihi": {
+      "arabic": "بِيَمِينِهِۦ",
+      "currentTransliteration": "bi-yaminihi",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bil-adl": {
+      "arabic": "بِٱلۡعَدۡ",
+      "currentTransliteration": "bil-adl",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bil-mirsad": {
+      "arabic": "لَبِٱلۡمِرۡصَادِ",
+      "currentTransliteration": "bil-mirsad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bil-qist": {
+      "arabic": "بِٱلۡقِسۡطِۖ",
+      "currentTransliteration": "bil-qist",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bil-qisti": {
+      "arabic": "بِٱلۡقِسۡطِ",
+      "currentTransliteration": "bil-qisti",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "bu-thirat": {
+      "arabic": "بُعۡثِرَ",
+      "currentTransliteration": "bu'thirat",
+      "proposedTransliteration": "buʾṯirat",
+      "issues": [
+        "apostrophe-hamza",
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "buhtanan": {
+      "arabic": "بُهۡتَٰنًا",
+      "currentTransliteration": "buhtanan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dabbah": {
+      "arabic": "دَآبَّةٗ",
+      "currentTransliteration": "dabbah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dabhan": {
+      "arabic": "ضَبۡحٗا",
+      "currentTransliteration": "dabhan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dabir": {
+      "arabic": "دَابِرُ",
+      "currentTransliteration": "dabir",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dahr": {
+      "arabic": "ٱلدَّهۡرُۚ",
+      "currentTransliteration": "dahr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dakkatan-dakka": {
+      "arabic": "دَكّٗا",
+      "currentTransliteration": "dakkatan dakka",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dallan-fa-hada": {
+      "arabic": "ضَآلّٗا",
+      "currentTransliteration": "dallan fa-hada",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "damdama": {
+      "arabic": "فَدَمۡدَمَ",
+      "currentTransliteration": "damdama",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dar": {
+      "arabic": "ٱلدَّارُ",
+      "currentTransliteration": "dar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dar-al-qarar": {
+      "arabic": "دَارُ",
+      "currentTransliteration": "dar al-qarar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "darasa": {
+      "arabic": "دَرَسۡتَ",
+      "currentTransliteration": "darasa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dari-": {
+      "arabic": "ضَرِيعٖ",
+      "currentTransliteration": "dari'",
+      "proposedTransliteration": "dariʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "dhallul": {
+      "arabic": "ذَلُولٗا",
+      "currentTransliteration": "dhallul",
+      "proposedTransliteration": "ḏallul",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "dhat-al-raj-": {
+      "arabic": "ٱلرَّجۡعِ",
+      "currentTransliteration": "dhat al-raj'",
+      "proposedTransliteration": "ḏat al-rajʾ",
+      "issues": [
+        "apostrophe-hamza",
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "dhat-al-sad-": {
+      "arabic": "ٱلصَّدۡعِ",
+      "currentTransliteration": "dhat al-sad'",
+      "proposedTransliteration": "ḏat al-sadʾ",
+      "issues": [
+        "apostrophe-hamza",
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "dhi-al-arsh": {
+      "arabic": "ٱلۡعَرۡشِ",
+      "currentTransliteration": "dhi al-arsh",
+      "proposedTransliteration": "ḏi al-arš",
+      "issues": [
+        "dh-for-dhal",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "dhibh": {
+      "arabic": "بِذِبۡحٍ",
+      "currentTransliteration": "dhibh",
+      "proposedTransliteration": "ḏibh",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "dhikr": {
+      "arabic": "بِذِكۡرِ",
+      "currentTransliteration": "dhikr",
+      "proposedTransliteration": "ḏikr",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "dhikr-allah": {
+      "arabic": "ذِكۡرِ",
+      "currentTransliteration": "dhikr Allah",
+      "proposedTransliteration": "ḏikr Allah",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "dhu-al-arsh": {
+      "arabic": "ٱلۡعَرۡشِ",
+      "currentTransliteration": "dhu al-arsh",
+      "proposedTransliteration": "ḏu al-arš",
+      "issues": [
+        "dh-for-dhal",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "dhul-qarnayn": {
+      "arabic": "ٱلۡقَرۡنَيۡنِ",
+      "currentTransliteration": "Dhul-Qarnayn",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "din": {
+      "arabic": "دِينُكُمۡ",
+      "currentTransliteration": "din",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "din-al-qayyim": {
+      "arabic": "وَيُقِيمُواْ",
+      "currentTransliteration": "din al-qayyim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dirar": {
+      "arabic": "ضِرَارٗا",
+      "currentTransliteration": "dirar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "diyatan": {
+      "arabic": "دِيَةٞ",
+      "currentTransliteration": "diyatan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "dukhan": {
+      "arabic": "بِدُخَانٖ",
+      "currentTransliteration": "dukhan",
+      "proposedTransliteration": "duḫan",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "eid": {
+      "arabic": "عِيدٗا",
+      "currentTransliteration": "eid",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "fa-al-lima-yurid": {
+      "arabic": "فَعَّالٞ",
+      "currentTransliteration": "fa'al lima yurid",
+      "proposedTransliteration": "faʾal lima yurid",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "fa-alhamaha": {
+      "arabic": "فَأَلۡهَمَهَا",
+      "currentTransliteration": "fa-alhamaha",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fa-haddith": {
+      "arabic": "فَحَدِّثۡ",
+      "currentTransliteration": "fa-haddith",
+      "proposedTransliteration": "fa-haddiṯ",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "fa-idha-faraghta-fa-nsab": {
+      "arabic": "فَٱنصَبۡ",
+      "currentTransliteration": "fa-idha faraghta fa-nsab",
+      "proposedTransliteration": "fa-iḏa faraġta fa-nsab",
+      "issues": [
+        "dh-for-dhal",
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "fa-irghab": {
+      "arabic": "فَٱرۡغَب",
+      "currentTransliteration": "fa-irghab",
+      "proposedTransliteration": "fa-irġab",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "fa-qaddarahu": {
+      "arabic": "فَقَدَّرَهُۥ",
+      "currentTransliteration": "fa-qaddarahu",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fahisha": {
+      "arabic": "فَٰحِشَةٗ",
+      "currentTransliteration": "fahisha",
+      "proposedTransliteration": "fahiša",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "falah": {
+      "arabic": "أَفۡلَحَ",
+      "currentTransliteration": "falah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "falak": {
+      "arabic": "فَلَكٖ",
+      "currentTransliteration": "falak",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "faliq": {
+      "arabic": "فَالِقُ",
+      "currentTransliteration": "faliq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "famtahinuhunna": {
+      "arabic": "فَٱمۡتَحِنُوهُنَّۖ",
+      "currentTransliteration": "famtahinuhunna",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "farashat-mabthuth": {
+      "arabic": "كَٱلۡفَرَاشِ",
+      "currentTransliteration": "farashat mabthuth",
+      "proposedTransliteration": "farašat mabṯuṯ",
+      "issues": [
+        "th-for-tha",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "farqan": {
+      "arabic": "فَٱلۡفَٰرِقَٰتِ",
+      "currentTransliteration": "farqan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "farsh": {
+      "arabic": "وَفَرۡشٗاۚ",
+      "currentTransliteration": "farsh",
+      "proposedTransliteration": "farš",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "fasabbih-bi-hamdi-rabbika": {
+      "arabic": "فَسَبِّحۡ",
+      "currentTransliteration": "fasabbih bi-hamdi rabbika",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fasiq": {
+      "arabic": "فَاسِقُۢ",
+      "currentTransliteration": "fasiq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fataba": {
+      "arabic": "فَتَا",
+      "currentTransliteration": "fataba",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fath": {
+      "arabic": "فَتَحۡنَا",
+      "currentTransliteration": "fath",
+      "proposedTransliteration": "faṯ",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "fatir": {
+      "arabic": "فَاطِرِ",
+      "currentTransliteration": "Fatir",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fawahish": {
+      "arabic": "ٱلۡفَوَٰحِشَ",
+      "currentTransliteration": "fawahish",
+      "proposedTransliteration": "fawahiš",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "fawz": {
+      "arabic": "ٱلۡفَوۡزُ",
+      "currentTransliteration": "fawz",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fay-": {
+      "arabic": "أَفَآءَ",
+      "currentTransliteration": "fay'",
+      "proposedTransliteration": "fayʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "fisq": {
+      "arabic": "فِسۡقٌۗ",
+      "currentTransliteration": "fisq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fitnah": {
+      "arabic": "فِتۡنَةٞ",
+      "currentTransliteration": "fitnah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fitrah": {
+      "arabic": "فِطۡرَتَ",
+      "currentTransliteration": "fitrah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "furqan": {
+      "arabic": "فُرۡقَانٗا",
+      "currentTransliteration": "furqan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fussilat": {
+      "arabic": "فُصِّلَتۡ",
+      "currentTransliteration": "fussilat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "fusuq": {
+      "arabic": "يَفۡسُقُونَ",
+      "currentTransliteration": "fusuq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ghamarat": {
+      "arabic": "غَمَرَٰتِ",
+      "currentTransliteration": "ghamarat",
+      "proposedTransliteration": "ġamarat",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghani": {
+      "arabic": "ٱلۡغَنِيُّ",
+      "currentTransliteration": "ghani",
+      "proposedTransliteration": "ġani",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghasiqin-idha-waqab": {
+      "arabic": "غَاسِقٍ",
+      "currentTransliteration": "ghasiqin idha waqab",
+      "proposedTransliteration": "ġasiqin iḏa waqab",
+      "issues": [
+        "dh-for-dhal",
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghassaq": {
+      "arabic": "وَغَسَّاقٞ",
+      "currentTransliteration": "ghassaq",
+      "proposedTransliteration": "ġassaq",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghassaq---dhi-ghussah": {
+      "arabic": "غُصَّةٖ",
+      "currentTransliteration": "ghassaq / dhi ghussah",
+      "proposedTransliteration": "ġassaq / ḏi ġussah",
+      "issues": [
+        "dh-for-dhal",
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghawr": {
+      "arabic": "غَوۡرٗا",
+      "currentTransliteration": "ghawr",
+      "proposedTransliteration": "ġawr",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghayb": {
+      "arabic": "ٱلۡغَيۡبِ",
+      "currentTransliteration": "ghayb",
+      "proposedTransliteration": "ġayb",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghibah": {
+      "arabic": "يَغۡتَب",
+      "currentTransliteration": "ghibah",
+      "proposedTransliteration": "ġibah",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghislin": {
+      "arabic": "غِسۡلِينٖ",
+      "currentTransliteration": "ghislin",
+      "proposedTransliteration": "ġislin",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghulfun": {
+      "arabic": "غُلۡفُۢۚ",
+      "currentTransliteration": "ghulfun",
+      "proposedTransliteration": "ġulfun",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghuluww": {
+      "arabic": "تَغۡلُواْ",
+      "currentTransliteration": "ghuluww",
+      "proposedTransliteration": "ġuluww",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "ghutha--ahwa": {
+      "arabic": "غُثَآءً",
+      "currentTransliteration": "ghutha' ahwa",
+      "proposedTransliteration": "ġuṯaʾ ahwa",
+      "issues": [
+        "apostrophe-hamza",
+        "th-for-tha",
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "habl-al-warid": {
+      "arabic": "حَبۡلِ",
+      "currentTransliteration": "habl al-warid",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "habl-min-masad": {
+      "arabic": "مَّسَدِۭ",
+      "currentTransliteration": "habl min masad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hadid": {
+      "arabic": "ٱلۡحَدِيدَ",
+      "currentTransliteration": "hadid",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hady": {
+      "arabic": "هَدۡيَۢا",
+      "currentTransliteration": "hady",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hafathah": {
+      "arabic": "حَفَظَةً",
+      "currentTransliteration": "hafathah",
+      "proposedTransliteration": "hafaṯah",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "hafazah": {
+      "arabic": "لَحَٰفِظِينَ",
+      "currentTransliteration": "hafazah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hafiz": {
+      "arabic": "حَفِيظٌ",
+      "currentTransliteration": "hafiz",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hajr-jamil": {
+      "arabic": "وَٱهۡجُرۡهُمۡ",
+      "currentTransliteration": "hajr jamil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ham": {
+      "arabic": "حَامٖ",
+      "currentTransliteration": "ham",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hamim": {
+      "arabic": "حَمِيمٖ",
+      "currentTransliteration": "hamim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hammalat-al-hatab": {
+      "arabic": "ٱلۡحَطَبِ",
+      "currentTransliteration": "hammalat al-hatab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hamulah": {
+      "arabic": "حَمُولَةٗ",
+      "currentTransliteration": "hamulah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "haneef": {
+      "arabic": "حَنِيفٗاۚ",
+      "currentTransliteration": "haneef",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "haneefan": {
+      "arabic": "حَنِيفٗاۗ",
+      "currentTransliteration": "haneefan",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "hanif": {
+      "arabic": "حَنِيفٗاۖ",
+      "currentTransliteration": "hanif",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "haqq": {
+      "arabic": "ٱلۡحَقُّ",
+      "currentTransliteration": "haqq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "haqq-al-yaqin": {
+      "arabic": "ٱلۡيَقِينِ",
+      "currentTransliteration": "haqq al-yaqin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "haqq-ma-lum": {
+      "arabic": "حَقّٞ",
+      "currentTransliteration": "haqq ma'lum",
+      "proposedTransliteration": "haqq maʾlum",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "haraj": {
+      "arabic": "حَرَجٗا",
+      "currentTransliteration": "haraj",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "harajan": {
+      "arabic": "حَرَجٗ",
+      "currentTransliteration": "harajan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hashr": {
+      "arabic": "ٱلۡحَشۡرِۚ",
+      "currentTransliteration": "hashr",
+      "proposedTransliteration": "hašr",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "hasidin-idha-hasad": {
+      "arabic": "حَاسِدٍ",
+      "currentTransliteration": "hasidin idha hasad",
+      "proposedTransliteration": "hasidin iḏa hasad",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "hasrah": {
+      "arabic": "يَٰحَسۡرَتَنَا",
+      "currentTransliteration": "hasrah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hawa": {
+      "arabic": "بِأَهۡوَآئِهِم",
+      "currentTransliteration": "hawa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hawariyyoon": {
+      "arabic": "ٱلۡحَوَارِيِّـۧنَ",
+      "currentTransliteration": "hawariyyoon",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "hawariyyun": {
+      "arabic": "لِلۡحَوَارِيِّـۧنَ",
+      "currentTransliteration": "hawariyyun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hawn": {
+      "arabic": "ٱلۡهُونِ",
+      "currentTransliteration": "hawn",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hayrah": {
+      "arabic": "حَيۡرَانَ",
+      "currentTransliteration": "hayrah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hijarah-min-sijjil": {
+      "arabic": "سِجِّيلٖ",
+      "currentTransliteration": "hijarah min sijjil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hijr": {
+      "arabic": "حِجۡرٞ",
+      "currentTransliteration": "hijr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hikmah": {
+      "arabic": "ٱلۡحِكۡمَةَ",
+      "currentTransliteration": "hikmah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hillun": {
+      "arabic": "حِلُّۢ",
+      "currentTransliteration": "hillun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "himar": {
+      "arabic": "ٱلۡحِمَارِ",
+      "currentTransliteration": "himar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hizb": {
+      "arabic": "حِزۡبَ",
+      "currentTransliteration": "hizb",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hubban-jamma": {
+      "arabic": "حُبّٗا",
+      "currentTransliteration": "hubban jamma",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hubut": {
+      "arabic": "لَحَبِطَ",
+      "currentTransliteration": "hubut",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "huda": {
+      "arabic": "لَلۡهُدَىٰ",
+      "currentTransliteration": "huda",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hudud-allah": {
+      "arabic": "حُدُودُ",
+      "currentTransliteration": "hudud Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hujjah": {
+      "arabic": "حُجَّتُنَآ",
+      "currentTransliteration": "hujjah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hujjatun": {
+      "arabic": "حُجَّةُۢ",
+      "currentTransliteration": "hujjatun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hujurat": {
+      "arabic": "ٱلۡحُجُرَٰتِ",
+      "currentTransliteration": "hujurat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hussilat": {
+      "arabic": "وَحُصِّلَ",
+      "currentTransliteration": "hussilat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "hut": {
+      "arabic": "ٱلۡحُوتُ",
+      "currentTransliteration": "hut",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "huzuw": {
+      "arabic": "هُزُوٗا",
+      "currentTransliteration": "huzuw",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "i-jaz": {
+      "arabic": "بِمُعۡجِزِينَ",
+      "currentTransliteration": "i'jaz",
+      "proposedTransliteration": "iʾjaz",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ibad": {
+      "arabic": "وَعِبَادُ",
+      "currentTransliteration": "ibad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ibil": {
+      "arabic": "ٱلۡإِبِلِ",
+      "currentTransliteration": "ibil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "iblas": {
+      "arabic": "مُّبۡلِسُونَ",
+      "currentTransliteration": "iblas",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "iblis": {
+      "arabic": "إِبۡلِيسَ",
+      "currentTransliteration": "Iblis",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "iddah": {
+      "arabic": "لِعِدَّتِهِنَّ",
+      "currentTransliteration": "iddah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ihdina": {
+      "arabic": "ٱهۡدِنَا",
+      "currentTransliteration": "ihdina",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ihram": {
+      "arabic": "حُرُمٞۚ",
+      "currentTransliteration": "ihram",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ihsana": {
+      "arabic": "إِحۡسَٰن",
+      "currentTransliteration": "ihsana",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ikhbat": {
+      "arabic": "وَأَخۡبَتُوٓاْ",
+      "currentTransliteration": "ikhbat",
+      "proposedTransliteration": "iḫbat",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "illiyyun": {
+      "arabic": "عِلِّيِّينَ",
+      "currentTransliteration": "illiyyun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ilm-al-yaqin": {
+      "arabic": "ٱلۡيَقِينِ",
+      "currentTransliteration": "ilm al-yaqin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "imlaq": {
+      "arabic": "إِمۡلَٰقٖ",
+      "currentTransliteration": "imlaq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "iram": {
+      "arabic": "إِرَمَ",
+      "currentTransliteration": "Iram",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ismah": {
+      "arabic": "يَعۡصِمُكَ",
+      "currentTransliteration": "ismah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "isra-": {
+      "arabic": "أَسۡرَىٰ",
+      "currentTransliteration": "isra'",
+      "proposedTransliteration": "israʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "israf": {
+      "arabic": "تُسۡرِفُوٓاْۚ",
+      "currentTransliteration": "israf",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "istaghfiru": {
+      "arabic": "ٱسۡتَغۡفِرُواْ",
+      "currentTransliteration": "istaghfiru",
+      "proposedTransliteration": "istaġfiru",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "istaqamu": {
+      "arabic": "ٱسۡتَقَٰمُواْ",
+      "currentTransliteration": "istaqamu",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ithkhan": {
+      "arabic": "يُثۡخِنَ",
+      "currentTransliteration": "ithkhan",
+      "proposedTransliteration": "iṯḫan",
+      "issues": [
+        "th-for-tha",
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "izzah": {
+      "arabic": "ٱلۡأَعَزُّ",
+      "currentTransliteration": "izzah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "jahim": {
+      "arabic": "جَحِيمٖ",
+      "currentTransliteration": "jahim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "jannatan": {
+      "arabic": "جَنَّتَانِ",
+      "currentTransliteration": "jannatan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "jihad": {
+      "arabic": "وَجَٰهِدُواْ",
+      "currentTransliteration": "jihad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "jinn": {
+      "arabic": "ٱلسَّـٰجِدِينَ",
+      "currentTransliteration": "jinn",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "jizyah": {
+      "arabic": "ٱلۡجِزۡيَةَ",
+      "currentTransliteration": "jizyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "jumu-ah": {
+      "arabic": "ٱلۡجُمُعَةِ",
+      "currentTransliteration": "jumu'ah",
+      "proposedTransliteration": "jumuʾah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "junub": {
+      "arabic": "جُنُبٗا",
+      "currentTransliteration": "junub",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "junuban": {
+      "arabic": "جُنُبً",
+      "currentTransliteration": "junuban",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ka--asf-ma-kul": {
+      "arabic": "كَعَصۡفٖ",
+      "currentTransliteration": "ka-'asf ma'kul",
+      "proposedTransliteration": "ka-ʾasf maʾkul",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "kabad": {
+      "arabic": "كَبَدٍ",
+      "currentTransliteration": "kabad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kadih": {
+      "arabic": "كَادِحٌ",
+      "currentTransliteration": "kadih",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kafarah-fajarah": {
+      "arabic": "ٱلۡكَفَرَةُ",
+      "currentTransliteration": "kafarah fajarah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kaffarah": {
+      "arabic": "كَفَّارَةٞ",
+      "currentTransliteration": "kaffarah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kafur": {
+      "arabic": "كَافُورًا",
+      "currentTransliteration": "kafur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kahf": {
+      "arabic": "ٱلۡكَهۡفِ",
+      "currentTransliteration": "kahf",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kahin": {
+      "arabic": "بِكَاهِنٖ",
+      "currentTransliteration": "kahin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kalalah": {
+      "arabic": "كَلَٰلَة",
+      "currentTransliteration": "kalalah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kalimah": {
+      "arabic": "كَلِمَةٗ",
+      "currentTransliteration": "kalimah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kalimat-al-taqwa": {
+      "arabic": "كَلِمَةَ",
+      "currentTransliteration": "kalimat al-taqwa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kanud": {
+      "arabic": "لَكَنُودٞ",
+      "currentTransliteration": "kanud",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "karb": {
+      "arabic": "كَرۡبٖ",
+      "currentTransliteration": "karb",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kawkab": {
+      "arabic": "كَوۡكَبٗاۖ",
+      "currentTransliteration": "kawkab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "khabees": {
+      "arabic": "ٱلۡخَبِيثَ",
+      "currentTransliteration": "khabees",
+      "proposedTransliteration": "ḫabees",
+      "issues": [
+        "kh-for-kha",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "khabir": {
+      "arabic": "لَّخَبِيرُۢ",
+      "currentTransliteration": "khabir",
+      "proposedTransliteration": "ḫabir",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khala-if": {
+      "arabic": "خَلَـٰٓئِفَ",
+      "currentTransliteration": "khala'if",
+      "proposedTransliteration": "ḫalaʾif",
+      "issues": [
+        "apostrophe-hamza",
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khaleelan": {
+      "arabic": "خَلِيلٗا",
+      "currentTransliteration": "khaleelan",
+      "proposedTransliteration": "ḫaleelan",
+      "issues": [
+        "kh-for-kha",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "khalifah": {
+      "arabic": "خَلِيفَةٗ",
+      "currentTransliteration": "khalifah",
+      "proposedTransliteration": "ḫalifah",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khamr": {
+      "arabic": "ٱلۡخَمۡرُ",
+      "currentTransliteration": "khamr",
+      "proposedTransliteration": "ḫamr",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khatam-al-nabiyyin": {
+      "arabic": "وَخَاتَمَ",
+      "currentTransliteration": "khatam al-nabiyyin",
+      "proposedTransliteration": "ḫatam al-nabiyyin",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khawf": {
+      "arabic": "خَوۡفِۭ",
+      "currentTransliteration": "khawf",
+      "proposedTransliteration": "ḫawf",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khayr-al-bariyyah": {
+      "arabic": "خَيۡرُ",
+      "currentTransliteration": "khayr al-bariyyah",
+      "proposedTransliteration": "ḫayr al-bariyyah",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khaza-in": {
+      "arabic": "خَزَآئِنُ",
+      "currentTransliteration": "khaza'in",
+      "proposedTransliteration": "ḫazaʾin",
+      "issues": [
+        "apostrophe-hamza",
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khizy": {
+      "arabic": "خِزۡيٞ",
+      "currentTransliteration": "khizy",
+      "proposedTransliteration": "ḫizy",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khuluq-azim": {
+      "arabic": "خُلُقٍ",
+      "currentTransliteration": "khuluq azim",
+      "proposedTransliteration": "ḫuluq azim",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khums": {
+      "arabic": "خُمُسَهُۥ",
+      "currentTransliteration": "khums",
+      "proposedTransliteration": "ḫums",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khumur": {
+      "arabic": "بِخُمُرِهِنَّ",
+      "currentTransliteration": "khumur",
+      "proposedTransliteration": "ḫumur",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khushu-": {
+      "arabic": "خُشُوعٗا۩",
+      "currentTransliteration": "khushu'",
+      "proposedTransliteration": "ḫušuʾ",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin",
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khusr": {
+      "arabic": "خُسۡرٍ",
+      "currentTransliteration": "khusr",
+      "proposedTransliteration": "ḫusr",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "khusub-musannadah": {
+      "arabic": "خُشُبٞ",
+      "currentTransliteration": "khusub musannadah",
+      "proposedTransliteration": "ḫusub musannadah",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "kitab-maknun": {
+      "arabic": "مَّكۡنُونٖ",
+      "currentTransliteration": "kitab maknun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kufuwan": {
+      "arabic": "كُفُوًا",
+      "currentTransliteration": "kufuwan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kun-fa-yakun": {
+      "arabic": "كُن",
+      "currentTransliteration": "kun fa-yakun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kun-fayakoon": {
+      "arabic": "كُن فَيَك",
+      "currentTransliteration": "kun fayakoon",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "kutub-qayyimah": {
+      "arabic": "قَيِّمَةٞ",
+      "currentTransliteration": "kutub qayyimah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "kuwwirat": {
+      "arabic": "كُوِّرَتۡ",
+      "currentTransliteration": "kuwwirat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "la-b": {
+      "arabic": "لَعِبٞ",
+      "currentTransliteration": "la'b",
+      "proposedTransliteration": "laʾb",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "la-yastathnun": {
+      "arabic": "يَسۡتَثۡنُونَ",
+      "currentTransliteration": "la yastathnun",
+      "proposedTransliteration": "la yastaṯnun",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "laghw": {
+      "arabic": "بِٱللَّغۡوِ",
+      "currentTransliteration": "laghw",
+      "proposedTransliteration": "laġw",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "lahw": {
+      "arabic": "وَلَهۡوٞۖ",
+      "currentTransliteration": "lahw",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "lam-yalid-wa-lam-yulad": {
+      "arabic": "يَلِدۡ",
+      "currentTransliteration": "lam yalid wa-lam yulad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "lawh-mahfuz": {
+      "arabic": "لَوۡحٖ",
+      "currentTransliteration": "lawh mahfuz",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "laylat-al-qadr": {
+      "arabic": "ٱلۡقَدۡرِ",
+      "currentTransliteration": "laylat al-qadr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "laza": {
+      "arabic": "لَظَىٰ",
+      "currentTransliteration": "laza",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "li-ya-budun": {
+      "arabic": "لِيَعۡبُدُونِ",
+      "currentTransliteration": "li-ya'budun",
+      "proposedTransliteration": "li-yaʾbudun",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ma--dafiq": {
+      "arabic": "دَافِقٖ",
+      "currentTransliteration": "ma' dafiq",
+      "proposedTransliteration": "maʾ dafiq",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ma--mahin": {
+      "arabic": "مَّهِينٖ",
+      "currentTransliteration": "ma' mahin",
+      "proposedTransliteration": "maʾ mahin",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ma-idah": {
+      "arabic": "مَآئِدَةٗ",
+      "currentTransliteration": "ma'idah",
+      "proposedTransliteration": "maʾidah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ma-ruf": {
+      "arabic": "بِٱلۡمَعۡرُوفِ",
+      "currentTransliteration": "ma'ruf",
+      "proposedTransliteration": "maʾruf",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ma-rush": {
+      "arabic": "مَّعۡرُوشَٰتٖ",
+      "currentTransliteration": "ma'rush",
+      "proposedTransliteration": "maʾruš",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "mafatih": {
+      "arabic": "مَفَاتِحُ",
+      "currentTransliteration": "mafatih",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mahd": {
+      "arabic": "ٱلۡمَهۡدِ",
+      "currentTransliteration": "mahd",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mahid": {
+      "arabic": "ٱلۡمَٰهِدُونَ",
+      "currentTransliteration": "mahid",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mahjubun": {
+      "arabic": "لَّمَحۡجُوبُونَ",
+      "currentTransliteration": "mahjubun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "majalis": {
+      "arabic": "ٱلۡمَجَٰلِسِ",
+      "currentTransliteration": "majalis",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "majid": {
+      "arabic": "ٱلۡمَجِيدِ",
+      "currentTransliteration": "majid",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "majra": {
+      "arabic": "مَجۡرٜىٰهَا",
+      "currentTransliteration": "majra",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "makin": {
+      "arabic": "مَكِينٖ",
+      "currentTransliteration": "makin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "malakut": {
+      "arabic": "مَلَكُوتَ",
+      "currentTransliteration": "malakut",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "manasikana": {
+      "arabic": "مَنَاسِكَ",
+      "currentTransliteration": "manasikana",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "marad": {
+      "arabic": "مَّرَضٞ",
+      "currentTransliteration": "marad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "masajid": {
+      "arabic": "مَسَٰج",
+      "currentTransliteration": "masajid",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "masfuh": {
+      "arabic": "مَّسۡفُوحًا",
+      "currentTransliteration": "masfuh",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mastur": {
+      "arabic": "مَّسۡطُورٖ",
+      "currentTransliteration": "mastur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mata-": {
+      "arabic": "مَّتَٰعًا",
+      "currentTransliteration": "mata'",
+      "proposedTransliteration": "mataʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "mathal": {
+      "arabic": "مَّثَلٗا",
+      "currentTransliteration": "mathal",
+      "proposedTransliteration": "maṯal",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "mathani": {
+      "arabic": "ٱلۡمَثَانِي",
+      "currentTransliteration": "mathani",
+      "proposedTransliteration": "maṯani",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "mathwa": {
+      "arabic": "مَثۡوَىٰكُمۡ",
+      "currentTransliteration": "mathwa",
+      "proposedTransliteration": "maṯwa",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "maysir": {
+      "arabic": "وَٱلۡمَيۡسِرُ",
+      "currentTransliteration": "maysir",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "meethaqan": {
+      "arabic": "مِّيثَٰقًا",
+      "currentTransliteration": "meethaqan",
+      "proposedTransliteration": "meeṯaqan",
+      "issues": [
+        "th-for-tha",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "midrara": {
+      "arabic": "مِّدۡرَارٗا",
+      "currentTransliteration": "midrara",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "millah": {
+      "arabic": "مِّلَّةَ",
+      "currentTransliteration": "millah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "min-al-jinnah-wa-l-nas": {
+      "arabic": "ٱلۡجِنَّةِ",
+      "currentTransliteration": "min al-jinnah wa'l-nas",
+      "proposedTransliteration": "min al-jinnah waʾl-nas",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "minhaj": {
+      "arabic": "وَمِنۡهَاجٗاۚ",
+      "currentTransliteration": "minhaj",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "miqat": {
+      "arabic": "مِيقَٰتٗا",
+      "currentTransliteration": "miqat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "misk": {
+      "arabic": "مِسۡكٞۚ",
+      "currentTransliteration": "misk",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mithqala-dharrah": {
+      "arabic": "ذَرَّةٍ",
+      "currentTransliteration": "mithqala dharrah",
+      "proposedTransliteration": "miṯqala ḏarrah",
+      "issues": [
+        "dh-for-dhal",
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "mizan": {
+      "arabic": "وَٱلۡمِيزَانَۗ",
+      "currentTransliteration": "mizan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mu-allafah-quloobuhum": {
+      "arabic": "وَٱلۡمُؤَلَّفَةِ",
+      "currentTransliteration": "mu'allafah quloobuhum",
+      "proposedTransliteration": "muʾallafah quloobuhum",
+      "issues": [
+        "apostrophe-hamza",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "mu-sadah": {
+      "arabic": "مُّؤۡصَدَةُۢ",
+      "currentTransliteration": "mu'sadah",
+      "proposedTransliteration": "muʾsadah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "mubarak": {
+      "arabic": "مُبَارَكٞ",
+      "currentTransliteration": "mubarak",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mubashshir": {
+      "arabic": "مُبَشِّرِينَ",
+      "currentTransliteration": "mubashshir",
+      "proposedTransliteration": "mubaššir",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "mufassal": {
+      "arabic": "مُفَصَّلٗاۚ",
+      "currentTransliteration": "mufassal",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muhaymin": {
+      "arabic": "وَمُهَيۡمِنًا",
+      "currentTransliteration": "muhaymin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muhsin": {
+      "arabic": "ٱلۡمُحۡسِنِينَ",
+      "currentTransliteration": "muhsin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muhsineen": {
+      "arabic": "وَٱلۡمُحۡصَنَٰتُ",
+      "currentTransliteration": "muhsineen",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "muhsinin": {
+      "arabic": "ٱلۡمُحۡسِنِينَ",
+      "currentTransliteration": "muhsinin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muka-": {
+      "arabic": "مُكَآءٗ",
+      "currentTransliteration": "muka'",
+      "proposedTransliteration": "mukaʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "mukhlasin": {
+      "arabic": "ٱلۡمُخۡلَصِينَ",
+      "currentTransliteration": "mukhlasin",
+      "proposedTransliteration": "muḫlasin",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "mulk": {
+      "arabic": "ٱلۡمُلۡكُ",
+      "currentTransliteration": "mulk",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "munkar": {
+      "arabic": "بِٱلۡمُنكَرِ",
+      "currentTransliteration": "munkar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "munthir": {
+      "arabic": "وَمُنذِرِينَۖ",
+      "currentTransliteration": "munthir",
+      "proposedTransliteration": "munṯir",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "muqeem": {
+      "arabic": "مُّقِيمٞ",
+      "currentTransliteration": "muqeem",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "muqsitun": {
+      "arabic": "ٱلۡمُقۡسِطِينَ",
+      "currentTransliteration": "muqsitun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muqtasidah": {
+      "arabic": "مُّقۡتَصِدَةٞۖ",
+      "currentTransliteration": "muqtasidah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "mursa": {
+      "arabic": "وَمُرۡسَىٰهَآۚ",
+      "currentTransliteration": "mursa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "musaytir": {
+      "arabic": "بِمُصَيۡطِرٍ",
+      "currentTransliteration": "musaytir",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muslih": {
+      "arabic": "مُصۡلِحُونَ",
+      "currentTransliteration": "muslih",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muslim": {
+      "arabic": "ٱلسَّمَٰوَٰتِ",
+      "currentTransliteration": "muslim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "musrifoon": {
+      "arabic": "لَمُسۡرِفُونَ",
+      "currentTransliteration": "musrifoon",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "mustad-afeena": {
+      "arabic": "مُسۡتَضۡعَفِينَ",
+      "currentTransliteration": "mustad'afeena",
+      "proposedTransliteration": "mustadʾafeena",
+      "issues": [
+        "apostrophe-hamza",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "mustaqarr": {
+      "arabic": "فَمُسۡتَقَرّٞ",
+      "currentTransliteration": "mustaqarr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "muthabthabeen": {
+      "arabic": "مُّذَبۡذَبِينَ",
+      "currentTransliteration": "muthabthabeen",
+      "proposedTransliteration": "muṯabṯabeen",
+      "issues": [
+        "th-for-tha",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "na-budu": {
+      "arabic": "نَعۡبُدُ",
+      "currentTransliteration": "na'budu",
+      "proposedTransliteration": "naʾbudu",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "na-im": {
+      "arabic": "نَعِيمٖ",
+      "currentTransliteration": "na'im",
+      "proposedTransliteration": "naʾim",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "nabi": {
+      "arabic": "نَّبِيّٗا",
+      "currentTransliteration": "nabi",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nadhir-mubin": {
+      "arabic": "نَذِيرٞ",
+      "currentTransliteration": "nadhir mubin",
+      "proposedTransliteration": "naḏir mubin",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "nafs": {
+      "arabic": "نَفۡسُهُۥۖ",
+      "currentTransliteration": "nafs",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nahl": {
+      "arabic": "ٱلنَّحۡلِ",
+      "currentTransliteration": "nahl",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "najas": {
+      "arabic": "نَجَسٞ",
+      "currentTransliteration": "najas",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "najm": {
+      "arabic": "وَٱلنَّجۡمِ",
+      "currentTransliteration": "najm",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "najwa": {
+      "arabic": "ٱلنَّجۡوَىٰ",
+      "currentTransliteration": "najwa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nakal": {
+      "arabic": "نَكَٰلٗا",
+      "currentTransliteration": "nakal",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "naml": {
+      "arabic": "ٱلنَّمۡلِ",
+      "currentTransliteration": "naml",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "naqah": {
+      "arabic": "نَاقَةُ",
+      "currentTransliteration": "naqah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "naqat-allah": {
+      "arabic": "نَاقَةَ",
+      "currentTransliteration": "naqat Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "naqeeb": {
+      "arabic": "نَقِيبٗاۖ",
+      "currentTransliteration": "naqeeb",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "nar-allah-al-muqadah": {
+      "arabic": "ٱلۡمُوقَدَةُ",
+      "currentTransliteration": "nar Allah al-muqadah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nar-dhat-lahab": {
+      "arabic": "لَهَبٖ",
+      "currentTransliteration": "nar dhat lahab",
+      "proposedTransliteration": "nar ḏat lahab",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "nar-hamiyah": {
+      "arabic": "حَامِيَةُۢ",
+      "currentTransliteration": "nar hamiyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "naseeb": {
+      "arabic": "نَصِيبٗا",
+      "currentTransliteration": "naseeb",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "nasi-": {
+      "arabic": "ٱلنَّسِيٓءُ",
+      "currentTransliteration": "nasi'",
+      "proposedTransliteration": "nasiʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "nasiyah": {
+      "arabic": "بِنَاصِيَتِهَآۚ",
+      "currentTransliteration": "nasiyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nasr": {
+      "arabic": "وَنَسۡرٗا",
+      "currentTransliteration": "Nasr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nasr-allah": {
+      "arabic": "نَصۡرُ",
+      "currentTransliteration": "nasr Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nasta-in": {
+      "arabic": "نَسۡتَعِينُ",
+      "currentTransliteration": "nasta'in",
+      "proposedTransliteration": "nastaʾin",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "nastadrijuhum": {
+      "arabic": "سَنَسۡتَدۡرِجُهُم",
+      "currentTransliteration": "nastadrijuhum",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nazirah-ila-rabbiha": {
+      "arabic": "نَاظِرَةٞ",
+      "currentTransliteration": "nazirah ila rabbiha",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ni-mah": {
+      "arabic": "نِعۡمَةَ",
+      "currentTransliteration": "ni'mah",
+      "proposedTransliteration": "niʾmah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "nifaq": {
+      "arabic": "نِفَاقٗا",
+      "currentTransliteration": "nifaq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "noor": {
+      "arabic": "رَسُولُنَا",
+      "currentTransliteration": "noor",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "nooran": {
+      "arabic": "نُورٗا",
+      "currentTransliteration": "nooran",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "nubuwwah": {
+      "arabic": "وَٱلنُّبُوَّةَۚ",
+      "currentTransliteration": "nubuwwah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nur": {
+      "arabic": "نُورُهُمۡ",
+      "currentTransliteration": "nur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nur-allah": {
+      "arabic": "يُرِيدُونَ",
+      "currentTransliteration": "nur Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nushoozan": {
+      "arabic": "نُشُوزًا",
+      "currentTransliteration": "nushoozan",
+      "proposedTransliteration": "nušoozan",
+      "issues": [
+        "sh-for-shin",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "nusub": {
+      "arabic": "نُصُبٖ",
+      "currentTransliteration": "nusub",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nusuk": {
+      "arabic": "وَنُسُكِي",
+      "currentTransliteration": "nusuk",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nutfah": {
+      "arabic": "نُّطۡفَةٖ",
+      "currentTransliteration": "nutfah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "nutfah-amshaj": {
+      "arabic": "نُّطۡفَةٍ",
+      "currentTransliteration": "nutfah amshaj",
+      "proposedTransliteration": "nutfah amšaj",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "qadar": {
+      "arabic": "بِقَدَرٖ",
+      "currentTransliteration": "qadar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qaddara-fa-hada": {
+      "arabic": "قَدَّرَ",
+      "currentTransliteration": "qaddara fa-hada",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qadr": {
+      "arabic": "قَدَرُواْ",
+      "currentTransliteration": "qadr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qaf": {
+      "arabic": "قٓۚ",
+      "currentTransliteration": "Qaf",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qalam": {
+      "arabic": "وَٱلۡقَلَمِ",
+      "currentTransliteration": "qalam",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qamar": {
+      "arabic": "ٱلۡقَمَرُ",
+      "currentTransliteration": "qamar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qanitoon": {
+      "arabic": "قَٰنِت",
+      "currentTransliteration": "qanitoon",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "qarar-makin": {
+      "arabic": "قَرَارٖ",
+      "currentTransliteration": "qarar makin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qaratis": {
+      "arabic": "قَرَاطِيسَ",
+      "currentTransliteration": "qaratis",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qard-hasan": {
+      "arabic": "يُقۡرِضُ",
+      "currentTransliteration": "qard hasan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qarn": {
+      "arabic": "قَرۡنٖ",
+      "currentTransliteration": "qarn",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qasas": {
+      "arabic": "نَقُصُّ",
+      "currentTransliteration": "qasas",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qaswah": {
+      "arabic": "قَسَتۡ",
+      "currentTransliteration": "qaswah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qawl-fasl": {
+      "arabic": "فَصۡلٞ",
+      "currentTransliteration": "qawl fasl",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qawl-thaqil": {
+      "arabic": "قَوۡلٗا",
+      "currentTransliteration": "qawl thaqil",
+      "proposedTransliteration": "qawl ṯaqil",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "qayyim": {
+      "arabic": "مُّسۡتَقِيمٖ",
+      "currentTransliteration": "qayyim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qisas": {
+      "arabic": "قِصَاصٞۚ",
+      "currentTransliteration": "qisas",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qissees": {
+      "arabic": "قِسِّيسِينَ",
+      "currentTransliteration": "qissees",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "qist": {
+      "arabic": "بِٱلۡقِسۡطِۖ",
+      "currentTransliteration": "qist",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qital": {
+      "arabic": "يُقَٰتَلُونَ",
+      "currentTransliteration": "qital",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "qiyam": {
+      "arabic": "قِيَٰمٗا",
+      "currentTransliteration": "qiyam",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "quraysh": {
+      "arabic": "قُرَيۡشٍ",
+      "currentTransliteration": "Quraysh",
+      "proposedTransliteration": "Qurayš",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "qurbat": {
+      "arabic": "قُرُبَٰتٍ",
+      "currentTransliteration": "qurbat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ra-ina": {
+      "arabic": "رَٰعِن",
+      "currentTransliteration": "ra'ina",
+      "proposedTransliteration": "raʾina",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "rabb-hadha-al-bayt": {
+      "arabic": "ٱلۡبَيۡتِ",
+      "currentTransliteration": "rabb hadha al-bayt",
+      "proposedTransliteration": "rabb haḏa al-bayt",
+      "issues": [
+        "dh-for-dhal"
+      ],
+      "needsReview": true
+    },
+    "rabitoo": {
+      "arabic": "رَابِطُو",
+      "currentTransliteration": "rabitoo",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "radiyah-mardiyyah": {
+      "arabic": "رَاضِيَةٗ",
+      "currentTransliteration": "radiyah mardiyyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rahbaniyyah": {
+      "arabic": "وَرَهۡبَانِيَّةً",
+      "currentTransliteration": "rahbaniyyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rahmah": {
+      "arabic": "ٱلرَّحۡمَةِۚ",
+      "currentTransliteration": "rahmah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rana": {
+      "arabic": "رَانَ",
+      "currentTransliteration": "rana",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "raqabah": {
+      "arabic": "رَقَبَةٍ",
+      "currentTransliteration": "raqabah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rasad": {
+      "arabic": "رَصَدٗا",
+      "currentTransliteration": "rasad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rasul": {
+      "arabic": "رَّسُولٞۖ",
+      "currentTransliteration": "rasul",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rasul-karim": {
+      "arabic": "رَسُولٖ",
+      "currentTransliteration": "rasul karim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ri-a": {
+      "arabic": "وَرِئَآءَ",
+      "currentTransliteration": "ri'a",
+      "proposedTransliteration": "riʾa",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ribat": {
+      "arabic": "رِّبَاطِ",
+      "currentTransliteration": "ribat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rihlat-al-shita--wa-l-sayf": {
+      "arabic": "ٱلشِّتَآءِ",
+      "currentTransliteration": "rihlat al-shita' wa'l-sayf",
+      "proposedTransliteration": "rihlat al-šitaʾ waʾl-sayf",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "rijs": {
+      "arabic": "رِجۡسٞ",
+      "currentTransliteration": "rijs",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rijz": {
+      "arabic": "رِجۡزَ",
+      "currentTransliteration": "rijz",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "roohun": {
+      "arabic": "وَرُوحٞ",
+      "currentTransliteration": "roohun",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "ruh": {
+      "arabic": "ٱلرُّوحُ",
+      "currentTransliteration": "ruh",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ruh-al-qudus": {
+      "arabic": "بِرُوحِ ٱلۡقُدُسِ",
+      "currentTransliteration": "Ruh al-Qudus",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ruh-minhu": {
+      "arabic": "بِرُوحٖ",
+      "currentTransliteration": "ruh minhu",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ruhban": {
+      "arabic": "وَرُهۡبَانٗا",
+      "currentTransliteration": "ruhban",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rujz": {
+      "arabic": "وَٱلرُّجۡزَ",
+      "currentTransliteration": "rujz",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rum": {
+      "arabic": "ٱلرُّومُ",
+      "currentTransliteration": "Rum",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "rushd": {
+      "arabic": "ٱلرُّشۡدِ",
+      "currentTransliteration": "rushd",
+      "proposedTransliteration": "rušd",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "sa-il": {
+      "arabic": "لِّلسَّآئِلِ",
+      "currentTransliteration": "sa'il",
+      "proposedTransliteration": "saʾil",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "sa-ir": {
+      "arabic": "سَعِيرًا",
+      "currentTransliteration": "sa'ir",
+      "proposedTransliteration": "saʾir",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "sa-y": {
+      "arabic": "لِّسَعۡيِهَا",
+      "currentTransliteration": "sa'y",
+      "proposedTransliteration": "saʾy",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "sab-": {
+      "arabic": "سَبۡعٗا",
+      "currentTransliteration": "sab'",
+      "proposedTransliteration": "sabʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "sab-a-samawat": {
+      "arabic": "سَبۡعَ",
+      "currentTransliteration": "sab'a samawat",
+      "proposedTransliteration": "sabʾa samawat",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "sabir": {
+      "arabic": "صَابِرٗاۚ",
+      "currentTransliteration": "sabir",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sabr": {
+      "arabic": "فَٱصۡبِرۡ",
+      "currentTransliteration": "sabr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sad": {
+      "arabic": "صٓۚ",
+      "currentTransliteration": "Sad",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sadaf": {
+      "arabic": "وَصَدَفَ",
+      "currentTransliteration": "sadaf",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "safah": {
+      "arabic": "سَفَهَۢا",
+      "currentTransliteration": "safah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "safarah": {
+      "arabic": "سَفَرَةٖ",
+      "currentTransliteration": "safarah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "saff": {
+      "arabic": "صَفّٗا",
+      "currentTransliteration": "saff",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "saffat": {
+      "arabic": "وَٱلصَّـٰٓفَّـٰتِ",
+      "currentTransliteration": "saffat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sahib-al-hut": {
+      "arabic": "ٱلۡحُوتِ",
+      "currentTransliteration": "sahib al-hut",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sahun": {
+      "arabic": "سَاهُونَ",
+      "currentTransliteration": "sahun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "saibah": {
+      "arabic": "سَآئِبَةٖ",
+      "currentTransliteration": "saibah",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "saja": {
+      "arabic": "سَجَىٰ",
+      "currentTransliteration": "saja",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sajdah": {
+      "arabic": "سُجَّدٗاۤ",
+      "currentTransliteration": "sajdah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sakan": {
+      "arabic": "سَكَنٞ",
+      "currentTransliteration": "sakan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sakina": {
+      "arabic": "سَكِينَتَهُۥ",
+      "currentTransliteration": "sakina",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sakinah": {
+      "arabic": "ٱلسَّكِينَةَ",
+      "currentTransliteration": "sakinah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "salam": {
+      "arabic": "ٱلسَّلَٰمِ",
+      "currentTransliteration": "salam",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "salim": {
+      "arabic": "سَلِيمٍ",
+      "currentTransliteration": "salim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "salsabil": {
+      "arabic": "سَلۡسَبِيلٗا",
+      "currentTransliteration": "Salsabil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "samiri": {
+      "arabic": "ٱلسَّامِرِيُّ",
+      "currentTransliteration": "Samiri",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "saq": {
+      "arabic": "سَاقٖ",
+      "currentTransliteration": "saq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "saq-bi-saq": {
+      "arabic": "ٱلسَّاقُ",
+      "currentTransliteration": "saq bi-saq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "saqar": {
+      "arabic": "سَقَرَ",
+      "currentTransliteration": "Saqar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "shadid": {
+      "arabic": "لَشَدِيدٌ",
+      "currentTransliteration": "shadid",
+      "proposedTransliteration": "šadid",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shafa-atan": {
+      "arabic": "شَفَٰعَةً",
+      "currentTransliteration": "shafa'atan",
+      "proposedTransliteration": "šafaʾatan",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shafi-": {
+      "arabic": "شَفِيعٞ",
+      "currentTransliteration": "shafi'",
+      "proposedTransliteration": "šafiʾ",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shahadah": {
+      "arabic": "شَهَٰدَةُ",
+      "currentTransliteration": "shahadah",
+      "proposedTransliteration": "šahadah",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shahadatan": {
+      "arabic": "شَهَٰدَ",
+      "currentTransliteration": "shahadatan",
+      "proposedTransliteration": "šahadatan",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shahid": {
+      "arabic": "لَشَهِيدٞ",
+      "currentTransliteration": "shahid",
+      "proposedTransliteration": "šahid",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shajarah": {
+      "arabic": "كَشَجَرَةٖ",
+      "currentTransliteration": "shajarah",
+      "proposedTransliteration": "šajarah",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "sharar-ka-l-qasr": {
+      "arabic": "بِشَرَرٖ",
+      "currentTransliteration": "sharar ka'l-qasr",
+      "proposedTransliteration": "šarar kaʾl-qasr",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "sharh": {
+      "arabic": "يَشۡرَحۡ",
+      "currentTransliteration": "sharh",
+      "proposedTransliteration": "šarh",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "sharh-al-sadr": {
+      "arabic": "نَشۡرَحۡ",
+      "currentTransliteration": "sharh al-sadr",
+      "proposedTransliteration": "šarh al-sadr",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shari-ah": {
+      "arabic": "شَرِيعَةٖ",
+      "currentTransliteration": "shari'ah",
+      "proposedTransliteration": "šariʾah",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "sharr-al-bariyyah": {
+      "arabic": "وَٱلۡمُشۡرِكِينَ",
+      "currentTransliteration": "sharr al-bariyyah",
+      "proposedTransliteration": "šarr al-bariyyah",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shaytanan": {
+      "arabic": "شَيۡطَٰنٗا",
+      "currentTransliteration": "shaytanan",
+      "proposedTransliteration": "šaytanan",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shi-ra": {
+      "arabic": "ٱلشِّعۡرَىٰ",
+      "currentTransliteration": "shi'ra",
+      "proposedTransliteration": "šiʾra",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shifa": {
+      "arabic": "وَشِفَآءٞۚ",
+      "currentTransliteration": "shifa",
+      "proposedTransliteration": "šifa",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shihab": {
+      "arabic": "شِهَابٞ",
+      "currentTransliteration": "shihab",
+      "proposedTransliteration": "šihab",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shir-ah": {
+      "arabic": "شِرۡعَةٗ",
+      "currentTransliteration": "shir'ah",
+      "proposedTransliteration": "širʾah",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shiya-": {
+      "arabic": "شِيَعٗا",
+      "currentTransliteration": "shiya'",
+      "proposedTransliteration": "šiyaʾ",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shu-ara-": {
+      "arabic": "وَٱلشُّعَرَآءُ",
+      "currentTransliteration": "shu'ara'",
+      "proposedTransliteration": "šuʾaraʾ",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shuhh-al-nafs": {
+      "arabic": "شُحَّ",
+      "currentTransliteration": "shuhh al-nafs",
+      "proposedTransliteration": "šuhh al-nafs",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shukr": {
+      "arabic": "شُكۡرٗاۚ",
+      "currentTransliteration": "shukr",
+      "proposedTransliteration": "šukr",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "shura": {
+      "arabic": "شُورَىٰ",
+      "currentTransliteration": "shura",
+      "proposedTransliteration": "šura",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "siddiqah": {
+      "arabic": "صِدِّيقَةٞۖ",
+      "currentTransliteration": "siddiqah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "siddiqun": {
+      "arabic": "ٱلصِّدِّيقُونَۖ",
+      "currentTransliteration": "siddiqun",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sidq": {
+      "arabic": "ٱلصَّـٰدِقِينَ",
+      "currentTransliteration": "sidq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sidrat-al-muntaha": {
+      "arabic": "سِدۡرَةِ",
+      "currentTransliteration": "sidrat al-muntaha",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sihr": {
+      "arabic": "سِحۡرٞ",
+      "currentTransliteration": "sihr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sijjeel": {
+      "arabic": "سِجِّيلٖ",
+      "currentTransliteration": "sijjeel",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "sijjin": {
+      "arabic": "سِجِّينٖ",
+      "currentTransliteration": "sijjin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "siraj": {
+      "arabic": "سِرَاجٗا",
+      "currentTransliteration": "siraj",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "subul": {
+      "arabic": "ٱلسُّبُلَ",
+      "currentTransliteration": "subul",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sudur-al-nas": {
+      "arabic": "صُدُورِ",
+      "currentTransliteration": "sudur al-nas",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "suht": {
+      "arabic": "لِلسُّحۡتِۚ",
+      "currentTransliteration": "suht",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "suhuf-mukarramah": {
+      "arabic": "صُحُفٖ",
+      "currentTransliteration": "suhuf mukarramah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "suhuf-mutahharah": {
+      "arabic": "مُّطَهَّرَةٗ",
+      "currentTransliteration": "suhuf mutahharah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sukara": {
+      "arabic": "سُكَٰرَى",
+      "currentTransliteration": "sukara",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sultan": {
+      "arabic": "سُلۡطَٰنٗاۚ",
+      "currentTransliteration": "sultan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sultanan": {
+      "arabic": "سُلۡطَٰنٗا",
+      "currentTransliteration": "sultanan",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sunnat-allah": {
+      "arabic": "سُنَّتَ",
+      "currentTransliteration": "sunnat Allah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "sur": {
+      "arabic": "ٱلصُّورِۚ",
+      "currentTransliteration": "sur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "suwa-": {
+      "arabic": "سُوَاعٗا",
+      "currentTransliteration": "Suwa'",
+      "proposedTransliteration": "Suwaʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "ta-wil": {
+      "arabic": "بِتَأۡوِيلِهِۦٓۖ",
+      "currentTransliteration": "ta'wil",
+      "proposedTransliteration": "taʾwil",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "tabaqan--an-tabaq": {
+      "arabic": "طَبَقًا",
+      "currentTransliteration": "tabaqan 'an tabaq",
+      "proposedTransliteration": "tabaqan ʾan tabaq",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "tabar": {
+      "arabic": "تَبَارَۢا",
+      "currentTransliteration": "tabar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tabbat-yada": {
+      "arabic": "تَبَّتۡ",
+      "currentTransliteration": "tabbat yada",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tadlil": {
+      "arabic": "تَضۡلِيلٖ",
+      "currentTransliteration": "tadlil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tafaqqah": {
+      "arabic": "لِّيَتَفَقَّهُواْ",
+      "currentTransliteration": "tafaqqah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tafdil": {
+      "arabic": "فَضَّلۡنَا",
+      "currentTransliteration": "tafdil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tafseel": {
+      "arabic": "وَتَفۡصِيلٗا",
+      "currentTransliteration": "tafseel",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "tagha": {
+      "arabic": "لَيَطۡغَىٰٓ",
+      "currentTransliteration": "tagha",
+      "proposedTransliteration": "taġa",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "taghloo": {
+      "arabic": "تَغۡلُواْ",
+      "currentTransliteration": "taghloo",
+      "proposedTransliteration": "taġloo",
+      "issues": [
+        "gh-for-ghayn",
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "taghut": {
+      "arabic": "ٱلطَّـٰغُوتَۖ",
+      "currentTransliteration": "taghut",
+      "proposedTransliteration": "taġut",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "tahlil-al-ayman": {
+      "arabic": "أَيۡمَٰنِكُمۡۚ",
+      "currentTransliteration": "tahlil al-ayman",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "takleeman": {
+      "arabic": "تَكۡلِيمٗا",
+      "currentTransliteration": "takleeman",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "tamatta-a": {
+      "arabic": "تَمَتَّ",
+      "currentTransliteration": "tamatta'a",
+      "proposedTransliteration": "tamattaʾa",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "tannur": {
+      "arabic": "ٱلتَّنُّورُ",
+      "currentTransliteration": "tannur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tanzil": {
+      "arabic": "تَنزِيلٗا",
+      "currentTransliteration": "tanzil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "taqsuroo": {
+      "arabic": "تَقۡصُرُواْ",
+      "currentTransliteration": "taqsuroo",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "taraqi": {
+      "arabic": "ٱلتَّرَاقِيَ",
+      "currentTransliteration": "taraqi",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tartil": {
+      "arabic": "وَرَتِّلِ",
+      "currentTransliteration": "tartil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tasdiyah": {
+      "arabic": "وَتَصۡدِيَةٗۚ",
+      "currentTransliteration": "tasdiyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tasleema": {
+      "arabic": "تَسۡلِيمٗ",
+      "currentTransliteration": "tasleema",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "tasnim": {
+      "arabic": "تَسۡنِيمٍ",
+      "currentTransliteration": "Tasnim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tattaqoon": {
+      "arabic": "تَتَّقُو",
+      "currentTransliteration": "tattaqoon",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "tawakkul": {
+      "arabic": "فَلۡيَتَوَكَّلِ",
+      "currentTransliteration": "tawakkul",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tawbah": {
+      "arabic": "بِـَٔايَٰتِنَا",
+      "currentTransliteration": "tawbah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tawbah-nasuh": {
+      "arabic": "تُوبُوٓاْ",
+      "currentTransliteration": "tawbah nasuh",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tayammum": {
+      "arabic": "فَتَيَمَّمُواْ",
+      "currentTransliteration": "tayammum",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tazakka": {
+      "arabic": "تَزَكَّىٰ",
+      "currentTransliteration": "tazakka",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tazyin": {
+      "arabic": "زَيَّنَّا",
+      "currentTransliteration": "tazyin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "teen": {
+      "arabic": "طِينٖ",
+      "currentTransliteration": "teen",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "thamud": {
+      "arabic": "ثَمُودُ",
+      "currentTransliteration": "Thamud",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "thann": {
+      "arabic": "ٱلظَّنَّ",
+      "currentTransliteration": "thann",
+      "proposedTransliteration": "ṯann",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "thaqalan": {
+      "arabic": "ٱلثَّقَلَانِ",
+      "currentTransliteration": "thaqalan",
+      "proposedTransliteration": "ṯaqalan",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "thubatin": {
+      "arabic": "ثُبَات",
+      "currentTransliteration": "thubatin",
+      "proposedTransliteration": "ṯubatin",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "thufur": {
+      "arabic": "ظُفُرٖۖ",
+      "currentTransliteration": "thufur",
+      "proposedTransliteration": "ṯufur",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "thulumat": {
+      "arabic": "ٱلظُّلُمَٰتِ",
+      "currentTransliteration": "thulumat",
+      "proposedTransliteration": "ṯulumat",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "tibaq": {
+      "arabic": "طِبَاقٗاۖ",
+      "currentTransliteration": "tibaq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tijaratan-an-taradin": {
+      "arabic": "تِجَٰرَةً عَن تَرَ",
+      "currentTransliteration": "tijaratan an taradin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tis-ata--ashar": {
+      "arabic": "عَشَرَ",
+      "currentTransliteration": "tis'ata 'ashar",
+      "proposedTransliteration": "tisʾata ʾašar",
+      "issues": [
+        "apostrophe-hamza",
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "tughyan": {
+      "arabic": "طُغۡيَٰنِهِمۡ",
+      "currentTransliteration": "tughyan",
+      "proposedTransliteration": "tuġyan",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "tuharrim": {
+      "arabic": "تُحَرِّمُ",
+      "currentTransliteration": "tuharrim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tur": {
+      "arabic": "وَٱلطُّورِ",
+      "currentTransliteration": "tur",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "turab": {
+      "arabic": "تُرَٰبَۢا",
+      "currentTransliteration": "turab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "tuwa": {
+      "arabic": "طُوًى",
+      "currentTransliteration": "Tuwa",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "uff": {
+      "arabic": "أُفّٖ",
+      "currentTransliteration": "uff",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "uli-al-amr": {
+      "arabic": "أُوْلِي ٱلۡأَم",
+      "currentTransliteration": "uli al-amr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ulu-al-arham": {
+      "arabic": "ٱلۡأَرۡحَامِ",
+      "currentTransliteration": "ulu al-arham",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ulu-l--azm": {
+      "arabic": "أُوْلُواْ",
+      "currentTransliteration": "ulu'l-'azm",
+      "proposedTransliteration": "uluʾl-ʾazm",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "umm-al-kitab": {
+      "arabic": "أُمِّ",
+      "currentTransliteration": "umm al-kitab",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "umm-al-qura": {
+      "arabic": "أُمَّ",
+      "currentTransliteration": "umm al-qura",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "umm-hawiyah": {
+      "arabic": "هَاوِيَةٞ",
+      "currentTransliteration": "umm hawiyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ummah": {
+      "arabic": "أُمَّةٗ",
+      "currentTransliteration": "ummah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ummiyyin": {
+      "arabic": "ٱلۡأُمِّيِّـۧنَ",
+      "currentTransliteration": "ummiyyin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "ummiyyoon": {
+      "arabic": "أُمِّيّ",
+      "currentTransliteration": "ummiyyoon",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "urwat-al-wuthqa": {
+      "arabic": "بِٱلۡعُرۡوَةِ",
+      "currentTransliteration": "urwat al-wuthqa",
+      "proposedTransliteration": "urwat al-wuṯqa",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "uswah-hasanah": {
+      "arabic": "أُسۡوَةٌ",
+      "currentTransliteration": "uswah hasanah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wadd": {
+      "arabic": "وَدّٗا",
+      "currentTransliteration": "Wadd",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wahy": {
+      "arabic": "وَحۡيٞ",
+      "currentTransliteration": "wahy",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wajh-rabbih": {
+      "arabic": "وَجۡهِ",
+      "currentTransliteration": "wajh rabbih",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "walayah": {
+      "arabic": "أَوۡلِيَآءُ",
+      "currentTransliteration": "walayah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "waliy": {
+      "arabic": "وَلِيّٗا",
+      "currentTransliteration": "waliy",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wanhar": {
+      "arabic": "وَٱنۡحَرۡ",
+      "currentTransliteration": "wanhar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "waqi-ah": {
+      "arabic": "ٱلۡوَاقِعَةُ",
+      "currentTransliteration": "waqi'ah",
+      "proposedTransliteration": "waqiʾah",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "waqr": {
+      "arabic": "وَقۡرٗاۚ",
+      "currentTransliteration": "waqr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wasilah": {
+      "arabic": "وَصِيلَةٖ",
+      "currentTransliteration": "wasilah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wasiyyah": {
+      "arabic": "ٱلۡوَصِيَّةِ",
+      "currentTransliteration": "wasiyyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wazirah": {
+      "arabic": "وَازِرَةٞ",
+      "currentTransliteration": "wazirah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wizr": {
+      "arabic": "أَوۡزَارَهُمۡ",
+      "currentTransliteration": "wizr",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "wus-": {
+      "arabic": "وُسۡعَهَاۖ",
+      "currentTransliteration": "wus'",
+      "proposedTransliteration": "wusʾ",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "yaghulla": {
+      "arabic": "يَغُلّ",
+      "currentTransliteration": "yaghulla",
+      "proposedTransliteration": "yaġulla",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "yatazakka": {
+      "arabic": "يَتَزَكَّىٰ",
+      "currentTransliteration": "yatazakka",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "yatim": {
+      "arabic": "يَتِيمٗا",
+      "currentTransliteration": "yatim",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "yawm-ad-din": {
+      "arabic": "يَوۡمِ ٱلدِّينِ",
+      "currentTransliteration": "yawm ad-din",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "yawm-al-taghabun": {
+      "arabic": "ٱلتَّغَابُنِۗ",
+      "currentTransliteration": "yawm al-taghabun",
+      "proposedTransliteration": "yawm al-taġabun",
+      "issues": [
+        "gh-for-ghayn"
+      ],
+      "needsReview": true
+    },
+    "yawm-al-talaq": {
+      "arabic": "يَوۡمَ",
+      "currentTransliteration": "yawm al-talaq",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "yawm-thaqil": {
+      "arabic": "ثَقِيلٗا",
+      "currentTransliteration": "yawm thaqil",
+      "proposedTransliteration": "yawm ṯaqil",
+      "issues": [
+        "th-for-tha"
+      ],
+      "needsReview": true
+    },
+    "yiqin": {
+      "arabic": "ٱلۡمُوقِنِينَ",
+      "currentTransliteration": "yiqin",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "yubayi-naka": {
+      "arabic": "يُبَايِعۡنَكَ",
+      "currentTransliteration": "yubayi'naka",
+      "proposedTransliteration": "yubayiʾnaka",
+      "issues": [
+        "apostrophe-hamza"
+      ],
+      "needsReview": true
+    },
+    "yukhalliduhu": {
+      "arabic": "أَخۡلَدَهُۥ",
+      "currentTransliteration": "yukhalliduhu",
+      "proposedTransliteration": "yuḫalliduhu",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "yushaqiqi": {
+      "arabic": "يُشَاقِقِ",
+      "currentTransliteration": "yushaqiqi",
+      "proposedTransliteration": "yušaqiqi",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "yushraka-bihi": {
+      "arabic": "يُشۡرَكَ بِ",
+      "currentTransliteration": "yushraka bihi",
+      "proposedTransliteration": "yušraka bihi",
+      "issues": [
+        "sh-for-shin"
+      ],
+      "needsReview": true
+    },
+    "yuwaswisu": {
+      "arabic": "يُوَسۡوِسُ",
+      "currentTransliteration": "yuwaswisu",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zabaniyah": {
+      "arabic": "ٱلزَّبَانِيَةَ",
+      "currentTransliteration": "zabaniyah",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zabooran": {
+      "arabic": "زَبُورٗا",
+      "currentTransliteration": "zabooran",
+      "proposedTransliteration": null,
+      "issues": [
+        "ascii-long-vowel"
+      ],
+      "needsReview": true
+    },
+    "zakkaha": {
+      "arabic": "زَكَّىٰهَا",
+      "currentTransliteration": "zakkaha",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zanjabil": {
+      "arabic": "زَنجَبِيلًا",
+      "currentTransliteration": "zanjabil",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zaqqum": {
+      "arabic": "ٱلزَّقُّومِ",
+      "currentTransliteration": "zaqqum",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zihar": {
+      "arabic": "يُظَٰهِرُونَ",
+      "currentTransliteration": "zihar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zill-min-yahmum": {
+      "arabic": "ظِلّٖ",
+      "currentTransliteration": "zill min yahmum",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zilzalaha": {
+      "arabic": "زُلۡزِلَتِ",
+      "currentTransliteration": "zilzalaha",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zukhruf": {
+      "arabic": "زُخۡرُفَ",
+      "currentTransliteration": "zukhruf",
+      "proposedTransliteration": "zuḫruf",
+      "issues": [
+        "kh-for-kha"
+      ],
+      "needsReview": true
+    },
+    "zulumat": {
+      "arabic": "ظُلُمَٰتٖ",
+      "currentTransliteration": "zulumat",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    },
+    "zumar": {
+      "arabic": "زُمَرًاۖ",
+      "currentTransliteration": "zumar",
+      "proposedTransliteration": null,
+      "issues": [],
+      "needsReview": false
+    }
+  }
+}

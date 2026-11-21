@@ -1,0 +1,616 @@
+{
+  "metadata": {
+    "generatedAt": "2026-11-20T19:37:10.788Z",
+    "totalGroups": 23,
+    "dispositions": {
+      "keep-separate": 23,
+      "merge-candidate": 0,
+      "defer": 0
+    }
+  },
+  "resolutions": {
+    "البيت": {
+      "normalizedForm": "البيت",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "al-bayt-al-ma-mur",
+          "transliteration": "al-bayt al-ma'mur",
+          "gloss": "frequented House (editorial gloss)",
+          "occurrences": [
+            "52:4"
+          ]
+        },
+        {
+          "key": "rabb-hadha-al-bayt",
+          "transliteration": "rabb hadha al-bayt",
+          "gloss": "Lord of this House (editorial gloss)",
+          "occurrences": [
+            "106:3"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "الحق": {
+      "normalizedForm": "الحق",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "al-haqq",
+          "transliteration": "al-haqq",
+          "gloss": "truth (editorial gloss)",
+          "occurrences": [
+            "103:3"
+          ]
+        },
+        {
+          "key": "haqq",
+          "transliteration": "haqq",
+          "gloss": "truth/reality (editorial gloss)",
+          "occurrences": [
+            "13:1",
+            "34:49"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "القلم": {
+      "normalizedForm": "القلم",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "al-qalam",
+          "transliteration": "al-qalam",
+          "gloss": "the pen (editorial gloss)",
+          "occurrences": [
+            "96:4"
+          ]
+        },
+        {
+          "key": "qalam",
+          "transliteration": "qalam",
+          "gloss": "pen (editorial gloss)",
+          "occurrences": [
+            "68:1"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "الروح": {
+      "normalizedForm": "الروح",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "al-ruh",
+          "transliteration": "al-ruh",
+          "gloss": "the Spirit (editorial gloss)",
+          "occurrences": [
+            "70:4",
+            "78:38",
+            "97:4"
+          ]
+        },
+        {
+          "key": "ruh",
+          "transliteration": "ruh",
+          "gloss": "spirit (editorial gloss)",
+          "occurrences": [
+            "26:193",
+            "42:52"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "اليقين": {
+      "normalizedForm": "اليقين",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "al-yaqin",
+          "transliteration": "al-yaqin",
+          "gloss": "certainty/death (editorial gloss)",
+          "occurrences": [
+            "74:47"
+          ]
+        },
+        {
+          "key": "haqq-al-yaqin",
+          "transliteration": "haqq al-yaqin",
+          "gloss": "the true certainty (editorial gloss)",
+          "occurrences": [
+            "56:95",
+            "69:51"
+          ]
+        },
+        {
+          "key": "ilm-al-yaqin",
+          "transliteration": "ilm al-yaqin",
+          "gloss": "knowledge of certainty (editorial gloss)",
+          "occurrences": [
+            "102:5"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "العرش": {
+      "normalizedForm": "العرش",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "arsh",
+          "transliteration": "arsh",
+          "gloss": "Throne (editorial gloss)",
+          "occurrences": [
+            "23:116",
+            "69:17"
+          ]
+        },
+        {
+          "key": "dhi-al-arsh",
+          "transliteration": "dhi al-arsh",
+          "gloss": "Owner of the Throne (editorial gloss)",
+          "occurrences": [
+            "81:20"
+          ]
+        },
+        {
+          "key": "dhu-al-arsh",
+          "transliteration": "dhu al-arsh",
+          "gloss": "Owner of the Throne (editorial gloss)",
+          "occurrences": [
+            "85:15"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "اسري": {
+      "normalizedForm": "اسري",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "asra",
+          "transliteration": "asra",
+          "gloss": "prisoners of war/captives (editorial gloss)",
+          "occurrences": [
+            "8:67"
+          ]
+        },
+        {
+          "key": "isra-",
+          "transliteration": "isra'",
+          "gloss": "night journey (editorial gloss)",
+          "occurrences": [
+            "17:1"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "اولياء": {
+      "normalizedForm": "اولياء",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "awliya",
+          "transliteration": "awliya",
+          "gloss": "allies/patrons/protectors (editorial gloss)",
+          "occurrences": [
+            "5:51",
+            "60:1"
+          ]
+        },
+        {
+          "key": "walayah",
+          "transliteration": "walayah",
+          "gloss": "alliance/guardianship/solidarity (editorial gloss)",
+          "occurrences": [
+            "8:72"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "القسط": {
+      "normalizedForm": "القسط",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "bil-qist",
+          "transliteration": "bil-qist",
+          "gloss": "in justice/equity (editorial gloss)",
+          "occurrences": [
+            "5:8"
+          ]
+        },
+        {
+          "key": "bil-qisti",
+          "transliteration": "bil-qisti",
+          "gloss": "in justice/equity (editorial gloss)",
+          "occurrences": [
+            "4:135"
+          ]
+        },
+        {
+          "key": "qist",
+          "transliteration": "qist",
+          "gloss": "equity/justice (editorial gloss)",
+          "occurrences": [
+            "6:152"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "ذكر": {
+      "normalizedForm": "ذكر",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "dhikr",
+          "transliteration": "dhikr",
+          "gloss": "remembrance (editorial gloss)",
+          "occurrences": [
+            "13:28",
+            "20:3",
+            "21:10"
+          ]
+        },
+        {
+          "key": "dhikr-allah",
+          "transliteration": "dhikr Allah",
+          "gloss": "remembrance of Allah (editorial gloss)",
+          "occurrences": [
+            "63:9"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "تغلوا": {
+      "normalizedForm": "تغلوا",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "ghuluww",
+          "transliteration": "ghuluww",
+          "gloss": "excess/extremism in religion (editorial gloss)",
+          "occurrences": [
+            "5:77"
+          ]
+        },
+        {
+          "key": "taghloo",
+          "transliteration": "taghloo",
+          "gloss": "exceed limits/exaggerate (editorial gloss)",
+          "occurrences": [
+            "4:171"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "حنيفا": {
+      "normalizedForm": "حنيفا",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "haneef",
+          "transliteration": "haneef",
+          "gloss": "inclining toward truth (editorial gloss)",
+          "occurrences": [
+            "6:161"
+          ]
+        },
+        {
+          "key": "haneefan",
+          "transliteration": "haneefan",
+          "gloss": "inclining toward truth/monotheist (editorial gloss)",
+          "occurrences": [
+            "4:125"
+          ]
+        },
+        {
+          "key": "hanif",
+          "transliteration": "hanif",
+          "gloss": "inclining toward truth/monotheist (editorial gloss)",
+          "occurrences": [
+            "16:120",
+            "6:79"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "سجيل": {
+      "normalizedForm": "سجيل",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "hijarah-min-sijjil",
+          "transliteration": "hijarah min sijjil",
+          "gloss": "stones of hard/baked clay (editorial gloss)",
+          "occurrences": [
+            "105:4"
+          ]
+        },
+        {
+          "key": "sijjeel",
+          "transliteration": "sijjeel",
+          "gloss": "hard clay/baked stone (editorial gloss)",
+          "occurrences": [
+            "11:82"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "الحوت": {
+      "normalizedForm": "الحوت",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "hut",
+          "transliteration": "hut",
+          "gloss": "fish/whale (editorial gloss)",
+          "occurrences": [
+            "37:142"
+          ]
+        },
+        {
+          "key": "sahib-al-hut",
+          "transliteration": "sahib al-hut",
+          "gloss": "companion of the fish (editorial gloss)",
+          "occurrences": [
+            "68:48"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "كلمه": {
+      "normalizedForm": "كلمه",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "kalimah",
+          "transliteration": "kalimah",
+          "gloss": "word/statement (editorial gloss)",
+          "occurrences": [
+            "14:24"
+          ]
+        },
+        {
+          "key": "kalimat-al-taqwa",
+          "transliteration": "kalimat al-taqwa",
+          "gloss": "word of righteousness (editorial gloss)",
+          "occurrences": [
+            "48:26"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "المحسنين": {
+      "normalizedForm": "المحسنين",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "muhsin",
+          "transliteration": "muhsin",
+          "gloss": "doers of good/excellence (editorial gloss)",
+          "occurrences": [
+            "5:85",
+            "6:84"
+          ]
+        },
+        {
+          "key": "muhsinin",
+          "transliteration": "muhsinin",
+          "gloss": "doers of good (editorial gloss)",
+          "occurrences": [
+            "77:44"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "ناقه": {
+      "normalizedForm": "ناقه",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "naqah",
+          "transliteration": "naqah",
+          "gloss": "she-camel (editorial gloss)",
+          "occurrences": [
+            "11:64",
+            "7:73"
+          ]
+        },
+        {
+          "key": "naqat-allah",
+          "transliteration": "naqat Allah",
+          "gloss": "she-camel of Allah (editorial gloss)",
+          "occurrences": [
+            "91:13"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "نطفه": {
+      "normalizedForm": "نطفه",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "nutfah",
+          "transliteration": "nutfah",
+          "gloss": "drop/sperm-drop (editorial gloss)",
+          "occurrences": [
+            "36:77",
+            "75:37",
+            "80:19"
+          ]
+        },
+        {
+          "key": "nutfah-amshaj",
+          "transliteration": "nutfah amshaj",
+          "gloss": "sperm-drop mixture (editorial gloss)",
+          "occurrences": [
+            "76:2"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "قدر": {
+      "normalizedForm": "قدر",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "qadar",
+          "transliteration": "qadar",
+          "gloss": "predestination/measure (editorial gloss)",
+          "occurrences": [
+            "54:49"
+          ]
+        },
+        {
+          "key": "qaddara-fa-hada",
+          "transliteration": "qaddara fa-hada",
+          "gloss": "destined then guided (editorial gloss)",
+          "occurrences": [
+            "87:3"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "رسول": {
+      "normalizedForm": "رسول",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "rasul",
+          "transliteration": "rasul",
+          "gloss": "messenger (editorial gloss)",
+          "occurrences": [
+            "10:47",
+            "19:51"
+          ]
+        },
+        {
+          "key": "rasul-karim",
+          "transliteration": "rasul karim",
+          "gloss": "noble Messenger (editorial gloss)",
+          "occurrences": [
+            "69:40"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "روح": {
+      "normalizedForm": "روح",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "roohun",
+          "transliteration": "roohun",
+          "gloss": "spirit/soul (editorial gloss)",
+          "occurrences": [
+            "4:171"
+          ]
+        },
+        {
+          "key": "ruh-minhu",
+          "transliteration": "ruh minhu",
+          "gloss": "spirit from Him (editorial gloss)",
+          "occurrences": [
+            "58:22"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "سلطنا": {
+      "normalizedForm": "سلطنا",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "sultan",
+          "transliteration": "sultan",
+          "gloss": "authority/proof (editorial gloss)",
+          "occurrences": [
+            "40:23",
+            "44:19",
+            "55:33",
+            "6:81"
+          ]
+        },
+        {
+          "key": "sultanan",
+          "transliteration": "sultanan",
+          "gloss": "clear case/proof/authority (editorial gloss)",
+          "occurrences": [
+            "4:144",
+            "4:153"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    },
+    "ام": {
+      "normalizedForm": "ام",
+      "disposition": "keep-separate",
+      "rationale": "Distinct glosses suggest genuine polysemy or contextual sense differentiation",
+      "members": [
+        {
+          "key": "umm-al-kitab",
+          "transliteration": "umm al-kitab",
+          "gloss": "Mother of the Book (editorial gloss)",
+          "occurrences": [
+            "43:4"
+          ]
+        },
+        {
+          "key": "umm-al-qura",
+          "transliteration": "umm al-qura",
+          "gloss": "Mother of Cities (editorial gloss)",
+          "occurrences": [
+            "42:7"
+          ]
+        }
+      ],
+      "recommendedAction": "Retain separate entries with explicit sense labels distinguishing meanings"
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "registerVersion": "1.0.0",
+  "workstream": "MFD-11.5 WS5",
+  "generatedAt": "2026-11-21T00:20:44+05:00",
+  "description": "Denominators for all coverage calculations in the terminology index",
+  
+  "denominators": {
+    "lexicalCoverage": {
+      "id": "lexical-coverage",
+      "name": "Lexical Coverage Denominator",
+      "definition": "Total corpus occurrences of all terms meeting inclusion criteria",
+      "formula": "Sum of totalOccurrences from data/root-occurrences/{root}.json for all included roots",
+      "unit": "lemma occurrences",
+      "currentEstimate": {
+        "value": null,
+        "status": "requires-extraction-run",
+        "rationale": "Exact count requires running proposed extraction methodology against all 1,576 root files and applying inclusion criteria. Estimated 800-1,200 unique lemmas based on specification."
+      },
+      "numerator": {
+        "definition": "Occurrences of included terms that are indexed in terminology-index-v2.json",
+        "targetRatio": "1.0 (100% of included terms' occurrences should be indexed)"
+      },
+      "notes": "This denominator is dynamic — it changes as inclusion criteria are refined. Must be recalculated whenever criteria change."
+    },
+    
+    "thematicCoverage": {
+      "id": "thematic-coverage",
+      "name": "Thematic Coverage Denominator",
+      "definition": "Total distinct concepts extracted in MFD-11 Pass A",
+      "formula": "Count of unique terminology entries across all 473 extraction records",
+      "unit": "distinct concepts",
+      "currentEstimate": {
+        "value": 649,
+        "status": "legacy-index-count",
+        "rationale": "Current arabic-terminology-index.json contains 649 unique terms. However, this reflects extraction artifacts (whitespace splitting, no normalization), not true thematic denominator. True denominator requires re-extraction using proposed methodology."
+      },
+      "numerator": {
+        "definition": "Concepts from Pass A that have corresponding entries in terminology-index-v2.json",
+        "targetRatio": "To be determined after scholarly review of scope"
+      },
+      "notes": "The 649-term count from the legacy index is NOT a reliable denominator. It includes fragments, non-normalized forms, and terms that may not meet inclusion criteria."
+    },
+    
+    "rootCoverage": {
+      "id": "root-coverage",
+      "name": "Root Coverage Denominator",
+      "definition": "Total roots catalogued in root-discovery-registry.json",
+      "formula": "Count of entries in data/root-discovery-registry.json",
+      "unit": "roots",
+      "currentValue": {
+        "totalRegistered": 1642,
+        "withOccurrenceFiles": 1576,
+        "status": "verified"
+      },
+      "numerator": {
+        "definition": "Roots that have at least one lemma included in terminology-index-v2.json",
+        "targetRatio": "Depends on inclusion criteria; not all 1,576 roots will qualify"
+      },
+      "notes": "Not all registered roots will meet inclusion criteria. Many are grammatical particles, rare forms, or lack thematic significance."
+    },
+    
+    "corpusTokenCoverage": {
+      "id": "corpus-token-coverage",
+      "name": "Corpus Token Coverage (Informational Only)",
+      "definition": "Total Arabic tokens in pinned quran-json@3.1.2 corpus",
+      "formula": "Sum of word counts across all 6,236 ayahs",
+      "unit": "tokens",
+      "currentEstimate": {
+        "value": 77430,
+        "status": "approximate",
+        "source": "Standard Quranic word count estimates"
+      },
+      "numerator": {
+        "definition": "Tokens belonging to included lemmas",
+        "note": "FAHM does NOT target exhaustive corpus coverage. This metric is informational only."
+      },
+      "notes": "The terminology index is a curated thematic lexicon, not a concordance. Low corpus token coverage is expected and acceptable."
+    },
+    
+    "priorityRootCoverage": {
+      "id": "priority-root-coverage",
+      "name": "Priority Root Coverage",
+      "definition": "Coverage of roots identified as thematically priority in MFD-11 workstreams",
+      "formula": "Indexed occurrences / total corpus occurrences for priority roots only",
+      "unit": "occurrences per root",
+      "domains": {
+        "warPeace": {
+          "roots": ["جهد", "سلم", "قتل", "حرب", "صلح", "أمن"],
+          "description": "War, peace, covenant, security terminology"
+        },
+        "artsBeauty": {
+          "roots": ["حسن", "زين", "جمل", "نور", "بهج"],
+          "description": "Beauty, aesthetics, light terminology"
+        },
+        "covenantLaw": {
+          "roots": ["عهد", "وعد", "حكم", "شرع", "قسط"],
+          "description": "Covenant, promise, law, justice terminology"
+        },
+        "theology": {
+          "roots": ["وحد", "ربب", "إله", "كفر", "أمن", "شرك"],
+          "description": "Monotheism, divinity, belief/disbelief terminology"
+        }
+      },
+      "currentStatus": {
+        "note": "Coverage percentages vary 4-24% per domain under legacy methodology. Proposed methodology should achieve near-100% for included terms within each domain.",
+        "requiresExtractionRun": true
+      }
+    }
+  },
+  
+  "calculationRules": {
+    "occurrenceCounting": {
+      "lemmaOccurrences": "Each appearance of a specific morphological form counts as one occurrence",
+      "rootOccurrences": "Sum of all lemma occurrences under that root",
+      "distinctAyahs": "Number of unique surah:ayah pairs containing any form of the root",
+      "repeatedForms": "Repeated forms within a single ayah each count separately"
+    },
+    "percentageReporting": {
+      "requiredFields": ["numerator", "denominator", "countingMethodology", "treatmentOfRepeatedForms"],
+      "format": "X.Y% (numerator/denominator) using [methodology]"
+    }
+  },
+  
+  "versionDependencies": {
+    "corpus": "quran-json@3.1.2",
+    "rootOccurrencesSnapshot": "2026-11-10 (Sprint 48)",
+    "rootDiscoveryRegistry": "Current as of 2026-11-21",
+    "passAExtractions": "473 files as of 2026-11-21"
+  }
+}

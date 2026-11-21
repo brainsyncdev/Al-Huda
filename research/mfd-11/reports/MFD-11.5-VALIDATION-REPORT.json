@@ -1,0 +1,234 @@
+{
+  "generatedAt": "2026-11-21T00:27:00+05:00",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "schemaValidation": {
+    "schemas": [
+      {
+        "file": "evidence-link.schema.json",
+        "valid": true,
+        "issues": [
+          "Uses draft/2020-12 not draft-07; structural check only"
+        ]
+      },
+      {
+        "file": "passage-extraction.schema.json",
+        "valid": true,
+        "issues": [
+          "Uses draft/2020-12 not draft-07; structural check only"
+        ]
+      },
+      {
+        "file": "topic-candidate.schema.json",
+        "valid": true,
+        "issues": [
+          "Uses draft/2020-12 not draft-07; structural check only"
+        ]
+      }
+    ],
+    "extractionsSample": [
+      {
+        "file": "001-al-fatiha.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p1.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p10.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p11.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p12.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p13.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p14.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p15.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p16.json",
+        "valid": true,
+        "issues": []
+      },
+      {
+        "file": "002-al-baqarah-p17.json",
+        "valid": true,
+        "issues": []
+      }
+    ],
+    "extractionsSampleSize": 10
+  },
+  "referentialIntegrity": {
+    "totalMappings": 789,
+    "sampledCount": 50,
+    "brokenReferences": [],
+    "brokenCount": 0,
+    "status": "PASS"
+  },
+  "arabicTextComparison": {
+    "filesSampled": 10,
+    "totalExcerptsChecked": 59,
+    "totalMismatches": 0,
+    "fileResults": [
+      {
+        "file": "001-al-fatiha.json",
+        "excerptsChecked": 7,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p1.json",
+        "excerptsChecked": 5,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p10.json",
+        "excerptsChecked": 5,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p11.json",
+        "excerptsChecked": 2,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p12.json",
+        "excerptsChecked": 8,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p13.json",
+        "excerptsChecked": 5,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p14.json",
+        "excerptsChecked": 10,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p15.json",
+        "excerptsChecked": 5,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p16.json",
+        "excerptsChecked": 5,
+        "mismatches": 0,
+        "details": []
+      },
+      {
+        "file": "002-al-baqarah-p17.json",
+        "excerptsChecked": 7,
+        "mismatches": 0,
+        "details": []
+      }
+    ],
+    "status": "PASS"
+  },
+  "rootMorphologyConsistency": {
+    "priorityRootsChecked": 9,
+    "results": [
+      {
+        "root": "جهد",
+        "inIndex": false,
+        "occurrencesFileExists": true,
+        "termsMatch": null,
+        "issues": []
+      },
+      {
+        "root": "قتل",
+        "inIndex": true,
+        "occurrencesFileExists": true,
+        "termsMatch": false,
+        "issues": [
+          "No term overlap between index terms and occurrence lemmas"
+        ]
+      },
+      {
+        "root": "حسن",
+        "inIndex": true,
+        "occurrencesFileExists": true,
+        "termsMatch": false,
+        "issues": [
+          "No term overlap between index terms and occurrence lemmas"
+        ]
+      },
+      {
+        "root": "زين",
+        "inIndex": false,
+        "occurrencesFileExists": true,
+        "termsMatch": null,
+        "issues": []
+      },
+      {
+        "root": "جمل",
+        "inIndex": false,
+        "occurrencesFileExists": true,
+        "termsMatch": null,
+        "issues": []
+      },
+      {
+        "root": "عهد",
+        "inIndex": false,
+        "occurrencesFileExists": true,
+        "termsMatch": null,
+        "issues": []
+      },
+      {
+        "root": "وثق",
+        "inIndex": false,
+        "occurrencesFileExists": true,
+        "termsMatch": null,
+        "issues": []
+      },
+      {
+        "root": "سلم",
+        "inIndex": true,
+        "occurrencesFileExists": true,
+        "termsMatch": false,
+        "issues": [
+          "No term overlap between index terms and occurrence lemmas"
+        ]
+      },
+      {
+        "root": "صلح",
+        "inIndex": false,
+        "occurrencesFileExists": true,
+        "termsMatch": null,
+        "issues": []
+      }
+    ],
+    "discrepanciesFound": 3,
+    "status": "WARN"
+  }
+}

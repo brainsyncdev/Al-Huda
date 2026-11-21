@@ -1,0 +1,178 @@
+{
+  "configVersion": "1.0.0",
+  "workstream": "MFD-11.5",
+  "generatedAt": "2026-11-21T00:20:44+05:00",
+  "description": "Versioned parameters for reproducible terminology index extraction",
+  
+  "corpus": {
+    "source": "quran-json",
+    "version": "3.1.2",
+    "pinMethod": "npm package lock",
+    "textPath": "node_modules/quran-json/dist/chapters/en/*.json",
+    "arabicTextField": "verses[].text",
+    "encoding": "UTF-8 with full tashkeel"
+  },
+  
+  "rootOccurrences": {
+    "sourceDir": "data/root-occurrences/",
+    "fileCount": 1576,
+    "snapshotDate": "2026-11-10",
+    "assertedBy": "automated-morphology-review",
+    "assertionContext": "Sprint 48 automated morphology review",
+    "reviewState": "auto-accepted",
+    "schema": {
+      "entry": {
+        "slug": "string (root slug)",
+        "title": "string",
+        "arabicTitle": "string",
+        "roots": ["string (triliteral/quadriliteral)"],
+        "includedLemmas": ["string (dictionary citation form with diacritics)"],
+        "reviewState": "string",
+        "assertedBy": "string",
+        "assertedAt": "ISO date"
+      },
+      "occurrences": [{
+        "ref": {"surah": "number", "ayah": "number"},
+        "matchedToken": "string (exact corpus token with diacritics)",
+        "matchedLemma": "string",
+        "matchedRoot": "string",
+        "wordPosition": "number (1-based)"
+      }],
+      "uniqueAyahs": [{"surah": "number", "ayah": "number"}],
+      "totalOccurrences": "number",
+      "totalMatches": "number"
+    }
+  },
+  
+  "rootDiscoveryRegistry": {
+    "sourceFile": "data/root-discovery-registry.json",
+    "totalRoots": 1642,
+    "activeRoots": 1576
+  },
+  
+  "passAExtractions": {
+    "sourceDir": "research/mfd-11/extractions/",
+    "fileCount": 473,
+    "terminologyField": "terminology[]",
+    "purpose": "Cross-reference thematic concept identification"
+  },
+  
+  "inclusionCriteria": {
+    "criterionA": {
+      "name": "Thematic Concept",
+      "description": "Term represents a concept identified in MFD-11 Pass A extraction",
+      "source": "research/mfd-11/extractions/*.json terminology arrays"
+    },
+    "criterionB": {
+      "name": "Morphological Significance",
+      "description": "Key morphological form with theological/legal/ethical/narrative weight",
+      "thresholds": {
+        "minDistinctAyahs": 3,
+        "minTotalOccurrences": 5
+      },
+      "source": "data/root-occurrences/*.json occurrence counts"
+    },
+    "criterionC": {
+      "name": "Explicit Extraction",
+      "description": "Explicitly extracted as terminology entry in Pass A",
+      "source": "research/mfd-11/extractions/*.json"
+    },
+    "priorityOrder": ["A+B", "A-only", "B-only", "C-only"]
+  },
+  
+  "exclusionCriteria": {
+    "grammaticalParticles": {
+      "excluded": ["إِنَّ", "لَيْسَ", "مِنْ", "إِلَى", "عَلَى"],
+      "conditionalInclusion": "Only when carrying specific theological meaning"
+    },
+    "properNouns": {
+      "excluded": "Prophet names, place names (handled by dedicated categories)",
+      "exception": "Proper nouns functioning as conceptual terms"
+    },
+    "hapaxLegomena": {
+      "excluded": "Single-occurrence terms with no broader conceptual significance",
+      "exception": "Hapax legomena with significant exegetical discussion"
+    }
+  },
+  
+  "transliteration": {
+    "standard": "ISO 233-2",
+    "edition": "1993",
+    "primaryField": "transliteration (exactly one per entry)",
+    "searchAliases": "Array of simplified variants for user-facing search",
+    "conventions": {
+      "hamza": "ʾ (search alias: ')",
+      "ayn": "ʿ (search alias: `)",
+      "tha": "ṯ (search alias: th)",
+      "ha": "ḥ (search alias: h)",
+      "kha": "ḫ (search alias: kh)",
+      "dhal": "ḏ (search alias: dh)",
+      "shin": "š (search alias: sh)",
+      "sad": "ṣ (search alias: s)",
+      "dad": "ḍ (search alias: d)",
+      "ta": "ṭ (search alias: t)",
+      "za": "ẓ (search alias: z)",
+      "ghayn": "ġ (search alias: gh)",
+      "alifLong": "ā (search alias: a)",
+      "wawLong": "ū (search alias: u)",
+      "yaLong": "ī (search alias: i)",
+      "taMarbuta": "ah (pausal) / at (construct) (search alias: a)",
+      "alifLam": "al- (hyphenated, never doubled)",
+      "shadda": "Doubled consonant letter"
+    }
+  },
+  
+  "glossRubric": {
+    "layers": ["lexical", "contextualSenses", "tafsirNote", "editorialGloss"],
+    "prohibitions": [
+      "Do NOT assign single gloss to polysemous term without noting contextual senses",
+      "Do NOT derive gloss primarily from English translation",
+      "Do NOT present tafsir interpretation as Quranic fact"
+    ]
+  },
+  
+  "morphologyFields": {
+    "required": ["root", "lemma", "form", "pattern", "pos", "morphConfidence"],
+    "confidenceLevels": ["high", "medium", "low", "disputed"],
+    "uncertaintyHandling": "Provide alternativeAnalyses array when confidence < high"
+  },
+  
+  "outputFormat": {
+    "indexFile": "research/mfd-11/reports/arabic-terminology-index-v2.json",
+    "entryStructure": {
+      "root": "string",
+      "lemma": "string",
+      "form": "string",
+      "pattern": "string",
+      "pos": "string",
+      "morphConfidence": "string",
+      "transliteration": "string",
+      "searchAliases": ["string"],
+      "gloss": {
+        "lexical": "string",
+        "contextualSenses": [{"sense": "string", "verses": ["string"]}],
+        "tafsirNote": "string",
+        "editorialGloss": "string"
+      },
+      "occurrences": {
+        "total": "number",
+        "distinctAyahs": "number",
+        "tokens": ["string"]
+      },
+      "provenance": {
+        "rootSource": "string (path)",
+        "corpusVersion": "string",
+        "morphologyReview": "string",
+        "passACrossRef": ["string (extraction file paths)"]
+      }
+    }
+  },
+  
+  "reproducibilityRequirements": {
+    "deterministicScript": "Extraction script must produce identical output given identical inputs",
+    "noExternalAPIs": "No runtime dependencies on external services",
+    "noRandomness": "No random sampling or non-deterministic ordering",
+    "versionPinning": "All dependencies explicitly versioned above",
+    "testSuite": "Verify every indexed occurrence against pinned corpus"
+  }
+}

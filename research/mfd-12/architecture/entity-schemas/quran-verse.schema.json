@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/quran-verse",
+  "title": "MFD-12 QuranVerse (Immutable)",
+  "description": "Individual verse record with positional identity. Immutable once created.",
+  "type": "object",
+  "required": ["id", "surahId", "ayahNumber", "textArabic", "wordCount", "juzNumber", "hizbNumber", "corpusVersion", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[0-9]{1,3}:[0-9]{1,3}$", "description": "Surah:ayah composite key" },
+    "surahId": { "type": "string", "pattern": "^surah-[0-9]{3}$", "description": "Reference to QuranSurah.id" },
+    "ayahNumber": { "type": "integer", "minimum": 1, "description": "Within-surah position" },
+    "textArabic": { "type": "string", "minLength": 1, "description": "Full diacritical Arabic text from pinned corpus" },
+    "wordCount": { "type": "integer", "minimum": 1, "description": "Token count per corpus tokenization" },
+    "juzNumber": { "type": "integer", "minimum": 1, "maximum": 30, "description": "Juz' containing this verse" },
+    "hizbNumber": { "type": "integer", "minimum": 1, "maximum": 60, "description": "Hizb containing this verse" },
+    "sajdaType": { "enum": ["OBLIGATORY", "RECOMMENDED", null], "description": "Prostration classification; explicit null when the verse has no sajda" },
+    "corpusVersion": { "type": "string", "minLength": 1, "description": "Must match QuranSurah.corpusVersion" },
+    "schemaVersion": { "type": "string", "minLength": 1, "description": "Entity schema version" }
+  }
+}

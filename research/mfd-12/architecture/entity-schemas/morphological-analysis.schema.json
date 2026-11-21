@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/morphological-analysis",
+  "title": "MFD-12 MorphologicalAnalysis",
+  "description": "Detailed grammatical breakdown for a specific token occurrence.",
+  "type": "object",
+  "required": ["id", "lemmaId", "verseId", "wordPosition", "analysisMethod", "confidence", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "format": "uuid" },
+    "lemmaId": { "type": "string", "pattern": "^lem-[a-z]+-[a-z0-9]+$" },
+    "verseId": { "type": "string", "pattern": "^[0-9]{1,3}:[0-9]{1,3}$" },
+    "wordPosition": { "type": "integer", "minimum": 0 },
+    "case": { "enum": ["NOMINATIVE", "ACCUSATIVE", "GENITIVE"] },
+    "mood": { "enum": ["INDICATIVE", "SUBJUNCTIVE", "JUSSIVE"] },
+    "gender": { "enum": ["MASCULINE", "FEMININE"] },
+    "number": { "enum": ["SINGULAR", "DUAL", "PLURAL"] },
+    "person": { "enum": ["FIRST", "SECOND", "THIRD"] },
+    "voice": { "enum": ["ACTIVE", "PASSIVE"] },
+    "prefix": { "type": "string" },
+    "suffix": { "type": "string" },
+    "analysisMethod": { "type": "string", "minLength": 1, "description": "Tool or scholar producing analysis" },
+    "confidence": { "enum": ["HIGH", "MEDIUM", "LOW"] },
+    "schemaVersion": { "type": "string", "minLength": 1 }
+  }
+}

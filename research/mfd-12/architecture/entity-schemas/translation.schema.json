@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/translation",
+  "title": "MFD-12 Translation",
+  "description": "Versioned translation of a specific Quranic verse.",
+  "type": "object",
+  "required": ["id", "verseId", "language", "translator", "version", "text", "licenseType", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^trans-[a-z]{2}-[a-z0-9-]+-v[0-9]+-[0-9]{3}-[0-9]{1,3}$", "description": "Edition (language-translator-version) plus zero-padded surah and ayah; unique per verse. Example: trans-en-saheeh-v3-002-255" },
+    "verseId": { "type": "string", "pattern": "^[0-9]{1,3}:[0-9]{1,3}$", "description": "Reference to QuranVerse.id" },
+    "language": { "type": "string", "pattern": "^[a-z]{2}$", "description": "ISO 639-1 language code" },
+    "translator": { "type": "string", "minLength": 1, "description": "Translator or organization name" },
+    "version": { "type": "string", "minLength": 1, "description": "Edition/version identifier" },
+    "text": { "type": "string", "minLength": 1, "description": "Translated text" },
+    "footnotes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["marker", "text"],
+        "additionalProperties": false,
+        "properties": {
+          "marker": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    },
+    "licenseType": { "type": "string", "minLength": 1, "description": "Copyright/license identifier" },
+    "publishedDate": { "type": "string", "format": "date", "description": "Publication date (YYYY-MM-DD)" },
+    "schemaVersion": { "type": "string", "minLength": 1, "description": "Entity schema version" }
+  }
+}
