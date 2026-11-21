@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12.2/hadith-report",
+  "title": "MFD-12.2 HadithReport",
+  "description": "Individual hadith report with matn, isnād summary, and multi-scholar grading. Referenced by EvidenceRecord for claim linkage. proposedBy: ai-assisted | reviewStatus: pending-review",
+  "type": "object",
+  "required": [
+    "id",
+    "sourceId",
+    "editionId",
+    "matnArabic",
+    "locator",
+    "gradings",
+    "createdAt",
+    "schemaVersion"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^hd-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "description": "UUID-based identifier with hd- prefix"
+    },
+    "sourceId": {
+      "type": "string",
+      "pattern": "^src-[a-z0-9-]+$",
+      "description": "Reference to Source entity (must be sourceType: hadith-collection)"
+    },
+    "editionId": {
+      "type": "string",
+      "pattern": "^ed-[a-z0-9-]+$",
+      "description": "Specific edition within the collection"
+    },
+    "locator": {
+      "type": "object",
+      "required": ["chapterSection"],
+      "additionalProperties": false,
+      "properties": {
+        "chapterSection": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Chapter/section reference within the collection"
+        },
+        "hadithNumber": {
+          "type": "string",
+          "description": "Hadith number as printed in the edition"
+        },
+        "volume": {
+          "type": "string",
+          "description": "Volume number if applicable"
+        },
+        "page": {
+          "type": "string",
+          "description": "Page number in the cited edition"
+        }
+      },
+      "description": "Structured locator per SOURCE-REGISTRY-SPEC §4"
+    },
+    "matnArabic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Full Arabic matn text with diacritics"
+    },
+    "matnTranslation": {
+      "type": "object",
+      "required": ["text", "language"],
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Translated text"
+        },
+        "translator": {
+          "type": "string",
+          "description": "Name of translator"
+        },
+        "language": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 5,
+          "description": "BCP 47 language tag"
+        },
+        "sourceEditionId": {
+          "type": "string",
+          "description": "Edition the translation is based on"
+        }
+      },
+      "description": "Translation of matn; never presented as original text"
+    },
+    "isnadSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "narratorChain": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Ordered list of narrator names from Prophet ﷺ to compiler. Simplified; full narrator graph deferred."
+        },
+        "chainLength": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of narrators in chain"
+        },
+        "isContinuous": {
+          "type": "boolean",
+          "description": "Whether chain is unbroken (muttaṣil)"
+        },
+        "notableNarrators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "position"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "position": {
+                "type": "integer",
+                "minimum": 1,
+                "description": "Position in chain (1 = closest to Prophet ﷺ)"
+              },
+              "evaluationNote": {
+                "type": "string",
+                "description": "Brief evaluation note, e.g., 'thiqah', 'da\\'if'"
+              }
+            }
+          },
+          "description": "Notable narrators with brief evaluations"
+        }
+      },
+      "description": "Simplified isnād representation. Full narrator biography graph deferred to future workstream."
+    },
+    "gradings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["grade", "gradingScholar"],
+        "additionalProperties": false,
+        "properties": {
+          "grade": {
+            "enum": [
+              "SAHIH",
+              "HASAN",
+              "DAIF",
+              "MAUDU",
+              "HASAN_LI_GHAIRIHI",
+              "DAIF_JIDDAN",
+              "UNGRADED"
+            ],
+            "description": "Authenticity grade assigned by a specific muhaddith"
+          },
+          "gradingScholar": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Name of muhaddith who assigned this grade"
+          },
+          "gradingScholarId": {
+            "type": "string",
+            "pattern": "^sch-[a-z0-9][a-z0-9-]{2,63}$",
+            "description": "Optional link to ReviewerIdentity if scholar is registered"
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Brief grading rationale"
+          },
+          "gradedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this grade was assigned"
+          }
+        }
+      },
+      "description": "Multiple gradings allowed; different scholars may disagree"
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kitab": {
+          "type": "string",
+          "description": "Book/chapter within collection"
+        },
+        "bab": {
+          "type": "string",
+          "description": "Section/sub-chapter"
+        },
+        "topicTags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Topical classification tags"
+        }
+      },
+      "description": "Topical classification within the collection"
+    },
+    "variantOf": {
+      "type": "string",
+      "pattern": "^hd-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "description": "If this is a variant transmission, references the primary HadithReport.id"
+    },
+    "parallelReports": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^hd-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+      },
+      "uniqueItems": true,
+      "description": "Same/similar hadith in other collections"
+    },
+    "contentVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1,
+      "description": "Monotonically increasing version for matn/isnad changes"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Schema version for migration support"
+    }
+  }
+}

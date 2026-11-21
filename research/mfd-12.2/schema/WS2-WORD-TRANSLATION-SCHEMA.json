@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/word-translation",
+  "title": "MFD-12 WordTranslation",
+  "description": "Per-word translation gloss for interlinear study. Optional dataset loaded on demand. Schema defined per WS-D Q25 resolution; population deferred.",
+  "type": "object",
+  "required": ["id", "verseId", "wordPosition", "tokenArabic", "language", "source", "version", "gloss", "licenseType", "corpusVersion", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^wtrans-[a-z]{2}-[a-z0-9-]+-v[0-9]+-[0-9]{3}-[0-9]{1,3}-[0-9]+$",
+      "description": "Composite key: wtrans-{lang}-{source}-v{n}-{surah}-{ayah}-{wordPos}"
+    },
+    "verseId": {
+      "type": "string",
+      "pattern": "^[0-9]{1,3}:[0-9]{1,3}$",
+      "description": "Reference to QuranVerse.id (surah:ayah)"
+    },
+    "wordPosition": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "1-based word position within verse; matches Linguistic Integration Spec §2"
+    },
+    "tokenArabic": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact surface form from pinned quran-json corpus with full tashkīl"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$",
+      "description": "ISO 639-1 target language code"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Word-translation corpus name or scholar attribution"
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Edition/version identifier of the word-translation dataset"
+    },
+    "gloss": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Word-level translation or gloss in target language"
+    },
+    "grammaticalRole": {
+      "type": "string",
+      "description": "Brief part-of-speech or grammatical label in target language"
+    },
+    "licenseType": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Copyright or license identifier for this word-translation dataset"
+    },
+    "corpusVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Must match pinned quran-json corpus version used for token alignment"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Entity schema version (SemVer)"
+    }
+  },
+  "x-mfd-metadata": {
+    "entityGroup": "A",
+    "groupName": "Quranic Canon",
+    "mutable": false,
+    "curated": true,
+    "populationStatus": "deferred",
+    "proposedBy": "ai-assisted",
+    "reviewStatus": "pending-review",
+    "sourceResolution": "WS-D-TRANSLATION-GRANULARITY-RESOLUTION.md",
+    "crossReferenceIntegrityRules": [
+      "WordTranslation.verseId → MUST exist in QuranVerse.id",
+      "WordTranslation.wordPosition → MUST be ≤ QuranVerse.wordCount for referenced verse",
+      "WordTranslation.corpusVersion → MUST match QuranVerse.corpusVersion"
+    ]
+  }
+}

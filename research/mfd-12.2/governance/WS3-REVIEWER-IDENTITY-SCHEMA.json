@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12.2/reviewer-identity",
+  "title": "MFD-12.2 ReviewerIdentity",
+  "description": "Registered scholar/reviewer identity with scoped authority. Mutable credentials; decisions referencing this identity remain valid after deactivation. proposedBy: ai-assisted | reviewStatus: pending-review",
+  "type": "object",
+  "required": [
+    "id",
+    "displayName",
+    "reviewerType",
+    "authorizedScopes",
+    "activeFrom",
+    "createdAt",
+    "schemaVersion"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^sch-[a-z0-9][a-z0-9-]{2,63}$",
+      "description": "Stable identifier. Lowercase kebab-case. Never reused."
+    },
+    "displayName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256,
+      "description": "Public-facing name. May be pseudonymous."
+    },
+    "reviewerType": {
+      "enum": [
+        "HUMAN_SCHOLAR",
+        "HUMAN_EDITOR",
+        "HUMAN_VERIFIER",
+        "HUMAN_RIGHTS_REVIEWER",
+        "AUTOMATED_AGENT"
+      ],
+      "description": "Distinguishes human from automated reviewers at the identity level."
+    },
+    "qualifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["qualification", "issuingBody", "verifiedAt"],
+        "additionalProperties": false,
+        "properties": {
+          "qualification": {
+            "type": "string",
+            "minLength": 1,
+            "description": "e.g., 'Ijazah in Tafsir', 'PhD Islamic Studies', 'Alimiyyah Certificate'"
+          },
+          "issuingBody": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Institution or scholar who issued the qualification"
+          },
+          "issuedYear": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Year qualification was issued"
+          },
+          "verifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this qualification was verified"
+          },
+          "verifiedBy": {
+            "type": "string",
+            "description": "Identity of verifier (another sch- ID or system process)"
+          },
+          "verificationMethod": {
+            "enum": [
+              "documentary",
+              "oral-confirmation",
+              "institutional-api",
+              "self-declared-unverified"
+            ],
+            "description": "How the qualification was verified"
+          }
+        }
+      },
+      "description": "Verifiable credentials. Empty array permitted for legacy/imported reviewers."
+    },
+    "domainExpertise": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domain", "proficiencyLevel"],
+        "additionalProperties": false,
+        "properties": {
+          "domain": {
+            "enum": [
+              "TAFSIR",
+              "HADITH",
+              "FIQH",
+              "AQEEDAH",
+              "LINGUISTICS",
+              "LEXICOGRAPHY",
+              "SEERAH",
+              "HISTORY",
+              "CONTEMPORARY_SCHOLARSHIP",
+              "RIGHTS_LICENSING"
+            ],
+            "description": "Scholarly domain of expertise"
+          },
+          "proficiencyLevel": {
+            "enum": ["EXPERT", "COMPETENT", "FAMILIAR"],
+            "description": "Self-assessed or verified proficiency"
+          },
+          "traditions": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "description": "Schools/traditions within this domain, e.g., ['Hanafi', 'Ash\\'ari']. For transparency, not ranking."
+          },
+          "verifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "description": "When this expertise was verified"
+          }
+        }
+      },
+      "description": "Domain-specific expertise with tradition annotations"
+    },
+    "authorizedScopes": {
+      "type": "array",
+      "items": {
+        "enum": ["TECHNICAL", "RIGHTS", "SCHOLARLY", "TAXONOMIC"]
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Review scopes this identity is currently authorized to issue decisions in"
+    },
+    "authorizationChain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["authorizedBy", "authorizedAt", "scopeGranted"],
+        "additionalProperties": false,
+        "properties": {
+          "authorizedBy": {
+            "type": "string",
+            "description": "sch- ID of authorizer or 'system-bootstrap' for initial setup"
+          },
+          "authorizedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "scopeGranted": {
+            "type": "array",
+            "items": {
+              "enum": ["TECHNICAL", "RIGHTS", "SCHOLARLY", "TAXONOMIC"]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Why this authorization was granted"
+          }
+        }
+      },
+      "description": "Who authorized this reviewer and for what. Append-only log."
+    },
+    "activeFrom": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this identity became active"
+    },
+    "activeUntil": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "When this identity was deactivated. null = currently active"
+    },
+    "deactivationReason": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Required when activeUntil is non-null"
+    },
+    "contactHash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "SHA-256 hash of contact info for deduplication without storing PII"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Internal administrative notes"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0",
+      "description": "Schema version for migration support"
+    }
+  },
+  "if": {
+    "properties": {
+      "activeUntil": { "type": "string" }
+    },
+    "required": ["activeUntil"]
+  },
+  "then": {
+    "required": ["deactivationReason"]
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "reviewerType": { "const": "AUTOMATED_AGENT" }
+        },
+        "required": ["reviewerType"]
+      },
+      "then": {
+        "properties": {
+          "authorizedScopes": {
+            "const": ["TECHNICAL"],
+            "description": "AUTOMATED_AGENT may only hold TECHNICAL scope per AUTH-2"
+          }
+        }
+      }
+    }
+  ]
+}

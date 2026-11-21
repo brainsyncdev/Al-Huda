@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/relationship",
+  "title": "MFD-12 Relationship (Updated with CROSS_LINGUAL_VARIANT)",
+  "description": "Typed edge between any two taxonomy or knowledge entities. Updated per WS-D Q27 resolution to include CROSS_LINGUAL_VARIANT type.",
+  "type": "object",
+  "required": ["id", "sourceEntityId", "targetEntityId", "relationshipType", "bidirectional", "provenance", "reviewStatus", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Deterministic composite or UUID"
+    },
+    "sourceEntityId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Source entity ID (any valid entity)"
+    },
+    "targetEntityId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Target entity ID (any valid entity)"
+    },
+    "relationshipType": {
+      "enum": [
+        "DIRECT_QURANIC_REFERENCE",
+        "LEXICAL_RELATION",
+        "MORPHOLOGICAL_RELATION",
+        "THEMATIC_RELATION",
+        "TAFSIR_SUPPORTED",
+        "EDITORIAL_CLASSIFICATION",
+        "CONTRAST",
+        "CONTEMPORARY_APPLICATION",
+        "NARRATIVE_RELATION",
+        "CROSS_LINGUAL_VARIANT",
+        "CUSTOM"
+      ],
+      "description": "Canonical types from MFD-12-RELATIONSHIP-TAXONOMY.json. CROSS_LINGUAL_VARIANT added per WS-D Q27. Legacy mappings: CONTAINS→EDITORIAL_CLASSIFICATION, CROSS_REFERENCES→THEMATIC_RELATION, SHARES_CONCEPT→THEMATIC_RELATION."
+    },
+    "customType": {
+      "type": "string",
+      "description": "Required when relationshipType is CUSTOM"
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable explanation of this edge"
+    },
+    "weight": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Relevance or confidence score"
+    },
+    "bidirectional": {
+      "type": "boolean",
+      "description": "Whether inverse relationship is implied"
+    },
+    "divergenceRationale": {
+      "type": "string",
+      "description": "Required when relationshipType is CROSS_LINGUAL_VARIANT. Explains semantic divergence."
+    },
+    "languagesAffected": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z]{2}$" },
+      "minItems": 2,
+      "maxItems": 3,
+      "description": "Required when relationshipType is CROSS_LINGUAL_VARIANT. ISO 639-1 codes of affected languages."
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["origin", "method", "assertedAt", "assertedBy"],
+      "additionalProperties": false,
+      "properties": {
+        "origin": { "type": "string", "minLength": 1 },
+        "method": { "type": "string", "minLength": 1 },
+        "corpusVersion": { "type": "string" },
+        "assertedAt": { "type": "string", "format": "date-time" },
+        "assertedBy": { "type": "string", "minLength": 1 }
+      }
+    },
+    "reviewStatus": {
+      "enum": ["DRAFT", "PENDING_SCHOLARLY_REVIEW", "APPROVED", "REVISED", "DEPRECATED"],
+      "description": "Current scholarly review state"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Entity schema version (SemVer)"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "relationshipType": { "const": "CUSTOM" } } },
+      "then": { "required": ["customType"] }
+    },
+    {
+      "if": { "properties": { "relationshipType": { "const": "CROSS_LINGUAL_VARIANT" } } },
+      "then": {
+        "required": ["divergenceRationale", "languagesAffected"],
+        "properties": {
+          "sourceEntityId": { "pattern": "^cpt-[a-z0-9-]+$", "description": "CROSS_LINGUAL_VARIANT source must be a Concept" },
+          "targetEntityId": { "pattern": "^cpt-[a-z0-9-]+$", "description": "CROSS_LINGUAL_VARIANT target must be a Concept" },
+          "bidirectional": { "const": true, "description": "CROSS_LINGUAL_VARIANT is always symmetric" }
+        }
+      }
+    }
+  ],
+  "x-mfd-metadata": {
+    "entityGroup": "C",
+    "groupName": "Knowledge Taxonomy",
+    "mutable": true,
+    "curated": true,
+    "proposedBy": "ai-assisted",
+    "reviewStatus": "pending-review",
+    "sourceResolution": "WS-D-CROSSLINGUAL-ALIGNMENT-RESOLUTION.md",
+    "newRelationshipType": {
+      "id": "CROSS_LINGUAL_VARIANT",
+      "label": "Cross-Lingual Variant",
+      "definition": "Links language-specific concept variants when 1:1 cross-lingual alignment fails. Used only when Concept.crossLingualNotes.alignmentConfidence = DIVERGENT.",
+      "semanticScope": "Captures genuine semantic divergence across Arabic, English, and Urdu concept spaces without fragmenting the default hub-and-spoke alignment model.",
+      "allowedSourceTypes": ["concept"],
+      "allowedTargetTypes": ["concept"],
+      "directionality": "bidirectional (symmetric)",
+      "cardinality": "one-to-few",
+      "evidenceRequirements": {
+        "minEvidenceLevel": "scholarly-review",
+        "requiredFields": ["divergence_rationale", "languages_affected"]
+      },
+      "provenanceRequirements": {
+        "mustCite": true,
+        "allowedProvenanceTags": ["scholarly-review", "cross-lingual-analysis"]
+      }
+    },
+    "crossReferenceIntegrityRules": [
+      "Relationship.sourceEntityId → MUST exist (any entity table)",
+      "Relationship.targetEntityId → MUST exist (any entity table)",
+      "CROSS_LINGUAL_VARIANT.sourceEntityId → MUST be Concept.id",
+      "CROSS_LINGUAL_VARIANT.targetEntityId → MUST be Concept.id",
+      "CROSS_LINGUAL_VARIANT.bidirectional → MUST be true"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "mfd-12/learning-progress",
+  "title": "MFD-12 LearningProgress",
+  "description": "Personal learning progress state for a specific module within a path. Stored locally in IndexedDB only; never bundled or synced. Defined per WS-D Q29 resolution.",
+  "type": "object",
+  "required": ["id", "learningPathId", "userId", "moduleId", "status", "lastActiveAt", "createdAt", "updatedAt", "schemaVersion"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "UUID v4; device-local personal identifier"
+    },
+    "learningPathId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Reference to LearningPath.id"
+    },
+    "userId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Local device user identifier (or 'default' for single-user mode)"
+    },
+    "moduleId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Reference to LearningModule.id; must be member of referenced LearningPath.moduleIds[]"
+    },
+    "status": {
+      "enum": ["NOT_STARTED", "IN_PROGRESS", "COMPLETED", "PAUSED"],
+      "description": "Current progress state for this module"
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when user first started this module"
+    },
+    "completedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp when user completed this module"
+    },
+    "lastActiveAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of most recent activity on this module"
+    },
+    "timeSpentSeconds": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Cumulative time spent on this module in seconds"
+    },
+    "quizScore": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Normalized quiz score if applicable (0.0–1.0)"
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of quiz or completion attempts"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Personal reflection or notes on this module"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 creation timestamp"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 last modification timestamp"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Entity schema version (SemVer)"
+    }
+  },
+  "x-mfd-metadata": {
+    "entityGroup": "E",
+    "groupName": "User & Research Workspace",
+    "mutable": true,
+    "curated": false,
+    "storageLocation": "local-indexeddb-only",
+    "syncPolicy": "never-synced",
+    "proposedBy": "ai-assisted",
+    "reviewStatus": "pending-review",
+    "sourceResolution": "WS-D-LEARNING-PROGRESS-RESOLUTION.md",
+    "crossReferenceIntegrityRules": [
+      "LearningProgress.learningPathId → MUST exist in LearningPath.id",
+      "LearningProgress.moduleId → MUST exist in LearningModule.id AND be member of LearningPath.moduleIds[]"
+    ]
+  }
+}
