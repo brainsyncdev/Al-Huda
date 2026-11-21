@@ -41,7 +41,10 @@ import {
   getMappingTypeCategory,
   getReviewStatusInfo,
 } from "@/lib/taxonomy/mapping-type-labels";
-import { getRelationshipsFor } from "@/lib/taxonomy/canonical-adapter";
+import {
+  getRelationshipsFor,
+  type CanonicalRelationship,
+} from "@/lib/taxonomy/canonical-adapter";
 
 interface AyahMapping {
   id: string;
@@ -202,29 +205,44 @@ export default async function AyahPage({ params, searchParams }: Props) {
   // For each canonical topic mapped to this ayah, find other topics connected
   // via conceptual relationships, then resolve ayat mapped to those topics.
   // This surfaces the "Interconnected Qur'an" principle (Section 4).
+  //
+  // Section 7 compliance: every relationship carries its own provenance field.
+  // We thread that through so the UI can display review status per connection,
+  // keeping editorial material visibly distinct from approved scholarship.
   const conceptuallyRelatedAyat = (() => {
     const currentTopicIds = new Set(canonicalTopicsForAyah.map(({ topic }) => topic.id));
     if (currentTopicIds.size === 0) return [];
 
-    // Collect topic IDs connected via SHARES_CONCEPT
-    const connectedTopicIds = new Set<string>();
+    // Collect topic IDs connected via SHARES_CONCEPT, retaining provenance
+    const connectedTopics = new Map<string, { provenance: string; description: string }>();
     for (const topicId of currentTopicIds) {
       const rels = getRelationshipsFor(topicId);
       for (const rel of rels) {
         if (rel.type !== "SHARES_CONCEPT") continue;
         const otherId = rel.sourceId === topicId ? rel.targetId : rel.sourceId;
-        if (!currentTopicIds.has(otherId)) {
-          connectedTopicIds.add(otherId);
+        if (!currentTopicIds.has(otherId) && !connectedTopics.has(otherId)) {
+          connectedTopics.set(otherId, {
+            provenance: rel.provenance,
+            description: rel.description,
+          });
         }
       }
     }
-    if (connectedTopicIds.size === 0) return [];
+    if (connectedTopics.size === 0) return [];
 
     // Find ayat mapped to connected topics (excluding the current ayah)
     const mappings = topicAyahMappings as AyahMapping[];
-    const relatedMap = new Map<string, { surah: number; ayah: number; topicId: string; topicTitle: string }>();
+    const relatedMap = new Map<string, {
+      surah: number;
+      ayah: number;
+      topicId: string;
+      topicTitle: string;
+      provenance: string;
+      relDescription: string;
+    }>();
     for (const m of mappings) {
-      if (!connectedTopicIds.has(m.topicId)) continue;
+      const connInfo = connectedTopics.get(m.topicId);
+      if (!connInfo) continue;
       // Skip the current ayah itself
       if (m.surahNumber === s && m.ayahStart <= a && m.ayahEnd >= a) continue;
       const key = `${m.surahNumber}:${m.ayahStart}`;
@@ -236,6 +254,8 @@ export default async function AyahPage({ params, searchParams }: Props) {
         ayah: m.ayahStart,
         topicId: m.topicId,
         topicTitle: topic.title,
+        provenance: connInfo.provenance,
+        relDescription: connInfo.description,
       });
     }
 
@@ -466,7 +486,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
         </section>
       )}
 
-      {/* Entry Point 4: Related ayat via conceptual links (Section 4) */}
+      {/* Entry Point 4: Related ayat via conceptual links (Section 4 + Section 7) */}
       {conceptuallyRelatedAyat.length > 0 && (
         <section
           aria-labelledby="conceptual-related-ayat"
@@ -481,27 +501,36 @@ export default async function AyahPage({ params, searchParams }: Props) {
             </h2>
             <p className="text-xs text-muted-foreground">
               These verses share underlying Qur'anic concepts with the topics above.
-              Connections are evidence-backed, not algorithmic.
+              Connections are editorial and pending scholarly review — not established tafsir.
             </p>
           </div>
           <ul className="mt-3 flex flex-wrap gap-2">
-            {conceptuallyRelatedAyat.map((ref) => (
-              <li key={`${ref.surah}:${ref.ayah}`}>
-                <Link
-                  href={ayahPath({ surah: ref.surah, ayah: ref.ayah })}
-                  className="group inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary"
-                >
-                  <span className="text-xs text-muted-foreground group-hover:text-primary/70">
-                    {ref.surah}:{ref.ayah}
-                  </span>
-                  <span className="text-[10px] text-primary/60">via</span>
-                  <span className="max-w-[120px] truncate text-xs">
-                    {ref.topicTitle}
-                  </span>
-                </Link>
-              </li>
-            ))}
+            {conceptuallyRelatedAyat.map((ref) => {
+              const statusInfo = getReviewStatusInfo(ref.provenance);
+              return (
+                <li key={`${ref.surah}:${ref.ayah}`}>
+                  <Link
+                    href={ayahPath({ surah: ref.surah, ayah: ref.ayah })}
+                    className="group inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                    title={ref.relDescription}
+                  >
+                    <span className="text-xs text-muted-foreground group-hover:text-primary/70">
+                      {ref.surah}:{ref.ayah}
+                    </span>
+                    <span className="text-[10px] text-primary/60">via</span>
+                    <span className="max-w-[120px] truncate text-xs">
+                      {ref.topicTitle}
+                    </span>
+                    <span className={`ml-0.5 inline-block h-1.5 w-1.5 rounded-full ${statusInfo.className.split(' ')[0].replace('/10', '/40')}`} aria-label={statusInfo.label} title={statusInfo.label} />
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Each dot indicates the review status of the conceptual relationship.
+            All connections shown are {getReviewStatusInfo(conceptuallyRelatedAyat[0]?.provenance ?? 'pending-scholarly-review').label.toLowerCase()}.
+          </p>
         </section>
       )}
 
