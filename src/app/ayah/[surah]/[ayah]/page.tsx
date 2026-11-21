@@ -521,7 +521,7 @@ export default async function AyahPage({ params, searchParams }: Props) {
                     <span className="max-w-[120px] truncate text-xs">
                       {ref.topicTitle}
                     </span>
-                    <span className={`ml-0.5 inline-block h-1.5 w-1.5 rounded-full ${statusInfo.className.split(' ')[0].replace('/10', '/40')}`} aria-label={statusInfo.label} title={statusInfo.label} />
+                    <span className={`ml-0.5 inline-block h-1.5 w-1.5 rounded-full ${statusInfo.dotClassName}`} aria-label={statusInfo.label} title={statusInfo.label} />
                   </Link>
                 </li>
               );

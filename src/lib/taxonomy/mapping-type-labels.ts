@@ -81,6 +81,13 @@ export function getMappingTypeCategory(mappingType: string): 'quranic' | 'editor
 export interface ReviewStatusInfo {
   label: string;
   className: string;
+  /**
+   * Static class for a small status dot. Kept as a literal so Tailwind's
+   * content scanner emits it — deriving it from `className` at runtime
+   * (e.g. replacing "/10" with "/40") produces a class that is never
+   * generated and renders an invisible indicator.
+   */
+  dotClassName: string;
   icon?: string;
 }
 
@@ -88,18 +95,22 @@ export const REVIEW_STATUS_INFO: Record<string, ReviewStatusInfo> = {
   'pending-scholarly-review': {
     label: 'Pending scholarly review',
     className: 'bg-amber-500/10 text-amber-700 dark:text-amber-400 border-amber-500/20',
+    dotClassName: 'bg-amber-500',
   },
   'scholarly-approved': {
     label: 'Scholarly approved',
     className: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/20',
+    dotClassName: 'bg-emerald-500',
   },
   'needs-revision': {
     label: 'Needs revision',
     className: 'bg-rose-500/10 text-rose-700 dark:text-rose-400 border-rose-500/20',
+    dotClassName: 'bg-rose-500',
   },
   'draft': {
     label: 'Draft',
     className: 'bg-gray-500/10 text-gray-700 dark:text-gray-400 border-gray-500/20',
+    dotClassName: 'bg-gray-500',
   },
 };
 
@@ -110,5 +121,6 @@ export function getReviewStatusInfo(status: string): ReviewStatusInfo {
   return REVIEW_STATUS_INFO[status] ?? {
     label: status.replace(/-/g, ' '),
     className: 'bg-gray-500/10 text-gray-700 dark:text-gray-400 border-gray-500/20',
+    dotClassName: 'bg-gray-500',
   };
 }
