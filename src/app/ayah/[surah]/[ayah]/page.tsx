@@ -41,6 +41,7 @@ import {
   getMappingTypeCategory,
   getReviewStatusInfo,
 } from "@/lib/taxonomy/mapping-type-labels";
+import { getRelationshipsFor } from "@/lib/taxonomy/canonical-adapter";
 
 interface AyahMapping {
   id: string;
@@ -195,6 +196,53 @@ export default async function AyahPage({ params, searchParams }: Props) {
       }
     }
     return Array.from(topicMap.values());
+  })();
+
+  // Entry Point 4 (Connect): Find related ayat through SHARES_CONCEPT edges.
+  // For each canonical topic mapped to this ayah, find other topics connected
+  // via conceptual relationships, then resolve ayat mapped to those topics.
+  // This surfaces the "Interconnected Qur'an" principle (Section 4).
+  const conceptuallyRelatedAyat = (() => {
+    const currentTopicIds = new Set(canonicalTopicsForAyah.map(({ topic }) => topic.id));
+    if (currentTopicIds.size === 0) return [];
+
+    // Collect topic IDs connected via SHARES_CONCEPT
+    const connectedTopicIds = new Set<string>();
+    for (const topicId of currentTopicIds) {
+      const rels = getRelationshipsFor(topicId);
+      for (const rel of rels) {
+        if (rel.type !== "SHARES_CONCEPT") continue;
+        const otherId = rel.sourceId === topicId ? rel.targetId : rel.sourceId;
+        if (!currentTopicIds.has(otherId)) {
+          connectedTopicIds.add(otherId);
+        }
+      }
+    }
+    if (connectedTopicIds.size === 0) return [];
+
+    // Find ayat mapped to connected topics (excluding the current ayah)
+    const mappings = topicAyahMappings as AyahMapping[];
+    const relatedMap = new Map<string, { surah: number; ayah: number; topicId: string; topicTitle: string }>();
+    for (const m of mappings) {
+      if (!connectedTopicIds.has(m.topicId)) continue;
+      // Skip the current ayah itself
+      if (m.surahNumber === s && m.ayahStart <= a && m.ayahEnd >= a) continue;
+      const key = `${m.surahNumber}:${m.ayahStart}`;
+      if (relatedMap.has(key)) continue;
+      const topic = getCanonicalTopic(m.topicId);
+      if (!topic) continue;
+      relatedMap.set(key, {
+        surah: m.surahNumber,
+        ayah: m.ayahStart,
+        topicId: m.topicId,
+        topicTitle: topic.title,
+      });
+    }
+
+    // Sort by surah then ayah, cap at 12 to avoid overwhelming the page
+    return Array.from(relatedMap.values())
+      .sort((a, b) => a.surah - b.surah || a.ayah - b.ayah)
+      .slice(0, 12);
   })();
 
   const juz = getJuzForAyah(s, a);
@@ -415,6 +463,45 @@ export default async function AyahPage({ params, searchParams }: Props) {
           <p className="mt-3 text-xs text-muted-foreground">
             Canonical topics are part of the expanded taxonomy and are pending scholarly review.
           </p>
+        </section>
+      )}
+
+      {/* Entry Point 4: Related ayat via conceptual links (Section 4) */}
+      {conceptuallyRelatedAyat.length > 0 && (
+        <section
+          aria-labelledby="conceptual-related-ayat"
+          className="rounded-2xl border border-primary/30 bg-primary/5 p-5"
+        >
+          <div className="space-y-1">
+            <h2
+              id="conceptual-related-ayat"
+              className="text-xs font-semibold uppercase tracking-wider text-primary"
+            >
+              Conceptually Related Ayat
+            </h2>
+            <p className="text-xs text-muted-foreground">
+              These verses share underlying Qur'anic concepts with the topics above.
+              Connections are evidence-backed, not algorithmic.
+            </p>
+          </div>
+          <ul className="mt-3 flex flex-wrap gap-2">
+            {conceptuallyRelatedAyat.map((ref) => (
+              <li key={`${ref.surah}:${ref.ayah}`}>
+                <Link
+                  href={ayahPath({ surah: ref.surah, ayah: ref.ayah })}
+                  className="group inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-card px-3 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-primary/10 hover:text-primary"
+                >
+                  <span className="text-xs text-muted-foreground group-hover:text-primary/70">
+                    {ref.surah}:{ref.ayah}
+                  </span>
+                  <span className="text-[10px] text-primary/60">via</span>
+                  <span className="max-w-[120px] truncate text-xs">
+                    {ref.topicTitle}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 
