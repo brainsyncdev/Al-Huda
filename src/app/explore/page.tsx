@@ -304,6 +304,36 @@ export default function ExplorePage() {
       </section>
 
       <section
+        aria-labelledby="concepts-heading"
+        className="rounded-2xl border border-border/80 bg-card p-6"
+      >
+        <div className="flex items-center gap-3 mb-3">
+          <BookMarked className="h-5 w-5 text-primary" aria-hidden />
+          <h2
+            id="concepts-heading"
+            className="font-display text-lg font-semibold tracking-tight"
+          >
+            Concept Clusters
+          </h2>
+          <span className="rounded-full border border-amber-500/20 bg-amber-500/10 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-amber-700 dark:text-amber-400">
+            pending review
+          </span>
+        </div>
+        <p className="text-sm text-muted-foreground mb-4">
+          Cross-cutting Qur'anic themes — patience, gratitude, justice, trust —
+          that connect multiple topics across different areas of guidance.
+          Derived from editorial relationships.
+        </p>
+        <Link
+          href="/explore/concepts"
+          className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+        >
+          <BookMarked className="h-4 w-4" aria-hidden />
+          Browse concept clusters
+        </Link>
+      </section>
+
+      <section
         aria-labelledby="graph-heading"
         className="rounded-2xl border border-border/80 bg-card p-6"
       >
