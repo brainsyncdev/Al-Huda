@@ -46,6 +46,7 @@ import {
   getRelationshipsFor,
   type CanonicalRelationship,
 } from "@/lib/taxonomy/canonical-adapter";
+import { ReflectionPromptsPanel } from "@/components/quran/reflection-prompts-panel";
 
 interface AyahMapping {
   id: string;
@@ -555,6 +556,13 @@ export default async function AyahPage({ params, searchParams }: Props) {
           </p>
         </section>
       )}
+
+      {/* Entry Point 5 (Reflect): Curated reflection prompts derived from mapped topics.
+          Editorial educational aids — not tafsir, not claims about divine intent. */}
+      <ReflectionPromptsPanel
+        ayahRef={`${s}:${a}`}
+        topicIds={canonicalTopicsForAyah.map(({ topic }) => topic.id)}
+      />
 
       {/* Entry Point 4: Related ayat via conceptual links (Section 4 + Section 7) */}
       {conceptuallyRelatedAyat.length > 0 && (
