@@ -11,7 +11,7 @@
 import { normalizeArabic, normalizeLatin } from "./search";
 import { getTranslation, type TranslationMeta } from "./translations";
 import { getSurahIndex } from "./data";
-import { isEditionGated } from "./rights-gate";
+import { isEditionGated, resolveFallbackEdition } from "./rights-gate";
 
 const cache = new Map<string, Map<string, string>>();
 const inflight = new Map<string, Promise<Map<string, string> | null>>();
@@ -82,12 +82,22 @@ export interface TranslationSearchResults {
   hits: TranslationSearchHit[];
   totalScanned: number;
   loadError: boolean;
+  /**
+   * MFD-12.3 WS3: When the requested edition was gated and search fell back
+   * to a permitted edition, this carries the originally requested ID so the
+   * UI can display an accurate notice. Null when no fallback occurred.
+   */
+  fallbackFromEditionId?: string | null;
 }
 
 /**
  * Search a specific translation edition for the query. Returns null when the
  * edition id is not in the catalog. Returns a result with `loadError: true`
  * when the edition is known but the upstream fetch failed.
+ *
+ * MFD-12.3 WS3: When the requested edition is gated, attempts to fall back
+ * to a permitted bundled edition for searching. The `fallbackFromEditionId`
+ * field on the result signals to the caller that a substitution occurred.
  */
 export async function searchTranslationEdition(
   editionId: string,
@@ -97,16 +107,54 @@ export async function searchTranslationEdition(
   const meta = getTranslation(editionId);
   if (!meta) return null;
 
-  const map = await loadEdition(editionId);
-  if (!map) {
-    return { edition: meta, query, hits: [], totalScanned: 0, loadError: true };
+  // MFD-12.3 WS3: Resolve fallback for server-side search when gated
+  let effectiveEditionId = editionId;
+  let fallbackFromId: string | null = null;
+
+  if (isEditionGated(editionId)) {
+    const fallbackId = resolveFallbackEdition(editionId);
+    if (fallbackId) {
+      effectiveEditionId = fallbackId;
+      fallbackFromId = editionId;
+    } else {
+      // No fallback available — report as load error
+      return {
+        edition: meta,
+        query,
+        hits: [],
+        totalScanned: 0,
+        loadError: true,
+        fallbackFromEditionId: null,
+      };
+    }
   }
 
-  const isArabic = meta.direction === "rtl";
+  const map = await loadEdition(effectiveEditionId);
+  if (!map) {
+    return {
+      edition: meta,
+      query,
+      hits: [],
+      totalScanned: 0,
+      loadError: true,
+      fallbackFromEditionId: fallbackFromId,
+    };
+  }
+
+  // Use the EFFECTIVE edition's metadata for normalization direction
+  const effectiveMeta = getTranslation(effectiveEditionId) ?? meta;
+  const isArabic = effectiveMeta.direction === "rtl";
   const normalize = isArabic ? normalizeArabic : normalizeLatin;
   const needle = normalize(query.trim());
   if (needle.length < 2) {
-    return { edition: meta, query, hits: [], totalScanned: 0, loadError: false };
+    return {
+      edition: meta,
+      query,
+      hits: [],
+      totalScanned: 0,
+      loadError: false,
+      fallbackFromEditionId: fallbackFromId,
+    };
   }
 
   const index = getSurahIndex();
@@ -133,7 +181,14 @@ export async function searchTranslationEdition(
     if (hits.length >= limit) break;
   }
 
-  return { edition: meta, query, hits, totalScanned: scanned, loadError: false };
+  return {
+    edition: meta,
+    query,
+    hits,
+    totalScanned: scanned,
+    loadError: false,
+    fallbackFromEditionId: fallbackFromId,
+  };
 }
 
 function findSnippet(

@@ -15,6 +15,7 @@
 //   source catalog (src/lib/quran/sources.ts).
 
 import { getSource, sourceLanguageLabel } from "../quran/sources";
+import { isEditionGated } from "../quran/rights-gate";
 import {
   getAllMappings,
   type TopicMapping,
@@ -60,6 +61,21 @@ export interface TafsirLink {
   url: string; // in-app route or external URL
   isExternal: boolean;
   available: boolean;
+  /**
+   * MFD-12.3 WS4 Gap 4: True when this in-app tafsir edition is gated by the
+   * rights-gate. The UI should render a visual indicator (e.g. lock icon or
+   * "rights under review" badge) rather than hiding the link entirely, so
+   * users understand why content is unavailable.
+   *
+   * IMPORTANT: When this module is bundled into a client component (via
+   * "use client" import chain), process.env.TANZIL_RIGHTS_ENFORCEMENT is
+   * not available in the browser, so this field will always be false.
+   * Client-side gate detection should rely on:
+   *   1. translation-store.ts getGatedMetadata() after a 403 response
+   *   2. The /api/v1/ayahs/.../tafsir endpoint's gated annotation (server-side)
+   * Server-rendered pages will have the correct value.
+   */
+  gated: boolean;
 }
 
 export interface AyahTafsirResult {
@@ -152,6 +168,11 @@ function buildTafsirLink(
   ayah: number
 ): TafsirLink {
   const record = getSource(source.sourceId);
+  // MFD-12.3 WS4 Gap 4: Check gate status for in-app tafsirs.
+  // External tafsirs are never gated (they link out to publisher sites).
+  const gated = !source.isExternal && !!source.translationId
+    ? isEditionGated(source.translationId)
+    : false;
   return {
     tafsirId: source.sourceId,
     tafsirName: source.name,
@@ -162,6 +183,7 @@ function buildTafsirLink(
     url: source.buildUrl(surah, ayah),
     isExternal: source.isExternal,
     available: record != null && record.available !== false,
+    gated,
   };
 }
 

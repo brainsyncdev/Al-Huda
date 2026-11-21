@@ -11,7 +11,7 @@ import { arabicSizeClass, arabicLineHeightClass, usePrefs } from "@/lib/prefs/co
 import { cn } from "@/lib/utils";
 import { absoluteUrl } from "@/lib/site";
 import { getComprehensionNote } from "@/lib/comprehension/notes";
-import { useTranslationText } from "@/lib/quran/translation-store";
+import { useTranslationText, isFallback, getActualEdition } from "@/lib/quran/translation-store";
 import { getTranslation } from "@/lib/quran/translations";
 import { getTopicsForAyah, getDimensionForTopic, getTopicUrl, getDimensionUrl } from "@/lib/topics/navigation";
 import { AudioPlayer } from "./audio-player";
@@ -46,13 +46,20 @@ interface AyahCardProps {
 }
 
 function ParallelTranslationBlock({ translationId, surah, ayah }: { translationId: string; surah: number; ayah: number }) {
-  const meta = getTranslation(translationId);
+  const actualId = getActualEdition(translationId);
+  const meta = getTranslation(actualId);
   const text = useTranslationText(translationId, surah, ayah);
+  const showingFallback = isFallback(translationId);
   if (!meta) return null;
   return (
     <div className="rounded-xl border border-border/60 bg-background/50 p-3">
       <p className="mb-1 text-[0.6875rem] font-semibold uppercase tracking-wider text-muted-foreground">
         {meta.name} — {meta.languageLabel}
+        {showingFallback && (
+          <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-amber-100 px-1.5 py-0.5 text-[0.5625rem] font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300" title={`Showing ${meta.name} because your selected translation is under rights review`}>
+            ⚠ Fallback
+          </span>
+        )}
       </p>
       <p lang={meta.language} dir={meta.direction ?? "ltr"} className="text-sm leading-relaxed text-foreground/85">
         {text ?? "Loading…"}
@@ -105,16 +112,19 @@ export function AyahCard({
     hydrated,
   } = usePrefs();
 
-  // Resolve the active translation text. Falls back to the dataset's built-in
-  // English translation while the selected edition is still loading.
-  const translationMeta = getTranslation(translationId);
+  // MFD-12.3 WS3: Resolve the ACTUAL translation being displayed, which may
+  // differ from the user's saved preference when rights enforcement substitutes
+  // a fallback. Attribution must reflect what is actually shown.
+  const actualTranslationId = getActualEdition(translationId);
+  const showingFallback = isFallback(translationId);
+  const translationMeta = getTranslation(actualTranslationId);
   const selectedTranslationText = useTranslationText(translationId, ayah.surah, ayah.ayah);
   const displayTranslation = selectedTranslationText ?? ayah.translation;
   const translationDir = translationMeta?.direction ?? "ltr";
   const translationLang = translationMeta?.language ?? "en";
   // Snippet highlighting only applies to the built-in English translation;
   // when the user picks a different edition we show the full text instead.
-  const activeSnippet = translationId === "en.sahih" ? snippet : null;
+  const activeSnippet = actualTranslationId === "en.sahih" ? snippet : null;
 
   const [copied, setCopied] = useState<"link" | "text" | null>(null);
   const [noteOpen, setNoteOpen] = useState(false);
@@ -178,8 +188,10 @@ export function AyahCard({
     }
   }
 
+  // MFD-12.3: Credit reflects the ACTUALLY displayed translation, not the
+  // user's saved preference (which may be gated).
   const translationCredit =
-    translationId === "en.sahih"
+    actualTranslationId === "en.sahih"
       ? "(Saheeh International)"
       : translationMeta
         ? `(${translationMeta.name})`
@@ -239,14 +251,24 @@ export function AyahCard({
       </p>
 
       {showTranslation && (
-        <p
-          lang={translationLang}
-          dir={translationDir}
-          className={cn(
-            "mt-4 max-w-3xl text-foreground/85",
-            variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
+        <div className="mt-4 max-w-3xl">
+          {/* MFD-12.3 WS3: Subtle fallback indicator when displaying substituted content */}
+          {showingFallback && (
+            <p className="mb-1.5 flex items-center gap-1.5 text-[0.6875rem] text-amber-700 dark:text-amber-400">
+              <span aria-hidden>⚠</span>
+              <span>
+                Showing <strong>{translationMeta?.name ?? "alternative"}</strong> — your selected translation ({getTranslation(translationId)?.name ?? translationId}) is under rights review.
+              </span>
+            </p>
           )}
-        >
+          <p
+            lang={translationLang}
+            dir={translationDir}
+            className={cn(
+              "text-foreground/85",
+              variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
+            )}
+          >
           {activeSnippet ? (
             <>
               {activeSnippet.text.slice(0, activeSnippet.matchStart)}
@@ -262,7 +284,8 @@ export function AyahCard({
           ) : (
             displayTranslation
           )}
-        </p>
+          </p>
+        </div>
       )}
 
       {showTransliteration && (

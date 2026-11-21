@@ -9,6 +9,19 @@
 // gate is transparent (returns false for every check), preserving backward
 // compatibility until legal review completes.
 //
+// MFD-12.3 WS4 Gap 6 — OPERATIONAL CONSTRAINT: Runtime Toggle Limitation
+// -----------------------------------------------------------------------
+// isRightsEnforcementEnabled() reads process.env.TANZIL_RIGHTS_ENFORCEMENT on
+// every call. However, in Node.js/Next.js, process.env is populated at startup
+// and does NOT update during runtime. Changing the env var after the server
+// starts has NO EFFECT until the process is restarted. This means:
+//   - Enabling enforcement mid-deployment requires a server restart.
+//   - Disabling enforcement urgently also requires a restart.
+//   - If legal review clears an edition, the server must be redeployed.
+// A database-backed or config-file flag would allow true runtime toggling,
+// but that is out of scope for MFD-12.3. For now, plan deployments around
+// legal review milestones.
+//
 // proposedBy: ai-assisted
 // reviewStatus: pending-review
 
@@ -16,12 +29,6 @@
 const BUNDLED_EDITIONS: ReadonlySet<string> = new Set([
   "en.sahih",
   "en.transliteration",
-]);
-
-/** Tafsir editions served through the proxy that require rights clearance. */
-const PROXY_TAFSIR_EDITIONS: ReadonlySet<string> = new Set([
-  "ar.jalalayn",
-  "ar.muyassar",
 ]);
 
 export function isRightsEnforcementEnabled(): boolean {
@@ -75,4 +82,59 @@ export function buildGatedResponse(editionId: string): GatedResponse {
 export function filterGatedEditions(ids: readonly string[]): string[] {
   if (!isRightsEnforcementEnabled()) return [...ids];
   return ids.filter((id) => !isEditionGated(id));
+}
+
+// ---------------------------------------------------------------------------
+// MFD-12.3 WS3: Transparent Fallback Resolution
+// ---------------------------------------------------------------------------
+
+/**
+ * Ordered list of bundled, rights-cleared editions suitable as universal
+ * fallbacks when a user's preferred translation is gated.
+ *
+ * Priority:
+ * 1. en.sahih — widely accepted English translation, bundled CC-BY-4.0
+ * 2. en.transliteration — romanized Arabic, useful when no translation available
+ */
+const FALLBACK_CHAIN: readonly string[] = [
+  "en.sahih",
+  "en.transliteration",
+];
+
+/**
+ * Resolve a permitted fallback edition when the requested one is gated.
+ *
+ * @param requestedId The edition the user originally requested
+ * @returns The first available fallback ID from FALLBACK_CHAIN, or null if
+ *          no suitable fallback exists (should never happen with current chain)
+ *
+ * When enforcement is disabled, returns null (no fallback needed).
+ * When the requested edition is not gated, returns null (no fallback needed).
+ */
+export function resolveFallbackEdition(requestedId: string): string | null {
+  if (!isEditionGated(requestedId)) return null;
+
+  // Find first non-gated edition in the fallback chain
+  for (const candidate of FALLBACK_CHAIN) {
+    if (!isEditionGated(candidate)) {
+      return candidate;
+    }
+  }
+
+  // No fallback available — caller should show 'unavailable' state
+  return null;
+}
+
+/**
+ * Structured response payload when a gated edition is transparently replaced
+ * with a fallback. The client uses the metadata headers to display accurate
+ * attribution while preserving the user's saved preference.
+ */
+export interface GatedFallbackResponse {
+  /** The fallback edition actually served */
+  actualEditionId: string;
+  /** The edition the user originally requested (still gated) */
+  requestedEditionId: string;
+  /** Human-readable reason for the substitution */
+  fallbackReason: string;
 }

@@ -1,6 +1,7 @@
 import type { NextRequest } from "next/server";
 import { getAyah, getSurah } from "@/lib/quran/data";
 import { SOURCES } from "@/lib/quran/sources";
+import { isEditionGated } from "@/lib/quran/rights-gate";
 import {
   apiError,
   apiOk,
@@ -64,9 +65,13 @@ export async function GET(
         bundled: false,
         /** Text is readable in-app for the editions below, via the proxy. */
         displayMode: "in-app-text-plus-external-links",
+        // MFD-12.3 WS4 Gap 5: Annotate each readable edition with its gate
+        // status so API consumers know upfront whether the textEndpoint will
+        // return content or a 403 GatedResponse.
         readableEditions: READABLE_EDITIONS.map((e) => ({
           ...e,
           textEndpoint: `/api/translations/${e.translationId}`,
+          gated: isEditionGated(e.translationId),
         })),
         works: TAFSIR_WORKS.map((w) => ({
           id: w.id,

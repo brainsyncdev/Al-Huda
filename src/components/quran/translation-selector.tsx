@@ -8,7 +8,7 @@ import {
   getTranslation,
   type TranslationMeta,
 } from "@/lib/quran/translations";
-import { ensureLoaded, isLoaded } from "@/lib/quran/translation-store";
+import { ensureLoaded, isLoaded, isFallback, getActualEdition } from "@/lib/quran/translation-store";
 import { Loader2, Check, Globe, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -32,7 +32,12 @@ export function TranslationSelector({ compact = false }: { compact?: boolean }) 
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const grouped = useMemo(() => getTranslationsByLanguage(), []);
-  const currentTranslation = getTranslation(translationId);
+  // MFD-12.3 WS3: Display the ACTUALLY served translation name when in
+  // fallback mode, but keep the user's saved preference intact.
+  const actualTranslationId = getActualEdition(translationId);
+  const currentTranslation = getTranslation(actualTranslationId);
+  const currentIsFallback = isFallback(translationId);
+  const savedTranslationName = getTranslation(translationId)?.name;
 
   const closeAndReturnFocus = useCallback(() => {
     setIsOpen(false);
@@ -164,6 +169,11 @@ export function TranslationSelector({ compact = false }: { compact?: boolean }) 
         <Globe className="h-4 w-4 shrink-0" />
         <span className="max-w-[120px] truncate sm:max-w-[200px]">
           {currentTranslation?.name ?? "Select translation"}
+          {currentIsFallback && (
+            <span className="ml-1 text-[0.625rem] text-amber-600 dark:text-amber-400" title={`Your preference (${savedTranslationName}) is under rights review`}>
+              ⚠
+            </span>
+          )}
         </span>
         <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
       </button>
