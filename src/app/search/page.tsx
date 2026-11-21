@@ -12,6 +12,7 @@ import { TOPICS, topicsForAyah } from "@/lib/topics/data";
 import { PATHS } from "@/lib/paths/data";
 import { absoluteUrl } from "@/lib/site";
 import { getCanonicalTopics } from "@/lib/taxonomy/canonical-adapter";
+import { findConceptClustersForQuery } from "@/lib/taxonomy/concept-cluster-search";
 import {
   parseSearchFilters,
   passesStructuralFilters as checkStructuralFilters,
@@ -352,6 +353,11 @@ export default async function SearchPage({ searchParams }: Props) {
     }).slice(0, 10); // Limit to top 10 matches
   })();
 
+  // Layer 3 + Layer 7: Find concept clusters matching the search query.
+  // Surfaces cross-cutting Qur'anic themes (patience, gratitude, justice, etc.)
+  // when users search for related terms. Uses only verified SHARES_CONCEPT edges.
+  const conceptClusterMatches = findConceptClustersForQuery(query, 3);
+
   // Structural filters are shared with the edition/tafsir branches; the
   // language filter is specific to default search, where one result list can
   // mix Arabic-text and translation matches. A parsed reference is
@@ -479,6 +485,70 @@ export default async function SearchPage({ searchParams }: Props) {
           </div>
           <p className="text-xs text-muted-foreground">
             Canonical topics are part of the expanded taxonomy and are pending scholarly review.
+          </p>
+        </section>
+      )}
+
+      {/* Layer 3 + Layer 7: Concept cluster suggestions for cross-cutting themes */}
+      {conceptClusterMatches.length > 0 && (
+        <section
+          aria-labelledby="concept-clusters-search"
+          className="rounded-2xl border border-primary/30 bg-primary/5 p-5 space-y-3"
+        >
+          <div>
+            <h2
+              id="concept-clusters-search"
+              className="font-display text-lg font-semibold tracking-tight text-primary"
+            >
+              Related Qur'anic Themes
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Cross-cutting concepts that connect multiple topics across the Qur'an.
+              These are editorial relationships, pending scholarly review.
+            </p>
+          </div>
+          <div className="space-y-2">
+            {conceptClusterMatches.map(({ relationship, themeLabel, sourceTopic, targetTopic }) => (
+              <div
+                key={relationship.id}
+                className="rounded-xl border border-border/60 bg-card/80 p-3"
+              >
+                <div className="flex items-start justify-between gap-2 mb-1.5">
+                  <p className="text-sm font-medium text-foreground">
+                    {themeLabel}
+                  </p>
+                  <span className="shrink-0 rounded-full border border-amber-500/20 bg-amber-500/10 px-1.5 py-0.5 text-[9px] font-medium uppercase tracking-wider text-amber-700 dark:text-amber-400">
+                    Pending review
+                  </span>
+                </div>
+                <p className="text-xs text-muted-foreground line-clamp-1 mb-2">
+                  {relationship.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {sourceTopic && (
+                    <Link
+                      href={`/explore/topics/${sourceTopic.id}`}
+                      className="inline-flex items-center gap-1 rounded-full bg-secondary/60 px-2 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                    >
+                      {sourceTopic.title}
+                    </Link>
+                  )}
+                  {targetTopic && (
+                    <Link
+                      href={`/explore/topics/${targetTopic.id}`}
+                      className="inline-flex items-center gap-1 rounded-full bg-secondary/60 px-2 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                    >
+                      {targetTopic.title}
+                    </Link>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-[11px] text-muted-foreground">
+            <Link href="/explore/concepts" className="text-primary hover:underline">
+              Browse all concept clusters →
+            </Link>
           </p>
         </section>
       )}
