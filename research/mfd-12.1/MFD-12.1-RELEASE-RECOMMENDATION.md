@@ -13,15 +13,15 @@
 
 ## Executive Summary
 
-MFD-12.1 has resolved **20 of 39** scholarly questions across five completed workstreams (WS-A through WS-E). Two workstreams (WS-F: Lexical, WS-G: Remaining Scholarly) have not yet produced consolidated outputs, leaving **19 questions PENDING**.
+MFD-12.1 has resolved **all 39 of 39** scholarly questions across eight completed workstreams (WS-A through WS-H). All workstreams have delivered evidence-backed recommendations.
 
 **Recommendation: ⚠️ CONDITIONAL PROCEED**
 
 Engineering implementation may begin on all resolved items with appropriate safeguards. Full public release remains blocked until:
-1. Scholarly council ratifies the 20 resolved recommendations
-2. WS-F and WS-G complete their workstreams
-3. Tanzil proxy enforcement is deployed (URGENT legal risk)
-4. Reviewer bootstrap governance charter is defined
+1. Scholarly council ratifies all 39 resolved recommendations
+2. Tanzil proxy enforcement is deployed (URGENT legal risk)
+3. Reviewer bootstrap governance charter is defined
+4. Legal review of rights policies completes
 
 ---
 
@@ -57,8 +57,7 @@ Engineering implementation may begin on all resolved items with appropriate safe
 - ✅ No AI-generated claim is represented as approved in any output
 
 **What remains blocking:**
-- ⏳ 19 questions pending WS-F (12) and WS-G (7) completion
-- ⏳ Scholarly council must ratify or revise all 20 resolved recommendations
+- ⏳ Scholarly council must ratify or revise all 39 resolved recommendations
 - ⏳ Reviewer bootstrap governance charter undefined (who authorizes first scholars?)
 - ⏳ Quorum T3/T4 activation requires minimum reviewer pool size
 
@@ -106,8 +105,7 @@ Engineering implementation may begin on all resolved items with appropriate safe
 
 **Status:** Requires human scholarly council action.
 
-- ⏳ Council must review 20 resolved question briefs
-- ⏳ Council must complete WS-F and WS-G workstreams
+- ⏳ Council must review all 39 resolved question briefs
 - ⏳ Council must authorize UTF-8 normalization pass (Q39)
 - ⏳ Council must define reviewer bootstrap charter
 - ⏳ Legal counsel must review Tanzil terms and performer rights template
@@ -169,11 +167,10 @@ Engineering implementation may begin on all resolved items with appropriate safe
 4. Build audio dual-rights admin interface
 5. Integrate tier promotions into ReviewDecision workflow
 
-### Phase 4: Scholarly Completion (Parallel, Timeline TBD)
-1. Complete WS-F (lexical quality & morphology) — 12 questions
-2. Complete WS-G (remaining scholarly/technical) — 7 questions
-3. Scholarly council ratification of all 20 resolved recommendations
-4. UTF-8 normalization pass authorization and execution (Q39)
+### Phase 4: Scholarly Ratification (Parallel, Timeline TBD)
+1. Scholarly council ratification of all 39 resolved recommendations
+2. UTF-8 normalization pass authorization and execution (Q39)
+3. Coverage threshold approval (Q13) — no domain currently meets publication gates
 
 ### Phase 5: UX & Testing (After Phase 1-3)
 1. Build prototypes against UX integration spec
@@ -219,14 +216,13 @@ Engineering implementation may begin on all resolved items with appropriate safe
 
 **⚠️ CONDITIONAL PROCEED**
 
-The programme has made substantial progress in MFD-12.1, resolving 20 of 39 scholarly questions with evidence-backed recommendations. The technical foundation (Gate C) is solid. Engineering can safely proceed with schema implementation, immediate corrections, and rights enforcement infrastructure.
+The programme has completed MFD-12.1, resolving all 39 of 39 scholarly questions with evidence-backed recommendations. The technical foundation (Gate C) is solid. Engineering can safely proceed with schema implementation, immediate corrections, and rights enforcement infrastructure.
 
 However, full public release requires:
 1. **URGENT**: Tanzil proxy enforcement (legal risk)
-2. **REQUIRED**: Scholarly council ratification of 20 resolved questions
-3. **REQUIRED**: Completion of WS-F and WS-G workstreams (19 remaining questions)
-4. **REQUIRED**: Reviewer bootstrap governance charter definition
-5. **REQUIRED**: Legal review of rights policies and performer rights template
+2. **REQUIRED**: Scholarly council ratification of all 39 resolved questions
+3. **REQUIRED**: Reviewer bootstrap governance charter definition
+4. **REQUIRED**: Legal review of rights policies and performer rights template
 
 **AI's role remains strictly assistive.** All scholarly judgments, rights approvals, and institutional authorizations require qualified human review. No AI-generated recommendation may be represented as approved in any user-facing context.
 
