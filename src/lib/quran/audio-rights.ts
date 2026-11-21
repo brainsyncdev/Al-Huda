@@ -39,11 +39,37 @@ export type ReciterRightsStatus =
   | "unverified"
   | "restricted";
 
+export type RecordingStyle = "murattal" | "mujawwad" | "unspecified";
+
 export interface PerformerIdentity {
   name: string;
   deathYearGregorian?: number;
   deathYearHijri?: number;
   authorizationChain?: string;
+}
+
+/**
+ * Per-recording rights metadata. A single reciter may have multiple distinct
+ * recording sets (e.g. Murattal vs Mujawwad) with DIFFERENT rights status.
+ * MFD-12.4 WS2 Gap A: enables per-recording clearance rather than
+ * indiscriminate reciter-level clearance.
+ */
+export interface RecordingRightsMetadata {
+  /** Stable identifier for a specific recording set, e.g. 'ar.abdulbasit.murattal'. */
+  recordingId: string;
+  /** Parent reciter ID this recording belongs to. */
+  reciterId: string;
+  /** Recording style variant. */
+  recordingStyle: RecordingStyle;
+  distributionRightsStatus: DistributionRightsStatus;
+  performerRightsStatus: PerformerRightsStatus;
+  rightsHolder?: string;
+  licenseUrl?: string;
+  /** ISO date string when this recording was cleared. */
+  clearedAt?: string;
+  /** ISO date string when rights were withdrawn. Null/absent means active. */
+  withdrawnAt?: string;
+  notes?: string;
 }
 
 export interface ReciterRightsMetadata {
@@ -61,6 +87,11 @@ export interface ReciterRightsMetadata {
   licenseUrl?: string;
   copyrightHolder?: string;
   notes?: string;
+  /**
+   * Per-recording rights entries. MFD-12.4 WS2 Gap A: each reciter has at
+   * least one default recording entry keyed by the CDN edition id.
+   */
+  recordings: RecordingRightsMetadata[];
 }
 
 /**
@@ -84,10 +115,31 @@ export interface AudioGatedResponse {
  * rights are unverified until explicitly cleared through legal review.
  * Per WS-E §3 Policy Directive 2: "Until BOTH layers are verified, recitation
  * sources default to rightsStatus: 'rights-unverified' with audio playback gated."
+ *
+ * Determine the recording style for a reciter based on catalog evidence.
+ * MFD-12.4 WS2 Gap A: ar.abdulbasit is explicitly labeled '(Murattal)' in
+ * src/lib/quran/audio.ts line 33; all others default to 'unspecified'.
  */
+function inferRecordingStyle(reciterId: string): RecordingStyle {
+  if (reciterId === "ar.abdulbasit") return "murattal";
+  return "unspecified";
+}
+
 const RECITER_RIGHTS_REGISTRY: ReadonlyMap<string, ReciterRightsMetadata> =
   new Map(
     RECITERS.map((r) => {
+      // MFD-12.4 WS2 Gap A: each reciter gets a default recording entry
+      // keyed by the CDN edition id (which IS the primary recording).
+      const defaultRecording: RecordingRightsMetadata = {
+        recordingId: r.id,
+        reciterId: r.id,
+        recordingStyle: inferRecordingStyle(r.id),
+        distributionRightsStatus: "unverified",
+        performerRightsStatus: "unknown",
+        notes:
+          "Default recording entry. Rights unverified until explicitly cleared.",
+      };
+
       const meta: ReciterRightsMetadata = {
         reciterId: r.id,
         status: "under-review",
@@ -101,10 +153,18 @@ const RECITER_RIGHTS_REGISTRY: ReadonlyMap<string, ReciterRightsMetadata> =
         commercialUseAllowed: false,
         notes:
           "Rights unverified. Neither distribution nor performer rights have been confirmed for this reciter.",
+        recordings: [defaultRecording],
       };
       return [r.id, meta] as const;
     })
   );
+
+// ---------------------------------------------------------------------------
+// Cache invalidation version
+// ---------------------------------------------------------------------------
+
+// Re-exported from dedicated module to avoid circular dependency with audio.ts.
+export { RIGHTS_CACHE_VERSION } from "./audio-rights-version";
 
 // ---------------------------------------------------------------------------
 // Environment controls
@@ -152,10 +212,82 @@ export function isReciterGated(reciterId: string): boolean {
   if (!isAudioEnforcementEnabled()) return false;
 
   const cleared = getClearedReciters();
-  if (cleared.has(reciterId)) return false;
+  if (!cleared.has(reciterId)) return true;
 
-  // Default-deny: unknown reciters are always gated when enforcement is on
-  return true;
+  // MFD-12.4 WS2 Gap A: Reciter is in CLEARED_RECITERS — check if at least
+  // one recording has cleared distribution + authorized/waived performer rights.
+  // This prevents indiscriminate clearance of all recordings when only one
+  // variant is verified.
+  const rights = RECITER_RIGHTS_REGISTRY.get(reciterId);
+  if (!rights) return true; // Unknown reciter always gated
+
+  const hasClearedRecording = rights.recordings.some(
+    (rec) =>
+      !rec.withdrawnAt &&
+      rec.distributionRightsStatus === "cleared" &&
+      (rec.performerRightsStatus === "authorized" ||
+        rec.performerRightsStatus === "waived")
+  );
+
+  // Gated if no recording is fully cleared
+  return !hasClearedRecording;
+}
+
+/**
+ * Retrieve per-recording rights metadata for a specific recording.
+ * Returns null if the reciter or recording is not found.
+ *
+ * MFD-12.4 WS2 Gap A: enables granular rights checks per recording variant.
+ */
+export function getRecordingRights(
+  reciterId: string,
+  recordingId: string
+): RecordingRightsMetadata | null {
+  const rights = RECITER_RIGHTS_REGISTRY.get(reciterId);
+  if (!rights) return null;
+  return rights.recordings.find((r) => r.recordingId === recordingId) ?? null;
+}
+
+/**
+ * Returns true when a specific recording should be blocked from delivery.
+ *
+ * Default-deny: unknown recordingId is gated when enforcement is on.
+ * A recording is ungated only if:
+ *   1. Its parent reciter is in CLEARED_RECITERS
+ *   2. The recording itself has cleared distribution + authorized/waived performer rights
+ *   3. The recording has not been withdrawn (withdrawnAt is absent)
+ *
+ * When enforcement is disabled, nothing is gated.
+ */
+export function isRecordingGated(
+  reciterId: string,
+  recordingId: string
+): boolean {
+  if (!isAudioEnforcementEnabled()) return false;
+
+  const cleared = getClearedReciters();
+  if (!cleared.has(reciterId)) return true;
+
+  const recording = getRecordingRights(reciterId, recordingId);
+  if (!recording) return true; // Unknown recording → default-deny
+
+  if (recording.withdrawnAt) return true; // Withdrawn → always gated
+
+  return !(
+    recording.distributionRightsStatus === "cleared" &&
+    (recording.performerRightsStatus === "authorized" ||
+      recording.performerRightsStatus === "waived")
+  );
+}
+
+/**
+ * Get the primary (default) recording ID for a reciter.
+ * Returns the reciter's CDN edition id, which is always the first recording entry.
+ */
+export function getPrimaryRecordingId(reciterId: string): string | null {
+  const rights = RECITER_RIGHTS_REGISTRY.get(reciterId);
+  if (!rights || rights.recordings.length === 0) return null;
+  return rights.recordings[0].recordingId;
 }
 
 /**

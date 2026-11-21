@@ -16,7 +16,10 @@ import { NextResponse } from "next/server";
 import { getReciter, AUDIO_BITRATES, DEFAULT_BITRATE } from "@/lib/quran/audio";
 import {
   isReciterGated,
+  isRecordingGated,
+  getPrimaryRecordingId,
   buildAudioGatedResponse,
+  RIGHTS_CACHE_VERSION,
 } from "@/lib/quran/audio-rights";
 
 export const runtime = "nodejs";
@@ -74,20 +77,35 @@ export async function GET(
     // Invalid bitrate values silently fall back to default rather than erroring
   }
 
+  // MFD-12.4 WS2 Gap A: Parse optional recordingId query param.
+  // Defaults to the reciter's primary recording (CDN edition id).
+  const recordingParam = url.searchParams.get("recording");
+  const recordingId = recordingParam || getPrimaryRecordingId(reciterId) || reciterId;
+
   // --- Rights gate check (BEFORE any CDN fetch) -------------------------------
 
-  if (isReciterGated(reciterId)) {
+  // Check both reciter-level AND recording-level gates.
+  // isReciterGated checks if reciter has ANY cleared recording.
+  // isRecordingGated checks the specific recording variant.
+  const reciterGated = isReciterGated(reciterId);
+  const recordingGated = !reciterGated && isRecordingGated(reciterId, recordingId);
+
+  if (reciterGated || recordingGated) {
     // Audit log matching existing rights-gate pattern from translations proxy
+    // MFD-12.4 WS2 Gap A: includes recordingId and distinguishes gate level.
     console.warn(
       JSON.stringify({
         event: "audio-rights-gate-blocked",
         reciterId,
+        recordingId,
         globalAyah,
         bitrate,
         timestamp: new Date().toISOString(),
         userAgent: req.headers.get("user-agent") ?? "unknown",
         referer: req.headers.get("referer") ?? null,
         reason: "rights-under-review",
+        gateLevel: reciterGated ? "reciter" : "recording",
+        rightsCacheVersion: RIGHTS_CACHE_VERSION,
       })
     );
 
@@ -97,6 +115,7 @@ export async function GET(
       headers: {
         "Cache-Control": "no-store",
         "Content-Type": "application/json",
+        "X-Rights-Cache-Version": RIGHTS_CACHE_VERSION,
       },
     });
   }
@@ -136,19 +155,47 @@ export async function GET(
       );
     }
 
+    // MFD-12.4 WS2 Gap B: Generate ETag from reciter+recording+ayah+bitrate+version.
+    // Changing RIGHTS_CACHE_VERSION changes every ETag, forcing revalidation.
+    const etagRaw = `${reciterId}:${recordingId}:${globalAyah}:${bitrate}:rv${RIGHTS_CACHE_VERSION}`;
+    const etag = `"${Buffer.from(etagRaw).toString("base64url")}"`;
+
+    // Check If-None-Match for conditional requests (cache revalidation after version bump)
+    const ifNoneMatch = req.headers.get("if-none-match");
+    if (ifNoneMatch === etag) {
+      return new NextResponse(null, {
+        status: 304,
+        headers: {
+          ETag: etag,
+          "Cache-Control": "public, max-age=300",
+          "X-Audio-Source": "cdn.islamic.network",
+          "X-Audio-Reciter": reciterId,
+          "X-Audio-Recording": recordingId,
+          "X-Audio-Global-Ayah": String(globalAyah),
+          "X-Audio-Bitrate": String(bitrate),
+          "X-Rights-Cache-Version": RIGHTS_CACHE_VERSION,
+        },
+      });
+    }
+
     // Stream response without buffering entire file in memory
+    // MFD-12.4 WS2 Gap B: Reduced max-age to 300s (5 min) and REMOVED
+    // stale-while-revalidate so withdrawn content cannot be served stale.
     const headers: Record<string, string> = {
       "Content-Type": "audio/mpeg",
-      "Cache-Control": "public, max-age=3600, stale-while-revalidate=86400",
+      "Cache-Control": "public, max-age=300",
+      ETag: etag,
       "X-Audio-Source": "cdn.islamic.network",
       "X-Audio-Reciter": reciterId,
+      "X-Audio-Recording": recordingId,
       "X-Audio-Global-Ayah": String(globalAyah),
       "X-Audio-Bitrate": String(bitrate),
+      "X-Rights-Cache-Version": RIGHTS_CACHE_VERSION,
       // CORS headers for cross-origin audio element compatibility
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Allow-Methods": "GET, OPTIONS",
       "Access-Control-Allow-Headers": "Range",
-      "Access-Control-Expose-Headers": "Content-Length, Content-Range, X-Audio-Source, X-Audio-Reciter, X-Audio-Global-Ayah",
+      "Access-Control-Expose-Headers": "Content-Length, Content-Range, X-Audio-Source, X-Audio-Reciter, X-Audio-Recording, X-Audio-Global-Ayah, X-Rights-Cache-Version",
     };
 
     // Preserve content-length from upstream when available

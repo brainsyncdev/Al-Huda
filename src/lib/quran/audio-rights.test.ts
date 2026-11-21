@@ -78,13 +78,15 @@ describe("audio-rights gate (MFD-12.4 WS2)", () => {
       expect(isReciterGated("ar.sudais")).toBe(true);
     });
 
-    it("U-AR-06: returns false for reciters in CLEARED_RECITERS when enforcement is on", async () => {
+    it("U-AR-06: gates reciters in CLEARED_RECITERS when no recording is cleared (Gap A)", async () => {
       process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
       process.env.CLEARED_RECITERS = "ar.alafasy,ar.husary";
       const { isReciterGated } = await import("./audio-rights");
-      expect(isReciterGated("ar.alafasy")).toBe(false);
-      expect(isReciterGated("ar.husary")).toBe(false);
-      // Others remain gated
+      // MFD-12.4 WS2 Gap A: being in CLEARED_RECITERS is necessary but NOT sufficient.
+      // Default recordings are unverified, so reciter remains gated.
+      expect(isReciterGated("ar.alafasy")).toBe(true);
+      expect(isReciterGated("ar.husary")).toBe(true);
+      // Others not in CLEARED_RECITERS are also gated
       expect(isReciterGated("ar.minshawi")).toBe(true);
       expect(isReciterGated("ar.sudais")).toBe(true);
     });
@@ -101,8 +103,12 @@ describe("audio-rights gate (MFD-12.4 WS2)", () => {
       process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
       process.env.CLEARED_RECITERS = " ar.alafasy , ar.husary ";
       const { isReciterGated } = await import("./audio-rights");
-      expect(isReciterGated("ar.alafasy")).toBe(false);
-      expect(isReciterGated("ar.husary")).toBe(false);
+      // Whitespace is trimmed correctly; reciters are recognized.
+      // But default recordings are unverified → still gated (Gap A).
+      expect(isReciterGated("ar.alafasy")).toBe(true);
+      expect(isReciterGated("ar.husary")).toBe(true);
+      // A reciter NOT in the list is also gated
+      expect(isReciterGated("ar.minshawi")).toBe(true);
     });
 
     it("ignores empty CLEARED_RECITERS value", async () => {
@@ -129,6 +135,12 @@ describe("audio-rights gate (MFD-12.4 WS2)", () => {
       expect(rights!.moralRightsAcknowledged).toBe(false);
       expect(rights!.commercialUseAllowed).toBe(false);
       expect(rights!.performerIdentity.name).toBe("Mishary Rashid Alafasy");
+      // MFD-12.4 WS2 Gap A: recordings array must exist with at least one entry
+      expect(rights!.recordings).toBeDefined();
+      expect(rights!.recordings.length).toBeGreaterThanOrEqual(1);
+      expect(rights!.recordings[0].recordingId).toBe("ar.alafasy");
+      expect(rights!.recordings[0].reciterId).toBe("ar.alafasy");
+      expect(rights!.recordings[0].recordingStyle).toBe("unspecified");
     });
 
     it("U-AR-09: returns null for nonexistent reciter", async () => {
@@ -192,12 +204,13 @@ describe("audio-rights gate (MFD-12.4 WS2)", () => {
       expect(filterGatedReciters(ids)).toEqual(ids);
     });
 
-    it("filters out gated reciters when enforcement is on", async () => {
+    it("filters out all reciters when enforcement is on and no recordings cleared", async () => {
       process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
       process.env.CLEARED_RECITERS = "ar.alafasy";
       const { filterGatedReciters } = await import("./audio-rights");
       const ids = ["ar.alafasy", "ar.husary", "ar.minshawi"];
-      expect(filterGatedReciters(ids)).toEqual(["ar.alafasy"]);
+      // Gap A: even ar.alafasy is gated because its default recording is unverified
+      expect(filterGatedReciters(ids)).toEqual([]);
     });
   });
 
@@ -217,6 +230,169 @@ describe("audio-rights gate (MFD-12.4 WS2)", () => {
     it("returns false for unknown reciter", async () => {
       const { isReciterFullyVerified } = await import("./audio-rights");
       expect(isReciterFullyVerified("nonexistent")).toBe(false);
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // MFD-12.4 WS2 Gap A: Per-recording rights metadata
+  // ---------------------------------------------------------------------------
+
+  describe("per-recording metadata (Gap A)", () => {
+    it("every reciter has at least one default recording entry", async () => {
+      const { getReciterRights } = await import("./audio-rights");
+      const { RECITERS } = await import("./audio");
+      for (const reciter of RECITERS) {
+        const rights = getReciterRights(reciter.id);
+        expect(rights).not.toBeNull();
+        expect(rights!.recordings.length).toBeGreaterThanOrEqual(1);
+        expect(rights!.recordings[0].recordingId).toBe(reciter.id);
+        expect(rights!.recordings[0].reciterId).toBe(reciter.id);
+      }
+    });
+
+    it("ar.abdulbasit has recordingStyle 'murattal'", async () => {
+      const { getReciterRights } = await import("./audio-rights");
+      const rights = getReciterRights("ar.abdulbasit");
+      expect(rights).not.toBeNull();
+      expect(rights!.recordings[0].recordingStyle).toBe("murattal");
+    });
+
+    it("other reciters have recordingStyle 'unspecified'", async () => {
+      const { getReciterRights } = await import("./audio-rights");
+      const nonAbdulBasit = ["ar.alafasy", "ar.husary", "ar.sudais"];
+      for (const id of nonAbdulBasit) {
+        const rights = getReciterRights(id);
+        expect(rights!.recordings[0].recordingStyle).toBe("unspecified");
+      }
+    });
+
+    it("all default recordings are in unverified state", async () => {
+      const { getReciterRights } = await import("./audio-rights");
+      const { RECITERS } = await import("./audio");
+      for (const reciter of RECITERS) {
+        const rights = getReciterRights(reciter.id)!;
+        for (const rec of rights.recordings) {
+          expect(rec.distributionRightsStatus).toBe("unverified");
+          expect(rec.performerRightsStatus).toBe("unknown");
+          expect(rec.withdrawnAt).toBeUndefined();
+        }
+      }
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // MFD-12.4 WS2 Gap A: getRecordingRights / isRecordingGated
+  // ---------------------------------------------------------------------------
+
+  describe("getRecordingRights", () => {
+    it("returns recording metadata for known reciter+recording", async () => {
+      const { getRecordingRights } = await import("./audio-rights");
+      const rec = getRecordingRights("ar.alafasy", "ar.alafasy");
+      expect(rec).not.toBeNull();
+      expect(rec!.recordingId).toBe("ar.alafasy");
+      expect(rec!.reciterId).toBe("ar.alafasy");
+    });
+
+    it("returns null for unknown reciter", async () => {
+      const { getRecordingRights } = await import("./audio-rights");
+      expect(getRecordingRights("nonexistent", "nonexistent")).toBeNull();
+    });
+
+    it("returns null for unknown recording on known reciter", async () => {
+      const { getRecordingRights } = await import("./audio-rights");
+      expect(getRecordingRights("ar.alafasy", "ar.alafasy.mujawwad")).toBeNull();
+    });
+  });
+
+  describe("isRecordingGated", () => {
+    it("returns false for any recording when enforcement is off", async () => {
+      process.env.AUDIO_RIGHTS_ENFORCEMENT = "false";
+      const { isRecordingGated } = await import("./audio-rights");
+      expect(isRecordingGated("ar.alafasy", "ar.alafasy")).toBe(false);
+      expect(isRecordingGated("ar.husary", "ar.husary")).toBe(false);
+    });
+
+    it("returns true for unknown recordingId when enforcement is on (default-deny)", async () => {
+      process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
+      process.env.CLEARED_RECITERS = "ar.alafasy";
+      const { isRecordingGated } = await import("./audio-rights");
+      // Unknown recording variant → gated even if reciter is cleared
+      expect(isRecordingGated("ar.alafasy", "ar.alafasy.mujawwad")).toBe(true);
+    });
+
+    it("returns true when reciter is not in CLEARED_RECITERS", async () => {
+      process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
+      delete process.env.CLEARED_RECITERS;
+      const { isRecordingGated } = await import("./audio-rights");
+      expect(isRecordingGated("ar.alafasy", "ar.alafasy")).toBe(true);
+    });
+
+    it("returns true for default unverified recording even when reciter is cleared", async () => {
+      process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
+      process.env.CLEARED_RECITERS = "ar.alafasy";
+      const { isRecordingGated } = await import("./audio-rights");
+      // Default recording is unverified → gated despite reciter being cleared
+      expect(isRecordingGated("ar.alafasy", "ar.alafasy")).toBe(true);
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // MFD-12.4 WS2 Gap A: isReciterGated with recordings consideration
+  // ---------------------------------------------------------------------------
+
+  describe("isReciterGated with recordings", () => {
+    it("gates reciter in CLEARED_RECITERS when no recording is fully cleared", async () => {
+      process.env.AUDIO_RIGHTS_ENFORCEMENT = "true";
+      process.env.CLEARED_RECITERS = "ar.alafasy";
+      const { isReciterGated } = await import("./audio-rights");
+      // All default recordings are unverified → reciter should be gated
+      expect(isReciterGated("ar.alafasy")).toBe(true);
+    });
+
+    it("preserves pass-through for all reciters when enforcement is off", async () => {
+      process.env.AUDIO_RIGHTS_ENFORCEMENT = "false";
+      const { isReciterGated } = await import("./audio-rights");
+      expect(isReciterGated("ar.alafasy")).toBe(false);
+      expect(isReciterGated("ar.husary")).toBe(false);
+      expect(isReciterGated("ar.minshawi")).toBe(false);
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // MFD-12.4 WS2 Gap B: Cache version
+  // ---------------------------------------------------------------------------
+
+  describe("RIGHTS_CACHE_VERSION", () => {
+    it("defaults to '1' when env var is unset", async () => {
+      delete process.env.RIGHTS_CACHE_VERSION;
+      vi.resetModules();
+      const { RIGHTS_CACHE_VERSION } = await import("./audio-rights-version");
+      expect(RIGHTS_CACHE_VERSION).toBe("1");
+    });
+
+    it("reads from RIGHTS_CACHE_VERSION env var when set", async () => {
+      process.env.RIGHTS_CACHE_VERSION = "42";
+      vi.resetModules();
+      const { RIGHTS_CACHE_VERSION } = await import("./audio-rights-version");
+      expect(RIGHTS_CACHE_VERSION).toBe("42");
+      delete process.env.RIGHTS_CACHE_VERSION;
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // MFD-12.4 WS2 Gap A: getPrimaryRecordingId
+  // ---------------------------------------------------------------------------
+
+  describe("getPrimaryRecordingId", () => {
+    it("returns the CDN edition id as primary recording", async () => {
+      const { getPrimaryRecordingId } = await import("./audio-rights");
+      expect(getPrimaryRecordingId("ar.alafasy")).toBe("ar.alafasy");
+      expect(getPrimaryRecordingId("ar.abdulbasit")).toBe("ar.abdulbasit");
+    });
+
+    it("returns null for unknown reciter", async () => {
+      const { getPrimaryRecordingId } = await import("./audio-rights");
+      expect(getPrimaryRecordingId("nonexistent")).toBeNull();
     });
   });
 });

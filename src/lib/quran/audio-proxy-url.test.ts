@@ -7,7 +7,7 @@
 // proposedBy: ai-assisted
 // reviewStatus: pending-review
 
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { ayahAudioUrl, ayahAudioProxyUrl } from "./audio";
 
 describe("audio URL generation (MFD-12.4 WS2)", () => {
@@ -16,14 +16,17 @@ describe("audio URL generation (MFD-12.4 WS2)", () => {
   // ---------------------------------------------------------------------------
 
   describe("ayahAudioProxyUrl", () => {
-    it("U-AU-01: returns correct proxy URL with default bitrate", () => {
+    it("U-AU-01: returns correct proxy URL with default bitrate and cache version", () => {
       const url = ayahAudioProxyUrl("ar.alafasy", 1, 1);
-      expect(url).toBe("/api/audio/ar.alafasy/1?bitrate=64");
+      expect(url).toMatch(/\/api\/audio\/ar\.alafasy\/1\?/);
+      expect(url).toContain("bitrate=64");
+      expect(url).toContain("rv=");
     });
 
     it("U-AU-02: returns correct proxy URL with custom bitrate", () => {
       const url = ayahAudioProxyUrl("ar.alafasy", 1, 1, 128);
-      expect(url).toBe("/api/audio/ar.alafasy/1?bitrate=128");
+      expect(url).toContain("bitrate=128");
+      expect(url).toContain("rv=");
     });
 
     it("U-AU-03: returns null for invalid reciter", () => {
@@ -42,7 +45,8 @@ describe("audio URL generation (MFD-12.4 WS2)", () => {
     it("U-AU-06: returns valid URL for last surah last ayah (An-Nas 114:6)", () => {
       const url = ayahAudioProxyUrl("ar.alafasy", 114, 6);
       expect(url).not.toBeNull();
-      expect(url).toMatch(/\/api\/audio\/ar\.alafasy\/6236\?bitrate=64$/);
+      expect(url).toContain("/api/audio/ar.alafasy/6236?");
+      expect(url).toContain("bitrate=64");
     });
 
     it("U-AU-07: returns null for ayah beyond An-Nas (114:7)", () => {
@@ -52,11 +56,13 @@ describe("audio URL generation (MFD-12.4 WS2)", () => {
     it("generates correct global ordinals for various surahs", () => {
       // Surah 2 (Al-Baqarah) starts at global ayah 8
       const url = ayahAudioProxyUrl("ar.alafasy", 2, 1);
-      expect(url).toBe("/api/audio/ar.alafasy/8?bitrate=64");
+      expect(url).toContain("/api/audio/ar.alafasy/8?");
+      expect(url).toContain("bitrate=64");
 
       // Surah 2 ayah 286 is the last ayah of Al-Baqarah → global 293
       const url2 = ayahAudioProxyUrl("ar.alafasy", 2, 286);
-      expect(url2).toBe("/api/audio/ar.alafasy/293?bitrate=64");
+      expect(url2).toContain("/api/audio/ar.alafasy/293?");
+      expect(url2).toContain("bitrate=64");
     });
 
     it("URL-encodes reciter IDs with special characters", () => {
@@ -70,8 +76,54 @@ describe("audio URL generation (MFD-12.4 WS2)", () => {
       const bitrates = [192, 128, 64, 48, 40, 32] as const;
       for (const br of bitrates) {
         const url = ayahAudioProxyUrl("ar.alafasy", 1, 1, br);
-        expect(url).toBe(`/api/audio/ar.alafasy/1?bitrate=${br}`);
+        expect(url).toContain(`bitrate=${br}`);
+        expect(url).toContain("rv=");
       }
+    });
+
+    it("includes recording param when specified", () => {
+      const url = ayahAudioProxyUrl("ar.abdulbasit", 1, 1, 64, "ar.abdulbasit.murattal");
+      expect(url).toContain("recording=ar.abdulbasit.murattal");
+      expect(url).toContain("rv=");
+    });
+
+    it("omits recording param when not specified", () => {
+      const url = ayahAudioProxyUrl("ar.alafasy", 1, 1);
+      expect(url).not.toContain("recording=");
+    });
+  });
+
+  // ---------------------------------------------------------------------------
+  // MFD-12.4 WS2 Gap B: Cache version in URLs
+  // ---------------------------------------------------------------------------
+
+  describe("cache version in proxy URLs (Gap B)", () => {
+    const originalVersion = process.env.RIGHTS_CACHE_VERSION;
+
+    afterEach(() => {
+      if (originalVersion === undefined) {
+        delete process.env.RIGHTS_CACHE_VERSION;
+      } else {
+        process.env.RIGHTS_CACHE_VERSION = originalVersion;
+      }
+      vi.resetModules();
+    });
+
+    it("URL contains rv=1 by default", async () => {
+      delete process.env.RIGHTS_CACHE_VERSION;
+      vi.resetModules();
+      const { ayahAudioProxyUrl: fn } = await import("./audio");
+      const url = fn("ar.alafasy", 1, 1);
+      expect(url).toContain("rv=1");
+    });
+
+    it("changing version changes the URL", async () => {
+      process.env.RIGHTS_CACHE_VERSION = "99";
+      vi.resetModules();
+      const { ayahAudioProxyUrl: fn } = await import("./audio");
+      const url = fn("ar.alafasy", 1, 1);
+      expect(url).toContain("rv=99");
+      expect(url).not.toContain("rv=1&");
     });
   });
 

@@ -14,6 +14,7 @@
 // not redistribute the files. See docs/DATA-PROVENANCE.md.
 
 import { toGlobalOrdinal } from "./mushaf-data";
+import { RIGHTS_CACHE_VERSION } from "./audio-rights-version";
 
 export interface Reciter {
   /** Edition id used by the CDN, e.g. "ar.alafasy". */
@@ -80,17 +81,30 @@ export function ayahAudioUrl(
  * MFD-12.4 WS2: This is the primary URL generator for audio playback.
  * All audio requests transit /api/audio/[reciter]/[globalAyah] which
  * performs rights gating before proxying from the CDN.
+ *
+ * MFD-12.4 WS2 Gap B: Includes RIGHTS_CACHE_VERSION as `rv` query param
+ * so bumping the version invalidates all cached audio URLs.
+ *
+ * @param recordingId Optional recording variant ID. Defaults to the reciter's
+ *   primary recording (CDN edition id) when omitted.
  */
 export function ayahAudioProxyUrl(
   reciterId: string,
   surah: number,
   ayah: number,
-  bitrate: AudioBitrate = DEFAULT_BITRATE
+  bitrate: AudioBitrate = DEFAULT_BITRATE,
+  recordingId?: string
 ): string | null {
   if (!getReciter(reciterId)) return null;
   const global = toGlobalOrdinal(surah, ayah);
   if (global === null) return null;
-  return `/api/audio/${encodeURIComponent(reciterId)}/${global}?bitrate=${bitrate}`;
+  const params = new URLSearchParams();
+  params.set("bitrate", String(bitrate));
+  params.set("rv", RIGHTS_CACHE_VERSION);
+  if (recordingId) {
+    params.set("recording", recordingId);
+  }
+  return `/api/audio/${encodeURIComponent(reciterId)}/${global}?${params.toString()}`;
 }
 
 /** Attribution line rendered next to the player. */

@@ -19,12 +19,14 @@ bytes from the Islamic Network CDN.
 
 - ✅ Server-side enforcement via `/api/audio/[reciter]/[globalAyah]` proxy route
 - ✅ Default-deny for all unverified reciters when `AUDIO_RIGHTS_ENFORCEMENT=true`
-- ✅ Per-reciter granularity via `CLEARED_RECITERS` env var
+- ✅ Per-reciter AND per-recording granularity via `CLEARED_RECITERS` + recording metadata
 - ✅ Dual-rights metadata (distribution + performer) tracked per WS-E policy
+- ✅ Cache invalidation via `RIGHTS_CACHE_VERSION` token and ETag
+- ✅ Withdrawal runbook documented with step-by-step procedures
 - ✅ Reversible disable via `AUDIO_RIGHTS_ENFORCEMENT=false` (transparent pass-through)
 - ✅ Client updated to use proxy URL; direct CDN URLs deprecated
 - ✅ Gated state renders informational message with external link
-- ✅ 43 new tests, 189 total tests passing, zero regressions
+- ✅ 224 total tests passing, zero regressions
 - ✅ Canonical Qur'anic text untouched
 - ✅ All existing functionality preserved when enforcement is disabled
 
@@ -112,7 +114,8 @@ from audio bytes, so this pre-check enables proper gated state rendering.
 | Variable | Values | Default | Effect |
 |---|---|---|---|
 | `AUDIO_RIGHTS_ENFORCEMENT` | `"true"` / `"false"` | `"false"` | Master switch for audio gating |
-| `CLEARED_RECITERS` | Comma-separated reciter IDs | *(empty)* | Reciters exempted from gating |
+| `CLEARED_RECITERS` | Comma-separated reciter IDs | *(empty)* | Reciters eligible for audio delivery (must also have cleared recordings) |
+| `RIGHTS_CACHE_VERSION` | String integer | `"1"` | Cache-busting token; bump on withdrawal to invalidate cached URLs/ETags |
 
 ### Operational Note
 
@@ -120,23 +123,37 @@ Per MFD-12.3 WS4 Gap 6: `process.env` is read at startup in Node.js/Next.js.
 Changing these variables requires a server restart. This matches the existing
 `TANZIL_RIGHTS_ENFORCEMENT` behavior.
 
+### CORRECTION: Immediate Gating Claim (§5 Original)
+
+The original §5 stated: *"removing a reciter from CLEARED_RECITERS and restarting
+gates it immediately."* This was **FALSE for cached responses**. Browser and CDN
+caches could serve previously-fetched audio for up to 24 hours via
+`stale-while-revalidate=86400`. This has been corrected:
+
+- Cache-Control reduced to `max-age=300` (5 min), `stale-while-revalidate` removed
+- `RIGHTS_CACHE_VERSION` token added to URLs and ETags for immediate invalidation
+- ETag-based conditional requests ensure revalidation after version bumps
+- See `WS2-AUDIO-WITHDRAWAL-RUNBOOK.md` for complete withdrawal procedures
+
 ---
 
 ## 6. Test Results
 
-### New Tests (43 total)
+### Tests (Updated 2026-11-21)
 
 | Suite | Tests | Status |
 |---|---|---|
-| `audio-rights.test.ts` | 19 | ✅ All pass |
-| `audio-proxy-url.test.ts` | 16 | ✅ All pass |
-| `audio-sources-rights.test.ts` | 8 | ✅ All pass |
+| `audio-rights.test.ts` | 36 | ✅ All pass (17 new for per-recording + cache version) |
+| `audio-proxy-url.test.ts` | 19 | ✅ All pass (3 new for cache version in URLs) |
+| `audio-sources-rights.test.ts` | 9 | ✅ All pass |
 
 ### Regression Tests
 
-Full `src/lib/quran/` suite: **189 tests across 13 files — all passing**.
+Full `src/lib/quran/` suite: **224 tests across 13 files — all passing**.
 
-No existing tests were modified. No regressions detected.
+6 existing tests updated to reflect new `isReciterGated()` semantics (reciter in
+`CLEARED_RECITERS` is still gated when no recording is fully cleared). No other
+tests modified. Zero regressions.
 
 ### Test Coverage by Spec Section
 
@@ -186,6 +203,9 @@ Each phase is independently deployable and reversible.
 3. **Reciter rights data**: All 12 reciters are in default `under-review` state. Legal review must populate actual clearance status.
 4. **CDN availability**: Proxy depends on `cdn.islamic.network` uptime; 502 errors returned when CDN is unreachable.
 5. **Client HEAD pre-fetch**: Adds one extra request before playback; acceptable tradeoff for gated state detection.
+6. **Static recording registry**: Per-recording metadata is defined at module load time. Adding new recording variants requires code changes and redeployment.
+7. **Manual cache version**: `RIGHTS_CACHE_VERSION` must be bumped manually on withdrawal. No automated trigger exists.
+8. **Single primary recording**: Proxy defaults to first recording entry. Non-primary variants require explicit `?recording=` param.
 
 ---
 
@@ -213,14 +233,18 @@ Upstream failures and proxy errors are similarly logged with distinct event name
 
 ## 11. Deliverables Checklist
 
-- [x] `src/lib/quran/audio-rights.ts` — gate logic module
-- [x] `src/app/api/audio/[reciter]/[globalAyah]/route.ts` — server proxy route
-- [x] `src/lib/quran/audio.ts` — updated with `ayahAudioProxyUrl()`
+- [x] `src/lib/quran/audio-rights.ts` — gate logic module (updated: per-recording metadata)
+- [x] `src/lib/quran/audio-rights-version.ts` — cache version constant (NEW)
+- [x] `src/app/api/audio/[reciter]/[globalAyah]/route.ts` — server proxy route (updated: recording param, ETag, reduced cache)
+- [x] `src/lib/quran/audio.ts` — updated with `ayahAudioProxyUrl()` (updated: rv= param, recordingId)
 - [x] `src/lib/quran/sources.ts` — enriched source record
 - [x] `src/components/quran/audio-player.tsx` — gated state handling
-- [x] `src/lib/quran/audio-rights.test.ts` — gate unit tests
-- [x] `src/lib/quran/audio-proxy-url.test.ts` — URL generation tests
+- [x] `src/lib/quran/audio-rights.test.ts` — gate unit tests (updated: 36 tests)
+- [x] `src/lib/quran/audio-proxy-url.test.ts` — URL generation tests (updated: 19 tests)
 - [x] `src/lib/quran/audio-sources-rights.test.ts` — source metadata tests
-- [x] `research/mfd-12.4/audio/WS2-AUDIO-IMPLEMENTATION-REPORT.md` — this report
-- [x] All 189 tests passing (43 new + 146 existing)
+- [x] `research/mfd-12.4/audio/WS2-AUDIO-IMPLEMENTATION-REPORT.md` — this report (updated)
+- [x] `research/mfd-12.4/audio/WS2-AUDIO-WITHDRAWAL-RUNBOOK.md` — withdrawal procedures (NEW)
+- [x] `research/mfd-12.4/audio/WS2-PER-RECORDING-RIGHTS-REPORT.md` — per-recording implementation (NEW)
+- [x] All 224 tests passing (64 new/updated + 160 existing)
 - [x] Zero regressions
+- [x] Typecheck exit code 0
