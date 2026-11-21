@@ -40,7 +40,8 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "@/lib/i18n/context";
+import { useTranslation, useI18n } from "@/lib/i18n/context";
+import { readStoredLocale, writeStoredLocale, setLocaleCookie } from "@/lib/i18n/storage";
 
 const BUTTON_CLASS =
   "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50";
@@ -56,6 +57,7 @@ export function BackupControls() {
   const reflections = useReflections();
   const scholarly = useScholarly();
   const t = useTranslation();
+  const { locale, setLocale } = useI18n();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [reading, setReading] = useState(false);
   const [note, setNote] = useState<string | null>(null);
@@ -103,6 +105,7 @@ export function BackupControls() {
       journeys: journeys.exportState(),
       reflections: reflections.exportState(),
       scholarly: scholarly.exportState(),
+      locale,
     });
     downloadJson(file, backupFileName());
     toast.success(
@@ -157,6 +160,11 @@ export function BackupControls() {
     journeys.restoreState(data.journeys);
     reflections.restoreState(data.reflections);
     scholarly.restoreState(data.scholarly);
+
+    // Restore locale preference if present in the backup
+    if (data.locale) {
+      setLocale(data.locale);
+    }
 
     toast.success(
       `Backup imported — ${lib.bookmarks} bookmarks, ${lib.notes} notes, ${rev.items} planned verses, ${Object.keys(data.paths.progress).length} learning paths, ${data.quiz.attempts.length} quiz attempts, ${data.readingPlans.targets.length} reading plans, ${Object.keys(data.journeys.progress).length} study journeys, ${data.reflections.reflections.length} reflections, ${data.scholarly?.reviews?.length ?? 0} reviews, ${data.scholarly?.evidence?.length ?? 0} evidence records.`

@@ -134,7 +134,7 @@ export const en = {
 
   "explore.title": "Explore the Quran",
   "explore.intro":
-    "Discover the Quran through 15 life dimensions. Each dimension connects to curated topics and offers search terms for further study.",
+    "Discover the Quran through life dimensions organized by domain. Each dimension connects to curated topics and offers search terms for further study.",
   "explore.dimensionNote":
     "The dimensions below are a topic-level navigation aid. Individual ayat are not classified by dimension.",
   "explore.covers": "Covers",
@@ -148,7 +148,7 @@ export const en = {
   "explore.browseDomains": "Browse domain catalog",
   "explore.graphExplorer": "Knowledge Graph Explorer",
   "explore.graphDescription":
-    "See how the fifteen dimensions connect to curated topics, and how topics relate to one another.",
+    "See how dimensions connect to curated topics, and how topics relate to one another.",
   "explore.openGraph": "Open graph explorer",
   "explore.searchTitle": "Search the Quran",
   "explore.searchDescription":
@@ -850,9 +850,9 @@ export const en = {
   "metadata.discoverTitle": "Discover — Your Quran Learning Hub",
   "metadata.discoverDescription":
     "Learning paths, broad themes, dimensions, and search: find your starting point.",
-  "metadata.exploreTitle": "Explore — 15 Dimensions of the Quran",
+  "metadata.exploreTitle": "Explore — Dimensions of the Quran",
   "metadata.exploreDescription":
-    "Discover the Quran through fifteen life dimensions and curated topics.",
+    "Discover the Quran through life dimensions organized by domain, with curated topics.",
   "metadata.topicsTitle": "Topics",
   "metadata.topicsDescription":
     "Editorial entry points that group well-known verses by theme.",
@@ -997,7 +997,7 @@ export const en = {
   "home.allSurahs": "All surahs",
   "home.ayat": "ayat",
   "home.exploreByDimension": "Explore by dimension",
-  "home.dimensionsDescription": "Ten life dimensions — spiritual, personal, family, and more — as entry points for reflection.",
+  "home.dimensionsDescription": "Life dimensions organized by domain — spiritual, personal, family, and more — as entry points for reflection.",
   "home.allDimensions": "All dimensions",
   "home.exploreByTopic": "Explore by topic",
   "home.topicsDescription": "Editorial entry points with review status — not tafsir.",

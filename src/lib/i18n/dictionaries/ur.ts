@@ -131,7 +131,7 @@ export const ur: Record<TranslationKey, string | { one?: string; other?: string 
 
   "explore.title": "قرآن کھوجیں",
   "explore.intro":
-    "10 زندگی کے ابعاد کے ذریعے قرآن دریافت کریں۔ ہر بعد ترتیب شدہ موضوعات سے جڑتا ہے اور مزید مطالعہ کے لیے تلاش کے الفاظ پیش کرتا ہے۔",
+    "ڈومینز کے مطابق منظم زندگی کے ابعاد کے ذریعے قرآن دریافت کریں۔ ہر بعد ترتیب شدہ موضوعات سے جڑتا ہے اور مزید مطالعہ کے لیے تلاش کے الفاظ پیش کرتا ہے۔",
   "explore.dimensionNote":
     "نیچے کے ابعاد موضوع کی سطح کی رہنمائی ہیں۔ انفرادی آیات کو بعد سے درجہ بند نہیں کیا گیا۔",
   "explore.covers": "احاطہ کرتا ہے",
@@ -145,7 +145,7 @@ export const ur: Record<TranslationKey, string | { one?: string; other?: string 
   "explore.browseDomains": "ڈومین کیٹلاگ دیکھیں",
   "explore.graphExplorer": "علمی گراف کھوجی",
   "explore.graphDescription":
-    "دیکھیں کہ دس ابعاد ترتیب شدہ موضوعات سے کیسے جڑتے ہیں، اور موضوعات ایک دوسرے سے کیسے متعلق ہیں۔",
+    "دیکھیں کہ ابعاد ترتیب شدہ موضوعات سے کیسے جڑتے ہیں، اور موضوعات ایک دوسرے سے کیسے متعلق ہیں۔",
   "explore.openGraph": "گراف کھوجی کھولیں",
   "explore.searchTitle": "قرآن میں تلاش کریں",
   "explore.searchDescription":

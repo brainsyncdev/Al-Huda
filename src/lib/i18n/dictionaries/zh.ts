@@ -134,7 +134,7 @@ export const zh = {
 
   "explore.title": "探索古兰经",
   "explore.intro":
-    "通过 10 个生活维度发现古兰经。每个维度连接到精选主题，并提供进一步研究的搜索词。",
+    "通过按领域组织的生活维度发现古兰经。每个维度连接到精选主题，并提供进一步研究的搜索词。",
   "explore.dimensionNote":
     "以下维度是主题级导航辅助。单个经文不按维度分类。",
   "explore.covers": "涵盖",
@@ -148,7 +148,7 @@ export const zh = {
   "explore.browseDomains": "浏览领域目录",
   "explore.graphExplorer": "知识图谱浏览器",
   "explore.graphDescription":
-    "查看十个维度如何与精选主题连接，以及主题之间如何相互关联。",
+    "查看维度如何与精选主题连接，以及主题之间如何相互关联。",
   "explore.openGraph": "打开图谱浏览器",
   "explore.searchTitle": "搜索古兰经",
   "explore.searchDescription":

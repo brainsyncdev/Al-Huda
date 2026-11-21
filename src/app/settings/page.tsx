@@ -11,6 +11,7 @@ import {
   usePrefs,
 } from "@/lib/prefs/context";
 import { TranslationSelector } from "@/components/quran/translation-selector";
+import { LanguageSelector } from "@/components/layout/language-selector";
 import { RECITERS } from "@/lib/quran/audio";
 import { TRANSLATIONS, getTranslation } from "@/lib/quran/translations";
 import { useTranslation } from "@/lib/i18n/context";
@@ -53,6 +54,18 @@ export default function SettingsPage() {
           {t("settings.subtitle")}
         </p>
       </header>
+
+      <section aria-labelledby="ui-language" className="space-y-4">
+        <h2 id="ui-language" className="font-display text-xl font-semibold tracking-tight">
+          {t("settings.uiLanguage")}
+        </h2>
+        <div className="rounded-2xl border border-border/80 bg-card p-5 space-y-3">
+          <p className="text-sm text-muted-foreground">
+            {t("settings.uiLanguageNote")}
+          </p>
+          <LanguageSelector />
+        </div>
+      </section>
 
       <section aria-labelledby="reading-prefs" className="space-y-4">
         <h2 id="reading-prefs" className="font-display text-xl font-semibold tracking-tight">

@@ -41,12 +41,14 @@ import {
   normalizeScholarlyState,
   type ScholarlyState,
 } from "@/lib/scholarly/storage";
+import { DEFAULT_LOCALE, isLocale } from "@/lib/i18n/locales";
+import type { Locale } from "@/lib/i18n/types";
 
 export const BACKUP_FORMAT = "al-huda-backup";
-// v10 (MFD-10.2) adds the scholarly evidence + review store. Older envelopes
-// remain readable: a missing `scholarly` section restores to an empty store,
-// never to a guessed one, and no existing section changes shape.
-export const BACKUP_VERSION = 10;
+// v11 adds the UI locale preference. Older envelopes remain readable: a missing
+// `locale` field restores to the default locale, and no existing section
+// changes shape.
+export const BACKUP_VERSION = 11;
 export const BACKUP_APP = "Al-Huda";
 
 /** Empty quiz state, used when restoring a legacy backup that had no quiz. */
@@ -84,6 +86,8 @@ export interface BackupFile {
   reflections: ReflectionsState;
   /** MFD-10.2: scholarly evidence + review history added in v10. */
   scholarly: ScholarlyState;
+  /** UI locale preference added in v11. */
+  locale?: string;
 }
 
 export interface RestorableBackup {
@@ -96,6 +100,8 @@ export interface RestorableBackup {
   journeys: JourneysState;
   reflections: ReflectionsState;
   scholarly: ScholarlyState;
+  /** UI locale preference, or undefined for legacy backups. */
+  locale?: Locale;
   /**
    * Envelope version the file actually came from. 1 is a legacy library-only
    * export; 2 added revision and preferences; 3 added paths; 4 added
@@ -104,7 +110,7 @@ export interface RestorableBackup {
    * 9 added personal reflections; 10 added scholarly evidence/reviews.
    * Older versions get defaults for missing sections.
    */
-  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+  sourceVersion: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
   /** ISO timestamp recorded inside the file, or "" when absent. */
   exportedAt: string;
 }
@@ -124,6 +130,8 @@ export interface BackupInput {
   reflections: ReflectionsState;
   /** Optional so older callers still compile; defaults to an empty store. */
   scholarly?: ScholarlyState;
+  /** UI locale preference. */
+  locale?: Locale;
 }
 
 /** Build the envelope. Always contains every store, even when empty. */
@@ -145,6 +153,7 @@ export function buildBackup(
     journeys: input.journeys,
     reflections: input.reflections,
     scholarly: input.scholarly ?? { ...EMPTY_SCHOLARLY_STATE },
+    locale: input.locale,
   };
 }
 
@@ -195,7 +204,8 @@ export function parseBackup(text: string): ParseBackupResult {
       version !== 7 &&
       version !== 8 &&
       version !== 9 &&
-      version !== 10
+      version !== 10 &&
+      version !== 11
     ) {
       return {
         ok: false,
@@ -234,7 +244,11 @@ export function parseBackup(text: string): ParseBackupResult {
           file.scholarly === undefined
             ? { ...EMPTY_SCHOLARLY_STATE }
             : normalizeScholarlyState(file.scholarly),
-        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10) : 10,
+        locale:
+          typeof file.locale === "string" && isLocale(file.locale)
+            ? file.locale
+            : undefined,
+        sourceVersion: typeof version === "number" ? (version as 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11) : 11,
         exportedAt,
       },
     };
@@ -254,6 +268,7 @@ export function parseBackup(text: string): ParseBackupResult {
         journeys: { ...EMPTY_JOURNEYS_STATE },
         reflections: { ...EMPTY_REFLECTIONS_STATE },
         scholarly: { ...EMPTY_SCHOLARLY_STATE },
+        locale: undefined,
         sourceVersion: 1,
         exportedAt,
       },
