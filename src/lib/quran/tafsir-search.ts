@@ -41,7 +41,7 @@ export async function searchTafsir(
   let totalScanned = 0;
 
   // MFD-12.2 Phase 0: exclude tafsir editions whose rights are unverified.
-  const searchableIds = filterGatedEditions(TAFSIR_EDITION_IDS);
+  const searchableIds = filterGatedEditions(TAFSIR_EDITION_IDS) as TafsirEditionId[];
   for (const id of searchableIds) {
     const result = await searchTranslationEdition(id, query, limit);
     if (!result) continue;

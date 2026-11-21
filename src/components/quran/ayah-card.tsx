@@ -11,7 +11,7 @@ import { arabicSizeClass, arabicLineHeightClass, usePrefs } from "@/lib/prefs/co
 import { cn } from "@/lib/utils";
 import { absoluteUrl } from "@/lib/site";
 import { getComprehensionNote } from "@/lib/comprehension/notes";
-import { useTranslationText, isFallback, getActualEdition } from "@/lib/quran/translation-store";
+import { useTranslationText, isFallback, getActualEdition, isGated, getGatedMetadata } from "@/lib/quran/translation-store";
 import { getTranslation } from "@/lib/quran/translations";
 import { getTopicsForAyah, getDimensionForTopic, getTopicUrl, getDimensionUrl } from "@/lib/topics/navigation";
 import { AudioPlayer } from "./audio-player";
@@ -50,20 +50,45 @@ function ParallelTranslationBlock({ translationId, surah, ayah }: { translationI
   const meta = getTranslation(actualId);
   const text = useTranslationText(translationId, surah, ayah);
   const showingFallback = isFallback(translationId);
-  if (!meta) return null;
+  // MFD-12.4 WS5 Gap 3: Check for gated state with no fallback available.
+  const isTranslationGated = isGated(translationId);
+  const gatedMeta = getGatedMetadata(translationId);
+  const isGatedNoFallback = isTranslationGated && !showingFallback && !!gatedMeta;
+  if (!meta && !isGatedNoFallback) return null;
   return (
     <div className="rounded-xl border border-border/60 bg-background/50 p-3">
       <p className="mb-1 text-[0.6875rem] font-semibold uppercase tracking-wider text-muted-foreground">
-        {meta.name} — {meta.languageLabel}
+        {meta?.name ?? "Translation"} — {meta?.languageLabel ?? "unavailable"}
         {showingFallback && (
-          <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-amber-100 px-1.5 py-0.5 text-[0.5625rem] font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300" title={`Showing ${meta.name} because your selected translation is under rights review`}>
+          <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-amber-100 px-1.5 py-0.5 text-[0.5625rem] font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300" title={`Showing ${meta?.name} because your selected translation is under rights review`}>
             ⚠ Fallback
           </span>
         )}
+        {isGatedNoFallback && (
+          <span className="ml-2 inline-flex items-center gap-1 rounded-full bg-red-100 px-1.5 py-0.5 text-[0.5625rem] font-medium text-red-800 dark:bg-red-900/30 dark:text-red-300" title="This translation is unavailable">
+            ✕ Unavailable
+          </span>
+        )}
       </p>
-      <p lang={meta.language} dir={meta.direction ?? "ltr"} className="text-sm leading-relaxed text-foreground/85">
-        {text ?? "Loading…"}
-      </p>
+      {isGatedNoFallback && gatedMeta ? (
+        <div className="text-xs text-muted-foreground">
+          <p>{gatedMeta.message || "This translation is currently unavailable."}</p>
+          {gatedMeta.externalUrl && (
+            <a
+              href={gatedMeta.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block text-primary underline underline-offset-2 hover:text-primary/80"
+            >
+              Read on Tanzil.net ↗
+            </a>
+          )}
+        </div>
+      ) : (
+        <p lang={meta?.language} dir={meta?.direction ?? "ltr"} className="text-sm leading-relaxed text-foreground/85">
+          {text ?? "Loading…"}
+        </p>
+      )}
     </div>
   );
 }
@@ -119,6 +144,12 @@ export function AyahCard({
   const showingFallback = isFallback(translationId);
   const translationMeta = getTranslation(actualTranslationId);
   const selectedTranslationText = useTranslationText(translationId, ayah.surah, ayah.ayah);
+  // MFD-12.4 WS5 Gap 3: Check for gated state with no fallback available.
+  // When the translation is gated and no fallback was substituted, we should
+  // show a proper unavailable state rather than silently using dataset English.
+  const isPrimaryGated = isGated(translationId);
+  const primaryGatedMeta = getGatedMetadata(translationId);
+  const isPrimaryGatedNoFallback = isPrimaryGated && !showingFallback && !!primaryGatedMeta;
   const displayTranslation = selectedTranslationText ?? ayah.translation;
   const translationDir = translationMeta?.direction ?? "ltr";
   const translationLang = translationMeta?.language ?? "en";
@@ -254,37 +285,60 @@ export function AyahCard({
         <div className="mt-4 max-w-3xl">
           {/* MFD-12.3 WS3: Subtle fallback indicator when displaying substituted content */}
           {showingFallback && (
-            <p className="mb-1.5 flex items-center gap-1.5 text-[0.6875rem] text-amber-700 dark:text-amber-400">
+            <p className="mb-1.5 flex items-center gap-1.5 text-[0.6875rem] text-amber-700 dark:text-amber-400" role="status">
               <span aria-hidden>⚠</span>
               <span>
                 Showing <strong>{translationMeta?.name ?? "alternative"}</strong> — your selected translation ({getTranslation(translationId)?.name ?? translationId}) is under rights review.
               </span>
             </p>
           )}
-          <p
-            lang={translationLang}
-            dir={translationDir}
-            className={cn(
-              "text-foreground/85",
-              variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
-            )}
-          >
-          {activeSnippet ? (
-            <>
-              {activeSnippet.text.slice(0, activeSnippet.matchStart)}
-              {/* Highlight carries colour AND weight AND underline, so the match
-                  is never signalled by colour alone (PRD §11). */}
-              <mark className="rounded bg-gold-soft px-0.5 font-semibold text-accent-foreground underline decoration-1 underline-offset-2">
-                {activeSnippet.text.slice(activeSnippet.matchStart, activeSnippet.matchEnd)}
-              </mark>
-              {activeSnippet.text.slice(activeSnippet.matchEnd)}
-            </>
-          ) : truncateTranslationWhenNoSnippet ? (
-            <ExpandableTranslation translation={displayTranslation} truncated />
+          {/* MFD-12.4 WS5 Gap 3: Gated with no fallback — show unavailable state
+              instead of silently falling back to dataset English. */}
+          {isPrimaryGatedNoFallback && primaryGatedMeta ? (
+            <div className="rounded-lg border border-red-200 bg-red-50 p-3 dark:border-red-900/50 dark:bg-red-950/30" role="status">
+              <p className="flex items-start gap-2 text-xs leading-relaxed text-red-800 dark:text-red-300">
+                <span aria-hidden className="shrink-0">✕</span>
+                <span>
+                  <strong>{getTranslation(translationId)?.name ?? translationId}</strong> is currently unavailable. {primaryGatedMeta.message || "Rights for this edition are under review."}
+                </span>
+              </p>
+              {primaryGatedMeta.externalUrl && (
+                <a
+                  href={primaryGatedMeta.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 inline-flex items-center gap-1 text-[0.6875rem] font-medium text-red-700 underline underline-offset-2 hover:text-red-900 dark:text-red-400 dark:hover:text-red-200"
+                >
+                  Read on Tanzil.net ↗
+                </a>
+              )}
+            </div>
           ) : (
-            displayTranslation
+            <p
+              lang={translationLang}
+              dir={translationDir}
+              className={cn(
+                "text-foreground/85",
+                variant === "full" ? "text-[1.05rem] leading-relaxed" : "text-sm leading-relaxed"
+              )}
+            >
+            {activeSnippet ? (
+              <>
+                {activeSnippet.text.slice(0, activeSnippet.matchStart)}
+                {/* Highlight carries colour AND weight AND underline, so the match
+                    is never signalled by colour alone (PRD §11). */}
+                <mark className="rounded bg-gold-soft px-0.5 font-semibold text-accent-foreground underline decoration-1 underline-offset-2">
+                  {activeSnippet.text.slice(activeSnippet.matchStart, activeSnippet.matchEnd)}
+                </mark>
+                {activeSnippet.text.slice(activeSnippet.matchEnd)}
+              </>
+            ) : truncateTranslationWhenNoSnippet ? (
+              <ExpandableTranslation translation={displayTranslation} truncated />
+            ) : (
+              displayTranslation
+            )}
+            </p>
           )}
-          </p>
         </div>
       )}
 

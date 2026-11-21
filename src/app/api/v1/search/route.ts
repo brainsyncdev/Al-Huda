@@ -146,6 +146,9 @@ export async function GET(request: NextRequest) {
               languageLabel: editionResult.edition.languageLabel,
               direction: editionResult.edition.direction ?? "ltr",
             },
+            // MFD-12.4 WS5 Gap 2: Expose fallback attribution so API consumers
+            // can detect when results come from a substituted edition.
+            fallbackFromEditionId: editionResult.fallbackFromEditionId ?? null,
             results: page.map((hit) => ({
               reference: `${hit.surah}:${hit.ayah}`,
               surah: hit.surah,

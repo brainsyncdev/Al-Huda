@@ -42,7 +42,7 @@ export function AudioPlayer({ surah, ayah, reciterId, compact = false }: AudioPl
   const [gatedInfo, setGatedInfo] = useState<AudioGatedInfo | null>(null);
 
   // MFD-12.4 WS2: Use server-proxied URL instead of direct CDN URL
-  const src = ayahAudioProxyUrl(reciterId, surah, ayah);
+  const srcOrNull = ayahAudioProxyUrl(reciterId, surah, ayah);
   const reciter = getReciter(reciterId);
 
   // Changing reciter or verse must not leave a stale player reporting "playing"
@@ -56,9 +56,10 @@ export function AudioPlayer({ surah, ayah, reciterId, compact = false }: AudioPl
       el.pause();
       el.currentTime = 0;
     }
-  }, [src]);
+  }, [srcOrNull]);
 
-  if (!src) return null;
+  if (!srcOrNull) return null;
+  const src: string = srcOrNull;
 
   async function toggle() {
     const el = audioRef.current;
