@@ -1,0 +1,1112 @@
+﻿
+> next-template@0.1.0 test
+> vitest run
+
+node.exe : (!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to 
+become the default in a future major version of Vite:
+At C:\Program Files\nodejs\npm.ps1:29 char:3
++   & $NODE_EXE $NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((!) Your Vite c...ersion of Vite::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  - ESM syntax in a file loaded as CommonJS (vitest.config.ts:1:1). Use a `.mjs` extension or set `"type": "module"` 
+in the closest package.json
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+
+ RUN  v5.0.5 C:/Users/Dawood/dyad-apps/Quran Al Huda
+
+ ❯ src/components/quran/reader-controls-targets.test.ts (4 tests | 1 failed) 19ms
+   ❯ Reader text-size targets (4)
+     ✓ uses 44px minimum height and width on size buttons 4ms
+     × keeps accessible names for each size button 10ms
+     ✓ preserves aria-pressed state on size buttons 0ms
+     ✓ does not rely on larger icons as the target substitute 1ms
+ ❯ src/lib/backup-compatibility.test.ts (58 tests | 1 failed) 256ms
+   ✓ Backup Compatibility - Version Migration (31)
+     ✓ v3 Migration (8)
+       ✓ parses v3 backup successfully 9ms
+       ✓ preserves bookmarks from v3 5ms
+       ✓ preserves notes from v3 3ms
+       ✓ preserves reading progress from v3 3ms
+       ✓ preserves revision state from v3 3ms
+       ✓ preserves preferences from v3 3ms
+       ✓ preserves paths state from v3 3ms
+       ✓ provides defaults for missing sections in v3 4ms
+     ✓ v4 Migration (5)
+       ✓ parses v4 backup successfully 3ms
+       ✓ preserves translationId from v4 2ms
+       ✓ preserves bookmarks from v4 3ms
+       ✓ preserves notes from v4 7ms
+       ✓ preserves revision items from v4 3ms
+     ✓ v5 Migration (4)
+       ✓ parses v5 backup successfully 4ms
+       ✓ preserves quiz attempts from v5 3ms
+       ✓ preserves quiz responses from v5 3ms
+       ✓ preserves quiz configuration from v5 3ms
+     ✓ v6 Migration (3)
+       ✓ parses v6 backup successfully 3ms
+       ✓ preserves reading plans from v6 2ms
+       ✓ preserves reading plan progress from v6 2ms
+     ✓ v7 Migration (4)
+       ✓ parses v7 backup successfully 2ms
+       ✓ preserves collections from v7 3ms
+       ✓ preserves collection ayat from v7 2ms
+       ✓ preserves audio preferences from v7 2ms
+     ✓ v8 Migration (3)
+       ✓ parses v8 backup successfully 3ms
+       ✓ preserves study journeys from v8 5ms
+       ✓ preserves journey progress from v8 5ms
+     ✓ v9 Migration (4)
+       ✓ parses v9 backup successfully 4ms
+       ✓ preserves reflections from v9 11ms
+       ✓ preserves reflection content from v9 4ms
+       ✓ preserves all data comprehensively in v9 3ms
+   ✓ v10 Migration (MFD-10.2 scholarly store) (9)
+     ✓ parses v10 backup successfully 5ms
+     ✓ preserves scholarly review records from v10 8ms
+     ✓ preserves scholarly evidence records from v10 3ms
+     ✓ never marks a restored reviewer credential as verified by default 2ms
+     ✓ keeps every pre-existing section intact alongside the new store 3ms
+     ✓ gives older envelopes an EMPTY scholarly store, not a guessed one 23ms
+     ✓ gives the legacy v1 library-only export an empty scholarly store 1ms
+     ✓ round-trips a v10 backup through re-export without losing reviews 7ms
+     ✓ builds an empty scholarly section when the caller omits it 2ms
+   ❯ Backup Compatibility - Destructive Import Protection (14)
+     ✓ rejects invalid JSON 0ms
+     ✓ rejects non-object JSON 0ms
+     ✓ rejects array JSON 0ms
+     ✓ rejects null JSON 0ms
+     ✓ rejects unsupported version (too old) 1ms
+     × rejects unsupported version (too new) 20ms
+     ✓ rejects files larger than 5MB 0ms
+     ✓ accepts files just under 5MB 6ms
+     ✓ handles missing library gracefully 1ms
+     ✓ handles malformed bookmarks 2ms
+     ✓ handles malformed notes 2ms
+     ✓ handles invalid revision items 1ms
+     ✓ handles invalid preferences 1ms
+     ✓ handles invalid reflections 1ms
+   ✓ Backup Compatibility - Data Integrity (4)
+     ✓ re-export produces valid v9 backup 30ms
+     ✓ preserves data through re-export cycle 10ms
+     ✓ handles empty backups 1ms
+     ✓ handles duplicate identifiers 1ms
+ ❯ src/app/url-integrity.test.ts (11 tests | 1 failed) 1029ms
+   ❯ URL integrity (11)
+     ✓ absoluteUrl helper (4)
+       ✓ produces absolute URLs with http or https scheme 5ms
+       ✓ does not produce double slashes in path 2ms
+       ✓ handles paths with and without leading slash 1ms
+       ✓ uses the configured SITE_URL as base 1ms
+     ✓ sitemap URL consistency (4)
+       ✓ all sitemap URLs share the same origin as SITE_URL 255ms
+       ✓ sitemap contains no empty or malformed URLs 725ms
+       ✓ no sitemap URL contains literal 'localhost' when SITE_URL is non-localhost 1ms
+       ✓ no sitemap URL contains port 3000 when SITE_URL is non-localhost 0ms
+     ❯ robots.txt integrity (3)
+       ✓ robots sitemap URL matches SITE_URL origin 16ms
+       ✓ robots sitemap URL points to /sitemap.xml 2ms
+       × robots disallow list covers private routes 14ms
+ ❯ src/app/sitemap.test.ts (14 tests | 1 failed) 1326ms
+   ❯ sitemap (14)
+     ✓ generates entries for all expected route categories 72ms
+     ✓ contains no duplicate URLs 32ms
+     ✓ all URLs are absolute (start with the site URL) 260ms
+     ✓ excludes /search (noindex route) 25ms
+     ✓ excludes authenticated/utility routes 37ms
+     ✓ does not include the theme redirect route 33ms
+     ✓ does not include the root-unavailable route 25ms
+     × expected total: 12 static + 114 surahs + 18 topics + 15 dimensions + 14 domains + 6236 ayahs = 6409 55ms
+     ✓ includes all 14 domain detail URLs with priority 0.4 37ms
+     ✓ includes the domain directory as a static route 28ms
+     ✓ every ayah URL maps to a valid surah/ayah reference 515ms
+     ✓ first ayah entry is 1:1 and last is 114:6 24ms
+     ✓ ayah URLs use priority 0.4 (lower than surah/topic pages) 155ms
+     ✓ surah URLs use priority 0.6 22ms
+ ❯ src/lib/morphology/sprint-50-root-ayah-coverage.test.ts (23 tests | 1 failed) 1506ms
+   ✓ Sprint 50: global ayah coverage (6)
+     ✓ global coverage audit report exists 3ms
+     ✓ global unique ayah count is 6,205 (authoritative) 2ms
+     ✓ per-root sum exceeds global count (cross-root duplicates) 2ms
+     ✓ no within-root duplicates found 2ms
+     ✓ no invalid references found 2ms
+     ✓ integrity status is PASS 2ms
+   ✓ Sprint 50: occurrence integrity verification (3)
+     ✓ all occurrence files have valid surah/ayah references 704ms
+     ✓ all occurrences have wordPosition defined 463ms
+     ✓ occurrence files match registry counts 95ms
+   ✓ Sprint 50: root context integration (3)
+     ✓ root context panel component exists 1ms
+     ✓ ayah reader imports root context panel 3ms
+     ✓ ayah reader accepts from and root query params 2ms
+   ❯ Sprint 50: Quran navigation (3)
+     × ayah reader has previous/next navigation 42ms
+     ✓ ayah reader handles surah boundaries 4ms
+     ✓ root discovery links use correct ayah route 2ms
+   ✓ Sprint 50: policy preservation (4)
+     ✓ Quran text preservation policy is documented 2ms
+     ✓ AI answer feature remains disabled 114ms
+     ✓ ROOT_ALLOWLIST is preserved 1ms
+     ✓ existing topics remain unchanged 1ms
+   ✓ Sprint 50: status distribution (2)
+     ✓ status counts are mutually exclusive 3ms
+     ✓ activated roots have populated occurrence files 39ms
+   ✓ Sprint 50: root occurrence navigation (2)
+     ✓ occurrence files contain multiple occurrences 5ms
+     ✓ occurrences are ordered by surah and ayah 4ms
+ ✓ src/lib/quran/data.test.ts (19 tests) 1084ms
+   ✓ getSurah / getAyah bounds (5)
+     ✓ declared verse counts match the loaded verses for all 114 surahs 384ms
+     ✓ numbers ayat sequentially 1..n with no empty Arabic or translation 478ms
+ ✓ src/lib/quran/mushaf-data.test.ts (15 tests) 1761ms
+   ✓ toGlobalOrdinal (3)
+     ✓ accounts for every preceding surah 514ms
+   ✓ Juz boundaries (3)
+     ✓ covers every ayah with exactly one Juz, monotonically 322ms
+   ✓ Page boundaries (Madani Mushaf) (2)
+     ✓ never decreases across the canonical order and ends at 604 338ms
+   ✓ Hizb and quarter (2)
+     ✓ keeps the quarter in 1..240 and the hizb in 1..60 550ms
+ ✓ src/components/ui/calendar-unused.test.ts (2 tests) 765ms
+   ✓ Calendar component usage audit (2)
+     ✓ no other source file imports the Calendar component 747ms
+ ✓ src/lib/quran/search.test.ts (28 tests) 941ms
+   ✓ searchQuran - reference queries (6)
+     ✓ treats an out-of-range surah as a plain text query, not a reference 783ms
+ ✓ src/lib/scholarly/integrity.test.ts (12 tests) 174ms
+ ✓ src/lib/scholarly/reviews.test.ts (38 tests) 121ms
+ ✓ src/lib/morphology/sprint-49-root-explorer.test.ts (28 tests) 870ms
+ ✓ src/lib/quran/curated-references.test.ts (28 tests) 411ms
+ ✓ src/lib/quran/cross-references.test.ts (18 tests) 435ms
+ ✓ src/lib/study-journeys/quality-audit.test.ts (34 tests) 76ms
+ ✓ src/lib/quran/tafsir-search.test.ts (5 tests) 128ms
+ ✓ src/lib/quran/translation-search.test.ts (9 tests) 176ms
+ ✓ src/lib/revision/scheduling.test.ts (28 tests) 97ms
+ ✓ src/lib/scholarly/storage.test.ts (18 tests) 55ms
+ ✓ src/lib/taxonomy/topic-domains-navigation.test.ts (23 tests) 57ms
+ ✓ src/lib/search/autocomplete.test.ts (45 tests) 136ms
+ ✓ src/lib/ai/evaluation-set.test.ts (7 tests) 48ms
+ ✓ src/lib/topics/quality-audit.test.ts (25 tests) 128ms
+ ✓ src/lib/topics/data.test.ts (13 tests) 55ms
+ ✓ src/lib/quality/quality.test.ts (16 tests) 97ms
+ ✓ src/lib/morphology/human-review/sprint-46-review.test.ts (36 tests) 43ms
+ ✓ src/lib/study-journeys/data.test.ts (21 tests) 47ms
+ ✓ src/lib/graph/knowledge-graph.test.ts (26 tests) 73ms
+ ✓ src/lib/reflections/reflections.test.ts (25 tests) 46ms
+ ✓ src/lib/i18n/i18n.test.ts (26 tests) 93ms
+ ✓ src/lib/scholarly/evidence.test.ts (41 tests) 50ms
+ ✓ src/lib/taxonomy/schema.test.ts (39 tests) 92ms
+ ✓ src/lib/taxonomy/domain-topics.test.ts (35 tests) 69ms
+stderr | src/lib/translations/urdu-translations.test.ts > Urdu Translation Storage > readStoreFromStorage > handles 
+corrupted JSON gracefully
+Failed to parse Urdu translations store, resetting
+
+stderr | src/lib/translations/urdu-translations.test.ts > Fallback Behavior > handles corrupted storage gracefully
+Failed to parse Urdu translations store, resetting
+
+ ✓ src/lib/quran/reference.test.ts (22 tests) 53ms
+ ✓ src/lib/translations/urdu-translations.test.ts (38 tests) 56ms
+ ✓ src/lib/explore/broadest-themes.test.ts (15 tests) 61ms
+ ✓ src/lib/morphology/auto-review/sprint-47-automated-review.test.ts (45 tests) 79ms
+ ✓ src/lib/morphology/sprint-44-discovery.test.ts (13 tests) 71ms
+ ✓ src/lib/reflections/integrity.test.ts (47 tests) 51ms
+ ✓ src/lib/morphology/sprint-41-review-pipeline.test.ts (47 tests) 5613ms
+   ✓ pipeline determinism (6)
+     ✓ computes a 64-character hex SHA-256 fingerprint of the source index 336ms
+     ✓ produces identical output on two consecutive runs 1057ms
+   ✓ real morphology data (7)
+     ✓ publishes nothing that carries an ambiguity flag or incompatible lemma 1060ms
+     ✓ recommends only lemmas that are actually observed 1075ms
+     ✓ does not modify the morphology source while reviewing 1815ms
+ ✓ src/app/explore/root/unavailable.test.ts (6 tests) 38ms
+ ✓ src/lib/morphology/morphology-scaffolding.test.ts (37 tests) 62ms
+ ✓ src/lib/topics/navigation.test.ts (22 tests) 36ms
+ ✓ src/lib/morphology/auto-review/sprint-47-activation.test.ts (10 tests) 29ms
+ ✓ src/lib/explore/dimensions.test.ts (12 tests) 32ms
+ ✓ src/lib/morphology/pagination-and-guard.test.ts (18 tests) 31ms
+ ✓ src/lib/taxonomy/domains.test.ts (13 tests) 33ms
+ ✓ src/lib/morphology/sprint-42-separation.test.ts (12 tests) 47ms
+ ✓ src/hooks/use-search-shortcut.test.ts (16 tests) 26ms
+ ✓ src/lib/morphology/sprint-43-policy-b.test.ts (9 tests) 23ms
+ ✓ src/lib/validate-site-url.test.ts (29 tests) 30ms
+ ✓ src/lib/taxonomy/evidence-policy.test.ts (12 tests) 32ms
+ ✓ src/app/explore/theme/redirect.test.ts (5 tests) 14ms
+ ✓ src/components/quran/translation-selector-a11y.test.ts (9 tests) 18ms
+ ✓ src/lib/search/filters.test.ts (51 tests) 57ms
+ ✓ src/components/graph/knowledge-graph-keys.test.ts (8 tests) 18ms
+ ✓ src/lib/library/collections.test.ts (6 tests) 21ms
+ ✓ src/lib/paths/storage.test.ts (8 tests) 20ms
+ ✓ src/components/quran/word-by-word-rtl.test.ts (5 tests) 21ms
+ ✓ src/app/settings/settings-targets.test.ts (6 tests) 13ms
+ ✓ src/components/quran/ayah-card-a11y.test.ts (4 tests) 14ms
+ ✓ src/lib/quiz/scoring.test.ts (8 tests) 16ms
+ ✓ src/lib/morphology/sprint-39-integration.test.ts (20 tests) 8492ms
+   ✓ Sprint 39 — morphology import and validation (3)
+     ✓ morphology index file exists and is valid JSON 663ms
+     ✓ import is deterministic (same records on reload) 561ms
+     ✓ all records reference valid ayahs 1094ms
+   ✓ Sprint 39 — alignment discrepancies resolved (3)
+     ✓ 13:37:20 (root وقي) now has a token 563ms
+     ✓ 8:6:12 (root نظر) now has a token 615ms
+     ✓ 2:181:14 (root علم) now has a token 678ms
+   ✓ Sprint 39 — root/lemma distinction (3)
+     ✓ records have distinct root and lemma fields 631ms
+     ✓ occurrence-index filters by includedLemmas correctly 593ms
+     ✓ empty includedLemmas yields zero occurrences 558ms
+   ✓ Sprint 39 — pagination (2)
+     ✓ pagination returns correct totalMatches and paginated results 624ms
+     ✓ pagination offset works correctly 731ms
+   ✓ Sprint 39 — Arabic text preservation (2)
+     ✓ canonical Arabic text is not altered 559ms
+     ✓ tokens are preserved from word-data 603ms
+ ✓ src/components/graph/knowledge-graph-hitarea.test.ts (6 tests) 14ms
+ ✓ src/components/quran/audio-player-a11y.test.ts (4 tests) 11ms
+ ✓ src/lib/morphology/sprint-40-sabr-review.test.ts (21 tests) 8710ms
+   ✓ Sprint 40 — Sabr root counts (VERIFIED FACT) (7)
+     ✓ has exactly 103 word-level occurrences of root صبر 668ms
+     ✓ covers exactly 93 distinct ayat 571ms
+     ✓ has 8 distinct lemmas 537ms
+     ✓ top lemma is صَبَرَ with 58 occurrences 639ms
+     ✓ every word-level record has a non-empty token 534ms
+     ✓ every word-level record has a lemma 577ms
+     ✓ root string is consistently 'صبر' (not 'ص ب ر' with spaces) 660ms
+   ✓ Sprint 40 — alignment discrepancies (VERIFIED FACT) (3)
+     ✓ 13:37:20 resolves to root وقي with token present 563ms
+     ✓ 8:6:12 resolves to root نظر with token present 581ms
+     ✓ 2:181:14 resolves to root علم with token present 631ms
+   ✓ Sprint 40 — canonical Arabic preservation (VERIFIED FACT) (2)
+     ✓ every Sabr token's consonantal skeleton appears in its ayah 898ms
+   ✓ Sprint 40 — topic-to-root cross-references (4)
+     ✓ evidence ayat actually contain the root صبر in the index 545ms
+   ✓ Sprint 40 — root-data word-level filter (bug fix) (2)
+     ✓ getRootOccurrences returns only word-level records (no ayah-level markers) 1281ms
+ ✓ src/lib/comprehension/notes.test.ts (7 tests) 12ms
+ ✓ src/components/graph/graph-filter-a11y.test.ts (4 tests) 6ms
+ ✓ src/lib/morphology/sprint-45-integrity.test.ts (24 tests) 9274ms
+   ✓ Sprint 45: Root Index Integrity (24)
+     ✓ no occurrence file has phantom occurrences (occurrences without lemma backing) 908ms
+     ✓ no occurrence file has duplicate occurrences 883ms
+     ✓ all occurrences have correct root association 809ms
+     ✓ word-level records are separated from ayah-level markers in occurrence data 774ms
+ ❯ src/lib/morphology/auto-review/sprint-48-full-activation.test.ts (17 tests | 1 failed) 11228ms
+   ✓ Sprint 48: full activation artifacts (5)
+     ✓ batch review artifact exists with all 1,642 roots 80ms
+     ✓ activation summary exists and reports full coverage 3ms
+     ✓ independent audit exists and passes 3ms
+     ✓ discovery registry exists with all 1,642 roots 15ms
+     ✓ reconciliation report exists 17ms
+   ❯ Sprint 48: occurrence files (4)
+     ✓ has occurrence files for all activated roots 6ms
+     × populated files have correct structure 5402ms
+     ✓ no populated file has phantom occurrences 4228ms
+     ✓ no populated file has duplicate occurrences 1327ms
+   ✓ Sprint 48: reconciliation (3)
+     ✓ every source record is accounted for 1ms
+     ✓ zero rejected lemmas 44ms
+     ✓ activated count matches audit 2ms
+   ✓ Sprint 48: mandatory polysemy preservation (2)
+     ✓ all 6 mandatory polysemy roots are activated or partially-activated 9ms
+     ✓ غفر/كان mapping remains needs-review, not activated 39ms
+   ✓ Sprint 48: policy preservation (3)
+     ✓ Policy B v2.0.0 is preserved 0ms
+     ✓ AI answer feature remains disabled 38ms
+     ✓ Sprint 46 manual roots retain their review history 8ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 6 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/app/sitemap.test.ts > sitemap > expected total: 12 static + 114 surahs + 18 topics + 15 dimensions + 14 
+domains + 6236 ayahs = 6409
+AssertionError: expected [ { …(4) }, { …(4) }, …(6406) ] to have a length of 6409 but got 6408
+
+- Expected
++ Received
+
+- 6409
++ 6408
+
+ ❯ src/app/sitemap.test.ts:97:21
+     95|   it("expected total: 12 static + 114 surahs + 18 topics + 15 dimensio…
+     96|     const entries = sitemap();
+     97|     expect(entries).toHaveLength(6409);
+       |                     ^
+     98|   });
+     99|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/6]⎯
+
+ FAIL  src/app/url-integrity.test.ts > URL integrity > robots.txt integrity > robots disallow list covers private 
+routes
+AssertionError: expected [ '/my-study', '/settings', …(3) ] to include '/library'
+ ❯ src/app/url-integrity.test.ts:112:24
+    110|       expect(rules).toBeTruthy();
+    111|       const disallow = Array.isArray(rules) ? rules[0]?.disallow : rul…
+    112|       expect(disallow).toContain("/library");
+       |                        ^
+    113|       expect(disallow).toContain("/settings");
+    114|       expect(disallow).toContain("/learn");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/6]⎯
+
+ FAIL  src/lib/backup-compatibility.test.ts > Backup Compatibility - Destructive Import Protection > rejects 
+unsupported version (too new)
+AssertionError: expected true to be false // Object.is equality
+
+- Expected
++ Received
+
+- false
++ true
+
+ ❯ src/lib/backup-compatibility.test.ts:592:23
+    590|     };
+    591|     const result = parseBackup(JSON.stringify(backup));
+    592|     expect(result.ok).toBe(false);
+       |                       ^
+    593|     if (!result.ok) {
+    594|       expect(result.error).toContain("version 11");
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/6]⎯
+
+ FAIL  src/lib/morphology/sprint-50-root-ayah-coverage.test.ts > Sprint 50: Quran navigation > ayah reader has 
+previous/next navigation
+AssertionError: expected 'import type { Metadata } from "next";…' to contain 'Previous'
+
+- Expected
++ Received
+
+- Previous
++ import type { Metadata } from "next";
++ import { notFound } from "next/navigation";
++ import Link from "next/link";
++ import { ChevronLeft, ChevronRight } from "lucide-react";
++ import { AyahCard } from "@/components/quran/ayah-card";
++ import { ReaderControls } from "@/components/quran/reader-controls";
++ import { SourcePanel } from "@/components/quran/source-panel";
++ import { TafsirLinks } from "@/components/quran/tafsir-links";
++ import { TafsirViewer } from "@/components/quran/tafsir-viewer";
++ import { WordByWord } from "@/components/quran/word-by-word";
++ import { getAyah, getSurah, getSurahIndex } from "@/lib/quran/data";
++ import { ayahPath, surahPath } from "@/lib/quran/reference";
++ import { SITE_NAME, absoluteUrl } from "@/lib/site";
++ import { topicsForAyah } from "@/lib/topics/data";
++ import { PATHS } from "@/lib/paths/data";
++ import {
++   getJuzForAyah,
++   getPageForAyah,
++   getHizbForAyah,
++   getRukuForAyah,
++   getManzilForAyah,
++   isSajdaAyah,
++ } from "@/lib/quran/juz";
++ import { crossReferencesForAyah } from "@/lib/quran/cross-references";
++ import {
++   CrossReferencePanel,
++ } from "@/components/quran/cross-reference-panel";
++ import { JsonLd } from "@/components/seo/json-ld";
++ import { HOME_CRUMB, ayahJsonLd, breadcrumbs } from "@/lib/seo/json-ld";
++ import { RootContextPanel } from "@/components/quran/root-context-panel";
++ import {
++   getSprint48RootBySlug,
++   loadSprint48OccurrenceFile,
++ } from "@/lib/morphology/sprint-48-root-data";
++ import { getServerTranslation } from "@/lib/i18n/server-translate";
++ import { getCanonicalTopic } from "@/lib/taxonomy/canonical-adapter";
++ import topicAyahMappings from "../../../../../data/taxonomy/topic-ayah-mappings.json";
++ import {
++   getMappingTypeLabel,
++   getMappingTypeDescription,
++   getMappingTypeCategory,
++   getReviewStatusInfo,
++ } from "@/lib/taxonomy/mapping-type-labels";
++
++ interface AyahMapping {
++   id: string;
++   topicId: string;
++   surahNumber: number;
++   ayahStart: number;
++   ayahEnd: number;
++   mappingType: string;
++   rationale: string;
++   sourceIds: string[];
++   provenance: string;
++   status: string;
++ }
++
++ interface Props {
++   params: Promise<{ surah: string; ayah: string }>;
++   searchParams: Promise<{ from?: string; root?: string }>;
++ }
++
++ /**
++  * Sprint 50: Build root context for ayah reader when navigating from root discovery.
++  * Returns null if the root or occurrence data is not available.
++  */
++ function buildRootContext(
++   rootSlug: string,
++   surah: number,
++   ayah: number
++ ): {
++   root: string;
++   slug: string;
++   transliteration?: string;
++   lemma?: string;
++   occurrenceIndex: number;
++   totalOccurrences: number;
++   prevOccurrence?: { surah: number; ayah: number };
++   nextOccurrence?: { surah: number; ayah: number };
++ } | null {
++   const rootEntry = getSprint48RootBySlug(rootSlug);
++   if (!rootEntry) return null;
++
++   const occurrenceFile = loadSprint48OccurrenceFile(rootSlug);
++   if (!occurrenceFile || occurrenceFile.totalMatches === 0) return null;
++
++   // Find occurrences of this ayah in the root
++   const ayahOccurrences = occurrenceFile.occurrences.filter(
++     (occ) => occ.ref.surah === surah && occ.ref.ayah === ayah
++   );
++
++   if (ayahOccurrences.length === 0) return null;
++
++   // Use the first occurrence for context
++   const firstOcc = ayahOccurrences[0];
++   const occurrenceIndex = occurrenceFile.occurrences.indexOf(firstOcc) + 1;
++
++   // Find previous and next occurrences for navigation
++   const prevOcc = occurrenceIndex > 1 ? occurrenceFile.occurrences[occurrenceIndex - 2] : undefined;
++   const nextOcc = occurrenceIndex < occurrenceFile.totalMatches ? occurrenceFile.occurrences[occurrenceIndex] : 
+undefined;
++
++   return {
++     root: rootEntry.root,
++     slug: rootSlug,
++     transliteration: rootEntry.transliteration,
++     lemma: firstOcc.matchedLemma,
++     occurrenceIndex,
++     totalOccurrences: occurrenceFile.totalMatches,
++     prevOccurrence: prevOcc ? { surah: prevOcc.ref.surah, ayah: prevOcc.ref.ayah } : undefined,
++     nextOccurrence: nextOcc ? { surah: nextOcc.ref.surah, ayah: nextOcc.ref.ayah } : undefined,
++   };
++ }
++
++ /**
++  * Pre-render every canonical ayah at build time. The 6,236 routes are derived
++  * from the pinned dataset (getSurahIndex + ayahCount) so the static params can
++  * never invent a reference the page wouldn't resolve.
++  */
++ export async function generateStaticParams() {
++   const index = getSurahIndex();
++   const params: { surah: string; ayah: string }[] = [];
++   for (const surah of index) {
++     for (let ayah = 1; ayah <= surah.ayahCount; ayah++) {
++       params.push({ surah: String(surah.id), ayah: String(ayah) });
++     }
++   }
++   return params;
++ }
++
++ export async function generateMetadata({ params }: Props): Promise<Metadata> {
++   const { surah, ayah } = await params;
++   const s = Number(surah);
++   const a = Number(ayah);
++   if (!Number.isInteger(s) || !Number.isInteger(a)) return {};
++   const verse = getAyah(s, a);
++   if (!verse) return {};
++   const surahMeta = getSurah(s);
++   const ayahCanonical = absoluteUrl(ayahPath({ surah: s, ayah: a }));
++   return {
++     title: `Quran ${s}:${a} — ${surahMeta?.transliteration ?? s}`,
++     description: `Ayah ${s}:${a} (${surahMeta?.transliteration ?? "Surah"}). Uthmani Arabic with translation in 100+ 
+languages (default: Urdu — Jalandhry).`,
++     alternates: { canonical: ayahCanonical },
++     openGraph: {
++       title: `Quran ${s}:${a} — ${surahMeta?.transliteration ?? s}`,
++       description: `Ayah ${s}:${a} from Surah ${surahMeta?.transliteration ?? "the Quran"}. Uthmani Arabic with 
+translation.`,
++       url: ayahCanonical,
++       type: "article",
++       siteName: SITE_NAME,
++     },
++   };
++ }
++
++ export default async function AyahPage({ params, searchParams }: Props) {
++   const { surah, ayah } = await params;
++   const { from, root: rootSlug } = await searchParams;
++   const s = Number(surah);
++   const a = Number(ayah);
++   if (!Number.isInteger(s) || !Number.isInteger(a)) return notFound();
++   const verse = getAyah(s, a);
++   const surahMeta = getSurah(s);
++   if (!verse || !surahMeta) return notFound();
++   const t = await getServerTranslation();
++
++   const prev =
++     a > 1
++       ? { surah: s, ayah: a - 1 }
++       : s > 1
++         ? { surah: s - 1, ayah: getSurah(s - 1)?.ayahCount ?? 1 }
++         : null;
++   const next =
++     a < surahMeta.ayahCount
++       ? { surah: s, ayah: a + 1 }
++       : s < 114
++         ? { surah: s + 1, ayah: 1 }
++         : null;
++
++   const topics = topicsForAyah({ surah: s, ayah: a });
++
++   // MFD-07 Phase 9 + MFD-08 Phase 8: Find canonical topics that reference this ayah.
++   // Derives from the pinned topic-ayah-mappings dataset; no fabrication.
++   // Now includes mapping type and review status for transparency.
++   const canonicalTopicsForAyah = (() => {
++     const mappings = topicAyahMappings as AyahMapping[];
++     const topicMap = new Map<string, { topic: NonNullable<ReturnType<typeof getCanonicalTopic>>; mapping: 
+AyahMapping }>();
++     for (const m of mappings) {
++       if (
++         m.surahNumber === s &&
++         m.ayahStart <= a &&
++         m.ayahEnd >= a
++       ) {
++         const topic = getCanonicalTopic(m.topicId);
++         if (topic && !topicMap.has(m.topicId)) {
++           topicMap.set(m.topicId, { topic, mapping: m });
++         }
++       }
++     }
++     return Array.from(topicMap.values());
++   })();
++
++   const juz = getJuzForAyah(s, a);
++   const page = getPageForAyah(s, a);
++   const hizb = getHizbForAyah(s, a);
++   const ruku = getRukuForAyah(s, a);
++   const manzil = getManzilForAyah(s, a);
++   const isSajda = isSajdaAyah(s, a);
++   // Derived from the pinned dataset, so it costs one already-loaded surah and
++   // cannot assert anything an editor or a model invented.
++   const crossRefs = crossReferencesForAyah({ surah: s, ayah: a });
++
++   // Learning paths that include this ayah. Derived from the curated path
++   // dataset, so it only shows paths that actually step on this reference.
++   const relatedPaths = PATHS.filter((path) =>
++     path.steps.some(
++       (step) => step.ref.surah === s && step.ref.ayah === a
++     )
++   );
++
++   // Sprint 50: Root context when navigating from root discovery
++   const rootContext = from === "root" && rootSlug
++     ? buildRootContext(rootSlug, s, a)
++     : null;
++
++   const ayahPagePath = ayahPath({ surah: s, ayah: a });
++
++   return (
++
++     <div className="space-y-8 pb-8">
++       <JsonLd
++         nodes={[
++           breadcrumbs([
++             HOME_CRUMB,
++             { name: "Quran", path: "/quran" },
++             {
++               name: surahMeta.transliteration,
++               path: surahPath(surahMeta.id, surahMeta.slug),
++             },
++             { name: `${s}:${a}`, path: ayahPagePath },
++           ]),
++           // Derives its own absolute URL from the reference, so the markup and
++           // the canonical tag in generateMetadata cannot disagree.
++           ayahJsonLd(verse, surahMeta),
++         ]}
++       />
++
++       <header className="parchment-panel rounded-2xl border border-border/80 p-5 sm:p-6">
++         <div className="flex flex-wrap items-start justify-between gap-4">
++           <div className="min-w-0 space-y-1.5">
++             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">
++               {t("quran.ayahReference")}
++             </p>
++             <h1 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
++               {surahMeta.transliteration} {s}:{a}
++             </h1>
++             <p className="text-sm text-muted-foreground">
++               Surah {s} of 114 · {surahMeta.meaning} · {surahMeta.revelation}
++             </p>
++             <div className="mt-2 flex flex-wrap items-center gap-1.5">
++               {juz && (
++                 <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs 
+font-medium text-secondary-foreground">
++                   Juz {juz}
++                 </span>
++               )}
++               {page && (
++                 <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs 
+font-medium text-secondary-foreground">
++                   Page {page}
++                 </span>
++               )}
++               {hizb && (
++                 <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs 
+font-medium text-secondary-foreground">
++                   Hizb {hizb}
++                 </span>
++               )}
++               {ruku && (
++                 <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs 
+font-medium text-secondary-foreground">
++                   Ruku {ruku}
++                 </span>
++               )}
++               {manzil && (
++                 <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-2.5 py-1 text-xs 
+font-medium text-secondary-foreground">
++                   Manzil {manzil}
++                 </span>
++               )}
++               {isSajda && (
++                 <span className="inline-flex items-center gap-1 rounded-full bg-gold-soft px-2.5 py-1 text-xs 
+font-semibold text-accent-foreground">
++                   Sajda verse
++                 </span>
++               )}
++             </div>
++           </div>
++           <Link
++             href={surahPath(surahMeta.id, surahMeta.slug)}
++             className="rounded-full border border-border/80 bg-secondary px-3.5 py-2 text-sm font-medium 
+text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
++           >
++             {t("quran.readFullSurah")}
++           </Link>
++         </div>
++       </header>
++
++       <ReaderControls />
++
++       <AyahCard
++         ayah={verse}
++         surahTransliteration={surahMeta.transliteration}
++         variant="full"
++       />
++
++       {rootContext && (
++         <RootContextPanel
++           root={rootContext.root}
++           slug={rootContext.slug}
++           transliteration={rootContext.transliteration}
++           lemma={rootContext.lemma}
++           occurrenceIndex={rootContext.occurrenceIndex}
++           totalOccurrences={rootContext.totalOccurrences}
++           prevOccurrence={rootContext.prevOccurrence}
++           nextOccurrence={rootContext.nextOccurrence}
++         />
++       )}
++
++       {topics.length > 0 && (
++         <section
++           aria-labelledby="topics-for-ayah"
++           className="rounded-2xl border border-border/80 bg-card p-5"
++         >
++           <h2
++             id="topics-for-ayah"
++             className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
++           >
++             {t("quran.appearsInTopics")}
++           </h2>
++           <ul className="mt-3 flex flex-wrap gap-2">
++             {topics.map((t) => (
++               <li key={t.slug}>
++                 <Link
++                   href={`/topics/${t.slug}`}
++                   className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary 
+px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent 
+hover:text-accent-foreground"
++                 >
++                   <span className="arabic-display text-base text-gold">
++                     {t.arabicTitle}
++                   </span>
++                   {t.title}
++                 </Link>
++               </li>
++             ))}
++           </ul>
++           <p className="mt-3 text-xs text-muted-foreground">
++             Editorial topics are curated thematic connections. Topic pages mark the review status and are not tafsir.
++           </p>
++         </section>
++       )}
++
++       {canonicalTopicsForAyah.length > 0 && (
++         <section
++           aria-labelledby="canonical-topics-for-ayah"
++           className="rounded-2xl border border-primary/30 bg-primary/5 p-5"
++         >
++           <h2
++             id="canonical-topics-for-ayah"
++             className="text-xs font-semibold uppercase tracking-wider text-primary"
++           >
++             Canonical Topics
++           </h2>
++           <p className="mt-2 text-xs text-muted-foreground">
++             Taxonomy-driven references from the expanded canonical topic system.
++           </p>
++           <ul className="mt-3 space-y-3">
++             {canonicalTopicsForAyah.map(({ topic, mapping }) => {
++               const typeLabel = getMappingTypeLabel(mapping.mappingType);
++               const typeDescription = getMappingTypeDescription(mapping.mappingType);
++               const typeCategory = getMappingTypeCategory(mapping.mappingType);
++               const statusInfo = getReviewStatusInfo(mapping.status);
++               
++               return (
++                 <li key={topic.id} className="rounded-xl border border-border/60 bg-card/60 p-3">
++                   <div className="space-y-2">
++                     <div className="flex items-start justify-between gap-2">
++                       <Link
++                         href={`/explore/topics/${topic.id}`}
++                         className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 
+bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
++                       >
++                         {topic.arabicTitle && (
++                           <span className="arabic-display text-base text-gold">
++                             {topic.arabicTitle}
++                           </span>
++                         )}
++                         {topic.title}
++                       </Link>
++                       <span className={`inline-flex items-center rounded-full border px-2 py-0.5 text-[10px] 
+font-medium uppercase tracking-wider ${statusInfo.className}`}>
++                         {statusInfo.label}
++                       </span>
++                     </div>
++                     <div className="space-y-1">
++                       <p className="text-xs font-medium text-foreground">
++                         {typeLabel}
++                         {typeCategory === 'editorial' && (
++                           <span className="ml-2 text-[10px] uppercase tracking-wider font-medium 
+text-muted-foreground">Editorial association</span>
++                         )}
++                       </p>
++                       {typeDescription && (
++                         <p className="text-xs text-muted-foreground italic">
++                           {typeDescription}
++                         </p>
++                       )}
++                       {mapping.rationale && (
++                         <p className="text-xs text-muted-foreground">
++                           {mapping.rationale}
++                         </p>
++                       )}
++                     </div>
++                   </div>
++                 </li>
++               );
++             })}
++           </ul>
++           <p className="mt-3 text-xs text-muted-foreground">
++             Canonical topics are part of the expanded taxonomy and are pending scholarly review.
++           </p>
++         </section>
++       )}
++
++       {relatedPaths.length > 0 && (
++         <section
++           aria-labelledby="paths-for-ayah"
++           className="rounded-2xl border border-border/80 bg-card p-5"
++         >
++           <h2
++             id="paths-for-ayah"
++             className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
++           >
++             {t("quran.appearsInPaths")}
++           </h2>
++           <ul className="mt-3 flex flex-wrap gap-2">
++             {relatedPaths.map((path) => (
++               <li key={path.slug}>
++                 <Link
++                   href={`/learn/paths/${path.slug}`}
++                   className="inline-flex items-center gap-1.5 rounded-full border border-border/80 bg-secondary 
+px-3.5 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-accent 
+hover:text-accent-foreground"
++                 >
++                   <span className="arabic-display text-base text-gold">
++                     {path.arabicTitle}
++                   </span>
++                   {path.title}
++                 </Link>
++               </li>
++             ))}
++           </ul>
++           <p className="mt-3 text-xs text-muted-foreground">
++             Learning paths are curated study sequences. Each path marks its
++             review status and is not tafsir.
++           </p>
++         </section>
++       )}
++
++       <CrossReferencePanel items={crossRefs} />
++
++       <WordByWord surah={s} ayah={a} />
++       <TafsirViewer surah={s} ayah={a} />
++       <TafsirLinks surah={s} ayah={a} />
++       <SourcePanel />
++
++       <nav className="flex flex-wrap items-center justify-between gap-3">
++         {prev && (
++           <Link
++             href={ayahPath(prev)}
++             className="inline-flex items-center gap-1.5 rounded-2xl border border-border/80 bg-card px-4 py-2.5 
+text-sm font-medium transition-colors hover:bg-secondary/50"
++           >
++             <ChevronLeft className="h-4 w-4" aria-hidden />
++             {t("quran.previousAyah", { surah: prev.surah, ayah: prev.ayah })}
++           </Link>
++         )}
++         {next && (
++           <Link
++             href={ayahPath(next)}
++             className="ml-auto inline-flex items-center gap-1.5 rounded-2xl border border-border/80 bg-card px-4 
+py-2.5 text-sm font-medium transition-colors hover:bg-secondary/50"
++           >
++             {t("quran.nextAyah", { surah: next.surah, ayah: next.ayah })}
++             <ChevronRight className="h-4 w-4" aria-hidden />
++           </Link>
++         )}
++       </nav>
++     </div>
++   );
++ }
++
+
+ ❯ src/lib/morphology/sprint-50-root-ayah-coverage.test.ts:136:21
+    134|     expect(content).toContain("prev");
+    135|     expect(content).toContain("next");
+    136|     expect(content).toContain("Previous");
+       |                     ^
+    137|     expect(content).toContain("Next");
+    138|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/6]⎯
+
+ FAIL  src/components/quran/reader-controls-targets.test.ts > Reader text-size targets > keeps accessible names for 
+each size button
+AssertionError: expected '"use client";\n\nimport { CaseSensiti…' to match /accessibleLabel: "Small text size"/
+
+- Expected:
+/accessibleLabel: "Small text size"/
+
++ Received:
+"\"use client\";
+
+import { CaseSensitive, AlignJustify } from \"lucide-react\";
+import { toast } from \"sonner\";
+import {
+  usePrefs,
+  type ArabicSize,
+  type LineHeight,
+} from \"@/lib/prefs/context\";
+import { cn } from \"@/lib/utils\";
+import { TranslationSelector } from \"./translation-selector\";
+import { useTranslation } from \"@/lib/i18n/context\";
+
+const SIZE_VALUES: ArabicSize[] = [\"sm\", \"md\", \"lg\", \"xl\"];
+const LINE_HEIGHT_VALUES: LineHeight[] = [\"compact\", \"normal\", \"loose\"];
+
+/**
+ * Reader display controls (FR-006): translation edition selector, Arabic text
+ * size, line spacing, and content visibility. All state is local-only and
+ * applied immediately across the reader.
+ */
+export function ReaderControls() {
+  const t = useTranslation();
+  const {
+    arabicSize,
+    setArabicSize,
+    lineHeight,
+    setLineHeight,
+    showTranslation,
+    setShowTranslation,
+    showTransliteration,
+    setShowTransliteration,
+  } = usePrefs();
+
+  return (
+    // The reserved min-height prevents a hydration layout shift: the
+    // size-button group carries min-h-[44px] buttons, and without a reserved
+    // container height the SSR render and the hydrated render would disagree
+    // on the row's height, producing a CLS spike on surah reader pages.
+    <div className=\"flex min-h-[76px] flex-col gap-2 rounded-2xl border border-border/80 bg-card p-3 sm:gap-3 sm:p-4 
+sm:flex-row sm:items-center sm:justify-between\">
+      <fieldset className=\"flex items-center gap-2 sm:gap-3\">
+        <legend className=\"sr-only\">Translation edition</legend>
+        <span className=\"hidden text-xs font-medium text-muted-foreground sm:inline\">
+          {t(\"reader.translation\")}
+        </span>
+        <TranslationSelector compact />
+      </fieldset>
+
+      <fieldset className=\"flex items-center gap-2 sm:gap-3\">
+        <legend className=\"sr-only\">Arabic text size</legend>
+        <CaseSensitive className=\"h-4 w-4 text-muted-foreground\" aria-hidden />
+        <span className=\"hidden text-xs font-medium text-muted-foreground sm:inline\">
+          {t(\"reader.textSize\")}
+        </span>
+        <div
+          className=\"flex items-center gap-0.5 rounded-full bg-secondary p-0.5 sm:gap-1 sm:p-1\"
+          role=\"group\"
+          aria-label=\"Arabic text size\"
+        >
+
+          {SIZE_VALUES.map((value) => {
+            const label = value === \"sm\" ? \"S\" : value === \"md\" ? \"M\" : value === \"lg\" ? \"L\" : \"XL\";
+            const accessibleLabel = value === \"sm\" ? t(\"reader.smallAria\") : value === \"md\" ? 
+t(\"reader.mediumAria\") : value === \"lg\" ? t(\"reader.largeAria\") : t(\"reader.extraLargeAria\");
+            return (
+              <button
+                key={value}
+                type=\"button\"
+                onClick={() => setArabicSize(value)}
+                aria-pressed={arabicSize === value}
+                aria-label={accessibleLabel}
+                className={cn(
+                  \"inline-flex h-8 w-8 items-center justify-center rounded-full text-xs font-semibold 
+transition-colors sm:min-h-[44px] sm:min-w-[44px] sm:px-2.5\",
+                  arabicSize === value
+                    ? \"bg-primary text-primary-foreground\"
+                    : \"text-secondary-foreground hover:bg-background/70\"
+                )}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+      </fieldset>
+
+      <fieldset className=\"flex items-center gap-2 sm:gap-3\">
+        <legend className=\"sr-only\">Line spacing</legend>
+        <AlignJustify className=\"h-4 w-4 text-muted-foreground\" aria-hidden />
+        <span className=\"hidden text-xs font-medium text-muted-foreground sm:inline\">
+          {t(\"reader.spacing\")}
+        </span>
+        <div
+          className=\"flex items-center gap-0.5 rounded-full bg-secondary p-0.5 sm:gap-1 sm:p-1\"
+          role=\"group\"
+          aria-label=\"Line spacing\"
+        >
+          {LINE_HEIGHT_VALUES.map((value) => {
+            const label = value === \"compact\" ? t(\"reader.compact\") : value === \"normal\" ? t(\"reader.normal\") 
+: t(\"reader.loose\");
+            return (
+              <button
+                key={value}
+                type=\"button\"
+                onClick={() => setLineHeight(value)}
+                aria-pressed={lineHeight === value}
+                className={cn(
+                  \"inline-flex h-8 items-center justify-center rounded-full px-2 text-xs font-semibold 
+transition-colors sm:min-h-[44px] sm:px-2.5 sm:py-1\",
+                  lineHeight === value
+                    ? \"bg-primary text-primary-foreground\"
+                    : \"text-secondary-foreground hover:bg-background/70\"
+                )}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </div>
+      </fieldset>
+
+ Test Files  6 failed | 64 passed (70)
+      Tests  6 failed | 1400 passed (1406)
+   Start at  11:24:06
+   Duration  12.26s (tests 86%, import 9%, transform 3%, worker 3%)
+
+    Isolate  70 workers spawned · ~591ms startup each (spawn + environment, per file)
+             at least ~3.17s faster with isolate: false — reuses workers across files instead of one per file
+
+      <div className=\"flex flex-wrap items-center gap-2\">
+        <TogglePill
+          checked={showTranslation}
+          onChange={(next) => {
+            setShowTranslation(next);
+            toast.success(next ? t(\"reader.translationsShown\") : t(\"reader.translationsHidden\"));
+          }}
+          label={t(\"reader.translation\")}
+        />
+        <TogglePill
+          checked={showTransliteration}
+          onChange={(next) => {
+            setShowTransliteration(next);
+            toast.success(next ? t(\"reader.transliterationShown\") : t(\"reader.transliterationHidden\"));
+          }}
+          label={t(\"reader.transliteration\")}
+        />
+      </div>
+    </div>
+  );
+}
+
+function TogglePill({
+  checked,
+  onChange,
+  label,
+}: {
+  checked: boolean;
+  onChange: (next: boolean) => void;
+  label: string;
+}) {
+  return (
+    <button
+      type=\"button\"
+      role=\"switch\"
+      aria-checked={checked}
+      onClick={() => onChange(!checked)}
+      className={cn(
+        \"inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors\",
+        checked
+          ? \"border-primary/30 bg-emerald-soft text-primary\"
+          : \"border-border bg-background text-muted-foreground hover:text-foreground\"
+      )}
+    >
+      <span
+        aria-hidden
+        className={cn(
+          \"h-2 w-2 rounded-full\",
+          checked ? \"bg-primary\" : \"bg-muted-foreground/40\"
+        )}
+      />
+      {label}
+    </button>
+  );
+}
+"
+
+ ❯ src/components/quran/reader-controls-targets.test.ts:25:17
+     23|
+     24|   it("keeps accessible names for each size button", () => {
+     25|     expect(src).toMatch(/accessibleLabel: "Small text size"/);
+       |                 ^
+     26|     expect(src).toMatch(/accessibleLabel: "Medium text size"/);
+     27|     expect(src).toMatch(/accessibleLabel: "Large text size"/);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/6]⎯
+
+ FAIL  src/lib/morphology/auto-review/sprint-48-full-activation.test.ts > Sprint 48: occurrence files > populated 
+files have correct structure
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/lib/morphology/auto-review/sprint-48-full-activation.test.ts:72:3
+     70|   });
+     71|
+     72|   it("populated files have correct structure", () => {
+       |   ^
+     73|     const files = readdirSync(OCCURRENCES_DIR).filter((f) => f.endsWit…
+     74|     let populated = 0;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/6]⎯
+

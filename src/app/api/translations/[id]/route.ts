@@ -8,6 +8,7 @@
 
 import { NextResponse } from "next/server";
 import { getTranslation } from "@/lib/quran/translations";
+import { isEditionGated, buildGatedResponse } from "@/lib/quran/rights-gate";
 
 export const runtime = "nodejs";
 
@@ -27,6 +28,13 @@ export async function GET(
       { error: `Unknown translation id: ${id}` },
       { status: 404 }
     );
+  }
+
+  // MFD-12.2 Phase 0: block delivery of editions whose rights are unverified.
+  // When TANZIL_RIGHTS_ENFORCEMENT=true, non-bundled editions return a
+  // structured gating response instead of proxied text.
+  if (isEditionGated(id)) {
+    return NextResponse.json(buildGatedResponse(id), { status: 403 });
   }
 
   try {

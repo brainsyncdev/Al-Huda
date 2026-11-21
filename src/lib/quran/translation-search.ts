@@ -11,6 +11,7 @@
 import { normalizeArabic, normalizeLatin } from "./search";
 import { getTranslation, type TranslationMeta } from "./translations";
 import { getSurahIndex } from "./data";
+import { isEditionGated } from "./rights-gate";
 
 const cache = new Map<string, Map<string, string>>();
 const inflight = new Map<string, Promise<Map<string, string> | null>>();
@@ -34,6 +35,8 @@ function parseTanzil(text: string): Map<string, string> {
 async function loadEdition(id: string): Promise<Map<string, string> | null> {
   const meta = getTranslation(id);
   if (!meta) return null;
+  // MFD-12.2 Phase 0: do not fetch editions whose rights are unverified.
+  if (isEditionGated(id)) return null;
   const existing = cache.get(id);
   if (existing) return existing;
   const pending = inflight.get(id);

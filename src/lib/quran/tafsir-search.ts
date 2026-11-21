@@ -9,6 +9,7 @@
 // matches in the tafsir text, labeled as such.
 
 import { searchTranslationEdition, type TranslationSearchHit } from "./translation-search";
+import { filterGatedEditions } from "./rights-gate";
 
 /** The two tafsir editions the app can read through the translation proxy. */
 export const TAFSIR_EDITION_IDS = ["ar.jalalayn", "ar.muyassar"] as const;
@@ -39,7 +40,9 @@ export async function searchTafsir(
   const merged: TafsirHit[] = [];
   let totalScanned = 0;
 
-  for (const id of TAFSIR_EDITION_IDS) {
+  // MFD-12.2 Phase 0: exclude tafsir editions whose rights are unverified.
+  const searchableIds = filterGatedEditions(TAFSIR_EDITION_IDS);
+  for (const id of searchableIds) {
     const result = await searchTranslationEdition(id, query, limit);
     if (!result) continue;
     editionsSearched.push({
