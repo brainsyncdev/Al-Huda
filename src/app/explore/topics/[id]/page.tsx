@@ -370,12 +370,12 @@ async function CanonicalTopicView({ topic }: { topic: CanonicalTopic }) {
         </section>
       )}
 
-      {/* Related Topics */}
+      {/* Related Topics — grouped by typed relationship (Section 4: connections must be typed) */}
       {relatedTopics.length > 0 && (() => {
-        // Build a lookup of relationship types for this topic's outgoing edges
+        // Build a lookup of relationship types for this topic's edges.
+        // The lucide `Map` icon shadows the global Map constructor in this
+        // module scope, so reference it via globalThis.
         const relationships = getRelationshipsFor(topic.id);
-        // The lucide `Map` icon is imported above and shadows the global Map
-        // constructor in this module scope, so reference it via globalThis.
         const relTypeByTarget = new globalThis.Map<string, string>();
         for (const rel of relationships) {
           if (rel.sourceId === topic.id) {
@@ -384,36 +384,77 @@ async function CanonicalTopicView({ topic }: { topic: CanonicalTopic }) {
             relTypeByTarget.set(rel.sourceId, rel.type);
           }
         }
+
+        // Group related topics by relationship type, conceptual links first.
         const REL_LABELS: Record<string, string> = {
-          CONTAINS: "contains",
-          BELONGS_TO: "belongs to",
-          RELATED_TO: "related to",
-          CROSS_REFERENCES: "cross-references",
-          SHARES_CONCEPT: "shares concept",
+          SHARES_CONCEPT: "Conceptual connection",
+          CROSS_REFERENCES: "Cross-reference",
+          RELATED_TO: "Related",
+          CONTAINS: "Contains",
+          BELONGS_TO: "Belongs to",
         };
+        const TYPE_ORDER = [
+          "SHARES_CONCEPT",
+          "CROSS_REFERENCES",
+          "RELATED_TO",
+          "CONTAINS",
+          "BELONGS_TO",
+        ];
+        const groups = new globalThis.Map<string, CanonicalTopic[]>();
+        for (const rt of relatedTopics) {
+          const relType = relTypeByTarget.get(rt.id) ?? "RELATED_TO";
+          const bucket = groups.get(relType);
+          if (bucket) bucket.push(rt);
+          else groups.set(relType, [rt]);
+        }
+        const sortedTypes = [
+          ...TYPE_ORDER.filter((t) => groups.has(t)),
+          ...[...groups.keys()].filter((t) => !TYPE_ORDER.includes(t)),
+        ];
+
         return (
-          <section aria-labelledby="related-topics" className="space-y-3">
-            <h2 id="related-topics" className="font-display text-lg font-semibold tracking-tight">
-              Related Topics
-            </h2>
-            <div className="flex flex-wrap gap-2">
-              {relatedTopics.map((relatedTopic: CanonicalTopic) => {
-                const relType = relTypeByTarget.get(relatedTopic.id);
-                const relLabel = relType ? REL_LABELS[relType] ?? relType.replace(/_/g, " ") : null;
+          <section aria-labelledby="related-topics" className="space-y-4">
+            <div>
+              <h2 id="related-topics" className="font-display text-lg font-semibold tracking-tight">
+                Related Topics
+              </h2>
+              <p className="text-sm text-muted-foreground">
+                Connections are typed, not interchangeable. Conceptual links share an underlying theme; cross-references point to related passages. Every relation carries its own review status.
+              </p>
+            </div>
+            <div className="space-y-3">
+              {sortedTypes.map((type) => {
+                const bucket = groups.get(type) ?? [];
+                const isConceptual = type === "SHARES_CONCEPT";
                 return (
-                  <Link key={relatedTopic.id} href={`/explore/topics/${relatedTopic.id}`} className="group inline-flex items-center gap-1.5 rounded-full bg-secondary/60 px-3 py-1.5 text-sm font-medium text-secondary-foreground transition-colors hover:bg-secondary">
-                    {relLabel && (
-                      <span className="text-[0.625rem] font-normal uppercase tracking-wider text-muted-foreground group-hover:text-secondary-foreground/80">
-                        {relLabel}
-                      </span>
-                    )}
-                    {relatedTopic.title}
-                    {relatedTopic.arabicTitle && (
-                      <span className="arabic-display text-xs" lang="ar" dir="rtl" aria-hidden>
-                        {relatedTopic.arabicTitle}
-                      </span>
-                    )}
-                  </Link>
+                  <div
+                    key={type}
+                    className={`rounded-xl border p-3 ${isConceptual ? "border-primary/30 bg-primary/5" : "border-border/60 bg-card"}`}
+                  >
+                    <p className={`mb-2 text-xs font-semibold uppercase tracking-wider ${isConceptual ? "text-primary" : "text-muted-foreground"}`}>
+                      {REL_LABELS[type] ?? type.replace(/_/g, " ")} ({bucket.length})
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {bucket.map((relatedTopic) => (
+                        <Link
+                          key={relatedTopic.id}
+                          href={`/explore/topics/${relatedTopic.id}`}
+                          className={`group inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
+                            isConceptual
+                              ? "bg-primary/10 text-primary hover:bg-primary/20"
+                              : "bg-secondary/60 text-secondary-foreground hover:bg-secondary"
+                          }`}
+                        >
+                          {relatedTopic.title}
+                          {relatedTopic.arabicTitle && (
+                            <span className="arabic-display text-xs opacity-70" lang="ar" dir="rtl" aria-hidden>
+                              {relatedTopic.arabicTitle}
+                            </span>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 );
               })}
             </div>
