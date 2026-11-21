@@ -1,0 +1,99 @@
+# WS-G Consolidated Report: Coverage Thresholds & Normalization (MFD-12.1)
+
+| Field | Value |
+|-------|-------|
+| Workstream | MFD-12.1 WS-G |
+| Date | 2026-11-21 |
+| Proposed By | ai-assisted |
+| Review Status | pending-scholarly-review |
+| Scope | RESEARCH ONLY — no production data modified, no scripts executed |
+
+---
+
+## Executive Summary
+
+WS-G has produced five policy documents addressing the remaining scholarly questions for MFD-12.1 review preparation. All policies are grounded in MFD-11.5 evidence and propose actionable frameworks for council deliberation.
+
+**Key Recommendations:**
+1. **Q12 (Root Authority):** Classical lexicography prevails over computational tools; six-tier hierarchy established.
+2. **Q13 (Coverage):** Legacy ~7% retired; domain-specific thresholds proposed (100% for theology/law/war, ≥95% arts); quality gates bind independently.
+3. **Q14 (Morphology):** Three-tier publication model (T1 root, T2 lemma, T3 full parse); T3 deferred to post-v1.
+4. **Q15 (Gloss Epistemology):** Descriptive stance; four-layer structure mandatory; divergence recorded not adjudicated.
+5. **Q39 (Mojibake):** Double-encoded UTF-8 confirmed in topics.json; mechanical normalization authorized subject to validation protocol.
+
+**Critical Finding:** No domain currently meets proposed publication quality gates. v1 must be either a narrowed verified-core release or a clearly labelled research preview.
+
+---
+
+## Deliverables
+
+| File | Question | Status |
+|------|----------|--------|
+| [WS-G-ROOT-AUTHORITY-POLICY.md](./WS-G-ROOT-AUTHORITY-POLICY.md) | Q12 | ✅ Complete |
+| [WS-G-COVERAGE-THRESHOLD-POLICY.md](./WS-G-COVERAGE-THRESHOLD-POLICY.md) | Q13 | ✅ Complete |
+| [WS-G-MORPHOLOGY-GRANULARITY-POLICY.md](./WS-G-MORPHOLOGY-GRANULARITY-POLICY.md) | Q14 | ✅ Complete |
+| [WS-G-GLOSS-EPISTEMOLOGY-POLICY.md](./WS-G-GLOSS-EPISTEMOLOGY-POLICY.md) | Q15 | ✅ Complete |
+| [WS-G-MOJIBAKE-NORMALIZATION-BRIEF.md](./WS-G-MOJIBAKE-NORMALIZATION-BRIEF.md) | Q39 | ✅ Complete |
+| WS-G-CONSOLIDATED.md | Summary | ✅ This document |
+
+---
+
+## Evidence Base Summary
+
+All policies cite:
+- `MFD-11.5-ROOT-REMEDIATION-REPORT.md` (649 entries audited, 235 invalid slugs, 8 disagreements)
+- `MFD-11.5-MORPHOLOGY-REPORT.md` (220 lemmas populated, 429 null, 28 ambiguous)
+- `MFD-11.5-LEXICAL-QUALITY-REPORT.md` (9 adequate glosses, 640 flagged)
+- `coverage-report.json` & `coverage-denominator-register.json` (legacy methodology flaws documented)
+- `gloss-quality-rubric.md` (four-layer structure defined)
+- `data/taxonomy/topics.json` (mojibake confirmed via inspection)
+
+---
+
+## Cross-Cutting Dependencies
+
+1. **Q39 blocks taxonomy review:** Mojibake normalization must complete before Urdu/Arabic titles can be reviewed.
+2. **Q12 blocks Q14:** Root authority resolution precedes lemma/pattern trust.
+3. **Q13 depends on inclusion criteria approval:** Denominators cannot be measured until council approves scope rules.
+4. **Q15 staging depends on tafsīr resources:** L3 population rate determines v1 vs v2 timeline.
+5. **Quality gates (§Q13.2.5) bind all domains independently of coverage percentages.**
+
+---
+
+## Implementation Impacts Assessed
+
+| Domain | Pipeline Impact | Display Impact | Review Impact |
+|--------|----------------|----------------|---------------|
+| Root Authority | Confidence tiers tied to source hierarchy | Multi-root display with attribution | Disagreement cases need dedicated workflow |
+| Coverage | Exclusion log as first-class artifact | Per-domain cards, no global % | Criteria approval before threshold review |
+| Morphology | Schema adds nullReason + publicationTier | Tiered rendering, nulls explained | 460-entry queue triaged by reason code |
+| Gloss | Structured 4-layer object replaces string | Layer toggle, divergence flags | Divergence cases need specialist review |
+| Mojibake | One-time repair script | Titles render correctly | Mechanical fix, content review follows |
+
+---
+
+## Scholarly Review Questions Consolidated
+
+Each policy document contains specific questions for council deliberation. Key decisions needed:
+
+1. Approve six-tier root authority hierarchy (Q12)
+2. Approve inclusion criteria and domain-specific coverage thresholds (Q13)
+3. Approve T1+T2 publication granularity, defer T3 (Q14)
+4. Approve descriptive epistemic stance and four-layer gloss structure (Q15)
+5. Authorize mojibake normalization pass with validation protocol (Q39)
+6. Decide v1 release posture: verified-core vs research preview (Q13 §2.5)
+
+---
+
+## Compliance Statement
+
+✅ No production files modified
+✅ No normalization or extraction scripts executed
+✅ All outputs marked `proposedBy: ai-assisted, reviewStatus: pending-scholarly-review`
+✅ Evidence cited from MFD-11.5 reports and corpus statistics
+✅ Implementation impacts assessed for data pipeline, display, and scholarly review
+✅ Structured scholarly review questions provided for each policy
+
+---
+
+*Report generated by WS-G agent-109 on 2026-11-21. All findings are policy recommendations pending scholarly review.*

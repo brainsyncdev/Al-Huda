@@ -1,0 +1,366 @@
+{
+  "metadata": {
+    "programme": "FAHM Quran App — MFD-12.1",
+    "generatedAt": "2026-11-21T09:35:00+05:00[Asia/Karachi]",
+    "proposedBy": "ai-assisted",
+    "reviewStatus": "pending-scholarly-review",
+    "totalQuestions": 39,
+    "resolved": 20,
+    "deferred": 0,
+    "pending": 19,
+    "note": "WS-F and WS-G consolidated outputs were not available at compilation time. Questions assigned to those workstreams are marked PENDING."
+  },
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "Nafs typology: Are three states a unified Qur'anic framework or post-Qur'anic Sufi systematization?",
+      "assignedWorkstream": "WS-A",
+      "disposition": "RESOLVED",
+      "summary": "Evidence brief prepared with scholarly positions from classical tafsir and Sufi traditions. Architecture impact: affects 3 topics, 7 mappings. Immediate correction identified: 13:28 misclassified under nafs-mutmainna (uses qalb not nafs). Awaiting council decision on typology status.",
+      "architectureImpact": "Restructure spiritual-states dimension; reassign 7 topic-ayah mappings; update Concept provenance tags",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-NAFS-TYPOLOGY-BRIEF.md", "research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md"]
+    },
+    {
+      "id": "Q2",
+      "text": "Human equality: Split into four propositions or retain as modern category?",
+      "assignedWorkstream": "WS-G",
+      "disposition": "PENDING",
+      "summary": "WS-G consolidated output not yet available. Question requires scholarly determination of whether modern human-rights framing maps to Qur'anic categories or should be decomposed into fiqh-based sub-topics.",
+      "architectureImpact": "Potential decomposition of human-equality topic into 4 sub-topics; affects Social & Governance domain",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q3",
+      "text": "Covenant boundary: General ʿahd vs treaty-specific mīthāq topic separation?",
+      "assignedWorkstream": "WS-G",
+      "disposition": "PENDING",
+      "summary": "WS-G consolidated output not yet available. WS-A notes that peace-agreements topic currently mixes s-l-m and ʿ-h-d roots; separation needed regardless of other decisions.",
+      "architectureImpact": "Split covenant topic; reassign 5:1 and 16:91 mappings from peace-agreements to covenant topic",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md §Cross-Reference Matrix"]
+    },
+    {
+      "id": "Q4",
+      "text": "Hadith-derived topics: Status in Qur'an-centred taxonomy?",
+      "assignedWorkstream": "WS-G",
+      "disposition": "PENDING",
+      "summary": "WS-G consolidated output not yet available. Intersects with WS-B HadithReport entity design and WS-C phantom CREATE candidates in Hadith & Sunnah cluster (8 topics).",
+      "architectureImpact": "Determines whether hadith-only topics receive full Topic entities or are modeled as EvidenceRecord annotations",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-B-HADITH-INTEGRATION-SPEC.md", "research/mfd-12.1/reconciliation/WS-C-PHANTOM-SUMMARY.md"]
+    },
+    {
+      "id": "Q5",
+      "text": "Jihād vs Qitāl: Unified or distinct taxonomic treatment?",
+      "assignedWorkstream": "WS-A",
+      "disposition": "RESOLVED",
+      "summary": "Evidence brief prepared confirming distinction per MFD-11.3-A. Affects core war-peace taxonomy. Minimum 4 mapping reassignments required. Dimension restructuring needed within war-peace-conflict domain.",
+      "architectureImpact": "Separate jihad and qital dimensions/topics; reassign ≥4 mappings; update Relationship taxonomy for j-h-d vs q-t-l edges",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-JIHAD-QITAL-BRIEF.md", "research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md"]
+    },
+    {
+      "id": "Q6",
+      "text": "Arts domain: Dissolve or redefine?",
+      "assignedWorkstream": "WS-A",
+      "disposition": "RESOLVED",
+      "summary": "Evidence brief confirms dissolution per MFD-11.3-B recommendation. Largest structural change: affects 1 domain, 5 dimensions, ~10 topics, ~30 mappings. Council confirmation required before migration.",
+      "architectureImpact": "Delete arts-beauty-aesthetics domain; redistribute or deprecate 5 dimensions and ~10 topics; remove ~30 mappings",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-ARTS-DOMAIN-BRIEF.md", "research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md"]
+    },
+    {
+      "id": "Q7",
+      "text": "Minor/Major signs: Hadith-derived taxonomy in Qur'an-focused system?",
+      "assignedWorkstream": "WS-G",
+      "disposition": "PENDING",
+      "summary": "WS-G consolidated output not yet available. Relates to Q4 (hadith-derived topics) and WS-C phantom candidates in Eschatology cluster (8 topics including dajjal-antichrist, end-times-events).",
+      "architectureImpact": "Determines eschatology topic structure; may require new Subdimension entities under Eschatology dimension",
+      "evidenceReferences": ["research/mfd-12.1/reconciliation/WS-C-PHANTOM-SUMMARY.md"]
+    },
+    {
+      "id": "Q8",
+      "text": "Sunnah definition: Post-Qur'anic juristic category vs Qur'anic prophetic authority?",
+      "assignedWorkstream": "WS-G",
+      "disposition": "PENDING",
+      "summary": "WS-G consolidated output not yet available. Foundational definitional question affecting Hadith & Sunnah topic cluster and WS-B HadithReport integration model.",
+      "architectureImpact": "Affects Concept definitions for sunnah-related entries; may require separate Concept vs Topic treatment",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q9",
+      "text": "Salām/silm polysemy: Dual mapping or interpretive annotation for 2:208?",
+      "assignedWorkstream": "WS-A",
+      "disposition": "RESOLVED",
+      "summary": "Evidence brief prepared. Sets precedent for representing interpretive ambiguity in data model. Cross-cutting with Q11 via 8:61 bridge. Immediate correction: move 5:1 and 16:91 from peace-agreements to covenant topic.",
+      "architectureImpact": "Establishes polysemy annotation pattern for TopicAyahMapping; single verse decision with model-wide precedent",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-SALAM-SILM-BRIEF.md", "research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md"]
+    },
+    {
+      "id": "Q10",
+      "text": "Art-boundaries mappings: Salvageable or fully reclassify?",
+      "assignedWorkstream": "WS-A",
+      "disposition": "RESOLVED",
+      "summary": "IMMEDIATE CORRECTION REQUIRED. All 4 art-boundaries mappings (31:6, 17:32, 24:19, 49:11) are demonstrably misclassified. No scholarly position supports current placement. Reclassification can proceed upon council acknowledgment without further deliberation.",
+      "architectureImpact": "Remove 4 invalid TopicAyahMapping records; reassign verses to correct topics (modesty, backbiting, slander)",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-ARTS-DOMAIN-BRIEF.md §3", "research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md"]
+    },
+    {
+      "id": "Q11",
+      "text": "Ṣulḥ reconciliation: Independent topic or sub-dimension of peace?",
+      "assignedWorkstream": "WS-A",
+      "disposition": "RESOLVED",
+      "summary": "Evidence brief prepared. Recommended as independent topic filling identified gap. Moderate effort; cross-domain implications with war-peace-conflict domain. Linked to Q9 via s-l-m root polysemy.",
+      "architectureImpact": "Create new sulh-reconciliation topic; add EDITORIAL_CLASSIFICATION edge to peace dimension; link to relevant verse mappings",
+      "evidenceReferences": ["research/mfd-12.1/reviews/WS-A-SULH-RECONCILIATION-BRIEF.md", "research/mfd-12.1/reviews/WS-A-CONSOLIDATED-REVIEW-PACKAGE.md"]
+    },
+    {
+      "id": "Q12",
+      "text": "Root assignment authority: Classical lexicons vs computational morphology when they disagree?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. Foundational epistemological question for lexical layer. Affects 649 root entries and dispute resolution protocol.",
+      "architectureImpact": "Determines RootAnalysis.disputeResolution field semantics; affects all morphological analysis downstream",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q13",
+      "text": "Coverage threshold: What minimum percentage is acceptable for scholarly publication?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. Current coverage ~65% mapping rate. Scholarly council must define acceptable threshold for public release.",
+      "architectureImpact": "Defines release gate metric; no schema change but affects publication workflow gates",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q14",
+      "text": "Morphological granularity: Root only vs full parsed morphology?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 found 476 undetermined patterns, no prefix/suffix parsing. Decision determines scope of MorphologicalAnalysis entity population.",
+      "architectureImpact": "If full parsing adopted, significant expansion of MorphologicalAnalysis schema and data population effort",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q15",
+      "text": "Gloss epistemology: Classical tafsir vs modern linguistic semantics when they diverge?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 found 98.6% glosses fail four-layer rubric. Epistemological priority decision required before gloss revision campaign.",
+      "architectureImpact": "Determines Gloss.provenance weighting and display ordering; affects 640 flagged gloss entries",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q16",
+      "text": "Index scope: Curated thematic lexicon confirmed; exhaustive coverage deferred?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 confirmed curated scope but scholarly ratification pending.",
+      "architectureImpact": "Confirms LexicalEntry inclusion criteria; affects future expansion roadmap",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q17",
+      "text": "Transliteration standard: ISO 233-2 adopted; search aliases separate?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 adopted ISO 233-2 but 37.8% violations remain. Scholarly confirmation of standard and alias strategy needed.",
+      "architectureImpact": "Finalizes transliteration migration spec; affects 245 terms needing correction",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q18",
+      "text": "Polysemy handling: One entry with contextual senses as default?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. Relates to Q9 (salām/silm) precedent. Determines whether polysemous roots get single LexicalEntry with multiple Sense objects or separate entries.",
+      "architectureImpact": "Affects LexicalEntry schema structure and sense-disambiguation UI design",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q19",
+      "text": "Root disagreements: Preserve competing analyses without forcing resolution?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 identified 8 disagreement groups. Policy needed for representing legitimate scholarly differences.",
+      "architectureImpact": "Confirms DisagreementSet modeling in RootAnalysis; affects display of competing morphological interpretations",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q20",
+      "text": "Morphology null values: Acceptable representation of insufficient evidence?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 found 429 null morphology entries correctly representing insufficient evidence. Scholarly confirmation of null-as-valid needed.",
+      "architectureImpact": "Validates current MorphologicalAnalysis nullable fields; no schema change if confirmed",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q21",
+      "text": "235 systemic slug defects: Scholarly verification of corrections?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 discovered 235 slug defects. Corrections proposed but require scholarly verification before application.",
+      "architectureImpact": "Batch slug correction script ready; blocked on scholarly sign-off",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q22",
+      "text": "23 duplicate groups: Genuine polysemy vs extraction artifacts?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 adjudicated 23 groups but scholarly confirmation of polysemy vs artifact classification pending.",
+      "architectureImpact": "Determines merge vs retain decisions for 23 lexical entry groups",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q23",
+      "text": "640 gloss revisions: Prioritization order for scholarly authoring?",
+      "assignedWorkstream": "WS-F",
+      "disposition": "PENDING",
+      "summary": "WS-F consolidated output not yet available. MFD-11.5 flagged 640 glosses failing rubric. Prioritization framework needed to sequence scholarly authoring effort.",
+      "architectureImpact": "No schema change; defines content production roadmap and resource allocation",
+      "evidenceReferences": []
+    },
+    {
+      "id": "Q24",
+      "text": "Subdimension entity: Embedded in Dimension or first-class?",
+      "assignedWorkstream": "WS-D",
+      "disposition": "RESOLVED",
+      "summary": "Elevated to first-class entity with subdim-{slug} ID format. Schema defined. Migration plan amended to transform 25 existing subdimension records. Cross-reference integrity rules specified.",
+      "architectureImpact": "New Subdimension entity; modified Dimension and Topic schemas; 4 new integrity rules; migration Phase 2 amended",
+      "evidenceReferences": ["research/mfd-12.1/architecture/WS-D-REVISED-SCHEMA-SPECIFICATIONS.md §2.1"]
+    },
+    {
+      "id": "Q25",
+      "text": "Translation granularity: Per-verse only or per-word interlinear?",
+      "assignedWorkstream": "WS-D",
+      "disposition": "RESOLVED",
+      "summary": "Separate WordTranslation entity defined with composite ID encoding edition + token position. SCHEMA ONLY — population deferred until corpus sourcing and licensing clearance.",
+      "architectureImpact": "New WordTranslation entity (schema ready, data deferred); 3 new integrity rules; no immediate migration",
+      "evidenceReferences": ["research/mfd-12.1/architecture/WS-D-REVISED-SCHEMA-SPECIFICATIONS.md §2.2"]
+    },
+    {
+      "id": "Q26",
+      "text": "Hadith integration: Dedicated entity or Source.type sufficient?",
+      "assignedWorkstream": "WS-B",
+      "disposition": "RESOLVED",
+      "summary": "Dedicated HadithReport entity designed with matn, isnād summary, multi-scholar grading. EvidenceRecord references via hadithReportId. Source remains bibliographic container.",
+      "architectureImpact": "New HadithReport entity; EvidenceRecord.hadithReportId conditional field; variantOf and parallelReports self-referential relationships",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-B-GOVERNANCE-CONSOLIDATED.md §3", "research/mfd-12.1/governance/WS-B-HADITH-INTEGRATION-SPEC.md"]
+    },
+    {
+      "id": "Q27",
+      "text": "Cross-lingual concept alignment across Arabic/English/Urdu?",
+      "assignedWorkstream": "WS-D",
+      "disposition": "RESOLVED",
+      "summary": "Hub-and-spoke model with divergence annotation. New CROSS_LINGUAL_VARIANT relationship type for DIVERGENT cases. Concept.crossLingualNotes field added with alignmentConfidence enum.",
+      "architectureImpact": "Modified Concept schema; new CROSS_LINGUAL_VARIANT relationship type (11th type); migration Phase 4 amended",
+      "evidenceReferences": ["research/mfd-12.1/architecture/WS-D-REVISED-SCHEMA-SPECIFICATIONS.md §3.3, §4.1"]
+    },
+    {
+      "id": "Q28",
+      "text": "ReviewDecision enforcement mechanism at storage layer?",
+      "assignedWorkstream": "WS-B",
+      "disposition": "RESOLVED",
+      "summary": "Three-layer defense-in-depth: application middleware (universal) + DB constraints (SQL) + CRDT merge rules (local-first). Six invariants validated at write time.",
+      "architectureImpact": "Middleware specification; SQL trigger templates; CRDT merge conflict resolution rules; implementation prerequisites identified",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-B-GOVERNANCE-CONSOLIDATED.md §3", "research/mfd-12.1/governance/WS-B-REVIEW-ENFORCEMENT-SPEC.md"]
+    },
+    {
+      "id": "Q29",
+      "text": "LearningPath progress tracking: Separate entity or embedded?",
+      "assignedWorkstream": "WS-D",
+      "disposition": "RESOLVED",
+      "summary": "Separate LearningProgress entity with UUID v4 IDs. Local IndexedDB only — never bundled, never synced. Schema defined; implementation deferred to application layer build.",
+      "architectureImpact": "New LearningProgress entity (local-only); 2 new integrity rules; no canonical data migration needed",
+      "evidenceReferences": ["research/mfd-12.1/architecture/WS-D-REVISED-SCHEMA-SPECIFICATIONS.md §2.3"]
+    },
+    {
+      "id": "Q30",
+      "text": "Tanzil proxy rights: Safe-default adequate or more restrictive needed?",
+      "assignedWorkstream": "WS-E",
+      "disposition": "RESOLVED",
+      "summary": "Safe default IS adequate BUT NOT CURRENTLY ENFORCED IN PRODUCTION. Immediate enforcement of linkOutOnly:true for rights-unverified + api-import sources required. HIGH SEVERITY legal risk.",
+      "architectureImpact": "Source.displayConstraints.proxyComplianceMode field added; Edition.proxyEndpoint field added; API middleware enforcement required immediately",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-E-EVIDENCE-RIGHTS-CONSOLIDATED.md §P1", "research/mfd-12.1/governance/WS-E-TANZIL-RIGHTS-POLICY.md"]
+    },
+    {
+      "id": "Q31",
+      "text": "Audio recording rights: Performer-rights fields needed?",
+      "assignedWorkstream": "WS-E",
+      "disposition": "RESOLVED",
+      "summary": "Current model conflates distribution and performer rights. Dual-rights schema extension proposed: recitationRights object with both distributionRightsStatus and performerRightsStatus. Playback gated until both verified.",
+      "architectureImpact": "Source.recitationRights conditional field added; EvidenceRecord.audioLocator field added; playback gating logic required",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-E-EVIDENCE-RIGHTS-CONSOLIDATED.md §P2", "research/mfd-12.1/governance/WS-E-AUDIO-RIGHTS-POLICY.md"]
+    },
+    {
+      "id": "Q32",
+      "text": "Community-contributed source verification threshold?",
+      "assignedWorkstream": "WS-E",
+      "disposition": "RESOLVED",
+      "summary": "Binary gate insufficient. Four-tier trust model recommended: UNVETTED → BASIC_VERIFIED → RIGHTS_ASSESSED → LEGAL_CLEARED. Human verification required at each tier; no automated promotion.",
+      "architectureImpact": "Source.trustTier and tierHistory fields added; tier-aware display components needed; ReviewDecision integration for promotions",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-E-EVIDENCE-RIGHTS-CONSOLIDATED.md §P3", "research/mfd-12.1/governance/WS-E-COMMUNITY-SOURCE-THRESHOLD.md"]
+    },
+    {
+      "id": "Q33",
+      "text": "Edition-level rights variance validation against real cases?",
+      "assignedWorkstream": "WS-E",
+      "disposition": "RESOLVED",
+      "summary": "Two-level model sound but has enum asymmetry bug and missing derivative-works support. Fixes proposed: rightsOverride enum completion, derivativeOfWork linking, componentRights granularity, computed source rights from editions.",
+      "architectureImpact": "Edition schema: 4 field additions + 1 enum fix; Source.computedFromEditions indicator; rights computation service needed",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-E-EVIDENCE-RIGHTS-CONSOLIDATED.md §P4", "research/mfd-12.1/governance/WS-E-EDITION-RIGHTS-VARIANCE.md"]
+    },
+    {
+      "id": "Q34",
+      "text": "Reviewer identity credentialing infrastructure?",
+      "assignedWorkstream": "WS-B",
+      "disposition": "RESOLVED",
+      "summary": "Standalone ReviewerIdentity entity with scoped authority, domain expertise, authorization chains, and activation lifecycle. Privacy policy prerequisite identified.",
+      "architectureImpact": "New ReviewerIdentity entity; authorizationChain self-referential relationship; bootstrap governance body charter required before implementation",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-B-GOVERNANCE-CONSOLIDATED.md §3", "research/mfd-12.1/governance/WS-B-REVIEWER-CREDENTIALING-SPEC.md"]
+    },
+    {
+      "id": "Q35",
+      "text": "Multi-reviewer quorum for creedal claims?",
+      "assignedWorkstream": "WS-B",
+      "disposition": "RESOLVED",
+      "summary": "Category-based quorum tiers (T1–T4). T3 requires 3 approvers from ≥2 traditions for THEOLOGICAL/LEGAL claims. T4 requires all traditions in genuine DisagreementSets.",
+      "architectureImpact": "ReviewDecision.quorumTier denormalized field; quorum validation middleware; tag system for claim categorization prerequisite",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-B-GOVERNANCE-CONSOLIDATED.md §3", "research/mfd-12.1/governance/WS-B-QUORUM-POLICY-SPEC.md"]
+    },
+    {
+      "id": "Q36",
+      "text": "Temporal expiry of scholarly approvals?",
+      "assignedWorkstream": "WS-B",
+      "disposition": "RESOLVED",
+      "summary": "Per-decision expiry with category defaults: classical = permanent; contemporary = 5–10 years. Re-affirmation via ENDORSE preserves append-only chain.",
+      "architectureImpact": "ReviewDecision.expiresAt, expiryCategory, reaffirmedCount fields added; expiry engine and notification system prerequisites",
+      "evidenceReferences": ["research/mfd-12.1/governance/WS-B-GOVERNANCE-CONSOLIDATED.md §3", "research/mfd-12.1/governance/WS-B-APPROVAL-EXPIRY-POLICY.md"]
+    },
+    {
+      "id": "Q37",
+      "text": "243 phantom references: Scholarly determination of which to create vs deprecate?",
+      "assignedWorkstream": "WS-C",
+      "disposition": "RESOLVED",
+      "summary": "Full reconciliation completed: 154 CREATE (77%), 2 DEPRECATE (1%), 21 MERGE (10.5%), 23 DEFER (11.5%). 15 high-priority scholarly gaps identified in taxonomy. DEPRECATE candidates are erroneous subdimension-as-topic refs. DEFER candidates require scholarly determination before creation.",
+      "architectureImpact": "154 new Topic entities to create; 2 references to remove; 21 merge operations; 23 deferred pending scholarly review; referential integrity checks recommended",
+      "evidenceReferences": ["research/mfd-12.1/reconciliation/WS-C-PHANTOM-SUMMARY.md"]
+    },
+    {
+      "id": "Q38",
+      "text": "Implicit CONTAINS edges: Generate from arrays or require explicit authoring?",
+      "assignedWorkstream": "WS-D",
+      "disposition": "RESOLVED",
+      "summary": "Generate explicit EDITORIAL_CLASSIFICATION edges from Domain.dimensionIds[], Dimension.subdimensionIds[], and Dimension.topicIds[] arrays during migration. Deterministic ID format: rel-{parentId}-{childId}-EDITORIAL_CLASSIFICATION. Arrays retained for human readability.",
+      "architectureImpact": "~500 EDITORIAL_CLASSIFICATION edges generated in migration Phase 3; array-edge consistency rule added to graph integrity rules",
+      "evidenceReferences": ["research/mfd-12.1/architecture/WS-D-REVISED-SCHEMA-SPECIFICATIONS.md §3.4, §8"]
+    },
+    {
+      "id": "Q39",
+      "text": "Urdu/Arabic mojibake in topics.json: UTF-8 normalization pass authorized?",
+      "assignedWorkstream": "WS-G",
+      "disposition": "PENDING",
+      "summary": "WS-G consolidated output not yet available. Technical remediation likely straightforward but requires scholarly authorization to confirm normalization doesn't alter intended orthography.",
+      "architectureImpact": "Batch UTF-8 normalization script; no schema change; affects display correctness of Urdu/Arabic titles",
+      "evidenceReferences": []
+    }
+  ]
+}

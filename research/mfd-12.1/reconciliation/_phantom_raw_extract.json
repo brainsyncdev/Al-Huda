@@ -1,0 +1,1426 @@
+{
+  "existingTopicCount": 184,
+  "phantomRelatedTopicRefs": 154,
+  "phantomSubdimensionRefs": 89,
+  "totalPhantomRefs": 243,
+  "uniquePhantomIds": [
+    "accountability",
+    "animal-rights",
+    "animal-sacrifice",
+    "animal-stories",
+    "animal-welfare",
+    "arrogance",
+    "asbab-al-nuzul",
+    "asma-ul-husna-benefits",
+    "asma-ul-husna-meanings",
+    "asma-ul-husna-names",
+    "attributes-of-action",
+    "attributes-of-beauty",
+    "attributes-of-essence",
+    "attributes-of-majesty",
+    "awwabin-prayer",
+    "azrael-angel-of-death",
+    "beauty-islam",
+    "belief-in-scriptures",
+    "bird-creation",
+    "body-as-trust",
+    "breastfeeding-rights",
+    "camel-creation",
+    "character-building",
+    "charity-virtues",
+    "chastity-modesty",
+    "child-maintenance",
+    "child-rights",
+    "commercial-fraud-prohibition",
+    "commercial-transactions",
+    "common-ground",
+    "community-cohesion",
+    "community-welfare",
+    "compatibility",
+    "conflict-prevention",
+    "congregation-virtues",
+    "consultation-mechanism",
+    "consultation-shura",
+    "contract-ethics",
+    "cow-creation",
+    "creative-expression",
+    "dajjal-antichrist",
+    "debt-relief",
+    "destruction-prohibition",
+    "dietary-restrictions",
+    "dignified-labor",
+    "discipline-methods",
+    "divine-attributes-categories",
+    "divine-beauty",
+    "divine-justice",
+    "divine-will",
+    "dua-conditions",
+    "dua-times",
+    "duha-prayer",
+    "earth-stewardship",
+    "ecological-balance",
+    "economic-fairness",
+    "eid-prayers",
+    "emotional-balance",
+    "end-times-events",
+    "endowments-waqf",
+    "entrepreneurship",
+    "environmental-responsibility",
+    "eternal-bliss",
+    "exodus-narrative",
+    "fair-pricing",
+    "fair-treatment",
+    "fair-treatment-children",
+    "fair-wages",
+    "faskh-annulment",
+    "fasting-rules",
+    "fear-hope-balance",
+    "final-message",
+    "fiqh-methodology",
+    "first-revelation",
+    "following-prophets",
+    "following-sunnah",
+    "friendship-ethics",
+    "gradual-revelation",
+    "greater-lesser-jihad",
+    "habit-formation",
+    "hadith-classification",
+    "hadith-terminology",
+    "hajj-significance",
+    "healing-prayers",
+    "heart-softening",
+    "hell-levels",
+    "hidden-shirk",
+    "honest-dealing",
+    "honesty-business",
+    "humane-treatment",
+    "iddah-waiting",
+    "ijma-consensus",
+    "ijtihad",
+    "information-ethics",
+    "insect-creation",
+    "intention-purification",
+    "interpretation-principles",
+    "islamic-art",
+    "islamic-finance",
+    "israfil-raphael",
+    "jibril-gabriel",
+    "jihad-types",
+    "jinn-nature",
+    "jinn-types",
+    "judicial-independence",
+    "just-leaders",
+    "justice-for-all",
+    "key-terms",
+    "khalifah-stewardship",
+    "kiraman-katibin",
+    "kufr-al-ni'mah",
+    "leadership-ethics",
+    "legal-maxims",
+    "legal-schools",
+    "marine-creatures",
+    "market-regulation",
+    "marriage-contract",
+    "marriage-proposal",
+    "marriage-readiness",
+    "marriage-witnesses",
+    "medicinal-substances",
+    "mental-wellbeing",
+    "mikael-michael",
+    "miracles-of-isa",
+    "moral-education",
+    "moral-lessons-from-prophets",
+    "nafs-purification",
+    "naming-ceremony",
+    "newborn-rights",
+    "nikah-ceremony",
+    "oaths-ayman",
+    "orphan-support",
+    "paradise-levels",
+    "participatory-governance",
+    "partnerships",
+    "patience-lessons",
+    "people-of-book",
+    "pharaoh-story",
+    "poverty-alleviation",
+    "prayer-times",
+    "promise-keeping",
+    "property-rights",
+    "prophetic-duas",
+    "prophetic-example",
+    "prophetic-miracles",
+    "prophetic-mission",
+    "prophetic-qualities",
+    "prophetic-visions",
+    "proportionality",
+    "protection-from-jinn",
+    "punishment-types",
+    "qisas-retaliation",
+    "qiyas-analogy",
+    "quran-as-source",
+    "quran-by-quran",
+    "quranic-concepts",
+    "racial-equality",
+    "relatives-rights",
+    "religious-teaching",
+    "repentance-conditions",
+    "respectful-engagement",
+    "respecting-parents",
+    "return-of-isa",
+    "revelation-contexts",
+    "revelation-process",
+    "right-to-dignity",
+    "righteous-offspring",
+    "rise-and-fall-civilizations",
+    "ritual-purity",
+    "role-modeling",
+    "shaytan-whispers",
+    "sheep-creation",
+    "siblings-relationships",
+    "slaughter-rules",
+    "social-solidarity",
+    "soul-departure",
+    "spiritual-diseases",
+    "spousal-communication",
+    "stewardship-khalifah",
+    "stress-relief",
+    "sunnah-as-source",
+    "sunnah-practices",
+    "tahajjud",
+    "tazkiyah",
+    "time-as-trust",
+    "trade-principles",
+    "transparency",
+    "treaty-fulfillment",
+    "tree-protection",
+    "tribes-peoples",
+    "true-vs-false-dreams",
+    "trust-in-allah",
+    "umrah-procedure",
+    "usul-al-fiqh",
+    "walima-feast",
+    "war-conduct",
+    "waste-reduction",
+    "weights-measures",
+    "work-worship",
+    "workplace-ethics"
+  ],
+  "uniquePhantomCount": 200,
+  "allReferences": [
+    {
+      "sourceEntity": "asma-ul-husna",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "divine-attributes-categories"
+    },
+    {
+      "sourceEntity": "divine-wrath",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "divine-justice"
+    },
+    {
+      "sourceEntity": "divine-power",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "divine-will"
+    },
+    {
+      "sourceEntity": "tawheed-asma-wa-sifat",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "divine-attributes-categories"
+    },
+    {
+      "sourceEntity": "shirk-prohibition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "hidden-shirk"
+    },
+    {
+      "sourceEntity": "jibril-michael",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "israfil-raphael"
+    },
+    {
+      "sourceEntity": "shaytan-enemy",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "shaytan-whispers"
+    },
+    {
+      "sourceEntity": "quran-revelation-process",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "gradual-revelation"
+    },
+    {
+      "sourceEntity": "quran-revelation-process",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "first-revelation"
+    },
+    {
+      "sourceEntity": "tafsir-methodology",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "interpretation-principles"
+    },
+    {
+      "sourceEntity": "tafsir-methodology",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "quran-by-quran"
+    },
+    {
+      "sourceEntity": "quran-abrogation",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "asbab-al-nuzul"
+    },
+    {
+      "sourceEntity": "sunnah-definition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prophetic-example"
+    },
+    {
+      "sourceEntity": "hadith-authentication",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "hadith-classification"
+    },
+    {
+      "sourceEntity": "hadith-collections",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "hadith-terminology"
+    },
+    {
+      "sourceEntity": "sunnah-vs-bidah",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "following-sunnah"
+    },
+    {
+      "sourceEntity": "torah-psalms-gospel",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "belief-in-scriptures"
+    },
+    {
+      "sourceEntity": "prophetic-methodology",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prophetic-miracles"
+    },
+    {
+      "sourceEntity": "prophetic-wisdom",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "following-prophets"
+    },
+    {
+      "sourceEntity": "prophet-definition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prophetic-qualities"
+    },
+    {
+      "sourceEntity": "prophet-vs-messenger",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prophetic-mission"
+    },
+    {
+      "sourceEntity": "musa-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "pharaoh-story"
+    },
+    {
+      "sourceEntity": "isa-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "miracles-of-isa"
+    },
+    {
+      "sourceEntity": "nuh-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "patience-lessons"
+    },
+    {
+      "sourceEntity": "yunus-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "repentance-conditions"
+    },
+    {
+      "sourceEntity": "yunus-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "patience-lessons"
+    },
+    {
+      "sourceEntity": "hud-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "rise-and-fall-civilizations"
+    },
+    {
+      "sourceEntity": "salih-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "animal-welfare"
+    },
+    {
+      "sourceEntity": "lut-story",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "moral-lessons-from-prophets"
+    },
+    {
+      "sourceEntity": "dream-interpretation",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "true-vs-false-dreams"
+    },
+    {
+      "sourceEntity": "yusuf-dreams",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prophetic-visions"
+    },
+    {
+      "sourceEntity": "five-daily-prayers",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prayer-times"
+    },
+    {
+      "sourceEntity": "sunnah-prayers",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "duha-prayer"
+    },
+    {
+      "sourceEntity": "night-prayer",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "tahajjud"
+    },
+    {
+      "sourceEntity": "dua-etiquette",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "prophetic-duas"
+    },
+    {
+      "sourceEntity": "zakat-recipients",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "poverty-alleviation"
+    },
+    {
+      "sourceEntity": "ramadan-fasting",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "fasting-rules"
+    },
+    {
+      "sourceEntity": "hajj-rites",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "hajj-significance"
+    },
+    {
+      "sourceEntity": "hajj-rites",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "umrah-procedure"
+    },
+    {
+      "sourceEntity": "wudu-procedure",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "ritual-purity"
+    },
+    {
+      "sourceEntity": "congregational-prayer",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "congregation-virtues"
+    },
+    {
+      "sourceEntity": "jumuah-friday-prayer",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "eid-prayers"
+    },
+    {
+      "sourceEntity": "nafs-ammara",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "spiritual-diseases"
+    },
+    {
+      "sourceEntity": "nafs-mutmainna",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "tazkiyah"
+    },
+    {
+      "sourceEntity": "qalb-purification",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "tazkiyah"
+    },
+    {
+      "sourceEntity": "qalb-purification",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "spiritual-diseases"
+    },
+    {
+      "sourceEntity": "sabr-patience",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "patience-lessons"
+    },
+    {
+      "sourceEntity": "shukr-gratitude",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "kufr-al-ni'mah"
+    },
+    {
+      "sourceEntity": "tawakkul-trust",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "trust-in-allah"
+    },
+    {
+      "sourceEntity": "ikhlas-sincerity",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "intention-purification"
+    },
+    {
+      "sourceEntity": "riya-showing-off",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "hidden-shirk"
+    },
+    {
+      "sourceEntity": "pride-kibr",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "arrogance"
+    },
+    {
+      "sourceEntity": "prophetic-character",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "character-building"
+    },
+    {
+      "sourceEntity": "khalifah-vicegerent",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "khalifah-stewardship"
+    },
+    {
+      "sourceEntity": "human-dignity",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "right-to-dignity"
+    },
+    {
+      "sourceEntity": "birth-childhood",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "naming-ceremony"
+    },
+    {
+      "sourceEntity": "emotional-intelligence",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "fear-hope-balance"
+    },
+    {
+      "sourceEntity": "stress-management",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "mental-wellbeing"
+    },
+    {
+      "sourceEntity": "anxiety-relief",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "mental-wellbeing"
+    },
+    {
+      "sourceEntity": "self-accountability",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "habit-formation"
+    },
+    {
+      "sourceEntity": "time-management",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "time-as-trust"
+    },
+    {
+      "sourceEntity": "marriage-importance",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "marriage-contract"
+    },
+    {
+      "sourceEntity": "spouse-selection",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "marriage-proposal"
+    },
+    {
+      "sourceEntity": "mahr-dowry",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "marriage-contract"
+    },
+    {
+      "sourceEntity": "mahr-dowry",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "nikah-ceremony"
+    },
+    {
+      "sourceEntity": "interfaith-marriage",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "people-of-book"
+    },
+    {
+      "sourceEntity": "interfaith-marriage",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "marriage-contract"
+    },
+    {
+      "sourceEntity": "spousal-love-mercy",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "spousal-communication"
+    },
+    {
+      "sourceEntity": "marital-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "marriage-contract"
+    },
+    {
+      "sourceEntity": "intimacy-ethics",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "chastity-modesty"
+    },
+    {
+      "sourceEntity": "child-development",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "fair-treatment-children"
+    },
+    {
+      "sourceEntity": "child-education",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "righteous-offspring"
+    },
+    {
+      "sourceEntity": "orphan-care",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "orphan-support"
+    },
+    {
+      "sourceEntity": "orphan-care",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "child-rights"
+    },
+    {
+      "sourceEntity": "mother-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "respecting-parents"
+    },
+    {
+      "sourceEntity": "father-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "respecting-parents"
+    },
+    {
+      "sourceEntity": "silat-al-rahim",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "relatives-rights"
+    },
+    {
+      "sourceEntity": "silat-al-rahim",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "siblings-relationships"
+    },
+    {
+      "sourceEntity": "divorce-types",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "faskh-annulment"
+    },
+    {
+      "sourceEntity": "khul-divorce",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "iddah-waiting"
+    },
+    {
+      "sourceEntity": "child-custody-hadanah",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "child-rights"
+    },
+    {
+      "sourceEntity": "ummah-wahidah",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "community-cohesion"
+    },
+    {
+      "sourceEntity": "brotherhood-islam",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "social-solidarity"
+    },
+    {
+      "sourceEntity": "human-equality",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "racial-equality"
+    },
+    {
+      "sourceEntity": "diversity-divine-sign",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "tribes-peoples"
+    },
+    {
+      "sourceEntity": "right-to-life",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "right-to-dignity"
+    },
+    {
+      "sourceEntity": "right-to-life",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "justice-for-all"
+    },
+    {
+      "sourceEntity": "neighbor-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "friendship-ethics"
+    },
+    {
+      "sourceEntity": "neighbor-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "community-welfare"
+    },
+    {
+      "sourceEntity": "media-responsibility",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "information-ethics"
+    },
+    {
+      "sourceEntity": "rumor-verification",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "information-ethics"
+    },
+    {
+      "sourceEntity": "business-ethics",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "honesty-business"
+    },
+    {
+      "sourceEntity": "business-ethics",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "contract-ethics"
+    },
+    {
+      "sourceEntity": "riba-prohibition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "debt-relief"
+    },
+    {
+      "sourceEntity": "sadaqah-jariyah",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "endowments-waqf"
+    },
+    {
+      "sourceEntity": "sadaqah-jariyah",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "charity-virtues"
+    },
+    {
+      "sourceEntity": "wealth-distribution",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "poverty-alleviation"
+    },
+    {
+      "sourceEntity": "wealth-distribution",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "economic-fairness"
+    },
+    {
+      "sourceEntity": "halal-food",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "slaughter-rules"
+    },
+    {
+      "sourceEntity": "haram-food",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "dietary-restrictions"
+    },
+    {
+      "sourceEntity": "hudud-punishments",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "qisas-retaliation"
+    },
+    {
+      "sourceEntity": "shura-principle",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "consultation-mechanism"
+    },
+    {
+      "sourceEntity": "shura-principle",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "participatory-governance"
+    },
+    {
+      "sourceEntity": "corruption-prohibition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "transparency"
+    },
+    {
+      "sourceEntity": "animals-as-communities",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "animal-welfare"
+    },
+    {
+      "sourceEntity": "animals-as-communities",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "bird-creation"
+    },
+    {
+      "sourceEntity": "mizan-balance",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "ecological-balance"
+    },
+    {
+      "sourceEntity": "mizan-balance",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "khalifah-stewardship"
+    },
+    {
+      "sourceEntity": "resurrection-process",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "soul-departure"
+    },
+    {
+      "sourceEntity": "jannah-description",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "paradise-levels"
+    },
+    {
+      "sourceEntity": "jannah-description",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "eternal-bliss"
+    },
+    {
+      "sourceEntity": "jahannam-description",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "hell-levels"
+    },
+    {
+      "sourceEntity": "jahannam-description",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "punishment-types"
+    },
+    {
+      "sourceEntity": "minor-signs",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "end-times-events"
+    },
+    {
+      "sourceEntity": "major-signs",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "dajjal-antichrist"
+    },
+    {
+      "sourceEntity": "major-signs",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "return-of-isa"
+    },
+    {
+      "sourceEntity": "dialogue-principles",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "respectful-engagement"
+    },
+    {
+      "sourceEntity": "dialogue-principles",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "common-ground"
+    },
+    {
+      "sourceEntity": "quranic-vocabulary",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "quranic-concepts"
+    },
+    {
+      "sourceEntity": "quranic-vocabulary",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "key-terms"
+    },
+    {
+      "sourceEntity": "prophetic-medicine",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "healing-prayers"
+    },
+    {
+      "sourceEntity": "prophetic-medicine",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "medicinal-substances"
+    },
+    {
+      "sourceEntity": "mental-health",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "stress-relief"
+    },
+    {
+      "sourceEntity": "mental-health",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "emotional-balance"
+    },
+    {
+      "sourceEntity": "khalifah-concept",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "earth-stewardship"
+    },
+    {
+      "sourceEntity": "khalifah-concept",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "environmental-responsibility"
+    },
+    {
+      "sourceEntity": "fasad-fil-ard",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "destruction-prohibition"
+    },
+    {
+      "sourceEntity": "water-conservation",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "tree-protection"
+    },
+    {
+      "sourceEntity": "water-conservation",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "waste-reduction"
+    },
+    {
+      "sourceEntity": "leadership-qualities",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "just-leaders"
+    },
+    {
+      "sourceEntity": "leadership-qualities",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "leadership-ethics"
+    },
+    {
+      "sourceEntity": "jihad-definition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "jihad-types"
+    },
+    {
+      "sourceEntity": "jihad-definition",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "greater-lesser-jihad"
+    },
+    {
+      "sourceEntity": "rules-of-engagement",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "war-conduct"
+    },
+    {
+      "sourceEntity": "peace-agreements",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "treaty-fulfillment"
+    },
+    {
+      "sourceEntity": "peace-agreements",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "conflict-prevention"
+    },
+    {
+      "sourceEntity": "husn-concept",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "beauty-islam"
+    },
+    {
+      "sourceEntity": "husn-concept",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "divine-beauty"
+    },
+    {
+      "sourceEntity": "art-boundaries",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "creative-expression"
+    },
+    {
+      "sourceEntity": "art-boundaries",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "islamic-art"
+    },
+    {
+      "sourceEntity": "work-honor",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "work-worship"
+    },
+    {
+      "sourceEntity": "work-honor",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "dignified-labor"
+    },
+    {
+      "sourceEntity": "worker-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "fair-wages"
+    },
+    {
+      "sourceEntity": "worker-rights",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "workplace-ethics"
+    },
+    {
+      "sourceEntity": "trust-responsibility",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "body-as-trust"
+    },
+    {
+      "sourceEntity": "covenant-breach",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "promise-keeping"
+    },
+    {
+      "sourceEntity": "wealth-ownership",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "property-rights"
+    },
+    {
+      "sourceEntity": "evidence-standards",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "judicial-independence"
+    },
+    {
+      "sourceEntity": "public-accountability",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "consultation-shura"
+    },
+    {
+      "sourceEntity": "environmental-corruption",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "stewardship-khalifah"
+    },
+    {
+      "sourceEntity": "day-of-judgment",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "accountability"
+    },
+    {
+      "sourceEntity": "non-combatant-protection",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "proportionality"
+    },
+    {
+      "sourceEntity": "interest-free-finance",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "islamic-finance"
+    },
+    {
+      "sourceEntity": "covenants-ahd",
+      "sourceField": "relatedTopicIds",
+      "phantomId": "oaths-ayman"
+    },
+    {
+      "sourceEntity": "divine-names",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "asma-ul-husna-names"
+    },
+    {
+      "sourceEntity": "divine-names",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "asma-ul-husna-meanings"
+    },
+    {
+      "sourceEntity": "divine-names",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "asma-ul-husna-benefits"
+    },
+    {
+      "sourceEntity": "divine-attributes-categories",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "attributes-of-essence"
+    },
+    {
+      "sourceEntity": "divine-attributes-categories",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "attributes-of-action"
+    },
+    {
+      "sourceEntity": "divine-attributes-categories",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "attributes-of-beauty"
+    },
+    {
+      "sourceEntity": "divine-attributes-categories",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "attributes-of-majesty"
+    },
+    {
+      "sourceEntity": "angels-specific",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "jibril-gabriel"
+    },
+    {
+      "sourceEntity": "angels-specific",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "mikael-michael"
+    },
+    {
+      "sourceEntity": "angels-specific",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "israfil-raphael"
+    },
+    {
+      "sourceEntity": "angels-specific",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "azrael-angel-of-death"
+    },
+    {
+      "sourceEntity": "angels-specific",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "kiraman-katibin"
+    },
+    {
+      "sourceEntity": "jinn-shaytan",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "jinn-nature"
+    },
+    {
+      "sourceEntity": "jinn-shaytan",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "jinn-types"
+    },
+    {
+      "sourceEntity": "jinn-shaytan",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "shaytan-whispers"
+    },
+    {
+      "sourceEntity": "jinn-shaytan",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "protection-from-jinn"
+    },
+    {
+      "sourceEntity": "quran-revelation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "revelation-process"
+    },
+    {
+      "sourceEntity": "quran-revelation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "gradual-revelation"
+    },
+    {
+      "sourceEntity": "quran-revelation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "revelation-contexts"
+    },
+    {
+      "sourceEntity": "quran-revelation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "first-revelation"
+    },
+    {
+      "sourceEntity": "quran-interpretation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "interpretation-principles"
+    },
+    {
+      "sourceEntity": "quran-interpretation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "quran-by-quran"
+    },
+    {
+      "sourceEntity": "quran-interpretation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "asbab-al-nuzul"
+    },
+    {
+      "sourceEntity": "hadith-sciences",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "hadith-classification"
+    },
+    {
+      "sourceEntity": "hadith-sciences",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "hadith-terminology"
+    },
+    {
+      "sourceEntity": "sunnah-application",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "following-sunnah"
+    },
+    {
+      "sourceEntity": "sunnah-application",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "prophetic-example"
+    },
+    {
+      "sourceEntity": "sunnah-application",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "sunnah-practices"
+    },
+    {
+      "sourceEntity": "adam-ibrahim-musa",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "pharaoh-story"
+    },
+    {
+      "sourceEntity": "adam-ibrahim-musa",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "exodus-narrative"
+    },
+    {
+      "sourceEntity": "isa-muhammad",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "miracles-of-isa"
+    },
+    {
+      "sourceEntity": "isa-muhammad",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "final-message"
+    },
+    {
+      "sourceEntity": "salah-obligatory",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "prayer-times"
+    },
+    {
+      "sourceEntity": "salah-voluntary",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "duha-prayer"
+    },
+    {
+      "sourceEntity": "salah-voluntary",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "tahajjud"
+    },
+    {
+      "sourceEntity": "salah-voluntary",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "awwabin-prayer"
+    },
+    {
+      "sourceEntity": "dua-supplication",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "prophetic-duas"
+    },
+    {
+      "sourceEntity": "dua-supplication",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "dua-times"
+    },
+    {
+      "sourceEntity": "dua-supplication",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "dua-conditions"
+    },
+    {
+      "sourceEntity": "nafs-levels",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "nafs-purification"
+    },
+    {
+      "sourceEntity": "qalb-heart",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "spiritual-diseases"
+    },
+    {
+      "sourceEntity": "qalb-heart",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "heart-softening"
+    },
+    {
+      "sourceEntity": "qalb-heart",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "tazkiyah"
+    },
+    {
+      "sourceEntity": "marriage-preparation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "marriage-proposal"
+    },
+    {
+      "sourceEntity": "marriage-preparation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "compatibility"
+    },
+    {
+      "sourceEntity": "marriage-preparation",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "marriage-readiness"
+    },
+    {
+      "sourceEntity": "marriage-ceremony",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "nikah-ceremony"
+    },
+    {
+      "sourceEntity": "marriage-ceremony",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "marriage-contract"
+    },
+    {
+      "sourceEntity": "marriage-ceremony",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "walima-feast"
+    },
+    {
+      "sourceEntity": "marriage-ceremony",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "marriage-witnesses"
+    },
+    {
+      "sourceEntity": "child-rights",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "newborn-rights"
+    },
+    {
+      "sourceEntity": "child-rights",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "naming-ceremony"
+    },
+    {
+      "sourceEntity": "child-rights",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "breastfeeding-rights"
+    },
+    {
+      "sourceEntity": "child-rights",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "child-maintenance"
+    },
+    {
+      "sourceEntity": "child-rights",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "fair-treatment"
+    },
+    {
+      "sourceEntity": "child-education",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "moral-education"
+    },
+    {
+      "sourceEntity": "child-education",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "religious-teaching"
+    },
+    {
+      "sourceEntity": "child-education",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "discipline-methods"
+    },
+    {
+      "sourceEntity": "child-education",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "role-modeling"
+    },
+    {
+      "sourceEntity": "business-operations",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "trade-principles"
+    },
+    {
+      "sourceEntity": "business-operations",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "entrepreneurship"
+    },
+    {
+      "sourceEntity": "business-operations",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "partnerships"
+    },
+    {
+      "sourceEntity": "business-operations",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "commercial-transactions"
+    },
+    {
+      "sourceEntity": "market-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "market-regulation"
+    },
+    {
+      "sourceEntity": "market-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "fair-pricing"
+    },
+    {
+      "sourceEntity": "market-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "commercial-fraud-prohibition"
+    },
+    {
+      "sourceEntity": "market-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "honest-dealing"
+    },
+    {
+      "sourceEntity": "market-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "weights-measures"
+    },
+    {
+      "sourceEntity": "legal-sources",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "quran-as-source"
+    },
+    {
+      "sourceEntity": "legal-sources",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "sunnah-as-source"
+    },
+    {
+      "sourceEntity": "legal-sources",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "ijma-consensus"
+    },
+    {
+      "sourceEntity": "legal-sources",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "qiyas-analogy"
+    },
+    {
+      "sourceEntity": "legal-sources",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "legal-maxims"
+    },
+    {
+      "sourceEntity": "jurisprudence",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "fiqh-methodology"
+    },
+    {
+      "sourceEntity": "jurisprudence",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "usul-al-fiqh"
+    },
+    {
+      "sourceEntity": "jurisprudence",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "legal-schools"
+    },
+    {
+      "sourceEntity": "jurisprudence",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "ijtihad"
+    },
+    {
+      "sourceEntity": "jurisprudence",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "judicial-independence"
+    },
+    {
+      "sourceEntity": "specific-animals",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "camel-creation"
+    },
+    {
+      "sourceEntity": "specific-animals",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "cow-creation"
+    },
+    {
+      "sourceEntity": "specific-animals",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "sheep-creation"
+    },
+    {
+      "sourceEntity": "specific-animals",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "bird-creation"
+    },
+    {
+      "sourceEntity": "specific-animals",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "insect-creation"
+    },
+    {
+      "sourceEntity": "specific-animals",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "marine-creatures"
+    },
+    {
+      "sourceEntity": "animal-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "animal-welfare"
+    },
+    {
+      "sourceEntity": "animal-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "animal-sacrifice"
+    },
+    {
+      "sourceEntity": "animal-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "animal-rights"
+    },
+    {
+      "sourceEntity": "animal-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "humane-treatment"
+    },
+    {
+      "sourceEntity": "animal-ethics",
+      "sourceField": "subdimension.topicIds",
+      "phantomId": "animal-stories"
+    }
+  ]
+}

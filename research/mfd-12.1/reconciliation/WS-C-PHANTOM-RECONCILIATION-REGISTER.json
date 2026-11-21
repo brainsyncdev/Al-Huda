@@ -1,0 +1,5932 @@
+{
+  "schemaVersion": "1.0.0",
+  "workstream": "MFD-12.1",
+  "workPackage": "WS-C — Phantom Reference Reconciliation",
+  "generatedAt": "2026-11-21T09:15:00+05:00",
+  "proposedBy": "ai-assisted",
+  "reviewStatus": "pending-scholarly-review",
+  "totalPhantomRefs": 243,
+  "uniquePhantomIds": 200,
+  "totalClassified": 200,
+  "dispositionSummary": {
+    "CREATE": 154,
+    "DEPRECATE": 2,
+    "MERGE": 21,
+    "DEFER": 23
+  },
+  "entries": [
+    {
+      "phantomId": "accountability",
+      "sourceEntities": [
+        {
+          "sourceEntity": "day-of-judgment",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.85) to existing topic \"self-accountability\" (Self-Accountability).",
+      "mergeTarget": "self-accountability",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "self-accountability",
+          "score": 0.848,
+          "title": "Self-Accountability"
+        },
+        {
+          "id": "public-accountability",
+          "score": 0.8,
+          "title": "Public Accountability"
+        },
+        {
+          "id": "media-responsibility",
+          "score": 0.529,
+          "title": "Media Responsibility"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "animal-rights",
+      "sourceEntities": [
+        {
+          "sourceEntity": "animal-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.81) to existing topic \"marital-rights\" (Marital Rights).",
+      "mergeTarget": "marital-rights",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marital-rights",
+          "score": 0.815,
+          "title": "Marital Rights"
+        },
+        {
+          "id": "neighbor-rights",
+          "score": 0.643,
+          "title": "Neighbor Rights"
+        },
+        {
+          "id": "father-rights",
+          "score": 0.615,
+          "title": "Father's Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "animal-sacrifice",
+      "sourceEntities": [
+        {
+          "sourceEntity": "animal-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: udhiyah/qurbani (22:36-37)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "animals-as-communities",
+          "score": 0.632,
+          "title": "Animals as Communities"
+        },
+        {
+          "id": "jannah-description",
+          "score": 0.529,
+          "title": "Description of Jannah"
+        },
+        {
+          "id": "jahannam-description",
+          "score": 0.5,
+          "title": "Description of Jahannam"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "animal-stories",
+      "sourceEntities": [
+        {
+          "sourceEntity": "animal-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Quran narratives: stories involving animals",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "animals-as-communities",
+          "score": 0.667,
+          "title": "Animals as Communities"
+        },
+        {
+          "id": "ibrahim-story",
+          "score": 0.593,
+          "title": "Story of Ibrahim"
+        },
+        {
+          "id": "adam-story",
+          "score": 0.583,
+          "title": "Story of Adam"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "animal-welfare",
+      "sourceEntities": [
+        {
+          "sourceEntity": "salih-story",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "animals-as-communities",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "animal-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 3,
+      "disposition": "CREATE",
+      "evidence": "Fiqh/Akhlaq: rights of animals in Islam",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "anxiety-relief",
+          "score": 0.5,
+          "title": "Anxiety Relief"
+        },
+        {
+          "id": "quran-final-revelation",
+          "score": 0.5,
+          "title": "Quran as Final Revelation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "arrogance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "pride-kibr",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: kibr/takabbur (31:18)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marriage-importance",
+          "score": 0.571,
+          "title": "Importance of Marriage"
+        },
+        {
+          "id": "sabr-patience",
+          "score": 0.545,
+          "title": "Sabr (Patience)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "asbab-al-nuzul",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quran-abrogation",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "quran-interpretation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Quran sciences: occasions of revelation - established discipline",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "asma-ul-husna",
+          "score": 0.519,
+          "title": "Asma ul Husna"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "asma-ul-husna-benefits",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-names",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Asma ul Husna sub-topic: spiritual benefits of invoking names",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "asma-ul-husna",
+          "score": 0.743,
+          "title": "Asma ul Husna"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "asma-ul-husna-meanings",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-names",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Asma ul Husna sub-topic: semantic analysis of divine names",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "asma-ul-husna",
+          "score": 0.743,
+          "title": "Asma ul Husna"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "asma-ul-husna-names",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-names",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.81) to existing topic \"asma-ul-husna\" (Asma ul Husna).",
+      "mergeTarget": "asma-ul-husna",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "asma-ul-husna",
+          "score": 0.812,
+          "title": "Asma ul Husna"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "attributes-of-action",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-attributes-categories",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: sifat al-fi'l (attributes of action) - standard theological category",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "wealth-distribution",
+          "score": 0.564,
+          "title": "Wealth Distribution"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.514,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "pillars-of-iman",
+          "score": 0.514,
+          "title": "Pillars of Iman"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "attributes-of-beauty",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-attributes-categories",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: sifat al-jamal - standard theological category",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "rules-of-engagement",
+          "score": 0.564,
+          "title": "Rules of Engagement"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "attributes-of-essence",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-attributes-categories",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: sifat al-dhat (attributes of essence) - standard theological category",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "rules-of-engagement",
+          "score": 0.55,
+          "title": "Rules of Engagement"
+        },
+        {
+          "id": "wealth-distribution",
+          "score": 0.5,
+          "title": "Wealth Distribution"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "attributes-of-majesty",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-attributes-categories",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: sifat al-jalal - standard theological category",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "rules-of-engagement",
+          "score": 0.55,
+          "title": "Rules of Engagement"
+        },
+        {
+          "id": "pillars-of-iman",
+          "score": 0.5,
+          "title": "Pillars of Iman"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "awwabin-prayer",
+      "sourceEntities": [
+        {
+          "sourceEntity": "salah-voluntary",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: salat al-awwabin after maghrib",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "night-prayer",
+          "score": 0.615,
+          "title": "Night Prayer"
+        },
+        {
+          "id": "sunnah-prayers",
+          "score": 0.571,
+          "title": "Sunnah Prayers"
+        },
+        {
+          "id": "five-daily-prayers",
+          "score": 0.562,
+          "title": "Five Daily Prayers"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "azrael-angel-of-death",
+      "sourceEntities": [
+        {
+          "sourceEntity": "angels-specific",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: malak al-mawt (32:11)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "angels-creation",
+          "score": 0.5,
+          "title": "Angels Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "beauty-islam",
+      "sourceEntities": [
+        {
+          "sourceEntity": "husn-concept",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Boundary between Islamic aesthetics and cultural expression requires scholarly determination",
+      "mergeTarget": null,
+      "scholarlyNote": "Boundary between Islamic aesthetics and cultural expression requires scholarly determination",
+      "similarExistingTopics": [
+        {
+          "id": "brotherhood-islam",
+          "score": 0.552,
+          "title": "Brotherhood in Islam"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "belief-in-scriptures",
+      "sourceEntities": [
+        {
+          "sourceEntity": "torah-psalms-gospel",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: iman bil-kutub - pillar of faith",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "life-purpose",
+          "score": 0.5,
+          "title": "Purpose of Life"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "bird-creation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "animals-as-communities",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "specific-animals",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.77) to existing topic \"jinn-creation\" (Jinn Creation).",
+      "mergeTarget": "jinn-creation",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "jinn-creation",
+          "score": 0.769,
+          "title": "Jinn Creation"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.667,
+          "title": "Human Creation"
+        },
+        {
+          "id": "child-education",
+          "score": 0.643,
+          "title": "Child Education"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "body-as-trust",
+      "sourceEntities": [
+        {
+          "sourceEntity": "trust-responsibility",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Conceptual overlap with health-related fiqh; needs scholarly scoping",
+      "mergeTarget": null,
+      "scholarlyNote": "Conceptual overlap with health-related fiqh; needs scholarly scoping",
+      "similarExistingTopics": [
+        {
+          "id": "tawakkul-trust",
+          "score": 0.519,
+          "title": "Tawakkul (Trust in Allah)"
+        },
+        {
+          "id": "dua-answers",
+          "score": 0.5,
+          "title": "Answers to Dua"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "breastfeeding-rights",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-rights",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: rada'ah (2:233)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "worker-rights",
+          "score": 0.545,
+          "title": "Worker Rights"
+        },
+        {
+          "id": "marital-rights",
+          "score": 0.529,
+          "title": "Marital Rights"
+        },
+        {
+          "id": "neighbor-rights",
+          "score": 0.514,
+          "title": "Neighbor Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "camel-creation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "specific-animals",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.83) to existing topic \"angels-creation\" (Angels Creation).",
+      "mergeTarget": "angels-creation",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "angels-creation",
+          "score": 0.828,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.714,
+          "title": "Human Creation"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.667,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "character-building",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophetic-character",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tarbiyah: bina' al-shakhsiyyah al-islamiyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "charity-virtues",
+      "sourceEntities": [
+        {
+          "sourceEntity": "sadaqah-jariyah",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fada'il: virtues of sadaqah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "hajj-rites",
+          "score": 0.56,
+          "title": "Hajj Rites"
+        },
+        {
+          "id": "marital-rights",
+          "score": 0.552,
+          "title": "Marital Rights"
+        },
+        {
+          "id": "diversity-divine-sign",
+          "score": 0.5,
+          "title": "Diversity as Divine Sign"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "chastity-modesty",
+      "sourceEntities": [
+        {
+          "sourceEntity": "intimacy-ethics",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: iffah and haya' (24:30-31)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "child-maintenance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-rights",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: nafaqat al-awlad",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "child-education",
+          "score": 0.562,
+          "title": "Child Education"
+        },
+        {
+          "id": "child-development",
+          "score": 0.529,
+          "title": "Child Development"
+        },
+        {
+          "id": "emotional-intelligence",
+          "score": 0.513,
+          "title": "Emotional Intelligence"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "child-rights",
+      "sourceEntities": [
+        {
+          "sourceEntity": "orphan-care",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "child-custody-hadanah",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "DEPRECATE",
+      "evidence": "ID \"child-rights\" is a subdimension ID, not a topic ID. Source confused subdimension with topic reference.",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marital-rights",
+          "score": 0.692,
+          "title": "Marital Rights"
+        },
+        {
+          "id": "father-rights",
+          "score": 0.64,
+          "title": "Father's Rights"
+        },
+        {
+          "id": "mother-rights",
+          "score": 0.64,
+          "title": "Mother's Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "commercial-fraud-prohibition",
+      "sourceEntities": [
+        {
+          "sourceEntity": "market-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: ghash/tadlis prohibition",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "riba-prohibition",
+          "score": 0.682,
+          "title": "Riba (Usury) Prohibition"
+        },
+        {
+          "id": "corruption-prohibition",
+          "score": 0.64,
+          "title": "Corruption Prohibition"
+        },
+        {
+          "id": "shirk-prohibition",
+          "score": 0.578,
+          "title": "Shirk Prohibition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "commercial-transactions",
+      "sourceEntities": [
+        {
+          "sourceEntity": "business-operations",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: muamalat maliyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "non-combatant-protection",
+          "score": 0.511,
+          "title": "Non-Combatant Protection"
+        },
+        {
+          "id": "critical-thinking",
+          "score": 0.5,
+          "title": "Critical Thinking"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "common-ground",
+      "sourceEntities": [
+        {
+          "sourceEntity": "dialogue-principles",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Da'wah: kalimatun sawa' (3:64)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "community-cohesion",
+      "sourceEntities": [
+        {
+          "sourceEntity": "ummah-wahidah",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh social: tamasuk al-mujtama'",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "hadith-collections",
+          "score": 0.5,
+          "title": "Hadith Collections"
+        },
+        {
+          "id": "animals-as-communities",
+          "score": 0.5,
+          "title": "Animals as Communities"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.5,
+          "title": "Human Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "community-welfare",
+      "sourceEntities": [
+        {
+          "sourceEntity": "neighbor-rights",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh social: maslahah ammah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "anxiety-relief",
+          "score": 0.516,
+          "title": "Anxiety Relief"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "compatibility",
+      "sourceEntities": [
+        {
+          "sourceEntity": "marriage-preparation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: kafa'ah in marriage",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "self-accountability",
+          "score": 0.562,
+          "title": "Self-Accountability"
+        },
+        {
+          "id": "public-accountability",
+          "score": 0.529,
+          "title": "Public Accountability"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "conflict-prevention",
+      "sourceEntities": [
+        {
+          "sourceEntity": "peace-agreements",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyar: dar' al-mafasid in conflict",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-final-revelation",
+          "score": 0.585,
+          "title": "Quran as Final Revelation"
+        },
+        {
+          "id": "non-combatant-protection",
+          "score": 0.558,
+          "title": "Non-Combatant Protection"
+        },
+        {
+          "id": "quran-preservation",
+          "score": 0.541,
+          "title": "Quran Preservation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "congregation-virtues",
+      "sourceEntities": [
+        {
+          "sourceEntity": "congregational-prayer",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: fada'il al-jama'ah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "congregational-prayer",
+          "score": 0.732,
+          "title": "Congregational Prayer"
+        },
+        {
+          "id": "quran-revelation-process",
+          "score": 0.545,
+          "title": "Quran Revelation Process"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.514,
+          "title": "Angels Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "consultation-mechanism",
+      "sourceEntities": [
+        {
+          "sourceEntity": "shura-principle",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyasi: shura implementation mechanisms",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "consultation-shura",
+      "sourceEntities": [
+        {
+          "sourceEntity": "public-accountability",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyasi: shura principle (42:38)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "congregational-prayer",
+          "score": 0.564,
+          "title": "Congregational Prayer"
+        },
+        {
+          "id": "water-conservation",
+          "score": 0.5,
+          "title": "Water Conservation"
+        },
+        {
+          "id": "nafs-mutmainna",
+          "score": 0.5,
+          "title": "Nafs al-Mutma'inna"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "contract-ethics",
+      "sourceEntities": [
+        {
+          "sourceEntity": "business-ethics",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: akhlaq al-uqud",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "intimacy-ethics",
+          "score": 0.733,
+          "title": "Intimacy Ethics"
+        },
+        {
+          "id": "covenant-breach",
+          "score": 0.533,
+          "title": "Covenant & Breach"
+        },
+        {
+          "id": "business-ethics",
+          "score": 0.533,
+          "title": "Business Ethics"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "cow-creation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "specific-animals",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tafakkur: cow narrative (Al-Baqarah)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "jinn-creation",
+          "score": 0.72,
+          "title": "Jinn Creation"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.692,
+          "title": "Human Creation"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.667,
+          "title": "Angels Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "creative-expression",
+      "sourceEntities": [
+        {
+          "sourceEntity": "art-boundaries",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Permissibility boundaries require scholarly fatwa-based determination",
+      "mergeTarget": null,
+      "scholarlyNote": "Permissibility boundaries require scholarly fatwa-based determination",
+      "similarExistingTopics": [
+        {
+          "id": "justice-oppression",
+          "score": 0.649,
+          "title": "Justice & Oppression"
+        },
+        {
+          "id": "dream-interpretation",
+          "score": 0.564,
+          "title": "Dream Interpretation"
+        },
+        {
+          "id": "quran-preservation",
+          "score": 0.541,
+          "title": "Quran Preservation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "dajjal-antichrist",
+      "sourceEntities": [
+        {
+          "sourceEntity": "major-signs",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: fitnat al-masih al-dajjal",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "hajj-rites",
+          "score": 0.519,
+          "title": "Hajj Rites"
+        },
+        {
+          "id": "tawakkul-trust",
+          "score": 0.516,
+          "title": "Tawakkul (Trust in Allah)"
+        },
+        {
+          "id": "trial-and-test",
+          "score": 0.516,
+          "title": "Trial & Test (Bala'/Fitnah)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "debt-relief",
+      "sourceEntities": [
+        {
+          "sourceEntity": "riba-prohibition",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: inzar ila maysarah (2:280)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "anxiety-relief",
+          "score": 0.72,
+          "title": "Anxiety Relief"
+        },
+        {
+          "id": "unseen-belief",
+          "score": 0.583,
+          "title": "Belief in Unseen"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "destruction-prohibition",
+      "sourceEntities": [
+        {
+          "sourceEntity": "fasad-fil-ard",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.80) to existing topic \"corruption-prohibition\" (Corruption Prohibition).",
+      "mergeTarget": "corruption-prohibition",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "corruption-prohibition",
+          "score": 0.8,
+          "title": "Corruption Prohibition"
+        },
+        {
+          "id": "riba-prohibition",
+          "score": 0.718,
+          "title": "Riba (Usury) Prohibition"
+        },
+        {
+          "id": "shirk-prohibition",
+          "score": 0.7,
+          "title": "Shirk Prohibition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "dietary-restrictions",
+      "sourceEntities": [
+        {
+          "sourceEntity": "haram-food",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: maharramat food prohibitions",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "poverty-solutions",
+          "score": 0.541,
+          "title": "Solutions to Poverty"
+        },
+        {
+          "id": "quran-preservation",
+          "score": 0.526,
+          "title": "Quran Preservation"
+        },
+        {
+          "id": "wealth-distribution",
+          "score": 0.513,
+          "title": "Wealth Distribution"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "dignified-labor",
+      "sourceEntities": [
+        {
+          "sourceEntity": "work-honor",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: karahah al-amal",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "divine-power",
+          "score": 0.519,
+          "title": "Divine Power"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "discipline-methods",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-education",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tarbiyah: ta'deeb methods",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "business-ethics",
+          "score": 0.545,
+          "title": "Business Ethics"
+        },
+        {
+          "id": "divine-mercy",
+          "score": 0.533,
+          "title": "Divine Mercy"
+        },
+        {
+          "id": "divine-wrath",
+          "score": 0.533,
+          "title": "Divine Wrath"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "divine-attributes-categories",
+      "sourceEntities": [
+        {
+          "sourceEntity": "asma-ul-husna",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "tawheed-asma-wa-sifat",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "DEPRECATE",
+      "evidence": "ID \"divine-attributes-categories\" is a subdimension ID, not a topic ID. Source confused subdimension with topic reference.",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "divine-beauty",
+      "sourceEntities": [
+        {
+          "sourceEntity": "husn-concept",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Overlap with attributes-of-beauty; needs scholarly clarification on standalone status",
+      "mergeTarget": null,
+      "scholarlyNote": "Overlap with attributes-of-beauty; needs scholarly clarification on standalone status",
+      "similarExistingTopics": [
+        {
+          "id": "divine-unity",
+          "score": 0.8,
+          "title": "Divine Unity"
+        },
+        {
+          "id": "divine-mercy",
+          "score": 0.72,
+          "title": "Divine Mercy"
+        },
+        {
+          "id": "divine-wrath",
+          "score": 0.72,
+          "title": "Divine Wrath"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "divine-justice",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-wrath",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: al-'adl divine attribute",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "divine-unity",
+          "score": 0.692,
+          "title": "Divine Unity"
+        },
+        {
+          "id": "divine-power",
+          "score": 0.615,
+          "title": "Divine Power"
+        },
+        {
+          "id": "divine-mercy",
+          "score": 0.615,
+          "title": "Divine Mercy"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "divine-will",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divine-power",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.75) to existing topic \"divine-wisdom\" (Divine Wisdom).",
+      "mergeTarget": "divine-wisdom",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "divine-wisdom",
+          "score": 0.75,
+          "title": "Divine Wisdom"
+        },
+        {
+          "id": "divine-power",
+          "score": 0.696,
+          "title": "Divine Power"
+        },
+        {
+          "id": "divine-wrath",
+          "score": 0.696,
+          "title": "Divine Wrath"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "dua-conditions",
+      "sourceEntities": [
+        {
+          "sourceEntity": "dua-supplication",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.77) to existing topic \"prayer-conditions\" (Prayer Conditions).",
+      "mergeTarget": "prayer-conditions",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prayer-conditions",
+          "score": 0.774,
+          "title": "Prayer Conditions"
+        },
+        {
+          "id": "polygyny-conditions",
+          "score": 0.667,
+          "title": "Polygyny Conditions"
+        },
+        {
+          "id": "quran-compilation",
+          "score": 0.645,
+          "title": "Quran Compilation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "dua-times",
+      "sourceEntities": [
+        {
+          "sourceEntity": "dua-supplication",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Adhkar: awqat al-ijabah (times of acceptance)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "dua-etiquette",
+          "score": 0.636,
+          "title": "Dua Etiquette"
+        },
+        {
+          "id": "dua-answers",
+          "score": 0.6,
+          "title": "Answers to Dua"
+        },
+        {
+          "id": "hudud-punishments",
+          "score": 0.538,
+          "title": "Hudud Punishments"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "duha-prayer",
+      "sourceEntities": [
+        {
+          "sourceEntity": "sunnah-prayers",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "salah-voluntary",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: salat al-duha (93:1-3)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "sunnah-prayers",
+          "score": 0.72,
+          "title": "Sunnah Prayers"
+        },
+        {
+          "id": "night-prayer",
+          "score": 0.696,
+          "title": "Night Prayer"
+        },
+        {
+          "id": "dua-answers",
+          "score": 0.636,
+          "title": "Answers to Dua"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "earth-stewardship",
+      "sourceEntities": [
+        {
+          "sourceEntity": "khalifah-concept",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Overlap with khalifah-stewardship; disambiguation needed",
+      "mergeTarget": null,
+      "scholarlyNote": "Overlap with khalifah-stewardship; disambiguation needed",
+      "similarExistingTopics": [
+        {
+          "id": "wealth-ownership",
+          "score": 0.667,
+          "title": "Wealth Ownership"
+        },
+        {
+          "id": "wealth-distribution",
+          "score": 0.5,
+          "title": "Wealth Distribution"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "ecological-balance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "mizan-balance",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Scientific concept mapped to Quranic mizan; needs scholarly validation",
+      "mergeTarget": null,
+      "scholarlyNote": "Scientific concept mapped to Quranic mizan; needs scholarly validation",
+      "similarExistingTopics": [
+        {
+          "id": "mizan-balance",
+          "score": 0.645,
+          "title": "Mizan (Balance)"
+        },
+        {
+          "id": "emotional-intelligence",
+          "score": 0.5,
+          "title": "Emotional Intelligence"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "economic-fairness",
+      "sourceEntities": [
+        {
+          "sourceEntity": "wealth-distribution",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Maqasid: economic justice principles",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "eid-prayers",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jumuah-friday-prayer",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: salat al-eidayn",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "night-prayer",
+          "score": 0.696,
+          "title": "Night Prayer"
+        },
+        {
+          "id": "five-daily-prayers",
+          "score": 0.69,
+          "title": "Five Daily Prayers"
+        },
+        {
+          "id": "sunnah-prayers",
+          "score": 0.64,
+          "title": "Sunnah Prayers"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "emotional-balance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "mental-health",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern framing of classical concepts; needs scholarly alignment",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern framing of classical concepts; needs scholarly alignment",
+      "similarExistingTopics": [
+        {
+          "id": "mizan-balance",
+          "score": 0.733,
+          "title": "Mizan (Balance)"
+        },
+        {
+          "id": "emotional-intelligence",
+          "score": 0.718,
+          "title": "Emotional Intelligence"
+        },
+        {
+          "id": "congregational-prayer",
+          "score": 0.526,
+          "title": "Congregational Prayer"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "end-times-events",
+      "sourceEntities": [
+        {
+          "sourceEntity": "minor-signs",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: ashraat al-sa'ah events",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "time-management",
+          "score": 0.581,
+          "title": "Time Management"
+        },
+        {
+          "id": "intimacy-ethics",
+          "score": 0.516,
+          "title": "Intimacy Ethics"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "endowments-waqf",
+      "sourceEntities": [
+        {
+          "sourceEntity": "sadaqah-jariyah",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: awqaf institutions",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "covenants-ahd",
+          "score": 0.5,
+          "title": "Covenants (Ahd)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "entrepreneurship",
+      "sourceEntities": [
+        {
+          "sourceEntity": "business-operations",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: business initiation in Islam",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "wealth-ownership",
+          "score": 0.562,
+          "title": "Wealth Ownership"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "environmental-responsibility",
+      "sourceEntities": [
+        {
+          "sourceEntity": "khalifah-concept",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern framing of classical stewardship; scope needs scholarly input",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern framing of classical stewardship; scope needs scholarly input",
+      "similarExistingTopics": [
+        {
+          "id": "media-responsibility",
+          "score": 0.75,
+          "title": "Media Responsibility"
+        },
+        {
+          "id": "trust-responsibility",
+          "score": 0.708,
+          "title": "Trust & Responsibility (Amanah)"
+        },
+        {
+          "id": "environmental-corruption",
+          "score": 0.692,
+          "title": "Environmental Corruption"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "eternal-bliss",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jannah-description",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: na'eem mukim",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "unseen-belief",
+          "score": 0.538,
+          "title": "Belief in Unseen"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "exodus-narrative",
+      "sourceEntities": [
+        {
+          "sourceEntity": "adam-ibrahim-musa",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Qisas al-Anbiya: Bani Israil departure from Egypt",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fair-pricing",
+      "sourceEntities": [
+        {
+          "sourceEntity": "market-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: tas'eer",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "father-rights",
+          "score": 0.56,
+          "title": "Father's Rights"
+        },
+        {
+          "id": "shirk-prohibition",
+          "score": 0.552,
+          "title": "Shirk Prohibition"
+        },
+        {
+          "id": "qalb-purification",
+          "score": 0.552,
+          "title": "Qalb Purification"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fair-treatment",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-rights",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: adl between children",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "anger-management",
+          "score": 0.533,
+          "title": "Anger Management"
+        },
+        {
+          "id": "peace-agreements",
+          "score": 0.533,
+          "title": "Peace Agreements"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.519,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fair-treatment-children",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-development",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: adl bayn al-awlad (specific to children)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "faith-increase-decrease",
+          "score": 0.522,
+          "title": "Faith Increase & Decrease"
+        },
+        {
+          "id": "sabr-patience",
+          "score": 0.5,
+          "title": "Sabr (Patience)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fair-wages",
+      "sourceEntities": [
+        {
+          "sourceEntity": "worker-rights",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: ujrah adilah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "father-rights",
+          "score": 0.522,
+          "title": "Father's Rights"
+        },
+        {
+          "id": "five-daily-prayers",
+          "score": 0.5,
+          "title": "Five Daily Prayers"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "faskh-annulment",
+      "sourceEntities": [
+        {
+          "sourceEntity": "divorce-types",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: faskh al-nikah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "stress-management",
+          "score": 0.5,
+          "title": "Stress Management"
+        },
+        {
+          "id": "fitrah-nature",
+          "score": 0.5,
+          "title": "Fitrah (Natural Disposition)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fasting-rules",
+      "sourceEntities": [
+        {
+          "sourceEntity": "ramadan-fasting",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: ahkam al-siyam (2:183-187)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "ramadan-fasting",
+          "score": 0.5,
+          "title": "Ramadan Fasting"
+        },
+        {
+          "id": "faith-increase-decrease",
+          "score": 0.5,
+          "title": "Faith Increase & Decrease"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fear-hope-balance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "emotional-intelligence",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: khawf and raja' balance",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "mizan-balance",
+          "score": 0.6,
+          "title": "Mizan (Balance)"
+        },
+        {
+          "id": "sabr-patience",
+          "score": 0.533,
+          "title": "Sabr (Patience)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "final-message",
+      "sourceEntities": [
+        {
+          "sourceEntity": "isa-muhammad",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Seerah: universality and finality of Islam (33:40)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "interfaith-marriage",
+          "score": 0.5,
+          "title": "Interfaith Marriage"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "fiqh-methodology",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jurisprudence",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.82) to existing topic \"tafsir-methodology\" (Tafsir Methodology).",
+      "mergeTarget": "tafsir-methodology",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "tafsir-methodology",
+          "score": 0.824,
+          "title": "Tafsir Methodology"
+        },
+        {
+          "id": "prophetic-methodology",
+          "score": 0.703,
+          "title": "Prophetic Methodology"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "first-revelation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quran-revelation-process",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "quran-revelation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Seerah/Quran sciences: iqra event (96:1-5)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-final-revelation",
+          "score": 0.684,
+          "title": "Quran as Final Revelation"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.621,
+          "title": "Jinn Creation"
+        },
+        {
+          "id": "quran-revelation-process",
+          "score": 0.6,
+          "title": "Quran Revelation Process"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "following-prophets",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophetic-wisdom",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: ittiba' al-anbiya general principle",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "following-sunnah",
+      "sourceEntities": [
+        {
+          "sourceEntity": "sunnah-vs-bidah",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "sunnah-application",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq/Fiqh: ittiba' al-rasul concept",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "friendship-ethics",
+      "sourceEntities": [
+        {
+          "sourceEntity": "neighbor-rights",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: adab al-sadaqah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "intimacy-ethics",
+          "score": 0.625,
+          "title": "Intimacy Ethics"
+        },
+        {
+          "id": "business-ethics",
+          "score": 0.625,
+          "title": "Business Ethics"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "gradual-revelation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quran-revelation-process",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "quran-revelation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.75) to existing topic \"quran-final-revelation\" (Quran as Final Revelation).",
+      "mergeTarget": "quran-final-revelation",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-final-revelation",
+          "score": 0.75,
+          "title": "Quran as Final Revelation"
+        },
+        {
+          "id": "quran-revelation-process",
+          "score": 0.619,
+          "title": "Quran Revelation Process"
+        },
+        {
+          "id": "quran-preservation",
+          "score": 0.611,
+          "title": "Quran Preservation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "greater-lesser-jihad",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jihad-definition",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah/Fiqh: jihad akbar vs asghar",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "habit-formation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "self-accountability",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern behavioral science framing; may merge with tarbiyah topics",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern behavioral science framing; may merge with tarbiyah topics",
+      "similarExistingTopics": [
+        {
+          "id": "human-creation",
+          "score": 0.621,
+          "title": "Human Creation"
+        },
+        {
+          "id": "hadith-collections",
+          "score": 0.606,
+          "title": "Hadith Collections"
+        },
+        {
+          "id": "water-conservation",
+          "score": 0.606,
+          "title": "Water Conservation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "hadith-classification",
+      "sourceEntities": [
+        {
+          "sourceEntity": "hadith-authentication",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "hadith-sciences",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Hadith sciences: sahih/hasan/da'if categorization",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "hadith-collections",
+          "score": 0.718,
+          "title": "Hadith Collections"
+        },
+        {
+          "id": "hadith-authentication",
+          "score": 0.714,
+          "title": "Hadith Authentication"
+        },
+        {
+          "id": "zakat-calculation",
+          "score": 0.579,
+          "title": "Zakat Calculation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "hadith-terminology",
+      "sourceEntities": [
+        {
+          "sourceEntity": "hadith-collections",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "hadith-sciences",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Hadith sciences: mustalah al-hadith vocabulary",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "hadith-authentication",
+          "score": 0.564,
+          "title": "Hadith Authentication"
+        },
+        {
+          "id": "hadith-collections",
+          "score": 0.556,
+          "title": "Hadith Collections"
+        },
+        {
+          "id": "tafsir-methodology",
+          "score": 0.5,
+          "title": "Tafsir Methodology"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "hajj-significance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "hajj-rites",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: hikmah and fada'il al-hajj",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "major-signs",
+          "score": 0.5,
+          "title": "Major Signs of the Hour"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "healing-prayers",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophetic-medicine",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Ruqyah: ad'iyah al-shifa'",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "five-daily-prayers",
+          "score": 0.667,
+          "title": "Five Daily Prayers"
+        },
+        {
+          "id": "sunnah-prayers",
+          "score": 0.621,
+          "title": "Sunnah Prayers"
+        },
+        {
+          "id": "night-prayer",
+          "score": 0.593,
+          "title": "Night Prayer"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "heart-softening",
+      "sourceEntities": [
+        {
+          "sourceEntity": "qalb-heart",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: riqqat al-qalb",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "poverty-solutions",
+          "score": 0.5,
+          "title": "Solutions to Poverty"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "hell-levels",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jahannam-description",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: darakat jahannam",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "qadr-four-levels",
+          "score": 0.519,
+          "title": "Four Levels of Qadr"
+        },
+        {
+          "id": "child-development",
+          "score": 0.5,
+          "title": "Child Development"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "hidden-shirk",
+      "sourceEntities": [
+        {
+          "sourceEntity": "shirk-prohibition",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "riya-showing-off",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: shirk khafi / riya' (showing off)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "pride-kibr",
+          "score": 0.545,
+          "title": "Pride (Kibr)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "honest-dealing",
+      "sourceEntities": [
+        {
+          "sourceEntity": "market-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: sidq in trade",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "anxiety-relief",
+          "score": 0.5,
+          "title": "Anxiety Relief"
+        },
+        {
+          "id": "prophet-definition",
+          "score": 0.5,
+          "title": "Prophet Definition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "honesty-business",
+      "sourceEntities": [
+        {
+          "sourceEntity": "business-ethics",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: sidq in commerce",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "poverty-causes",
+          "score": 0.6,
+          "title": "Causes of Poverty"
+        },
+        {
+          "id": "business-ethics",
+          "score": 0.516,
+          "title": "Business Ethics"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "humane-treatment",
+      "sourceEntities": [
+        {
+          "sourceEntity": "animal-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: ihsan to animals",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "human-creation",
+          "score": 0.733,
+          "title": "Human Creation"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.581,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "peace-agreements",
+          "score": 0.562,
+          "title": "Peace Agreements"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "iddah-waiting",
+      "sourceEntities": [
+        {
+          "sourceEntity": "khul-divorce",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: iddah rulings (2:228, 65:4)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "ramadan-fasting",
+          "score": 0.571,
+          "title": "Ramadan Fasting"
+        },
+        {
+          "id": "backbiting",
+          "score": 0.522,
+          "title": "Backbiting (Ghibah)"
+        },
+        {
+          "id": "child-education",
+          "score": 0.5,
+          "title": "Child Education"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "ijma-consensus",
+      "sourceEntities": [
+        {
+          "sourceEntity": "legal-sources",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Usul fiqh: ijma' as source of law",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "water-conservation",
+          "score": 0.5,
+          "title": "Water Conservation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "ijtihad",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jurisprudence",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: scholarly reasoning process",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "information-ethics",
+      "sourceEntities": [
+        {
+          "sourceEntity": "media-responsibility",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "rumor-verification",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "DEFER",
+      "evidence": "Modern discipline; mapping to classical adab/sidq framework needs review",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern discipline; mapping to classical adab/sidq framework needs review",
+      "similarExistingTopics": [
+        {
+          "id": "intimacy-ethics",
+          "score": 0.667,
+          "title": "Intimacy Ethics"
+        },
+        {
+          "id": "business-ethics",
+          "score": 0.545,
+          "title": "Business Ethics"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.516,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "insect-creation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "specific-animals",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.79) to existing topic \"jinn-creation\" (Jinn Creation).",
+      "mergeTarget": "jinn-creation",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "jinn-creation",
+          "score": 0.786,
+          "title": "Jinn Creation"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.733,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.69,
+          "title": "Human Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "intention-purification",
+      "sourceEntities": [
+        {
+          "sourceEntity": "ikhlas-sincerity",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: ikhlas and niyyah refinement",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "qalb-purification",
+          "score": 0.667,
+          "title": "Qalb Purification"
+        },
+        {
+          "id": "corruption-prohibition",
+          "score": 0.591,
+          "title": "Corruption Prohibition"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.571,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "interpretation-principles",
+      "sourceEntities": [
+        {
+          "sourceEntity": "tafsir-methodology",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "quran-interpretation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Tafsir methodology: usul al-tafsir rules",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "dream-interpretation",
+          "score": 0.622,
+          "title": "Dream Interpretation"
+        },
+        {
+          "id": "shura-principle",
+          "score": 0.6,
+          "title": "Shura (Consultation) Principle"
+        },
+        {
+          "id": "dialogue-principles",
+          "score": 0.591,
+          "title": "Interfaith Dialogue Principles"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "islamic-art",
+      "sourceEntities": [
+        {
+          "sourceEntity": "art-boundaries",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Cultural vs religious classification needs scholarly input",
+      "mergeTarget": null,
+      "scholarlyNote": "Cultural vs religious classification needs scholarly input",
+      "similarExistingTopics": [
+        {
+          "id": "ikhlas-sincerity",
+          "score": 0.519,
+          "title": "Ikhlas (Sincerity)"
+        },
+        {
+          "id": "isa-story",
+          "score": 0.5,
+          "title": "Story of Isa"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "islamic-finance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "interest-free-finance",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern financial instruments need scholarly validation for taxonomy placement",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern financial instruments need scholarly validation for taxonomy placement",
+      "similarExistingTopics": [
+        {
+          "id": "interest-free-finance",
+          "score": 0.556,
+          "title": "Interest-Free Finance"
+        },
+        {
+          "id": "mizan-balance",
+          "score": 0.5,
+          "title": "Mizan (Balance)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "israfil-raphael",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jibril-michael",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "angels-specific",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: angel of the trumpet in hadith tradition",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "jibril-michael",
+          "score": 0.621,
+          "title": "Jibril & Michael"
+        },
+        {
+          "id": "fasad-fil-ard",
+          "score": 0.5,
+          "title": "Fasad fil-Ard (Corruption on Earth)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "jibril-gabriel",
+      "sourceEntities": [
+        {
+          "sourceEntity": "angels-specific",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: named archangel in Quran (2:97-98, 66:4)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "jibril-michael",
+          "score": 0.714,
+          "title": "Jibril & Michael"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "jihad-types",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jihad-definition",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: anwa' al-jihad",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "divorce-types",
+          "score": 0.583,
+          "title": "Types of Divorce"
+        },
+        {
+          "id": "hajj-rites",
+          "score": 0.571,
+          "title": "Hajj Rites"
+        },
+        {
+          "id": "trial-and-test",
+          "score": 0.56,
+          "title": "Trial & Test (Bala'/Fitnah)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "jinn-nature",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jinn-shaytan",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: creation and nature of jinn (55:15, 72:1-28)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "fitrah-nature",
+          "score": 0.667,
+          "title": "Fitrah (Natural Disposition)"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.583,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "jinn-types",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jinn-shaytan",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: categories of jinn (ifrit, marid, etc.)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "divorce-types",
+          "score": 0.609,
+          "title": "Types of Divorce"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.522,
+          "title": "Jinn Creation"
+        },
+        {
+          "id": "hajj-rites",
+          "score": 0.5,
+          "title": "Hajj Rites"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "judicial-independence",
+      "sourceEntities": [
+        {
+          "sourceEntity": "evidence-standards",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "jurisprudence",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: qada and judiciary ethics",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "emotional-intelligence",
+          "score": 0.512,
+          "title": "Emotional Intelligence"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "just-leaders",
+      "sourceEntities": [
+        {
+          "sourceEntity": "leadership-qualities",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyasi: imam adil",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "slander",
+          "score": 0.632,
+          "title": "Slander (Buhtan)"
+        },
+        {
+          "id": "yusuf-dreams",
+          "score": 0.5,
+          "title": "Yusuf's Dreams"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "justice-for-all",
+      "sourceEntities": [
+        {
+          "sourceEntity": "right-to-life",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Broad concept; may overlap with existing justice topics",
+      "mergeTarget": null,
+      "scholarlyNote": "Broad concept; may overlap with existing justice topics",
+      "similarExistingTopics": [
+        {
+          "id": "justice-oppression",
+          "score": 0.606,
+          "title": "Justice & Oppression"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "key-terms",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quranic-vocabulary",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Quran studies: mustalahat quraniyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "khalifah-stewardship",
+      "sourceEntities": [
+        {
+          "sourceEntity": "khalifah-vicegerent",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "mizan-balance",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: vicegerency responsibilities (2:30)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "khalifah-concept",
+          "score": 0.556,
+          "title": "Khalifah Concept"
+        },
+        {
+          "id": "wealth-ownership",
+          "score": 0.556,
+          "title": "Wealth Ownership"
+        },
+        {
+          "id": "salih-story",
+          "score": 0.516,
+          "title": "Story of Salih"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "kiraman-katibin",
+      "sourceEntities": [
+        {
+          "sourceEntity": "angels-specific",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: recording angels (50:17-18, 82:10-12)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "ramadan-fasting",
+          "score": 0.667,
+          "title": "Ramadan Fasting"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.552,
+          "title": "Human Creation"
+        },
+        {
+          "id": "quran-abrogation",
+          "score": 0.516,
+          "title": "Quran Abrogation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "kufr-al-ni'mah",
+      "sourceEntities": [
+        {
+          "sourceEntity": "shukr-gratitude",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: ingratitude for blessings (16:112)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "leadership-ethics",
+      "sourceEntities": [
+        {
+          "sourceEntity": "leadership-qualities",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: akhlaq al-qiyadah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "leadership-qualities",
+          "score": 0.703,
+          "title": "Leadership Qualities"
+        },
+        {
+          "id": "business-ethics",
+          "score": 0.562,
+          "title": "Business Ethics"
+        },
+        {
+          "id": "intimacy-ethics",
+          "score": 0.5,
+          "title": "Intimacy Ethics"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "legal-maxims",
+      "sourceEntities": [
+        {
+          "sourceEntity": "legal-sources",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Usul fiqh: qawaid fiqhiyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "silat-al-rahim",
+          "score": 0.538,
+          "title": "Silat al-Rahim (Kinship Ties)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "legal-schools",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jurisprudence",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: madhahib fiqhiyyah overview",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "halal-food",
+          "score": 0.522,
+          "title": "Halal Food"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "marine-creatures",
+      "sourceEntities": [
+        {
+          "sourceEntity": "specific-animals",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tafakkur: sea life in Quran (16:14)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "human-creation",
+          "score": 0.6,
+          "title": "Human Creation"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.581,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.552,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "market-regulation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "market-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: hisbah in markets",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "zakat-calculation",
+          "score": 0.647,
+          "title": "Zakat Calculation"
+        },
+        {
+          "id": "human-creation",
+          "score": 0.645,
+          "title": "Human Creation"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.625,
+          "title": "Angels Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "marriage-contract",
+      "sourceEntities": [
+        {
+          "sourceEntity": "marriage-importance",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "mahr-dowry",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "interfaith-marriage",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "marital-rights",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "marriage-ceremony",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 5,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: aqd al-nikah conditions and pillars",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marriage-importance",
+          "score": 0.556,
+          "title": "Importance of Marriage"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "marriage-proposal",
+      "sourceEntities": [
+        {
+          "sourceEntity": "spouse-selection",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "marriage-preparation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: khitbah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marriage-importance",
+          "score": 0.667,
+          "title": "Importance of Marriage"
+        },
+        {
+          "id": "life-purpose",
+          "score": 0.552,
+          "title": "Purpose of Life"
+        },
+        {
+          "id": "dialogue-principles",
+          "score": 0.5,
+          "title": "Interfaith Dialogue Principles"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "marriage-readiness",
+      "sourceEntities": [
+        {
+          "sourceEntity": "marriage-preparation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: istita'ah for marriage",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marriage-importance",
+          "score": 0.595,
+          "title": "Importance of Marriage"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.545,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "anxiety-relief",
+          "score": 0.5,
+          "title": "Anxiety Relief"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "marriage-witnesses",
+      "sourceEntities": [
+        {
+          "sourceEntity": "marriage-ceremony",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: shuhud al-nikah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marriage-importance",
+          "score": 0.703,
+          "title": "Importance of Marriage"
+        },
+        {
+          "id": "marital-rights",
+          "score": 0.5,
+          "title": "Marital Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "medicinal-substances",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophetic-medicine",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Prophetic medicine: mawadd tibbiyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "mizan-balance",
+          "score": 0.545,
+          "title": "Mizan (Balance)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "mental-wellbeing",
+      "sourceEntities": [
+        {
+          "sourceEntity": "stress-management",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "anxiety-relief",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "DEFER",
+      "evidence": "Modern psychological concept; mapping to classical tazkiyah framework needs scholarly review",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern psychological concept; mapping to classical tazkiyah framework needs scholarly review",
+      "similarExistingTopics": [
+        {
+          "id": "mental-health",
+          "score": 0.621,
+          "title": "Mental Health in Islam"
+        },
+        {
+          "id": "emotional-intelligence",
+          "score": 0.526,
+          "title": "Emotional Intelligence"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "mikael-michael",
+      "sourceEntities": [
+        {
+          "sourceEntity": "angels-specific",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: named archangel in Quran (2:98)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "jibril-michael",
+          "score": 0.714,
+          "title": "Jibril & Michael"
+        },
+        {
+          "id": "mental-health",
+          "score": 0.519,
+          "title": "Mental Health in Islam"
+        },
+        {
+          "id": "marital-rights",
+          "score": 0.5,
+          "title": "Marital Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "miracles-of-isa",
+      "sourceEntities": [
+        {
+          "sourceEntity": "isa-story",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "isa-muhammad",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Qisas al-Anbiya: Quranic miracles of Isa AS (3:49, 5:110)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "pillars-of-iman",
+          "score": 0.6,
+          "title": "Pillars of Iman"
+        },
+        {
+          "id": "rules-of-engagement",
+          "score": 0.529,
+          "title": "Rules of Engagement"
+        },
+        {
+          "id": "interest-free-finance",
+          "score": 0.5,
+          "title": "Interest-Free Finance"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "moral-education",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-education",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tarbiyah: ta'leem al-akhlaq",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "child-education",
+          "score": 0.733,
+          "title": "Child Education"
+        },
+        {
+          "id": "rumor-verification",
+          "score": 0.667,
+          "title": "Rumor Verification (Tabayyun)"
+        },
+        {
+          "id": "qalb-purification",
+          "score": 0.625,
+          "title": "Qalb Purification"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "moral-lessons-from-prophets",
+      "sourceEntities": [
+        {
+          "sourceEntity": "lut-story",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tafsir: ibar min qisas al-anbiya",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "seal-of-prophethood",
+          "score": 0.565,
+          "title": "Seal of Prophethood"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "nafs-purification",
+      "sourceEntities": [
+        {
+          "sourceEntity": "nafs-levels",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.82) to existing topic \"qalb-purification\" (Qalb Purification).",
+      "mergeTarget": "qalb-purification",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "qalb-purification",
+          "score": 0.824,
+          "title": "Qalb Purification"
+        },
+        {
+          "id": "rumor-verification",
+          "score": 0.629,
+          "title": "Rumor Verification (Tabayyun)"
+        },
+        {
+          "id": "riba-prohibition",
+          "score": 0.606,
+          "title": "Riba (Usury) Prohibition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "naming-ceremony",
+      "sourceEntities": [
+        {
+          "sourceEntity": "birth-childhood",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "child-rights",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: tasmiyah and aqiqah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "angels-creation",
+          "score": 0.6,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.571,
+          "title": "Jinn Creation"
+        },
+        {
+          "id": "dream-interpretation",
+          "score": 0.514,
+          "title": "Dream Interpretation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "newborn-rights",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-rights",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.83) to existing topic \"neighbor-rights\" (Neighbor Rights).",
+      "mergeTarget": "neighbor-rights",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "neighbor-rights",
+          "score": 0.828,
+          "title": "Neighbor Rights"
+        },
+        {
+          "id": "worker-rights",
+          "score": 0.741,
+          "title": "Worker Rights"
+        },
+        {
+          "id": "father-rights",
+          "score": 0.667,
+          "title": "Father's Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "nikah-ceremony",
+      "sourceEntities": [
+        {
+          "sourceEntity": "mahr-dowry",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "marriage-ceremony",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: marriage ceremony proceedings",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "khalifah-vicegerent",
+          "score": 0.545,
+          "title": "Khalifah (Vicegerent)"
+        },
+        {
+          "id": "ikhlas-sincerity",
+          "score": 0.533,
+          "title": "Ikhlas (Sincerity)"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.519,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "oaths-ayman",
+      "sourceEntities": [
+        {
+          "sourceEntity": "covenants-ahd",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: ahkam al-ayman (5:89)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "nafs-ammara",
+          "score": 0.545,
+          "title": "Nafs al-Ammara"
+        },
+        {
+          "id": "nafs-lawwama",
+          "score": 0.522,
+          "title": "Nafs al-Lawwama"
+        },
+        {
+          "id": "covenants-ahd",
+          "score": 0.5,
+          "title": "Covenants (Ahd)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "orphan-support",
+      "sourceEntities": [
+        {
+          "sourceEntity": "orphan-care",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh social: kafalat al-yateem (2:220, 93:9)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "orphan-care",
+          "score": 0.64,
+          "title": "Orphan Care"
+        },
+        {
+          "id": "work-honor",
+          "score": 0.5,
+          "title": "Honor of Work"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "paradise-levels",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jannah-description",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: darajat al-jannah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "qadr-four-levels",
+          "score": 0.581,
+          "title": "Four Levels of Qadr"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "participatory-governance",
+      "sourceEntities": [
+        {
+          "sourceEntity": "shura-principle",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern political concept; mapping to shura needs scholarly review",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern political concept; mapping to shura needs scholarly review",
+      "similarExistingTopics": [
+        {
+          "id": "marriage-importance",
+          "score": 0.512,
+          "title": "Importance of Marriage"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "partnerships",
+      "sourceEntities": [
+        {
+          "sourceEntity": "business-operations",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: shirkah/mudarabah/musharakah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "wealth-ownership",
+          "score": 0.643,
+          "title": "Wealth Ownership"
+        },
+        {
+          "id": "leadership-qualities",
+          "score": 0.5,
+          "title": "Leadership Qualities"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "patience-lessons",
+      "sourceEntities": [
+        {
+          "sourceEntity": "nuh-story",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "yunus-story",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "sabr-patience",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 3,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: durus min qisas al-sabr",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "patience-haste",
+          "score": 0.667,
+          "title": "Patience & Haste"
+        },
+        {
+          "id": "justice-oppression",
+          "score": 0.588,
+          "title": "Justice & Oppression"
+        },
+        {
+          "id": "sabr-patience",
+          "score": 0.552,
+          "title": "Sabr (Patience)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "people-of-book",
+      "sourceEntities": [
+        {
+          "sourceEntity": "interfaith-marriage",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah/Fiqh: ahl al-kitab rulings",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "pharaoh-story",
+      "sourceEntities": [
+        {
+          "sourceEntity": "musa-story",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "adam-ibrahim-musa",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Qisas al-Anbiya: major Quranic narrative (multiple surahs)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "adam-story",
+          "score": 0.696,
+          "title": "Story of Adam"
+        },
+        {
+          "id": "ibrahim-story",
+          "score": 0.692,
+          "title": "Story of Ibrahim"
+        },
+        {
+          "id": "muhammad-story",
+          "score": 0.667,
+          "title": "Story of Muhammad"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "poverty-alleviation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "zakat-recipients",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "wealth-distribution",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh social: zakat/sadaqah impact on poverty",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "poverty-solutions",
+          "score": 0.722,
+          "title": "Solutions to Poverty"
+        },
+        {
+          "id": "poverty-causes",
+          "score": 0.606,
+          "title": "Causes of Poverty"
+        },
+        {
+          "id": "prophet-definition",
+          "score": 0.595,
+          "title": "Prophet Definition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prayer-times",
+      "sourceEntities": [
+        {
+          "sourceEntity": "five-daily-prayers",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "salah-obligatory",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: mawaqeet al-salah (4:103)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prayer-conditions",
+          "score": 0.69,
+          "title": "Prayer Conditions"
+        },
+        {
+          "id": "prayer-acceptance",
+          "score": 0.621,
+          "title": "Prayer Acceptance"
+        },
+        {
+          "id": "sunnah-prayers",
+          "score": 0.538,
+          "title": "Sunnah Prayers"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "promise-keeping",
+      "sourceEntities": [
+        {
+          "sourceEntity": "covenant-breach",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: wafa' bil-ahd",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "spouse-selection",
+          "score": 0.581,
+          "title": "Spouse Selection"
+        },
+        {
+          "id": "pride-kibr",
+          "score": 0.56,
+          "title": "Pride (Kibr)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "property-rights",
+      "sourceEntities": [
+        {
+          "sourceEntity": "wealth-ownership",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: huquq al-milkiyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "worker-rights",
+          "score": 0.714,
+          "title": "Worker Rights"
+        },
+        {
+          "id": "mother-rights",
+          "score": 0.714,
+          "title": "Mother's Rights"
+        },
+        {
+          "id": "father-rights",
+          "score": 0.643,
+          "title": "Father's Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prophetic-duas",
+      "sourceEntities": [
+        {
+          "sourceEntity": "dua-etiquette",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "dua-supplication",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Adhkar: compiled supplications from Sunnah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-wisdom",
+          "score": 0.733,
+          "title": "Prophetic Wisdom"
+        },
+        {
+          "id": "prophetic-medicine",
+          "score": 0.688,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "prophetic-character",
+          "score": 0.667,
+          "title": "Prophetic Character"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prophetic-example",
+      "sourceEntities": [
+        {
+          "sourceEntity": "sunnah-definition",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "sunnah-application",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Seerah/Akhlaq: uswah hasanah (33:21)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-medicine",
+          "score": 0.686,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "prophetic-wisdom",
+          "score": 0.667,
+          "title": "Prophetic Wisdom"
+        },
+        {
+          "id": "prophetic-methodology",
+          "score": 0.632,
+          "title": "Prophetic Methodology"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prophetic-miracles",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophetic-methodology",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.78) to existing topic \"prophetic-medicine\" (Prophetic Medicine).",
+      "mergeTarget": "prophetic-medicine",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-medicine",
+          "score": 0.778,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "prophetic-character",
+          "score": 0.757,
+          "title": "Prophetic Character"
+        },
+        {
+          "id": "prophetic-wisdom",
+          "score": 0.647,
+          "title": "Prophetic Wisdom"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prophetic-mission",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophet-vs-messenger",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.80) to existing topic \"prophetic-medicine\" (Prophetic Medicine).",
+      "mergeTarget": "prophetic-medicine",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-medicine",
+          "score": 0.8,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "prophetic-wisdom",
+          "score": 0.788,
+          "title": "Prophetic Wisdom"
+        },
+        {
+          "id": "prophet-definition",
+          "score": 0.686,
+          "title": "Prophet Definition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prophetic-qualities",
+      "sourceEntities": [
+        {
+          "sourceEntity": "prophet-definition",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Seerah: shama'il nabawiyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-medicine",
+          "score": 0.703,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "prophetic-wisdom",
+          "score": 0.686,
+          "title": "Prophetic Wisdom"
+        },
+        {
+          "id": "prophetic-character",
+          "score": 0.684,
+          "title": "Prophetic Character"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "prophetic-visions",
+      "sourceEntities": [
+        {
+          "sourceEntity": "yusuf-dreams",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.79) to existing topic \"prophetic-wisdom\" (Prophetic Wisdom).",
+      "mergeTarget": "prophetic-wisdom",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-wisdom",
+          "score": 0.788,
+          "title": "Prophetic Wisdom"
+        },
+        {
+          "id": "prophetic-medicine",
+          "score": 0.743,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "prophet-definition",
+          "score": 0.686,
+          "title": "Prophet Definition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "proportionality",
+      "sourceEntities": [
+        {
+          "sourceEntity": "non-combatant-protection",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyar: tanasub in response",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prophetic-methodology",
+          "score": 0.5,
+          "title": "Prophetic Methodology"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "protection-from-jinn",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jinn-shaytan",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Ruqyah: adhkar and verses for protection from jinn",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "predestination-free-will",
+          "score": 0.545,
+          "title": "Predestination & Free Will"
+        },
+        {
+          "id": "prophetic-medicine",
+          "score": 0.526,
+          "title": "Prophetic Medicine"
+        },
+        {
+          "id": "reflection-tafakkur",
+          "score": 0.513,
+          "title": "Reflection (Tafakkur)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "punishment-types",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jahannam-description",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: anwa' al-adhab",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "hudud-punishments",
+          "score": 0.667,
+          "title": "Hudud Punishments"
+        },
+        {
+          "id": "divorce-types",
+          "score": 0.552,
+          "title": "Types of Divorce"
+        },
+        {
+          "id": "night-prayer",
+          "score": 0.5,
+          "title": "Night Prayer"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "qisas-retaliation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "hudud-punishments",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh jinayat: qisas rulings (2:178-179)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "angels-creation",
+          "score": 0.625,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "quran-final-revelation",
+          "score": 0.615,
+          "title": "Quran as Final Revelation"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.6,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "qiyas-analogy",
+      "sourceEntities": [
+        {
+          "sourceEntity": "legal-sources",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Usul fiqh: qiyas reasoning method",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "iman-and-amal",
+          "score": 0.538,
+          "title": "Iman & Amal Relationship"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "quran-as-source",
+      "sourceEntities": [
+        {
+          "sourceEntity": "legal-sources",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Usul fiqh: Quran as primary dalil",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-revelation-process",
+          "score": 0.564,
+          "title": "Quran Revelation Process"
+        },
+        {
+          "id": "quranic-vocabulary",
+          "score": 0.545,
+          "title": "Quranic Vocabulary"
+        },
+        {
+          "id": "orphan-care",
+          "score": 0.538,
+          "title": "Orphan Care"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "quran-by-quran",
+      "sourceEntities": [
+        {
+          "sourceEntity": "tafsir-methodology",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "quran-interpretation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Tafsir methodology: tafsir al-Quran bil-Quran",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-abrogation",
+          "score": 0.667,
+          "title": "Quran Abrogation"
+        },
+        {
+          "id": "quran-preservation",
+          "score": 0.562,
+          "title": "Quran Preservation"
+        },
+        {
+          "id": "quran-final-revelation",
+          "score": 0.556,
+          "title": "Quran as Final Revelation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "quranic-concepts",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quranic-vocabulary",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Quran studies: mafahim quraniyyah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "husn-concept",
+          "score": 0.714,
+          "title": "Husn (Beauty) Concept"
+        },
+        {
+          "id": "khalifah-concept",
+          "score": 0.625,
+          "title": "Khalifah Concept"
+        },
+        {
+          "id": "quran-revelation-process",
+          "score": 0.55,
+          "title": "Quran Revelation Process"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "racial-equality",
+      "sourceEntities": [
+        {
+          "sourceEntity": "human-equality",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern framing; classical equivalent may be human-equality",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern framing; classical equivalent may be human-equality",
+      "similarExistingTopics": [
+        {
+          "id": "human-equality",
+          "score": 0.69,
+          "title": "Human Equality"
+        },
+        {
+          "id": "child-education",
+          "score": 0.533,
+          "title": "Child Education"
+        },
+        {
+          "id": "leadership-qualities",
+          "score": 0.514,
+          "title": "Leadership Qualities"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "relatives-rights",
+      "sourceEntities": [
+        {
+          "sourceEntity": "silat-al-rahim",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh social: huquq al-arham / silat al-rahim",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "father-rights",
+          "score": 0.69,
+          "title": "Father's Rights"
+        },
+        {
+          "id": "worker-rights",
+          "score": 0.621,
+          "title": "Worker Rights"
+        },
+        {
+          "id": "marital-rights",
+          "score": 0.6,
+          "title": "Marital Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "religious-teaching",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-education",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tarbiyah: ta'leem al-deen for children",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "repentance-conditions",
+      "sourceEntities": [
+        {
+          "sourceEntity": "yunus-story",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: shurut al-tawbah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prayer-conditions",
+          "score": 0.684,
+          "title": "Prayer Conditions"
+        },
+        {
+          "id": "polygyny-conditions",
+          "score": 0.65,
+          "title": "Polygyny Conditions"
+        },
+        {
+          "id": "quran-compilation",
+          "score": 0.579,
+          "title": "Quran Compilation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "respectful-engagement",
+      "sourceEntities": [
+        {
+          "sourceEntity": "dialogue-principles",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.75) to existing topic \"rules-of-engagement\" (Rules of Engagement).",
+      "mergeTarget": "rules-of-engagement",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "rules-of-engagement",
+          "score": 0.75,
+          "title": "Rules of Engagement"
+        },
+        {
+          "id": "stress-management",
+          "score": 0.632,
+          "title": "Stress Management"
+        },
+        {
+          "id": "time-management",
+          "score": 0.556,
+          "title": "Time Management"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "respecting-parents",
+      "sourceEntities": [
+        {
+          "sourceEntity": "mother-rights",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "father-rights",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: birr al-walidayn (17:23-24)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "resurrection-process",
+          "score": 0.684,
+          "title": "Resurrection Process"
+        },
+        {
+          "id": "reflection-tafakkur",
+          "score": 0.541,
+          "title": "Reflection (Tafakkur)"
+        },
+        {
+          "id": "rules-of-engagement",
+          "score": 0.541,
+          "title": "Rules of Engagement"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "return-of-isa",
+      "sourceEntities": [
+        {
+          "sourceEntity": "major-signs",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: nuzul Isa AS before Day of Judgment",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "brotherhood-islam",
+          "score": 0.533,
+          "title": "Brotherhood in Islam"
+        },
+        {
+          "id": "pillars-of-iman",
+          "score": 0.5,
+          "title": "Pillars of Iman"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "revelation-contexts",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quran-revelation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Quran sciences: circumstances surrounding revelation",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-revelation-process",
+          "score": 0.651,
+          "title": "Quran Revelation Process"
+        },
+        {
+          "id": "resurrection-process",
+          "score": 0.564,
+          "title": "Resurrection Process"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "revelation-process",
+      "sourceEntities": [
+        {
+          "sourceEntity": "quran-revelation",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.86) to existing topic \"quran-revelation-process\" (Quran Revelation Process).",
+      "mergeTarget": "quran-revelation-process",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-revelation-process",
+          "score": 0.857,
+          "title": "Quran Revelation Process"
+        },
+        {
+          "id": "resurrection-process",
+          "score": 0.789,
+          "title": "Resurrection Process"
+        },
+        {
+          "id": "congregational-prayer",
+          "score": 0.564,
+          "title": "Congregational Prayer"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "right-to-dignity",
+      "sourceEntities": [
+        {
+          "sourceEntity": "human-dignity",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "right-to-life",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "DEFER",
+      "evidence": "Maqasid framing; overlap with human-dignity topic needs resolution",
+      "mergeTarget": null,
+      "scholarlyNote": "Maqasid framing; overlap with human-dignity topic needs resolution",
+      "similarExistingTopics": [
+        {
+          "id": "right-to-life",
+          "score": 0.69,
+          "title": "Right to Life"
+        },
+        {
+          "id": "human-dignity",
+          "score": 0.621,
+          "title": "Human Dignity"
+        },
+        {
+          "id": "prophet-definition",
+          "score": 0.529,
+          "title": "Prophet Definition"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "righteous-offspring",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-education",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: dhurriyyah tayyibah (25:74)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "rise-and-fall-civilizations",
+      "sourceEntities": [
+        {
+          "sourceEntity": "hud-story",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Quran history: sunan ilahiyyah in rise/fall of nations",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "signs-and-reflection",
+          "score": 0.596,
+          "title": "Signs & Reflection (Ayat/Tafakkur)"
+        },
+        {
+          "id": "quran-compilation",
+          "score": 0.545,
+          "title": "Quran Compilation"
+        },
+        {
+          "id": "quran-final-revelation",
+          "score": 0.531,
+          "title": "Quran as Final Revelation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "ritual-purity",
+      "sourceEntities": [
+        {
+          "sourceEntity": "wudu-procedure",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: taharah (purification) - foundational fiqh topic",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "marital-rights",
+          "score": 0.667,
+          "title": "Marital Rights"
+        },
+        {
+          "id": "riba-prohibition",
+          "score": 0.552,
+          "title": "Riba (Usury) Prohibition"
+        },
+        {
+          "id": "qalb-purification",
+          "score": 0.533,
+          "title": "Qalb Purification"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "role-modeling",
+      "sourceEntities": [
+        {
+          "sourceEntity": "child-education",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tarbiyah: qudwah hasanah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "balance-moderation",
+          "score": 0.581,
+          "title": "Balance & Moderation (Wasat)"
+        },
+        {
+          "id": "knowledge-seeking",
+          "score": 0.533,
+          "title": "Seeking Knowledge"
+        },
+        {
+          "id": "prophetic-methodology",
+          "score": 0.529,
+          "title": "Prophetic Methodology"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "shaytan-whispers",
+      "sourceEntities": [
+        {
+          "sourceEntity": "shaytan-enemy",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "jinn-shaytan",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: waswasah concept (114:4-6, 7:200)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "shaytan-enemy",
+          "score": 0.621,
+          "title": "Shaytan as Enemy"
+        },
+        {
+          "id": "dua-answers",
+          "score": 0.519,
+          "title": "Answers to Dua"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "sheep-creation",
+      "sourceEntities": [
+        {
+          "sourceEntity": "specific-animals",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tafakkur: livestock in Quran",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "human-creation",
+          "score": 0.714,
+          "title": "Human Creation"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.69,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.667,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "siblings-relationships",
+      "sourceEntities": [
+        {
+          "sourceEntity": "silat-al-rahim",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh family: relations among siblings",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "angels-creation",
+          "score": 0.595,
+          "title": "Angels Creation"
+        },
+        {
+          "id": "signs-and-reflection",
+          "score": 0.571,
+          "title": "Signs & Reflection (Ayat/Tafakkur)"
+        },
+        {
+          "id": "jinn-creation",
+          "score": 0.571,
+          "title": "Jinn Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "slaughter-rules",
+      "sourceEntities": [
+        {
+          "sourceEntity": "halal-food",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: dhaba'ih halal rules (5:3, 6:118-121)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "leadership-qualities",
+          "score": 0.514,
+          "title": "Leadership Qualities"
+        },
+        {
+          "id": "father-rights",
+          "score": 0.5,
+          "title": "Father's Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "social-solidarity",
+      "sourceEntities": [
+        {
+          "sourceEntity": "brotherhood-islam",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh social: takaful ijtima'i",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "salih-story",
+          "score": 0.571,
+          "title": "Story of Salih"
+        },
+        {
+          "id": "isa-story",
+          "score": 0.538,
+          "title": "Story of Isa"
+        },
+        {
+          "id": "musa-story",
+          "score": 0.519,
+          "title": "Story of Musa"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "soul-departure",
+      "sourceEntities": [
+        {
+          "sourceEntity": "resurrection-process",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Aqeedah: sakarat al-mawt",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "spiritual-diseases",
+      "sourceEntities": [
+        {
+          "sourceEntity": "nafs-ammara",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "qalb-purification",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "qalb-heart",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 3,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: amrad al-qalb (diseases of the heart)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "trial-and-test",
+          "score": 0.5,
+          "title": "Trial & Test (Bala'/Fitnah)"
+        },
+        {
+          "id": "marital-rights",
+          "score": 0.5,
+          "title": "Marital Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "spousal-communication",
+      "sourceEntities": [
+        {
+          "sourceEntity": "spousal-love-mercy",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: mu'asharah bil-ma'ruf (4:19)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "quran-compilation",
+          "score": 0.632,
+          "title": "Quran Compilation"
+        },
+        {
+          "id": "polygyny-conditions",
+          "score": 0.6,
+          "title": "Polygyny Conditions"
+        },
+        {
+          "id": "spouse-selection",
+          "score": 0.595,
+          "title": "Spouse Selection"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "stewardship-khalifah",
+      "sourceEntities": [
+        {
+          "sourceEntity": "environmental-corruption",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Near-duplicate of khalifah-stewardship; consolidation recommended",
+      "mergeTarget": null,
+      "scholarlyNote": "Near-duplicate of khalifah-stewardship; consolidation recommended",
+      "similarExistingTopics": [
+        {
+          "id": "leadership-qualities",
+          "score": 0.55,
+          "title": "Leadership Qualities"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "stress-relief",
+      "sourceEntities": [
+        {
+          "sourceEntity": "mental-health",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Applied contemporary concept; may fold into sabr/tawakkul topics",
+      "mergeTarget": null,
+      "scholarlyNote": "Applied contemporary concept; may fold into sabr/tawakkul topics",
+      "similarExistingTopics": [
+        {
+          "id": "unseen-belief",
+          "score": 0.615,
+          "title": "Belief in Unseen"
+        },
+        {
+          "id": "stress-management",
+          "score": 0.6,
+          "title": "Stress Management"
+        },
+        {
+          "id": "anxiety-relief",
+          "score": 0.593,
+          "title": "Anxiety Relief"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "sunnah-as-source",
+      "sourceEntities": [
+        {
+          "sourceEntity": "legal-sources",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Usul fiqh: Sunnah as secondary dalil",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "sunnah-prayers",
+          "score": 0.6,
+          "title": "Sunnah Prayers"
+        },
+        {
+          "id": "sunnah-vs-bidah",
+          "score": 0.581,
+          "title": "Sunnah vs Bidah"
+        },
+        {
+          "id": "yunus-story",
+          "score": 0.519,
+          "title": "Story of Yunus"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "sunnah-practices",
+      "sourceEntities": [
+        {
+          "sourceEntity": "sunnah-application",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.80) to existing topic \"sunnah-prayers\" (Sunnah Prayers).",
+      "mergeTarget": "sunnah-prayers",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "sunnah-prayers",
+          "score": 0.8,
+          "title": "Sunnah Prayers"
+        },
+        {
+          "id": "sabr-patience",
+          "score": 0.621,
+          "title": "Sabr (Patience)"
+        },
+        {
+          "id": "shura-principle",
+          "score": 0.581,
+          "title": "Shura (Consultation) Principle"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "tahajjud",
+      "sourceEntities": [
+        {
+          "sourceEntity": "night-prayer",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "salah-voluntary",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 2,
+      "disposition": "CREATE",
+      "evidence": "Fiqh ibadah: night vigil prayer (17:79, 73:1-4)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "tayammum",
+          "score": 0.5,
+          "title": "Tayammum"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "tazkiyah",
+      "sourceEntities": [
+        {
+          "sourceEntity": "nafs-mutmainna",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "qalb-purification",
+          "sourceField": "relatedTopicIds"
+        },
+        {
+          "sourceEntity": "qalb-heart",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 3,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: purification of the soul - major Islamic science",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "tayammum",
+          "score": 0.5,
+          "title": "Tayammum"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "time-as-trust",
+      "sourceEntities": [
+        {
+          "sourceEntity": "time-management",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "May be subsumed under time-management or accountability topics",
+      "mergeTarget": null,
+      "scholarlyNote": "May be subsumed under time-management or accountability topics",
+      "similarExistingTopics": [
+        {
+          "id": "tawakkul-trust",
+          "score": 0.593,
+          "title": "Tawakkul (Trust in Allah)"
+        },
+        {
+          "id": "trial-and-test",
+          "score": 0.593,
+          "title": "Trial & Test (Bala'/Fitnah)"
+        },
+        {
+          "id": "patience-haste",
+          "score": 0.519,
+          "title": "Patience & Haste"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "trade-principles",
+      "sourceEntities": [
+        {
+          "sourceEntity": "business-operations",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.77) to existing topic \"shura-principle\" (Shura (Consultation) Principle).",
+      "mergeTarget": "shura-principle",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "shura-principle",
+          "score": 0.774,
+          "title": "Shura (Consultation) Principle"
+        },
+        {
+          "id": "dialogue-principles",
+          "score": 0.743,
+          "title": "Interfaith Dialogue Principles"
+        },
+        {
+          "id": "marriage-importance",
+          "score": 0.514,
+          "title": "Importance of Marriage"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "transparency",
+      "sourceEntities": [
+        {
+          "sourceEntity": "corruption-prohibition",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq/Fiqh: shafafiyyah in governance",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "fitrah-nature",
+          "score": 0.56,
+          "title": "Fitrah (Natural Disposition)"
+        },
+        {
+          "id": "orphan-care",
+          "score": 0.522,
+          "title": "Orphan Care"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "treaty-fulfillment",
+      "sourceEntities": [
+        {
+          "sourceEntity": "peace-agreements",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyar: wafa' bil-ahd (5:1)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "day-of-judgment",
+          "score": 0.545,
+          "title": "Day of Judgment"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "tree-protection",
+      "sourceEntities": [
+        {
+          "sourceEntity": "water-conservation",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Specific environmental ruling; may be too granular for standalone topic",
+      "mergeTarget": null,
+      "scholarlyNote": "Specific environmental ruling; may be too granular for standalone topic",
+      "similarExistingTopics": [
+        {
+          "id": "non-combatant-protection",
+          "score": 0.615,
+          "title": "Non-Combatant Protection"
+        },
+        {
+          "id": "riba-prohibition",
+          "score": 0.581,
+          "title": "Riba (Usury) Prohibition"
+        },
+        {
+          "id": "dream-interpretation",
+          "score": 0.571,
+          "title": "Dream Interpretation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "tribes-peoples",
+      "sourceEntities": [
+        {
+          "sourceEntity": "diversity-divine-sign",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tafsir: shu'ub wa qaba'il (49:13)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "true-vs-false-dreams",
+      "sourceEntities": [
+        {
+          "sourceEntity": "dream-interpretation",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Islamic psychology: ru'ya vs hulm distinction",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "yusuf-dreams",
+          "score": 0.625,
+          "title": "Yusuf's Dreams"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "trust-in-allah",
+      "sourceEntities": [
+        {
+          "sourceEntity": "tawakkul-trust",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Tazkiyah: detailed treatment of tawakkul",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "umrah-procedure",
+      "sourceEntities": [
+        {
+          "sourceEntity": "hajj-rites",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "MERGE",
+      "evidence": "Strong similarity (0.76) to existing topic \"wudu-procedure\" (Wudu Procedure).",
+      "mergeTarget": "wudu-procedure",
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "wudu-procedure",
+          "score": 0.759,
+          "title": "Wudu Procedure"
+        },
+        {
+          "id": "sunnah-prayers",
+          "score": 0.552,
+          "title": "Sunnah Prayers"
+        },
+        {
+          "id": "shura-principle",
+          "score": 0.533,
+          "title": "Shura (Consultation) Principle"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "usul-al-fiqh",
+      "sourceEntities": [
+        {
+          "sourceEntity": "jurisprudence",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh: foundational legal methodology discipline",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "silat-al-rahim",
+          "score": 0.538,
+          "title": "Silat al-Rahim (Kinship Ties)"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "walima-feast",
+      "sourceEntities": [
+        {
+          "sourceEntity": "marriage-ceremony",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh munakahat: wedding banquet",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "ramadan-fasting",
+          "score": 0.593,
+          "title": "Ramadan Fasting"
+        },
+        {
+          "id": "trial-and-test",
+          "score": 0.538,
+          "title": "Trial & Test (Bala'/Fitnah)"
+        },
+        {
+          "id": "salih-story",
+          "score": 0.522,
+          "title": "Story of Salih"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "war-conduct",
+      "sourceEntities": [
+        {
+          "sourceEntity": "rules-of-engagement",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh siyar: adab al-qital",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "prayer-conditions",
+          "score": 0.571,
+          "title": "Prayer Conditions"
+        },
+        {
+          "id": "water-conservation",
+          "score": 0.552,
+          "title": "Water Conservation"
+        },
+        {
+          "id": "qadr-and-dua",
+          "score": 0.522,
+          "title": "Qadr & Dua"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "waste-reduction",
+      "sourceEntities": [
+        {
+          "sourceEntity": "water-conservation",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "May be subsumed under israf prohibition",
+      "mergeTarget": null,
+      "scholarlyNote": "May be subsumed under israf prohibition",
+      "similarExistingTopics": [
+        {
+          "id": "water-conservation",
+          "score": 0.606,
+          "title": "Water Conservation"
+        },
+        {
+          "id": "child-education",
+          "score": 0.6,
+          "title": "Child Education"
+        },
+        {
+          "id": "angels-creation",
+          "score": 0.6,
+          "title": "Angels Creation"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "weights-measures",
+      "sourceEntities": [
+        {
+          "sourceEntity": "market-ethics",
+          "sourceField": "subdimension.topicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Fiqh muamalat: kayl wa mizan (83:1-3)",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "night-prayer",
+          "score": 0.5,
+          "title": "Night Prayer"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "work-worship",
+      "sourceEntities": [
+        {
+          "sourceEntity": "work-honor",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "CREATE",
+      "evidence": "Akhlaq: amal as ibadah",
+      "mergeTarget": null,
+      "scholarlyNote": null,
+      "similarExistingTopics": [
+        {
+          "id": "work-honor",
+          "score": 0.636,
+          "title": "Honor of Work"
+        },
+        {
+          "id": "wealth-ownership",
+          "score": 0.571,
+          "title": "Wealth Ownership"
+        },
+        {
+          "id": "worker-rights",
+          "score": 0.56,
+          "title": "Worker Rights"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    },
+    {
+      "phantomId": "workplace-ethics",
+      "sourceEntities": [
+        {
+          "sourceEntity": "worker-rights",
+          "sourceField": "relatedTopicIds"
+        }
+      ],
+      "referenceCount": 1,
+      "disposition": "DEFER",
+      "evidence": "Modern context; may fold into broader business-ethics topic",
+      "mergeTarget": null,
+      "scholarlyNote": "Modern context; may fold into broader business-ethics topic",
+      "similarExistingTopics": [
+        {
+          "id": "intimacy-ethics",
+          "score": 0.581,
+          "title": "Intimacy Ethics"
+        },
+        {
+          "id": "worker-rights",
+          "score": 0.552,
+          "title": "Worker Rights"
+        },
+        {
+          "id": "business-ethics",
+          "score": 0.516,
+          "title": "Business Ethics"
+        }
+      ],
+      "proposedBy": "ai-assisted",
+      "reviewStatus": "pending-scholarly-review"
+    }
+  ]
+}
