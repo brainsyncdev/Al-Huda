@@ -2,6 +2,15 @@
 // entries below (PRD: explicit provenance for Quran text, translations, tafsir).
 // Rendered on /sources and referenced from the reader's source panel.
 
+/** Per-reciter rights tracking entry for audio sources. */
+export interface ReciterRightsEntry {
+  reciterId: string;
+  status: "verified" | "under-review" | "unverified" | "restricted";
+  distributionRightsStatus: "cleared" | "unverified" | "disputed" | "expired";
+  performerRightsStatus: "authorized" | "unverified" | "disputed" | "waived" | "unknown";
+  notes?: string;
+}
+
 export interface SourceRecord {
   id: string;
   /** What content this source provides. */
@@ -34,6 +43,15 @@ export interface SourceRecord {
    * institute, not the Ma'ariful Quran tafsir).
    */
   available?: boolean;
+  // MFD-12.4 WS2: Audio rights metadata fields
+  /** Overall rights status for this source (used primarily for audio). */
+  rightsStatus?: "verified" | "under-review" | "unverified" | "restricted";
+  /** ISO date string of last rights assessment. */
+  rightsReviewDate?: string;
+  /** Reason code when source is gated or restricted. */
+  disableReason?: string;
+  /** Per-reciter rights granularity (audio sources only). */
+  reciterRights?: ReciterRightsEntry[];
 }
 
 export const SOURCES: SourceRecord[] = [
@@ -114,7 +132,25 @@ export const SOURCES: SourceRecord[] = [
     method: "link",
     language: "ar",
     notes:
-      "Audio is optional and off by default. The player requests one MP3 only after the visitor presses play. The CDN publishes no explicit copyright licence for the recordings, so this app streams rather than bundles them and makes no redistribution claim. See docs/DATA-PROVENANCE.md.",
+      "Audio is optional and off by default. The player requests one MP3 only after the visitor presses play. The CDN publishes no explicit copyright licence for the recordings, so this app streams rather than bundles them and makes no redistribution claim. MFD-12.4 WS2: Audio delivery is now server-proxied through /api/audio/[reciter]/[globalAyah] with rights gating controlled by AUDIO_RIGHTS_ENFORCEMENT env var. See docs/DATA-PROVENANCE.md.",
+    // MFD-12.4 WS2: Audio rights metadata enrichment
+    rightsStatus: "under-review",
+    rightsReviewDate: "2026-11-21",
+    disableReason: "rights-under-review",
+    reciterRights: [
+      { reciterId: "ar.alafasy", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter. Distribution via Islamic Network CDN — no explicit license published." },
+      { reciterId: "ar.husary", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Deceased 1980 (1400 AH). Estate rights holder unknown." },
+      { reciterId: "ar.minshawi", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Deceased 1969 (1389 AH). Estate rights holder unknown." },
+      { reciterId: "ar.sudais", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter. Imam of Masjid al-Haram." },
+      { reciterId: "ar.shuraim", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter. Former Imam of Masjid al-Haram." },
+      { reciterId: "ar.abdulbasit", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Deceased 1988 (1409 AH). Murattal style. Estate rights holder unknown." },
+      { reciterId: "ar.hudhaify", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter." },
+      { reciterId: "ar.mahermuaiqly", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter. Imam of Masjid al-Haram." },
+      { reciterId: "ar.muhammadayyoub", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Deceased 2013 (1434 AH). Estate rights holder unknown." },
+      { reciterId: "ar.muhammadjibreel", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter." },
+      { reciterId: "ar.abdullahbasfar", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter." },
+      { reciterId: "ar.aymanswoaid", status: "under-review", distributionRightsStatus: "unverified", performerRightsStatus: "unknown", notes: "Living reciter." },
+    ],
   },
   {
     id: "tanzil-mushaf-metadata",

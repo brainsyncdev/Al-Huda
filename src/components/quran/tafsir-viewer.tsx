@@ -12,8 +12,8 @@
 // expands it, avoiding ~3 MB of network traffic on every ayah page.
 
 import { useState } from "react";
-import { BookText, ChevronDown } from "lucide-react";
-import { useTranslationText } from "@/lib/quran/translation-store";
+import { BookText, ChevronDown, ExternalLink } from "lucide-react";
+import { useTranslationText, isFallback, isGated, getGatedMetadata, getActualEdition } from "@/lib/quran/translation-store";
 import { getTranslation } from "@/lib/quran/translations";
 import { getSource, sourceLanguageLabel } from "@/lib/quran/sources";
 import { cn } from "@/lib/utils";
@@ -128,6 +128,16 @@ function TafsirBlock({
   const sourceRecord = getSource(sourceId);
   const text = useTranslationText(translationId, surah, ayah);
 
+  // MFD-12.4 WS5 Gap 1: Check if this tafsir edition is gated or has been
+  // substituted with a fallback translation. Displaying English translation
+  // text under an Arabic tafsir heading is a semantic mismatch that could
+  // mislead users about the nature of the content.
+  const isTafsirFallback = isFallback(translationId);
+  const isTafsirGated = isGated(translationId);
+  const gatedMeta = getGatedMetadata(translationId);
+  const actualEditionId = getActualEdition(translationId);
+  const actualMeta = isTafsirFallback ? getTranslation(actualEditionId) : null;
+
   if (!translationMeta) return null;
 
   return (
@@ -145,15 +155,62 @@ function TafsirBlock({
         )}
       </div>
 
-      <div
-        lang="ar"
-        dir="rtl"
-        className="arabic-text rounded-lg border border-border/60 bg-card/50 p-3 text-base leading-loose text-foreground"
-      >
-        {text ?? "Loading…"}
-      </div>
+      {/* MFD-12.4 WS5 Gap 1: Fallback notice — tafsir was substituted with translation */}
+      {isTafsirFallback && actualMeta && (
+        <div className="mb-3 rounded-lg border border-amber-200 bg-amber-50 p-3 dark:border-amber-900/50 dark:bg-amber-950/30">
+          <p className="flex items-start gap-2 text-xs leading-relaxed text-amber-800 dark:text-amber-300">
+            <span aria-hidden className="shrink-0">⚠</span>
+            <span>
+              This tafsir ({translationMeta.name}) is under rights review. Showing{" "}
+              <strong>{actualMeta.name}</strong> ({actualMeta.languageLabel}) instead.
+              This is a translation, not the original Arabic tafsir.
+            </span>
+          </p>
+          <a
+            href={`https://tanzil.net/trans/${encodeURIComponent(translationId)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-[0.6875rem] font-medium text-amber-700 underline underline-offset-2 hover:text-amber-900 dark:text-amber-400 dark:hover:text-amber-200"
+          >
+            <ExternalLink className="h-3 w-3" aria-hidden />
+            View original {work} on Tanzil.net
+          </a>
+        </div>
+      )}
 
-      {sourceRecord && (
+      {/* MFD-12.4 WS5 Gap 1: Gated with no fallback — show unavailable state */}
+      {isTafsirGated && !isTafsirFallback && gatedMeta && (
+        <div className="rounded-lg border border-border/60 bg-card/50 p-4 text-center">
+          <p className="text-sm text-muted-foreground">
+            {gatedMeta.message || "This tafsir is currently unavailable."}
+          </p>
+          <a
+            href={gatedMeta.externalUrl || `https://tanzil.net/trans/${encodeURIComponent(translationId)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary underline underline-offset-2 hover:text-primary/80"
+          >
+            <ExternalLink className="h-3 w-3" aria-hidden />
+            Read {work} on Tanzil.net
+          </a>
+        </div>
+      )}
+
+      {/* Only render tafsir text when NOT in a gated-without-fallback state */}
+      {!isTafsirGated || isTafsirFallback ? (
+        <div
+          lang={isTafsirFallback && actualMeta ? actualMeta.language : "ar"}
+          dir={isTafsirFallback && actualMeta ? (actualMeta.direction ?? "ltr") : "rtl"}
+          className={cn(
+            "rounded-lg border border-border/60 bg-card/50 p-3 text-base leading-loose text-foreground",
+            !isTafsirFallback && "arabic-text"
+          )}
+        >
+          {text ?? "Loading…"}
+        </div>
+      ) : null}
+
+      {sourceRecord && (!isTafsirGated || isTafsirFallback) && (
         <p className="mt-2 text-[0.6875rem] text-muted-foreground">
           Source: {sourceRecord.attribution}. {sourceRecord.notes}
         </p>

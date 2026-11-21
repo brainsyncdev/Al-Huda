@@ -2,18 +2,30 @@
 
 // Per-ayah recitation player (FR-054).
 //
-// Streams a single MP3 from the Islamic Network CDN. One shared <audio>
-// element per card keeps playback state local; the browser only downloads a
-// file once the user presses play, so enabling audio costs no bandwidth for
-// readers who never use it.
+// MFD-12.4 WS2: Streams audio through the server proxy at
+// /api/audio/[reciter]/[globalAyah] which enforces rights gating before
+// delivering MP3 bytes from the Islamic Network CDN.
+//
+// Handles three states:
+// 1. No URL (invalid reference) → render nothing
+// 2. Gated (403 with gated: true) → render informational message with external link
+// 3. Error (network failure, 502) → render "Audio unavailable"
 //
 // Accessibility: the button exposes aria-pressed and a text label (never colour
 // or icon alone), and the native audio element is keyboard-operable.
 
 import { useEffect, useRef, useState } from "react";
-import { Pause, Play, Volume2 } from "lucide-react";
-import { ayahAudioUrl, getReciter, AUDIO_CREDIT } from "@/lib/quran/audio";
+import { Pause, Play, Volume2, ExternalLink } from "lucide-react";
+import { ayahAudioProxyUrl, getReciter, AUDIO_CREDIT } from "@/lib/quran/audio";
 import { cn } from "@/lib/utils";
+
+interface AudioGatedInfo {
+  gated: true;
+  reason: string;
+  reciterId: string;
+  externalUrl: string;
+  message: string;
+}
 
 interface AudioPlayerProps {
   surah: number;
@@ -27,8 +39,10 @@ export function AudioPlayer({ surah, ayah, reciterId, compact = false }: AudioPl
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [gatedInfo, setGatedInfo] = useState<AudioGatedInfo | null>(null);
 
-  const src = ayahAudioUrl(reciterId, surah, ayah);
+  // MFD-12.4 WS2: Use server-proxied URL instead of direct CDN URL
+  const src = ayahAudioProxyUrl(reciterId, surah, ayah);
   const reciter = getReciter(reciterId);
 
   // Changing reciter or verse must not leave a stale player reporting "playing"
@@ -36,6 +50,7 @@ export function AudioPlayer({ surah, ayah, reciterId, compact = false }: AudioPl
   useEffect(() => {
     setPlaying(false);
     setFailed(false);
+    setGatedInfo(null);
     const el = audioRef.current;
     if (el) {
       el.pause();
@@ -53,16 +68,63 @@ export function AudioPlayer({ surah, ayah, reciterId, compact = false }: AudioPl
       setPlaying(false);
       return;
     }
+
+    // MFD-12.4 WS2: Before playing, check if the proxy returns a gated response.
+    // The <audio> element cannot distinguish 403 JSON from audio bytes, so we
+    // pre-fetch to detect gating.
+    try {
+      const headRes = await fetch(src, { method: "HEAD" });
+      if (headRes.status === 403) {
+        const contentType = headRes.headers.get("content-type") ?? "";
+        if (contentType.includes("application/json")) {
+          const body = await fetch(src).then((r) => r.json()).catch(() => null);
+          if (body && typeof body === "object" && "gated" in body && body.gated === true) {
+            setGatedInfo(body as AudioGatedInfo);
+            setFailed(false);
+            setPlaying(false);
+            return;
+          }
+        }
+      }
+    } catch {
+      // HEAD failed — fall through to attempt play; onError will catch real failures
+    }
+
     try {
       await el.play();
       setPlaying(true);
       setFailed(false);
+      setGatedInfo(null);
     } catch {
       // Autoplay policy or a network failure — surface it in text rather than
       // silently doing nothing.
       setFailed(true);
       setPlaying(false);
     }
+  }
+
+  // MFD-12.4 WS2: Render gated state with informational message
+  if (gatedInfo) {
+    return (
+      <span className={cn("inline-flex items-center gap-2", compact && "text-[0.6875rem]")}>
+        <span role="status" className="text-xs text-muted-foreground">
+          🎧 {gatedInfo.message}
+        </span>
+        {gatedInfo.externalUrl && (
+          <a
+            href={gatedInfo.externalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs text-primary underline hover:text-primary/80"
+            aria-label={`Listen to ${reciter?.name ?? reciterId} on Islamic Network CDN (opens in new tab)`}
+          >
+            Listen externally
+            <ExternalLink className="h-3 w-3" aria-hidden />
+          </a>
+        )}
+        <span className="sr-only">{AUDIO_CREDIT}</span>
+      </span>
+    );
   }
 
   const label = playing ? "Pause recitation" : "Play recitation";

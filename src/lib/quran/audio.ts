@@ -55,6 +55,11 @@ export function getReciter(id: string): Reciter | undefined {
  * Per-ayah audio URL, or null when the reference or reciter is invalid.
  * Returning null rather than a best-effort URL means a bad reference can never
  * request a different verse's audio.
+ *
+ * @deprecated MFD-12.4 WS2: Use `ayahAudioProxyUrl()` instead. This function
+ * returns a direct CDN URL that bypasses server-side rights enforcement.
+ * Retained only for backward compatibility when AUDIO_RIGHTS_ENFORCEMENT is
+ * disabled. Will be removed in a future release.
  */
 export function ayahAudioUrl(
   reciterId: string,
@@ -66,6 +71,26 @@ export function ayahAudioUrl(
   const global = toGlobalOrdinal(surah, ayah);
   if (global === null) return null;
   return `https://cdn.islamic.network/quran/audio/${bitrate}/${reciterId}/${global}.mp3`;
+}
+
+/**
+ * Server-proxied audio URL that enforces rights checks before delivery.
+ * Returns null when the reciter or verse reference is invalid.
+ *
+ * MFD-12.4 WS2: This is the primary URL generator for audio playback.
+ * All audio requests transit /api/audio/[reciter]/[globalAyah] which
+ * performs rights gating before proxying from the CDN.
+ */
+export function ayahAudioProxyUrl(
+  reciterId: string,
+  surah: number,
+  ayah: number,
+  bitrate: AudioBitrate = DEFAULT_BITRATE
+): string | null {
+  if (!getReciter(reciterId)) return null;
+  const global = toGlobalOrdinal(surah, ayah);
+  if (global === null) return null;
+  return `/api/audio/${encodeURIComponent(reciterId)}/${global}?bitrate=${bitrate}`;
 }
 
 /** Attribution line rendered next to the player. */

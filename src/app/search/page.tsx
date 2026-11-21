@@ -326,6 +326,7 @@ export default async function SearchPage({ searchParams }: Props) {
         )}
         totalScanned={editionResult.totalScanned}
         filters={filterShell}
+        fallbackFromEditionId={editionResult.fallbackFromEditionId ?? null}
       />
     );
   }
@@ -594,19 +595,34 @@ function EditionSearchResultsView({
   hits,
   totalScanned,
   filters,
+  fallbackFromEditionId,
 }: {
   query: string;
   edition: TranslationMeta;
   hits: TranslationSearchHit[];
   totalScanned: number;
   filters: ReactNode;
+  /** MFD-12.4 WS5 Gap 2: When non-null, search results come from a fallback edition. */
+  fallbackFromEditionId: string | null;
 }) {
+  // MFD-12.4 WS5 Gap 2: Resolve metadata for the actual edition serving results
+  // and the originally requested edition for accurate attribution.
+  const actualEdition = fallbackFromEditionId ? edition : edition;
+  const requestedMeta = fallbackFromEditionId ? getTranslation(fallbackFromEditionId) : null;
   const isRtl = edition.direction === "rtl";
   return (
     <div className="space-y-6 pb-8">
       <header className="space-y-3">
         <SearchBox initialQuery={query} />
         {filters}
+        {/* MFD-12.4 WS5 Gap 2: Fallback attribution notice */}
+        {fallbackFromEditionId && requestedMeta && (
+          <div className="rounded-lg border border-amber-200 bg-amber-50 px-4 py-2.5 text-xs leading-relaxed text-amber-800 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-300" role="status">
+            <span aria-hidden className="mr-1.5">⚠</span>
+            Results shown from <strong>{edition.name}</strong> ({edition.languageLabel}) because{" "}
+            <strong>{requestedMeta.name}</strong> ({requestedMeta.languageLabel}) is under rights review.
+          </div>
+        )}
         <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
           <p>
             {hits.length} {hits.length === 1 ? "match" : "matches"} in{" "}
