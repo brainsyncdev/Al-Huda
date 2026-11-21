@@ -147,3 +147,63 @@ export const SAJDA_VERSES: readonly { index: number; type: "recommended" | "obli
 /** Juz boundaries (1-based juz number -> first global ordinal). */
 export const JUZ_BOUNDARIES = JUZ;
 export const PAGE_BOUNDARIES = PAGE;
+
+/**
+ * Convert a global ayah ordinal (1..6236) back to { surah, ayah }.
+ * Returns null for out-of-range values. Uses binary search over SURAH_START.
+ */
+export function fromGlobalOrdinal(g: number): { surah: number; ayah: number } | null {
+  if (!Number.isInteger(g) || g < 1 || g > 6236) return null;
+  let lo = 0;
+  let hi = 113;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    const start = SURAH_START[mid];
+    const end = mid < 113 ? SURAH_START[mid + 1] : 6237;
+    if (g >= start && g < end) {
+      return { surah: mid + 1, ayah: g - start };
+    }
+    if (g < start) hi = mid - 1;
+    else lo = mid + 1;
+  }
+  return null;
+}
+
+export interface RukuBounds {
+  /** 1-based ruku number. */
+  ruku: number;
+  /** First ayah of the ruku. */
+  start: { surah: number; ayah: number };
+  /** Last ayah of the ruku. */
+  end: { surah: number; ayah: number };
+  /** Number of ayat in this ruku. */
+  ayahCount: number;
+}
+
+/**
+ * Get the surah/ayah range for a given ruku number (1..556).
+ * Returns null if the ruku number is out of range or boundary data is invalid.
+ *
+ * Layer 5 (Passages and Context): rukus are the smallest canonical passage
+ * divisions in the Madani Mushaf, making them reliable, non-fabricated
+ * passage boundaries for contextual reading.
+ */
+export function getRukuBounds(ruku: number): RukuBounds | null {
+  if (!Number.isInteger(ruku) || ruku < 1 || ruku > RUKU.length) return null;
+  const startBoundary = RUKU[ruku - 1];
+  if (!startBoundary) return null;
+  const startRef = fromGlobalOrdinal(startBoundary.g);
+  if (!startRef) return null;
+
+  // End is the last ayah before the next ruku starts (or end of Quran)
+  const endG = ruku < RUKU.length ? RUKU[ruku].g - 1 : 6236;
+  const endRef = fromGlobalOrdinal(endG);
+  if (!endRef) return null;
+
+  return {
+    ruku,
+    start: startRef,
+    end: endRef,
+    ayahCount: endG - startBoundary.g + 1,
+  };
+}

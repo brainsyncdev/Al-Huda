@@ -13,7 +13,9 @@ export {
   getSajdaForAyah,
   isSajdaAyah,
   getAyahMetadata,
+  getRukuBounds,
   type AyahMetadata,
+  type RukuBounds,
 } from "./mushaf-data";
 
 /** Legacy interface for backward compatibility. */

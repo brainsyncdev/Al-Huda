@@ -20,6 +20,7 @@ import {
   getRukuForAyah,
   getManzilForAyah,
   isSajdaAyah,
+  getRukuBounds,
 } from "@/lib/quran/juz";
 import { crossReferencesForAyah } from "@/lib/quran/cross-references";
 import {
@@ -371,6 +372,75 @@ export default async function AyahPage({ params, searchParams }: Props) {
         surahTransliteration={surahMeta.transliteration}
         variant="full"
       />
+
+      {/* Layer 5 (Passages and Context): Show this ayah within its ruku passage.
+          Rukus are the smallest canonical Mushaf divisions — reliable, non-fabricated
+          passage boundaries from the Tanzil CC-BY dataset. */}
+      {(() => {
+        const rukuNum = getRukuForAyah(s, a);
+        if (!rukuNum) return null;
+        const bounds = getRukuBounds(rukuNum);
+        if (!bounds) return null;
+        // Don't show for single-ayah rukus (no passage context to add)
+        if (bounds.ayahCount <= 1) return null;
+        const isStart = s === bounds.start.surah && a === bounds.start.ayah;
+        const isEnd = s === bounds.end.surah && a === bounds.end.ayah;
+        return (
+          <section
+            aria-labelledby="passage-context"
+            className="rounded-2xl border border-border/60 bg-card/80 p-4"
+          >
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <p
+                  id="passage-context"
+                  className="text-xs font-semibold uppercase tracking-wider text-muted-foreground"
+                >
+                  Passage Context
+                </p>
+                <p className="mt-0.5 text-sm text-foreground">
+                  This ayah is part of{" "}
+                  <Link
+                    href={surahPath(surahMeta.id, surahMeta.slug)}
+                    className="font-medium text-primary hover:underline"
+                  >
+                    Ruku {rukuNum}
+                  </Link>{" "}
+                  ({bounds.ayahCount} ayat:{" "}
+                  {bounds.start.surah === bounds.end.surah
+                    ? `${bounds.start.surah}:${bounds.start.ayah}–${bounds.end.ayah}`
+                    : `${bounds.start.surah}:${bounds.start.ayah} – ${bounds.end.surah}:${bounds.end.ayah}`}
+                  ).
+                </p>
+              </div>
+              <div className="flex gap-1.5">
+                {!isStart && (
+                  <Link
+                    href={ayahPath(bounds.start)}
+                    className="inline-flex items-center gap-1 rounded-full border border-border/80 bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    <ChevronLeft className="h-3 w-3" aria-hidden />
+                    Start of passage
+                  </Link>
+                )}
+                {!isEnd && (
+                  <Link
+                    href={ayahPath(bounds.end)}
+                    className="inline-flex items-center gap-1 rounded-full border border-border/80 bg-secondary px-2.5 py-1 text-xs font-medium text-secondary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
+                  >
+                    End of passage
+                    <ChevronRight className="h-3 w-3" aria-hidden />
+                  </Link>
+                )}
+              </div>
+            </div>
+            <p className="mt-2 text-[11px] text-muted-foreground">
+              Reading the surrounding passage helps understand context and thematic flow.
+              Ruku boundaries come from the Madani Mushaf via Tanzil.net (CC-BY).
+            </p>
+          </section>
+        );
+      })()}
 
       {rootContext && (
         <RootContextPanel
